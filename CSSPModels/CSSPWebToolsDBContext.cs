@@ -116,10 +116,12 @@ namespace CSSPModels
             if (DatabaseType == DatabaseTypeEnum.MemoryNoDBShape)
             {
                 optionsBuilder.UseInMemoryDatabase(ConfigurationManager.ConnectionStrings["CSSPWebToolsDB"].ConnectionString);
+                //optionsBuilder.UseSqlServer(@"Data Source=wmon01dtchlebl2\sqlexpress;Initial Catalog=CSSPWebToolsDBTest;Integrated Security=True");
             }
             else if (DatabaseType == DatabaseTypeEnum.MemoryWithDBShape)
             {
                 optionsBuilder.UseInMemoryDatabase(ConfigurationManager.ConnectionStrings["CSSPWebToolsDB"].ConnectionString);
+                //optionsBuilder.UseSqlServer(@"Data Source=wmon01dtchlebl2\sqlexpress;Initial Catalog=CSSPWebToolsDBTest;Integrated Security=True");
             }
             else if (DatabaseType == DatabaseTypeEnum.SQLite)
             {
@@ -127,7 +129,8 @@ namespace CSSPModels
             }
             else if (DatabaseType == DatabaseTypeEnum.SqlServer)
             {
-                optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["CSSPWebToolsDB"].ConnectionString);
+                //optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["CSSPWebToolsDB"].ConnectionString);
+                optionsBuilder.UseSqlServer(@"Data Source=wmon01dtchlebl2\sqlexpress;Initial Catalog=CSSPWebToolsDBTest;Integrated Security=True");
             }
             else
             {
@@ -6468,7 +6471,7 @@ namespace CSSPModels
                 entity.ToTable("VPScenarioLanguages");
 
                 entity.HasIndex(e => e.VPScenarioID)
-                    .HasName("IX_Language");
+                    .HasName("IX_VPScenarioID");
 
                 entity.Property(e => e.VPScenarioID)
                     .IsRequired()
