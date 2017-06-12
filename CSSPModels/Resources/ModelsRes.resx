@@ -282,120 +282,6 @@
   <data name="AppTaskTVItemIDNavigation" xml:space="preserve">
     <value>TVItemIDNavigation</value>
   </data>
-  <data name="AspNetRole" xml:space="preserve">
-    <value>AspNetRole</value>
-  </data>
-  <data name="AspNetRoleAspNetUserRoles" xml:space="preserve">
-    <value>AspNetUserRoles</value>
-  </data>
-  <data name="AspNetRoleId" xml:space="preserve">
-    <value>Id</value>
-  </data>
-  <data name="AspNetRoleName" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="AspNetUser" xml:space="preserve">
-    <value>AspNetUser</value>
-  </data>
-  <data name="AspNetUserAccessFailedCount" xml:space="preserve">
-    <value>AccessFailedCount</value>
-  </data>
-  <data name="AspNetUserAspNetUserClaims" xml:space="preserve">
-    <value>AspNetUserClaims</value>
-  </data>
-  <data name="AspNetUserAspNetUserLogins" xml:space="preserve">
-    <value>AspNetUserLogins</value>
-  </data>
-  <data name="AspNetUserAspNetUserRoles" xml:space="preserve">
-    <value>AspNetUserRoles</value>
-  </data>
-  <data name="AspNetUserClaim" xml:space="preserve">
-    <value>AspNetUserClaim</value>
-  </data>
-  <data name="AspNetUserClaimClaimType" xml:space="preserve">
-    <value>ClaimType</value>
-  </data>
-  <data name="AspNetUserClaimClaimValue" xml:space="preserve">
-    <value>ClaimValue</value>
-  </data>
-  <data name="AspNetUserClaimId" xml:space="preserve">
-    <value>Id</value>
-  </data>
-  <data name="AspNetUserClaimUser" xml:space="preserve">
-    <value>User</value>
-  </data>
-  <data name="AspNetUserClaimUserId" xml:space="preserve">
-    <value>UserId</value>
-  </data>
-  <data name="AspNetUserContacts" xml:space="preserve">
-    <value>Contacts</value>
-  </data>
-  <data name="AspNetUserEmail" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="AspNetUserEmailConfirmed" xml:space="preserve">
-    <value>EmailConfirmed</value>
-  </data>
-  <data name="AspNetUserId" xml:space="preserve">
-    <value>Id</value>
-  </data>
-  <data name="AspNetUserLockoutEnabled" xml:space="preserve">
-    <value>LockoutEnabled</value>
-  </data>
-  <data name="AspNetUserLockoutEndDateUtc" xml:space="preserve">
-    <value>LockoutEndDateUtc</value>
-  </data>
-  <data name="AspNetUserLogin" xml:space="preserve">
-    <value>AspNetUserLogin</value>
-  </data>
-  <data name="AspNetUserLoginLoginProvider" xml:space="preserve">
-    <value>LoginProvider</value>
-  </data>
-  <data name="AspNetUserLoginProviderKey" xml:space="preserve">
-    <value>ProviderKey</value>
-  </data>
-  <data name="AspNetUserLoginUser" xml:space="preserve">
-    <value>User</value>
-  </data>
-  <data name="AspNetUserLoginUserId" xml:space="preserve">
-    <value>UserId</value>
-  </data>
-  <data name="AspNetUserPassword" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="AspNetUserPasswordHash" xml:space="preserve">
-    <value>PasswordHash</value>
-  </data>
-  <data name="AspNetUserPhoneNumber" xml:space="preserve">
-    <value>PhoneNumber</value>
-  </data>
-  <data name="AspNetUserPhoneNumberConfirmed" xml:space="preserve">
-    <value>PhoneNumberConfirmed</value>
-  </data>
-  <data name="AspNetUserRole" xml:space="preserve">
-    <value>AspNetUserRole</value>
-  </data>
-  <data name="AspNetUserRoleRole" xml:space="preserve">
-    <value>Role</value>
-  </data>
-  <data name="AspNetUserRoleRoleId" xml:space="preserve">
-    <value>RoleId</value>
-  </data>
-  <data name="AspNetUserRoleUser" xml:space="preserve">
-    <value>User</value>
-  </data>
-  <data name="AspNetUserRoleUserId" xml:space="preserve">
-    <value>UserId</value>
-  </data>
-  <data name="AspNetUserSecurityStamp" xml:space="preserve">
-    <value>SecurityStamp</value>
-  </data>
-  <data name="AspNetUserTwoFactorEnabled" xml:space="preserve">
-    <value>TwoFactorEnabled</value>
-  </data>
-  <data name="AspNetUserUserName" xml:space="preserve">
-    <value>UserName</value>
-  </data>
   <data name="BoxModel" xml:space="preserve">
     <value>BoxModel</value>
   </data>
@@ -714,12 +600,6 @@
   <data name="ContactFirstName" xml:space="preserve">
     <value>FirstName</value>
   </data>
-  <data name="ContactId" xml:space="preserve">
-    <value>Id</value>
-  </data>
-  <data name="ContactIdNavigation" xml:space="preserve">
-    <value>IdNavigation</value>
-  </data>
   <data name="ContactInitial" xml:space="preserve">
     <value>Initial</value>
   </data>
@@ -747,6 +627,12 @@
   <data name="ContactPassword" xml:space="preserve">
     <value>Password</value>
   </data>
+  <data name="ContactPasswordHash" xml:space="preserve">
+    <value>PasswordHash</value>
+  </data>
+  <data name="ContactPasswordSalt" xml:space="preserve">
+    <value>PasswordSalt</value>
+  </data>
   <data name="ContactPreference" xml:space="preserve">
     <value>ContactPreference</value>
   </data>
@@ -770,6 +656,9 @@
   </data>
   <data name="ContactPreferenceTVType" xml:space="preserve">
     <value>TVType</value>
+  </data>
+  <data name="ContactRandomToken" xml:space="preserve">
+    <value>RandomToken</value>
   </data>
   <data name="ContactSamplingPlanner_ProvincesTVItemID" xml:space="preserve">
     <value>SamplingPlanner_ProvincesTVItemID</value>
@@ -797,6 +686,9 @@
   </data>
   <data name="ContactShortcutShortCutText" xml:space="preserve">
     <value>ShortCutText</value>
+  </data>
+  <data name="ContactToken" xml:space="preserve">
+    <value>Token</value>
   </data>
   <data name="ContactWebName" xml:space="preserve">
     <value>WebName</value>

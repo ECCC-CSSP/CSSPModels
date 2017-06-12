@@ -122,7 +122,7 @@
             this.textBoxCSSPModelsDLL.Name = "textBoxCSSPModelsDLL";
             this.textBoxCSSPModelsDLL.Size = new System.Drawing.Size(517, 20);
             this.textBoxCSSPModelsDLL.TabIndex = 28;
-            this.textBoxCSSPModelsDLL.Text = "C:\\CSSP Latest Code\\CSSPModels\\CSSPModels\\bin\\Debug\\CSSPModels.dll";
+            this.textBoxCSSPModelsDLL.Text = "C:\\CSSP Code\\CSSPModels\\CSSPModels\\bin\\Debug\\CSSPModels.dll";
             // 
             // lblDoc
             // 
@@ -165,7 +165,7 @@
             this.textBoxBaseDir.Name = "textBoxBaseDir";
             this.textBoxBaseDir.Size = new System.Drawing.Size(554, 20);
             this.textBoxBaseDir.TabIndex = 13;
-            this.textBoxBaseDir.Text = "C:\\CSSP Latest Code\\CSSPModels\\";
+            this.textBoxBaseDir.Text = "C:\\CSSP Code\\CSSPModels\\";
             // 
             // lblBaseDir
             // 

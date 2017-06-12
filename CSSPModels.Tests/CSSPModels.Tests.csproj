@@ -158,16 +158,6 @@
     <Compile Include="AppTaskLanguageTestGenerated.cs" />
     <Compile Include="AppTaskTest.cs" />
     <Compile Include="AppTaskTestGenerated.cs" />
-    <Compile Include="AspNetRoleTest.cs" />
-    <Compile Include="AspNetRoleTestGenerated.cs" />
-    <Compile Include="AspNetUserClaimTest.cs" />
-    <Compile Include="AspNetUserClaimTestGenerated.cs" />
-    <Compile Include="AspNetUserLoginTest.cs" />
-    <Compile Include="AspNetUserLoginTestGenerated.cs" />
-    <Compile Include="AspNetUserRoleTest.cs" />
-    <Compile Include="AspNetUserRoleTestGenerated.cs" />
-    <Compile Include="AspNetUserTest.cs" />
-    <Compile Include="AspNetUserTestGenerated.cs" />
     <Compile Include="BoxModelLanguageTest.cs" />
     <Compile Include="BoxModelLanguageTestGenerated.cs" />
     <Compile Include="BoxModelResultTest.cs" />

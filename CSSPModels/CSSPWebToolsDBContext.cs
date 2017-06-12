@@ -26,11 +26,11 @@ namespace CSSPModels
         public virtual DbSet<AppErrLog> AppErrLogs { get; set; }
         public virtual DbSet<AppTask> AppTasks { get; set; }
         public virtual DbSet<AppTaskLanguage> AppTaskLanguages { get; set; }
-        public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
-        public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
-        public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
-        public virtual DbSet<AspNetUserRole> AspNetUserRoles { get; set; }
-        public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
+        //public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
+        //public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
+        //public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
+        //public virtual DbSet<AspNetUserRole> AspNetUserRoles { get; set; }
+        //public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
         public virtual DbSet<BoxModel> BoxModels { get; set; }
         public virtual DbSet<BoxModelLanguage> BoxModelLanguages { get; set; }
         public virtual DbSet<BoxModelResult> BoxModelResults { get; set; }
@@ -143,11 +143,11 @@ namespace CSSPModels
             OnModelCreating_AppErrLog(modelBuilder);
             OnModelCreating_AppTaskLanguage(modelBuilder);
             OnModelCreating_AppTask(modelBuilder);
-            OnModelCreating_AspNetRole(modelBuilder);
-            OnModelCreating_AspNetUserClaim(modelBuilder);
-            OnModelCreating_AspNetUserLogin(modelBuilder);
-            OnModelCreating_AspNetUserRole(modelBuilder);
-            OnModelCreating_AspNetUser(modelBuilder);
+            //OnModelCreating_AspNetRole(modelBuilder);
+            //OnModelCreating_AspNetUserClaim(modelBuilder);
+            //OnModelCreating_AspNetUserLogin(modelBuilder);
+            //OnModelCreating_AspNetUserRole(modelBuilder);
+            //OnModelCreating_AspNetUser(modelBuilder);
             OnModelCreating_BoxModelLanguage(modelBuilder);
             OnModelCreating_BoxModelResult(modelBuilder);
             OnModelCreating_BoxModel(modelBuilder);
@@ -560,161 +560,161 @@ namespace CSSPModels
                     .HasConstraintName("FK_AppTasks_TVItems2");
             });
         }
-        private void OnModelCreating_AspNetRole(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<AspNetRole>(entity =>
-            {
-                entity.HasKey(e => new { e.Id })
-                    .HasName("PK_AspNetRoles");
+        //private void OnModelCreating_AspNetRole(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<AspNetRole>(entity =>
+        //    {
+        //        entity.HasKey(e => new { e.Id })
+        //            .HasName("PK_AspNetRoles");
 
-                entity.ToTable("AspNetRoles");
+        //        entity.ToTable("AspNetRoles");
 
-                entity.Property(e => e.Id)
-                    .HasMaxLength(128);
+        //        entity.Property(e => e.Id)
+        //            .HasMaxLength(128);
 
-                entity.HasIndex(e => e.Name)
-                    .HasName("RoleNameIndex")
-                    .IsUnique();
+        //        entity.HasIndex(e => e.Name)
+        //            .HasName("RoleNameIndex")
+        //            .IsUnique();
 
-                entity.Property(e => e.Name)
-                    .IsRequired()
-                    .HasMaxLength(256);
-            });
-        }
-        private void OnModelCreating_AspNetUserClaim(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<AspNetUserClaim>(entity =>
-            {
-                entity.HasKey(e => new { e.Id })
-                    .HasName("PK_AspNetUserClaims");
+        //        entity.Property(e => e.Name)
+        //            .IsRequired()
+        //            .HasMaxLength(256);
+        //    });
+        //}
+        //private void OnModelCreating_AspNetUserClaim(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<AspNetUserClaim>(entity =>
+        //    {
+        //        entity.HasKey(e => new { e.Id })
+        //            .HasName("PK_AspNetUserClaims");
 
-                entity.ToTable("AspNetUserClaims");
+        //        entity.ToTable("AspNetUserClaims");
 
-                entity.HasIndex(e => e.UserId)
-                    .HasName("IX_UserId");
+        //        entity.HasIndex(e => e.UserId)
+        //            .HasName("IX_UserId");
 
-                entity.Property(e => e.UserId)
-                    .IsRequired()
-                    .HasMaxLength(128);
+        //        entity.Property(e => e.UserId)
+        //            .IsRequired()
+        //            .HasMaxLength(128);
 
-                entity.Property(e => e.ClaimType);
+        //        entity.Property(e => e.ClaimType);
 
-                entity.Property(e => e.ClaimValue);
+        //        entity.Property(e => e.ClaimValue);
 
-                entity.HasOne(d => d.User)
-                    .WithMany(p => p.AspNetUserClaims)
-                    .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK_dbo.AspNetUserClaims_dbo.AspNetUsers_UserId");
-            });
-        }
-        private void OnModelCreating_AspNetUserLogin(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<AspNetUserLogin>(entity =>
-            {
-                entity.HasKey(e => new { e.LoginProvider, e.ProviderKey, e.UserId })
-                    .HasName("PK_dbo.AspNetUserLogins");
+        //        entity.HasOne(d => d.User)
+        //            .WithMany(p => p.AspNetUserClaims)
+        //            .HasForeignKey(d => d.UserId)
+        //            .HasConstraintName("FK_dbo.AspNetUserClaims_dbo.AspNetUsers_UserId");
+        //    });
+        //}
+        //private void OnModelCreating_AspNetUserLogin(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<AspNetUserLogin>(entity =>
+        //    {
+        //        entity.HasKey(e => new { e.LoginProvider, e.ProviderKey, e.UserId })
+        //            .HasName("PK_dbo.AspNetUserLogins");
 
-                entity.ToTable("AspNetUserLogin");
+        //        entity.ToTable("AspNetUserLogin");
 
-                entity.Property(e => e.LoginProvider)
-                    .HasMaxLength(128);
+        //        entity.Property(e => e.LoginProvider)
+        //            .HasMaxLength(128);
 
-                entity.Property(e => e.ProviderKey)
-                    .HasMaxLength(128);
+        //        entity.Property(e => e.ProviderKey)
+        //            .HasMaxLength(128);
 
-                entity.HasIndex(e => e.UserId)
-                    .HasName("IX_UserId");
+        //        entity.HasIndex(e => e.UserId)
+        //            .HasName("IX_UserId");
 
-                entity.Property(e => e.UserId)
-                    .HasMaxLength(128);
+        //        entity.Property(e => e.UserId)
+        //            .HasMaxLength(128);
 
-                entity.HasOne(d => d.User)
-                    .WithMany(p => p.AspNetUserLogins)
-                    .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK_dbo.AspNetUserLogins_dbo.AspNetUsers_UserId");
-            });
-        }
-        private void OnModelCreating_AspNetUserRole(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<AspNetUserRole>(entity =>
-            {
-                entity.HasKey(e => new { e.UserId, e.RoleId })
-                    .HasName("PK_dbo.AspNetUserRoles");
+        //        entity.HasOne(d => d.User)
+        //            .WithMany(p => p.AspNetUserLogins)
+        //            .HasForeignKey(d => d.UserId)
+        //            .HasConstraintName("FK_dbo.AspNetUserLogins_dbo.AspNetUsers_UserId");
+        //    });
+        //}
+        //private void OnModelCreating_AspNetUserRole(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<AspNetUserRole>(entity =>
+        //    {
+        //        entity.HasKey(e => new { e.UserId, e.RoleId })
+        //            .HasName("PK_dbo.AspNetUserRoles");
 
-                entity.ToTable("AspNetUserRoles");
+        //        entity.ToTable("AspNetUserRoles");
 
-                entity.HasIndex(e => e.UserId)
-                    .HasName("IX_UserId");
+        //        entity.HasIndex(e => e.UserId)
+        //            .HasName("IX_UserId");
 
-                entity.Property(e => e.UserId)
-                    .HasMaxLength(128);
+        //        entity.Property(e => e.UserId)
+        //            .HasMaxLength(128);
 
-                entity.HasIndex(e => e.RoleId)
-                    .HasName("IX_RoleId");
+        //        entity.HasIndex(e => e.RoleId)
+        //            .HasName("IX_RoleId");
 
-                entity.Property(e => e.RoleId)
-                    .HasMaxLength(128);
+        //        entity.Property(e => e.RoleId)
+        //            .HasMaxLength(128);
 
-                entity.HasOne(d => d.Role)
-                    .WithMany(p => p.AspNetUserRoles)
-                    .HasForeignKey(d => d.RoleId)
-                    .HasConstraintName("FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId");
+        //        entity.HasOne(d => d.Role)
+        //            .WithMany(p => p.AspNetUserRoles)
+        //            .HasForeignKey(d => d.RoleId)
+        //            .HasConstraintName("FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId");
 
-                entity.HasOne(d => d.User)
-                    .WithMany(p => p.AspNetUserRoles)
-                    .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK_dbo.AspNetUserRoles_dbo.AspNetUsers_UserId");
-            });
-        }
-        private void OnModelCreating_AspNetUser(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<AspNetUser>(entity =>
-            {
-                entity.HasKey(e => e.Id)
-                    .HasName("PK_AspNetUserId");
+        //        entity.HasOne(d => d.User)
+        //            .WithMany(p => p.AspNetUserRoles)
+        //            .HasForeignKey(d => d.UserId)
+        //            .HasConstraintName("FK_dbo.AspNetUserRoles_dbo.AspNetUsers_UserId");
+        //    });
+        //}
+        //private void OnModelCreating_AspNetUser(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<AspNetUser>(entity =>
+        //    {
+        //        entity.HasKey(e => e.Id)
+        //            .HasName("PK_AspNetUserId");
 
-                entity.ToTable("AspNetUsers");
+        //        entity.ToTable("AspNetUsers");
 
-                entity.Property(e => e.Id).HasMaxLength(128);
+        //        entity.Property(e => e.Id).HasMaxLength(128);
 
-                entity.Property(e => e.Email)
-                    .HasMaxLength(256);
+        //        entity.Property(e => e.Email)
+        //            .HasMaxLength(256);
 
-                entity.Property(e => e.EmailConfirmed)
-                    .IsRequired();
+        //        entity.Property(e => e.EmailConfirmed)
+        //            .IsRequired();
 
-                entity.Property(e => e.PasswordHash);
+        //        entity.Property(e => e.PasswordHash);
 
-                entity.Property(e => e.SecurityStamp);
+        //        entity.Property(e => e.SecurityStamp);
 
-                entity.Property(e => e.PhoneNumber);
+        //        entity.Property(e => e.PhoneNumber);
 
-                entity.Property(e => e.PhoneNumberConfirmed)
-                    .IsRequired();
+        //        entity.Property(e => e.PhoneNumberConfirmed)
+        //            .IsRequired();
 
-                entity.Property(e => e.TwoFactorEnabled)
-                    .IsRequired();
+        //        entity.Property(e => e.TwoFactorEnabled)
+        //            .IsRequired();
 
-                entity.Property(e => e.LockoutEndDateUtc)
-                    .HasColumnType("datetime");
+        //        entity.Property(e => e.LockoutEndDateUtc)
+        //            .HasColumnType("datetime");
 
-                entity.Property(e => e.LockoutEnabled)
-                    .IsRequired();
+        //        entity.Property(e => e.LockoutEnabled)
+        //            .IsRequired();
 
-                entity.Property(e => e.AccessFailedCount)
-                    .IsRequired()
-                    .HasAnnotation("Min", 0);
+        //        entity.Property(e => e.AccessFailedCount)
+        //            .IsRequired()
+        //            .HasAnnotation("Min", 0);
 
-                entity.HasIndex(e => e.UserName)
-                    .HasName("UserNameIndex")
-                    .IsUnique();
+        //        entity.HasIndex(e => e.UserName)
+        //            .HasName("UserNameIndex")
+        //            .IsUnique();
 
-                entity.Property(e => e.UserName)
-                    .IsRequired()
-                    .HasMaxLength(256);
+        //        entity.Property(e => e.UserName)
+        //            .IsRequired()
+        //            .HasMaxLength(256);
 
-            });
-        }
+        //    });
+        //}
         private void OnModelCreating_BoxModelLanguage(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<BoxModelLanguage>(entity =>
@@ -1404,13 +1404,6 @@ namespace CSSPModels
 
                 entity.ToTable("Contacts");
 
-                entity.HasIndex(e => e.Id)
-                    .HasName("IX_Id");
-
-                entity.Property(e => e.Id)
-                    .IsRequired()
-                    .HasMaxLength(128);
-
                 entity.HasIndex(e => e.ContactTVItemID)
                     .HasName("IX_ContactTVItemID");
 
@@ -1425,6 +1418,16 @@ namespace CSSPModels
                 entity.Property(e => e.LoginEmail)
                     .IsRequired()
                     .HasMaxLength(255);
+
+                entity.Property(e => e.PasswordHash);
+
+                entity.Property(e => e.PasswordSalt);
+
+                entity.Property(e => e.Token)
+                    .HasMaxLength(255);
+
+                entity.Property(e => e.RandomToken)
+                    .HasMaxLength(50);
 
                 entity.HasIndex(e => e.FirstName)
                     .HasName("IX_FirstName");
@@ -1500,11 +1503,6 @@ namespace CSSPModels
                     .HasForeignKey(d => d.ContactTVItemID)
                     .OnDelete(DeleteBehavior.Restrict)
                     .HasConstraintName("FK_Contacts_TVItems");
-
-                entity.HasOne(d => d.IdNavigation)
-                    .WithMany(p => p.Contacts)
-                    .HasForeignKey(d => d.Id)
-                    .HasConstraintName("FK_Contacts_AspNetUsers");
             });
         }
         private void OnModelCreating_ContactShortcut(ModelBuilder modelBuilder)

@@ -15,7 +15,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Contact_Properties_OK()
         {
-            List<string> propNameList = new List<string>() { "ContactID", "Id", "ContactTVItemID", "LoginEmail", "FirstName", "LastName", "Initial", "WebName", "ContactTitle", "IsAdmin", "EmailValidated", "Disabled", "IsNew", "SamplingPlanner_ProvincesTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ContactID", "ContactTVItemID", "LoginEmail", "PasswordHash", "PasswordSalt", "Token", "RandomToken", "FirstName", "LastName", "Initial", "WebName", "ContactTitle", "IsAdmin", "EmailValidated", "Disabled", "IsNew", "SamplingPlanner_ProvincesTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "Password", "ConfirmPassword", "ParentTVItemID",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -46,7 +46,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Contact_Navigation_OK()
         {
-            List<string> foreignNameList = new List<string>() { "ContactTVItem", "IdNavigation",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() { "ContactTVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() { "ContactPreferences", "ContactShortcuts",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -80,9 +80,12 @@ namespace CSSPModels.Tests
         public void Contact_Every_Property_Has_A_Resource_OK()
         {
                Assert.IsNotNull(ModelsRes.ContactContactID);
-               Assert.IsNotNull(ModelsRes.ContactId);
                Assert.IsNotNull(ModelsRes.ContactContactTVItemID);
                Assert.IsNotNull(ModelsRes.ContactLoginEmail);
+               Assert.IsNotNull(ModelsRes.ContactPasswordHash);
+               Assert.IsNotNull(ModelsRes.ContactPasswordSalt);
+               Assert.IsNotNull(ModelsRes.ContactToken);
+               Assert.IsNotNull(ModelsRes.ContactRandomToken);
                Assert.IsNotNull(ModelsRes.ContactFirstName);
                Assert.IsNotNull(ModelsRes.ContactLastName);
                Assert.IsNotNull(ModelsRes.ContactInitial);
@@ -98,7 +101,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactContactPreferences);
                Assert.IsNotNull(ModelsRes.ContactContactShortcuts);
                Assert.IsNotNull(ModelsRes.ContactContactTVItem);
-               Assert.IsNotNull(ModelsRes.ContactIdNavigation);
                Assert.IsNotNull(ModelsRes.ContactPassword);
                Assert.IsNotNull(ModelsRes.ContactConfirmPassword);
                Assert.IsNotNull(ModelsRes.ContactParentTVItemID);

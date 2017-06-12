@@ -10,9 +10,12 @@ namespace CSSPModels
     {     
         #region Properties in DB
         public int ContactID { get; set; }
-        public string Id { get; set; }
         public int ContactTVItemID { get; set; }
         public string LoginEmail { get; set; }
+        public byte[] PasswordHash { get; set; }
+        public byte[] PasswordSalt { get; set; }
+        public string Token { get; set; }
+        public string RandomToken { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Initial { get; set; }
@@ -29,7 +32,7 @@ namespace CSSPModels
         public virtual ICollection<ContactPreference> ContactPreferences { get; set; }
         public virtual ICollection<ContactShortcut> ContactShortcuts { get; set; }
         public virtual TVItem ContactTVItem { get; set; }
-        public virtual AspNetUser IdNavigation { get; set; }
+        //public virtual AspNetUser IdNavigation { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

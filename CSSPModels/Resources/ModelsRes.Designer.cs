@@ -556,348 +556,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AspNetRole.
-        /// </summary>
-        public static string AspNetRole {
-            get {
-                return ResourceManager.GetString("AspNetRole", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AspNetUserRoles.
-        /// </summary>
-        public static string AspNetRoleAspNetUserRoles {
-            get {
-                return ResourceManager.GetString("AspNetRoleAspNetUserRoles", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Id.
-        /// </summary>
-        public static string AspNetRoleId {
-            get {
-                return ResourceManager.GetString("AspNetRoleId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Name.
-        /// </summary>
-        public static string AspNetRoleName {
-            get {
-                return ResourceManager.GetString("AspNetRoleName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AspNetUser.
-        /// </summary>
-        public static string AspNetUser {
-            get {
-                return ResourceManager.GetString("AspNetUser", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AccessFailedCount.
-        /// </summary>
-        public static string AspNetUserAccessFailedCount {
-            get {
-                return ResourceManager.GetString("AspNetUserAccessFailedCount", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AspNetUserClaims.
-        /// </summary>
-        public static string AspNetUserAspNetUserClaims {
-            get {
-                return ResourceManager.GetString("AspNetUserAspNetUserClaims", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AspNetUserLogins.
-        /// </summary>
-        public static string AspNetUserAspNetUserLogins {
-            get {
-                return ResourceManager.GetString("AspNetUserAspNetUserLogins", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AspNetUserRoles.
-        /// </summary>
-        public static string AspNetUserAspNetUserRoles {
-            get {
-                return ResourceManager.GetString("AspNetUserAspNetUserRoles", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AspNetUserClaim.
-        /// </summary>
-        public static string AspNetUserClaim {
-            get {
-                return ResourceManager.GetString("AspNetUserClaim", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ClaimType.
-        /// </summary>
-        public static string AspNetUserClaimClaimType {
-            get {
-                return ResourceManager.GetString("AspNetUserClaimClaimType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ClaimValue.
-        /// </summary>
-        public static string AspNetUserClaimClaimValue {
-            get {
-                return ResourceManager.GetString("AspNetUserClaimClaimValue", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Id.
-        /// </summary>
-        public static string AspNetUserClaimId {
-            get {
-                return ResourceManager.GetString("AspNetUserClaimId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to User.
-        /// </summary>
-        public static string AspNetUserClaimUser {
-            get {
-                return ResourceManager.GetString("AspNetUserClaimUser", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to UserId.
-        /// </summary>
-        public static string AspNetUserClaimUserId {
-            get {
-                return ResourceManager.GetString("AspNetUserClaimUserId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Contacts.
-        /// </summary>
-        public static string AspNetUserContacts {
-            get {
-                return ResourceManager.GetString("AspNetUserContacts", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Email.
-        /// </summary>
-        public static string AspNetUserEmail {
-            get {
-                return ResourceManager.GetString("AspNetUserEmail", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to EmailConfirmed.
-        /// </summary>
-        public static string AspNetUserEmailConfirmed {
-            get {
-                return ResourceManager.GetString("AspNetUserEmailConfirmed", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Id.
-        /// </summary>
-        public static string AspNetUserId {
-            get {
-                return ResourceManager.GetString("AspNetUserId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LockoutEnabled.
-        /// </summary>
-        public static string AspNetUserLockoutEnabled {
-            get {
-                return ResourceManager.GetString("AspNetUserLockoutEnabled", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LockoutEndDateUtc.
-        /// </summary>
-        public static string AspNetUserLockoutEndDateUtc {
-            get {
-                return ResourceManager.GetString("AspNetUserLockoutEndDateUtc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AspNetUserLogin.
-        /// </summary>
-        public static string AspNetUserLogin {
-            get {
-                return ResourceManager.GetString("AspNetUserLogin", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LoginProvider.
-        /// </summary>
-        public static string AspNetUserLoginLoginProvider {
-            get {
-                return ResourceManager.GetString("AspNetUserLoginLoginProvider", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ProviderKey.
-        /// </summary>
-        public static string AspNetUserLoginProviderKey {
-            get {
-                return ResourceManager.GetString("AspNetUserLoginProviderKey", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to User.
-        /// </summary>
-        public static string AspNetUserLoginUser {
-            get {
-                return ResourceManager.GetString("AspNetUserLoginUser", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to UserId.
-        /// </summary>
-        public static string AspNetUserLoginUserId {
-            get {
-                return ResourceManager.GetString("AspNetUserLoginUserId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Password.
-        /// </summary>
-        public static string AspNetUserPassword {
-            get {
-                return ResourceManager.GetString("AspNetUserPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to PasswordHash.
-        /// </summary>
-        public static string AspNetUserPasswordHash {
-            get {
-                return ResourceManager.GetString("AspNetUserPasswordHash", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to PhoneNumber.
-        /// </summary>
-        public static string AspNetUserPhoneNumber {
-            get {
-                return ResourceManager.GetString("AspNetUserPhoneNumber", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to PhoneNumberConfirmed.
-        /// </summary>
-        public static string AspNetUserPhoneNumberConfirmed {
-            get {
-                return ResourceManager.GetString("AspNetUserPhoneNumberConfirmed", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AspNetUserRole.
-        /// </summary>
-        public static string AspNetUserRole {
-            get {
-                return ResourceManager.GetString("AspNetUserRole", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Role.
-        /// </summary>
-        public static string AspNetUserRoleRole {
-            get {
-                return ResourceManager.GetString("AspNetUserRoleRole", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to RoleId.
-        /// </summary>
-        public static string AspNetUserRoleRoleId {
-            get {
-                return ResourceManager.GetString("AspNetUserRoleRoleId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to User.
-        /// </summary>
-        public static string AspNetUserRoleUser {
-            get {
-                return ResourceManager.GetString("AspNetUserRoleUser", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to UserId.
-        /// </summary>
-        public static string AspNetUserRoleUserId {
-            get {
-                return ResourceManager.GetString("AspNetUserRoleUserId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SecurityStamp.
-        /// </summary>
-        public static string AspNetUserSecurityStamp {
-            get {
-                return ResourceManager.GetString("AspNetUserSecurityStamp", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TwoFactorEnabled.
-        /// </summary>
-        public static string AspNetUserTwoFactorEnabled {
-            get {
-                return ResourceManager.GetString("AspNetUserTwoFactorEnabled", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to UserName.
-        /// </summary>
-        public static string AspNetUserUserName {
-            get {
-                return ResourceManager.GetString("AspNetUserUserName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to BoxModel.
         /// </summary>
         public static string BoxModel {
@@ -1852,24 +1510,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Id.
-        /// </summary>
-        public static string ContactId {
-            get {
-                return ResourceManager.GetString("ContactId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to IdNavigation.
-        /// </summary>
-        public static string ContactIdNavigation {
-            get {
-                return ResourceManager.GetString("ContactIdNavigation", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Initial.
         /// </summary>
         public static string ContactInitial {
@@ -1951,6 +1591,24 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PasswordHash.
+        /// </summary>
+        public static string ContactPasswordHash {
+            get {
+                return ResourceManager.GetString("ContactPasswordHash", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PasswordSalt.
+        /// </summary>
+        public static string ContactPasswordSalt {
+            get {
+                return ResourceManager.GetString("ContactPasswordSalt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ContactPreference.
         /// </summary>
         public static string ContactPreference {
@@ -2019,6 +1677,15 @@ namespace CSSPModels.Resources {
         public static string ContactPreferenceTVType {
             get {
                 return ResourceManager.GetString("ContactPreferenceTVType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RandomToken.
+        /// </summary>
+        public static string ContactRandomToken {
+            get {
+                return ResourceManager.GetString("ContactRandomToken", resourceCulture);
             }
         }
         
@@ -2100,6 +1767,15 @@ namespace CSSPModels.Resources {
         public static string ContactShortcutShortCutText {
             get {
                 return ResourceManager.GetString("ContactShortcutShortCutText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Token.
+        /// </summary>
+        public static string ContactToken {
+            get {
+                return ResourceManager.GetString("ContactToken", resourceCulture);
             }
         }
         
