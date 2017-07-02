@@ -7,15 +7,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     public partial class Contact
-    {     
+    {
         #region Properties in DB
         public int ContactID { get; set; }
         public int ContactTVItemID { get; set; }
         public string LoginEmail { get; set; }
-        public byte[] PasswordHash { get; set; }
-        public byte[] PasswordSalt { get; set; }
-        public string Token { get; set; }
-        public string RandomToken { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Initial { get; set; }
@@ -28,7 +24,8 @@ namespace CSSPModels
         public string SamplingPlanner_ProvincesTVItemID { get; set; }
         public DateTime LastUpdateDate_UTC { get; set; }
         public int LastUpdateContactTVItemID { get; set; }
-              
+
+        public virtual ICollection<ContactLogin> ContactLogins { get; set; }
         public virtual ICollection<ContactPreference> ContactPreferences { get; set; }
         public virtual ICollection<ContactShortcut> ContactShortcuts { get; set; }
         public virtual TVItem ContactTVItem { get; set; }
@@ -38,15 +35,7 @@ namespace CSSPModels
         #region Properties not in DB
         [NotMapped]
         [Required]
-        [Range(6, 100)]
-        public string Password { get; set; }
-        [NotMapped]
-        [Required]
-        [Range(6, 100)]
-        public string ConfirmPassword { get; set; }
-        [NotMapped]
-        [Required]
-        [Range(1, -1)] // -1 == no upper limit
+        [Range(1, -1)]
         public int ParentTVItemID { get; set; }
         [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

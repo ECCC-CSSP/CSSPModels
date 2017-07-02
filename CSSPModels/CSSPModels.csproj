@@ -82,8 +82,8 @@
     <Reference Include="Microsoft.AspNetCore.WebUtilities, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNetCore.WebUtilities.1.1.2\lib\net451\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Data.Sqlite, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Data.Sqlite.1.1.0\lib\net451\Microsoft.Data.Sqlite.dll</HintPath>
+    <Reference Include="Microsoft.Data.Sqlite, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Sqlite.1.1.1\lib\net451\Microsoft.Data.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.EntityFrameworkCore, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.EntityFrameworkCore.1.1.2\lib\net451\Microsoft.EntityFrameworkCore.dll</HintPath>
@@ -152,7 +152,7 @@
       <HintPath>..\packages\PowerShell.1.0.0\lib\net461\PowerShell.dll</HintPath>
     </Reference>
     <Reference Include="Remotion.Linq, Version=2.1.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Remotion.Linq.2.1.1\lib\net45\Remotion.Linq.dll</HintPath>
+      <HintPath>..\packages\Remotion.Linq.2.1.2\lib\net45\Remotion.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -234,12 +234,72 @@
     <Compile Include="Address.cs" />
     <Compile Include="AppErrLog.cs" />
     <Compile Include="AppTask.cs" />
+    <Compile Include="Resources\ModelsRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelsRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="_MWQMSampleDuplicateItem.cs" />
+    <Compile Include="_MWQMSiteSampleFC.cs" />
+    <Compile Include="_NewContact.cs" />
+    <Compile Include="_URLNumberOfSamples.cs" />
+    <Compile Include="_VPScenarioIDAndRawResults.cs" />
+    <Compile Include="_VPResValues.cs" />
+    <Compile Include="_VPFull.cs" />
+    <Compile Include="_Vector.cs" />
+    <Compile Include="_TVTypeNamesAndPath.cs" />
+    <Compile Include="_TVTextLanguage.cs" />
+    <Compile Include="_TVLocation.cs" />
+    <Compile Include="_TVItemTVAuth.cs" />
+    <Compile Include="_TVItemInfrastructureTypeTVItemLink.cs" />
+    <Compile Include="_TVItemSubsectorAndMWQMSite.cs" />
+    <Compile Include="_TVFullText.cs" />
+    <Compile Include="_SubsectorMWQMSampleYear.cs" />
+    <Compile Include="_SearchTagAndTerms.cs" />
+    <Compile Include="_Search.cs" />
+    <Compile Include="_RTBStringPos.cs" />
+    <Compile Include="_PolSourceObsInfoChild.cs" />
+    <Compile Include="_PolSourceObsInfoEnumTextAndID.cs" />
+    <Compile Include="_PolSourceInactiveReasonEnumTextAndID.cs" />
+    <Compile Include="_PolyPoint.cs" />
+    <Compile Include="_OtherFilesToUpload.cs" />
+    <Compile Include="_NodeLayer.cs" />
+    <Compile Include="_Node.cs" />
+    <Compile Include="_SamplingPlanAndFilesLabSheetCount.cs" />
+    <Compile Include="_MapObj.cs" />
+    <Compile Include="_LatLng.cs" />
+    <Compile Include="_LastUpdateAndTVText.cs" />
+    <Compile Include="_LastUpdateAndContact.cs" />
+    <Compile Include="_LabSheetAndA1Sheet.cs" />
+    <Compile Include="_LabSheetA1Measurement.cs" />
+    <Compile Include="_LabSheetA1Sheet.cs" />
+    <Compile Include="_InputSummary.cs" />
+    <Compile Include="_FilePurposeAndText.cs" />
+    <Compile Include="_FileItemList.cs" />
+    <Compile Include="_FileItem.cs" />
+    <Compile Include="_ElementLayer.cs" />
+    <Compile Include="_Element.cs" />
+    <Compile Include="_DataPathOfTide.cs" />
+    <Compile Include="_CSSPWQInputParam.cs" />
+    <Compile Include="_CSSPWQInputApp.cs" />
+    <Compile Include="_CSSPMPNTable.cs" />
+    <Compile Include="_Coord.cs" />
+    <Compile Include="_ContourPolygon.cs" />
+    <Compile Include="_ContactSearch.cs" />
+    <Compile Include="_ContactOK.cs" />
+    <Compile Include="_CalDecay.cs" />
+    <Compile Include="_DBTable.cs" />
+    <Compile Include="_BoxModelCalNumb.cs" />
+    <Compile Include="_AppTaskParameter.cs" />
     <Compile Include="AppTaskLanguage.cs" />
     <Compile Include="BoxModel.cs" />
     <Compile Include="BoxModelLanguage.cs" />
     <Compile Include="BoxModelResult.cs" />
     <Compile Include="ClimateDataValue.cs" />
     <Compile Include="ClimateSite.cs" />
+    <Compile Include="ContactLogin.cs" />
+    <Compile Include="_Register.cs" />
+    <Compile Include="_Login.cs" />
     <Compile Include="Contact.cs" />
     <Compile Include="ContactPreference.cs" />
     <Compile Include="ContactShortcut.cs" />
@@ -277,11 +337,6 @@
     <Compile Include="RatingCurve.cs" />
     <Compile Include="RatingCurveValue.cs" />
     <Compile Include="ResetPassword.cs" />
-    <Compile Include="Resources\ModelsRes.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelsRes.resx</DependentUpon>
-    </Compile>
     <Compile Include="Resources\ModelsRes.fr.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -315,14 +370,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\ModelsRes.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ModelsRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\ModelsRes.fr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ModelsRes.fr.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ModelsRes.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ModelsRes.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

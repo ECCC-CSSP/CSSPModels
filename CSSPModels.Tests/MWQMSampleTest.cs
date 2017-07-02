@@ -25,7 +25,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public MWQMSampleTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape); // true == InMemory
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
             mWQMSample = new MWQMSample();
             foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())
             {
@@ -38,7 +38,7 @@ namespace CSSPModels.Tests
         #endregion Constructors
 
         #region Tests
-        // most of the test will generated and located under MWQMSampleTestGenerated.cs
+        // most of the tests are located under MWQMSampleTestGenerated.cs
         #endregion Tests
     }
 }

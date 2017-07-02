@@ -25,7 +25,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public TVFileLanguageTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape); // true == InMemory
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
             tVFileLanguage = new TVFileLanguage();
             foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())
             {
@@ -38,7 +38,7 @@ namespace CSSPModels.Tests
         #endregion Constructors
 
         #region Tests
-        // most of the test will generated and located under TVFileLanguageTestGenerated.cs
+        // most of the tests are located under TVFileLanguageTestGenerated.cs
         #endregion Tests
     }
 }

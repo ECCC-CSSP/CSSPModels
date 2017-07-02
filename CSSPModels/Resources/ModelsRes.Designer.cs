@@ -475,11 +475,38 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AppTaskParameter.
+        /// </summary>
+        public static string AppTaskParameter {
+            get {
+                return ResourceManager.GetString("AppTaskParameter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        public static string AppTaskParameterName {
+            get {
+                return ResourceManager.GetString("AppTaskParameterName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Parameters.
         /// </summary>
         public static string AppTaskParameters {
             get {
                 return ResourceManager.GetString("AppTaskParameters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Value.
+        /// </summary>
+        public static string AppTaskParameterValue {
+            get {
+                return ResourceManager.GetString("AppTaskParameterValue", resourceCulture);
             }
         }
         
@@ -588,6 +615,96 @@ namespace CSSPModels.Resources {
         public static string BoxModelBoxModelResults {
             get {
                 return ResourceManager.GetString("BoxModelBoxModelResults", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BoxModelCalNumb.
+        /// </summary>
+        public static string BoxModelCalNumb {
+            get {
+                return ResourceManager.GetString("BoxModelCalNumb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BoxModelResultType.
+        /// </summary>
+        public static string BoxModelCalNumbBoxModelResultType {
+            get {
+                return ResourceManager.GetString("BoxModelCalNumbBoxModelResultType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CalLength_m.
+        /// </summary>
+        public static string BoxModelCalNumbCalLength_m {
+            get {
+                return ResourceManager.GetString("BoxModelCalNumbCalLength_m", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CalRadius_m.
+        /// </summary>
+        public static string BoxModelCalNumbCalRadius_m {
+            get {
+                return ResourceManager.GetString("BoxModelCalNumbCalRadius_m", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CalSurface_m2.
+        /// </summary>
+        public static string BoxModelCalNumbCalSurface_m2 {
+            get {
+                return ResourceManager.GetString("BoxModelCalNumbCalSurface_m2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CalVolume_m3.
+        /// </summary>
+        public static string BoxModelCalNumbCalVolume_m3 {
+            get {
+                return ResourceManager.GetString("BoxModelCalNumbCalVolume_m3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CalWidth_m.
+        /// </summary>
+        public static string BoxModelCalNumbCalWidth_m {
+            get {
+                return ResourceManager.GetString("BoxModelCalNumbCalWidth_m", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string BoxModelCalNumbError {
+            get {
+                return ResourceManager.GetString("BoxModelCalNumbError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FixLength.
+        /// </summary>
+        public static string BoxModelCalNumbFixLength {
+            get {
+                return ResourceManager.GetString("BoxModelCalNumbFixLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FixWidth.
+        /// </summary>
+        public static string BoxModelCalNumbFixWidth {
+            get {
+                return ResourceManager.GetString("BoxModelCalNumbFixWidth", resourceCulture);
             }
         }
         
@@ -975,6 +1092,33 @@ namespace CSSPModels.Resources {
         public static string BoxModelTemperature_C {
             get {
                 return ResourceManager.GetString("BoxModelTemperature_C", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CalDecay.
+        /// </summary>
+        public static string CalDecay {
+            get {
+                return ResourceManager.GetString("CalDecay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Decay.
+        /// </summary>
+        public static string CalDecayDecay {
+            get {
+                return ResourceManager.GetString("CalDecayDecay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string CalDecayError {
+            get {
+                return ResourceManager.GetString("CalDecayError", resourceCulture);
             }
         }
         
@@ -1420,20 +1564,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConfirmPassword.
-        /// </summary>
-        public static string ContactConfirmPassword {
-            get {
-                return ResourceManager.GetString("ContactConfirmPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to ContactID.
         /// </summary>
         public static string ContactContactID {
             get {
                 return ResourceManager.GetString("ContactContactID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContactLogins.
+        /// </summary>
+        public static string ContactContactLogins {
+            get {
+                return ResourceManager.GetString("ContactContactLogins", resourceCulture);
             }
         }
         
@@ -1564,6 +1708,51 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ContactLogin.
+        /// </summary>
+        public static string ContactLogin {
+            get {
+                return ResourceManager.GetString("ContactLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ConfirmPassword.
+        /// </summary>
+        public static string ContactLoginConfirmPassword {
+            get {
+                return ResourceManager.GetString("ContactLoginConfirmPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact.
+        /// </summary>
+        public static string ContactLoginContact {
+            get {
+                return ResourceManager.GetString("ContactLoginContact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContactID.
+        /// </summary>
+        public static string ContactLoginContactID {
+            get {
+                return ResourceManager.GetString("ContactLoginContactID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContactLoginID.
+        /// </summary>
+        public static string ContactLoginContactLoginID {
+            get {
+                return ResourceManager.GetString("ContactLoginContactLoginID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LoginEmail.
         /// </summary>
         public static string ContactLoginEmail {
@@ -1573,38 +1762,101 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ParentTVItemID.
+        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
         /// </summary>
-        public static string ContactParentTVItemID {
+        public static string ContactLoginLastUpdateContactTVItemID {
             get {
-                return ResourceManager.GetString("ContactParentTVItemID", resourceCulture);
+                return ResourceManager.GetString("ContactLoginLastUpdateContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        /// </summary>
+        public static string ContactLoginLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("ContactLoginLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LoginEmail.
+        /// </summary>
+        public static string ContactLoginLoginEmail {
+            get {
+                return ResourceManager.GetString("ContactLoginLoginEmail", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
-        public static string ContactPassword {
+        public static string ContactLoginPassword {
             get {
-                return ResourceManager.GetString("ContactPassword", resourceCulture);
+                return ResourceManager.GetString("ContactLoginPassword", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to PasswordHash.
         /// </summary>
-        public static string ContactPasswordHash {
+        public static string ContactLoginPasswordHash {
             get {
-                return ResourceManager.GetString("ContactPasswordHash", resourceCulture);
+                return ResourceManager.GetString("ContactLoginPasswordHash", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to PasswordSalt.
         /// </summary>
-        public static string ContactPasswordSalt {
+        public static string ContactLoginPasswordSalt {
             get {
-                return ResourceManager.GetString("ContactPasswordSalt", resourceCulture);
+                return ResourceManager.GetString("ContactLoginPasswordSalt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContactOK.
+        /// </summary>
+        public static string ContactOK {
+            get {
+                return ResourceManager.GetString("ContactOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContactID.
+        /// </summary>
+        public static string ContactOKContactID {
+            get {
+                return ResourceManager.GetString("ContactOKContactID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContactTVItemID.
+        /// </summary>
+        public static string ContactOKContactTVItemID {
+            get {
+                return ResourceManager.GetString("ContactOKContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string ContactOKError {
+            get {
+                return ResourceManager.GetString("ContactOKError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ParentTVItemID.
+        /// </summary>
+        public static string ContactParentTVItemID {
+            get {
+                return ResourceManager.GetString("ContactParentTVItemID", resourceCulture);
             }
         }
         
@@ -1681,20 +1933,47 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RandomToken.
-        /// </summary>
-        public static string ContactRandomToken {
-            get {
-                return ResourceManager.GetString("ContactRandomToken", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to SamplingPlanner_ProvincesTVItemID.
         /// </summary>
         public static string ContactSamplingPlanner_ProvincesTVItemID {
             get {
                 return ResourceManager.GetString("ContactSamplingPlanner_ProvincesTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContactSearch.
+        /// </summary>
+        public static string ContactSearch {
+            get {
+                return ResourceManager.GetString("ContactSearch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContactID.
+        /// </summary>
+        public static string ContactSearchContactID {
+            get {
+                return ResourceManager.GetString("ContactSearchContactID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContactTVItemID.
+        /// </summary>
+        public static string ContactSearchContactTVItemID {
+            get {
+                return ResourceManager.GetString("ContactSearchContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FullName.
+        /// </summary>
+        public static string ContactSearchFullName {
+            get {
+                return ResourceManager.GetString("ContactSearchFullName", resourceCulture);
             }
         }
         
@@ -1771,20 +2050,362 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Token.
-        /// </summary>
-        public static string ContactToken {
-            get {
-                return ResourceManager.GetString("ContactToken", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to WebName.
         /// </summary>
         public static string ContactWebName {
             get {
                 return ResourceManager.GetString("ContactWebName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContourPolygon.
+        /// </summary>
+        public static string ContourPolygon {
+            get {
+                return ResourceManager.GetString("ContourPolygon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContourNodeList.
+        /// </summary>
+        public static string ContourPolygonContourNodeList {
+            get {
+                return ResourceManager.GetString("ContourPolygonContourNodeList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContourValue.
+        /// </summary>
+        public static string ContourPolygonContourValue {
+            get {
+                return ResourceManager.GetString("ContourPolygonContourValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Depth.
+        /// </summary>
+        public static string ContourPolygonDepth {
+            get {
+                return ResourceManager.GetString("ContourPolygonDepth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Layer.
+        /// </summary>
+        public static string ContourPolygonLayer {
+            get {
+                return ResourceManager.GetString("ContourPolygonLayer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Coord.
+        /// </summary>
+        public static string Coord {
+            get {
+                return ResourceManager.GetString("Coord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lat.
+        /// </summary>
+        public static string CoordLat {
+            get {
+                return ResourceManager.GetString("CoordLat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lng.
+        /// </summary>
+        public static string CoordLng {
+            get {
+                return ResourceManager.GetString("CoordLng", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ordinal.
+        /// </summary>
+        public static string CoordOrdinal {
+            get {
+                return ResourceManager.GetString("CoordOrdinal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPMPNTable.
+        /// </summary>
+        public static string CSSPMPNTable {
+            get {
+                return ResourceManager.GetString("CSSPMPNTable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MPN.
+        /// </summary>
+        public static string CSSPMPNTableMPN {
+            get {
+                return ResourceManager.GetString("CSSPMPNTableMPN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tube0_1.
+        /// </summary>
+        public static string CSSPMPNTableTube0_1 {
+            get {
+                return ResourceManager.GetString("CSSPMPNTableTube0_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tube1_0.
+        /// </summary>
+        public static string CSSPMPNTableTube1_0 {
+            get {
+                return ResourceManager.GetString("CSSPMPNTableTube1_0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tube10.
+        /// </summary>
+        public static string CSSPMPNTableTube10 {
+            get {
+                return ResourceManager.GetString("CSSPMPNTableTube10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPWQInputApp.
+        /// </summary>
+        public static string CSSPWQInputApp {
+            get {
+                return ResourceManager.GetString("CSSPWQInputApp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccessCode.
+        /// </summary>
+        public static string CSSPWQInputAppAccessCode {
+            get {
+                return ResourceManager.GetString("CSSPWQInputAppAccessCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ActiveYear.
+        /// </summary>
+        public static string CSSPWQInputAppActiveYear {
+            get {
+                return ResourceManager.GetString("CSSPWQInputAppActiveYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ApprovalCode.
+        /// </summary>
+        public static string CSSPWQInputAppApprovalCode {
+            get {
+                return ResourceManager.GetString("CSSPWQInputAppApprovalCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ApprovalDate.
+        /// </summary>
+        public static string CSSPWQInputAppApprovalDate {
+            get {
+                return ResourceManager.GetString("CSSPWQInputAppApprovalDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DailyDuplicatePrecisionCriteria.
+        /// </summary>
+        public static string CSSPWQInputAppDailyDuplicatePrecisionCriteria {
+            get {
+                return ResourceManager.GetString("CSSPWQInputAppDailyDuplicatePrecisionCriteria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IncludeLaboratoryQAQC.
+        /// </summary>
+        public static string CSSPWQInputAppIncludeLaboratoryQAQC {
+            get {
+                return ResourceManager.GetString("CSSPWQInputAppIncludeLaboratoryQAQC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IntertechDuplicatePrecisionCriteria.
+        /// </summary>
+        public static string CSSPWQInputAppIntertechDuplicatePrecisionCriteria {
+            get {
+                return ResourceManager.GetString("CSSPWQInputAppIntertechDuplicatePrecisionCriteria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPWQInputParam.
+        /// </summary>
+        public static string CSSPWQInputParam {
+            get {
+                return ResourceManager.GetString("CSSPWQInputParam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPWQInputType.
+        /// </summary>
+        public static string CSSPWQInputParamCSSPWQInputType {
+            get {
+                return ResourceManager.GetString("CSSPWQInputParamCSSPWQInputType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DailyDuplicateMWQMSiteList.
+        /// </summary>
+        public static string CSSPWQInputParamDailyDuplicateMWQMSiteList {
+            get {
+                return ResourceManager.GetString("CSSPWQInputParamDailyDuplicateMWQMSiteList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DailyDuplicateMWQMSiteTVItemIDList.
+        /// </summary>
+        public static string CSSPWQInputParamDailyDuplicateMWQMSiteTVItemIDList {
+            get {
+                return ResourceManager.GetString("CSSPWQInputParamDailyDuplicateMWQMSiteTVItemIDList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InfrastructureList.
+        /// </summary>
+        public static string CSSPWQInputParamInfrastructureList {
+            get {
+                return ResourceManager.GetString("CSSPWQInputParamInfrastructureList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InfrastructureTVItemIDList.
+        /// </summary>
+        public static string CSSPWQInputParamInfrastructureTVItemIDList {
+            get {
+                return ResourceManager.GetString("CSSPWQInputParamInfrastructureTVItemIDList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMSiteList.
+        /// </summary>
+        public static string CSSPWQInputParamMWQMSiteList {
+            get {
+                return ResourceManager.GetString("CSSPWQInputParamMWQMSiteList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMSiteTVItemIDList.
+        /// </summary>
+        public static string CSSPWQInputParamMWQMSiteTVItemIDList {
+            get {
+                return ResourceManager.GetString("CSSPWQInputParamMWQMSiteTVItemIDList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        public static string CSSPWQInputParamName {
+            get {
+                return ResourceManager.GetString("CSSPWQInputParamName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sidList.
+        /// </summary>
+        public static string CSSPWQInputParamsidList {
+            get {
+                return ResourceManager.GetString("CSSPWQInputParamsidList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemID.
+        /// </summary>
+        public static string CSSPWQInputParamTVItemID {
+            get {
+                return ResourceManager.GetString("CSSPWQInputParamTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DataPathOfTide.
+        /// </summary>
+        public static string DataPathOfTide {
+            get {
+                return ResourceManager.GetString("DataPathOfTide", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Text.
+        /// </summary>
+        public static string DataPathOfTideText {
+            get {
+                return ResourceManager.GetString("DataPathOfTideText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WebTideDataSet.
+        /// </summary>
+        public static string DataPathOfTideWebTideDataSet {
+            get {
+                return ResourceManager.GetString("DataPathOfTideWebTideDataSet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DBTable.
+        /// </summary>
+        public static string DBTable {
+            get {
+                return ResourceManager.GetString("DBTable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Plurial.
+        /// </summary>
+        public static string DBTablePlurial {
+            get {
+                return ResourceManager.GetString("DBTablePlurial", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TableName.
+        /// </summary>
+        public static string DBTableTableName {
+            get {
+                return ResourceManager.GetString("DBTableTableName", resourceCulture);
             }
         }
         
@@ -1870,6 +2491,132 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Element.
+        /// </summary>
+        public static string Element {
+            get {
+                return ResourceManager.GetString("Element", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID.
+        /// </summary>
+        public static string ElementID {
+            get {
+                return ResourceManager.GetString("ElementID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ElementLayer.
+        /// </summary>
+        public static string ElementLayer {
+            get {
+                return ResourceManager.GetString("ElementLayer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Element.
+        /// </summary>
+        public static string ElementLayerElement {
+            get {
+                return ResourceManager.GetString("ElementLayerElement", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Layer.
+        /// </summary>
+        public static string ElementLayerLayer {
+            get {
+                return ResourceManager.GetString("ElementLayerLayer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ZMax.
+        /// </summary>
+        public static string ElementLayerZMax {
+            get {
+                return ResourceManager.GetString("ElementLayerZMax", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ZMin.
+        /// </summary>
+        public static string ElementLayerZMin {
+            get {
+                return ResourceManager.GetString("ElementLayerZMin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NodeList.
+        /// </summary>
+        public static string ElementNodeList {
+            get {
+                return ResourceManager.GetString("ElementNodeList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NumbOfNodes.
+        /// </summary>
+        public static string ElementNumbOfNodes {
+            get {
+                return ResourceManager.GetString("ElementNumbOfNodes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type.
+        /// </summary>
+        public static string ElementType {
+            get {
+                return ResourceManager.GetString("ElementType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Value.
+        /// </summary>
+        public static string ElementValue {
+            get {
+                return ResourceManager.GetString("ElementValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to XNode0.
+        /// </summary>
+        public static string ElementXNode0 {
+            get {
+                return ResourceManager.GetString("ElementXNode0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to YNode0.
+        /// </summary>
+        public static string ElementYNode0 {
+            get {
+                return ResourceManager.GetString("ElementYNode0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ZNode0.
+        /// </summary>
+        public static string ElementZNode0 {
+            get {
+                return ResourceManager.GetString("ElementZNode0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Email.
         /// </summary>
         public static string Email {
@@ -1938,6 +2685,87 @@ namespace CSSPModels.Resources {
         public static string EmailLastUpdateDate_UTC {
             get {
                 return ResourceManager.GetString("EmailLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FileItem.
+        /// </summary>
+        public static string FileItem {
+            get {
+                return ResourceManager.GetString("FileItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FileItemList.
+        /// </summary>
+        public static string FileItemList {
+            get {
+                return ResourceManager.GetString("FileItemList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FileName.
+        /// </summary>
+        public static string FileItemListFileName {
+            get {
+                return ResourceManager.GetString("FileItemListFileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Text.
+        /// </summary>
+        public static string FileItemListText {
+            get {
+                return ResourceManager.GetString("FileItemListText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        public static string FileItemName {
+            get {
+                return ResourceManager.GetString("FileItemName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemID.
+        /// </summary>
+        public static string FileItemTVItemID {
+            get {
+                return ResourceManager.GetString("FileItemTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FilePurposeAndText.
+        /// </summary>
+        public static string FilePurposeAndText {
+            get {
+                return ResourceManager.GetString("FilePurposeAndText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FilePurpose.
+        /// </summary>
+        public static string FilePurposeAndTextFilePurpose {
+            get {
+                return ResourceManager.GetString("FilePurposeAndTextFilePurpose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FilePurposeText.
+        /// </summary>
+        public static string FilePurposeAndTextFilePurposeText {
+            get {
+                return ResourceManager.GetString("FilePurposeAndTextFilePurposeText", resourceCulture);
             }
         }
         
@@ -2797,11 +3625,911 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to InputSummary.
+        /// </summary>
+        public static string InputSummary {
+            get {
+                return ResourceManager.GetString("InputSummary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string InputSummaryError {
+            get {
+                return ResourceManager.GetString("InputSummaryError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Summary.
+        /// </summary>
+        public static string InputSummarySummary {
+            get {
+                return ResourceManager.GetString("InputSummarySummary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LabSheet.
         /// </summary>
         public static string LabSheet {
             get {
                 return ResourceManager.GetString("LabSheet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LabSheetA1Measurement.
+        /// </summary>
+        public static string LabSheetA1Measurement {
+            get {
+                return ResourceManager.GetString("LabSheetA1Measurement", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MPN.
+        /// </summary>
+        public static string LabSheetA1MeasurementMPN {
+            get {
+                return ResourceManager.GetString("LabSheetA1MeasurementMPN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ProcessedBy.
+        /// </summary>
+        public static string LabSheetA1MeasurementProcessedBy {
+            get {
+                return ResourceManager.GetString("LabSheetA1MeasurementProcessedBy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Salinity.
+        /// </summary>
+        public static string LabSheetA1MeasurementSalinity {
+            get {
+                return ResourceManager.GetString("LabSheetA1MeasurementSalinity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SampleType.
+        /// </summary>
+        public static string LabSheetA1MeasurementSampleType {
+            get {
+                return ResourceManager.GetString("LabSheetA1MeasurementSampleType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Site.
+        /// </summary>
+        public static string LabSheetA1MeasurementSite {
+            get {
+                return ResourceManager.GetString("LabSheetA1MeasurementSite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SiteComment.
+        /// </summary>
+        public static string LabSheetA1MeasurementSiteComment {
+            get {
+                return ResourceManager.GetString("LabSheetA1MeasurementSiteComment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Temperature.
+        /// </summary>
+        public static string LabSheetA1MeasurementTemperature {
+            get {
+                return ResourceManager.GetString("LabSheetA1MeasurementTemperature", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Time.
+        /// </summary>
+        public static string LabSheetA1MeasurementTime {
+            get {
+                return ResourceManager.GetString("LabSheetA1MeasurementTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tube0_1.
+        /// </summary>
+        public static string LabSheetA1MeasurementTube0_1 {
+            get {
+                return ResourceManager.GetString("LabSheetA1MeasurementTube0_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tube1_0.
+        /// </summary>
+        public static string LabSheetA1MeasurementTube1_0 {
+            get {
+                return ResourceManager.GetString("LabSheetA1MeasurementTube1_0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tube10.
+        /// </summary>
+        public static string LabSheetA1MeasurementTube10 {
+            get {
+                return ResourceManager.GetString("LabSheetA1MeasurementTube10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemID.
+        /// </summary>
+        public static string LabSheetA1MeasurementTVItemID {
+            get {
+                return ResourceManager.GetString("LabSheetA1MeasurementTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LabSheetA1Sheet.
+        /// </summary>
+        public static string LabSheetA1Sheet {
+            get {
+                return ResourceManager.GetString("LabSheetA1Sheet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ApprovalDay.
+        /// </summary>
+        public static string LabSheetA1SheetApprovalDay {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetApprovalDay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ApprovalMonth.
+        /// </summary>
+        public static string LabSheetA1SheetApprovalMonth {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetApprovalMonth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ApprovalYear.
+        /// </summary>
+        public static string LabSheetA1SheetApprovalYear {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetApprovalYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ApprovedBySupervisorInitials.
+        /// </summary>
+        public static string LabSheetA1SheetApprovedBySupervisorInitials {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetApprovedBySupervisorInitials", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bath1Blank44_5.
+        /// </summary>
+        public static string LabSheetA1SheetBath1Blank44_5 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetBath1Blank44_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bath1Negative44_5.
+        /// </summary>
+        public static string LabSheetA1SheetBath1Negative44_5 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetBath1Negative44_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bath1NonTarget44_5.
+        /// </summary>
+        public static string LabSheetA1SheetBath1NonTarget44_5 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetBath1NonTarget44_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bath1Positive44_5.
+        /// </summary>
+        public static string LabSheetA1SheetBath1Positive44_5 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetBath1Positive44_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bath2Blank44_5.
+        /// </summary>
+        public static string LabSheetA1SheetBath2Blank44_5 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetBath2Blank44_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bath2Negative44_5.
+        /// </summary>
+        public static string LabSheetA1SheetBath2Negative44_5 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetBath2Negative44_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bath2NonTarget44_5.
+        /// </summary>
+        public static string LabSheetA1SheetBath2NonTarget44_5 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetBath2NonTarget44_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bath2Positive44_5.
+        /// </summary>
+        public static string LabSheetA1SheetBath2Positive44_5 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetBath2Positive44_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bath3Blank44_5.
+        /// </summary>
+        public static string LabSheetA1SheetBath3Blank44_5 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetBath3Blank44_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bath3Negative44_5.
+        /// </summary>
+        public static string LabSheetA1SheetBath3Negative44_5 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetBath3Negative44_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bath3NonTarget44_5.
+        /// </summary>
+        public static string LabSheetA1SheetBath3NonTarget44_5 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetBath3NonTarget44_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bath3Positive44_5.
+        /// </summary>
+        public static string LabSheetA1SheetBath3Positive44_5 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetBath3Positive44_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Blank35.
+        /// </summary>
+        public static string LabSheetA1SheetBlank35 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetBlank35", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ControlLot.
+        /// </summary>
+        public static string LabSheetA1SheetControlLot {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetControlLot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DailyDuplicateAcceptableOrUnacceptable.
+        /// </summary>
+        public static string LabSheetA1SheetDailyDuplicateAcceptableOrUnacceptable {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetDailyDuplicateAcceptableOrUnacceptable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DailyDuplicatePrecisionCriteria.
+        /// </summary>
+        public static string LabSheetA1SheetDailyDuplicatePrecisionCriteria {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetDailyDuplicatePrecisionCriteria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DailyDuplicateRLog.
+        /// </summary>
+        public static string LabSheetA1SheetDailyDuplicateRLog {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetDailyDuplicateRLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string LabSheetA1SheetError {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IncludeLaboratoryQAQC.
+        /// </summary>
+        public static string LabSheetA1SheetIncludeLaboratoryQAQC {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIncludeLaboratoryQAQC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IncubationBath1EndTime.
+        /// </summary>
+        public static string LabSheetA1SheetIncubationBath1EndTime {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIncubationBath1EndTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IncubationBath1StartTime.
+        /// </summary>
+        public static string LabSheetA1SheetIncubationBath1StartTime {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIncubationBath1StartTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IncubationBath1TimeCalculated.
+        /// </summary>
+        public static string LabSheetA1SheetIncubationBath1TimeCalculated {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIncubationBath1TimeCalculated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IncubationBath2EndTime.
+        /// </summary>
+        public static string LabSheetA1SheetIncubationBath2EndTime {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIncubationBath2EndTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IncubationBath2StartTime.
+        /// </summary>
+        public static string LabSheetA1SheetIncubationBath2StartTime {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIncubationBath2StartTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IncubationBath2TimeCalculated.
+        /// </summary>
+        public static string LabSheetA1SheetIncubationBath2TimeCalculated {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIncubationBath2TimeCalculated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IncubationBath3EndTime.
+        /// </summary>
+        public static string LabSheetA1SheetIncubationBath3EndTime {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIncubationBath3EndTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IncubationBath3StartTime.
+        /// </summary>
+        public static string LabSheetA1SheetIncubationBath3StartTime {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIncubationBath3StartTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IncubationBath3TimeCalculated.
+        /// </summary>
+        public static string LabSheetA1SheetIncubationBath3TimeCalculated {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIncubationBath3TimeCalculated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IncubationStartSameDay.
+        /// </summary>
+        public static string LabSheetA1SheetIncubationStartSameDay {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIncubationStartSameDay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IntertechDuplicateAcceptableOrUnacceptable.
+        /// </summary>
+        public static string LabSheetA1SheetIntertechDuplicateAcceptableOrUnacceptable {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIntertechDuplicateAcceptableOrUnacceptable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IntertechDuplicatePrecisionCriteria.
+        /// </summary>
+        public static string LabSheetA1SheetIntertechDuplicatePrecisionCriteria {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIntertechDuplicatePrecisionCriteria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IntertechDuplicateRLog.
+        /// </summary>
+        public static string LabSheetA1SheetIntertechDuplicateRLog {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIntertechDuplicateRLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IntertechReadAcceptableOrUnacceptable.
+        /// </summary>
+        public static string LabSheetA1SheetIntertechReadAcceptableOrUnacceptable {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetIntertechReadAcceptableOrUnacceptable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LabSheetA1MeasurementList.
+        /// </summary>
+        public static string LabSheetA1SheetLabSheetA1MeasurementList {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetLabSheetA1MeasurementList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LabSheetType.
+        /// </summary>
+        public static string LabSheetA1SheetLabSheetType {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetLabSheetType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Log.
+        /// </summary>
+        public static string LabSheetA1SheetLog {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lot35.
+        /// </summary>
+        public static string LabSheetA1SheetLot35 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetLot35", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lot44_5.
+        /// </summary>
+        public static string LabSheetA1SheetLot44_5 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetLot44_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Negative35.
+        /// </summary>
+        public static string LabSheetA1SheetNegative35 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetNegative35", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NonTarget35.
+        /// </summary>
+        public static string LabSheetA1SheetNonTarget35 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetNonTarget35", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Positive35.
+        /// </summary>
+        public static string LabSheetA1SheetPositive35 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetPositive35", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ResultsReadBy.
+        /// </summary>
+        public static string LabSheetA1SheetResultsReadBy {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetResultsReadBy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ResultsReadDay.
+        /// </summary>
+        public static string LabSheetA1SheetResultsReadDay {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetResultsReadDay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ResultsReadMonth.
+        /// </summary>
+        public static string LabSheetA1SheetResultsReadMonth {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetResultsReadMonth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ResultsReadYear.
+        /// </summary>
+        public static string LabSheetA1SheetResultsReadYear {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetResultsReadYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ResultsRecordedBy.
+        /// </summary>
+        public static string LabSheetA1SheetResultsRecordedBy {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetResultsRecordedBy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ResultsRecordedDay.
+        /// </summary>
+        public static string LabSheetA1SheetResultsRecordedDay {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetResultsRecordedDay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ResultsRecordedMonth.
+        /// </summary>
+        public static string LabSheetA1SheetResultsRecordedMonth {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetResultsRecordedMonth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ResultsRecordedYear.
+        /// </summary>
+        public static string LabSheetA1SheetResultsRecordedYear {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetResultsRecordedYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RunComment.
+        /// </summary>
+        public static string LabSheetA1SheetRunComment {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetRunComment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RunDay.
+        /// </summary>
+        public static string LabSheetA1SheetRunDay {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetRunDay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RunMonth.
+        /// </summary>
+        public static string LabSheetA1SheetRunMonth {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetRunMonth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RunNumber.
+        /// </summary>
+        public static string LabSheetA1SheetRunNumber {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetRunNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RunWeatherComment.
+        /// </summary>
+        public static string LabSheetA1SheetRunWeatherComment {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetRunWeatherComment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RunYear.
+        /// </summary>
+        public static string LabSheetA1SheetRunYear {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetRunYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SalinitiesReadBy.
+        /// </summary>
+        public static string LabSheetA1SheetSalinitiesReadBy {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetSalinitiesReadBy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SalinitiesReadDay.
+        /// </summary>
+        public static string LabSheetA1SheetSalinitiesReadDay {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetSalinitiesReadDay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SalinitiesReadMonth.
+        /// </summary>
+        public static string LabSheetA1SheetSalinitiesReadMonth {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetSalinitiesReadMonth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SalinitiesReadYear.
+        /// </summary>
+        public static string LabSheetA1SheetSalinitiesReadYear {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetSalinitiesReadYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SampleBottleLotNumber.
+        /// </summary>
+        public static string LabSheetA1SheetSampleBottleLotNumber {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetSampleBottleLotNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SampleCrewInitials.
+        /// </summary>
+        public static string LabSheetA1SheetSampleCrewInitials {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetSampleCrewInitials", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SampleType.
+        /// </summary>
+        public static string LabSheetA1SheetSampleType {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetSampleType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SamplingPlanType.
+        /// </summary>
+        public static string LabSheetA1SheetSamplingPlanType {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetSamplingPlanType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SubsectorLocation.
+        /// </summary>
+        public static string LabSheetA1SheetSubsectorLocation {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetSubsectorLocation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SubsectorName.
+        /// </summary>
+        public static string LabSheetA1SheetSubsectorName {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetSubsectorName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SubsectorTVItemID.
+        /// </summary>
+        public static string LabSheetA1SheetSubsectorTVItemID {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetSubsectorTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TCAverage.
+        /// </summary>
+        public static string LabSheetA1SheetTCAverage {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetTCAverage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TCField1.
+        /// </summary>
+        public static string LabSheetA1SheetTCField1 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetTCField1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TCField2.
+        /// </summary>
+        public static string LabSheetA1SheetTCField2 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetTCField2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TCFirst.
+        /// </summary>
+        public static string LabSheetA1SheetTCFirst {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetTCFirst", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TCHas2Coolers.
+        /// </summary>
+        public static string LabSheetA1SheetTCHas2Coolers {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetTCHas2Coolers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TCLab1.
+        /// </summary>
+        public static string LabSheetA1SheetTCLab1 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetTCLab1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TCLab2.
+        /// </summary>
+        public static string LabSheetA1SheetTCLab2 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetTCLab2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tides.
+        /// </summary>
+        public static string LabSheetA1SheetTides {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetTides", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Version.
+        /// </summary>
+        public static string LabSheetA1SheetVersion {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WaterBath1.
+        /// </summary>
+        public static string LabSheetA1SheetWaterBath1 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetWaterBath1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WaterBath2.
+        /// </summary>
+        public static string LabSheetA1SheetWaterBath2 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetWaterBath2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WaterBath3.
+        /// </summary>
+        public static string LabSheetA1SheetWaterBath3 {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetWaterBath3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WaterBathCount.
+        /// </summary>
+        public static string LabSheetA1SheetWaterBathCount {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetWaterBathCount", resourceCulture);
             }
         }
         
@@ -2829,6 +4557,33 @@ namespace CSSPModels.Resources {
         public static string LabSheetAcceptedOrRejectedDateTime {
             get {
                 return ResourceManager.GetString("LabSheetAcceptedOrRejectedDateTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LabSheetAndA1Sheet.
+        /// </summary>
+        public static string LabSheetAndA1Sheet {
+            get {
+                return ResourceManager.GetString("LabSheetAndA1Sheet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LabSheet.
+        /// </summary>
+        public static string LabSheetAndA1SheetLabSheet {
+            get {
+                return ResourceManager.GetString("LabSheetAndA1SheetLabSheet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LabSheetA1Sheet.
+        /// </summary>
+        public static string LabSheetAndA1SheetLabSheetA1Sheet {
+            get {
+                return ResourceManager.GetString("LabSheetAndA1SheetLabSheetA1Sheet", resourceCulture);
             }
         }
         
@@ -3850,6 +5605,114 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to LastUpdateAndContact.
+        /// </summary>
+        public static string LastUpdateAndContact {
+            get {
+                return ResourceManager.GetString("LastUpdateAndContact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string LastUpdateAndContactError {
+            get {
+                return ResourceManager.GetString("LastUpdateAndContactError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        /// </summary>
+        public static string LastUpdateAndContactLastUpdateContactTVItemID {
+            get {
+                return ResourceManager.GetString("LastUpdateAndContactLastUpdateContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        /// </summary>
+        public static string LastUpdateAndContactLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("LastUpdateAndContactLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LastUpdateAndTVText.
+        /// </summary>
+        public static string LastUpdateAndTVText {
+            get {
+                return ResourceManager.GetString("LastUpdateAndTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string LastUpdateAndTVTextError {
+            get {
+                return ResourceManager.GetString("LastUpdateAndTVTextError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LastUpdateDate_Local.
+        /// </summary>
+        public static string LastUpdateAndTVTextLastUpdateDate_Local {
+            get {
+                return ResourceManager.GetString("LastUpdateAndTVTextLastUpdateDate_Local", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        /// </summary>
+        public static string LastUpdateAndTVTextLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("LastUpdateAndTVTextLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVText.
+        /// </summary>
+        public static string LastUpdateAndTVTextTVText {
+            get {
+                return ResourceManager.GetString("LastUpdateAndTVTextTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LatLng.
+        /// </summary>
+        public static string LatLng {
+            get {
+                return ResourceManager.GetString("LatLng", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lat.
+        /// </summary>
+        public static string LatLngLat {
+            get {
+                return ResourceManager.GetString("LatLngLat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lng.
+        /// </summary>
+        public static string LatLngLng {
+            get {
+                return ResourceManager.GetString("LatLngLng", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Log.
         /// </summary>
         public static string Log {
@@ -3868,11 +5731,47 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        public static string Login {
+            get {
+                return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ConfirmPassword.
+        /// </summary>
+        public static string LoginConfirmPassword {
+            get {
+                return ResourceManager.GetString("LoginConfirmPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Information.
         /// </summary>
         public static string LogInformation {
             get {
                 return ResourceManager.GetString("LogInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LoginEmail.
+        /// </summary>
+        public static string LoginLoginEmail {
+            get {
+                return ResourceManager.GetString("LoginLoginEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        public static string LoginPassword {
+            get {
+                return ResourceManager.GetString("LoginPassword", resourceCulture);
             }
         }
         
@@ -4116,6 +6015,42 @@ namespace CSSPModels.Resources {
         public static string MapInfoTVType {
             get {
                 return ResourceManager.GetString("MapInfoTVType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MapObj.
+        /// </summary>
+        public static string MapObj {
+            get {
+                return ResourceManager.GetString("MapObj", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CoordList.
+        /// </summary>
+        public static string MapObjCoordList {
+            get {
+                return ResourceManager.GetString("MapObjCoordList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MapInfoDrawType.
+        /// </summary>
+        public static string MapObjMapInfoDrawType {
+            get {
+                return ResourceManager.GetString("MapObjMapInfoDrawType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MapInfoID.
+        /// </summary>
+        public static string MapObjMapInfoID {
+            get {
+                return ResourceManager.GetString("MapObjMapInfoID", resourceCulture);
             }
         }
         
@@ -5389,6 +7324,33 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMSampleDuplicateItem.
+        /// </summary>
+        public static string MWQMSampleDuplicateItem {
+            get {
+                return ResourceManager.GetString("MWQMSampleDuplicateItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DuplicateSite.
+        /// </summary>
+        public static string MWQMSampleDuplicateItemDuplicateSite {
+            get {
+                return ResourceManager.GetString("MWQMSampleDuplicateItemDuplicateSite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ParentSite.
+        /// </summary>
+        public static string MWQMSampleDuplicateItemParentSite {
+            get {
+                return ResourceManager.GetString("MWQMSampleDuplicateItemParentSite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to FecCol_MPN_100ml.
         /// </summary>
         public static string MWQMSampleFecCol_MPN_100ml {
@@ -5727,6 +7689,159 @@ namespace CSSPModels.Resources {
         public static string MWQMSiteOrdinal {
             get {
                 return ResourceManager.GetString("MWQMSiteOrdinal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMSiteSampleFC.
+        /// </summary>
+        public static string MWQMSiteSampleFC {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Depth.
+        /// </summary>
+        public static string MWQMSiteSampleFCDepth {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCDepth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DO.
+        /// </summary>
+        public static string MWQMSiteSampleFCDO {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCDO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string MWQMSiteSampleFCError {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FC.
+        /// </summary>
+        public static string MWQMSiteSampleFCFC {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCFC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GeoMean.
+        /// </summary>
+        public static string MWQMSiteSampleFCGeoMean {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCGeoMean", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MaxFC.
+        /// </summary>
+        public static string MWQMSiteSampleFCMaxFC {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCMaxFC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Median.
+        /// </summary>
+        public static string MWQMSiteSampleFCMedian {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCMedian", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MinFC.
+        /// </summary>
+        public static string MWQMSiteSampleFCMinFC {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCMinFC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to P90.
+        /// </summary>
+        public static string MWQMSiteSampleFCP90 {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCP90", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PercOver260.
+        /// </summary>
+        public static string MWQMSiteSampleFCPercOver260 {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCPercOver260", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PercOver43.
+        /// </summary>
+        public static string MWQMSiteSampleFCPercOver43 {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCPercOver43", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PH.
+        /// </summary>
+        public static string MWQMSiteSampleFCPH {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCPH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sal.
+        /// </summary>
+        public static string MWQMSiteSampleFCSal {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCSal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SampCount.
+        /// </summary>
+        public static string MWQMSiteSampleFCSampCount {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCSampCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SampleDate.
+        /// </summary>
+        public static string MWQMSiteSampleFCSampleDate {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCSampleDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Temp.
+        /// </summary>
+        public static string MWQMSiteSampleFCTemp {
+            get {
+                return ResourceManager.GetString("MWQMSiteSampleFCTemp", resourceCulture);
             }
         }
         
@@ -6172,6 +8287,240 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to NewContact.
+        /// </summary>
+        public static string NewContact {
+            get {
+                return ResourceManager.GetString("NewContact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContactTitle.
+        /// </summary>
+        public static string NewContactContactTitle {
+            get {
+                return ResourceManager.GetString("NewContactContactTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FirstName.
+        /// </summary>
+        public static string NewContactFirstName {
+            get {
+                return ResourceManager.GetString("NewContactFirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Initial.
+        /// </summary>
+        public static string NewContactInitial {
+            get {
+                return ResourceManager.GetString("NewContactInitial", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LastName.
+        /// </summary>
+        public static string NewContactLastName {
+            get {
+                return ResourceManager.GetString("NewContactLastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LoginEmail.
+        /// </summary>
+        public static string NewContactLoginEmail {
+            get {
+                return ResourceManager.GetString("NewContactLoginEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Node.
+        /// </summary>
+        public static string Node {
+            get {
+                return ResourceManager.GetString("Node", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Code.
+        /// </summary>
+        public static string NodeCode {
+            get {
+                return ResourceManager.GetString("NodeCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ConnectNodeList.
+        /// </summary>
+        public static string NodeConnectNodeList {
+            get {
+                return ResourceManager.GetString("NodeConnectNodeList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ElementList.
+        /// </summary>
+        public static string NodeElementList {
+            get {
+                return ResourceManager.GetString("NodeElementList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID.
+        /// </summary>
+        public static string NodeID {
+            get {
+                return ResourceManager.GetString("NodeID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NodeLayer.
+        /// </summary>
+        public static string NodeLayer {
+            get {
+                return ResourceManager.GetString("NodeLayer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Layer.
+        /// </summary>
+        public static string NodeLayerLayer {
+            get {
+                return ResourceManager.GetString("NodeLayerLayer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Node.
+        /// </summary>
+        public static string NodeLayerNode {
+            get {
+                return ResourceManager.GetString("NodeLayerNode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Z.
+        /// </summary>
+        public static string NodeLayerZ {
+            get {
+                return ResourceManager.GetString("NodeLayerZ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Value.
+        /// </summary>
+        public static string NodeValue {
+            get {
+                return ResourceManager.GetString("NodeValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to X.
+        /// </summary>
+        public static string NodeX {
+            get {
+                return ResourceManager.GetString("NodeX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Y.
+        /// </summary>
+        public static string NodeY {
+            get {
+                return ResourceManager.GetString("NodeY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Z.
+        /// </summary>
+        public static string NodeZ {
+            get {
+                return ResourceManager.GetString("NodeZ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OtherFilesToUpload.
+        /// </summary>
+        public static string OtherFilesToUpload {
+            get {
+                return ResourceManager.GetString("OtherFilesToUpload", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string OtherFilesToUploadError {
+            get {
+                return ResourceManager.GetString("OtherFilesToUploadError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MikeScenarioID.
+        /// </summary>
+        public static string OtherFilesToUploadMikeScenarioID {
+            get {
+                return ResourceManager.GetString("OtherFilesToUploadMikeScenarioID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVFileList.
+        /// </summary>
+        public static string OtherFilesToUploadTVFileList {
+            get {
+                return ResourceManager.GetString("OtherFilesToUploadTVFileList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PolSourceInactiveReasonEnumTextAndID.
+        /// </summary>
+        public static string PolSourceInactiveReasonEnumTextAndID {
+            get {
+                return ResourceManager.GetString("PolSourceInactiveReasonEnumTextAndID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID.
+        /// </summary>
+        public static string PolSourceInactiveReasonEnumTextAndIDID {
+            get {
+                return ResourceManager.GetString("PolSourceInactiveReasonEnumTextAndIDID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Text.
+        /// </summary>
+        public static string PolSourceInactiveReasonEnumTextAndIDText {
+            get {
+                return ResourceManager.GetString("PolSourceInactiveReasonEnumTextAndIDText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PolSourceObservation.
         /// </summary>
         public static string PolSourceObservation {
@@ -6343,6 +8692,60 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PolSourceObsInfoChild.
+        /// </summary>
+        public static string PolSourceObsInfoChild {
+            get {
+                return ResourceManager.GetString("PolSourceObsInfoChild", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PolSourceObsInfo.
+        /// </summary>
+        public static string PolSourceObsInfoChildPolSourceObsInfo {
+            get {
+                return ResourceManager.GetString("PolSourceObsInfoChildPolSourceObsInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PolSourceObsInfoChildStart.
+        /// </summary>
+        public static string PolSourceObsInfoChildPolSourceObsInfoChildStart {
+            get {
+                return ResourceManager.GetString("PolSourceObsInfoChildPolSourceObsInfoChildStart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PolSourceObsInfoEnumTextAndID.
+        /// </summary>
+        public static string PolSourceObsInfoEnumTextAndID {
+            get {
+                return ResourceManager.GetString("PolSourceObsInfoEnumTextAndID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID.
+        /// </summary>
+        public static string PolSourceObsInfoEnumTextAndIDID {
+            get {
+                return ResourceManager.GetString("PolSourceObsInfoEnumTextAndIDID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Text.
+        /// </summary>
+        public static string PolSourceObsInfoEnumTextAndIDText {
+            get {
+                return ResourceManager.GetString("PolSourceObsInfoEnumTextAndIDText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PolSourceSite.
         /// </summary>
         public static string PolSourceSite {
@@ -6456,6 +8859,42 @@ namespace CSSPModels.Resources {
         public static string PolSourceSiteTemp_Locator_CanDelete {
             get {
                 return ResourceManager.GetString("PolSourceSiteTemp_Locator_CanDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PolyPoint.
+        /// </summary>
+        public static string PolyPoint {
+            get {
+                return ResourceManager.GetString("PolyPoint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to XCoord.
+        /// </summary>
+        public static string PolyPointXCoord {
+            get {
+                return ResourceManager.GetString("PolyPointXCoord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to YCoord.
+        /// </summary>
+        public static string PolyPointYCoord {
+            get {
+                return ResourceManager.GetString("PolyPointYCoord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Z.
+        /// </summary>
+        public static string PolyPointZ {
+            get {
+                return ResourceManager.GetString("PolyPointZ", resourceCulture);
             }
         }
         
@@ -6604,6 +9043,78 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Register.
+        /// </summary>
+        public static string Register {
+            get {
+                return ResourceManager.GetString("Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ConfirmPassword.
+        /// </summary>
+        public static string RegisterConfirmPassword {
+            get {
+                return ResourceManager.GetString("RegisterConfirmPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FirstName.
+        /// </summary>
+        public static string RegisterFirstName {
+            get {
+                return ResourceManager.GetString("RegisterFirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Initial.
+        /// </summary>
+        public static string RegisterInitial {
+            get {
+                return ResourceManager.GetString("RegisterInitial", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LastName.
+        /// </summary>
+        public static string RegisterLastName {
+            get {
+                return ResourceManager.GetString("RegisterLastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LoginEmail.
+        /// </summary>
+        public static string RegisterLoginEmail {
+            get {
+                return ResourceManager.GetString("RegisterLoginEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        public static string RegisterPassword {
+            get {
+                return ResourceManager.GetString("RegisterPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WebName.
+        /// </summary>
+        public static string RegisterWebName {
+            get {
+                return ResourceManager.GetString("RegisterWebName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ResetPassword.
         /// </summary>
         public static string ResetPassword {
@@ -6685,6 +9196,51 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to RTBStringPos.
+        /// </summary>
+        public static string RTBStringPos {
+            get {
+                return ResourceManager.GetString("RTBStringPos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EndPos.
+        /// </summary>
+        public static string RTBStringPosEndPos {
+            get {
+                return ResourceManager.GetString("RTBStringPosEndPos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartPos.
+        /// </summary>
+        public static string RTBStringPosStartPos {
+            get {
+                return ResourceManager.GetString("RTBStringPosStartPos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TagText.
+        /// </summary>
+        public static string RTBStringPosTagText {
+            get {
+                return ResourceManager.GetString("RTBStringPosTagText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Text.
+        /// </summary>
+        public static string RTBStringPosText {
+            get {
+                return ResourceManager.GetString("RTBStringPosText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SamplingPlan.
         /// </summary>
         public static string SamplingPlan {
@@ -6699,6 +9255,51 @@ namespace CSSPModels.Resources {
         public static string SamplingPlanAccessCode {
             get {
                 return ResourceManager.GetString("SamplingPlanAccessCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SamplingPlanAndFilesLabSheetCount.
+        /// </summary>
+        public static string SamplingPlanAndFilesLabSheetCount {
+            get {
+                return ResourceManager.GetString("SamplingPlanAndFilesLabSheetCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LabSheetHistoryCount.
+        /// </summary>
+        public static string SamplingPlanAndFilesLabSheetCountLabSheetHistoryCount {
+            get {
+                return ResourceManager.GetString("SamplingPlanAndFilesLabSheetCountLabSheetHistoryCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LabSheetTransferredCount.
+        /// </summary>
+        public static string SamplingPlanAndFilesLabSheetCountLabSheetTransferredCount {
+            get {
+                return ResourceManager.GetString("SamplingPlanAndFilesLabSheetCountLabSheetTransferredCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SamplingPlan.
+        /// </summary>
+        public static string SamplingPlanAndFilesLabSheetCountSamplingPlan {
+            get {
+                return ResourceManager.GetString("SamplingPlanAndFilesLabSheetCountSamplingPlan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVFileSamplingPlanFileTXT.
+        /// </summary>
+        public static string SamplingPlanAndFilesLabSheetCountTVFileSamplingPlanFileTXT {
+            get {
+                return ResourceManager.GetString("SamplingPlanAndFilesLabSheetCountTVFileSamplingPlanFileTXT", resourceCulture);
             }
         }
         
@@ -7054,6 +9655,60 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        public static string Search {
+            get {
+                return ResourceManager.GetString("Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to id.
+        /// </summary>
+        public static string Searchid {
+            get {
+                return ResourceManager.GetString("Searchid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SearchTagAndTerms.
+        /// </summary>
+        public static string SearchTagAndTerms {
+            get {
+                return ResourceManager.GetString("SearchTagAndTerms", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SearchTag.
+        /// </summary>
+        public static string SearchTagAndTermsSearchTag {
+            get {
+                return ResourceManager.GetString("SearchTagAndTermsSearchTag", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SearchTermList.
+        /// </summary>
+        public static string SearchTagAndTermsSearchTermList {
+            get {
+                return ResourceManager.GetString("SearchTagAndTermsSearchTermList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to value.
+        /// </summary>
+        public static string Searchvalue {
+            get {
+                return ResourceManager.GetString("Searchvalue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Spill.
         /// </summary>
         public static string Spill {
@@ -7239,6 +9894,51 @@ namespace CSSPModels.Resources {
         public static string SpillStartDateTime_Local {
             get {
                 return ResourceManager.GetString("SpillStartDateTime_Local", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SubsectorMWQMSampleYear.
+        /// </summary>
+        public static string SubsectorMWQMSampleYear {
+            get {
+                return ResourceManager.GetString("SubsectorMWQMSampleYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EarliestDate.
+        /// </summary>
+        public static string SubsectorMWQMSampleYearEarliestDate {
+            get {
+                return ResourceManager.GetString("SubsectorMWQMSampleYearEarliestDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LatestDate.
+        /// </summary>
+        public static string SubsectorMWQMSampleYearLatestDate {
+            get {
+                return ResourceManager.GetString("SubsectorMWQMSampleYearLatestDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SubsectorTVItemID.
+        /// </summary>
+        public static string SubsectorMWQMSampleYearSubsectorTVItemID {
+            get {
+                return ResourceManager.GetString("SubsectorMWQMSampleYearSubsectorTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Year.
+        /// </summary>
+        public static string SubsectorMWQMSampleYearYear {
+            get {
+                return ResourceManager.GetString("SubsectorMWQMSampleYearYear", resourceCulture);
             }
         }
         
@@ -7837,6 +10537,33 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TVFullText.
+        /// </summary>
+        public static string TVFullText {
+            get {
+                return ResourceManager.GetString("TVFullText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FullText.
+        /// </summary>
+        public static string TVFullTextFullText {
+            get {
+                return ResourceManager.GetString("TVFullTextFullText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVPath.
+        /// </summary>
+        public static string TVFullTextTVPath {
+            get {
+                return ResourceManager.GetString("TVFullTextTVPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TVItem.
         /// </summary>
         public static string TVItem {
@@ -7959,6 +10686,60 @@ namespace CSSPModels.Resources {
         public static string TVItemInfrastructures {
             get {
                 return ResourceManager.GetString("TVItemInfrastructures", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemInfrastructureTypeTVItemLink.
+        /// </summary>
+        public static string TVItemInfrastructureTypeTVItemLink {
+            get {
+                return ResourceManager.GetString("TVItemInfrastructureTypeTVItemLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FlowTo.
+        /// </summary>
+        public static string TVItemInfrastructureTypeTVItemLinkFlowTo {
+            get {
+                return ResourceManager.GetString("TVItemInfrastructureTypeTVItemLinkFlowTo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InfrastructureType.
+        /// </summary>
+        public static string TVItemInfrastructureTypeTVItemLinkInfrastructureType {
+            get {
+                return ResourceManager.GetString("TVItemInfrastructureTypeTVItemLinkInfrastructureType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SeeOtherTVItemID.
+        /// </summary>
+        public static string TVItemInfrastructureTypeTVItemLinkSeeOtherTVItemID {
+            get {
+                return ResourceManager.GetString("TVItemInfrastructureTypeTVItemLinkSeeOtherTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItem.
+        /// </summary>
+        public static string TVItemInfrastructureTypeTVItemLinkTVItem {
+            get {
+                return ResourceManager.GetString("TVItemInfrastructureTypeTVItemLinkTVItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemLinkList.
+        /// </summary>
+        public static string TVItemInfrastructureTypeTVItemLinkTVItemLinkList {
+            get {
+                return ResourceManager.GetString("TVItemInfrastructureTypeTVItemLinkTVItemLinkList", resourceCulture);
             }
         }
         
@@ -8575,6 +11356,42 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TVItemSubsectorAndMWQMSite.
+        /// </summary>
+        public static string TVItemSubsectorAndMWQMSite {
+            get {
+                return ResourceManager.GetString("TVItemSubsectorAndMWQMSite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemMWQMSiteDuplicate.
+        /// </summary>
+        public static string TVItemSubsectorAndMWQMSiteTVItemMWQMSiteDuplicate {
+            get {
+                return ResourceManager.GetString("TVItemSubsectorAndMWQMSiteTVItemMWQMSiteDuplicate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemMWQMSiteList.
+        /// </summary>
+        public static string TVItemSubsectorAndMWQMSiteTVItemMWQMSiteList {
+            get {
+                return ResourceManager.GetString("TVItemSubsectorAndMWQMSiteTVItemMWQMSiteList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemSubsector.
+        /// </summary>
+        public static string TVItemSubsectorAndMWQMSiteTVItemSubsector {
+            get {
+                return ResourceManager.GetString("TVItemSubsectorAndMWQMSiteTVItemSubsector", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Tels.
         /// </summary>
         public static string TVItemTels {
@@ -8598,6 +11415,69 @@ namespace CSSPModels.Resources {
         public static string TVItemTideSites {
             get {
                 return ResourceManager.GetString("TVItemTideSites", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemTVAuth.
+        /// </summary>
+        public static string TVItemTVAuth {
+            get {
+                return ResourceManager.GetString("TVItemTVAuth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string TVItemTVAuthError {
+            get {
+                return ResourceManager.GetString("TVItemTVAuthError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVAuth.
+        /// </summary>
+        public static string TVItemTVAuthTVAuth {
+            get {
+                return ResourceManager.GetString("TVItemTVAuthTVAuth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemID1.
+        /// </summary>
+        public static string TVItemTVAuthTVItemID1 {
+            get {
+                return ResourceManager.GetString("TVItemTVAuthTVItemID1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemUserAuthID.
+        /// </summary>
+        public static string TVItemTVAuthTVItemUserAuthID {
+            get {
+                return ResourceManager.GetString("TVItemTVAuthTVItemUserAuthID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVText.
+        /// </summary>
+        public static string TVItemTVAuthTVText {
+            get {
+                return ResourceManager.GetString("TVItemTVAuthTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVTypeStr.
+        /// </summary>
+        public static string TVItemTVAuthTVTypeStr {
+            get {
+                return ResourceManager.GetString("TVItemTVAuthTVTypeStr", resourceCulture);
             }
         }
         
@@ -8845,6 +11725,132 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TVLocation.
+        /// </summary>
+        public static string TVLocation {
+            get {
+                return ResourceManager.GetString("TVLocation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string TVLocationError {
+            get {
+                return ResourceManager.GetString("TVLocationError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MapObjList.
+        /// </summary>
+        public static string TVLocationMapObjList {
+            get {
+                return ResourceManager.GetString("TVLocationMapObjList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SubTVType.
+        /// </summary>
+        public static string TVLocationSubTVType {
+            get {
+                return ResourceManager.GetString("TVLocationSubTVType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemID.
+        /// </summary>
+        public static string TVLocationTVItemID {
+            get {
+                return ResourceManager.GetString("TVLocationTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVText.
+        /// </summary>
+        public static string TVLocationTVText {
+            get {
+                return ResourceManager.GetString("TVLocationTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVType.
+        /// </summary>
+        public static string TVLocationTVType {
+            get {
+                return ResourceManager.GetString("TVLocationTVType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVTextLanguage.
+        /// </summary>
+        public static string TVTextLanguage {
+            get {
+                return ResourceManager.GetString("TVTextLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        public static string TVTextLanguageLanguage {
+            get {
+                return ResourceManager.GetString("TVTextLanguageLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVText.
+        /// </summary>
+        public static string TVTextLanguageTVText {
+            get {
+                return ResourceManager.GetString("TVTextLanguageTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVTypeNamesAndPath.
+        /// </summary>
+        public static string TVTypeNamesAndPath {
+            get {
+                return ResourceManager.GetString("TVTypeNamesAndPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Index.
+        /// </summary>
+        public static string TVTypeNamesAndPathIndex {
+            get {
+                return ResourceManager.GetString("TVTypeNamesAndPathIndex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVPath.
+        /// </summary>
+        public static string TVTypeNamesAndPathTVPath {
+            get {
+                return ResourceManager.GetString("TVTypeNamesAndPathTVPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVTypeName.
+        /// </summary>
+        public static string TVTypeNamesAndPathTVTypeName {
+            get {
+                return ResourceManager.GetString("TVTypeNamesAndPathTVTypeName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TVTypeUserAuthorization.
         /// </summary>
         public static string TVTypeUserAuthorization {
@@ -8913,6 +11919,33 @@ namespace CSSPModels.Resources {
         public static string TVTypeUserAuthorizationTVTypeUserAuthorizationID {
             get {
                 return ResourceManager.GetString("TVTypeUserAuthorizationTVTypeUserAuthorizationID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to URLNumberOfSamples.
+        /// </summary>
+        public static string URLNumberOfSamples {
+            get {
+                return ResourceManager.GetString("URLNumberOfSamples", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NumberOfSamples.
+        /// </summary>
+        public static string URLNumberOfSamplesNumberOfSamples {
+            get {
+                return ResourceManager.GetString("URLNumberOfSamplesNumberOfSamples", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to url.
+        /// </summary>
+        public static string URLNumberOfSamplesurl {
+            get {
+                return ResourceManager.GetString("URLNumberOfSamplesurl", resourceCulture);
             }
         }
         
@@ -9088,6 +12121,33 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vector.
+        /// </summary>
+        public static string Vector {
+            get {
+                return ResourceManager.GetString("Vector", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EndNode.
+        /// </summary>
+        public static string VectorEndNode {
+            get {
+                return ResourceManager.GetString("VectorEndNode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartNode.
+        /// </summary>
+        public static string VectorStartNode {
+            get {
+                return ResourceManager.GetString("VectorStartNode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to VPAmbient.
         /// </summary>
         public static string VPAmbient {
@@ -9241,6 +12301,267 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to VPFull.
+        /// </summary>
+        public static string VPFull {
+            get {
+                return ResourceManager.GetString("VPFull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AcuteMixZone_m.
+        /// </summary>
+        public static string VPFullAcuteMixZone_m {
+            get {
+                return ResourceManager.GetString("VPFullAcuteMixZone_m", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AmbientList.
+        /// </summary>
+        public static string VPFullAmbientList {
+            get {
+                return ResourceManager.GetString("VPFullAmbientList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ChronicMixZone_m.
+        /// </summary>
+        public static string VPFullChronicMixZone_m {
+            get {
+                return ResourceManager.GetString("VPFullChronicMixZone_m", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EffluentConcentration_MPN_100ml.
+        /// </summary>
+        public static string VPFullEffluentConcentration_MPN_100ml {
+            get {
+                return ResourceManager.GetString("VPFullEffluentConcentration_MPN_100ml", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EffluentFlow_m3_s.
+        /// </summary>
+        public static string VPFullEffluentFlow_m3_s {
+            get {
+                return ResourceManager.GetString("VPFullEffluentFlow_m3_s", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EffluentSalinity_PSU.
+        /// </summary>
+        public static string VPFullEffluentSalinity_PSU {
+            get {
+                return ResourceManager.GetString("VPFullEffluentSalinity_PSU", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EffluentTemperature_C.
+        /// </summary>
+        public static string VPFullEffluentTemperature_C {
+            get {
+                return ResourceManager.GetString("VPFullEffluentTemperature_C", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EffluentVelocity_m_s.
+        /// </summary>
+        public static string VPFullEffluentVelocity_m_s {
+            get {
+                return ResourceManager.GetString("VPFullEffluentVelocity_m_s", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FroudeNumber.
+        /// </summary>
+        public static string VPFullFroudeNumber {
+            get {
+                return ResourceManager.GetString("VPFullFroudeNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HorizontalAngle_deg.
+        /// </summary>
+        public static string VPFullHorizontalAngle_deg {
+            get {
+                return ResourceManager.GetString("VPFullHorizontalAngle_deg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InfrastructureTVItem.
+        /// </summary>
+        public static string VPFullInfrastructureTVItem {
+            get {
+                return ResourceManager.GetString("VPFullInfrastructureTVItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InfrastructureTVItemID.
+        /// </summary>
+        public static string VPFullInfrastructureTVItemID {
+            get {
+                return ResourceManager.GetString("VPFullInfrastructureTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        /// </summary>
+        public static string VPFullLastUpdateContactTVItemID {
+            get {
+                return ResourceManager.GetString("VPFullLastUpdateContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        /// </summary>
+        public static string VPFullLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("VPFullLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NumberOfPorts.
+        /// </summary>
+        public static string VPFullNumberOfPorts {
+            get {
+                return ResourceManager.GetString("VPFullNumberOfPorts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PortDepth_m.
+        /// </summary>
+        public static string VPFullPortDepth_m {
+            get {
+                return ResourceManager.GetString("VPFullPortDepth_m", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PortDiameter_m.
+        /// </summary>
+        public static string VPFullPortDiameter_m {
+            get {
+                return ResourceManager.GetString("VPFullPortDiameter_m", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PortElevation_m.
+        /// </summary>
+        public static string VPFullPortElevation_m {
+            get {
+                return ResourceManager.GetString("VPFullPortElevation_m", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PortSpacing_m.
+        /// </summary>
+        public static string VPFullPortSpacing_m {
+            get {
+                return ResourceManager.GetString("VPFullPortSpacing_m", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RawResults.
+        /// </summary>
+        public static string VPFullRawResults {
+            get {
+                return ResourceManager.GetString("VPFullRawResults", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ResultList.
+        /// </summary>
+        public static string VPFullResultList {
+            get {
+                return ResourceManager.GetString("VPFullResultList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UseAsBestEstimate.
+        /// </summary>
+        public static string VPFullUseAsBestEstimate {
+            get {
+                return ResourceManager.GetString("VPFullUseAsBestEstimate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VerticalAngle_deg.
+        /// </summary>
+        public static string VPFullVerticalAngle_deg {
+            get {
+                return ResourceManager.GetString("VPFullVerticalAngle_deg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VPAmbients.
+        /// </summary>
+        public static string VPFullVPAmbients {
+            get {
+                return ResourceManager.GetString("VPFullVPAmbients", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VPResults.
+        /// </summary>
+        public static string VPFullVPResults {
+            get {
+                return ResourceManager.GetString("VPFullVPResults", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VPScenarioID.
+        /// </summary>
+        public static string VPFullVPScenarioID {
+            get {
+                return ResourceManager.GetString("VPFullVPScenarioID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VPScenarioLanguages.
+        /// </summary>
+        public static string VPFullVPScenarioLanguages {
+            get {
+                return ResourceManager.GetString("VPFullVPScenarioLanguages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VPScenarioStatus.
+        /// </summary>
+        public static string VPFullVPScenarioStatus {
+            get {
+                return ResourceManager.GetString("VPFullVPScenarioStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to VPResult.
         /// </summary>
         public static string VPResult {
@@ -9349,6 +12670,69 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to VPResValues.
+        /// </summary>
+        public static string VPResValues {
+            get {
+                return ResourceManager.GetString("VPResValues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conc.
+        /// </summary>
+        public static string VPResValuesConc {
+            get {
+                return ResourceManager.GetString("VPResValuesConc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Decay.
+        /// </summary>
+        public static string VPResValuesDecay {
+            get {
+                return ResourceManager.GetString("VPResValuesDecay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dilu.
+        /// </summary>
+        public static string VPResValuesDilu {
+            get {
+                return ResourceManager.GetString("VPResValuesDilu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Distance.
+        /// </summary>
+        public static string VPResValuesDistance {
+            get {
+                return ResourceManager.GetString("VPResValuesDistance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FarfieldWidth.
+        /// </summary>
+        public static string VPResValuesFarfieldWidth {
+            get {
+                return ResourceManager.GetString("VPResValuesFarfieldWidth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TheTime.
+        /// </summary>
+        public static string VPResValuesTheTime {
+            get {
+                return ResourceManager.GetString("VPResValuesTheTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to VPScenario.
         /// </summary>
         public static string VPScenario {
@@ -9435,6 +12819,33 @@ namespace CSSPModels.Resources {
         public static string VPScenarioHorizontalAngle_deg {
             get {
                 return ResourceManager.GetString("VPScenarioHorizontalAngle_deg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VPScenarioIDAndRawResults.
+        /// </summary>
+        public static string VPScenarioIDAndRawResults {
+            get {
+                return ResourceManager.GetString("VPScenarioIDAndRawResults", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RawResults.
+        /// </summary>
+        public static string VPScenarioIDAndRawResultsRawResults {
+            get {
+                return ResourceManager.GetString("VPScenarioIDAndRawResultsRawResults", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VPScenarioID.
+        /// </summary>
+        public static string VPScenarioIDAndRawResultsVPScenarioID {
+            get {
+                return ResourceManager.GetString("VPScenarioIDAndRawResultsVPScenarioID", resourceCulture);
             }
         }
         

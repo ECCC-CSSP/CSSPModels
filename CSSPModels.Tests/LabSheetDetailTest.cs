@@ -25,7 +25,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public LabSheetDetailTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape); // true == InMemory
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
             labSheetDetail = new LabSheetDetail();
             foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())
             {
@@ -38,7 +38,7 @@ namespace CSSPModels.Tests
         #endregion Constructors
 
         #region Tests
-        // most of the test will generated and located under LabSheetDetailTestGenerated.cs
+        // most of the tests are located under LabSheetDetailTestGenerated.cs
         #endregion Tests
     }
 }

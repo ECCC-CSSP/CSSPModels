@@ -25,7 +25,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public SamplingPlanSubsectorTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape); // true == InMemory
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
             samplingPlanSubsector = new SamplingPlanSubsector();
             foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())
             {
@@ -38,7 +38,7 @@ namespace CSSPModels.Tests
         #endregion Constructors
 
         #region Tests
-        // most of the test will generated and located under SamplingPlanSubsectorTestGenerated.cs
+        // most of the tests are located under SamplingPlanSubsectorTestGenerated.cs
         #endregion Tests
     }
 }

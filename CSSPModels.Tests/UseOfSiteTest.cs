@@ -25,7 +25,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public UseOfSiteTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape); // true == InMemory
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
             useOfSite = new UseOfSite();
             foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())
             {
@@ -38,7 +38,7 @@ namespace CSSPModels.Tests
         #endregion Constructors
 
         #region Tests
-        // most of the test will generated and located under UseOfSiteTestGenerated.cs
+        // most of the tests are located under UseOfSiteTestGenerated.cs
         #endregion Tests
     }
 }

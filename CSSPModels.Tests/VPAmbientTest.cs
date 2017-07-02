@@ -25,7 +25,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public VPAmbientTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape); // true == InMemory
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
             vPAmbient = new VPAmbient();
             foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())
             {
@@ -38,7 +38,7 @@ namespace CSSPModels.Tests
         #endregion Constructors
 
         #region Tests
-        // most of the test will generated and located under VPAmbientTestGenerated.cs
+        // most of the tests are located under VPAmbientTestGenerated.cs
         #endregion Tests
     }
 }

@@ -20,23 +20,19 @@ namespace CSSPModels
         #region Variables
         private DatabaseTypeEnum DatabaseType;
         #endregion Variables
-        
+
         #region Properties
         public virtual DbSet<Address> Addresses { get; set; }
         public virtual DbSet<AppErrLog> AppErrLogs { get; set; }
         public virtual DbSet<AppTask> AppTasks { get; set; }
         public virtual DbSet<AppTaskLanguage> AppTaskLanguages { get; set; }
-        //public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
-        //public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
-        //public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
-        //public virtual DbSet<AspNetUserRole> AspNetUserRoles { get; set; }
-        //public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
         public virtual DbSet<BoxModel> BoxModels { get; set; }
         public virtual DbSet<BoxModelLanguage> BoxModelLanguages { get; set; }
         public virtual DbSet<BoxModelResult> BoxModelResults { get; set; }
         public virtual DbSet<ClimateDataValue> ClimateDataValues { get; set; }
         public virtual DbSet<ClimateSite> ClimateSites { get; set; }
         public virtual DbSet<Contact> Contacts { get; set; }
+        public virtual DbSet<ContactLogin> ContactLogins { get; set; }
         public virtual DbSet<ContactPreference> ContactPreferences { get; set; }
         public virtual DbSet<ContactShortcut> ContactShortcuts { get; set; }
         public virtual DbSet<DocTemplate> DocTemplates { get; set; }
@@ -141,74 +137,70 @@ namespace CSSPModels
         {
             OnModelCreating_Address(modelBuilder);
             OnModelCreating_AppErrLog(modelBuilder);
-            OnModelCreating_AppTaskLanguage(modelBuilder);
             OnModelCreating_AppTask(modelBuilder);
-            //OnModelCreating_AspNetRole(modelBuilder);
-            //OnModelCreating_AspNetUserClaim(modelBuilder);
-            //OnModelCreating_AspNetUserLogin(modelBuilder);
-            //OnModelCreating_AspNetUserRole(modelBuilder);
-            //OnModelCreating_AspNetUser(modelBuilder);
+            OnModelCreating_AppTaskLanguage(modelBuilder);
+            OnModelCreating_BoxModel(modelBuilder);
             OnModelCreating_BoxModelLanguage(modelBuilder);
             OnModelCreating_BoxModelResult(modelBuilder);
-            OnModelCreating_BoxModel(modelBuilder);
             OnModelCreating_ClimateDataValue(modelBuilder);
             OnModelCreating_ClimateSite(modelBuilder);
+            OnModelCreating_Contact(modelBuilder);
+            OnModelCreating_ContactLogin(modelBuilder);
             OnModelCreating_ContactPreference(modelBuilder);
             OnModelCreating_ContactShortcut(modelBuilder);
-            OnModelCreating_Contact(modelBuilder);
             OnModelCreating_DocTemplate(modelBuilder);
             OnModelCreating_Email(modelBuilder);
             OnModelCreating_HydrometricDataValue(modelBuilder);
             OnModelCreating_HydrometricSite(modelBuilder);
-            OnModelCreating_InfrastructureLanguage(modelBuilder);
             OnModelCreating_Infrastructure(modelBuilder);
+            OnModelCreating_InfrastructureLanguage(modelBuilder);
+            OnModelCreating_LabSheet(modelBuilder);
             OnModelCreating_LabSheetDetail(modelBuilder);
             OnModelCreating_LabSheetTubeMPNDetail(modelBuilder);
-            OnModelCreating_LabSheet(modelBuilder);
             OnModelCreating_Log(modelBuilder);
-            OnModelCreating_MapInfoPoint(modelBuilder);
             OnModelCreating_MapInfo(modelBuilder);
+            OnModelCreating_MapInfoPoint(modelBuilder);
             OnModelCreating_MikeBoundaryCondition(modelBuilder);
             OnModelCreating_MikeScenario(modelBuilder);
-            OnModelCreating_MikeSourceStartEnd(modelBuilder);
             OnModelCreating_MikeSource(modelBuilder);
+            OnModelCreating_MikeSourceStartEnd(modelBuilder);
             OnModelCreating_MWQMLookupMPN(modelBuilder);
-            OnModelCreating_MWQMRunLanguage(modelBuilder);
             OnModelCreating_MWQMRun(modelBuilder);
-            OnModelCreating_MWQMSampleLanguage(modelBuilder);
+            OnModelCreating_MWQMRunLanguage(modelBuilder);
             OnModelCreating_MWQMSample(modelBuilder);
-            OnModelCreating_MWQMSiteStartEndDate(modelBuilder);
+            OnModelCreating_MWQMSampleLanguage(modelBuilder);
             OnModelCreating_MWQMSite(modelBuilder);
-            OnModelCreating_MWQMSubsectorLanguage(modelBuilder);
+            OnModelCreating_MWQMSiteStartEndDate(modelBuilder);
             OnModelCreating_MWQMSubsector(modelBuilder);
-            OnModelCreating_PolSourceObservationIssue(modelBuilder);
+            OnModelCreating_MWQMSubsectorLanguage(modelBuilder);
             OnModelCreating_PolSourceObservation(modelBuilder);
+            OnModelCreating_PolSourceObservationIssue(modelBuilder);
             OnModelCreating_PolSourceSite(modelBuilder);
-            OnModelCreating_RatingCurveValue(modelBuilder);
             OnModelCreating_RatingCurve(modelBuilder);
+            OnModelCreating_RatingCurveValue(modelBuilder);
             OnModelCreating_ResetPassword(modelBuilder);
-            OnModelCreating_SamplingPlanSubsectorSite(modelBuilder);
-            OnModelCreating_SamplingPlanSubsector(modelBuilder);
             OnModelCreating_SamplingPlan(modelBuilder);
-            OnModelCreating_SpillLanguage(modelBuilder);
+            OnModelCreating_SamplingPlanSubsector(modelBuilder);
+            OnModelCreating_SamplingPlanSubsectorSite(modelBuilder);
             OnModelCreating_Spill(modelBuilder);
+            OnModelCreating_SpillLanguage(modelBuilder);
             OnModelCreating_Tel(modelBuilder);
             OnModelCreating_TideDataValue(modelBuilder);
             OnModelCreating_TideLocation(modelBuilder);
             OnModelCreating_TideSite(modelBuilder);
-            OnModelCreating_TVFileLanguage(modelBuilder);
             OnModelCreating_TVFile(modelBuilder);
+            OnModelCreating_TVFileLanguage(modelBuilder);
+            OnModelCreating_TVItem(modelBuilder);
             OnModelCreating_TVItemLanguage(modelBuilder);
             OnModelCreating_TVItemLink(modelBuilder);
             OnModelCreating_TVItemStat(modelBuilder);
             OnModelCreating_TVItemUserAuthorization(modelBuilder);
-            OnModelCreating_TVItem(modelBuilder);
             OnModelCreating_TVTypeUserAuthorization(modelBuilder);
             OnModelCreating_UseOfSite(modelBuilder);
             OnModelCreating_VPAmbient(modelBuilder);
             OnModelCreating_VPResult(modelBuilder);
-            OnModelCreating_VPScenarioLanguage(modelBuilder);
             OnModelCreating_VPScenario(modelBuilder);
+            OnModelCreating_VPScenarioLanguage(modelBuilder);
         }
         #endregion Overrides
 
@@ -560,161 +552,6 @@ namespace CSSPModels
                     .HasConstraintName("FK_AppTasks_TVItems2");
             });
         }
-        //private void OnModelCreating_AspNetRole(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<AspNetRole>(entity =>
-        //    {
-        //        entity.HasKey(e => new { e.Id })
-        //            .HasName("PK_AspNetRoles");
-
-        //        entity.ToTable("AspNetRoles");
-
-        //        entity.Property(e => e.Id)
-        //            .HasMaxLength(128);
-
-        //        entity.HasIndex(e => e.Name)
-        //            .HasName("RoleNameIndex")
-        //            .IsUnique();
-
-        //        entity.Property(e => e.Name)
-        //            .IsRequired()
-        //            .HasMaxLength(256);
-        //    });
-        //}
-        //private void OnModelCreating_AspNetUserClaim(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<AspNetUserClaim>(entity =>
-        //    {
-        //        entity.HasKey(e => new { e.Id })
-        //            .HasName("PK_AspNetUserClaims");
-
-        //        entity.ToTable("AspNetUserClaims");
-
-        //        entity.HasIndex(e => e.UserId)
-        //            .HasName("IX_UserId");
-
-        //        entity.Property(e => e.UserId)
-        //            .IsRequired()
-        //            .HasMaxLength(128);
-
-        //        entity.Property(e => e.ClaimType);
-
-        //        entity.Property(e => e.ClaimValue);
-
-        //        entity.HasOne(d => d.User)
-        //            .WithMany(p => p.AspNetUserClaims)
-        //            .HasForeignKey(d => d.UserId)
-        //            .HasConstraintName("FK_dbo.AspNetUserClaims_dbo.AspNetUsers_UserId");
-        //    });
-        //}
-        //private void OnModelCreating_AspNetUserLogin(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<AspNetUserLogin>(entity =>
-        //    {
-        //        entity.HasKey(e => new { e.LoginProvider, e.ProviderKey, e.UserId })
-        //            .HasName("PK_dbo.AspNetUserLogins");
-
-        //        entity.ToTable("AspNetUserLogin");
-
-        //        entity.Property(e => e.LoginProvider)
-        //            .HasMaxLength(128);
-
-        //        entity.Property(e => e.ProviderKey)
-        //            .HasMaxLength(128);
-
-        //        entity.HasIndex(e => e.UserId)
-        //            .HasName("IX_UserId");
-
-        //        entity.Property(e => e.UserId)
-        //            .HasMaxLength(128);
-
-        //        entity.HasOne(d => d.User)
-        //            .WithMany(p => p.AspNetUserLogins)
-        //            .HasForeignKey(d => d.UserId)
-        //            .HasConstraintName("FK_dbo.AspNetUserLogins_dbo.AspNetUsers_UserId");
-        //    });
-        //}
-        //private void OnModelCreating_AspNetUserRole(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<AspNetUserRole>(entity =>
-        //    {
-        //        entity.HasKey(e => new { e.UserId, e.RoleId })
-        //            .HasName("PK_dbo.AspNetUserRoles");
-
-        //        entity.ToTable("AspNetUserRoles");
-
-        //        entity.HasIndex(e => e.UserId)
-        //            .HasName("IX_UserId");
-
-        //        entity.Property(e => e.UserId)
-        //            .HasMaxLength(128);
-
-        //        entity.HasIndex(e => e.RoleId)
-        //            .HasName("IX_RoleId");
-
-        //        entity.Property(e => e.RoleId)
-        //            .HasMaxLength(128);
-
-        //        entity.HasOne(d => d.Role)
-        //            .WithMany(p => p.AspNetUserRoles)
-        //            .HasForeignKey(d => d.RoleId)
-        //            .HasConstraintName("FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId");
-
-        //        entity.HasOne(d => d.User)
-        //            .WithMany(p => p.AspNetUserRoles)
-        //            .HasForeignKey(d => d.UserId)
-        //            .HasConstraintName("FK_dbo.AspNetUserRoles_dbo.AspNetUsers_UserId");
-        //    });
-        //}
-        //private void OnModelCreating_AspNetUser(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<AspNetUser>(entity =>
-        //    {
-        //        entity.HasKey(e => e.Id)
-        //            .HasName("PK_AspNetUserId");
-
-        //        entity.ToTable("AspNetUsers");
-
-        //        entity.Property(e => e.Id).HasMaxLength(128);
-
-        //        entity.Property(e => e.Email)
-        //            .HasMaxLength(256);
-
-        //        entity.Property(e => e.EmailConfirmed)
-        //            .IsRequired();
-
-        //        entity.Property(e => e.PasswordHash);
-
-        //        entity.Property(e => e.SecurityStamp);
-
-        //        entity.Property(e => e.PhoneNumber);
-
-        //        entity.Property(e => e.PhoneNumberConfirmed)
-        //            .IsRequired();
-
-        //        entity.Property(e => e.TwoFactorEnabled)
-        //            .IsRequired();
-
-        //        entity.Property(e => e.LockoutEndDateUtc)
-        //            .HasColumnType("datetime");
-
-        //        entity.Property(e => e.LockoutEnabled)
-        //            .IsRequired();
-
-        //        entity.Property(e => e.AccessFailedCount)
-        //            .IsRequired()
-        //            .HasAnnotation("Min", 0);
-
-        //        entity.HasIndex(e => e.UserName)
-        //            .HasName("UserNameIndex")
-        //            .IsUnique();
-
-        //        entity.Property(e => e.UserName)
-        //            .IsRequired()
-        //            .HasMaxLength(256);
-
-        //    });
-        //}
         private void OnModelCreating_BoxModelLanguage(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<BoxModelLanguage>(entity =>
@@ -1341,60 +1178,6 @@ namespace CSSPModels
                     .HasConstraintName("FK_ClimateSites_TVItems");
             });
         }
-        private void OnModelCreating_ContactPreference(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<ContactPreference>(entity =>
-            {
-                entity.HasKey(e => e.ContactPreferenceID)
-                    .HasName("PK_ContactPreferences");
-
-                entity.ToTable("ContactPreferences");
-
-                entity.HasIndex(e => e.ContactID)
-                    .HasName("IX_ContactID");
-
-                entity.Property(e => e.ContactID)
-                    .IsRequired()
-                    .HasAnnotation("Min", 1)
-                    .HasAnnotation("ObjectExist", "Contact");
-
-                entity.HasIndex(e => e.TVType)
-                    .HasName("IX_TVType");
-
-                entity.Property(e => e.TVType)
-                    .IsRequired()
-                    .HasAnnotation("Type", typeof(TVTypeEnum));
-
-                entity.HasIndex(e => e.MarkerSize)
-                    .HasName("IX_MarkerSize");
-
-                entity.Property(e => e.MarkerSize)
-                    .IsRequired()
-                    .HasAnnotation("Min", 1)
-                    .HasAnnotation("Max", 1000);
-
-                entity.HasIndex(e => e.LastUpdateDate_UTC)
-                    .HasName("IX_LastUpdateDate_UTC");
-
-                entity.Property(e => e.LastUpdateDate_UTC)
-                    .IsRequired()
-                    .HasColumnType("datetime")
-                    .HasAnnotation("DateAfterYear", 1980);
-
-                entity.HasIndex(e => e.LastUpdateContactTVItemID)
-                    .HasName("IX_LastUpdateContactTVItemID");
-
-                entity.Property(e => e.LastUpdateContactTVItemID)
-                    .IsRequired()
-                    .HasAnnotation("Min", 1);
-
-                entity.HasOne(d => d.Contact)
-                    .WithMany(p => p.ContactPreferences)
-                    .HasForeignKey(d => d.ContactID)
-                    .OnDelete(DeleteBehavior.Restrict)
-                    .HasConstraintName("FK_ContactPreferences_Contacts");
-            });
-        }
         private void OnModelCreating_Contact(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Contact>(entity =>
@@ -1418,16 +1201,6 @@ namespace CSSPModels
                 entity.Property(e => e.LoginEmail)
                     .IsRequired()
                     .HasMaxLength(255);
-
-                entity.Property(e => e.PasswordHash);
-
-                entity.Property(e => e.PasswordSalt);
-
-                entity.Property(e => e.Token)
-                    .HasMaxLength(255);
-
-                entity.Property(e => e.RandomToken)
-                    .HasMaxLength(50);
 
                 entity.HasIndex(e => e.FirstName)
                     .HasName("IX_FirstName");
@@ -1503,6 +1276,117 @@ namespace CSSPModels
                     .HasForeignKey(d => d.ContactTVItemID)
                     .OnDelete(DeleteBehavior.Restrict)
                     .HasConstraintName("FK_Contacts_TVItems");
+            });
+
+            modelBuilder.Entity<Contact>().Ignore(c => c.ParentTVItemID);
+
+        }
+        private void OnModelCreating_ContactLogin(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ContactLogin>(entity =>
+            {
+                entity.HasKey(e => e.ContactLoginID)
+                    .HasName("PK_ContactLogins");
+
+                entity.ToTable("ContactLogins");
+
+                entity.HasIndex(e => e.ContactID)
+                    .HasName("IX_ContactID");
+
+                entity.Property(e => e.ContactID)
+                    .IsRequired()
+                    .HasAnnotation("Min", 1)
+                    .HasAnnotation("ObjectExist", "TVItem");
+
+                entity.HasIndex(e => e.LoginEmail)
+                    .HasName("IX_LoginEmail");
+
+                entity.Property(e => e.LoginEmail)
+                    .IsRequired()
+                    .HasMaxLength(200);
+
+                entity.Property(e => e.PasswordHash)
+                    .IsRequired()
+                    .HasMaxLength(200);
+
+                entity.Property(e => e.PasswordSalt)
+                    .IsRequired()
+                    .HasMaxLength(200);
+
+                entity.HasIndex(e => e.LastUpdateDate_UTC)
+                    .HasName("IX_LastUpdateDate_UTC");
+
+                entity.Property(e => e.LastUpdateDate_UTC)
+                    .IsRequired()
+                    .HasColumnType("datetime")
+                    .HasAnnotation("DateAfterYear", 1980);
+
+                entity.HasIndex(e => e.LastUpdateContactTVItemID)
+                    .HasName("IX_LastUpdateContactTVItemID");
+
+                entity.Property(e => e.LastUpdateContactTVItemID)
+                    .IsRequired()
+                    .HasAnnotation("Min", 1)
+                    .HasAnnotation("ObjectExist", "TVItem");
+
+                entity.HasOne(d => d.Contact)
+                  .WithMany(p => p.ContactLogins)
+                  .HasForeignKey(d => d.ContactID)
+                  .HasConstraintName("FK_ContactShortcuts_Contacts");
+            });
+        }
+        private void OnModelCreating_ContactPreference(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ContactPreference>(entity =>
+            {
+                entity.HasKey(e => e.ContactPreferenceID)
+                    .HasName("PK_ContactPreferences");
+
+                entity.ToTable("ContactPreferences");
+
+                entity.HasIndex(e => e.ContactID)
+                    .HasName("IX_ContactID");
+
+                entity.Property(e => e.ContactID)
+                    .IsRequired()
+                    .HasAnnotation("Min", 1)
+                    .HasAnnotation("ObjectExist", "Contact");
+
+                entity.HasIndex(e => e.TVType)
+                    .HasName("IX_TVType");
+
+                entity.Property(e => e.TVType)
+                    .IsRequired()
+                    .HasAnnotation("Type", typeof(TVTypeEnum));
+
+                entity.HasIndex(e => e.MarkerSize)
+                    .HasName("IX_MarkerSize");
+
+                entity.Property(e => e.MarkerSize)
+                    .IsRequired()
+                    .HasAnnotation("Min", 1)
+                    .HasAnnotation("Max", 1000);
+
+                entity.HasIndex(e => e.LastUpdateDate_UTC)
+                    .HasName("IX_LastUpdateDate_UTC");
+
+                entity.Property(e => e.LastUpdateDate_UTC)
+                    .IsRequired()
+                    .HasColumnType("datetime")
+                    .HasAnnotation("DateAfterYear", 1980);
+
+                entity.HasIndex(e => e.LastUpdateContactTVItemID)
+                    .HasName("IX_LastUpdateContactTVItemID");
+
+                entity.Property(e => e.LastUpdateContactTVItemID)
+                    .IsRequired()
+                    .HasAnnotation("Min", 1);
+
+                entity.HasOne(d => d.Contact)
+                    .WithMany(p => p.ContactPreferences)
+                    .HasForeignKey(d => d.ContactID)
+                    .OnDelete(DeleteBehavior.Restrict)
+                    .HasConstraintName("FK_ContactPreferences_Contacts");
             });
         }
         private void OnModelCreating_ContactShortcut(ModelBuilder modelBuilder)
