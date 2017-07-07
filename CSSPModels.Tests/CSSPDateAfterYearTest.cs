@@ -10,23 +10,23 @@ using CSSPEnums;
 namespace CSSPModels.Tests
 {
     [TestClass]
-    public partial class TVItemStatTest
+    public partial class CSSPDateAfterYearTest
     {
         #region Variables
         #endregion Variables
 
         #region Properties
         private CSSPWebToolsDBContext db { get; set; }
-        private TVItemStat tVItemStat { get; set; }
+        private CSSPDateAfterYear cSSPDateAfterYear { get; set; }
         private IEntityType entityType { get; set; }
-        private string EntityName = "CSSPModels.TVItemStat";
+        private string EntityName = "CSSPModels.CSSPDateAfterYear";
         #endregion Properties
 
         #region Constructors
-        public TVItemStatTest()
+        public CSSPDateAfterYearTest()
         {
             db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
-            tVItemStat = new TVItemStat();
+            cSSPDateAfterYear = new CSSPDateAfterYear();
             foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())
             {
                 if (entityTypeTemp.Name == EntityName)
@@ -39,7 +39,7 @@ namespace CSSPModels.Tests
         #endregion Constructors
 
         #region Tests
-        // most of the tests are located under TVItemStatTestGenerated.cs
+        // most of the tests are located under CSSPDateAfterYearTestGenerated.cs
         #endregion Tests
     }
 }

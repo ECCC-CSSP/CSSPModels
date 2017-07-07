@@ -92,6 +92,7 @@ namespace CSSPModelsGenerateCodeHelper
                     sb.AppendLine(@"                if (entityTypeTemp.Name == EntityName)");
                     sb.AppendLine(@"                {");
                     sb.AppendLine(@"                    entityType = entityTypeTemp;");
+                    sb.AppendLine(@"                    break;");
                     sb.AppendLine(@"                }");
                     sb.AppendLine(@"            }");
                 }

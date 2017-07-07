@@ -9,21 +9,77 @@ using System.Linq;
 
 namespace CSSPModels
 {
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
+    public class CSSPTypeAttribute : ValidationAttribute
+    {
+        public override bool IsValid(object value)
+        {
+            return true;
+        }
+    }
+
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
+    public class CSSPObjectExistAttribute : ValidationAttribute
+    {
+        public string TableName { get; set; }
+
+        public override bool IsValid(object value)
+        {
+            return true;
+        }
+    }
+
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
+    public class CSSPDateAfterYear : ValidationAttribute
+    {
+        public int Year { get; set; }
+
+        public override bool IsValid(object value)
+        {
+            return true;
+        }
+    }
+
     public partial class Address
     {
         #region Properties in DB
+        [Key]
         public int AddressID { get; set; }
+        [Required]
+        [Range(1, -1)]
+        [CSSPObjectExist(TableName = "TVItems")]
         public int AddressTVItemID { get; set; }
+        [Required]
+        [CSSPType]
         public AddressTypeEnum AddressType { get; set; }
+        [Required]
+        [Range(1, -1)]
+        [CSSPObjectExist(TableName = "TVItems")]
         public int CountryTVItemID { get; set; }
+        [Required]
+        [Range(1, -1)]
+        [CSSPObjectExist(TableName = "TVItems")]
         public int ProvinceTVItemID { get; set; }
+        [Required]
+        [Range(1, -1)]
+        [CSSPObjectExist(TableName = "TVItems")]
         public int MunicipalityTVItemID { get; set; }
+        [StringLength(200, MinimumLength = 1)]
         public string StreetName { get; set; }
+        [StringLength(50, MinimumLength = 1)]
         public string StreetNumber { get; set; }
+        [CSSPType]
         public StreetTypeEnum? StreetType { get; set; }
+        [StringLength(11, MinimumLength = 6)]
         public string PostalCode { get; set; }
+        [StringLength(200, MinimumLength = 1)]
         public string GoogleAddressText { get; set; }
+        [Required]
+        [CSSPDateAfterYear(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Required]
+        [Range(1, -1)]
+        [CSSPObjectExist(TableName = "TVItems")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual TVItem AddressTVItem { get; set; }

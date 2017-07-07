@@ -9,13 +9,13 @@ namespace CSSPModels
     public partial class CSSPWebToolsDBContext : DbContext
     {
         // Used Custom Annotations
-        // Min (used with numbers) with int or float as value also use with string to determine minimum length
-        // Max (used with numbers) with int or float as value
-        // Type (used with Enums) with type as value
-        // DateBiggerThanOtherField (used with date) with other date field name as value
-        // DateAfterYear (used with date with year as value
-        // Equal (use with anytype) with other field name as value
-        // ObjectExist (use with anytype) with other entity name as value
+        // Min (used with numbers) with int, float or double as value also use with string to determine minimum length
+        // Max (used with numbers) with int, float or double as value
+        // CSSPType (used with Enums) with type as value
+        // CSSPDateBiggerThanOtherField (used with date) with other date field name as value
+        // CSSPDateAfterYear (used with date with year as value
+        // CSSPEqual (use with anytype) with other field name as value
+        // CSSPObjectExist (use with anytype) with other entity name as value
 
         #region Variables
         private DatabaseTypeEnum DatabaseType;
@@ -209,93 +209,93 @@ namespace CSSPModels
         {
             modelBuilder.Entity<Address>(entity =>
             {
-                entity.HasKey(e => e.AddressID)
-                    .HasName("PK_Addresses");
+                //entity.HasKey(e => e.AddressID)
+                //    .HasName("PK_Addresses");
 
-                entity.ToTable("Addresses");
+                //entity.ToTable("Addresses");
 
-                entity.HasIndex(e => e.AddressTVItemID)
-                    .HasName("IX_AddressTVItemID");
+                //entity.HasIndex(e => e.AddressTVItemID)
+                //    .HasName("IX_AddressTVItemID");
 
-                entity.Property("AddressTVItemID")
-                    .IsRequired()
-                    .HasAnnotation("Min", 1)
-                    .HasAnnotation("ObjectExist", "TVItem");
+                //entity.Property("AddressTVItemID")
+                //    .IsRequired()
+                //    .HasAnnotation("Min", 1)
+                //    .HasAnnotation("ObjectExist", "TVItem");
 
-                entity.HasIndex(e => e.AddressType)
-                    .HasName("IX_AddressType");
+                //entity.HasIndex(e => e.AddressType)
+                //    .HasName("IX_AddressType");
 
-                entity.Property("AddressType")
-                    .IsRequired()
-                    .HasAnnotation("Type", typeof(AddressTypeEnum));
+                //entity.Property("AddressType")
+                //    .IsRequired()
+                //    .HasAnnotation("Type", typeof(AddressTypeEnum));
 
-                entity.HasIndex(e => e.CountryTVItemID)
-                    .HasName("IX_CountryTVItemID");
+                //entity.HasIndex(e => e.CountryTVItemID)
+                //    .HasName("IX_CountryTVItemID");
 
-                entity.Property("CountryTVItemID")
-                    .IsRequired()
-                    .HasAnnotation("Min", 1)
-                    .HasAnnotation("ObjectExist", "TVItem");
+                //entity.Property("CountryTVItemID")
+                //    .IsRequired()
+                //    .HasAnnotation("Min", 1)
+                //    .HasAnnotation("ObjectExist", "TVItem");
 
-                entity.HasIndex(e => e.ProvinceTVItemID)
-                    .HasName("IX_ProvinceTVItemID");
+                //entity.HasIndex(e => e.ProvinceTVItemID)
+                //    .HasName("IX_ProvinceTVItemID");
 
-                entity.Property("ProvinceTVItemID")
-                    .IsRequired()
-                    .HasAnnotation("Min", 1)
-                    .HasAnnotation("ObjectExist", "TVItem");
+                //entity.Property("ProvinceTVItemID")
+                //    .IsRequired()
+                //    .HasAnnotation("Min", 1)
+                //    .HasAnnotation("ObjectExist", "TVItem");
 
-                entity.HasIndex(e => e.MunicipalityTVItemID)
-                    .HasName("IX_MunicipalityTVItemID");
+                //entity.HasIndex(e => e.MunicipalityTVItemID)
+                //    .HasName("IX_MunicipalityTVItemID");
 
-                entity.Property("MunicipalityTVItemID")
-                    .IsRequired()
-                    .HasAnnotation("Min", 1)
-                    .HasAnnotation("ObjectExist", "TVItem");
+                //entity.Property("MunicipalityTVItemID")
+                //    .IsRequired()
+                //    .HasAnnotation("Min", 1)
+                //    .HasAnnotation("ObjectExist", "TVItem");
 
-                entity.HasIndex(e => e.StreetName)
-                    .HasName("IX_StreetName");
+                //entity.HasIndex(e => e.StreetName)
+                //    .HasName("IX_StreetName");
 
-                entity.Property("StreetName")
-                    .HasMaxLength(200)
-                    .HasAnnotation("Min", 1);
+                //entity.Property("StreetName")
+                //    .HasMaxLength(200)
+                //    .HasAnnotation("Min", 1);
 
-                entity.HasIndex(e => e.StreetNumber)
-                    .HasName("IX_StreetNumber");
+                //entity.HasIndex(e => e.StreetNumber)
+                //    .HasName("IX_StreetNumber");
 
-                entity.Property("StreetNumber")
-                    .HasMaxLength(50)
-                    .HasAnnotation("Min", 1);
+                //entity.Property("StreetNumber")
+                //    .HasMaxLength(50)
+                //    .HasAnnotation("Min", 1);
 
-                entity.HasIndex(e => e.StreetType)
-                    .HasName("IX_StreetType");
+                //entity.HasIndex(e => e.StreetType)
+                //    .HasName("IX_StreetType");
 
-                entity.Property("StreetType")
-                    .HasAnnotation("Type", typeof(StreetTypeEnum));
+                //entity.Property("StreetType")
+                //    .HasAnnotation("Type", typeof(StreetTypeEnum));
 
-                entity.Property(e => e.PostalCode)
-                    .HasMaxLength(11)
-                    .HasAnnotation("Min", 6);
+                //entity.Property(e => e.PostalCode)
+                //    .HasMaxLength(11)
+                //    .HasAnnotation("Min", 6);
 
-                entity.Property(e => e.GoogleAddressText)
-                    .HasMaxLength(200)
-                    .HasAnnotation("Min", 1);
+                //entity.Property(e => e.GoogleAddressText)
+                //    .HasMaxLength(200)
+                //    .HasAnnotation("Min", 1);
 
-                entity.HasIndex(e => e.LastUpdateDate_UTC)
-                    .HasName("IX_LastUpdateDate_UTC");
+                //entity.HasIndex(e => e.LastUpdateDate_UTC)
+                //    .HasName("IX_LastUpdateDate_UTC");
 
-                entity.Property("LastUpdateDate_UTC")
-                    .IsRequired()
-                    .HasColumnType("datetime")
-                    .HasAnnotation("DateAfterYear", 1980);
+                //entity.Property("LastUpdateDate_UTC")
+                //    .IsRequired()
+                //    .HasColumnType("datetime")
+                //    .HasAnnotation("DateAfterYear", 1980);
 
-                entity.HasIndex(e => e.LastUpdateContactTVItemID)
-                    .HasName("IX_LastUpdateContactID");
+                //entity.HasIndex(e => e.LastUpdateContactTVItemID)
+                //    .HasName("IX_LastUpdateContactID");
 
-                entity.Property("LastUpdateContactTVItemID")
-                    .IsRequired()
-                    .HasAnnotation("Min", 1)
-                    .HasAnnotation("ObjectExist", "TVItem");
+                //entity.Property("LastUpdateContactTVItemID")
+                //    .IsRequired()
+                //    .HasAnnotation("Min", 1)
+                //    .HasAnnotation("ObjectExist", "TVItem");
 
                 entity.HasOne(d => d.AddressTVItem)
                     .WithMany(p => p.AddressesAddressTVItem)

@@ -32,6 +32,7 @@ namespace CSSPModels.Tests
                 if (entityTypeTemp.Name == EntityName)
                 {
                     entityType = entityTypeTemp;
+                    break;
                 }
             }
         }

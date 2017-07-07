@@ -10,23 +10,23 @@ using CSSPEnums;
 namespace CSSPModels.Tests
 {
     [TestClass]
-    public partial class TVItemStatTest
+    public partial class CSSPObjectExistAttributeTest
     {
         #region Variables
         #endregion Variables
 
         #region Properties
         private CSSPWebToolsDBContext db { get; set; }
-        private TVItemStat tVItemStat { get; set; }
+        private CSSPObjectExistAttribute cSSPObjectExistAttribute { get; set; }
         private IEntityType entityType { get; set; }
-        private string EntityName = "CSSPModels.TVItemStat";
+        private string EntityName = "CSSPModels.CSSPObjectExistAttribute";
         #endregion Properties
 
         #region Constructors
-        public TVItemStatTest()
+        public CSSPObjectExistAttributeTest()
         {
             db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
-            tVItemStat = new TVItemStat();
+            cSSPObjectExistAttribute = new CSSPObjectExistAttribute();
             foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())
             {
                 if (entityTypeTemp.Name == EntityName)
@@ -39,7 +39,7 @@ namespace CSSPModels.Tests
         #endregion Constructors
 
         #region Tests
-        // most of the tests are located under TVItemStatTestGenerated.cs
+        // most of the tests are located under CSSPObjectExistAttributeTestGenerated.cs
         #endregion Tests
     }
 }
