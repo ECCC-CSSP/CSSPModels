@@ -13,7 +13,6 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         [Range(1, -1)]
         public int SubsectorTVItemID { get; set; }
         public int Year { get; set; }

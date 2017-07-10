@@ -13,13 +13,10 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         [Range(1, 255)]
         public string TVTypeName { get; set; }
-        [Required]
         [Range(1, -1)]
         public int Index { get; set; }
-        [Required]
         [Range(1, 255)]
         public string TVPath { get; set; }
 

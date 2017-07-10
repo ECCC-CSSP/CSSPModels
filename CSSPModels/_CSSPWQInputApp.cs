@@ -13,22 +13,16 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
-        [Range(1, 100)]
+        [StringLength(100, MinimumLength = 1)]
         public string AccessCode { get; set; }
-        [Required]
-        [Range(4, 4)]
+        [StringLength(4, MinimumLength = 4)]
         public string ActiveYear { get; set; }
-        [Required]
         [Range(0.0f, 100.0f)]
         public float DailyDuplicatePrecisionCriteria { get; set; }
-        [Required]
         [Range(0.0f, 100.0f)]
         public float IntertechDuplicatePrecisionCriteria { get; set; }
-        [Required]
         public bool IncludeLaboratoryQAQC { get; set; }
-        [Required]
-        [Range(1, 100)]
+        [StringLength(100, MinimumLength = 1)]
         public string ApprovalCode { get; set; }
         public DateTime ApprovalDate { get; set; }
 

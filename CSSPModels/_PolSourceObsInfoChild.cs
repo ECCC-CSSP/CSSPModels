@@ -13,9 +13,7 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         public PolSourceObsInfoEnum PolSourceObsInfo { get; set; }
-        [Required]
         public PolSourceObsInfoEnum PolSourceObsInfoChildStart { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

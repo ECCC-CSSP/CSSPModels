@@ -13,16 +13,12 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         [Range(0, 5)]
         public int Tube10 { get; set; }
-        [Required]
         [Range(0, 5)]
         public int Tube1_0 { get; set; }
-        [Required]
         [Range(0, 5)]
         public int Tube0_1 { get; set; }
-        [Required]
         [Range(0, 100000000)]
         public int MPN { get; set; }
 

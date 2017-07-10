@@ -13,13 +13,10 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         [Range(0.0f, -1.0f)]
         public float ContourValue { get; set; }
-        [Required]
         [Range(1, 100)]
         public int Layer { get; set; }
-        [Required]
         [Range(1.0f, 10000.0f)]
         public float Depth { get; set; }
 

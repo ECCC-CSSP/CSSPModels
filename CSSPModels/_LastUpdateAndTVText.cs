@@ -14,10 +14,8 @@ namespace CSSPModels
 
         #region Properties not in DB
         public string Error { get; set; }
-        [Required]
         public System.DateTime LastUpdateDate_UTC { get; set; }
         public System.DateTime LastUpdateDate_Local { get; set; }
-        [Required]
         [Range(1, 200)]
         public string TVText { get; set; }
 

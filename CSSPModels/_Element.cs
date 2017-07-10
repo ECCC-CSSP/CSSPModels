@@ -13,22 +13,15 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         [Range(1, -1)]
         public int ID { get; set; }
-        [Required]
         [Range(1, -1)]
         public int Type { get; set; }
-        [Required]
         [Range(1, -1)]
         public int NumbOfNodes { get; set; }
-        [Required]
         public float Value { get; set; }
-        [Required]
         public float XNode0 { get; set; }
-        [Required]
         public float YNode0 { get; set; }
-        [Required]
         public float ZNode0 { get; set; }
 
         public virtual List<Node> NodeList { get; set; }

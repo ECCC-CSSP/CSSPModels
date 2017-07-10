@@ -14,7 +14,6 @@ namespace CSSPModels
 
         #region Properties not in DB
         public string Site { get; set; }
-        [Required]
         [Range(1, -1)]
         public int TVItemID { get; set; }
         public DateTime? Time { get; set; }

@@ -14,7 +14,6 @@ namespace CSSPModels
 
         #region Properties not in DB
         public string Text { get; set; }
-        [Required]
         [Range(1, -1)]
         public int ID { get; set; }
 

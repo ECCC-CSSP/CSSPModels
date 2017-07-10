@@ -8,7 +8,10 @@ namespace CSSPModels
     public partial class ClimateSite
     {
         #region Properties in DB
+        [Key]
         public int ClimateSiteID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int ClimateSiteTVItemID { get; set; }
         public int ECDBID { get; set; }
         public string ClimateSiteName { get; set; }
@@ -30,7 +33,10 @@ namespace CSSPModels
         public DateTime? MonthlyStartDate_Local { get; set; }
         public DateTime? MonthlyEndDate_Local { get; set; }
         public bool? MonthlyNow { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<ClimateDataValue> ClimateDataValues { get; set; }

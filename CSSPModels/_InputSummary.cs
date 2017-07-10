@@ -14,7 +14,6 @@ namespace CSSPModels
 
         #region Properties not in DB
         public string Error { get; set; }
-        [Required]
         public string Summary { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

@@ -13,9 +13,8 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Range(0, 255)]
+        [StringLength(255, MinimumLength = 0)]
         public string Name { get; set; }
-        [Required]
         [Range(1, -1)]
         public int TVItemID { get; set; }
 

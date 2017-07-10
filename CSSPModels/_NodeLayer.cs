@@ -13,10 +13,8 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         [Range(1, 100)]
         public int Layer { get; set; }
-        [Required]
         public float Z { get; set; }
 
         public virtual Node Node { get; set; }

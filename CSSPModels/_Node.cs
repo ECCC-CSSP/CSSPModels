@@ -13,18 +13,12 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         [Range(1, 1000000)]
         public int ID { get; set; }
-        [Required]
         public float X { get; set; }
-        [Required]
         public float Y { get; set; }
-        [Required]
         public float Z { get; set; }
-        [Required]
         public int Code { get; set; }
-        [Required]
         public float Value { get; set; }
 
         public virtual List<Element> ElementList { get; set; }

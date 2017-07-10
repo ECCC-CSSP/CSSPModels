@@ -9,10 +9,15 @@ namespace CSSPModels
     public partial class ClimateDataValue
     {
         #region Properties in DB
+        [Key]
         public int ClimateDataValueID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "ClimateSite", Plurial = "s", FieldID = "ClimateSiteID")]
         public int ClimateSiteID { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime DateTime_Local { get; set; }
         public bool Keep { get; set; }
+        [CSSPEnumType]
         public StorageDataTypeEnum StorageDataType { get; set; }
         public double? Snow_cm { get; set; }
         public double? Rainfall_mm { get; set; }
@@ -26,7 +31,10 @@ namespace CSSPModels
         public double? DirMaxGust_0North { get; set; }
         public double? SpdMaxGust_kmh { get; set; }
         public string HourlyValues { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ClimateSite ClimateSite { get; set; }

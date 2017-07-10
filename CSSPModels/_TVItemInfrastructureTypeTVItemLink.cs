@@ -13,7 +13,6 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         public InfrastructureTypeEnum InfrastructureType { get; set; }
         public int? SeeOtherTVItemID { get; set; }
 

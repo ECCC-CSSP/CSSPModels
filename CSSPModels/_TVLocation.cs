@@ -14,13 +14,10 @@ namespace CSSPModels
 
         #region Properties not in DB
         public string Error { get; set; }
-        [Required]
         [Range(1, -1)]
         public int TVItemID { get; set; }
-        [Required]
         [Range(1, 255)]
         public string TVText { get; set; }
-        [Required]
         public TVTypeEnum TVType { get; set; }
         public TVTypeEnum SubTVType { get; set; }
 

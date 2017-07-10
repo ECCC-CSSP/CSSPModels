@@ -15,7 +15,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ContactOK_Properties_OK()
         {
-            List<string> propNameList = new List<string>() { "ContactID", "ContactTVItemID", "Error",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Error", "ContactID", "ContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -35,9 +35,9 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ContactOK_Every_Property_Has_A_Resource_OK()
         {
+               Assert.IsNotNull(ModelsRes.ContactOKError);
                Assert.IsNotNull(ModelsRes.ContactOKContactID);
                Assert.IsNotNull(ModelsRes.ContactOKContactTVItemID);
-               Assert.IsNotNull(ModelsRes.ContactOKError);
         }
     }
 }

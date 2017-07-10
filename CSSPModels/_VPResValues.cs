@@ -13,18 +13,12 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         [Range(0, -1)]
         public int Conc { get; set; }
-        [Required]
         public double Dilu { get; set; }
-        [Required]
         public double FarfieldWidth { get; set; }
-        [Required]
         public double Distance { get; set; }
-        [Required]
         public double TheTime { get; set; }
-        [Required]
         public double Decay { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

@@ -13,10 +13,8 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
-        [Range(1, 200)]
+        [StringLength(200, MinimumLength = 1)]
         public string Text { get; set; }
-        [Required]
         public WebTideDataSetEnum WebTideDataSet { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

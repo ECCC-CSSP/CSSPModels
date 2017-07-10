@@ -13,10 +13,8 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         [Range(1, 255)]
         public string value { get; set; }
-        [Required]
         [Range(1, -1)]
         public int id { get; set; }
 

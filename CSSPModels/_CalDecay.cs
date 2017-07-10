@@ -13,9 +13,9 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Range(0, 255)]
+        [StringLength(255)]
+        [CSSPAllowNull]
         public string Error { get; set; }
-        [Required]
         [Range(0.0D, -1.0D)]
         public double Decay { get; set; }
 

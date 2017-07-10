@@ -8,11 +8,19 @@ namespace CSSPModels
     public partial class ContactShortcut
     {
         #region Properties in DB
+        [Key]
         public int ContactShortcutID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "Contact", Plurial = "s", FieldID = "ContactID")]
         public int ContactID { get; set; }
+        [StringLength(100)]
         public string ShortCutText { get; set; }
+        [StringLength(200)]
         public string ShortCutAddress { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual Contact Contact { get; set; }

@@ -14,10 +14,8 @@ namespace CSSPModels
 
         #region Properties not in DB
         public CSSPWQInputTypeEnum CSSPWQInputType { get; set; }
-        [Required]
-        [Range(1, 200)]
+        [StringLength(200, MinimumLength = 1)]
         public string Name { get; set; }
-        [Required]
         [Range(1, -1)]
         public int TVItemID { get; set; }
 

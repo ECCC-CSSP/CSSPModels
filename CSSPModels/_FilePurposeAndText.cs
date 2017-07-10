@@ -13,10 +13,9 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
+        [CSSPEnumType]
         public FilePurposeEnum FilePurpose { get; set; }
-        [Required]
-        [Range(1, 200)]
+        [StringLength(200, MinimumLength = 1)]
         public string FilePurposeText { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

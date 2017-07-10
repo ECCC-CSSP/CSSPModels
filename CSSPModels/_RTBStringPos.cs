@@ -13,10 +13,8 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         [Range(0, -1)]
         public int StartPos { get; set; }
-        [Required]
         [Range(0, -1)]
         public int EndPos { get; set; }
         public string Text { get; set; }

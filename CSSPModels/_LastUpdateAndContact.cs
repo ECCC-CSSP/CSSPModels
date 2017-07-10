@@ -14,9 +14,7 @@ namespace CSSPModels
 
         #region Properties not in DB
         public string Error { get; set; }
-        [Required]
         public System.DateTime LastUpdateDate_UTC { get; set; }
-        [Required]
         [Range(1, -1)]
         public int LastUpdateContactTVItemID { get; set; }
 

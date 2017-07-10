@@ -13,28 +13,21 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Range(0, 255)]
+        [StringLength(255)]
         public string Error { get; set; }
-        [Required]
+        [CSSPEnumType]
         public BoxModelResultTypeEnum BoxModelResultType { get; set; }
-        [Required]
         [Range(0.0f, -1.0f)]
         public float CalLength_m { get; set; }
-        [Required]
         [Range(0.0f, -1.0f)]
         public float CalRadius_m { get; set; }
-        [Required]
         [Range(0.0f, -1.0f)]
         public float CalSurface_m2 { get; set; }
-        [Required]
         [Range(0.0f, -1.0f)]
         public float CalVolume_m3 { get; set; }
-        [Required]
         [Range(0.0f, -1.0f)]
         public float CalWidth_m { get; set; }
-        [Required]
         public bool FixLength { get; set; }
-        [Required]
         public bool FixWidth { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

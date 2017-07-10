@@ -13,13 +13,10 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         [Range(1, 200)]
         public string LoginEmail { get; set; }
-        [Required]
         [Range(1, 200)]
         public string FirstName { get; set; }
-        [Required]
         [Range(1, 200)]
         public string LastName { get; set; }
         public string Initial { get; set; }

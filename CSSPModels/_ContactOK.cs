@@ -13,14 +13,12 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
+        [StringLength(255)]
+        public string Error { get; set; }
         [Range(1, -1)]
         public int ContactID { get; set; }
-        [Required]
         [Range(1, -1)]
         public int ContactTVItemID { get; set; }
-        [Range(1, 255)]
-        public string Error { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB

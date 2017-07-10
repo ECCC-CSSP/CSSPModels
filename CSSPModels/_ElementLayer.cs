@@ -13,7 +13,6 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         [Range(1, 1000)]
         public int Layer { get; set; }
         public float ZMin { get; set; }

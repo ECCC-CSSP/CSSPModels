@@ -9,12 +9,21 @@ namespace CSSPModels
     public partial class BoxModelLanguage
     {
         #region Properties in DB
+        [Key]
         public int BoxModelLanguageID { get; set; }
+        [CSSPExist(TypeName = "BoxModel", Plurial = "s", FieldID = "BoxModelID")]
+        [Range(1, -1)]
         public int BoxModelID { get; set; }
+        [CSSPEnumType]
         public LanguageEnum Language { get; set; }
+        [StringLength(250)]
         public string ScenarioName { get; set; }
+        [CSSPEnumType]
         public TranslationStatusEnum TranslationStatus { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual BoxModel BoxModel { get; set; }

@@ -14,14 +14,10 @@ namespace CSSPModels
 
         #region Properties not in DB
         public string Error { get; set; }
-        [Required]
         [Range(1, 100)]
         public int Version { get; set; }
-        [Required]
         public SamplingPlanTypeEnum SamplingPlanType { get; set; }
-        [Required]
         public SampleTypeEnum SampleType { get; set; }
-        [Required]
         public LabSheetTypeEnum LabSheetType { get; set; }
         public string SubsectorName { get; set; }
         public string SubsectorLocation { get; set; }

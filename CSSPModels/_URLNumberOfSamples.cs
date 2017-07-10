@@ -13,7 +13,6 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
         [Range(1, 255)]
         public string url { get; set; }
         public int NumberOfSamples { get; set; }

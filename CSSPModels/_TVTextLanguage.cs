@@ -14,7 +14,6 @@ namespace CSSPModels
 
         #region Properties not in DB
         public string TVText { get; set; }
-        [Required]
         public LanguageEnum Language { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

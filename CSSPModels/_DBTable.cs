@@ -13,11 +13,9 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Required]
-        [Range(1, 200)]
+        [StringLength(200, MinimumLength = 1)]
         public string TableName { get; set; }
-        [Required]
-        [Range(1, 3)]
+        [StringLength(3, MinimumLength = 1)]
         public string Plurial { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
