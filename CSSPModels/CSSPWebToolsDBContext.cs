@@ -8,14 +8,6 @@ namespace CSSPModels
 {
     public partial class CSSPWebToolsDBContext : DbContext
     {
-        // Used Custom Annotations
-        // Min (used with numbers) with int, float or double as value also use with string to determine minimum length
-        // Max (used with numbers) with int, float or double as value
-        // CSSPType (used with Enums) with type as value
-        // CSSPDateBiggerThanOtherField (used with date) with other date field name as value
-        // CSSPDateAfterYear (used with date with year as value
-        // CSSPEqual (use with anytype) with other field name as value
-        // CSSPObjectExist (use with anytype) with other entity name as value
 
         #region Variables
         private DatabaseTypeEnum DatabaseType;
@@ -209,94 +201,6 @@ namespace CSSPModels
         {
             modelBuilder.Entity<Address>(entity =>
             {
-                //entity.HasKey(e => e.AddressID)
-                //    .HasName("PK_Addresses");
-
-                //entity.ToTable("Addresses");
-
-                //entity.HasIndex(e => e.AddressTVItemID)
-                //    .HasName("IX_AddressTVItemID");
-
-                //entity.Property("AddressTVItemID")
-                //    .IsRequired()
-                //    .HasAnnotation("Min", 1)
-                //    .HasAnnotation("ObjectExist", "TVItem");
-
-                //entity.HasIndex(e => e.AddressType)
-                //    .HasName("IX_AddressType");
-
-                //entity.Property("AddressType")
-                //    .IsRequired()
-                //    .HasAnnotation("Type", typeof(AddressTypeEnum));
-
-                //entity.HasIndex(e => e.CountryTVItemID)
-                //    .HasName("IX_CountryTVItemID");
-
-                //entity.Property("CountryTVItemID")
-                //    .IsRequired()
-                //    .HasAnnotation("Min", 1)
-                //    .HasAnnotation("ObjectExist", "TVItem");
-
-                //entity.HasIndex(e => e.ProvinceTVItemID)
-                //    .HasName("IX_ProvinceTVItemID");
-
-                //entity.Property("ProvinceTVItemID")
-                //    .IsRequired()
-                //    .HasAnnotation("Min", 1)
-                //    .HasAnnotation("ObjectExist", "TVItem");
-
-                //entity.HasIndex(e => e.MunicipalityTVItemID)
-                //    .HasName("IX_MunicipalityTVItemID");
-
-                //entity.Property("MunicipalityTVItemID")
-                //    .IsRequired()
-                //    .HasAnnotation("Min", 1)
-                //    .HasAnnotation("ObjectExist", "TVItem");
-
-                //entity.HasIndex(e => e.StreetName)
-                //    .HasName("IX_StreetName");
-
-                //entity.Property("StreetName")
-                //    .HasMaxLength(200)
-                //    .HasAnnotation("Min", 1);
-
-                //entity.HasIndex(e => e.StreetNumber)
-                //    .HasName("IX_StreetNumber");
-
-                //entity.Property("StreetNumber")
-                //    .HasMaxLength(50)
-                //    .HasAnnotation("Min", 1);
-
-                //entity.HasIndex(e => e.StreetType)
-                //    .HasName("IX_StreetType");
-
-                //entity.Property("StreetType")
-                //    .HasAnnotation("Type", typeof(StreetTypeEnum));
-
-                //entity.Property(e => e.PostalCode)
-                //    .HasMaxLength(11)
-                //    .HasAnnotation("Min", 6);
-
-                //entity.Property(e => e.GoogleAddressText)
-                //    .HasMaxLength(200)
-                //    .HasAnnotation("Min", 1);
-
-                //entity.HasIndex(e => e.LastUpdateDate_UTC)
-                //    .HasName("IX_LastUpdateDate_UTC");
-
-                //entity.Property("LastUpdateDate_UTC")
-                //    .IsRequired()
-                //    .HasColumnType("datetime")
-                //    .HasAnnotation("DateAfterYear", 1980);
-
-                //entity.HasIndex(e => e.LastUpdateContactTVItemID)
-                //    .HasName("IX_LastUpdateContactID");
-
-                //entity.Property("LastUpdateContactTVItemID")
-                //    .IsRequired()
-                //    .HasAnnotation("Min", 1)
-                //    .HasAnnotation("ObjectExist", "TVItem");
-
                 entity.HasOne(d => d.AddressTVItem)
                     .WithMany(p => p.AddressesAddressTVItem)
                     .HasForeignKey(d => d.AddressTVItemID)
@@ -327,110 +231,13 @@ namespace CSSPModels
         {
             modelBuilder.Entity<AppErrLog>(entity =>
             {
-                entity.HasKey(e => e.AppErrLogID)
-                    .HasName("PK_AppErrLogs");
-
-                entity.ToTable("AppErrLogs");
-
-                entity.HasIndex(e => e.Tag)
-                    .HasName("IX_Tag");
-
-                entity.Property(e => e.Tag)
-                    .IsRequired()
-                    .HasMaxLength(100);
-
-                entity.HasIndex(e => e.LineNumber)
-                    .HasName("IX_LineNumber");
-
-                entity.Property(e => e.LineNumber)
-                    .IsRequired()
-                    .HasAnnotation("Min", 1)
-                    .HasAnnotation("Max", 100000);
-
-                entity.Property(e => e.Source)
-                    .IsRequired()
-                    .HasColumnType("text");
-
-                entity.Property(e => e.Message)
-                    .IsRequired()
-                    .HasColumnType("text");
-
-                entity.HasIndex(e => e.DateTime_UTC)
-                    .HasName("IX_DateTime_UTC");
-
-                entity.Property(e => e.DateTime_UTC)
-                    .IsRequired()
-                    .HasColumnType("datetime")
-                    .HasAnnotation("DateAfterYear", 1980);
-
-                entity.HasIndex(e => e.LastUpdateDate_UTC)
-                    .HasName("IX_LastUpdateDate_UTC");
-
-                entity.Property(e => e.LastUpdateDate_UTC)
-                    .IsRequired()
-                    .HasColumnType("datetime")
-                    .HasAnnotation("DateAfterYear", 1980);
-
-                entity.HasIndex(e => e.LastUpdateContactTVItemID)
-                    .HasName("IX_LastUpdateContactID");
-
-                entity.Property(e => e.LastUpdateContactTVItemID)
-                    .IsRequired()
-                    .HasAnnotation("Min", 1)
-                    .HasAnnotation("ObjectExist", "TVItem");
-
+                // empty for now
             });
         }
         private void OnModelCreating_AppTaskLanguage(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<AppTaskLanguage>(entity =>
             {
-                entity.HasKey(e => e.AppTaskLanguageID)
-                    .HasName("PK_AppTaskLanguages");
-
-                entity.ToTable("AppTaskLanguage");
-
-                entity.HasIndex(e => e.AppTaskID)
-                    .HasName("IX_AppTaskID");
-
-                entity.Property(e => e.AppTaskID)
-                    .IsRequired()
-                    .HasAnnotation("Min", 1)
-                    .HasAnnotation("ObjectExist", "AppTask");
-
-                entity.HasIndex(e => e.Language)
-                    .HasName("IX_Language");
-
-                entity.Property(e => e.Language)
-                    .IsRequired()
-                    .HasAnnotation("Type", typeof(LanguageEnum));
-
-                entity.Property(e => e.StatusText)
-                    .HasMaxLength(250);
-
-                entity.Property(e => e.ErrorText)
-                    .HasMaxLength(250);
-
-                entity.Property(e => e.TranslationStatus)
-                    .IsRequired()
-                    .HasAnnotation("Type", typeof(TranslationStatusEnum));
-
-                entity.HasIndex(e => e.LastUpdateDate_UTC)
-                    .HasName("IX_LastUpdateDate_UTC");
-
-                entity.Property(e => e.LastUpdateDate_UTC)
-                    .IsRequired()
-                    .HasColumnType("datetime")
-                    .HasAnnotation("DateAfterYear", 1980);
-
-                entity.HasIndex(e => e.LastUpdateContactTVItemID)
-                    .HasName("IX_LastUpdateContactID");
-
-                entity.Property(e => e.LastUpdateContactTVItemID)
-                    .IsRequired()
-                    .HasAnnotation("Min", 1)
-                    .HasAnnotation("ObjectExist", "TVItem");
-
                 entity.HasOne(d => d.AppTask)
                     .WithMany(p => p.AppTaskLanguages)
                     .HasForeignKey(d => d.AppTaskID)

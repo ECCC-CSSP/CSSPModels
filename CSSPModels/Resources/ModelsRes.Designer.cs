@@ -70,7 +70,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AddressID.
+        ///   Looks up a localized string similar to AddressAddressID.
         /// </summary>
         public static string AddressAddressID {
             get {
@@ -79,7 +79,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AddressTVItem.
+        ///   Looks up a localized string similar to AddressAddressTVItem.
         /// </summary>
         public static string AddressAddressTVItem {
             get {
@@ -88,7 +88,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AddressTVItemID.
+        ///   Looks up a localized string similar to AddressAddressTVItemID.
         /// </summary>
         public static string AddressAddressTVItemID {
             get {
@@ -97,7 +97,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AddressType.
+        ///   Looks up a localized string similar to AddressAddressType.
         /// </summary>
         public static string AddressAddressType {
             get {
@@ -106,7 +106,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CountryTVItem.
+        ///   Looks up a localized string similar to AddressCountryTVItem.
         /// </summary>
         public static string AddressCountryTVItem {
             get {
@@ -115,7 +115,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CountryTVItemID.
+        ///   Looks up a localized string similar to AddressCountryTVItemID.
         /// </summary>
         public static string AddressCountryTVItemID {
             get {
@@ -124,7 +124,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GoogleAddressText.
+        ///   Looks up a localized string similar to AddressGoogleAddressText.
         /// </summary>
         public static string AddressGoogleAddressText {
             get {
@@ -133,7 +133,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to AddressLastUpdateContactTVItemID.
         /// </summary>
         public static string AddressLastUpdateContactTVItemID {
             get {
@@ -142,7 +142,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to AddressLastUpdateDate_UTC.
         /// </summary>
         public static string AddressLastUpdateDate_UTC {
             get {
@@ -151,7 +151,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MunicipalityTVItem.
+        ///   Looks up a localized string similar to AddressMunicipalityTVItem.
         /// </summary>
         public static string AddressMunicipalityTVItem {
             get {
@@ -160,7 +160,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MunicipalityTVItemID.
+        ///   Looks up a localized string similar to AddressMunicipalityTVItemID.
         /// </summary>
         public static string AddressMunicipalityTVItemID {
             get {
@@ -169,7 +169,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PostalCode.
+        ///   Looks up a localized string similar to AddressPostalCode.
         /// </summary>
         public static string AddressPostalCode {
             get {
@@ -178,7 +178,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ProvinceTVItem.
+        ///   Looks up a localized string similar to AddressProvinceTVItem.
         /// </summary>
         public static string AddressProvinceTVItem {
             get {
@@ -187,7 +187,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ProvinceTVItemID.
+        ///   Looks up a localized string similar to AddressProvinceTVItemID.
         /// </summary>
         public static string AddressProvinceTVItemID {
             get {
@@ -196,7 +196,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StreetName.
+        ///   Looks up a localized string similar to AddressStreetName.
         /// </summary>
         public static string AddressStreetName {
             get {
@@ -205,7 +205,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StreetNumber.
+        ///   Looks up a localized string similar to AddressStreetNumber.
         /// </summary>
         public static string AddressStreetNumber {
             get {
@@ -214,7 +214,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StreetType.
+        ///   Looks up a localized string similar to AddressStreetType.
         /// </summary>
         public static string AddressStreetType {
             get {
@@ -232,7 +232,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AppErrLogID.
+        ///   Looks up a localized string similar to AppErrLogAppErrLogID.
         /// </summary>
         public static string AppErrLogAppErrLogID {
             get {
@@ -241,7 +241,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DateTime_UTC.
+        ///   Looks up a localized string similar to AppErrLogDateTime_UTC.
         /// </summary>
         public static string AppErrLogDateTime_UTC {
             get {
@@ -250,7 +250,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to AppErrLogLastUpdateContactTVItemID.
         /// </summary>
         public static string AppErrLogLastUpdateContactTVItemID {
             get {
@@ -259,7 +259,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to AppErrLogLastUpdateDate_UTC.
         /// </summary>
         public static string AppErrLogLastUpdateDate_UTC {
             get {
@@ -268,7 +268,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LineNumber.
+        ///   Looks up a localized string similar to AppErrLogLineNumber.
         /// </summary>
         public static string AppErrLogLineNumber {
             get {
@@ -277,7 +277,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Message.
+        ///   Looks up a localized string similar to AppErrLogMessage.
         /// </summary>
         public static string AppErrLogMessage {
             get {
@@ -286,7 +286,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Source.
+        ///   Looks up a localized string similar to AppErrLogSource.
         /// </summary>
         public static string AppErrLogSource {
             get {
@@ -295,7 +295,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tag.
+        ///   Looks up a localized string similar to AppErrLogTag.
         /// </summary>
         public static string AppErrLogTag {
             get {
@@ -313,7 +313,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AppTaskID.
+        ///   Looks up a localized string similar to AppTaskAppTaskID.
         /// </summary>
         public static string AppTaskAppTaskID {
             get {
@@ -322,7 +322,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AppTaskLanguages.
+        ///   Looks up a localized string similar to AppTaskAppTaskLanguages.
         /// </summary>
         public static string AppTaskAppTaskLanguages {
             get {
@@ -331,7 +331,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Command.
+        ///   Looks up a localized string similar to AppTaskCommand.
         /// </summary>
         public static string AppTaskCommand {
             get {
@@ -340,7 +340,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EndDateTime_UTC.
+        ///   Looks up a localized string similar to AppTaskEndDateTime_UTC.
         /// </summary>
         public static string AppTaskEndDateTime_UTC {
             get {
@@ -349,7 +349,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EstimatedLength_second.
+        ///   Looks up a localized string similar to AppTaskEstimatedLength_second.
         /// </summary>
         public static string AppTaskEstimatedLength_second {
             get {
@@ -358,7 +358,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to AppTaskLanguage.
         /// </summary>
         public static string AppTaskLanguage {
             get {
@@ -367,16 +367,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AppTaskLanguage.
-        /// </summary>
-        public static string AppTaskLanguage1 {
-            get {
-                return ResourceManager.GetString("AppTaskLanguage1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AppTask.
+        ///   Looks up a localized string similar to AppTaskLanguageAppTask.
         /// </summary>
         public static string AppTaskLanguageAppTask {
             get {
@@ -385,7 +376,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AppTaskID.
+        ///   Looks up a localized string similar to AppTaskLanguageAppTaskID.
         /// </summary>
         public static string AppTaskLanguageAppTaskID {
             get {
@@ -394,7 +385,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AppTaskLanguageID.
+        ///   Looks up a localized string similar to AppTaskLanguageAppTaskLanguageID.
         /// </summary>
         public static string AppTaskLanguageAppTaskLanguageID {
             get {
@@ -403,7 +394,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ErrorText.
+        ///   Looks up a localized string similar to AppTaskLanguageErrorText.
         /// </summary>
         public static string AppTaskLanguageErrorText {
             get {
@@ -412,7 +403,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to AppTaskLanguageLanguage.
         /// </summary>
         public static string AppTaskLanguageLanguage {
             get {
@@ -421,7 +412,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to AppTaskLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string AppTaskLanguageLastUpdateContactTVItemID {
             get {
@@ -430,7 +421,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to AppTaskLanguageLastUpdateDate_UTC.
         /// </summary>
         public static string AppTaskLanguageLastUpdateDate_UTC {
             get {
@@ -439,7 +430,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StatusText.
+        ///   Looks up a localized string similar to AppTaskLanguageStatusText.
         /// </summary>
         public static string AppTaskLanguageStatusText {
             get {
@@ -448,7 +439,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TranslationStatus.
+        ///   Looks up a localized string similar to AppTaskLanguageTranslationStatus.
         /// </summary>
         public static string AppTaskLanguageTranslationStatus {
             get {
@@ -457,7 +448,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to AppTaskLastUpdateContactTVItemID.
         /// </summary>
         public static string AppTaskLastUpdateContactTVItemID {
             get {
@@ -466,7 +457,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to AppTaskLastUpdateDate_UTC.
         /// </summary>
         public static string AppTaskLastUpdateDate_UTC {
             get {
@@ -484,7 +475,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
+        ///   Looks up a localized string similar to AppTaskParameterName.
         /// </summary>
         public static string AppTaskParameterName {
             get {
@@ -493,7 +484,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Parameters.
+        ///   Looks up a localized string similar to AppTaskParameters.
         /// </summary>
         public static string AppTaskParameters {
             get {
@@ -502,7 +493,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Value.
+        ///   Looks up a localized string similar to AppTaskParameterValue.
         /// </summary>
         public static string AppTaskParameterValue {
             get {
@@ -511,7 +502,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PercentCompleted.
+        ///   Looks up a localized string similar to AppTaskPercentCompleted.
         /// </summary>
         public static string AppTaskPercentCompleted {
             get {
@@ -520,7 +511,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RemainingTime_second.
+        ///   Looks up a localized string similar to AppTaskRemainingTime_second.
         /// </summary>
         public static string AppTaskRemainingTime_second {
             get {
@@ -529,7 +520,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StartDateTime_UTC.
+        ///   Looks up a localized string similar to AppTaskStartDateTime_UTC.
         /// </summary>
         public static string AppTaskStartDateTime_UTC {
             get {
@@ -538,7 +529,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Status.
+        ///   Looks up a localized string similar to AppTaskStatus.
         /// </summary>
         public static string AppTaskStatus {
             get {
@@ -547,7 +538,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID.
+        ///   Looks up a localized string similar to AppTaskTVItemID.
         /// </summary>
         public static string AppTaskTVItemID {
             get {
@@ -556,7 +547,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID2.
+        ///   Looks up a localized string similar to AppTaskTVItemID2.
         /// </summary>
         public static string AppTaskTVItemID2 {
             get {
@@ -565,7 +556,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID2Navigation.
+        ///   Looks up a localized string similar to AppTaskTVItemID2Navigation.
         /// </summary>
         public static string AppTaskTVItemID2Navigation {
             get {
@@ -574,7 +565,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemIDNavigation.
+        ///   Looks up a localized string similar to AppTaskTVItemIDNavigation.
         /// </summary>
         public static string AppTaskTVItemIDNavigation {
             get {
@@ -592,7 +583,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModelID.
+        ///   Looks up a localized string similar to BoxModelBoxModelID.
         /// </summary>
         public static string BoxModelBoxModelID {
             get {
@@ -601,7 +592,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModelLanguages.
+        ///   Looks up a localized string similar to BoxModelBoxModelLanguages.
         /// </summary>
         public static string BoxModelBoxModelLanguages {
             get {
@@ -610,7 +601,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModelResults.
+        ///   Looks up a localized string similar to BoxModelBoxModelResults.
         /// </summary>
         public static string BoxModelBoxModelResults {
             get {
@@ -628,7 +619,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModelResultType.
+        ///   Looks up a localized string similar to BoxModelCalNumbBoxModelResultType.
         /// </summary>
         public static string BoxModelCalNumbBoxModelResultType {
             get {
@@ -637,7 +628,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CalLength_m.
+        ///   Looks up a localized string similar to BoxModelCalNumbCalLength_m.
         /// </summary>
         public static string BoxModelCalNumbCalLength_m {
             get {
@@ -646,7 +637,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CalRadius_m.
+        ///   Looks up a localized string similar to BoxModelCalNumbCalRadius_m.
         /// </summary>
         public static string BoxModelCalNumbCalRadius_m {
             get {
@@ -655,7 +646,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CalSurface_m2.
+        ///   Looks up a localized string similar to BoxModelCalNumbCalSurface_m2.
         /// </summary>
         public static string BoxModelCalNumbCalSurface_m2 {
             get {
@@ -664,7 +655,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CalVolume_m3.
+        ///   Looks up a localized string similar to BoxModelCalNumbCalVolume_m3.
         /// </summary>
         public static string BoxModelCalNumbCalVolume_m3 {
             get {
@@ -673,7 +664,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CalWidth_m.
+        ///   Looks up a localized string similar to BoxModelCalNumbCalWidth_m.
         /// </summary>
         public static string BoxModelCalNumbCalWidth_m {
             get {
@@ -682,7 +673,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error.
+        ///   Looks up a localized string similar to BoxModelCalNumbError.
         /// </summary>
         public static string BoxModelCalNumbError {
             get {
@@ -691,7 +682,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FixLength.
+        ///   Looks up a localized string similar to BoxModelCalNumbFixLength.
         /// </summary>
         public static string BoxModelCalNumbFixLength {
             get {
@@ -700,7 +691,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FixWidth.
+        ///   Looks up a localized string similar to BoxModelCalNumbFixWidth.
         /// </summary>
         public static string BoxModelCalNumbFixWidth {
             get {
@@ -709,7 +700,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Concentration_MPN_100ml.
+        ///   Looks up a localized string similar to BoxModelConcentration_MPN_100ml.
         /// </summary>
         public static string BoxModelConcentration_MPN_100ml {
             get {
@@ -718,7 +709,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DecayRate_per_day.
+        ///   Looks up a localized string similar to BoxModelDecayRate_per_day.
         /// </summary>
         public static string BoxModelDecayRate_per_day {
             get {
@@ -727,7 +718,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Depth_m.
+        ///   Looks up a localized string similar to BoxModelDepth_m.
         /// </summary>
         public static string BoxModelDepth_m {
             get {
@@ -736,7 +727,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dilution.
+        ///   Looks up a localized string similar to BoxModelDilution.
         /// </summary>
         public static string BoxModelDilution {
             get {
@@ -745,7 +736,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FCPreDisinfection_MPN_100ml.
+        ///   Looks up a localized string similar to BoxModelFCPreDisinfection_MPN_100ml.
         /// </summary>
         public static string BoxModelFCPreDisinfection_MPN_100ml {
             get {
@@ -754,7 +745,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FCUntreated_MPN_100ml.
+        ///   Looks up a localized string similar to BoxModelFCUntreated_MPN_100ml.
         /// </summary>
         public static string BoxModelFCUntreated_MPN_100ml {
             get {
@@ -763,7 +754,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Flow_m3_day.
+        ///   Looks up a localized string similar to BoxModelFlow_m3_day.
         /// </summary>
         public static string BoxModelFlow_m3_day {
             get {
@@ -772,7 +763,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FlowDuration_hour.
+        ///   Looks up a localized string similar to BoxModelFlowDuration_hour.
         /// </summary>
         public static string BoxModelFlowDuration_hour {
             get {
@@ -781,7 +772,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureTVItem.
+        ///   Looks up a localized string similar to BoxModelInfrastructureTVItem.
         /// </summary>
         public static string BoxModelInfrastructureTVItem {
             get {
@@ -790,7 +781,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureTVItemID.
+        ///   Looks up a localized string similar to BoxModelInfrastructureTVItemID.
         /// </summary>
         public static string BoxModelInfrastructureTVItemID {
             get {
@@ -808,7 +799,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModel.
+        ///   Looks up a localized string similar to BoxModelLanguageBoxModel.
         /// </summary>
         public static string BoxModelLanguageBoxModel {
             get {
@@ -817,7 +808,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModelID.
+        ///   Looks up a localized string similar to BoxModelLanguageBoxModelID.
         /// </summary>
         public static string BoxModelLanguageBoxModelID {
             get {
@@ -826,7 +817,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModelLanguageID.
+        ///   Looks up a localized string similar to BoxModelLanguageBoxModelLanguageID.
         /// </summary>
         public static string BoxModelLanguageBoxModelLanguageID {
             get {
@@ -835,7 +826,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to BoxModelLanguageLanguage.
         /// </summary>
         public static string BoxModelLanguageLanguage {
             get {
@@ -844,7 +835,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to BoxModelLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string BoxModelLanguageLastUpdateContactTVItemID {
             get {
@@ -853,7 +844,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to BoxModelLanguageLastUpdateDate_UTC.
         /// </summary>
         public static string BoxModelLanguageLastUpdateDate_UTC {
             get {
@@ -862,7 +853,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ScenarioName.
+        ///   Looks up a localized string similar to BoxModelLanguageScenarioName.
         /// </summary>
         public static string BoxModelLanguageScenarioName {
             get {
@@ -871,7 +862,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TranslationStatus.
+        ///   Looks up a localized string similar to BoxModelLanguageTranslationStatus.
         /// </summary>
         public static string BoxModelLanguageTranslationStatus {
             get {
@@ -880,7 +871,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to BoxModelLastUpdateContactTVItemID.
         /// </summary>
         public static string BoxModelLastUpdateContactTVItemID {
             get {
@@ -889,7 +880,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to BoxModelLastUpdateDate_UTC.
         /// </summary>
         public static string BoxModelLastUpdateDate_UTC {
             get {
@@ -907,7 +898,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModel.
+        ///   Looks up a localized string similar to BoxModelResultBoxModel.
         /// </summary>
         public static string BoxModelResultBoxModel {
             get {
@@ -916,7 +907,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModelID.
+        ///   Looks up a localized string similar to BoxModelResultBoxModelID.
         /// </summary>
         public static string BoxModelResultBoxModelID {
             get {
@@ -925,7 +916,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModelResultID.
+        ///   Looks up a localized string similar to BoxModelResultBoxModelResultID.
         /// </summary>
         public static string BoxModelResultBoxModelResultID {
             get {
@@ -934,7 +925,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModelResultType.
+        ///   Looks up a localized string similar to BoxModelResultBoxModelResultType.
         /// </summary>
         public static string BoxModelResultBoxModelResultType {
             get {
@@ -943,7 +934,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CircleCenterLatitude.
+        ///   Looks up a localized string similar to BoxModelResultCircleCenterLatitude.
         /// </summary>
         public static string BoxModelResultCircleCenterLatitude {
             get {
@@ -952,7 +943,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CircleCenterLongitude.
+        ///   Looks up a localized string similar to BoxModelResultCircleCenterLongitude.
         /// </summary>
         public static string BoxModelResultCircleCenterLongitude {
             get {
@@ -961,7 +952,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FixLength.
+        ///   Looks up a localized string similar to BoxModelResultFixLength.
         /// </summary>
         public static string BoxModelResultFixLength {
             get {
@@ -970,7 +961,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FixWidth.
+        ///   Looks up a localized string similar to BoxModelResultFixWidth.
         /// </summary>
         public static string BoxModelResultFixWidth {
             get {
@@ -979,7 +970,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to BoxModelResultLastUpdateContactTVItemID.
         /// </summary>
         public static string BoxModelResultLastUpdateContactTVItemID {
             get {
@@ -988,7 +979,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to BoxModelResultLastUpdateDate_UTC.
         /// </summary>
         public static string BoxModelResultLastUpdateDate_UTC {
             get {
@@ -997,7 +988,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LeftSideDiameterLineAngle_deg.
+        ///   Looks up a localized string similar to BoxModelResultLeftSideDiameterLineAngle_deg.
         /// </summary>
         public static string BoxModelResultLeftSideDiameterLineAngle_deg {
             get {
@@ -1006,7 +997,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LeftSideLineAngle_deg.
+        ///   Looks up a localized string similar to BoxModelResultLeftSideLineAngle_deg.
         /// </summary>
         public static string BoxModelResultLeftSideLineAngle_deg {
             get {
@@ -1015,7 +1006,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LeftSideLineStartLatitude.
+        ///   Looks up a localized string similar to BoxModelResultLeftSideLineStartLatitude.
         /// </summary>
         public static string BoxModelResultLeftSideLineStartLatitude {
             get {
@@ -1024,7 +1015,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LeftSideLineStartLongitude.
+        ///   Looks up a localized string similar to BoxModelResultLeftSideLineStartLongitude.
         /// </summary>
         public static string BoxModelResultLeftSideLineStartLongitude {
             get {
@@ -1033,7 +1024,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Radius_m.
+        ///   Looks up a localized string similar to BoxModelResultRadius_m.
         /// </summary>
         public static string BoxModelResultRadius_m {
             get {
@@ -1042,7 +1033,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RectLength_m.
+        ///   Looks up a localized string similar to BoxModelResultRectLength_m.
         /// </summary>
         public static string BoxModelResultRectLength_m {
             get {
@@ -1051,7 +1042,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RectWidth_m.
+        ///   Looks up a localized string similar to BoxModelResultRectWidth_m.
         /// </summary>
         public static string BoxModelResultRectWidth_m {
             get {
@@ -1060,7 +1051,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Surface_m2.
+        ///   Looks up a localized string similar to BoxModelResultSurface_m2.
         /// </summary>
         public static string BoxModelResultSurface_m2 {
             get {
@@ -1069,7 +1060,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume_m3.
+        ///   Looks up a localized string similar to BoxModelResultVolume_m3.
         /// </summary>
         public static string BoxModelResultVolume_m3 {
             get {
@@ -1078,7 +1069,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to T90_hour.
+        ///   Looks up a localized string similar to BoxModelT90_hour.
         /// </summary>
         public static string BoxModelT90_hour {
             get {
@@ -1087,7 +1078,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Temperature_C.
+        ///   Looks up a localized string similar to BoxModelTemperature_C.
         /// </summary>
         public static string BoxModelTemperature_C {
             get {
@@ -1105,7 +1096,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Decay.
+        ///   Looks up a localized string similar to CalDecayDecay.
         /// </summary>
         public static string CalDecayDecay {
             get {
@@ -1114,7 +1105,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error.
+        ///   Looks up a localized string similar to CalDecayError.
         /// </summary>
         public static string CalDecayError {
             get {
@@ -1132,7 +1123,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ClimateDataValueID.
+        ///   Looks up a localized string similar to ClimateDataValueClimateDataValueID.
         /// </summary>
         public static string ClimateDataValueClimateDataValueID {
             get {
@@ -1141,7 +1132,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ClimateSite.
+        ///   Looks up a localized string similar to ClimateDataValueClimateSite.
         /// </summary>
         public static string ClimateDataValueClimateSite {
             get {
@@ -1150,7 +1141,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ClimateSiteID.
+        ///   Looks up a localized string similar to ClimateDataValueClimateSiteID.
         /// </summary>
         public static string ClimateDataValueClimateSiteID {
             get {
@@ -1159,7 +1150,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CoolDegDays_C.
+        ///   Looks up a localized string similar to ClimateDataValueCoolDegDays_C.
         /// </summary>
         public static string ClimateDataValueCoolDegDays_C {
             get {
@@ -1168,7 +1159,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DateTime_Local.
+        ///   Looks up a localized string similar to ClimateDataValueDateTime_Local.
         /// </summary>
         public static string ClimateDataValueDateTime_Local {
             get {
@@ -1177,7 +1168,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DirMaxGust_0North.
+        ///   Looks up a localized string similar to ClimateDataValueDirMaxGust_0North.
         /// </summary>
         public static string ClimateDataValueDirMaxGust_0North {
             get {
@@ -1186,7 +1177,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HeatDegDays_C.
+        ///   Looks up a localized string similar to ClimateDataValueHeatDegDays_C.
         /// </summary>
         public static string ClimateDataValueHeatDegDays_C {
             get {
@@ -1195,7 +1186,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HourlyValues.
+        ///   Looks up a localized string similar to ClimateDataValueHourlyValues.
         /// </summary>
         public static string ClimateDataValueHourlyValues {
             get {
@@ -1204,7 +1195,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Keep.
+        ///   Looks up a localized string similar to ClimateDataValueKeep.
         /// </summary>
         public static string ClimateDataValueKeep {
             get {
@@ -1213,7 +1204,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to ClimateDataValueLastUpdateContactTVItemID.
         /// </summary>
         public static string ClimateDataValueLastUpdateContactTVItemID {
             get {
@@ -1222,7 +1213,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to ClimateDataValueLastUpdateDate_UTC.
         /// </summary>
         public static string ClimateDataValueLastUpdateDate_UTC {
             get {
@@ -1231,7 +1222,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MaxTemp_C.
+        ///   Looks up a localized string similar to ClimateDataValueMaxTemp_C.
         /// </summary>
         public static string ClimateDataValueMaxTemp_C {
             get {
@@ -1240,7 +1231,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MinTemp_C.
+        ///   Looks up a localized string similar to ClimateDataValueMinTemp_C.
         /// </summary>
         public static string ClimateDataValueMinTemp_C {
             get {
@@ -1249,7 +1240,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Rainfall_mm.
+        ///   Looks up a localized string similar to ClimateDataValueRainfall_mm.
         /// </summary>
         public static string ClimateDataValueRainfall_mm {
             get {
@@ -1258,7 +1249,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainfallEntered_mm.
+        ///   Looks up a localized string similar to ClimateDataValueRainfallEntered_mm.
         /// </summary>
         public static string ClimateDataValueRainfallEntered_mm {
             get {
@@ -1267,7 +1258,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Snow_cm.
+        ///   Looks up a localized string similar to ClimateDataValueSnow_cm.
         /// </summary>
         public static string ClimateDataValueSnow_cm {
             get {
@@ -1276,7 +1267,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SnowOnGround_cm.
+        ///   Looks up a localized string similar to ClimateDataValueSnowOnGround_cm.
         /// </summary>
         public static string ClimateDataValueSnowOnGround_cm {
             get {
@@ -1285,7 +1276,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SpdMaxGust_kmh.
+        ///   Looks up a localized string similar to ClimateDataValueSpdMaxGust_kmh.
         /// </summary>
         public static string ClimateDataValueSpdMaxGust_kmh {
             get {
@@ -1294,7 +1285,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StorageDataType.
+        ///   Looks up a localized string similar to ClimateDataValueStorageDataType.
         /// </summary>
         public static string ClimateDataValueStorageDataType {
             get {
@@ -1303,7 +1294,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TotalPrecip_mm_cm.
+        ///   Looks up a localized string similar to ClimateDataValueTotalPrecip_mm_cm.
         /// </summary>
         public static string ClimateDataValueTotalPrecip_mm_cm {
             get {
@@ -1321,7 +1312,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ClimateDataValues.
+        ///   Looks up a localized string similar to ClimateSiteClimateDataValues.
         /// </summary>
         public static string ClimateSiteClimateDataValues {
             get {
@@ -1330,7 +1321,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ClimateID.
+        ///   Looks up a localized string similar to ClimateSiteClimateID.
         /// </summary>
         public static string ClimateSiteClimateID {
             get {
@@ -1339,7 +1330,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ClimateSiteID.
+        ///   Looks up a localized string similar to ClimateSiteClimateSiteID.
         /// </summary>
         public static string ClimateSiteClimateSiteID {
             get {
@@ -1348,7 +1339,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ClimateSiteName.
+        ///   Looks up a localized string similar to ClimateSiteClimateSiteName.
         /// </summary>
         public static string ClimateSiteClimateSiteName {
             get {
@@ -1357,7 +1348,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ClimateSiteTVItem.
+        ///   Looks up a localized string similar to ClimateSiteClimateSiteTVItem.
         /// </summary>
         public static string ClimateSiteClimateSiteTVItem {
             get {
@@ -1366,7 +1357,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ClimateSiteTVItemID.
+        ///   Looks up a localized string similar to ClimateSiteClimateSiteTVItemID.
         /// </summary>
         public static string ClimateSiteClimateSiteTVItemID {
             get {
@@ -1375,7 +1366,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DailyEndDate_Local.
+        ///   Looks up a localized string similar to ClimateSiteDailyEndDate_Local.
         /// </summary>
         public static string ClimateSiteDailyEndDate_Local {
             get {
@@ -1384,7 +1375,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DailyNow.
+        ///   Looks up a localized string similar to ClimateSiteDailyNow.
         /// </summary>
         public static string ClimateSiteDailyNow {
             get {
@@ -1393,7 +1384,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DailyStartDate_Local.
+        ///   Looks up a localized string similar to ClimateSiteDailyStartDate_Local.
         /// </summary>
         public static string ClimateSiteDailyStartDate_Local {
             get {
@@ -1402,7 +1393,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ECDBID.
+        ///   Looks up a localized string similar to ClimateSiteECDBID.
         /// </summary>
         public static string ClimateSiteECDBID {
             get {
@@ -1411,7 +1402,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Elevation_m.
+        ///   Looks up a localized string similar to ClimateSiteElevation_m.
         /// </summary>
         public static string ClimateSiteElevation_m {
             get {
@@ -1420,7 +1411,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to File_desc.
+        ///   Looks up a localized string similar to ClimateSiteFile_desc.
         /// </summary>
         public static string ClimateSiteFile_desc {
             get {
@@ -1429,7 +1420,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HourlyEndDate_Local.
+        ///   Looks up a localized string similar to ClimateSiteHourlyEndDate_Local.
         /// </summary>
         public static string ClimateSiteHourlyEndDate_Local {
             get {
@@ -1438,7 +1429,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HourlyNow.
+        ///   Looks up a localized string similar to ClimateSiteHourlyNow.
         /// </summary>
         public static string ClimateSiteHourlyNow {
             get {
@@ -1447,7 +1438,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HourlyStartDate_Local.
+        ///   Looks up a localized string similar to ClimateSiteHourlyStartDate_Local.
         /// </summary>
         public static string ClimateSiteHourlyStartDate_Local {
             get {
@@ -1456,7 +1447,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IsProvincial.
+        ///   Looks up a localized string similar to ClimateSiteIsProvincial.
         /// </summary>
         public static string ClimateSiteIsProvincial {
             get {
@@ -1465,7 +1456,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to ClimateSiteLastUpdateContactTVItemID.
         /// </summary>
         public static string ClimateSiteLastUpdateContactTVItemID {
             get {
@@ -1474,7 +1465,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to ClimateSiteLastUpdateDate_UTC.
         /// </summary>
         public static string ClimateSiteLastUpdateDate_UTC {
             get {
@@ -1483,7 +1474,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MonthlyEndDate_Local.
+        ///   Looks up a localized string similar to ClimateSiteMonthlyEndDate_Local.
         /// </summary>
         public static string ClimateSiteMonthlyEndDate_Local {
             get {
@@ -1492,7 +1483,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MonthlyNow.
+        ///   Looks up a localized string similar to ClimateSiteMonthlyNow.
         /// </summary>
         public static string ClimateSiteMonthlyNow {
             get {
@@ -1501,7 +1492,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MonthlyStartDate_Local.
+        ///   Looks up a localized string similar to ClimateSiteMonthlyStartDate_Local.
         /// </summary>
         public static string ClimateSiteMonthlyStartDate_Local {
             get {
@@ -1510,7 +1501,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Province.
+        ///   Looks up a localized string similar to ClimateSiteProvince.
         /// </summary>
         public static string ClimateSiteProvince {
             get {
@@ -1519,7 +1510,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ProvSiteID.
+        ///   Looks up a localized string similar to ClimateSiteProvSiteID.
         /// </summary>
         public static string ClimateSiteProvSiteID {
             get {
@@ -1528,7 +1519,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TCID.
+        ///   Looks up a localized string similar to ClimateSiteTCID.
         /// </summary>
         public static string ClimateSiteTCID {
             get {
@@ -1537,7 +1528,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TimeOffset_hour.
+        ///   Looks up a localized string similar to ClimateSiteTimeOffset_hour.
         /// </summary>
         public static string ClimateSiteTimeOffset_hour {
             get {
@@ -1546,7 +1537,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WMOID.
+        ///   Looks up a localized string similar to ClimateSiteWMOID.
         /// </summary>
         public static string ClimateSiteWMOID {
             get {
@@ -1564,7 +1555,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactID.
+        ///   Looks up a localized string similar to ContactContactID.
         /// </summary>
         public static string ContactContactID {
             get {
@@ -1573,7 +1564,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactLogins.
+        ///   Looks up a localized string similar to ContactContactLogins.
         /// </summary>
         public static string ContactContactLogins {
             get {
@@ -1582,7 +1573,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactPreferences.
+        ///   Looks up a localized string similar to ContactContactPreferences.
         /// </summary>
         public static string ContactContactPreferences {
             get {
@@ -1591,7 +1582,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactShortcuts.
+        ///   Looks up a localized string similar to ContactContactShortcuts.
         /// </summary>
         public static string ContactContactShortcuts {
             get {
@@ -1600,7 +1591,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactTitle.
+        ///   Looks up a localized string similar to ContactContactTitle.
         /// </summary>
         public static string ContactContactTitle {
             get {
@@ -1609,7 +1600,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactTVItem.
+        ///   Looks up a localized string similar to ContactContactTVItem.
         /// </summary>
         public static string ContactContactTVItem {
             get {
@@ -1618,7 +1609,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactTVItemID.
+        ///   Looks up a localized string similar to ContactContactTVItemID.
         /// </summary>
         public static string ContactContactTVItemID {
             get {
@@ -1627,7 +1618,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Disabled.
+        ///   Looks up a localized string similar to ContactDisabled.
         /// </summary>
         public static string ContactDisabled {
             get {
@@ -1636,7 +1627,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EmailValidated.
+        ///   Looks up a localized string similar to ContactEmailValidated.
         /// </summary>
         public static string ContactEmailValidated {
             get {
@@ -1645,7 +1636,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FirstName.
+        ///   Looks up a localized string similar to ContactFirstName.
         /// </summary>
         public static string ContactFirstName {
             get {
@@ -1654,7 +1645,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Initial.
+        ///   Looks up a localized string similar to ContactInitial.
         /// </summary>
         public static string ContactInitial {
             get {
@@ -1663,7 +1654,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IsAdmin.
+        ///   Looks up a localized string similar to ContactIsAdmin.
         /// </summary>
         public static string ContactIsAdmin {
             get {
@@ -1672,7 +1663,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IsNew.
+        ///   Looks up a localized string similar to ContactIsNew.
         /// </summary>
         public static string ContactIsNew {
             get {
@@ -1681,7 +1672,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastName.
+        ///   Looks up a localized string similar to ContactLastName.
         /// </summary>
         public static string ContactLastName {
             get {
@@ -1690,7 +1681,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to ContactLastUpdateContactTVItemID.
         /// </summary>
         public static string ContactLastUpdateContactTVItemID {
             get {
@@ -1699,7 +1690,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to ContactLastUpdateDate_UTC.
         /// </summary>
         public static string ContactLastUpdateDate_UTC {
             get {
@@ -1717,7 +1708,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConfirmPassword.
+        ///   Looks up a localized string similar to ContactLoginConfirmPassword.
         /// </summary>
         public static string ContactLoginConfirmPassword {
             get {
@@ -1726,7 +1717,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contact.
+        ///   Looks up a localized string similar to ContactLoginContact.
         /// </summary>
         public static string ContactLoginContact {
             get {
@@ -1735,7 +1726,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactID.
+        ///   Looks up a localized string similar to ContactLoginContactID.
         /// </summary>
         public static string ContactLoginContactID {
             get {
@@ -1744,7 +1735,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactLoginID.
+        ///   Looks up a localized string similar to ContactLoginContactLoginID.
         /// </summary>
         public static string ContactLoginContactLoginID {
             get {
@@ -1753,7 +1744,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LoginEmail.
+        ///   Looks up a localized string similar to ContactLoginEmail.
         /// </summary>
         public static string ContactLoginEmail {
             get {
@@ -1762,7 +1753,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to ContactLoginLastUpdateContactTVItemID.
         /// </summary>
         public static string ContactLoginLastUpdateContactTVItemID {
             get {
@@ -1771,7 +1762,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to ContactLoginLastUpdateDate_UTC.
         /// </summary>
         public static string ContactLoginLastUpdateDate_UTC {
             get {
@@ -1780,7 +1771,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LoginEmail.
+        ///   Looks up a localized string similar to ContactLoginLoginEmail.
         /// </summary>
         public static string ContactLoginLoginEmail {
             get {
@@ -1789,7 +1780,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Password.
+        ///   Looks up a localized string similar to ContactLoginPassword.
         /// </summary>
         public static string ContactLoginPassword {
             get {
@@ -1798,7 +1789,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PasswordHash.
+        ///   Looks up a localized string similar to ContactLoginPasswordHash.
         /// </summary>
         public static string ContactLoginPasswordHash {
             get {
@@ -1807,7 +1798,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PasswordSalt.
+        ///   Looks up a localized string similar to ContactLoginPasswordSalt.
         /// </summary>
         public static string ContactLoginPasswordSalt {
             get {
@@ -1825,7 +1816,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactID.
+        ///   Looks up a localized string similar to ContactOKContactID.
         /// </summary>
         public static string ContactOKContactID {
             get {
@@ -1834,7 +1825,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactTVItemID.
+        ///   Looks up a localized string similar to ContactOKContactTVItemID.
         /// </summary>
         public static string ContactOKContactTVItemID {
             get {
@@ -1843,7 +1834,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error.
+        ///   Looks up a localized string similar to ContactOKError.
         /// </summary>
         public static string ContactOKError {
             get {
@@ -1852,7 +1843,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ParentTVItemID.
+        ///   Looks up a localized string similar to ContactParentTVItemID.
         /// </summary>
         public static string ContactParentTVItemID {
             get {
@@ -1870,7 +1861,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contact.
+        ///   Looks up a localized string similar to ContactPreferenceContact.
         /// </summary>
         public static string ContactPreferenceContact {
             get {
@@ -1879,7 +1870,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactID.
+        ///   Looks up a localized string similar to ContactPreferenceContactID.
         /// </summary>
         public static string ContactPreferenceContactID {
             get {
@@ -1888,7 +1879,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactPreferenceID.
+        ///   Looks up a localized string similar to ContactPreferenceContactPreferenceID.
         /// </summary>
         public static string ContactPreferenceContactPreferenceID {
             get {
@@ -1897,7 +1888,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to ContactPreferenceLastUpdateContactTVItemID.
         /// </summary>
         public static string ContactPreferenceLastUpdateContactTVItemID {
             get {
@@ -1906,7 +1897,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to ContactPreferenceLastUpdateDate_UTC.
         /// </summary>
         public static string ContactPreferenceLastUpdateDate_UTC {
             get {
@@ -1915,7 +1906,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MarkerSize.
+        ///   Looks up a localized string similar to ContactPreferenceMarkerSize.
         /// </summary>
         public static string ContactPreferenceMarkerSize {
             get {
@@ -1924,7 +1915,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVType.
+        ///   Looks up a localized string similar to ContactPreferenceTVType.
         /// </summary>
         public static string ContactPreferenceTVType {
             get {
@@ -1933,7 +1924,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanner_ProvincesTVItemID.
+        ///   Looks up a localized string similar to ContactSamplingPlanner_ProvincesTVItemID.
         /// </summary>
         public static string ContactSamplingPlanner_ProvincesTVItemID {
             get {
@@ -1951,7 +1942,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactID.
+        ///   Looks up a localized string similar to ContactSearchContactID.
         /// </summary>
         public static string ContactSearchContactID {
             get {
@@ -1960,7 +1951,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactTVItemID.
+        ///   Looks up a localized string similar to ContactSearchContactTVItemID.
         /// </summary>
         public static string ContactSearchContactTVItemID {
             get {
@@ -1969,7 +1960,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FullName.
+        ///   Looks up a localized string similar to ContactSearchFullName.
         /// </summary>
         public static string ContactSearchFullName {
             get {
@@ -1987,7 +1978,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contact.
+        ///   Looks up a localized string similar to ContactShortcutContact.
         /// </summary>
         public static string ContactShortcutContact {
             get {
@@ -1996,7 +1987,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactID.
+        ///   Looks up a localized string similar to ContactShortcutContactID.
         /// </summary>
         public static string ContactShortcutContactID {
             get {
@@ -2005,7 +1996,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactShortcutID.
+        ///   Looks up a localized string similar to ContactShortcutContactShortcutID.
         /// </summary>
         public static string ContactShortcutContactShortcutID {
             get {
@@ -2014,7 +2005,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to ContactShortcutLastUpdateContactTVItemID.
         /// </summary>
         public static string ContactShortcutLastUpdateContactTVItemID {
             get {
@@ -2023,7 +2014,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to ContactShortcutLastUpdateDate_UTC.
         /// </summary>
         public static string ContactShortcutLastUpdateDate_UTC {
             get {
@@ -2032,7 +2023,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ShortCutAddress.
+        ///   Looks up a localized string similar to ContactShortcutShortCutAddress.
         /// </summary>
         public static string ContactShortcutShortCutAddress {
             get {
@@ -2041,7 +2032,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ShortCutText.
+        ///   Looks up a localized string similar to ContactShortcutShortCutText.
         /// </summary>
         public static string ContactShortcutShortCutText {
             get {
@@ -2050,7 +2041,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WebName.
+        ///   Looks up a localized string similar to ContactWebName.
         /// </summary>
         public static string ContactWebName {
             get {
@@ -2068,7 +2059,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContourNodeList.
+        ///   Looks up a localized string similar to ContourPolygonContourNodeList.
         /// </summary>
         public static string ContourPolygonContourNodeList {
             get {
@@ -2077,7 +2068,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContourValue.
+        ///   Looks up a localized string similar to ContourPolygonContourValue.
         /// </summary>
         public static string ContourPolygonContourValue {
             get {
@@ -2086,7 +2077,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Depth.
+        ///   Looks up a localized string similar to ContourPolygonDepth.
         /// </summary>
         public static string ContourPolygonDepth {
             get {
@@ -2095,7 +2086,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Layer.
+        ///   Looks up a localized string similar to ContourPolygonLayer.
         /// </summary>
         public static string ContourPolygonLayer {
             get {
@@ -2113,7 +2104,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lat.
+        ///   Looks up a localized string similar to CoordLat.
         /// </summary>
         public static string CoordLat {
             get {
@@ -2122,7 +2113,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lng.
+        ///   Looks up a localized string similar to CoordLng.
         /// </summary>
         public static string CoordLng {
             get {
@@ -2131,11 +2122,326 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ordinal.
+        ///   Looks up a localized string similar to CoordOrdinal.
         /// </summary>
         public static string CoordOrdinal {
             get {
                 return ResourceManager.GetString("CoordOrdinal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPAfterAttribute.
+        /// </summary>
+        public static string CSSPAfterAttribute {
+            get {
+                return ResourceManager.GetString("CSSPAfterAttribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPAfterAttributeErrorMessage.
+        /// </summary>
+        public static string CSSPAfterAttributeErrorMessage {
+            get {
+                return ResourceManager.GetString("CSSPAfterAttributeErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPAfterAttributeErrorMessageResourceName.
+        /// </summary>
+        public static string CSSPAfterAttributeErrorMessageResourceName {
+            get {
+                return ResourceManager.GetString("CSSPAfterAttributeErrorMessageResourceName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPAfterAttributeErrorMessageResourceType.
+        /// </summary>
+        public static string CSSPAfterAttributeErrorMessageResourceType {
+            get {
+                return ResourceManager.GetString("CSSPAfterAttributeErrorMessageResourceType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPAfterAttributeRequiresValidationContext.
+        /// </summary>
+        public static string CSSPAfterAttributeRequiresValidationContext {
+            get {
+                return ResourceManager.GetString("CSSPAfterAttributeRequiresValidationContext", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPAfterAttributeTypeId.
+        /// </summary>
+        public static string CSSPAfterAttributeTypeId {
+            get {
+                return ResourceManager.GetString("CSSPAfterAttributeTypeId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPAfterAttributeYear.
+        /// </summary>
+        public static string CSSPAfterAttributeYear {
+            get {
+                return ResourceManager.GetString("CSSPAfterAttributeYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPAllowNullAttribute.
+        /// </summary>
+        public static string CSSPAllowNullAttribute {
+            get {
+                return ResourceManager.GetString("CSSPAllowNullAttribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPAllowNullAttributeErrorMessage.
+        /// </summary>
+        public static string CSSPAllowNullAttributeErrorMessage {
+            get {
+                return ResourceManager.GetString("CSSPAllowNullAttributeErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPAllowNullAttributeErrorMessageResourceName.
+        /// </summary>
+        public static string CSSPAllowNullAttributeErrorMessageResourceName {
+            get {
+                return ResourceManager.GetString("CSSPAllowNullAttributeErrorMessageResourceName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPAllowNullAttributeErrorMessageResourceType.
+        /// </summary>
+        public static string CSSPAllowNullAttributeErrorMessageResourceType {
+            get {
+                return ResourceManager.GetString("CSSPAllowNullAttributeErrorMessageResourceType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPAllowNullAttributeRequiresValidationContext.
+        /// </summary>
+        public static string CSSPAllowNullAttributeRequiresValidationContext {
+            get {
+                return ResourceManager.GetString("CSSPAllowNullAttributeRequiresValidationContext", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPAllowNullAttributeTypeId.
+        /// </summary>
+        public static string CSSPAllowNullAttributeTypeId {
+            get {
+                return ResourceManager.GetString("CSSPAllowNullAttributeTypeId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPBiggerAttribute.
+        /// </summary>
+        public static string CSSPBiggerAttribute {
+            get {
+                return ResourceManager.GetString("CSSPBiggerAttribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPBiggerAttributeErrorMessage.
+        /// </summary>
+        public static string CSSPBiggerAttributeErrorMessage {
+            get {
+                return ResourceManager.GetString("CSSPBiggerAttributeErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPBiggerAttributeErrorMessageResourceName.
+        /// </summary>
+        public static string CSSPBiggerAttributeErrorMessageResourceName {
+            get {
+                return ResourceManager.GetString("CSSPBiggerAttributeErrorMessageResourceName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPBiggerAttributeErrorMessageResourceType.
+        /// </summary>
+        public static string CSSPBiggerAttributeErrorMessageResourceType {
+            get {
+                return ResourceManager.GetString("CSSPBiggerAttributeErrorMessageResourceType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPBiggerAttributeOtherField.
+        /// </summary>
+        public static string CSSPBiggerAttributeOtherField {
+            get {
+                return ResourceManager.GetString("CSSPBiggerAttributeOtherField", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPBiggerAttributeRequiresValidationContext.
+        /// </summary>
+        public static string CSSPBiggerAttributeRequiresValidationContext {
+            get {
+                return ResourceManager.GetString("CSSPBiggerAttributeRequiresValidationContext", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPBiggerAttributeTypeId.
+        /// </summary>
+        public static string CSSPBiggerAttributeTypeId {
+            get {
+                return ResourceManager.GetString("CSSPBiggerAttributeTypeId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPEnumTypeAttribute.
+        /// </summary>
+        public static string CSSPEnumTypeAttribute {
+            get {
+                return ResourceManager.GetString("CSSPEnumTypeAttribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPEnumTypeAttributeErrorMessage.
+        /// </summary>
+        public static string CSSPEnumTypeAttributeErrorMessage {
+            get {
+                return ResourceManager.GetString("CSSPEnumTypeAttributeErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPEnumTypeAttributeErrorMessageResourceName.
+        /// </summary>
+        public static string CSSPEnumTypeAttributeErrorMessageResourceName {
+            get {
+                return ResourceManager.GetString("CSSPEnumTypeAttributeErrorMessageResourceName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPEnumTypeAttributeErrorMessageResourceType.
+        /// </summary>
+        public static string CSSPEnumTypeAttributeErrorMessageResourceType {
+            get {
+                return ResourceManager.GetString("CSSPEnumTypeAttributeErrorMessageResourceType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPEnumTypeAttributeRequiresValidationContext.
+        /// </summary>
+        public static string CSSPEnumTypeAttributeRequiresValidationContext {
+            get {
+                return ResourceManager.GetString("CSSPEnumTypeAttributeRequiresValidationContext", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPEnumTypeAttributeTypeId.
+        /// </summary>
+        public static string CSSPEnumTypeAttributeTypeId {
+            get {
+                return ResourceManager.GetString("CSSPEnumTypeAttributeTypeId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPExistAttribute.
+        /// </summary>
+        public static string CSSPExistAttribute {
+            get {
+                return ResourceManager.GetString("CSSPExistAttribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPExistAttributeErrorMessage.
+        /// </summary>
+        public static string CSSPExistAttributeErrorMessage {
+            get {
+                return ResourceManager.GetString("CSSPExistAttributeErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPExistAttributeErrorMessageResourceName.
+        /// </summary>
+        public static string CSSPExistAttributeErrorMessageResourceName {
+            get {
+                return ResourceManager.GetString("CSSPExistAttributeErrorMessageResourceName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPExistAttributeErrorMessageResourceType.
+        /// </summary>
+        public static string CSSPExistAttributeErrorMessageResourceType {
+            get {
+                return ResourceManager.GetString("CSSPExistAttributeErrorMessageResourceType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPExistAttributeFieldID.
+        /// </summary>
+        public static string CSSPExistAttributeFieldID {
+            get {
+                return ResourceManager.GetString("CSSPExistAttributeFieldID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPExistAttributePlurial.
+        /// </summary>
+        public static string CSSPExistAttributePlurial {
+            get {
+                return ResourceManager.GetString("CSSPExistAttributePlurial", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPExistAttributeRequiresValidationContext.
+        /// </summary>
+        public static string CSSPExistAttributeRequiresValidationContext {
+            get {
+                return ResourceManager.GetString("CSSPExistAttributeRequiresValidationContext", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPExistAttributeTypeId.
+        /// </summary>
+        public static string CSSPExistAttributeTypeId {
+            get {
+                return ResourceManager.GetString("CSSPExistAttributeTypeId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSSPExistAttributeTypeName.
+        /// </summary>
+        public static string CSSPExistAttributeTypeName {
+            get {
+                return ResourceManager.GetString("CSSPExistAttributeTypeName", resourceCulture);
             }
         }
         
@@ -2149,7 +2455,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MPN.
+        ///   Looks up a localized string similar to CSSPMPNTableMPN.
         /// </summary>
         public static string CSSPMPNTableMPN {
             get {
@@ -2158,7 +2464,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tube0_1.
+        ///   Looks up a localized string similar to CSSPMPNTableTube0_1.
         /// </summary>
         public static string CSSPMPNTableTube0_1 {
             get {
@@ -2167,7 +2473,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tube1_0.
+        ///   Looks up a localized string similar to CSSPMPNTableTube1_0.
         /// </summary>
         public static string CSSPMPNTableTube1_0 {
             get {
@@ -2176,7 +2482,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tube10.
+        ///   Looks up a localized string similar to CSSPMPNTableTube10.
         /// </summary>
         public static string CSSPMPNTableTube10 {
             get {
@@ -2194,7 +2500,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AccessCode.
+        ///   Looks up a localized string similar to CSSPWQInputAppAccessCode.
         /// </summary>
         public static string CSSPWQInputAppAccessCode {
             get {
@@ -2203,7 +2509,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ActiveYear.
+        ///   Looks up a localized string similar to CSSPWQInputAppActiveYear.
         /// </summary>
         public static string CSSPWQInputAppActiveYear {
             get {
@@ -2212,7 +2518,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ApprovalCode.
+        ///   Looks up a localized string similar to CSSPWQInputAppApprovalCode.
         /// </summary>
         public static string CSSPWQInputAppApprovalCode {
             get {
@@ -2221,7 +2527,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ApprovalDate.
+        ///   Looks up a localized string similar to CSSPWQInputAppApprovalDate.
         /// </summary>
         public static string CSSPWQInputAppApprovalDate {
             get {
@@ -2230,7 +2536,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DailyDuplicatePrecisionCriteria.
+        ///   Looks up a localized string similar to CSSPWQInputAppDailyDuplicatePrecisionCriteria.
         /// </summary>
         public static string CSSPWQInputAppDailyDuplicatePrecisionCriteria {
             get {
@@ -2239,7 +2545,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncludeLaboratoryQAQC.
+        ///   Looks up a localized string similar to CSSPWQInputAppIncludeLaboratoryQAQC.
         /// </summary>
         public static string CSSPWQInputAppIncludeLaboratoryQAQC {
             get {
@@ -2248,7 +2554,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IntertechDuplicatePrecisionCriteria.
+        ///   Looks up a localized string similar to CSSPWQInputAppIntertechDuplicatePrecisionCriteria.
         /// </summary>
         public static string CSSPWQInputAppIntertechDuplicatePrecisionCriteria {
             get {
@@ -2266,7 +2572,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CSSPWQInputType.
+        ///   Looks up a localized string similar to CSSPWQInputParamCSSPWQInputType.
         /// </summary>
         public static string CSSPWQInputParamCSSPWQInputType {
             get {
@@ -2275,7 +2581,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DailyDuplicateMWQMSiteList.
+        ///   Looks up a localized string similar to CSSPWQInputParamDailyDuplicateMWQMSiteList.
         /// </summary>
         public static string CSSPWQInputParamDailyDuplicateMWQMSiteList {
             get {
@@ -2284,7 +2590,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DailyDuplicateMWQMSiteTVItemIDList.
+        ///   Looks up a localized string similar to CSSPWQInputParamDailyDuplicateMWQMSiteTVItemIDList.
         /// </summary>
         public static string CSSPWQInputParamDailyDuplicateMWQMSiteTVItemIDList {
             get {
@@ -2293,7 +2599,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureList.
+        ///   Looks up a localized string similar to CSSPWQInputParamInfrastructureList.
         /// </summary>
         public static string CSSPWQInputParamInfrastructureList {
             get {
@@ -2302,7 +2608,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureTVItemIDList.
+        ///   Looks up a localized string similar to CSSPWQInputParamInfrastructureTVItemIDList.
         /// </summary>
         public static string CSSPWQInputParamInfrastructureTVItemIDList {
             get {
@@ -2311,7 +2617,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteList.
+        ///   Looks up a localized string similar to CSSPWQInputParamMWQMSiteList.
         /// </summary>
         public static string CSSPWQInputParamMWQMSiteList {
             get {
@@ -2320,7 +2626,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteTVItemIDList.
+        ///   Looks up a localized string similar to CSSPWQInputParamMWQMSiteTVItemIDList.
         /// </summary>
         public static string CSSPWQInputParamMWQMSiteTVItemIDList {
             get {
@@ -2329,7 +2635,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
+        ///   Looks up a localized string similar to CSSPWQInputParamName.
         /// </summary>
         public static string CSSPWQInputParamName {
             get {
@@ -2338,7 +2644,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to sidList.
+        ///   Looks up a localized string similar to CSSPWQInputParamsidList.
         /// </summary>
         public static string CSSPWQInputParamsidList {
             get {
@@ -2347,7 +2653,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID.
+        ///   Looks up a localized string similar to CSSPWQInputParamTVItemID.
         /// </summary>
         public static string CSSPWQInputParamTVItemID {
             get {
@@ -2365,7 +2671,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Text.
+        ///   Looks up a localized string similar to DataPathOfTideText.
         /// </summary>
         public static string DataPathOfTideText {
             get {
@@ -2374,7 +2680,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WebTideDataSet.
+        ///   Looks up a localized string similar to DataPathOfTideWebTideDataSet.
         /// </summary>
         public static string DataPathOfTideWebTideDataSet {
             get {
@@ -2392,7 +2698,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Plurial.
+        ///   Looks up a localized string similar to DBTablePlurial.
         /// </summary>
         public static string DBTablePlurial {
             get {
@@ -2401,7 +2707,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TableName.
+        ///   Looks up a localized string similar to DBTableTableName.
         /// </summary>
         public static string DBTableTableName {
             get {
@@ -2419,7 +2725,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DocTemplateID.
+        ///   Looks up a localized string similar to DocTemplateDocTemplateID.
         /// </summary>
         public static string DocTemplateDocTemplateID {
             get {
@@ -2428,7 +2734,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FileName.
+        ///   Looks up a localized string similar to DocTemplateFileName.
         /// </summary>
         public static string DocTemplateFileName {
             get {
@@ -2437,7 +2743,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to DocTemplateLanguage.
         /// </summary>
         public static string DocTemplateLanguage {
             get {
@@ -2446,7 +2752,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to DocTemplateLastUpdateContactTVItemID.
         /// </summary>
         public static string DocTemplateLastUpdateContactTVItemID {
             get {
@@ -2455,7 +2761,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to DocTemplateLastUpdateDate_UTC.
         /// </summary>
         public static string DocTemplateLastUpdateDate_UTC {
             get {
@@ -2464,7 +2770,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVFileTVItem.
+        ///   Looks up a localized string similar to DocTemplateTVFileTVItem.
         /// </summary>
         public static string DocTemplateTVFileTVItem {
             get {
@@ -2473,7 +2779,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVFileTVItemID.
+        ///   Looks up a localized string similar to DocTemplateTVFileTVItemID.
         /// </summary>
         public static string DocTemplateTVFileTVItemID {
             get {
@@ -2482,7 +2788,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVType.
+        ///   Looks up a localized string similar to DocTemplateTVType.
         /// </summary>
         public static string DocTemplateTVType {
             get {
@@ -2500,7 +2806,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ID.
+        ///   Looks up a localized string similar to ElementID.
         /// </summary>
         public static string ElementID {
             get {
@@ -2518,7 +2824,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Element.
+        ///   Looks up a localized string similar to ElementLayerElement.
         /// </summary>
         public static string ElementLayerElement {
             get {
@@ -2527,7 +2833,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Layer.
+        ///   Looks up a localized string similar to ElementLayerLayer.
         /// </summary>
         public static string ElementLayerLayer {
             get {
@@ -2536,7 +2842,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ZMax.
+        ///   Looks up a localized string similar to ElementLayerZMax.
         /// </summary>
         public static string ElementLayerZMax {
             get {
@@ -2545,7 +2851,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ZMin.
+        ///   Looks up a localized string similar to ElementLayerZMin.
         /// </summary>
         public static string ElementLayerZMin {
             get {
@@ -2554,7 +2860,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NodeList.
+        ///   Looks up a localized string similar to ElementNodeList.
         /// </summary>
         public static string ElementNodeList {
             get {
@@ -2563,7 +2869,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NumbOfNodes.
+        ///   Looks up a localized string similar to ElementNumbOfNodes.
         /// </summary>
         public static string ElementNumbOfNodes {
             get {
@@ -2572,7 +2878,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Type.
+        ///   Looks up a localized string similar to ElementType.
         /// </summary>
         public static string ElementType {
             get {
@@ -2581,7 +2887,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Value.
+        ///   Looks up a localized string similar to ElementValue.
         /// </summary>
         public static string ElementValue {
             get {
@@ -2590,7 +2896,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to XNode0.
+        ///   Looks up a localized string similar to ElementXNode0.
         /// </summary>
         public static string ElementXNode0 {
             get {
@@ -2599,7 +2905,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to YNode0.
+        ///   Looks up a localized string similar to ElementYNode0.
         /// </summary>
         public static string ElementYNode0 {
             get {
@@ -2608,7 +2914,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ZNode0.
+        ///   Looks up a localized string similar to ElementZNode0.
         /// </summary>
         public static string ElementZNode0 {
             get {
@@ -2626,7 +2932,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EmailAddress.
+        ///   Looks up a localized string similar to EmailEmailAddress.
         /// </summary>
         public static string EmailEmailAddress {
             get {
@@ -2635,7 +2941,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EmailID.
+        ///   Looks up a localized string similar to EmailEmailID.
         /// </summary>
         public static string EmailEmailID {
             get {
@@ -2644,7 +2950,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EmailTVItem.
+        ///   Looks up a localized string similar to EmailEmailTVItem.
         /// </summary>
         public static string EmailEmailTVItem {
             get {
@@ -2653,7 +2959,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EmailTVItemID.
+        ///   Looks up a localized string similar to EmailEmailTVItemID.
         /// </summary>
         public static string EmailEmailTVItemID {
             get {
@@ -2662,7 +2968,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EmailType.
+        ///   Looks up a localized string similar to EmailEmailType.
         /// </summary>
         public static string EmailEmailType {
             get {
@@ -2671,7 +2977,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to EmailLastUpdateContactTVItemID.
         /// </summary>
         public static string EmailLastUpdateContactTVItemID {
             get {
@@ -2680,7 +2986,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to EmailLastUpdateDate_UTC.
         /// </summary>
         public static string EmailLastUpdateDate_UTC {
             get {
@@ -2707,7 +3013,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FileName.
+        ///   Looks up a localized string similar to FileItemListFileName.
         /// </summary>
         public static string FileItemListFileName {
             get {
@@ -2716,7 +3022,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Text.
+        ///   Looks up a localized string similar to FileItemListText.
         /// </summary>
         public static string FileItemListText {
             get {
@@ -2725,7 +3031,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
+        ///   Looks up a localized string similar to FileItemName.
         /// </summary>
         public static string FileItemName {
             get {
@@ -2734,7 +3040,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID.
+        ///   Looks up a localized string similar to FileItemTVItemID.
         /// </summary>
         public static string FileItemTVItemID {
             get {
@@ -2752,7 +3058,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FilePurpose.
+        ///   Looks up a localized string similar to FilePurposeAndTextFilePurpose.
         /// </summary>
         public static string FilePurposeAndTextFilePurpose {
             get {
@@ -2761,7 +3067,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FilePurposeText.
+        ///   Looks up a localized string similar to FilePurposeAndTextFilePurposeText.
         /// </summary>
         public static string FilePurposeAndTextFilePurposeText {
             get {
@@ -2779,7 +3085,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DateTime_Local.
+        ///   Looks up a localized string similar to HydrometricDataValueDateTime_Local.
         /// </summary>
         public static string HydrometricDataValueDateTime_Local {
             get {
@@ -2788,7 +3094,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Flow_m3_s.
+        ///   Looks up a localized string similar to HydrometricDataValueFlow_m3_s.
         /// </summary>
         public static string HydrometricDataValueFlow_m3_s {
             get {
@@ -2797,7 +3103,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HourlyValues.
+        ///   Looks up a localized string similar to HydrometricDataValueHourlyValues.
         /// </summary>
         public static string HydrometricDataValueHourlyValues {
             get {
@@ -2806,7 +3112,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HydrometricDataValueID.
+        ///   Looks up a localized string similar to HydrometricDataValueHydrometricDataValueID.
         /// </summary>
         public static string HydrometricDataValueHydrometricDataValueID {
             get {
@@ -2815,7 +3121,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HydrometricSite.
+        ///   Looks up a localized string similar to HydrometricDataValueHydrometricSite.
         /// </summary>
         public static string HydrometricDataValueHydrometricSite {
             get {
@@ -2824,7 +3130,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HydrometricSiteID.
+        ///   Looks up a localized string similar to HydrometricDataValueHydrometricSiteID.
         /// </summary>
         public static string HydrometricDataValueHydrometricSiteID {
             get {
@@ -2833,7 +3139,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Keep.
+        ///   Looks up a localized string similar to HydrometricDataValueKeep.
         /// </summary>
         public static string HydrometricDataValueKeep {
             get {
@@ -2842,7 +3148,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to HydrometricDataValueLastUpdateContactTVItemID.
         /// </summary>
         public static string HydrometricDataValueLastUpdateContactTVItemID {
             get {
@@ -2851,7 +3157,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to HydrometricDataValueLastUpdateDate_UTC.
         /// </summary>
         public static string HydrometricDataValueLastUpdateDate_UTC {
             get {
@@ -2860,7 +3166,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StorageDataType.
+        ///   Looks up a localized string similar to HydrometricDataValueStorageDataType.
         /// </summary>
         public static string HydrometricDataValueStorageDataType {
             get {
@@ -2878,7 +3184,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Description.
+        ///   Looks up a localized string similar to HydrometricSiteDescription.
         /// </summary>
         public static string HydrometricSiteDescription {
             get {
@@ -2887,7 +3193,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DrainageArea_km2.
+        ///   Looks up a localized string similar to HydrometricSiteDrainageArea_km2.
         /// </summary>
         public static string HydrometricSiteDrainageArea_km2 {
             get {
@@ -2896,7 +3202,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Elevation_m.
+        ///   Looks up a localized string similar to HydrometricSiteElevation_m.
         /// </summary>
         public static string HydrometricSiteElevation_m {
             get {
@@ -2905,7 +3211,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EndDate_Local.
+        ///   Looks up a localized string similar to HydrometricSiteEndDate_Local.
         /// </summary>
         public static string HydrometricSiteEndDate_Local {
             get {
@@ -2914,7 +3220,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FedSiteNumber.
+        ///   Looks up a localized string similar to HydrometricSiteFedSiteNumber.
         /// </summary>
         public static string HydrometricSiteFedSiteNumber {
             get {
@@ -2923,7 +3229,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HasRatingCurve.
+        ///   Looks up a localized string similar to HydrometricSiteHasRatingCurve.
         /// </summary>
         public static string HydrometricSiteHasRatingCurve {
             get {
@@ -2932,7 +3238,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HydrometricDataValues.
+        ///   Looks up a localized string similar to HydrometricSiteHydrometricDataValues.
         /// </summary>
         public static string HydrometricSiteHydrometricDataValues {
             get {
@@ -2941,7 +3247,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HydrometricSiteID.
+        ///   Looks up a localized string similar to HydrometricSiteHydrometricSiteID.
         /// </summary>
         public static string HydrometricSiteHydrometricSiteID {
             get {
@@ -2950,7 +3256,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HydrometricSiteName.
+        ///   Looks up a localized string similar to HydrometricSiteHydrometricSiteName.
         /// </summary>
         public static string HydrometricSiteHydrometricSiteName {
             get {
@@ -2959,7 +3265,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HydrometricSiteTVItem.
+        ///   Looks up a localized string similar to HydrometricSiteHydrometricSiteTVItem.
         /// </summary>
         public static string HydrometricSiteHydrometricSiteTVItem {
             get {
@@ -2968,7 +3274,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HydrometricSiteTVItemID.
+        ///   Looks up a localized string similar to HydrometricSiteHydrometricSiteTVItemID.
         /// </summary>
         public static string HydrometricSiteHydrometricSiteTVItemID {
             get {
@@ -2977,7 +3283,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IsActive.
+        ///   Looks up a localized string similar to HydrometricSiteIsActive.
         /// </summary>
         public static string HydrometricSiteIsActive {
             get {
@@ -2986,7 +3292,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IsNatural.
+        ///   Looks up a localized string similar to HydrometricSiteIsNatural.
         /// </summary>
         public static string HydrometricSiteIsNatural {
             get {
@@ -2995,7 +3301,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to HydrometricSiteLastUpdateContactTVItemID.
         /// </summary>
         public static string HydrometricSiteLastUpdateContactTVItemID {
             get {
@@ -3004,7 +3310,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to HydrometricSiteLastUpdateDate_UTC.
         /// </summary>
         public static string HydrometricSiteLastUpdateDate_UTC {
             get {
@@ -3013,7 +3319,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Province.
+        ///   Looks up a localized string similar to HydrometricSiteProvince.
         /// </summary>
         public static string HydrometricSiteProvince {
             get {
@@ -3022,7 +3328,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to QuebecSiteNumber.
+        ///   Looks up a localized string similar to HydrometricSiteQuebecSiteNumber.
         /// </summary>
         public static string HydrometricSiteQuebecSiteNumber {
             get {
@@ -3031,7 +3337,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RatingCurves.
+        ///   Looks up a localized string similar to HydrometricSiteRatingCurves.
         /// </summary>
         public static string HydrometricSiteRatingCurves {
             get {
@@ -3040,7 +3346,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RealTime.
+        ///   Looks up a localized string similar to HydrometricSiteRealTime.
         /// </summary>
         public static string HydrometricSiteRealTime {
             get {
@@ -3049,7 +3355,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RHBN.
+        ///   Looks up a localized string similar to HydrometricSiteRHBN.
         /// </summary>
         public static string HydrometricSiteRHBN {
             get {
@@ -3058,7 +3364,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sediment.
+        ///   Looks up a localized string similar to HydrometricSiteSediment.
         /// </summary>
         public static string HydrometricSiteSediment {
             get {
@@ -3067,7 +3373,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StartDate_Local.
+        ///   Looks up a localized string similar to HydrometricSiteStartDate_Local.
         /// </summary>
         public static string HydrometricSiteStartDate_Local {
             get {
@@ -3076,7 +3382,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TimeOffset_hour.
+        ///   Looks up a localized string similar to HydrometricSiteTimeOffset_hour.
         /// </summary>
         public static string HydrometricSiteTimeOffset_hour {
             get {
@@ -3094,7 +3400,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AerationType.
+        ///   Looks up a localized string similar to InfrastructureAerationType.
         /// </summary>
         public static string InfrastructureAerationType {
             get {
@@ -3103,7 +3409,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AlarmSystemType.
+        ///   Looks up a localized string similar to InfrastructureAlarmSystemType.
         /// </summary>
         public static string InfrastructureAlarmSystemType {
             get {
@@ -3112,7 +3418,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AverageDepth_m.
+        ///   Looks up a localized string similar to InfrastructureAverageDepth_m.
         /// </summary>
         public static string InfrastructureAverageDepth_m {
             get {
@@ -3121,7 +3427,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AverageFlow_m3_day.
+        ///   Looks up a localized string similar to InfrastructureAverageFlow_m3_day.
         /// </summary>
         public static string InfrastructureAverageFlow_m3_day {
             get {
@@ -3130,7 +3436,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CanOverflow.
+        ///   Looks up a localized string similar to InfrastructureCanOverflow.
         /// </summary>
         public static string InfrastructureCanOverflow {
             get {
@@ -3139,7 +3445,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CivicAddressTVItemID.
+        ///   Looks up a localized string similar to InfrastructureCivicAddressTVItemID.
         /// </summary>
         public static string InfrastructureCivicAddressTVItemID {
             get {
@@ -3148,7 +3454,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CollectionSystemType.
+        ///   Looks up a localized string similar to InfrastructureCollectionSystemType.
         /// </summary>
         public static string InfrastructureCollectionSystemType {
             get {
@@ -3157,7 +3463,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DecayRate_per_day.
+        ///   Looks up a localized string similar to InfrastructureDecayRate_per_day.
         /// </summary>
         public static string InfrastructureDecayRate_per_day {
             get {
@@ -3166,7 +3472,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DesignFlow_m3_day.
+        ///   Looks up a localized string similar to InfrastructureDesignFlow_m3_day.
         /// </summary>
         public static string InfrastructureDesignFlow_m3_day {
             get {
@@ -3175,7 +3481,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DisinfectionType.
+        ///   Looks up a localized string similar to InfrastructureDisinfectionType.
         /// </summary>
         public static string InfrastructureDisinfectionType {
             get {
@@ -3184,7 +3490,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DistanceFromShore_m.
+        ///   Looks up a localized string similar to InfrastructureDistanceFromShore_m.
         /// </summary>
         public static string InfrastructureDistanceFromShore_m {
             get {
@@ -3193,7 +3499,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FacilityType.
+        ///   Looks up a localized string similar to InfrastructureFacilityType.
         /// </summary>
         public static string InfrastructureFacilityType {
             get {
@@ -3202,7 +3508,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FarFieldVelocity_m_s.
+        ///   Looks up a localized string similar to InfrastructureFarFieldVelocity_m_s.
         /// </summary>
         public static string InfrastructureFarFieldVelocity_m_s {
             get {
@@ -3211,7 +3517,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HorizontalAngle_deg.
+        ///   Looks up a localized string similar to InfrastructureHorizontalAngle_deg.
         /// </summary>
         public static string InfrastructureHorizontalAngle_deg {
             get {
@@ -3220,7 +3526,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureCategory.
+        ///   Looks up a localized string similar to InfrastructureInfrastructureCategory.
         /// </summary>
         public static string InfrastructureInfrastructureCategory {
             get {
@@ -3229,7 +3535,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureID.
+        ///   Looks up a localized string similar to InfrastructureInfrastructureID.
         /// </summary>
         public static string InfrastructureInfrastructureID {
             get {
@@ -3238,7 +3544,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureLanguages.
+        ///   Looks up a localized string similar to InfrastructureInfrastructureLanguages.
         /// </summary>
         public static string InfrastructureInfrastructureLanguages {
             get {
@@ -3247,7 +3553,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureTVItem.
+        ///   Looks up a localized string similar to InfrastructureInfrastructureTVItem.
         /// </summary>
         public static string InfrastructureInfrastructureTVItem {
             get {
@@ -3256,7 +3562,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureTVItemID.
+        ///   Looks up a localized string similar to InfrastructureInfrastructureTVItemID.
         /// </summary>
         public static string InfrastructureInfrastructureTVItemID {
             get {
@@ -3265,7 +3571,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureType.
+        ///   Looks up a localized string similar to InfrastructureInfrastructureType.
         /// </summary>
         public static string InfrastructureInfrastructureType {
             get {
@@ -3274,7 +3580,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IsMechanicallyAerated.
+        ///   Looks up a localized string similar to InfrastructureIsMechanicallyAerated.
         /// </summary>
         public static string InfrastructureIsMechanicallyAerated {
             get {
@@ -3292,7 +3598,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Comment.
+        ///   Looks up a localized string similar to InfrastructureLanguageComment.
         /// </summary>
         public static string InfrastructureLanguageComment {
             get {
@@ -3301,7 +3607,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Infrastructure.
+        ///   Looks up a localized string similar to InfrastructureLanguageInfrastructure.
         /// </summary>
         public static string InfrastructureLanguageInfrastructure {
             get {
@@ -3310,7 +3616,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureID.
+        ///   Looks up a localized string similar to InfrastructureLanguageInfrastructureID.
         /// </summary>
         public static string InfrastructureLanguageInfrastructureID {
             get {
@@ -3319,7 +3625,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureLanguageID.
+        ///   Looks up a localized string similar to InfrastructureLanguageInfrastructureLanguageID.
         /// </summary>
         public static string InfrastructureLanguageInfrastructureLanguageID {
             get {
@@ -3328,7 +3634,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to InfrastructureLanguageLanguage.
         /// </summary>
         public static string InfrastructureLanguageLanguage {
             get {
@@ -3337,7 +3643,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to InfrastructureLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string InfrastructureLanguageLastUpdateContactTVItemID {
             get {
@@ -3346,7 +3652,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to InfrastructureLanguageLastUpdateDate_UTC.
         /// </summary>
         public static string InfrastructureLanguageLastUpdateDate_UTC {
             get {
@@ -3355,7 +3661,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TranslationStatus.
+        ///   Looks up a localized string similar to InfrastructureLanguageTranslationStatus.
         /// </summary>
         public static string InfrastructureLanguageTranslationStatus {
             get {
@@ -3364,7 +3670,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to InfrastructureLastUpdateContactTVItemID.
         /// </summary>
         public static string InfrastructureLastUpdateContactTVItemID {
             get {
@@ -3373,7 +3679,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to InfrastructureLastUpdateDate_UTC.
         /// </summary>
         public static string InfrastructureLastUpdateDate_UTC {
             get {
@@ -3382,7 +3688,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LSID.
+        ///   Looks up a localized string similar to InfrastructureLSID.
         /// </summary>
         public static string InfrastructureLSID {
             get {
@@ -3391,7 +3697,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NearFieldVelocity_m_s.
+        ///   Looks up a localized string similar to InfrastructureNearFieldVelocity_m_s.
         /// </summary>
         public static string InfrastructureNearFieldVelocity_m_s {
             get {
@@ -3400,7 +3706,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NumberOfAeratedCells.
+        ///   Looks up a localized string similar to InfrastructureNumberOfAeratedCells.
         /// </summary>
         public static string InfrastructureNumberOfAeratedCells {
             get {
@@ -3409,7 +3715,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NumberOfCells.
+        ///   Looks up a localized string similar to InfrastructureNumberOfCells.
         /// </summary>
         public static string InfrastructureNumberOfCells {
             get {
@@ -3418,7 +3724,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NumberOfPorts.
+        ///   Looks up a localized string similar to InfrastructureNumberOfPorts.
         /// </summary>
         public static string InfrastructureNumberOfPorts {
             get {
@@ -3427,7 +3733,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PeakFlow_m3_day.
+        ///   Looks up a localized string similar to InfrastructurePeakFlow_m3_day.
         /// </summary>
         public static string InfrastructurePeakFlow_m3_day {
             get {
@@ -3436,7 +3742,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PercFlowOfTotal.
+        ///   Looks up a localized string similar to InfrastructurePercFlowOfTotal.
         /// </summary>
         public static string InfrastructurePercFlowOfTotal {
             get {
@@ -3445,7 +3751,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PopServed.
+        ///   Looks up a localized string similar to InfrastructurePopServed.
         /// </summary>
         public static string InfrastructurePopServed {
             get {
@@ -3454,7 +3760,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PortDiameter_m.
+        ///   Looks up a localized string similar to InfrastructurePortDiameter_m.
         /// </summary>
         public static string InfrastructurePortDiameter_m {
             get {
@@ -3463,7 +3769,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PortElevation_m.
+        ///   Looks up a localized string similar to InfrastructurePortElevation_m.
         /// </summary>
         public static string InfrastructurePortElevation_m {
             get {
@@ -3472,7 +3778,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PortSpacing_m.
+        ///   Looks up a localized string similar to InfrastructurePortSpacing_m.
         /// </summary>
         public static string InfrastructurePortSpacing_m {
             get {
@@ -3481,7 +3787,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PreliminaryTreatmentType.
+        ///   Looks up a localized string similar to InfrastructurePreliminaryTreatmentType.
         /// </summary>
         public static string InfrastructurePreliminaryTreatmentType {
             get {
@@ -3490,7 +3796,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PrimaryTreatmentType.
+        ///   Looks up a localized string similar to InfrastructurePrimaryTreatmentType.
         /// </summary>
         public static string InfrastructurePrimaryTreatmentType {
             get {
@@ -3499,7 +3805,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PrismID.
+        ///   Looks up a localized string similar to InfrastructurePrismID.
         /// </summary>
         public static string InfrastructurePrismID {
             get {
@@ -3508,7 +3814,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ReceivingWater_MPN_per_100ml.
+        ///   Looks up a localized string similar to InfrastructureReceivingWater_MPN_per_100ml.
         /// </summary>
         public static string InfrastructureReceivingWater_MPN_per_100ml {
             get {
@@ -3517,7 +3823,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ReceivingWaterSalinity_PSU.
+        ///   Looks up a localized string similar to InfrastructureReceivingWaterSalinity_PSU.
         /// </summary>
         public static string InfrastructureReceivingWaterSalinity_PSU {
             get {
@@ -3526,7 +3832,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ReceivingWaterTemperature_C.
+        ///   Looks up a localized string similar to InfrastructureReceivingWaterTemperature_C.
         /// </summary>
         public static string InfrastructureReceivingWaterTemperature_C {
             get {
@@ -3535,7 +3841,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SecondaryTreatmentType.
+        ///   Looks up a localized string similar to InfrastructureSecondaryTreatmentType.
         /// </summary>
         public static string InfrastructureSecondaryTreatmentType {
             get {
@@ -3544,7 +3850,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SeeOtherTVItemID.
+        ///   Looks up a localized string similar to InfrastructureSeeOtherTVItemID.
         /// </summary>
         public static string InfrastructureSeeOtherTVItemID {
             get {
@@ -3553,7 +3859,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Site.
+        ///   Looks up a localized string similar to InfrastructureSite.
         /// </summary>
         public static string InfrastructureSite {
             get {
@@ -3562,7 +3868,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SiteID.
+        ///   Looks up a localized string similar to InfrastructureSiteID.
         /// </summary>
         public static string InfrastructureSiteID {
             get {
@@ -3571,7 +3877,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TempCatchAllRemoveLater.
+        ///   Looks up a localized string similar to InfrastructureTempCatchAllRemoveLater.
         /// </summary>
         public static string InfrastructureTempCatchAllRemoveLater {
             get {
@@ -3580,7 +3886,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TertiaryTreatmentType.
+        ///   Looks up a localized string similar to InfrastructureTertiaryTreatmentType.
         /// </summary>
         public static string InfrastructureTertiaryTreatmentType {
             get {
@@ -3589,7 +3895,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TimeOffset_hour.
+        ///   Looks up a localized string similar to InfrastructureTimeOffset_hour.
         /// </summary>
         public static string InfrastructureTimeOffset_hour {
             get {
@@ -3598,7 +3904,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TPID.
+        ///   Looks up a localized string similar to InfrastructureTPID.
         /// </summary>
         public static string InfrastructureTPID {
             get {
@@ -3607,7 +3913,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TreatmentType.
+        ///   Looks up a localized string similar to InfrastructureTreatmentType.
         /// </summary>
         public static string InfrastructureTreatmentType {
             get {
@@ -3616,7 +3922,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VerticalAngle_deg.
+        ///   Looks up a localized string similar to InfrastructureVerticalAngle_deg.
         /// </summary>
         public static string InfrastructureVerticalAngle_deg {
             get {
@@ -3634,7 +3940,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error.
+        ///   Looks up a localized string similar to InputSummaryError.
         /// </summary>
         public static string InputSummaryError {
             get {
@@ -3643,7 +3949,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Summary.
+        ///   Looks up a localized string similar to InputSummarySummary.
         /// </summary>
         public static string InputSummarySummary {
             get {
@@ -3670,7 +3976,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MPN.
+        ///   Looks up a localized string similar to LabSheetA1MeasurementMPN.
         /// </summary>
         public static string LabSheetA1MeasurementMPN {
             get {
@@ -3679,7 +3985,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ProcessedBy.
+        ///   Looks up a localized string similar to LabSheetA1MeasurementProcessedBy.
         /// </summary>
         public static string LabSheetA1MeasurementProcessedBy {
             get {
@@ -3688,7 +3994,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Salinity.
+        ///   Looks up a localized string similar to LabSheetA1MeasurementSalinity.
         /// </summary>
         public static string LabSheetA1MeasurementSalinity {
             get {
@@ -3697,7 +4003,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleType.
+        ///   Looks up a localized string similar to LabSheetA1MeasurementSampleType.
         /// </summary>
         public static string LabSheetA1MeasurementSampleType {
             get {
@@ -3706,7 +4012,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Site.
+        ///   Looks up a localized string similar to LabSheetA1MeasurementSite.
         /// </summary>
         public static string LabSheetA1MeasurementSite {
             get {
@@ -3715,7 +4021,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SiteComment.
+        ///   Looks up a localized string similar to LabSheetA1MeasurementSiteComment.
         /// </summary>
         public static string LabSheetA1MeasurementSiteComment {
             get {
@@ -3724,7 +4030,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Temperature.
+        ///   Looks up a localized string similar to LabSheetA1MeasurementTemperature.
         /// </summary>
         public static string LabSheetA1MeasurementTemperature {
             get {
@@ -3733,7 +4039,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Time.
+        ///   Looks up a localized string similar to LabSheetA1MeasurementTime.
         /// </summary>
         public static string LabSheetA1MeasurementTime {
             get {
@@ -3742,7 +4048,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tube0_1.
+        ///   Looks up a localized string similar to LabSheetA1MeasurementTube0_1.
         /// </summary>
         public static string LabSheetA1MeasurementTube0_1 {
             get {
@@ -3751,7 +4057,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tube1_0.
+        ///   Looks up a localized string similar to LabSheetA1MeasurementTube1_0.
         /// </summary>
         public static string LabSheetA1MeasurementTube1_0 {
             get {
@@ -3760,7 +4066,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tube10.
+        ///   Looks up a localized string similar to LabSheetA1MeasurementTube10.
         /// </summary>
         public static string LabSheetA1MeasurementTube10 {
             get {
@@ -3769,7 +4075,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID.
+        ///   Looks up a localized string similar to LabSheetA1MeasurementTVItemID.
         /// </summary>
         public static string LabSheetA1MeasurementTVItemID {
             get {
@@ -3787,7 +4093,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ApprovalDay.
+        ///   Looks up a localized string similar to LabSheetA1SheetApprovalDay.
         /// </summary>
         public static string LabSheetA1SheetApprovalDay {
             get {
@@ -3796,7 +4102,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ApprovalMonth.
+        ///   Looks up a localized string similar to LabSheetA1SheetApprovalMonth.
         /// </summary>
         public static string LabSheetA1SheetApprovalMonth {
             get {
@@ -3805,7 +4111,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ApprovalYear.
+        ///   Looks up a localized string similar to LabSheetA1SheetApprovalYear.
         /// </summary>
         public static string LabSheetA1SheetApprovalYear {
             get {
@@ -3814,7 +4120,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ApprovedBySupervisorInitials.
+        ///   Looks up a localized string similar to LabSheetA1SheetApprovedBySupervisorInitials.
         /// </summary>
         public static string LabSheetA1SheetApprovedBySupervisorInitials {
             get {
@@ -3823,7 +4129,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath1Blank44_5.
+        ///   Looks up a localized string similar to LabSheetA1SheetBath1Blank44_5.
         /// </summary>
         public static string LabSheetA1SheetBath1Blank44_5 {
             get {
@@ -3832,7 +4138,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath1Negative44_5.
+        ///   Looks up a localized string similar to LabSheetA1SheetBath1Negative44_5.
         /// </summary>
         public static string LabSheetA1SheetBath1Negative44_5 {
             get {
@@ -3841,7 +4147,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath1NonTarget44_5.
+        ///   Looks up a localized string similar to LabSheetA1SheetBath1NonTarget44_5.
         /// </summary>
         public static string LabSheetA1SheetBath1NonTarget44_5 {
             get {
@@ -3850,7 +4156,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath1Positive44_5.
+        ///   Looks up a localized string similar to LabSheetA1SheetBath1Positive44_5.
         /// </summary>
         public static string LabSheetA1SheetBath1Positive44_5 {
             get {
@@ -3859,7 +4165,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath2Blank44_5.
+        ///   Looks up a localized string similar to LabSheetA1SheetBath2Blank44_5.
         /// </summary>
         public static string LabSheetA1SheetBath2Blank44_5 {
             get {
@@ -3868,7 +4174,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath2Negative44_5.
+        ///   Looks up a localized string similar to LabSheetA1SheetBath2Negative44_5.
         /// </summary>
         public static string LabSheetA1SheetBath2Negative44_5 {
             get {
@@ -3877,7 +4183,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath2NonTarget44_5.
+        ///   Looks up a localized string similar to LabSheetA1SheetBath2NonTarget44_5.
         /// </summary>
         public static string LabSheetA1SheetBath2NonTarget44_5 {
             get {
@@ -3886,7 +4192,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath2Positive44_5.
+        ///   Looks up a localized string similar to LabSheetA1SheetBath2Positive44_5.
         /// </summary>
         public static string LabSheetA1SheetBath2Positive44_5 {
             get {
@@ -3895,7 +4201,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath3Blank44_5.
+        ///   Looks up a localized string similar to LabSheetA1SheetBath3Blank44_5.
         /// </summary>
         public static string LabSheetA1SheetBath3Blank44_5 {
             get {
@@ -3904,7 +4210,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath3Negative44_5.
+        ///   Looks up a localized string similar to LabSheetA1SheetBath3Negative44_5.
         /// </summary>
         public static string LabSheetA1SheetBath3Negative44_5 {
             get {
@@ -3913,7 +4219,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath3NonTarget44_5.
+        ///   Looks up a localized string similar to LabSheetA1SheetBath3NonTarget44_5.
         /// </summary>
         public static string LabSheetA1SheetBath3NonTarget44_5 {
             get {
@@ -3922,7 +4228,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath3Positive44_5.
+        ///   Looks up a localized string similar to LabSheetA1SheetBath3Positive44_5.
         /// </summary>
         public static string LabSheetA1SheetBath3Positive44_5 {
             get {
@@ -3931,7 +4237,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Blank35.
+        ///   Looks up a localized string similar to LabSheetA1SheetBlank35.
         /// </summary>
         public static string LabSheetA1SheetBlank35 {
             get {
@@ -3940,7 +4246,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ControlLot.
+        ///   Looks up a localized string similar to LabSheetA1SheetControlLot.
         /// </summary>
         public static string LabSheetA1SheetControlLot {
             get {
@@ -3949,7 +4255,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DailyDuplicateAcceptableOrUnacceptable.
+        ///   Looks up a localized string similar to LabSheetA1SheetDailyDuplicateAcceptableOrUnacceptable.
         /// </summary>
         public static string LabSheetA1SheetDailyDuplicateAcceptableOrUnacceptable {
             get {
@@ -3958,7 +4264,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DailyDuplicatePrecisionCriteria.
+        ///   Looks up a localized string similar to LabSheetA1SheetDailyDuplicatePrecisionCriteria.
         /// </summary>
         public static string LabSheetA1SheetDailyDuplicatePrecisionCriteria {
             get {
@@ -3967,7 +4273,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DailyDuplicateRLog.
+        ///   Looks up a localized string similar to LabSheetA1SheetDailyDuplicateRLog.
         /// </summary>
         public static string LabSheetA1SheetDailyDuplicateRLog {
             get {
@@ -3976,7 +4282,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error.
+        ///   Looks up a localized string similar to LabSheetA1SheetError.
         /// </summary>
         public static string LabSheetA1SheetError {
             get {
@@ -3985,7 +4291,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncludeLaboratoryQAQC.
+        ///   Looks up a localized string similar to LabSheetA1SheetIncludeLaboratoryQAQC.
         /// </summary>
         public static string LabSheetA1SheetIncludeLaboratoryQAQC {
             get {
@@ -3994,7 +4300,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath1EndTime.
+        ///   Looks up a localized string similar to LabSheetA1SheetIncubationBath1EndTime.
         /// </summary>
         public static string LabSheetA1SheetIncubationBath1EndTime {
             get {
@@ -4003,7 +4309,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath1StartTime.
+        ///   Looks up a localized string similar to LabSheetA1SheetIncubationBath1StartTime.
         /// </summary>
         public static string LabSheetA1SheetIncubationBath1StartTime {
             get {
@@ -4012,7 +4318,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath1TimeCalculated.
+        ///   Looks up a localized string similar to LabSheetA1SheetIncubationBath1TimeCalculated.
         /// </summary>
         public static string LabSheetA1SheetIncubationBath1TimeCalculated {
             get {
@@ -4021,7 +4327,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath2EndTime.
+        ///   Looks up a localized string similar to LabSheetA1SheetIncubationBath2EndTime.
         /// </summary>
         public static string LabSheetA1SheetIncubationBath2EndTime {
             get {
@@ -4030,7 +4336,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath2StartTime.
+        ///   Looks up a localized string similar to LabSheetA1SheetIncubationBath2StartTime.
         /// </summary>
         public static string LabSheetA1SheetIncubationBath2StartTime {
             get {
@@ -4039,7 +4345,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath2TimeCalculated.
+        ///   Looks up a localized string similar to LabSheetA1SheetIncubationBath2TimeCalculated.
         /// </summary>
         public static string LabSheetA1SheetIncubationBath2TimeCalculated {
             get {
@@ -4048,7 +4354,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath3EndTime.
+        ///   Looks up a localized string similar to LabSheetA1SheetIncubationBath3EndTime.
         /// </summary>
         public static string LabSheetA1SheetIncubationBath3EndTime {
             get {
@@ -4057,7 +4363,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath3StartTime.
+        ///   Looks up a localized string similar to LabSheetA1SheetIncubationBath3StartTime.
         /// </summary>
         public static string LabSheetA1SheetIncubationBath3StartTime {
             get {
@@ -4066,7 +4372,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath3TimeCalculated.
+        ///   Looks up a localized string similar to LabSheetA1SheetIncubationBath3TimeCalculated.
         /// </summary>
         public static string LabSheetA1SheetIncubationBath3TimeCalculated {
             get {
@@ -4075,7 +4381,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationStartSameDay.
+        ///   Looks up a localized string similar to LabSheetA1SheetIncubationStartSameDay.
         /// </summary>
         public static string LabSheetA1SheetIncubationStartSameDay {
             get {
@@ -4084,7 +4390,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IntertechDuplicateAcceptableOrUnacceptable.
+        ///   Looks up a localized string similar to LabSheetA1SheetIntertechDuplicateAcceptableOrUnacceptable.
         /// </summary>
         public static string LabSheetA1SheetIntertechDuplicateAcceptableOrUnacceptable {
             get {
@@ -4093,7 +4399,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IntertechDuplicatePrecisionCriteria.
+        ///   Looks up a localized string similar to LabSheetA1SheetIntertechDuplicatePrecisionCriteria.
         /// </summary>
         public static string LabSheetA1SheetIntertechDuplicatePrecisionCriteria {
             get {
@@ -4102,7 +4408,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IntertechDuplicateRLog.
+        ///   Looks up a localized string similar to LabSheetA1SheetIntertechDuplicateRLog.
         /// </summary>
         public static string LabSheetA1SheetIntertechDuplicateRLog {
             get {
@@ -4111,7 +4417,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IntertechReadAcceptableOrUnacceptable.
+        ///   Looks up a localized string similar to LabSheetA1SheetIntertechReadAcceptableOrUnacceptable.
         /// </summary>
         public static string LabSheetA1SheetIntertechReadAcceptableOrUnacceptable {
             get {
@@ -4120,7 +4426,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetA1MeasurementList.
+        ///   Looks up a localized string similar to LabSheetA1SheetLabSheetA1MeasurementList.
         /// </summary>
         public static string LabSheetA1SheetLabSheetA1MeasurementList {
             get {
@@ -4129,7 +4435,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetType.
+        ///   Looks up a localized string similar to LabSheetA1SheetLabSheetType.
         /// </summary>
         public static string LabSheetA1SheetLabSheetType {
             get {
@@ -4138,7 +4444,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Log.
+        ///   Looks up a localized string similar to LabSheetA1SheetLog.
         /// </summary>
         public static string LabSheetA1SheetLog {
             get {
@@ -4147,7 +4453,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lot35.
+        ///   Looks up a localized string similar to LabSheetA1SheetLot35.
         /// </summary>
         public static string LabSheetA1SheetLot35 {
             get {
@@ -4156,7 +4462,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lot44_5.
+        ///   Looks up a localized string similar to LabSheetA1SheetLot44_5.
         /// </summary>
         public static string LabSheetA1SheetLot44_5 {
             get {
@@ -4165,7 +4471,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Negative35.
+        ///   Looks up a localized string similar to LabSheetA1SheetNegative35.
         /// </summary>
         public static string LabSheetA1SheetNegative35 {
             get {
@@ -4174,7 +4480,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NonTarget35.
+        ///   Looks up a localized string similar to LabSheetA1SheetNonTarget35.
         /// </summary>
         public static string LabSheetA1SheetNonTarget35 {
             get {
@@ -4183,7 +4489,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Positive35.
+        ///   Looks up a localized string similar to LabSheetA1SheetPositive35.
         /// </summary>
         public static string LabSheetA1SheetPositive35 {
             get {
@@ -4192,7 +4498,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResultsReadBy.
+        ///   Looks up a localized string similar to LabSheetA1SheetResultsReadBy.
         /// </summary>
         public static string LabSheetA1SheetResultsReadBy {
             get {
@@ -4201,7 +4507,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResultsReadDay.
+        ///   Looks up a localized string similar to LabSheetA1SheetResultsReadDay.
         /// </summary>
         public static string LabSheetA1SheetResultsReadDay {
             get {
@@ -4210,7 +4516,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResultsReadMonth.
+        ///   Looks up a localized string similar to LabSheetA1SheetResultsReadMonth.
         /// </summary>
         public static string LabSheetA1SheetResultsReadMonth {
             get {
@@ -4219,7 +4525,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResultsReadYear.
+        ///   Looks up a localized string similar to LabSheetA1SheetResultsReadYear.
         /// </summary>
         public static string LabSheetA1SheetResultsReadYear {
             get {
@@ -4228,7 +4534,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResultsRecordedBy.
+        ///   Looks up a localized string similar to LabSheetA1SheetResultsRecordedBy.
         /// </summary>
         public static string LabSheetA1SheetResultsRecordedBy {
             get {
@@ -4237,7 +4543,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResultsRecordedDay.
+        ///   Looks up a localized string similar to LabSheetA1SheetResultsRecordedDay.
         /// </summary>
         public static string LabSheetA1SheetResultsRecordedDay {
             get {
@@ -4246,7 +4552,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResultsRecordedMonth.
+        ///   Looks up a localized string similar to LabSheetA1SheetResultsRecordedMonth.
         /// </summary>
         public static string LabSheetA1SheetResultsRecordedMonth {
             get {
@@ -4255,7 +4561,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResultsRecordedYear.
+        ///   Looks up a localized string similar to LabSheetA1SheetResultsRecordedYear.
         /// </summary>
         public static string LabSheetA1SheetResultsRecordedYear {
             get {
@@ -4264,7 +4570,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RunComment.
+        ///   Looks up a localized string similar to LabSheetA1SheetRunComment.
         /// </summary>
         public static string LabSheetA1SheetRunComment {
             get {
@@ -4273,7 +4579,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RunDay.
+        ///   Looks up a localized string similar to LabSheetA1SheetRunDay.
         /// </summary>
         public static string LabSheetA1SheetRunDay {
             get {
@@ -4282,7 +4588,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RunMonth.
+        ///   Looks up a localized string similar to LabSheetA1SheetRunMonth.
         /// </summary>
         public static string LabSheetA1SheetRunMonth {
             get {
@@ -4291,7 +4597,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RunNumber.
+        ///   Looks up a localized string similar to LabSheetA1SheetRunNumber.
         /// </summary>
         public static string LabSheetA1SheetRunNumber {
             get {
@@ -4300,7 +4606,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RunWeatherComment.
+        ///   Looks up a localized string similar to LabSheetA1SheetRunWeatherComment.
         /// </summary>
         public static string LabSheetA1SheetRunWeatherComment {
             get {
@@ -4309,7 +4615,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RunYear.
+        ///   Looks up a localized string similar to LabSheetA1SheetRunYear.
         /// </summary>
         public static string LabSheetA1SheetRunYear {
             get {
@@ -4318,7 +4624,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SalinitiesReadBy.
+        ///   Looks up a localized string similar to LabSheetA1SheetSalinitiesReadBy.
         /// </summary>
         public static string LabSheetA1SheetSalinitiesReadBy {
             get {
@@ -4327,7 +4633,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SalinitiesReadDay.
+        ///   Looks up a localized string similar to LabSheetA1SheetSalinitiesReadDay.
         /// </summary>
         public static string LabSheetA1SheetSalinitiesReadDay {
             get {
@@ -4336,7 +4642,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SalinitiesReadMonth.
+        ///   Looks up a localized string similar to LabSheetA1SheetSalinitiesReadMonth.
         /// </summary>
         public static string LabSheetA1SheetSalinitiesReadMonth {
             get {
@@ -4345,7 +4651,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SalinitiesReadYear.
+        ///   Looks up a localized string similar to LabSheetA1SheetSalinitiesReadYear.
         /// </summary>
         public static string LabSheetA1SheetSalinitiesReadYear {
             get {
@@ -4354,7 +4660,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleBottleLotNumber.
+        ///   Looks up a localized string similar to LabSheetA1SheetSampleBottleLotNumber.
         /// </summary>
         public static string LabSheetA1SheetSampleBottleLotNumber {
             get {
@@ -4363,7 +4669,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleCrewInitials.
+        ///   Looks up a localized string similar to LabSheetA1SheetSampleCrewInitials.
         /// </summary>
         public static string LabSheetA1SheetSampleCrewInitials {
             get {
@@ -4372,7 +4678,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleType.
+        ///   Looks up a localized string similar to LabSheetA1SheetSampleType.
         /// </summary>
         public static string LabSheetA1SheetSampleType {
             get {
@@ -4381,7 +4687,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanType.
+        ///   Looks up a localized string similar to LabSheetA1SheetSamplingPlanType.
         /// </summary>
         public static string LabSheetA1SheetSamplingPlanType {
             get {
@@ -4390,7 +4696,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorLocation.
+        ///   Looks up a localized string similar to LabSheetA1SheetSubsectorLocation.
         /// </summary>
         public static string LabSheetA1SheetSubsectorLocation {
             get {
@@ -4399,7 +4705,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorName.
+        ///   Looks up a localized string similar to LabSheetA1SheetSubsectorName.
         /// </summary>
         public static string LabSheetA1SheetSubsectorName {
             get {
@@ -4408,7 +4714,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorTVItemID.
+        ///   Looks up a localized string similar to LabSheetA1SheetSubsectorTVItemID.
         /// </summary>
         public static string LabSheetA1SheetSubsectorTVItemID {
             get {
@@ -4417,7 +4723,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TCAverage.
+        ///   Looks up a localized string similar to LabSheetA1SheetTCAverage.
         /// </summary>
         public static string LabSheetA1SheetTCAverage {
             get {
@@ -4426,7 +4732,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TCField1.
+        ///   Looks up a localized string similar to LabSheetA1SheetTCField1.
         /// </summary>
         public static string LabSheetA1SheetTCField1 {
             get {
@@ -4435,7 +4741,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TCField2.
+        ///   Looks up a localized string similar to LabSheetA1SheetTCField2.
         /// </summary>
         public static string LabSheetA1SheetTCField2 {
             get {
@@ -4444,7 +4750,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TCFirst.
+        ///   Looks up a localized string similar to LabSheetA1SheetTCFirst.
         /// </summary>
         public static string LabSheetA1SheetTCFirst {
             get {
@@ -4453,7 +4759,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TCHas2Coolers.
+        ///   Looks up a localized string similar to LabSheetA1SheetTCHas2Coolers.
         /// </summary>
         public static string LabSheetA1SheetTCHas2Coolers {
             get {
@@ -4462,7 +4768,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TCLab1.
+        ///   Looks up a localized string similar to LabSheetA1SheetTCLab1.
         /// </summary>
         public static string LabSheetA1SheetTCLab1 {
             get {
@@ -4471,7 +4777,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TCLab2.
+        ///   Looks up a localized string similar to LabSheetA1SheetTCLab2.
         /// </summary>
         public static string LabSheetA1SheetTCLab2 {
             get {
@@ -4480,7 +4786,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tides.
+        ///   Looks up a localized string similar to LabSheetA1SheetTides.
         /// </summary>
         public static string LabSheetA1SheetTides {
             get {
@@ -4489,7 +4795,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Version.
+        ///   Looks up a localized string similar to LabSheetA1SheetVersion.
         /// </summary>
         public static string LabSheetA1SheetVersion {
             get {
@@ -4498,7 +4804,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WaterBath1.
+        ///   Looks up a localized string similar to LabSheetA1SheetWaterBath1.
         /// </summary>
         public static string LabSheetA1SheetWaterBath1 {
             get {
@@ -4507,7 +4813,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WaterBath2.
+        ///   Looks up a localized string similar to LabSheetA1SheetWaterBath2.
         /// </summary>
         public static string LabSheetA1SheetWaterBath2 {
             get {
@@ -4516,7 +4822,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WaterBath3.
+        ///   Looks up a localized string similar to LabSheetA1SheetWaterBath3.
         /// </summary>
         public static string LabSheetA1SheetWaterBath3 {
             get {
@@ -4525,7 +4831,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WaterBathCount.
+        ///   Looks up a localized string similar to LabSheetA1SheetWaterBathCount.
         /// </summary>
         public static string LabSheetA1SheetWaterBathCount {
             get {
@@ -4534,7 +4840,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AcceptedOrRejectedByContactTVItem.
+        ///   Looks up a localized string similar to LabSheetAcceptedOrRejectedByContactTVItem.
         /// </summary>
         public static string LabSheetAcceptedOrRejectedByContactTVItem {
             get {
@@ -4543,7 +4849,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AcceptedOrRejectedByContactTVItemID.
+        ///   Looks up a localized string similar to LabSheetAcceptedOrRejectedByContactTVItemID.
         /// </summary>
         public static string LabSheetAcceptedOrRejectedByContactTVItemID {
             get {
@@ -4552,7 +4858,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AcceptedOrRejectedDateTime.
+        ///   Looks up a localized string similar to LabSheetAcceptedOrRejectedDateTime.
         /// </summary>
         public static string LabSheetAcceptedOrRejectedDateTime {
             get {
@@ -4570,7 +4876,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheet.
+        ///   Looks up a localized string similar to LabSheetAndA1SheetLabSheet.
         /// </summary>
         public static string LabSheetAndA1SheetLabSheet {
             get {
@@ -4579,7 +4885,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetA1Sheet.
+        ///   Looks up a localized string similar to LabSheetAndA1SheetLabSheetA1Sheet.
         /// </summary>
         public static string LabSheetAndA1SheetLabSheetA1Sheet {
             get {
@@ -4588,7 +4894,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Day.
+        ///   Looks up a localized string similar to LabSheetDay.
         /// </summary>
         public static string LabSheetDay {
             get {
@@ -4606,7 +4912,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath1Blank44_5.
+        ///   Looks up a localized string similar to LabSheetDetailBath1Blank44_5.
         /// </summary>
         public static string LabSheetDetailBath1Blank44_5 {
             get {
@@ -4615,7 +4921,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath1Negative44_5.
+        ///   Looks up a localized string similar to LabSheetDetailBath1Negative44_5.
         /// </summary>
         public static string LabSheetDetailBath1Negative44_5 {
             get {
@@ -4624,7 +4930,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath1NonTarget44_5.
+        ///   Looks up a localized string similar to LabSheetDetailBath1NonTarget44_5.
         /// </summary>
         public static string LabSheetDetailBath1NonTarget44_5 {
             get {
@@ -4633,7 +4939,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath1Positive44_5.
+        ///   Looks up a localized string similar to LabSheetDetailBath1Positive44_5.
         /// </summary>
         public static string LabSheetDetailBath1Positive44_5 {
             get {
@@ -4642,7 +4948,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath2Blank44_5.
+        ///   Looks up a localized string similar to LabSheetDetailBath2Blank44_5.
         /// </summary>
         public static string LabSheetDetailBath2Blank44_5 {
             get {
@@ -4651,7 +4957,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath2Negative44_5.
+        ///   Looks up a localized string similar to LabSheetDetailBath2Negative44_5.
         /// </summary>
         public static string LabSheetDetailBath2Negative44_5 {
             get {
@@ -4660,7 +4966,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath2NonTarget44_5.
+        ///   Looks up a localized string similar to LabSheetDetailBath2NonTarget44_5.
         /// </summary>
         public static string LabSheetDetailBath2NonTarget44_5 {
             get {
@@ -4669,7 +4975,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath2Positive44_5.
+        ///   Looks up a localized string similar to LabSheetDetailBath2Positive44_5.
         /// </summary>
         public static string LabSheetDetailBath2Positive44_5 {
             get {
@@ -4678,7 +4984,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath3Blank44_5.
+        ///   Looks up a localized string similar to LabSheetDetailBath3Blank44_5.
         /// </summary>
         public static string LabSheetDetailBath3Blank44_5 {
             get {
@@ -4687,7 +4993,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath3Negative44_5.
+        ///   Looks up a localized string similar to LabSheetDetailBath3Negative44_5.
         /// </summary>
         public static string LabSheetDetailBath3Negative44_5 {
             get {
@@ -4696,7 +5002,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath3NonTarget44_5.
+        ///   Looks up a localized string similar to LabSheetDetailBath3NonTarget44_5.
         /// </summary>
         public static string LabSheetDetailBath3NonTarget44_5 {
             get {
@@ -4705,7 +5011,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bath3Positive44_5.
+        ///   Looks up a localized string similar to LabSheetDetailBath3Positive44_5.
         /// </summary>
         public static string LabSheetDetailBath3Positive44_5 {
             get {
@@ -4714,7 +5020,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Blank35.
+        ///   Looks up a localized string similar to LabSheetDetailBlank35.
         /// </summary>
         public static string LabSheetDetailBlank35 {
             get {
@@ -4723,7 +5029,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ControlLot.
+        ///   Looks up a localized string similar to LabSheetDetailControlLot.
         /// </summary>
         public static string LabSheetDetailControlLot {
             get {
@@ -4732,7 +5038,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DailyDuplicateAcceptable.
+        ///   Looks up a localized string similar to LabSheetDetailDailyDuplicateAcceptable.
         /// </summary>
         public static string LabSheetDetailDailyDuplicateAcceptable {
             get {
@@ -4741,7 +5047,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DailyDuplicatePrecisionCriteria.
+        ///   Looks up a localized string similar to LabSheetDetailDailyDuplicatePrecisionCriteria.
         /// </summary>
         public static string LabSheetDetailDailyDuplicatePrecisionCriteria {
             get {
@@ -4750,7 +5056,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DailyDuplicateRlog.
+        ///   Looks up a localized string similar to LabSheetDetailDailyDuplicateRlog.
         /// </summary>
         public static string LabSheetDetailDailyDuplicateRlog {
             get {
@@ -4759,7 +5065,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath1EndTime.
+        ///   Looks up a localized string similar to LabSheetDetailIncubationBath1EndTime.
         /// </summary>
         public static string LabSheetDetailIncubationBath1EndTime {
             get {
@@ -4768,7 +5074,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath1StartTime.
+        ///   Looks up a localized string similar to LabSheetDetailIncubationBath1StartTime.
         /// </summary>
         public static string LabSheetDetailIncubationBath1StartTime {
             get {
@@ -4777,7 +5083,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath1TimeCalculated_minutes.
+        ///   Looks up a localized string similar to LabSheetDetailIncubationBath1TimeCalculated_minutes.
         /// </summary>
         public static string LabSheetDetailIncubationBath1TimeCalculated_minutes {
             get {
@@ -4786,7 +5092,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath2EndTime.
+        ///   Looks up a localized string similar to LabSheetDetailIncubationBath2EndTime.
         /// </summary>
         public static string LabSheetDetailIncubationBath2EndTime {
             get {
@@ -4795,7 +5101,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath2StartTime.
+        ///   Looks up a localized string similar to LabSheetDetailIncubationBath2StartTime.
         /// </summary>
         public static string LabSheetDetailIncubationBath2StartTime {
             get {
@@ -4804,7 +5110,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath2TimeCalculated_minutes.
+        ///   Looks up a localized string similar to LabSheetDetailIncubationBath2TimeCalculated_minutes.
         /// </summary>
         public static string LabSheetDetailIncubationBath2TimeCalculated_minutes {
             get {
@@ -4813,7 +5119,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath3EndTime.
+        ///   Looks up a localized string similar to LabSheetDetailIncubationBath3EndTime.
         /// </summary>
         public static string LabSheetDetailIncubationBath3EndTime {
             get {
@@ -4822,7 +5128,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath3StartTime.
+        ///   Looks up a localized string similar to LabSheetDetailIncubationBath3StartTime.
         /// </summary>
         public static string LabSheetDetailIncubationBath3StartTime {
             get {
@@ -4831,7 +5137,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncubationBath3TimeCalculated_minutes.
+        ///   Looks up a localized string similar to LabSheetDetailIncubationBath3TimeCalculated_minutes.
         /// </summary>
         public static string LabSheetDetailIncubationBath3TimeCalculated_minutes {
             get {
@@ -4840,7 +5146,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IntertechDuplicateAcceptable.
+        ///   Looks up a localized string similar to LabSheetDetailIntertechDuplicateAcceptable.
         /// </summary>
         public static string LabSheetDetailIntertechDuplicateAcceptable {
             get {
@@ -4849,7 +5155,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IntertechDuplicatePrecisionCriteria.
+        ///   Looks up a localized string similar to LabSheetDetailIntertechDuplicatePrecisionCriteria.
         /// </summary>
         public static string LabSheetDetailIntertechDuplicatePrecisionCriteria {
             get {
@@ -4858,7 +5164,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IntertechDuplicateRlog.
+        ///   Looks up a localized string similar to LabSheetDetailIntertechDuplicateRlog.
         /// </summary>
         public static string LabSheetDetailIntertechDuplicateRlog {
             get {
@@ -4867,7 +5173,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IntertechReadAcceptable.
+        ///   Looks up a localized string similar to LabSheetDetailIntertechReadAcceptable.
         /// </summary>
         public static string LabSheetDetailIntertechReadAcceptable {
             get {
@@ -4876,7 +5182,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheet.
+        ///   Looks up a localized string similar to LabSheetDetailLabSheet.
         /// </summary>
         public static string LabSheetDetailLabSheet {
             get {
@@ -4885,7 +5191,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetDetailID.
+        ///   Looks up a localized string similar to LabSheetDetailLabSheetDetailID.
         /// </summary>
         public static string LabSheetDetailLabSheetDetailID {
             get {
@@ -4894,7 +5200,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetID.
+        ///   Looks up a localized string similar to LabSheetDetailLabSheetID.
         /// </summary>
         public static string LabSheetDetailLabSheetID {
             get {
@@ -4903,7 +5209,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetTubeMPNDetails.
+        ///   Looks up a localized string similar to LabSheetDetailLabSheetTubeMPNDetails.
         /// </summary>
         public static string LabSheetDetailLabSheetTubeMPNDetails {
             get {
@@ -4912,7 +5218,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to LabSheetDetailLastUpdateContactTVItemID.
         /// </summary>
         public static string LabSheetDetailLastUpdateContactTVItemID {
             get {
@@ -4921,7 +5227,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to LabSheetDetailLastUpdateDate_UTC.
         /// </summary>
         public static string LabSheetDetailLastUpdateDate_UTC {
             get {
@@ -4930,7 +5236,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lot35.
+        ///   Looks up a localized string similar to LabSheetDetailLot35.
         /// </summary>
         public static string LabSheetDetailLot35 {
             get {
@@ -4939,7 +5245,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lot44_5.
+        ///   Looks up a localized string similar to LabSheetDetailLot44_5.
         /// </summary>
         public static string LabSheetDetailLot44_5 {
             get {
@@ -4948,7 +5254,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Negative35.
+        ///   Looks up a localized string similar to LabSheetDetailNegative35.
         /// </summary>
         public static string LabSheetDetailNegative35 {
             get {
@@ -4957,7 +5263,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NonTarget35.
+        ///   Looks up a localized string similar to LabSheetDetailNonTarget35.
         /// </summary>
         public static string LabSheetDetailNonTarget35 {
             get {
@@ -4966,7 +5272,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Positive35.
+        ///   Looks up a localized string similar to LabSheetDetailPositive35.
         /// </summary>
         public static string LabSheetDetailPositive35 {
             get {
@@ -4975,7 +5281,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResultsReadBy.
+        ///   Looks up a localized string similar to LabSheetDetailResultsReadBy.
         /// </summary>
         public static string LabSheetDetailResultsReadBy {
             get {
@@ -4984,7 +5290,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResultsReadDate.
+        ///   Looks up a localized string similar to LabSheetDetailResultsReadDate.
         /// </summary>
         public static string LabSheetDetailResultsReadDate {
             get {
@@ -4993,7 +5299,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResultsRecordedBy.
+        ///   Looks up a localized string similar to LabSheetDetailResultsRecordedBy.
         /// </summary>
         public static string LabSheetDetailResultsRecordedBy {
             get {
@@ -5002,7 +5308,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResultsRecordedDate.
+        ///   Looks up a localized string similar to LabSheetDetailResultsRecordedDate.
         /// </summary>
         public static string LabSheetDetailResultsRecordedDate {
             get {
@@ -5011,7 +5317,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RunComment.
+        ///   Looks up a localized string similar to LabSheetDetailRunComment.
         /// </summary>
         public static string LabSheetDetailRunComment {
             get {
@@ -5020,7 +5326,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RunDate.
+        ///   Looks up a localized string similar to LabSheetDetailRunDate.
         /// </summary>
         public static string LabSheetDetailRunDate {
             get {
@@ -5029,7 +5335,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RunWeatherComment.
+        ///   Looks up a localized string similar to LabSheetDetailRunWeatherComment.
         /// </summary>
         public static string LabSheetDetailRunWeatherComment {
             get {
@@ -5038,7 +5344,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SalinitiesReadBy.
+        ///   Looks up a localized string similar to LabSheetDetailSalinitiesReadBy.
         /// </summary>
         public static string LabSheetDetailSalinitiesReadBy {
             get {
@@ -5047,7 +5353,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SalinitiesReadDate.
+        ///   Looks up a localized string similar to LabSheetDetailSalinitiesReadDate.
         /// </summary>
         public static string LabSheetDetailSalinitiesReadDate {
             get {
@@ -5056,7 +5362,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleBottleLotNumber.
+        ///   Looks up a localized string similar to LabSheetDetailSampleBottleLotNumber.
         /// </summary>
         public static string LabSheetDetailSampleBottleLotNumber {
             get {
@@ -5065,7 +5371,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleCrewInitials.
+        ///   Looks up a localized string similar to LabSheetDetailSampleCrewInitials.
         /// </summary>
         public static string LabSheetDetailSampleCrewInitials {
             get {
@@ -5074,7 +5380,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlan.
+        ///   Looks up a localized string similar to LabSheetDetailSamplingPlan.
         /// </summary>
         public static string LabSheetDetailSamplingPlan {
             get {
@@ -5083,7 +5389,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanID.
+        ///   Looks up a localized string similar to LabSheetDetailSamplingPlanID.
         /// </summary>
         public static string LabSheetDetailSamplingPlanID {
             get {
@@ -5092,7 +5398,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorTVItem.
+        ///   Looks up a localized string similar to LabSheetDetailSubsectorTVItem.
         /// </summary>
         public static string LabSheetDetailSubsectorTVItem {
             get {
@@ -5101,7 +5407,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorTVItemID.
+        ///   Looks up a localized string similar to LabSheetDetailSubsectorTVItemID.
         /// </summary>
         public static string LabSheetDetailSubsectorTVItemID {
             get {
@@ -5110,7 +5416,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TCAverage.
+        ///   Looks up a localized string similar to LabSheetDetailTCAverage.
         /// </summary>
         public static string LabSheetDetailTCAverage {
             get {
@@ -5119,7 +5425,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TCField1.
+        ///   Looks up a localized string similar to LabSheetDetailTCField1.
         /// </summary>
         public static string LabSheetDetailTCField1 {
             get {
@@ -5128,7 +5434,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TCField2.
+        ///   Looks up a localized string similar to LabSheetDetailTCField2.
         /// </summary>
         public static string LabSheetDetailTCField2 {
             get {
@@ -5137,7 +5443,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TCFirst.
+        ///   Looks up a localized string similar to LabSheetDetailTCFirst.
         /// </summary>
         public static string LabSheetDetailTCFirst {
             get {
@@ -5146,7 +5452,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TCLab1.
+        ///   Looks up a localized string similar to LabSheetDetailTCLab1.
         /// </summary>
         public static string LabSheetDetailTCLab1 {
             get {
@@ -5155,7 +5461,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TCLab2.
+        ///   Looks up a localized string similar to LabSheetDetailTCLab2.
         /// </summary>
         public static string LabSheetDetailTCLab2 {
             get {
@@ -5164,7 +5470,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tides.
+        ///   Looks up a localized string similar to LabSheetDetailTides.
         /// </summary>
         public static string LabSheetDetailTides {
             get {
@@ -5173,7 +5479,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Version.
+        ///   Looks up a localized string similar to LabSheetDetailVersion.
         /// </summary>
         public static string LabSheetDetailVersion {
             get {
@@ -5182,7 +5488,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WaterBath1.
+        ///   Looks up a localized string similar to LabSheetDetailWaterBath1.
         /// </summary>
         public static string LabSheetDetailWaterBath1 {
             get {
@@ -5191,7 +5497,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WaterBath2.
+        ///   Looks up a localized string similar to LabSheetDetailWaterBath2.
         /// </summary>
         public static string LabSheetDetailWaterBath2 {
             get {
@@ -5200,7 +5506,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WaterBath3.
+        ///   Looks up a localized string similar to LabSheetDetailWaterBath3.
         /// </summary>
         public static string LabSheetDetailWaterBath3 {
             get {
@@ -5209,7 +5515,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WaterBathCount.
+        ///   Looks up a localized string similar to LabSheetDetailWaterBathCount.
         /// </summary>
         public static string LabSheetDetailWaterBathCount {
             get {
@@ -5218,7 +5524,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weather.
+        ///   Looks up a localized string similar to LabSheetDetailWeather.
         /// </summary>
         public static string LabSheetDetailWeather {
             get {
@@ -5227,7 +5533,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FileContent.
+        ///   Looks up a localized string similar to LabSheetFileContent.
         /// </summary>
         public static string LabSheetFileContent {
             get {
@@ -5236,7 +5542,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FileLastModifiedDate_Local.
+        ///   Looks up a localized string similar to LabSheetFileLastModifiedDate_Local.
         /// </summary>
         public static string LabSheetFileLastModifiedDate_Local {
             get {
@@ -5245,7 +5551,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FileName.
+        ///   Looks up a localized string similar to LabSheetFileName.
         /// </summary>
         public static string LabSheetFileName {
             get {
@@ -5254,7 +5560,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetDetails.
+        ///   Looks up a localized string similar to LabSheetLabSheetDetails.
         /// </summary>
         public static string LabSheetLabSheetDetails {
             get {
@@ -5263,7 +5569,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetID.
+        ///   Looks up a localized string similar to LabSheetLabSheetID.
         /// </summary>
         public static string LabSheetLabSheetID {
             get {
@@ -5272,7 +5578,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetStatus.
+        ///   Looks up a localized string similar to LabSheetLabSheetStatus.
         /// </summary>
         public static string LabSheetLabSheetStatus {
             get {
@@ -5281,7 +5587,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetType.
+        ///   Looks up a localized string similar to LabSheetLabSheetType.
         /// </summary>
         public static string LabSheetLabSheetType {
             get {
@@ -5290,7 +5596,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to LabSheetLastUpdateContactTVItemID.
         /// </summary>
         public static string LabSheetLastUpdateContactTVItemID {
             get {
@@ -5299,7 +5605,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to LabSheetLastUpdateDate_UTC.
         /// </summary>
         public static string LabSheetLastUpdateDate_UTC {
             get {
@@ -5308,7 +5614,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Month.
+        ///   Looks up a localized string similar to LabSheetMonth.
         /// </summary>
         public static string LabSheetMonth {
             get {
@@ -5317,7 +5623,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMRunTVItem.
+        ///   Looks up a localized string similar to LabSheetMWQMRunTVItem.
         /// </summary>
         public static string LabSheetMWQMRunTVItem {
             get {
@@ -5326,7 +5632,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMRunTVItemID.
+        ///   Looks up a localized string similar to LabSheetMWQMRunTVItemID.
         /// </summary>
         public static string LabSheetMWQMRunTVItemID {
             get {
@@ -5335,7 +5641,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OtherServerLabSheetID.
+        ///   Looks up a localized string similar to LabSheetOtherServerLabSheetID.
         /// </summary>
         public static string LabSheetOtherServerLabSheetID {
             get {
@@ -5344,7 +5650,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RejectReason.
+        ///   Looks up a localized string similar to LabSheetRejectReason.
         /// </summary>
         public static string LabSheetRejectReason {
             get {
@@ -5353,7 +5659,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RunNumber.
+        ///   Looks up a localized string similar to LabSheetRunNumber.
         /// </summary>
         public static string LabSheetRunNumber {
             get {
@@ -5362,7 +5668,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleType.
+        ///   Looks up a localized string similar to LabSheetSampleType.
         /// </summary>
         public static string LabSheetSampleType {
             get {
@@ -5371,7 +5677,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlan.
+        ///   Looks up a localized string similar to LabSheetSamplingPlan.
         /// </summary>
         public static string LabSheetSamplingPlan {
             get {
@@ -5380,7 +5686,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanID.
+        ///   Looks up a localized string similar to LabSheetSamplingPlanID.
         /// </summary>
         public static string LabSheetSamplingPlanID {
             get {
@@ -5389,7 +5695,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanName.
+        ///   Looks up a localized string similar to LabSheetSamplingPlanName.
         /// </summary>
         public static string LabSheetSamplingPlanName {
             get {
@@ -5398,7 +5704,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanType.
+        ///   Looks up a localized string similar to LabSheetSamplingPlanType.
         /// </summary>
         public static string LabSheetSamplingPlanType {
             get {
@@ -5407,7 +5713,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorTVItem.
+        ///   Looks up a localized string similar to LabSheetSubsectorTVItem.
         /// </summary>
         public static string LabSheetSubsectorTVItem {
             get {
@@ -5416,7 +5722,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorTVItemID.
+        ///   Looks up a localized string similar to LabSheetSubsectorTVItemID.
         /// </summary>
         public static string LabSheetSubsectorTVItemID {
             get {
@@ -5434,7 +5740,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetDetail.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailLabSheetDetail.
         /// </summary>
         public static string LabSheetTubeMPNDetailLabSheetDetail {
             get {
@@ -5443,7 +5749,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetDetailID.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailLabSheetDetailID.
         /// </summary>
         public static string LabSheetTubeMPNDetailLabSheetDetailID {
             get {
@@ -5452,7 +5758,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetTubeMPNDetailID.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailLabSheetTubeMPNDetailID.
         /// </summary>
         public static string LabSheetTubeMPNDetailLabSheetTubeMPNDetailID {
             get {
@@ -5461,7 +5767,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailLastUpdateContactTVItemID.
         /// </summary>
         public static string LabSheetTubeMPNDetailLastUpdateContactTVItemID {
             get {
@@ -5470,7 +5776,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailLastUpdateDate_UTC.
         /// </summary>
         public static string LabSheetTubeMPNDetailLastUpdateDate_UTC {
             get {
@@ -5479,7 +5785,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MPN.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailMPN.
         /// </summary>
         public static string LabSheetTubeMPNDetailMPN {
             get {
@@ -5488,7 +5794,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteTVItem.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailMWQMSiteTVItem.
         /// </summary>
         public static string LabSheetTubeMPNDetailMWQMSiteTVItem {
             get {
@@ -5497,7 +5803,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteTVItemID.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailMWQMSiteTVItemID.
         /// </summary>
         public static string LabSheetTubeMPNDetailMWQMSiteTVItemID {
             get {
@@ -5506,7 +5812,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ordinal.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailOrdinal.
         /// </summary>
         public static string LabSheetTubeMPNDetailOrdinal {
             get {
@@ -5515,7 +5821,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ProcessedBy.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailProcessedBy.
         /// </summary>
         public static string LabSheetTubeMPNDetailProcessedBy {
             get {
@@ -5524,7 +5830,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Salinity.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailSalinity.
         /// </summary>
         public static string LabSheetTubeMPNDetailSalinity {
             get {
@@ -5533,7 +5839,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleDateTime.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailSampleDateTime.
         /// </summary>
         public static string LabSheetTubeMPNDetailSampleDateTime {
             get {
@@ -5542,7 +5848,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleType.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailSampleType.
         /// </summary>
         public static string LabSheetTubeMPNDetailSampleType {
             get {
@@ -5551,7 +5857,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SiteComment.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailSiteComment.
         /// </summary>
         public static string LabSheetTubeMPNDetailSiteComment {
             get {
@@ -5560,7 +5866,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Temperature.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailTemperature.
         /// </summary>
         public static string LabSheetTubeMPNDetailTemperature {
             get {
@@ -5569,7 +5875,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tube0_1.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailTube0_1.
         /// </summary>
         public static string LabSheetTubeMPNDetailTube0_1 {
             get {
@@ -5578,7 +5884,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tube1_0.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailTube1_0.
         /// </summary>
         public static string LabSheetTubeMPNDetailTube1_0 {
             get {
@@ -5587,7 +5893,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tube10.
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailTube10.
         /// </summary>
         public static string LabSheetTubeMPNDetailTube10 {
             get {
@@ -5596,7 +5902,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Year.
+        ///   Looks up a localized string similar to LabSheetYear.
         /// </summary>
         public static string LabSheetYear {
             get {
@@ -5614,7 +5920,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error.
+        ///   Looks up a localized string similar to LastUpdateAndContactError.
         /// </summary>
         public static string LastUpdateAndContactError {
             get {
@@ -5623,7 +5929,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to LastUpdateAndContactLastUpdateContactTVItemID.
         /// </summary>
         public static string LastUpdateAndContactLastUpdateContactTVItemID {
             get {
@@ -5632,7 +5938,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to LastUpdateAndContactLastUpdateDate_UTC.
         /// </summary>
         public static string LastUpdateAndContactLastUpdateDate_UTC {
             get {
@@ -5650,7 +5956,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error.
+        ///   Looks up a localized string similar to LastUpdateAndTVTextError.
         /// </summary>
         public static string LastUpdateAndTVTextError {
             get {
@@ -5659,7 +5965,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_Local.
+        ///   Looks up a localized string similar to LastUpdateAndTVTextLastUpdateDate_Local.
         /// </summary>
         public static string LastUpdateAndTVTextLastUpdateDate_Local {
             get {
@@ -5668,7 +5974,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to LastUpdateAndTVTextLastUpdateDate_UTC.
         /// </summary>
         public static string LastUpdateAndTVTextLastUpdateDate_UTC {
             get {
@@ -5677,7 +5983,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVText.
+        ///   Looks up a localized string similar to LastUpdateAndTVTextTVText.
         /// </summary>
         public static string LastUpdateAndTVTextTVText {
             get {
@@ -5695,7 +6001,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lat.
+        ///   Looks up a localized string similar to LatLngLat.
         /// </summary>
         public static string LatLngLat {
             get {
@@ -5704,7 +6010,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lng.
+        ///   Looks up a localized string similar to LatLngLng.
         /// </summary>
         public static string LatLngLng {
             get {
@@ -5722,7 +6028,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ID.
+        ///   Looks up a localized string similar to LogID.
         /// </summary>
         public static string LogID {
             get {
@@ -5740,7 +6046,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConfirmPassword.
+        ///   Looks up a localized string similar to LoginConfirmPassword.
         /// </summary>
         public static string LoginConfirmPassword {
             get {
@@ -5749,7 +6055,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Information.
+        ///   Looks up a localized string similar to LogInformation.
         /// </summary>
         public static string LogInformation {
             get {
@@ -5758,7 +6064,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LoginEmail.
+        ///   Looks up a localized string similar to LoginLoginEmail.
         /// </summary>
         public static string LoginLoginEmail {
             get {
@@ -5767,7 +6073,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Password.
+        ///   Looks up a localized string similar to LoginPassword.
         /// </summary>
         public static string LoginPassword {
             get {
@@ -5776,7 +6082,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to LogLastUpdateContactTVItemID.
         /// </summary>
         public static string LogLastUpdateContactTVItemID {
             get {
@@ -5785,7 +6091,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to LogLastUpdateDate_UTC.
         /// </summary>
         public static string LogLastUpdateDate_UTC {
             get {
@@ -5794,7 +6100,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LogCommand.
+        ///   Looks up a localized string similar to LogLogCommand.
         /// </summary>
         public static string LogLogCommand {
             get {
@@ -5803,7 +6109,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LogID.
+        ///   Looks up a localized string similar to LogLogID.
         /// </summary>
         public static string LogLogID {
             get {
@@ -5812,7 +6118,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TableName.
+        ///   Looks up a localized string similar to LogTableName.
         /// </summary>
         public static string LogTableName {
             get {
@@ -5830,7 +6136,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MapInfoLastUpdateContactTVItemID.
         /// </summary>
         public static string MapInfoLastUpdateContactTVItemID {
             get {
@@ -5839,7 +6145,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MapInfoLastUpdateDate_UTC.
         /// </summary>
         public static string MapInfoLastUpdateDate_UTC {
             get {
@@ -5848,7 +6154,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LatMax.
+        ///   Looks up a localized string similar to MapInfoLatMax.
         /// </summary>
         public static string MapInfoLatMax {
             get {
@@ -5857,7 +6163,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LatMin.
+        ///   Looks up a localized string similar to MapInfoLatMin.
         /// </summary>
         public static string MapInfoLatMin {
             get {
@@ -5866,7 +6172,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LngMax.
+        ///   Looks up a localized string similar to MapInfoLngMax.
         /// </summary>
         public static string MapInfoLngMax {
             get {
@@ -5875,7 +6181,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LngMin.
+        ///   Looks up a localized string similar to MapInfoLngMin.
         /// </summary>
         public static string MapInfoLngMin {
             get {
@@ -5884,7 +6190,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MapInfoDrawType.
+        ///   Looks up a localized string similar to MapInfoMapInfoDrawType.
         /// </summary>
         public static string MapInfoMapInfoDrawType {
             get {
@@ -5893,7 +6199,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MapInfoID.
+        ///   Looks up a localized string similar to MapInfoMapInfoID.
         /// </summary>
         public static string MapInfoMapInfoID {
             get {
@@ -5902,7 +6208,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MapInfoPoints.
+        ///   Looks up a localized string similar to MapInfoMapInfoPoints.
         /// </summary>
         public static string MapInfoMapInfoPoints {
             get {
@@ -5920,7 +6226,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MapInfoPointLastUpdateContactTVItemID.
         /// </summary>
         public static string MapInfoPointLastUpdateContactTVItemID {
             get {
@@ -5929,7 +6235,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MapInfoPointLastUpdateDate_UTC.
         /// </summary>
         public static string MapInfoPointLastUpdateDate_UTC {
             get {
@@ -5938,7 +6244,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lat.
+        ///   Looks up a localized string similar to MapInfoPointLat.
         /// </summary>
         public static string MapInfoPointLat {
             get {
@@ -5947,7 +6253,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lng.
+        ///   Looks up a localized string similar to MapInfoPointLng.
         /// </summary>
         public static string MapInfoPointLng {
             get {
@@ -5956,7 +6262,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MapInfo.
+        ///   Looks up a localized string similar to MapInfoPointMapInfo.
         /// </summary>
         public static string MapInfoPointMapInfo {
             get {
@@ -5965,7 +6271,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MapInfoID.
+        ///   Looks up a localized string similar to MapInfoPointMapInfoID.
         /// </summary>
         public static string MapInfoPointMapInfoID {
             get {
@@ -5974,7 +6280,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MapInfoPointID.
+        ///   Looks up a localized string similar to MapInfoPointMapInfoPointID.
         /// </summary>
         public static string MapInfoPointMapInfoPointID {
             get {
@@ -5983,7 +6289,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ordinal.
+        ///   Looks up a localized string similar to MapInfoPointOrdinal.
         /// </summary>
         public static string MapInfoPointOrdinal {
             get {
@@ -5992,7 +6298,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItem.
+        ///   Looks up a localized string similar to MapInfoTVItem.
         /// </summary>
         public static string MapInfoTVItem {
             get {
@@ -6001,7 +6307,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID.
+        ///   Looks up a localized string similar to MapInfoTVItemID.
         /// </summary>
         public static string MapInfoTVItemID {
             get {
@@ -6010,7 +6316,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVType.
+        ///   Looks up a localized string similar to MapInfoTVType.
         /// </summary>
         public static string MapInfoTVType {
             get {
@@ -6028,7 +6334,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CoordList.
+        ///   Looks up a localized string similar to MapObjCoordList.
         /// </summary>
         public static string MapObjCoordList {
             get {
@@ -6037,7 +6343,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MapInfoDrawType.
+        ///   Looks up a localized string similar to MapObjMapInfoDrawType.
         /// </summary>
         public static string MapObjMapInfoDrawType {
             get {
@@ -6046,7 +6352,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MapInfoID.
+        ///   Looks up a localized string similar to MapObjMapInfoID.
         /// </summary>
         public static string MapObjMapInfoID {
             get {
@@ -6064,7 +6370,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MikeBoundaryConditionLastUpdateContactTVItemID.
         /// </summary>
         public static string MikeBoundaryConditionLastUpdateContactTVItemID {
             get {
@@ -6073,7 +6379,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MikeBoundaryConditionLastUpdateDate_UTC.
         /// </summary>
         public static string MikeBoundaryConditionLastUpdateDate_UTC {
             get {
@@ -6082,7 +6388,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeBoundaryConditionCode.
+        ///   Looks up a localized string similar to MikeBoundaryConditionMikeBoundaryConditionCode.
         /// </summary>
         public static string MikeBoundaryConditionMikeBoundaryConditionCode {
             get {
@@ -6091,7 +6397,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeBoundaryConditionFormat.
+        ///   Looks up a localized string similar to MikeBoundaryConditionMikeBoundaryConditionFormat.
         /// </summary>
         public static string MikeBoundaryConditionMikeBoundaryConditionFormat {
             get {
@@ -6100,7 +6406,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeBoundaryConditionID.
+        ///   Looks up a localized string similar to MikeBoundaryConditionMikeBoundaryConditionID.
         /// </summary>
         public static string MikeBoundaryConditionMikeBoundaryConditionID {
             get {
@@ -6109,7 +6415,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeBoundaryConditionLength_m.
+        ///   Looks up a localized string similar to MikeBoundaryConditionMikeBoundaryConditionLength_m.
         /// </summary>
         public static string MikeBoundaryConditionMikeBoundaryConditionLength_m {
             get {
@@ -6118,7 +6424,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeBoundaryConditionLevelOrVelocity.
+        ///   Looks up a localized string similar to MikeBoundaryConditionMikeBoundaryConditionLevelOrVelocity.
         /// </summary>
         public static string MikeBoundaryConditionMikeBoundaryConditionLevelOrVelocity {
             get {
@@ -6127,7 +6433,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeBoundaryConditionName.
+        ///   Looks up a localized string similar to MikeBoundaryConditionMikeBoundaryConditionName.
         /// </summary>
         public static string MikeBoundaryConditionMikeBoundaryConditionName {
             get {
@@ -6136,7 +6442,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeBoundaryConditionTVItem.
+        ///   Looks up a localized string similar to MikeBoundaryConditionMikeBoundaryConditionTVItem.
         /// </summary>
         public static string MikeBoundaryConditionMikeBoundaryConditionTVItem {
             get {
@@ -6145,7 +6451,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeBoundaryConditionTVItemID.
+        ///   Looks up a localized string similar to MikeBoundaryConditionMikeBoundaryConditionTVItemID.
         /// </summary>
         public static string MikeBoundaryConditionMikeBoundaryConditionTVItemID {
             get {
@@ -6154,7 +6460,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NumberOfWebTideNodes.
+        ///   Looks up a localized string similar to MikeBoundaryConditionNumberOfWebTideNodes.
         /// </summary>
         public static string MikeBoundaryConditionNumberOfWebTideNodes {
             get {
@@ -6163,7 +6469,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVType.
+        ///   Looks up a localized string similar to MikeBoundaryConditionTVType.
         /// </summary>
         public static string MikeBoundaryConditionTVType {
             get {
@@ -6172,7 +6478,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WebTideDataFromStartToEndDate.
+        ///   Looks up a localized string similar to MikeBoundaryConditionWebTideDataFromStartToEndDate.
         /// </summary>
         public static string MikeBoundaryConditionWebTideDataFromStartToEndDate {
             get {
@@ -6181,7 +6487,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WebTideDataSet.
+        ///   Looks up a localized string similar to MikeBoundaryConditionWebTideDataSet.
         /// </summary>
         public static string MikeBoundaryConditionWebTideDataSet {
             get {
@@ -6199,7 +6505,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AmbientSalinity_PSU.
+        ///   Looks up a localized string similar to MikeScenarioAmbientSalinity_PSU.
         /// </summary>
         public static string MikeScenarioAmbientSalinity_PSU {
             get {
@@ -6208,7 +6514,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AmbientTemperature_C.
+        ///   Looks up a localized string similar to MikeScenarioAmbientTemperature_C.
         /// </summary>
         public static string MikeScenarioAmbientTemperature_C {
             get {
@@ -6217,7 +6523,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DecayFactor_per_day.
+        ///   Looks up a localized string similar to MikeScenarioDecayFactor_per_day.
         /// </summary>
         public static string MikeScenarioDecayFactor_per_day {
             get {
@@ -6226,7 +6532,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DecayFactorAmplitude.
+        ///   Looks up a localized string similar to MikeScenarioDecayFactorAmplitude.
         /// </summary>
         public static string MikeScenarioDecayFactorAmplitude {
             get {
@@ -6235,7 +6541,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DecayIsConstant.
+        ///   Looks up a localized string similar to MikeScenarioDecayIsConstant.
         /// </summary>
         public static string MikeScenarioDecayIsConstant {
             get {
@@ -6244,7 +6550,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ErrorInfo.
+        ///   Looks up a localized string similar to MikeScenarioErrorInfo.
         /// </summary>
         public static string MikeScenarioErrorInfo {
             get {
@@ -6253,7 +6559,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EstimatedHydroFileSize.
+        ///   Looks up a localized string similar to MikeScenarioEstimatedHydroFileSize.
         /// </summary>
         public static string MikeScenarioEstimatedHydroFileSize {
             get {
@@ -6262,7 +6568,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EstimatedTransFileSize.
+        ///   Looks up a localized string similar to MikeScenarioEstimatedTransFileSize.
         /// </summary>
         public static string MikeScenarioEstimatedTransFileSize {
             get {
@@ -6271,7 +6577,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MikeScenarioLastUpdateContactTVItemID.
         /// </summary>
         public static string MikeScenarioLastUpdateContactTVItemID {
             get {
@@ -6280,7 +6586,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MikeScenarioLastUpdateDate_UTC.
         /// </summary>
         public static string MikeScenarioLastUpdateDate_UTC {
             get {
@@ -6289,7 +6595,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ManningNumber.
+        ///   Looks up a localized string similar to MikeScenarioManningNumber.
         /// </summary>
         public static string MikeScenarioManningNumber {
             get {
@@ -6298,7 +6604,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeScenarioEndDateTime_Local.
+        ///   Looks up a localized string similar to MikeScenarioMikeScenarioEndDateTime_Local.
         /// </summary>
         public static string MikeScenarioMikeScenarioEndDateTime_Local {
             get {
@@ -6307,7 +6613,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeScenarioExecutionTime_min.
+        ///   Looks up a localized string similar to MikeScenarioMikeScenarioExecutionTime_min.
         /// </summary>
         public static string MikeScenarioMikeScenarioExecutionTime_min {
             get {
@@ -6316,7 +6622,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeScenarioID.
+        ///   Looks up a localized string similar to MikeScenarioMikeScenarioID.
         /// </summary>
         public static string MikeScenarioMikeScenarioID {
             get {
@@ -6325,7 +6631,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeScenarioStartDateTime_Local.
+        ///   Looks up a localized string similar to MikeScenarioMikeScenarioStartDateTime_Local.
         /// </summary>
         public static string MikeScenarioMikeScenarioStartDateTime_Local {
             get {
@@ -6334,7 +6640,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeScenarioStartExecutionDateTime_Local.
+        ///   Looks up a localized string similar to MikeScenarioMikeScenarioStartExecutionDateTime_Local.
         /// </summary>
         public static string MikeScenarioMikeScenarioStartExecutionDateTime_Local {
             get {
@@ -6343,7 +6649,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeScenarioTVItem.
+        ///   Looks up a localized string similar to MikeScenarioMikeScenarioTVItem.
         /// </summary>
         public static string MikeScenarioMikeScenarioTVItem {
             get {
@@ -6352,7 +6658,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeScenarioTVItemID.
+        ///   Looks up a localized string similar to MikeScenarioMikeScenarioTVItemID.
         /// </summary>
         public static string MikeScenarioMikeScenarioTVItemID {
             get {
@@ -6361,7 +6667,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NumberOfElements.
+        ///   Looks up a localized string similar to MikeScenarioNumberOfElements.
         /// </summary>
         public static string MikeScenarioNumberOfElements {
             get {
@@ -6370,7 +6676,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NumberOfHydroOutputParameters.
+        ///   Looks up a localized string similar to MikeScenarioNumberOfHydroOutputParameters.
         /// </summary>
         public static string MikeScenarioNumberOfHydroOutputParameters {
             get {
@@ -6379,7 +6685,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NumberOfSigmaLayers.
+        ///   Looks up a localized string similar to MikeScenarioNumberOfSigmaLayers.
         /// </summary>
         public static string MikeScenarioNumberOfSigmaLayers {
             get {
@@ -6388,7 +6694,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NumberOfTimeSteps.
+        ///   Looks up a localized string similar to MikeScenarioNumberOfTimeSteps.
         /// </summary>
         public static string MikeScenarioNumberOfTimeSteps {
             get {
@@ -6397,7 +6703,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NumberOfTransOutputParameters.
+        ///   Looks up a localized string similar to MikeScenarioNumberOfTransOutputParameters.
         /// </summary>
         public static string MikeScenarioNumberOfTransOutputParameters {
             get {
@@ -6406,7 +6712,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NumberOfZlayers.
+        ///   Looks up a localized string similar to MikeScenarioNumberOfZlayers.
         /// </summary>
         public static string MikeScenarioNumberOfZlayers {
             get {
@@ -6415,7 +6721,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ParentMikeScenarioID.
+        ///   Looks up a localized string similar to MikeScenarioParentMikeScenarioID.
         /// </summary>
         public static string MikeScenarioParentMikeScenarioID {
             get {
@@ -6424,7 +6730,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResultFrequency_min.
+        ///   Looks up a localized string similar to MikeScenarioResultFrequency_min.
         /// </summary>
         public static string MikeScenarioResultFrequency_min {
             get {
@@ -6433,7 +6739,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ScenarioStatus.
+        ///   Looks up a localized string similar to MikeScenarioScenarioStatus.
         /// </summary>
         public static string MikeScenarioScenarioStatus {
             get {
@@ -6442,7 +6748,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to UseWebTide.
+        ///   Looks up a localized string similar to MikeScenarioUseWebTide.
         /// </summary>
         public static string MikeScenarioUseWebTide {
             get {
@@ -6451,7 +6757,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WindDirection_deg.
+        ///   Looks up a localized string similar to MikeScenarioWindDirection_deg.
         /// </summary>
         public static string MikeScenarioWindDirection_deg {
             get {
@@ -6460,7 +6766,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WindSpeed_km_h.
+        ///   Looks up a localized string similar to MikeScenarioWindSpeed_km_h.
         /// </summary>
         public static string MikeScenarioWindSpeed_km_h {
             get {
@@ -6478,7 +6784,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Include.
+        ///   Looks up a localized string similar to MikeSourceInclude.
         /// </summary>
         public static string MikeSourceInclude {
             get {
@@ -6487,7 +6793,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IsContinuous.
+        ///   Looks up a localized string similar to MikeSourceIsContinuous.
         /// </summary>
         public static string MikeSourceIsContinuous {
             get {
@@ -6496,7 +6802,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IsRiver.
+        ///   Looks up a localized string similar to MikeSourceIsRiver.
         /// </summary>
         public static string MikeSourceIsRiver {
             get {
@@ -6505,7 +6811,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MikeSourceLastUpdateContactTVItemID.
         /// </summary>
         public static string MikeSourceLastUpdateContactTVItemID {
             get {
@@ -6514,7 +6820,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MikeSourceLastUpdateDate_UTC.
         /// </summary>
         public static string MikeSourceLastUpdateDate_UTC {
             get {
@@ -6523,7 +6829,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeSourceID.
+        ///   Looks up a localized string similar to MikeSourceMikeSourceID.
         /// </summary>
         public static string MikeSourceMikeSourceID {
             get {
@@ -6532,7 +6838,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeSourceStartEnds.
+        ///   Looks up a localized string similar to MikeSourceMikeSourceStartEnds.
         /// </summary>
         public static string MikeSourceMikeSourceStartEnds {
             get {
@@ -6541,7 +6847,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeSourceTVItem.
+        ///   Looks up a localized string similar to MikeSourceMikeSourceTVItem.
         /// </summary>
         public static string MikeSourceMikeSourceTVItem {
             get {
@@ -6550,7 +6856,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeSourceTVItemID.
+        ///   Looks up a localized string similar to MikeSourceMikeSourceTVItemID.
         /// </summary>
         public static string MikeSourceMikeSourceTVItemID {
             get {
@@ -6559,7 +6865,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SourceNumberString.
+        ///   Looks up a localized string similar to MikeSourceSourceNumberString.
         /// </summary>
         public static string MikeSourceSourceNumberString {
             get {
@@ -6577,7 +6883,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EndDateAndTime_Local.
+        ///   Looks up a localized string similar to MikeSourceStartEndEndDateAndTime_Local.
         /// </summary>
         public static string MikeSourceStartEndEndDateAndTime_Local {
             get {
@@ -6586,7 +6892,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MikeSourceStartEndLastUpdateContactTVItemID.
         /// </summary>
         public static string MikeSourceStartEndLastUpdateContactTVItemID {
             get {
@@ -6595,7 +6901,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MikeSourceStartEndLastUpdateDate_UTC.
         /// </summary>
         public static string MikeSourceStartEndLastUpdateDate_UTC {
             get {
@@ -6604,7 +6910,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeSource.
+        ///   Looks up a localized string similar to MikeSourceStartEndMikeSource.
         /// </summary>
         public static string MikeSourceStartEndMikeSource {
             get {
@@ -6613,7 +6919,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeSourceID.
+        ///   Looks up a localized string similar to MikeSourceStartEndMikeSourceID.
         /// </summary>
         public static string MikeSourceStartEndMikeSourceID {
             get {
@@ -6622,7 +6928,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeSourceStartEndID.
+        ///   Looks up a localized string similar to MikeSourceStartEndMikeSourceStartEndID.
         /// </summary>
         public static string MikeSourceStartEndMikeSourceStartEndID {
             get {
@@ -6631,7 +6937,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SourceFlowEnd_m3_day.
+        ///   Looks up a localized string similar to MikeSourceStartEndSourceFlowEnd_m3_day.
         /// </summary>
         public static string MikeSourceStartEndSourceFlowEnd_m3_day {
             get {
@@ -6640,7 +6946,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SourceFlowStart_m3_day.
+        ///   Looks up a localized string similar to MikeSourceStartEndSourceFlowStart_m3_day.
         /// </summary>
         public static string MikeSourceStartEndSourceFlowStart_m3_day {
             get {
@@ -6649,7 +6955,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SourcePollutionEnd_MPN_100ml.
+        ///   Looks up a localized string similar to MikeSourceStartEndSourcePollutionEnd_MPN_100ml.
         /// </summary>
         public static string MikeSourceStartEndSourcePollutionEnd_MPN_100ml {
             get {
@@ -6658,7 +6964,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SourcePollutionStart_MPN_100ml.
+        ///   Looks up a localized string similar to MikeSourceStartEndSourcePollutionStart_MPN_100ml.
         /// </summary>
         public static string MikeSourceStartEndSourcePollutionStart_MPN_100ml {
             get {
@@ -6667,7 +6973,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SourceSalinityEnd_PSU.
+        ///   Looks up a localized string similar to MikeSourceStartEndSourceSalinityEnd_PSU.
         /// </summary>
         public static string MikeSourceStartEndSourceSalinityEnd_PSU {
             get {
@@ -6676,7 +6982,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SourceSalinityStart_PSU.
+        ///   Looks up a localized string similar to MikeSourceStartEndSourceSalinityStart_PSU.
         /// </summary>
         public static string MikeSourceStartEndSourceSalinityStart_PSU {
             get {
@@ -6685,7 +6991,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SourceTemperatureEnd_C.
+        ///   Looks up a localized string similar to MikeSourceStartEndSourceTemperatureEnd_C.
         /// </summary>
         public static string MikeSourceStartEndSourceTemperatureEnd_C {
             get {
@@ -6694,7 +7000,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SourceTemperatureStart_C.
+        ///   Looks up a localized string similar to MikeSourceStartEndSourceTemperatureStart_C.
         /// </summary>
         public static string MikeSourceStartEndSourceTemperatureStart_C {
             get {
@@ -6703,7 +7009,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StartDateAndTime_Local.
+        ///   Looks up a localized string similar to MikeSourceStartEndStartDateAndTime_Local.
         /// </summary>
         public static string MikeSourceStartEndStartDateAndTime_Local {
             get {
@@ -6721,7 +7027,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MWQMLookupMPNLastUpdateContactTVItemID.
         /// </summary>
         public static string MWQMLookupMPNLastUpdateContactTVItemID {
             get {
@@ -6730,7 +7036,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MWQMLookupMPNLastUpdateDate_UTC.
         /// </summary>
         public static string MWQMLookupMPNLastUpdateDate_UTC {
             get {
@@ -6739,7 +7045,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MPN_100ml.
+        ///   Looks up a localized string similar to MWQMLookupMPNMPN_100ml.
         /// </summary>
         public static string MWQMLookupMPNMPN_100ml {
             get {
@@ -6748,7 +7054,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMLookupMPNID.
+        ///   Looks up a localized string similar to MWQMLookupMPNMWQMLookupMPNID.
         /// </summary>
         public static string MWQMLookupMPNMWQMLookupMPNID {
             get {
@@ -6757,7 +7063,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tubes01.
+        ///   Looks up a localized string similar to MWQMLookupMPNTubes01.
         /// </summary>
         public static string MWQMLookupMPNTubes01 {
             get {
@@ -6766,7 +7072,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tubes1.
+        ///   Looks up a localized string similar to MWQMLookupMPNTubes1.
         /// </summary>
         public static string MWQMLookupMPNTubes1 {
             get {
@@ -6775,7 +7081,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tubes10.
+        ///   Looks up a localized string similar to MWQMLookupMPNTubes10.
         /// </summary>
         public static string MWQMLookupMPNTubes10 {
             get {
@@ -6793,7 +7099,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AnalyzeMethod.
+        ///   Looks up a localized string similar to MWQMRunAnalyzeMethod.
         /// </summary>
         public static string MWQMRunAnalyzeMethod {
             get {
@@ -6802,7 +7108,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DateTime_Local.
+        ///   Looks up a localized string similar to MWQMRunDateTime_Local.
         /// </summary>
         public static string MWQMRunDateTime_Local {
             get {
@@ -6811,7 +7117,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EndDateTime_Local.
+        ///   Looks up a localized string similar to MWQMRunEndDateTime_Local.
         /// </summary>
         public static string MWQMRunEndDateTime_Local {
             get {
@@ -6820,7 +7126,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabAnalyzeBath1IncubationStartDateTime_Local.
+        ///   Looks up a localized string similar to MWQMRunLabAnalyzeBath1IncubationStartDateTime_Local.
         /// </summary>
         public static string MWQMRunLabAnalyzeBath1IncubationStartDateTime_Local {
             get {
@@ -6829,7 +7135,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabAnalyzeBath2IncubationStartDateTime_Local.
+        ///   Looks up a localized string similar to MWQMRunLabAnalyzeBath2IncubationStartDateTime_Local.
         /// </summary>
         public static string MWQMRunLabAnalyzeBath2IncubationStartDateTime_Local {
             get {
@@ -6838,7 +7144,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabAnalyzeBath3IncubationStartDateTime_Local.
+        ///   Looks up a localized string similar to MWQMRunLabAnalyzeBath3IncubationStartDateTime_Local.
         /// </summary>
         public static string MWQMRunLabAnalyzeBath3IncubationStartDateTime_Local {
             get {
@@ -6847,7 +7153,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Laboratory.
+        ///   Looks up a localized string similar to MWQMRunLaboratory.
         /// </summary>
         public static string MWQMRunLaboratory {
             get {
@@ -6856,7 +7162,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabReceivedDateTime_Local.
+        ///   Looks up a localized string similar to MWQMRunLabReceivedDateTime_Local.
         /// </summary>
         public static string MWQMRunLabReceivedDateTime_Local {
             get {
@@ -6865,7 +7171,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabRunSampleApprovalDateTime_Local.
+        ///   Looks up a localized string similar to MWQMRunLabRunSampleApprovalDateTime_Local.
         /// </summary>
         public static string MWQMRunLabRunSampleApprovalDateTime_Local {
             get {
@@ -6874,7 +7180,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSampleApprovalContactTVItem.
+        ///   Looks up a localized string similar to MWQMRunLabSampleApprovalContactTVItem.
         /// </summary>
         public static string MWQMRunLabSampleApprovalContactTVItem {
             get {
@@ -6883,7 +7189,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSampleApprovalContactTVItemID.
+        ///   Looks up a localized string similar to MWQMRunLabSampleApprovalContactTVItemID.
         /// </summary>
         public static string MWQMRunLabSampleApprovalContactTVItemID {
             get {
@@ -6901,7 +7207,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to MWQMRunLanguageLanguage.
         /// </summary>
         public static string MWQMRunLanguageLanguage {
             get {
@@ -6910,7 +7216,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MWQMRunLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string MWQMRunLanguageLastUpdateContactTVItemID {
             get {
@@ -6919,7 +7225,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MWQMRunLanguageLastUpdateDate_UTC.
         /// </summary>
         public static string MWQMRunLanguageLastUpdateDate_UTC {
             get {
@@ -6928,7 +7234,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMRun.
+        ///   Looks up a localized string similar to MWQMRunLanguageMWQMRun.
         /// </summary>
         public static string MWQMRunLanguageMWQMRun {
             get {
@@ -6937,7 +7243,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMRunID.
+        ///   Looks up a localized string similar to MWQMRunLanguageMWQMRunID.
         /// </summary>
         public static string MWQMRunLanguageMWQMRunID {
             get {
@@ -6946,7 +7252,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMRunLanguageID.
+        ///   Looks up a localized string similar to MWQMRunLanguageMWQMRunLanguageID.
         /// </summary>
         public static string MWQMRunLanguageMWQMRunLanguageID {
             get {
@@ -6955,7 +7261,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RunComment.
+        ///   Looks up a localized string similar to MWQMRunLanguageRunComment.
         /// </summary>
         public static string MWQMRunLanguageRunComment {
             get {
@@ -6964,7 +7270,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RunWeatherComment.
+        ///   Looks up a localized string similar to MWQMRunLanguageRunWeatherComment.
         /// </summary>
         public static string MWQMRunLanguageRunWeatherComment {
             get {
@@ -6973,7 +7279,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TranslationStatusRunComment.
+        ///   Looks up a localized string similar to MWQMRunLanguageTranslationStatusRunComment.
         /// </summary>
         public static string MWQMRunLanguageTranslationStatusRunComment {
             get {
@@ -6982,7 +7288,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TranslationStatusRunWeatherComment.
+        ///   Looks up a localized string similar to MWQMRunLanguageTranslationStatusRunWeatherComment.
         /// </summary>
         public static string MWQMRunLanguageTranslationStatusRunWeatherComment {
             get {
@@ -6991,7 +7297,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MWQMRunLastUpdateContactTVItemID.
         /// </summary>
         public static string MWQMRunLastUpdateContactTVItemID {
             get {
@@ -7000,7 +7306,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MWQMRunLastUpdateDate_UTC.
         /// </summary>
         public static string MWQMRunLastUpdateDate_UTC {
             get {
@@ -7009,7 +7315,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMRunID.
+        ///   Looks up a localized string similar to MWQMRunMWQMRunID.
         /// </summary>
         public static string MWQMRunMWQMRunID {
             get {
@@ -7018,7 +7324,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMRunLanguages.
+        ///   Looks up a localized string similar to MWQMRunMWQMRunLanguages.
         /// </summary>
         public static string MWQMRunMWQMRunLanguages {
             get {
@@ -7027,7 +7333,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMRunTVItem.
+        ///   Looks up a localized string similar to MWQMRunMWQMRunTVItem.
         /// </summary>
         public static string MWQMRunMWQMRunTVItem {
             get {
@@ -7036,7 +7342,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMRunTVItemID.
+        ///   Looks up a localized string similar to MWQMRunMWQMRunTVItemID.
         /// </summary>
         public static string MWQMRunMWQMRunTVItemID {
             get {
@@ -7045,7 +7351,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay0_mm.
+        ///   Looks up a localized string similar to MWQMRunRainDay0_mm.
         /// </summary>
         public static string MWQMRunRainDay0_mm {
             get {
@@ -7054,7 +7360,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay1_mm.
+        ///   Looks up a localized string similar to MWQMRunRainDay1_mm.
         /// </summary>
         public static string MWQMRunRainDay1_mm {
             get {
@@ -7063,7 +7369,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay10_mm.
+        ///   Looks up a localized string similar to MWQMRunRainDay10_mm.
         /// </summary>
         public static string MWQMRunRainDay10_mm {
             get {
@@ -7072,7 +7378,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay2_mm.
+        ///   Looks up a localized string similar to MWQMRunRainDay2_mm.
         /// </summary>
         public static string MWQMRunRainDay2_mm {
             get {
@@ -7081,7 +7387,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay3_mm.
+        ///   Looks up a localized string similar to MWQMRunRainDay3_mm.
         /// </summary>
         public static string MWQMRunRainDay3_mm {
             get {
@@ -7090,7 +7396,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay4_mm.
+        ///   Looks up a localized string similar to MWQMRunRainDay4_mm.
         /// </summary>
         public static string MWQMRunRainDay4_mm {
             get {
@@ -7099,7 +7405,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay5_mm.
+        ///   Looks up a localized string similar to MWQMRunRainDay5_mm.
         /// </summary>
         public static string MWQMRunRainDay5_mm {
             get {
@@ -7108,7 +7414,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay6_mm.
+        ///   Looks up a localized string similar to MWQMRunRainDay6_mm.
         /// </summary>
         public static string MWQMRunRainDay6_mm {
             get {
@@ -7117,7 +7423,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay7_mm.
+        ///   Looks up a localized string similar to MWQMRunRainDay7_mm.
         /// </summary>
         public static string MWQMRunRainDay7_mm {
             get {
@@ -7126,7 +7432,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay8_mm.
+        ///   Looks up a localized string similar to MWQMRunRainDay8_mm.
         /// </summary>
         public static string MWQMRunRainDay8_mm {
             get {
@@ -7135,7 +7441,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay9_mm.
+        ///   Looks up a localized string similar to MWQMRunRainDay9_mm.
         /// </summary>
         public static string MWQMRunRainDay9_mm {
             get {
@@ -7144,7 +7450,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RemoveFromStat.
+        ///   Looks up a localized string similar to MWQMRunRemoveFromStat.
         /// </summary>
         public static string MWQMRunRemoveFromStat {
             get {
@@ -7153,7 +7459,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RunNumber.
+        ///   Looks up a localized string similar to MWQMRunRunNumber.
         /// </summary>
         public static string MWQMRunRunNumber {
             get {
@@ -7162,7 +7468,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RunSampleType.
+        ///   Looks up a localized string similar to MWQMRunRunSampleType.
         /// </summary>
         public static string MWQMRunRunSampleType {
             get {
@@ -7171,7 +7477,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleCrewInitials.
+        ///   Looks up a localized string similar to MWQMRunSampleCrewInitials.
         /// </summary>
         public static string MWQMRunSampleCrewInitials {
             get {
@@ -7180,7 +7486,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleMatrix.
+        ///   Looks up a localized string similar to MWQMRunSampleMatrix.
         /// </summary>
         public static string MWQMRunSampleMatrix {
             get {
@@ -7189,7 +7495,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleStatus.
+        ///   Looks up a localized string similar to MWQMRunSampleStatus.
         /// </summary>
         public static string MWQMRunSampleStatus {
             get {
@@ -7198,7 +7504,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SeaStateAtEnd_BeaufortScale.
+        ///   Looks up a localized string similar to MWQMRunSeaStateAtEnd_BeaufortScale.
         /// </summary>
         public static string MWQMRunSeaStateAtEnd_BeaufortScale {
             get {
@@ -7207,7 +7513,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SeaStateAtStart_BeaufortScale.
+        ///   Looks up a localized string similar to MWQMRunSeaStateAtStart_BeaufortScale.
         /// </summary>
         public static string MWQMRunSeaStateAtStart_BeaufortScale {
             get {
@@ -7216,7 +7522,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StartDateTime_Local.
+        ///   Looks up a localized string similar to MWQMRunStartDateTime_Local.
         /// </summary>
         public static string MWQMRunStartDateTime_Local {
             get {
@@ -7225,7 +7531,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorTVItem.
+        ///   Looks up a localized string similar to MWQMRunSubsectorTVItem.
         /// </summary>
         public static string MWQMRunSubsectorTVItem {
             get {
@@ -7234,7 +7540,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorTVItemID.
+        ///   Looks up a localized string similar to MWQMRunSubsectorTVItemID.
         /// </summary>
         public static string MWQMRunSubsectorTVItemID {
             get {
@@ -7243,7 +7549,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TemperatureControl1_C.
+        ///   Looks up a localized string similar to MWQMRunTemperatureControl1_C.
         /// </summary>
         public static string MWQMRunTemperatureControl1_C {
             get {
@@ -7252,7 +7558,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TemperatureControl2_C.
+        ///   Looks up a localized string similar to MWQMRunTemperatureControl2_C.
         /// </summary>
         public static string MWQMRunTemperatureControl2_C {
             get {
@@ -7261,7 +7567,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tide_End.
+        ///   Looks up a localized string similar to MWQMRunTide_End.
         /// </summary>
         public static string MWQMRunTide_End {
             get {
@@ -7270,7 +7576,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tide_Start.
+        ///   Looks up a localized string similar to MWQMRunTide_Start.
         /// </summary>
         public static string MWQMRunTide_Start {
             get {
@@ -7279,7 +7585,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WaterLevelAtBrook_m.
+        ///   Looks up a localized string similar to MWQMRunWaterLevelAtBrook_m.
         /// </summary>
         public static string MWQMRunWaterLevelAtBrook_m {
             get {
@@ -7288,7 +7594,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WaveHightAtEnd_m.
+        ///   Looks up a localized string similar to MWQMRunWaveHightAtEnd_m.
         /// </summary>
         public static string MWQMRunWaveHightAtEnd_m {
             get {
@@ -7297,7 +7603,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WaveHightAtStart_m.
+        ///   Looks up a localized string similar to MWQMRunWaveHightAtStart_m.
         /// </summary>
         public static string MWQMRunWaveHightAtStart_m {
             get {
@@ -7315,7 +7621,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Depth_m.
+        ///   Looks up a localized string similar to MWQMSampleDepth_m.
         /// </summary>
         public static string MWQMSampleDepth_m {
             get {
@@ -7333,7 +7639,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DuplicateSite.
+        ///   Looks up a localized string similar to MWQMSampleDuplicateItemDuplicateSite.
         /// </summary>
         public static string MWQMSampleDuplicateItemDuplicateSite {
             get {
@@ -7342,7 +7648,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ParentSite.
+        ///   Looks up a localized string similar to MWQMSampleDuplicateItemParentSite.
         /// </summary>
         public static string MWQMSampleDuplicateItemParentSite {
             get {
@@ -7351,7 +7657,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FecCol_MPN_100ml.
+        ///   Looks up a localized string similar to MWQMSampleFecCol_MPN_100ml.
         /// </summary>
         public static string MWQMSampleFecCol_MPN_100ml {
             get {
@@ -7369,7 +7675,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to MWQMSampleLanguageLanguage.
         /// </summary>
         public static string MWQMSampleLanguageLanguage {
             get {
@@ -7378,7 +7684,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MWQMSampleLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string MWQMSampleLanguageLastUpdateContactTVItemID {
             get {
@@ -7387,7 +7693,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MWQMSampleLanguageLastUpdateDate_UTC.
         /// </summary>
         public static string MWQMSampleLanguageLastUpdateDate_UTC {
             get {
@@ -7396,7 +7702,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSample.
+        ///   Looks up a localized string similar to MWQMSampleLanguageMWQMSample.
         /// </summary>
         public static string MWQMSampleLanguageMWQMSample {
             get {
@@ -7405,7 +7711,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSampleID.
+        ///   Looks up a localized string similar to MWQMSampleLanguageMWQMSampleID.
         /// </summary>
         public static string MWQMSampleLanguageMWQMSampleID {
             get {
@@ -7414,7 +7720,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSampleLanguageID.
+        ///   Looks up a localized string similar to MWQMSampleLanguageMWQMSampleLanguageID.
         /// </summary>
         public static string MWQMSampleLanguageMWQMSampleLanguageID {
             get {
@@ -7423,7 +7729,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSampleNote.
+        ///   Looks up a localized string similar to MWQMSampleLanguageMWQMSampleNote.
         /// </summary>
         public static string MWQMSampleLanguageMWQMSampleNote {
             get {
@@ -7432,7 +7738,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TranslationStatus.
+        ///   Looks up a localized string similar to MWQMSampleLanguageTranslationStatus.
         /// </summary>
         public static string MWQMSampleLanguageTranslationStatus {
             get {
@@ -7441,7 +7747,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MWQMSampleLastUpdateContactTVItemID.
         /// </summary>
         public static string MWQMSampleLastUpdateContactTVItemID {
             get {
@@ -7450,7 +7756,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MWQMSampleLastUpdateDate_UTC.
         /// </summary>
         public static string MWQMSampleLastUpdateDate_UTC {
             get {
@@ -7459,7 +7765,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMRunTVItem.
+        ///   Looks up a localized string similar to MWQMSampleMWQMRunTVItem.
         /// </summary>
         public static string MWQMSampleMWQMRunTVItem {
             get {
@@ -7468,7 +7774,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMRunTVItemID.
+        ///   Looks up a localized string similar to MWQMSampleMWQMRunTVItemID.
         /// </summary>
         public static string MWQMSampleMWQMRunTVItemID {
             get {
@@ -7477,7 +7783,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSampleID.
+        ///   Looks up a localized string similar to MWQMSampleMWQMSampleID.
         /// </summary>
         public static string MWQMSampleMWQMSampleID {
             get {
@@ -7486,7 +7792,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSampleLanguages.
+        ///   Looks up a localized string similar to MWQMSampleMWQMSampleLanguages.
         /// </summary>
         public static string MWQMSampleMWQMSampleLanguages {
             get {
@@ -7495,7 +7801,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteTVItem.
+        ///   Looks up a localized string similar to MWQMSampleMWQMSiteTVItem.
         /// </summary>
         public static string MWQMSampleMWQMSiteTVItem {
             get {
@@ -7504,7 +7810,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteTVItemID.
+        ///   Looks up a localized string similar to MWQMSampleMWQMSiteTVItemID.
         /// </summary>
         public static string MWQMSampleMWQMSiteTVItemID {
             get {
@@ -7513,7 +7819,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PH.
+        ///   Looks up a localized string similar to MWQMSamplePH.
         /// </summary>
         public static string MWQMSamplePH {
             get {
@@ -7522,7 +7828,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ProcessedBy.
+        ///   Looks up a localized string similar to MWQMSampleProcessedBy.
         /// </summary>
         public static string MWQMSampleProcessedBy {
             get {
@@ -7531,7 +7837,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Salinity_PPT.
+        ///   Looks up a localized string similar to MWQMSampleSalinity_PPT.
         /// </summary>
         public static string MWQMSampleSalinity_PPT {
             get {
@@ -7540,7 +7846,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleDateTime_Local.
+        ///   Looks up a localized string similar to MWQMSampleSampleDateTime_Local.
         /// </summary>
         public static string MWQMSampleSampleDateTime_Local {
             get {
@@ -7549,7 +7855,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleType_old.
+        ///   Looks up a localized string similar to MWQMSampleSampleType_old.
         /// </summary>
         public static string MWQMSampleSampleType_old {
             get {
@@ -7558,7 +7864,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleTypesText.
+        ///   Looks up a localized string similar to MWQMSampleSampleTypesText.
         /// </summary>
         public static string MWQMSampleSampleTypesText {
             get {
@@ -7567,7 +7873,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tube_0_1.
+        ///   Looks up a localized string similar to MWQMSampleTube_0_1.
         /// </summary>
         public static string MWQMSampleTube_0_1 {
             get {
@@ -7576,7 +7882,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tube_1_0.
+        ///   Looks up a localized string similar to MWQMSampleTube_1_0.
         /// </summary>
         public static string MWQMSampleTube_1_0 {
             get {
@@ -7585,7 +7891,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tube_10.
+        ///   Looks up a localized string similar to MWQMSampleTube_10.
         /// </summary>
         public static string MWQMSampleTube_10 {
             get {
@@ -7594,7 +7900,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WaterTemp_C.
+        ///   Looks up a localized string similar to MWQMSampleWaterTemp_C.
         /// </summary>
         public static string MWQMSampleWaterTemp_C {
             get {
@@ -7612,7 +7918,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MWQMSiteLastUpdateContactTVItemID.
         /// </summary>
         public static string MWQMSiteLastUpdateContactTVItemID {
             get {
@@ -7621,7 +7927,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MWQMSiteLastUpdateDate_UTC.
         /// </summary>
         public static string MWQMSiteLastUpdateDate_UTC {
             get {
@@ -7630,7 +7936,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteDescription.
+        ///   Looks up a localized string similar to MWQMSiteMWQMSiteDescription.
         /// </summary>
         public static string MWQMSiteMWQMSiteDescription {
             get {
@@ -7639,7 +7945,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteID.
+        ///   Looks up a localized string similar to MWQMSiteMWQMSiteID.
         /// </summary>
         public static string MWQMSiteMWQMSiteID {
             get {
@@ -7648,7 +7954,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteLatestClassification.
+        ///   Looks up a localized string similar to MWQMSiteMWQMSiteLatestClassification.
         /// </summary>
         public static string MWQMSiteMWQMSiteLatestClassification {
             get {
@@ -7657,7 +7963,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteNumber.
+        ///   Looks up a localized string similar to MWQMSiteMWQMSiteNumber.
         /// </summary>
         public static string MWQMSiteMWQMSiteNumber {
             get {
@@ -7666,7 +7972,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteTVItem.
+        ///   Looks up a localized string similar to MWQMSiteMWQMSiteTVItem.
         /// </summary>
         public static string MWQMSiteMWQMSiteTVItem {
             get {
@@ -7675,7 +7981,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteTVItemID.
+        ///   Looks up a localized string similar to MWQMSiteMWQMSiteTVItemID.
         /// </summary>
         public static string MWQMSiteMWQMSiteTVItemID {
             get {
@@ -7684,7 +7990,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ordinal.
+        ///   Looks up a localized string similar to MWQMSiteOrdinal.
         /// </summary>
         public static string MWQMSiteOrdinal {
             get {
@@ -7702,7 +8008,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Depth.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCDepth.
         /// </summary>
         public static string MWQMSiteSampleFCDepth {
             get {
@@ -7711,7 +8017,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DO.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCDO.
         /// </summary>
         public static string MWQMSiteSampleFCDO {
             get {
@@ -7720,7 +8026,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCError.
         /// </summary>
         public static string MWQMSiteSampleFCError {
             get {
@@ -7729,7 +8035,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FC.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCFC.
         /// </summary>
         public static string MWQMSiteSampleFCFC {
             get {
@@ -7738,7 +8044,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GeoMean.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCGeoMean.
         /// </summary>
         public static string MWQMSiteSampleFCGeoMean {
             get {
@@ -7747,7 +8053,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MaxFC.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCMaxFC.
         /// </summary>
         public static string MWQMSiteSampleFCMaxFC {
             get {
@@ -7756,7 +8062,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Median.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCMedian.
         /// </summary>
         public static string MWQMSiteSampleFCMedian {
             get {
@@ -7765,7 +8071,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MinFC.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCMinFC.
         /// </summary>
         public static string MWQMSiteSampleFCMinFC {
             get {
@@ -7774,7 +8080,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to P90.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCP90.
         /// </summary>
         public static string MWQMSiteSampleFCP90 {
             get {
@@ -7783,7 +8089,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PercOver260.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCPercOver260.
         /// </summary>
         public static string MWQMSiteSampleFCPercOver260 {
             get {
@@ -7792,7 +8098,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PercOver43.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCPercOver43.
         /// </summary>
         public static string MWQMSiteSampleFCPercOver43 {
             get {
@@ -7801,7 +8107,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PH.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCPH.
         /// </summary>
         public static string MWQMSiteSampleFCPH {
             get {
@@ -7810,7 +8116,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sal.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCSal.
         /// </summary>
         public static string MWQMSiteSampleFCSal {
             get {
@@ -7819,7 +8125,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampCount.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCSampCount.
         /// </summary>
         public static string MWQMSiteSampleFCSampCount {
             get {
@@ -7828,7 +8134,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleDate.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCSampleDate.
         /// </summary>
         public static string MWQMSiteSampleFCSampleDate {
             get {
@@ -7837,7 +8143,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Temp.
+        ///   Looks up a localized string similar to MWQMSiteSampleFCTemp.
         /// </summary>
         public static string MWQMSiteSampleFCTemp {
             get {
@@ -7855,7 +8161,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EndDate.
+        ///   Looks up a localized string similar to MWQMSiteStartEndDateEndDate.
         /// </summary>
         public static string MWQMSiteStartEndDateEndDate {
             get {
@@ -7864,7 +8170,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MWQMSiteStartEndDateLastUpdateContactTVItemID.
         /// </summary>
         public static string MWQMSiteStartEndDateLastUpdateContactTVItemID {
             get {
@@ -7873,7 +8179,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MWQMSiteStartEndDateLastUpdateDate_UTC.
         /// </summary>
         public static string MWQMSiteStartEndDateLastUpdateDate_UTC {
             get {
@@ -7882,7 +8188,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteStartEndDateID.
+        ///   Looks up a localized string similar to MWQMSiteStartEndDateMWQMSiteStartEndDateID.
         /// </summary>
         public static string MWQMSiteStartEndDateMWQMSiteStartEndDateID {
             get {
@@ -7891,7 +8197,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteTVItem.
+        ///   Looks up a localized string similar to MWQMSiteStartEndDateMWQMSiteTVItem.
         /// </summary>
         public static string MWQMSiteStartEndDateMWQMSiteTVItem {
             get {
@@ -7900,7 +8206,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteTVItemID.
+        ///   Looks up a localized string similar to MWQMSiteStartEndDateMWQMSiteTVItemID.
         /// </summary>
         public static string MWQMSiteStartEndDateMWQMSiteTVItemID {
             get {
@@ -7909,7 +8215,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StartDate.
+        ///   Looks up a localized string similar to MWQMSiteStartEndDateStartDate.
         /// </summary>
         public static string MWQMSiteStartEndDateStartDate {
             get {
@@ -7927,7 +8233,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncludeRainEndDate.
+        ///   Looks up a localized string similar to MWQMSubsectorIncludeRainEndDate.
         /// </summary>
         public static string MWQMSubsectorIncludeRainEndDate {
             get {
@@ -7936,7 +8242,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncludeRainRunCount.
+        ///   Looks up a localized string similar to MWQMSubsectorIncludeRainRunCount.
         /// </summary>
         public static string MWQMSubsectorIncludeRainRunCount {
             get {
@@ -7945,7 +8251,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncludeRainSelectFullYear.
+        ///   Looks up a localized string similar to MWQMSubsectorIncludeRainSelectFullYear.
         /// </summary>
         public static string MWQMSubsectorIncludeRainSelectFullYear {
             get {
@@ -7954,7 +8260,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncludeRainStartDate.
+        ///   Looks up a localized string similar to MWQMSubsectorIncludeRainStartDate.
         /// </summary>
         public static string MWQMSubsectorIncludeRainStartDate {
             get {
@@ -7972,7 +8278,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageLanguage.
         /// </summary>
         public static string MWQMSubsectorLanguageLanguage {
             get {
@@ -7981,7 +8287,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string MWQMSubsectorLanguageLastUpdateContactTVItemID {
             get {
@@ -7990,7 +8296,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageLastUpdateDate_UTC.
         /// </summary>
         public static string MWQMSubsectorLanguageLastUpdateDate_UTC {
             get {
@@ -7999,7 +8305,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsector.
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageMWQMSubsector.
         /// </summary>
         public static string MWQMSubsectorLanguageMWQMSubsector {
             get {
@@ -8008,7 +8314,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorID.
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageMWQMSubsectorID.
         /// </summary>
         public static string MWQMSubsectorLanguageMWQMSubsectorID {
             get {
@@ -8017,7 +8323,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorLanguageID.
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageMWQMSubsectorLanguageID.
         /// </summary>
         public static string MWQMSubsectorLanguageMWQMSubsectorLanguageID {
             get {
@@ -8026,7 +8332,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorDesc.
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageSubsectorDesc.
         /// </summary>
         public static string MWQMSubsectorLanguageSubsectorDesc {
             get {
@@ -8035,7 +8341,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TranslationStatus.
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageTranslationStatus.
         /// </summary>
         public static string MWQMSubsectorLanguageTranslationStatus {
             get {
@@ -8044,7 +8350,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to MWQMSubsectorLastUpdateContactTVItemID.
         /// </summary>
         public static string MWQMSubsectorLastUpdateContactTVItemID {
             get {
@@ -8053,7 +8359,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to MWQMSubsectorLastUpdateDate_UTC.
         /// </summary>
         public static string MWQMSubsectorLastUpdateDate_UTC {
             get {
@@ -8062,7 +8368,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorID.
+        ///   Looks up a localized string similar to MWQMSubsectorMWQMSubsectorID.
         /// </summary>
         public static string MWQMSubsectorMWQMSubsectorID {
             get {
@@ -8071,7 +8377,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorLanguages.
+        ///   Looks up a localized string similar to MWQMSubsectorMWQMSubsectorLanguages.
         /// </summary>
         public static string MWQMSubsectorMWQMSubsectorLanguages {
             get {
@@ -8080,7 +8386,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorTVItem.
+        ///   Looks up a localized string similar to MWQMSubsectorMWQMSubsectorTVItem.
         /// </summary>
         public static string MWQMSubsectorMWQMSubsectorTVItem {
             get {
@@ -8089,7 +8395,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorTVItemID.
+        ///   Looks up a localized string similar to MWQMSubsectorMWQMSubsectorTVItemID.
         /// </summary>
         public static string MWQMSubsectorMWQMSubsectorTVItemID {
             get {
@@ -8098,7 +8404,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NoRainEndDate.
+        ///   Looks up a localized string similar to MWQMSubsectorNoRainEndDate.
         /// </summary>
         public static string MWQMSubsectorNoRainEndDate {
             get {
@@ -8107,7 +8413,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NoRainRunCount.
+        ///   Looks up a localized string similar to MWQMSubsectorNoRainRunCount.
         /// </summary>
         public static string MWQMSubsectorNoRainRunCount {
             get {
@@ -8116,7 +8422,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NoRainSelectFullYear.
+        ///   Looks up a localized string similar to MWQMSubsectorNoRainSelectFullYear.
         /// </summary>
         public static string MWQMSubsectorNoRainSelectFullYear {
             get {
@@ -8125,7 +8431,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NoRainStartDate.
+        ///   Looks up a localized string similar to MWQMSubsectorNoRainStartDate.
         /// </summary>
         public static string MWQMSubsectorNoRainStartDate {
             get {
@@ -8134,7 +8440,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OnlyRainEndDate.
+        ///   Looks up a localized string similar to MWQMSubsectorOnlyRainEndDate.
         /// </summary>
         public static string MWQMSubsectorOnlyRainEndDate {
             get {
@@ -8143,7 +8449,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OnlyRainRunCount.
+        ///   Looks up a localized string similar to MWQMSubsectorOnlyRainRunCount.
         /// </summary>
         public static string MWQMSubsectorOnlyRainRunCount {
             get {
@@ -8152,7 +8458,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OnlyRainSelectFullYear.
+        ///   Looks up a localized string similar to MWQMSubsectorOnlyRainSelectFullYear.
         /// </summary>
         public static string MWQMSubsectorOnlyRainSelectFullYear {
             get {
@@ -8161,7 +8467,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OnlyRainStartDate.
+        ///   Looks up a localized string similar to MWQMSubsectorOnlyRainStartDate.
         /// </summary>
         public static string MWQMSubsectorOnlyRainStartDate {
             get {
@@ -8170,7 +8476,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay0Limit.
+        ///   Looks up a localized string similar to MWQMSubsectorRainDay0Limit.
         /// </summary>
         public static string MWQMSubsectorRainDay0Limit {
             get {
@@ -8179,7 +8485,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay10Limit.
+        ///   Looks up a localized string similar to MWQMSubsectorRainDay10Limit.
         /// </summary>
         public static string MWQMSubsectorRainDay10Limit {
             get {
@@ -8188,7 +8494,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay1Limit.
+        ///   Looks up a localized string similar to MWQMSubsectorRainDay1Limit.
         /// </summary>
         public static string MWQMSubsectorRainDay1Limit {
             get {
@@ -8197,7 +8503,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay2Limit.
+        ///   Looks up a localized string similar to MWQMSubsectorRainDay2Limit.
         /// </summary>
         public static string MWQMSubsectorRainDay2Limit {
             get {
@@ -8206,7 +8512,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay3Limit.
+        ///   Looks up a localized string similar to MWQMSubsectorRainDay3Limit.
         /// </summary>
         public static string MWQMSubsectorRainDay3Limit {
             get {
@@ -8215,7 +8521,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay4Limit.
+        ///   Looks up a localized string similar to MWQMSubsectorRainDay4Limit.
         /// </summary>
         public static string MWQMSubsectorRainDay4Limit {
             get {
@@ -8224,7 +8530,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay5Limit.
+        ///   Looks up a localized string similar to MWQMSubsectorRainDay5Limit.
         /// </summary>
         public static string MWQMSubsectorRainDay5Limit {
             get {
@@ -8233,7 +8539,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay6Limit.
+        ///   Looks up a localized string similar to MWQMSubsectorRainDay6Limit.
         /// </summary>
         public static string MWQMSubsectorRainDay6Limit {
             get {
@@ -8242,7 +8548,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay7Limit.
+        ///   Looks up a localized string similar to MWQMSubsectorRainDay7Limit.
         /// </summary>
         public static string MWQMSubsectorRainDay7Limit {
             get {
@@ -8251,7 +8557,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay8Limit.
+        ///   Looks up a localized string similar to MWQMSubsectorRainDay8Limit.
         /// </summary>
         public static string MWQMSubsectorRainDay8Limit {
             get {
@@ -8260,7 +8566,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RainDay9Limit.
+        ///   Looks up a localized string similar to MWQMSubsectorRainDay9Limit.
         /// </summary>
         public static string MWQMSubsectorRainDay9Limit {
             get {
@@ -8269,7 +8575,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorHistoricKey.
+        ///   Looks up a localized string similar to MWQMSubsectorSubsectorHistoricKey.
         /// </summary>
         public static string MWQMSubsectorSubsectorHistoricKey {
             get {
@@ -8278,7 +8584,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideLocationSIDText.
+        ///   Looks up a localized string similar to MWQMSubsectorTideLocationSIDText.
         /// </summary>
         public static string MWQMSubsectorTideLocationSIDText {
             get {
@@ -8296,7 +8602,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactTitle.
+        ///   Looks up a localized string similar to NewContactContactTitle.
         /// </summary>
         public static string NewContactContactTitle {
             get {
@@ -8305,7 +8611,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FirstName.
+        ///   Looks up a localized string similar to NewContactFirstName.
         /// </summary>
         public static string NewContactFirstName {
             get {
@@ -8314,7 +8620,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Initial.
+        ///   Looks up a localized string similar to NewContactInitial.
         /// </summary>
         public static string NewContactInitial {
             get {
@@ -8323,7 +8629,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastName.
+        ///   Looks up a localized string similar to NewContactLastName.
         /// </summary>
         public static string NewContactLastName {
             get {
@@ -8332,7 +8638,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LoginEmail.
+        ///   Looks up a localized string similar to NewContactLoginEmail.
         /// </summary>
         public static string NewContactLoginEmail {
             get {
@@ -8350,7 +8656,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Code.
+        ///   Looks up a localized string similar to NodeCode.
         /// </summary>
         public static string NodeCode {
             get {
@@ -8359,7 +8665,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConnectNodeList.
+        ///   Looks up a localized string similar to NodeConnectNodeList.
         /// </summary>
         public static string NodeConnectNodeList {
             get {
@@ -8368,7 +8674,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ElementList.
+        ///   Looks up a localized string similar to NodeElementList.
         /// </summary>
         public static string NodeElementList {
             get {
@@ -8377,7 +8683,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ID.
+        ///   Looks up a localized string similar to NodeID.
         /// </summary>
         public static string NodeID {
             get {
@@ -8395,7 +8701,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Layer.
+        ///   Looks up a localized string similar to NodeLayerLayer.
         /// </summary>
         public static string NodeLayerLayer {
             get {
@@ -8404,7 +8710,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Node.
+        ///   Looks up a localized string similar to NodeLayerNode.
         /// </summary>
         public static string NodeLayerNode {
             get {
@@ -8413,7 +8719,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Z.
+        ///   Looks up a localized string similar to NodeLayerZ.
         /// </summary>
         public static string NodeLayerZ {
             get {
@@ -8422,7 +8728,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Value.
+        ///   Looks up a localized string similar to NodeValue.
         /// </summary>
         public static string NodeValue {
             get {
@@ -8431,7 +8737,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to X.
+        ///   Looks up a localized string similar to NodeX.
         /// </summary>
         public static string NodeX {
             get {
@@ -8440,7 +8746,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Y.
+        ///   Looks up a localized string similar to NodeY.
         /// </summary>
         public static string NodeY {
             get {
@@ -8449,7 +8755,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Z.
+        ///   Looks up a localized string similar to NodeZ.
         /// </summary>
         public static string NodeZ {
             get {
@@ -8467,7 +8773,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error.
+        ///   Looks up a localized string similar to OtherFilesToUploadError.
         /// </summary>
         public static string OtherFilesToUploadError {
             get {
@@ -8476,7 +8782,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeScenarioID.
+        ///   Looks up a localized string similar to OtherFilesToUploadMikeScenarioID.
         /// </summary>
         public static string OtherFilesToUploadMikeScenarioID {
             get {
@@ -8485,7 +8791,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVFileList.
+        ///   Looks up a localized string similar to OtherFilesToUploadTVFileList.
         /// </summary>
         public static string OtherFilesToUploadTVFileList {
             get {
@@ -8503,7 +8809,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ID.
+        ///   Looks up a localized string similar to PolSourceInactiveReasonEnumTextAndIDID.
         /// </summary>
         public static string PolSourceInactiveReasonEnumTextAndIDID {
             get {
@@ -8512,7 +8818,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Text.
+        ///   Looks up a localized string similar to PolSourceInactiveReasonEnumTextAndIDText.
         /// </summary>
         public static string PolSourceInactiveReasonEnumTextAndIDText {
             get {
@@ -8530,7 +8836,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactTVItem.
+        ///   Looks up a localized string similar to PolSourceObservationContactTVItem.
         /// </summary>
         public static string PolSourceObservationContactTVItem {
             get {
@@ -8539,7 +8845,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactTVItemID.
+        ///   Looks up a localized string similar to PolSourceObservationContactTVItemID.
         /// </summary>
         public static string PolSourceObservationContactTVItemID {
             get {
@@ -8557,7 +8863,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to PolSourceObservationIssueLastUpdateContactTVItemID.
         /// </summary>
         public static string PolSourceObservationIssueLastUpdateContactTVItemID {
             get {
@@ -8566,7 +8872,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to PolSourceObservationIssueLastUpdateDate_UTC.
         /// </summary>
         public static string PolSourceObservationIssueLastUpdateDate_UTC {
             get {
@@ -8575,7 +8881,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ObservationInfo.
+        ///   Looks up a localized string similar to PolSourceObservationIssueObservationInfo.
         /// </summary>
         public static string PolSourceObservationIssueObservationInfo {
             get {
@@ -8584,7 +8890,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ordinal.
+        ///   Looks up a localized string similar to PolSourceObservationIssueOrdinal.
         /// </summary>
         public static string PolSourceObservationIssueOrdinal {
             get {
@@ -8593,7 +8899,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceObservation.
+        ///   Looks up a localized string similar to PolSourceObservationIssuePolSourceObservation.
         /// </summary>
         public static string PolSourceObservationIssuePolSourceObservation {
             get {
@@ -8602,7 +8908,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceObservationID.
+        ///   Looks up a localized string similar to PolSourceObservationIssuePolSourceObservationID.
         /// </summary>
         public static string PolSourceObservationIssuePolSourceObservationID {
             get {
@@ -8611,7 +8917,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceObservationIssueID.
+        ///   Looks up a localized string similar to PolSourceObservationIssuePolSourceObservationIssueID.
         /// </summary>
         public static string PolSourceObservationIssuePolSourceObservationIssueID {
             get {
@@ -8620,7 +8926,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to PolSourceObservationLastUpdateContactTVItemID.
         /// </summary>
         public static string PolSourceObservationLastUpdateContactTVItemID {
             get {
@@ -8629,7 +8935,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to PolSourceObservationLastUpdateDate_UTC.
         /// </summary>
         public static string PolSourceObservationLastUpdateDate_UTC {
             get {
@@ -8638,7 +8944,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Observation_ToBeDeleted.
+        ///   Looks up a localized string similar to PolSourceObservationObservation_ToBeDeleted.
         /// </summary>
         public static string PolSourceObservationObservation_ToBeDeleted {
             get {
@@ -8647,7 +8953,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ObservationDate_Local.
+        ///   Looks up a localized string similar to PolSourceObservationObservationDate_Local.
         /// </summary>
         public static string PolSourceObservationObservationDate_Local {
             get {
@@ -8656,7 +8962,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceObservationID.
+        ///   Looks up a localized string similar to PolSourceObservationPolSourceObservationID.
         /// </summary>
         public static string PolSourceObservationPolSourceObservationID {
             get {
@@ -8665,7 +8971,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceObservationIssues.
+        ///   Looks up a localized string similar to PolSourceObservationPolSourceObservationIssues.
         /// </summary>
         public static string PolSourceObservationPolSourceObservationIssues {
             get {
@@ -8674,7 +8980,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceSiteTVItem.
+        ///   Looks up a localized string similar to PolSourceObservationPolSourceSiteTVItem.
         /// </summary>
         public static string PolSourceObservationPolSourceSiteTVItem {
             get {
@@ -8683,7 +8989,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceSiteTVItemID.
+        ///   Looks up a localized string similar to PolSourceObservationPolSourceSiteTVItemID.
         /// </summary>
         public static string PolSourceObservationPolSourceSiteTVItemID {
             get {
@@ -8701,7 +9007,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceObsInfo.
+        ///   Looks up a localized string similar to PolSourceObsInfoChildPolSourceObsInfo.
         /// </summary>
         public static string PolSourceObsInfoChildPolSourceObsInfo {
             get {
@@ -8710,7 +9016,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceObsInfoChildStart.
+        ///   Looks up a localized string similar to PolSourceObsInfoChildPolSourceObsInfoChildStart.
         /// </summary>
         public static string PolSourceObsInfoChildPolSourceObsInfoChildStart {
             get {
@@ -8728,7 +9034,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ID.
+        ///   Looks up a localized string similar to PolSourceObsInfoEnumTextAndIDID.
         /// </summary>
         public static string PolSourceObsInfoEnumTextAndIDID {
             get {
@@ -8737,7 +9043,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Text.
+        ///   Looks up a localized string similar to PolSourceObsInfoEnumTextAndIDText.
         /// </summary>
         public static string PolSourceObsInfoEnumTextAndIDText {
             get {
@@ -8755,7 +9061,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CivicAddressTVItemID.
+        ///   Looks up a localized string similar to PolSourceSiteCivicAddressTVItemID.
         /// </summary>
         public static string PolSourceSiteCivicAddressTVItemID {
             get {
@@ -8764,7 +9070,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InactiveReason.
+        ///   Looks up a localized string similar to PolSourceSiteInactiveReason.
         /// </summary>
         public static string PolSourceSiteInactiveReason {
             get {
@@ -8773,7 +9079,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IsPointSource.
+        ///   Looks up a localized string similar to PolSourceSiteIsPointSource.
         /// </summary>
         public static string PolSourceSiteIsPointSource {
             get {
@@ -8782,7 +9088,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to PolSourceSiteLastUpdateContactTVItemID.
         /// </summary>
         public static string PolSourceSiteLastUpdateContactTVItemID {
             get {
@@ -8791,7 +9097,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to PolSourceSiteLastUpdateDate_UTC.
         /// </summary>
         public static string PolSourceSiteLastUpdateDate_UTC {
             get {
@@ -8800,7 +9106,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Oldsiteid.
+        ///   Looks up a localized string similar to PolSourceSiteOldsiteid.
         /// </summary>
         public static string PolSourceSiteOldsiteid {
             get {
@@ -8809,7 +9115,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceSiteID.
+        ///   Looks up a localized string similar to PolSourceSitePolSourceSiteID.
         /// </summary>
         public static string PolSourceSitePolSourceSiteID {
             get {
@@ -8818,7 +9124,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceSiteTVItem.
+        ///   Looks up a localized string similar to PolSourceSitePolSourceSiteTVItem.
         /// </summary>
         public static string PolSourceSitePolSourceSiteTVItem {
             get {
@@ -8827,7 +9133,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceSiteTVItemID.
+        ///   Looks up a localized string similar to PolSourceSitePolSourceSiteTVItemID.
         /// </summary>
         public static string PolSourceSitePolSourceSiteTVItemID {
             get {
@@ -8836,7 +9142,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Site.
+        ///   Looks up a localized string similar to PolSourceSiteSite.
         /// </summary>
         public static string PolSourceSiteSite {
             get {
@@ -8845,7 +9151,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SiteID.
+        ///   Looks up a localized string similar to PolSourceSiteSiteID.
         /// </summary>
         public static string PolSourceSiteSiteID {
             get {
@@ -8854,7 +9160,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Temp_Locator_CanDelete.
+        ///   Looks up a localized string similar to PolSourceSiteTemp_Locator_CanDelete.
         /// </summary>
         public static string PolSourceSiteTemp_Locator_CanDelete {
             get {
@@ -8872,7 +9178,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to XCoord.
+        ///   Looks up a localized string similar to PolyPointXCoord.
         /// </summary>
         public static string PolyPointXCoord {
             get {
@@ -8881,7 +9187,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to YCoord.
+        ///   Looks up a localized string similar to PolyPointYCoord.
         /// </summary>
         public static string PolyPointYCoord {
             get {
@@ -8890,7 +9196,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Z.
+        ///   Looks up a localized string similar to PolyPointZ.
         /// </summary>
         public static string PolyPointZ {
             get {
@@ -8908,7 +9214,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HydrometricSite.
+        ///   Looks up a localized string similar to RatingCurveHydrometricSite.
         /// </summary>
         public static string RatingCurveHydrometricSite {
             get {
@@ -8917,7 +9223,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HydrometricSiteID.
+        ///   Looks up a localized string similar to RatingCurveHydrometricSiteID.
         /// </summary>
         public static string RatingCurveHydrometricSiteID {
             get {
@@ -8926,7 +9232,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to RatingCurveLastUpdateContactTVItemID.
         /// </summary>
         public static string RatingCurveLastUpdateContactTVItemID {
             get {
@@ -8935,7 +9241,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to RatingCurveLastUpdateDate_UTC.
         /// </summary>
         public static string RatingCurveLastUpdateDate_UTC {
             get {
@@ -8944,7 +9250,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RatingCurveID.
+        ///   Looks up a localized string similar to RatingCurveRatingCurveID.
         /// </summary>
         public static string RatingCurveRatingCurveID {
             get {
@@ -8953,7 +9259,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RatingCurveNumber.
+        ///   Looks up a localized string similar to RatingCurveRatingCurveNumber.
         /// </summary>
         public static string RatingCurveRatingCurveNumber {
             get {
@@ -8962,7 +9268,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RatingCurveValues.
+        ///   Looks up a localized string similar to RatingCurveRatingCurveValues.
         /// </summary>
         public static string RatingCurveRatingCurveValues {
             get {
@@ -8980,7 +9286,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DischargeValue_m3_s.
+        ///   Looks up a localized string similar to RatingCurveValueDischargeValue_m3_s.
         /// </summary>
         public static string RatingCurveValueDischargeValue_m3_s {
             get {
@@ -8989,7 +9295,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to RatingCurveValueLastUpdateContactTVItemID.
         /// </summary>
         public static string RatingCurveValueLastUpdateContactTVItemID {
             get {
@@ -8998,7 +9304,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to RatingCurveValueLastUpdateDate_UTC.
         /// </summary>
         public static string RatingCurveValueLastUpdateDate_UTC {
             get {
@@ -9007,7 +9313,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RatingCurve.
+        ///   Looks up a localized string similar to RatingCurveValueRatingCurve.
         /// </summary>
         public static string RatingCurveValueRatingCurve {
             get {
@@ -9016,7 +9322,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RatingCurveID.
+        ///   Looks up a localized string similar to RatingCurveValueRatingCurveID.
         /// </summary>
         public static string RatingCurveValueRatingCurveID {
             get {
@@ -9025,7 +9331,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RatingCurveValueID.
+        ///   Looks up a localized string similar to RatingCurveValueRatingCurveValueID.
         /// </summary>
         public static string RatingCurveValueRatingCurveValueID {
             get {
@@ -9034,7 +9340,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StageValue_m.
+        ///   Looks up a localized string similar to RatingCurveValueStageValue_m.
         /// </summary>
         public static string RatingCurveValueStageValue_m {
             get {
@@ -9052,7 +9358,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConfirmPassword.
+        ///   Looks up a localized string similar to RegisterConfirmPassword.
         /// </summary>
         public static string RegisterConfirmPassword {
             get {
@@ -9061,7 +9367,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FirstName.
+        ///   Looks up a localized string similar to RegisterFirstName.
         /// </summary>
         public static string RegisterFirstName {
             get {
@@ -9070,7 +9376,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Initial.
+        ///   Looks up a localized string similar to RegisterInitial.
         /// </summary>
         public static string RegisterInitial {
             get {
@@ -9079,7 +9385,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastName.
+        ///   Looks up a localized string similar to RegisterLastName.
         /// </summary>
         public static string RegisterLastName {
             get {
@@ -9088,7 +9394,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LoginEmail.
+        ///   Looks up a localized string similar to RegisterLoginEmail.
         /// </summary>
         public static string RegisterLoginEmail {
             get {
@@ -9097,7 +9403,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Password.
+        ///   Looks up a localized string similar to RegisterPassword.
         /// </summary>
         public static string RegisterPassword {
             get {
@@ -9106,7 +9412,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WebName.
+        ///   Looks up a localized string similar to RegisterWebName.
         /// </summary>
         public static string RegisterWebName {
             get {
@@ -9124,7 +9430,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Code.
+        ///   Looks up a localized string similar to ResetPasswordCode.
         /// </summary>
         public static string ResetPasswordCode {
             get {
@@ -9133,7 +9439,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConfirmPassword.
+        ///   Looks up a localized string similar to ResetPasswordConfirmPassword.
         /// </summary>
         public static string ResetPasswordConfirmPassword {
             get {
@@ -9142,7 +9448,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email.
+        ///   Looks up a localized string similar to ResetPasswordEmail.
         /// </summary>
         public static string ResetPasswordEmail {
             get {
@@ -9151,7 +9457,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ExpireDate_Local.
+        ///   Looks up a localized string similar to ResetPasswordExpireDate_Local.
         /// </summary>
         public static string ResetPasswordExpireDate_Local {
             get {
@@ -9160,7 +9466,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to ResetPasswordLastUpdateContactTVItemID.
         /// </summary>
         public static string ResetPasswordLastUpdateContactTVItemID {
             get {
@@ -9169,7 +9475,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to ResetPasswordLastUpdateDate_UTC.
         /// </summary>
         public static string ResetPasswordLastUpdateDate_UTC {
             get {
@@ -9178,7 +9484,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Password.
+        ///   Looks up a localized string similar to ResetPasswordPassword.
         /// </summary>
         public static string ResetPasswordPassword {
             get {
@@ -9187,7 +9493,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResetPasswordID.
+        ///   Looks up a localized string similar to ResetPasswordResetPasswordID.
         /// </summary>
         public static string ResetPasswordResetPasswordID {
             get {
@@ -9205,7 +9511,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EndPos.
+        ///   Looks up a localized string similar to RTBStringPosEndPos.
         /// </summary>
         public static string RTBStringPosEndPos {
             get {
@@ -9214,7 +9520,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StartPos.
+        ///   Looks up a localized string similar to RTBStringPosStartPos.
         /// </summary>
         public static string RTBStringPosStartPos {
             get {
@@ -9223,7 +9529,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TagText.
+        ///   Looks up a localized string similar to RTBStringPosTagText.
         /// </summary>
         public static string RTBStringPosTagText {
             get {
@@ -9232,7 +9538,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Text.
+        ///   Looks up a localized string similar to RTBStringPosText.
         /// </summary>
         public static string RTBStringPosText {
             get {
@@ -9250,7 +9556,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AccessCode.
+        ///   Looks up a localized string similar to SamplingPlanAccessCode.
         /// </summary>
         public static string SamplingPlanAccessCode {
             get {
@@ -9268,7 +9574,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetHistoryCount.
+        ///   Looks up a localized string similar to SamplingPlanAndFilesLabSheetCountLabSheetHistoryCount.
         /// </summary>
         public static string SamplingPlanAndFilesLabSheetCountLabSheetHistoryCount {
             get {
@@ -9277,7 +9583,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetTransferredCount.
+        ///   Looks up a localized string similar to SamplingPlanAndFilesLabSheetCountLabSheetTransferredCount.
         /// </summary>
         public static string SamplingPlanAndFilesLabSheetCountLabSheetTransferredCount {
             get {
@@ -9286,7 +9592,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlan.
+        ///   Looks up a localized string similar to SamplingPlanAndFilesLabSheetCountSamplingPlan.
         /// </summary>
         public static string SamplingPlanAndFilesLabSheetCountSamplingPlan {
             get {
@@ -9295,7 +9601,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVFileSamplingPlanFileTXT.
+        ///   Looks up a localized string similar to SamplingPlanAndFilesLabSheetCountTVFileSamplingPlanFileTXT.
         /// </summary>
         public static string SamplingPlanAndFilesLabSheetCountTVFileSamplingPlanFileTXT {
             get {
@@ -9304,7 +9610,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CreatorTVItem.
+        ///   Looks up a localized string similar to SamplingPlanCreatorTVItem.
         /// </summary>
         public static string SamplingPlanCreatorTVItem {
             get {
@@ -9313,7 +9619,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CreatorTVItemID.
+        ///   Looks up a localized string similar to SamplingPlanCreatorTVItemID.
         /// </summary>
         public static string SamplingPlanCreatorTVItemID {
             get {
@@ -9322,7 +9628,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DailyDuplicatePrecisionCriteria.
+        ///   Looks up a localized string similar to SamplingPlanDailyDuplicatePrecisionCriteria.
         /// </summary>
         public static string SamplingPlanDailyDuplicatePrecisionCriteria {
             get {
@@ -9331,7 +9637,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ForGroupName.
+        ///   Looks up a localized string similar to SamplingPlanForGroupName.
         /// </summary>
         public static string SamplingPlanForGroupName {
             get {
@@ -9340,7 +9646,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IncludeLaboratoryQAQC.
+        ///   Looks up a localized string similar to SamplingPlanIncludeLaboratoryQAQC.
         /// </summary>
         public static string SamplingPlanIncludeLaboratoryQAQC {
             get {
@@ -9349,7 +9655,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IntertechDuplicatePrecisionCriteria.
+        ///   Looks up a localized string similar to SamplingPlanIntertechDuplicatePrecisionCriteria.
         /// </summary>
         public static string SamplingPlanIntertechDuplicatePrecisionCriteria {
             get {
@@ -9358,7 +9664,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetDetails.
+        ///   Looks up a localized string similar to SamplingPlanLabSheetDetails.
         /// </summary>
         public static string SamplingPlanLabSheetDetails {
             get {
@@ -9367,7 +9673,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheets.
+        ///   Looks up a localized string similar to SamplingPlanLabSheets.
         /// </summary>
         public static string SamplingPlanLabSheets {
             get {
@@ -9376,7 +9682,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetType.
+        ///   Looks up a localized string similar to SamplingPlanLabSheetType.
         /// </summary>
         public static string SamplingPlanLabSheetType {
             get {
@@ -9385,7 +9691,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to SamplingPlanLastUpdateContactTVItemID.
         /// </summary>
         public static string SamplingPlanLastUpdateContactTVItemID {
             get {
@@ -9394,7 +9700,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to SamplingPlanLastUpdateDate_UTC.
         /// </summary>
         public static string SamplingPlanLastUpdateDate_UTC {
             get {
@@ -9403,7 +9709,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ProvinceTVItem.
+        ///   Looks up a localized string similar to SamplingPlanProvinceTVItem.
         /// </summary>
         public static string SamplingPlanProvinceTVItem {
             get {
@@ -9412,7 +9718,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ProvinceTVItemID.
+        ///   Looks up a localized string similar to SamplingPlanProvinceTVItemID.
         /// </summary>
         public static string SamplingPlanProvinceTVItemID {
             get {
@@ -9421,7 +9727,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SampleType.
+        ///   Looks up a localized string similar to SamplingPlanSampleType.
         /// </summary>
         public static string SamplingPlanSampleType {
             get {
@@ -9430,7 +9736,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanFileTVItem.
+        ///   Looks up a localized string similar to SamplingPlanSamplingPlanFileTVItem.
         /// </summary>
         public static string SamplingPlanSamplingPlanFileTVItem {
             get {
@@ -9439,7 +9745,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanFileTVItemID.
+        ///   Looks up a localized string similar to SamplingPlanSamplingPlanFileTVItemID.
         /// </summary>
         public static string SamplingPlanSamplingPlanFileTVItemID {
             get {
@@ -9448,7 +9754,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanID.
+        ///   Looks up a localized string similar to SamplingPlanSamplingPlanID.
         /// </summary>
         public static string SamplingPlanSamplingPlanID {
             get {
@@ -9457,7 +9763,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanName.
+        ///   Looks up a localized string similar to SamplingPlanSamplingPlanName.
         /// </summary>
         public static string SamplingPlanSamplingPlanName {
             get {
@@ -9466,7 +9772,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSubsectors.
+        ///   Looks up a localized string similar to SamplingPlanSamplingPlanSubsectors.
         /// </summary>
         public static string SamplingPlanSamplingPlanSubsectors {
             get {
@@ -9475,7 +9781,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanType.
+        ///   Looks up a localized string similar to SamplingPlanSamplingPlanType.
         /// </summary>
         public static string SamplingPlanSamplingPlanType {
             get {
@@ -9493,7 +9799,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorLastUpdateContactTVItemID.
         /// </summary>
         public static string SamplingPlanSubsectorLastUpdateContactTVItemID {
             get {
@@ -9502,7 +9808,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorLastUpdateDate_UTC.
         /// </summary>
         public static string SamplingPlanSubsectorLastUpdateDate_UTC {
             get {
@@ -9511,7 +9817,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlan.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorSamplingPlan.
         /// </summary>
         public static string SamplingPlanSubsectorSamplingPlan {
             get {
@@ -9520,7 +9826,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanID.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorSamplingPlanID.
         /// </summary>
         public static string SamplingPlanSubsectorSamplingPlanID {
             get {
@@ -9529,7 +9835,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSubsectorID.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorSamplingPlanSubsectorID.
         /// </summary>
         public static string SamplingPlanSubsectorSamplingPlanSubsectorID {
             get {
@@ -9538,7 +9844,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSubsectorSites.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorSamplingPlanSubsectorSites.
         /// </summary>
         public static string SamplingPlanSubsectorSamplingPlanSubsectorSites {
             get {
@@ -9556,7 +9862,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IsDuplicate.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorSiteIsDuplicate.
         /// </summary>
         public static string SamplingPlanSubsectorSiteIsDuplicate {
             get {
@@ -9565,7 +9871,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorSiteLastUpdateContactTVItemID.
         /// </summary>
         public static string SamplingPlanSubsectorSiteLastUpdateContactTVItemID {
             get {
@@ -9574,7 +9880,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorSiteLastUpdateDate_UTC.
         /// </summary>
         public static string SamplingPlanSubsectorSiteLastUpdateDate_UTC {
             get {
@@ -9583,7 +9889,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteTVItem.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorSiteMWQMSiteTVItem.
         /// </summary>
         public static string SamplingPlanSubsectorSiteMWQMSiteTVItem {
             get {
@@ -9592,7 +9898,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteTVItemID.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorSiteMWQMSiteTVItemID.
         /// </summary>
         public static string SamplingPlanSubsectorSiteMWQMSiteTVItemID {
             get {
@@ -9601,7 +9907,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSubsector.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorSiteSamplingPlanSubsector.
         /// </summary>
         public static string SamplingPlanSubsectorSiteSamplingPlanSubsector {
             get {
@@ -9610,7 +9916,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSubsectorID.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorSiteSamplingPlanSubsectorID.
         /// </summary>
         public static string SamplingPlanSubsectorSiteSamplingPlanSubsectorID {
             get {
@@ -9619,7 +9925,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSubsectorSiteID.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorSiteSamplingPlanSubsectorSiteID.
         /// </summary>
         public static string SamplingPlanSubsectorSiteSamplingPlanSubsectorSiteID {
             get {
@@ -9628,7 +9934,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorTVItem.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorSubsectorTVItem.
         /// </summary>
         public static string SamplingPlanSubsectorSubsectorTVItem {
             get {
@@ -9637,7 +9943,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorTVItemID.
+        ///   Looks up a localized string similar to SamplingPlanSubsectorSubsectorTVItemID.
         /// </summary>
         public static string SamplingPlanSubsectorSubsectorTVItemID {
             get {
@@ -9646,7 +9952,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Year.
+        ///   Looks up a localized string similar to SamplingPlanYear.
         /// </summary>
         public static string SamplingPlanYear {
             get {
@@ -9664,7 +9970,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to id.
+        ///   Looks up a localized string similar to Searchid.
         /// </summary>
         public static string Searchid {
             get {
@@ -9682,7 +9988,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SearchTag.
+        ///   Looks up a localized string similar to SearchTagAndTermsSearchTag.
         /// </summary>
         public static string SearchTagAndTermsSearchTag {
             get {
@@ -9691,7 +9997,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SearchTermList.
+        ///   Looks up a localized string similar to SearchTagAndTermsSearchTermList.
         /// </summary>
         public static string SearchTagAndTermsSearchTermList {
             get {
@@ -9700,7 +10006,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to value.
+        ///   Looks up a localized string similar to Searchvalue.
         /// </summary>
         public static string Searchvalue {
             get {
@@ -9718,7 +10024,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AverageFlow_m3_day.
+        ///   Looks up a localized string similar to SpillAverageFlow_m3_day.
         /// </summary>
         public static string SpillAverageFlow_m3_day {
             get {
@@ -9727,7 +10033,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EndDateTime_Local.
+        ///   Looks up a localized string similar to SpillEndDateTime_Local.
         /// </summary>
         public static string SpillEndDateTime_Local {
             get {
@@ -9736,7 +10042,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureTVItem.
+        ///   Looks up a localized string similar to SpillInfrastructureTVItem.
         /// </summary>
         public static string SpillInfrastructureTVItem {
             get {
@@ -9745,7 +10051,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureTVItemID.
+        ///   Looks up a localized string similar to SpillInfrastructureTVItemID.
         /// </summary>
         public static string SpillInfrastructureTVItemID {
             get {
@@ -9763,7 +10069,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to SpillLanguageLanguage.
         /// </summary>
         public static string SpillLanguageLanguage {
             get {
@@ -9772,7 +10078,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to SpillLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string SpillLanguageLastUpdateContactTVItemID {
             get {
@@ -9781,7 +10087,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to SpillLanguageLastUpdateDate_UTC.
         /// </summary>
         public static string SpillLanguageLastUpdateDate_UTC {
             get {
@@ -9790,7 +10096,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Spill.
+        ///   Looks up a localized string similar to SpillLanguageSpill.
         /// </summary>
         public static string SpillLanguageSpill {
             get {
@@ -9799,7 +10105,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SpillComment.
+        ///   Looks up a localized string similar to SpillLanguageSpillComment.
         /// </summary>
         public static string SpillLanguageSpillComment {
             get {
@@ -9808,7 +10114,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SpillID.
+        ///   Looks up a localized string similar to SpillLanguageSpillID.
         /// </summary>
         public static string SpillLanguageSpillID {
             get {
@@ -9817,7 +10123,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SpillLanguageID.
+        ///   Looks up a localized string similar to SpillLanguageSpillLanguageID.
         /// </summary>
         public static string SpillLanguageSpillLanguageID {
             get {
@@ -9826,7 +10132,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TranslationStatus.
+        ///   Looks up a localized string similar to SpillLanguageTranslationStatus.
         /// </summary>
         public static string SpillLanguageTranslationStatus {
             get {
@@ -9835,7 +10141,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to SpillLastUpdateContactTVItemID.
         /// </summary>
         public static string SpillLastUpdateContactTVItemID {
             get {
@@ -9844,7 +10150,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to SpillLastUpdateDate_UTC.
         /// </summary>
         public static string SpillLastUpdateDate_UTC {
             get {
@@ -9853,7 +10159,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MunicipalityTVItem.
+        ///   Looks up a localized string similar to SpillMunicipalityTVItem.
         /// </summary>
         public static string SpillMunicipalityTVItem {
             get {
@@ -9862,7 +10168,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MunicipalityTVItemID.
+        ///   Looks up a localized string similar to SpillMunicipalityTVItemID.
         /// </summary>
         public static string SpillMunicipalityTVItemID {
             get {
@@ -9871,7 +10177,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SpillID.
+        ///   Looks up a localized string similar to SpillSpillID.
         /// </summary>
         public static string SpillSpillID {
             get {
@@ -9880,7 +10186,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SpillLanguages.
+        ///   Looks up a localized string similar to SpillSpillLanguages.
         /// </summary>
         public static string SpillSpillLanguages {
             get {
@@ -9889,7 +10195,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StartDateTime_Local.
+        ///   Looks up a localized string similar to SpillStartDateTime_Local.
         /// </summary>
         public static string SpillStartDateTime_Local {
             get {
@@ -9907,7 +10213,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EarliestDate.
+        ///   Looks up a localized string similar to SubsectorMWQMSampleYearEarliestDate.
         /// </summary>
         public static string SubsectorMWQMSampleYearEarliestDate {
             get {
@@ -9916,7 +10222,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LatestDate.
+        ///   Looks up a localized string similar to SubsectorMWQMSampleYearLatestDate.
         /// </summary>
         public static string SubsectorMWQMSampleYearLatestDate {
             get {
@@ -9925,7 +10231,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorTVItemID.
+        ///   Looks up a localized string similar to SubsectorMWQMSampleYearSubsectorTVItemID.
         /// </summary>
         public static string SubsectorMWQMSampleYearSubsectorTVItemID {
             get {
@@ -9934,7 +10240,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Year.
+        ///   Looks up a localized string similar to SubsectorMWQMSampleYearYear.
         /// </summary>
         public static string SubsectorMWQMSampleYearYear {
             get {
@@ -9952,7 +10258,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to TelLastUpdateContactTVItemID.
         /// </summary>
         public static string TelLastUpdateContactTVItemID {
             get {
@@ -9961,7 +10267,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to TelLastUpdateDate_UTC.
         /// </summary>
         public static string TelLastUpdateDate_UTC {
             get {
@@ -9970,7 +10276,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TelID.
+        ///   Looks up a localized string similar to TelTelID.
         /// </summary>
         public static string TelTelID {
             get {
@@ -9979,7 +10285,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TelNumber.
+        ///   Looks up a localized string similar to TelTelNumber.
         /// </summary>
         public static string TelTelNumber {
             get {
@@ -9988,7 +10294,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TelTVItem.
+        ///   Looks up a localized string similar to TelTelTVItem.
         /// </summary>
         public static string TelTelTVItem {
             get {
@@ -9997,7 +10303,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TelTVItemID.
+        ///   Looks up a localized string similar to TelTelTVItemID.
         /// </summary>
         public static string TelTelTVItemID {
             get {
@@ -10006,7 +10312,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TelType.
+        ///   Looks up a localized string similar to TelTelType.
         /// </summary>
         public static string TelTelType {
             get {
@@ -10024,7 +10330,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DateTime_Local.
+        ///   Looks up a localized string similar to TideDataValueDateTime_Local.
         /// </summary>
         public static string TideDataValueDateTime_Local {
             get {
@@ -10033,7 +10339,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Depth_m.
+        ///   Looks up a localized string similar to TideDataValueDepth_m.
         /// </summary>
         public static string TideDataValueDepth_m {
             get {
@@ -10042,7 +10348,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Keep.
+        ///   Looks up a localized string similar to TideDataValueKeep.
         /// </summary>
         public static string TideDataValueKeep {
             get {
@@ -10051,7 +10357,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to TideDataValueLastUpdateContactTVItemID.
         /// </summary>
         public static string TideDataValueLastUpdateContactTVItemID {
             get {
@@ -10060,7 +10366,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to TideDataValueLastUpdateDate_UTC.
         /// </summary>
         public static string TideDataValueLastUpdateDate_UTC {
             get {
@@ -10069,7 +10375,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StorageDataType.
+        ///   Looks up a localized string similar to TideDataValueStorageDataType.
         /// </summary>
         public static string TideDataValueStorageDataType {
             get {
@@ -10078,7 +10384,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideDataType.
+        ///   Looks up a localized string similar to TideDataValueTideDataType.
         /// </summary>
         public static string TideDataValueTideDataType {
             get {
@@ -10087,7 +10393,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideDataValueID.
+        ///   Looks up a localized string similar to TideDataValueTideDataValueID.
         /// </summary>
         public static string TideDataValueTideDataValueID {
             get {
@@ -10096,7 +10402,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideEnd.
+        ///   Looks up a localized string similar to TideDataValueTideEnd.
         /// </summary>
         public static string TideDataValueTideEnd {
             get {
@@ -10105,7 +10411,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideSiteTVItem.
+        ///   Looks up a localized string similar to TideDataValueTideSiteTVItem.
         /// </summary>
         public static string TideDataValueTideSiteTVItem {
             get {
@@ -10114,7 +10420,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideSiteTVItemID.
+        ///   Looks up a localized string similar to TideDataValueTideSiteTVItemID.
         /// </summary>
         public static string TideDataValueTideSiteTVItemID {
             get {
@@ -10123,7 +10429,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideStart.
+        ///   Looks up a localized string similar to TideDataValueTideStart.
         /// </summary>
         public static string TideDataValueTideStart {
             get {
@@ -10132,7 +10438,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to UVelocity_m_s.
+        ///   Looks up a localized string similar to TideDataValueUVelocity_m_s.
         /// </summary>
         public static string TideDataValueUVelocity_m_s {
             get {
@@ -10141,7 +10447,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VVelocity_m_s.
+        ///   Looks up a localized string similar to TideDataValueVVelocity_m_s.
         /// </summary>
         public static string TideDataValueVVelocity_m_s {
             get {
@@ -10159,7 +10465,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lat.
+        ///   Looks up a localized string similar to TideLocationLat.
         /// </summary>
         public static string TideLocationLat {
             get {
@@ -10168,7 +10474,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lng.
+        ///   Looks up a localized string similar to TideLocationLng.
         /// </summary>
         public static string TideLocationLng {
             get {
@@ -10177,7 +10483,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
+        ///   Looks up a localized string similar to TideLocationName.
         /// </summary>
         public static string TideLocationName {
             get {
@@ -10186,7 +10492,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Prov.
+        ///   Looks up a localized string similar to TideLocationProv.
         /// </summary>
         public static string TideLocationProv {
             get {
@@ -10195,7 +10501,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to sid.
+        ///   Looks up a localized string similar to TideLocationsid.
         /// </summary>
         public static string TideLocationsid {
             get {
@@ -10204,7 +10510,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideLocationID.
+        ///   Looks up a localized string similar to TideLocationTideLocationID.
         /// </summary>
         public static string TideLocationTideLocationID {
             get {
@@ -10213,7 +10519,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zone.
+        ///   Looks up a localized string similar to TideLocationZone.
         /// </summary>
         public static string TideLocationZone {
             get {
@@ -10231,7 +10537,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to TideSiteLastUpdateContactTVItemID.
         /// </summary>
         public static string TideSiteLastUpdateContactTVItemID {
             get {
@@ -10240,7 +10546,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to TideSiteLastUpdateDate_UTC.
         /// </summary>
         public static string TideSiteLastUpdateDate_UTC {
             get {
@@ -10249,7 +10555,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideSiteID.
+        ///   Looks up a localized string similar to TideSiteTideSiteID.
         /// </summary>
         public static string TideSiteTideSiteID {
             get {
@@ -10258,7 +10564,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideSiteTVItem.
+        ///   Looks up a localized string similar to TideSiteTideSiteTVItem.
         /// </summary>
         public static string TideSiteTideSiteTVItem {
             get {
@@ -10267,7 +10573,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideSiteTVItemID.
+        ///   Looks up a localized string similar to TideSiteTideSiteTVItemID.
         /// </summary>
         public static string TideSiteTideSiteTVItemID {
             get {
@@ -10276,7 +10582,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WebTideDatum_m.
+        ///   Looks up a localized string similar to TideSiteWebTideDatum_m.
         /// </summary>
         public static string TideSiteWebTideDatum_m {
             get {
@@ -10285,7 +10591,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WebTideModel.
+        ///   Looks up a localized string similar to TideSiteWebTideModel.
         /// </summary>
         public static string TideSiteWebTideModel {
             get {
@@ -10303,7 +10609,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ClientFilePath.
+        ///   Looks up a localized string similar to TVFileClientFilePath.
         /// </summary>
         public static string TVFileClientFilePath {
             get {
@@ -10312,7 +10618,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FileCreatedDate_UTC.
+        ///   Looks up a localized string similar to TVFileFileCreatedDate_UTC.
         /// </summary>
         public static string TVFileFileCreatedDate_UTC {
             get {
@@ -10321,7 +10627,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FileInfo.
+        ///   Looks up a localized string similar to TVFileFileInfo.
         /// </summary>
         public static string TVFileFileInfo {
             get {
@@ -10330,7 +10636,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FilePurpose.
+        ///   Looks up a localized string similar to TVFileFilePurpose.
         /// </summary>
         public static string TVFileFilePurpose {
             get {
@@ -10339,7 +10645,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FileSize_kb.
+        ///   Looks up a localized string similar to TVFileFileSize_kb.
         /// </summary>
         public static string TVFileFileSize_kb {
             get {
@@ -10348,7 +10654,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FileType.
+        ///   Looks up a localized string similar to TVFileFileType.
         /// </summary>
         public static string TVFileFileType {
             get {
@@ -10357,7 +10663,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FromWater.
+        ///   Looks up a localized string similar to TVFileFromWater.
         /// </summary>
         public static string TVFileFromWater {
             get {
@@ -10366,7 +10672,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to TVFileLanguage.
         /// </summary>
         public static string TVFileLanguage {
             get {
@@ -10375,16 +10681,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVFileLanguage.
-        /// </summary>
-        public static string TVFileLanguage1 {
-            get {
-                return ResourceManager.GetString("TVFileLanguage1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to FileDescription.
+        ///   Looks up a localized string similar to TVFileLanguageFileDescription.
         /// </summary>
         public static string TVFileLanguageFileDescription {
             get {
@@ -10393,7 +10690,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to TVFileLanguageLanguage.
         /// </summary>
         public static string TVFileLanguageLanguage {
             get {
@@ -10402,7 +10699,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to TVFileLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string TVFileLanguageLastUpdateContactTVItemID {
             get {
@@ -10411,7 +10708,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to TVFileLanguageLastUpdateDate_UTC.
         /// </summary>
         public static string TVFileLanguageLastUpdateDate_UTC {
             get {
@@ -10420,7 +10717,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TranslationStatus.
+        ///   Looks up a localized string similar to TVFileLanguageTranslationStatus.
         /// </summary>
         public static string TVFileLanguageTranslationStatus {
             get {
@@ -10429,7 +10726,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVFile.
+        ///   Looks up a localized string similar to TVFileLanguageTVFile.
         /// </summary>
         public static string TVFileLanguageTVFile {
             get {
@@ -10438,7 +10735,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVFileID.
+        ///   Looks up a localized string similar to TVFileLanguageTVFileID.
         /// </summary>
         public static string TVFileLanguageTVFileID {
             get {
@@ -10447,7 +10744,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVFileLanguageID.
+        ///   Looks up a localized string similar to TVFileLanguageTVFileLanguageID.
         /// </summary>
         public static string TVFileLanguageTVFileLanguageID {
             get {
@@ -10456,7 +10753,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to TVFileLastUpdateContactTVItemID.
         /// </summary>
         public static string TVFileLastUpdateContactTVItemID {
             get {
@@ -10465,7 +10762,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to TVFileLastUpdateDate_UTC.
         /// </summary>
         public static string TVFileLastUpdateDate_UTC {
             get {
@@ -10474,7 +10771,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ServerFileName.
+        ///   Looks up a localized string similar to TVFileServerFileName.
         /// </summary>
         public static string TVFileServerFileName {
             get {
@@ -10483,7 +10780,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ServerFilePath.
+        ///   Looks up a localized string similar to TVFileServerFilePath.
         /// </summary>
         public static string TVFileServerFilePath {
             get {
@@ -10492,7 +10789,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TemplateTVType.
+        ///   Looks up a localized string similar to TVFileTemplateTVType.
         /// </summary>
         public static string TVFileTemplateTVType {
             get {
@@ -10501,7 +10798,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVFileID.
+        ///   Looks up a localized string similar to TVFileTVFileID.
         /// </summary>
         public static string TVFileTVFileID {
             get {
@@ -10510,7 +10807,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVFileLanguages.
+        ///   Looks up a localized string similar to TVFileTVFileLanguages.
         /// </summary>
         public static string TVFileTVFileLanguages {
             get {
@@ -10519,7 +10816,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVFileTVItem.
+        ///   Looks up a localized string similar to TVFileTVFileTVItem.
         /// </summary>
         public static string TVFileTVFileTVItem {
             get {
@@ -10528,7 +10825,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVFileTVItemID.
+        ///   Looks up a localized string similar to TVFileTVFileTVItemID.
         /// </summary>
         public static string TVFileTVFileTVItemID {
             get {
@@ -10546,7 +10843,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FullText.
+        ///   Looks up a localized string similar to TVFullTextFullText.
         /// </summary>
         public static string TVFullTextFullText {
             get {
@@ -10555,7 +10852,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVPath.
+        ///   Looks up a localized string similar to TVFullTextTVPath.
         /// </summary>
         public static string TVFullTextTVPath {
             get {
@@ -10573,7 +10870,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AddressesAddressTVItem.
+        ///   Looks up a localized string similar to TVItemAddressesAddressTVItem.
         /// </summary>
         public static string TVItemAddressesAddressTVItem {
             get {
@@ -10582,7 +10879,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AddressesCountryTVItem.
+        ///   Looks up a localized string similar to TVItemAddressesCountryTVItem.
         /// </summary>
         public static string TVItemAddressesCountryTVItem {
             get {
@@ -10591,7 +10888,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AddressesMunicipalityTVItem.
+        ///   Looks up a localized string similar to TVItemAddressesMunicipalityTVItem.
         /// </summary>
         public static string TVItemAddressesMunicipalityTVItem {
             get {
@@ -10600,7 +10897,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AddressesProvinceTVItem.
+        ///   Looks up a localized string similar to TVItemAddressesProvinceTVItem.
         /// </summary>
         public static string TVItemAddressesProvinceTVItem {
             get {
@@ -10609,7 +10906,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AppTasksTVItem.
+        ///   Looks up a localized string similar to TVItemAppTasksTVItem.
         /// </summary>
         public static string TVItemAppTasksTVItem {
             get {
@@ -10618,7 +10915,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AppTasksTVItemID2Navigation.
+        ///   Looks up a localized string similar to TVItemAppTasksTVItemID2Navigation.
         /// </summary>
         public static string TVItemAppTasksTVItemID2Navigation {
             get {
@@ -10627,7 +10924,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModels.
+        ///   Looks up a localized string similar to TVItemBoxModels.
         /// </summary>
         public static string TVItemBoxModels {
             get {
@@ -10636,7 +10933,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ClimateSites.
+        ///   Looks up a localized string similar to TVItemClimateSites.
         /// </summary>
         public static string TVItemClimateSites {
             get {
@@ -10645,7 +10942,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contacts.
+        ///   Looks up a localized string similar to TVItemContacts.
         /// </summary>
         public static string TVItemContacts {
             get {
@@ -10654,7 +10951,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DocTemplates.
+        ///   Looks up a localized string similar to TVItemDocTemplates.
         /// </summary>
         public static string TVItemDocTemplates {
             get {
@@ -10663,7 +10960,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Emails.
+        ///   Looks up a localized string similar to TVItemEmails.
         /// </summary>
         public static string TVItemEmails {
             get {
@@ -10672,7 +10969,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HydrometricSites.
+        ///   Looks up a localized string similar to TVItemHydrometricSites.
         /// </summary>
         public static string TVItemHydrometricSites {
             get {
@@ -10681,7 +10978,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Infrastructures.
+        ///   Looks up a localized string similar to TVItemInfrastructures.
         /// </summary>
         public static string TVItemInfrastructures {
             get {
@@ -10699,7 +10996,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FlowTo.
+        ///   Looks up a localized string similar to TVItemInfrastructureTypeTVItemLinkFlowTo.
         /// </summary>
         public static string TVItemInfrastructureTypeTVItemLinkFlowTo {
             get {
@@ -10708,7 +11005,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureType.
+        ///   Looks up a localized string similar to TVItemInfrastructureTypeTVItemLinkInfrastructureType.
         /// </summary>
         public static string TVItemInfrastructureTypeTVItemLinkInfrastructureType {
             get {
@@ -10717,7 +11014,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SeeOtherTVItemID.
+        ///   Looks up a localized string similar to TVItemInfrastructureTypeTVItemLinkSeeOtherTVItemID.
         /// </summary>
         public static string TVItemInfrastructureTypeTVItemLinkSeeOtherTVItemID {
             get {
@@ -10726,7 +11023,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItem.
+        ///   Looks up a localized string similar to TVItemInfrastructureTypeTVItemLinkTVItem.
         /// </summary>
         public static string TVItemInfrastructureTypeTVItemLinkTVItem {
             get {
@@ -10735,7 +11032,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemLinkList.
+        ///   Looks up a localized string similar to TVItemInfrastructureTypeTVItemLinkTVItemLinkList.
         /// </summary>
         public static string TVItemInfrastructureTypeTVItemLinkTVItemLinkList {
             get {
@@ -10744,7 +11041,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InverseParent.
+        ///   Looks up a localized string similar to TVItemInverseParent.
         /// </summary>
         public static string TVItemInverseParent {
             get {
@@ -10753,7 +11050,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IsActive.
+        ///   Looks up a localized string similar to TVItemIsActive.
         /// </summary>
         public static string TVItemIsActive {
             get {
@@ -10762,7 +11059,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetDetails.
+        ///   Looks up a localized string similar to TVItemLabSheetDetails.
         /// </summary>
         public static string TVItemLabSheetDetails {
             get {
@@ -10771,7 +11068,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetsAcceptedOrRejectedByContactTVItem.
+        ///   Looks up a localized string similar to TVItemLabSheetsAcceptedOrRejectedByContactTVItem.
         /// </summary>
         public static string TVItemLabSheetsAcceptedOrRejectedByContactTVItem {
             get {
@@ -10780,7 +11077,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetsMWQMRunTVItem.
+        ///   Looks up a localized string similar to TVItemLabSheetsMWQMRunTVItem.
         /// </summary>
         public static string TVItemLabSheetsMWQMRunTVItem {
             get {
@@ -10789,7 +11086,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetsSubsectorTVItem.
+        ///   Looks up a localized string similar to TVItemLabSheetsSubsectorTVItem.
         /// </summary>
         public static string TVItemLabSheetsSubsectorTVItem {
             get {
@@ -10798,7 +11095,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetTubeMPNDetails.
+        ///   Looks up a localized string similar to TVItemLabSheetTubeMPNDetails.
         /// </summary>
         public static string TVItemLabSheetTubeMPNDetails {
             get {
@@ -10816,7 +11113,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to TVItemLanguageLanguage.
         /// </summary>
         public static string TVItemLanguageLanguage {
             get {
@@ -10825,7 +11122,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to TVItemLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string TVItemLanguageLastUpdateContactTVItemID {
             get {
@@ -10834,7 +11131,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to TVItemLanguageLastUpdateDate_UTC.
         /// </summary>
         public static string TVItemLanguageLastUpdateDate_UTC {
             get {
@@ -10843,7 +11140,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TranslationStatus.
+        ///   Looks up a localized string similar to TVItemLanguageTranslationStatus.
         /// </summary>
         public static string TVItemLanguageTranslationStatus {
             get {
@@ -10852,7 +11149,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItem.
+        ///   Looks up a localized string similar to TVItemLanguageTVItem.
         /// </summary>
         public static string TVItemLanguageTVItem {
             get {
@@ -10861,7 +11158,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID.
+        ///   Looks up a localized string similar to TVItemLanguageTVItemID.
         /// </summary>
         public static string TVItemLanguageTVItemID {
             get {
@@ -10870,7 +11167,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemLanguageID.
+        ///   Looks up a localized string similar to TVItemLanguageTVItemLanguageID.
         /// </summary>
         public static string TVItemLanguageTVItemLanguageID {
             get {
@@ -10879,7 +11176,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVText.
+        ///   Looks up a localized string similar to TVItemLanguageTVText.
         /// </summary>
         public static string TVItemLanguageTVText {
             get {
@@ -10888,7 +11185,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to TVItemLastUpdateContactTVItemID.
         /// </summary>
         public static string TVItemLastUpdateContactTVItemID {
             get {
@@ -10897,7 +11194,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to TVItemLastUpdateDate_UTC.
         /// </summary>
         public static string TVItemLastUpdateDate_UTC {
             get {
@@ -10915,7 +11212,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EndDateTime_Local.
+        ///   Looks up a localized string similar to TVItemLinkEndDateTime_Local.
         /// </summary>
         public static string TVItemLinkEndDateTime_Local {
             get {
@@ -10924,7 +11221,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FromTVItem.
+        ///   Looks up a localized string similar to TVItemLinkFromTVItem.
         /// </summary>
         public static string TVItemLinkFromTVItem {
             get {
@@ -10933,7 +11230,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FromTVItemID.
+        ///   Looks up a localized string similar to TVItemLinkFromTVItemID.
         /// </summary>
         public static string TVItemLinkFromTVItemID {
             get {
@@ -10942,7 +11239,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FromTVType.
+        ///   Looks up a localized string similar to TVItemLinkFromTVType.
         /// </summary>
         public static string TVItemLinkFromTVType {
             get {
@@ -10951,7 +11248,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InverseParentTVItemLink.
+        ///   Looks up a localized string similar to TVItemLinkInverseParentTVItemLink.
         /// </summary>
         public static string TVItemLinkInverseParentTVItemLink {
             get {
@@ -10960,7 +11257,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to TVItemLinkLastUpdateContactTVItemID.
         /// </summary>
         public static string TVItemLinkLastUpdateContactTVItemID {
             get {
@@ -10969,7 +11266,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to TVItemLinkLastUpdateDate_UTC.
         /// </summary>
         public static string TVItemLinkLastUpdateDate_UTC {
             get {
@@ -10978,7 +11275,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ordinal.
+        ///   Looks up a localized string similar to TVItemLinkOrdinal.
         /// </summary>
         public static string TVItemLinkOrdinal {
             get {
@@ -10987,7 +11284,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ParentTVItemLink.
+        ///   Looks up a localized string similar to TVItemLinkParentTVItemLink.
         /// </summary>
         public static string TVItemLinkParentTVItemLink {
             get {
@@ -10996,7 +11293,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ParentTVItemLinkID.
+        ///   Looks up a localized string similar to TVItemLinkParentTVItemLinkID.
         /// </summary>
         public static string TVItemLinkParentTVItemLinkID {
             get {
@@ -11005,7 +11302,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StartDateTime_Local.
+        ///   Looks up a localized string similar to TVItemLinkStartDateTime_Local.
         /// </summary>
         public static string TVItemLinkStartDateTime_Local {
             get {
@@ -11014,7 +11311,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ToTVItem.
+        ///   Looks up a localized string similar to TVItemLinkToTVItem.
         /// </summary>
         public static string TVItemLinkToTVItem {
             get {
@@ -11023,7 +11320,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ToTVItemID.
+        ///   Looks up a localized string similar to TVItemLinkToTVItemID.
         /// </summary>
         public static string TVItemLinkToTVItemID {
             get {
@@ -11032,7 +11329,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ToTVType.
+        ///   Looks up a localized string similar to TVItemLinkToTVType.
         /// </summary>
         public static string TVItemLinkToTVType {
             get {
@@ -11041,7 +11338,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemLinkID.
+        ///   Looks up a localized string similar to TVItemLinkTVItemLinkID.
         /// </summary>
         public static string TVItemLinkTVItemLinkID {
             get {
@@ -11050,7 +11347,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVLevel.
+        ///   Looks up a localized string similar to TVItemLinkTVLevel.
         /// </summary>
         public static string TVItemLinkTVLevel {
             get {
@@ -11059,7 +11356,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVPath.
+        ///   Looks up a localized string similar to TVItemLinkTVPath.
         /// </summary>
         public static string TVItemLinkTVPath {
             get {
@@ -11068,7 +11365,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MapInfos.
+        ///   Looks up a localized string similar to TVItemMapInfos.
         /// </summary>
         public static string TVItemMapInfos {
             get {
@@ -11077,7 +11374,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeBoundaryConditions.
+        ///   Looks up a localized string similar to TVItemMikeBoundaryConditions.
         /// </summary>
         public static string TVItemMikeBoundaryConditions {
             get {
@@ -11086,7 +11383,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeScenarios.
+        ///   Looks up a localized string similar to TVItemMikeScenarios.
         /// </summary>
         public static string TVItemMikeScenarios {
             get {
@@ -11095,7 +11392,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeSources.
+        ///   Looks up a localized string similar to TVItemMikeSources.
         /// </summary>
         public static string TVItemMikeSources {
             get {
@@ -11104,7 +11401,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMRunsLabSampleApprovalContactTVItem.
+        ///   Looks up a localized string similar to TVItemMWQMRunsLabSampleApprovalContactTVItem.
         /// </summary>
         public static string TVItemMWQMRunsLabSampleApprovalContactTVItem {
             get {
@@ -11113,7 +11410,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMRunsMWQMRunTVItem.
+        ///   Looks up a localized string similar to TVItemMWQMRunsMWQMRunTVItem.
         /// </summary>
         public static string TVItemMWQMRunsMWQMRunTVItem {
             get {
@@ -11122,7 +11419,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMRunsSubsectorTVItem.
+        ///   Looks up a localized string similar to TVItemMWQMRunsSubsectorTVItem.
         /// </summary>
         public static string TVItemMWQMRunsSubsectorTVItem {
             get {
@@ -11131,7 +11428,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSampleMWQMRunTVItem.
+        ///   Looks up a localized string similar to TVItemMWQMSampleMWQMRunTVItem.
         /// </summary>
         public static string TVItemMWQMSampleMWQMRunTVItem {
             get {
@@ -11140,7 +11437,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSampleMWQMSiteTVItem.
+        ///   Looks up a localized string similar to TVItemMWQMSampleMWQMSiteTVItem.
         /// </summary>
         public static string TVItemMWQMSampleMWQMSiteTVItem {
             get {
@@ -11149,7 +11446,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSites.
+        ///   Looks up a localized string similar to TVItemMWQMSites.
         /// </summary>
         public static string TVItemMWQMSites {
             get {
@@ -11158,7 +11455,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteStartEndDates.
+        ///   Looks up a localized string similar to TVItemMWQMSiteStartEndDates.
         /// </summary>
         public static string TVItemMWQMSiteStartEndDates {
             get {
@@ -11167,7 +11464,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectors.
+        ///   Looks up a localized string similar to TVItemMWQMSubsectors.
         /// </summary>
         public static string TVItemMWQMSubsectors {
             get {
@@ -11176,7 +11473,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Parent.
+        ///   Looks up a localized string similar to TVItemParent.
         /// </summary>
         public static string TVItemParent {
             get {
@@ -11185,7 +11482,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ParentID.
+        ///   Looks up a localized string similar to TVItemParentID.
         /// </summary>
         public static string TVItemParentID {
             get {
@@ -11194,7 +11491,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceObservationsContactTVItem.
+        ///   Looks up a localized string similar to TVItemPolSourceObservationsContactTVItem.
         /// </summary>
         public static string TVItemPolSourceObservationsContactTVItem {
             get {
@@ -11203,7 +11500,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceObservationsPolSourceSiteTVItem.
+        ///   Looks up a localized string similar to TVItemPolSourceObservationsPolSourceSiteTVItem.
         /// </summary>
         public static string TVItemPolSourceObservationsPolSourceSiteTVItem {
             get {
@@ -11212,7 +11509,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceSites.
+        ///   Looks up a localized string similar to TVItemPolSourceSites.
         /// </summary>
         public static string TVItemPolSourceSites {
             get {
@@ -11221,7 +11518,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlansCreatorTVItem.
+        ///   Looks up a localized string similar to TVItemSamplingPlansCreatorTVItem.
         /// </summary>
         public static string TVItemSamplingPlansCreatorTVItem {
             get {
@@ -11230,7 +11527,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlansProvinceTVItem.
+        ///   Looks up a localized string similar to TVItemSamplingPlansProvinceTVItem.
         /// </summary>
         public static string TVItemSamplingPlansProvinceTVItem {
             get {
@@ -11239,7 +11536,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlansSamplingPlanFileTVItem.
+        ///   Looks up a localized string similar to TVItemSamplingPlansSamplingPlanFileTVItem.
         /// </summary>
         public static string TVItemSamplingPlansSamplingPlanFileTVItem {
             get {
@@ -11248,7 +11545,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSubsectors.
+        ///   Looks up a localized string similar to TVItemSamplingPlanSubsectors.
         /// </summary>
         public static string TVItemSamplingPlanSubsectors {
             get {
@@ -11257,7 +11554,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSubsectorSites.
+        ///   Looks up a localized string similar to TVItemSamplingPlanSubsectorSites.
         /// </summary>
         public static string TVItemSamplingPlanSubsectorSites {
             get {
@@ -11266,7 +11563,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SpillsInfrastructureTVItem.
+        ///   Looks up a localized string similar to TVItemSpillsInfrastructureTVItem.
         /// </summary>
         public static string TVItemSpillsInfrastructureTVItem {
             get {
@@ -11275,7 +11572,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SpillsMunicipalityTVItem.
+        ///   Looks up a localized string similar to TVItemSpillsMunicipalityTVItem.
         /// </summary>
         public static string TVItemSpillsMunicipalityTVItem {
             get {
@@ -11293,7 +11590,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ChildCount.
+        ///   Looks up a localized string similar to TVItemStatChildCount.
         /// </summary>
         public static string TVItemStatChildCount {
             get {
@@ -11302,7 +11599,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to TVItemStatLastUpdateContactTVItemID.
         /// </summary>
         public static string TVItemStatLastUpdateContactTVItemID {
             get {
@@ -11311,7 +11608,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to TVItemStatLastUpdateDate_UTC.
         /// </summary>
         public static string TVItemStatLastUpdateDate_UTC {
             get {
@@ -11320,7 +11617,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItem.
+        ///   Looks up a localized string similar to TVItemStatTVItem.
         /// </summary>
         public static string TVItemStatTVItem {
             get {
@@ -11329,7 +11626,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID.
+        ///   Looks up a localized string similar to TVItemStatTVItemID.
         /// </summary>
         public static string TVItemStatTVItemID {
             get {
@@ -11338,7 +11635,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemStatID.
+        ///   Looks up a localized string similar to TVItemStatTVItemStatID.
         /// </summary>
         public static string TVItemStatTVItemStatID {
             get {
@@ -11347,7 +11644,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVType.
+        ///   Looks up a localized string similar to TVItemStatTVType.
         /// </summary>
         public static string TVItemStatTVType {
             get {
@@ -11365,7 +11662,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemMWQMSiteDuplicate.
+        ///   Looks up a localized string similar to TVItemSubsectorAndMWQMSiteTVItemMWQMSiteDuplicate.
         /// </summary>
         public static string TVItemSubsectorAndMWQMSiteTVItemMWQMSiteDuplicate {
             get {
@@ -11374,7 +11671,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemMWQMSiteList.
+        ///   Looks up a localized string similar to TVItemSubsectorAndMWQMSiteTVItemMWQMSiteList.
         /// </summary>
         public static string TVItemSubsectorAndMWQMSiteTVItemMWQMSiteList {
             get {
@@ -11383,7 +11680,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemSubsector.
+        ///   Looks up a localized string similar to TVItemSubsectorAndMWQMSiteTVItemSubsector.
         /// </summary>
         public static string TVItemSubsectorAndMWQMSiteTVItemSubsector {
             get {
@@ -11392,7 +11689,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tels.
+        ///   Looks up a localized string similar to TVItemTels.
         /// </summary>
         public static string TVItemTels {
             get {
@@ -11401,7 +11698,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideDataValues.
+        ///   Looks up a localized string similar to TVItemTideDataValues.
         /// </summary>
         public static string TVItemTideDataValues {
             get {
@@ -11410,7 +11707,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideSites.
+        ///   Looks up a localized string similar to TVItemTideSites.
         /// </summary>
         public static string TVItemTideSites {
             get {
@@ -11428,7 +11725,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error.
+        ///   Looks up a localized string similar to TVItemTVAuthError.
         /// </summary>
         public static string TVItemTVAuthError {
             get {
@@ -11437,7 +11734,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVAuth.
+        ///   Looks up a localized string similar to TVItemTVAuthTVAuth.
         /// </summary>
         public static string TVItemTVAuthTVAuth {
             get {
@@ -11446,7 +11743,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID1.
+        ///   Looks up a localized string similar to TVItemTVAuthTVItemID1.
         /// </summary>
         public static string TVItemTVAuthTVItemID1 {
             get {
@@ -11455,7 +11752,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemUserAuthID.
+        ///   Looks up a localized string similar to TVItemTVAuthTVItemUserAuthID.
         /// </summary>
         public static string TVItemTVAuthTVItemUserAuthID {
             get {
@@ -11464,7 +11761,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVText.
+        ///   Looks up a localized string similar to TVItemTVAuthTVText.
         /// </summary>
         public static string TVItemTVAuthTVText {
             get {
@@ -11473,7 +11770,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVTypeStr.
+        ///   Looks up a localized string similar to TVItemTVAuthTVTypeStr.
         /// </summary>
         public static string TVItemTVAuthTVTypeStr {
             get {
@@ -11482,7 +11779,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVFiles.
+        ///   Looks up a localized string similar to TVItemTVFiles.
         /// </summary>
         public static string TVItemTVFiles {
             get {
@@ -11491,7 +11788,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID.
+        ///   Looks up a localized string similar to TVItemTVItemID.
         /// </summary>
         public static string TVItemTVItemID {
             get {
@@ -11500,7 +11797,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemLanguages.
+        ///   Looks up a localized string similar to TVItemTVItemLanguages.
         /// </summary>
         public static string TVItemTVItemLanguages {
             get {
@@ -11509,7 +11806,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemLinksFromTVItem.
+        ///   Looks up a localized string similar to TVItemTVItemLinksFromTVItem.
         /// </summary>
         public static string TVItemTVItemLinksFromTVItem {
             get {
@@ -11518,7 +11815,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemLinksToTVItem.
+        ///   Looks up a localized string similar to TVItemTVItemLinksToTVItem.
         /// </summary>
         public static string TVItemTVItemLinksToTVItem {
             get {
@@ -11527,7 +11824,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemStats.
+        ///   Looks up a localized string similar to TVItemTVItemStats.
         /// </summary>
         public static string TVItemTVItemStats {
             get {
@@ -11536,7 +11833,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemUserAuthorizationsContactTVItem.
+        ///   Looks up a localized string similar to TVItemTVItemUserAuthorizationsContactTVItem.
         /// </summary>
         public static string TVItemTVItemUserAuthorizationsContactTVItem {
             get {
@@ -11545,7 +11842,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemUserAuthorizationsTVItemID1Navigation.
+        ///   Looks up a localized string similar to TVItemTVItemUserAuthorizationsTVItemID1Navigation.
         /// </summary>
         public static string TVItemTVItemUserAuthorizationsTVItemID1Navigation {
             get {
@@ -11554,7 +11851,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVLevel.
+        ///   Looks up a localized string similar to TVItemTVLevel.
         /// </summary>
         public static string TVItemTVLevel {
             get {
@@ -11563,7 +11860,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVPath.
+        ///   Looks up a localized string similar to TVItemTVPath.
         /// </summary>
         public static string TVItemTVPath {
             get {
@@ -11572,7 +11869,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVType.
+        ///   Looks up a localized string similar to TVItemTVType.
         /// </summary>
         public static string TVItemTVType {
             get {
@@ -11581,7 +11878,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVTypeUserAuthorizations.
+        ///   Looks up a localized string similar to TVItemTVTypeUserAuthorizations.
         /// </summary>
         public static string TVItemTVTypeUserAuthorizations {
             get {
@@ -11590,7 +11887,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to UseOfSitesSiteTVItem.
+        ///   Looks up a localized string similar to TVItemUseOfSitesSiteTVItem.
         /// </summary>
         public static string TVItemUseOfSitesSiteTVItem {
             get {
@@ -11599,7 +11896,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to UseOfSitesSubsectorTVItem.
+        ///   Looks up a localized string similar to TVItemUseOfSitesSubsectorTVItem.
         /// </summary>
         public static string TVItemUseOfSitesSubsectorTVItem {
             get {
@@ -11617,7 +11914,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactTVItem.
+        ///   Looks up a localized string similar to TVItemUserAuthorizationContactTVItem.
         /// </summary>
         public static string TVItemUserAuthorizationContactTVItem {
             get {
@@ -11626,7 +11923,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactTVItemID.
+        ///   Looks up a localized string similar to TVItemUserAuthorizationContactTVItemID.
         /// </summary>
         public static string TVItemUserAuthorizationContactTVItemID {
             get {
@@ -11635,7 +11932,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to TVItemUserAuthorizationLastUpdateContactTVItemID.
         /// </summary>
         public static string TVItemUserAuthorizationLastUpdateContactTVItemID {
             get {
@@ -11644,7 +11941,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to TVItemUserAuthorizationLastUpdateDate_UTC.
         /// </summary>
         public static string TVItemUserAuthorizationLastUpdateDate_UTC {
             get {
@@ -11653,7 +11950,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVAuth.
+        ///   Looks up a localized string similar to TVItemUserAuthorizationTVAuth.
         /// </summary>
         public static string TVItemUserAuthorizationTVAuth {
             get {
@@ -11662,7 +11959,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID1.
+        ///   Looks up a localized string similar to TVItemUserAuthorizationTVItemID1.
         /// </summary>
         public static string TVItemUserAuthorizationTVItemID1 {
             get {
@@ -11671,7 +11968,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID1Navigation.
+        ///   Looks up a localized string similar to TVItemUserAuthorizationTVItemID1Navigation.
         /// </summary>
         public static string TVItemUserAuthorizationTVItemID1Navigation {
             get {
@@ -11680,7 +11977,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID2.
+        ///   Looks up a localized string similar to TVItemUserAuthorizationTVItemID2.
         /// </summary>
         public static string TVItemUserAuthorizationTVItemID2 {
             get {
@@ -11689,7 +11986,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID3.
+        ///   Looks up a localized string similar to TVItemUserAuthorizationTVItemID3.
         /// </summary>
         public static string TVItemUserAuthorizationTVItemID3 {
             get {
@@ -11698,7 +11995,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID4.
+        ///   Looks up a localized string similar to TVItemUserAuthorizationTVItemID4.
         /// </summary>
         public static string TVItemUserAuthorizationTVItemID4 {
             get {
@@ -11707,7 +12004,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemUserAuthorizationID.
+        ///   Looks up a localized string similar to TVItemUserAuthorizationTVItemUserAuthorizationID.
         /// </summary>
         public static string TVItemUserAuthorizationTVItemUserAuthorizationID {
             get {
@@ -11716,7 +12013,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarios.
+        ///   Looks up a localized string similar to TVItemVPScenarios.
         /// </summary>
         public static string TVItemVPScenarios {
             get {
@@ -11734,7 +12031,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error.
+        ///   Looks up a localized string similar to TVLocationError.
         /// </summary>
         public static string TVLocationError {
             get {
@@ -11743,7 +12040,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MapObjList.
+        ///   Looks up a localized string similar to TVLocationMapObjList.
         /// </summary>
         public static string TVLocationMapObjList {
             get {
@@ -11752,7 +12049,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubTVType.
+        ///   Looks up a localized string similar to TVLocationSubTVType.
         /// </summary>
         public static string TVLocationSubTVType {
             get {
@@ -11761,7 +12058,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemID.
+        ///   Looks up a localized string similar to TVLocationTVItemID.
         /// </summary>
         public static string TVLocationTVItemID {
             get {
@@ -11770,7 +12067,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVText.
+        ///   Looks up a localized string similar to TVLocationTVText.
         /// </summary>
         public static string TVLocationTVText {
             get {
@@ -11779,7 +12076,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVType.
+        ///   Looks up a localized string similar to TVLocationTVType.
         /// </summary>
         public static string TVLocationTVType {
             get {
@@ -11797,7 +12094,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to TVTextLanguageLanguage.
         /// </summary>
         public static string TVTextLanguageLanguage {
             get {
@@ -11806,7 +12103,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVText.
+        ///   Looks up a localized string similar to TVTextLanguageTVText.
         /// </summary>
         public static string TVTextLanguageTVText {
             get {
@@ -11824,7 +12121,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Index.
+        ///   Looks up a localized string similar to TVTypeNamesAndPathIndex.
         /// </summary>
         public static string TVTypeNamesAndPathIndex {
             get {
@@ -11833,7 +12130,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVPath.
+        ///   Looks up a localized string similar to TVTypeNamesAndPathTVPath.
         /// </summary>
         public static string TVTypeNamesAndPathTVPath {
             get {
@@ -11842,7 +12139,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVTypeName.
+        ///   Looks up a localized string similar to TVTypeNamesAndPathTVTypeName.
         /// </summary>
         public static string TVTypeNamesAndPathTVTypeName {
             get {
@@ -11860,7 +12157,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactTVItem.
+        ///   Looks up a localized string similar to TVTypeUserAuthorizationContactTVItem.
         /// </summary>
         public static string TVTypeUserAuthorizationContactTVItem {
             get {
@@ -11869,7 +12166,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactTVItemID.
+        ///   Looks up a localized string similar to TVTypeUserAuthorizationContactTVItemID.
         /// </summary>
         public static string TVTypeUserAuthorizationContactTVItemID {
             get {
@@ -11878,7 +12175,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to TVTypeUserAuthorizationLastUpdateContactTVItemID.
         /// </summary>
         public static string TVTypeUserAuthorizationLastUpdateContactTVItemID {
             get {
@@ -11887,7 +12184,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to TVTypeUserAuthorizationLastUpdateDate_UTC.
         /// </summary>
         public static string TVTypeUserAuthorizationLastUpdateDate_UTC {
             get {
@@ -11896,7 +12193,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVAuth.
+        ///   Looks up a localized string similar to TVTypeUserAuthorizationTVAuth.
         /// </summary>
         public static string TVTypeUserAuthorizationTVAuth {
             get {
@@ -11905,7 +12202,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVType.
+        ///   Looks up a localized string similar to TVTypeUserAuthorizationTVType.
         /// </summary>
         public static string TVTypeUserAuthorizationTVType {
             get {
@@ -11914,7 +12211,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVTypeUserAuthorizationID.
+        ///   Looks up a localized string similar to TVTypeUserAuthorizationTVTypeUserAuthorizationID.
         /// </summary>
         public static string TVTypeUserAuthorizationTVTypeUserAuthorizationID {
             get {
@@ -11932,7 +12229,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NumberOfSamples.
+        ///   Looks up a localized string similar to URLNumberOfSamplesNumberOfSamples.
         /// </summary>
         public static string URLNumberOfSamplesNumberOfSamples {
             get {
@@ -11941,7 +12238,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to url.
+        ///   Looks up a localized string similar to URLNumberOfSamplesurl.
         /// </summary>
         public static string URLNumberOfSamplesurl {
             get {
@@ -11959,7 +12256,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EndYear.
+        ///   Looks up a localized string similar to UseOfSiteEndYear.
         /// </summary>
         public static string UseOfSiteEndYear {
             get {
@@ -11968,7 +12265,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to UseOfSiteLastUpdateContactTVItemID.
         /// </summary>
         public static string UseOfSiteLastUpdateContactTVItemID {
             get {
@@ -11977,7 +12274,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to UseOfSiteLastUpdateDate_UTC.
         /// </summary>
         public static string UseOfSiteLastUpdateDate_UTC {
             get {
@@ -11986,7 +12283,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ordinal.
+        ///   Looks up a localized string similar to UseOfSiteOrdinal.
         /// </summary>
         public static string UseOfSiteOrdinal {
             get {
@@ -11995,7 +12292,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Param1.
+        ///   Looks up a localized string similar to UseOfSiteParam1.
         /// </summary>
         public static string UseOfSiteParam1 {
             get {
@@ -12004,7 +12301,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Param2.
+        ///   Looks up a localized string similar to UseOfSiteParam2.
         /// </summary>
         public static string UseOfSiteParam2 {
             get {
@@ -12013,7 +12310,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Param3.
+        ///   Looks up a localized string similar to UseOfSiteParam3.
         /// </summary>
         public static string UseOfSiteParam3 {
             get {
@@ -12022,7 +12319,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Param4.
+        ///   Looks up a localized string similar to UseOfSiteParam4.
         /// </summary>
         public static string UseOfSiteParam4 {
             get {
@@ -12031,7 +12328,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SiteTVItem.
+        ///   Looks up a localized string similar to UseOfSiteSiteTVItem.
         /// </summary>
         public static string UseOfSiteSiteTVItem {
             get {
@@ -12040,7 +12337,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SiteTVItemID.
+        ///   Looks up a localized string similar to UseOfSiteSiteTVItemID.
         /// </summary>
         public static string UseOfSiteSiteTVItemID {
             get {
@@ -12049,7 +12346,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SiteType.
+        ///   Looks up a localized string similar to UseOfSiteSiteType.
         /// </summary>
         public static string UseOfSiteSiteType {
             get {
@@ -12058,7 +12355,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StartYear.
+        ///   Looks up a localized string similar to UseOfSiteStartYear.
         /// </summary>
         public static string UseOfSiteStartYear {
             get {
@@ -12067,7 +12364,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorTVItem.
+        ///   Looks up a localized string similar to UseOfSiteSubsectorTVItem.
         /// </summary>
         public static string UseOfSiteSubsectorTVItem {
             get {
@@ -12076,7 +12373,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SubsectorTVItemID.
+        ///   Looks up a localized string similar to UseOfSiteSubsectorTVItemID.
         /// </summary>
         public static string UseOfSiteSubsectorTVItemID {
             get {
@@ -12085,7 +12382,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to UseEquation.
+        ///   Looks up a localized string similar to UseOfSiteUseEquation.
         /// </summary>
         public static string UseOfSiteUseEquation {
             get {
@@ -12094,7 +12391,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to UseOfSiteID.
+        ///   Looks up a localized string similar to UseOfSiteUseOfSiteID.
         /// </summary>
         public static string UseOfSiteUseOfSiteID {
             get {
@@ -12103,7 +12400,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to UseWeight.
+        ///   Looks up a localized string similar to UseOfSiteUseWeight.
         /// </summary>
         public static string UseOfSiteUseWeight {
             get {
@@ -12112,7 +12409,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight_perc.
+        ///   Looks up a localized string similar to UseOfSiteWeight_perc.
         /// </summary>
         public static string UseOfSiteWeight_perc {
             get {
@@ -12130,7 +12427,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EndNode.
+        ///   Looks up a localized string similar to VectorEndNode.
         /// </summary>
         public static string VectorEndNode {
             get {
@@ -12139,7 +12436,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StartNode.
+        ///   Looks up a localized string similar to VectorStartNode.
         /// </summary>
         public static string VectorStartNode {
             get {
@@ -12157,7 +12454,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AmbientSalinity_PSU.
+        ///   Looks up a localized string similar to VPAmbientAmbientSalinity_PSU.
         /// </summary>
         public static string VPAmbientAmbientSalinity_PSU {
             get {
@@ -12166,7 +12463,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AmbientTemperature_C.
+        ///   Looks up a localized string similar to VPAmbientAmbientTemperature_C.
         /// </summary>
         public static string VPAmbientAmbientTemperature_C {
             get {
@@ -12175,7 +12472,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BackgroundConcentration_MPN_100ml.
+        ///   Looks up a localized string similar to VPAmbientBackgroundConcentration_MPN_100ml.
         /// </summary>
         public static string VPAmbientBackgroundConcentration_MPN_100ml {
             get {
@@ -12184,7 +12481,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CurrentDirection_deg.
+        ///   Looks up a localized string similar to VPAmbientCurrentDirection_deg.
         /// </summary>
         public static string VPAmbientCurrentDirection_deg {
             get {
@@ -12193,7 +12490,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CurrentSpeed_m_s.
+        ///   Looks up a localized string similar to VPAmbientCurrentSpeed_m_s.
         /// </summary>
         public static string VPAmbientCurrentSpeed_m_s {
             get {
@@ -12202,7 +12499,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FarFieldCurrentDirection_deg.
+        ///   Looks up a localized string similar to VPAmbientFarFieldCurrentDirection_deg.
         /// </summary>
         public static string VPAmbientFarFieldCurrentDirection_deg {
             get {
@@ -12211,7 +12508,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FarFieldCurrentSpeed_m_s.
+        ///   Looks up a localized string similar to VPAmbientFarFieldCurrentSpeed_m_s.
         /// </summary>
         public static string VPAmbientFarFieldCurrentSpeed_m_s {
             get {
@@ -12220,7 +12517,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FarFieldDiffusionCoefficient.
+        ///   Looks up a localized string similar to VPAmbientFarFieldDiffusionCoefficient.
         /// </summary>
         public static string VPAmbientFarFieldDiffusionCoefficient {
             get {
@@ -12229,7 +12526,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to VPAmbientLastUpdateContactTVItemID.
         /// </summary>
         public static string VPAmbientLastUpdateContactTVItemID {
             get {
@@ -12238,7 +12535,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to VPAmbientLastUpdateDate_UTC.
         /// </summary>
         public static string VPAmbientLastUpdateDate_UTC {
             get {
@@ -12247,7 +12544,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MeasurementDepth_m.
+        ///   Looks up a localized string similar to VPAmbientMeasurementDepth_m.
         /// </summary>
         public static string VPAmbientMeasurementDepth_m {
             get {
@@ -12256,7 +12553,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PollutantDecayRate_per_day.
+        ///   Looks up a localized string similar to VPAmbientPollutantDecayRate_per_day.
         /// </summary>
         public static string VPAmbientPollutantDecayRate_per_day {
             get {
@@ -12265,7 +12562,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Row.
+        ///   Looks up a localized string similar to VPAmbientRow.
         /// </summary>
         public static string VPAmbientRow {
             get {
@@ -12274,7 +12571,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPAmbientID.
+        ///   Looks up a localized string similar to VPAmbientVPAmbientID.
         /// </summary>
         public static string VPAmbientVPAmbientID {
             get {
@@ -12283,7 +12580,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenario.
+        ///   Looks up a localized string similar to VPAmbientVPScenario.
         /// </summary>
         public static string VPAmbientVPScenario {
             get {
@@ -12292,7 +12589,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioID.
+        ///   Looks up a localized string similar to VPAmbientVPScenarioID.
         /// </summary>
         public static string VPAmbientVPScenarioID {
             get {
@@ -12310,7 +12607,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AcuteMixZone_m.
+        ///   Looks up a localized string similar to VPFullAcuteMixZone_m.
         /// </summary>
         public static string VPFullAcuteMixZone_m {
             get {
@@ -12319,7 +12616,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AmbientList.
+        ///   Looks up a localized string similar to VPFullAmbientList.
         /// </summary>
         public static string VPFullAmbientList {
             get {
@@ -12328,7 +12625,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ChronicMixZone_m.
+        ///   Looks up a localized string similar to VPFullChronicMixZone_m.
         /// </summary>
         public static string VPFullChronicMixZone_m {
             get {
@@ -12337,7 +12634,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EffluentConcentration_MPN_100ml.
+        ///   Looks up a localized string similar to VPFullEffluentConcentration_MPN_100ml.
         /// </summary>
         public static string VPFullEffluentConcentration_MPN_100ml {
             get {
@@ -12346,7 +12643,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EffluentFlow_m3_s.
+        ///   Looks up a localized string similar to VPFullEffluentFlow_m3_s.
         /// </summary>
         public static string VPFullEffluentFlow_m3_s {
             get {
@@ -12355,7 +12652,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EffluentSalinity_PSU.
+        ///   Looks up a localized string similar to VPFullEffluentSalinity_PSU.
         /// </summary>
         public static string VPFullEffluentSalinity_PSU {
             get {
@@ -12364,7 +12661,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EffluentTemperature_C.
+        ///   Looks up a localized string similar to VPFullEffluentTemperature_C.
         /// </summary>
         public static string VPFullEffluentTemperature_C {
             get {
@@ -12373,7 +12670,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EffluentVelocity_m_s.
+        ///   Looks up a localized string similar to VPFullEffluentVelocity_m_s.
         /// </summary>
         public static string VPFullEffluentVelocity_m_s {
             get {
@@ -12382,7 +12679,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FroudeNumber.
+        ///   Looks up a localized string similar to VPFullFroudeNumber.
         /// </summary>
         public static string VPFullFroudeNumber {
             get {
@@ -12391,7 +12688,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HorizontalAngle_deg.
+        ///   Looks up a localized string similar to VPFullHorizontalAngle_deg.
         /// </summary>
         public static string VPFullHorizontalAngle_deg {
             get {
@@ -12400,7 +12697,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureTVItem.
+        ///   Looks up a localized string similar to VPFullInfrastructureTVItem.
         /// </summary>
         public static string VPFullInfrastructureTVItem {
             get {
@@ -12409,7 +12706,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureTVItemID.
+        ///   Looks up a localized string similar to VPFullInfrastructureTVItemID.
         /// </summary>
         public static string VPFullInfrastructureTVItemID {
             get {
@@ -12418,7 +12715,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to VPFullLastUpdateContactTVItemID.
         /// </summary>
         public static string VPFullLastUpdateContactTVItemID {
             get {
@@ -12427,7 +12724,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to VPFullLastUpdateDate_UTC.
         /// </summary>
         public static string VPFullLastUpdateDate_UTC {
             get {
@@ -12436,7 +12733,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NumberOfPorts.
+        ///   Looks up a localized string similar to VPFullNumberOfPorts.
         /// </summary>
         public static string VPFullNumberOfPorts {
             get {
@@ -12445,7 +12742,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PortDepth_m.
+        ///   Looks up a localized string similar to VPFullPortDepth_m.
         /// </summary>
         public static string VPFullPortDepth_m {
             get {
@@ -12454,7 +12751,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PortDiameter_m.
+        ///   Looks up a localized string similar to VPFullPortDiameter_m.
         /// </summary>
         public static string VPFullPortDiameter_m {
             get {
@@ -12463,7 +12760,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PortElevation_m.
+        ///   Looks up a localized string similar to VPFullPortElevation_m.
         /// </summary>
         public static string VPFullPortElevation_m {
             get {
@@ -12472,7 +12769,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PortSpacing_m.
+        ///   Looks up a localized string similar to VPFullPortSpacing_m.
         /// </summary>
         public static string VPFullPortSpacing_m {
             get {
@@ -12481,7 +12778,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RawResults.
+        ///   Looks up a localized string similar to VPFullRawResults.
         /// </summary>
         public static string VPFullRawResults {
             get {
@@ -12490,7 +12787,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ResultList.
+        ///   Looks up a localized string similar to VPFullResultList.
         /// </summary>
         public static string VPFullResultList {
             get {
@@ -12499,7 +12796,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to UseAsBestEstimate.
+        ///   Looks up a localized string similar to VPFullUseAsBestEstimate.
         /// </summary>
         public static string VPFullUseAsBestEstimate {
             get {
@@ -12508,7 +12805,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VerticalAngle_deg.
+        ///   Looks up a localized string similar to VPFullVerticalAngle_deg.
         /// </summary>
         public static string VPFullVerticalAngle_deg {
             get {
@@ -12517,7 +12814,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPAmbients.
+        ///   Looks up a localized string similar to VPFullVPAmbients.
         /// </summary>
         public static string VPFullVPAmbients {
             get {
@@ -12526,7 +12823,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPResults.
+        ///   Looks up a localized string similar to VPFullVPResults.
         /// </summary>
         public static string VPFullVPResults {
             get {
@@ -12535,7 +12832,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioID.
+        ///   Looks up a localized string similar to VPFullVPScenarioID.
         /// </summary>
         public static string VPFullVPScenarioID {
             get {
@@ -12544,7 +12841,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioLanguages.
+        ///   Looks up a localized string similar to VPFullVPScenarioLanguages.
         /// </summary>
         public static string VPFullVPScenarioLanguages {
             get {
@@ -12553,7 +12850,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioStatus.
+        ///   Looks up a localized string similar to VPFullVPScenarioStatus.
         /// </summary>
         public static string VPFullVPScenarioStatus {
             get {
@@ -12571,7 +12868,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Concentration_MPN_100ml.
+        ///   Looks up a localized string similar to VPResultConcentration_MPN_100ml.
         /// </summary>
         public static string VPResultConcentration_MPN_100ml {
             get {
@@ -12580,7 +12877,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dilution.
+        ///   Looks up a localized string similar to VPResultDilution.
         /// </summary>
         public static string VPResultDilution {
             get {
@@ -12589,7 +12886,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DispersionDistance_m.
+        ///   Looks up a localized string similar to VPResultDispersionDistance_m.
         /// </summary>
         public static string VPResultDispersionDistance_m {
             get {
@@ -12598,7 +12895,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FarFieldWidth_m.
+        ///   Looks up a localized string similar to VPResultFarFieldWidth_m.
         /// </summary>
         public static string VPResultFarFieldWidth_m {
             get {
@@ -12607,7 +12904,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to VPResultLastUpdateContactTVItemID.
         /// </summary>
         public static string VPResultLastUpdateContactTVItemID {
             get {
@@ -12616,7 +12913,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to VPResultLastUpdateDate_UTC.
         /// </summary>
         public static string VPResultLastUpdateDate_UTC {
             get {
@@ -12625,7 +12922,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ordinal.
+        ///   Looks up a localized string similar to VPResultOrdinal.
         /// </summary>
         public static string VPResultOrdinal {
             get {
@@ -12634,7 +12931,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TravelTime_hour.
+        ///   Looks up a localized string similar to VPResultTravelTime_hour.
         /// </summary>
         public static string VPResultTravelTime_hour {
             get {
@@ -12643,7 +12940,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPResultID.
+        ///   Looks up a localized string similar to VPResultVPResultID.
         /// </summary>
         public static string VPResultVPResultID {
             get {
@@ -12652,7 +12949,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenario.
+        ///   Looks up a localized string similar to VPResultVPScenario.
         /// </summary>
         public static string VPResultVPScenario {
             get {
@@ -12661,7 +12958,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioID.
+        ///   Looks up a localized string similar to VPResultVPScenarioID.
         /// </summary>
         public static string VPResultVPScenarioID {
             get {
@@ -12679,7 +12976,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Conc.
+        ///   Looks up a localized string similar to VPResValuesConc.
         /// </summary>
         public static string VPResValuesConc {
             get {
@@ -12688,7 +12985,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Decay.
+        ///   Looks up a localized string similar to VPResValuesDecay.
         /// </summary>
         public static string VPResValuesDecay {
             get {
@@ -12697,7 +12994,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dilu.
+        ///   Looks up a localized string similar to VPResValuesDilu.
         /// </summary>
         public static string VPResValuesDilu {
             get {
@@ -12706,7 +13003,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Distance.
+        ///   Looks up a localized string similar to VPResValuesDistance.
         /// </summary>
         public static string VPResValuesDistance {
             get {
@@ -12715,7 +13012,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FarfieldWidth.
+        ///   Looks up a localized string similar to VPResValuesFarfieldWidth.
         /// </summary>
         public static string VPResValuesFarfieldWidth {
             get {
@@ -12724,7 +13021,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TheTime.
+        ///   Looks up a localized string similar to VPResValuesTheTime.
         /// </summary>
         public static string VPResValuesTheTime {
             get {
@@ -12742,7 +13039,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AcuteMixZone_m.
+        ///   Looks up a localized string similar to VPScenarioAcuteMixZone_m.
         /// </summary>
         public static string VPScenarioAcuteMixZone_m {
             get {
@@ -12751,7 +13048,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ChronicMixZone_m.
+        ///   Looks up a localized string similar to VPScenarioChronicMixZone_m.
         /// </summary>
         public static string VPScenarioChronicMixZone_m {
             get {
@@ -12760,7 +13057,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EffluentConcentration_MPN_100ml.
+        ///   Looks up a localized string similar to VPScenarioEffluentConcentration_MPN_100ml.
         /// </summary>
         public static string VPScenarioEffluentConcentration_MPN_100ml {
             get {
@@ -12769,7 +13066,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EffluentFlow_m3_s.
+        ///   Looks up a localized string similar to VPScenarioEffluentFlow_m3_s.
         /// </summary>
         public static string VPScenarioEffluentFlow_m3_s {
             get {
@@ -12778,7 +13075,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EffluentSalinity_PSU.
+        ///   Looks up a localized string similar to VPScenarioEffluentSalinity_PSU.
         /// </summary>
         public static string VPScenarioEffluentSalinity_PSU {
             get {
@@ -12787,7 +13084,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EffluentTemperature_C.
+        ///   Looks up a localized string similar to VPScenarioEffluentTemperature_C.
         /// </summary>
         public static string VPScenarioEffluentTemperature_C {
             get {
@@ -12796,7 +13093,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EffluentVelocity_m_s.
+        ///   Looks up a localized string similar to VPScenarioEffluentVelocity_m_s.
         /// </summary>
         public static string VPScenarioEffluentVelocity_m_s {
             get {
@@ -12805,7 +13102,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FroudeNumber.
+        ///   Looks up a localized string similar to VPScenarioFroudeNumber.
         /// </summary>
         public static string VPScenarioFroudeNumber {
             get {
@@ -12814,7 +13111,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HorizontalAngle_deg.
+        ///   Looks up a localized string similar to VPScenarioHorizontalAngle_deg.
         /// </summary>
         public static string VPScenarioHorizontalAngle_deg {
             get {
@@ -12832,7 +13129,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RawResults.
+        ///   Looks up a localized string similar to VPScenarioIDAndRawResultsRawResults.
         /// </summary>
         public static string VPScenarioIDAndRawResultsRawResults {
             get {
@@ -12841,7 +13138,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioID.
+        ///   Looks up a localized string similar to VPScenarioIDAndRawResultsVPScenarioID.
         /// </summary>
         public static string VPScenarioIDAndRawResultsVPScenarioID {
             get {
@@ -12850,7 +13147,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureTVItem.
+        ///   Looks up a localized string similar to VPScenarioInfrastructureTVItem.
         /// </summary>
         public static string VPScenarioInfrastructureTVItem {
             get {
@@ -12859,7 +13156,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureTVItemID.
+        ///   Looks up a localized string similar to VPScenarioInfrastructureTVItemID.
         /// </summary>
         public static string VPScenarioInfrastructureTVItemID {
             get {
@@ -12877,7 +13174,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to VPScenarioLanguageLanguage.
         /// </summary>
         public static string VPScenarioLanguageLanguage {
             get {
@@ -12886,7 +13183,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to VPScenarioLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string VPScenarioLanguageLastUpdateContactTVItemID {
             get {
@@ -12895,7 +13192,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to VPScenarioLanguageLastUpdateDate_UTC.
         /// </summary>
         public static string VPScenarioLanguageLastUpdateDate_UTC {
             get {
@@ -12904,7 +13201,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TranslationStatus.
+        ///   Looks up a localized string similar to VPScenarioLanguageTranslationStatus.
         /// </summary>
         public static string VPScenarioLanguageTranslationStatus {
             get {
@@ -12913,7 +13210,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenario.
+        ///   Looks up a localized string similar to VPScenarioLanguageVPScenario.
         /// </summary>
         public static string VPScenarioLanguageVPScenario {
             get {
@@ -12922,7 +13219,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioID.
+        ///   Looks up a localized string similar to VPScenarioLanguageVPScenarioID.
         /// </summary>
         public static string VPScenarioLanguageVPScenarioID {
             get {
@@ -12931,7 +13228,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioLanguageID.
+        ///   Looks up a localized string similar to VPScenarioLanguageVPScenarioLanguageID.
         /// </summary>
         public static string VPScenarioLanguageVPScenarioLanguageID {
             get {
@@ -12940,7 +13237,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioName.
+        ///   Looks up a localized string similar to VPScenarioLanguageVPScenarioName.
         /// </summary>
         public static string VPScenarioLanguageVPScenarioName {
             get {
@@ -12949,7 +13246,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateContactTVItemID.
+        ///   Looks up a localized string similar to VPScenarioLastUpdateContactTVItemID.
         /// </summary>
         public static string VPScenarioLastUpdateContactTVItemID {
             get {
@@ -12958,7 +13255,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LastUpdateDate_UTC.
+        ///   Looks up a localized string similar to VPScenarioLastUpdateDate_UTC.
         /// </summary>
         public static string VPScenarioLastUpdateDate_UTC {
             get {
@@ -12967,7 +13264,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NumberOfPorts.
+        ///   Looks up a localized string similar to VPScenarioNumberOfPorts.
         /// </summary>
         public static string VPScenarioNumberOfPorts {
             get {
@@ -12976,7 +13273,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PortDepth_m.
+        ///   Looks up a localized string similar to VPScenarioPortDepth_m.
         /// </summary>
         public static string VPScenarioPortDepth_m {
             get {
@@ -12985,7 +13282,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PortDiameter_m.
+        ///   Looks up a localized string similar to VPScenarioPortDiameter_m.
         /// </summary>
         public static string VPScenarioPortDiameter_m {
             get {
@@ -12994,7 +13291,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PortElevation_m.
+        ///   Looks up a localized string similar to VPScenarioPortElevation_m.
         /// </summary>
         public static string VPScenarioPortElevation_m {
             get {
@@ -13003,7 +13300,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PortSpacing_m.
+        ///   Looks up a localized string similar to VPScenarioPortSpacing_m.
         /// </summary>
         public static string VPScenarioPortSpacing_m {
             get {
@@ -13012,7 +13309,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RawResults.
+        ///   Looks up a localized string similar to VPScenarioRawResults.
         /// </summary>
         public static string VPScenarioRawResults {
             get {
@@ -13021,7 +13318,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to UseAsBestEstimate.
+        ///   Looks up a localized string similar to VPScenarioUseAsBestEstimate.
         /// </summary>
         public static string VPScenarioUseAsBestEstimate {
             get {
@@ -13030,7 +13327,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VerticalAngle_deg.
+        ///   Looks up a localized string similar to VPScenarioVerticalAngle_deg.
         /// </summary>
         public static string VPScenarioVerticalAngle_deg {
             get {
@@ -13039,7 +13336,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPAmbients.
+        ///   Looks up a localized string similar to VPScenarioVPAmbients.
         /// </summary>
         public static string VPScenarioVPAmbients {
             get {
@@ -13048,7 +13345,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPResults.
+        ///   Looks up a localized string similar to VPScenarioVPResults.
         /// </summary>
         public static string VPScenarioVPResults {
             get {
@@ -13057,7 +13354,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioID.
+        ///   Looks up a localized string similar to VPScenarioVPScenarioID.
         /// </summary>
         public static string VPScenarioVPScenarioID {
             get {
@@ -13066,7 +13363,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioLanguages.
+        ///   Looks up a localized string similar to VPScenarioVPScenarioLanguages.
         /// </summary>
         public static string VPScenarioVPScenarioLanguages {
             get {
@@ -13075,7 +13372,7 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioStatus.
+        ///   Looks up a localized string similar to VPScenarioVPScenarioStatus.
         /// </summary>
         public static string VPScenarioVPScenarioStatus {
             get {

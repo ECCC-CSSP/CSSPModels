@@ -9,19 +9,35 @@ namespace CSSPModels
     public partial class AppTask
     {
         #region Properties in DB
+        [Key]
         public int AppTaskID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int TVItemID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int TVItemID2 { get; set; }
+        [CSSPEnumType]
         public AppTaskCommandEnum Command { get; set; }
+        [CSSPEnumType]
         public AppTaskStatusEnum Status { get; set; }
+        [Range(0, 100)]
         public int PercentCompleted { get; set; }
         public string Parameters { get; set; }
+        [CSSPEnumType]
         public LanguageEnum Language { get; set; }
+        [CSSPBigger(OtherField = "EndDateTime_UTC")]
+        [CSSPAfter(Year = 1980)]
         public DateTime StartDateTime_UTC { get; set; }
         public DateTime? EndDateTime_UTC { get; set; }
+        [Range(0, 1000000)]
         public int? EstimatedLength_second { get; set; }
+        [Range(0, 1000000)]
         public int? RemainingTime_second { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [Range(1, -1)]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<AppTaskLanguage> AppTaskLanguages { get; set; }

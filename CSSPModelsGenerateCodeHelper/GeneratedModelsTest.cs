@@ -34,7 +34,13 @@ namespace CSSPModelsGenerateCodeHelper
                 LabelStatus.Refresh();
                 Application.DoEvents();
 
-                if (type.Name.StartsWith("<") || type.Name.StartsWith("ModelsRes") || type.Name.StartsWith("Application") || type.Name.StartsWith("CSSPWebToolsDBContext"))
+                if (type.Name.StartsWith("<") 
+                    || type.Name.StartsWith("ModelsRes") 
+                    || type.Name.StartsWith("Application") 
+                    || type.Name.StartsWith("CSSPWebToolsDBContext")
+                    || type.Name.StartsWith("CSSPDateAfterYear")
+                    || type.Name.StartsWith("CSSPObjectExist")
+                    || type.Name.StartsWith("CSSPTypeExist"))
                 {
                     continue;
                 }

@@ -39,7 +39,9 @@ namespace CSSPModelsGenerateCodeHelper
                     continue;
                 }
 
-                sb.AppendLine(type.Name + "\t" + type.Name);
+                sb.AppendLine(@"<data name=""" + type.Name + @""" xml:space=""preserve"">");
+                sb.AppendLine(@"  <value>" + type.Name + "</value>");
+                sb.AppendLine(@"</data>");
 
                 foreach (PropertyInfo prop in type.GetProperties().ToList())
                 {

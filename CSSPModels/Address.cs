@@ -9,77 +9,45 @@ using System.Linq;
 
 namespace CSSPModels
 {
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public class CSSPTypeAttribute : ValidationAttribute
-    {
-        public override bool IsValid(object value)
-        {
-            return true;
-        }
-    }
-
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public class CSSPObjectExistAttribute : ValidationAttribute
-    {
-        public string TableName { get; set; }
-
-        public override bool IsValid(object value)
-        {
-            return true;
-        }
-    }
-
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public class CSSPDateAfterYear : ValidationAttribute
-    {
-        public int Year { get; set; }
-
-        public override bool IsValid(object value)
-        {
-            return true;
-        }
-    }
 
     public partial class Address
     {
         #region Properties in DB
         [Key]
         public int AddressID { get; set; }
-        [Required]
         [Range(1, -1)]
-        [CSSPObjectExist(TableName = "TVItems")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int AddressTVItemID { get; set; }
-        [Required]
-        [CSSPType]
+        [CSSPEnumType]
         public AddressTypeEnum AddressType { get; set; }
-        [Required]
         [Range(1, -1)]
-        [CSSPObjectExist(TableName = "TVItems")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int CountryTVItemID { get; set; }
-        [Required]
         [Range(1, -1)]
-        [CSSPObjectExist(TableName = "TVItems")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int ProvinceTVItemID { get; set; }
-        [Required]
         [Range(1, -1)]
-        [CSSPObjectExist(TableName = "TVItems")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int MunicipalityTVItemID { get; set; }
-        [StringLength(200, MinimumLength = 1)]
+        [CSSPAllowNull]
+        [StringLength(200)]
         public string StreetName { get; set; }
-        [StringLength(50, MinimumLength = 1)]
+        [CSSPAllowNull]
+        [StringLength(50)]
         public string StreetNumber { get; set; }
-        [CSSPType]
+        [CSSPAllowNull]
+        [CSSPEnumType]
         public StreetTypeEnum? StreetType { get; set; }
+        [CSSPAllowNull]
         [StringLength(11, MinimumLength = 6)]
         public string PostalCode { get; set; }
-        [StringLength(200, MinimumLength = 1)]
+        [CSSPAllowNull]
+        [StringLength(200, MinimumLength = 10)]
         public string GoogleAddressText { get; set; }
-        [Required]
-        [CSSPDateAfterYear(Year = 1980)]
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Required]
         [Range(1, -1)]
-        [CSSPObjectExist(TableName = "TVItems")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual TVItem AddressTVItem { get; set; }

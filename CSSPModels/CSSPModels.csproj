@@ -239,6 +239,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelsRes.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\ModelsRes.fr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelsRes.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="__Base.cs" />
     <Compile Include="_MWQMSampleDuplicateItem.cs" />
     <Compile Include="_MWQMSiteSampleFC.cs" />
     <Compile Include="_NewContact.cs" />
@@ -337,11 +343,6 @@
     <Compile Include="RatingCurve.cs" />
     <Compile Include="RatingCurveValue.cs" />
     <Compile Include="ResetPassword.cs" />
-    <Compile Include="Resources\ModelsRes.fr.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelsRes.fr.resx</DependentUpon>
-    </Compile>
     <Compile Include="SamplingPlan.cs" />
     <Compile Include="SamplingPlanSubsector.cs" />
     <Compile Include="SamplingPlanSubsectorSite.cs" />
@@ -376,9 +377,9 @@
       <LastGenOutput>ModelsRes.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ModelsRes.fr.resx">
+      <SubType>Designer</SubType>
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ModelsRes.fr.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

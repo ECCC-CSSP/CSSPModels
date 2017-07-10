@@ -8,13 +8,20 @@ namespace CSSPModels
     public partial class AppErrLog
     {
         #region Properties in DB
+        [Key]
         public int AppErrLogID { get; set; }
+        [StringLength(100)]
         public string Tag { get; set; }
+        [Range(1, -1)]
         public int LineNumber { get; set; }
         public string Source { get; set; }
         public string Message { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime DateTime_UTC { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
