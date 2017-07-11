@@ -23,7 +23,10 @@ namespace CSSPModels
         public float? Param2 { get; set; }
         public float? Param3 { get; set; }
         public float? Param4 { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual TVItem SiteTVItem { get; set; }

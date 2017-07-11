@@ -9,21 +9,41 @@ namespace CSSPModels
     public partial class LabSheetTubeMPNDetail
     {
         #region Properties in DB
+        [Key]
         public int LabSheetTubeMPNDetailID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "LabSheetDetail", Plurial = "s", FieldID = "LabSheetDetailID")]
         public int LabSheetDetailID { get; set; }
+        [Range(0, 1000)]
         public int Ordinal { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int MWQMSiteTVItemID { get; set; }
         public DateTime? SampleDateTime { get; set; }
+        [Range(1, 10000000)]
         public int? MPN { get; set; }
+        [Range(0, 5)]
         public int? Tube10 { get; set; }
+        [Range(0, 5)]
         public int? Tube1_0 { get; set; }
+        [Range(0, 5)]
         public int? Tube0_1 { get; set; }
+        [Range(0.0f, 40.0f)]
         public float? Salinity { get; set; }
+        [Range(-10.0f, 40.0f)]
         public float? Temperature { get; set; }
+        [StringLength(10)]
+        [CSSPAllowNull]
         public string ProcessedBy { get; set; }
+        [CSSPEnumType]
         public SampleTypeEnum SampleType { get; set; }
+        [StringLength(250)]
+        [CSSPAllowNull]
         public string SiteComment { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual LabSheetDetail LabSheetDetail { get; set; }

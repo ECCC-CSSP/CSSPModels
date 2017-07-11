@@ -16,10 +16,11 @@ namespace CSSPModels
         public string Error { get; set; }
         [Range(1, -1)]
         public int TVItemUserAuthID { get; set; }
-        [Range(1, 255)]
+        [StringLength(255, MinimumLength = 1)]
         public string TVText { get; set; }
         [Range(1, -1)]
         public int TVItemID1 { get; set; }
+        [StringLength(255, MinimumLength = 1)]
         public string TVTypeStr { get; set; }
         public TVAuthEnum TVAuth { get; set; }
 

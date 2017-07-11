@@ -13,11 +13,11 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Range(6, 200)]
+        [StringLength(200, MinimumLength = 6)]
         public string LoginEmail { get; set; }
-        [Range(6, 100)]
+        [StringLength(100, MinimumLength = 6)]
         public string Password { get; set; }
-        [Range(6, 100)]
+        [StringLength(100, MinimumLength = 6)]
         public string ConfirmPassword { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

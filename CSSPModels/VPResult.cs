@@ -16,7 +16,10 @@ namespace CSSPModels
         public float FarFieldWidth_m { get; set; }
         public float DispersionDistance_m { get; set; }
         public float TravelTime_hour { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual VPScenario VPScenario { get; set; }

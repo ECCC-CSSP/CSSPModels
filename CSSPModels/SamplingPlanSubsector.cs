@@ -8,10 +8,18 @@ namespace CSSPModels
     public partial class SamplingPlanSubsector
     {
         #region Properties in DB
+        [Key]
         public int SamplingPlanSubsectorID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "SamplingPlan", Plurial = "s", FieldID = "SamplingPlanID")]
         public int SamplingPlanID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int SubsectorTVItemID { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<SamplingPlanSubsectorSite> SamplingPlanSubsectorSites { get; set; }

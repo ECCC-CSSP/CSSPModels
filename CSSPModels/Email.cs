@@ -9,11 +9,19 @@ namespace CSSPModels
     public partial class Email
     {
         #region Properties in DB
+        [Key]
         public int EmailID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int EmailTVItemID { get; set; }
+        [StringLength(255)]
         public string EmailAddress { get; set; }
+        [CSSPEnumType]
         public EmailTypeEnum EmailType { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual TVItem EmailTVItem { get; set; }

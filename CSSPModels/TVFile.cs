@@ -22,7 +22,10 @@ namespace CSSPModels
         public string ClientFilePath { get; set; }
         public string ServerFileName { get; set; }
         public string ServerFilePath { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<TVFileLanguage> TVFileLanguages { get; set; }

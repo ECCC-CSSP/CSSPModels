@@ -9,7 +9,9 @@ namespace CSSPModels
     public partial class VPScenario
     {
         #region Properties in DB
+        [Key]
         public int VPScenarioID { get; set; }
+
         public int InfrastructureTVItemID { get; set; }
         public ScenarioStatusEnum VPScenarioStatus { get; set; }
         public bool UseAsBestEstimate { get; set; }
@@ -29,7 +31,10 @@ namespace CSSPModels
         public float EffluentTemperature_C { get; set; }
         public float EffluentVelocity_m_s { get; set; }
         public string RawResults { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<VPAmbient> VPAmbients { get; set; }

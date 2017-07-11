@@ -16,8 +16,11 @@ namespace CSSPModels
         public string Error { get; set; }
         [Range(1, 100)]
         public int Version { get; set; }
+        [CSSPEnumType]
         public SamplingPlanTypeEnum SamplingPlanType { get; set; }
+        [CSSPEnumType]
         public SampleTypeEnum SampleType { get; set; }
+        [CSSPEnumType]
         public LabSheetTypeEnum LabSheetType { get; set; }
         public string SubsectorName { get; set; }
         public string SubsectorLocation { get; set; }

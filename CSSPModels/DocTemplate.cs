@@ -9,12 +9,21 @@ namespace CSSPModels
     public partial class DocTemplate
     {
         #region Properties in DB
+        [Key]
         public int DocTemplateID { get; set; }
+        [CSSPEnumType]
         public LanguageEnum Language { get; set; }
+        [CSSPEnumType]
         public TVTypeEnum TVType { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int TVFileTVItemID { get; set; }
+        [StringLength(150)]
         public string FileName { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual TVItem TVFileTVItem { get; set; }

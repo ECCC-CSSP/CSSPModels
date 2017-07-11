@@ -16,7 +16,7 @@ namespace CSSPModels
         public string Error { get; set; }
         [Range(1, -1)]
         public int TVItemID { get; set; }
-        [Range(1, 255)]
+        [StringLength(255, MinimumLength = 1)]
         public string TVText { get; set; }
         public TVTypeEnum TVType { get; set; }
         public TVTypeEnum SubTVType { get; set; }

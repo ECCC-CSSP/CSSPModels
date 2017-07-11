@@ -16,7 +16,7 @@ namespace CSSPModels
         public string Error { get; set; }
         public System.DateTime LastUpdateDate_UTC { get; set; }
         public System.DateTime LastUpdateDate_Local { get; set; }
-        [Range(1, 200)]
+        [StringLength(200, MinimumLength = 1)]
         public string TVText { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

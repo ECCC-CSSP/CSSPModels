@@ -9,22 +9,43 @@ namespace CSSPModels
     public partial class MWQMSample
     {
         #region Properties in DB
+        [Key]
         public int MWQMSampleID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int MWQMSiteTVItemID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int MWQMRunTVItemID { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime SampleDateTime_Local { get; set; }
+        [Range(0.0f, 1000.0f)]
         public float? Depth_m { get; set; }
+        [Range(0, 10000000)]
         public int FecCol_MPN_100ml { get; set; }
+        [Range(0.0f, 40.0f)]
         public float? Salinity_PPT { get; set; }
+        [Range(-10.0f, 40.0f)]
         public float? WaterTemp_C { get; set; }
+        [Range(0.0f, 14.0f)]
         public float? PH { get; set; }
+        [StringLength(50)]
         public string SampleTypesText { get; set; }
+        [CSSPEnumType]
         public SampleTypeEnum SampleType_old { get; set; }
+        [Range(0, 5)]
         public int? Tube_10 { get; set; }
+        [Range(0, 5)]
         public int? Tube_1_0 { get; set; }
+        [Range(0, 5)]
         public int? Tube_0_1 { get; set; }
+        [StringLength(10)]
+        [CSSPAllowNull]
         public string ProcessedBy { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<MWQMSampleLanguage> MWQMSampleLanguages { get; set; }

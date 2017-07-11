@@ -16,7 +16,10 @@ namespace CSSPModels
         public int? TVItemID3 { get; set; }
         public int? TVItemID4 { get; set; }
         public TVAuthEnum TVAuth { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual TVItem ContactTVItem { get; set; }

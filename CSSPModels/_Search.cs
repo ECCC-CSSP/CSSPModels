@@ -13,7 +13,7 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Range(1, 255)]
+        [StringLength(255, MinimumLength = 1)]
         public string value { get; set; }
         [Range(1, -1)]
         public int id { get; set; }

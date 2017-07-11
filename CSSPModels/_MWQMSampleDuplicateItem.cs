@@ -13,9 +13,9 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Range(1, 200)]
+        [StringLength(200, MinimumLength = 1)]
         public string ParentSite { get; set; }
-        [Range(1, 200)]
+        [StringLength(200, MinimumLength = 1)]
         public string DuplicateSite { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

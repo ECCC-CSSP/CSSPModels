@@ -8,13 +8,24 @@ namespace CSSPModels
     public partial class Spill
     {
         #region Properties in DB
+        [Key]
         public int SpillID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int MunicipalityTVItemID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPAllowNull]
         public int? InfrastructureTVItemID { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime StartDateTime_Local { get; set; }
         public DateTime? EndDateTime_Local { get; set; }
+        [Range(0.0f, 1000000.0f)]
         public float AverageFlow_m3_day { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<SpillLanguage> SpillLanguages { get; set; }

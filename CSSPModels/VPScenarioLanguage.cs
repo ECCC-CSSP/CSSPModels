@@ -14,7 +14,10 @@ namespace CSSPModels
         public LanguageEnum Language { get; set; }
         public string VPScenarioName { get; set; }
         public TranslationStatusEnum TranslationStatus { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual VPScenario VPScenario { get; set; }

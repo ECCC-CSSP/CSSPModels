@@ -16,9 +16,7 @@ namespace CSSPModels
         public int ContactID { get; set; }
         [StringLength(200)]
         public string LoginEmail { get; set; }
-        [StringLength(200)]
         public byte[] PasswordHash { get; set; }
-        [StringLength(200)]
         public byte[] PasswordSalt { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
@@ -31,10 +29,10 @@ namespace CSSPModels
 
         #region Properties not in DB
         [NotMapped]
-        [Range(6, 100)]
+        [StringLength(100, MinimumLength = 6)]
         public string Password { get; set; }
         [NotMapped]
-        [Range(6, 100)]
+        [StringLength(100, MinimumLength = 6)]
         public string ConfirmPassword { get; set; }
         [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

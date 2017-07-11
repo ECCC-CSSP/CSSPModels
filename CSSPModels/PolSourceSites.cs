@@ -9,16 +9,30 @@ namespace CSSPModels
     public partial class PolSourceSite
     {
         #region Properties in DB
+        [Key]
         public int PolSourceSiteID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int PolSourceSiteTVItemID { get; set; }
+        [StringLength(50)]
         public string Temp_Locator_CanDelete { get; set; }
+        [Range(0, 1000)]
         public int? Oldsiteid { get; set; }
+        [Range(0, 1000)]
         public int? Site { get; set; }
+        [Range(0, 1000)]
         public int? SiteID { get; set; }
         public bool IsPointSource { get; set; }
+        [CSSPEnumType]
+        [CSSPAllowNull]
         public PolSourceInactiveReasonEnum? InactiveReason { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int? CivicAddressTVItemID { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual TVItem PolSourceSiteTVItem { get; set; }

@@ -18,7 +18,10 @@ namespace CSSPModels
         public TVTypeEnum TVType { get; set; }
         public int ParentID { get; set; }
         public bool IsActive { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<Address> AddressesAddressTVItem { get; set; }

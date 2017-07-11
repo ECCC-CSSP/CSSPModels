@@ -8,17 +8,30 @@ namespace CSSPModels
     public partial class HydrometricSite
     {
         #region Properties in DB
+        [Key]
         public int HydrometricSiteID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int HydrometricSiteTVItemID { get; set; }
+        [StringLength(7)]
         public string FedSiteNumber { get; set; }
+        [StringLength(7)]
         public string QuebecSiteNumber { get; set; }
+        [StringLength(200)]
+        [CSSPAllowNull]
         public string HydrometricSiteName { get; set; }
+        [StringLength(200)]
         public string Description { get; set; }
+        [StringLength(4)]
+        [CSSPAllowNull]
         public string Province { get; set; }
+        [Range(0.0f, 10000.0f)]
         public float? Elevation_m { get; set; }
         public DateTime? StartDate_Local { get; set; }
         public DateTime? EndDate_Local { get; set; }
+        [Range(-10.0f, 0.0f)]
         public float? TimeOffset_hour { get; set; }
+        [Range(0.0f, 1000000.0f)]
         public float? DrainageArea_km2 { get; set; }
         public bool? IsNatural { get; set; }
         public bool? IsActive { get; set; }
@@ -26,7 +39,10 @@ namespace CSSPModels
         public bool? RHBN { get; set; }
         public bool? RealTime { get; set; }
         public bool? HasRatingCurve { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<HydrometricDataValue> HydrometricDataValues { get; set; }

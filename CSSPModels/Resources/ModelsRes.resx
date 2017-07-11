@@ -477,89 +477,14 @@
   <data name="VPFull" xml:space="preserve">
     <value>VPFull</value>
   </data>
+  <data name="VPFullVPScenario" xml:space="preserve">
+    <value>VPFullVPScenario</value>
+  </data>
   <data name="VPFullAmbientList" xml:space="preserve">
     <value>VPFullAmbientList</value>
   </data>
   <data name="VPFullResultList" xml:space="preserve">
     <value>VPFullResultList</value>
-  </data>
-  <data name="VPFullVPScenarioID" xml:space="preserve">
-    <value>VPFullVPScenarioID</value>
-  </data>
-  <data name="VPFullInfrastructureTVItemID" xml:space="preserve">
-    <value>VPFullInfrastructureTVItemID</value>
-  </data>
-  <data name="VPFullVPScenarioStatus" xml:space="preserve">
-    <value>VPFullVPScenarioStatus</value>
-  </data>
-  <data name="VPFullUseAsBestEstimate" xml:space="preserve">
-    <value>VPFullUseAsBestEstimate</value>
-  </data>
-  <data name="VPFullEffluentFlow_m3_s" xml:space="preserve">
-    <value>VPFullEffluentFlow_m3_s</value>
-  </data>
-  <data name="VPFullEffluentConcentration_MPN_100ml" xml:space="preserve">
-    <value>VPFullEffluentConcentration_MPN_100ml</value>
-  </data>
-  <data name="VPFullFroudeNumber" xml:space="preserve">
-    <value>VPFullFroudeNumber</value>
-  </data>
-  <data name="VPFullPortDiameter_m" xml:space="preserve">
-    <value>VPFullPortDiameter_m</value>
-  </data>
-  <data name="VPFullPortDepth_m" xml:space="preserve">
-    <value>VPFullPortDepth_m</value>
-  </data>
-  <data name="VPFullPortElevation_m" xml:space="preserve">
-    <value>VPFullPortElevation_m</value>
-  </data>
-  <data name="VPFullVerticalAngle_deg" xml:space="preserve">
-    <value>VPFullVerticalAngle_deg</value>
-  </data>
-  <data name="VPFullHorizontalAngle_deg" xml:space="preserve">
-    <value>VPFullHorizontalAngle_deg</value>
-  </data>
-  <data name="VPFullNumberOfPorts" xml:space="preserve">
-    <value>VPFullNumberOfPorts</value>
-  </data>
-  <data name="VPFullPortSpacing_m" xml:space="preserve">
-    <value>VPFullPortSpacing_m</value>
-  </data>
-  <data name="VPFullAcuteMixZone_m" xml:space="preserve">
-    <value>VPFullAcuteMixZone_m</value>
-  </data>
-  <data name="VPFullChronicMixZone_m" xml:space="preserve">
-    <value>VPFullChronicMixZone_m</value>
-  </data>
-  <data name="VPFullEffluentSalinity_PSU" xml:space="preserve">
-    <value>VPFullEffluentSalinity_PSU</value>
-  </data>
-  <data name="VPFullEffluentTemperature_C" xml:space="preserve">
-    <value>VPFullEffluentTemperature_C</value>
-  </data>
-  <data name="VPFullEffluentVelocity_m_s" xml:space="preserve">
-    <value>VPFullEffluentVelocity_m_s</value>
-  </data>
-  <data name="VPFullRawResults" xml:space="preserve">
-    <value>VPFullRawResults</value>
-  </data>
-  <data name="VPFullLastUpdateDate_UTC" xml:space="preserve">
-    <value>VPFullLastUpdateDate_UTC</value>
-  </data>
-  <data name="VPFullLastUpdateContactTVItemID" xml:space="preserve">
-    <value>VPFullLastUpdateContactTVItemID</value>
-  </data>
-  <data name="VPFullVPAmbients" xml:space="preserve">
-    <value>VPFullVPAmbients</value>
-  </data>
-  <data name="VPFullVPResults" xml:space="preserve">
-    <value>VPFullVPResults</value>
-  </data>
-  <data name="VPFullVPScenarioLanguages" xml:space="preserve">
-    <value>VPFullVPScenarioLanguages</value>
-  </data>
-  <data name="VPFullInfrastructureTVItem" xml:space="preserve">
-    <value>VPFullInfrastructureTVItem</value>
   </data>
   <data name="Vector" xml:space="preserve">
     <value>Vector</value>
@@ -1374,14 +1299,14 @@
   <data name="ContactOK" xml:space="preserve">
     <value>ContactOK</value>
   </data>
+  <data name="ContactOKError" xml:space="preserve">
+    <value>ContactOKError</value>
+  </data>
   <data name="ContactOKContactID" xml:space="preserve">
     <value>ContactOKContactID</value>
   </data>
   <data name="ContactOKContactTVItemID" xml:space="preserve">
     <value>ContactOKContactTVItemID</value>
-  </data>
-  <data name="ContactOKError" xml:space="preserve">
-    <value>ContactOKError</value>
   </data>
   <data name="CalDecay" xml:space="preserve">
     <value>CalDecay</value>

@@ -8,11 +8,19 @@ namespace CSSPModels
     public partial class MWQMSiteStartEndDate
     {
         #region Properties in DB
+        [Key]
         public int MWQMSiteStartEndDateID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int MWQMSiteTVItemID { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime StartDate { get; set; }
+        [CSSPBigger(OtherField = "StartDate")]
         public DateTime? EndDate { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual TVItem MWQMSiteTVItem { get; set; }

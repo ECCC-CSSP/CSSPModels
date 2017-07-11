@@ -9,12 +9,20 @@ namespace CSSPModels
     public partial class SpillLanguage
     {
         #region Properties in DB
+        [Key]
         public int SpillLanguageID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "Spill", Plurial = "s", FieldID = "SpillID")]
         public int SpillID { get; set; }
+        [CSSPEnumType]
         public LanguageEnum Language { get; set; }
         public string SpillComment { get; set; }
+        [CSSPEnumType]
         public TranslationStatusEnum TranslationStatus { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual Spill Spill { get; set; }

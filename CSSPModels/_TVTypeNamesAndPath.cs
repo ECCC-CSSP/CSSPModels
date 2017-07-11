@@ -13,11 +13,11 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Range(1, 255)]
+        [StringLength(255, MinimumLength = 1)]
         public string TVTypeName { get; set; }
         [Range(1, -1)]
         public int Index { get; set; }
-        [Range(1, 255)]
+        [StringLength(255, MinimumLength = 1)]
         public string TVPath { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

@@ -8,12 +8,21 @@ namespace CSSPModels
     public partial class PolSourceObservation
     {
         #region Properties in DB
+        [Key]
         public int PolSourceObservationID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int PolSourceSiteTVItemID { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime ObservationDate_Local { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int ContactTVItemID { get; set; }
         public string Observation_ToBeDeleted { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<PolSourceObservationIssue> PolSourceObservationIssues { get; set; }

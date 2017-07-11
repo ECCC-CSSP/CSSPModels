@@ -21,7 +21,10 @@ namespace CSSPModels
         public float FarFieldCurrentSpeed_m_s { get; set; }
         public float FarFieldCurrentDirection_deg { get; set; }
         public float FarFieldDiffusionCoefficient { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual VPScenario VPScenario { get; set; }

@@ -13,13 +13,17 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Range(1, 200)]
+        [StringLength(200, MinimumLength = 1)]
         public string LoginEmail { get; set; }
-        [Range(1, 200)]
+        [StringLength(200, MinimumLength = 1)]
         public string FirstName { get; set; }
-        [Range(1, 200)]
+        [StringLength(200, MinimumLength = 1)]
         public string LastName { get; set; }
+        [StringLength(50)]
+        [CSSPAllowNull]
         public string Initial { get; set; }
+        [CSSPEnumType]
+        [CSSPAllowNull]
         public ContactTitleEnum? ContactTitle { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
