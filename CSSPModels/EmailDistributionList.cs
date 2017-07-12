@@ -6,27 +6,26 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class TVItemLanguage
+    public partial class EmailDistributionList
     {
         #region Properties in DB
         [Key]
-        public int TVItemLanguageID { get; set; }
+        public int EmailDistributionListID { get; set; }
         [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
-        public int TVItemID { get; set; }
-        [CSSPEnumType]
-        public LanguageEnum Language { get; set; }
-        [StringLength(200)]
-        public string TVText { get; set; }
-        [CSSPEnumType]
-        public TranslationStatusEnum TranslationStatus { get; set; }
+        public int CountryTVItemID { get; set; }
+        [StringLength(100)]
+        public string RegionName { get; set; }
+        [Range(0, 1000)]
+        public int Ordinal { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
-        public virtual TVItem TVItem { get; set; }
+        public virtual TVItem CountryTVItem { get; set; }
+        public virtual ICollection<EmailDistributionListContact> EmailDistributionListContacts { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
@@ -35,7 +34,7 @@ namespace CSSPModels
         #endregion Properties not in DB
 
         #region Constructors
-        public TVItemLanguage()
+        public EmailDistributionList()
         {
             // empty for now
         }

@@ -9,10 +9,15 @@ namespace CSSPModels
     public partial class TVFileLanguage
     {
         #region Properties in DB
+        [Key]
         public int TVFileLanguageID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVFile", Plurial = "s", FieldID = "TVFileID")]
         public int TVFileID { get; set; }
+        [CSSPEnumType]
         public LanguageEnum Language { get; set; }
         public string FileDescription { get; set; }
+        [CSSPEnumType]
         public TranslationStatusEnum TranslationStatus { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

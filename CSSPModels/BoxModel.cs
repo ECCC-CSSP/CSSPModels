@@ -19,8 +19,8 @@ namespace CSSPModels
         public float Depth_m { get; set; }
         [Range(-15.0f, 40.0f)]
         public float Temperature_C { get; set; }
-        [Range(0.0f, 10000000.0f)]
-        public float Dilution { get; set; }
+        [Range(0, 10000000)]
+        public int Dilution { get; set; }
         [Range(0.0f, 100.0f)]
         public float DecayRate_per_day { get; set; }
         [Range(0, 10000000)]

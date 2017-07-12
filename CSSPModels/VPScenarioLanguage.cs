@@ -9,10 +9,16 @@ namespace CSSPModels
     public partial class VPScenarioLanguage
     {
         #region Properties in DB
+        [Key]
         public int VPScenarioLanguageID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "VPScenario", Plurial = "s", FieldID = "VPScenarioID")]
         public int VPScenarioID { get; set; }
+        [CSSPEnumType]
         public LanguageEnum Language { get; set; }
+        [StringLength(100)]
         public string VPScenarioName { get; set; }
+        [CSSPEnumType]
         public TranslationStatusEnum TranslationStatus { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

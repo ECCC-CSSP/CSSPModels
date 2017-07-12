@@ -252,6 +252,78 @@
 <data name="AppTaskTVItemID2Navigation" xml:space="preserve">
   <value>AppTaskTVItemID2Navigation</value>
 </data>
+<data name="EmailDistributionListContact" xml:space="preserve">
+  <value>EmailDistributionListContact</value>
+</data>
+<data name="EmailDistributionListContactEmailDistributionListContactID" xml:space="preserve">
+  <value>EmailDistributionListContactEmailDistributionListContactID</value>
+</data>
+<data name="EmailDistributionListContactEmailDistributionListID" xml:space="preserve">
+  <value>EmailDistributionListContactEmailDistributionListID</value>
+</data>
+<data name="EmailDistributionListContactIsCC" xml:space="preserve">
+  <value>EmailDistributionListContactIsCC</value>
+</data>
+<data name="EmailDistributionListContactAgency" xml:space="preserve">
+  <value>EmailDistributionListContactAgency</value>
+</data>
+<data name="EmailDistributionListContactName" xml:space="preserve">
+  <value>EmailDistributionListContactName</value>
+</data>
+<data name="EmailDistributionListContactEmail" xml:space="preserve">
+  <value>EmailDistributionListContactEmail</value>
+</data>
+<data name="EmailDistributionListContactCMPRainfallSeasonal" xml:space="preserve">
+  <value>EmailDistributionListContactCMPRainfallSeasonal</value>
+</data>
+<data name="EmailDistributionListContactCMPWastewater" xml:space="preserve">
+  <value>EmailDistributionListContactCMPWastewater</value>
+</data>
+<data name="EmailDistributionListContactEmergencyWeather" xml:space="preserve">
+  <value>EmailDistributionListContactEmergencyWeather</value>
+</data>
+<data name="EmailDistributionListContactEmergencyWastewater" xml:space="preserve">
+  <value>EmailDistributionListContactEmergencyWastewater</value>
+</data>
+<data name="EmailDistributionListContactReopeningAllTypes" xml:space="preserve">
+  <value>EmailDistributionListContactReopeningAllTypes</value>
+</data>
+<data name="EmailDistributionListContactLastUpdateDate_UTC" xml:space="preserve">
+  <value>EmailDistributionListContactLastUpdateDate_UTC</value>
+</data>
+<data name="EmailDistributionListContactLastUpdateContactTVItemID" xml:space="preserve">
+  <value>EmailDistributionListContactLastUpdateContactTVItemID</value>
+</data>
+<data name="EmailDistributionListContactEmailDistributionList" xml:space="preserve">
+  <value>EmailDistributionListContactEmailDistributionList</value>
+</data>
+<data name="EmailDistributionList" xml:space="preserve">
+  <value>EmailDistributionList</value>
+</data>
+<data name="EmailDistributionListEmailDistributionListID" xml:space="preserve">
+  <value>EmailDistributionListEmailDistributionListID</value>
+</data>
+<data name="EmailDistributionListCountryTVItemID" xml:space="preserve">
+  <value>EmailDistributionListCountryTVItemID</value>
+</data>
+<data name="EmailDistributionListRegionName" xml:space="preserve">
+  <value>EmailDistributionListRegionName</value>
+</data>
+<data name="EmailDistributionListOrdinal" xml:space="preserve">
+  <value>EmailDistributionListOrdinal</value>
+</data>
+<data name="EmailDistributionListLastUpdateDate_UTC" xml:space="preserve">
+  <value>EmailDistributionListLastUpdateDate_UTC</value>
+</data>
+<data name="EmailDistributionListLastUpdateContactTVItemID" xml:space="preserve">
+  <value>EmailDistributionListLastUpdateContactTVItemID</value>
+</data>
+<data name="EmailDistributionListCountryTVItem" xml:space="preserve">
+  <value>EmailDistributionListCountryTVItem</value>
+</data>
+<data name="EmailDistributionListEmailDistributionListContacts" xml:space="preserve">
+  <value>EmailDistributionListEmailDistributionListContacts</value>
+</data>
 <data name="CSSPAfterAttribute" xml:space="preserve">
   <value>CSSPAfterAttribute</value>
 </data>

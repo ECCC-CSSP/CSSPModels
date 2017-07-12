@@ -2932,6 +2932,222 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionList.
+        /// </summary>
+        public static string EmailDistributionList {
+            get {
+                return ResourceManager.GetString("EmailDistributionList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContact.
+        /// </summary>
+        public static string EmailDistributionListContact {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactAgency.
+        /// </summary>
+        public static string EmailDistributionListContactAgency {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactAgency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactCMPRainfallSeasonal.
+        /// </summary>
+        public static string EmailDistributionListContactCMPRainfallSeasonal {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactCMPRainfallSeasonal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactCMPWastewater.
+        /// </summary>
+        public static string EmailDistributionListContactCMPWastewater {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactCMPWastewater", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactEmail.
+        /// </summary>
+        public static string EmailDistributionListContactEmail {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactEmailDistributionList.
+        /// </summary>
+        public static string EmailDistributionListContactEmailDistributionList {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactEmailDistributionList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactEmailDistributionListContactID.
+        /// </summary>
+        public static string EmailDistributionListContactEmailDistributionListContactID {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactEmailDistributionListContactID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactEmailDistributionListID.
+        /// </summary>
+        public static string EmailDistributionListContactEmailDistributionListID {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactEmailDistributionListID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactEmergencyWastewater.
+        /// </summary>
+        public static string EmailDistributionListContactEmergencyWastewater {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactEmergencyWastewater", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactEmergencyWeather.
+        /// </summary>
+        public static string EmailDistributionListContactEmergencyWeather {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactEmergencyWeather", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactIsCC.
+        /// </summary>
+        public static string EmailDistributionListContactIsCC {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactIsCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactLastUpdateContactTVItemID.
+        /// </summary>
+        public static string EmailDistributionListContactLastUpdateContactTVItemID {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactLastUpdateContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactLastUpdateDate_UTC.
+        /// </summary>
+        public static string EmailDistributionListContactLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactName.
+        /// </summary>
+        public static string EmailDistributionListContactName {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactReopeningAllTypes.
+        /// </summary>
+        public static string EmailDistributionListContactReopeningAllTypes {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactReopeningAllTypes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListCountryTVItem.
+        /// </summary>
+        public static string EmailDistributionListCountryTVItem {
+            get {
+                return ResourceManager.GetString("EmailDistributionListCountryTVItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListCountryTVItemID.
+        /// </summary>
+        public static string EmailDistributionListCountryTVItemID {
+            get {
+                return ResourceManager.GetString("EmailDistributionListCountryTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListEmailDistributionListContacts.
+        /// </summary>
+        public static string EmailDistributionListEmailDistributionListContacts {
+            get {
+                return ResourceManager.GetString("EmailDistributionListEmailDistributionListContacts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListEmailDistributionListID.
+        /// </summary>
+        public static string EmailDistributionListEmailDistributionListID {
+            get {
+                return ResourceManager.GetString("EmailDistributionListEmailDistributionListID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListLastUpdateContactTVItemID.
+        /// </summary>
+        public static string EmailDistributionListLastUpdateContactTVItemID {
+            get {
+                return ResourceManager.GetString("EmailDistributionListLastUpdateContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListLastUpdateDate_UTC.
+        /// </summary>
+        public static string EmailDistributionListLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("EmailDistributionListLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListOrdinal.
+        /// </summary>
+        public static string EmailDistributionListOrdinal {
+            get {
+                return ResourceManager.GetString("EmailDistributionListOrdinal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListRegionName.
+        /// </summary>
+        public static string EmailDistributionListRegionName {
+            get {
+                return ResourceManager.GetString("EmailDistributionListRegionName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EmailEmailAddress.
         /// </summary>
         public static string EmailEmailAddress {

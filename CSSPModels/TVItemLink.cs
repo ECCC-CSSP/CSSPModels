@@ -9,16 +9,28 @@ namespace CSSPModels
     public partial class TVItemLink
     {
         #region Properties in DB
+        [Key]
         public int TVItemLinkID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int FromTVItemID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int ToTVItemID { get; set; }
+        [CSSPEnumType]
         public TVTypeEnum FromTVType { get; set; }
+        [CSSPEnumType]
         public TVTypeEnum ToTVType { get; set; }
         public DateTime? StartDateTime_Local { get; set; }
         public DateTime? EndDateTime_Local { get; set; }
+        [Range(0, 100)]
         public int Ordinal { get; set; }
+        [Range(0, 100)]
         public int TVLevel { get; set; }
+        [StringLength(250)]
         public string TVPath { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int? ParentTVItemLinkID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

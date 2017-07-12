@@ -9,19 +9,33 @@ namespace CSSPModels
     public partial class UseOfSite
     {
         #region Properties in DB
+        [Key]
         public int UseOfSiteID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int SiteTVItemID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int SubsectorTVItemID { get; set; }
+        [CSSPEnumType]
         public SiteTypeEnum SiteType { get; set; }
+        [Range(0, 1000)]
         public int Ordinal { get; set; }
+        [Range(1980, 2050)]
         public int StartYear { get; set; }
+        [Range(1980, 2050)]
         public int? EndYear { get; set; }
         public bool? UseWeight { get; set; }
+        [Range(0.0f, 100.0f)]
         public float? Weight_perc { get; set; }
         public bool? UseEquation { get; set; }
+        [Range(0.0f, 100.0f)]
         public float? Param1 { get; set; }
+        [Range(0.0f, 100.0f)]
         public float? Param2 { get; set; }
+        [Range(0.0f, 100.0f)]
         public float? Param3 { get; set; }
+        [Range(0.0f, 100.0f)]
         public float? Param4 { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

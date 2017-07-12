@@ -12,10 +12,16 @@ namespace CSSPModels
     public partial class TVItem
     {
         #region Properties in DB
+        [Key]
         public int TVItemID { get; set; }
+        [Range(0, 100)]
         public int TVLevel { get; set; }
+        [StringLength(250)]
         public string TVPath { get; set; }
+        [CSSPEnumType]
         public TVTypeEnum TVType { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int ParentID { get; set; }
         public bool IsActive { get; set; }
         [CSSPAfter(Year = 1980)]

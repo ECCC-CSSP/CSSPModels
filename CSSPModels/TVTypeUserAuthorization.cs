@@ -9,9 +9,14 @@ namespace CSSPModels
     public partial class TVTypeUserAuthorization
     {
         #region Properties in DB
+        [Key]
         public int TVTypeUserAuthorizationID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int ContactTVItemID { get; set; }
+        [CSSPEnumType]
         public TVTypeEnum TVType { get; set; }
+        [CSSPEnumType]
         public TVAuthEnum TVAuth { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

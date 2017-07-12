@@ -9,9 +9,14 @@ namespace CSSPModels
     public partial class TVItemStat
     {
         #region Properties in DB
+        [Key]
         public int TVItemStatID { get; set; }
+        [Range(1, -1)]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int TVItemID { get; set; }
+        [CSSPEnumType]
         public TVTypeEnum TVType { get; set; }
+        [Range(0, 10000000)]
         public int ChildCount { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
