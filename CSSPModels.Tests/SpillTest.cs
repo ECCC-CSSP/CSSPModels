@@ -18,8 +18,6 @@ namespace CSSPModels.Tests
         #region Properties
         private CSSPWebToolsDBContext db { get; set; }
         private Spill spill { get; set; }
-        private IEntityType entityType { get; set; }
-        private string EntityName = "CSSPModels.Spill";
         #endregion Properties
 
         #region Constructors
@@ -27,14 +25,6 @@ namespace CSSPModels.Tests
         {
             db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
             spill = new Spill();
-            foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())
-            {
-                if (entityTypeTemp.Name == EntityName)
-                {
-                    entityType = entityTypeTemp;
-                    break;
-                }
-            }
         }
         #endregion Constructors
 

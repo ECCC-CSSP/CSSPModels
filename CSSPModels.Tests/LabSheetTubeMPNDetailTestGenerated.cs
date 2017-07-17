@@ -19,10 +19,15 @@ namespace CSSPModels.Tests
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (IProperty propertyType in entityType.GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.LabSheetTubeMPNDetail).GetProperties().OrderBy(c => c.Name))
             {
-                Assert.AreEqual(propNameList[index], propertyType.Name);
-                index += 1;
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
             }
 
             Assert.AreEqual(propNameList.Count, index);
@@ -50,10 +55,13 @@ namespace CSSPModels.Tests
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (string foreignName in (from c in entityType.GetForeignKeys() orderby c.DependentToPrincipal.Name select c.DependentToPrincipal.Name))
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetTubeMPNDetail).GetProperties())
             {
-                Assert.AreEqual(foreignNameList[index], foreignName);
-                index += 1;
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
             }
 
             Assert.AreEqual(foreignNameList.Count, index);

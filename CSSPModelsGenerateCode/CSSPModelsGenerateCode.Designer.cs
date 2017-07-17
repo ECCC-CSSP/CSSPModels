@@ -138,7 +138,7 @@
             // lblNote
             // 
             this.lblNote.AutoSize = true;
-            this.lblNote.Location = new System.Drawing.Point(15, 288);
+            this.lblNote.Location = new System.Drawing.Point(208, 236);
             this.lblNote.Name = "lblNote";
             this.lblNote.Size = new System.Drawing.Size(280, 13);
             this.lblNote.TabIndex = 26;
@@ -200,7 +200,7 @@
             // 
             // butRunModelLint
             // 
-            this.butRunModelLint.Location = new System.Drawing.Point(242, 242);
+            this.butRunModelLint.Location = new System.Drawing.Point(15, 286);
             this.butRunModelLint.Name = "butRunModelLint";
             this.butRunModelLint.Size = new System.Drawing.Size(199, 23);
             this.butRunModelLint.TabIndex = 11;

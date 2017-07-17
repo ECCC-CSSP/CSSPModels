@@ -34,21 +34,15 @@ namespace CSSPModelsGenerateCodeHelper
                 LabelStatus.Refresh();
                 Application.DoEvents();
 
-                if (type.Name.StartsWith("<") 
-                    || type.Name.StartsWith("ModelsRes") 
-                    || type.Name.StartsWith("Application") 
-                    || type.Name.StartsWith("CSSPWebToolsDBContext")
-                    || type.Name.StartsWith("CSSPDateAfterYear")
-                    || type.Name.StartsWith("CSSPObjectExist")
-                    || type.Name.StartsWith("CSSPTypeExist"))
+                if (SkipType(type))
                 {
                     continue;
                 }
 
-                if (type.Name != "Address")
-                {
-                    continue;
-                }
+                //if (type.Name != "Address")
+                //{
+                //    continue;
+                //}
 
                 foreach (CustomAttributeData customAttributeData in type.CustomAttributes)
                 {
@@ -86,22 +80,13 @@ namespace CSSPModelsGenerateCodeHelper
                     {
                         if (!prop.GetGetMethod().IsVirtual && !prop.Name.Contains("ValidationResults"))
                         {
-                            bool PropNotMapped = false;
-                            foreach (CustomAttributeData customAttributeData in prop.CustomAttributes)
+                            if (prop.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
                             {
-                                if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
-                                {
-                                    PropNotMapped = true;
-                                    break;
-                                }
-                            }
-                            if (!PropNotMapped)
-                            {
-                                sbVar.Append(@"""" + prop.Name + @""", ");
+                                sbPropNotMapped.Append(@"""" + prop.Name + @""", ");
                             }
                             else
                             {
-                                sbPropNotMapped.Append(@"""" + prop.Name + @""", ");
+                                sbVar.Append(@"""" + prop.Name + @""", ");
                             }
                         }
                     }
@@ -122,8 +107,13 @@ namespace CSSPModelsGenerateCodeHelper
                     sb.AppendLine(@"            int index = 0;");
                     sb.AppendLine(@"            foreach (PropertyInfo propertyInfo in typeof(" + type + ").GetProperties().OrderBy(c => c.Name))");
                     sb.AppendLine(@"            {");
-                    sb.AppendLine(@"                Assert.AreEqual(propNameList[index], propertyInfo.PropertyType.Name);");
-                    sb.AppendLine(@"                index += 1;");
+                    sb.AppendLine(@"                if (!propertyInfo.GetGetMethod().IsVirtual");
+                    sb.AppendLine(@"                    && propertyInfo.Name != ""ValidationResults""");
+                    sb.AppendLine(@"                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains(""NotMappedAttribute"")).Any())");
+                    sb.AppendLine(@"                {");
+                    sb.AppendLine(@"                    Assert.AreEqual(propNameList[index], propertyInfo.Name);");
+                    sb.AppendLine(@"                    index += 1;");
+                    sb.AppendLine(@"                }");
                     sb.AppendLine(@"            }");
                     sb.AppendLine(@"");
                     sb.AppendLine(@"            Assert.AreEqual(propNameList.Count, index);");
@@ -187,7 +177,7 @@ namespace CSSPModelsGenerateCodeHelper
                     sb.AppendLine(@"            int index = 0;");
                     sb.AppendLine(@"            foreach (PropertyInfo propertyInfo in typeof(" + type.Name + @").GetProperties())");
                     sb.AppendLine(@"            {");
-                    sb.AppendLine(@"                if (propertyInfo.GetGetMethod().IsVirtual)");
+                    sb.AppendLine(@"                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith(""ICollection""))");
                     sb.AppendLine(@"                {");
                     sb.AppendLine(@"                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));");
                     sb.AppendLine(@"                    index += 1;");

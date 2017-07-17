@@ -18,8 +18,6 @@ namespace CSSPModels.Tests
         #region Properties
         private CSSPWebToolsDBContext db { get; set; }
         private MapInfoPoint mapInfoPoint { get; set; }
-        private IEntityType entityType { get; set; }
-        private string EntityName = "CSSPModels.MapInfoPoint";
         #endregion Properties
 
         #region Constructors
@@ -27,14 +25,6 @@ namespace CSSPModels.Tests
         {
             db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
             mapInfoPoint = new MapInfoPoint();
-            foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())
-            {
-                if (entityTypeTemp.Name == EntityName)
-                {
-                    entityType = entityTypeTemp;
-                    break;
-                }
-            }
         }
         #endregion Constructors
 

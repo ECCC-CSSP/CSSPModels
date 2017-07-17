@@ -11,6 +11,8 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int ContactID { get; set; }
+        [StringLength(128)]
+        public string Id { get; set; }
         [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int ContactTVItemID { get; set; }
@@ -32,6 +34,7 @@ namespace CSSPModels
         public bool EmailValidated { get; set; }
         public bool Disabled { get; set; }
         public bool IsNew { get; set; }
+        [StringLength(200)]
         [CSSPAllowNull]
         public string SamplingPlanner_ProvincesTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]

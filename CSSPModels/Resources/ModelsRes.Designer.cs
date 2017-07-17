@@ -313,6 +313,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AppTaskAppTaskCommand.
+        /// </summary>
+        public static string AppTaskAppTaskCommand {
+            get {
+                return ResourceManager.GetString("AppTaskAppTaskCommand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AppTaskAppTaskID.
         /// </summary>
         public static string AppTaskAppTaskID {
@@ -331,11 +340,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AppTaskCommand.
+        ///   Looks up a localized string similar to AppTaskAppTaskStatus.
         /// </summary>
-        public static string AppTaskCommand {
+        public static string AppTaskAppTaskStatus {
             get {
-                return ResourceManager.GetString("AppTaskCommand", resourceCulture);
+                return ResourceManager.GetString("AppTaskAppTaskStatus", resourceCulture);
             }
         }
         
@@ -525,15 +534,6 @@ namespace CSSPModels.Resources {
         public static string AppTaskStartDateTime_UTC {
             get {
                 return ResourceManager.GetString("AppTaskStartDateTime_UTC", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AppTaskStatus.
-        /// </summary>
-        public static string AppTaskStatus {
-            get {
-                return ResourceManager.GetString("AppTaskStatus", resourceCulture);
             }
         }
         
@@ -1645,6 +1645,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ContactId.
+        /// </summary>
+        public static string ContactId {
+            get {
+                return ResourceManager.GetString("ContactId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ContactInitial.
         /// </summary>
         public static string ContactInitial {
@@ -2127,321 +2136,6 @@ namespace CSSPModels.Resources {
         public static string CoordOrdinal {
             get {
                 return ResourceManager.GetString("CoordOrdinal", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPAfterAttribute.
-        /// </summary>
-        public static string CSSPAfterAttribute {
-            get {
-                return ResourceManager.GetString("CSSPAfterAttribute", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPAfterAttributeErrorMessage.
-        /// </summary>
-        public static string CSSPAfterAttributeErrorMessage {
-            get {
-                return ResourceManager.GetString("CSSPAfterAttributeErrorMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPAfterAttributeErrorMessageResourceName.
-        /// </summary>
-        public static string CSSPAfterAttributeErrorMessageResourceName {
-            get {
-                return ResourceManager.GetString("CSSPAfterAttributeErrorMessageResourceName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPAfterAttributeErrorMessageResourceType.
-        /// </summary>
-        public static string CSSPAfterAttributeErrorMessageResourceType {
-            get {
-                return ResourceManager.GetString("CSSPAfterAttributeErrorMessageResourceType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPAfterAttributeRequiresValidationContext.
-        /// </summary>
-        public static string CSSPAfterAttributeRequiresValidationContext {
-            get {
-                return ResourceManager.GetString("CSSPAfterAttributeRequiresValidationContext", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPAfterAttributeTypeId.
-        /// </summary>
-        public static string CSSPAfterAttributeTypeId {
-            get {
-                return ResourceManager.GetString("CSSPAfterAttributeTypeId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPAfterAttributeYear.
-        /// </summary>
-        public static string CSSPAfterAttributeYear {
-            get {
-                return ResourceManager.GetString("CSSPAfterAttributeYear", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPAllowNullAttribute.
-        /// </summary>
-        public static string CSSPAllowNullAttribute {
-            get {
-                return ResourceManager.GetString("CSSPAllowNullAttribute", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPAllowNullAttributeErrorMessage.
-        /// </summary>
-        public static string CSSPAllowNullAttributeErrorMessage {
-            get {
-                return ResourceManager.GetString("CSSPAllowNullAttributeErrorMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPAllowNullAttributeErrorMessageResourceName.
-        /// </summary>
-        public static string CSSPAllowNullAttributeErrorMessageResourceName {
-            get {
-                return ResourceManager.GetString("CSSPAllowNullAttributeErrorMessageResourceName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPAllowNullAttributeErrorMessageResourceType.
-        /// </summary>
-        public static string CSSPAllowNullAttributeErrorMessageResourceType {
-            get {
-                return ResourceManager.GetString("CSSPAllowNullAttributeErrorMessageResourceType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPAllowNullAttributeRequiresValidationContext.
-        /// </summary>
-        public static string CSSPAllowNullAttributeRequiresValidationContext {
-            get {
-                return ResourceManager.GetString("CSSPAllowNullAttributeRequiresValidationContext", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPAllowNullAttributeTypeId.
-        /// </summary>
-        public static string CSSPAllowNullAttributeTypeId {
-            get {
-                return ResourceManager.GetString("CSSPAllowNullAttributeTypeId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPBiggerAttribute.
-        /// </summary>
-        public static string CSSPBiggerAttribute {
-            get {
-                return ResourceManager.GetString("CSSPBiggerAttribute", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPBiggerAttributeErrorMessage.
-        /// </summary>
-        public static string CSSPBiggerAttributeErrorMessage {
-            get {
-                return ResourceManager.GetString("CSSPBiggerAttributeErrorMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPBiggerAttributeErrorMessageResourceName.
-        /// </summary>
-        public static string CSSPBiggerAttributeErrorMessageResourceName {
-            get {
-                return ResourceManager.GetString("CSSPBiggerAttributeErrorMessageResourceName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPBiggerAttributeErrorMessageResourceType.
-        /// </summary>
-        public static string CSSPBiggerAttributeErrorMessageResourceType {
-            get {
-                return ResourceManager.GetString("CSSPBiggerAttributeErrorMessageResourceType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPBiggerAttributeOtherField.
-        /// </summary>
-        public static string CSSPBiggerAttributeOtherField {
-            get {
-                return ResourceManager.GetString("CSSPBiggerAttributeOtherField", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPBiggerAttributeRequiresValidationContext.
-        /// </summary>
-        public static string CSSPBiggerAttributeRequiresValidationContext {
-            get {
-                return ResourceManager.GetString("CSSPBiggerAttributeRequiresValidationContext", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPBiggerAttributeTypeId.
-        /// </summary>
-        public static string CSSPBiggerAttributeTypeId {
-            get {
-                return ResourceManager.GetString("CSSPBiggerAttributeTypeId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPEnumTypeAttribute.
-        /// </summary>
-        public static string CSSPEnumTypeAttribute {
-            get {
-                return ResourceManager.GetString("CSSPEnumTypeAttribute", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPEnumTypeAttributeErrorMessage.
-        /// </summary>
-        public static string CSSPEnumTypeAttributeErrorMessage {
-            get {
-                return ResourceManager.GetString("CSSPEnumTypeAttributeErrorMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPEnumTypeAttributeErrorMessageResourceName.
-        /// </summary>
-        public static string CSSPEnumTypeAttributeErrorMessageResourceName {
-            get {
-                return ResourceManager.GetString("CSSPEnumTypeAttributeErrorMessageResourceName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPEnumTypeAttributeErrorMessageResourceType.
-        /// </summary>
-        public static string CSSPEnumTypeAttributeErrorMessageResourceType {
-            get {
-                return ResourceManager.GetString("CSSPEnumTypeAttributeErrorMessageResourceType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPEnumTypeAttributeRequiresValidationContext.
-        /// </summary>
-        public static string CSSPEnumTypeAttributeRequiresValidationContext {
-            get {
-                return ResourceManager.GetString("CSSPEnumTypeAttributeRequiresValidationContext", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPEnumTypeAttributeTypeId.
-        /// </summary>
-        public static string CSSPEnumTypeAttributeTypeId {
-            get {
-                return ResourceManager.GetString("CSSPEnumTypeAttributeTypeId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPExistAttribute.
-        /// </summary>
-        public static string CSSPExistAttribute {
-            get {
-                return ResourceManager.GetString("CSSPExistAttribute", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPExistAttributeErrorMessage.
-        /// </summary>
-        public static string CSSPExistAttributeErrorMessage {
-            get {
-                return ResourceManager.GetString("CSSPExistAttributeErrorMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPExistAttributeErrorMessageResourceName.
-        /// </summary>
-        public static string CSSPExistAttributeErrorMessageResourceName {
-            get {
-                return ResourceManager.GetString("CSSPExistAttributeErrorMessageResourceName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPExistAttributeErrorMessageResourceType.
-        /// </summary>
-        public static string CSSPExistAttributeErrorMessageResourceType {
-            get {
-                return ResourceManager.GetString("CSSPExistAttributeErrorMessageResourceType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPExistAttributeFieldID.
-        /// </summary>
-        public static string CSSPExistAttributeFieldID {
-            get {
-                return ResourceManager.GetString("CSSPExistAttributeFieldID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPExistAttributePlurial.
-        /// </summary>
-        public static string CSSPExistAttributePlurial {
-            get {
-                return ResourceManager.GetString("CSSPExistAttributePlurial", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPExistAttributeRequiresValidationContext.
-        /// </summary>
-        public static string CSSPExistAttributeRequiresValidationContext {
-            get {
-                return ResourceManager.GetString("CSSPExistAttributeRequiresValidationContext", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPExistAttributeTypeId.
-        /// </summary>
-        public static string CSSPExistAttributeTypeId {
-            get {
-                return ResourceManager.GetString("CSSPExistAttributeTypeId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CSSPExistAttributeTypeName.
-        /// </summary>
-        public static string CSSPExistAttributeTypeName {
-            get {
-                return ResourceManager.GetString("CSSPExistAttributeTypeName", resourceCulture);
             }
         }
         
@@ -5272,11 +4966,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetDetailDailyDuplicateRlog.
+        ///   Looks up a localized string similar to LabSheetDetailDailyDuplicateRLog.
         /// </summary>
-        public static string LabSheetDetailDailyDuplicateRlog {
+        public static string LabSheetDetailDailyDuplicateRLog {
             get {
-                return ResourceManager.GetString("LabSheetDetailDailyDuplicateRlog", resourceCulture);
+                return ResourceManager.GetString("LabSheetDetailDailyDuplicateRLog", resourceCulture);
             }
         }
         
@@ -5380,11 +5074,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetDetailIntertechDuplicateRlog.
+        ///   Looks up a localized string similar to LabSheetDetailIntertechDuplicateRLog.
         /// </summary>
-        public static string LabSheetDetailIntertechDuplicateRlog {
+        public static string LabSheetDetailIntertechDuplicateRLog {
             get {
-                return ResourceManager.GetString("LabSheetDetailIntertechDuplicateRlog", resourceCulture);
+                return ResourceManager.GetString("LabSheetDetailIntertechDuplicateRLog", resourceCulture);
             }
         }
         
@@ -6928,11 +6622,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeScenarioNumberOfZlayers.
+        ///   Looks up a localized string similar to MikeScenarioNumberOfZLayers.
         /// </summary>
-        public static string MikeScenarioNumberOfZlayers {
+        public static string MikeScenarioNumberOfZLayers {
             get {
-                return ResourceManager.GetString("MikeScenarioNumberOfZlayers", resourceCulture);
+                return ResourceManager.GetString("MikeScenarioNumberOfZLayers", resourceCulture);
             }
         }
         
@@ -6960,15 +6654,6 @@ namespace CSSPModels.Resources {
         public static string MikeScenarioScenarioStatus {
             get {
                 return ResourceManager.GetString("MikeScenarioScenarioStatus", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MikeScenarioUseWebTide.
-        /// </summary>
-        public static string MikeScenarioUseWebTide {
-            get {
-                return ResourceManager.GetString("MikeScenarioUseWebTide", resourceCulture);
             }
         }
         
@@ -9822,6 +9507,15 @@ namespace CSSPModels.Resources {
         public static string SamplingPlanAndFilesLabSheetCountTVFileSamplingPlanFileTXT {
             get {
                 return ResourceManager.GetString("SamplingPlanAndFilesLabSheetCountTVFileSamplingPlanFileTXT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SamplingPlanApprovalCode.
+        /// </summary>
+        public static string SamplingPlanApprovalCode {
+            get {
+                return ResourceManager.GetString("SamplingPlanApprovalCode", resourceCulture);
             }
         }
         

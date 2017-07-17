@@ -18,8 +18,6 @@ namespace CSSPModels.Tests
         #region Properties
         private CSSPWebToolsDBContext db { get; set; }
         private TVItemLanguage tVItemLanguage { get; set; }
-        private IEntityType entityType { get; set; }
-        private string EntityName = "CSSPModels.TVItemLanguage";
         #endregion Properties
 
         #region Constructors
@@ -27,14 +25,6 @@ namespace CSSPModels.Tests
         {
             db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
             tVItemLanguage = new TVItemLanguage();
-            foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())
-            {
-                if (entityTypeTemp.Name == EntityName)
-                {
-                    entityType = entityTypeTemp;
-                    break;
-                }
-            }
         }
         #endregion Constructors
 

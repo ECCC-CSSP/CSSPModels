@@ -18,9 +18,9 @@ namespace CSSPModels
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int TVItemID2 { get; set; }
         [CSSPEnumType]
-        public AppTaskCommandEnum Command { get; set; }
+        public AppTaskCommandEnum AppTaskCommand { get; set; }
         [CSSPEnumType]
-        public AppTaskStatusEnum Status { get; set; }
+        public AppTaskStatusEnum AppTaskStatus { get; set; }
         [Range(0, 100)]
         public int PercentCompleted { get; set; }
         public string Parameters { get; set; }

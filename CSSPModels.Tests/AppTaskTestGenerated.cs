@@ -15,14 +15,19 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void AppTask_Properties_OK()
         {
-            List<string> propNameList = new List<string>() { "AppTaskID", "TVItemID", "TVItemID2", "Command", "Status", "PercentCompleted", "Parameters", "Language", "StartDateTime_UTC", "EndDateTime_UTC", "EstimatedLength_second", "RemainingTime_second", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "AppTaskID", "TVItemID", "TVItemID2", "AppTaskCommand", "AppTaskStatus", "PercentCompleted", "Parameters", "Language", "StartDateTime_UTC", "EndDateTime_UTC", "EstimatedLength_second", "RemainingTime_second", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (IProperty propertyType in entityType.GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.AppTask).GetProperties().OrderBy(c => c.Name))
             {
-                Assert.AreEqual(propNameList[index], propertyType.Name);
-                index += 1;
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
             }
 
             Assert.AreEqual(propNameList.Count, index);
@@ -50,10 +55,13 @@ namespace CSSPModels.Tests
             List<string> foreignNameCollectionList = new List<string>() { "AppTaskLanguages",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (string foreignName in (from c in entityType.GetForeignKeys() orderby c.DependentToPrincipal.Name select c.DependentToPrincipal.Name))
+            foreach (PropertyInfo propertyInfo in typeof(AppTask).GetProperties())
             {
-                Assert.AreEqual(foreignNameList[index], foreignName);
-                index += 1;
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
             }
 
             Assert.AreEqual(foreignNameList.Count, index);
@@ -82,8 +90,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.AppTaskAppTaskID);
                Assert.IsNotNull(ModelsRes.AppTaskTVItemID);
                Assert.IsNotNull(ModelsRes.AppTaskTVItemID2);
-               Assert.IsNotNull(ModelsRes.AppTaskCommand);
-               Assert.IsNotNull(ModelsRes.AppTaskStatus);
+               Assert.IsNotNull(ModelsRes.AppTaskAppTaskCommand);
+               Assert.IsNotNull(ModelsRes.AppTaskAppTaskStatus);
                Assert.IsNotNull(ModelsRes.AppTaskPercentCompleted);
                Assert.IsNotNull(ModelsRes.AppTaskParameters);
                Assert.IsNotNull(ModelsRes.AppTaskLanguage);

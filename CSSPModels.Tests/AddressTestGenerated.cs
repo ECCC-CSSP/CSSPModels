@@ -21,8 +21,13 @@ namespace CSSPModels.Tests
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Address).GetProperties().OrderBy(c => c.Name))
             {
-                Assert.AreEqual(propNameList[index], propertyInfo.PropertyType.Name);
-                index += 1;
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
             }
 
             Assert.AreEqual(propNameList.Count, index);
@@ -52,7 +57,7 @@ namespace CSSPModels.Tests
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(Address).GetProperties())
             {
-                if (propertyInfo.GetGetMethod().IsVirtual)
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
                     Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
                     index += 1;

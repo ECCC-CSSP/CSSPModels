@@ -19,17 +19,17 @@ namespace CSSPModels
         public bool Keep { get; set; }
         [CSSPEnumType]
         public StorageDataTypeEnum StorageDataType { get; set; }
-        public double? Snow_cm { get; set; }
-        public double? Rainfall_mm { get; set; }
-        public double? RainfallEntered_mm { get; set; }
-        public double? TotalPrecip_mm_cm { get; set; }
-        public double? MaxTemp_C { get; set; }
-        public double? MinTemp_C { get; set; }
-        public double? HeatDegDays_C { get; set; }
-        public double? CoolDegDays_C { get; set; }
-        public double? SnowOnGround_cm { get; set; }
-        public double? DirMaxGust_0North { get; set; }
-        public double? SpdMaxGust_kmh { get; set; }
+        public float? Snow_cm { get; set; }
+        public float? Rainfall_mm { get; set; }
+        public float? RainfallEntered_mm { get; set; }
+        public float? TotalPrecip_mm_cm { get; set; }
+        public float? MaxTemp_C { get; set; }
+        public float? MinTemp_C { get; set; }
+        public float? HeatDegDays_C { get; set; }
+        public float? CoolDegDays_C { get; set; }
+        public float? SnowOnGround_cm { get; set; }
+        public float? DirMaxGust_0North { get; set; }
+        public float? SpdMaxGust_kmh { get; set; }
         public string HourlyValues { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

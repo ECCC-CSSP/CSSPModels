@@ -15,14 +15,19 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Contact_Properties_OK()
         {
-            List<string> propNameList = new List<string>() { "ContactID", "ContactTVItemID", "LoginEmail", "FirstName", "LastName", "Initial", "WebName", "ContactTitle", "IsAdmin", "EmailValidated", "Disabled", "IsNew", "SamplingPlanner_ProvincesTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ContactID", "Id", "ContactTVItemID", "LoginEmail", "FirstName", "LastName", "Initial", "WebName", "ContactTitle", "IsAdmin", "EmailValidated", "Disabled", "IsNew", "SamplingPlanner_ProvincesTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "ParentTVItemID",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (IProperty propertyType in entityType.GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Contact).GetProperties().OrderBy(c => c.Name))
             {
-                Assert.AreEqual(propNameList[index], propertyType.Name);
-                index += 1;
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
             }
 
             Assert.AreEqual(propNameList.Count, index);
@@ -50,10 +55,13 @@ namespace CSSPModels.Tests
             List<string> foreignNameCollectionList = new List<string>() { "ContactLogins", "ContactPreferences", "ContactShortcuts",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (string foreignName in (from c in entityType.GetForeignKeys() orderby c.DependentToPrincipal.Name select c.DependentToPrincipal.Name))
+            foreach (PropertyInfo propertyInfo in typeof(Contact).GetProperties())
             {
-                Assert.AreEqual(foreignNameList[index], foreignName);
-                index += 1;
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
             }
 
             Assert.AreEqual(foreignNameList.Count, index);
@@ -80,6 +88,7 @@ namespace CSSPModels.Tests
         public void Contact_Every_Property_Has_A_Resource_OK()
         {
                Assert.IsNotNull(ModelsRes.ContactContactID);
+               Assert.IsNotNull(ModelsRes.ContactId);
                Assert.IsNotNull(ModelsRes.ContactContactTVItemID);
                Assert.IsNotNull(ModelsRes.ContactLoginEmail);
                Assert.IsNotNull(ModelsRes.ContactFirstName);

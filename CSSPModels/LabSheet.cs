@@ -50,6 +50,8 @@ namespace CSSPModels
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int? AcceptedOrRejectedByContactTVItemID { get; set; }
         public DateTime? AcceptedOrRejectedDateTime { get; set; }
+        [StringLength(250)]
+        [CSSPAllowNull]
         public string RejectReason { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

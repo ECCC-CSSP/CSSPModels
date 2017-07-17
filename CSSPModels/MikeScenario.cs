@@ -44,7 +44,6 @@ namespace CSSPModels
         public float AmbientSalinity_PSU { get; set; }
         [Range(0.0f, 100.0f)]
         public float ManningNumber { get; set; }
-        public bool? UseWebTide { get; set; }
         [Range(1, 10000)]
         public int? NumberOfElements { get; set; }
         [Range(1, 10000)]
@@ -52,7 +51,7 @@ namespace CSSPModels
         [Range(0, 100)]
         public int? NumberOfSigmaLayers { get; set; }
         [Range(0, 100)]
-        public int? NumberOfZlayers { get; set; }
+        public int? NumberOfZLayers { get; set; }
         [Range(0, 100)]
         public int? NumberOfHydroOutputParameters { get; set; }
         [Range(0, 100)]

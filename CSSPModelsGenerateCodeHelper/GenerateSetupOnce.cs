@@ -34,16 +34,11 @@ namespace CSSPModelsGenerateCodeHelper
                 LabelStatus.Refresh();
                 Application.DoEvents();
 
-                if (type.Name.StartsWith("<")
-                     || type.Name.StartsWith("ModelsRes")
-                     || type.Name.StartsWith("Application")
-                     || type.Name.StartsWith("CSSPWebToolsDBContext")
-                     || type.Name.StartsWith("CSSPDateAfterYear")
-                     || type.Name.StartsWith("CSSPObjectExist")
-                     || type.Name.StartsWith("CSSPTypeExist"))
+                if (SkipType(type))
                 {
                     continue;
                 }
+
 
                 //if (type.Name == "BaseModelService")
                 //{
@@ -79,11 +74,11 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"        #region Properties");
                 sb.AppendLine(@"        private CSSPWebToolsDBContext db { get; set; }");
                 sb.AppendLine(@"        private " + type.Name + " " + type.Name.Substring(0, 1).ToLower() + type.Name.Substring(1) + " { get; set; }");
-                if (!ClassNotMapped)
-                {
-                    sb.AppendLine(@"        private IEntityType entityType { get; set; }");
-                    sb.AppendLine(@"        private string EntityName = ""CSSPModels." + type.Name + @""";");
-                }
+                //if (!ClassNotMapped)
+                //{
+                //    sb.AppendLine(@"        private IEntityType entityType { get; set; }");
+                //    sb.AppendLine(@"        private string EntityName = ""CSSPModels." + type.Name + @""";");
+                //}
                 sb.AppendLine(@"        #endregion Properties");
                 sb.AppendLine(@"");
                 sb.AppendLine(@"        #region Constructors");
@@ -91,17 +86,17 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"        {");
                 sb.AppendLine(@"            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);");
                 sb.AppendLine(@"            " + type.Name.Substring(0, 1).ToLower() + type.Name.Substring(1) + " = new " + type.Name + "();");
-                if (!ClassNotMapped)
-                {
-                    sb.AppendLine(@"            foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())");
-                    sb.AppendLine(@"            {");
-                    sb.AppendLine(@"                if (entityTypeTemp.Name == EntityName)");
-                    sb.AppendLine(@"                {");
-                    sb.AppendLine(@"                    entityType = entityTypeTemp;");
-                    sb.AppendLine(@"                    break;");
-                    sb.AppendLine(@"                }");
-                    sb.AppendLine(@"            }");
-                }
+                //if (!ClassNotMapped)
+                //{
+                //    sb.AppendLine(@"            foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())");
+                //    sb.AppendLine(@"            {");
+                //    sb.AppendLine(@"                if (entityTypeTemp.Name == EntityName)");
+                //    sb.AppendLine(@"                {");
+                //    sb.AppendLine(@"                    entityType = entityTypeTemp;");
+                //    sb.AppendLine(@"                    break;");
+                //    sb.AppendLine(@"                }");
+                //    sb.AppendLine(@"            }");
+                //}
                 sb.AppendLine(@"        }");
                 sb.AppendLine(@"        #endregion Constructors");
                 sb.AppendLine(@"");

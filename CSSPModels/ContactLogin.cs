@@ -16,8 +16,10 @@ namespace CSSPModels
         public int ContactID { get; set; }
         [StringLength(200)]
         public string LoginEmail { get; set; }
-        public byte[] PasswordHash { get; set; }
-        public byte[] PasswordSalt { get; set; }
+        [StringLength(200)]
+        public string PasswordHash { get; set; }
+        [StringLength(200)]
+        public string PasswordSalt { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]

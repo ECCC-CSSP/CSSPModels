@@ -144,12 +144,12 @@ namespace CSSPModels
         public string ResultsRecordedBy { get; set; }
         public DateTime? ResultsRecordedDate { get; set; }
         [Range(0.0f, 100.0f)]
-        public float? DailyDuplicateRlog { get; set; }
+        public float? DailyDuplicateRLog { get; set; }
         [Range(0.0f, 100.0f)]
         public float? DailyDuplicatePrecisionCriteria { get; set; }
         public bool? DailyDuplicateAcceptable { get; set; }
         [Range(0.0f, 100.0f)]
-        public float? IntertechDuplicateRlog { get; set; }
+        public float? IntertechDuplicateRLog { get; set; }
         [Range(0.0f, 100.0f)]
         public float? IntertechDuplicatePrecisionCriteria { get; set; }
         public bool? IntertechDuplicateAcceptable { get; set; }

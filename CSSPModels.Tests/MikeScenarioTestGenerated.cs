@@ -15,14 +15,19 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MikeScenario_Properties_OK()
         {
-            List<string> propNameList = new List<string>() { "MikeScenarioID", "MikeScenarioTVItemID", "ParentMikeScenarioID", "ScenarioStatus", "ErrorInfo", "MikeScenarioStartDateTime_Local", "MikeScenarioEndDateTime_Local", "MikeScenarioStartExecutionDateTime_Local", "MikeScenarioExecutionTime_min", "WindSpeed_km_h", "WindDirection_deg", "DecayFactor_per_day", "DecayIsConstant", "DecayFactorAmplitude", "ResultFrequency_min", "AmbientTemperature_C", "AmbientSalinity_PSU", "ManningNumber", "UseWebTide", "NumberOfElements", "NumberOfTimeSteps", "NumberOfSigmaLayers", "NumberOfZlayers", "NumberOfHydroOutputParameters", "NumberOfTransOutputParameters", "EstimatedHydroFileSize", "EstimatedTransFileSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MikeScenarioID", "MikeScenarioTVItemID", "ParentMikeScenarioID", "ScenarioStatus", "ErrorInfo", "MikeScenarioStartDateTime_Local", "MikeScenarioEndDateTime_Local", "MikeScenarioStartExecutionDateTime_Local", "MikeScenarioExecutionTime_min", "WindSpeed_km_h", "WindDirection_deg", "DecayFactor_per_day", "DecayIsConstant", "DecayFactorAmplitude", "ResultFrequency_min", "AmbientTemperature_C", "AmbientSalinity_PSU", "ManningNumber", "NumberOfElements", "NumberOfTimeSteps", "NumberOfSigmaLayers", "NumberOfZLayers", "NumberOfHydroOutputParameters", "NumberOfTransOutputParameters", "EstimatedHydroFileSize", "EstimatedTransFileSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (IProperty propertyType in entityType.GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MikeScenario).GetProperties().OrderBy(c => c.Name))
             {
-                Assert.AreEqual(propNameList[index], propertyType.Name);
-                index += 1;
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
             }
 
             Assert.AreEqual(propNameList.Count, index);
@@ -50,10 +55,13 @@ namespace CSSPModels.Tests
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (string foreignName in (from c in entityType.GetForeignKeys() orderby c.DependentToPrincipal.Name select c.DependentToPrincipal.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MikeScenario).GetProperties())
             {
-                Assert.AreEqual(foreignNameList[index], foreignName);
-                index += 1;
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
             }
 
             Assert.AreEqual(foreignNameList.Count, index);
@@ -97,11 +105,10 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MikeScenarioAmbientTemperature_C);
                Assert.IsNotNull(ModelsRes.MikeScenarioAmbientSalinity_PSU);
                Assert.IsNotNull(ModelsRes.MikeScenarioManningNumber);
-               Assert.IsNotNull(ModelsRes.MikeScenarioUseWebTide);
                Assert.IsNotNull(ModelsRes.MikeScenarioNumberOfElements);
                Assert.IsNotNull(ModelsRes.MikeScenarioNumberOfTimeSteps);
                Assert.IsNotNull(ModelsRes.MikeScenarioNumberOfSigmaLayers);
-               Assert.IsNotNull(ModelsRes.MikeScenarioNumberOfZlayers);
+               Assert.IsNotNull(ModelsRes.MikeScenarioNumberOfZLayers);
                Assert.IsNotNull(ModelsRes.MikeScenarioNumberOfHydroOutputParameters);
                Assert.IsNotNull(ModelsRes.MikeScenarioNumberOfTransOutputParameters);
                Assert.IsNotNull(ModelsRes.MikeScenarioEstimatedHydroFileSize);

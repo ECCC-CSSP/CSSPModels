@@ -14,15 +14,21 @@ namespace CSSPModels
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int ClimateSiteTVItemID { get; set; }
         public int ECDBID { get; set; }
+        [StringLength(100)]
         public string ClimateSiteName { get; set; }
+        [StringLength(4)]
         public string Province { get; set; }
-        public double? Elevation_m { get; set; }
+        public float? Elevation_m { get; set; }
+        [StringLength(10)]
         public string ClimateID { get; set; }
         public int? WMOID { get; set; }
+        [StringLength(3)]
         public string TCID { get; set; }
         public bool? IsProvincial { get; set; }
+        [StringLength(50)]
         public string ProvSiteID { get; set; }
-        public double? TimeOffset_hour { get; set; }
+        public float? TimeOffset_hour { get; set; }
+        [StringLength(50)]
         public string File_desc { get; set; }
         public DateTime? HourlyStartDate_Local { get; set; }
         public DateTime? HourlyEndDate_Local { get; set; }

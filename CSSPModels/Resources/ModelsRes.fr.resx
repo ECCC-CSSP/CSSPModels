@@ -210,11 +210,11 @@
 <data name="AppTaskTVItemID2" xml:space="preserve">
   <value>AppTaskTVItemID2</value>
 </data>
-<data name="AppTaskCommand" xml:space="preserve">
-  <value>AppTaskCommand</value>
+<data name="AppTaskAppTaskCommand" xml:space="preserve">
+  <value>AppTaskAppTaskCommand</value>
 </data>
-<data name="AppTaskStatus" xml:space="preserve">
-  <value>AppTaskStatus</value>
+<data name="AppTaskAppTaskStatus" xml:space="preserve">
+  <value>AppTaskAppTaskStatus</value>
 </data>
 <data name="AppTaskPercentCompleted" xml:space="preserve">
   <value>AppTaskPercentCompleted</value>
@@ -323,111 +323,6 @@
 </data>
 <data name="EmailDistributionListEmailDistributionListContacts" xml:space="preserve">
   <value>EmailDistributionListEmailDistributionListContacts</value>
-</data>
-<data name="CSSPAfterAttribute" xml:space="preserve">
-  <value>CSSPAfterAttribute</value>
-</data>
-<data name="CSSPAfterAttributeYear" xml:space="preserve">
-  <value>CSSPAfterAttributeYear</value>
-</data>
-<data name="CSSPAfterAttributeRequiresValidationContext" xml:space="preserve">
-  <value>CSSPAfterAttributeRequiresValidationContext</value>
-</data>
-<data name="CSSPAfterAttributeErrorMessage" xml:space="preserve">
-  <value>CSSPAfterAttributeErrorMessage</value>
-</data>
-<data name="CSSPAfterAttributeErrorMessageResourceName" xml:space="preserve">
-  <value>CSSPAfterAttributeErrorMessageResourceName</value>
-</data>
-<data name="CSSPAfterAttributeErrorMessageResourceType" xml:space="preserve">
-  <value>CSSPAfterAttributeErrorMessageResourceType</value>
-</data>
-<data name="CSSPAfterAttributeTypeId" xml:space="preserve">
-  <value>CSSPAfterAttributeTypeId</value>
-</data>
-<data name="CSSPAllowNullAttribute" xml:space="preserve">
-  <value>CSSPAllowNullAttribute</value>
-</data>
-<data name="CSSPAllowNullAttributeRequiresValidationContext" xml:space="preserve">
-  <value>CSSPAllowNullAttributeRequiresValidationContext</value>
-</data>
-<data name="CSSPAllowNullAttributeErrorMessage" xml:space="preserve">
-  <value>CSSPAllowNullAttributeErrorMessage</value>
-</data>
-<data name="CSSPAllowNullAttributeErrorMessageResourceName" xml:space="preserve">
-  <value>CSSPAllowNullAttributeErrorMessageResourceName</value>
-</data>
-<data name="CSSPAllowNullAttributeErrorMessageResourceType" xml:space="preserve">
-  <value>CSSPAllowNullAttributeErrorMessageResourceType</value>
-</data>
-<data name="CSSPAllowNullAttributeTypeId" xml:space="preserve">
-  <value>CSSPAllowNullAttributeTypeId</value>
-</data>
-<data name="CSSPBiggerAttribute" xml:space="preserve">
-  <value>CSSPBiggerAttribute</value>
-</data>
-<data name="CSSPBiggerAttributeOtherField" xml:space="preserve">
-  <value>CSSPBiggerAttributeOtherField</value>
-</data>
-<data name="CSSPBiggerAttributeRequiresValidationContext" xml:space="preserve">
-  <value>CSSPBiggerAttributeRequiresValidationContext</value>
-</data>
-<data name="CSSPBiggerAttributeErrorMessage" xml:space="preserve">
-  <value>CSSPBiggerAttributeErrorMessage</value>
-</data>
-<data name="CSSPBiggerAttributeErrorMessageResourceName" xml:space="preserve">
-  <value>CSSPBiggerAttributeErrorMessageResourceName</value>
-</data>
-<data name="CSSPBiggerAttributeErrorMessageResourceType" xml:space="preserve">
-  <value>CSSPBiggerAttributeErrorMessageResourceType</value>
-</data>
-<data name="CSSPBiggerAttributeTypeId" xml:space="preserve">
-  <value>CSSPBiggerAttributeTypeId</value>
-</data>
-<data name="CSSPEnumTypeAttribute" xml:space="preserve">
-  <value>CSSPEnumTypeAttribute</value>
-</data>
-<data name="CSSPEnumTypeAttributeRequiresValidationContext" xml:space="preserve">
-  <value>CSSPEnumTypeAttributeRequiresValidationContext</value>
-</data>
-<data name="CSSPEnumTypeAttributeErrorMessage" xml:space="preserve">
-  <value>CSSPEnumTypeAttributeErrorMessage</value>
-</data>
-<data name="CSSPEnumTypeAttributeErrorMessageResourceName" xml:space="preserve">
-  <value>CSSPEnumTypeAttributeErrorMessageResourceName</value>
-</data>
-<data name="CSSPEnumTypeAttributeErrorMessageResourceType" xml:space="preserve">
-  <value>CSSPEnumTypeAttributeErrorMessageResourceType</value>
-</data>
-<data name="CSSPEnumTypeAttributeTypeId" xml:space="preserve">
-  <value>CSSPEnumTypeAttributeTypeId</value>
-</data>
-<data name="CSSPExistAttribute" xml:space="preserve">
-  <value>CSSPExistAttribute</value>
-</data>
-<data name="CSSPExistAttributeTypeName" xml:space="preserve">
-  <value>CSSPExistAttributeTypeName</value>
-</data>
-<data name="CSSPExistAttributePlurial" xml:space="preserve">
-  <value>CSSPExistAttributePlurial</value>
-</data>
-<data name="CSSPExistAttributeFieldID" xml:space="preserve">
-  <value>CSSPExistAttributeFieldID</value>
-</data>
-<data name="CSSPExistAttributeRequiresValidationContext" xml:space="preserve">
-  <value>CSSPExistAttributeRequiresValidationContext</value>
-</data>
-<data name="CSSPExistAttributeErrorMessage" xml:space="preserve">
-  <value>CSSPExistAttributeErrorMessage</value>
-</data>
-<data name="CSSPExistAttributeErrorMessageResourceName" xml:space="preserve">
-  <value>CSSPExistAttributeErrorMessageResourceName</value>
-</data>
-<data name="CSSPExistAttributeErrorMessageResourceType" xml:space="preserve">
-  <value>CSSPExistAttributeErrorMessageResourceType</value>
-</data>
-<data name="CSSPExistAttributeTypeId" xml:space="preserve">
-  <value>CSSPExistAttributeTypeId</value>
 </data>
 <data name="MWQMSampleDuplicateItem" xml:space="preserve">
   <value>MWQMSampleDuplicateItem</value>
@@ -1827,6 +1722,9 @@
 <data name="ContactContactID" xml:space="preserve">
   <value>ContactContactID</value>
 </data>
+<data name="ContactId" xml:space="preserve">
+  <value>ContactId</value>
+</data>
 <data name="ContactContactTVItemID" xml:space="preserve">
   <value>ContactContactTVItemID</value>
 </data>
@@ -2523,8 +2421,8 @@
 <data name="LabSheetDetailResultsRecordedDate" xml:space="preserve">
   <value>LabSheetDetailResultsRecordedDate</value>
 </data>
-<data name="LabSheetDetailDailyDuplicateRlog" xml:space="preserve">
-  <value>LabSheetDetailDailyDuplicateRlog</value>
+<data name="LabSheetDetailDailyDuplicateRLog" xml:space="preserve">
+  <value>LabSheetDetailDailyDuplicateRLog</value>
 </data>
 <data name="LabSheetDetailDailyDuplicatePrecisionCriteria" xml:space="preserve">
   <value>LabSheetDetailDailyDuplicatePrecisionCriteria</value>
@@ -2532,8 +2430,8 @@
 <data name="LabSheetDetailDailyDuplicateAcceptable" xml:space="preserve">
   <value>LabSheetDetailDailyDuplicateAcceptable</value>
 </data>
-<data name="LabSheetDetailIntertechDuplicateRlog" xml:space="preserve">
-  <value>LabSheetDetailIntertechDuplicateRlog</value>
+<data name="LabSheetDetailIntertechDuplicateRLog" xml:space="preserve">
+  <value>LabSheetDetailIntertechDuplicateRLog</value>
 </data>
 <data name="LabSheetDetailIntertechDuplicatePrecisionCriteria" xml:space="preserve">
   <value>LabSheetDetailIntertechDuplicatePrecisionCriteria</value>
@@ -2811,9 +2709,6 @@
 <data name="MikeScenarioManningNumber" xml:space="preserve">
   <value>MikeScenarioManningNumber</value>
 </data>
-<data name="MikeScenarioUseWebTide" xml:space="preserve">
-  <value>MikeScenarioUseWebTide</value>
-</data>
 <data name="MikeScenarioNumberOfElements" xml:space="preserve">
   <value>MikeScenarioNumberOfElements</value>
 </data>
@@ -2823,8 +2718,8 @@
 <data name="MikeScenarioNumberOfSigmaLayers" xml:space="preserve">
   <value>MikeScenarioNumberOfSigmaLayers</value>
 </data>
-<data name="MikeScenarioNumberOfZlayers" xml:space="preserve">
-  <value>MikeScenarioNumberOfZlayers</value>
+<data name="MikeScenarioNumberOfZLayers" xml:space="preserve">
+  <value>MikeScenarioNumberOfZLayers</value>
 </data>
 <data name="MikeScenarioNumberOfHydroOutputParameters" xml:space="preserve">
   <value>MikeScenarioNumberOfHydroOutputParameters</value>
@@ -3605,6 +3500,9 @@
 </data>
 <data name="SamplingPlanIncludeLaboratoryQAQC" xml:space="preserve">
   <value>SamplingPlanIncludeLaboratoryQAQC</value>
+</data>
+<data name="SamplingPlanApprovalCode" xml:space="preserve">
+  <value>SamplingPlanApprovalCode</value>
 </data>
 <data name="SamplingPlanSamplingPlanFileTVItemID" xml:space="preserve">
   <value>SamplingPlanSamplingPlanFileTVItemID</value>

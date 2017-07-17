@@ -31,5 +31,24 @@ namespace CSSPModelsGenerateCodeHelper
         }
         #endregion Constructors
 
+        #region Functions private
+        public bool SkipType(Type type)
+        {
+            if (type.Name.StartsWith("<")
+                || type.Name.StartsWith("ModelsRes")
+                || type.Name.StartsWith("Application")
+                || type.Name.StartsWith("CSSPWebToolsDBContext")
+                || type.Name.StartsWith("CSSPAfter")
+                || type.Name.StartsWith("CSSPAllowNull")
+                || type.Name.StartsWith("CSSPBigger")
+                || type.Name.StartsWith("CSSPEnumType")
+                || type.Name.StartsWith("CSSPExist"))
+            {
+                return true;
+            }
+
+            return false;
+        }
+        #endregion Functions private
     }
 }

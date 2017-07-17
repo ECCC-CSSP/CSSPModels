@@ -36,6 +36,8 @@ namespace CSSPModels
         [Range(0.0f, 100.0f)]
         public float IntertechDuplicatePrecisionCriteria { get; set; }
         public bool IncludeLaboratoryQAQC { get; set; }
+        [StringLength(15)]
+        public string ApprovalCode { get; set; }
         [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int? SamplingPlanFileTVItemID { get; set; }

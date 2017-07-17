@@ -19,10 +19,15 @@ namespace CSSPModels.Tests
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (IProperty propertyType in entityType.GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVItem).GetProperties().OrderBy(c => c.Name))
             {
-                Assert.AreEqual(propNameList[index], propertyType.Name);
-                index += 1;
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
             }
 
             Assert.AreEqual(propNameList.Count, index);
@@ -50,10 +55,13 @@ namespace CSSPModels.Tests
             List<string> foreignNameCollectionList = new List<string>() { "AddressesAddressTVItem", "AddressesCountryTVItem", "AddressesMunicipalityTVItem", "AddressesProvinceTVItem", "AppTasksTVItem", "AppTasksTVItemID2Navigation", "BoxModels", "ClimateSites", "Contacts", "DocTemplates", "Emails", "EmailDistributionLists", "HydrometricSites", "Infrastructures", "LabSheetDetails", "LabSheetsAcceptedOrRejectedByContactTVItem", "LabSheetsMWQMRunTVItem", "LabSheetsSubsectorTVItem", "LabSheetTubeMPNDetails", "MapInfos", "MikeBoundaryConditions", "MikeScenarios", "MikeSources", "MWQMRunsLabSampleApprovalContactTVItem", "MWQMRunsMWQMRunTVItem", "MWQMRunsSubsectorTVItem", "MWQMSampleMWQMRunTVItem", "MWQMSampleMWQMSiteTVItem", "MWQMSites", "MWQMSiteStartEndDates", "MWQMSubsectors", "PolSourceObservationsContactTVItem", "PolSourceObservationsPolSourceSiteTVItem", "PolSourceSites", "SamplingPlansCreatorTVItem", "SamplingPlansProvinceTVItem", "SamplingPlansSamplingPlanFileTVItem", "SamplingPlanSubsectors", "SamplingPlanSubsectorSites", "SpillsInfrastructureTVItem", "SpillsMunicipalityTVItem", "Tels", "TideDataValues", "TideSites", "TVFiles", "TVItemLanguages", "TVItemLinksFromTVItem", "TVItemLinksToTVItem", "TVItemStats", "TVItemUserAuthorizationsContactTVItem", "TVItemUserAuthorizationsTVItemID1Navigation", "TVTypeUserAuthorizations", "UseOfSitesSiteTVItem", "UseOfSitesSubsectorTVItem", "VPScenarios", "InverseParent",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (string foreignName in (from c in entityType.GetForeignKeys() orderby c.DependentToPrincipal.Name select c.DependentToPrincipal.Name))
+            foreach (PropertyInfo propertyInfo in typeof(TVItem).GetProperties())
             {
-                Assert.AreEqual(foreignNameList[index], foreignName);
-                index += 1;
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
             }
 
             Assert.AreEqual(foreignNameList.Count, index);

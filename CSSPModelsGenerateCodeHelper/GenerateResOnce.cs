@@ -34,7 +34,7 @@ namespace CSSPModelsGenerateCodeHelper
                 LabelStatus.Refresh();
                 Application.DoEvents();
 
-                if (type.Name.StartsWith("<") || type.Name.StartsWith("ModelsRes") || type.Name.StartsWith("Application") || type.Name.StartsWith("CSSPWebToolsDBContext"))
+                if (SkipType(type))
                 {
                     continue;
                 }
