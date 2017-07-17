@@ -19,9 +19,9 @@ namespace CSSPModels.Tests
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (IProperty propertyType in entityType.GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Address).GetProperties().OrderBy(c => c.Name))
             {
-                Assert.AreEqual(propNameList[index], propertyType.Name);
+                Assert.AreEqual(propNameList[index], propertyInfo.PropertyType.Name);
                 index += 1;
             }
 
@@ -50,10 +50,13 @@ namespace CSSPModels.Tests
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (string foreignName in (from c in entityType.GetForeignKeys() orderby c.DependentToPrincipal.Name select c.DependentToPrincipal.Name))
+            foreach (PropertyInfo propertyInfo in typeof(Address).GetProperties())
             {
-                Assert.AreEqual(foreignNameList[index], foreignName);
-                index += 1;
+                if (propertyInfo.GetGetMethod().IsVirtual)
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
             }
 
             Assert.AreEqual(foreignNameList.Count, index);

@@ -205,29 +205,29 @@ namespace CSSPModels
         //{
         //    modelBuilder.Entity<Address>(entity =>
         //    {
-        //        //entity.HasOne(d => d.AddressTVItem)
-        //        //    .WithMany(p => p.AddressesAddressTVItem)
-        //        //    .HasForeignKey(d => d.AddressTVItemID)
-        //        //    .OnDelete(DeleteBehavior.Restrict)
-        //        //    .HasConstraintName("FK_Addresses_AddressTVItemID");
+        //        entity.HasOne(d => d.AddressTVItem)
+        //            .WithMany(p => p.AddressesAddressTVItem)
+        //            .HasForeignKey(d => d.AddressTVItemID)
+        //            .OnDelete(DeleteBehavior.Restrict)
+        //            .HasConstraintName("FK_Addresses_AddressTVItemID");
 
-        //        //entity.HasOne(d => d.CountryTVItem)
-        //        //    .WithMany(p => p.AddressesCountryTVItem)
-        //        //    .HasForeignKey(d => d.CountryTVItemID)
-        //        //    .OnDelete(DeleteBehavior.Restrict)
-        //        //    .HasConstraintName("FK_Addresses_CountryTVItemID");
+        //        entity.HasOne(d => d.CountryTVItem)
+        //            .WithMany(p => p.AddressesCountryTVItem)
+        //            .HasForeignKey(d => d.CountryTVItemID)
+        //            .OnDelete(DeleteBehavior.Restrict)
+        //            .HasConstraintName("FK_Addresses_CountryTVItemID");
 
-        //        //entity.HasOne(d => d.ProvinceTVItem)
-        //        //    .WithMany(p => p.AddressesProvinceTVItem)
-        //        //    .HasForeignKey(d => d.ProvinceTVItemID)
-        //        //    .OnDelete(DeleteBehavior.Restrict)
-        //        //    .HasConstraintName("FK_Addresses_ProvinceTVItemID");
+        //        entity.HasOne(d => d.ProvinceTVItem)
+        //            .WithMany(p => p.AddressesProvinceTVItem)
+        //            .HasForeignKey(d => d.ProvinceTVItemID)
+        //            .OnDelete(DeleteBehavior.Restrict)
+        //            .HasConstraintName("FK_Addresses_ProvinceTVItemID");
 
-        //        //entity.HasOne(d => d.MunicipalityTVItem)
-        //        //    .WithMany(p => p.AddressesMunicipalityTVItem)
-        //        //    .HasForeignKey(d => d.MunicipalityTVItemID)
-        //        //    .OnDelete(DeleteBehavior.Restrict)
-        //        //    .HasConstraintName("FK_Addresses_MunicipalityTVItemID");
+        //        entity.HasOne(d => d.MunicipalityTVItem)
+        //            .WithMany(p => p.AddressesMunicipalityTVItem)
+        //            .HasForeignKey(d => d.MunicipalityTVItemID)
+        //            .OnDelete(DeleteBehavior.Restrict)
+        //            .HasConstraintName("FK_Addresses_MunicipalityTVItemID");
 
         //    });
         //}
@@ -337,6 +337,7 @@ namespace CSSPModels
         //        entity.HasOne(d => d.Contact)
         //          .WithMany(p => p.ContactLogins)
         //          .HasForeignKey(d => d.ContactID)
+        //          .OnDelete(DeleteBehavior.Restrict)
         //          .HasConstraintName("FK_ContactShortcuts_Contacts");
         //    });
         //}
@@ -387,22 +388,23 @@ namespace CSSPModels
         //{
         //    modelBuilder.Entity<EmailDistributionList>(entity =>
         //    {
-        //    //    entity.HasOne(d => d.CountryTVItem)
-        //    //        .WithMany(p => p.EmailDistributionListContact)
-        //    //        .HasForeignKey(d => d.EmailDistributionListID)
-        //    //        .OnDelete(DeleteBehavior.Restrict)
-        //    //        .HasConstraintName("FK_CountryTVItemID_TVItems");
+        //        entity.HasOne(d => d.CountryTVItem)
+        //            .WithMany(p => p.EmailDistributionLists)
+        //            .HasForeignKey(d => d.CountryTVItemID)
+        //            .OnDelete(DeleteBehavior.Restrict)
+        //            .HasConstraintName("FK_EmailDistributionLists_TVItems");
         //    });
         //}
         //private void OnModelCreating_EmailDistributionListContact(ModelBuilder modelBuilder)
         //{
         //    modelBuilder.Entity<EmailDistributionListContact>(entity =>
         //    {
-        //        //entity.HasOne(d => d.EmailTVItem)
-        //        //    .WithMany(p => p.Emails)
-        //        //    .HasForeignKey(d => d.EmailTVItemID)
-        //        //    .OnDelete(DeleteBehavior.Restrict)
-        //        //    .HasConstraintName("FK_EmailTVItemID_TVItems");
+        //        entity.HasOne(d => d.EmailDistributionList)
+        //            .WithMany(p => p.EmailDistributionListContacts)
+        //            .HasForeignKey(d => d.EmailDistributionListID)
+        //            .OnDelete(DeleteBehavior.Restrict)
+        //            .HasConstraintName("FK_EmailDistributionListContacts_EmailDistributionLists");
+
         //    });
         //}
         //private void OnModelCreating_HydrometricDataValue(ModelBuilder modelBuilder)

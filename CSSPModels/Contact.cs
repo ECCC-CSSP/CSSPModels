@@ -59,6 +59,7 @@ namespace CSSPModels
         #region Constructors
         public Contact()
         {
+            ContactLogins = new HashSet<ContactLogin>();
             ContactPreferences = new HashSet<ContactPreference>();
             ContactShortcuts = new HashSet<ContactShortcut>();
         }

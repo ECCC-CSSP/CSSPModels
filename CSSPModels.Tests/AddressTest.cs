@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         #region Properties
         private CSSPWebToolsDBContext db { get; set; }
         private Address address { get; set; }
-        private IEntityType entityType { get; set; }
+        //private IEntityType entityType { get; set; }
         private string EntityName = "CSSPModels.Address";
         #endregion Properties
 
@@ -27,14 +27,14 @@ namespace CSSPModels.Tests
         {
             db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
             address = new Address();
-            foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())
-            {
-                if (entityTypeTemp.Name == EntityName)
-                {
-                    entityType = entityTypeTemp;
-                    break;
-                }
-            }
+            //foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())
+            //{
+            //    if (entityTypeTemp.Name == EntityName)
+            //    {
+            //        entityType = entityTypeTemp;
+            //        break;
+            //    }
+            //}
         }
         #endregion Constructors
 

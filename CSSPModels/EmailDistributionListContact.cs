@@ -44,7 +44,7 @@ namespace CSSPModels
         #region Constructors
         public EmailDistributionListContact()
         {
-            // empty for now
+            // nothing for now
         }
         #endregion Constructors
     }

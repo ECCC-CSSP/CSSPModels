@@ -11176,6 +11176,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TVItemEmailDistributionLists.
+        /// </summary>
+        public static string TVItemEmailDistributionLists {
+            get {
+                return ResourceManager.GetString("TVItemEmailDistributionLists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TVItemEmails.
         /// </summary>
         public static string TVItemEmails {

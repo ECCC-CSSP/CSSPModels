@@ -4002,6 +4002,9 @@
   <data name="TVItemEmails" xml:space="preserve">
     <value>TVItemEmails</value>
   </data>
+  <data name="TVItemEmailDistributionLists" xml:space="preserve">
+    <value>TVItemEmailDistributionLists</value>
+  </data>
   <data name="TVItemHydrometricSites" xml:space="preserve">
     <value>TVItemHydrometricSites</value>
   </data>

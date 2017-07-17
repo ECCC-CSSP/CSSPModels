@@ -36,7 +36,7 @@ namespace CSSPModels
         #region Constructors
         public EmailDistributionList()
         {
-            // empty for now
+            EmailDistributionListContacts = new HashSet<EmailDistributionListContact>();
         }
         #endregion Constructors
     }

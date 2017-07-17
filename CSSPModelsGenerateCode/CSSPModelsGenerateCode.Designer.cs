@@ -42,6 +42,7 @@
             this.lblBaseDir = new System.Windows.Forms.Label();
             this.butGenerateSetupOnce = new System.Windows.Forms.Button();
             this.butGenerateResOnce = new System.Windows.Forms.Button();
+            this.butRunModelLint = new System.Windows.Forms.Button();
             this.butGenerateAllCodeFiles = new System.Windows.Forms.Button();
             this.richTextBoxStatus = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -71,13 +72,14 @@
             this.splitContainer1.Panel1.Controls.Add(this.lblBaseDir);
             this.splitContainer1.Panel1.Controls.Add(this.butGenerateSetupOnce);
             this.splitContainer1.Panel1.Controls.Add(this.butGenerateResOnce);
+            this.splitContainer1.Panel1.Controls.Add(this.butRunModelLint);
             this.splitContainer1.Panel1.Controls.Add(this.butGenerateAllCodeFiles);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.richTextBoxStatus);
             this.splitContainer1.Size = new System.Drawing.Size(905, 671);
-            this.splitContainer1.SplitterDistance = 497;
+            this.splitContainer1.SplitterDistance = 346;
             this.splitContainer1.TabIndex = 3;
             // 
             // panel2
@@ -85,7 +87,7 @@
             this.panel2.Controls.Add(this.lblStatusText);
             this.panel2.Controls.Add(this.lblStatus);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 466);
+            this.panel2.Location = new System.Drawing.Point(0, 315);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(905, 31);
             this.panel2.TabIndex = 30;
@@ -196,6 +198,16 @@
             this.butGenerateResOnce.UseVisualStyleBackColor = true;
             this.butGenerateResOnce.Click += new System.EventHandler(this.butGenerateResOnce_Click);
             // 
+            // butRunModelLint
+            // 
+            this.butRunModelLint.Location = new System.Drawing.Point(242, 242);
+            this.butRunModelLint.Name = "butRunModelLint";
+            this.butRunModelLint.Size = new System.Drawing.Size(199, 23);
+            this.butRunModelLint.TabIndex = 11;
+            this.butRunModelLint.Text = "Run Model Lint";
+            this.butRunModelLint.UseVisualStyleBackColor = true;
+            this.butRunModelLint.Click += new System.EventHandler(this.butRunModelLint_Click);
+            // 
             // butGenerateAllCodeFiles
             // 
             this.butGenerateAllCodeFiles.Location = new System.Drawing.Point(72, 197);
@@ -211,7 +223,7 @@
             this.richTextBoxStatus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxStatus.Location = new System.Drawing.Point(0, 0);
             this.richTextBoxStatus.Name = "richTextBoxStatus";
-            this.richTextBoxStatus.Size = new System.Drawing.Size(905, 170);
+            this.richTextBoxStatus.Size = new System.Drawing.Size(905, 321);
             this.richTextBoxStatus.TabIndex = 0;
             this.richTextBoxStatus.Text = "";
             // 
@@ -252,6 +264,7 @@
         private System.Windows.Forms.RichTextBox richTextBoxStatus;
         private System.Windows.Forms.Button butGenerateSetupOnce;
         private System.Windows.Forms.Button butGenerateResOnce;
+        private System.Windows.Forms.Button butRunModelLint;
     }
 }
 

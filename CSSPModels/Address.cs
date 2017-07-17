@@ -17,7 +17,7 @@ namespace CSSPModels
         public int AddressID { get; set; }
         [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
-        public int AddressTVItemID { get; set; }
+        public int? AddressTVItemID { get; set; }
         [CSSPEnumType]
         public AddressTypeEnum AddressType { get; set; }
         [Range(1, -1)]

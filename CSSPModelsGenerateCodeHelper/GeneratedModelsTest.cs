@@ -45,10 +45,10 @@ namespace CSSPModelsGenerateCodeHelper
                     continue;
                 }
 
-                //if (type.Name != "BoxModel")
-                //{
-                //    continue;
-                //}
+                if (type.Name != "Address")
+                {
+                    continue;
+                }
 
                 foreach (CustomAttributeData customAttributeData in type.CustomAttributes)
                 {
@@ -120,9 +120,9 @@ namespace CSSPModelsGenerateCodeHelper
                 if (!ClassNotMapped)
                 {
                     sb.AppendLine(@"            int index = 0;");
-                    sb.AppendLine(@"            foreach (IProperty propertyType in entityType.GetProperties().OrderBy(c => c.Name))");
+                    sb.AppendLine(@"            foreach (PropertyInfo propertyInfo in typeof(" + type + ").GetProperties().OrderBy(c => c.Name))");
                     sb.AppendLine(@"            {");
-                    sb.AppendLine(@"                Assert.AreEqual(propNameList[index], propertyType.Name);");
+                    sb.AppendLine(@"                Assert.AreEqual(propNameList[index], propertyInfo.PropertyType.Name);");
                     sb.AppendLine(@"                index += 1;");
                     sb.AppendLine(@"            }");
                     sb.AppendLine(@"");
@@ -166,17 +166,17 @@ namespace CSSPModelsGenerateCodeHelper
                     StringBuilder sbVar2 = new StringBuilder();
                     StringBuilder sbCollection = new StringBuilder();
 
-                    foreach (PropertyInfo prop in type.GetProperties())
+                    foreach (PropertyInfo propertyInfo in type.GetProperties())
                     {
-                        if (prop.GetGetMethod().IsVirtual)
+                        if (propertyInfo.GetGetMethod().IsVirtual)
                         {
-                            if (prop.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                            if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                             {
-                                sbCollection.Append(@"""" + prop.Name + @""", ");
+                                sbCollection.Append(@"""" + propertyInfo.Name + @""", ");
                             }
                             else
                             {
-                                sbVar2.Append(@"""" + prop.Name + @""", ");
+                                sbVar2.Append(@"""" + propertyInfo.Name + @""", ");
                             }
                         }
                     }
@@ -185,10 +185,13 @@ namespace CSSPModelsGenerateCodeHelper
                     sb.AppendLine(@"            List<string> foreignNameCollectionList = new List<string>() { " + sbCollection.ToString() + @" }.OrderBy(c => c).ToList();");
                     sb.AppendLine(@"");
                     sb.AppendLine(@"            int index = 0;");
-                    sb.AppendLine(@"            foreach (string foreignName in (from c in entityType.GetForeignKeys() orderby c.DependentToPrincipal.Name select c.DependentToPrincipal.Name))");
+                    sb.AppendLine(@"            foreach (PropertyInfo propertyInfo in typeof(" + type.Name + @").GetProperties())");
                     sb.AppendLine(@"            {");
-                    sb.AppendLine(@"                Assert.AreEqual(foreignNameList[index], foreignName);");
-                    sb.AppendLine(@"                index += 1;");
+                    sb.AppendLine(@"                if (propertyInfo.GetGetMethod().IsVirtual)");
+                    sb.AppendLine(@"                {");
+                    sb.AppendLine(@"                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));");
+                    sb.AppendLine(@"                    index += 1;");
+                    sb.AppendLine(@"                }");
                     sb.AppendLine(@"            }");
                     sb.AppendLine(@"");
                     sb.AppendLine(@"            Assert.AreEqual(foreignNameList.Count, index);");

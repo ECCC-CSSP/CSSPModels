@@ -41,6 +41,7 @@ namespace CSSPModels
         public virtual ICollection<Contact> Contacts { get; set; }
         public virtual ICollection<DocTemplate> DocTemplates { get; set; }
         public virtual ICollection<Email> Emails { get; set; }
+        public virtual ICollection<EmailDistributionList> EmailDistributionLists { get; set; }
         public virtual ICollection<HydrometricSite> HydrometricSites { get; set; }
         public virtual ICollection<Infrastructure> Infrastructures { get; set; }
         public virtual ICollection<LabSheetDetail> LabSheetDetails { get; set; }
@@ -107,6 +108,7 @@ namespace CSSPModels
             Contacts = new HashSet<Contact>();
             DocTemplates = new HashSet<DocTemplate>();
             Emails = new HashSet<Email>();
+            EmailDistributionLists = new HashSet<EmailDistributionList>();
             HydrometricSites = new HashSet<HydrometricSite>();
             Infrastructures = new HashSet<Infrastructure>();
             LabSheetDetails = new HashSet<LabSheetDetail>();
