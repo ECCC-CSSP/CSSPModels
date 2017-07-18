@@ -22,6 +22,7 @@ namespace CSSPModels
         public float MikeBoundaryConditionLength_m { get; set; }
         [StringLength(100)]
         public string MikeBoundaryConditionFormat { get; set; }
+        [CSSPEnumType]
         public MikeBoundaryConditionLevelOrVelocityEnum MikeBoundaryConditionLevelOrVelocity { get; set; }
         [CSSPEnumType]
         public WebTideDataSetEnum WebTideDataSet { get; set; }

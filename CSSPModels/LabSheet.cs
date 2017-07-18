@@ -49,6 +49,7 @@ namespace CSSPModels
         [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int? AcceptedOrRejectedByContactTVItemID { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? AcceptedOrRejectedDateTime { get; set; }
         [StringLength(250)]
         [CSSPAllowNull]

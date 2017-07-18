@@ -26,9 +26,10 @@ namespace CSSPModels
         public string Parameters { get; set; }
         [CSSPEnumType]
         public LanguageEnum Language { get; set; }
-        [CSSPBigger(OtherField = "EndDateTime_UTC")]
         [CSSPAfter(Year = 1980)]
         public DateTime StartDateTime_UTC { get; set; }
+        [CSSPAfter(Year = 1980)]
+        [CSSPBigger(OtherField = "StartDateTime_UTC")]
         public DateTime? EndDateTime_UTC { get; set; }
         [Range(0, 1000000)]
         public int? EstimatedLength_second { get; set; }

@@ -16,6 +16,7 @@ namespace CSSPModels
         [CSSPAfter(Year = 1980)]
         public DateTime StartDate { get; set; }
         [CSSPBigger(OtherField = "StartDate")]
+        [CSSPAfter(Year = 1980)]
         public DateTime? EndDate { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

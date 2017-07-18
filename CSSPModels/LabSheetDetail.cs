@@ -21,6 +21,7 @@ namespace CSSPModels
         public int SubsectorTVItemID { get; set; }
         [Range(1, 5)]
         public int Version { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime RunDate { get; set; }
         [StringLength(7, MinimumLength = 1)]
         public string Tides { get; set; }
@@ -29,11 +30,17 @@ namespace CSSPModels
         public string SampleCrewInitials { get; set; }
         [Range(1, 3)]
         public int? WaterBathCount { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? IncubationBath1StartTime { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? IncubationBath2StartTime { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? IncubationBath3StartTime { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? IncubationBath1EndTime { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? IncubationBath2EndTime { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? IncubationBath3EndTime { get; set; }
         [Range(0, 10000)]
         public int? IncubationBath1TimeCalculated_minutes { get; set; }
@@ -134,14 +141,17 @@ namespace CSSPModels
         [StringLength(20)]
         [CSSPAllowNull]
         public string SalinitiesReadBy { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? SalinitiesReadDate { get; set; }
         [StringLength(20)]
         [CSSPAllowNull]
         public string ResultsReadBy { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? ResultsReadDate { get; set; }
         [StringLength(20)]
         [CSSPAllowNull]
         public string ResultsRecordedBy { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? ResultsRecordedDate { get; set; }
         [Range(0.0f, 100.0f)]
         public float? DailyDuplicateRLog { get; set; }

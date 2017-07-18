@@ -16,6 +16,7 @@ namespace CSSPModels
         public int ContactID { get; set; }
         [CSSPEnumType]
         public TVTypeEnum TVType { get; set; }
+        [Range(1, 1000)]
         public int MarkerSize { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

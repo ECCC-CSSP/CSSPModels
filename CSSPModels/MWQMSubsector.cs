@@ -39,17 +39,23 @@ namespace CSSPModels
         public float? RainDay9Limit { get; set; }
         [Range(0.0f, 300.0f)]
         public float? RainDay10Limit { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? IncludeRainStartDate { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? IncludeRainEndDate { get; set; }
         [Range(0, 10)]
         public int? IncludeRainRunCount { get; set; }
         public bool? IncludeRainSelectFullYear { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? NoRainStartDate { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? NoRainEndDate { get; set; }
         [Range(0, 10)]
         public int? NoRainRunCount { get; set; }
         public bool? NoRainSelectFullYear { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? OnlyRainStartDate { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? OnlyRainEndDate { get; set; }
         [Range(0, 10)]
         public int? OnlyRainRunCount { get; set; }

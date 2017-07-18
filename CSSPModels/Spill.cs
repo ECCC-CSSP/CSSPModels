@@ -19,6 +19,8 @@ namespace CSSPModels
         public int? InfrastructureTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime StartDateTime_Local { get; set; }
+        [CSSPBigger(OtherField = "StartDateTime_Local")]
+        [CSSPAfter(Year = 1980)]
         public DateTime? EndDateTime_Local { get; set; }
         [Range(0.0f, 1000000.0f)]
         public float AverageFlow_m3_day { get; set; }

@@ -21,7 +21,10 @@ namespace CSSPModels
         public TVTypeEnum FromTVType { get; set; }
         [CSSPEnumType]
         public TVTypeEnum ToTVType { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? StartDateTime_Local { get; set; }
+        [CSSPBigger(OtherField = "StartDateTime_Local")]
+        [CSSPAfter(Year = 1980)]
         public DateTime? EndDateTime_Local { get; set; }
         [Range(0, 100)]
         public int Ordinal { get; set; }

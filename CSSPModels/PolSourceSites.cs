@@ -35,6 +35,8 @@ namespace CSSPModels
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int LastUpdateContactTVItemID { get; set; }
 
+
+        public virtual ICollection<PolSourceObservation> PolSourceObservations { get; set; }
         public virtual TVItem PolSourceSiteTVItem { get; set; }
         #endregion Properties in DB
 

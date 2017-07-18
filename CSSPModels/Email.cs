@@ -15,6 +15,7 @@ namespace CSSPModels
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int EmailTVItemID { get; set; }
         [StringLength(255)]
+        [DataType(DataType.EmailAddress)]
         public string EmailAddress { get; set; }
         [CSSPEnumType]
         public EmailTypeEnum EmailType { get; set; }

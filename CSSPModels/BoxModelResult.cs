@@ -16,18 +16,29 @@ namespace CSSPModels
         public int BoxModelID { get; set; }
         [CSSPEnumType]
         public BoxModelResultTypeEnum BoxModelResultType { get; set; }
+        [Range(0.0f, -1.0f)]
         public float Volume_m3 { get; set; }
+        [Range(0.0f, -1.0f)]
         public float Surface_m2 { get; set; }
+        [Range(0.0f, 100000.0f)]
         public float Radius_m { get; set; }
+        [Range(0.0f, 360.0f)]
         public float LeftSideDiameterLineAngle_deg { get; set; }
+        [Range(-90.0f, 90.0f)]
         public float CircleCenterLatitude { get; set; }
+        [Range(-180.0f, 180.0f)]
         public float CircleCenterLongitude { get; set; }
         public bool FixLength { get; set; }
         public bool FixWidth { get; set; }
+        [Range(0.0f, 100000.0f)]
         public float RectLength_m { get; set; }
+        [Range(0.0f, 100000.0f)]
         public float RectWidth_m { get; set; }
+        [Range(0.0f, 360.0f)]
         public float LeftSideLineAngle_deg { get; set; }
+        [Range(-90.0f, 90.0f)]
         public float LeftSideLineStartLatitude { get; set; }
+        [Range(-180.0f, 180.0f)]
         public float LeftSideLineStartLongitude { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

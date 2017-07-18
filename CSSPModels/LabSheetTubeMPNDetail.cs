@@ -19,6 +19,7 @@ namespace CSSPModels
         [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int MWQMSiteTVItemID { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? SampleDateTime { get; set; }
         [Range(1, 10000000)]
         public int? MPN { get; set; }

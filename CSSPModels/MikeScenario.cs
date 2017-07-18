@@ -24,6 +24,7 @@ namespace CSSPModels
         public DateTime MikeScenarioStartDateTime_Local { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime MikeScenarioEndDateTime_Local { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? MikeScenarioStartExecutionDateTime_Local { get; set; }
         [Range(1.0f, 100000.0f)]
         public float? MikeScenarioExecutionTime_min { get; set; }

@@ -23,8 +23,12 @@ namespace CSSPModels
         public DateTime DateTime_Local { get; set; }
         [Range(1, 1000)]
         public int RunNumber { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? StartDateTime_Local { get; set; }
+        [CSSPBigger(OtherField = "StartDateTime_Local")]
+        [CSSPAfter(Year = 1980)]
         public DateTime? EndDateTime_Local { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? LabReceivedDateTime_Local { get; set; }
         [Range(-10.0f, 40.0f)]
         public float? TemperatureControl1_C { get; set; }
@@ -57,11 +61,16 @@ namespace CSSPModels
         [CSSPEnumType]
         [CSSPAllowNull]
         public SampleStatusEnum? SampleStatus { get; set; }
+        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int? LabSampleApprovalContactTVItemID { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? LabAnalyzeBath1IncubationStartDateTime_Local { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? LabAnalyzeBath2IncubationStartDateTime_Local { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? LabAnalyzeBath3IncubationStartDateTime_Local { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? LabRunSampleApprovalDateTime_Local { get; set; }
         [CSSPEnumType]
         [CSSPAllowNull]

@@ -34,7 +34,7 @@ namespace CSSPModels
         public virtual ICollection<Address> AddressesCountryTVItem { get; set; }
         public virtual ICollection<Address> AddressesMunicipalityTVItem { get; set; }
         public virtual ICollection<Address> AddressesProvinceTVItem { get; set; }
-        public virtual ICollection<AppTask> AppTasksTVItem { get; set; }
+        public virtual ICollection<AppTask> AppTasksTVItemIDNavigation { get; set; }
         public virtual ICollection<AppTask> AppTasksTVItemID2Navigation { get; set; }
         public virtual ICollection<BoxModel> BoxModels { get; set; }
         public virtual ICollection<ClimateSite> ClimateSites { get; set; }
@@ -101,7 +101,7 @@ namespace CSSPModels
             AddressesCountryTVItem = new HashSet<Address>();
             AddressesMunicipalityTVItem = new HashSet<Address>();
             AddressesProvinceTVItem = new HashSet<Address>();
-            AppTasksTVItem = new HashSet<AppTask>();
+            AppTasksTVItemIDNavigation = new HashSet<AppTask>();
             AppTasksTVItemID2Navigation = new HashSet<AppTask>();
             BoxModels = new HashSet<BoxModel>();
             ClimateSites = new HashSet<ClimateSite>();

@@ -13,30 +13,40 @@ namespace CSSPModels
         [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int ClimateSiteTVItemID { get; set; }
+        [Range(1, 100000)]
         public int ECDBID { get; set; }
         [StringLength(100)]
         public string ClimateSiteName { get; set; }
         [StringLength(4)]
         public string Province { get; set; }
+        [Range(0.0f, 10000.0f)]
         public float? Elevation_m { get; set; }
         [StringLength(10)]
         public string ClimateID { get; set; }
+        [Range(1, 100000)]
         public int? WMOID { get; set; }
         [StringLength(3)]
         public string TCID { get; set; }
         public bool? IsProvincial { get; set; }
         [StringLength(50)]
         public string ProvSiteID { get; set; }
+        [Range(-10.0f, 0.0f)]
         public float? TimeOffset_hour { get; set; }
         [StringLength(50)]
         public string File_desc { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? HourlyStartDate_Local { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? HourlyEndDate_Local { get; set; }
         public bool? HourlyNow { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? DailyStartDate_Local { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? DailyEndDate_Local { get; set; }
         public bool? DailyNow { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? MonthlyStartDate_Local { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime? MonthlyEndDate_Local { get; set; }
         public bool? MonthlyNow { get; set; }
         [CSSPAfter(Year = 1980)]

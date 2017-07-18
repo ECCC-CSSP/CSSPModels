@@ -14,10 +14,15 @@ namespace CSSPModels
         [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int InfrastructureTVItemID { get; set; }
+        [Range(0, 100000)]
         public int? PrismID { get; set; }
+        [Range(0, 100000)]
         public int? TPID { get; set; }
+        [Range(0, 100000)]
         public int? LSID { get; set; }
+        [Range(0, 100000)]
         public int? SiteID { get; set; }
+        [Range(0, 100000)]
         public int? Site { get; set; }
         [StringLength(1, MinimumLength = 1)]
         [CSSPAllowNull]
@@ -77,6 +82,7 @@ namespace CSSPModels
         public string TempCatchAllRemoveLater { get; set; }
         [Range(0.0f, 1000.0f)]
         public float? AverageDepth_m { get; set; }
+        [Range(1, 1000)]
         public int? NumberOfPorts { get; set; }
         [Range(0.0f, 10.0f)]
         public float? PortDiameter_m { get; set; }

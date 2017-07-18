@@ -28,6 +28,7 @@ namespace CSSPModels
         public virtual ICollection<PolSourceObservationIssue> PolSourceObservationIssues { get; set; }
         public virtual TVItem ContactTVItem { get; set; }
         public virtual TVItem PolSourceSiteTVItem { get; set; }
+        public virtual PolSourceSite PolSourceSite { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

@@ -15,6 +15,7 @@ namespace CSSPModels
         public int MikeSourceID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime StartDateAndTime_Local { get; set; }
+        [CSSPBigger(OtherField = "StartDateAndTime_Local")]
         [CSSPAfter(Year = 1980)]
         public DateTime EndDateAndTime_Local { get; set; }
         [Range(0.0f, 1000000.0f)]
