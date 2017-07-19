@@ -3321,6 +3321,9 @@
 <data name="PolSourceObservationPolSourceSiteTVItem" xml:space="preserve">
   <value>PolSourceObservationPolSourceSiteTVItem</value>
 </data>
+<data name="PolSourceObservationPolSourceSite" xml:space="preserve">
+  <value>PolSourceObservationPolSourceSite</value>
+</data>
 <data name="PolSourceObservationIssue" xml:space="preserve">
   <value>PolSourceObservationIssue</value>
 </data>
@@ -3380,6 +3383,9 @@
 </data>
 <data name="PolSourceSiteLastUpdateContactTVItemID" xml:space="preserve">
   <value>PolSourceSiteLastUpdateContactTVItemID</value>
+</data>
+<data name="PolSourceSitePolSourceObservations" xml:space="preserve">
+  <value>PolSourceSitePolSourceObservations</value>
 </data>
 <data name="PolSourceSitePolSourceSiteTVItem" xml:space="preserve">
   <value>PolSourceSitePolSourceSiteTVItem</value>
@@ -3885,8 +3891,8 @@
 <data name="TVItemAddressesProvinceTVItem" xml:space="preserve">
   <value>TVItemAddressesProvinceTVItem</value>
 </data>
-<data name="TVItemAppTasksTVItem" xml:space="preserve">
-  <value>TVItemAppTasksTVItem</value>
+<data name="TVItemAppTasksTVItemIDNavigation" xml:space="preserve">
+  <value>TVItemAppTasksTVItemIDNavigation</value>
 </data>
 <data name="TVItemAppTasksTVItemID2Navigation" xml:space="preserve">
   <value>TVItemAppTasksTVItemID2Navigation</value>

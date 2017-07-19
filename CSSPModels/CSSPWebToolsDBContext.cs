@@ -816,113 +816,270 @@ namespace CSSPModels
                 .WithOne(c => c.SubsectorTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.LabSheetTubeMPNDetails)
+                .WithOne(c => c.MWQMSiteTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.MapInfos)
+                .WithOne(c => c.TVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.MikeBoundaryConditions)
+                .WithOne(c => c.MikeBoundaryConditionTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.MikeScenarios)
+                .WithOne(c => c.MikeScenarioTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.MikeSources)
+                .WithOne(c => c.MikeSourceTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.MWQMRunsLabSampleApprovalContactTVItem)
+                .WithOne(c => c.LabSampleApprovalContactTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.MWQMRunsMWQMRunTVItem)
+                .WithOne(c => c.MWQMRunTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.MWQMRunsSubsectorTVItem)
+                .WithOne(c => c.SubsectorTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.MWQMSampleMWQMRunTVItem)
+                .WithOne(c => c.MWQMRunTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.MWQMSampleMWQMSiteTVItem)
+                .WithOne(c => c.MWQMSiteTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.MWQMSites)
+                .WithOne(c => c.MWQMSiteTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.MWQMSiteStartEndDates)
+                .WithOne(c => c.MWQMSiteTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.MWQMSubsectors)
+                .WithOne(c => c.MWQMSubsectorTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.PolSourceObservationsContactTVItem)
+                .WithOne(c => c.ContactTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.PolSourceObservationsPolSourceSiteTVItem)
+                .WithOne(c => c.PolSourceSiteTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.PolSourceSites)
+                .WithOne(c => c.PolSourceSiteTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.SamplingPlansCreatorTVItem)
+                .WithOne(c => c.CreatorTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.SamplingPlansProvinceTVItem)
+                .WithOne(c => c.ProvinceTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.SamplingPlansSamplingPlanFileTVItem)
+                .WithOne(c => c.SamplingPlanFileTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.SamplingPlanSubsectors)
+                .WithOne(c => c.SubsectorTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.SamplingPlanSubsectorSites)
+                .WithOne(c => c.MWQMSiteTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.SpillsInfrastructureTVItem)
+                .WithOne(c => c.InfrastructureTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.SpillsMunicipalityTVItem)
+                .WithOne(c => c.MunicipalityTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.Tels)
+                .WithOne(c => c.TelTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.TideDataValues)
+                .WithOne(c => c.TideSiteTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.TideSites)
+                .WithOne(c => c.TideSiteTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
+                .HasMany(c => c.TVFiles)
+                .WithOne(c => c.TVFileTVItem);
 
+            modelBuilder.Entity<TVItem>()
+                .HasMany(c => c.TVItemLanguages)
+                .WithOne(c => c.TVItem);
+
+            modelBuilder.Entity<TVItem>()
+                .HasMany(c => c.TVItemLinksFromTVItem)
+                .WithOne(c => c.FromTVItem);
+
+            modelBuilder.Entity<TVItem>()
+                .HasMany(c => c.TVItemLinksToTVItem)
+                .WithOne(c => c.ToTVItem);
+
+            modelBuilder.Entity<TVItem>()
+                .HasMany(c => c.TVItemStats)
+                .WithOne(c => c.TVItem);
+
+            modelBuilder.Entity<TVItem>()
+                .HasMany(c => c.TVItemUserAuthorizationsContactTVItem)
+                .WithOne(c => c.ContactTVItem);
+
+            modelBuilder.Entity<TVItem>()
+                .HasMany(c => c.TVItemUserAuthorizationsTVItemID1Navigation)
+                .WithOne(c => c.TVItemID1Navigation);
+
+            modelBuilder.Entity<TVItem>()
+                .HasMany(c => c.TVTypeUserAuthorizations)
+                .WithOne(c => c.ContactTVItem);
+
+            modelBuilder.Entity<TVItem>()
+                .HasMany(c => c.UseOfSitesSiteTVItem)
+                .WithOne(c => c.SiteTVItem);
+
+            modelBuilder.Entity<TVItem>()
+                .HasMany(c => c.UseOfSitesSubsectorTVItem)
+                .WithOne(c => c.SubsectorTVItem);
+
+            modelBuilder.Entity<TVItem>()
+                .HasMany(c => c.VPScenarios)
+                .WithOne(c => c.InfrastructureTVItem);
+
+            modelBuilder.Entity<TVItem>()
+                .HasMany(c => c.InverseParent);
+
+            modelBuilder.Entity<TVItem>()
+                .HasOne(c => c.Parent);
+
+            // ---------------------------------------
+            //                 TVItemLanguage
+            // ---------------------------------------
+
+            modelBuilder.Entity<TVItemLanguage>()
+                .HasOne(c => c.TVItem)
+                .WithMany(c => c.TVItemLanguages);
+
+            // ---------------------------------------
+            //                 TVItemLink
+            // ---------------------------------------
+
+            modelBuilder.Entity<TVItemLink>()
+                .HasOne(c => c.FromTVItem)
+                .WithMany(c => c.TVItemLinksFromTVItem);
+
+            modelBuilder.Entity<TVItemLink>()
+                .HasOne(c => c.ParentTVItemLink)
+                .WithMany(c => c.InverseParentTVItemLink);
+
+            modelBuilder.Entity<TVItemLink>()
+                .HasMany(c => c.InverseParentTVItemLink)
+                .WithOne(c => c.ParentTVItemLink);
+
+            modelBuilder.Entity<TVItemLink>()
+                .HasOne(c => c.ToTVItem)
+                .WithMany(c => c.TVItemLinksToTVItem);
+
+            // ---------------------------------------
+            //                 TVItemStat
+            // ---------------------------------------
+
+            modelBuilder.Entity<TVItemStat>()
+                .HasOne(c => c.TVItem)
+                .WithMany(c => c.TVItemStats);
+
+            // ---------------------------------------
+            //                 TVItemUserAuthorization
+            // ---------------------------------------
+
+            modelBuilder.Entity<TVItemUserAuthorization>()
+                .HasOne(c => c.ContactTVItem)
+                .WithMany(c => c.TVItemUserAuthorizationsContactTVItem);
+
+            modelBuilder.Entity<TVItemUserAuthorization>()
+                .HasOne(c => c.TVItemID1Navigation)
+                .WithMany(c => c.TVItemUserAuthorizationsTVItemID1Navigation);
+
+            // ---------------------------------------
+            //                 TVTypeUserAuthorization
+            // ---------------------------------------
+
+            modelBuilder.Entity<TVTypeUserAuthorization>()
+                .HasOne(c => c.ContactTVItem)
+                .WithMany(c => c.TVTypeUserAuthorizations);
+
+            // ---------------------------------------
+            //                 UseOfSite
+            // ---------------------------------------
+
+            modelBuilder.Entity<UseOfSite>()
+                .HasOne(c => c.SiteTVItem)
+                .WithMany(c => c.UseOfSitesSiteTVItem);
+
+            modelBuilder.Entity<UseOfSite>()
+                .HasOne(c => c.SubsectorTVItem)
+                .WithMany(c => c.UseOfSitesSubsectorTVItem);
+
+            // ---------------------------------------
+            //                 VPAmbient
+            // ---------------------------------------
+
+            modelBuilder.Entity<VPAmbient>()
+                .HasOne(c => c.VPScenario)
+                .WithMany(c => c.VPAmbients);
+
+            // ---------------------------------------
+            //                 VPResult
+            // ---------------------------------------
+
+            modelBuilder.Entity<VPResult>()
+                .HasOne(c => c.VPScenario)
+                .WithMany(c => c.VPResults);
+
+            // ---------------------------------------
+            //                 VPScenario
+            // ---------------------------------------
+
+            modelBuilder.Entity<VPScenario>()
+                .HasMany(c => c.VPAmbients)
+                .WithOne(c => c.VPScenario);
+
+            modelBuilder.Entity<VPScenario>()
+                .HasMany(c => c.VPResults)
+                .WithOne(c => c.VPScenario);
+
+            modelBuilder.Entity<VPScenario>()
+                .HasMany(c => c.VPScenarioLanguages)
+                .WithOne(c => c.VPScenario);
+
+            modelBuilder.Entity<VPScenario>()
+                .HasOne(c => c.InfrastructureTVItem)
+                .WithMany(c => c.VPScenarios);
+
+            // ---------------------------------------
+            //                 VPScenarioLanguage
+            // ---------------------------------------
+
+            modelBuilder.Entity<VPScenarioLanguage>()
+                .HasOne(c => c.VPScenario)
+                .WithMany(c => c.VPScenarioLanguages);
 
 
             base.OnModelCreating(modelBuilder);

@@ -51,7 +51,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolSourceObservation_Navigation_OK()
         {
-            List<string> foreignNameList = new List<string>() { "ContactTVItem", "PolSourceSiteTVItem",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() { "ContactTVItem", "PolSourceSiteTVItem", "PolSourceSite",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() { "PolSourceObservationIssues",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -97,6 +97,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.PolSourceObservationPolSourceObservationIssues);
                Assert.IsNotNull(ModelsRes.PolSourceObservationContactTVItem);
                Assert.IsNotNull(ModelsRes.PolSourceObservationPolSourceSiteTVItem);
+               Assert.IsNotNull(ModelsRes.PolSourceObservationPolSourceSite);
         }
     }
 }

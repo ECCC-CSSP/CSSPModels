@@ -52,7 +52,7 @@ namespace CSSPModels.Tests
         public void PolSourceSite_Navigation_OK()
         {
             List<string> foreignNameList = new List<string>() { "PolSourceSiteTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() { "PolSourceObservations",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(PolSourceSite).GetProperties())
@@ -98,6 +98,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.PolSourceSiteCivicAddressTVItemID);
                Assert.IsNotNull(ModelsRes.PolSourceSiteLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.PolSourceSiteLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.PolSourceSitePolSourceObservations);
                Assert.IsNotNull(ModelsRes.PolSourceSitePolSourceSiteTVItem);
         }
     }
