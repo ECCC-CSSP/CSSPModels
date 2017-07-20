@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public AppErrLogTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             appErrLog = new AppErrLog();
         }
         #endregion Constructors

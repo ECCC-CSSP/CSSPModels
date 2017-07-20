@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public MapInfoPointTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             mapInfoPoint = new MapInfoPoint();
         }
         #endregion Constructors

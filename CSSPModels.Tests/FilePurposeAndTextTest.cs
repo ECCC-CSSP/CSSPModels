@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public FilePurposeAndTextTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             filePurposeAndText = new FilePurposeAndText();
         }
         #endregion Constructors

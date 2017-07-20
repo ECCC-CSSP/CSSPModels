@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public VectorTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             vector = new Vector();
         }
         #endregion Constructors

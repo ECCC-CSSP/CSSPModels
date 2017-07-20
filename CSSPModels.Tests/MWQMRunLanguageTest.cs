@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public MWQMRunLanguageTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             mWQMRunLanguage = new MWQMRunLanguage();
         }
         #endregion Constructors

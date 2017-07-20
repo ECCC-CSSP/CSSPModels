@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public HydrometricSiteTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             hydrometricSite = new HydrometricSite();
         }
         #endregion Constructors

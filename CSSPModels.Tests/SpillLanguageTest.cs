@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public SpillLanguageTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             spillLanguage = new SpillLanguage();
         }
         #endregion Constructors

@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public MWQMLookupMPNTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             mWQMLookupMPN = new MWQMLookupMPN();
         }
         #endregion Constructors

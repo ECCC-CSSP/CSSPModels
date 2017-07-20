@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public RTBStringPosTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             rTBStringPos = new RTBStringPos();
         }
         #endregion Constructors

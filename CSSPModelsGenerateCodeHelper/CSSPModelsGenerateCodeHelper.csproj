@@ -139,12 +139,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RunModelLink.cs" />
-    <Compile Include="ResTopPart.cs" />
-    <Compile Include="GenerateSetupOnce.cs" />
-    <Compile Include="GenerateResOnce.cs" />
-    <Compile Include="GeneratedModelsTest.cs" />
-    <Compile Include="GeneratedCodeHelper.cs" />
+    <Compile Include="ModelsRunModelLink.cs" />
+    <Compile Include="ModelsResTopPart.cs" />
+    <Compile Include="ModelsGenerateSetupOnce.cs" />
+    <Compile Include="ModelsGenerateResOnce.cs" />
+    <Compile Include="ModelsGeneratedModelsTest.cs" />
+    <Compile Include="ModelsGeneratedCodeHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

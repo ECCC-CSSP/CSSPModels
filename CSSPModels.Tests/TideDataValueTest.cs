@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public TideDataValueTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             tideDataValue = new TideDataValue();
         }
         #endregion Constructors

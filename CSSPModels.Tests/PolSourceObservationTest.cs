@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public PolSourceObservationTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             polSourceObservation = new PolSourceObservation();
         }
         #endregion Constructors

@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public RatingCurveValueTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             ratingCurveValue = new RatingCurveValue();
         }
         #endregion Constructors

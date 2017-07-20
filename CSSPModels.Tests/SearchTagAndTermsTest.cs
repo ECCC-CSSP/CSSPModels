@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public SearchTagAndTermsTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             searchTagAndTerms = new SearchTagAndTerms();
         }
         #endregion Constructors

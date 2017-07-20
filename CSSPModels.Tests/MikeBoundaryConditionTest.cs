@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public MikeBoundaryConditionTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             mikeBoundaryCondition = new MikeBoundaryCondition();
         }
         #endregion Constructors

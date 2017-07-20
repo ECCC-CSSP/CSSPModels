@@ -9,20 +9,19 @@ using System.Windows.Forms;
 
 namespace CSSPModelsGenerateCodeHelper
 {
-    public partial class GenerateCodeHelper
+    public partial class ModelsGenerateCodeHelper
     {
+        #region Functions public
         public void GenerateResOnce()
         {
             StringBuilder sb = new StringBuilder();
-            FileInfo fiDLL = new FileInfo(DLLFileName);
+            FileInfo fiDLL = new FileInfo(modelsFiles.CSSPModelsDLL);
 
             if (!fiDLL.Exists)
             {
-                RichTextBoxStatus.AppendText(fiDLL.FullName + " does not exist");
+                ErrorEvent(new ErrorEventArgs(fiDLL.FullName + " does not exist"));
                 return;
             }
-
-            RichTextBoxStatus.Text = "";
 
             ResxTopPart(sb);
 
@@ -30,8 +29,7 @@ namespace CSSPModelsGenerateCodeHelper
             Type[] types = importAssembly.GetTypes();
             foreach (Type type in types)
             {
-                LabelStatus.Text = type.Name;
-                LabelStatus.Refresh();
+                StatusTempEvent(new StatusEventArgs(type.Name));
                 Application.DoEvents();
 
                 if (SkipType(type))
@@ -56,28 +54,27 @@ namespace CSSPModelsGenerateCodeHelper
 
             sb.AppendLine(@"</root>");
 
-            RichTextBoxStatus.Text = "";
-            RichTextBoxStatus.AppendText("Files: \r\n");
-            RichTextBoxStatus.AppendText(GenerateFilePath + @"\CSSPModels\Resources\ModelsRes.resx" + "\r\n");
-            RichTextBoxStatus.AppendText(GenerateFilePath + @"\CSSPModels\Resources\ModelsRes.fr.resx" + "\r\n");
-            RichTextBoxStatus.AppendText("were created\r\n");
+            StatusPermanantEvent(new StatusEventArgs("Files: "));
+            StatusPermanantEvent(new StatusEventArgs(modelsFiles.BaseDir + @"\CSSPModels\Resources\ModelsRes.resx"));
+            StatusPermanantEvent(new StatusEventArgs(modelsFiles.BaseDir + @"\CSSPModels\Resources\ModelsRes.fr.resx"));
+            StatusPermanantEvent(new StatusEventArgs("were created"));
 
-            FileInfo fiOutput = new FileInfo(GenerateFilePath + @"\CSSPModels\Resources\ModelsRes.resx");
-
-            using (StreamWriter sw = fiOutput.CreateText())
-            {
-                sw.Write(sb.ToString());
-            }
-
-            fiOutput = new FileInfo(GenerateFilePath + @"\CSSPModels\Resources\ModelsRes.fr.resx");
+            FileInfo fiOutput = new FileInfo(modelsFiles.BaseDir + @"\CSSPModels\Resources\ModelsRes.resx");
 
             using (StreamWriter sw = fiOutput.CreateText())
             {
                 sw.Write(sb.ToString());
             }
 
-            LabelStatus.Text = "Done ...";
+            fiOutput = new FileInfo(modelsFiles.BaseDir + @"\CSSPModels\Resources\ModelsRes.fr.resx");
+
+            using (StreamWriter sw = fiOutput.CreateText())
+            {
+                sw.Write(sb.ToString());
+            }
+
+            StatusTempEvent(new StatusEventArgs("Done ..."));
         }
-
+        #endregion Functions public
     }
 }

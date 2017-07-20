@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public MWQMSiteStartEndDateTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             mWQMSiteStartEndDate = new MWQMSiteStartEndDate();
         }
         #endregion Constructors

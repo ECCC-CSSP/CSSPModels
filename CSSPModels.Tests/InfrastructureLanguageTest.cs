@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public InfrastructureLanguageTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             infrastructureLanguage = new InfrastructureLanguage();
         }
         #endregion Constructors

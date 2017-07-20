@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public TVTypeNamesAndPathTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             tVTypeNamesAndPath = new TVTypeNamesAndPath();
         }
         #endregion Constructors

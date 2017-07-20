@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public VPScenarioIDAndRawResultsTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             vPScenarioIDAndRawResults = new VPScenarioIDAndRawResults();
         }
         #endregion Constructors

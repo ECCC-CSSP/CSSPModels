@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public TVItemLinkTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             tVItemLink = new TVItemLink();
         }
         #endregion Constructors

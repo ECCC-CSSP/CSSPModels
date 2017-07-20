@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public TVFileTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             tVFile = new TVFile();
         }
         #endregion Constructors

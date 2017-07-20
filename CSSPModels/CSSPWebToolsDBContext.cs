@@ -98,28 +98,29 @@ namespace CSSPModels
         #region Overrides
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string ConnectionString = "";
-
-            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext())
+            string CSSPWebToolsDBConnectionString = ConfigurationManager.ConnectionStrings["CSSPWebToolsDB"].ConnectionString;
+            string TestDBConnectionString = ConfigurationManager.ConnectionStrings["TestDB"].ConnectionString;
+            if (System.Environment.UserName.ToLower() == "charles-pc")
             {
-                ConnectionString = db.GetConnectionString();
+                CSSPWebToolsDBConnectionString = CSSPWebToolsDBConnectionString.Replace("wmon01dtchlebl2", "charles-pc");
+                TestDBConnectionString = TestDBConnectionString.Replace("wmon01dtchlebl2", "charles-pc");
             }
 
-            if (DatabaseType == DatabaseTypeEnum.MemoryNoDBShape)
+            if (DatabaseType == DatabaseTypeEnum.MemoryTestDB)
             {
-                optionsBuilder.UseInMemoryDatabase(ConnectionString);
+                optionsBuilder.UseInMemoryDatabase(TestDBConnectionString);
             }
-            else if (DatabaseType == DatabaseTypeEnum.MemoryWithDBShape)
+            else if (DatabaseType == DatabaseTypeEnum.MemoryCSSPWebToolsDB)
             {
-                optionsBuilder.UseInMemoryDatabase(ConnectionString);
+                optionsBuilder.UseInMemoryDatabase(CSSPWebToolsDBConnectionString);
             }
-            else if (DatabaseType == DatabaseTypeEnum.SQLite)
+            else if (DatabaseType == DatabaseTypeEnum.SqlServerTestDB)
             {
-                optionsBuilder.UseSqlite("Data Source=TestingCSSPWebToolsDB.db");
+                optionsBuilder.UseSqlServer(TestDBConnectionString);
             }
-            else if (DatabaseType == DatabaseTypeEnum.SqlServer)
+            else if (DatabaseType == DatabaseTypeEnum.SqlServerCSSPWebToolsDB)
             {
-                optionsBuilder.UseSqlServer(ConnectionString);
+                optionsBuilder.UseSqlServer(CSSPWebToolsDBConnectionString);
             }
             else
             {
@@ -1087,18 +1088,6 @@ namespace CSSPModels
         #endregion Overrides
 
         #region Functions private
-        public string GetConnectionString()
-        {
-            string ConnectionString = ConfigurationManager.ConnectionStrings["CSSPWebToolsDB"].ConnectionString;
-            if (System.Environment.UserName == "leblancc" || System.Environment.UserName == "admin-leblancc")
-            {
-                return ConnectionString.Replace("aaaaaa", "wmon01dtchlebl2");
-            }
-            else
-            {
-                return ConnectionString.Replace("aaaaaa", "charles-pc");
-            }
-        }
         #endregion Functions private
     }
 }

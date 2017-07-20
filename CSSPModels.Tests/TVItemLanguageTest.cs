@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public TVItemLanguageTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             tVItemLanguage = new TVItemLanguage();
         }
         #endregion Constructors

@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public VPFullTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             vPFull = new VPFull();
         }
         #endregion Constructors

@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public TVItemTVAuthTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             tVItemTVAuth = new TVItemTVAuth();
         }
         #endregion Constructors

@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace CSSPModelsGenerateCodeHelper
 {
-    public partial class GenerateCodeHelper
+    public partial class ModelsGenerateCodeHelper
     {
         #region Functions private
         private void ResxTopPart(StringBuilder sb)

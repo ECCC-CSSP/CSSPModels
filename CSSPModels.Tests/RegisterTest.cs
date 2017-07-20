@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public RegisterTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             register = new Register();
         }
         #endregion Constructors

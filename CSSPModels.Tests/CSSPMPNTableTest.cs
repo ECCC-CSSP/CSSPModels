@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public CSSPMPNTableTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             cSSPMPNTable = new CSSPMPNTable();
         }
         #endregion Constructors

@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public NodeLayerTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             nodeLayer = new NodeLayer();
         }
         #endregion Constructors

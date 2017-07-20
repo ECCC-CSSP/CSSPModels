@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public URLNumberOfSamplesTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             uRLNumberOfSamples = new URLNumberOfSamples();
         }
         #endregion Constructors

@@ -9,19 +9,18 @@ using System.Windows.Forms;
 
 namespace CSSPModelsGenerateCodeHelper
 {
-    public partial class GenerateCodeHelper
+    #region Functions public
+    public partial class ModelsGenerateCodeHelper
     {
         public void GenerateSetupOnce()
         {
-            FileInfo fiDLL = new FileInfo(DLLFileName);
+            FileInfo fiDLL = new FileInfo(modelsFiles.CSSPModelsDLL);
 
             if (!fiDLL.Exists)
             {
-                RichTextBoxStatus.AppendText(fiDLL.FullName + " does not exist");
+                ErrorEvent(new ErrorEventArgs(fiDLL.FullName + " does not exist"));
                 return;
             }
-
-            RichTextBoxStatus.Text = "";
 
             var importAssembly = Assembly.LoadFile(fiDLL.FullName);
             Type[] types = importAssembly.GetTypes();
@@ -30,8 +29,7 @@ namespace CSSPModelsGenerateCodeHelper
                 bool ClassNotMapped = false;
                 StringBuilder sb = new StringBuilder();
 
-                LabelStatus.Text = type.Name;
-                LabelStatus.Refresh();
+                StatusTempEvent(new StatusEventArgs(type.Name));
                 Application.DoEvents();
 
                 if (SkipType(type))
@@ -84,7 +82,7 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"        #region Constructors");
                 sb.AppendLine(@"        public " + type.Name + "Test()");
                 sb.AppendLine(@"        {");
-                sb.AppendLine(@"            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);");
+                sb.AppendLine(@"            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);");
                 sb.AppendLine(@"            " + type.Name.Substring(0, 1).ToLower() + type.Name.Substring(1) + " = new " + type.Name + "();");
                 //if (!ClassNotMapped)
                 //{
@@ -106,17 +104,18 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"    }");
                 sb.AppendLine(@"}");
 
-                FileInfo fiOutputGen = new FileInfo(GenerateFilePath + type.Name + "Test.cs");
+                FileInfo fiOutputGen = new FileInfo(modelsFiles.BaseDir + modelsFiles.BaseDirTest + type.Name + "Test.cs");
                 using (StreamWriter sw2 = fiOutputGen.CreateText())
                 {
                     sw2.Write(sb.ToString());
                 }
 
-                RichTextBoxStatus.AppendText("Created [" + fiOutputGen.FullName + "] ...\r\n");
+                StatusPermanantEvent(new StatusEventArgs("Created [" + fiOutputGen.FullName + "] ..."));
 
-                LabelStatus.Text = "Done ...";
+                StatusTempEvent(new StatusEventArgs("Done ..."));
             }
         }
 
     }
+    #endregion Functions public
 }

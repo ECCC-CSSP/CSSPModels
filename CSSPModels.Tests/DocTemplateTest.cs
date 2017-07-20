@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public DocTemplateTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             docTemplate = new DocTemplate();
         }
         #endregion Constructors

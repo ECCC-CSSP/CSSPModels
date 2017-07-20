@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public BoxModelResultTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             boxModelResult = new BoxModelResult();
         }
         #endregion Constructors

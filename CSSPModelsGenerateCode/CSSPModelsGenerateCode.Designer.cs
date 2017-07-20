@@ -36,8 +36,8 @@
             this.textBoxCSSPModelsDLL = new System.Windows.Forms.TextBox();
             this.lblDoc = new System.Windows.Forms.Label();
             this.lblNote = new System.Windows.Forms.Label();
-            this.textBoxFile1ToGenerate = new System.Windows.Forms.TextBox();
-            this.lblFile1 = new System.Windows.Forms.Label();
+            this.textBoxBaseDirTest = new System.Windows.Forms.TextBox();
+            this.lblBaseDirTest = new System.Windows.Forms.Label();
             this.textBoxBaseDir = new System.Windows.Forms.TextBox();
             this.lblBaseDir = new System.Windows.Forms.Label();
             this.butGenerateSetupOnce = new System.Windows.Forms.Button();
@@ -66,8 +66,8 @@
             this.splitContainer1.Panel1.Controls.Add(this.textBoxCSSPModelsDLL);
             this.splitContainer1.Panel1.Controls.Add(this.lblDoc);
             this.splitContainer1.Panel1.Controls.Add(this.lblNote);
-            this.splitContainer1.Panel1.Controls.Add(this.textBoxFile1ToGenerate);
-            this.splitContainer1.Panel1.Controls.Add(this.lblFile1);
+            this.splitContainer1.Panel1.Controls.Add(this.textBoxBaseDirTest);
+            this.splitContainer1.Panel1.Controls.Add(this.lblBaseDirTest);
             this.splitContainer1.Panel1.Controls.Add(this.textBoxBaseDir);
             this.splitContainer1.Panel1.Controls.Add(this.lblBaseDir);
             this.splitContainer1.Panel1.Controls.Add(this.butGenerateSetupOnce);
@@ -112,7 +112,7 @@
             // lblDocumentsToGenerate
             // 
             this.lblDocumentsToGenerate.AutoSize = true;
-            this.lblDocumentsToGenerate.Location = new System.Drawing.Point(69, 113);
+            this.lblDocumentsToGenerate.Location = new System.Drawing.Point(91, 113);
             this.lblDocumentsToGenerate.Name = "lblDocumentsToGenerate";
             this.lblDocumentsToGenerate.Size = new System.Drawing.Size(121, 13);
             this.lblDocumentsToGenerate.TabIndex = 29;
@@ -144,26 +144,26 @@
             this.lblNote.TabIndex = 26;
             this.lblNote.Text = "Note: You will have to recompile the CSSPModels project.";
             // 
-            // textBoxFile1ToGenerate
+            // textBoxBaseDirTest
             // 
-            this.textBoxFile1ToGenerate.Location = new System.Drawing.Point(72, 138);
-            this.textBoxFile1ToGenerate.Name = "textBoxFile1ToGenerate";
-            this.textBoxFile1ToGenerate.Size = new System.Drawing.Size(554, 20);
-            this.textBoxFile1ToGenerate.TabIndex = 15;
-            this.textBoxFile1ToGenerate.Text = "CSSPModels.Tests\\";
+            this.textBoxBaseDirTest.Location = new System.Drawing.Point(94, 138);
+            this.textBoxBaseDirTest.Name = "textBoxBaseDirTest";
+            this.textBoxBaseDirTest.Size = new System.Drawing.Size(554, 20);
+            this.textBoxBaseDirTest.TabIndex = 15;
+            this.textBoxBaseDirTest.Text = "CSSPModels.Tests\\";
             // 
-            // lblFile1
+            // lblBaseDirTest
             // 
-            this.lblFile1.AutoSize = true;
-            this.lblFile1.Location = new System.Drawing.Point(15, 141);
-            this.lblFile1.Name = "lblFile1";
-            this.lblFile1.Size = new System.Drawing.Size(35, 13);
-            this.lblFile1.TabIndex = 14;
-            this.lblFile1.Text = "File 1:";
+            this.lblBaseDirTest.AutoSize = true;
+            this.lblBaseDirTest.Location = new System.Drawing.Point(15, 141);
+            this.lblBaseDirTest.Name = "lblBaseDirTest";
+            this.lblBaseDirTest.Size = new System.Drawing.Size(74, 13);
+            this.lblBaseDirTest.TabIndex = 14;
+            this.lblBaseDirTest.Text = "Base Dir Test:";
             // 
             // textBoxBaseDir
             // 
-            this.textBoxBaseDir.Location = new System.Drawing.Point(72, 65);
+            this.textBoxBaseDir.Location = new System.Drawing.Point(94, 65);
             this.textBoxBaseDir.Name = "textBoxBaseDir";
             this.textBoxBaseDir.Size = new System.Drawing.Size(554, 20);
             this.textBoxBaseDir.TabIndex = 13;
@@ -172,7 +172,7 @@
             // lblBaseDir
             // 
             this.lblBaseDir.AutoSize = true;
-            this.lblBaseDir.Location = new System.Drawing.Point(15, 68);
+            this.lblBaseDir.Location = new System.Drawing.Point(39, 68);
             this.lblBaseDir.Name = "lblBaseDir";
             this.lblBaseDir.Size = new System.Drawing.Size(50, 13);
             this.lblBaseDir.TabIndex = 12;
@@ -256,8 +256,8 @@
         private System.Windows.Forms.TextBox textBoxCSSPModelsDLL;
         private System.Windows.Forms.Label lblDoc;
         private System.Windows.Forms.Label lblNote;
-        private System.Windows.Forms.TextBox textBoxFile1ToGenerate;
-        private System.Windows.Forms.Label lblFile1;
+        private System.Windows.Forms.TextBox textBoxBaseDirTest;
+        private System.Windows.Forms.Label lblBaseDirTest;
         private System.Windows.Forms.TextBox textBoxBaseDir;
         private System.Windows.Forms.Label lblBaseDir;
         private System.Windows.Forms.Button butGenerateAllCodeFiles;

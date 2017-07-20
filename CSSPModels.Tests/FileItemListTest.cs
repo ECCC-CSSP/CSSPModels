@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public FileItemListTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             fileItemList = new FileItemList();
         }
         #endregion Constructors

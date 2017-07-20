@@ -9,19 +9,18 @@ using System.Windows.Forms;
 
 namespace CSSPModelsGenerateCodeHelper
 {
-    public partial class GenerateCodeHelper
+    public partial class ModelsGenerateCodeHelper
     {
+        #region Functions public
         public void GeneratedModelsTest()
         {
-            FileInfo fiDLL = new FileInfo(DLLFileName);
+            FileInfo fiDLL = new FileInfo(modelsFiles.CSSPModelsDLL);
 
             if (!fiDLL.Exists)
             {
-                RichTextBoxStatus.AppendText(fiDLL.FullName + " does not exist");
+                ErrorEvent(new ErrorEventArgs(fiDLL.FullName + " does not exist"));
                 return;
             }
-
-            RichTextBoxStatus.Text = "";
 
             var importAssembly = Assembly.LoadFile(fiDLL.FullName);
             Type[] types = importAssembly.GetTypes();
@@ -30,8 +29,7 @@ namespace CSSPModelsGenerateCodeHelper
                 bool ClassNotMapped = false;
                 StringBuilder sb = new StringBuilder();
 
-                LabelStatus.Text = type.Name;
-                LabelStatus.Refresh();
+                StatusTempEvent(new StatusEventArgs(type.Name));
                 Application.DoEvents();
 
                 if (SkipType(type))
@@ -225,16 +223,17 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"}");
 
                 //FileInfo fiOutput = new FileInfo(textBoxBaseDir.Text + textBoxFile1ToGenerate.Text + type.Name + "TestGenerated.cs");
-                FileInfo fiOutput = new FileInfo(GenerateFilePath + type.Name + "TestGenerated.cs");
+                FileInfo fiOutput = new FileInfo(modelsFiles.BaseDir + modelsFiles.BaseDirTest + type.Name + "TestGenerated.cs");
 
                 using (StreamWriter sw = fiOutput.CreateText())
                 {
                     sw.Write(sb.ToString());
                 }
-                RichTextBoxStatus.AppendText("Created [" + fiOutput.FullName + "] ...\r\n");
+                StatusPermanantEvent(new StatusEventArgs("Created [" + fiOutput.FullName + "] ..."));
             }
 
-            LabelStatus.Text = "Done ...";
+            StatusTempEvent(new StatusEventArgs("Done ..."));
         }
+        #endregion Functions public
     }
 }

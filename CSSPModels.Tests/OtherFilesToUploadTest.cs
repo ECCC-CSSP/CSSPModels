@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public OtherFilesToUploadTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             otherFilesToUpload = new OtherFilesToUpload();
         }
         #endregion Constructors

@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public LastUpdateAndTVTextTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             lastUpdateAndTVText = new LastUpdateAndTVText();
         }
         #endregion Constructors

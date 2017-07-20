@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public PolyPointTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             polyPoint = new PolyPoint();
         }
         #endregion Constructors

@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public CoordTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             coord = new Coord();
         }
         #endregion Constructors

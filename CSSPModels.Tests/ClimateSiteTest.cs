@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public ClimateSiteTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             climateSite = new ClimateSite();
         }
         #endregion Constructors

@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public DataPathOfTideTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             dataPathOfTide = new DataPathOfTide();
         }
         #endregion Constructors

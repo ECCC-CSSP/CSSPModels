@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public LabSheetTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             labSheet = new LabSheet();
         }
         #endregion Constructors

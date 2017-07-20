@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public EmailDistributionListTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             emailDistributionList = new EmailDistributionList();
         }
         #endregion Constructors

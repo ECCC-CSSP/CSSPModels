@@ -23,7 +23,7 @@ namespace CSSPModels
         public float FarFieldWidth_m { get; set; }
         [Range(0.0f, 100000.0f)]
         public float DispersionDistance_m { get; set; }
-        [Range(-10.0f, 0.0f)]
+        [Range(0.0f, 100.0f)]
         public float TravelTime_hour { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public VPResultTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             vPResult = new VPResult();
         }
         #endregion Constructors

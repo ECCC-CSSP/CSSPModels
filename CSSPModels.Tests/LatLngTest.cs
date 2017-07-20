@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public LatLngTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             latLng = new LatLng();
         }
         #endregion Constructors

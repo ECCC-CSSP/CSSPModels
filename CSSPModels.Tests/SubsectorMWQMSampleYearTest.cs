@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public SubsectorMWQMSampleYearTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             subsectorMWQMSampleYear = new SubsectorMWQMSampleYear();
         }
         #endregion Constructors

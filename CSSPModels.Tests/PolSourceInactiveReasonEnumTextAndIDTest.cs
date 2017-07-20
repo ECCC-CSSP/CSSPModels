@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public PolSourceInactiveReasonEnumTextAndIDTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             polSourceInactiveReasonEnumTextAndID = new PolSourceInactiveReasonEnumTextAndID();
         }
         #endregion Constructors

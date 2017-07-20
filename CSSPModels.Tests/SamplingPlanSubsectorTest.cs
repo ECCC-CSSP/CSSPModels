@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public SamplingPlanSubsectorTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             samplingPlanSubsector = new SamplingPlanSubsector();
         }
         #endregion Constructors

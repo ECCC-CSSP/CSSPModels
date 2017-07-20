@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public CSSPWQInputAppTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             cSSPWQInputApp = new CSSPWQInputApp();
         }
         #endregion Constructors

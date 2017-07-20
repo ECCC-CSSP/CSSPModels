@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public ContactPreferenceTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             contactPreference = new ContactPreference();
         }
         #endregion Constructors

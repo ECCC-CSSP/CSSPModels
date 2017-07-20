@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public TVFullTextTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             tVFullText = new TVFullText();
         }
         #endregion Constructors

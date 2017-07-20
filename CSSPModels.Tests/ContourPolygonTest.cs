@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public ContourPolygonTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             contourPolygon = new ContourPolygon();
         }
         #endregion Constructors

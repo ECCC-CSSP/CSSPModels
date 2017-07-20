@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public UseOfSiteTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             useOfSite = new UseOfSite();
         }
         #endregion Constructors

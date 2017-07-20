@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public SpillTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             spill = new Spill();
         }
         #endregion Constructors

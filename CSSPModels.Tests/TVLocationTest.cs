@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public TVLocationTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             tVLocation = new TVLocation();
         }
         #endregion Constructors

@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public MikeSourceStartEndTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             mikeSourceStartEnd = new MikeSourceStartEnd();
         }
         #endregion Constructors

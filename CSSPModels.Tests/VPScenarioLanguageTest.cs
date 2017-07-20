@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public VPScenarioLanguageTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             vPScenarioLanguage = new VPScenarioLanguage();
         }
         #endregion Constructors

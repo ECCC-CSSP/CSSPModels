@@ -23,7 +23,7 @@ namespace CSSPModels.Tests
         #region Constructors
         public CalDecayTest()
         {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryNoDBShape);
+            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             calDecay = new CalDecay();
         }
         #endregion Constructors
