@@ -22,8 +22,8 @@ namespace CSSPModels
         [CSSPBigger(OtherField = "StartDateTime_Local")]
         [CSSPAfter(Year = 1980)]
         public DateTime? EndDateTime_Local { get; set; }
-        [Range(0.0f, 1000000.0f)]
-        public float AverageFlow_m3_day { get; set; }
+        [Range(0.0D, 1000000.0D)]
+        public double AverageFlow_m3_day { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]

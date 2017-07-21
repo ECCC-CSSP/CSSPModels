@@ -16,30 +16,30 @@ namespace CSSPModels
         public int BoxModelID { get; set; }
         [CSSPEnumType]
         public BoxModelResultTypeEnum BoxModelResultType { get; set; }
-        [Range(0.0f, -1.0f)]
-        public float Volume_m3 { get; set; }
-        [Range(0.0f, -1.0f)]
-        public float Surface_m2 { get; set; }
-        [Range(0.0f, 100000.0f)]
-        public float Radius_m { get; set; }
-        [Range(0.0f, 360.0f)]
-        public float LeftSideDiameterLineAngle_deg { get; set; }
-        [Range(-90.0f, 90.0f)]
-        public float CircleCenterLatitude { get; set; }
-        [Range(-180.0f, 180.0f)]
-        public float CircleCenterLongitude { get; set; }
+        [Range(0.0D, -1.0D)]
+        public double Volume_m3 { get; set; }
+        [Range(0.0D, -1.0D)]
+        public double Surface_m2 { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double Radius_m { get; set; }
+        [Range(0.0D, 360.0D)]
+        public double LeftSideDiameterLineAngle_deg { get; set; }
+        [Range(-90.0D, 90.0D)]
+        public double CircleCenterLatitude { get; set; }
+        [Range(-180.0D, 180.0D)]
+        public double CircleCenterLongitude { get; set; }
         public bool FixLength { get; set; }
         public bool FixWidth { get; set; }
-        [Range(0.0f, 100000.0f)]
-        public float RectLength_m { get; set; }
-        [Range(0.0f, 100000.0f)]
-        public float RectWidth_m { get; set; }
-        [Range(0.0f, 360.0f)]
-        public float LeftSideLineAngle_deg { get; set; }
-        [Range(-90.0f, 90.0f)]
-        public float LeftSideLineStartLatitude { get; set; }
-        [Range(-180.0f, 180.0f)]
-        public float LeftSideLineStartLongitude { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double RectLength_m { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double RectWidth_m { get; set; }
+        [Range(0.0D, 360.0D)]
+        public double LeftSideLineAngle_deg { get; set; }
+        [Range(-90.0D, 90.0D)]
+        public double LeftSideLineStartLatitude { get; set; }
+        [Range(-180.0D, 180.0d)]
+        public double LeftSideLineStartLongitude { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]

@@ -57,18 +57,18 @@ namespace CSSPModels
         [StringLength(10)]
         [CSSPAllowNull]
         public string WaterBath3 { get; set; }
-        [Range(-10.0f, 40.0f)]
-        public float? TCField1 { get; set; }
-        [Range(-10.0f, 40.0f)]
-        public float? TCLab1 { get; set; }
-        [Range(-10.0f, 40.0f)]
-        public float? TCField2 { get; set; }
-        [Range(-10.0f, 40.0f)]
-        public float? TCLab2 { get; set; }
-        [Range(-10.0f, 40.0f)]
-        public float? TCFirst { get; set; }
-        [Range(-10.0f, 40.0f)]
-        public float? TCAverage { get; set; }
+        [Range(-10.0D, 40.0D)]
+        public double? TCField1 { get; set; }
+        [Range(-10.0D, 40.0D)]
+        public double? TCLab1 { get; set; }
+        [Range(-10.0D, 40.0D)]
+        public double? TCField2 { get; set; }
+        [Range(-10.0D, 40.0D)]
+        public double? TCLab2 { get; set; }
+        [Range(-10.0D, 40.0D)]
+        public double? TCFirst { get; set; }
+        [Range(-10.0D, 40.0D)]
+        public double? TCAverage { get; set; }
         [StringLength(100)]
         [CSSPAllowNull]
         public string ControlLot { get; set; }
@@ -153,15 +153,15 @@ namespace CSSPModels
         public string ResultsRecordedBy { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime? ResultsRecordedDate { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float? DailyDuplicateRLog { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float? DailyDuplicatePrecisionCriteria { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double? DailyDuplicateRLog { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double? DailyDuplicatePrecisionCriteria { get; set; }
         public bool? DailyDuplicateAcceptable { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float? IntertechDuplicateRLog { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float? IntertechDuplicatePrecisionCriteria { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double? IntertechDuplicateRLog { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double? IntertechDuplicatePrecisionCriteria { get; set; }
         public bool? IntertechDuplicateAcceptable { get; set; }
         public bool? IntertechReadAcceptable { get; set; }
         [CSSPAfter(Year = 1980)]

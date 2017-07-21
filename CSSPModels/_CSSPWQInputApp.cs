@@ -17,10 +17,10 @@ namespace CSSPModels
         public string AccessCode { get; set; }
         [StringLength(4, MinimumLength = 4)]
         public string ActiveYear { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float DailyDuplicatePrecisionCriteria { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float IntertechDuplicatePrecisionCriteria { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double DailyDuplicatePrecisionCriteria { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double IntertechDuplicatePrecisionCriteria { get; set; }
         public bool IncludeLaboratoryQAQC { get; set; }
         [StringLength(100, MinimumLength = 1)]
         public string ApprovalCode { get; set; }

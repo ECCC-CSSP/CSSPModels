@@ -17,19 +17,19 @@ namespace CSSPModels
         public DateTime SampleDate { get; set; }
         [Range(1, 100000000)]
         public int? FC { get; set; }
-        public float? Sal { get; set; }
-        public float? Temp { get; set; }
-        public float? PH { get; set; }
-        public float? DO { get; set; }
-        public float? Depth { get; set; }
+        public double? Sal { get; set; }
+        public double? Temp { get; set; }
+        public double? PH { get; set; }
+        public double? DO { get; set; }
+        public double? Depth { get; set; }
         public int? SampCount { get; set; }
         public int? MinFC { get; set; }
         public int? MaxFC { get; set; }
-        public float? GeoMean { get; set; }
-        public float? Median { get; set; }
-        public float? P90 { get; set; }
-        public float? PercOver43 { get; set; }
-        public float? PercOver260 { get; set; }
+        public double? GeoMean { get; set; }
+        public double? Median { get; set; }
+        public double? P90 { get; set; }
+        public double? PercOver43 { get; set; }
+        public double? PercOver260 { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB

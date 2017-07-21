@@ -51,7 +51,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void AppTask_Navigation_OK()
         {
-            List<string> foreignNameList = new List<string>() { "TVItemIDNavigation", "TVItemID2Navigation",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() { "TVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() { "AppTaskLanguages",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -102,8 +102,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.AppTaskLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.AppTaskLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.AppTaskAppTaskLanguages);
-               Assert.IsNotNull(ModelsRes.AppTaskTVItemIDNavigation);
-               Assert.IsNotNull(ModelsRes.AppTaskTVItemID2Navigation);
+               Assert.IsNotNull(ModelsRes.AppTaskTVItem);
         }
     }
 }

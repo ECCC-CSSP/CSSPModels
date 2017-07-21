@@ -21,8 +21,8 @@ namespace CSSPModels
         public int? Tube10 { get; set; }
         public int? Tube1_0 { get; set; }
         public int? Tube0_1 { get; set; }
-        public float? Salinity { get; set; }
-        public float Temperature { get; set; }
+        public double? Salinity { get; set; }
+        public double Temperature { get; set; }
         public string ProcessedBy { get; set; }
         public SampleTypeEnum? SampleType { get; set; }
         public string SiteComment { get; set; }

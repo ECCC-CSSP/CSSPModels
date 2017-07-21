@@ -17,14 +17,14 @@ namespace CSSPModels
         public int Ordinal { get; set; }
         [Range(0, 10000000)]
         public int Concentration_MPN_100ml { get; set; }
-        [Range(0.0f, 1000000.0f)]
-        public float Dilution { get; set; }
-        [Range(0.0f, 10000.0f)]
-        public float FarFieldWidth_m { get; set; }
-        [Range(0.0f, 100000.0f)]
-        public float DispersionDistance_m { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float TravelTime_hour { get; set; }
+        [Range(0.0D, 1000000.0D)]
+        public double Dilution { get; set; }
+        [Range(0.0D, 10000.0D)]
+        public double FarFieldWidth_m { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double DispersionDistance_m { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double TravelTime_hour { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]

@@ -19,16 +19,16 @@ namespace CSSPModels
         public int MWQMRunTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime SampleDateTime_Local { get; set; }
-        [Range(0.0f, 1000.0f)]
-        public float? Depth_m { get; set; }
+        [Range(0.0D, 1000.0D)]
+        public double? Depth_m { get; set; }
         [Range(0, 10000000)]
         public int FecCol_MPN_100ml { get; set; }
-        [Range(0.0f, 40.0f)]
-        public float? Salinity_PPT { get; set; }
-        [Range(-10.0f, 40.0f)]
-        public float? WaterTemp_C { get; set; }
-        [Range(0.0f, 14.0f)]
-        public float? PH { get; set; }
+        [Range(0.0D, 40.0D)]
+        public double? Salinity_PPT { get; set; }
+        [Range(-10.0D, 40.0D)]
+        public double? WaterTemp_C { get; set; }
+        [Range(0.0D, 14.0D)]
+        public double? PH { get; set; }
         [StringLength(50)]
         public string SampleTypesText { get; set; }
         [CSSPEnumType]

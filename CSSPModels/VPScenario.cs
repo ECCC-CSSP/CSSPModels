@@ -17,36 +17,36 @@ namespace CSSPModels
         [CSSPEnumType]
         public ScenarioStatusEnum VPScenarioStatus { get; set; }
         public bool UseAsBestEstimate { get; set; }
-        [Range(0.0f, 1000.0f)]
-        public float EffluentFlow_m3_s { get; set; }
+        [Range(0.0D, 1000.0D)]
+        public double EffluentFlow_m3_s { get; set; }
         [Range(0, 10000000)]
         public int EffluentConcentration_MPN_100ml { get; set; }
-        [Range(0.0f, 10000.0f)]
-        public float FroudeNumber { get; set; }
-        [Range(0.0f, 10.0f)]
-        public float PortDiameter_m { get; set; }
-        [Range(0.0f, 1000.0f)]
-        public float PortDepth_m { get; set; }
-        [Range(0.0f, 1000.0f)]
-        public float PortElevation_m { get; set; }
-        [Range(-90.0f, 90.0f)]
-        public float VerticalAngle_deg { get; set; }
-        [Range(-180.0f, 180.0f)]
-        public float HorizontalAngle_deg { get; set; }
+        [Range(0.0D, 10000.0D)]
+        public double FroudeNumber { get; set; }
+        [Range(0.0D, 10.0D)]
+        public double PortDiameter_m { get; set; }
+        [Range(0.0D, 1000.0D)]
+        public double PortDepth_m { get; set; }
+        [Range(0.0D, 1000.0D)]
+        public double PortElevation_m { get; set; }
+        [Range(-90.0D, 90.0D)]
+        public double VerticalAngle_deg { get; set; }
+        [Range(-180.0D, 180.0D)]
+        public double HorizontalAngle_deg { get; set; }
         [Range(1, 100)]
         public int NumberOfPorts { get; set; }
-        [Range(0.0f, 1000.0f)]
-        public float PortSpacing_m { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float AcuteMixZone_m { get; set; }
-        [Range(0.0f, 40000.0f)]
-        public float ChronicMixZone_m { get; set; }
-        [Range(0.0f, 40.0f)]
-        public float EffluentSalinity_PSU { get; set; }
-        [Range(-10.0f, 40.0f)]
-        public float EffluentTemperature_C { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float EffluentVelocity_m_s { get; set; }
+        [Range(0.0D, 1000.0D)]
+        public double PortSpacing_m { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double AcuteMixZone_m { get; set; }
+        [Range(0.0D, 40000.0D)]
+        public double ChronicMixZone_m { get; set; }
+        [Range(0.0D, 40.0D)]
+        public double EffluentSalinity_PSU { get; set; }
+        [Range(-10.0D, 40.0D)]
+        public double EffluentTemperature_C { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double EffluentVelocity_m_s { get; set; }
         public string RawResults { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

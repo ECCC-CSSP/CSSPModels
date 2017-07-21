@@ -124,13 +124,10 @@ namespace CSSPModelsGenerateCode
 
             db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             CSSPWebToolsDBConnectionString = ConfigurationManager.ConnectionStrings["CSSPWebToolsDB"].ConnectionString;
-            if (System.Environment.UserName.ToLower() == "charles-pc")
+            TestDBConnectionString = ConfigurationManager.ConnectionStrings["TestDB"].ConnectionString;
+            if (System.Environment.UserName == "Charles")
             {
                 CSSPWebToolsDBConnectionString = CSSPWebToolsDBConnectionString.Replace("wmon01dtchlebl2", "charles-pc");
-            }
-            TestDBConnectionString = ConfigurationManager.ConnectionStrings["TestDB"].ConnectionString;
-            if (System.Environment.UserName.ToLower() == "charles-pc")
-            {
                 TestDBConnectionString = TestDBConnectionString.Replace("wmon01dtchlebl2", "charles-pc");
             }
         }

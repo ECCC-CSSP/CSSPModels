@@ -246,11 +246,8 @@
 <data name="AppTaskAppTaskLanguages" xml:space="preserve">
   <value>AppTaskAppTaskLanguages</value>
 </data>
-<data name="AppTaskTVItemIDNavigation" xml:space="preserve">
-  <value>AppTaskTVItemIDNavigation</value>
-</data>
-<data name="AppTaskTVItemID2Navigation" xml:space="preserve">
-  <value>AppTaskTVItemID2Navigation</value>
+<data name="AppTaskTVItem" xml:space="preserve">
+  <value>AppTaskTVItem</value>
 </data>
 <data name="EmailDistributionListContact" xml:space="preserve">
   <value>EmailDistributionListContact</value>
@@ -3891,11 +3888,8 @@
 <data name="TVItemAddressesProvinceTVItem" xml:space="preserve">
   <value>TVItemAddressesProvinceTVItem</value>
 </data>
-<data name="TVItemAppTasksTVItemIDNavigation" xml:space="preserve">
-  <value>TVItemAppTasksTVItemIDNavigation</value>
-</data>
-<data name="TVItemAppTasksTVItemID2Navigation" xml:space="preserve">
-  <value>TVItemAppTasksTVItemID2Navigation</value>
+<data name="TVItemAppTasks" xml:space="preserve">
+  <value>TVItemAppTasks</value>
 </data>
 <data name="TVItemBoxModels" xml:space="preserve">
   <value>TVItemBoxModels</value>

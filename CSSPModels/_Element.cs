@@ -19,10 +19,10 @@ namespace CSSPModels
         public int Type { get; set; }
         [Range(1, -1)]
         public int NumbOfNodes { get; set; }
-        public float Value { get; set; }
-        public float XNode0 { get; set; }
-        public float YNode0 { get; set; }
-        public float ZNode0 { get; set; }
+        public double Value { get; set; }
+        public double XNode0 { get; set; }
+        public double YNode0 { get; set; }
+        public double ZNode0 { get; set; }
 
         public virtual List<Node> NodeList { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

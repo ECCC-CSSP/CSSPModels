@@ -18,8 +18,8 @@ namespace CSSPModels
         public string MikeBoundaryConditionCode { get; set; }
         [StringLength(100)]
         public string MikeBoundaryConditionName { get; set; }
-        [Range(1.0f, 100000.0f)]
-        public float MikeBoundaryConditionLength_m { get; set; }
+        [Range(1.0D, 100000.0D)]
+        public double MikeBoundaryConditionLength_m { get; set; }
         [StringLength(100)]
         public string MikeBoundaryConditionFormat { get; set; }
         [CSSPEnumType]

@@ -15,10 +15,10 @@ namespace CSSPModels
         public int MapInfoID { get; set; }
         [Range(0, -1)]
         public int Ordinal { get; set; }
-        [Range(-90.0f, 90.0f)]
-        public float Lat { get; set; }
-        [Range(-180.0f, 180.0f)]
-        public float Lng { get; set; }
+        [Range(-90.0D, 90.0D)]
+        public double Lat { get; set; }
+        [Range(-180.0D, 180.0D)]
+        public double Lng { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]

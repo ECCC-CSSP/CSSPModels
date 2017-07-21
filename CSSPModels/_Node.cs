@@ -15,11 +15,11 @@ namespace CSSPModels
         #region Properties not in DB
         [Range(1, 1000000)]
         public int ID { get; set; }
-        public float X { get; set; }
-        public float Y { get; set; }
-        public float Z { get; set; }
+        public double X { get; set; }
+        public double Y { get; set; }
+        public double Z { get; set; }
         public int Code { get; set; }
-        public float Value { get; set; }
+        public double Value { get; set; }
 
         public virtual List<Element> ElementList { get; set; }
         public virtual List<Node> ConnectNodeList { get; set; }

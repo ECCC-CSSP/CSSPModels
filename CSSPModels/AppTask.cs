@@ -42,8 +42,7 @@ namespace CSSPModels
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<AppTaskLanguage> AppTaskLanguages { get; set; }
-        public virtual TVItem TVItemIDNavigation { get; set; }
-        public virtual TVItem TVItemID2Navigation { get; set; }
+        public virtual TVItem TVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
@@ -57,7 +56,6 @@ namespace CSSPModels
             AppTaskLanguages = new HashSet<AppTaskLanguage>();
         }
         #endregion Constructors
-
 
     }
 }

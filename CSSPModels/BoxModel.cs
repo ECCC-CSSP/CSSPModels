@@ -13,26 +13,26 @@ namespace CSSPModels
         [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
         public int InfrastructureTVItemID { get; set; }
-        [Range(0.0f, 10000.0f)]
-        public float Flow_m3_day { get; set; }
-        [Range(0.0f, 1000.0f)]
-        public float Depth_m { get; set; }
-        [Range(-15.0f, 40.0f)]
-        public float Temperature_C { get; set; }
+        [Range(0.0D, 10000.0D)]
+        public double Flow_m3_day { get; set; }
+        [Range(0.0D, 1000.0D)]
+        public double Depth_m { get; set; }
+        [Range(-15.0D, 40.0D)]
+        public double Temperature_C { get; set; }
         [Range(0, 10000000)]
         public int Dilution { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float DecayRate_per_day { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double DecayRate_per_day { get; set; }
         [Range(0, 10000000)]
         public int FCUntreated_MPN_100ml { get; set; }
         [Range(0, 10000000)]
         public int FCPreDisinfection_MPN_100ml { get; set; }
         [Range(0, 10000000)]
         public int Concentration_MPN_100ml { get; set; }
-        [Range(0.0f, -1.0f)]
-        public float T90_hour { get; set; }
-        [Range(0.0f, 24.0f)]
-        public float FlowDuration_hour { get; set; }
+        [Range(0.0D, -1.0D)]
+        public double T90_hour { get; set; }
+        [Range(0.0D, 24.0D)]
+        public double FlowDuration_hour { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]

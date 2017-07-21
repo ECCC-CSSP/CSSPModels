@@ -29,10 +29,10 @@ namespace CSSPModels
         public int? Tube1_0 { get; set; }
         [Range(0, 5)]
         public int? Tube0_1 { get; set; }
-        [Range(0.0f, 40.0f)]
-        public float? Salinity { get; set; }
-        [Range(-10.0f, 40.0f)]
-        public float? Temperature { get; set; }
+        [Range(0.0D, 40.0D)]
+        public double? Salinity { get; set; }
+        [Range(-10.0D, 40.0D)]
+        public double? Temperature { get; set; }
         [StringLength(10)]
         [CSSPAllowNull]
         public string ProcessedBy { get; set; }

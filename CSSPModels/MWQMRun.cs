@@ -30,22 +30,22 @@ namespace CSSPModels
         public DateTime? EndDateTime_Local { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime? LabReceivedDateTime_Local { get; set; }
-        [Range(-10.0f, 40.0f)]
-        public float? TemperatureControl1_C { get; set; }
-        [Range(-10.0f, 40.0f)]
-        public float? TemperatureControl2_C { get; set; }
+        [Range(-10.0D, 40.0D)]
+        public double? TemperatureControl1_C { get; set; }
+        [Range(-10.0D, 40.0D)]
+        public double? TemperatureControl2_C { get; set; }
         [CSSPEnumType]
         [CSSPAllowNull]
         public BeaufortScaleEnum? SeaStateAtStart_BeaufortScale { get; set; }
         [CSSPEnumType]
         [CSSPAllowNull]
         public BeaufortScaleEnum? SeaStateAtEnd_BeaufortScale { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float? WaterLevelAtBrook_m { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float? WaveHightAtStart_m { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float? WaveHightAtEnd_m { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double? WaterLevelAtBrook_m { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double? WaveHightAtStart_m { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double? WaveHightAtEnd_m { get; set; }
         [StringLength(20)]
         [CSSPAllowNull]
         public string SampleCrewInitials { get; set; }
@@ -78,28 +78,28 @@ namespace CSSPModels
         [CSSPEnumType]
         [CSSPAllowNull]
         public TideTextEnum? Tide_End { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay0_mm { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay1_mm { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay2_mm { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay3_mm { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay4_mm { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay5_mm { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay6_mm { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay7_mm { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay8_mm { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay9_mm { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay10_mm { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay0_mm { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay1_mm { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay2_mm { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay3_mm { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay4_mm { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay5_mm { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay6_mm { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay7_mm { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay8_mm { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay9_mm { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay10_mm { get; set; }
         public bool? RemoveFromStat { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

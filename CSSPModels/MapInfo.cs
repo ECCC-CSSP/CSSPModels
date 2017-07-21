@@ -16,14 +16,14 @@ namespace CSSPModels
         public int TVItemID { get; set; }
         [CSSPEnumType]
         public TVTypeEnum TVType { get; set; }
-        [Range(-90.0f, 90.0f)]
-        public float LatMin { get; set; }
-        [Range(-90.0f, 90.0f)]
-        public float LatMax { get; set; }
-        [Range(-180.0f, 180.0f)]
-        public float LngMin { get; set; }
-        [Range(-180.0f, 180.0f)]
-        public float LngMax { get; set; }
+        [Range(-90.0D, 90.0D)]
+        public double LatMin { get; set; }
+        [Range(-90.0D, 90.0D)]
+        public double LatMax { get; set; }
+        [Range(-180.0D, 180.0D)]
+        public double LngMin { get; set; }
+        [Range(-180.0D, 180.0D)]
+        public double LngMax { get; set; }
         [CSSPEnumType]
         public MapInfoDrawTypeEnum MapInfoDrawType { get; set; }
         [CSSPAfter(Year = 1980)]

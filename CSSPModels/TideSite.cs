@@ -15,8 +15,8 @@ namespace CSSPModels
         public int TideSiteTVItemID { get; set; }
         [StringLength(100)]
         public string WebTideModel { get; set; }
-        [Range(-100.0f, 100.0f)]
-        public float WebTideDatum_m { get; set; }
+        [Range(-100.0D, 100.0F)]
+        public double WebTideDatum_m { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]

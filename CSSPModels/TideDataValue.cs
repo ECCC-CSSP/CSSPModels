@@ -21,12 +21,12 @@ namespace CSSPModels
         public TideDataTypeEnum TideDataType { get; set; }
         [CSSPEnumType]
         public StorageDataTypeEnum StorageDataType { get; set; }
-        [Range(0.0f, 10000.0f)]
-        public float Depth_m { get; set; }
-        [Range(0.0f, 10.0f)]
-        public float UVelocity_m_s { get; set; }
-        [Range(0.0f, 10.0f)]
-        public float VVelocity_m_s { get; set; }
+        [Range(0.0D, 10000.0D)]
+        public double Depth_m { get; set; }
+        [Range(0.0D, 10.0D)]
+        public double UVelocity_m_s { get; set; }
+        [Range(0.0D, 10.0D)]
+        public double VVelocity_m_s { get; set; }
         [CSSPEnumType]
         [CSSPAllowNull]
         public TideTextEnum? TideStart { get; set; }

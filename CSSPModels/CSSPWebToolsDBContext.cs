@@ -100,7 +100,7 @@ namespace CSSPModels
         {
             string CSSPWebToolsDBConnectionString = ConfigurationManager.ConnectionStrings["CSSPWebToolsDB"].ConnectionString;
             string TestDBConnectionString = ConfigurationManager.ConnectionStrings["TestDB"].ConnectionString;
-            if (System.Environment.UserName.ToLower() == "charles-pc")
+            if (System.Environment.UserName == "Charles")
             {
                 CSSPWebToolsDBConnectionString = CSSPWebToolsDBConnectionString.Replace("wmon01dtchlebl2", "charles-pc");
                 TestDBConnectionString = TestDBConnectionString.Replace("wmon01dtchlebl2", "charles-pc");
@@ -161,12 +161,8 @@ namespace CSSPModels
                 .WithOne(c => c.AppTask);
 
             modelBuilder.Entity<AppTask>()
-                .HasOne(c => c.TVItemIDNavigation)
-                .WithMany(c => c.AppTasksTVItemIDNavigation);
-
-            modelBuilder.Entity<AppTask>()
-                .HasOne(c => c.TVItemID2Navigation)
-                .WithMany(c => c.AppTasksTVItemID2Navigation);
+                .HasOne(c => c.TVItem)
+                .WithMany(c => c.AppTasks);
 
             // ---------------------------------------
             //                 AppTaskLanguage
@@ -753,12 +749,12 @@ namespace CSSPModels
                 .WithOne(c => c.ProvinceTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AppTasksTVItemIDNavigation)
-                .WithOne(c => c.TVItemIDNavigation);
+                .HasMany(c => c.AppTasks)
+                .WithOne(c => c.TVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AppTasksTVItemID2Navigation)
-                .WithOne(c => c.TVItemID2Navigation);
+                .HasMany(c => c.AppTasks)
+                .WithOne(c => c.TVItem);
 
             modelBuilder.Entity<TVItem>()
                 .HasMany(c => c.BoxModels)

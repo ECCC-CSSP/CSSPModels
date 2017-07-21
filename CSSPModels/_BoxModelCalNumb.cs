@@ -17,16 +17,16 @@ namespace CSSPModels
         public string Error { get; set; }
         [CSSPEnumType]
         public BoxModelResultTypeEnum BoxModelResultType { get; set; }
-        [Range(0.0f, -1.0f)]
-        public float CalLength_m { get; set; }
-        [Range(0.0f, -1.0f)]
-        public float CalRadius_m { get; set; }
-        [Range(0.0f, -1.0f)]
-        public float CalSurface_m2 { get; set; }
-        [Range(0.0f, -1.0f)]
-        public float CalVolume_m3 { get; set; }
-        [Range(0.0f, -1.0f)]
-        public float CalWidth_m { get; set; }
+        [Range(0.0D, -1.0D)]
+        public double CalLength_m { get; set; }
+        [Range(0.0D, -1.0D)]
+        public double CalRadius_m { get; set; }
+        [Range(0.0D, -1.0D)]
+        public double CalSurface_m2 { get; set; }
+        [Range(0.0D, -1.0D)]
+        public double CalVolume_m3 { get; set; }
+        [Range(0.0D, -1.0D)]
+        public double CalWidth_m { get; set; }
         public bool FixLength { get; set; }
         public bool FixWidth { get; set; }
 

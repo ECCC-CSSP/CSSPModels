@@ -211,9 +211,9 @@ namespace CSSPModelsGenerateCodeHelper
                                 break;
                             case "float":
                                 {
-                                    if (csspProp.PropType != "Single")
+                                    if (csspProp.PropType != "Double")
                                     {
-                                        sb.AppendLine(table.TableName + "\t" + col.FieldName + "\t---------------- wrong type It is [" + csspProp.PropType + "] should be [Single]");
+                                        sb.AppendLine(table.TableName + "\t" + col.FieldName + "\t---------------- wrong type It is [" + csspProp.PropType + "] should be [Double]");
                                     }
 
                                     if (!csspProp.HasRangeAttribute)

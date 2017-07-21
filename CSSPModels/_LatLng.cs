@@ -13,10 +13,10 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Range(-180.0f, 180.0f)]
-        public float Lat { get; set; }
-        [Range(-90.0f, 90.0f)]
-        public float Lng { get; set; }
+        [Range(-180.0D, 180.0D)]
+        public double Lat { get; set; }
+        [Range(-90.0D, 90.0D)]
+        public double Lng { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB

@@ -538,6 +538,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AppTaskTVItem.
+        /// </summary>
+        public static string AppTaskTVItem {
+            get {
+                return ResourceManager.GetString("AppTaskTVItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AppTaskTVItemID.
         /// </summary>
         public static string AppTaskTVItemID {
@@ -552,24 +561,6 @@ namespace CSSPModels.Resources {
         public static string AppTaskTVItemID2 {
             get {
                 return ResourceManager.GetString("AppTaskTVItemID2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AppTaskTVItemID2Navigation.
-        /// </summary>
-        public static string AppTaskTVItemID2Navigation {
-            get {
-                return ResourceManager.GetString("AppTaskTVItemID2Navigation", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AppTaskTVItemIDNavigation.
-        /// </summary>
-        public static string AppTaskTVItemIDNavigation {
-            get {
-                return ResourceManager.GetString("AppTaskTVItemIDNavigation", resourceCulture);
             }
         }
         
@@ -10834,20 +10825,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemAppTasksTVItemID2Navigation.
+        ///   Looks up a localized string similar to TVItemAppTasks.
         /// </summary>
-        public static string TVItemAppTasksTVItemID2Navigation {
+        public static string TVItemAppTasks {
             get {
-                return ResourceManager.GetString("TVItemAppTasksTVItemID2Navigation", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemAppTasksTVItemIDNavigation.
-        /// </summary>
-        public static string TVItemAppTasksTVItemIDNavigation {
-            get {
-                return ResourceManager.GetString("TVItemAppTasksTVItemIDNavigation", resourceCulture);
+                return ResourceManager.GetString("TVItemAppTasks", resourceCulture);
             }
         }
         

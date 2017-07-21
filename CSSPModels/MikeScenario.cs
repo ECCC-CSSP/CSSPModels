@@ -26,25 +26,25 @@ namespace CSSPModels
         public DateTime MikeScenarioEndDateTime_Local { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime? MikeScenarioStartExecutionDateTime_Local { get; set; }
-        [Range(1.0f, 100000.0f)]
-        public float? MikeScenarioExecutionTime_min { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float WindSpeed_km_h { get; set; }
-        [Range(0.0f, 360.0f)]
-        public float WindDirection_deg { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float DecayFactor_per_day { get; set; }
+        [Range(1.0D, 100000.0D)]
+        public double? MikeScenarioExecutionTime_min { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double WindSpeed_km_h { get; set; }
+        [Range(0.0D, 360.0D)]
+        public double WindDirection_deg { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double DecayFactor_per_day { get; set; }
         public bool DecayIsConstant { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float DecayFactorAmplitude { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double DecayFactorAmplitude { get; set; }
         [Range(0, 100)]
         public int ResultFrequency_min { get; set; }
-        [Range(-10.0f, 40.0f)]
-        public float AmbientTemperature_C { get; set; }
-        [Range(0.0f, 40.0f)]
-        public float AmbientSalinity_PSU { get; set; }
-        [Range(0.0f, 100.0f)]
-        public float ManningNumber { get; set; }
+        [Range(-10.0D, 40.0D)]
+        public double AmbientTemperature_C { get; set; }
+        [Range(0.0D, 40.0D)]
+        public double AmbientSalinity_PSU { get; set; }
+        [Range(0.0D, 100.0D)]
+        public double ManningNumber { get; set; }
         [Range(1, 10000)]
         public int? NumberOfElements { get; set; }
         [Range(1, 10000)]

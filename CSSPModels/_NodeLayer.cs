@@ -15,7 +15,7 @@ namespace CSSPModels
         #region Properties not in DB
         [Range(1, 100)]
         public int Layer { get; set; }
-        public float Z { get; set; }
+        public double Z { get; set; }
 
         public virtual Node Node { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

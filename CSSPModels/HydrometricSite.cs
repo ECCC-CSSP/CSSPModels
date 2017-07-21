@@ -25,17 +25,17 @@ namespace CSSPModels
         [StringLength(4)]
         [CSSPAllowNull]
         public string Province { get; set; }
-        [Range(0.0f, 10000.0f)]
-        public float? Elevation_m { get; set; }
+        [Range(0.0D, 10000.0D)]
+        public double? Elevation_m { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime? StartDate_Local { get; set; }
         [CSSPBigger(OtherField = "StartDate_Local")]
         [CSSPAfter(Year = 1980)]
         public DateTime? EndDate_Local { get; set; }
-        [Range(-10.0f, 0.0f)]
-        public float? TimeOffset_hour { get; set; }
-        [Range(0.0f, 1000000.0f)]
-        public float? DrainageArea_km2 { get; set; }
+        [Range(-10.0D, 0.0D)]
+        public double? TimeOffset_hour { get; set; }
+        [Range(0.0D, 1000000.0D)]
+        public double? DrainageArea_km2 { get; set; }
         public bool? IsNatural { get; set; }
         public bool? IsActive { get; set; }
         public bool? Sediment { get; set; }

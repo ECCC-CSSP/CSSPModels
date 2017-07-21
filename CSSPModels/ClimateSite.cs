@@ -19,8 +19,8 @@ namespace CSSPModels
         public string ClimateSiteName { get; set; }
         [StringLength(4)]
         public string Province { get; set; }
-        [Range(0.0f, 10000.0f)]
-        public float? Elevation_m { get; set; }
+        [Range(0.0D, 10000.0D)]
+        public double? Elevation_m { get; set; }
         [StringLength(10)]
         public string ClimateID { get; set; }
         [Range(1, 100000)]
@@ -30,8 +30,8 @@ namespace CSSPModels
         public bool? IsProvincial { get; set; }
         [StringLength(50)]
         public string ProvSiteID { get; set; }
-        [Range(-10.0f, 0.0f)]
-        public float? TimeOffset_hour { get; set; }
+        [Range(-10.0D, 0.0D)]
+        public double? TimeOffset_hour { get; set; }
         [StringLength(50)]
         public string File_desc { get; set; }
         [CSSPAfter(Year = 1980)]

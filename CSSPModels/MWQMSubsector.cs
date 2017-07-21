@@ -17,28 +17,28 @@ namespace CSSPModels
         public string SubsectorHistoricKey { get; set; }
         [StringLength(20)]
         public string TideLocationSIDText { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay0Limit { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay1Limit { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay2Limit { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay3Limit { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay4Limit { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay5Limit { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay6Limit { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay7Limit { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay8Limit { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay9Limit { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? RainDay10Limit { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay0Limit { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay1Limit { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay2Limit { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay3Limit { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay4Limit { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay5Limit { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay6Limit { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay7Limit { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay8Limit { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay9Limit { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? RainDay10Limit { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime? IncludeRainStartDate { get; set; }
         [CSSPAfter(Year = 1980)]

@@ -19,28 +19,28 @@ namespace CSSPModels
         public bool Keep { get; set; }
         [CSSPEnumType]
         public StorageDataTypeEnum StorageDataType { get; set; }
-        [Range(0.0f, 10000.0f)]
-        public float? Snow_cm { get; set; }
-        [Range(0.0f, 10000.0f)]
-        public float? Rainfall_mm { get; set; }
-        [Range(0.0f, 10000.0f)]
-        public float? RainfallEntered_mm { get; set; }
-        [Range(0.0f, 10000.0f)]
-        public float? TotalPrecip_mm_cm { get; set; }
-        [Range(-50.0f, 50.0f)]
-        public float? MaxTemp_C { get; set; }
-        [Range(-50.0f, 50.0f)]
-        public float? MinTemp_C { get; set; }
-        [Range(-1000.0f, 100.0f)]
-        public float? HeatDegDays_C { get; set; }
-        [Range(-1000.0f, 100.0f)]
-        public float? CoolDegDays_C { get; set; }
-        [Range(0.0f, 10000.0f)]
-        public float? SnowOnGround_cm { get; set; }
-        [Range(0.0f, 360.0f)]
-        public float? DirMaxGust_0North { get; set; }
-        [Range(0.0f, 300.0f)]
-        public float? SpdMaxGust_kmh { get; set; }
+        [Range(0.0D, 10000.0D)]
+        public double? Snow_cm { get; set; }
+        [Range(0.0D, 10000.0D)]
+        public double? Rainfall_mm { get; set; }
+        [Range(0.0D, 10000.0D)]
+        public double? RainfallEntered_mm { get; set; }
+        [Range(0.0D, 10000.0D)]
+        public double? TotalPrecip_mm_cm { get; set; }
+        [Range(-50.0D, 50.0D)]
+        public double? MaxTemp_C { get; set; }
+        [Range(-50.0D, 50.0D)]
+        public double? MinTemp_C { get; set; }
+        [Range(-1000.0D, 100.0D)]
+        public double? HeatDegDays_C { get; set; }
+        [Range(-1000.0D, 100.0D)]
+        public double? CoolDegDays_C { get; set; }
+        [Range(0.0D, 10000.0D)]
+        public double? SnowOnGround_cm { get; set; }
+        [Range(0.0D, 360.0D)]
+        public double? DirMaxGust_0North { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? SpdMaxGust_kmh { get; set; }
         public string HourlyValues { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
