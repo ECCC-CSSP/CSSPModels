@@ -44,6 +44,17 @@ namespace CSSPModelsGenerateCode
         #endregion Construtors
 
         #region Events
+        private void butGenerate_DBReadTest_Click(object sender, EventArgs e)
+        {
+            // -----------------------------------------------------------------
+            // -----------------------------------------------------------------
+            // Will generate CSSPModels.Tests/_DBReadTestGenerated.cs files
+            // -----------------------------------------------------------------
+            // -----------------------------------------------------------------
+
+            richTextBoxStatus.Text = "";
+            modelsGenerateCodeHelper.Generate_DBReadTest(CSSPWebToolsDBConnectionString);
+        }
         private void butGenerateAllCodeFiles_Click(object sender, EventArgs e)
         {
             // -----------------------------------------------------------------
@@ -53,7 +64,7 @@ namespace CSSPModelsGenerateCode
             // -----------------------------------------------------------------
 
             richTextBoxStatus.Text = "";
-            modelsGenerateCodeHelper.GeneratedModelsTest();
+            modelsGenerateCodeHelper.GenerateModelsTest();
         }
 
         private void butGenerateResOnce_Click(object sender, EventArgs e)
@@ -132,6 +143,7 @@ namespace CSSPModelsGenerateCode
             }
         }
         #endregion Functions private
+
     }
 
 

@@ -561,8 +561,8 @@ namespace CSSPModels
                 .WithMany(c => c.PolSourceObservationsContactTVItem);
 
             modelBuilder.Entity<PolSourceObservation>()
-                .HasOne(c => c.PolSourceSiteTVItem)
-                .WithMany(c => c.PolSourceObservationsPolSourceSiteTVItem);
+                .HasOne(c => c.PolSourceSite)
+                .WithMany(c => c.PolSourceObservations);
 
             // ---------------------------------------
             //                 PolSourceObservationIssue
@@ -869,10 +869,6 @@ namespace CSSPModels
                 .WithOne(c => c.ContactTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.PolSourceObservationsPolSourceSiteTVItem)
-                .WithOne(c => c.PolSourceSiteTVItem);
-
-            modelBuilder.Entity<TVItem>()
                 .HasMany(c => c.PolSourceSites)
                 .WithOne(c => c.PolSourceSiteTVItem);
 
@@ -941,10 +937,6 @@ namespace CSSPModels
                 .WithOne(c => c.ContactTVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.TVItemUserAuthorizationsTVItemID1Navigation)
-                .WithOne(c => c.TVItemID1Navigation);
-
-            modelBuilder.Entity<TVItem>()
                 .HasMany(c => c.TVTypeUserAuthorizations)
                 .WithOne(c => c.ContactTVItem);
 
@@ -1009,10 +1001,6 @@ namespace CSSPModels
             modelBuilder.Entity<TVItemUserAuthorization>()
                 .HasOne(c => c.ContactTVItem)
                 .WithMany(c => c.TVItemUserAuthorizationsContactTVItem);
-
-            modelBuilder.Entity<TVItemUserAuthorization>()
-                .HasOne(c => c.TVItemID1Navigation)
-                .WithMany(c => c.TVItemUserAuthorizationsTVItemID1Navigation);
 
             // ---------------------------------------
             //                 TVTypeUserAuthorization

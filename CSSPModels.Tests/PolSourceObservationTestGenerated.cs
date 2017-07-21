@@ -15,7 +15,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolSourceObservation_Properties_OK()
         {
-            List<string> propNameList = new List<string>() { "PolSourceObservationID", "PolSourceSiteTVItemID", "ObservationDate_Local", "ContactTVItemID", "Observation_ToBeDeleted", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "PolSourceObservationID", "PolSourceSiteID", "ObservationDate_Local", "ContactTVItemID", "Observation_ToBeDeleted", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -51,7 +51,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolSourceObservation_Navigation_OK()
         {
-            List<string> foreignNameList = new List<string>() { "ContactTVItem", "PolSourceSiteTVItem", "PolSourceSite",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() { "ContactTVItem", "PolSourceSite",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() { "PolSourceObservationIssues",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -88,7 +88,7 @@ namespace CSSPModels.Tests
         public void PolSourceObservation_Every_Property_Has_A_Resource_OK()
         {
                Assert.IsNotNull(ModelsRes.PolSourceObservationPolSourceObservationID);
-               Assert.IsNotNull(ModelsRes.PolSourceObservationPolSourceSiteTVItemID);
+               Assert.IsNotNull(ModelsRes.PolSourceObservationPolSourceSiteID);
                Assert.IsNotNull(ModelsRes.PolSourceObservationObservationDate_Local);
                Assert.IsNotNull(ModelsRes.PolSourceObservationContactTVItemID);
                Assert.IsNotNull(ModelsRes.PolSourceObservationObservation_ToBeDeleted);
@@ -96,7 +96,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.PolSourceObservationLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.PolSourceObservationPolSourceObservationIssues);
                Assert.IsNotNull(ModelsRes.PolSourceObservationContactTVItem);
-               Assert.IsNotNull(ModelsRes.PolSourceObservationPolSourceSiteTVItem);
                Assert.IsNotNull(ModelsRes.PolSourceObservationPolSourceSite);
         }
     }

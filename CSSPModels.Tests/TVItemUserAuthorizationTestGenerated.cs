@@ -51,7 +51,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVItemUserAuthorization_Navigation_OK()
         {
-            List<string> foreignNameList = new List<string>() { "ContactTVItem", "TVItemID1Navigation",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() { "ContactTVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -97,7 +97,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemUserAuthorizationLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TVItemUserAuthorizationLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.TVItemUserAuthorizationContactTVItem);
-               Assert.IsNotNull(ModelsRes.TVItemUserAuthorizationTVItemID1Navigation);
         }
     }
 }

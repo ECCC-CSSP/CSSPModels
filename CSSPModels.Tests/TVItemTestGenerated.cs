@@ -52,7 +52,7 @@ namespace CSSPModels.Tests
         public void TVItem_Navigation_OK()
         {
             List<string> foreignNameList = new List<string>() { "Parent",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "AddressesAddressTVItem", "AddressesCountryTVItem", "AddressesMunicipalityTVItem", "AddressesProvinceTVItem", "AppTasks", "BoxModels", "ClimateSites", "Contacts", "DocTemplates", "Emails", "EmailDistributionLists", "HydrometricSites", "Infrastructures", "LabSheetDetails", "LabSheetsAcceptedOrRejectedByContactTVItem", "LabSheetsMWQMRunTVItem", "LabSheetsSubsectorTVItem", "LabSheetTubeMPNDetails", "MapInfos", "MikeBoundaryConditions", "MikeScenarios", "MikeSources", "MWQMRunsLabSampleApprovalContactTVItem", "MWQMRunsMWQMRunTVItem", "MWQMRunsSubsectorTVItem", "MWQMSampleMWQMRunTVItem", "MWQMSampleMWQMSiteTVItem", "MWQMSites", "MWQMSiteStartEndDates", "MWQMSubsectors", "PolSourceObservationsContactTVItem", "PolSourceObservationsPolSourceSiteTVItem", "PolSourceSites", "SamplingPlansCreatorTVItem", "SamplingPlansProvinceTVItem", "SamplingPlansSamplingPlanFileTVItem", "SamplingPlanSubsectors", "SamplingPlanSubsectorSites", "SpillsInfrastructureTVItem", "SpillsMunicipalityTVItem", "Tels", "TideDataValues", "TideSites", "TVFiles", "TVItemLanguages", "TVItemLinksFromTVItem", "TVItemLinksToTVItem", "TVItemStats", "TVItemUserAuthorizationsContactTVItem", "TVItemUserAuthorizationsTVItemID1Navigation", "TVTypeUserAuthorizations", "UseOfSitesSiteTVItem", "UseOfSitesSubsectorTVItem", "VPScenarios", "InverseParent",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() { "AddressesAddressTVItem", "AddressesCountryTVItem", "AddressesMunicipalityTVItem", "AddressesProvinceTVItem", "AppTasks", "BoxModels", "ClimateSites", "Contacts", "DocTemplates", "Emails", "EmailDistributionLists", "HydrometricSites", "Infrastructures", "LabSheetDetails", "LabSheetsAcceptedOrRejectedByContactTVItem", "LabSheetsMWQMRunTVItem", "LabSheetsSubsectorTVItem", "LabSheetTubeMPNDetails", "MapInfos", "MikeBoundaryConditions", "MikeScenarios", "MikeSources", "MWQMRunsLabSampleApprovalContactTVItem", "MWQMRunsMWQMRunTVItem", "MWQMRunsSubsectorTVItem", "MWQMSampleMWQMRunTVItem", "MWQMSampleMWQMSiteTVItem", "MWQMSites", "MWQMSiteStartEndDates", "MWQMSubsectors", "PolSourceObservationsContactTVItem", "PolSourceSites", "SamplingPlansCreatorTVItem", "SamplingPlansProvinceTVItem", "SamplingPlansSamplingPlanFileTVItem", "SamplingPlanSubsectors", "SamplingPlanSubsectorSites", "SpillsInfrastructureTVItem", "SpillsMunicipalityTVItem", "Tels", "TideDataValues", "TideSites", "TVFiles", "TVItemLanguages", "TVItemLinksFromTVItem", "TVItemLinksToTVItem", "TVItemStats", "TVItemUserAuthorizationsContactTVItem", "TVTypeUserAuthorizations", "UseOfSitesSiteTVItem", "UseOfSitesSubsectorTVItem", "VPScenarios", "InverseParent",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(TVItem).GetProperties())
@@ -126,7 +126,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemMWQMSiteStartEndDates);
                Assert.IsNotNull(ModelsRes.TVItemMWQMSubsectors);
                Assert.IsNotNull(ModelsRes.TVItemPolSourceObservationsContactTVItem);
-               Assert.IsNotNull(ModelsRes.TVItemPolSourceObservationsPolSourceSiteTVItem);
                Assert.IsNotNull(ModelsRes.TVItemPolSourceSites);
                Assert.IsNotNull(ModelsRes.TVItemSamplingPlansCreatorTVItem);
                Assert.IsNotNull(ModelsRes.TVItemSamplingPlansProvinceTVItem);
@@ -144,7 +143,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemTVItemLinksToTVItem);
                Assert.IsNotNull(ModelsRes.TVItemTVItemStats);
                Assert.IsNotNull(ModelsRes.TVItemTVItemUserAuthorizationsContactTVItem);
-               Assert.IsNotNull(ModelsRes.TVItemTVItemUserAuthorizationsTVItemID1Navigation);
                Assert.IsNotNull(ModelsRes.TVItemTVTypeUserAuthorizations);
                Assert.IsNotNull(ModelsRes.TVItemUseOfSitesSiteTVItem);
                Assert.IsNotNull(ModelsRes.TVItemUseOfSitesSubsectorTVItem);

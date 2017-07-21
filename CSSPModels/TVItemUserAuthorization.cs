@@ -35,7 +35,7 @@ namespace CSSPModels
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual TVItem ContactTVItem { get; set; }
-        public virtual TVItem TVItemID1Navigation { get; set; }
+        //public virtual TVItem FirstTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

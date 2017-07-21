@@ -3291,8 +3291,8 @@
 <data name="PolSourceObservationPolSourceObservationID" xml:space="preserve">
   <value>PolSourceObservationPolSourceObservationID</value>
 </data>
-<data name="PolSourceObservationPolSourceSiteTVItemID" xml:space="preserve">
-  <value>PolSourceObservationPolSourceSiteTVItemID</value>
+<data name="PolSourceObservationPolSourceSiteID" xml:space="preserve">
+  <value>PolSourceObservationPolSourceSiteID</value>
 </data>
 <data name="PolSourceObservationObservationDate_Local" xml:space="preserve">
   <value>PolSourceObservationObservationDate_Local</value>
@@ -3314,9 +3314,6 @@
 </data>
 <data name="PolSourceObservationContactTVItem" xml:space="preserve">
   <value>PolSourceObservationContactTVItem</value>
-</data>
-<data name="PolSourceObservationPolSourceSiteTVItem" xml:space="preserve">
-  <value>PolSourceObservationPolSourceSiteTVItem</value>
 </data>
 <data name="PolSourceObservationPolSourceSite" xml:space="preserve">
   <value>PolSourceObservationPolSourceSite</value>
@@ -3969,9 +3966,6 @@
 <data name="TVItemPolSourceObservationsContactTVItem" xml:space="preserve">
   <value>TVItemPolSourceObservationsContactTVItem</value>
 </data>
-<data name="TVItemPolSourceObservationsPolSourceSiteTVItem" xml:space="preserve">
-  <value>TVItemPolSourceObservationsPolSourceSiteTVItem</value>
-</data>
 <data name="TVItemPolSourceSites" xml:space="preserve">
   <value>TVItemPolSourceSites</value>
 </data>
@@ -4022,9 +4016,6 @@
 </data>
 <data name="TVItemTVItemUserAuthorizationsContactTVItem" xml:space="preserve">
   <value>TVItemTVItemUserAuthorizationsContactTVItem</value>
-</data>
-<data name="TVItemTVItemUserAuthorizationsTVItemID1Navigation" xml:space="preserve">
-  <value>TVItemTVItemUserAuthorizationsTVItemID1Navigation</value>
 </data>
 <data name="TVItemTVTypeUserAuthorizations" xml:space="preserve">
   <value>TVItemTVTypeUserAuthorizations</value>
@@ -4181,9 +4172,6 @@
 </data>
 <data name="TVItemUserAuthorizationContactTVItem" xml:space="preserve">
   <value>TVItemUserAuthorizationContactTVItem</value>
-</data>
-<data name="TVItemUserAuthorizationTVItemID1Navigation" xml:space="preserve">
-  <value>TVItemUserAuthorizationTVItemID1Navigation</value>
 </data>
 <data name="TVTypeUserAuthorization" xml:space="preserve">
   <value>TVTypeUserAuthorization</value>

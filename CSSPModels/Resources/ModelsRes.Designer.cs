@@ -8881,20 +8881,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceObservationPolSourceSiteTVItem.
+        ///   Looks up a localized string similar to PolSourceObservationPolSourceSiteID.
         /// </summary>
-        public static string PolSourceObservationPolSourceSiteTVItem {
+        public static string PolSourceObservationPolSourceSiteID {
             get {
-                return ResourceManager.GetString("PolSourceObservationPolSourceSiteTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to PolSourceObservationPolSourceSiteTVItemID.
-        /// </summary>
-        public static string PolSourceObservationPolSourceSiteTVItemID {
-            get {
-                return ResourceManager.GetString("PolSourceObservationPolSourceSiteTVItemID", resourceCulture);
+                return ResourceManager.GetString("PolSourceObservationPolSourceSiteID", resourceCulture);
             }
         }
         

@@ -26,7 +26,6 @@ namespace CSSPModelsGenerateCodeHelper
             Type[] types = importAssembly.GetTypes();
             foreach (Type type in types)
             {
-                bool ClassNotMapped = false;
                 StringBuilder sb = new StringBuilder();
 
                 StatusTempEvent(new StatusEventArgs(type.Name));
@@ -37,20 +36,10 @@ namespace CSSPModelsGenerateCodeHelper
                     continue;
                 }
 
-
                 //if (type.Name == "BaseModelService")
                 //{
                 //    continue;
                 //}
-
-                foreach (CustomAttributeData customAttributeData in type.CustomAttributes)
-                {
-                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
-                    {
-                        ClassNotMapped = true;
-                        break;
-                    }
-                }
 
                 sb.AppendLine(@"using System;");
                 sb.AppendLine(@"using Microsoft.VisualStudio.TestTools.UnitTesting;");
@@ -72,11 +61,6 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"        #region Properties");
                 sb.AppendLine(@"        private CSSPWebToolsDBContext db { get; set; }");
                 sb.AppendLine(@"        private " + type.Name + " " + type.Name.Substring(0, 1).ToLower() + type.Name.Substring(1) + " { get; set; }");
-                //if (!ClassNotMapped)
-                //{
-                //    sb.AppendLine(@"        private IEntityType entityType { get; set; }");
-                //    sb.AppendLine(@"        private string EntityName = ""CSSPModels." + type.Name + @""";");
-                //}
                 sb.AppendLine(@"        #endregion Properties");
                 sb.AppendLine(@"");
                 sb.AppendLine(@"        #region Constructors");
@@ -84,17 +68,6 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"        {");
                 sb.AppendLine(@"            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);");
                 sb.AppendLine(@"            " + type.Name.Substring(0, 1).ToLower() + type.Name.Substring(1) + " = new " + type.Name + "();");
-                //if (!ClassNotMapped)
-                //{
-                //    sb.AppendLine(@"            foreach (IEntityType entityTypeTemp in db.Model.GetEntityTypes())");
-                //    sb.AppendLine(@"            {");
-                //    sb.AppendLine(@"                if (entityTypeTemp.Name == EntityName)");
-                //    sb.AppendLine(@"                {");
-                //    sb.AppendLine(@"                    entityType = entityTypeTemp;");
-                //    sb.AppendLine(@"                    break;");
-                //    sb.AppendLine(@"                }");
-                //    sb.AppendLine(@"            }");
-                //}
                 sb.AppendLine(@"        }");
                 sb.AppendLine(@"        #endregion Constructors");
                 sb.AppendLine(@"");

@@ -11,8 +11,8 @@ namespace CSSPModels
         [Key]
         public int PolSourceObservationID { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
-        public int PolSourceSiteTVItemID { get; set; }
+        [CSSPExist(TypeName = "PolSourceSite", Plurial = "s", FieldID = "PolSourceSiteID")]
+        public int PolSourceSiteID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime ObservationDate_Local { get; set; }
         [Range(1, -1)]
@@ -27,7 +27,6 @@ namespace CSSPModels
 
         public virtual ICollection<PolSourceObservationIssue> PolSourceObservationIssues { get; set; }
         public virtual TVItem ContactTVItem { get; set; }
-        public virtual TVItem PolSourceSiteTVItem { get; set; }
         public virtual PolSourceSite PolSourceSite { get; set; }
         #endregion Properties in DB
 

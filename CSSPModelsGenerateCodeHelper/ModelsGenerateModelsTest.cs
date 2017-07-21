@@ -12,7 +12,7 @@ namespace CSSPModelsGenerateCodeHelper
     public partial class ModelsGenerateCodeHelper
     {
         #region Functions public
-        public void GeneratedModelsTest()
+        public void GenerateModelsTest()
         {
             FileInfo fiDLL = new FileInfo(modelsFiles.CSSPModelsDLL);
 

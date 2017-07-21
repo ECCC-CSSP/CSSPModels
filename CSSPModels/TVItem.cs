@@ -61,7 +61,6 @@ namespace CSSPModels
         public virtual ICollection<MWQMSiteStartEndDate> MWQMSiteStartEndDates { get; set; }
         public virtual ICollection<MWQMSubsector> MWQMSubsectors { get; set; }
         public virtual ICollection<PolSourceObservation> PolSourceObservationsContactTVItem { get; set; }
-        public virtual ICollection<PolSourceObservation> PolSourceObservationsPolSourceSiteTVItem { get; set; }
         public virtual ICollection<PolSourceSite> PolSourceSites { get; set; }
         public virtual ICollection<SamplingPlan> SamplingPlansCreatorTVItem { get; set; }
         public virtual ICollection<SamplingPlan> SamplingPlansProvinceTVItem { get; set; }
@@ -79,7 +78,6 @@ namespace CSSPModels
         public virtual ICollection<TVItemLink> TVItemLinksToTVItem { get; set; }
         public virtual ICollection<TVItemStat> TVItemStats { get; set; }
         public virtual ICollection<TVItemUserAuthorization> TVItemUserAuthorizationsContactTVItem { get; set; }
-        public virtual ICollection<TVItemUserAuthorization> TVItemUserAuthorizationsTVItemID1Navigation { get; set; }
         public virtual ICollection<TVTypeUserAuthorization> TVTypeUserAuthorizations { get; set; }
         public virtual ICollection<UseOfSite> UseOfSitesSiteTVItem { get; set; }
         public virtual ICollection<UseOfSite> UseOfSitesSubsectorTVItem { get; set; }
@@ -127,7 +125,6 @@ namespace CSSPModels
             MWQMSiteStartEndDates = new HashSet<MWQMSiteStartEndDate>();
             MWQMSubsectors = new HashSet<MWQMSubsector>();
             PolSourceObservationsContactTVItem = new HashSet<PolSourceObservation>();
-            PolSourceObservationsPolSourceSiteTVItem = new HashSet<PolSourceObservation>();
             PolSourceSites = new HashSet<PolSourceSite>();
             SamplingPlansCreatorTVItem = new HashSet<SamplingPlan>();
             SamplingPlansProvinceTVItem = new HashSet<SamplingPlan>();
@@ -145,7 +142,6 @@ namespace CSSPModels
             TVItemLinksToTVItem = new HashSet<TVItemLink>();
             TVItemStats = new HashSet<TVItemStat>();
             TVItemUserAuthorizationsContactTVItem = new HashSet<TVItemUserAuthorization>();
-            TVItemUserAuthorizationsTVItemID1Navigation = new HashSet<TVItemUserAuthorization>();
             TVTypeUserAuthorizations = new HashSet<TVTypeUserAuthorization>();
             UseOfSitesSiteTVItem = new HashSet<UseOfSite>();
             UseOfSitesSubsectorTVItem = new HashSet<UseOfSite>();
