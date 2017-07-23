@@ -753,10 +753,6 @@ namespace CSSPModels
                 .WithOne(c => c.TVItem);
 
             modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AppTasks)
-                .WithOne(c => c.TVItem);
-
-            modelBuilder.Entity<TVItem>()
                 .HasMany(c => c.BoxModels)
                 .WithOne(c => c.InfrastructureTVItem);
 
@@ -767,14 +763,6 @@ namespace CSSPModels
             modelBuilder.Entity<TVItem>()
                 .HasMany(c => c.Contacts)
                 .WithOne(c => c.ContactTVItem);
-
-            modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
-
-            modelBuilder.Entity<TVItem>()
-                .HasMany(c => c.AddressesAddressTVItem)
-                .WithOne(c => c.AddressTVItem);
 
             modelBuilder.Entity<TVItem>()
                 .HasMany(c => c.DocTemplates)
@@ -954,9 +942,6 @@ namespace CSSPModels
 
             modelBuilder.Entity<TVItem>()
                 .HasMany(c => c.InverseParent);
-
-            modelBuilder.Entity<TVItem>()
-                .HasOne(c => c.Parent);
 
             // ---------------------------------------
             //                 TVItemLanguage

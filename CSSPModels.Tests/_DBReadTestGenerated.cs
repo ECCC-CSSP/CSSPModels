@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         #region Variables
         #endregion Variables
 
-       #region Properties
+        #region Properties
         #endregion Properties
 
         #region Constructors

@@ -43,7 +43,7 @@ namespace CSSPModelsGenerateCodeHelper
             sb.AppendLine(@"        #region Variables");
             sb.AppendLine(@"        #endregion Variables");
             sb.AppendLine(@"");
-            sb.AppendLine(@"       #region Properties");
+            sb.AppendLine(@"        #region Properties");
             sb.AppendLine(@"        #endregion Properties");
             sb.AppendLine(@"");
             sb.AppendLine(@"        #region Constructors");

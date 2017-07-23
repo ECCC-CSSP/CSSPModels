@@ -321,6 +321,51 @@
 <data name="EmailDistributionListEmailDistributionListContacts" xml:space="preserve">
   <value>EmailDistributionListEmailDistributionListContacts</value>
 </data>
+<data name="RainExceedance" xml:space="preserve">
+  <value>RainExceedance</value>
+</data>
+<data name="RainExceedanceRainExceedanceID" xml:space="preserve">
+  <value>RainExceedanceRainExceedanceID</value>
+</data>
+<data name="RainExceedanceYearRound" xml:space="preserve">
+  <value>RainExceedanceYearRound</value>
+</data>
+<data name="RainExceedanceStartDate_Local" xml:space="preserve">
+  <value>RainExceedanceStartDate_Local</value>
+</data>
+<data name="RainExceedanceEndDate_Local" xml:space="preserve">
+  <value>RainExceedanceEndDate_Local</value>
+</data>
+<data name="RainExceedanceRainMaximum_mm" xml:space="preserve">
+  <value>RainExceedanceRainMaximum_mm</value>
+</data>
+<data name="RainExceedanceRainExtreme_mm" xml:space="preserve">
+  <value>RainExceedanceRainExtreme_mm</value>
+</data>
+<data name="RainExceedanceDaysPriorToStart" xml:space="preserve">
+  <value>RainExceedanceDaysPriorToStart</value>
+</data>
+<data name="RainExceedanceRepeatEveryYear" xml:space="preserve">
+  <value>RainExceedanceRepeatEveryYear</value>
+</data>
+<data name="RainExceedanceProvinceTVItemIDs" xml:space="preserve">
+  <value>RainExceedanceProvinceTVItemIDs</value>
+</data>
+<data name="RainExceedanceSubsectorTVItemIDs" xml:space="preserve">
+  <value>RainExceedanceSubsectorTVItemIDs</value>
+</data>
+<data name="RainExceedanceClimateSiteTVItemIDs" xml:space="preserve">
+  <value>RainExceedanceClimateSiteTVItemIDs</value>
+</data>
+<data name="RainExceedanceEmailDistributionListIDs" xml:space="preserve">
+  <value>RainExceedanceEmailDistributionListIDs</value>
+</data>
+<data name="RainExceedanceLastUpdateDate_UTC" xml:space="preserve">
+  <value>RainExceedanceLastUpdateDate_UTC</value>
+</data>
+<data name="RainExceedanceLastUpdateContactTVItemID" xml:space="preserve">
+  <value>RainExceedanceLastUpdateContactTVItemID</value>
+</data>
 <data name="MWQMSampleDuplicateItem" xml:space="preserve">
   <value>MWQMSampleDuplicateItem</value>
 </data>

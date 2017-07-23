@@ -216,6 +216,10 @@
     <Compile Include="ElementLayerTestGenerated.cs" />
     <Compile Include="ElementTest.cs" />
     <Compile Include="ElementTestGenerated.cs" />
+    <Compile Include="EmailDistributionListContactTest.cs" />
+    <Compile Include="EmailDistributionListContactTestGenerated.cs" />
+    <Compile Include="EmailDistributionListTest.cs" />
+    <Compile Include="EmailDistributionListTestGenerated.cs" />
     <Compile Include="EmailTest.cs" />
     <Compile Include="EmailTestGenerated.cs" />
     <Compile Include="FileItemListTest.cs" />
@@ -315,6 +319,8 @@
     <Compile Include="PolyPointTest.cs" />
     <Compile Include="PolyPointTestGenerated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RainExceedanceTest.cs" />
+    <Compile Include="RainExceedanceTestGenerated.cs" />
     <Compile Include="RatingCurveTest.cs" />
     <Compile Include="RatingCurveTestGenerated.cs" />
     <Compile Include="RatingCurveValueTest.cs" />

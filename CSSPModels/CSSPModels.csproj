@@ -236,6 +236,7 @@
     <Compile Include="AppTask.cs" />
     <Compile Include="EmailDistributionListContact.cs" />
     <Compile Include="EmailDistributionList.cs" />
+    <Compile Include="RainExceedance.cs" />
     <Compile Include="Resources\ModelsRes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -9106,6 +9106,141 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to RainExceedance.
+        /// </summary>
+        public static string RainExceedance {
+            get {
+                return ResourceManager.GetString("RainExceedance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RainExceedanceClimateSiteTVItemIDs.
+        /// </summary>
+        public static string RainExceedanceClimateSiteTVItemIDs {
+            get {
+                return ResourceManager.GetString("RainExceedanceClimateSiteTVItemIDs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RainExceedanceDaysPriorToStart.
+        /// </summary>
+        public static string RainExceedanceDaysPriorToStart {
+            get {
+                return ResourceManager.GetString("RainExceedanceDaysPriorToStart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RainExceedanceEmailDistributionListIDs.
+        /// </summary>
+        public static string RainExceedanceEmailDistributionListIDs {
+            get {
+                return ResourceManager.GetString("RainExceedanceEmailDistributionListIDs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RainExceedanceEndDate_Local.
+        /// </summary>
+        public static string RainExceedanceEndDate_Local {
+            get {
+                return ResourceManager.GetString("RainExceedanceEndDate_Local", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RainExceedanceLastUpdateContactTVItemID.
+        /// </summary>
+        public static string RainExceedanceLastUpdateContactTVItemID {
+            get {
+                return ResourceManager.GetString("RainExceedanceLastUpdateContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RainExceedanceLastUpdateDate_UTC.
+        /// </summary>
+        public static string RainExceedanceLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("RainExceedanceLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RainExceedanceProvinceTVItemIDs.
+        /// </summary>
+        public static string RainExceedanceProvinceTVItemIDs {
+            get {
+                return ResourceManager.GetString("RainExceedanceProvinceTVItemIDs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RainExceedanceRainExceedanceID.
+        /// </summary>
+        public static string RainExceedanceRainExceedanceID {
+            get {
+                return ResourceManager.GetString("RainExceedanceRainExceedanceID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RainExceedanceRainExtreme_mm.
+        /// </summary>
+        public static string RainExceedanceRainExtreme_mm {
+            get {
+                return ResourceManager.GetString("RainExceedanceRainExtreme_mm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RainExceedanceRainMaximum_mm.
+        /// </summary>
+        public static string RainExceedanceRainMaximum_mm {
+            get {
+                return ResourceManager.GetString("RainExceedanceRainMaximum_mm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RainExceedanceRepeatEveryYear.
+        /// </summary>
+        public static string RainExceedanceRepeatEveryYear {
+            get {
+                return ResourceManager.GetString("RainExceedanceRepeatEveryYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RainExceedanceStartDate_Local.
+        /// </summary>
+        public static string RainExceedanceStartDate_Local {
+            get {
+                return ResourceManager.GetString("RainExceedanceStartDate_Local", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RainExceedanceSubsectorTVItemIDs.
+        /// </summary>
+        public static string RainExceedanceSubsectorTVItemIDs {
+            get {
+                return ResourceManager.GetString("RainExceedanceSubsectorTVItemIDs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RainExceedanceYearRound.
+        /// </summary>
+        public static string RainExceedanceYearRound {
+            get {
+                return ResourceManager.GetString("RainExceedanceYearRound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to RatingCurve.
         /// </summary>
         public static string RatingCurve {
@@ -11410,15 +11545,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemPolSourceObservationsPolSourceSiteTVItem.
-        /// </summary>
-        public static string TVItemPolSourceObservationsPolSourceSiteTVItem {
-            get {
-                return ResourceManager.GetString("TVItemPolSourceObservationsPolSourceSiteTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TVItemPolSourceSites.
         /// </summary>
         public static string TVItemPolSourceSites {
@@ -11752,15 +11878,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemTVItemUserAuthorizationsTVItemID1Navigation.
-        /// </summary>
-        public static string TVItemTVItemUserAuthorizationsTVItemID1Navigation {
-            get {
-                return ResourceManager.GetString("TVItemTVItemUserAuthorizationsTVItemID1Navigation", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TVItemTVLevel.
         /// </summary>
         public static string TVItemTVLevel {
@@ -11874,15 +11991,6 @@ namespace CSSPModels.Resources {
         public static string TVItemUserAuthorizationTVItemID1 {
             get {
                 return ResourceManager.GetString("TVItemUserAuthorizationTVItemID1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemUserAuthorizationTVItemID1Navigation.
-        /// </summary>
-        public static string TVItemUserAuthorizationTVItemID1Navigation {
-            get {
-                return ResourceManager.GetString("TVItemUserAuthorizationTVItemID1Navigation", resourceCulture);
             }
         }
         
