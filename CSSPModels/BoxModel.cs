@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSSPEnums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -11,7 +12,7 @@ namespace CSSPModels
         [Key]
         public int BoxModelID { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Infrastructure)]
         public int InfrastructureTVItemID { get; set; }
         [Range(0.0D, 10000.0D)]
         public double Flow_m3_day { get; set; }
@@ -36,7 +37,7 @@ namespace CSSPModels
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<BoxModelLanguage> BoxModelLanguages { get; set; }

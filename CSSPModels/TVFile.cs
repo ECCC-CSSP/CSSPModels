@@ -12,7 +12,7 @@ namespace CSSPModels
         [Key]
         public int TVFileID { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.File)]
         public int TVFileTVItemID { get; set; }
         [CSSPEnumType]
         public TVTypeEnum TemplateTVType { get; set; }
@@ -38,7 +38,7 @@ namespace CSSPModels
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<TVFileLanguage> TVFileLanguages { get; set; }

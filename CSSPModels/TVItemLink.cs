@@ -12,10 +12,10 @@ namespace CSSPModels
         [Key]
         public int TVItemLinkID { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Error)]
         public int FromTVItemID { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Error)]
         public int ToTVItemID { get; set; }
         [CSSPEnumType]
         public TVTypeEnum FromTVType { get; set; }
@@ -33,12 +33,12 @@ namespace CSSPModels
         [StringLength(250)]
         public string TVPath { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Error)]
         public int? ParentTVItemLinkID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual TVItem FromTVItem { get; set; }

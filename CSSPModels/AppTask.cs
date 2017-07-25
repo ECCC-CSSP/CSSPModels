@@ -12,10 +12,10 @@ namespace CSSPModels
         [Key]
         public int AppTaskID { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Error)]
         public int TVItemID { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Error)]
         public int TVItemID2 { get; set; }
         [CSSPEnumType]
         public AppTaskCommandEnum AppTaskCommand { get; set; }
@@ -37,7 +37,7 @@ namespace CSSPModels
         public int? RemainingTime_second { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         [Range(1, -1)]
         public int LastUpdateContactTVItemID { get; set; }
 

@@ -14,7 +14,7 @@ namespace CSSPModels
         [StringLength(128)]
         public string Id { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int ContactTVItemID { get; set; }
         [StringLength(255, MinimumLength = 6)]
         [DataType(DataType.EmailAddress)]
@@ -41,7 +41,7 @@ namespace CSSPModels
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<ContactLogin> ContactLogins { get; set; }

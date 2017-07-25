@@ -12,7 +12,7 @@ namespace CSSPModels
         [Key]
         public int MWQMRunLanguageID { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "MWQMRun", Plurial = "s", FieldID = "MWQMRunID")]
         public int MWQMRunID { get; set; }
         [CSSPEnumType]
         public LanguageEnum Language { get; set; }
@@ -25,7 +25,7 @@ namespace CSSPModels
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual MWQMRun MWQMRun { get; set; }

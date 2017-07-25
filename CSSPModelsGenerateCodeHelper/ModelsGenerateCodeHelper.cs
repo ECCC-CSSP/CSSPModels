@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSSPEnums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
@@ -245,6 +246,16 @@ namespace CSSPModelsGenerateCodeHelper
                                 csspProp.ObjectExistFieldID = ((string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
                             }
                             break;
+                        case "TVType":
+                            {
+                                csspProp.TVType = ((TVTypeEnum)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                            }
+                            break;
+                        case "OrTVType":
+                            {
+                                csspProp.OrTVType = ((TVTypeEnum)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                            }
+                            break;
                         default:
                             csspProp.Error = "Property [" + csspProp.PropName + "] of type [" + csspProp.PropType + "] --- member name " + customAttributeData.NamedArguments.ToArray()[i].MemberName + " does not exist for CSSPExistAttribute";
                             return false;
@@ -437,6 +448,8 @@ namespace CSSPModelsGenerateCodeHelper
             HasRangeAttribute = false;
             HasCompareAttribute = false;
             HasDataTypeAttribute = false;
+            TVType = TVTypeEnum.Error;
+            OrTVType = TVTypeEnum.Error;
         }
         public string Error { get; set; }
         public string PropName { get; set; }
@@ -469,6 +482,8 @@ namespace CSSPModelsGenerateCodeHelper
         public bool HasRangeAttribute { get; set; }
         public bool HasCompareAttribute { get; set; }
         public bool HasDataTypeAttribute { get; set; }
+        public TVTypeEnum TVType { get; set; }
+        public TVTypeEnum OrTVType { get; set; }
     }
     #endregion Other Classes
 }

@@ -12,10 +12,10 @@ namespace CSSPModels
         [Key]
         public int MWQMRunID { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Subsector)]
         public int SubsectorTVItemID { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.MWQMRun)]
         public int MWQMRunTVItemID { get; set; }
         [CSSPEnumType]
         public SampleTypeEnum RunSampleType { get; set; }
@@ -62,7 +62,7 @@ namespace CSSPModels
         [CSSPAllowNull]
         public SampleStatusEnum? SampleStatus { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int? LabSampleApprovalContactTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime? LabAnalyzeBath1IncubationStartDateTime_Local { get; set; }
@@ -104,7 +104,7 @@ namespace CSSPModels
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID")]
+        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<MWQMRunLanguage> MWQMRunLanguages { get; set; }

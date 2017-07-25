@@ -58,6 +58,8 @@ namespace CSSPModels
         public string TypeName { get; set; }
         public string Plurial { get; set; }
         public string FieldID { get; set; }
+        public TVTypeEnum TVType { get; set; }
+        public TVTypeEnum OrTVType { get; set; }
 
         public override bool IsValid(object value)
         {
