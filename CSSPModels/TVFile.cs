@@ -24,6 +24,7 @@ namespace CSSPModels
         public FileTypeEnum FileType { get; set; }
         [Range(0, 1000000)]
         public int FileSize_kb { get; set; }
+        [CSSPAllowNull]
         public string FileInfo { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime FileCreatedDate_UTC { get; set; }

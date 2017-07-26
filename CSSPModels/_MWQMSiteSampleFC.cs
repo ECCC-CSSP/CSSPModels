@@ -14,6 +14,7 @@ namespace CSSPModels
 
         #region Properties not in DB
         public string Error { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime SampleDate { get; set; }
         [Range(1, 100000000)]
         public int? FC { get; set; }

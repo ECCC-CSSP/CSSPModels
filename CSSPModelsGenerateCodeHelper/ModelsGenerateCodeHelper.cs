@@ -127,14 +127,14 @@ namespace CSSPModelsGenerateCodeHelper
                     return false;
                 }
                 CustomAttributeData customAttributeData = propInfo.CustomAttributes.Where(c => c.AttributeType.Name == "StringLengthAttribute").First();
-                csspProp.MaxLength = ((int)customAttributeData.ConstructorArguments.ToArray()[0].Value);
+                csspProp.Max = ((int)customAttributeData.ConstructorArguments.ToArray()[0].Value);
                 if (customAttributeData.NamedArguments.ToArray().Count() > 0)
                 {
                     for (int i = 0, count = customAttributeData.NamedArguments.ToArray().Count(); i < count; i++)
                     {
                         if (customAttributeData.NamedArguments.ToArray()[i].MemberName == "MinimumLength")
                         {
-                            csspProp.MinLength = ((int)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                            csspProp.Min = ((int)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
                         }
                     }
                 }
@@ -147,32 +147,22 @@ namespace CSSPModelsGenerateCodeHelper
                 CustomAttributeData customAttributeData = propInfo.CustomAttributes.Where(c => c.AttributeType.Name == "RangeAttribute").First();
                 if (csspProp.PropType == "Int16" || csspProp.PropType == "Int32" || csspProp.PropType == "Int64")
                 {
-                    csspProp.MinInt = ((int)customAttributeData.ConstructorArguments.ToArray()[0].Value);
-                    csspProp.MaxInt = ((int)customAttributeData.ConstructorArguments.ToArray()[1].Value);
+                    csspProp.Min = ((int)customAttributeData.ConstructorArguments.ToArray()[0].Value);
+                    csspProp.Max = ((int)customAttributeData.ConstructorArguments.ToArray()[1].Value);
 
-                    if (csspProp.MinInt > csspProp.MaxInt && csspProp.MaxInt == -1)
+                    if (csspProp.Min > csspProp.Max && csspProp.Max == -1)
                     {
-                        csspProp.MaxInt = null;
+                        csspProp.Max = null;
                     }
                 }
-                else if (csspProp.PropType == "Single")
+                else if (csspProp.PropType == "Single" || csspProp.PropType == "Double")
                 {
-                    csspProp.MinFloat = ((float)((double)customAttributeData.ConstructorArguments.ToArray()[0].Value));
-                    csspProp.MaxFloat = ((float)((double)customAttributeData.ConstructorArguments.ToArray()[1].Value));
+                    csspProp.Min = ((double)customAttributeData.ConstructorArguments.ToArray()[0].Value);
+                    csspProp.Max = ((double)customAttributeData.ConstructorArguments.ToArray()[1].Value);
 
-                    if (csspProp.MinFloat > csspProp.MaxFloat && csspProp.MaxFloat == -1)
+                    if (csspProp.Min > csspProp.Max && csspProp.Max == -1)
                     {
-                        csspProp.MaxFloat = null;
-                    }
-                }
-                else if (csspProp.PropType == "Double")
-                {
-                    csspProp.MinDouble = ((double)customAttributeData.ConstructorArguments.ToArray()[0].Value);
-                    csspProp.MaxDouble = ((double)customAttributeData.ConstructorArguments.ToArray()[1].Value);
-
-                    if (csspProp.MinDouble > csspProp.MaxDouble && csspProp.MaxDouble == -1)
-                    {
-                        csspProp.MaxDouble = null;
+                        csspProp.Max = null;
                     }
                 }
                 else
@@ -422,14 +412,8 @@ namespace CSSPModelsGenerateCodeHelper
             PropType = "";
             IsNullable = false;
             IsKey = false;
-            MaxLength = null;
-            MinLength = null;
-            MinInt = null;
-            MaxInt = null;
-            MinFloat = null;
-            MaxFloat = null;
-            MinDouble = null;
-            MaxDouble = null;
+            Min = null;
+            Max = null;
             OtherField = "";
             Year = null;
             Compare = "";
@@ -456,14 +440,8 @@ namespace CSSPModelsGenerateCodeHelper
         public string PropType { get; set; }
         public bool IsNullable { get; set; }
         public bool IsKey { get; set; }
-        public int? MaxLength { get; set; }
-        public int? MinLength { get; set; }
-        public int? MinInt { get; set; }
-        public int? MaxInt { get; set; }
-        public float? MinFloat { get; set; }
-        public float? MaxFloat { get; set; }
-        public double? MinDouble { get; set; }
-        public double? MaxDouble { get; set; }
+        public double? Min { get; set; }
+        public double? Max { get; set; }
         public string OtherField { get; set; }
         public int? Year { get; set; }
         public string Compare { get; set; }

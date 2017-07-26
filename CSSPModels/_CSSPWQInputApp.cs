@@ -24,6 +24,7 @@ namespace CSSPModels
         public bool IncludeLaboratoryQAQC { get; set; }
         [StringLength(100, MinimumLength = 1)]
         public string ApprovalCode { get; set; }
+        [CSSPAfter(Year = 1980)]
         public DateTime ApprovalDate { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

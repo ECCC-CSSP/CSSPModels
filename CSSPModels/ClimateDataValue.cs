@@ -41,6 +41,7 @@ namespace CSSPModels
         public double? DirMaxGust_0North { get; set; }
         [Range(0.0D, 300.0D)]
         public double? SpdMaxGust_kmh { get; set; }
+        [CSSPAllowNull]
         public string HourlyValues { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

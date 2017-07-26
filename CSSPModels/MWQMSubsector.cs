@@ -17,6 +17,7 @@ namespace CSSPModels
         [StringLength(20)]
         public string SubsectorHistoricKey { get; set; }
         [StringLength(20)]
+        [CSSPAllowNull]
         public string TideLocationSIDText { get; set; }
         [Range(0.0D, 300.0D)]
         public double? RainDay0Limit { get; set; }

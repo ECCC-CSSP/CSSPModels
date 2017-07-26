@@ -23,17 +23,21 @@ namespace CSSPModels
         [Range(0.0D, 10000.0D)]
         public double? Elevation_m { get; set; }
         [StringLength(10)]
+        [CSSPAllowNull]
         public string ClimateID { get; set; }
         [Range(1, 100000)]
         public int? WMOID { get; set; }
         [StringLength(3)]
+        [CSSPAllowNull]
         public string TCID { get; set; }
         public bool? IsProvincial { get; set; }
         [StringLength(50)]
+        [CSSPAllowNull]
         public string ProvSiteID { get; set; }
         [Range(-10.0D, 0.0D)]
         public double? TimeOffset_hour { get; set; }
         [StringLength(50)]
+        [CSSPAllowNull]
         public string File_desc { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime? HourlyStartDate_Local { get; set; }

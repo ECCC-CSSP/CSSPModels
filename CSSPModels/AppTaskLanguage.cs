@@ -17,8 +17,10 @@ namespace CSSPModels
         [CSSPEnumType]
         public LanguageEnum Language { get; set; }
         [StringLength(250)]
+        [CSSPAllowNull]
         public string StatusText { get; set; }
         [StringLength(250)]
+        [CSSPAllowNull]
         public string ErrorText { get; set; }
         [CSSPEnumType]
         public TranslationStatusEnum TranslationStatus { get; set; }

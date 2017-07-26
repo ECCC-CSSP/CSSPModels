@@ -15,6 +15,7 @@ namespace CSSPModels
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.PolSourceSite)]
         public int PolSourceSiteTVItemID { get; set; }
         [StringLength(50)]
+        [CSSPAllowNull]
         public string Temp_Locator_CanDelete { get; set; }
         [Range(0, 1000)]
         public int? Oldsiteid { get; set; }

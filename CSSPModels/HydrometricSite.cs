@@ -15,16 +15,17 @@ namespace CSSPModels
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.HydrometricSite)]
         public int HydrometricSiteTVItemID { get; set; }
         [StringLength(7)]
+        [CSSPAllowNull]
         public string FedSiteNumber { get; set; }
         [StringLength(7)]
+        [CSSPAllowNull]
         public string QuebecSiteNumber { get; set; }
         [StringLength(200)]
-        [CSSPAllowNull]
         public string HydrometricSiteName { get; set; }
         [StringLength(200)]
+        [CSSPAllowNull]
         public string Description { get; set; }
         [StringLength(4)]
-        [CSSPAllowNull]
         public string Province { get; set; }
         [Range(0.0D, 10000.0D)]
         public double? Elevation_m { get; set; }

@@ -14,6 +14,7 @@ namespace CSSPModels
 
         #region Properties not in DB
         public string Error { get; set; }
+        [CSSPAfter(Year = 1980)]
         public System.DateTime LastUpdateDate_UTC { get; set; }
         [Range(1, -1)]
         public int LastUpdateContactTVItemID { get; set; }

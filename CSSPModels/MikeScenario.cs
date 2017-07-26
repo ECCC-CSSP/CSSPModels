@@ -19,6 +19,7 @@ namespace CSSPModels
         public int? ParentMikeScenarioID { get; set; }
         [CSSPEnumType]
         public ScenarioStatusEnum ScenarioStatus { get; set; }
+        [CSSPAllowNull]
         public string ErrorInfo { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime MikeScenarioStartDateTime_Local { get; set; }

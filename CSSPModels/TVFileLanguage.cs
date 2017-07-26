@@ -16,6 +16,7 @@ namespace CSSPModels
         public int TVFileID { get; set; }
         [CSSPEnumType]
         public LanguageEnum Language { get; set; }
+        [CSSPAllowNull]
         public string FileDescription { get; set; }
         [CSSPEnumType]
         public TranslationStatusEnum TranslationStatus { get; set; }

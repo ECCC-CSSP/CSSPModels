@@ -75,6 +75,12 @@ namespace CSSPModelsGenerateCodeHelper
                             continue;
                         }
 
+                        if (csspProp.IsNullable != col.AllowNull)
+                        {
+                            sb.AppendLine(table.TableName + "\t" + col.FieldName + "\t---------------- should be " + (col.AllowNull ? "Nullable" : "Not Nullable"));
+                            continue;
+                        }
+                        
                         // ---------------------------------------
                         // Check if field types correspond and proper Attributes
                         // ---------------------------------------

@@ -47,6 +47,7 @@ namespace CSSPModels
         public double EffluentTemperature_C { get; set; }
         [Range(0.0D, 100.0D)]
         public double EffluentVelocity_m_s { get; set; }
+        [CSSPAllowNull]
         public string RawResults { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }

@@ -21,6 +21,7 @@ namespace CSSPModels
         public StorageDataTypeEnum StorageDataType { get; set; }
         [Range(0.0D, 10000.0D)]
         public double Flow_m3_s { get; set; }
+        [CSSPAllowNull]
         public string HourlyValues { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
