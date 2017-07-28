@@ -11,7 +11,6 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int ContactShortcutID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "Contact", Plurial = "s", FieldID = "ContactID")]
         public int ContactID { get; set; }
         [StringLength(100)]
@@ -20,7 +19,6 @@ namespace CSSPModels
         public string ShortCutAddress { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

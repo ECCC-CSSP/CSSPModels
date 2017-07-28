@@ -11,7 +11,6 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int HydrometricSiteID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.HydrometricSite)]
         public int HydrometricSiteTVItemID { get; set; }
         [StringLength(7)]
@@ -46,7 +45,6 @@ namespace CSSPModels
         public bool? HasRatingCurve { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

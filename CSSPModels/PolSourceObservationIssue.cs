@@ -11,7 +11,6 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int PolSourceObservationIssueID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "PolSourceObservation", Plurial = "s", FieldID = "PolSourceObservationID")]
         public int PolSourceObservationID { get; set; }
         [StringLength(250)]
@@ -20,7 +19,6 @@ namespace CSSPModels
         public int Ordinal { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

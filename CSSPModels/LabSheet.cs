@@ -13,7 +13,6 @@ namespace CSSPModels
         public int LabSheetID { get; set; }
         [Range(1, -1)]
         public int OtherServerLabSheetID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "SamplingPlan", Plurial = "s", FieldID = "SamplingPlanID")]
         public int SamplingPlanID { get; set; }
         [StringLength(250, MinimumLength = 1)]
@@ -26,10 +25,8 @@ namespace CSSPModels
         public int Day { get; set; }
         [Range(1, 100)]
         public int RunNumber { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Subsector)]
         public int SubsectorTVItemID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.MWQMRun)]
         [CSSPAllowNull]
         public int? MWQMRunTVItemID { get; set; }
@@ -47,7 +44,6 @@ namespace CSSPModels
         public DateTime FileLastModifiedDate_Local { get; set; }
 
         public string FileContent { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int? AcceptedOrRejectedByContactTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
@@ -57,7 +53,6 @@ namespace CSSPModels
         public string RejectReason { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

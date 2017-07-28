@@ -15,18 +15,14 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int AddressID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Address)]
         public int AddressTVItemID { get; set; }
         [CSSPEnumType]
         public AddressTypeEnum AddressType { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Country)]
         public int CountryTVItemID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Province)]
         public int ProvinceTVItemID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Municipality)]
         public int MunicipalityTVItemID { get; set; }
         [CSSPAllowNull]
@@ -46,7 +42,6 @@ namespace CSSPModels
         public string GoogleAddressText { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

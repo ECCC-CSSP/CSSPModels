@@ -11,7 +11,6 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int EmailDistributionListContactID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "EmailDistributionList", Plurial = "s", FieldID = "EmailDistributionListID")]
         public int EmailDistributionListID { get; set; }
         public bool IsCC { get; set; }
@@ -29,7 +28,6 @@ namespace CSSPModels
         public bool ReopeningAllTypes { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

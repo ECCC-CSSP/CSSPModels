@@ -11,7 +11,6 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int MikeSourceStartEndID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "MikeSource", Plurial = "s", FieldID = "MikeSourceID")]
         public int MikeSourceID { get; set; }
         [CSSPAfter(Year = 1980)]
@@ -37,7 +36,6 @@ namespace CSSPModels
         public double SourceSalinityEnd_PSU { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

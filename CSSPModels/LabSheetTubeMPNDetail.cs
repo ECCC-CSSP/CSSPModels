@@ -11,12 +11,10 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int LabSheetTubeMPNDetailID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "LabSheetDetail", Plurial = "s", FieldID = "LabSheetDetailID")]
         public int LabSheetDetailID { get; set; }
         [Range(0, 1000)]
         public int Ordinal { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.MWQMSite)]
         public int MWQMSiteTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
@@ -43,7 +41,6 @@ namespace CSSPModels
         public string SiteComment { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

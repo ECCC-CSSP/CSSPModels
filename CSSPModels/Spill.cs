@@ -11,10 +11,8 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int SpillID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Municipality)]
         public int MunicipalityTVItemID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Infrastructure)]
         [CSSPAllowNull]
         public int? InfrastructureTVItemID { get; set; }
@@ -27,7 +25,6 @@ namespace CSSPModels
         public double AverageFlow_m3_day { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

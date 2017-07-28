@@ -21,10 +21,8 @@ namespace CSSPModels
         public SamplingPlanTypeEnum SamplingPlanType { get; set; }
         [CSSPEnumType]
         public LabSheetTypeEnum LabSheetType { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Province)]
         public int ProvinceTVItemID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int CreatorTVItemID { get; set; }
         [Range(2000, 2050)]
@@ -38,12 +36,10 @@ namespace CSSPModels
         public bool IncludeLaboratoryQAQC { get; set; }
         [StringLength(15)]
         public string ApprovalCode { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.File)]
         public int? SamplingPlanFileTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

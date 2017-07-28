@@ -11,10 +11,8 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int AppTaskID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Error)]
         public int TVItemID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Error)]
         public int TVItemID2 { get; set; }
         [CSSPEnumType]
@@ -38,7 +36,6 @@ namespace CSSPModels
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
-        [Range(1, -1)]
         public int LastUpdateContactTVItemID { get; set; }
 
         public virtual ICollection<AppTaskLanguage> AppTaskLanguages { get; set; }

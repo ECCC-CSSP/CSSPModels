@@ -11,7 +11,6 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int VPAmbientID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "VPScenario", Plurial = "s", FieldID = "VPScenarioID")]
         public int VPScenarioID { get; set; }
         [Range(0, 10)]
@@ -38,7 +37,6 @@ namespace CSSPModels
         public double FarFieldDiffusionCoefficient { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

@@ -11,13 +11,10 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int LabSheetDetailID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "LabSheet", Plurial = "s", FieldID = "LabSheetID")]
         public int LabSheetID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "LabSheet", Plurial = "s", FieldID = "LabSheetID")]
         public int SamplingPlanID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "LabSheet", Plurial = "s", FieldID = "LabSheetID")]
         public int SubsectorTVItemID { get; set; }
         [Range(1, 5)]
@@ -167,7 +164,6 @@ namespace CSSPModels
         public bool? IntertechReadAcceptable { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

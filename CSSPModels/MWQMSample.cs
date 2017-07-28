@@ -11,10 +11,8 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int MWQMSampleID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.MWQMSite)]
         public int MWQMSiteTVItemID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.MWQMRun)]
         public int MWQMRunTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
@@ -44,7 +42,6 @@ namespace CSSPModels
         public string ProcessedBy { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

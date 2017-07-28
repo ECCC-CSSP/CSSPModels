@@ -11,7 +11,6 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int MikeBoundaryConditionID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.MikeBoundaryConditionMesh, OrTVType = TVTypeEnum.MikeBoundaryConditionWebTide)]
         public int MikeBoundaryConditionTVItemID { get; set; }
         [StringLength(100)]
@@ -33,7 +32,6 @@ namespace CSSPModels
         public TVTypeEnum TVType { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

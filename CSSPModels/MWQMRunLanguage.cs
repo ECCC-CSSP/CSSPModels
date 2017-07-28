@@ -11,7 +11,6 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int MWQMRunLanguageID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "MWQMRun", Plurial = "s", FieldID = "MWQMRunID")]
         public int MWQMRunID { get; set; }
         [CSSPEnumType]
@@ -24,7 +23,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatusRunWeatherComment { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

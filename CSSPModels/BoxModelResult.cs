@@ -11,7 +11,6 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int BoxModelResultID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "BoxModel", Plurial = "s", FieldID = "BoxModelID")]
         public int BoxModelID { get; set; }
         [CSSPEnumType]
@@ -42,7 +41,6 @@ namespace CSSPModels
         public double LeftSideLineStartLongitude { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

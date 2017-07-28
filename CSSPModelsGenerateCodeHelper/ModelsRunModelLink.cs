@@ -101,9 +101,19 @@ namespace CSSPModelsGenerateCodeHelper
                                         sb.AppendLine(table.TableName + "\t" + col.FieldName + "\t---------------- wrong type It is [" + csspProp.PropType + "] should be [Int64]");
                                     }
 
-                                    if (!csspProp.HasRangeAttribute)
+                                    if (csspProp.HasCSSPExistAttribute)
                                     {
-                                        sb.AppendLine(table.TableName + "\t" + col.FieldName + "\t---------------- should have a Range Attribute");
+                                        if (csspProp.HasRangeAttribute)
+                                        {
+                                            sb.AppendLine(table.TableName + "\t" + col.FieldName + "\t---------------- should NOT have a Range Attribute");
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (!csspProp.HasRangeAttribute)
+                                        {
+                                            sb.AppendLine(table.TableName + "\t" + col.FieldName + "\t---------------- should have a Range Attribute");
+                                        }
                                     }
                                 }
                                 break;
@@ -143,9 +153,19 @@ namespace CSSPModelsGenerateCodeHelper
                                     {
                                         if (!csspProp.IsKey)
                                         {
-                                            if (!csspProp.HasRangeAttribute)
+                                            if (csspProp.HasCSSPExistAttribute)
                                             {
-                                                sb.AppendLine(table.TableName + "\t" + col.FieldName + "\t---------------- should have a Range Attribute");
+                                                if (csspProp.HasRangeAttribute)
+                                                {
+                                                    sb.AppendLine(table.TableName + "\t" + col.FieldName + "\t---------------- should NOT have a Range Attribute");
+                                                }
+                                            }
+                                            else
+                                            {
+                                                if (!csspProp.HasRangeAttribute)
+                                                {
+                                                    sb.AppendLine(table.TableName + "\t" + col.FieldName + "\t---------------- should have a Range Attribute");
+                                                }
                                             }
 
                                             if (csspProp.PropName.EndsWith("ID"))

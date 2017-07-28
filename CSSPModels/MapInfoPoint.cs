@@ -11,7 +11,6 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int MapInfoPointID { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "MapInfo", Plurial = "s", FieldID = "MapInfoID")]
         public int MapInfoID { get; set; }
         [Range(0, -1)]
@@ -22,7 +21,6 @@ namespace CSSPModels
         public double Lng { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 

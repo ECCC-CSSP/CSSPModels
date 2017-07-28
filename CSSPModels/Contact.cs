@@ -13,7 +13,6 @@ namespace CSSPModels
         public int ContactID { get; set; }
         [StringLength(128)]
         public string Id { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int ContactTVItemID { get; set; }
         [StringLength(255, MinimumLength = 6)]
@@ -40,7 +39,6 @@ namespace CSSPModels
         public string SamplingPlanner_ProvincesTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [Range(1, -1)]
         [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
         public int LastUpdateContactTVItemID { get; set; }
 
