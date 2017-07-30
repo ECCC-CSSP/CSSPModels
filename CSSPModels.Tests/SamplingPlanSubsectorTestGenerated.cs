@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class SamplingPlanSubsectorTest
+    public partial class SamplingPlanSubsectorTest : SetupData
     {
         [TestMethod]
-        public void SamplingPlanSubsector_Properties_OK()
+        public void SamplingPlanSubsector_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SamplingPlanSubsectorID", "SamplingPlanID", "SubsectorTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlanSubsector_Navigation_OK()
+        public void SamplingPlanSubsector_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "SamplingPlan", "SubsectorTVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() { "SamplingPlanSubsectorSites",  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlanSubsector_Has_ValidationResults_OK()
+        public void SamplingPlanSubsector_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(SamplingPlanSubsector).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -95,6 +97,37 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSamplingPlanSubsectorSites);
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSamplingPlan);
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSubsectorTVItem);
+        }
+        [TestMethod]
+        public void SamplingPlanSubsector_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               samplingPlanSubsector.SamplingPlanSubsectorID = val1;
+               Assert.AreEqual(val1, samplingPlanSubsector.SamplingPlanSubsectorID);
+               int val2 = 45;
+               samplingPlanSubsector.SamplingPlanID = val2;
+               Assert.AreEqual(val2, samplingPlanSubsector.SamplingPlanID);
+               int val3 = 45;
+               samplingPlanSubsector.SubsectorTVItemID = val3;
+               Assert.AreEqual(val3, samplingPlanSubsector.SubsectorTVItemID);
+               DateTime val4 = new DateTime(2010, 3, 4);
+               samplingPlanSubsector.LastUpdateDate_UTC = val4;
+               Assert.AreEqual(val4, samplingPlanSubsector.LastUpdateDate_UTC);
+               int val5 = 45;
+               samplingPlanSubsector.LastUpdateContactTVItemID = val5;
+               Assert.AreEqual(val5, samplingPlanSubsector.LastUpdateContactTVItemID);
+               ICollection<SamplingPlanSubsectorSite> val15 = new List<SamplingPlanSubsectorSite>();
+               samplingPlanSubsector.SamplingPlanSubsectorSites = val15;
+               Assert.AreEqual(val15, samplingPlanSubsector.SamplingPlanSubsectorSites);
+               SamplingPlan val16 = new SamplingPlan();
+               samplingPlanSubsector.SamplingPlan = val16;
+               Assert.AreEqual(val16, samplingPlanSubsector.SamplingPlan);
+               TVItem val17 = new TVItem();
+               samplingPlanSubsector.SubsectorTVItem = val17;
+               Assert.AreEqual(val17, samplingPlanSubsector.SubsectorTVItem);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               samplingPlanSubsector.ValidationResults = val27;
+               Assert.AreEqual(val27, samplingPlanSubsector.ValidationResults);
         }
     }
 }

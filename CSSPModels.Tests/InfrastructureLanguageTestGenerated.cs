@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class InfrastructureLanguageTest
+    public partial class InfrastructureLanguageTest : SetupData
     {
         [TestMethod]
-        public void InfrastructureLanguage_Properties_OK()
+        public void InfrastructureLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "InfrastructureLanguageID", "InfrastructureID", "Language", "Comment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void InfrastructureLanguage_Navigation_OK()
+        public void InfrastructureLanguage_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "Infrastructure",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void InfrastructureLanguage_Has_ValidationResults_OK()
+        public void InfrastructureLanguage_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(InfrastructureLanguage).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -95,6 +97,37 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.InfrastructureLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.InfrastructureLanguageLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.InfrastructureLanguageInfrastructure);
+        }
+        [TestMethod]
+        public void InfrastructureLanguage_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               infrastructureLanguage.InfrastructureLanguageID = val1;
+               Assert.AreEqual(val1, infrastructureLanguage.InfrastructureLanguageID);
+               int val2 = 45;
+               infrastructureLanguage.InfrastructureID = val2;
+               Assert.AreEqual(val2, infrastructureLanguage.InfrastructureID);
+               LanguageEnum val3 = (LanguageEnum)3;
+               infrastructureLanguage.Language = val3;
+               Assert.AreEqual(val3, infrastructureLanguage.Language);
+               string val4 = "Some text";
+               infrastructureLanguage.Comment = val4;
+               Assert.AreEqual(val4, infrastructureLanguage.Comment);
+               TranslationStatusEnum val5 = (TranslationStatusEnum)3;
+               infrastructureLanguage.TranslationStatus = val5;
+               Assert.AreEqual(val5, infrastructureLanguage.TranslationStatus);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               infrastructureLanguage.LastUpdateDate_UTC = val6;
+               Assert.AreEqual(val6, infrastructureLanguage.LastUpdateDate_UTC);
+               int val7 = 45;
+               infrastructureLanguage.LastUpdateContactTVItemID = val7;
+               Assert.AreEqual(val7, infrastructureLanguage.LastUpdateContactTVItemID);
+               Infrastructure val17 = new Infrastructure();
+               infrastructureLanguage.Infrastructure = val17;
+               Assert.AreEqual(val17, infrastructureLanguage.Infrastructure);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               infrastructureLanguage.ValidationResults = val27;
+               Assert.AreEqual(val27, infrastructureLanguage.ValidationResults);
         }
     }
 }

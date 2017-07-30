@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class PolSourceSiteTest
+    public partial class PolSourceSiteTest : SetupData
     {
         [TestMethod]
-        public void PolSourceSite_Properties_OK()
+        public void PolSourceSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "PolSourceSiteID", "PolSourceSiteTVItemID", "Temp_Locator_CanDelete", "Oldsiteid", "Site", "SiteID", "IsPointSource", "InactiveReason", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void PolSourceSite_Navigation_OK()
+        public void PolSourceSite_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "PolSourceSiteTVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() { "PolSourceObservations",  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void PolSourceSite_Has_ValidationResults_OK()
+        public void PolSourceSite_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(PolSourceSite).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -100,6 +102,52 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.PolSourceSiteLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.PolSourceSitePolSourceObservations);
                Assert.IsNotNull(ModelsRes.PolSourceSitePolSourceSiteTVItem);
+        }
+        [TestMethod]
+        public void PolSourceSite_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               polSourceSite.PolSourceSiteID = val1;
+               Assert.AreEqual(val1, polSourceSite.PolSourceSiteID);
+               int val2 = 45;
+               polSourceSite.PolSourceSiteTVItemID = val2;
+               Assert.AreEqual(val2, polSourceSite.PolSourceSiteTVItemID);
+               string val3 = "Some text";
+               polSourceSite.Temp_Locator_CanDelete = val3;
+               Assert.AreEqual(val3, polSourceSite.Temp_Locator_CanDelete);
+               int val4 = 45;
+               polSourceSite.Oldsiteid = val4;
+               Assert.AreEqual(val4, polSourceSite.Oldsiteid);
+               int val5 = 45;
+               polSourceSite.Site = val5;
+               Assert.AreEqual(val5, polSourceSite.Site);
+               int val6 = 45;
+               polSourceSite.SiteID = val6;
+               Assert.AreEqual(val6, polSourceSite.SiteID);
+               bool val7 = true;
+               polSourceSite.IsPointSource = val7;
+               Assert.AreEqual(val7, polSourceSite.IsPointSource);
+               PolSourceInactiveReasonEnum val8 = (PolSourceInactiveReasonEnum)3;
+               polSourceSite.InactiveReason = val8;
+               Assert.AreEqual(val8, polSourceSite.InactiveReason);
+               int val9 = 45;
+               polSourceSite.CivicAddressTVItemID = val9;
+               Assert.AreEqual(val9, polSourceSite.CivicAddressTVItemID);
+               DateTime val10 = new DateTime(2010, 3, 4);
+               polSourceSite.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, polSourceSite.LastUpdateDate_UTC);
+               int val11 = 45;
+               polSourceSite.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, polSourceSite.LastUpdateContactTVItemID);
+               ICollection<PolSourceObservation> val26 = new List<PolSourceObservation>();
+               polSourceSite.PolSourceObservations = val26;
+               Assert.AreEqual(val26, polSourceSite.PolSourceObservations);
+               TVItem val27 = new TVItem();
+               polSourceSite.PolSourceSiteTVItem = val27;
+               Assert.AreEqual(val27, polSourceSite.PolSourceSiteTVItem);
+               IEnumerable<ValidationResult> val42 = new List<ValidationResult>().AsEnumerable();
+               polSourceSite.ValidationResults = val42;
+               Assert.AreEqual(val42, polSourceSite.ValidationResults);
         }
     }
 }

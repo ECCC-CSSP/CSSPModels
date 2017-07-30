@@ -15,6 +15,7 @@ namespace CSSPModels
         #region Properties not in DB
         [Range(1, -1)]
         public int MapInfoID { get; set; }
+        [CSSPEnumType]
         public MapInfoDrawTypeEnum MapInfoDrawType { get; set; } // 0 = point, 1 = polyline, 2 = polygon
 
         public virtual List<Coord> CoordList { get; set; }

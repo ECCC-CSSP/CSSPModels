@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class MikeScenarioTest
+    public partial class MikeScenarioTest : SetupData
     {
         [TestMethod]
-        public void MikeScenario_Properties_OK()
+        public void MikeScenario_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeScenarioID", "MikeScenarioTVItemID", "ParentMikeScenarioID", "ScenarioStatus", "ErrorInfo", "MikeScenarioStartDateTime_Local", "MikeScenarioEndDateTime_Local", "MikeScenarioStartExecutionDateTime_Local", "MikeScenarioExecutionTime_min", "WindSpeed_km_h", "WindDirection_deg", "DecayFactor_per_day", "DecayIsConstant", "DecayFactorAmplitude", "ResultFrequency_min", "AmbientTemperature_C", "AmbientSalinity_PSU", "ManningNumber", "NumberOfElements", "NumberOfTimeSteps", "NumberOfSigmaLayers", "NumberOfZLayers", "NumberOfHydroOutputParameters", "NumberOfTransOutputParameters", "EstimatedHydroFileSize", "EstimatedTransFileSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MikeScenario_Navigation_OK()
+        public void MikeScenario_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "MikeScenarioTVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MikeScenario_Has_ValidationResults_OK()
+        public void MikeScenario_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(MikeScenario).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -116,6 +118,100 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MikeScenarioLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MikeScenarioLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.MikeScenarioMikeScenarioTVItem);
+        }
+        [TestMethod]
+        public void MikeScenario_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               mikeScenario.MikeScenarioID = val1;
+               Assert.AreEqual(val1, mikeScenario.MikeScenarioID);
+               int val2 = 45;
+               mikeScenario.MikeScenarioTVItemID = val2;
+               Assert.AreEqual(val2, mikeScenario.MikeScenarioTVItemID);
+               int val3 = 45;
+               mikeScenario.ParentMikeScenarioID = val3;
+               Assert.AreEqual(val3, mikeScenario.ParentMikeScenarioID);
+               ScenarioStatusEnum val4 = (ScenarioStatusEnum)3;
+               mikeScenario.ScenarioStatus = val4;
+               Assert.AreEqual(val4, mikeScenario.ScenarioStatus);
+               string val5 = "Some text";
+               mikeScenario.ErrorInfo = val5;
+               Assert.AreEqual(val5, mikeScenario.ErrorInfo);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               mikeScenario.MikeScenarioStartDateTime_Local = val6;
+               Assert.AreEqual(val6, mikeScenario.MikeScenarioStartDateTime_Local);
+               DateTime val7 = new DateTime(2010, 3, 4);
+               mikeScenario.MikeScenarioEndDateTime_Local = val7;
+               Assert.AreEqual(val7, mikeScenario.MikeScenarioEndDateTime_Local);
+               DateTime val8 = new DateTime(2010, 3, 4);
+               mikeScenario.MikeScenarioStartExecutionDateTime_Local = val8;
+               Assert.AreEqual(val8, mikeScenario.MikeScenarioStartExecutionDateTime_Local);
+               double val9 = 87.9D;
+               mikeScenario.MikeScenarioExecutionTime_min = val9;
+               Assert.AreEqual(val9, mikeScenario.MikeScenarioExecutionTime_min);
+               double val10 = 87.9D;
+               mikeScenario.WindSpeed_km_h = val10;
+               Assert.AreEqual(val10, mikeScenario.WindSpeed_km_h);
+               double val11 = 87.9D;
+               mikeScenario.WindDirection_deg = val11;
+               Assert.AreEqual(val11, mikeScenario.WindDirection_deg);
+               double val12 = 87.9D;
+               mikeScenario.DecayFactor_per_day = val12;
+               Assert.AreEqual(val12, mikeScenario.DecayFactor_per_day);
+               bool val13 = true;
+               mikeScenario.DecayIsConstant = val13;
+               Assert.AreEqual(val13, mikeScenario.DecayIsConstant);
+               double val14 = 87.9D;
+               mikeScenario.DecayFactorAmplitude = val14;
+               Assert.AreEqual(val14, mikeScenario.DecayFactorAmplitude);
+               int val15 = 45;
+               mikeScenario.ResultFrequency_min = val15;
+               Assert.AreEqual(val15, mikeScenario.ResultFrequency_min);
+               double val16 = 87.9D;
+               mikeScenario.AmbientTemperature_C = val16;
+               Assert.AreEqual(val16, mikeScenario.AmbientTemperature_C);
+               double val17 = 87.9D;
+               mikeScenario.AmbientSalinity_PSU = val17;
+               Assert.AreEqual(val17, mikeScenario.AmbientSalinity_PSU);
+               double val18 = 87.9D;
+               mikeScenario.ManningNumber = val18;
+               Assert.AreEqual(val18, mikeScenario.ManningNumber);
+               int val19 = 45;
+               mikeScenario.NumberOfElements = val19;
+               Assert.AreEqual(val19, mikeScenario.NumberOfElements);
+               int val20 = 45;
+               mikeScenario.NumberOfTimeSteps = val20;
+               Assert.AreEqual(val20, mikeScenario.NumberOfTimeSteps);
+               int val21 = 45;
+               mikeScenario.NumberOfSigmaLayers = val21;
+               Assert.AreEqual(val21, mikeScenario.NumberOfSigmaLayers);
+               int val22 = 45;
+               mikeScenario.NumberOfZLayers = val22;
+               Assert.AreEqual(val22, mikeScenario.NumberOfZLayers);
+               int val23 = 45;
+               mikeScenario.NumberOfHydroOutputParameters = val23;
+               Assert.AreEqual(val23, mikeScenario.NumberOfHydroOutputParameters);
+               int val24 = 45;
+               mikeScenario.NumberOfTransOutputParameters = val24;
+               Assert.AreEqual(val24, mikeScenario.NumberOfTransOutputParameters);
+               int val25 = 45;
+               mikeScenario.EstimatedHydroFileSize = val25;
+               Assert.AreEqual(val25, mikeScenario.EstimatedHydroFileSize);
+               int val26 = 45;
+               mikeScenario.EstimatedTransFileSize = val26;
+               Assert.AreEqual(val26, mikeScenario.EstimatedTransFileSize);
+               DateTime val27 = new DateTime(2010, 3, 4);
+               mikeScenario.LastUpdateDate_UTC = val27;
+               Assert.AreEqual(val27, mikeScenario.LastUpdateDate_UTC);
+               int val28 = 45;
+               mikeScenario.LastUpdateContactTVItemID = val28;
+               Assert.AreEqual(val28, mikeScenario.LastUpdateContactTVItemID);
+               TVItem val59 = new TVItem();
+               mikeScenario.MikeScenarioTVItem = val59;
+               Assert.AreEqual(val59, mikeScenario.MikeScenarioTVItem);
+               IEnumerable<ValidationResult> val90 = new List<ValidationResult>().AsEnumerable();
+               mikeScenario.ValidationResults = val90;
+               Assert.AreEqual(val90, mikeScenario.ValidationResults);
         }
     }
 }

@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class TVItemSubsectorAndMWQMSiteTest
+    public partial class TVItemSubsectorAndMWQMSiteTest : SetupData
     {
         [TestMethod]
-        public void TVItemSubsectorAndMWQMSite_Properties_OK()
+        public void TVItemSubsectorAndMWQMSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemSubsector", "TVItemMWQMSiteList", "TVItemMWQMSiteDuplicate",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -28,7 +30,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
         }
         [TestMethod]
-        public void TVItemSubsectorAndMWQMSite_Has_ValidationResults_OK()
+        public void TVItemSubsectorAndMWQMSite_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(TVItemSubsectorAndMWQMSite).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -38,6 +40,22 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemSubsectorAndMWQMSiteTVItemSubsector);
                Assert.IsNotNull(ModelsRes.TVItemSubsectorAndMWQMSiteTVItemMWQMSiteList);
                Assert.IsNotNull(ModelsRes.TVItemSubsectorAndMWQMSiteTVItemMWQMSiteDuplicate);
+        }
+        [TestMethod]
+        public void TVItemSubsectorAndMWQMSite_Every_Property_Has_Get_Set_Test()
+        {
+               TVItem val5 = new TVItem();
+               tVItemSubsectorAndMWQMSite.TVItemSubsector = val5;
+               Assert.AreEqual(val5, tVItemSubsectorAndMWQMSite.TVItemSubsector);
+               List<TVItem> val6 = new List<TVItem>();
+               tVItemSubsectorAndMWQMSite.TVItemMWQMSiteList = val6;
+               Assert.AreEqual(val6, tVItemSubsectorAndMWQMSite.TVItemMWQMSiteList);
+               TVItem val7 = new TVItem();
+               tVItemSubsectorAndMWQMSite.TVItemMWQMSiteDuplicate = val7;
+               Assert.AreEqual(val7, tVItemSubsectorAndMWQMSite.TVItemMWQMSiteDuplicate);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               tVItemSubsectorAndMWQMSite.ValidationResults = val12;
+               Assert.AreEqual(val12, tVItemSubsectorAndMWQMSite.ValidationResults);
         }
     }
 }

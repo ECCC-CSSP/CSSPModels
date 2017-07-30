@@ -22,6 +22,7 @@ namespace CSSPModels
         public int TVItemID1 { get; set; }
         [StringLength(255, MinimumLength = 1)]
         public string TVTypeStr { get; set; }
+        [CSSPEnumType]
         public TVAuthEnum TVAuth { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

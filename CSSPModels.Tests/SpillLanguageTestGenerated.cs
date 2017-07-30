@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class SpillLanguageTest
+    public partial class SpillLanguageTest : SetupData
     {
         [TestMethod]
-        public void SpillLanguage_Properties_OK()
+        public void SpillLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SpillLanguageID", "SpillID", "Language", "SpillComment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SpillLanguage_Navigation_OK()
+        public void SpillLanguage_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "Spill",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SpillLanguage_Has_ValidationResults_OK()
+        public void SpillLanguage_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(SpillLanguage).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -95,6 +97,37 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SpillLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.SpillLanguageLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.SpillLanguageSpill);
+        }
+        [TestMethod]
+        public void SpillLanguage_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               spillLanguage.SpillLanguageID = val1;
+               Assert.AreEqual(val1, spillLanguage.SpillLanguageID);
+               int val2 = 45;
+               spillLanguage.SpillID = val2;
+               Assert.AreEqual(val2, spillLanguage.SpillID);
+               LanguageEnum val3 = (LanguageEnum)3;
+               spillLanguage.Language = val3;
+               Assert.AreEqual(val3, spillLanguage.Language);
+               string val4 = "Some text";
+               spillLanguage.SpillComment = val4;
+               Assert.AreEqual(val4, spillLanguage.SpillComment);
+               TranslationStatusEnum val5 = (TranslationStatusEnum)3;
+               spillLanguage.TranslationStatus = val5;
+               Assert.AreEqual(val5, spillLanguage.TranslationStatus);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               spillLanguage.LastUpdateDate_UTC = val6;
+               Assert.AreEqual(val6, spillLanguage.LastUpdateDate_UTC);
+               int val7 = 45;
+               spillLanguage.LastUpdateContactTVItemID = val7;
+               Assert.AreEqual(val7, spillLanguage.LastUpdateContactTVItemID);
+               Spill val17 = new Spill();
+               spillLanguage.Spill = val17;
+               Assert.AreEqual(val17, spillLanguage.Spill);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               spillLanguage.ValidationResults = val27;
+               Assert.AreEqual(val27, spillLanguage.ValidationResults);
         }
     }
 }

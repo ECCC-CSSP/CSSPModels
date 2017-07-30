@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class ContactLoginTest
+    public partial class ContactLoginTest : SetupData
     {
         [TestMethod]
-        public void ContactLogin_Properties_OK()
+        public void ContactLogin_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactLoginID", "ContactID", "LoginEmail", "PasswordHash", "PasswordSalt", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "Password", "ConfirmPassword",  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ContactLogin_Navigation_OK()
+        public void ContactLogin_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "Contact",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ContactLogin_Has_ValidationResults_OK()
+        public void ContactLogin_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(ContactLogin).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -97,6 +99,43 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactLoginContact);
                Assert.IsNotNull(ModelsRes.ContactLoginPassword);
                Assert.IsNotNull(ModelsRes.ContactLoginConfirmPassword);
+        }
+        [TestMethod]
+        public void ContactLogin_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               contactLogin.ContactLoginID = val1;
+               Assert.AreEqual(val1, contactLogin.ContactLoginID);
+               int val2 = 45;
+               contactLogin.ContactID = val2;
+               Assert.AreEqual(val2, contactLogin.ContactID);
+               string val3 = "Some text";
+               contactLogin.LoginEmail = val3;
+               Assert.AreEqual(val3, contactLogin.LoginEmail);
+               byte[] val4 = new byte[5];
+               contactLogin.PasswordHash = val4;
+               Assert.AreEqual(val4, contactLogin.PasswordHash);
+               byte[] val5 = new byte[5];
+               contactLogin.PasswordSalt = val5;
+               Assert.AreEqual(val5, contactLogin.PasswordSalt);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               contactLogin.LastUpdateDate_UTC = val6;
+               Assert.AreEqual(val6, contactLogin.LastUpdateDate_UTC);
+               int val7 = 45;
+               contactLogin.LastUpdateContactTVItemID = val7;
+               Assert.AreEqual(val7, contactLogin.LastUpdateContactTVItemID);
+               string val9 = "Some text";
+               contactLogin.Password = val9;
+               Assert.AreEqual(val9, contactLogin.Password);
+               string val10 = "Some text";
+               contactLogin.ConfirmPassword = val10;
+               Assert.AreEqual(val10, contactLogin.ConfirmPassword);
+               Contact val19 = new Contact();
+               contactLogin.Contact = val19;
+               Assert.AreEqual(val19, contactLogin.Contact);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               contactLogin.ValidationResults = val33;
+               Assert.AreEqual(val33, contactLogin.ValidationResults);
         }
     }
 }

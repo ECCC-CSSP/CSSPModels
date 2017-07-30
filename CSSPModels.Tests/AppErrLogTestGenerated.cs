@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class AppErrLogTest
+    public partial class AppErrLogTest : SetupData
     {
         [TestMethod]
-        public void AppErrLog_Properties_OK()
+        public void AppErrLog_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "AppErrLogID", "Tag", "LineNumber", "Source", "Message", "DateTime_UTC", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void AppErrLog_Navigation_OK()
+        public void AppErrLog_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void AppErrLog_Has_ValidationResults_OK()
+        public void AppErrLog_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(AppErrLog).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -95,6 +97,37 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.AppErrLogDateTime_UTC);
                Assert.IsNotNull(ModelsRes.AppErrLogLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.AppErrLogLastUpdateContactTVItemID);
+        }
+        [TestMethod]
+        public void AppErrLog_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               appErrLog.AppErrLogID = val1;
+               Assert.AreEqual(val1, appErrLog.AppErrLogID);
+               string val2 = "Some text";
+               appErrLog.Tag = val2;
+               Assert.AreEqual(val2, appErrLog.Tag);
+               int val3 = 45;
+               appErrLog.LineNumber = val3;
+               Assert.AreEqual(val3, appErrLog.LineNumber);
+               string val4 = "Some text";
+               appErrLog.Source = val4;
+               Assert.AreEqual(val4, appErrLog.Source);
+               string val5 = "Some text";
+               appErrLog.Message = val5;
+               Assert.AreEqual(val5, appErrLog.Message);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               appErrLog.DateTime_UTC = val6;
+               Assert.AreEqual(val6, appErrLog.DateTime_UTC);
+               DateTime val7 = new DateTime(2010, 3, 4);
+               appErrLog.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, appErrLog.LastUpdateDate_UTC);
+               int val8 = 45;
+               appErrLog.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, appErrLog.LastUpdateContactTVItemID);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               appErrLog.ValidationResults = val27;
+               Assert.AreEqual(val27, appErrLog.ValidationResults);
         }
     }
 }

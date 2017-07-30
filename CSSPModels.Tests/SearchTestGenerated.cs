@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class SearchTest
+    public partial class SearchTest : SetupData
     {
         [TestMethod]
-        public void Search_Properties_OK()
+        public void Search_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "value", "id",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -28,7 +30,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
         }
         [TestMethod]
-        public void Search_Has_ValidationResults_OK()
+        public void Search_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(Search).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -37,6 +39,19 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.Searchvalue);
                Assert.IsNotNull(ModelsRes.Searchid);
+        }
+        [TestMethod]
+        public void Search_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               search.value = val1;
+               Assert.AreEqual(val1, search.value);
+               int val2 = 45;
+               search.id = val2;
+               Assert.AreEqual(val2, search.id);
+               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
+               search.ValidationResults = val9;
+               Assert.AreEqual(val9, search.ValidationResults);
         }
     }
 }

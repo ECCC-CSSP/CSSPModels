@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class TVFileLanguageTest
+    public partial class TVFileLanguageTest : SetupData
     {
         [TestMethod]
-        public void TVFileLanguage_Properties_OK()
+        public void TVFileLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVFileLanguageID", "TVFileID", "Language", "FileDescription", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVFileLanguage_Navigation_OK()
+        public void TVFileLanguage_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "TVFile",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVFileLanguage_Has_ValidationResults_OK()
+        public void TVFileLanguage_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(TVFileLanguage).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -95,6 +97,37 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVFileLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TVFileLanguageLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.TVFileLanguageTVFile);
+        }
+        [TestMethod]
+        public void TVFileLanguage_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               tVFileLanguage.TVFileLanguageID = val1;
+               Assert.AreEqual(val1, tVFileLanguage.TVFileLanguageID);
+               int val2 = 45;
+               tVFileLanguage.TVFileID = val2;
+               Assert.AreEqual(val2, tVFileLanguage.TVFileID);
+               LanguageEnum val3 = (LanguageEnum)3;
+               tVFileLanguage.Language = val3;
+               Assert.AreEqual(val3, tVFileLanguage.Language);
+               string val4 = "Some text";
+               tVFileLanguage.FileDescription = val4;
+               Assert.AreEqual(val4, tVFileLanguage.FileDescription);
+               TranslationStatusEnum val5 = (TranslationStatusEnum)3;
+               tVFileLanguage.TranslationStatus = val5;
+               Assert.AreEqual(val5, tVFileLanguage.TranslationStatus);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               tVFileLanguage.LastUpdateDate_UTC = val6;
+               Assert.AreEqual(val6, tVFileLanguage.LastUpdateDate_UTC);
+               int val7 = 45;
+               tVFileLanguage.LastUpdateContactTVItemID = val7;
+               Assert.AreEqual(val7, tVFileLanguage.LastUpdateContactTVItemID);
+               TVFile val17 = new TVFile();
+               tVFileLanguage.TVFile = val17;
+               Assert.AreEqual(val17, tVFileLanguage.TVFile);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               tVFileLanguage.ValidationResults = val27;
+               Assert.AreEqual(val27, tVFileLanguage.ValidationResults);
         }
     }
 }

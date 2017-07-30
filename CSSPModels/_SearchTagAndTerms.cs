@@ -13,6 +13,7 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        [CSSPEnumType]
         public SearchTagEnum SearchTag { get; set; }
 
         public virtual List<string> SearchTermList { get; set; }

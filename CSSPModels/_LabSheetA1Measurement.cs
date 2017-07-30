@@ -24,6 +24,7 @@ namespace CSSPModels
         public double? Salinity { get; set; }
         public double Temperature { get; set; }
         public string ProcessedBy { get; set; }
+        [CSSPEnumType]
         public SampleTypeEnum? SampleType { get; set; }
         public string SiteComment { get; set; }
 

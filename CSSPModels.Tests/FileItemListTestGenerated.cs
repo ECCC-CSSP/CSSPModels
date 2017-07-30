@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class FileItemListTest
+    public partial class FileItemListTest : SetupData
     {
         [TestMethod]
-        public void FileItemList_Properties_OK()
+        public void FileItemList_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "Text", "FileName",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -28,7 +30,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
         }
         [TestMethod]
-        public void FileItemList_Has_ValidationResults_OK()
+        public void FileItemList_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(FileItemList).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -37,6 +39,19 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.FileItemListText);
                Assert.IsNotNull(ModelsRes.FileItemListFileName);
+        }
+        [TestMethod]
+        public void FileItemList_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               fileItemList.Text = val1;
+               Assert.AreEqual(val1, fileItemList.Text);
+               string val2 = "Some text";
+               fileItemList.FileName = val2;
+               Assert.AreEqual(val2, fileItemList.FileName);
+               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
+               fileItemList.ValidationResults = val9;
+               Assert.AreEqual(val9, fileItemList.ValidationResults);
         }
     }
 }

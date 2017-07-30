@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class CoordTest
+    public partial class CoordTest : SetupData
     {
         [TestMethod]
-        public void Coord_Properties_OK()
+        public void Coord_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "Lat", "Lng", "Ordinal",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -28,7 +30,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
         }
         [TestMethod]
-        public void Coord_Has_ValidationResults_OK()
+        public void Coord_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(Coord).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -38,6 +40,22 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.CoordLat);
                Assert.IsNotNull(ModelsRes.CoordLng);
                Assert.IsNotNull(ModelsRes.CoordOrdinal);
+        }
+        [TestMethod]
+        public void Coord_Every_Property_Has_Get_Set_Test()
+        {
+               double val1 = 87.9D;
+               coord.Lat = val1;
+               Assert.AreEqual(val1, coord.Lat);
+               double val2 = 87.9D;
+               coord.Lng = val2;
+               Assert.AreEqual(val2, coord.Lng);
+               int val3 = 45;
+               coord.Ordinal = val3;
+               Assert.AreEqual(val3, coord.Ordinal);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               coord.ValidationResults = val12;
+               Assert.AreEqual(val12, coord.ValidationResults);
         }
     }
 }

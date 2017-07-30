@@ -67,6 +67,28 @@ namespace CSSPModelsGenerateCodeHelper
 
                 csspProp.PropType = typeTxt;
             }
+            else if (propInfo.PropertyType.FullName.StartsWith("System.Collections.Generic.ICollection"))
+            {
+                csspProp.IsCollection = true;
+
+                string typeTxt = propInfo.PropertyType.FullName;
+                typeTxt = typeTxt.Substring(typeTxt.IndexOf("[") + 2);
+                typeTxt = typeTxt.Substring(typeTxt.IndexOf(".") + 1);
+                typeTxt = typeTxt.Substring(0, typeTxt.IndexOf(","));
+
+                csspProp.PropType = typeTxt;
+            }
+            else if (propInfo.PropertyType.FullName.StartsWith("System.Collections.Generic.List"))
+            {
+                csspProp.IsList = true;
+
+                string typeTxt = propInfo.PropertyType.FullName;
+                typeTxt = typeTxt.Substring(typeTxt.IndexOf("[") + 2);
+                typeTxt = typeTxt.Substring(typeTxt.IndexOf(".") + 1);
+                typeTxt = typeTxt.Substring(0, typeTxt.IndexOf(","));
+
+                csspProp.PropType = typeTxt;
+            }
             else
             {
                 csspProp.PropType = propInfo.PropertyType.Name.ToString();
@@ -253,7 +275,6 @@ namespace CSSPModelsGenerateCodeHelper
                 }
             }
 
-
             csspProp.IsVirtual = propInfo.GetGetMethod().IsVirtual;
 
             csspProp.HasCSSPEnumTypeAttribute = propInfo.CustomAttributes.Where(c => c.AttributeType.Name.StartsWith("CSSPEnumTypeAttribute")).Any();
@@ -434,6 +455,8 @@ namespace CSSPModelsGenerateCodeHelper
             HasDataTypeAttribute = false;
             TVType = TVTypeEnum.Error;
             OrTVType = TVTypeEnum.Error;
+            IsCollection = false;
+            IsList = false;
         }
         public string Error { get; set; }
         public string PropName { get; set; }
@@ -462,6 +485,8 @@ namespace CSSPModelsGenerateCodeHelper
         public bool HasDataTypeAttribute { get; set; }
         public TVTypeEnum TVType { get; set; }
         public TVTypeEnum OrTVType { get; set; }
+        public bool IsCollection { get; set; }
+        public bool IsList { get; set; }
     }
     #endregion Other Classes
 }

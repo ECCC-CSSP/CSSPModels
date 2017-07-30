@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class PolSourceObsInfoChildTest
+    public partial class PolSourceObsInfoChildTest : SetupData
     {
         [TestMethod]
-        public void PolSourceObsInfoChild_Properties_OK()
+        public void PolSourceObsInfoChild_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "PolSourceObsInfo", "PolSourceObsInfoChildStart",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -28,7 +30,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
         }
         [TestMethod]
-        public void PolSourceObsInfoChild_Has_ValidationResults_OK()
+        public void PolSourceObsInfoChild_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(PolSourceObsInfoChild).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -37,6 +39,19 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.PolSourceObsInfoChildPolSourceObsInfo);
                Assert.IsNotNull(ModelsRes.PolSourceObsInfoChildPolSourceObsInfoChildStart);
+        }
+        [TestMethod]
+        public void PolSourceObsInfoChild_Every_Property_Has_Get_Set_Test()
+        {
+               PolSourceObsInfoEnum val1 = (PolSourceObsInfoEnum)3;
+               polSourceObsInfoChild.PolSourceObsInfo = val1;
+               Assert.AreEqual(val1, polSourceObsInfoChild.PolSourceObsInfo);
+               PolSourceObsInfoEnum val2 = (PolSourceObsInfoEnum)3;
+               polSourceObsInfoChild.PolSourceObsInfoChildStart = val2;
+               Assert.AreEqual(val2, polSourceObsInfoChild.PolSourceObsInfoChildStart);
+               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
+               polSourceObsInfoChild.ValidationResults = val9;
+               Assert.AreEqual(val9, polSourceObsInfoChild.ValidationResults);
         }
     }
 }

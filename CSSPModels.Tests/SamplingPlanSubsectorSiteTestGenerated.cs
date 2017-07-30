@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class SamplingPlanSubsectorSiteTest
+    public partial class SamplingPlanSubsectorSiteTest : SetupData
     {
         [TestMethod]
-        public void SamplingPlanSubsectorSite_Properties_OK()
+        public void SamplingPlanSubsectorSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SamplingPlanSubsectorSiteID", "SamplingPlanSubsectorID", "MWQMSiteTVItemID", "IsDuplicate", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlanSubsectorSite_Navigation_OK()
+        public void SamplingPlanSubsectorSite_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "MWQMSiteTVItem", "SamplingPlanSubsector",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlanSubsectorSite_Has_ValidationResults_OK()
+        public void SamplingPlanSubsectorSite_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(SamplingPlanSubsectorSite).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -95,6 +97,37 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSiteLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSiteMWQMSiteTVItem);
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSiteSamplingPlanSubsector);
+        }
+        [TestMethod]
+        public void SamplingPlanSubsectorSite_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               samplingPlanSubsectorSite.SamplingPlanSubsectorSiteID = val1;
+               Assert.AreEqual(val1, samplingPlanSubsectorSite.SamplingPlanSubsectorSiteID);
+               int val2 = 45;
+               samplingPlanSubsectorSite.SamplingPlanSubsectorID = val2;
+               Assert.AreEqual(val2, samplingPlanSubsectorSite.SamplingPlanSubsectorID);
+               int val3 = 45;
+               samplingPlanSubsectorSite.MWQMSiteTVItemID = val3;
+               Assert.AreEqual(val3, samplingPlanSubsectorSite.MWQMSiteTVItemID);
+               bool val4 = true;
+               samplingPlanSubsectorSite.IsDuplicate = val4;
+               Assert.AreEqual(val4, samplingPlanSubsectorSite.IsDuplicate);
+               DateTime val5 = new DateTime(2010, 3, 4);
+               samplingPlanSubsectorSite.LastUpdateDate_UTC = val5;
+               Assert.AreEqual(val5, samplingPlanSubsectorSite.LastUpdateDate_UTC);
+               int val6 = 45;
+               samplingPlanSubsectorSite.LastUpdateContactTVItemID = val6;
+               Assert.AreEqual(val6, samplingPlanSubsectorSite.LastUpdateContactTVItemID);
+               TVItem val16 = new TVItem();
+               samplingPlanSubsectorSite.MWQMSiteTVItem = val16;
+               Assert.AreEqual(val16, samplingPlanSubsectorSite.MWQMSiteTVItem);
+               SamplingPlanSubsector val17 = new SamplingPlanSubsector();
+               samplingPlanSubsectorSite.SamplingPlanSubsector = val17;
+               Assert.AreEqual(val17, samplingPlanSubsectorSite.SamplingPlanSubsector);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               samplingPlanSubsectorSite.ValidationResults = val27;
+               Assert.AreEqual(val27, samplingPlanSubsectorSite.ValidationResults);
         }
     }
 }

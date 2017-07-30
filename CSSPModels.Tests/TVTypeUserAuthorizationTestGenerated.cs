@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class TVTypeUserAuthorizationTest
+    public partial class TVTypeUserAuthorizationTest : SetupData
     {
         [TestMethod]
-        public void TVTypeUserAuthorization_Properties_OK()
+        public void TVTypeUserAuthorization_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVTypeUserAuthorizationID", "ContactTVItemID", "TVType", "TVAuth", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVTypeUserAuthorization_Navigation_OK()
+        public void TVTypeUserAuthorization_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "ContactTVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVTypeUserAuthorization_Has_ValidationResults_OK()
+        public void TVTypeUserAuthorization_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(TVTypeUserAuthorization).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -94,6 +96,34 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVTypeUserAuthorizationLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TVTypeUserAuthorizationLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.TVTypeUserAuthorizationContactTVItem);
+        }
+        [TestMethod]
+        public void TVTypeUserAuthorization_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               tVTypeUserAuthorization.TVTypeUserAuthorizationID = val1;
+               Assert.AreEqual(val1, tVTypeUserAuthorization.TVTypeUserAuthorizationID);
+               int val2 = 45;
+               tVTypeUserAuthorization.ContactTVItemID = val2;
+               Assert.AreEqual(val2, tVTypeUserAuthorization.ContactTVItemID);
+               TVTypeEnum val3 = (TVTypeEnum)3;
+               tVTypeUserAuthorization.TVType = val3;
+               Assert.AreEqual(val3, tVTypeUserAuthorization.TVType);
+               TVAuthEnum val4 = (TVAuthEnum)3;
+               tVTypeUserAuthorization.TVAuth = val4;
+               Assert.AreEqual(val4, tVTypeUserAuthorization.TVAuth);
+               DateTime val5 = new DateTime(2010, 3, 4);
+               tVTypeUserAuthorization.LastUpdateDate_UTC = val5;
+               Assert.AreEqual(val5, tVTypeUserAuthorization.LastUpdateDate_UTC);
+               int val6 = 45;
+               tVTypeUserAuthorization.LastUpdateContactTVItemID = val6;
+               Assert.AreEqual(val6, tVTypeUserAuthorization.LastUpdateContactTVItemID);
+               TVItem val15 = new TVItem();
+               tVTypeUserAuthorization.ContactTVItem = val15;
+               Assert.AreEqual(val15, tVTypeUserAuthorization.ContactTVItem);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               tVTypeUserAuthorization.ValidationResults = val24;
+               Assert.AreEqual(val24, tVTypeUserAuthorization.ValidationResults);
         }
     }
 }

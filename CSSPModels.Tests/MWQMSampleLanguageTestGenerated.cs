@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class MWQMSampleLanguageTest
+    public partial class MWQMSampleLanguageTest : SetupData
     {
         [TestMethod]
-        public void MWQMSampleLanguage_Properties_OK()
+        public void MWQMSampleLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSampleLanguageID", "MWQMSampleID", "Language", "MWQMSampleNote", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSampleLanguage_Navigation_OK()
+        public void MWQMSampleLanguage_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "MWQMSample",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSampleLanguage_Has_ValidationResults_OK()
+        public void MWQMSampleLanguage_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(MWQMSampleLanguage).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -95,6 +97,37 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMSampleLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MWQMSampleLanguageLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.MWQMSampleLanguageMWQMSample);
+        }
+        [TestMethod]
+        public void MWQMSampleLanguage_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               mWQMSampleLanguage.MWQMSampleLanguageID = val1;
+               Assert.AreEqual(val1, mWQMSampleLanguage.MWQMSampleLanguageID);
+               int val2 = 45;
+               mWQMSampleLanguage.MWQMSampleID = val2;
+               Assert.AreEqual(val2, mWQMSampleLanguage.MWQMSampleID);
+               LanguageEnum val3 = (LanguageEnum)3;
+               mWQMSampleLanguage.Language = val3;
+               Assert.AreEqual(val3, mWQMSampleLanguage.Language);
+               string val4 = "Some text";
+               mWQMSampleLanguage.MWQMSampleNote = val4;
+               Assert.AreEqual(val4, mWQMSampleLanguage.MWQMSampleNote);
+               TranslationStatusEnum val5 = (TranslationStatusEnum)3;
+               mWQMSampleLanguage.TranslationStatus = val5;
+               Assert.AreEqual(val5, mWQMSampleLanguage.TranslationStatus);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               mWQMSampleLanguage.LastUpdateDate_UTC = val6;
+               Assert.AreEqual(val6, mWQMSampleLanguage.LastUpdateDate_UTC);
+               int val7 = 45;
+               mWQMSampleLanguage.LastUpdateContactTVItemID = val7;
+               Assert.AreEqual(val7, mWQMSampleLanguage.LastUpdateContactTVItemID);
+               MWQMSample val17 = new MWQMSample();
+               mWQMSampleLanguage.MWQMSample = val17;
+               Assert.AreEqual(val17, mWQMSampleLanguage.MWQMSample);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               mWQMSampleLanguage.ValidationResults = val27;
+               Assert.AreEqual(val27, mWQMSampleLanguage.ValidationResults);
         }
     }
 }

@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class RatingCurveTest
+    public partial class RatingCurveTest : SetupData
     {
         [TestMethod]
-        public void RatingCurve_Properties_OK()
+        public void RatingCurve_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "RatingCurveID", "HydrometricSiteID", "RatingCurveNumber", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void RatingCurve_Navigation_OK()
+        public void RatingCurve_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "HydrometricSite",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() { "RatingCurveValues",  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void RatingCurve_Has_ValidationResults_OK()
+        public void RatingCurve_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(RatingCurve).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -94,6 +96,34 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.RatingCurveLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.RatingCurveRatingCurveValues);
                Assert.IsNotNull(ModelsRes.RatingCurveHydrometricSite);
+        }
+        [TestMethod]
+        public void RatingCurve_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               ratingCurve.RatingCurveID = val1;
+               Assert.AreEqual(val1, ratingCurve.RatingCurveID);
+               int val2 = 45;
+               ratingCurve.HydrometricSiteID = val2;
+               Assert.AreEqual(val2, ratingCurve.HydrometricSiteID);
+               string val3 = "Some text";
+               ratingCurve.RatingCurveNumber = val3;
+               Assert.AreEqual(val3, ratingCurve.RatingCurveNumber);
+               DateTime val4 = new DateTime(2010, 3, 4);
+               ratingCurve.LastUpdateDate_UTC = val4;
+               Assert.AreEqual(val4, ratingCurve.LastUpdateDate_UTC);
+               int val5 = 45;
+               ratingCurve.LastUpdateContactTVItemID = val5;
+               Assert.AreEqual(val5, ratingCurve.LastUpdateContactTVItemID);
+               ICollection<RatingCurveValue> val14 = new List<RatingCurveValue>();
+               ratingCurve.RatingCurveValues = val14;
+               Assert.AreEqual(val14, ratingCurve.RatingCurveValues);
+               HydrometricSite val15 = new HydrometricSite();
+               ratingCurve.HydrometricSite = val15;
+               Assert.AreEqual(val15, ratingCurve.HydrometricSite);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               ratingCurve.ValidationResults = val24;
+               Assert.AreEqual(val24, ratingCurve.ValidationResults);
         }
     }
 }

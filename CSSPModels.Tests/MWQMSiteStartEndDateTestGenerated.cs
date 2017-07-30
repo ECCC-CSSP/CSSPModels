@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class MWQMSiteStartEndDateTest
+    public partial class MWQMSiteStartEndDateTest : SetupData
     {
         [TestMethod]
-        public void MWQMSiteStartEndDate_Properties_OK()
+        public void MWQMSiteStartEndDate_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSiteStartEndDateID", "MWQMSiteTVItemID", "StartDate", "EndDate", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSiteStartEndDate_Navigation_OK()
+        public void MWQMSiteStartEndDate_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "MWQMSiteTVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSiteStartEndDate_Has_ValidationResults_OK()
+        public void MWQMSiteStartEndDate_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(MWQMSiteStartEndDate).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -94,6 +96,34 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMSiteStartEndDateLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MWQMSiteStartEndDateLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.MWQMSiteStartEndDateMWQMSiteTVItem);
+        }
+        [TestMethod]
+        public void MWQMSiteStartEndDate_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               mWQMSiteStartEndDate.MWQMSiteStartEndDateID = val1;
+               Assert.AreEqual(val1, mWQMSiteStartEndDate.MWQMSiteStartEndDateID);
+               int val2 = 45;
+               mWQMSiteStartEndDate.MWQMSiteTVItemID = val2;
+               Assert.AreEqual(val2, mWQMSiteStartEndDate.MWQMSiteTVItemID);
+               DateTime val3 = new DateTime(2010, 3, 4);
+               mWQMSiteStartEndDate.StartDate = val3;
+               Assert.AreEqual(val3, mWQMSiteStartEndDate.StartDate);
+               DateTime val4 = new DateTime(2010, 3, 4);
+               mWQMSiteStartEndDate.EndDate = val4;
+               Assert.AreEqual(val4, mWQMSiteStartEndDate.EndDate);
+               DateTime val5 = new DateTime(2010, 3, 4);
+               mWQMSiteStartEndDate.LastUpdateDate_UTC = val5;
+               Assert.AreEqual(val5, mWQMSiteStartEndDate.LastUpdateDate_UTC);
+               int val6 = 45;
+               mWQMSiteStartEndDate.LastUpdateContactTVItemID = val6;
+               Assert.AreEqual(val6, mWQMSiteStartEndDate.LastUpdateContactTVItemID);
+               TVItem val15 = new TVItem();
+               mWQMSiteStartEndDate.MWQMSiteTVItem = val15;
+               Assert.AreEqual(val15, mWQMSiteStartEndDate.MWQMSiteTVItem);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               mWQMSiteStartEndDate.ValidationResults = val24;
+               Assert.AreEqual(val24, mWQMSiteStartEndDate.ValidationResults);
         }
     }
 }

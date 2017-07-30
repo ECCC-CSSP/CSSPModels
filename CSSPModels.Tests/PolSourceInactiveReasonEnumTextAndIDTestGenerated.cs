@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class PolSourceInactiveReasonEnumTextAndIDTest
+    public partial class PolSourceInactiveReasonEnumTextAndIDTest : SetupData
     {
         [TestMethod]
-        public void PolSourceInactiveReasonEnumTextAndID_Properties_OK()
+        public void PolSourceInactiveReasonEnumTextAndID_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "Text", "ID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -28,7 +30,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
         }
         [TestMethod]
-        public void PolSourceInactiveReasonEnumTextAndID_Has_ValidationResults_OK()
+        public void PolSourceInactiveReasonEnumTextAndID_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(PolSourceInactiveReasonEnumTextAndID).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -37,6 +39,19 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.PolSourceInactiveReasonEnumTextAndIDText);
                Assert.IsNotNull(ModelsRes.PolSourceInactiveReasonEnumTextAndIDID);
+        }
+        [TestMethod]
+        public void PolSourceInactiveReasonEnumTextAndID_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               polSourceInactiveReasonEnumTextAndID.Text = val1;
+               Assert.AreEqual(val1, polSourceInactiveReasonEnumTextAndID.Text);
+               int val2 = 45;
+               polSourceInactiveReasonEnumTextAndID.ID = val2;
+               Assert.AreEqual(val2, polSourceInactiveReasonEnumTextAndID.ID);
+               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
+               polSourceInactiveReasonEnumTextAndID.ValidationResults = val9;
+               Assert.AreEqual(val9, polSourceInactiveReasonEnumTextAndID.ValidationResults);
         }
     }
 }

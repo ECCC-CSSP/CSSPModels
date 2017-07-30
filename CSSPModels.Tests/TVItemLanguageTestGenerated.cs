@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class TVItemLanguageTest
+    public partial class TVItemLanguageTest : SetupData
     {
         [TestMethod]
-        public void TVItemLanguage_Properties_OK()
+        public void TVItemLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemLanguageID", "TVItemID", "Language", "TVText", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVItemLanguage_Navigation_OK()
+        public void TVItemLanguage_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "TVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVItemLanguage_Has_ValidationResults_OK()
+        public void TVItemLanguage_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(TVItemLanguage).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -95,6 +97,37 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TVItemLanguageLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.TVItemLanguageTVItem);
+        }
+        [TestMethod]
+        public void TVItemLanguage_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               tVItemLanguage.TVItemLanguageID = val1;
+               Assert.AreEqual(val1, tVItemLanguage.TVItemLanguageID);
+               int val2 = 45;
+               tVItemLanguage.TVItemID = val2;
+               Assert.AreEqual(val2, tVItemLanguage.TVItemID);
+               LanguageEnum val3 = (LanguageEnum)3;
+               tVItemLanguage.Language = val3;
+               Assert.AreEqual(val3, tVItemLanguage.Language);
+               string val4 = "Some text";
+               tVItemLanguage.TVText = val4;
+               Assert.AreEqual(val4, tVItemLanguage.TVText);
+               TranslationStatusEnum val5 = (TranslationStatusEnum)3;
+               tVItemLanguage.TranslationStatus = val5;
+               Assert.AreEqual(val5, tVItemLanguage.TranslationStatus);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               tVItemLanguage.LastUpdateDate_UTC = val6;
+               Assert.AreEqual(val6, tVItemLanguage.LastUpdateDate_UTC);
+               int val7 = 45;
+               tVItemLanguage.LastUpdateContactTVItemID = val7;
+               Assert.AreEqual(val7, tVItemLanguage.LastUpdateContactTVItemID);
+               TVItem val17 = new TVItem();
+               tVItemLanguage.TVItem = val17;
+               Assert.AreEqual(val17, tVItemLanguage.TVItem);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               tVItemLanguage.ValidationResults = val27;
+               Assert.AreEqual(val27, tVItemLanguage.ValidationResults);
         }
     }
 }

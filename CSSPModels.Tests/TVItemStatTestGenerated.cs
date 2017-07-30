@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class TVItemStatTest
+    public partial class TVItemStatTest : SetupData
     {
         [TestMethod]
-        public void TVItemStat_Properties_OK()
+        public void TVItemStat_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemStatID", "TVItemID", "TVType", "ChildCount", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVItemStat_Navigation_OK()
+        public void TVItemStat_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "TVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVItemStat_Has_ValidationResults_OK()
+        public void TVItemStat_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(TVItemStat).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -94,6 +96,34 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemStatLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TVItemStatLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.TVItemStatTVItem);
+        }
+        [TestMethod]
+        public void TVItemStat_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               tVItemStat.TVItemStatID = val1;
+               Assert.AreEqual(val1, tVItemStat.TVItemStatID);
+               int val2 = 45;
+               tVItemStat.TVItemID = val2;
+               Assert.AreEqual(val2, tVItemStat.TVItemID);
+               TVTypeEnum val3 = (TVTypeEnum)3;
+               tVItemStat.TVType = val3;
+               Assert.AreEqual(val3, tVItemStat.TVType);
+               int val4 = 45;
+               tVItemStat.ChildCount = val4;
+               Assert.AreEqual(val4, tVItemStat.ChildCount);
+               DateTime val5 = new DateTime(2010, 3, 4);
+               tVItemStat.LastUpdateDate_UTC = val5;
+               Assert.AreEqual(val5, tVItemStat.LastUpdateDate_UTC);
+               int val6 = 45;
+               tVItemStat.LastUpdateContactTVItemID = val6;
+               Assert.AreEqual(val6, tVItemStat.LastUpdateContactTVItemID);
+               TVItem val15 = new TVItem();
+               tVItemStat.TVItem = val15;
+               Assert.AreEqual(val15, tVItemStat.TVItem);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               tVItemStat.ValidationResults = val24;
+               Assert.AreEqual(val24, tVItemStat.ValidationResults);
         }
     }
 }

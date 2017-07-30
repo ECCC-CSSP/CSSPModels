@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class MWQMSiteTest
+    public partial class MWQMSiteTest : SetupData
     {
         [TestMethod]
-        public void MWQMSite_Properties_OK()
+        public void MWQMSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSiteID", "MWQMSiteTVItemID", "MWQMSiteNumber", "MWQMSiteDescription", "MWQMSiteLatestClassification", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSite_Navigation_OK()
+        public void MWQMSite_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "MWQMSiteTVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSite_Has_ValidationResults_OK()
+        public void MWQMSite_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(MWQMSite).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -96,6 +98,40 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMSiteLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MWQMSiteLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.MWQMSiteMWQMSiteTVItem);
+        }
+        [TestMethod]
+        public void MWQMSite_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               mWQMSite.MWQMSiteID = val1;
+               Assert.AreEqual(val1, mWQMSite.MWQMSiteID);
+               int val2 = 45;
+               mWQMSite.MWQMSiteTVItemID = val2;
+               Assert.AreEqual(val2, mWQMSite.MWQMSiteTVItemID);
+               string val3 = "Some text";
+               mWQMSite.MWQMSiteNumber = val3;
+               Assert.AreEqual(val3, mWQMSite.MWQMSiteNumber);
+               string val4 = "Some text";
+               mWQMSite.MWQMSiteDescription = val4;
+               Assert.AreEqual(val4, mWQMSite.MWQMSiteDescription);
+               MWQMSiteLatestClassificationEnum val5 = (MWQMSiteLatestClassificationEnum)3;
+               mWQMSite.MWQMSiteLatestClassification = val5;
+               Assert.AreEqual(val5, mWQMSite.MWQMSiteLatestClassification);
+               int val6 = 45;
+               mWQMSite.Ordinal = val6;
+               Assert.AreEqual(val6, mWQMSite.Ordinal);
+               DateTime val7 = new DateTime(2010, 3, 4);
+               mWQMSite.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, mWQMSite.LastUpdateDate_UTC);
+               int val8 = 45;
+               mWQMSite.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, mWQMSite.LastUpdateContactTVItemID);
+               TVItem val19 = new TVItem();
+               mWQMSite.MWQMSiteTVItem = val19;
+               Assert.AreEqual(val19, mWQMSite.MWQMSiteTVItem);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               mWQMSite.ValidationResults = val30;
+               Assert.AreEqual(val30, mWQMSite.ValidationResults);
         }
     }
 }

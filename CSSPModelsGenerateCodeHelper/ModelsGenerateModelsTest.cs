@@ -37,7 +37,7 @@ namespace CSSPModelsGenerateCodeHelper
                     continue;
                 }
 
-                //if (type.Name != "Address")
+                //if (type.Name != "AppTask")
                 //{
                 //    continue;
                 //}
@@ -60,13 +60,15 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"using CSSPModels.Resources;");
                 sb.AppendLine(@"using Microsoft.EntityFrameworkCore.Metadata;");
                 sb.AppendLine(@"using System.Reflection;");
+                sb.AppendLine(@"using CSSPEnums;");
+                sb.AppendLine(@"using System.ComponentModel.DataAnnotations;");
                 sb.AppendLine(@"");
                 sb.AppendLine(@"namespace CSSPModels.Tests");
                 sb.AppendLine(@"{");
-                sb.AppendLine(@"    public partial class " + type.Name + "Test");
+                sb.AppendLine(@"    public partial class " + type.Name + "Test : SetupData");
                 sb.AppendLine(@"    {");
                 sb.AppendLine(@"        [TestMethod]");
-                sb.AppendLine(@"        public void " + type.Name + "_Properties_OK()");
+                sb.AppendLine(@"        public void " + type.Name + "_Properties_Test()");
                 sb.AppendLine(@"        {");
 
                 StringBuilder sbVar = new StringBuilder();
@@ -148,7 +150,7 @@ namespace CSSPModelsGenerateCodeHelper
                 if (!ClassNotMapped)
                 {
                     sb.AppendLine(@"        [TestMethod]");
-                    sb.AppendLine(@"        public void " + type.Name + "_Navigation_OK()");
+                    sb.AppendLine(@"        public void " + type.Name + "_Navigation_Test()");
                     sb.AppendLine(@"        {");
 
                     StringBuilder sbVar2 = new StringBuilder();
@@ -199,7 +201,7 @@ namespace CSSPModelsGenerateCodeHelper
                     sb.AppendLine(@"        }");
                 }
                 sb.AppendLine(@"        [TestMethod]");
-                sb.AppendLine(@"        public void " + type.Name + "_Has_ValidationResults_OK()");
+                sb.AppendLine(@"        public void " + type.Name + "_Has_ValidationResults_Test()");
                 sb.AppendLine(@"        {");
                 sb.AppendLine(@"             Assert.IsTrue(typeof(" + type.Name + @").GetProperties().Where(c => c.Name == ""ValidationResults"").Any());");
                 sb.AppendLine(@"        }");
@@ -209,13 +211,133 @@ namespace CSSPModelsGenerateCodeHelper
 
                 foreach (PropertyInfo prop in type.GetProperties())
                 {
-                    if (!prop.GetGetMethod().IsVirtual && !prop.Name.Contains("ValidationResults"))
+                    if (!prop.Name.Contains("ValidationResults"))
                     {
                         sb.AppendLine(@"               Assert.IsNotNull(ModelsRes." + type.Name + prop.Name + @");");
                     }
+                }
+                sb.AppendLine(@"        }");
+                sb.AppendLine(@"        [TestMethod]");
+                sb.AppendLine(@"        public void " + type.Name + "_Every_Property_Has_Get_Set_Test()");
+                sb.AppendLine(@"        {");
+
+                int count = 0;
+
+                // doing properties which are not virtual nor contains 'ValidationResults'
+                foreach (PropertyInfo prop in type.GetProperties())
+                {
+                    count += 1;
+                    if (!prop.GetGetMethod().IsVirtual && !prop.Name.Contains("ValidationResults"))
+                    {
+                        CSSPProp csspProp = new CSSPProp();
+                        if (!FillCSSPProp(prop, csspProp, type))
+                        {
+                            ErrorEvent(new ErrorEventArgs("Error while creating code [" + csspProp.Error + "]"));
+                            return;
+                        }
+                        switch (csspProp.PropType)
+                        {
+                            case "Boolean":
+                                {
+                                    sb.AppendLine(@"               bool val" + count.ToString() + " = true;");
+                                }
+                                break;
+                            case "DateTime":
+                            case "DateTimeOffset":
+                                {
+                                    sb.AppendLine(@"               DateTime val" + count.ToString() + " = new DateTime(2010, 3, 4);");
+                                }
+                                break;
+                            case "Int16":
+                            case "Int32":
+                            case "Int64":
+                                {
+                                    sb.AppendLine(@"               int val" + count.ToString() + " = 45;");
+                                }
+                                break;
+                            case "Single":
+                                {
+                                    sb.AppendLine(@"               float val" + count.ToString() + " = 56.0f;");
+                                }
+                                break;
+                            case "Double":
+                                {
+                                    sb.AppendLine(@"               double val" + count.ToString() + " = 87.9D;");
+                                }
+                                break;
+                            case "String":
+                                {
+                                    sb.AppendLine(@"               string val" + count.ToString() + @" = ""Some text"";");
+                                }
+                                break;
+                            case "Byte[]":
+                                {
+                                    sb.AppendLine(@"               byte[] val" + count.ToString() + @" = new byte[5];");
+                                }
+                                break;
+                            default:
+                                {
+                                    if (csspProp.HasCSSPEnumTypeAttribute)
+                                    {
+                                        sb.AppendLine(@"               " + csspProp.PropType + " val" + count.ToString() + @" = (" + csspProp.PropType + ")3;");
+                                    }
+                                    else
+                                    {
+                                        sb.AppendLine(@"                TypeNotImplemented___" + type + "____" + csspProp.PropName + "___" + csspProp.PropType);
+                                    }
+                                }
+                                break;
+                        }
+
+                        sb.AppendLine(@"               " + type.Name.Substring(0, 1).ToLower() + type.Name.Substring(1) + "." + prop.Name + @" = val" + count.ToString() + ";");
+                        sb.AppendLine(@"               Assert.AreEqual(val" + count.ToString() + ", " + type.Name.Substring(0, 1).ToLower() + type.Name.Substring(1) + "." + prop.Name + @");");
+                    }
+                }
+
+                // doing properties which are virtual
+                foreach (PropertyInfo prop in type.GetProperties())
+                {
+                    count += 1;
                     if (prop.GetGetMethod().IsVirtual)
                     {
-                        sb.AppendLine(@"               Assert.IsNotNull(ModelsRes." + type.Name + prop.Name + @");");
+                        CSSPProp csspProp = new CSSPProp();
+                        if (!FillCSSPProp(prop, csspProp, type))
+                        {
+                            ErrorEvent(new ErrorEventArgs("Error while creating code [" + csspProp.Error + "]"));
+                            return;
+                        }
+                        if (csspProp.IsCollection)
+                        {
+                            sb.AppendLine(@"               ICollection<" + csspProp.PropType + "> val" + count.ToString() + @" = new List<" + csspProp.PropType + ">();");
+                        }
+                        else if (csspProp.IsList)
+                        {
+                            sb.AppendLine(@"               List<" + csspProp.PropType + "> val" + count.ToString() + @" = new List<" + csspProp.PropType + ">();");
+                        }
+                        else
+                        {
+                            sb.AppendLine(@"               " + csspProp.PropType + " val" + count.ToString() + @" = new " + csspProp.PropType + "();");
+                        }
+                        sb.AppendLine(@"               " + type.Name.Substring(0, 1).ToLower() + type.Name.Substring(1) + "." + prop.Name + @" = val" + count.ToString() + ";");
+                        sb.AppendLine(@"               Assert.AreEqual(val" + count.ToString() + ", " + type.Name.Substring(0, 1).ToLower() + type.Name.Substring(1) + "." + prop.Name + @");");
+                    }
+                }
+
+                // doing properties which contains 'ValidationResults'
+                foreach (PropertyInfo prop in type.GetProperties())
+                {
+                    count += 1;
+                    if (prop.Name.Contains("ValidationResults"))
+                    {
+                        CSSPProp csspProp = new CSSPProp();
+                        if (!FillCSSPProp(prop, csspProp, type))
+                        {
+                            ErrorEvent(new ErrorEventArgs("Error while creating code [" + csspProp.Error + "]"));
+                            return;
+                        }
+                        sb.AppendLine(@"               IEnumerable<ValidationResult> val" + count.ToString() + @" = new List<ValidationResult>().AsEnumerable();");
+                        sb.AppendLine(@"               " + type.Name.Substring(0, 1).ToLower() + type.Name.Substring(1) + "." + prop.Name + @" = val" + count.ToString() + ";");
+                        sb.AppendLine(@"               Assert.AreEqual(val" + count.ToString() + ", " + type.Name.Substring(0, 1).ToLower() + type.Name.Substring(1) + "." + prop.Name + @");");
                     }
                 }
                 sb.AppendLine(@"        }");

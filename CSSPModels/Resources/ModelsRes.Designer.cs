@@ -61,6 +61,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} is required.
+        /// </summary>
+        public static string _IsRequired {
+            get {
+                return ResourceManager.GetString("_IsRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Address.
         /// </summary>
         public static string Address {

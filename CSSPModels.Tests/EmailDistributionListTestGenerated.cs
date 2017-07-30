@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class EmailDistributionListTest
+    public partial class EmailDistributionListTest : SetupData
     {
         [TestMethod]
-        public void EmailDistributionList_Properties_OK()
+        public void EmailDistributionList_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "EmailDistributionListID", "CountryTVItemID", "RegionName", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void EmailDistributionList_Navigation_OK()
+        public void EmailDistributionList_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "CountryTVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() { "EmailDistributionListContacts",  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void EmailDistributionList_Has_ValidationResults_OK()
+        public void EmailDistributionList_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(EmailDistributionList).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -95,6 +97,37 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.EmailDistributionListLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.EmailDistributionListCountryTVItem);
                Assert.IsNotNull(ModelsRes.EmailDistributionListEmailDistributionListContacts);
+        }
+        [TestMethod]
+        public void EmailDistributionList_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               emailDistributionList.EmailDistributionListID = val1;
+               Assert.AreEqual(val1, emailDistributionList.EmailDistributionListID);
+               int val2 = 45;
+               emailDistributionList.CountryTVItemID = val2;
+               Assert.AreEqual(val2, emailDistributionList.CountryTVItemID);
+               string val3 = "Some text";
+               emailDistributionList.RegionName = val3;
+               Assert.AreEqual(val3, emailDistributionList.RegionName);
+               int val4 = 45;
+               emailDistributionList.Ordinal = val4;
+               Assert.AreEqual(val4, emailDistributionList.Ordinal);
+               DateTime val5 = new DateTime(2010, 3, 4);
+               emailDistributionList.LastUpdateDate_UTC = val5;
+               Assert.AreEqual(val5, emailDistributionList.LastUpdateDate_UTC);
+               int val6 = 45;
+               emailDistributionList.LastUpdateContactTVItemID = val6;
+               Assert.AreEqual(val6, emailDistributionList.LastUpdateContactTVItemID);
+               TVItem val16 = new TVItem();
+               emailDistributionList.CountryTVItem = val16;
+               Assert.AreEqual(val16, emailDistributionList.CountryTVItem);
+               ICollection<EmailDistributionListContact> val17 = new List<EmailDistributionListContact>();
+               emailDistributionList.EmailDistributionListContacts = val17;
+               Assert.AreEqual(val17, emailDistributionList.EmailDistributionListContacts);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               emailDistributionList.ValidationResults = val27;
+               Assert.AreEqual(val27, emailDistributionList.ValidationResults);
         }
     }
 }

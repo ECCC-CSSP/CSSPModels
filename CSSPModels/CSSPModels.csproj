@@ -317,7 +317,6 @@
     <Compile Include="Email.cs" />
     <Compile Include="HydrometricDataValue.cs" />
     <Compile Include="HydrometricSite.cs" />
-    <Compile Include="_IdentityModel.cs" />
     <Compile Include="Infrastructure.cs" />
     <Compile Include="InfrastructureLanguage.cs" />
     <Compile Include="LabSheet.cs" />

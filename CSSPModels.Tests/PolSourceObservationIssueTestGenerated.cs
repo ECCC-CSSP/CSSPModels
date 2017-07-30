@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class PolSourceObservationIssueTest
+    public partial class PolSourceObservationIssueTest : SetupData
     {
         [TestMethod]
-        public void PolSourceObservationIssue_Properties_OK()
+        public void PolSourceObservationIssue_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "PolSourceObservationIssueID", "PolSourceObservationID", "ObservationInfo", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void PolSourceObservationIssue_Navigation_OK()
+        public void PolSourceObservationIssue_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "PolSourceObservation",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void PolSourceObservationIssue_Has_ValidationResults_OK()
+        public void PolSourceObservationIssue_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(PolSourceObservationIssue).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -94,6 +96,34 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.PolSourceObservationIssueLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.PolSourceObservationIssueLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.PolSourceObservationIssuePolSourceObservation);
+        }
+        [TestMethod]
+        public void PolSourceObservationIssue_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               polSourceObservationIssue.PolSourceObservationIssueID = val1;
+               Assert.AreEqual(val1, polSourceObservationIssue.PolSourceObservationIssueID);
+               int val2 = 45;
+               polSourceObservationIssue.PolSourceObservationID = val2;
+               Assert.AreEqual(val2, polSourceObservationIssue.PolSourceObservationID);
+               string val3 = "Some text";
+               polSourceObservationIssue.ObservationInfo = val3;
+               Assert.AreEqual(val3, polSourceObservationIssue.ObservationInfo);
+               int val4 = 45;
+               polSourceObservationIssue.Ordinal = val4;
+               Assert.AreEqual(val4, polSourceObservationIssue.Ordinal);
+               DateTime val5 = new DateTime(2010, 3, 4);
+               polSourceObservationIssue.LastUpdateDate_UTC = val5;
+               Assert.AreEqual(val5, polSourceObservationIssue.LastUpdateDate_UTC);
+               int val6 = 45;
+               polSourceObservationIssue.LastUpdateContactTVItemID = val6;
+               Assert.AreEqual(val6, polSourceObservationIssue.LastUpdateContactTVItemID);
+               PolSourceObservation val15 = new PolSourceObservation();
+               polSourceObservationIssue.PolSourceObservation = val15;
+               Assert.AreEqual(val15, polSourceObservationIssue.PolSourceObservation);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               polSourceObservationIssue.ValidationResults = val24;
+               Assert.AreEqual(val24, polSourceObservationIssue.ValidationResults);
         }
     }
 }

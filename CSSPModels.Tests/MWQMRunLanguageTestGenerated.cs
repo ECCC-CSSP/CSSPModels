@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class MWQMRunLanguageTest
+    public partial class MWQMRunLanguageTest : SetupData
     {
         [TestMethod]
-        public void MWQMRunLanguage_Properties_OK()
+        public void MWQMRunLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMRunLanguageID", "MWQMRunID", "Language", "RunComment", "TranslationStatusRunComment", "RunWeatherComment", "TranslationStatusRunWeatherComment", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMRunLanguage_Navigation_OK()
+        public void MWQMRunLanguage_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "MWQMRun",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMRunLanguage_Has_ValidationResults_OK()
+        public void MWQMRunLanguage_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(MWQMRunLanguage).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -97,6 +99,43 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMRunLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MWQMRunLanguageLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.MWQMRunLanguageMWQMRun);
+        }
+        [TestMethod]
+        public void MWQMRunLanguage_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               mWQMRunLanguage.MWQMRunLanguageID = val1;
+               Assert.AreEqual(val1, mWQMRunLanguage.MWQMRunLanguageID);
+               int val2 = 45;
+               mWQMRunLanguage.MWQMRunID = val2;
+               Assert.AreEqual(val2, mWQMRunLanguage.MWQMRunID);
+               LanguageEnum val3 = (LanguageEnum)3;
+               mWQMRunLanguage.Language = val3;
+               Assert.AreEqual(val3, mWQMRunLanguage.Language);
+               string val4 = "Some text";
+               mWQMRunLanguage.RunComment = val4;
+               Assert.AreEqual(val4, mWQMRunLanguage.RunComment);
+               TranslationStatusEnum val5 = (TranslationStatusEnum)3;
+               mWQMRunLanguage.TranslationStatusRunComment = val5;
+               Assert.AreEqual(val5, mWQMRunLanguage.TranslationStatusRunComment);
+               string val6 = "Some text";
+               mWQMRunLanguage.RunWeatherComment = val6;
+               Assert.AreEqual(val6, mWQMRunLanguage.RunWeatherComment);
+               TranslationStatusEnum val7 = (TranslationStatusEnum)3;
+               mWQMRunLanguage.TranslationStatusRunWeatherComment = val7;
+               Assert.AreEqual(val7, mWQMRunLanguage.TranslationStatusRunWeatherComment);
+               DateTime val8 = new DateTime(2010, 3, 4);
+               mWQMRunLanguage.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, mWQMRunLanguage.LastUpdateDate_UTC);
+               int val9 = 45;
+               mWQMRunLanguage.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, mWQMRunLanguage.LastUpdateContactTVItemID);
+               MWQMRun val21 = new MWQMRun();
+               mWQMRunLanguage.MWQMRun = val21;
+               Assert.AreEqual(val21, mWQMRunLanguage.MWQMRun);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               mWQMRunLanguage.ValidationResults = val33;
+               Assert.AreEqual(val33, mWQMRunLanguage.ValidationResults);
         }
     }
 }

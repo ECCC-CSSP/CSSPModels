@@ -343,6 +343,7 @@
     <Compile Include="SearchTagAndTermsTestGenerated.cs" />
     <Compile Include="SearchTest.cs" />
     <Compile Include="SearchTestGenerated.cs" />
+    <Compile Include="SetupData.cs" />
     <Compile Include="SpillLanguageTest.cs" />
     <Compile Include="SpillLanguageTestGenerated.cs" />
     <Compile Include="SpillTest.cs" />
@@ -408,6 +409,8 @@
     <Compile Include="VPScenarioTest.cs" />
     <Compile Include="VPScenarioTestGenerated.cs" />
     <Compile Include="_DBReadTestGenerated.cs" />
+    <Compile Include="CSSPWebToolsDBContextTest.cs" />
+    <Compile Include="__BaseTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

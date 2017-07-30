@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class ElementTest
+    public partial class ElementTest : SetupData
     {
         [TestMethod]
-        public void Element_Properties_OK()
+        public void Element_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ID", "Type", "NumbOfNodes", "Value", "XNode0", "YNode0", "ZNode0", "NodeList",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -28,7 +30,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
         }
         [TestMethod]
-        public void Element_Has_ValidationResults_OK()
+        public void Element_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(Element).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -43,6 +45,37 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ElementYNode0);
                Assert.IsNotNull(ModelsRes.ElementZNode0);
                Assert.IsNotNull(ModelsRes.ElementNodeList);
+        }
+        [TestMethod]
+        public void Element_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               element.ID = val1;
+               Assert.AreEqual(val1, element.ID);
+               int val2 = 45;
+               element.Type = val2;
+               Assert.AreEqual(val2, element.Type);
+               int val3 = 45;
+               element.NumbOfNodes = val3;
+               Assert.AreEqual(val3, element.NumbOfNodes);
+               double val4 = 87.9D;
+               element.Value = val4;
+               Assert.AreEqual(val4, element.Value);
+               double val5 = 87.9D;
+               element.XNode0 = val5;
+               Assert.AreEqual(val5, element.XNode0);
+               double val6 = 87.9D;
+               element.YNode0 = val6;
+               Assert.AreEqual(val6, element.YNode0);
+               double val7 = 87.9D;
+               element.ZNode0 = val7;
+               Assert.AreEqual(val7, element.ZNode0);
+               List<Node> val17 = new List<Node>();
+               element.NodeList = val17;
+               Assert.AreEqual(val17, element.NodeList);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               element.ValidationResults = val27;
+               Assert.AreEqual(val27, element.ValidationResults);
         }
     }
 }

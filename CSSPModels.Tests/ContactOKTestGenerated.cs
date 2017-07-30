@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class ContactOKTest
+    public partial class ContactOKTest : SetupData
     {
         [TestMethod]
-        public void ContactOK_Properties_OK()
+        public void ContactOK_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "Error", "ContactID", "ContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -28,7 +30,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
         }
         [TestMethod]
-        public void ContactOK_Has_ValidationResults_OK()
+        public void ContactOK_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(ContactOK).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -38,6 +40,22 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactOKError);
                Assert.IsNotNull(ModelsRes.ContactOKContactID);
                Assert.IsNotNull(ModelsRes.ContactOKContactTVItemID);
+        }
+        [TestMethod]
+        public void ContactOK_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               contactOK.Error = val1;
+               Assert.AreEqual(val1, contactOK.Error);
+               int val2 = 45;
+               contactOK.ContactID = val2;
+               Assert.AreEqual(val2, contactOK.ContactID);
+               int val3 = 45;
+               contactOK.ContactTVItemID = val3;
+               Assert.AreEqual(val3, contactOK.ContactTVItemID);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               contactOK.ValidationResults = val12;
+               Assert.AreEqual(val12, contactOK.ValidationResults);
         }
     }
 }

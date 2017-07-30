@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class DBTableTest
+    public partial class DBTableTest : SetupData
     {
         [TestMethod]
-        public void DBTable_Properties_OK()
+        public void DBTable_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TableName", "Plurial",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -28,7 +30,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
         }
         [TestMethod]
-        public void DBTable_Has_ValidationResults_OK()
+        public void DBTable_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(DBTable).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -37,6 +39,19 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.DBTableTableName);
                Assert.IsNotNull(ModelsRes.DBTablePlurial);
+        }
+        [TestMethod]
+        public void DBTable_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               dBTable.TableName = val1;
+               Assert.AreEqual(val1, dBTable.TableName);
+               string val2 = "Some text";
+               dBTable.Plurial = val2;
+               Assert.AreEqual(val2, dBTable.Plurial);
+               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
+               dBTable.ValidationResults = val9;
+               Assert.AreEqual(val9, dBTable.ValidationResults);
         }
     }
 }

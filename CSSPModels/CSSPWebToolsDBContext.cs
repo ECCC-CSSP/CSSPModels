@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Configuration;
 using CSSPEnums;
+using CSSPModels.Resources;
 
 namespace CSSPModels
 {
@@ -10,10 +11,12 @@ namespace CSSPModels
     {
 
         #region Variables
-        private DatabaseTypeEnum DatabaseType;
         #endregion Variables
 
         #region Properties
+        public DatabaseTypeEnum DatabaseType { get; set; }
+        public string Error { get; set; }
+
         public virtual DbSet<Address> Addresses { get; set; }
         public virtual DbSet<AppErrLog> AppErrLogs { get; set; }
         public virtual DbSet<AppTask> AppTasks { get; set; }
@@ -87,11 +90,29 @@ namespace CSSPModels
         #region Constructors
         public CSSPWebToolsDBContext()
         {
+            this.Error = string.Format(ModelsRes._IsRequired, "DataType");
             DatabaseType = DatabaseTypeEnum.Error;
         }
         public CSSPWebToolsDBContext(DatabaseTypeEnum DatabaseType)
         {
-            this.DatabaseType = DatabaseType;
+            this.Error = "";
+            switch (DatabaseType)
+            {
+                case DatabaseTypeEnum.MemoryCSSPWebToolsDB:
+                case DatabaseTypeEnum.MemoryTestDB:
+                case DatabaseTypeEnum.SqlServerCSSPWebToolsDB:
+                case DatabaseTypeEnum.SqlServerTestDB:
+                    {
+                        this.DatabaseType = DatabaseType;
+                    }
+                    break;
+                default:
+                    {
+                        this.Error = string.Format(ModelsRes._IsRequired, "DataType");
+                        this.DatabaseType = DatabaseTypeEnum.Error;
+                    }
+                    break;
+            }
         }
         #endregion Constructors
 
@@ -104,6 +125,12 @@ namespace CSSPModels
             {
                 CSSPWebToolsDBConnectionString = CSSPWebToolsDBConnectionString.Replace("wmon01dtchlebl2", "charles-pc");
                 TestDBConnectionString = TestDBConnectionString.Replace("wmon01dtchlebl2", "charles-pc");
+            }
+
+            if (DatabaseType == DatabaseTypeEnum.Error)
+            {
+                this.Error = string.Format(ModelsRes._IsRequired, "DataType");
+                return;
             }
 
             if (DatabaseType == DatabaseTypeEnum.MemoryTestDB)
@@ -124,7 +151,8 @@ namespace CSSPModels
             }
             else
             {
-                throw new Exception("Please select a DatabaseType");
+                this.Error = string.Format(ModelsRes._IsRequired, "DataType");
+                return;
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

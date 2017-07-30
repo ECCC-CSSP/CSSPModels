@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class ContactPreferenceTest
+    public partial class ContactPreferenceTest : SetupData
     {
         [TestMethod]
-        public void ContactPreference_Properties_OK()
+        public void ContactPreference_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactPreferenceID", "ContactID", "TVType", "MarkerSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ContactPreference_Navigation_OK()
+        public void ContactPreference_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "Contact",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ContactPreference_Has_ValidationResults_OK()
+        public void ContactPreference_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(ContactPreference).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -94,6 +96,34 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactPreferenceLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.ContactPreferenceLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.ContactPreferenceContact);
+        }
+        [TestMethod]
+        public void ContactPreference_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               contactPreference.ContactPreferenceID = val1;
+               Assert.AreEqual(val1, contactPreference.ContactPreferenceID);
+               int val2 = 45;
+               contactPreference.ContactID = val2;
+               Assert.AreEqual(val2, contactPreference.ContactID);
+               TVTypeEnum val3 = (TVTypeEnum)3;
+               contactPreference.TVType = val3;
+               Assert.AreEqual(val3, contactPreference.TVType);
+               int val4 = 45;
+               contactPreference.MarkerSize = val4;
+               Assert.AreEqual(val4, contactPreference.MarkerSize);
+               DateTime val5 = new DateTime(2010, 3, 4);
+               contactPreference.LastUpdateDate_UTC = val5;
+               Assert.AreEqual(val5, contactPreference.LastUpdateDate_UTC);
+               int val6 = 45;
+               contactPreference.LastUpdateContactTVItemID = val6;
+               Assert.AreEqual(val6, contactPreference.LastUpdateContactTVItemID);
+               Contact val15 = new Contact();
+               contactPreference.Contact = val15;
+               Assert.AreEqual(val15, contactPreference.Contact);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               contactPreference.ValidationResults = val24;
+               Assert.AreEqual(val24, contactPreference.ValidationResults);
         }
     }
 }

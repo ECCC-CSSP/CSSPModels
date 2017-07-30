@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class PolSourceObsInfoEnumTextAndIDTest
+    public partial class PolSourceObsInfoEnumTextAndIDTest : SetupData
     {
         [TestMethod]
-        public void PolSourceObsInfoEnumTextAndID_Properties_OK()
+        public void PolSourceObsInfoEnumTextAndID_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "Text", "ID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -28,7 +30,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
         }
         [TestMethod]
-        public void PolSourceObsInfoEnumTextAndID_Has_ValidationResults_OK()
+        public void PolSourceObsInfoEnumTextAndID_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(PolSourceObsInfoEnumTextAndID).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -37,6 +39,19 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.PolSourceObsInfoEnumTextAndIDText);
                Assert.IsNotNull(ModelsRes.PolSourceObsInfoEnumTextAndIDID);
+        }
+        [TestMethod]
+        public void PolSourceObsInfoEnumTextAndID_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               polSourceObsInfoEnumTextAndID.Text = val1;
+               Assert.AreEqual(val1, polSourceObsInfoEnumTextAndID.Text);
+               int val2 = 45;
+               polSourceObsInfoEnumTextAndID.ID = val2;
+               Assert.AreEqual(val2, polSourceObsInfoEnumTextAndID.ID);
+               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
+               polSourceObsInfoEnumTextAndID.ValidationResults = val9;
+               Assert.AreEqual(val9, polSourceObsInfoEnumTextAndID.ValidationResults);
         }
     }
 }

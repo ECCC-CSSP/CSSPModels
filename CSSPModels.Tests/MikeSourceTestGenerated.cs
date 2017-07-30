@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class MikeSourceTest
+    public partial class MikeSourceTest : SetupData
     {
         [TestMethod]
-        public void MikeSource_Properties_OK()
+        public void MikeSource_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeSourceID", "MikeSourceTVItemID", "IsContinuous", "Include", "IsRiver", "SourceNumberString", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MikeSource_Navigation_OK()
+        public void MikeSource_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "MikeSourceTVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() { "MikeSourceStartEnds",  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MikeSource_Has_ValidationResults_OK()
+        public void MikeSource_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(MikeSource).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -97,6 +99,43 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MikeSourceLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.MikeSourceMikeSourceStartEnds);
                Assert.IsNotNull(ModelsRes.MikeSourceMikeSourceTVItem);
+        }
+        [TestMethod]
+        public void MikeSource_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               mikeSource.MikeSourceID = val1;
+               Assert.AreEqual(val1, mikeSource.MikeSourceID);
+               int val2 = 45;
+               mikeSource.MikeSourceTVItemID = val2;
+               Assert.AreEqual(val2, mikeSource.MikeSourceTVItemID);
+               bool val3 = true;
+               mikeSource.IsContinuous = val3;
+               Assert.AreEqual(val3, mikeSource.IsContinuous);
+               bool val4 = true;
+               mikeSource.Include = val4;
+               Assert.AreEqual(val4, mikeSource.Include);
+               bool val5 = true;
+               mikeSource.IsRiver = val5;
+               Assert.AreEqual(val5, mikeSource.IsRiver);
+               string val6 = "Some text";
+               mikeSource.SourceNumberString = val6;
+               Assert.AreEqual(val6, mikeSource.SourceNumberString);
+               DateTime val7 = new DateTime(2010, 3, 4);
+               mikeSource.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, mikeSource.LastUpdateDate_UTC);
+               int val8 = 45;
+               mikeSource.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, mikeSource.LastUpdateContactTVItemID);
+               ICollection<MikeSourceStartEnd> val20 = new List<MikeSourceStartEnd>();
+               mikeSource.MikeSourceStartEnds = val20;
+               Assert.AreEqual(val20, mikeSource.MikeSourceStartEnds);
+               TVItem val21 = new TVItem();
+               mikeSource.MikeSourceTVItem = val21;
+               Assert.AreEqual(val21, mikeSource.MikeSourceTVItem);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               mikeSource.ValidationResults = val33;
+               Assert.AreEqual(val33, mikeSource.ValidationResults);
         }
     }
 }

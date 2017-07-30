@@ -15,6 +15,7 @@ namespace CSSPModels
         #region Properties not in DB
         [StringLength(200, MinimumLength = 1)]
         public string Text { get; set; }
+        [CSSPEnumType]
         public WebTideDataSetEnum WebTideDataSet { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

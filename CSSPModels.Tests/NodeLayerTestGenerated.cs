@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class NodeLayerTest
+    public partial class NodeLayerTest : SetupData
     {
         [TestMethod]
-        public void NodeLayer_Properties_OK()
+        public void NodeLayer_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "Layer", "Z", "Node",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -28,7 +30,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
         }
         [TestMethod]
-        public void NodeLayer_Has_ValidationResults_OK()
+        public void NodeLayer_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(NodeLayer).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -38,6 +40,22 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.NodeLayerLayer);
                Assert.IsNotNull(ModelsRes.NodeLayerZ);
                Assert.IsNotNull(ModelsRes.NodeLayerNode);
+        }
+        [TestMethod]
+        public void NodeLayer_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               nodeLayer.Layer = val1;
+               Assert.AreEqual(val1, nodeLayer.Layer);
+               double val2 = 87.9D;
+               nodeLayer.Z = val2;
+               Assert.AreEqual(val2, nodeLayer.Z);
+               Node val7 = new Node();
+               nodeLayer.Node = val7;
+               Assert.AreEqual(val7, nodeLayer.Node);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               nodeLayer.ValidationResults = val12;
+               Assert.AreEqual(val12, nodeLayer.ValidationResults);
         }
     }
 }

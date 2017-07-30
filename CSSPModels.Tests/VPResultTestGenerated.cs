@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class VPResultTest
+    public partial class VPResultTest : SetupData
     {
         [TestMethod]
-        public void VPResult_Properties_OK()
+        public void VPResult_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "VPResultID", "VPScenarioID", "Ordinal", "Concentration_MPN_100ml", "Dilution", "FarFieldWidth_m", "DispersionDistance_m", "TravelTime_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void VPResult_Navigation_OK()
+        public void VPResult_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "VPScenario",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void VPResult_Has_ValidationResults_OK()
+        public void VPResult_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(VPResult).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -98,6 +100,46 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.VPResultLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.VPResultLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.VPResultVPScenario);
+        }
+        [TestMethod]
+        public void VPResult_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               vPResult.VPResultID = val1;
+               Assert.AreEqual(val1, vPResult.VPResultID);
+               int val2 = 45;
+               vPResult.VPScenarioID = val2;
+               Assert.AreEqual(val2, vPResult.VPScenarioID);
+               int val3 = 45;
+               vPResult.Ordinal = val3;
+               Assert.AreEqual(val3, vPResult.Ordinal);
+               int val4 = 45;
+               vPResult.Concentration_MPN_100ml = val4;
+               Assert.AreEqual(val4, vPResult.Concentration_MPN_100ml);
+               double val5 = 87.9D;
+               vPResult.Dilution = val5;
+               Assert.AreEqual(val5, vPResult.Dilution);
+               double val6 = 87.9D;
+               vPResult.FarFieldWidth_m = val6;
+               Assert.AreEqual(val6, vPResult.FarFieldWidth_m);
+               double val7 = 87.9D;
+               vPResult.DispersionDistance_m = val7;
+               Assert.AreEqual(val7, vPResult.DispersionDistance_m);
+               double val8 = 87.9D;
+               vPResult.TravelTime_hour = val8;
+               Assert.AreEqual(val8, vPResult.TravelTime_hour);
+               DateTime val9 = new DateTime(2010, 3, 4);
+               vPResult.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, vPResult.LastUpdateDate_UTC);
+               int val10 = 45;
+               vPResult.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, vPResult.LastUpdateContactTVItemID);
+               VPScenario val23 = new VPScenario();
+               vPResult.VPScenario = val23;
+               Assert.AreEqual(val23, vPResult.VPScenario);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
+               vPResult.ValidationResults = val36;
+               Assert.AreEqual(val36, vPResult.ValidationResults);
         }
     }
 }

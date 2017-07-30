@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class PolyPointTest
+    public partial class PolyPointTest : SetupData
     {
         [TestMethod]
-        public void PolyPoint_Properties_OK()
+        public void PolyPoint_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "XCoord", "YCoord", "Z",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -28,7 +30,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
         }
         [TestMethod]
-        public void PolyPoint_Has_ValidationResults_OK()
+        public void PolyPoint_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(PolyPoint).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -38,6 +40,22 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.PolyPointXCoord);
                Assert.IsNotNull(ModelsRes.PolyPointYCoord);
                Assert.IsNotNull(ModelsRes.PolyPointZ);
+        }
+        [TestMethod]
+        public void PolyPoint_Every_Property_Has_Get_Set_Test()
+        {
+               double val1 = 87.9D;
+               polyPoint.XCoord = val1;
+               Assert.AreEqual(val1, polyPoint.XCoord);
+               double val2 = 87.9D;
+               polyPoint.YCoord = val2;
+               Assert.AreEqual(val2, polyPoint.YCoord);
+               double val3 = 87.9D;
+               polyPoint.Z = val3;
+               Assert.AreEqual(val3, polyPoint.Z);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               polyPoint.ValidationResults = val12;
+               Assert.AreEqual(val12, polyPoint.ValidationResults);
         }
     }
 }

@@ -13,6 +13,7 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        [CSSPEnumType]
         public CSSPWQInputTypeEnum CSSPWQInputType { get; set; }
         [StringLength(200, MinimumLength = 1)]
         public string Name { get; set; }

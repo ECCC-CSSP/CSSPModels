@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class TelTest
+    public partial class TelTest : SetupData
     {
         [TestMethod]
-        public void Tel_Properties_OK()
+        public void Tel_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TelID", "TelTVItemID", "TelNumber", "TelType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Tel_Navigation_OK()
+        public void Tel_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "TelTVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Tel_Has_ValidationResults_OK()
+        public void Tel_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(Tel).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -94,6 +96,34 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TelLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TelLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.TelTelTVItem);
+        }
+        [TestMethod]
+        public void Tel_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               tel.TelID = val1;
+               Assert.AreEqual(val1, tel.TelID);
+               int val2 = 45;
+               tel.TelTVItemID = val2;
+               Assert.AreEqual(val2, tel.TelTVItemID);
+               string val3 = "Some text";
+               tel.TelNumber = val3;
+               Assert.AreEqual(val3, tel.TelNumber);
+               TelTypeEnum val4 = (TelTypeEnum)3;
+               tel.TelType = val4;
+               Assert.AreEqual(val4, tel.TelType);
+               DateTime val5 = new DateTime(2010, 3, 4);
+               tel.LastUpdateDate_UTC = val5;
+               Assert.AreEqual(val5, tel.LastUpdateDate_UTC);
+               int val6 = 45;
+               tel.LastUpdateContactTVItemID = val6;
+               Assert.AreEqual(val6, tel.LastUpdateContactTVItemID);
+               TVItem val15 = new TVItem();
+               tel.TelTVItem = val15;
+               Assert.AreEqual(val15, tel.TelTVItem);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               tel.ValidationResults = val24;
+               Assert.AreEqual(val24, tel.ValidationResults);
         }
     }
 }

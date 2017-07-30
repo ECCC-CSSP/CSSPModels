@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class ResetPasswordTest
+    public partial class ResetPasswordTest : SetupData
     {
         [TestMethod]
-        public void ResetPassword_Properties_OK()
+        public void ResetPassword_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ResetPasswordID", "Email", "ExpireDate_Local", "Code", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "Password", "ConfirmPassword",  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ResetPassword_Navigation_OK()
+        public void ResetPassword_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ResetPassword_Has_ValidationResults_OK()
+        public void ResetPassword_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(ResetPassword).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -95,6 +97,37 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ResetPasswordLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.ResetPasswordPassword);
                Assert.IsNotNull(ModelsRes.ResetPasswordConfirmPassword);
+        }
+        [TestMethod]
+        public void ResetPassword_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               resetPassword.ResetPasswordID = val1;
+               Assert.AreEqual(val1, resetPassword.ResetPasswordID);
+               string val2 = "Some text";
+               resetPassword.Email = val2;
+               Assert.AreEqual(val2, resetPassword.Email);
+               DateTime val3 = new DateTime(2010, 3, 4);
+               resetPassword.ExpireDate_Local = val3;
+               Assert.AreEqual(val3, resetPassword.ExpireDate_Local);
+               string val4 = "Some text";
+               resetPassword.Code = val4;
+               Assert.AreEqual(val4, resetPassword.Code);
+               DateTime val5 = new DateTime(2010, 3, 4);
+               resetPassword.LastUpdateDate_UTC = val5;
+               Assert.AreEqual(val5, resetPassword.LastUpdateDate_UTC);
+               int val6 = 45;
+               resetPassword.LastUpdateContactTVItemID = val6;
+               Assert.AreEqual(val6, resetPassword.LastUpdateContactTVItemID);
+               string val7 = "Some text";
+               resetPassword.Password = val7;
+               Assert.AreEqual(val7, resetPassword.Password);
+               string val8 = "Some text";
+               resetPassword.ConfirmPassword = val8;
+               Assert.AreEqual(val8, resetPassword.ConfirmPassword);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               resetPassword.ValidationResults = val27;
+               Assert.AreEqual(val27, resetPassword.ValidationResults);
         }
     }
 }

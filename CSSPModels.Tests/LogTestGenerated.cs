@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class LogTest
+    public partial class LogTest : SetupData
     {
         [TestMethod]
-        public void Log_Properties_OK()
+        public void Log_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LogID", "TableName", "ID", "LogCommand", "Information", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Log_Navigation_OK()
+        public void Log_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Log_Has_ValidationResults_OK()
+        public void Log_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(Log).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -94,6 +96,34 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.LogInformation);
                Assert.IsNotNull(ModelsRes.LogLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.LogLastUpdateContactTVItemID);
+        }
+        [TestMethod]
+        public void Log_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               log.LogID = val1;
+               Assert.AreEqual(val1, log.LogID);
+               string val2 = "Some text";
+               log.TableName = val2;
+               Assert.AreEqual(val2, log.TableName);
+               int val3 = 45;
+               log.ID = val3;
+               Assert.AreEqual(val3, log.ID);
+               LogCommandEnum val4 = (LogCommandEnum)3;
+               log.LogCommand = val4;
+               Assert.AreEqual(val4, log.LogCommand);
+               string val5 = "Some text";
+               log.Information = val5;
+               Assert.AreEqual(val5, log.Information);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               log.LastUpdateDate_UTC = val6;
+               Assert.AreEqual(val6, log.LastUpdateDate_UTC);
+               int val7 = 45;
+               log.LastUpdateContactTVItemID = val7;
+               Assert.AreEqual(val7, log.LastUpdateContactTVItemID);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               log.ValidationResults = val24;
+               Assert.AreEqual(val24, log.ValidationResults);
         }
     }
 }

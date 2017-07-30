@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class BoxModelResultTest
+    public partial class BoxModelResultTest : SetupData
     {
         [TestMethod]
-        public void BoxModelResult_Properties_OK()
+        public void BoxModelResult_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "BoxModelResultID", "BoxModelID", "BoxModelResultType", "Volume_m3", "Surface_m2", "Radius_m", "LeftSideDiameterLineAngle_deg", "CircleCenterLatitude", "CircleCenterLongitude", "FixLength", "FixWidth", "RectLength_m", "RectWidth_m", "LeftSideLineAngle_deg", "LeftSideLineStartLatitude", "LeftSideLineStartLongitude", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void BoxModelResult_Navigation_OK()
+        public void BoxModelResult_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "BoxModel",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void BoxModelResult_Has_ValidationResults_OK()
+        public void BoxModelResult_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(BoxModelResult).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -106,6 +108,70 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.BoxModelResultLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.BoxModelResultLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.BoxModelResultBoxModel);
+        }
+        [TestMethod]
+        public void BoxModelResult_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               boxModelResult.BoxModelResultID = val1;
+               Assert.AreEqual(val1, boxModelResult.BoxModelResultID);
+               int val2 = 45;
+               boxModelResult.BoxModelID = val2;
+               Assert.AreEqual(val2, boxModelResult.BoxModelID);
+               BoxModelResultTypeEnum val3 = (BoxModelResultTypeEnum)3;
+               boxModelResult.BoxModelResultType = val3;
+               Assert.AreEqual(val3, boxModelResult.BoxModelResultType);
+               double val4 = 87.9D;
+               boxModelResult.Volume_m3 = val4;
+               Assert.AreEqual(val4, boxModelResult.Volume_m3);
+               double val5 = 87.9D;
+               boxModelResult.Surface_m2 = val5;
+               Assert.AreEqual(val5, boxModelResult.Surface_m2);
+               double val6 = 87.9D;
+               boxModelResult.Radius_m = val6;
+               Assert.AreEqual(val6, boxModelResult.Radius_m);
+               double val7 = 87.9D;
+               boxModelResult.LeftSideDiameterLineAngle_deg = val7;
+               Assert.AreEqual(val7, boxModelResult.LeftSideDiameterLineAngle_deg);
+               double val8 = 87.9D;
+               boxModelResult.CircleCenterLatitude = val8;
+               Assert.AreEqual(val8, boxModelResult.CircleCenterLatitude);
+               double val9 = 87.9D;
+               boxModelResult.CircleCenterLongitude = val9;
+               Assert.AreEqual(val9, boxModelResult.CircleCenterLongitude);
+               bool val10 = true;
+               boxModelResult.FixLength = val10;
+               Assert.AreEqual(val10, boxModelResult.FixLength);
+               bool val11 = true;
+               boxModelResult.FixWidth = val11;
+               Assert.AreEqual(val11, boxModelResult.FixWidth);
+               double val12 = 87.9D;
+               boxModelResult.RectLength_m = val12;
+               Assert.AreEqual(val12, boxModelResult.RectLength_m);
+               double val13 = 87.9D;
+               boxModelResult.RectWidth_m = val13;
+               Assert.AreEqual(val13, boxModelResult.RectWidth_m);
+               double val14 = 87.9D;
+               boxModelResult.LeftSideLineAngle_deg = val14;
+               Assert.AreEqual(val14, boxModelResult.LeftSideLineAngle_deg);
+               double val15 = 87.9D;
+               boxModelResult.LeftSideLineStartLatitude = val15;
+               Assert.AreEqual(val15, boxModelResult.LeftSideLineStartLatitude);
+               double val16 = 87.9D;
+               boxModelResult.LeftSideLineStartLongitude = val16;
+               Assert.AreEqual(val16, boxModelResult.LeftSideLineStartLongitude);
+               DateTime val17 = new DateTime(2010, 3, 4);
+               boxModelResult.LastUpdateDate_UTC = val17;
+               Assert.AreEqual(val17, boxModelResult.LastUpdateDate_UTC);
+               int val18 = 45;
+               boxModelResult.LastUpdateContactTVItemID = val18;
+               Assert.AreEqual(val18, boxModelResult.LastUpdateContactTVItemID);
+               BoxModel val39 = new BoxModel();
+               boxModelResult.BoxModel = val39;
+               Assert.AreEqual(val39, boxModelResult.BoxModel);
+               IEnumerable<ValidationResult> val60 = new List<ValidationResult>().AsEnumerable();
+               boxModelResult.ValidationResults = val60;
+               Assert.AreEqual(val60, boxModelResult.ValidationResults);
         }
     }
 }

@@ -18,7 +18,9 @@ namespace CSSPModels
         public int TVItemID { get; set; }
         [StringLength(255, MinimumLength = 1)]
         public string TVText { get; set; }
+        [CSSPEnumType]
         public TVTypeEnum TVType { get; set; }
+        [CSSPEnumType]
         public TVTypeEnum SubTVType { get; set; }
 
         public virtual List<MapObj> MapObjList { get; set; }

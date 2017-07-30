@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class MikeBoundaryConditionTest
+    public partial class MikeBoundaryConditionTest : SetupData
     {
         [TestMethod]
-        public void MikeBoundaryCondition_Properties_OK()
+        public void MikeBoundaryCondition_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeBoundaryConditionID", "MikeBoundaryConditionTVItemID", "MikeBoundaryConditionCode", "MikeBoundaryConditionName", "MikeBoundaryConditionLength_m", "MikeBoundaryConditionFormat", "MikeBoundaryConditionLevelOrVelocity", "WebTideDataSet", "NumberOfWebTideNodes", "WebTideDataFromStartToEndDate", "TVType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MikeBoundaryCondition_Navigation_OK()
+        public void MikeBoundaryCondition_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "MikeBoundaryConditionTVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MikeBoundaryCondition_Has_ValidationResults_OK()
+        public void MikeBoundaryCondition_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(MikeBoundaryCondition).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -101,6 +103,55 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionMikeBoundaryConditionTVItem);
+        }
+        [TestMethod]
+        public void MikeBoundaryCondition_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               mikeBoundaryCondition.MikeBoundaryConditionID = val1;
+               Assert.AreEqual(val1, mikeBoundaryCondition.MikeBoundaryConditionID);
+               int val2 = 45;
+               mikeBoundaryCondition.MikeBoundaryConditionTVItemID = val2;
+               Assert.AreEqual(val2, mikeBoundaryCondition.MikeBoundaryConditionTVItemID);
+               string val3 = "Some text";
+               mikeBoundaryCondition.MikeBoundaryConditionCode = val3;
+               Assert.AreEqual(val3, mikeBoundaryCondition.MikeBoundaryConditionCode);
+               string val4 = "Some text";
+               mikeBoundaryCondition.MikeBoundaryConditionName = val4;
+               Assert.AreEqual(val4, mikeBoundaryCondition.MikeBoundaryConditionName);
+               double val5 = 87.9D;
+               mikeBoundaryCondition.MikeBoundaryConditionLength_m = val5;
+               Assert.AreEqual(val5, mikeBoundaryCondition.MikeBoundaryConditionLength_m);
+               string val6 = "Some text";
+               mikeBoundaryCondition.MikeBoundaryConditionFormat = val6;
+               Assert.AreEqual(val6, mikeBoundaryCondition.MikeBoundaryConditionFormat);
+               MikeBoundaryConditionLevelOrVelocityEnum val7 = (MikeBoundaryConditionLevelOrVelocityEnum)3;
+               mikeBoundaryCondition.MikeBoundaryConditionLevelOrVelocity = val7;
+               Assert.AreEqual(val7, mikeBoundaryCondition.MikeBoundaryConditionLevelOrVelocity);
+               WebTideDataSetEnum val8 = (WebTideDataSetEnum)3;
+               mikeBoundaryCondition.WebTideDataSet = val8;
+               Assert.AreEqual(val8, mikeBoundaryCondition.WebTideDataSet);
+               int val9 = 45;
+               mikeBoundaryCondition.NumberOfWebTideNodes = val9;
+               Assert.AreEqual(val9, mikeBoundaryCondition.NumberOfWebTideNodes);
+               string val10 = "Some text";
+               mikeBoundaryCondition.WebTideDataFromStartToEndDate = val10;
+               Assert.AreEqual(val10, mikeBoundaryCondition.WebTideDataFromStartToEndDate);
+               TVTypeEnum val11 = (TVTypeEnum)3;
+               mikeBoundaryCondition.TVType = val11;
+               Assert.AreEqual(val11, mikeBoundaryCondition.TVType);
+               DateTime val12 = new DateTime(2010, 3, 4);
+               mikeBoundaryCondition.LastUpdateDate_UTC = val12;
+               Assert.AreEqual(val12, mikeBoundaryCondition.LastUpdateDate_UTC);
+               int val13 = 45;
+               mikeBoundaryCondition.LastUpdateContactTVItemID = val13;
+               Assert.AreEqual(val13, mikeBoundaryCondition.LastUpdateContactTVItemID);
+               TVItem val29 = new TVItem();
+               mikeBoundaryCondition.MikeBoundaryConditionTVItem = val29;
+               Assert.AreEqual(val29, mikeBoundaryCondition.MikeBoundaryConditionTVItem);
+               IEnumerable<ValidationResult> val45 = new List<ValidationResult>().AsEnumerable();
+               mikeBoundaryCondition.ValidationResults = val45;
+               Assert.AreEqual(val45, mikeBoundaryCondition.ValidationResults);
         }
     }
 }

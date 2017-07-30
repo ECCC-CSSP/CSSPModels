@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class TVFullTextTest
+    public partial class TVFullTextTest : SetupData
     {
         [TestMethod]
-        public void TVFullText_Properties_OK()
+        public void TVFullText_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVPath", "FullText",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -28,7 +30,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
         }
         [TestMethod]
-        public void TVFullText_Has_ValidationResults_OK()
+        public void TVFullText_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(TVFullText).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -37,6 +39,19 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.TVFullTextTVPath);
                Assert.IsNotNull(ModelsRes.TVFullTextFullText);
+        }
+        [TestMethod]
+        public void TVFullText_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               tVFullText.TVPath = val1;
+               Assert.AreEqual(val1, tVFullText.TVPath);
+               string val2 = "Some text";
+               tVFullText.FullText = val2;
+               Assert.AreEqual(val2, tVFullText.FullText);
+               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
+               tVFullText.ValidationResults = val9;
+               Assert.AreEqual(val9, tVFullText.ValidationResults);
         }
     }
 }

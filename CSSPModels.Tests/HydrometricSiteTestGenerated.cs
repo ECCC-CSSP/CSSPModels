@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using CSSPModels.Resources;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
+using CSSPEnums;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
-    public partial class HydrometricSiteTest
+    public partial class HydrometricSiteTest : SetupData
     {
         [TestMethod]
-        public void HydrometricSite_Properties_OK()
+        public void HydrometricSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "HydrometricSiteID", "HydrometricSiteTVItemID", "FedSiteNumber", "QuebecSiteNumber", "HydrometricSiteName", "Description", "Province", "Elevation_m", "StartDate_Local", "EndDate_Local", "TimeOffset_hour", "DrainageArea_km2", "IsNatural", "IsActive", "Sediment", "RHBN", "RealTime", "HasRatingCurve", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
@@ -49,7 +51,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void HydrometricSite_Navigation_OK()
+        public void HydrometricSite_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() { "HydrometricSiteTVItem",  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() { "HydrometricDataValues", "RatingCurves",  }.OrderBy(c => c).ToList();
@@ -80,7 +82,7 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void HydrometricSite_Has_ValidationResults_OK()
+        public void HydrometricSite_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(HydrometricSite).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
@@ -110,6 +112,82 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.HydrometricSiteHydrometricDataValues);
                Assert.IsNotNull(ModelsRes.HydrometricSiteRatingCurves);
                Assert.IsNotNull(ModelsRes.HydrometricSiteHydrometricSiteTVItem);
+        }
+        [TestMethod]
+        public void HydrometricSite_Every_Property_Has_Get_Set_Test()
+        {
+               int val1 = 45;
+               hydrometricSite.HydrometricSiteID = val1;
+               Assert.AreEqual(val1, hydrometricSite.HydrometricSiteID);
+               int val2 = 45;
+               hydrometricSite.HydrometricSiteTVItemID = val2;
+               Assert.AreEqual(val2, hydrometricSite.HydrometricSiteTVItemID);
+               string val3 = "Some text";
+               hydrometricSite.FedSiteNumber = val3;
+               Assert.AreEqual(val3, hydrometricSite.FedSiteNumber);
+               string val4 = "Some text";
+               hydrometricSite.QuebecSiteNumber = val4;
+               Assert.AreEqual(val4, hydrometricSite.QuebecSiteNumber);
+               string val5 = "Some text";
+               hydrometricSite.HydrometricSiteName = val5;
+               Assert.AreEqual(val5, hydrometricSite.HydrometricSiteName);
+               string val6 = "Some text";
+               hydrometricSite.Description = val6;
+               Assert.AreEqual(val6, hydrometricSite.Description);
+               string val7 = "Some text";
+               hydrometricSite.Province = val7;
+               Assert.AreEqual(val7, hydrometricSite.Province);
+               double val8 = 87.9D;
+               hydrometricSite.Elevation_m = val8;
+               Assert.AreEqual(val8, hydrometricSite.Elevation_m);
+               DateTime val9 = new DateTime(2010, 3, 4);
+               hydrometricSite.StartDate_Local = val9;
+               Assert.AreEqual(val9, hydrometricSite.StartDate_Local);
+               DateTime val10 = new DateTime(2010, 3, 4);
+               hydrometricSite.EndDate_Local = val10;
+               Assert.AreEqual(val10, hydrometricSite.EndDate_Local);
+               double val11 = 87.9D;
+               hydrometricSite.TimeOffset_hour = val11;
+               Assert.AreEqual(val11, hydrometricSite.TimeOffset_hour);
+               double val12 = 87.9D;
+               hydrometricSite.DrainageArea_km2 = val12;
+               Assert.AreEqual(val12, hydrometricSite.DrainageArea_km2);
+               bool val13 = true;
+               hydrometricSite.IsNatural = val13;
+               Assert.AreEqual(val13, hydrometricSite.IsNatural);
+               bool val14 = true;
+               hydrometricSite.IsActive = val14;
+               Assert.AreEqual(val14, hydrometricSite.IsActive);
+               bool val15 = true;
+               hydrometricSite.Sediment = val15;
+               Assert.AreEqual(val15, hydrometricSite.Sediment);
+               bool val16 = true;
+               hydrometricSite.RHBN = val16;
+               Assert.AreEqual(val16, hydrometricSite.RHBN);
+               bool val17 = true;
+               hydrometricSite.RealTime = val17;
+               Assert.AreEqual(val17, hydrometricSite.RealTime);
+               bool val18 = true;
+               hydrometricSite.HasRatingCurve = val18;
+               Assert.AreEqual(val18, hydrometricSite.HasRatingCurve);
+               DateTime val19 = new DateTime(2010, 3, 4);
+               hydrometricSite.LastUpdateDate_UTC = val19;
+               Assert.AreEqual(val19, hydrometricSite.LastUpdateDate_UTC);
+               int val20 = 45;
+               hydrometricSite.LastUpdateContactTVItemID = val20;
+               Assert.AreEqual(val20, hydrometricSite.LastUpdateContactTVItemID);
+               ICollection<HydrometricDataValue> val45 = new List<HydrometricDataValue>();
+               hydrometricSite.HydrometricDataValues = val45;
+               Assert.AreEqual(val45, hydrometricSite.HydrometricDataValues);
+               ICollection<RatingCurve> val46 = new List<RatingCurve>();
+               hydrometricSite.RatingCurves = val46;
+               Assert.AreEqual(val46, hydrometricSite.RatingCurves);
+               TVItem val47 = new TVItem();
+               hydrometricSite.HydrometricSiteTVItem = val47;
+               Assert.AreEqual(val47, hydrometricSite.HydrometricSiteTVItem);
+               IEnumerable<ValidationResult> val72 = new List<ValidationResult>().AsEnumerable();
+               hydrometricSite.ValidationResults = val72;
+               Assert.AreEqual(val72, hydrometricSite.ValidationResults);
         }
     }
 }
