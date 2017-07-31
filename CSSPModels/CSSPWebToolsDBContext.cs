@@ -141,18 +141,13 @@ namespace CSSPModels
             {
                 optionsBuilder.UseInMemoryDatabase(CSSPWebToolsDBConnectionString);
             }
-            else if (DatabaseType == DatabaseTypeEnum.SqlServerTestDB)
-            {
-                optionsBuilder.UseSqlServer(TestDBConnectionString);
-            }
             else if (DatabaseType == DatabaseTypeEnum.SqlServerCSSPWebToolsDB)
             {
                 optionsBuilder.UseSqlServer(CSSPWebToolsDBConnectionString);
             }
-            else
+            else //if (DatabaseType == DatabaseTypeEnum.SqlServerTestDB)
             {
-                this.Error = string.Format(ModelsRes._IsRequired, "DataType");
-                return;
+                optionsBuilder.UseSqlServer(TestDBConnectionString);
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

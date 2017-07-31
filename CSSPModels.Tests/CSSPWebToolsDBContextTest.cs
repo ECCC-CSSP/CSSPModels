@@ -27,31 +27,115 @@ namespace CSSPModels.Tests
 
         #region Tests
         [TestMethod]
-        public void CSSPWebToolsDBContext_Test()
+        public void CSSPWebToolsDBContext_DataType_Test()
         {
-            CSSPWebToolsDBContext csspWebToolsDBContext = new CSSPWebToolsDBContext();
-            Assert.AreEqual(DatabaseTypeEnum.Error, csspWebToolsDBContext.DatabaseType);
-            Assert.AreEqual(string.Format(ModelsRes._IsRequired, "DataType"), csspWebToolsDBContext.Error);
+            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext())
+            {
+                Assert.AreEqual(DatabaseTypeEnum.Error, db.DatabaseType);
+                Assert.AreEqual(string.Format(ModelsRes._IsRequired, "DataType"), db.Error);
+                db.Error = "";
 
-            csspWebToolsDBContext = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            Assert.AreEqual(DatabaseTypeEnum.MemoryTestDB, csspWebToolsDBContext.DatabaseType);
-            Assert.AreEqual("", csspWebToolsDBContext.Error);
+                try
+                {
+                    var values = db.TVItems.FirstOrDefault();
+                }
+                catch (Exception)
+                {
+                    // nothing
+                }
 
-            csspWebToolsDBContext = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryCSSPWebToolsDB);
-            Assert.AreEqual(DatabaseTypeEnum.MemoryCSSPWebToolsDB, csspWebToolsDBContext.DatabaseType);
-            Assert.AreEqual("", csspWebToolsDBContext.Error);
+                Assert.AreEqual(string.Format(ModelsRes._IsRequired, "DataType"), db.Error);
+            }
+        }
+        [TestMethod]
+        public void CSSPWebToolsDBContext_DataType_Error_Test()
+        {
+            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.Error))
+            {
+                Assert.AreEqual(DatabaseTypeEnum.Error, db.DatabaseType);
+                Assert.AreEqual(string.Format(ModelsRes._IsRequired, "DataType"), db.Error);
+            }
+        }
+        [TestMethod]
+        public void CSSPWebToolsDBContext_DataType_MemoryTestDB_Test()
+        {
+            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB))
+            {
+                Assert.AreEqual(DatabaseTypeEnum.MemoryTestDB, db.DatabaseType);
+                Assert.AreEqual("", db.Error);
 
-            csspWebToolsDBContext = new CSSPWebToolsDBContext(DatabaseTypeEnum.SqlServerTestDB);
-            Assert.AreEqual(DatabaseTypeEnum.SqlServerTestDB, csspWebToolsDBContext.DatabaseType);
-            Assert.AreEqual("", csspWebToolsDBContext.Error);
+                TVItem tvItem = (from c in db.TVItems
+                                 where c.TVLevel == 0
+                                 select c).FirstOrDefault();
 
-            csspWebToolsDBContext = new CSSPWebToolsDBContext(DatabaseTypeEnum.SqlServerCSSPWebToolsDB);
-            Assert.AreEqual(DatabaseTypeEnum.SqlServerCSSPWebToolsDB, csspWebToolsDBContext.DatabaseType);
-            Assert.AreEqual("", csspWebToolsDBContext.Error);
+                Assert.AreEqual("", db.Error);
+            }
+        }
+        [TestMethod]
+        public void CSSPWebToolsDBContext_DataType_MemoryCSSPWebToolsDB_Test()
+        {
+            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryCSSPWebToolsDB))
+            {
+                Assert.AreEqual(DatabaseTypeEnum.MemoryCSSPWebToolsDB, db.DatabaseType);
+                Assert.AreEqual("", db.Error);
 
-            csspWebToolsDBContext = new CSSPWebToolsDBContext((DatabaseTypeEnum)1000000);
-            Assert.AreEqual(DatabaseTypeEnum.Error, csspWebToolsDBContext.DatabaseType);
-            Assert.AreEqual(string.Format(ModelsRes._IsRequired, "DataType"), csspWebToolsDBContext.Error);
+                TVItem tvItem = (from c in db.TVItems
+                                 where c.TVLevel == 0
+                                 select c).FirstOrDefault();
+
+                Assert.AreEqual("", db.Error);
+            }
+        }
+        [TestMethod]
+        public void CSSPWebToolsDBContext_DataType_SqlServerTestDB_Test()
+        {
+            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.SqlServerTestDB))
+            {
+                Assert.AreEqual(DatabaseTypeEnum.SqlServerTestDB, db.DatabaseType);
+                Assert.AreEqual("", db.Error);
+
+                TVItem tvItem = (from c in db.TVItems
+                                 where c.TVLevel == 0
+                                 select c).FirstOrDefault();
+
+                Assert.AreEqual("", db.Error);
+            }
+        }
+        [TestMethod]
+        public void CSSPWebToolsDBContext_DataType_SqlServerCSSPWebToolsDB_Test()
+        {
+            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.SqlServerCSSPWebToolsDB))
+            {
+                Assert.AreEqual(DatabaseTypeEnum.SqlServerCSSPWebToolsDB, db.DatabaseType);
+                Assert.AreEqual("", db.Error);
+
+                TVItem tvItem = (from c in db.TVItems
+                                 where c.TVLevel == 0
+                                 select c).FirstOrDefault();
+
+                Assert.AreEqual("", db.Error);
+            }
+        }
+        [TestMethod]
+        public void CSSPWebToolsDBContext_DataType_1000000_Test()
+        {
+            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext((DatabaseTypeEnum)1000000))
+            {
+                Assert.AreEqual(DatabaseTypeEnum.Error, db.DatabaseType);
+                Assert.AreEqual(string.Format(ModelsRes._IsRequired, "DataType"), db.Error);
+                db.Error = "";
+
+                try
+                {
+                    var values = db.TVItems.FirstOrDefault();
+                }
+                catch (Exception)
+                {
+                    // nothing
+                }
+
+                Assert.AreEqual(string.Format(ModelsRes._IsRequired, "DataType"), db.Error);
+            }
         }
         #endregion Tests
     }
