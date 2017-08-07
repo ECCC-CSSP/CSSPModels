@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void BoxModelCalNumb_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "BoxModelResultType", "CalLength_m", "CalRadius_m", "CalSurface_m2", "CalVolume_m3", "CalWidth_m", "FixLength", "FixWidth",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Error", "BoxModelResultType", "CalLength_m", "CalRadius_m", "CalSurface_m2", "CalVolume_m3", "CalWidth_m", "FixLength", "FixWidth", "BoxModelResultTypeText",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -46,6 +46,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.BoxModelCalNumbCalWidth_m);
                Assert.IsNotNull(ModelsRes.BoxModelCalNumbFixLength);
                Assert.IsNotNull(ModelsRes.BoxModelCalNumbFixWidth);
+               Assert.IsNotNull(ModelsRes.BoxModelCalNumbBoxModelResultTypeText);
         }
         [TestMethod]
         public void BoxModelCalNumb_Every_Property_Has_Get_Set_Test()
@@ -77,9 +78,12 @@ namespace CSSPModels.Tests
                bool val9 = true;
                boxModelCalNumb.FixWidth = val9;
                Assert.AreEqual(val9, boxModelCalNumb.FixWidth);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               boxModelCalNumb.ValidationResults = val30;
-               Assert.AreEqual(val30, boxModelCalNumb.ValidationResults);
+               string val10 = "Some text";
+               boxModelCalNumb.BoxModelResultTypeText = val10;
+               Assert.AreEqual(val10, boxModelCalNumb.BoxModelResultTypeText);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               boxModelCalNumb.ValidationResults = val33;
+               Assert.AreEqual(val33, boxModelCalNumb.ValidationResults);
         }
     }
 }

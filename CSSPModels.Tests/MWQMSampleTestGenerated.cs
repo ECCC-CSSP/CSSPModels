@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MWQMSample_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSampleID", "MWQMSiteTVItemID", "MWQMRunTVItemID", "SampleDateTime_Local", "Depth_m", "FecCol_MPN_100ml", "Salinity_PPT", "WaterTemp_C", "PH", "SampleTypesText", "SampleType_old", "Tube_10", "Tube_1_0", "Tube_0_1", "ProcessedBy", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "SampleType_oldText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMSample).GetProperties().OrderBy(c => c.Name))
@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMSample_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "MWQMRunTVItem", "MWQMSiteTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "MWQMSampleLanguages",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(MWQMSample).GetProperties())
@@ -106,9 +106,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMSampleProcessedBy);
                Assert.IsNotNull(ModelsRes.MWQMSampleLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MWQMSampleLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.MWQMSampleMWQMSampleLanguages);
-               Assert.IsNotNull(ModelsRes.MWQMSampleMWQMRunTVItem);
-               Assert.IsNotNull(ModelsRes.MWQMSampleMWQMSiteTVItem);
+               Assert.IsNotNull(ModelsRes.MWQMSampleSampleType_oldText);
         }
         [TestMethod]
         public void MWQMSample_Every_Property_Has_Get_Set_Test()
@@ -164,18 +162,12 @@ namespace CSSPModels.Tests
                int val17 = 45;
                mWQMSample.LastUpdateContactTVItemID = val17;
                Assert.AreEqual(val17, mWQMSample.LastUpdateContactTVItemID);
-               ICollection<MWQMSampleLanguage> val39 = new List<MWQMSampleLanguage>();
-               mWQMSample.MWQMSampleLanguages = val39;
-               Assert.AreEqual(val39, mWQMSample.MWQMSampleLanguages);
-               TVItem val40 = new TVItem();
-               mWQMSample.MWQMRunTVItem = val40;
-               Assert.AreEqual(val40, mWQMSample.MWQMRunTVItem);
-               TVItem val41 = new TVItem();
-               mWQMSample.MWQMSiteTVItem = val41;
-               Assert.AreEqual(val41, mWQMSample.MWQMSiteTVItem);
-               IEnumerable<ValidationResult> val63 = new List<ValidationResult>().AsEnumerable();
-               mWQMSample.ValidationResults = val63;
-               Assert.AreEqual(val63, mWQMSample.ValidationResults);
+               string val18 = "Some text";
+               mWQMSample.SampleType_oldText = val18;
+               Assert.AreEqual(val18, mWQMSample.SampleType_oldText);
+               IEnumerable<ValidationResult> val57 = new List<ValidationResult>().AsEnumerable();
+               mWQMSample.ValidationResults = val57;
+               Assert.AreEqual(val57, mWQMSample.ValidationResults);
         }
     }
 }

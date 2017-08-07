@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TideDataValue_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TideDataValueID", "TideSiteTVItemID", "DateTime_Local", "Keep", "TideDataType", "StorageDataType", "Depth_m", "UVelocity_m_s", "VVelocity_m_s", "TideStart", "TideEnd", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TideDataTypeText", "StorageDataTypeText", "TideStartText", "TideEndText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TideDataValue).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TideDataValue_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "TideSiteTVItem",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -102,7 +102,10 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TideDataValueTideEnd);
                Assert.IsNotNull(ModelsRes.TideDataValueLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TideDataValueLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.TideDataValueTideSiteTVItem);
+               Assert.IsNotNull(ModelsRes.TideDataValueTideDataTypeText);
+               Assert.IsNotNull(ModelsRes.TideDataValueStorageDataTypeText);
+               Assert.IsNotNull(ModelsRes.TideDataValueTideStartText);
+               Assert.IsNotNull(ModelsRes.TideDataValueTideEndText);
         }
         [TestMethod]
         public void TideDataValue_Every_Property_Has_Get_Set_Test()
@@ -146,12 +149,21 @@ namespace CSSPModels.Tests
                int val13 = 45;
                tideDataValue.LastUpdateContactTVItemID = val13;
                Assert.AreEqual(val13, tideDataValue.LastUpdateContactTVItemID);
-               TVItem val29 = new TVItem();
-               tideDataValue.TideSiteTVItem = val29;
-               Assert.AreEqual(val29, tideDataValue.TideSiteTVItem);
-               IEnumerable<ValidationResult> val45 = new List<ValidationResult>().AsEnumerable();
-               tideDataValue.ValidationResults = val45;
-               Assert.AreEqual(val45, tideDataValue.ValidationResults);
+               string val14 = "Some text";
+               tideDataValue.TideDataTypeText = val14;
+               Assert.AreEqual(val14, tideDataValue.TideDataTypeText);
+               string val15 = "Some text";
+               tideDataValue.StorageDataTypeText = val15;
+               Assert.AreEqual(val15, tideDataValue.StorageDataTypeText);
+               string val16 = "Some text";
+               tideDataValue.TideStartText = val16;
+               Assert.AreEqual(val16, tideDataValue.TideStartText);
+               string val17 = "Some text";
+               tideDataValue.TideEndText = val17;
+               Assert.AreEqual(val17, tideDataValue.TideEndText);
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>().AsEnumerable();
+               tideDataValue.ValidationResults = val54;
+               Assert.AreEqual(val54, tideDataValue.ValidationResults);
         }
     }
 }

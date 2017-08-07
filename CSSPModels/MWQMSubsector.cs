@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int MWQMSubsectorID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Subsector)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "20")]
         public int MWQMSubsectorTVItemID { get; set; }
         [StringLength(20)]
         public string SubsectorHistoricKey { get; set; }
@@ -63,11 +63,8 @@ namespace CSSPModels
         public bool? OnlyRainSelectFullYear { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<MWQMSubsectorLanguage> MWQMSubsectorLanguages { get; set; }
-        public virtual TVItem MWQMSubsectorTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
@@ -78,7 +75,7 @@ namespace CSSPModels
         #region Constructors
         public MWQMSubsector()
         {
-            MWQMSubsectorLanguages = new HashSet<MWQMSubsectorLanguage>();
+            // empty for now
         }
         #endregion Constructors
 

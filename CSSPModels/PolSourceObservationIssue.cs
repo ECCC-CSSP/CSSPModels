@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int PolSourceObservationIssueID { get; set; }
-        [CSSPExist(TypeName = "PolSourceObservation", Plurial = "s", FieldID = "PolSourceObservationID")]
+        [CSSPExist(ExistTypeName = "PolSourceObservation", ExistPlurial = "s", ExistFieldID = "PolSourceObservationID")]
         public int PolSourceObservationID { get; set; }
         [StringLength(250)]
         public string ObservationInfo { get; set; }
@@ -19,10 +19,8 @@ namespace CSSPModels
         public int Ordinal { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual PolSourceObservation PolSourceObservation { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int TideSiteID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.TideSite)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "22")]
         public int TideSiteTVItemID { get; set; }
         [StringLength(100)]
         public string WebTideModel { get; set; }
@@ -19,10 +19,8 @@ namespace CSSPModels
         public double WebTideDatum_m { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual TVItem TideSiteTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

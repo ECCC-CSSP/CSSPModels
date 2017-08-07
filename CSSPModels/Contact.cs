@@ -13,7 +13,7 @@ namespace CSSPModels
         public int ContactID { get; set; }
         [StringLength(128)]
         public string Id { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int ContactTVItemID { get; set; }
         [StringLength(255, MinimumLength = 6)]
         [DataType(DataType.EmailAddress)]
@@ -39,14 +39,8 @@ namespace CSSPModels
         public string SamplingPlanner_ProvincesTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<ContactLogin> ContactLogins { get; set; }
-        public virtual ICollection<ContactPreference> ContactPreferences { get; set; }
-        public virtual ICollection<ContactShortcut> ContactShortcuts { get; set; }
-        public virtual TVItem ContactTVItem { get; set; }
-        //public virtual AspNetUser IdNavigation { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
@@ -55,15 +49,18 @@ namespace CSSPModels
         [Range(1, -1)]
         public int ParentTVItemID { get; set; }
         [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "ContactTitleEnum", EnumType = "ContactTitle")]
+        public string ContactTitleText { get; set; }
+        [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public Contact()
         {
-            ContactLogins = new HashSet<ContactLogin>();
-            ContactPreferences = new HashSet<ContactPreference>();
-            ContactShortcuts = new HashSet<ContactShortcut>();
+            // empty for now
         }
         #endregion Constructors
     }

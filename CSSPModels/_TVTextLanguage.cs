@@ -16,6 +16,10 @@ namespace CSSPModels
         public string TVText { get; set; }
         [CSSPEnumType]
         public LanguageEnum Language { get; set; }
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
+        public string LanguageText { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB

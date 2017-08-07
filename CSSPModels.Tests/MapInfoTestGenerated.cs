@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MapInfo_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MapInfoID", "TVItemID", "TVType", "LatMin", "LatMax", "LngMin", "LngMax", "MapInfoDrawType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TVTypeText", "MapInfoDrawTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MapInfo).GetProperties().OrderBy(c => c.Name))
@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MapInfo_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "TVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "MapInfoPoints",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(MapInfo).GetProperties())
@@ -99,8 +99,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MapInfoMapInfoDrawType);
                Assert.IsNotNull(ModelsRes.MapInfoLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MapInfoLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.MapInfoMapInfoPoints);
-               Assert.IsNotNull(ModelsRes.MapInfoTVItem);
+               Assert.IsNotNull(ModelsRes.MapInfoTVTypeText);
+               Assert.IsNotNull(ModelsRes.MapInfoMapInfoDrawTypeText);
         }
         [TestMethod]
         public void MapInfo_Every_Property_Has_Get_Set_Test()
@@ -135,12 +135,12 @@ namespace CSSPModels.Tests
                int val10 = 45;
                mapInfo.LastUpdateContactTVItemID = val10;
                Assert.AreEqual(val10, mapInfo.LastUpdateContactTVItemID);
-               ICollection<MapInfoPoint> val24 = new List<MapInfoPoint>();
-               mapInfo.MapInfoPoints = val24;
-               Assert.AreEqual(val24, mapInfo.MapInfoPoints);
-               TVItem val25 = new TVItem();
-               mapInfo.TVItem = val25;
-               Assert.AreEqual(val25, mapInfo.TVItem);
+               string val11 = "Some text";
+               mapInfo.TVTypeText = val11;
+               Assert.AreEqual(val11, mapInfo.TVTypeText);
+               string val12 = "Some text";
+               mapInfo.MapInfoDrawTypeText = val12;
+               Assert.AreEqual(val12, mapInfo.MapInfoDrawTypeText);
                IEnumerable<ValidationResult> val39 = new List<ValidationResult>().AsEnumerable();
                mapInfo.ValidationResults = val39;
                Assert.AreEqual(val39, mapInfo.ValidationResults);

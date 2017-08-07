@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MikeSourceStartEnd_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "MikeSource",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -103,7 +103,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MikeSourceStartEndSourceSalinityEnd_PSU);
                Assert.IsNotNull(ModelsRes.MikeSourceStartEndLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MikeSourceStartEndLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.MikeSourceStartEndMikeSource);
         }
         [TestMethod]
         public void MikeSourceStartEnd_Every_Property_Has_Get_Set_Test()
@@ -150,12 +149,9 @@ namespace CSSPModels.Tests
                int val14 = 45;
                mikeSourceStartEnd.LastUpdateContactTVItemID = val14;
                Assert.AreEqual(val14, mikeSourceStartEnd.LastUpdateContactTVItemID);
-               MikeSource val31 = new MikeSource();
-               mikeSourceStartEnd.MikeSource = val31;
-               Assert.AreEqual(val31, mikeSourceStartEnd.MikeSource);
-               IEnumerable<ValidationResult> val48 = new List<ValidationResult>().AsEnumerable();
-               mikeSourceStartEnd.ValidationResults = val48;
-               Assert.AreEqual(val48, mikeSourceStartEnd.ValidationResults);
+               IEnumerable<ValidationResult> val45 = new List<ValidationResult>().AsEnumerable();
+               mikeSourceStartEnd.ValidationResults = val45;
+               Assert.AreEqual(val45, mikeSourceStartEnd.ValidationResults);
         }
     }
 }

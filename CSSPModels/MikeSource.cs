@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int MikeSourceID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.MikeSource)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "14")]
         public int MikeSourceTVItemID { get; set; }
         public bool IsContinuous { get; set; }
         public bool Include { get; set; }
@@ -20,11 +20,8 @@ namespace CSSPModels
         public string SourceNumberString { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<MikeSourceStartEnd> MikeSourceStartEnds { get; set; }
-        public virtual TVItem MikeSourceTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
@@ -35,7 +32,7 @@ namespace CSSPModels
         #region Constructors
         public MikeSource()
         {
-            MikeSourceStartEnds = new HashSet<MikeSourceStartEnd>();
+            // empty for now
         }
         #endregion Constructors
 

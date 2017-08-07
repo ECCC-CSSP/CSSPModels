@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TVItemUserAuthorization_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemUserAuthorizationID", "ContactTVItemID", "TVItemID1", "TVItemID2", "TVItemID3", "TVItemID4", "TVAuth", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TVAuthText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVItemUserAuthorization).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVItemUserAuthorization_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "ContactTVItem",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemUserAuthorizationTVAuth);
                Assert.IsNotNull(ModelsRes.TVItemUserAuthorizationLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TVItemUserAuthorizationLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.TVItemUserAuthorizationContactTVItem);
+               Assert.IsNotNull(ModelsRes.TVItemUserAuthorizationTVAuthText);
         }
         [TestMethod]
         public void TVItemUserAuthorization_Every_Property_Has_Get_Set_Test()
@@ -130,9 +130,9 @@ namespace CSSPModels.Tests
                int val9 = 45;
                tVItemUserAuthorization.LastUpdateContactTVItemID = val9;
                Assert.AreEqual(val9, tVItemUserAuthorization.LastUpdateContactTVItemID);
-               TVItem val21 = new TVItem();
-               tVItemUserAuthorization.ContactTVItem = val21;
-               Assert.AreEqual(val21, tVItemUserAuthorization.ContactTVItem);
+               string val10 = "Some text";
+               tVItemUserAuthorization.TVAuthText = val10;
+               Assert.AreEqual(val10, tVItemUserAuthorization.TVAuthText);
                IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
                tVItemUserAuthorization.ValidationResults = val33;
                Assert.AreEqual(val33, tVItemUserAuthorization.ValidationResults);

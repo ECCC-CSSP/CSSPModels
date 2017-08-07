@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int TVTypeUserAuthorizationID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int ContactTVItemID { get; set; }
         [CSSPEnumType]
         public TVTypeEnum TVType { get; set; }
@@ -19,13 +19,21 @@ namespace CSSPModels
         public TVAuthEnum TVAuth { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual TVItem ContactTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
+        public string TVTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "TVAuthEnum", EnumType = "TVAuth")]
+        public string TVAuthText { get; set; }
         [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB

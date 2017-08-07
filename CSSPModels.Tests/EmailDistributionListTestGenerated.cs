@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void EmailDistributionList_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "CountryTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "EmailDistributionListContacts",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(EmailDistributionList).GetProperties())
@@ -95,8 +95,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.EmailDistributionListOrdinal);
                Assert.IsNotNull(ModelsRes.EmailDistributionListLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.EmailDistributionListLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.EmailDistributionListCountryTVItem);
-               Assert.IsNotNull(ModelsRes.EmailDistributionListEmailDistributionListContacts);
         }
         [TestMethod]
         public void EmailDistributionList_Every_Property_Has_Get_Set_Test()
@@ -119,15 +117,9 @@ namespace CSSPModels.Tests
                int val6 = 45;
                emailDistributionList.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, emailDistributionList.LastUpdateContactTVItemID);
-               TVItem val16 = new TVItem();
-               emailDistributionList.CountryTVItem = val16;
-               Assert.AreEqual(val16, emailDistributionList.CountryTVItem);
-               ICollection<EmailDistributionListContact> val17 = new List<EmailDistributionListContact>();
-               emailDistributionList.EmailDistributionListContacts = val17;
-               Assert.AreEqual(val17, emailDistributionList.EmailDistributionListContacts);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               emailDistributionList.ValidationResults = val27;
-               Assert.AreEqual(val27, emailDistributionList.ValidationResults);
+               IEnumerable<ValidationResult> val21 = new List<ValidationResult>().AsEnumerable();
+               emailDistributionList.ValidationResults = val21;
+               Assert.AreEqual(val21, emailDistributionList.ValidationResults);
         }
     }
 }

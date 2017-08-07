@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MapInfoPoint_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "MapInfo",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -96,7 +96,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MapInfoPointLng);
                Assert.IsNotNull(ModelsRes.MapInfoPointLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MapInfoPointLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.MapInfoPointMapInfo);
         }
         [TestMethod]
         public void MapInfoPoint_Every_Property_Has_Get_Set_Test()
@@ -122,12 +121,9 @@ namespace CSSPModels.Tests
                int val7 = 45;
                mapInfoPoint.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, mapInfoPoint.LastUpdateContactTVItemID);
-               MapInfo val17 = new MapInfo();
-               mapInfoPoint.MapInfo = val17;
-               Assert.AreEqual(val17, mapInfoPoint.MapInfo);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               mapInfoPoint.ValidationResults = val27;
-               Assert.AreEqual(val27, mapInfoPoint.ValidationResults);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               mapInfoPoint.ValidationResults = val24;
+               Assert.AreEqual(val24, mapInfoPoint.ValidationResults);
         }
     }
 }

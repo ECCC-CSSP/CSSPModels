@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void BoxModelLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "BoxModelLanguageID", "BoxModelID", "Language", "ScenarioName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LanguageText", "TranslationStatusText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.BoxModelLanguage).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void BoxModelLanguage_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "BoxModel",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -96,7 +96,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.BoxModelLanguageTranslationStatus);
                Assert.IsNotNull(ModelsRes.BoxModelLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.BoxModelLanguageLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.BoxModelLanguageBoxModel);
+               Assert.IsNotNull(ModelsRes.BoxModelLanguageLanguageText);
+               Assert.IsNotNull(ModelsRes.BoxModelLanguageTranslationStatusText);
         }
         [TestMethod]
         public void BoxModelLanguage_Every_Property_Has_Get_Set_Test()
@@ -122,12 +123,15 @@ namespace CSSPModels.Tests
                int val7 = 45;
                boxModelLanguage.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, boxModelLanguage.LastUpdateContactTVItemID);
-               BoxModel val17 = new BoxModel();
-               boxModelLanguage.BoxModel = val17;
-               Assert.AreEqual(val17, boxModelLanguage.BoxModel);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               boxModelLanguage.ValidationResults = val27;
-               Assert.AreEqual(val27, boxModelLanguage.ValidationResults);
+               string val8 = "Some text";
+               boxModelLanguage.LanguageText = val8;
+               Assert.AreEqual(val8, boxModelLanguage.LanguageText);
+               string val9 = "Some text";
+               boxModelLanguage.TranslationStatusText = val9;
+               Assert.AreEqual(val9, boxModelLanguage.TranslationStatusText);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               boxModelLanguage.ValidationResults = val30;
+               Assert.AreEqual(val30, boxModelLanguage.ValidationResults);
         }
     }
 }

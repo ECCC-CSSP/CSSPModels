@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolSourceObservationIssue_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "PolSourceObservation",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -95,7 +95,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.PolSourceObservationIssueOrdinal);
                Assert.IsNotNull(ModelsRes.PolSourceObservationIssueLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.PolSourceObservationIssueLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.PolSourceObservationIssuePolSourceObservation);
         }
         [TestMethod]
         public void PolSourceObservationIssue_Every_Property_Has_Get_Set_Test()
@@ -118,12 +117,9 @@ namespace CSSPModels.Tests
                int val6 = 45;
                polSourceObservationIssue.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, polSourceObservationIssue.LastUpdateContactTVItemID);
-               PolSourceObservation val15 = new PolSourceObservation();
-               polSourceObservationIssue.PolSourceObservation = val15;
-               Assert.AreEqual(val15, polSourceObservationIssue.PolSourceObservation);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               polSourceObservationIssue.ValidationResults = val24;
-               Assert.AreEqual(val24, polSourceObservationIssue.ValidationResults);
+               IEnumerable<ValidationResult> val21 = new List<ValidationResult>().AsEnumerable();
+               polSourceObservationIssue.ValidationResults = val21;
+               Assert.AreEqual(val21, polSourceObservationIssue.ValidationResults);
         }
     }
 }

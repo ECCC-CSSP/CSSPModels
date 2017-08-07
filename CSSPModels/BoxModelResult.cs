@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int BoxModelResultID { get; set; }
-        [CSSPExist(TypeName = "BoxModel", Plurial = "s", FieldID = "BoxModelID")]
+        [CSSPExist(ExistTypeName = "BoxModel", ExistPlurial = "s", ExistFieldID = "BoxModelID")]
         public int BoxModelID { get; set; }
         [CSSPEnumType]
         public BoxModelResultTypeEnum BoxModelResultType { get; set; }
@@ -41,13 +41,16 @@ namespace CSSPModels
         public double LeftSideLineStartLongitude { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual BoxModel BoxModel { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "BoxModelResultTypeEnum", EnumType = "BoxModelResultType")]
+        public string BoxModelResultTypeText { get; set; }
         [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB

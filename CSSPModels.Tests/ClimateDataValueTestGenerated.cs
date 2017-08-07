@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void ClimateDataValue_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ClimateDataValueID", "ClimateSiteID", "DateTime_Local", "Keep", "StorageDataType", "Snow_cm", "Rainfall_mm", "RainfallEntered_mm", "TotalPrecip_mm_cm", "MaxTemp_C", "MinTemp_C", "HeatDegDays_C", "CoolDegDays_C", "SnowOnGround_cm", "DirMaxGust_0North", "SpdMaxGust_kmh", "HourlyValues", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "StorageDataTypeEnumText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ClimateDataValue).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ClimateDataValue_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "ClimateSite",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -108,7 +108,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ClimateDataValueHourlyValues);
                Assert.IsNotNull(ModelsRes.ClimateDataValueLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.ClimateDataValueLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.ClimateDataValueClimateSite);
+               Assert.IsNotNull(ModelsRes.ClimateDataValueStorageDataTypeEnumText);
         }
         [TestMethod]
         public void ClimateDataValue_Every_Property_Has_Get_Set_Test()
@@ -170,9 +170,9 @@ namespace CSSPModels.Tests
                int val19 = 45;
                climateDataValue.LastUpdateContactTVItemID = val19;
                Assert.AreEqual(val19, climateDataValue.LastUpdateContactTVItemID);
-               ClimateSite val41 = new ClimateSite();
-               climateDataValue.ClimateSite = val41;
-               Assert.AreEqual(val41, climateDataValue.ClimateSite);
+               string val20 = "Some text";
+               climateDataValue.StorageDataTypeEnumText = val20;
+               Assert.AreEqual(val20, climateDataValue.StorageDataTypeEnumText);
                IEnumerable<ValidationResult> val63 = new List<ValidationResult>().AsEnumerable();
                climateDataValue.ValidationResults = val63;
                Assert.AreEqual(val63, climateDataValue.ValidationResults);

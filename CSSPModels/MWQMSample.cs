@@ -11,9 +11,9 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int MWQMSampleID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.MWQMSite)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "16")]
         public int MWQMSiteTVItemID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.MWQMRun)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "31")]
         public int MWQMRunTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime SampleDateTime_Local { get; set; }
@@ -42,15 +42,16 @@ namespace CSSPModels
         public string ProcessedBy { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<MWQMSampleLanguage> MWQMSampleLanguages { get; set; }
-        public virtual TVItem MWQMRunTVItem { get; set; }
-        public virtual TVItem MWQMSiteTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType_old")]
+        public string SampleType_oldText { get; set; }
         [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
@@ -58,7 +59,7 @@ namespace CSSPModels
         #region Constructors
         public MWQMSample()
         {
-            MWQMSampleLanguages = new HashSet<MWQMSampleLanguage>();
+            // empty for now
         }
         #endregion Constructors
 

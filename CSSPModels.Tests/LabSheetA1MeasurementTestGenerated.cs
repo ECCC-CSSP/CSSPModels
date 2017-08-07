@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LabSheetA1Measurement_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Site", "TVItemID", "Time", "MPN", "Tube10", "Tube1_0", "Tube0_1", "Salinity", "Temperature", "ProcessedBy", "SampleType", "SiteComment",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Site", "TVItemID", "Time", "MPN", "Tube10", "Tube1_0", "Tube0_1", "Salinity", "Temperature", "ProcessedBy", "SampleType", "SiteComment", "SampleTypeText",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -49,6 +49,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.LabSheetA1MeasurementProcessedBy);
                Assert.IsNotNull(ModelsRes.LabSheetA1MeasurementSampleType);
                Assert.IsNotNull(ModelsRes.LabSheetA1MeasurementSiteComment);
+               Assert.IsNotNull(ModelsRes.LabSheetA1MeasurementSampleTypeText);
         }
         [TestMethod]
         public void LabSheetA1Measurement_Every_Property_Has_Get_Set_Test()
@@ -89,9 +90,12 @@ namespace CSSPModels.Tests
                string val12 = "Some text";
                labSheetA1Measurement.SiteComment = val12;
                Assert.AreEqual(val12, labSheetA1Measurement.SiteComment);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>().AsEnumerable();
-               labSheetA1Measurement.ValidationResults = val39;
-               Assert.AreEqual(val39, labSheetA1Measurement.ValidationResults);
+               string val13 = "Some text";
+               labSheetA1Measurement.SampleTypeText = val13;
+               Assert.AreEqual(val13, labSheetA1Measurement.SampleTypeText);
+               IEnumerable<ValidationResult> val42 = new List<ValidationResult>().AsEnumerable();
+               labSheetA1Measurement.ValidationResults = val42;
+               Assert.AreEqual(val42, labSheetA1Measurement.ValidationResults);
         }
     }
 }

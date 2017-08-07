@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMSubsector_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "MWQMSubsectorTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "MWQMSubsectorLanguages",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(MWQMSubsector).GetProperties())
@@ -118,8 +118,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMSubsectorOnlyRainSelectFullYear);
                Assert.IsNotNull(ModelsRes.MWQMSubsectorLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MWQMSubsectorLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.MWQMSubsectorMWQMSubsectorLanguages);
-               Assert.IsNotNull(ModelsRes.MWQMSubsectorMWQMSubsectorTVItem);
         }
         [TestMethod]
         public void MWQMSubsector_Every_Property_Has_Get_Set_Test()
@@ -211,15 +209,9 @@ namespace CSSPModels.Tests
                int val29 = 45;
                mWQMSubsector.LastUpdateContactTVItemID = val29;
                Assert.AreEqual(val29, mWQMSubsector.LastUpdateContactTVItemID);
-               ICollection<MWQMSubsectorLanguage> val62 = new List<MWQMSubsectorLanguage>();
-               mWQMSubsector.MWQMSubsectorLanguages = val62;
-               Assert.AreEqual(val62, mWQMSubsector.MWQMSubsectorLanguages);
-               TVItem val63 = new TVItem();
-               mWQMSubsector.MWQMSubsectorTVItem = val63;
-               Assert.AreEqual(val63, mWQMSubsector.MWQMSubsectorTVItem);
-               IEnumerable<ValidationResult> val96 = new List<ValidationResult>().AsEnumerable();
-               mWQMSubsector.ValidationResults = val96;
-               Assert.AreEqual(val96, mWQMSubsector.ValidationResults);
+               IEnumerable<ValidationResult> val90 = new List<ValidationResult>().AsEnumerable();
+               mWQMSubsector.ValidationResults = val90;
+               Assert.AreEqual(val90, mWQMSubsector.ValidationResults);
         }
     }
 }

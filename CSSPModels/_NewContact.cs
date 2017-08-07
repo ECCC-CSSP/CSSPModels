@@ -25,6 +25,10 @@ namespace CSSPModels
         [CSSPEnumType]
         [CSSPAllowNull]
         public ContactTitleEnum? ContactTitle { get; set; }
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "ContactTitleEnum", EnumType = "ContactTitle")]
+        public string ContactTitleText { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB

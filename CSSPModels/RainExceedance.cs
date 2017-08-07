@@ -15,7 +15,7 @@ namespace CSSPModels
         [CSSPAfter(Year = 1980)]
         public DateTime? StartDate_Local { get; set; }
         [CSSPAfter(Year = 1980)]
-        [CSSPBigger(OtherField = "StartDate")]
+        [CSSPBigger(OtherField = "StartDate_Local")]
         public DateTime? EndDate_Local { get; set; }
         [Range(0.0D, 300.0D)]
         public double? RainMaximum_mm { get; set; }
@@ -34,7 +34,7 @@ namespace CSSPModels
         public string EmailDistributionListIDs { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 

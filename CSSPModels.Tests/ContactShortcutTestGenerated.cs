@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ContactShortcut_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "Contact",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -95,7 +95,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactShortcutShortCutAddress);
                Assert.IsNotNull(ModelsRes.ContactShortcutLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.ContactShortcutLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.ContactShortcutContact);
         }
         [TestMethod]
         public void ContactShortcut_Every_Property_Has_Get_Set_Test()
@@ -118,12 +117,9 @@ namespace CSSPModels.Tests
                int val6 = 45;
                contactShortcut.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, contactShortcut.LastUpdateContactTVItemID);
-               Contact val15 = new Contact();
-               contactShortcut.Contact = val15;
-               Assert.AreEqual(val15, contactShortcut.Contact);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               contactShortcut.ValidationResults = val24;
-               Assert.AreEqual(val24, contactShortcut.ValidationResults);
+               IEnumerable<ValidationResult> val21 = new List<ValidationResult>().AsEnumerable();
+               contactShortcut.ValidationResults = val21;
+               Assert.AreEqual(val21, contactShortcut.ValidationResults);
         }
     }
 }

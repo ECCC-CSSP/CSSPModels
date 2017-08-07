@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Address_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "AddressID", "AddressTVItemID", "AddressType", "CountryTVItemID", "ProvinceTVItemID", "MunicipalityTVItemID", "StreetName", "StreetNumber", "StreetType", "PostalCode", "GoogleAddressText", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "ParentTVItemID", "AddressTVText", "CountryTVText", "ProvinceTVText", "MunicipalityTVText", "AddressTypeText", "StreetTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Address).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Address_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "AddressTVItem", "CountryTVItem", "MunicipalityTVItem", "ProvinceTVItem",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -102,10 +102,13 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.AddressGoogleAddressText);
                Assert.IsNotNull(ModelsRes.AddressLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.AddressLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.AddressAddressTVItem);
-               Assert.IsNotNull(ModelsRes.AddressCountryTVItem);
-               Assert.IsNotNull(ModelsRes.AddressMunicipalityTVItem);
-               Assert.IsNotNull(ModelsRes.AddressProvinceTVItem);
+               Assert.IsNotNull(ModelsRes.AddressParentTVItemID);
+               Assert.IsNotNull(ModelsRes.AddressAddressTVText);
+               Assert.IsNotNull(ModelsRes.AddressCountryTVText);
+               Assert.IsNotNull(ModelsRes.AddressProvinceTVText);
+               Assert.IsNotNull(ModelsRes.AddressMunicipalityTVText);
+               Assert.IsNotNull(ModelsRes.AddressAddressTypeText);
+               Assert.IsNotNull(ModelsRes.AddressStreetTypeText);
         }
         [TestMethod]
         public void Address_Every_Property_Has_Get_Set_Test()
@@ -149,21 +152,30 @@ namespace CSSPModels.Tests
                int val13 = 45;
                address.LastUpdateContactTVItemID = val13;
                Assert.AreEqual(val13, address.LastUpdateContactTVItemID);
-               TVItem val32 = new TVItem();
-               address.AddressTVItem = val32;
-               Assert.AreEqual(val32, address.AddressTVItem);
-               TVItem val33 = new TVItem();
-               address.CountryTVItem = val33;
-               Assert.AreEqual(val33, address.CountryTVItem);
-               TVItem val34 = new TVItem();
-               address.MunicipalityTVItem = val34;
-               Assert.AreEqual(val34, address.MunicipalityTVItem);
-               TVItem val35 = new TVItem();
-               address.ProvinceTVItem = val35;
-               Assert.AreEqual(val35, address.ProvinceTVItem);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>().AsEnumerable();
-               address.ValidationResults = val54;
-               Assert.AreEqual(val54, address.ValidationResults);
+               int val14 = 45;
+               address.ParentTVItemID = val14;
+               Assert.AreEqual(val14, address.ParentTVItemID);
+               string val15 = "Some text";
+               address.AddressTVText = val15;
+               Assert.AreEqual(val15, address.AddressTVText);
+               string val16 = "Some text";
+               address.CountryTVText = val16;
+               Assert.AreEqual(val16, address.CountryTVText);
+               string val17 = "Some text";
+               address.ProvinceTVText = val17;
+               Assert.AreEqual(val17, address.ProvinceTVText);
+               string val18 = "Some text";
+               address.MunicipalityTVText = val18;
+               Assert.AreEqual(val18, address.MunicipalityTVText);
+               string val19 = "Some text";
+               address.AddressTypeText = val19;
+               Assert.AreEqual(val19, address.AddressTypeText);
+               string val20 = "Some text";
+               address.StreetTypeText = val20;
+               Assert.AreEqual(val20, address.StreetTypeText);
+               IEnumerable<ValidationResult> val63 = new List<ValidationResult>().AsEnumerable();
+               address.ValidationResults = val63;
+               Assert.AreEqual(val63, address.ValidationResults);
         }
     }
 }

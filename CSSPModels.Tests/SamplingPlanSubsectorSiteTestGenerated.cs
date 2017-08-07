@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SamplingPlanSubsectorSite_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "MWQMSiteTVItem", "SamplingPlanSubsector",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -95,8 +95,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSiteIsDuplicate);
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSiteLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSiteLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSiteMWQMSiteTVItem);
-               Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSiteSamplingPlanSubsector);
         }
         [TestMethod]
         public void SamplingPlanSubsectorSite_Every_Property_Has_Get_Set_Test()
@@ -119,15 +117,9 @@ namespace CSSPModels.Tests
                int val6 = 45;
                samplingPlanSubsectorSite.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, samplingPlanSubsectorSite.LastUpdateContactTVItemID);
-               TVItem val16 = new TVItem();
-               samplingPlanSubsectorSite.MWQMSiteTVItem = val16;
-               Assert.AreEqual(val16, samplingPlanSubsectorSite.MWQMSiteTVItem);
-               SamplingPlanSubsector val17 = new SamplingPlanSubsector();
-               samplingPlanSubsectorSite.SamplingPlanSubsector = val17;
-               Assert.AreEqual(val17, samplingPlanSubsectorSite.SamplingPlanSubsector);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               samplingPlanSubsectorSite.ValidationResults = val27;
-               Assert.AreEqual(val27, samplingPlanSubsectorSite.ValidationResults);
+               IEnumerable<ValidationResult> val21 = new List<ValidationResult>().AsEnumerable();
+               samplingPlanSubsectorSite.ValidationResults = val21;
+               Assert.AreEqual(val21, samplingPlanSubsectorSite.ValidationResults);
         }
     }
 }

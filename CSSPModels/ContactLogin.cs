@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int ContactLoginID { get; set; }
-        [CSSPExist(TypeName = "Contact", Plurial = "s", FieldID = "ContactID")]
+        [CSSPExist(ExistTypeName = "Contact", ExistPlurial = "s", ExistFieldID = "ContactID")]
         public int ContactID { get; set; }
         [StringLength(200)]
         [DataType(DataType.EmailAddress)]
@@ -20,10 +20,8 @@ namespace CSSPModels
         public byte[] PasswordSalt { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual Contact Contact { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

@@ -13,7 +13,7 @@ namespace CSSPModels
         public int LabSheetID { get; set; }
         [Range(1, -1)]
         public int OtherServerLabSheetID { get; set; }
-        [CSSPExist(TypeName = "SamplingPlan", Plurial = "s", FieldID = "SamplingPlanID")]
+        [CSSPExist(ExistTypeName = "SamplingPlan", ExistPlurial = "s", ExistFieldID = "SamplingPlanID")]
         public int SamplingPlanID { get; set; }
         [StringLength(250, MinimumLength = 1)]
         public string SamplingPlanName { get; set; }
@@ -25,9 +25,9 @@ namespace CSSPModels
         public int Day { get; set; }
         [Range(1, 100)]
         public int RunNumber { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Subsector)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "20")]
         public int SubsectorTVItemID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.MWQMRun)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "31")]
         [CSSPAllowNull]
         public int? MWQMRunTVItemID { get; set; }
         [CSSPEnumType]
@@ -44,7 +44,7 @@ namespace CSSPModels
         public DateTime FileLastModifiedDate_Local { get; set; }
 
         public string FileContent { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int? AcceptedOrRejectedByContactTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime? AcceptedOrRejectedDateTime { get; set; }
@@ -53,17 +53,31 @@ namespace CSSPModels
         public string RejectReason { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<LabSheetDetail> LabSheetDetails { get; set; }
-        public virtual TVItem AcceptedOrRejectedByContactTVItem { get; set; }
-        public virtual TVItem MWQMRunTVItem { get; set; }
-        public virtual SamplingPlan SamplingPlan { get; set; }
-        public virtual TVItem SubsectorTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "SamplingPlanTypeEnum", EnumType = "SamplingPlanType")]
+        public string SamplingPlanTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType")]
+        public string SampleTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "LabSheetTypeEnum", EnumType = "LabSheetType")]
+        public string LabSheetTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "LabSheetStatusEnum", EnumType = "LabSheetStatus")]
+        public string LabSheetStatusText { get; set; }
         [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
@@ -71,7 +85,7 @@ namespace CSSPModels
         #region Constructors
         public LabSheet()
         {
-            LabSheetDetails = new HashSet<LabSheetDetail>();
+            // empty for now
         }
         #endregion Constructors
 

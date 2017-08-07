@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void RatingCurveValue_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "RatingCurve",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -95,7 +95,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.RatingCurveValueDischargeValue_m3_s);
                Assert.IsNotNull(ModelsRes.RatingCurveValueLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.RatingCurveValueLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.RatingCurveValueRatingCurve);
         }
         [TestMethod]
         public void RatingCurveValue_Every_Property_Has_Get_Set_Test()
@@ -118,12 +117,9 @@ namespace CSSPModels.Tests
                int val6 = 45;
                ratingCurveValue.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, ratingCurveValue.LastUpdateContactTVItemID);
-               RatingCurve val15 = new RatingCurve();
-               ratingCurveValue.RatingCurve = val15;
-               Assert.AreEqual(val15, ratingCurveValue.RatingCurve);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               ratingCurveValue.ValidationResults = val24;
-               Assert.AreEqual(val24, ratingCurveValue.ValidationResults);
+               IEnumerable<ValidationResult> val21 = new List<ValidationResult>().AsEnumerable();
+               ratingCurveValue.ValidationResults = val21;
+               Assert.AreEqual(val21, ratingCurveValue.ValidationResults);
         }
     }
 }

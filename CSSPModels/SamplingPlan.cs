@@ -21,9 +21,9 @@ namespace CSSPModels
         public SamplingPlanTypeEnum SamplingPlanType { get; set; }
         [CSSPEnumType]
         public LabSheetTypeEnum LabSheetType { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Province)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "18")]
         public int ProvinceTVItemID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int CreatorTVItemID { get; set; }
         [Range(2000, 2050)]
         public int Year { get; set; }
@@ -36,22 +36,30 @@ namespace CSSPModels
         public bool IncludeLaboratoryQAQC { get; set; }
         [StringLength(15)]
         public string ApprovalCode { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.File)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "8")]
         public int? SamplingPlanFileTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<LabSheetDetail> LabSheetDetails { get; set; }
-        public virtual ICollection<LabSheet> LabSheets { get; set; }
-        public virtual ICollection<SamplingPlanSubsector> SamplingPlanSubsectors { get; set; }
-        public virtual TVItem CreatorTVItem { get; set; }
-        public virtual TVItem ProvinceTVItem { get; set; }
-        public virtual TVItem SamplingPlanFileTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType")]
+        public string SampleTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "SamplingPlanTypeEnum", EnumType = "SamplingPlanType")]
+        public string SamplingPlanTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "LabSheetTypeEnum", EnumType = "LabSheetType")]
+        public string LabSheetTypeText { get; set; }
         [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
@@ -59,9 +67,7 @@ namespace CSSPModels
         #region Constructors
         public SamplingPlan()
         {
-            LabSheetDetails = new HashSet<LabSheetDetail>();
-            LabSheets = new HashSet<LabSheet>();
-            SamplingPlanSubsectors = new HashSet<SamplingPlanSubsector>();
+            // empty for now
         }
         #endregion Constructors
 

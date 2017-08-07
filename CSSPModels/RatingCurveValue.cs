@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int RatingCurveValueID { get; set; }
-        [CSSPExist(TypeName = "RatingCurve", Plurial = "s", FieldID = "RatingCurveID")]
+        [CSSPExist(ExistTypeName = "RatingCurve", ExistPlurial = "s", ExistFieldID = "RatingCurveID")]
         public int RatingCurveID { get; set; }
         [Range(0.0D, 1000.0D)]
         public double StageValue_m { get; set; }
@@ -19,10 +19,8 @@ namespace CSSPModels
         public double DischargeValue_m3_s { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual RatingCurve RatingCurve { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

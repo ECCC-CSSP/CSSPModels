@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void VPScenarioLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "VPScenarioLanguageID", "VPScenarioID", "Language", "VPScenarioName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LanguageText", "TranslationStatusText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.VPScenarioLanguage).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void VPScenarioLanguage_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "VPScenario",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -96,7 +96,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.VPScenarioLanguageTranslationStatus);
                Assert.IsNotNull(ModelsRes.VPScenarioLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.VPScenarioLanguageLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.VPScenarioLanguageVPScenario);
+               Assert.IsNotNull(ModelsRes.VPScenarioLanguageLanguageText);
+               Assert.IsNotNull(ModelsRes.VPScenarioLanguageTranslationStatusText);
         }
         [TestMethod]
         public void VPScenarioLanguage_Every_Property_Has_Get_Set_Test()
@@ -122,12 +123,15 @@ namespace CSSPModels.Tests
                int val7 = 45;
                vPScenarioLanguage.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, vPScenarioLanguage.LastUpdateContactTVItemID);
-               VPScenario val17 = new VPScenario();
-               vPScenarioLanguage.VPScenario = val17;
-               Assert.AreEqual(val17, vPScenarioLanguage.VPScenario);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               vPScenarioLanguage.ValidationResults = val27;
-               Assert.AreEqual(val27, vPScenarioLanguage.ValidationResults);
+               string val8 = "Some text";
+               vPScenarioLanguage.LanguageText = val8;
+               Assert.AreEqual(val8, vPScenarioLanguage.LanguageText);
+               string val9 = "Some text";
+               vPScenarioLanguage.TranslationStatusText = val9;
+               Assert.AreEqual(val9, vPScenarioLanguage.TranslationStatusText);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               vPScenarioLanguage.ValidationResults = val30;
+               Assert.AreEqual(val30, vPScenarioLanguage.ValidationResults);
         }
     }
 }

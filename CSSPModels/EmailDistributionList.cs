@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int EmailDistributionListID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Country)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "6")]
         public int CountryTVItemID { get; set; }
         [StringLength(100)]
         public string RegionName { get; set; }
@@ -19,11 +19,8 @@ namespace CSSPModels
         public int Ordinal { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual TVItem CountryTVItem { get; set; }
-        public virtual ICollection<EmailDistributionListContact> EmailDistributionListContacts { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
@@ -34,7 +31,7 @@ namespace CSSPModels
         #region Constructors
         public EmailDistributionList()
         {
-            EmailDistributionListContacts = new HashSet<EmailDistributionListContact>();
+            // empty for now
         }
         #endregion Constructors
     }

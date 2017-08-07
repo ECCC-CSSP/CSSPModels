@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TVFile_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVFileID", "TVFileTVItemID", "TemplateTVType", "Language", "FilePurpose", "FileType", "FileSize_kb", "FileInfo", "FileCreatedDate_UTC", "FromWater", "ClientFilePath", "ServerFileName", "ServerFilePath", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TemplateTVTypeText", "LanguageText", "FilePurposeText", "FileTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVFile).GetProperties().OrderBy(c => c.Name))
@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVFile_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "TVFileTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "TVFileLanguages",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(TVFile).GetProperties())
@@ -104,8 +104,10 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVFileServerFilePath);
                Assert.IsNotNull(ModelsRes.TVFileLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TVFileLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.TVFileTVFileLanguages);
-               Assert.IsNotNull(ModelsRes.TVFileTVFileTVItem);
+               Assert.IsNotNull(ModelsRes.TVFileTemplateTVTypeText);
+               Assert.IsNotNull(ModelsRes.TVFileLanguageText);
+               Assert.IsNotNull(ModelsRes.TVFileFilePurposeText);
+               Assert.IsNotNull(ModelsRes.TVFileFileTypeText);
         }
         [TestMethod]
         public void TVFile_Every_Property_Has_Get_Set_Test()
@@ -155,15 +157,21 @@ namespace CSSPModels.Tests
                int val15 = 45;
                tVFile.LastUpdateContactTVItemID = val15;
                Assert.AreEqual(val15, tVFile.LastUpdateContactTVItemID);
-               ICollection<TVFileLanguage> val34 = new List<TVFileLanguage>();
-               tVFile.TVFileLanguages = val34;
-               Assert.AreEqual(val34, tVFile.TVFileLanguages);
-               TVItem val35 = new TVItem();
-               tVFile.TVFileTVItem = val35;
-               Assert.AreEqual(val35, tVFile.TVFileTVItem);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>().AsEnumerable();
-               tVFile.ValidationResults = val54;
-               Assert.AreEqual(val54, tVFile.ValidationResults);
+               string val16 = "Some text";
+               tVFile.TemplateTVTypeText = val16;
+               Assert.AreEqual(val16, tVFile.TemplateTVTypeText);
+               string val17 = "Some text";
+               tVFile.LanguageText = val17;
+               Assert.AreEqual(val17, tVFile.LanguageText);
+               string val18 = "Some text";
+               tVFile.FilePurposeText = val18;
+               Assert.AreEqual(val18, tVFile.FilePurposeText);
+               string val19 = "Some text";
+               tVFile.FileTypeText = val19;
+               Assert.AreEqual(val19, tVFile.FileTypeText);
+               IEnumerable<ValidationResult> val60 = new List<ValidationResult>().AsEnumerable();
+               tVFile.ValidationResults = val60;
+               Assert.AreEqual(val60, tVFile.ValidationResults);
         }
     }
 }

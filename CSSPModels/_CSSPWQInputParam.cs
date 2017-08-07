@@ -19,6 +19,10 @@ namespace CSSPModels
         public string Name { get; set; }
         [Range(1, -1)]
         public int TVItemID { get; set; }
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "CSSPWQInputTypeEnum", EnumType = "CSSPWQInputType")]
+        public string CSSPWQInputTypeText { get; set; }
 
 
         public virtual List<string> sidList { get; set; }

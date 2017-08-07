@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int VPScenarioID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Infrastructure)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]
         public int InfrastructureTVItemID { get; set; }
         [CSSPEnumType]
         public ScenarioStatusEnum VPScenarioStatus { get; set; }
@@ -50,16 +50,16 @@ namespace CSSPModels
         public string RawResults { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<VPAmbient> VPAmbients { get; set; }
-        public virtual ICollection<VPResult> VPResults { get; set; }
-        public virtual ICollection<VPScenarioLanguage> VPScenarioLanguages { get; set; }
-        public virtual TVItem InfrastructureTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "ScenarioStatusEnum", EnumType = "VPScenarioStatus")]
+        public string VPScenarioStatusText { get; set; }
         [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
@@ -67,9 +67,7 @@ namespace CSSPModels
         #region Constructors
         public VPScenario()
         {
-            VPAmbients = new HashSet<VPAmbient>();
-            VPResults = new HashSet<VPResult>();
-            VPScenarioLanguages = new HashSet<VPScenarioLanguage>();
+            // empty for now
         }
         #endregion Constructors
 

@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int HydrometricSiteID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.HydrometricSite)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "9")]
         public int HydrometricSiteTVItemID { get; set; }
         [StringLength(7)]
         [CSSPAllowNull]
@@ -45,12 +45,8 @@ namespace CSSPModels
         public bool? HasRatingCurve { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<HydrometricDataValue> HydrometricDataValues { get; set; }
-        public virtual ICollection<RatingCurve> RatingCurves { get; set; }
-        public virtual TVItem HydrometricSiteTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
@@ -61,8 +57,7 @@ namespace CSSPModels
         #region Constructors
         public HydrometricSite()
         {
-            HydrometricDataValues = new HashSet<HydrometricDataValue>();
-            RatingCurves = new HashSet<RatingCurve>();
+            // empty for now
         }
         #endregion Constructors
 

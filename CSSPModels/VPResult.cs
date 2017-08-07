@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int VPResultID { get; set; }
-        [CSSPExist(TypeName = "VPScenario", Plurial = "s", FieldID = "VPScenarioID")]
+        [CSSPExist(ExistTypeName = "VPScenario", ExistPlurial = "s", ExistFieldID = "VPScenarioID")]
         public int VPScenarioID { get; set; }
         [Range(0, 1000)]
         public int Ordinal { get; set; }
@@ -27,10 +27,8 @@ namespace CSSPModels
         public double TravelTime_hour { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual VPScenario VPScenario { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TideSite_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "TideSiteTVItem",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -95,7 +95,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TideSiteWebTideDatum_m);
                Assert.IsNotNull(ModelsRes.TideSiteLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TideSiteLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.TideSiteTideSiteTVItem);
         }
         [TestMethod]
         public void TideSite_Every_Property_Has_Get_Set_Test()
@@ -118,12 +117,9 @@ namespace CSSPModels.Tests
                int val6 = 45;
                tideSite.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, tideSite.LastUpdateContactTVItemID);
-               TVItem val15 = new TVItem();
-               tideSite.TideSiteTVItem = val15;
-               Assert.AreEqual(val15, tideSite.TideSiteTVItem);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               tideSite.ValidationResults = val24;
-               Assert.AreEqual(val24, tideSite.ValidationResults);
+               IEnumerable<ValidationResult> val21 = new List<ValidationResult>().AsEnumerable();
+               tideSite.ValidationResults = val21;
+               Assert.AreEqual(val21, tideSite.ValidationResults);
         }
     }
 }

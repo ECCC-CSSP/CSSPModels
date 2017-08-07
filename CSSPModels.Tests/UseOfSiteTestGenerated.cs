@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void UseOfSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "SiteType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "SiteTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.UseOfSite).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void UseOfSite_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "SiteTVItem", "SubsectorTVItem",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -105,8 +105,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.UseOfSiteParam4);
                Assert.IsNotNull(ModelsRes.UseOfSiteLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.UseOfSiteLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.UseOfSiteSiteTVItem);
-               Assert.IsNotNull(ModelsRes.UseOfSiteSubsectorTVItem);
+               Assert.IsNotNull(ModelsRes.UseOfSiteSiteTypeText);
         }
         [TestMethod]
         public void UseOfSite_Every_Property_Has_Get_Set_Test()
@@ -159,15 +158,12 @@ namespace CSSPModels.Tests
                int val16 = 45;
                useOfSite.LastUpdateContactTVItemID = val16;
                Assert.AreEqual(val16, useOfSite.LastUpdateContactTVItemID);
-               TVItem val36 = new TVItem();
-               useOfSite.SiteTVItem = val36;
-               Assert.AreEqual(val36, useOfSite.SiteTVItem);
-               TVItem val37 = new TVItem();
-               useOfSite.SubsectorTVItem = val37;
-               Assert.AreEqual(val37, useOfSite.SubsectorTVItem);
-               IEnumerable<ValidationResult> val57 = new List<ValidationResult>().AsEnumerable();
-               useOfSite.ValidationResults = val57;
-               Assert.AreEqual(val57, useOfSite.ValidationResults);
+               string val17 = "Some text";
+               useOfSite.SiteTypeText = val17;
+               Assert.AreEqual(val17, useOfSite.SiteTypeText);
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>().AsEnumerable();
+               useOfSite.ValidationResults = val54;
+               Assert.AreEqual(val54, useOfSite.ValidationResults);
         }
     }
 }

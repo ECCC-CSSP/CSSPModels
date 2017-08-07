@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int InfrastructureID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Infrastructure)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]
         public int InfrastructureTVItemID { get; set; }
         [Range(0, 100000)]
         public int? PrismID { get; set; }
@@ -107,20 +107,72 @@ namespace CSSPModels
         public int? ReceivingWater_MPN_per_100ml { get; set; }
         [Range(0.0D, 1000.0D)]
         public double? DistanceFromShore_m { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Infrastructure)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]
         public int? SeeOtherTVItemID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Address)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]
         public int? CivicAddressTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<InfrastructureLanguage> InfrastructureLanguages { get; set; }
-        public virtual TVItem InfrastructureTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "InfrastructureTypeEnum", EnumType = "InfrastructureType")]
+        public string InfrastructureTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "FacilityTypeEnum", EnumType = "FacilityType")]
+        public string FacilityTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "AerationTypeEnum", EnumType = "AerationType")]
+        public string AerationTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "PreliminaryTreatmentTypeEnum", EnumType = "PreliminaryTreatmentType")]
+        public string PreliminaryTreatmentTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "PrimaryTreatmentTypeEnum", EnumType = "PrimaryTreatmentType")]
+        public string PrimaryTreatmentTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "SecondaryTreatmentTypeEnum", EnumType = "SecondaryTreatmentType")]
+        public string SecondaryTreatmentTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "TertiaryTreatmentTypeEnum", EnumType = "TertiaryTreatmentType")]
+        public string TertiaryTreatmentTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "TreatmentTypeEnum", EnumType = "TreatmentType")]
+        public string TreatmentTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "DisinfectionTypeEnum", EnumType = "DisinfectionType")]
+        public string DisinfectionTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "CollectionSystemTypeEnum", EnumType = "CollectionSystemType")]
+        public string CollectionSystemTypeText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "AlarmSystemTypeEnum", EnumType = "AlarmSystemType")]
+        public string AlarmSystemTypeText { get; set; }
         [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
@@ -128,7 +180,7 @@ namespace CSSPModels
         #region Constructors
         public Infrastructure()
         {
-            InfrastructureLanguages = new HashSet<InfrastructureLanguage>();
+            // empty for now
         }
         #endregion Constructors
 

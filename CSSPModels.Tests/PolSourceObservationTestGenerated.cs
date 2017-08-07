@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolSourceObservation_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "ContactTVItem", "PolSourceSite",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "PolSourceObservationIssues",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(PolSourceObservation).GetProperties())
@@ -96,9 +96,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.PolSourceObservationObservation_ToBeDeleted);
                Assert.IsNotNull(ModelsRes.PolSourceObservationLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.PolSourceObservationLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.PolSourceObservationPolSourceObservationIssues);
-               Assert.IsNotNull(ModelsRes.PolSourceObservationContactTVItem);
-               Assert.IsNotNull(ModelsRes.PolSourceObservationPolSourceSite);
         }
         [TestMethod]
         public void PolSourceObservation_Every_Property_Has_Get_Set_Test()
@@ -124,18 +121,9 @@ namespace CSSPModels.Tests
                int val7 = 45;
                polSourceObservation.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, polSourceObservation.LastUpdateContactTVItemID);
-               ICollection<PolSourceObservationIssue> val19 = new List<PolSourceObservationIssue>();
-               polSourceObservation.PolSourceObservationIssues = val19;
-               Assert.AreEqual(val19, polSourceObservation.PolSourceObservationIssues);
-               TVItem val20 = new TVItem();
-               polSourceObservation.ContactTVItem = val20;
-               Assert.AreEqual(val20, polSourceObservation.ContactTVItem);
-               PolSourceSite val21 = new PolSourceSite();
-               polSourceObservation.PolSourceSite = val21;
-               Assert.AreEqual(val21, polSourceObservation.PolSourceSite);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               polSourceObservation.ValidationResults = val33;
-               Assert.AreEqual(val33, polSourceObservation.ValidationResults);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               polSourceObservation.ValidationResults = val24;
+               Assert.AreEqual(val24, polSourceObservation.ValidationResults);
         }
     }
 }

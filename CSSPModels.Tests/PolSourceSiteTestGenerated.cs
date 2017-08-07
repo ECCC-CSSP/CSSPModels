@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void PolSourceSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "PolSourceSiteID", "PolSourceSiteTVItemID", "Temp_Locator_CanDelete", "Oldsiteid", "Site", "SiteID", "IsPointSource", "InactiveReason", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "InactiveReasonText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.PolSourceSite).GetProperties().OrderBy(c => c.Name))
@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolSourceSite_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "PolSourceSiteTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "PolSourceObservations",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(PolSourceSite).GetProperties())
@@ -100,8 +100,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.PolSourceSiteCivicAddressTVItemID);
                Assert.IsNotNull(ModelsRes.PolSourceSiteLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.PolSourceSiteLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.PolSourceSitePolSourceObservations);
-               Assert.IsNotNull(ModelsRes.PolSourceSitePolSourceSiteTVItem);
+               Assert.IsNotNull(ModelsRes.PolSourceSiteInactiveReasonText);
         }
         [TestMethod]
         public void PolSourceSite_Every_Property_Has_Get_Set_Test()
@@ -139,15 +138,12 @@ namespace CSSPModels.Tests
                int val11 = 45;
                polSourceSite.LastUpdateContactTVItemID = val11;
                Assert.AreEqual(val11, polSourceSite.LastUpdateContactTVItemID);
-               ICollection<PolSourceObservation> val26 = new List<PolSourceObservation>();
-               polSourceSite.PolSourceObservations = val26;
-               Assert.AreEqual(val26, polSourceSite.PolSourceObservations);
-               TVItem val27 = new TVItem();
-               polSourceSite.PolSourceSiteTVItem = val27;
-               Assert.AreEqual(val27, polSourceSite.PolSourceSiteTVItem);
-               IEnumerable<ValidationResult> val42 = new List<ValidationResult>().AsEnumerable();
-               polSourceSite.ValidationResults = val42;
-               Assert.AreEqual(val42, polSourceSite.ValidationResults);
+               string val12 = "Some text";
+               polSourceSite.InactiveReasonText = val12;
+               Assert.AreEqual(val12, polSourceSite.InactiveReasonText);
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>().AsEnumerable();
+               polSourceSite.ValidationResults = val39;
+               Assert.AreEqual(val39, polSourceSite.ValidationResults);
         }
     }
 }

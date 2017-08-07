@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MikeScenario_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeScenarioID", "MikeScenarioTVItemID", "ParentMikeScenarioID", "ScenarioStatus", "ErrorInfo", "MikeScenarioStartDateTime_Local", "MikeScenarioEndDateTime_Local", "MikeScenarioStartExecutionDateTime_Local", "MikeScenarioExecutionTime_min", "WindSpeed_km_h", "WindDirection_deg", "DecayFactor_per_day", "DecayIsConstant", "DecayFactorAmplitude", "ResultFrequency_min", "AmbientTemperature_C", "AmbientSalinity_PSU", "ManningNumber", "NumberOfElements", "NumberOfTimeSteps", "NumberOfSigmaLayers", "NumberOfZLayers", "NumberOfHydroOutputParameters", "NumberOfTransOutputParameters", "EstimatedHydroFileSize", "EstimatedTransFileSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "ScenarioStatusText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MikeScenario).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MikeScenario_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "MikeScenarioTVItem",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -117,7 +117,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MikeScenarioEstimatedTransFileSize);
                Assert.IsNotNull(ModelsRes.MikeScenarioLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MikeScenarioLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.MikeScenarioMikeScenarioTVItem);
+               Assert.IsNotNull(ModelsRes.MikeScenarioScenarioStatusText);
         }
         [TestMethod]
         public void MikeScenario_Every_Property_Has_Get_Set_Test()
@@ -206,9 +206,9 @@ namespace CSSPModels.Tests
                int val28 = 45;
                mikeScenario.LastUpdateContactTVItemID = val28;
                Assert.AreEqual(val28, mikeScenario.LastUpdateContactTVItemID);
-               TVItem val59 = new TVItem();
-               mikeScenario.MikeScenarioTVItem = val59;
-               Assert.AreEqual(val59, mikeScenario.MikeScenarioTVItem);
+               string val29 = "Some text";
+               mikeScenario.ScenarioStatusText = val29;
+               Assert.AreEqual(val29, mikeScenario.ScenarioStatusText);
                IEnumerable<ValidationResult> val90 = new List<ValidationResult>().AsEnumerable();
                mikeScenario.ValidationResults = val90;
                Assert.AreEqual(val90, mikeScenario.ValidationResults);

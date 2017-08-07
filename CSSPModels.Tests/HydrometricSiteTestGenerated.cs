@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void HydrometricSite_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "HydrometricSiteTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "HydrometricDataValues", "RatingCurves",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(HydrometricSite).GetProperties())
@@ -109,9 +109,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.HydrometricSiteHasRatingCurve);
                Assert.IsNotNull(ModelsRes.HydrometricSiteLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.HydrometricSiteLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.HydrometricSiteHydrometricDataValues);
-               Assert.IsNotNull(ModelsRes.HydrometricSiteRatingCurves);
-               Assert.IsNotNull(ModelsRes.HydrometricSiteHydrometricSiteTVItem);
         }
         [TestMethod]
         public void HydrometricSite_Every_Property_Has_Get_Set_Test()
@@ -176,18 +173,9 @@ namespace CSSPModels.Tests
                int val20 = 45;
                hydrometricSite.LastUpdateContactTVItemID = val20;
                Assert.AreEqual(val20, hydrometricSite.LastUpdateContactTVItemID);
-               ICollection<HydrometricDataValue> val45 = new List<HydrometricDataValue>();
-               hydrometricSite.HydrometricDataValues = val45;
-               Assert.AreEqual(val45, hydrometricSite.HydrometricDataValues);
-               ICollection<RatingCurve> val46 = new List<RatingCurve>();
-               hydrometricSite.RatingCurves = val46;
-               Assert.AreEqual(val46, hydrometricSite.RatingCurves);
-               TVItem val47 = new TVItem();
-               hydrometricSite.HydrometricSiteTVItem = val47;
-               Assert.AreEqual(val47, hydrometricSite.HydrometricSiteTVItem);
-               IEnumerable<ValidationResult> val72 = new List<ValidationResult>().AsEnumerable();
-               hydrometricSite.ValidationResults = val72;
-               Assert.AreEqual(val72, hydrometricSite.ValidationResults);
+               IEnumerable<ValidationResult> val63 = new List<ValidationResult>().AsEnumerable();
+               hydrometricSite.ValidationResults = val63;
+               Assert.AreEqual(val63, hydrometricSite.ValidationResults);
         }
     }
 }

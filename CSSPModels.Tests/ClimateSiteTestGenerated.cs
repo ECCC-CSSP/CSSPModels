@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ClimateSite_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "ClimateSiteTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "ClimateDataValues",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(ClimateSite).GetProperties())
@@ -113,8 +113,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ClimateSiteMonthlyNow);
                Assert.IsNotNull(ModelsRes.ClimateSiteLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.ClimateSiteLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.ClimateSiteClimateDataValues);
-               Assert.IsNotNull(ModelsRes.ClimateSiteClimateSiteTVItem);
         }
         [TestMethod]
         public void ClimateSite_Every_Property_Has_Get_Set_Test()
@@ -191,15 +189,9 @@ namespace CSSPModels.Tests
                int val24 = 45;
                climateSite.LastUpdateContactTVItemID = val24;
                Assert.AreEqual(val24, climateSite.LastUpdateContactTVItemID);
-               ICollection<ClimateDataValue> val52 = new List<ClimateDataValue>();
-               climateSite.ClimateDataValues = val52;
-               Assert.AreEqual(val52, climateSite.ClimateDataValues);
-               TVItem val53 = new TVItem();
-               climateSite.ClimateSiteTVItem = val53;
-               Assert.AreEqual(val53, climateSite.ClimateSiteTVItem);
-               IEnumerable<ValidationResult> val81 = new List<ValidationResult>().AsEnumerable();
-               climateSite.ValidationResults = val81;
-               Assert.AreEqual(val81, climateSite.ValidationResults);
+               IEnumerable<ValidationResult> val75 = new List<ValidationResult>().AsEnumerable();
+               climateSite.ValidationResults = val75;
+               Assert.AreEqual(val75, climateSite.ValidationResults);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MikeBoundaryCondition_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeBoundaryConditionID", "MikeBoundaryConditionTVItemID", "MikeBoundaryConditionCode", "MikeBoundaryConditionName", "MikeBoundaryConditionLength_m", "MikeBoundaryConditionFormat", "MikeBoundaryConditionLevelOrVelocity", "WebTideDataSet", "NumberOfWebTideNodes", "WebTideDataFromStartToEndDate", "TVType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MikeBoundaryConditionLevelOrVelocityText", "WebTideDataSetText", "TVTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MikeBoundaryCondition).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MikeBoundaryCondition_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "MikeBoundaryConditionTVItem",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -102,7 +102,9 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionTVType);
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.MikeBoundaryConditionMikeBoundaryConditionTVItem);
+               Assert.IsNotNull(ModelsRes.MikeBoundaryConditionMikeBoundaryConditionLevelOrVelocityText);
+               Assert.IsNotNull(ModelsRes.MikeBoundaryConditionWebTideDataSetText);
+               Assert.IsNotNull(ModelsRes.MikeBoundaryConditionTVTypeText);
         }
         [TestMethod]
         public void MikeBoundaryCondition_Every_Property_Has_Get_Set_Test()
@@ -146,12 +148,18 @@ namespace CSSPModels.Tests
                int val13 = 45;
                mikeBoundaryCondition.LastUpdateContactTVItemID = val13;
                Assert.AreEqual(val13, mikeBoundaryCondition.LastUpdateContactTVItemID);
-               TVItem val29 = new TVItem();
-               mikeBoundaryCondition.MikeBoundaryConditionTVItem = val29;
-               Assert.AreEqual(val29, mikeBoundaryCondition.MikeBoundaryConditionTVItem);
-               IEnumerable<ValidationResult> val45 = new List<ValidationResult>().AsEnumerable();
-               mikeBoundaryCondition.ValidationResults = val45;
-               Assert.AreEqual(val45, mikeBoundaryCondition.ValidationResults);
+               string val14 = "Some text";
+               mikeBoundaryCondition.MikeBoundaryConditionLevelOrVelocityText = val14;
+               Assert.AreEqual(val14, mikeBoundaryCondition.MikeBoundaryConditionLevelOrVelocityText);
+               string val15 = "Some text";
+               mikeBoundaryCondition.WebTideDataSetText = val15;
+               Assert.AreEqual(val15, mikeBoundaryCondition.WebTideDataSetText);
+               string val16 = "Some text";
+               mikeBoundaryCondition.TVTypeText = val16;
+               Assert.AreEqual(val16, mikeBoundaryCondition.TVTypeText);
+               IEnumerable<ValidationResult> val51 = new List<ValidationResult>().AsEnumerable();
+               mikeBoundaryCondition.ValidationResults = val51;
+               Assert.AreEqual(val51, mikeBoundaryCondition.ValidationResults);
         }
     }
 }

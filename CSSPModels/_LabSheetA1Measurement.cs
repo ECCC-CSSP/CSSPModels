@@ -27,6 +27,10 @@ namespace CSSPModels
         [CSSPEnumType]
         public SampleTypeEnum? SampleType { get; set; }
         public string SiteComment { get; set; }
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType")]
+        public string SampleTypeText { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB

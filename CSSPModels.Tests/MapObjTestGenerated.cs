@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MapObj_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MapInfoID", "MapInfoDrawType", "CoordList",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MapInfoID", "MapInfoDrawType", "MapInfoDrawTypeText", "CoordList",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,6 +39,7 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.MapObjMapInfoID);
                Assert.IsNotNull(ModelsRes.MapObjMapInfoDrawType);
+               Assert.IsNotNull(ModelsRes.MapObjMapInfoDrawTypeText);
                Assert.IsNotNull(ModelsRes.MapObjCoordList);
         }
         [TestMethod]
@@ -50,12 +51,15 @@ namespace CSSPModels.Tests
                MapInfoDrawTypeEnum val2 = (MapInfoDrawTypeEnum)3;
                mapObj.MapInfoDrawType = val2;
                Assert.AreEqual(val2, mapObj.MapInfoDrawType);
-               List<Coord> val7 = new List<Coord>();
-               mapObj.CoordList = val7;
-               Assert.AreEqual(val7, mapObj.CoordList);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
-               mapObj.ValidationResults = val12;
-               Assert.AreEqual(val12, mapObj.ValidationResults);
+               string val3 = "Some text";
+               mapObj.MapInfoDrawTypeText = val3;
+               Assert.AreEqual(val3, mapObj.MapInfoDrawTypeText);
+               List<Coord> val9 = new List<Coord>();
+               mapObj.CoordList = val9;
+               Assert.AreEqual(val9, mapObj.CoordList);
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
+               mapObj.ValidationResults = val15;
+               Assert.AreEqual(val15, mapObj.ValidationResults);
         }
     }
 }

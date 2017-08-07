@@ -53,13 +53,38 @@ namespace CSSPModels
     }
 
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
+    public class CSSPEnumTypeTextAttribute : ValidationAttribute
+    {
+        public string EnumTypeName { get; set; }
+        public string EnumType { get; set; }
+
+        public override bool IsValid(object value)
+        {
+            return true;
+        }
+    }
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
     public class CSSPExistAttribute : ValidationAttribute
     {
-        public string TypeName { get; set; }
-        public string Plurial { get; set; }
-        public string FieldID { get; set; }
-        public TVTypeEnum TVType { get; set; }
-        public TVTypeEnum OrTVType { get; set; }
+        public string ExistTypeName { get; set; }
+        public string ExistPlurial { get; set; }
+        public string ExistFieldID { get; set; }
+        public string AllowableTVTypeList { get; set; }
+
+        public override bool IsValid(object value)
+        {
+            return true;
+        }
+    }
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
+    public class CSSPFillAttribute : ValidationAttribute
+    {
+        public string FillTypeName { get; set; }
+        public string FillPlurial { get; set; }
+        public string FillFieldID { get; set; }
+        public string FillEqualField { get; set; }
+        public string FillReturnField { get; set; }
+        public bool FillNeedLanguage { get; set; }
 
         public override bool IsValid(object value)
         {

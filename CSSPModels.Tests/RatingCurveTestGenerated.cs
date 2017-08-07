@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void RatingCurve_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "HydrometricSite",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "RatingCurveValues",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(RatingCurve).GetProperties())
@@ -94,8 +94,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.RatingCurveRatingCurveNumber);
                Assert.IsNotNull(ModelsRes.RatingCurveLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.RatingCurveLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.RatingCurveRatingCurveValues);
-               Assert.IsNotNull(ModelsRes.RatingCurveHydrometricSite);
         }
         [TestMethod]
         public void RatingCurve_Every_Property_Has_Get_Set_Test()
@@ -115,15 +113,9 @@ namespace CSSPModels.Tests
                int val5 = 45;
                ratingCurve.LastUpdateContactTVItemID = val5;
                Assert.AreEqual(val5, ratingCurve.LastUpdateContactTVItemID);
-               ICollection<RatingCurveValue> val14 = new List<RatingCurveValue>();
-               ratingCurve.RatingCurveValues = val14;
-               Assert.AreEqual(val14, ratingCurve.RatingCurveValues);
-               HydrometricSite val15 = new HydrometricSite();
-               ratingCurve.HydrometricSite = val15;
-               Assert.AreEqual(val15, ratingCurve.HydrometricSite);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               ratingCurve.ValidationResults = val24;
-               Assert.AreEqual(val24, ratingCurve.ValidationResults);
+               IEnumerable<ValidationResult> val18 = new List<ValidationResult>().AsEnumerable();
+               ratingCurve.ValidationResults = val18;
+               Assert.AreEqual(val18, ratingCurve.ValidationResults);
         }
     }
 }

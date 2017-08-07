@@ -11,9 +11,9 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int SpillID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Municipality)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "15")]
         public int MunicipalityTVItemID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Infrastructure)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]
         [CSSPAllowNull]
         public int? InfrastructureTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
@@ -25,12 +25,8 @@ namespace CSSPModels
         public double AverageFlow_m3_day { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<SpillLanguage> SpillLanguages { get; set; }
-        public virtual TVItem InfrastructureTVItem { get; set; }
-        public virtual TVItem MunicipalityTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
@@ -41,7 +37,7 @@ namespace CSSPModels
         #region Constructors
         public Spill()
         {
-            SpillLanguages = new HashSet<SpillLanguage>();
+            // empty for now
         }
         #endregion Constructors
 

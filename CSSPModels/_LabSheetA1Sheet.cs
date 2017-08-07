@@ -99,6 +99,18 @@ namespace CSSPModels
         public string ApprovedBySupervisorInitials { get; set; }
         public bool IncludeLaboratoryQAQC { get; set; }
         public string Log { get; set; }
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "SamplingPlanTypeEnum", EnumType = "SamplingPlanType")]
+        public string SamplingPlanTypeText { get; set; }
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType")]
+        public string SampleTypeText { get; set; }
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "LabSheetTypeEnum", EnumType = "LabSheetType")]
+        public string LabSheetTypeText { get; set; }
 
         public virtual List<LabSheetA1Measurement> LabSheetA1MeasurementList { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int EmailDistributionListContactID { get; set; }
-        [CSSPExist(TypeName = "EmailDistributionList", Plurial = "s", FieldID = "EmailDistributionListID")]
+        [CSSPExist(ExistTypeName = "EmailDistributionList", ExistPlurial = "s", ExistFieldID = "EmailDistributionListID")]
         public int EmailDistributionListID { get; set; }
         public bool IsCC { get; set; }
         [StringLength(20)]
@@ -28,10 +28,8 @@ namespace CSSPModels
         public bool ReopeningAllTypes { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual EmailDistributionList EmailDistributionList { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

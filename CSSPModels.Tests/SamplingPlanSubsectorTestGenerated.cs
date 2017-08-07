@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SamplingPlanSubsector_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "SamplingPlan", "SubsectorTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "SamplingPlanSubsectorSites",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsector).GetProperties())
@@ -94,9 +94,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSubsectorTVItemID);
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSamplingPlanSubsectorSites);
-               Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSamplingPlan);
-               Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSubsectorTVItem);
         }
         [TestMethod]
         public void SamplingPlanSubsector_Every_Property_Has_Get_Set_Test()
@@ -116,18 +113,9 @@ namespace CSSPModels.Tests
                int val5 = 45;
                samplingPlanSubsector.LastUpdateContactTVItemID = val5;
                Assert.AreEqual(val5, samplingPlanSubsector.LastUpdateContactTVItemID);
-               ICollection<SamplingPlanSubsectorSite> val15 = new List<SamplingPlanSubsectorSite>();
-               samplingPlanSubsector.SamplingPlanSubsectorSites = val15;
-               Assert.AreEqual(val15, samplingPlanSubsector.SamplingPlanSubsectorSites);
-               SamplingPlan val16 = new SamplingPlan();
-               samplingPlanSubsector.SamplingPlan = val16;
-               Assert.AreEqual(val16, samplingPlanSubsector.SamplingPlan);
-               TVItem val17 = new TVItem();
-               samplingPlanSubsector.SubsectorTVItem = val17;
-               Assert.AreEqual(val17, samplingPlanSubsector.SubsectorTVItem);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               samplingPlanSubsector.ValidationResults = val27;
-               Assert.AreEqual(val27, samplingPlanSubsector.ValidationResults);
+               IEnumerable<ValidationResult> val18 = new List<ValidationResult>().AsEnumerable();
+               samplingPlanSubsector.ValidationResults = val18;
+               Assert.AreEqual(val18, samplingPlanSubsector.ValidationResults);
         }
     }
 }

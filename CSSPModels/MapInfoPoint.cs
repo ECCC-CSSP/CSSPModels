@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int MapInfoPointID { get; set; }
-        [CSSPExist(TypeName = "MapInfo", Plurial = "s", FieldID = "MapInfoID")]
+        [CSSPExist(ExistTypeName = "MapInfo", ExistPlurial = "s", ExistFieldID = "MapInfoID")]
         public int MapInfoID { get; set; }
         [Range(0, -1)]
         public int Ordinal { get; set; }
@@ -21,10 +21,8 @@ namespace CSSPModels
         public double Lng { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual MapInfo MapInfo { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

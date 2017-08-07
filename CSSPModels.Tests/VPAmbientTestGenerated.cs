@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void VPAmbient_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "VPScenario",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -104,7 +104,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.VPAmbientFarFieldDiffusionCoefficient);
                Assert.IsNotNull(ModelsRes.VPAmbientLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.VPAmbientLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.VPAmbientVPScenario);
         }
         [TestMethod]
         public void VPAmbient_Every_Property_Has_Get_Set_Test()
@@ -154,12 +153,9 @@ namespace CSSPModels.Tests
                int val15 = 45;
                vPAmbient.LastUpdateContactTVItemID = val15;
                Assert.AreEqual(val15, vPAmbient.LastUpdateContactTVItemID);
-               VPScenario val33 = new VPScenario();
-               vPAmbient.VPScenario = val33;
-               Assert.AreEqual(val33, vPAmbient.VPScenario);
-               IEnumerable<ValidationResult> val51 = new List<ValidationResult>().AsEnumerable();
-               vPAmbient.ValidationResults = val51;
-               Assert.AreEqual(val51, vPAmbient.ValidationResults);
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>().AsEnumerable();
+               vPAmbient.ValidationResults = val48;
+               Assert.AreEqual(val48, vPAmbient.ValidationResults);
         }
     }
 }

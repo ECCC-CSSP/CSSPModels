@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void LabSheet_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LabSheetID", "OtherServerLabSheetID", "SamplingPlanID", "SamplingPlanName", "Year", "Month", "Day", "RunNumber", "SubsectorTVItemID", "MWQMRunTVItemID", "SamplingPlanType", "SampleType", "LabSheetType", "LabSheetStatus", "FileName", "FileLastModifiedDate_Local", "FileContent", "AcceptedOrRejectedByContactTVItemID", "AcceptedOrRejectedDateTime", "RejectReason", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "SamplingPlanTypeText", "SampleTypeText", "LabSheetTypeText", "LabSheetStatusText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.LabSheet).GetProperties().OrderBy(c => c.Name))
@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LabSheet_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "AcceptedOrRejectedByContactTVItem", "MWQMRunTVItem", "SamplingPlan", "SubsectorTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "LabSheetDetails",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(LabSheet).GetProperties())
@@ -111,11 +111,10 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.LabSheetRejectReason);
                Assert.IsNotNull(ModelsRes.LabSheetLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.LabSheetLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.LabSheetLabSheetDetails);
-               Assert.IsNotNull(ModelsRes.LabSheetAcceptedOrRejectedByContactTVItem);
-               Assert.IsNotNull(ModelsRes.LabSheetMWQMRunTVItem);
-               Assert.IsNotNull(ModelsRes.LabSheetSamplingPlan);
-               Assert.IsNotNull(ModelsRes.LabSheetSubsectorTVItem);
+               Assert.IsNotNull(ModelsRes.LabSheetSamplingPlanTypeText);
+               Assert.IsNotNull(ModelsRes.LabSheetSampleTypeText);
+               Assert.IsNotNull(ModelsRes.LabSheetLabSheetTypeText);
+               Assert.IsNotNull(ModelsRes.LabSheetLabSheetStatusText);
         }
         [TestMethod]
         public void LabSheet_Every_Property_Has_Get_Set_Test()
@@ -186,24 +185,21 @@ namespace CSSPModels.Tests
                int val22 = 45;
                labSheet.LastUpdateContactTVItemID = val22;
                Assert.AreEqual(val22, labSheet.LastUpdateContactTVItemID);
-               ICollection<LabSheetDetail> val51 = new List<LabSheetDetail>();
-               labSheet.LabSheetDetails = val51;
-               Assert.AreEqual(val51, labSheet.LabSheetDetails);
-               TVItem val52 = new TVItem();
-               labSheet.AcceptedOrRejectedByContactTVItem = val52;
-               Assert.AreEqual(val52, labSheet.AcceptedOrRejectedByContactTVItem);
-               TVItem val53 = new TVItem();
-               labSheet.MWQMRunTVItem = val53;
-               Assert.AreEqual(val53, labSheet.MWQMRunTVItem);
-               SamplingPlan val54 = new SamplingPlan();
-               labSheet.SamplingPlan = val54;
-               Assert.AreEqual(val54, labSheet.SamplingPlan);
-               TVItem val55 = new TVItem();
-               labSheet.SubsectorTVItem = val55;
-               Assert.AreEqual(val55, labSheet.SubsectorTVItem);
-               IEnumerable<ValidationResult> val84 = new List<ValidationResult>().AsEnumerable();
-               labSheet.ValidationResults = val84;
-               Assert.AreEqual(val84, labSheet.ValidationResults);
+               string val23 = "Some text";
+               labSheet.SamplingPlanTypeText = val23;
+               Assert.AreEqual(val23, labSheet.SamplingPlanTypeText);
+               string val24 = "Some text";
+               labSheet.SampleTypeText = val24;
+               Assert.AreEqual(val24, labSheet.SampleTypeText);
+               string val25 = "Some text";
+               labSheet.LabSheetTypeText = val25;
+               Assert.AreEqual(val25, labSheet.LabSheetTypeText);
+               string val26 = "Some text";
+               labSheet.LabSheetStatusText = val26;
+               Assert.AreEqual(val26, labSheet.LabSheetStatusText);
+               IEnumerable<ValidationResult> val81 = new List<ValidationResult>().AsEnumerable();
+               labSheet.ValidationResults = val81;
+               Assert.AreEqual(val81, labSheet.ValidationResults);
         }
     }
 }

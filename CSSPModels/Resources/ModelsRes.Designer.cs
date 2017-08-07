@@ -88,20 +88,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AddressAddressTVItem.
-        /// </summary>
-        public static string AddressAddressTVItem {
-            get {
-                return ResourceManager.GetString("AddressAddressTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to AddressAddressTVItemID.
         /// </summary>
         public static string AddressAddressTVItemID {
             get {
                 return ResourceManager.GetString("AddressAddressTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AddressAddressTVText.
+        /// </summary>
+        public static string AddressAddressTVText {
+            get {
+                return ResourceManager.GetString("AddressAddressTVText", resourceCulture);
             }
         }
         
@@ -115,11 +115,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AddressCountryTVItem.
+        ///   Looks up a localized string similar to AddressAddressTypeText.
         /// </summary>
-        public static string AddressCountryTVItem {
+        public static string AddressAddressTypeText {
             get {
-                return ResourceManager.GetString("AddressCountryTVItem", resourceCulture);
+                return ResourceManager.GetString("AddressAddressTypeText", resourceCulture);
             }
         }
         
@@ -129,6 +129,15 @@ namespace CSSPModels.Resources {
         public static string AddressCountryTVItemID {
             get {
                 return ResourceManager.GetString("AddressCountryTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AddressCountryTVText.
+        /// </summary>
+        public static string AddressCountryTVText {
+            get {
+                return ResourceManager.GetString("AddressCountryTVText", resourceCulture);
             }
         }
         
@@ -160,20 +169,29 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AddressMunicipalityTVItem.
-        /// </summary>
-        public static string AddressMunicipalityTVItem {
-            get {
-                return ResourceManager.GetString("AddressMunicipalityTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to AddressMunicipalityTVItemID.
         /// </summary>
         public static string AddressMunicipalityTVItemID {
             get {
                 return ResourceManager.GetString("AddressMunicipalityTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AddressMunicipalityTVText.
+        /// </summary>
+        public static string AddressMunicipalityTVText {
+            get {
+                return ResourceManager.GetString("AddressMunicipalityTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AddressParentTVItemID.
+        /// </summary>
+        public static string AddressParentTVItemID {
+            get {
+                return ResourceManager.GetString("AddressParentTVItemID", resourceCulture);
             }
         }
         
@@ -187,20 +205,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AddressProvinceTVItem.
-        /// </summary>
-        public static string AddressProvinceTVItem {
-            get {
-                return ResourceManager.GetString("AddressProvinceTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to AddressProvinceTVItemID.
         /// </summary>
         public static string AddressProvinceTVItemID {
             get {
                 return ResourceManager.GetString("AddressProvinceTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AddressProvinceTVText.
+        /// </summary>
+        public static string AddressProvinceTVText {
+            get {
+                return ResourceManager.GetString("AddressProvinceTVText", resourceCulture);
             }
         }
         
@@ -228,6 +246,15 @@ namespace CSSPModels.Resources {
         public static string AddressStreetType {
             get {
                 return ResourceManager.GetString("AddressStreetType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AddressStreetTypeText.
+        /// </summary>
+        public static string AddressStreetTypeText {
+            get {
+                return ResourceManager.GetString("AddressStreetTypeText", resourceCulture);
             }
         }
         
@@ -331,6 +358,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AppTaskAppTaskCommandText.
+        /// </summary>
+        public static string AppTaskAppTaskCommandText {
+            get {
+                return ResourceManager.GetString("AppTaskAppTaskCommandText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AppTaskAppTaskID.
         /// </summary>
         public static string AppTaskAppTaskID {
@@ -340,20 +376,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AppTaskAppTaskLanguages.
-        /// </summary>
-        public static string AppTaskAppTaskLanguages {
-            get {
-                return ResourceManager.GetString("AppTaskAppTaskLanguages", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to AppTaskAppTaskStatus.
         /// </summary>
         public static string AppTaskAppTaskStatus {
             get {
                 return ResourceManager.GetString("AppTaskAppTaskStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AppTaskAppTaskStatusText.
+        /// </summary>
+        public static string AppTaskAppTaskStatusText {
+            get {
+                return ResourceManager.GetString("AppTaskAppTaskStatusText", resourceCulture);
             }
         }
         
@@ -381,15 +417,6 @@ namespace CSSPModels.Resources {
         public static string AppTaskLanguage {
             get {
                 return ResourceManager.GetString("AppTaskLanguage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AppTaskLanguageAppTask.
-        /// </summary>
-        public static string AppTaskLanguageAppTask {
-            get {
-                return ResourceManager.GetString("AppTaskLanguageAppTask", resourceCulture);
             }
         }
         
@@ -430,6 +457,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AppTaskLanguageLanguageText.
+        /// </summary>
+        public static string AppTaskLanguageLanguageText {
+            get {
+                return ResourceManager.GetString("AppTaskLanguageLanguageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AppTaskLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string AppTaskLanguageLastUpdateContactTVItemID {
@@ -457,11 +493,29 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AppTaskLanguageText.
+        /// </summary>
+        public static string AppTaskLanguageText {
+            get {
+                return ResourceManager.GetString("AppTaskLanguageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AppTaskLanguageTranslationStatus.
         /// </summary>
         public static string AppTaskLanguageTranslationStatus {
             get {
                 return ResourceManager.GetString("AppTaskLanguageTranslationStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AppTaskLanguageTranslationStatusText.
+        /// </summary>
+        public static string AppTaskLanguageTranslationStatusText {
+            get {
+                return ResourceManager.GetString("AppTaskLanguageTranslationStatusText", resourceCulture);
             }
         }
         
@@ -547,15 +601,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AppTaskTVItem.
-        /// </summary>
-        public static string AppTaskTVItem {
-            get {
-                return ResourceManager.GetString("AppTaskTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to AppTaskTVItemID.
         /// </summary>
         public static string AppTaskTVItemID {
@@ -592,24 +637,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModelBoxModelLanguages.
-        /// </summary>
-        public static string BoxModelBoxModelLanguages {
-            get {
-                return ResourceManager.GetString("BoxModelBoxModelLanguages", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to BoxModelBoxModelResults.
-        /// </summary>
-        public static string BoxModelBoxModelResults {
-            get {
-                return ResourceManager.GetString("BoxModelBoxModelResults", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to BoxModelCalNumb.
         /// </summary>
         public static string BoxModelCalNumb {
@@ -624,6 +651,15 @@ namespace CSSPModels.Resources {
         public static string BoxModelCalNumbBoxModelResultType {
             get {
                 return ResourceManager.GetString("BoxModelCalNumbBoxModelResultType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BoxModelCalNumbBoxModelResultTypeText.
+        /// </summary>
+        public static string BoxModelCalNumbBoxModelResultTypeText {
+            get {
+                return ResourceManager.GetString("BoxModelCalNumbBoxModelResultTypeText", resourceCulture);
             }
         }
         
@@ -772,15 +808,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModelInfrastructureTVItem.
-        /// </summary>
-        public static string BoxModelInfrastructureTVItem {
-            get {
-                return ResourceManager.GetString("BoxModelInfrastructureTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to BoxModelInfrastructureTVItemID.
         /// </summary>
         public static string BoxModelInfrastructureTVItemID {
@@ -795,15 +822,6 @@ namespace CSSPModels.Resources {
         public static string BoxModelLanguage {
             get {
                 return ResourceManager.GetString("BoxModelLanguage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to BoxModelLanguageBoxModel.
-        /// </summary>
-        public static string BoxModelLanguageBoxModel {
-            get {
-                return ResourceManager.GetString("BoxModelLanguageBoxModel", resourceCulture);
             }
         }
         
@@ -831,6 +849,15 @@ namespace CSSPModels.Resources {
         public static string BoxModelLanguageLanguage {
             get {
                 return ResourceManager.GetString("BoxModelLanguageLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BoxModelLanguageLanguageText.
+        /// </summary>
+        public static string BoxModelLanguageLanguageText {
+            get {
+                return ResourceManager.GetString("BoxModelLanguageLanguageText", resourceCulture);
             }
         }
         
@@ -871,6 +898,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to BoxModelLanguageTranslationStatusText.
+        /// </summary>
+        public static string BoxModelLanguageTranslationStatusText {
+            get {
+                return ResourceManager.GetString("BoxModelLanguageTranslationStatusText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to BoxModelLastUpdateContactTVItemID.
         /// </summary>
         public static string BoxModelLastUpdateContactTVItemID {
@@ -898,15 +934,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BoxModelResultBoxModel.
-        /// </summary>
-        public static string BoxModelResultBoxModel {
-            get {
-                return ResourceManager.GetString("BoxModelResultBoxModel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to BoxModelResultBoxModelID.
         /// </summary>
         public static string BoxModelResultBoxModelID {
@@ -930,6 +957,15 @@ namespace CSSPModels.Resources {
         public static string BoxModelResultBoxModelResultType {
             get {
                 return ResourceManager.GetString("BoxModelResultBoxModelResultType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BoxModelResultBoxModelResultTypeText.
+        /// </summary>
+        public static string BoxModelResultBoxModelResultTypeText {
+            get {
+                return ResourceManager.GetString("BoxModelResultBoxModelResultTypeText", resourceCulture);
             }
         }
         
@@ -1132,15 +1168,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ClimateDataValueClimateSite.
-        /// </summary>
-        public static string ClimateDataValueClimateSite {
-            get {
-                return ResourceManager.GetString("ClimateDataValueClimateSite", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to ClimateDataValueClimateSiteID.
         /// </summary>
         public static string ClimateDataValueClimateSiteID {
@@ -1294,6 +1321,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ClimateDataValueStorageDataTypeEnumText.
+        /// </summary>
+        public static string ClimateDataValueStorageDataTypeEnumText {
+            get {
+                return ResourceManager.GetString("ClimateDataValueStorageDataTypeEnumText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ClimateDataValueTotalPrecip_mm_cm.
         /// </summary>
         public static string ClimateDataValueTotalPrecip_mm_cm {
@@ -1308,15 +1344,6 @@ namespace CSSPModels.Resources {
         public static string ClimateSite {
             get {
                 return ResourceManager.GetString("ClimateSite", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ClimateSiteClimateDataValues.
-        /// </summary>
-        public static string ClimateSiteClimateDataValues {
-            get {
-                return ResourceManager.GetString("ClimateSiteClimateDataValues", resourceCulture);
             }
         }
         
@@ -1344,15 +1371,6 @@ namespace CSSPModels.Resources {
         public static string ClimateSiteClimateSiteName {
             get {
                 return ResourceManager.GetString("ClimateSiteClimateSiteName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ClimateSiteClimateSiteTVItem.
-        /// </summary>
-        public static string ClimateSiteClimateSiteTVItem {
-            get {
-                return ResourceManager.GetString("ClimateSiteClimateSiteTVItem", resourceCulture);
             }
         }
         
@@ -1564,33 +1582,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactContactLogins.
-        /// </summary>
-        public static string ContactContactLogins {
-            get {
-                return ResourceManager.GetString("ContactContactLogins", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactContactPreferences.
-        /// </summary>
-        public static string ContactContactPreferences {
-            get {
-                return ResourceManager.GetString("ContactContactPreferences", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactContactShortcuts.
-        /// </summary>
-        public static string ContactContactShortcuts {
-            get {
-                return ResourceManager.GetString("ContactContactShortcuts", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to ContactContactTitle.
         /// </summary>
         public static string ContactContactTitle {
@@ -1600,11 +1591,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactContactTVItem.
+        ///   Looks up a localized string similar to ContactContactTitleText.
         /// </summary>
-        public static string ContactContactTVItem {
+        public static string ContactContactTitleText {
             get {
-                return ResourceManager.GetString("ContactContactTVItem", resourceCulture);
+                return ResourceManager.GetString("ContactContactTitleText", resourceCulture);
             }
         }
         
@@ -1722,15 +1713,6 @@ namespace CSSPModels.Resources {
         public static string ContactLoginConfirmPassword {
             get {
                 return ResourceManager.GetString("ContactLoginConfirmPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginContact.
-        /// </summary>
-        public static string ContactLoginContact {
-            get {
-                return ResourceManager.GetString("ContactLoginContact", resourceCulture);
             }
         }
         
@@ -1870,15 +1852,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactPreferenceContact.
-        /// </summary>
-        public static string ContactPreferenceContact {
-            get {
-                return ResourceManager.GetString("ContactPreferenceContact", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to ContactPreferenceContactID.
         /// </summary>
         public static string ContactPreferenceContactID {
@@ -1933,6 +1906,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ContactPreferenceTVTypeText.
+        /// </summary>
+        public static string ContactPreferenceTVTypeText {
+            get {
+                return ResourceManager.GetString("ContactPreferenceTVTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ContactSamplingPlanner_ProvincesTVItemID.
         /// </summary>
         public static string ContactSamplingPlanner_ProvincesTVItemID {
@@ -1983,15 +1965,6 @@ namespace CSSPModels.Resources {
         public static string ContactShortcut {
             get {
                 return ResourceManager.GetString("ContactShortcut", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactShortcutContact.
-        /// </summary>
-        public static string ContactShortcutContact {
-            get {
-                return ResourceManager.GetString("ContactShortcutContact", resourceCulture);
             }
         }
         
@@ -2275,6 +2248,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CSSPWQInputParamCSSPWQInputTypeText.
+        /// </summary>
+        public static string CSSPWQInputParamCSSPWQInputTypeText {
+            get {
+                return ResourceManager.GetString("CSSPWQInputParamCSSPWQInputTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CSSPWQInputParamDailyDuplicateMWQMSiteList.
         /// </summary>
         public static string CSSPWQInputParamDailyDuplicateMWQMSiteList {
@@ -2383,6 +2365,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to DataPathOfTideWebTideDataSetText.
+        /// </summary>
+        public static string DataPathOfTideWebTideDataSetText {
+            get {
+                return ResourceManager.GetString("DataPathOfTideWebTideDataSetText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to DBTable.
         /// </summary>
         public static string DBTable {
@@ -2446,6 +2437,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to DocTemplateLanguageText.
+        /// </summary>
+        public static string DocTemplateLanguageText {
+            get {
+                return ResourceManager.GetString("DocTemplateLanguageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to DocTemplateLastUpdateContactTVItemID.
         /// </summary>
         public static string DocTemplateLastUpdateContactTVItemID {
@@ -2464,15 +2464,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DocTemplateTVFileTVItem.
-        /// </summary>
-        public static string DocTemplateTVFileTVItem {
-            get {
-                return ResourceManager.GetString("DocTemplateTVFileTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to DocTemplateTVFileTVItemID.
         /// </summary>
         public static string DocTemplateTVFileTVItemID {
@@ -2487,6 +2478,15 @@ namespace CSSPModels.Resources {
         public static string DocTemplateTVType {
             get {
                 return ResourceManager.GetString("DocTemplateTVType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DocTemplateTVTypeText.
+        /// </summary>
+        public static string DocTemplateTVTypeText {
+            get {
+                return ResourceManager.GetString("DocTemplateTVTypeText", resourceCulture);
             }
         }
         
@@ -2680,15 +2680,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EmailDistributionListContactEmailDistributionList.
-        /// </summary>
-        public static string EmailDistributionListContactEmailDistributionList {
-            get {
-                return ResourceManager.GetString("EmailDistributionListContactEmailDistributionList", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to EmailDistributionListContactEmailDistributionListContactID.
         /// </summary>
         public static string EmailDistributionListContactEmailDistributionListContactID {
@@ -2770,29 +2761,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EmailDistributionListCountryTVItem.
-        /// </summary>
-        public static string EmailDistributionListCountryTVItem {
-            get {
-                return ResourceManager.GetString("EmailDistributionListCountryTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to EmailDistributionListCountryTVItemID.
         /// </summary>
         public static string EmailDistributionListCountryTVItemID {
             get {
                 return ResourceManager.GetString("EmailDistributionListCountryTVItemID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to EmailDistributionListEmailDistributionListContacts.
-        /// </summary>
-        public static string EmailDistributionListEmailDistributionListContacts {
-            get {
-                return ResourceManager.GetString("EmailDistributionListEmailDistributionListContacts", resourceCulture);
             }
         }
         
@@ -2860,15 +2833,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EmailEmailTVItem.
-        /// </summary>
-        public static string EmailEmailTVItem {
-            get {
-                return ResourceManager.GetString("EmailEmailTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to EmailEmailTVItemID.
         /// </summary>
         public static string EmailEmailTVItemID {
@@ -2883,6 +2847,15 @@ namespace CSSPModels.Resources {
         public static string EmailEmailType {
             get {
                 return ResourceManager.GetString("EmailEmailType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailEmailTypeText.
+        /// </summary>
+        public static string EmailEmailTypeText {
+            get {
+                return ResourceManager.GetString("EmailEmailTypeText", resourceCulture);
             }
         }
         
@@ -3031,15 +3004,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HydrometricDataValueHydrometricSite.
-        /// </summary>
-        public static string HydrometricDataValueHydrometricSite {
-            get {
-                return ResourceManager.GetString("HydrometricDataValueHydrometricSite", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to HydrometricDataValueHydrometricSiteID.
         /// </summary>
         public static string HydrometricDataValueHydrometricSiteID {
@@ -3081,6 +3045,15 @@ namespace CSSPModels.Resources {
         public static string HydrometricDataValueStorageDataType {
             get {
                 return ResourceManager.GetString("HydrometricDataValueStorageDataType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HydrometricDataValueStorageDataTypeText.
+        /// </summary>
+        public static string HydrometricDataValueStorageDataTypeText {
+            get {
+                return ResourceManager.GetString("HydrometricDataValueStorageDataTypeText", resourceCulture);
             }
         }
         
@@ -3148,15 +3121,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HydrometricSiteHydrometricDataValues.
-        /// </summary>
-        public static string HydrometricSiteHydrometricDataValues {
-            get {
-                return ResourceManager.GetString("HydrometricSiteHydrometricDataValues", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to HydrometricSiteHydrometricSiteID.
         /// </summary>
         public static string HydrometricSiteHydrometricSiteID {
@@ -3171,15 +3135,6 @@ namespace CSSPModels.Resources {
         public static string HydrometricSiteHydrometricSiteName {
             get {
                 return ResourceManager.GetString("HydrometricSiteHydrometricSiteName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to HydrometricSiteHydrometricSiteTVItem.
-        /// </summary>
-        public static string HydrometricSiteHydrometricSiteTVItem {
-            get {
-                return ResourceManager.GetString("HydrometricSiteHydrometricSiteTVItem", resourceCulture);
             }
         }
         
@@ -3247,15 +3202,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to HydrometricSiteRatingCurves.
-        /// </summary>
-        public static string HydrometricSiteRatingCurves {
-            get {
-                return ResourceManager.GetString("HydrometricSiteRatingCurves", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to HydrometricSiteRealTime.
         /// </summary>
         public static string HydrometricSiteRealTime {
@@ -3319,11 +3265,29 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to InfrastructureAerationTypeText.
+        /// </summary>
+        public static string InfrastructureAerationTypeText {
+            get {
+                return ResourceManager.GetString("InfrastructureAerationTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to InfrastructureAlarmSystemType.
         /// </summary>
         public static string InfrastructureAlarmSystemType {
             get {
                 return ResourceManager.GetString("InfrastructureAlarmSystemType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InfrastructureAlarmSystemTypeText.
+        /// </summary>
+        public static string InfrastructureAlarmSystemTypeText {
+            get {
+                return ResourceManager.GetString("InfrastructureAlarmSystemTypeText", resourceCulture);
             }
         }
         
@@ -3373,6 +3337,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to InfrastructureCollectionSystemTypeText.
+        /// </summary>
+        public static string InfrastructureCollectionSystemTypeText {
+            get {
+                return ResourceManager.GetString("InfrastructureCollectionSystemTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to InfrastructureDecayRate_per_day.
         /// </summary>
         public static string InfrastructureDecayRate_per_day {
@@ -3400,6 +3373,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to InfrastructureDisinfectionTypeText.
+        /// </summary>
+        public static string InfrastructureDisinfectionTypeText {
+            get {
+                return ResourceManager.GetString("InfrastructureDisinfectionTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to InfrastructureDistanceFromShore_m.
         /// </summary>
         public static string InfrastructureDistanceFromShore_m {
@@ -3414,6 +3396,15 @@ namespace CSSPModels.Resources {
         public static string InfrastructureFacilityType {
             get {
                 return ResourceManager.GetString("InfrastructureFacilityType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InfrastructureFacilityTypeText.
+        /// </summary>
+        public static string InfrastructureFacilityTypeText {
+            get {
+                return ResourceManager.GetString("InfrastructureFacilityTypeText", resourceCulture);
             }
         }
         
@@ -3454,24 +3445,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureInfrastructureLanguages.
-        /// </summary>
-        public static string InfrastructureInfrastructureLanguages {
-            get {
-                return ResourceManager.GetString("InfrastructureInfrastructureLanguages", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to InfrastructureInfrastructureTVItem.
-        /// </summary>
-        public static string InfrastructureInfrastructureTVItem {
-            get {
-                return ResourceManager.GetString("InfrastructureInfrastructureTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to InfrastructureInfrastructureTVItemID.
         /// </summary>
         public static string InfrastructureInfrastructureTVItemID {
@@ -3486,6 +3459,15 @@ namespace CSSPModels.Resources {
         public static string InfrastructureInfrastructureType {
             get {
                 return ResourceManager.GetString("InfrastructureInfrastructureType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InfrastructureInfrastructureTypeText.
+        /// </summary>
+        public static string InfrastructureInfrastructureTypeText {
+            get {
+                return ResourceManager.GetString("InfrastructureInfrastructureTypeText", resourceCulture);
             }
         }
         
@@ -3517,15 +3499,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to InfrastructureLanguageInfrastructure.
-        /// </summary>
-        public static string InfrastructureLanguageInfrastructure {
-            get {
-                return ResourceManager.GetString("InfrastructureLanguageInfrastructure", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to InfrastructureLanguageInfrastructureID.
         /// </summary>
         public static string InfrastructureLanguageInfrastructureID {
@@ -3553,6 +3526,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to InfrastructureLanguageLanguageText.
+        /// </summary>
+        public static string InfrastructureLanguageLanguageText {
+            get {
+                return ResourceManager.GetString("InfrastructureLanguageLanguageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to InfrastructureLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string InfrastructureLanguageLastUpdateContactTVItemID {
@@ -3576,6 +3558,15 @@ namespace CSSPModels.Resources {
         public static string InfrastructureLanguageTranslationStatus {
             get {
                 return ResourceManager.GetString("InfrastructureLanguageTranslationStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InfrastructureLanguageTranslationStatusText.
+        /// </summary>
+        public static string InfrastructureLanguageTranslationStatusText {
+            get {
+                return ResourceManager.GetString("InfrastructureLanguageTranslationStatusText", resourceCulture);
             }
         }
         
@@ -3706,11 +3697,29 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to InfrastructurePreliminaryTreatmentTypeText.
+        /// </summary>
+        public static string InfrastructurePreliminaryTreatmentTypeText {
+            get {
+                return ResourceManager.GetString("InfrastructurePreliminaryTreatmentTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to InfrastructurePrimaryTreatmentType.
         /// </summary>
         public static string InfrastructurePrimaryTreatmentType {
             get {
                 return ResourceManager.GetString("InfrastructurePrimaryTreatmentType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InfrastructurePrimaryTreatmentTypeText.
+        /// </summary>
+        public static string InfrastructurePrimaryTreatmentTypeText {
+            get {
+                return ResourceManager.GetString("InfrastructurePrimaryTreatmentTypeText", resourceCulture);
             }
         }
         
@@ -3760,6 +3769,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to InfrastructureSecondaryTreatmentTypeText.
+        /// </summary>
+        public static string InfrastructureSecondaryTreatmentTypeText {
+            get {
+                return ResourceManager.GetString("InfrastructureSecondaryTreatmentTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to InfrastructureSeeOtherTVItemID.
         /// </summary>
         public static string InfrastructureSeeOtherTVItemID {
@@ -3805,6 +3823,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to InfrastructureTertiaryTreatmentTypeText.
+        /// </summary>
+        public static string InfrastructureTertiaryTreatmentTypeText {
+            get {
+                return ResourceManager.GetString("InfrastructureTertiaryTreatmentTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to InfrastructureTimeOffset_hour.
         /// </summary>
         public static string InfrastructureTimeOffset_hour {
@@ -3828,6 +3855,15 @@ namespace CSSPModels.Resources {
         public static string InfrastructureTreatmentType {
             get {
                 return ResourceManager.GetString("InfrastructureTreatmentType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InfrastructureTreatmentTypeText.
+        /// </summary>
+        public static string InfrastructureTreatmentTypeText {
+            get {
+                return ResourceManager.GetString("InfrastructureTreatmentTypeText", resourceCulture);
             }
         }
         
@@ -3918,6 +3954,15 @@ namespace CSSPModels.Resources {
         public static string LabSheetA1MeasurementSampleType {
             get {
                 return ResourceManager.GetString("LabSheetA1MeasurementSampleType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LabSheetA1MeasurementSampleTypeText.
+        /// </summary>
+        public static string LabSheetA1MeasurementSampleTypeText {
+            get {
+                return ResourceManager.GetString("LabSheetA1MeasurementSampleTypeText", resourceCulture);
             }
         }
         
@@ -4354,6 +4399,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to LabSheetA1SheetLabSheetTypeText.
+        /// </summary>
+        public static string LabSheetA1SheetLabSheetTypeText {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetLabSheetTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LabSheetA1SheetLog.
         /// </summary>
         public static string LabSheetA1SheetLog {
@@ -4597,11 +4651,29 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to LabSheetA1SheetSampleTypeText.
+        /// </summary>
+        public static string LabSheetA1SheetSampleTypeText {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetSampleTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LabSheetA1SheetSamplingPlanType.
         /// </summary>
         public static string LabSheetA1SheetSamplingPlanType {
             get {
                 return ResourceManager.GetString("LabSheetA1SheetSamplingPlanType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LabSheetA1SheetSamplingPlanTypeText.
+        /// </summary>
+        public static string LabSheetA1SheetSamplingPlanTypeText {
+            get {
+                return ResourceManager.GetString("LabSheetA1SheetSamplingPlanTypeText", resourceCulture);
             }
         }
         
@@ -4746,15 +4818,6 @@ namespace CSSPModels.Resources {
         public static string LabSheetA1SheetWaterBathCount {
             get {
                 return ResourceManager.GetString("LabSheetA1SheetWaterBathCount", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LabSheetAcceptedOrRejectedByContactTVItem.
-        /// </summary>
-        public static string LabSheetAcceptedOrRejectedByContactTVItem {
-            get {
-                return ResourceManager.GetString("LabSheetAcceptedOrRejectedByContactTVItem", resourceCulture);
             }
         }
         
@@ -5092,15 +5155,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetDetailLabSheet.
-        /// </summary>
-        public static string LabSheetDetailLabSheet {
-            get {
-                return ResourceManager.GetString("LabSheetDetailLabSheet", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to LabSheetDetailLabSheetDetailID.
         /// </summary>
         public static string LabSheetDetailLabSheetDetailID {
@@ -5115,15 +5169,6 @@ namespace CSSPModels.Resources {
         public static string LabSheetDetailLabSheetID {
             get {
                 return ResourceManager.GetString("LabSheetDetailLabSheetID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LabSheetDetailLabSheetTubeMPNDetails.
-        /// </summary>
-        public static string LabSheetDetailLabSheetTubeMPNDetails {
-            get {
-                return ResourceManager.GetString("LabSheetDetailLabSheetTubeMPNDetails", resourceCulture);
             }
         }
         
@@ -5290,29 +5335,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetDetailSamplingPlan.
-        /// </summary>
-        public static string LabSheetDetailSamplingPlan {
-            get {
-                return ResourceManager.GetString("LabSheetDetailSamplingPlan", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to LabSheetDetailSamplingPlanID.
         /// </summary>
         public static string LabSheetDetailSamplingPlanID {
             get {
                 return ResourceManager.GetString("LabSheetDetailSamplingPlanID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LabSheetDetailSubsectorTVItem.
-        /// </summary>
-        public static string LabSheetDetailSubsectorTVItem {
-            get {
-                return ResourceManager.GetString("LabSheetDetailSubsectorTVItem", resourceCulture);
             }
         }
         
@@ -5470,15 +5497,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetLabSheetDetails.
-        /// </summary>
-        public static string LabSheetLabSheetDetails {
-            get {
-                return ResourceManager.GetString("LabSheetLabSheetDetails", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to LabSheetLabSheetID.
         /// </summary>
         public static string LabSheetLabSheetID {
@@ -5497,11 +5515,29 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to LabSheetLabSheetStatusText.
+        /// </summary>
+        public static string LabSheetLabSheetStatusText {
+            get {
+                return ResourceManager.GetString("LabSheetLabSheetStatusText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LabSheetLabSheetType.
         /// </summary>
         public static string LabSheetLabSheetType {
             get {
                 return ResourceManager.GetString("LabSheetLabSheetType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LabSheetLabSheetTypeText.
+        /// </summary>
+        public static string LabSheetLabSheetTypeText {
+            get {
+                return ResourceManager.GetString("LabSheetLabSheetTypeText", resourceCulture);
             }
         }
         
@@ -5529,15 +5565,6 @@ namespace CSSPModels.Resources {
         public static string LabSheetMonth {
             get {
                 return ResourceManager.GetString("LabSheetMonth", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LabSheetMWQMRunTVItem.
-        /// </summary>
-        public static string LabSheetMWQMRunTVItem {
-            get {
-                return ResourceManager.GetString("LabSheetMWQMRunTVItem", resourceCulture);
             }
         }
         
@@ -5587,11 +5614,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetSamplingPlan.
+        ///   Looks up a localized string similar to LabSheetSampleTypeText.
         /// </summary>
-        public static string LabSheetSamplingPlan {
+        public static string LabSheetSampleTypeText {
             get {
-                return ResourceManager.GetString("LabSheetSamplingPlan", resourceCulture);
+                return ResourceManager.GetString("LabSheetSampleTypeText", resourceCulture);
             }
         }
         
@@ -5623,11 +5650,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LabSheetSubsectorTVItem.
+        ///   Looks up a localized string similar to LabSheetSamplingPlanTypeText.
         /// </summary>
-        public static string LabSheetSubsectorTVItem {
+        public static string LabSheetSamplingPlanTypeText {
             get {
-                return ResourceManager.GetString("LabSheetSubsectorTVItem", resourceCulture);
+                return ResourceManager.GetString("LabSheetSamplingPlanTypeText", resourceCulture);
             }
         }
         
@@ -5646,15 +5673,6 @@ namespace CSSPModels.Resources {
         public static string LabSheetTubeMPNDetail {
             get {
                 return ResourceManager.GetString("LabSheetTubeMPNDetail", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LabSheetTubeMPNDetailLabSheetDetail.
-        /// </summary>
-        public static string LabSheetTubeMPNDetailLabSheetDetail {
-            get {
-                return ResourceManager.GetString("LabSheetTubeMPNDetailLabSheetDetail", resourceCulture);
             }
         }
         
@@ -5700,15 +5718,6 @@ namespace CSSPModels.Resources {
         public static string LabSheetTubeMPNDetailMPN {
             get {
                 return ResourceManager.GetString("LabSheetTubeMPNDetailMPN", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LabSheetTubeMPNDetailMWQMSiteTVItem.
-        /// </summary>
-        public static string LabSheetTubeMPNDetailMWQMSiteTVItem {
-            get {
-                return ResourceManager.GetString("LabSheetTubeMPNDetailMWQMSiteTVItem", resourceCulture);
             }
         }
         
@@ -5763,6 +5772,15 @@ namespace CSSPModels.Resources {
         public static string LabSheetTubeMPNDetailSampleType {
             get {
                 return ResourceManager.GetString("LabSheetTubeMPNDetailSampleType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LabSheetTubeMPNDetailSampleTypeText.
+        /// </summary>
+        public static string LabSheetTubeMPNDetailSampleTypeText {
+            get {
+                return ResourceManager.GetString("LabSheetTubeMPNDetailSampleTypeText", resourceCulture);
             }
         }
         
@@ -6019,6 +6037,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to LogLogCommandText.
+        /// </summary>
+        public static string LogLogCommandText {
+            get {
+                return ResourceManager.GetString("LogLogCommandText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LogLogID.
         /// </summary>
         public static string LogLogID {
@@ -6109,20 +6136,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MapInfoMapInfoDrawTypeText.
+        /// </summary>
+        public static string MapInfoMapInfoDrawTypeText {
+            get {
+                return ResourceManager.GetString("MapInfoMapInfoDrawTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MapInfoMapInfoID.
         /// </summary>
         public static string MapInfoMapInfoID {
             get {
                 return ResourceManager.GetString("MapInfoMapInfoID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MapInfoMapInfoPoints.
-        /// </summary>
-        public static string MapInfoMapInfoPoints {
-            get {
-                return ResourceManager.GetString("MapInfoMapInfoPoints", resourceCulture);
             }
         }
         
@@ -6172,15 +6199,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MapInfoPointMapInfo.
-        /// </summary>
-        public static string MapInfoPointMapInfo {
-            get {
-                return ResourceManager.GetString("MapInfoPointMapInfo", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to MapInfoPointMapInfoID.
         /// </summary>
         public static string MapInfoPointMapInfoID {
@@ -6208,15 +6226,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MapInfoTVItem.
-        /// </summary>
-        public static string MapInfoTVItem {
-            get {
-                return ResourceManager.GetString("MapInfoTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to MapInfoTVItemID.
         /// </summary>
         public static string MapInfoTVItemID {
@@ -6231,6 +6240,15 @@ namespace CSSPModels.Resources {
         public static string MapInfoTVType {
             get {
                 return ResourceManager.GetString("MapInfoTVType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MapInfoTVTypeText.
+        /// </summary>
+        public static string MapInfoTVTypeText {
+            get {
+                return ResourceManager.GetString("MapInfoTVTypeText", resourceCulture);
             }
         }
         
@@ -6258,6 +6276,15 @@ namespace CSSPModels.Resources {
         public static string MapObjMapInfoDrawType {
             get {
                 return ResourceManager.GetString("MapObjMapInfoDrawType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MapObjMapInfoDrawTypeText.
+        /// </summary>
+        public static string MapObjMapInfoDrawTypeText {
+            get {
+                return ResourceManager.GetString("MapObjMapInfoDrawTypeText", resourceCulture);
             }
         }
         
@@ -6343,20 +6370,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MikeBoundaryConditionMikeBoundaryConditionLevelOrVelocityText.
+        /// </summary>
+        public static string MikeBoundaryConditionMikeBoundaryConditionLevelOrVelocityText {
+            get {
+                return ResourceManager.GetString("MikeBoundaryConditionMikeBoundaryConditionLevelOrVelocityText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MikeBoundaryConditionMikeBoundaryConditionName.
         /// </summary>
         public static string MikeBoundaryConditionMikeBoundaryConditionName {
             get {
                 return ResourceManager.GetString("MikeBoundaryConditionMikeBoundaryConditionName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MikeBoundaryConditionMikeBoundaryConditionTVItem.
-        /// </summary>
-        public static string MikeBoundaryConditionMikeBoundaryConditionTVItem {
-            get {
-                return ResourceManager.GetString("MikeBoundaryConditionMikeBoundaryConditionTVItem", resourceCulture);
             }
         }
         
@@ -6388,6 +6415,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MikeBoundaryConditionTVTypeText.
+        /// </summary>
+        public static string MikeBoundaryConditionTVTypeText {
+            get {
+                return ResourceManager.GetString("MikeBoundaryConditionTVTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MikeBoundaryConditionWebTideDataFromStartToEndDate.
         /// </summary>
         public static string MikeBoundaryConditionWebTideDataFromStartToEndDate {
@@ -6402,6 +6438,15 @@ namespace CSSPModels.Resources {
         public static string MikeBoundaryConditionWebTideDataSet {
             get {
                 return ResourceManager.GetString("MikeBoundaryConditionWebTideDataSet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MikeBoundaryConditionWebTideDataSetText.
+        /// </summary>
+        public static string MikeBoundaryConditionWebTideDataSetText {
+            get {
+                return ResourceManager.GetString("MikeBoundaryConditionWebTideDataSetText", resourceCulture);
             }
         }
         
@@ -6559,15 +6604,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeScenarioMikeScenarioTVItem.
-        /// </summary>
-        public static string MikeScenarioMikeScenarioTVItem {
-            get {
-                return ResourceManager.GetString("MikeScenarioMikeScenarioTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to MikeScenarioMikeScenarioTVItemID.
         /// </summary>
         public static string MikeScenarioMikeScenarioTVItemID {
@@ -6658,6 +6694,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MikeScenarioScenarioStatusText.
+        /// </summary>
+        public static string MikeScenarioScenarioStatusText {
+            get {
+                return ResourceManager.GetString("MikeScenarioScenarioStatusText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MikeScenarioWindDirection_deg.
         /// </summary>
         public static string MikeScenarioWindDirection_deg {
@@ -6739,24 +6784,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MikeSourceMikeSourceStartEnds.
-        /// </summary>
-        public static string MikeSourceMikeSourceStartEnds {
-            get {
-                return ResourceManager.GetString("MikeSourceMikeSourceStartEnds", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MikeSourceMikeSourceTVItem.
-        /// </summary>
-        public static string MikeSourceMikeSourceTVItem {
-            get {
-                return ResourceManager.GetString("MikeSourceMikeSourceTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to MikeSourceMikeSourceTVItemID.
         /// </summary>
         public static string MikeSourceMikeSourceTVItemID {
@@ -6807,15 +6834,6 @@ namespace CSSPModels.Resources {
         public static string MikeSourceStartEndLastUpdateDate_UTC {
             get {
                 return ResourceManager.GetString("MikeSourceStartEndLastUpdateDate_UTC", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MikeSourceStartEndMikeSource.
-        /// </summary>
-        public static string MikeSourceStartEndMikeSource {
-            get {
-                return ResourceManager.GetString("MikeSourceStartEndMikeSource", resourceCulture);
             }
         }
         
@@ -7009,6 +7027,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMRunAnalyzeMethodText.
+        /// </summary>
+        public static string MWQMRunAnalyzeMethodText {
+            get {
+                return ResourceManager.GetString("MWQMRunAnalyzeMethodText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMRunDateTime_Local.
         /// </summary>
         public static string MWQMRunDateTime_Local {
@@ -7063,6 +7090,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMRunLaboratoryText.
+        /// </summary>
+        public static string MWQMRunLaboratoryText {
+            get {
+                return ResourceManager.GetString("MWQMRunLaboratoryText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMRunLabReceivedDateTime_Local.
         /// </summary>
         public static string MWQMRunLabReceivedDateTime_Local {
@@ -7077,15 +7113,6 @@ namespace CSSPModels.Resources {
         public static string MWQMRunLabRunSampleApprovalDateTime_Local {
             get {
                 return ResourceManager.GetString("MWQMRunLabRunSampleApprovalDateTime_Local", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMRunLabSampleApprovalContactTVItem.
-        /// </summary>
-        public static string MWQMRunLabSampleApprovalContactTVItem {
-            get {
-                return ResourceManager.GetString("MWQMRunLabSampleApprovalContactTVItem", resourceCulture);
             }
         }
         
@@ -7117,6 +7144,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMRunLanguageLanguageText.
+        /// </summary>
+        public static string MWQMRunLanguageLanguageText {
+            get {
+                return ResourceManager.GetString("MWQMRunLanguageLanguageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMRunLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string MWQMRunLanguageLastUpdateContactTVItemID {
@@ -7131,15 +7167,6 @@ namespace CSSPModels.Resources {
         public static string MWQMRunLanguageLastUpdateDate_UTC {
             get {
                 return ResourceManager.GetString("MWQMRunLanguageLastUpdateDate_UTC", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMRunLanguageMWQMRun.
-        /// </summary>
-        public static string MWQMRunLanguageMWQMRun {
-            get {
-                return ResourceManager.GetString("MWQMRunLanguageMWQMRun", resourceCulture);
             }
         }
         
@@ -7189,11 +7216,29 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMRunLanguageTranslationStatusRunCommentText.
+        /// </summary>
+        public static string MWQMRunLanguageTranslationStatusRunCommentText {
+            get {
+                return ResourceManager.GetString("MWQMRunLanguageTranslationStatusRunCommentText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMRunLanguageTranslationStatusRunWeatherComment.
         /// </summary>
         public static string MWQMRunLanguageTranslationStatusRunWeatherComment {
             get {
                 return ResourceManager.GetString("MWQMRunLanguageTranslationStatusRunWeatherComment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMRunLanguageTranslationStatusRunWeatherCommentText.
+        /// </summary>
+        public static string MWQMRunLanguageTranslationStatusRunWeatherCommentText {
+            get {
+                return ResourceManager.GetString("MWQMRunLanguageTranslationStatusRunWeatherCommentText", resourceCulture);
             }
         }
         
@@ -7221,24 +7266,6 @@ namespace CSSPModels.Resources {
         public static string MWQMRunMWQMRunID {
             get {
                 return ResourceManager.GetString("MWQMRunMWQMRunID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMRunMWQMRunLanguages.
-        /// </summary>
-        public static string MWQMRunMWQMRunLanguages {
-            get {
-                return ResourceManager.GetString("MWQMRunMWQMRunLanguages", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMRunMWQMRunTVItem.
-        /// </summary>
-        public static string MWQMRunMWQMRunTVItem {
-            get {
-                return ResourceManager.GetString("MWQMRunMWQMRunTVItem", resourceCulture);
             }
         }
         
@@ -7378,6 +7405,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMRunRunSampleTypeText.
+        /// </summary>
+        public static string MWQMRunRunSampleTypeText {
+            get {
+                return ResourceManager.GetString("MWQMRunRunSampleTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMRunSampleCrewInitials.
         /// </summary>
         public static string MWQMRunSampleCrewInitials {
@@ -7396,11 +7432,29 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMRunSampleMatrixText.
+        /// </summary>
+        public static string MWQMRunSampleMatrixText {
+            get {
+                return ResourceManager.GetString("MWQMRunSampleMatrixText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMRunSampleStatus.
         /// </summary>
         public static string MWQMRunSampleStatus {
             get {
                 return ResourceManager.GetString("MWQMRunSampleStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMRunSampleStatusText.
+        /// </summary>
+        public static string MWQMRunSampleStatusText {
+            get {
+                return ResourceManager.GetString("MWQMRunSampleStatusText", resourceCulture);
             }
         }
         
@@ -7414,6 +7468,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMRunSeaStateAtEnd_BeaufortScaleText.
+        /// </summary>
+        public static string MWQMRunSeaStateAtEnd_BeaufortScaleText {
+            get {
+                return ResourceManager.GetString("MWQMRunSeaStateAtEnd_BeaufortScaleText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMRunSeaStateAtStart_BeaufortScale.
         /// </summary>
         public static string MWQMRunSeaStateAtStart_BeaufortScale {
@@ -7423,20 +7486,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMRunSeaStateAtStart_BeaufortScaleText.
+        /// </summary>
+        public static string MWQMRunSeaStateAtStart_BeaufortScaleText {
+            get {
+                return ResourceManager.GetString("MWQMRunSeaStateAtStart_BeaufortScaleText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMRunStartDateTime_Local.
         /// </summary>
         public static string MWQMRunStartDateTime_Local {
             get {
                 return ResourceManager.GetString("MWQMRunStartDateTime_Local", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMRunSubsectorTVItem.
-        /// </summary>
-        public static string MWQMRunSubsectorTVItem {
-            get {
-                return ResourceManager.GetString("MWQMRunSubsectorTVItem", resourceCulture);
             }
         }
         
@@ -7477,11 +7540,29 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMRunTide_EndText.
+        /// </summary>
+        public static string MWQMRunTide_EndText {
+            get {
+                return ResourceManager.GetString("MWQMRunTide_EndText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMRunTide_Start.
         /// </summary>
         public static string MWQMRunTide_Start {
             get {
                 return ResourceManager.GetString("MWQMRunTide_Start", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMRunTide_StartText.
+        /// </summary>
+        public static string MWQMRunTide_StartText {
+            get {
+                return ResourceManager.GetString("MWQMRunTide_StartText", resourceCulture);
             }
         }
         
@@ -7585,6 +7666,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMSampleLanguageLanguageText.
+        /// </summary>
+        public static string MWQMSampleLanguageLanguageText {
+            get {
+                return ResourceManager.GetString("MWQMSampleLanguageLanguageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMSampleLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string MWQMSampleLanguageLastUpdateContactTVItemID {
@@ -7599,15 +7689,6 @@ namespace CSSPModels.Resources {
         public static string MWQMSampleLanguageLastUpdateDate_UTC {
             get {
                 return ResourceManager.GetString("MWQMSampleLanguageLastUpdateDate_UTC", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSampleLanguageMWQMSample.
-        /// </summary>
-        public static string MWQMSampleLanguageMWQMSample {
-            get {
-                return ResourceManager.GetString("MWQMSampleLanguageMWQMSample", resourceCulture);
             }
         }
         
@@ -7648,6 +7729,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMSampleLanguageTranslationStatusText.
+        /// </summary>
+        public static string MWQMSampleLanguageTranslationStatusText {
+            get {
+                return ResourceManager.GetString("MWQMSampleLanguageTranslationStatusText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMSampleLastUpdateContactTVItemID.
         /// </summary>
         public static string MWQMSampleLastUpdateContactTVItemID {
@@ -7666,15 +7756,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSampleMWQMRunTVItem.
-        /// </summary>
-        public static string MWQMSampleMWQMRunTVItem {
-            get {
-                return ResourceManager.GetString("MWQMSampleMWQMRunTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to MWQMSampleMWQMRunTVItemID.
         /// </summary>
         public static string MWQMSampleMWQMRunTVItemID {
@@ -7689,24 +7770,6 @@ namespace CSSPModels.Resources {
         public static string MWQMSampleMWQMSampleID {
             get {
                 return ResourceManager.GetString("MWQMSampleMWQMSampleID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSampleMWQMSampleLanguages.
-        /// </summary>
-        public static string MWQMSampleMWQMSampleLanguages {
-            get {
-                return ResourceManager.GetString("MWQMSampleMWQMSampleLanguages", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSampleMWQMSiteTVItem.
-        /// </summary>
-        public static string MWQMSampleMWQMSiteTVItem {
-            get {
-                return ResourceManager.GetString("MWQMSampleMWQMSiteTVItem", resourceCulture);
             }
         }
         
@@ -7761,6 +7824,15 @@ namespace CSSPModels.Resources {
         public static string MWQMSampleSampleType_old {
             get {
                 return ResourceManager.GetString("MWQMSampleSampleType_old", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMSampleSampleType_oldText.
+        /// </summary>
+        public static string MWQMSampleSampleType_oldText {
+            get {
+                return ResourceManager.GetString("MWQMSampleSampleType_oldText", resourceCulture);
             }
         }
         
@@ -7864,20 +7936,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMSiteMWQMSiteLatestClassificationText.
+        /// </summary>
+        public static string MWQMSiteMWQMSiteLatestClassificationText {
+            get {
+                return ResourceManager.GetString("MWQMSiteMWQMSiteLatestClassificationText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMSiteMWQMSiteNumber.
         /// </summary>
         public static string MWQMSiteMWQMSiteNumber {
             get {
                 return ResourceManager.GetString("MWQMSiteMWQMSiteNumber", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteMWQMSiteTVItem.
-        /// </summary>
-        public static string MWQMSiteMWQMSiteTVItem {
-            get {
-                return ResourceManager.GetString("MWQMSiteMWQMSiteTVItem", resourceCulture);
             }
         }
         
@@ -8098,15 +8170,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSiteStartEndDateMWQMSiteTVItem.
-        /// </summary>
-        public static string MWQMSiteStartEndDateMWQMSiteTVItem {
-            get {
-                return ResourceManager.GetString("MWQMSiteStartEndDateMWQMSiteTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to MWQMSiteStartEndDateMWQMSiteTVItemID.
         /// </summary>
         public static string MWQMSiteStartEndDateMWQMSiteTVItemID {
@@ -8188,6 +8251,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageLanguageText.
+        /// </summary>
+        public static string MWQMSubsectorLanguageLanguageText {
+            get {
+                return ResourceManager.GetString("MWQMSubsectorLanguageLanguageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMSubsectorLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string MWQMSubsectorLanguageLastUpdateContactTVItemID {
@@ -8202,15 +8274,6 @@ namespace CSSPModels.Resources {
         public static string MWQMSubsectorLanguageLastUpdateDate_UTC {
             get {
                 return ResourceManager.GetString("MWQMSubsectorLanguageLastUpdateDate_UTC", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorLanguageMWQMSubsector.
-        /// </summary>
-        public static string MWQMSubsectorLanguageMWQMSubsector {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorLanguageMWQMSubsector", resourceCulture);
             }
         }
         
@@ -8251,6 +8314,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageTranslationStatusText.
+        /// </summary>
+        public static string MWQMSubsectorLanguageTranslationStatusText {
+            get {
+                return ResourceManager.GetString("MWQMSubsectorLanguageTranslationStatusText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMSubsectorLastUpdateContactTVItemID.
         /// </summary>
         public static string MWQMSubsectorLastUpdateContactTVItemID {
@@ -8274,24 +8346,6 @@ namespace CSSPModels.Resources {
         public static string MWQMSubsectorMWQMSubsectorID {
             get {
                 return ResourceManager.GetString("MWQMSubsectorMWQMSubsectorID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorMWQMSubsectorLanguages.
-        /// </summary>
-        public static string MWQMSubsectorMWQMSubsectorLanguages {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorMWQMSubsectorLanguages", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorMWQMSubsectorTVItem.
-        /// </summary>
-        public static string MWQMSubsectorMWQMSubsectorTVItem {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorMWQMSubsectorTVItem", resourceCulture);
             }
         }
         
@@ -8508,6 +8562,15 @@ namespace CSSPModels.Resources {
         public static string NewContactContactTitle {
             get {
                 return ResourceManager.GetString("NewContactContactTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NewContactContactTitleText.
+        /// </summary>
+        public static string NewContactContactTitleText {
+            get {
+                return ResourceManager.GetString("NewContactContactTitleText", resourceCulture);
             }
         }
         
@@ -8737,15 +8800,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceObservationContactTVItem.
-        /// </summary>
-        public static string PolSourceObservationContactTVItem {
-            get {
-                return ResourceManager.GetString("PolSourceObservationContactTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to PolSourceObservationContactTVItemID.
         /// </summary>
         public static string PolSourceObservationContactTVItemID {
@@ -8796,15 +8850,6 @@ namespace CSSPModels.Resources {
         public static string PolSourceObservationIssueOrdinal {
             get {
                 return ResourceManager.GetString("PolSourceObservationIssueOrdinal", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to PolSourceObservationIssuePolSourceObservation.
-        /// </summary>
-        public static string PolSourceObservationIssuePolSourceObservation {
-            get {
-                return ResourceManager.GetString("PolSourceObservationIssuePolSourceObservation", resourceCulture);
             }
         }
         
@@ -8872,24 +8917,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceObservationPolSourceObservationIssues.
-        /// </summary>
-        public static string PolSourceObservationPolSourceObservationIssues {
-            get {
-                return ResourceManager.GetString("PolSourceObservationPolSourceObservationIssues", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to PolSourceObservationPolSourceSite.
-        /// </summary>
-        public static string PolSourceObservationPolSourceSite {
-            get {
-                return ResourceManager.GetString("PolSourceObservationPolSourceSite", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to PolSourceObservationPolSourceSiteID.
         /// </summary>
         public static string PolSourceObservationPolSourceSiteID {
@@ -8922,6 +8949,24 @@ namespace CSSPModels.Resources {
         public static string PolSourceObsInfoChildPolSourceObsInfoChildStart {
             get {
                 return ResourceManager.GetString("PolSourceObsInfoChildPolSourceObsInfoChildStart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PolSourceObsInfoChildPolSourceObsInfoChildStartText.
+        /// </summary>
+        public static string PolSourceObsInfoChildPolSourceObsInfoChildStartText {
+            get {
+                return ResourceManager.GetString("PolSourceObsInfoChildPolSourceObsInfoChildStartText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PolSourceObsInfoChildPolSourceObsInfoText.
+        /// </summary>
+        public static string PolSourceObsInfoChildPolSourceObsInfoText {
+            get {
+                return ResourceManager.GetString("PolSourceObsInfoChildPolSourceObsInfoText", resourceCulture);
             }
         }
         
@@ -8980,6 +9025,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PolSourceSiteInactiveReasonText.
+        /// </summary>
+        public static string PolSourceSiteInactiveReasonText {
+            get {
+                return ResourceManager.GetString("PolSourceSiteInactiveReasonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PolSourceSiteIsPointSource.
         /// </summary>
         public static string PolSourceSiteIsPointSource {
@@ -9016,29 +9070,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PolSourceSitePolSourceObservations.
-        /// </summary>
-        public static string PolSourceSitePolSourceObservations {
-            get {
-                return ResourceManager.GetString("PolSourceSitePolSourceObservations", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to PolSourceSitePolSourceSiteID.
         /// </summary>
         public static string PolSourceSitePolSourceSiteID {
             get {
                 return ResourceManager.GetString("PolSourceSitePolSourceSiteID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to PolSourceSitePolSourceSiteTVItem.
-        /// </summary>
-        public static string PolSourceSitePolSourceSiteTVItem {
-            get {
-                return ResourceManager.GetString("PolSourceSitePolSourceSiteTVItem", resourceCulture);
             }
         }
         
@@ -9259,15 +9295,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RatingCurveHydrometricSite.
-        /// </summary>
-        public static string RatingCurveHydrometricSite {
-            get {
-                return ResourceManager.GetString("RatingCurveHydrometricSite", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to RatingCurveHydrometricSiteID.
         /// </summary>
         public static string RatingCurveHydrometricSiteID {
@@ -9313,15 +9340,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RatingCurveRatingCurveValues.
-        /// </summary>
-        public static string RatingCurveRatingCurveValues {
-            get {
-                return ResourceManager.GetString("RatingCurveRatingCurveValues", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to RatingCurveValue.
         /// </summary>
         public static string RatingCurveValue {
@@ -9354,15 +9372,6 @@ namespace CSSPModels.Resources {
         public static string RatingCurveValueLastUpdateDate_UTC {
             get {
                 return ResourceManager.GetString("RatingCurveValueLastUpdateDate_UTC", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to RatingCurveValueRatingCurve.
-        /// </summary>
-        public static string RatingCurveValueRatingCurve {
-            get {
-                return ResourceManager.GetString("RatingCurveValueRatingCurve", resourceCulture);
             }
         }
         
@@ -9664,15 +9673,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanCreatorTVItem.
-        /// </summary>
-        public static string SamplingPlanCreatorTVItem {
-            get {
-                return ResourceManager.GetString("SamplingPlanCreatorTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to SamplingPlanCreatorTVItemID.
         /// </summary>
         public static string SamplingPlanCreatorTVItemID {
@@ -9718,29 +9718,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanLabSheetDetails.
-        /// </summary>
-        public static string SamplingPlanLabSheetDetails {
-            get {
-                return ResourceManager.GetString("SamplingPlanLabSheetDetails", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanLabSheets.
-        /// </summary>
-        public static string SamplingPlanLabSheets {
-            get {
-                return ResourceManager.GetString("SamplingPlanLabSheets", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to SamplingPlanLabSheetType.
         /// </summary>
         public static string SamplingPlanLabSheetType {
             get {
                 return ResourceManager.GetString("SamplingPlanLabSheetType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SamplingPlanLabSheetTypeText.
+        /// </summary>
+        public static string SamplingPlanLabSheetTypeText {
+            get {
+                return ResourceManager.GetString("SamplingPlanLabSheetTypeText", resourceCulture);
             }
         }
         
@@ -9763,15 +9754,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanProvinceTVItem.
-        /// </summary>
-        public static string SamplingPlanProvinceTVItem {
-            get {
-                return ResourceManager.GetString("SamplingPlanProvinceTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to SamplingPlanProvinceTVItemID.
         /// </summary>
         public static string SamplingPlanProvinceTVItemID {
@@ -9790,11 +9772,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSamplingPlanFileTVItem.
+        ///   Looks up a localized string similar to SamplingPlanSampleTypeText.
         /// </summary>
-        public static string SamplingPlanSamplingPlanFileTVItem {
+        public static string SamplingPlanSampleTypeText {
             get {
-                return ResourceManager.GetString("SamplingPlanSamplingPlanFileTVItem", resourceCulture);
+                return ResourceManager.GetString("SamplingPlanSampleTypeText", resourceCulture);
             }
         }
         
@@ -9826,20 +9808,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSamplingPlanSubsectors.
-        /// </summary>
-        public static string SamplingPlanSamplingPlanSubsectors {
-            get {
-                return ResourceManager.GetString("SamplingPlanSamplingPlanSubsectors", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to SamplingPlanSamplingPlanType.
         /// </summary>
         public static string SamplingPlanSamplingPlanType {
             get {
                 return ResourceManager.GetString("SamplingPlanSamplingPlanType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SamplingPlanSamplingPlanTypeText.
+        /// </summary>
+        public static string SamplingPlanSamplingPlanTypeText {
+            get {
+                return ResourceManager.GetString("SamplingPlanSamplingPlanTypeText", resourceCulture);
             }
         }
         
@@ -9871,15 +9853,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSubsectorSamplingPlan.
-        /// </summary>
-        public static string SamplingPlanSubsectorSamplingPlan {
-            get {
-                return ResourceManager.GetString("SamplingPlanSubsectorSamplingPlan", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to SamplingPlanSubsectorSamplingPlanID.
         /// </summary>
         public static string SamplingPlanSubsectorSamplingPlanID {
@@ -9894,15 +9867,6 @@ namespace CSSPModels.Resources {
         public static string SamplingPlanSubsectorSamplingPlanSubsectorID {
             get {
                 return ResourceManager.GetString("SamplingPlanSubsectorSamplingPlanSubsectorID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSubsectorSamplingPlanSubsectorSites.
-        /// </summary>
-        public static string SamplingPlanSubsectorSamplingPlanSubsectorSites {
-            get {
-                return ResourceManager.GetString("SamplingPlanSubsectorSamplingPlanSubsectorSites", resourceCulture);
             }
         }
         
@@ -9943,29 +9907,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSubsectorSiteMWQMSiteTVItem.
-        /// </summary>
-        public static string SamplingPlanSubsectorSiteMWQMSiteTVItem {
-            get {
-                return ResourceManager.GetString("SamplingPlanSubsectorSiteMWQMSiteTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to SamplingPlanSubsectorSiteMWQMSiteTVItemID.
         /// </summary>
         public static string SamplingPlanSubsectorSiteMWQMSiteTVItemID {
             get {
                 return ResourceManager.GetString("SamplingPlanSubsectorSiteMWQMSiteTVItemID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSubsectorSiteSamplingPlanSubsector.
-        /// </summary>
-        public static string SamplingPlanSubsectorSiteSamplingPlanSubsector {
-            get {
-                return ResourceManager.GetString("SamplingPlanSubsectorSiteSamplingPlanSubsector", resourceCulture);
             }
         }
         
@@ -9984,15 +9930,6 @@ namespace CSSPModels.Resources {
         public static string SamplingPlanSubsectorSiteSamplingPlanSubsectorSiteID {
             get {
                 return ResourceManager.GetString("SamplingPlanSubsectorSiteSamplingPlanSubsectorSiteID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SamplingPlanSubsectorSubsectorTVItem.
-        /// </summary>
-        public static string SamplingPlanSubsectorSubsectorTVItem {
-            get {
-                return ResourceManager.GetString("SamplingPlanSubsectorSubsectorTVItem", resourceCulture);
             }
         }
         
@@ -10051,6 +9988,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SearchTagAndTermsSearchTagText.
+        /// </summary>
+        public static string SearchTagAndTermsSearchTagText {
+            get {
+                return ResourceManager.GetString("SearchTagAndTermsSearchTagText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SearchTagAndTermsSearchTermList.
         /// </summary>
         public static string SearchTagAndTermsSearchTermList {
@@ -10096,15 +10042,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SpillInfrastructureTVItem.
-        /// </summary>
-        public static string SpillInfrastructureTVItem {
-            get {
-                return ResourceManager.GetString("SpillInfrastructureTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to SpillInfrastructureTVItemID.
         /// </summary>
         public static string SpillInfrastructureTVItemID {
@@ -10132,6 +10069,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SpillLanguageLanguageText.
+        /// </summary>
+        public static string SpillLanguageLanguageText {
+            get {
+                return ResourceManager.GetString("SpillLanguageLanguageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SpillLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string SpillLanguageLastUpdateContactTVItemID {
@@ -10146,15 +10092,6 @@ namespace CSSPModels.Resources {
         public static string SpillLanguageLastUpdateDate_UTC {
             get {
                 return ResourceManager.GetString("SpillLanguageLastUpdateDate_UTC", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SpillLanguageSpill.
-        /// </summary>
-        public static string SpillLanguageSpill {
-            get {
-                return ResourceManager.GetString("SpillLanguageSpill", resourceCulture);
             }
         }
         
@@ -10195,6 +10132,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SpillLanguageTranslationStatusText.
+        /// </summary>
+        public static string SpillLanguageTranslationStatusText {
+            get {
+                return ResourceManager.GetString("SpillLanguageTranslationStatusText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SpillLastUpdateContactTVItemID.
         /// </summary>
         public static string SpillLastUpdateContactTVItemID {
@@ -10213,15 +10159,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SpillMunicipalityTVItem.
-        /// </summary>
-        public static string SpillMunicipalityTVItem {
-            get {
-                return ResourceManager.GetString("SpillMunicipalityTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to SpillMunicipalityTVItemID.
         /// </summary>
         public static string SpillMunicipalityTVItemID {
@@ -10236,15 +10173,6 @@ namespace CSSPModels.Resources {
         public static string SpillSpillID {
             get {
                 return ResourceManager.GetString("SpillSpillID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SpillSpillLanguages.
-        /// </summary>
-        public static string SpillSpillLanguages {
-            get {
-                return ResourceManager.GetString("SpillSpillLanguages", resourceCulture);
             }
         }
         
@@ -10348,15 +10276,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TelTelTVItem.
-        /// </summary>
-        public static string TelTelTVItem {
-            get {
-                return ResourceManager.GetString("TelTelTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TelTelTVItemID.
         /// </summary>
         public static string TelTelTVItemID {
@@ -10371,6 +10290,15 @@ namespace CSSPModels.Resources {
         public static string TelTelType {
             get {
                 return ResourceManager.GetString("TelTelType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TelTelTypeText.
+        /// </summary>
+        public static string TelTelTypeText {
+            get {
+                return ResourceManager.GetString("TelTelTypeText", resourceCulture);
             }
         }
         
@@ -10438,11 +10366,29 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TideDataValueStorageDataTypeText.
+        /// </summary>
+        public static string TideDataValueStorageDataTypeText {
+            get {
+                return ResourceManager.GetString("TideDataValueStorageDataTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TideDataValueTideDataType.
         /// </summary>
         public static string TideDataValueTideDataType {
             get {
                 return ResourceManager.GetString("TideDataValueTideDataType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TideDataValueTideDataTypeText.
+        /// </summary>
+        public static string TideDataValueTideDataTypeText {
+            get {
+                return ResourceManager.GetString("TideDataValueTideDataTypeText", resourceCulture);
             }
         }
         
@@ -10465,11 +10411,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideDataValueTideSiteTVItem.
+        ///   Looks up a localized string similar to TideDataValueTideEndText.
         /// </summary>
-        public static string TideDataValueTideSiteTVItem {
+        public static string TideDataValueTideEndText {
             get {
-                return ResourceManager.GetString("TideDataValueTideSiteTVItem", resourceCulture);
+                return ResourceManager.GetString("TideDataValueTideEndText", resourceCulture);
             }
         }
         
@@ -10488,6 +10434,15 @@ namespace CSSPModels.Resources {
         public static string TideDataValueTideStart {
             get {
                 return ResourceManager.GetString("TideDataValueTideStart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TideDataValueTideStartText.
+        /// </summary>
+        public static string TideDataValueTideStartText {
+            get {
+                return ResourceManager.GetString("TideDataValueTideStartText", resourceCulture);
             }
         }
         
@@ -10618,15 +10573,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TideSiteTideSiteTVItem.
-        /// </summary>
-        public static string TideSiteTideSiteTVItem {
-            get {
-                return ResourceManager.GetString("TideSiteTideSiteTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TideSiteTideSiteTVItemID.
         /// </summary>
         public static string TideSiteTideSiteTVItemID {
@@ -10699,6 +10645,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TVFileFilePurposeText.
+        /// </summary>
+        public static string TVFileFilePurposeText {
+            get {
+                return ResourceManager.GetString("TVFileFilePurposeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TVFileFileSize_kb.
         /// </summary>
         public static string TVFileFileSize_kb {
@@ -10713,6 +10668,15 @@ namespace CSSPModels.Resources {
         public static string TVFileFileType {
             get {
                 return ResourceManager.GetString("TVFileFileType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVFileFileTypeText.
+        /// </summary>
+        public static string TVFileFileTypeText {
+            get {
+                return ResourceManager.GetString("TVFileFileTypeText", resourceCulture);
             }
         }
         
@@ -10753,6 +10717,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TVFileLanguageLanguageText.
+        /// </summary>
+        public static string TVFileLanguageLanguageText {
+            get {
+                return ResourceManager.GetString("TVFileLanguageLanguageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TVFileLanguageLastUpdateContactTVItemID.
         /// </summary>
         public static string TVFileLanguageLastUpdateContactTVItemID {
@@ -10771,6 +10744,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TVFileLanguageText.
+        /// </summary>
+        public static string TVFileLanguageText {
+            get {
+                return ResourceManager.GetString("TVFileLanguageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TVFileLanguageTranslationStatus.
         /// </summary>
         public static string TVFileLanguageTranslationStatus {
@@ -10780,11 +10762,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVFileLanguageTVFile.
+        ///   Looks up a localized string similar to TVFileLanguageTranslationStatusText.
         /// </summary>
-        public static string TVFileLanguageTVFile {
+        public static string TVFileLanguageTranslationStatusText {
             get {
-                return ResourceManager.GetString("TVFileLanguageTVFile", resourceCulture);
+                return ResourceManager.GetString("TVFileLanguageTranslationStatusText", resourceCulture);
             }
         }
         
@@ -10852,29 +10834,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TVFileTemplateTVTypeText.
+        /// </summary>
+        public static string TVFileTemplateTVTypeText {
+            get {
+                return ResourceManager.GetString("TVFileTemplateTVTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TVFileTVFileID.
         /// </summary>
         public static string TVFileTVFileID {
             get {
                 return ResourceManager.GetString("TVFileTVFileID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVFileTVFileLanguages.
-        /// </summary>
-        public static string TVFileTVFileLanguages {
-            get {
-                return ResourceManager.GetString("TVFileTVFileLanguages", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVFileTVFileTVItem.
-        /// </summary>
-        public static string TVFileTVFileTVItem {
-            get {
-                return ResourceManager.GetString("TVFileTVFileTVItem", resourceCulture);
             }
         }
         
@@ -10924,123 +10897,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemAddressesAddressTVItem.
-        /// </summary>
-        public static string TVItemAddressesAddressTVItem {
-            get {
-                return ResourceManager.GetString("TVItemAddressesAddressTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemAddressesCountryTVItem.
-        /// </summary>
-        public static string TVItemAddressesCountryTVItem {
-            get {
-                return ResourceManager.GetString("TVItemAddressesCountryTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemAddressesMunicipalityTVItem.
-        /// </summary>
-        public static string TVItemAddressesMunicipalityTVItem {
-            get {
-                return ResourceManager.GetString("TVItemAddressesMunicipalityTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemAddressesProvinceTVItem.
-        /// </summary>
-        public static string TVItemAddressesProvinceTVItem {
-            get {
-                return ResourceManager.GetString("TVItemAddressesProvinceTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemAppTasks.
-        /// </summary>
-        public static string TVItemAppTasks {
-            get {
-                return ResourceManager.GetString("TVItemAppTasks", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemBoxModels.
-        /// </summary>
-        public static string TVItemBoxModels {
-            get {
-                return ResourceManager.GetString("TVItemBoxModels", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemClimateSites.
-        /// </summary>
-        public static string TVItemClimateSites {
-            get {
-                return ResourceManager.GetString("TVItemClimateSites", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemContacts.
-        /// </summary>
-        public static string TVItemContacts {
-            get {
-                return ResourceManager.GetString("TVItemContacts", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemDocTemplates.
-        /// </summary>
-        public static string TVItemDocTemplates {
-            get {
-                return ResourceManager.GetString("TVItemDocTemplates", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemEmailDistributionLists.
-        /// </summary>
-        public static string TVItemEmailDistributionLists {
-            get {
-                return ResourceManager.GetString("TVItemEmailDistributionLists", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemEmails.
-        /// </summary>
-        public static string TVItemEmails {
-            get {
-                return ResourceManager.GetString("TVItemEmails", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemHydrometricSites.
-        /// </summary>
-        public static string TVItemHydrometricSites {
-            get {
-                return ResourceManager.GetString("TVItemHydrometricSites", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemInfrastructures.
-        /// </summary>
-        public static string TVItemInfrastructures {
-            get {
-                return ResourceManager.GetString("TVItemInfrastructures", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TVItemInfrastructureTypeTVItemLink.
         /// </summary>
         public static string TVItemInfrastructureTypeTVItemLink {
@@ -11064,6 +10920,15 @@ namespace CSSPModels.Resources {
         public static string TVItemInfrastructureTypeTVItemLinkInfrastructureType {
             get {
                 return ResourceManager.GetString("TVItemInfrastructureTypeTVItemLinkInfrastructureType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemInfrastructureTypeTVItemLinkInfrastructureTypeText.
+        /// </summary>
+        public static string TVItemInfrastructureTypeTVItemLinkInfrastructureTypeText {
+            get {
+                return ResourceManager.GetString("TVItemInfrastructureTypeTVItemLinkInfrastructureTypeText", resourceCulture);
             }
         }
         
@@ -11095,65 +10960,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemInverseParent.
-        /// </summary>
-        public static string TVItemInverseParent {
-            get {
-                return ResourceManager.GetString("TVItemInverseParent", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TVItemIsActive.
         /// </summary>
         public static string TVItemIsActive {
             get {
                 return ResourceManager.GetString("TVItemIsActive", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemLabSheetDetails.
-        /// </summary>
-        public static string TVItemLabSheetDetails {
-            get {
-                return ResourceManager.GetString("TVItemLabSheetDetails", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemLabSheetsAcceptedOrRejectedByContactTVItem.
-        /// </summary>
-        public static string TVItemLabSheetsAcceptedOrRejectedByContactTVItem {
-            get {
-                return ResourceManager.GetString("TVItemLabSheetsAcceptedOrRejectedByContactTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemLabSheetsMWQMRunTVItem.
-        /// </summary>
-        public static string TVItemLabSheetsMWQMRunTVItem {
-            get {
-                return ResourceManager.GetString("TVItemLabSheetsMWQMRunTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemLabSheetsSubsectorTVItem.
-        /// </summary>
-        public static string TVItemLabSheetsSubsectorTVItem {
-            get {
-                return ResourceManager.GetString("TVItemLabSheetsSubsectorTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemLabSheetTubeMPNDetails.
-        /// </summary>
-        public static string TVItemLabSheetTubeMPNDetails {
-            get {
-                return ResourceManager.GetString("TVItemLabSheetTubeMPNDetails", resourceCulture);
             }
         }
         
@@ -11172,6 +10983,15 @@ namespace CSSPModels.Resources {
         public static string TVItemLanguageLanguage {
             get {
                 return ResourceManager.GetString("TVItemLanguageLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemLanguageLanguageText.
+        /// </summary>
+        public static string TVItemLanguageLanguageText {
+            get {
+                return ResourceManager.GetString("TVItemLanguageLanguageText", resourceCulture);
             }
         }
         
@@ -11203,11 +11023,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemLanguageTVItem.
+        ///   Looks up a localized string similar to TVItemLanguageTranslationStatusText.
         /// </summary>
-        public static string TVItemLanguageTVItem {
+        public static string TVItemLanguageTranslationStatusText {
             get {
-                return ResourceManager.GetString("TVItemLanguageTVItem", resourceCulture);
+                return ResourceManager.GetString("TVItemLanguageTranslationStatusText", resourceCulture);
             }
         }
         
@@ -11275,15 +11095,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemLinkFromTVItem.
-        /// </summary>
-        public static string TVItemLinkFromTVItem {
-            get {
-                return ResourceManager.GetString("TVItemLinkFromTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TVItemLinkFromTVItemID.
         /// </summary>
         public static string TVItemLinkFromTVItemID {
@@ -11302,11 +11113,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemLinkInverseParentTVItemLink.
+        ///   Looks up a localized string similar to TVItemLinkFromTVTypeText.
         /// </summary>
-        public static string TVItemLinkInverseParentTVItemLink {
+        public static string TVItemLinkFromTVTypeText {
             get {
-                return ResourceManager.GetString("TVItemLinkInverseParentTVItemLink", resourceCulture);
+                return ResourceManager.GetString("TVItemLinkFromTVTypeText", resourceCulture);
             }
         }
         
@@ -11338,15 +11149,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemLinkParentTVItemLink.
-        /// </summary>
-        public static string TVItemLinkParentTVItemLink {
-            get {
-                return ResourceManager.GetString("TVItemLinkParentTVItemLink", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TVItemLinkParentTVItemLinkID.
         /// </summary>
         public static string TVItemLinkParentTVItemLinkID {
@@ -11365,15 +11167,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemLinkToTVItem.
-        /// </summary>
-        public static string TVItemLinkToTVItem {
-            get {
-                return ResourceManager.GetString("TVItemLinkToTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TVItemLinkToTVItemID.
         /// </summary>
         public static string TVItemLinkToTVItemID {
@@ -11388,6 +11181,15 @@ namespace CSSPModels.Resources {
         public static string TVItemLinkToTVType {
             get {
                 return ResourceManager.GetString("TVItemLinkToTVType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemLinkToTVTypeText.
+        /// </summary>
+        public static string TVItemLinkToTVTypeText {
+            get {
+                return ResourceManager.GetString("TVItemLinkToTVTypeText", resourceCulture);
             }
         }
         
@@ -11419,209 +11221,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemMapInfos.
-        /// </summary>
-        public static string TVItemMapInfos {
-            get {
-                return ResourceManager.GetString("TVItemMapInfos", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemMikeBoundaryConditions.
-        /// </summary>
-        public static string TVItemMikeBoundaryConditions {
-            get {
-                return ResourceManager.GetString("TVItemMikeBoundaryConditions", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemMikeScenarios.
-        /// </summary>
-        public static string TVItemMikeScenarios {
-            get {
-                return ResourceManager.GetString("TVItemMikeScenarios", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemMikeSources.
-        /// </summary>
-        public static string TVItemMikeSources {
-            get {
-                return ResourceManager.GetString("TVItemMikeSources", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemMWQMRunsLabSampleApprovalContactTVItem.
-        /// </summary>
-        public static string TVItemMWQMRunsLabSampleApprovalContactTVItem {
-            get {
-                return ResourceManager.GetString("TVItemMWQMRunsLabSampleApprovalContactTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemMWQMRunsMWQMRunTVItem.
-        /// </summary>
-        public static string TVItemMWQMRunsMWQMRunTVItem {
-            get {
-                return ResourceManager.GetString("TVItemMWQMRunsMWQMRunTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemMWQMRunsSubsectorTVItem.
-        /// </summary>
-        public static string TVItemMWQMRunsSubsectorTVItem {
-            get {
-                return ResourceManager.GetString("TVItemMWQMRunsSubsectorTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemMWQMSampleMWQMRunTVItem.
-        /// </summary>
-        public static string TVItemMWQMSampleMWQMRunTVItem {
-            get {
-                return ResourceManager.GetString("TVItemMWQMSampleMWQMRunTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemMWQMSampleMWQMSiteTVItem.
-        /// </summary>
-        public static string TVItemMWQMSampleMWQMSiteTVItem {
-            get {
-                return ResourceManager.GetString("TVItemMWQMSampleMWQMSiteTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemMWQMSites.
-        /// </summary>
-        public static string TVItemMWQMSites {
-            get {
-                return ResourceManager.GetString("TVItemMWQMSites", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemMWQMSiteStartEndDates.
-        /// </summary>
-        public static string TVItemMWQMSiteStartEndDates {
-            get {
-                return ResourceManager.GetString("TVItemMWQMSiteStartEndDates", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemMWQMSubsectors.
-        /// </summary>
-        public static string TVItemMWQMSubsectors {
-            get {
-                return ResourceManager.GetString("TVItemMWQMSubsectors", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemParent.
-        /// </summary>
-        public static string TVItemParent {
-            get {
-                return ResourceManager.GetString("TVItemParent", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TVItemParentID.
         /// </summary>
         public static string TVItemParentID {
             get {
                 return ResourceManager.GetString("TVItemParentID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemPolSourceObservationsContactTVItem.
-        /// </summary>
-        public static string TVItemPolSourceObservationsContactTVItem {
-            get {
-                return ResourceManager.GetString("TVItemPolSourceObservationsContactTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemPolSourceSites.
-        /// </summary>
-        public static string TVItemPolSourceSites {
-            get {
-                return ResourceManager.GetString("TVItemPolSourceSites", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemSamplingPlansCreatorTVItem.
-        /// </summary>
-        public static string TVItemSamplingPlansCreatorTVItem {
-            get {
-                return ResourceManager.GetString("TVItemSamplingPlansCreatorTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemSamplingPlansProvinceTVItem.
-        /// </summary>
-        public static string TVItemSamplingPlansProvinceTVItem {
-            get {
-                return ResourceManager.GetString("TVItemSamplingPlansProvinceTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemSamplingPlansSamplingPlanFileTVItem.
-        /// </summary>
-        public static string TVItemSamplingPlansSamplingPlanFileTVItem {
-            get {
-                return ResourceManager.GetString("TVItemSamplingPlansSamplingPlanFileTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemSamplingPlanSubsectors.
-        /// </summary>
-        public static string TVItemSamplingPlanSubsectors {
-            get {
-                return ResourceManager.GetString("TVItemSamplingPlanSubsectors", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemSamplingPlanSubsectorSites.
-        /// </summary>
-        public static string TVItemSamplingPlanSubsectorSites {
-            get {
-                return ResourceManager.GetString("TVItemSamplingPlanSubsectorSites", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemSpillsInfrastructureTVItem.
-        /// </summary>
-        public static string TVItemSpillsInfrastructureTVItem {
-            get {
-                return ResourceManager.GetString("TVItemSpillsInfrastructureTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemSpillsMunicipalityTVItem.
-        /// </summary>
-        public static string TVItemSpillsMunicipalityTVItem {
-            get {
-                return ResourceManager.GetString("TVItemSpillsMunicipalityTVItem", resourceCulture);
             }
         }
         
@@ -11662,15 +11266,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemStatTVItem.
-        /// </summary>
-        public static string TVItemStatTVItem {
-            get {
-                return ResourceManager.GetString("TVItemStatTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TVItemStatTVItemID.
         /// </summary>
         public static string TVItemStatTVItemID {
@@ -11694,6 +11289,15 @@ namespace CSSPModels.Resources {
         public static string TVItemStatTVType {
             get {
                 return ResourceManager.GetString("TVItemStatTVType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemStatTVTypeText.
+        /// </summary>
+        public static string TVItemStatTVTypeText {
+            get {
+                return ResourceManager.GetString("TVItemStatTVTypeText", resourceCulture);
             }
         }
         
@@ -11734,33 +11338,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemTels.
-        /// </summary>
-        public static string TVItemTels {
-            get {
-                return ResourceManager.GetString("TVItemTels", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemTideDataValues.
-        /// </summary>
-        public static string TVItemTideDataValues {
-            get {
-                return ResourceManager.GetString("TVItemTideDataValues", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemTideSites.
-        /// </summary>
-        public static string TVItemTideSites {
-            get {
-                return ResourceManager.GetString("TVItemTideSites", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TVItemTVAuth.
         /// </summary>
         public static string TVItemTVAuth {
@@ -11784,6 +11361,15 @@ namespace CSSPModels.Resources {
         public static string TVItemTVAuthTVAuth {
             get {
                 return ResourceManager.GetString("TVItemTVAuthTVAuth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemTVAuthTVAuthText.
+        /// </summary>
+        public static string TVItemTVAuthTVAuthText {
+            get {
+                return ResourceManager.GetString("TVItemTVAuthTVAuthText", resourceCulture);
             }
         }
         
@@ -11824,65 +11410,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemTVFiles.
-        /// </summary>
-        public static string TVItemTVFiles {
-            get {
-                return ResourceManager.GetString("TVItemTVFiles", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TVItemTVItemID.
         /// </summary>
         public static string TVItemTVItemID {
             get {
                 return ResourceManager.GetString("TVItemTVItemID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemTVItemLanguages.
-        /// </summary>
-        public static string TVItemTVItemLanguages {
-            get {
-                return ResourceManager.GetString("TVItemTVItemLanguages", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemTVItemLinksFromTVItem.
-        /// </summary>
-        public static string TVItemTVItemLinksFromTVItem {
-            get {
-                return ResourceManager.GetString("TVItemTVItemLinksFromTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemTVItemLinksToTVItem.
-        /// </summary>
-        public static string TVItemTVItemLinksToTVItem {
-            get {
-                return ResourceManager.GetString("TVItemTVItemLinksToTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemTVItemStats.
-        /// </summary>
-        public static string TVItemTVItemStats {
-            get {
-                return ResourceManager.GetString("TVItemTVItemStats", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemTVItemUserAuthorizationsContactTVItem.
-        /// </summary>
-        public static string TVItemTVItemUserAuthorizationsContactTVItem {
-            get {
-                return ResourceManager.GetString("TVItemTVItemUserAuthorizationsContactTVItem", resourceCulture);
             }
         }
         
@@ -11905,6 +11437,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TVItemTVText.
+        /// </summary>
+        public static string TVItemTVText {
+            get {
+                return ResourceManager.GetString("TVItemTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TVItemTVType.
         /// </summary>
         public static string TVItemTVType {
@@ -11914,29 +11455,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemTVTypeUserAuthorizations.
+        ///   Looks up a localized string similar to TVItemTVTypeText.
         /// </summary>
-        public static string TVItemTVTypeUserAuthorizations {
+        public static string TVItemTVTypeText {
             get {
-                return ResourceManager.GetString("TVItemTVTypeUserAuthorizations", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemUseOfSitesSiteTVItem.
-        /// </summary>
-        public static string TVItemUseOfSitesSiteTVItem {
-            get {
-                return ResourceManager.GetString("TVItemUseOfSitesSiteTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemUseOfSitesSubsectorTVItem.
-        /// </summary>
-        public static string TVItemUseOfSitesSubsectorTVItem {
-            get {
-                return ResourceManager.GetString("TVItemUseOfSitesSubsectorTVItem", resourceCulture);
+                return ResourceManager.GetString("TVItemTVTypeText", resourceCulture);
             }
         }
         
@@ -11946,15 +11469,6 @@ namespace CSSPModels.Resources {
         public static string TVItemUserAuthorization {
             get {
                 return ResourceManager.GetString("TVItemUserAuthorization", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TVItemUserAuthorizationContactTVItem.
-        /// </summary>
-        public static string TVItemUserAuthorizationContactTVItem {
-            get {
-                return ResourceManager.GetString("TVItemUserAuthorizationContactTVItem", resourceCulture);
             }
         }
         
@@ -11991,6 +11505,15 @@ namespace CSSPModels.Resources {
         public static string TVItemUserAuthorizationTVAuth {
             get {
                 return ResourceManager.GetString("TVItemUserAuthorizationTVAuth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVItemUserAuthorizationTVAuthText.
+        /// </summary>
+        public static string TVItemUserAuthorizationTVAuthText {
+            get {
+                return ResourceManager.GetString("TVItemUserAuthorizationTVAuthText", resourceCulture);
             }
         }
         
@@ -12040,15 +11563,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVItemVPScenarios.
-        /// </summary>
-        public static string TVItemVPScenarios {
-            get {
-                return ResourceManager.GetString("TVItemVPScenarios", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TVLocation.
         /// </summary>
         public static string TVLocation {
@@ -12085,6 +11599,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TVLocationSubTVTypeText.
+        /// </summary>
+        public static string TVLocationSubTVTypeText {
+            get {
+                return ResourceManager.GetString("TVLocationSubTVTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TVLocationTVItemID.
         /// </summary>
         public static string TVLocationTVItemID {
@@ -12112,6 +11635,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TVLocationTVTypeText.
+        /// </summary>
+        public static string TVLocationTVTypeText {
+            get {
+                return ResourceManager.GetString("TVLocationTVTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TVTextLanguage.
         /// </summary>
         public static string TVTextLanguage {
@@ -12126,6 +11658,15 @@ namespace CSSPModels.Resources {
         public static string TVTextLanguageLanguage {
             get {
                 return ResourceManager.GetString("TVTextLanguageLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVTextLanguageLanguageText.
+        /// </summary>
+        public static string TVTextLanguageLanguageText {
+            get {
+                return ResourceManager.GetString("TVTextLanguageLanguageText", resourceCulture);
             }
         }
         
@@ -12184,15 +11725,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TVTypeUserAuthorizationContactTVItem.
-        /// </summary>
-        public static string TVTypeUserAuthorizationContactTVItem {
-            get {
-                return ResourceManager.GetString("TVTypeUserAuthorizationContactTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to TVTypeUserAuthorizationContactTVItemID.
         /// </summary>
         public static string TVTypeUserAuthorizationContactTVItemID {
@@ -12229,11 +11761,29 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TVTypeUserAuthorizationTVAuthText.
+        /// </summary>
+        public static string TVTypeUserAuthorizationTVAuthText {
+            get {
+                return ResourceManager.GetString("TVTypeUserAuthorizationTVAuthText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TVTypeUserAuthorizationTVType.
         /// </summary>
         public static string TVTypeUserAuthorizationTVType {
             get {
                 return ResourceManager.GetString("TVTypeUserAuthorizationTVType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVTypeUserAuthorizationTVTypeText.
+        /// </summary>
+        public static string TVTypeUserAuthorizationTVTypeText {
+            get {
+                return ResourceManager.GetString("TVTypeUserAuthorizationTVTypeText", resourceCulture);
             }
         }
         
@@ -12355,15 +11905,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to UseOfSiteSiteTVItem.
-        /// </summary>
-        public static string UseOfSiteSiteTVItem {
-            get {
-                return ResourceManager.GetString("UseOfSiteSiteTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to UseOfSiteSiteTVItemID.
         /// </summary>
         public static string UseOfSiteSiteTVItemID {
@@ -12382,20 +11923,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to UseOfSiteSiteTypeText.
+        /// </summary>
+        public static string UseOfSiteSiteTypeText {
+            get {
+                return ResourceManager.GetString("UseOfSiteSiteTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to UseOfSiteStartYear.
         /// </summary>
         public static string UseOfSiteStartYear {
             get {
                 return ResourceManager.GetString("UseOfSiteStartYear", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to UseOfSiteSubsectorTVItem.
-        /// </summary>
-        public static string UseOfSiteSubsectorTVItem {
-            get {
-                return ResourceManager.GetString("UseOfSiteSubsectorTVItem", resourceCulture);
             }
         }
         
@@ -12607,15 +12148,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPAmbientVPScenario.
-        /// </summary>
-        public static string VPAmbientVPScenario {
-            get {
-                return ResourceManager.GetString("VPAmbientVPScenario", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to VPAmbientVPScenarioID.
         /// </summary>
         public static string VPAmbientVPScenarioID {
@@ -12747,15 +12279,6 @@ namespace CSSPModels.Resources {
         public static string VPResultVPResultID {
             get {
                 return ResourceManager.GetString("VPResultVPResultID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to VPResultVPScenario.
-        /// </summary>
-        public static string VPResultVPScenario {
-            get {
-                return ResourceManager.GetString("VPResultVPScenario", resourceCulture);
             }
         }
         
@@ -12949,15 +12472,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioInfrastructureTVItem.
-        /// </summary>
-        public static string VPScenarioInfrastructureTVItem {
-            get {
-                return ResourceManager.GetString("VPScenarioInfrastructureTVItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to VPScenarioInfrastructureTVItemID.
         /// </summary>
         public static string VPScenarioInfrastructureTVItemID {
@@ -12981,6 +12495,15 @@ namespace CSSPModels.Resources {
         public static string VPScenarioLanguageLanguage {
             get {
                 return ResourceManager.GetString("VPScenarioLanguageLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VPScenarioLanguageLanguageText.
+        /// </summary>
+        public static string VPScenarioLanguageLanguageText {
+            get {
+                return ResourceManager.GetString("VPScenarioLanguageLanguageText", resourceCulture);
             }
         }
         
@@ -13012,11 +12535,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioLanguageVPScenario.
+        ///   Looks up a localized string similar to VPScenarioLanguageTranslationStatusText.
         /// </summary>
-        public static string VPScenarioLanguageVPScenario {
+        public static string VPScenarioLanguageTranslationStatusText {
             get {
-                return ResourceManager.GetString("VPScenarioLanguageVPScenario", resourceCulture);
+                return ResourceManager.GetString("VPScenarioLanguageTranslationStatusText", resourceCulture);
             }
         }
         
@@ -13138,24 +12661,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioVPAmbients.
-        /// </summary>
-        public static string VPScenarioVPAmbients {
-            get {
-                return ResourceManager.GetString("VPScenarioVPAmbients", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to VPScenarioVPResults.
-        /// </summary>
-        public static string VPScenarioVPResults {
-            get {
-                return ResourceManager.GetString("VPScenarioVPResults", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to VPScenarioVPScenarioID.
         /// </summary>
         public static string VPScenarioVPScenarioID {
@@ -13165,20 +12670,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPScenarioVPScenarioLanguages.
-        /// </summary>
-        public static string VPScenarioVPScenarioLanguages {
-            get {
-                return ResourceManager.GetString("VPScenarioVPScenarioLanguages", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to VPScenarioVPScenarioStatus.
         /// </summary>
         public static string VPScenarioVPScenarioStatus {
             get {
                 return ResourceManager.GetString("VPScenarioVPScenarioStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VPScenarioVPScenarioStatusText.
+        /// </summary>
+        public static string VPScenarioVPScenarioStatusText {
+            get {
+                return ResourceManager.GetString("VPScenarioVPScenarioStatusText", resourceCulture);
             }
         }
     }

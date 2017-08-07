@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LabSheetDetail_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "LabSheet", "SamplingPlan", "SubsectorTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "LabSheetTubeMPNDetails",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(LabSheetDetail).GetProperties())
@@ -154,10 +154,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.LabSheetDetailIntertechReadAcceptable);
                Assert.IsNotNull(ModelsRes.LabSheetDetailLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.LabSheetDetailLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.LabSheetDetailLabSheetTubeMPNDetails);
-               Assert.IsNotNull(ModelsRes.LabSheetDetailLabSheet);
-               Assert.IsNotNull(ModelsRes.LabSheetDetailSamplingPlan);
-               Assert.IsNotNull(ModelsRes.LabSheetDetailSubsectorTVItem);
         }
         [TestMethod]
         public void LabSheetDetail_Every_Property_Has_Get_Set_Test()
@@ -357,21 +353,9 @@ namespace CSSPModels.Tests
                int val65 = 45;
                labSheetDetail.LastUpdateContactTVItemID = val65;
                Assert.AreEqual(val65, labSheetDetail.LastUpdateContactTVItemID);
-               ICollection<LabSheetTubeMPNDetail> val136 = new List<LabSheetTubeMPNDetail>();
-               labSheetDetail.LabSheetTubeMPNDetails = val136;
-               Assert.AreEqual(val136, labSheetDetail.LabSheetTubeMPNDetails);
-               LabSheet val137 = new LabSheet();
-               labSheetDetail.LabSheet = val137;
-               Assert.AreEqual(val137, labSheetDetail.LabSheet);
-               SamplingPlan val138 = new SamplingPlan();
-               labSheetDetail.SamplingPlan = val138;
-               Assert.AreEqual(val138, labSheetDetail.SamplingPlan);
-               TVItem val139 = new TVItem();
-               labSheetDetail.SubsectorTVItem = val139;
-               Assert.AreEqual(val139, labSheetDetail.SubsectorTVItem);
-               IEnumerable<ValidationResult> val210 = new List<ValidationResult>().AsEnumerable();
-               labSheetDetail.ValidationResults = val210;
-               Assert.AreEqual(val210, labSheetDetail.ValidationResults);
+               IEnumerable<ValidationResult> val198 = new List<ValidationResult>().AsEnumerable();
+               labSheetDetail.ValidationResults = val198;
+               Assert.AreEqual(val198, labSheetDetail.ValidationResults);
         }
     }
 }

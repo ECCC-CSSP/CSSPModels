@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int ClimateSiteID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.ClimateSite)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "4")]
         public int ClimateSiteTVItemID { get; set; }
         [Range(1, 100000)]
         public int ECDBID { get; set; }
@@ -55,11 +55,8 @@ namespace CSSPModels
         public bool? MonthlyNow { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<ClimateDataValue> ClimateDataValues { get; set; }
-        public virtual TVItem ClimateSiteTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
@@ -70,7 +67,7 @@ namespace CSSPModels
         #region Constructors
         public ClimateSite()
         {
-            ClimateDataValues = new HashSet<ClimateDataValue>();
+            // empty for now
         }
         #endregion Constructors
 

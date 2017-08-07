@@ -17,6 +17,10 @@ namespace CSSPModels
         public string Text { get; set; }
         [CSSPEnumType]
         public WebTideDataSetEnum WebTideDataSet { get; set; }
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "WebTideDataSetEnum", EnumType = "WebTideDataSet")]
+        public string WebTideDataSetText { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB

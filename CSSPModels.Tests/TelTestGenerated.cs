@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Tel_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TelID", "TelTVItemID", "TelNumber", "TelType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TelTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Tel).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Tel_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "TelTVItem",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -95,7 +95,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TelTelType);
                Assert.IsNotNull(ModelsRes.TelLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TelLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.TelTelTVItem);
+               Assert.IsNotNull(ModelsRes.TelTelTypeText);
         }
         [TestMethod]
         public void Tel_Every_Property_Has_Get_Set_Test()
@@ -118,9 +118,9 @@ namespace CSSPModels.Tests
                int val6 = 45;
                tel.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, tel.LastUpdateContactTVItemID);
-               TVItem val15 = new TVItem();
-               tel.TelTVItem = val15;
-               Assert.AreEqual(val15, tel.TelTVItem);
+               string val7 = "Some text";
+               tel.TelTypeText = val7;
+               Assert.AreEqual(val7, tel.TelTypeText);
                IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
                tel.ValidationResults = val24;
                Assert.AreEqual(val24, tel.ValidationResults);

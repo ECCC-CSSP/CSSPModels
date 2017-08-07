@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MWQMSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSiteID", "MWQMSiteTVItemID", "MWQMSiteNumber", "MWQMSiteDescription", "MWQMSiteLatestClassification", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteLatestClassificationText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMSite).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMSite_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "MWQMSiteTVItem",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -97,7 +97,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMSiteOrdinal);
                Assert.IsNotNull(ModelsRes.MWQMSiteLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MWQMSiteLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.MWQMSiteMWQMSiteTVItem);
+               Assert.IsNotNull(ModelsRes.MWQMSiteMWQMSiteLatestClassificationText);
         }
         [TestMethod]
         public void MWQMSite_Every_Property_Has_Get_Set_Test()
@@ -126,9 +126,9 @@ namespace CSSPModels.Tests
                int val8 = 45;
                mWQMSite.LastUpdateContactTVItemID = val8;
                Assert.AreEqual(val8, mWQMSite.LastUpdateContactTVItemID);
-               TVItem val19 = new TVItem();
-               mWQMSite.MWQMSiteTVItem = val19;
-               Assert.AreEqual(val19, mWQMSite.MWQMSiteTVItem);
+               string val9 = "Some text";
+               mWQMSite.MWQMSiteLatestClassificationText = val9;
+               Assert.AreEqual(val9, mWQMSite.MWQMSiteLatestClassificationText);
                IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
                mWQMSite.ValidationResults = val30;
                Assert.AreEqual(val30, mWQMSite.ValidationResults);

@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVLocation_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "TVItemID", "TVText", "TVType", "SubTVType", "MapObjList",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Error", "TVItemID", "TVText", "TVType", "SubTVType", "TVTypeText", "SubTVTypeText", "MapObjList",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -42,6 +42,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVLocationTVText);
                Assert.IsNotNull(ModelsRes.TVLocationTVType);
                Assert.IsNotNull(ModelsRes.TVLocationSubTVType);
+               Assert.IsNotNull(ModelsRes.TVLocationTVTypeText);
+               Assert.IsNotNull(ModelsRes.TVLocationSubTVTypeText);
                Assert.IsNotNull(ModelsRes.TVLocationMapObjList);
         }
         [TestMethod]
@@ -62,12 +64,18 @@ namespace CSSPModels.Tests
                TVTypeEnum val5 = (TVTypeEnum)3;
                tVLocation.SubTVType = val5;
                Assert.AreEqual(val5, tVLocation.SubTVType);
-               List<MapObj> val13 = new List<MapObj>();
-               tVLocation.MapObjList = val13;
-               Assert.AreEqual(val13, tVLocation.MapObjList);
-               IEnumerable<ValidationResult> val21 = new List<ValidationResult>().AsEnumerable();
-               tVLocation.ValidationResults = val21;
-               Assert.AreEqual(val21, tVLocation.ValidationResults);
+               string val6 = "Some text";
+               tVLocation.TVTypeText = val6;
+               Assert.AreEqual(val6, tVLocation.TVTypeText);
+               string val7 = "Some text";
+               tVLocation.SubTVTypeText = val7;
+               Assert.AreEqual(val7, tVLocation.SubTVTypeText);
+               List<MapObj> val17 = new List<MapObj>();
+               tVLocation.MapObjList = val17;
+               Assert.AreEqual(val17, tVLocation.MapObjList);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               tVLocation.ValidationResults = val27;
+               Assert.AreEqual(val27, tVLocation.ValidationResults);
         }
     }
 }

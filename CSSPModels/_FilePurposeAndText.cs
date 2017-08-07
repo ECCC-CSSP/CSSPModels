@@ -15,7 +15,9 @@ namespace CSSPModels
         #region Properties not in DB
         [CSSPEnumType]
         public FilePurposeEnum FilePurpose { get; set; }
-        [StringLength(200, MinimumLength = 1)]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "FilePurposeEnum", EnumType = "FilePurpose")]
         public string FilePurposeText { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

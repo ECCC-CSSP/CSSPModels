@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMSiteStartEndDate_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "MWQMSiteTVItem",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -95,7 +95,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMSiteStartEndDateEndDate);
                Assert.IsNotNull(ModelsRes.MWQMSiteStartEndDateLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MWQMSiteStartEndDateLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.MWQMSiteStartEndDateMWQMSiteTVItem);
         }
         [TestMethod]
         public void MWQMSiteStartEndDate_Every_Property_Has_Get_Set_Test()
@@ -118,12 +117,9 @@ namespace CSSPModels.Tests
                int val6 = 45;
                mWQMSiteStartEndDate.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, mWQMSiteStartEndDate.LastUpdateContactTVItemID);
-               TVItem val15 = new TVItem();
-               mWQMSiteStartEndDate.MWQMSiteTVItem = val15;
-               Assert.AreEqual(val15, mWQMSiteStartEndDate.MWQMSiteTVItem);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               mWQMSiteStartEndDate.ValidationResults = val24;
-               Assert.AreEqual(val24, mWQMSiteStartEndDate.ValidationResults);
+               IEnumerable<ValidationResult> val21 = new List<ValidationResult>().AsEnumerable();
+               mWQMSiteStartEndDate.ValidationResults = val21;
+               Assert.AreEqual(val21, mWQMSiteStartEndDate.ValidationResults);
         }
     }
 }

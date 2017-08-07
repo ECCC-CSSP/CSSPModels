@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void BoxModel_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "InfrastructureTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "BoxModelLanguages", "BoxModelResults",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(BoxModel).GetProperties())
@@ -103,9 +103,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.BoxModelFlowDuration_hour);
                Assert.IsNotNull(ModelsRes.BoxModelLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.BoxModelLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.BoxModelBoxModelLanguages);
-               Assert.IsNotNull(ModelsRes.BoxModelBoxModelResults);
-               Assert.IsNotNull(ModelsRes.BoxModelInfrastructureTVItem);
         }
         [TestMethod]
         public void BoxModel_Every_Property_Has_Get_Set_Test()
@@ -152,18 +149,9 @@ namespace CSSPModels.Tests
                int val14 = 45;
                boxModel.LastUpdateContactTVItemID = val14;
                Assert.AreEqual(val14, boxModel.LastUpdateContactTVItemID);
-               ICollection<BoxModelLanguage> val33 = new List<BoxModelLanguage>();
-               boxModel.BoxModelLanguages = val33;
-               Assert.AreEqual(val33, boxModel.BoxModelLanguages);
-               ICollection<BoxModelResult> val34 = new List<BoxModelResult>();
-               boxModel.BoxModelResults = val34;
-               Assert.AreEqual(val34, boxModel.BoxModelResults);
-               TVItem val35 = new TVItem();
-               boxModel.InfrastructureTVItem = val35;
-               Assert.AreEqual(val35, boxModel.InfrastructureTVItem);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>().AsEnumerable();
-               boxModel.ValidationResults = val54;
-               Assert.AreEqual(val54, boxModel.ValidationResults);
+               IEnumerable<ValidationResult> val45 = new List<ValidationResult>().AsEnumerable();
+               boxModel.ValidationResults = val45;
+               Assert.AreEqual(val45, boxModel.ValidationResults);
         }
     }
 }

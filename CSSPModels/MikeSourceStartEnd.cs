@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int MikeSourceStartEndID { get; set; }
-        [CSSPExist(TypeName = "MikeSource", Plurial = "s", FieldID = "MikeSourceID")]
+        [CSSPExist(ExistTypeName = "MikeSource", ExistPlurial = "s", ExistFieldID = "MikeSourceID")]
         public int MikeSourceID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime StartDateAndTime_Local { get; set; }
@@ -36,10 +36,8 @@ namespace CSSPModels
         public double SourceSalinityEnd_PSU { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual MikeSource MikeSource { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

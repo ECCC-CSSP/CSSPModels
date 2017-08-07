@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void SpillLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SpillLanguageID", "SpillID", "Language", "SpillComment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LanguageText", "TranslationStatusText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.SpillLanguage).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SpillLanguage_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "Spill",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -96,7 +96,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SpillLanguageTranslationStatus);
                Assert.IsNotNull(ModelsRes.SpillLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.SpillLanguageLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.SpillLanguageSpill);
+               Assert.IsNotNull(ModelsRes.SpillLanguageLanguageText);
+               Assert.IsNotNull(ModelsRes.SpillLanguageTranslationStatusText);
         }
         [TestMethod]
         public void SpillLanguage_Every_Property_Has_Get_Set_Test()
@@ -122,12 +123,15 @@ namespace CSSPModels.Tests
                int val7 = 45;
                spillLanguage.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, spillLanguage.LastUpdateContactTVItemID);
-               Spill val17 = new Spill();
-               spillLanguage.Spill = val17;
-               Assert.AreEqual(val17, spillLanguage.Spill);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               spillLanguage.ValidationResults = val27;
-               Assert.AreEqual(val27, spillLanguage.ValidationResults);
+               string val8 = "Some text";
+               spillLanguage.LanguageText = val8;
+               Assert.AreEqual(val8, spillLanguage.LanguageText);
+               string val9 = "Some text";
+               spillLanguage.TranslationStatusText = val9;
+               Assert.AreEqual(val9, spillLanguage.TranslationStatusText);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               spillLanguage.ValidationResults = val30;
+               Assert.AreEqual(val30, spillLanguage.ValidationResults);
         }
     }
 }

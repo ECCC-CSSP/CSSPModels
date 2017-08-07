@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void AppTask_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "AppTaskID", "TVItemID", "TVItemID2", "AppTaskCommand", "AppTaskStatus", "PercentCompleted", "Parameters", "Language", "StartDateTime_UTC", "EndDateTime_UTC", "EstimatedLength_second", "RemainingTime_second", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "AppTaskCommandText", "AppTaskStatusText", "LanguageText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.AppTask).GetProperties().OrderBy(c => c.Name))
@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void AppTask_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "TVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "AppTaskLanguages",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(AppTask).GetProperties())
@@ -103,8 +103,9 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.AppTaskRemainingTime_second);
                Assert.IsNotNull(ModelsRes.AppTaskLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.AppTaskLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.AppTaskAppTaskLanguages);
-               Assert.IsNotNull(ModelsRes.AppTaskTVItem);
+               Assert.IsNotNull(ModelsRes.AppTaskAppTaskCommandText);
+               Assert.IsNotNull(ModelsRes.AppTaskAppTaskStatusText);
+               Assert.IsNotNull(ModelsRes.AppTaskLanguageText);
         }
         [TestMethod]
         public void AppTask_Every_Property_Has_Get_Set_Test()
@@ -151,15 +152,18 @@ namespace CSSPModels.Tests
                int val14 = 45;
                appTask.LastUpdateContactTVItemID = val14;
                Assert.AreEqual(val14, appTask.LastUpdateContactTVItemID);
-               ICollection<AppTaskLanguage> val32 = new List<AppTaskLanguage>();
-               appTask.AppTaskLanguages = val32;
-               Assert.AreEqual(val32, appTask.AppTaskLanguages);
-               TVItem val33 = new TVItem();
-               appTask.TVItem = val33;
-               Assert.AreEqual(val33, appTask.TVItem);
-               IEnumerable<ValidationResult> val51 = new List<ValidationResult>().AsEnumerable();
-               appTask.ValidationResults = val51;
-               Assert.AreEqual(val51, appTask.ValidationResults);
+               string val15 = "Some text";
+               appTask.AppTaskCommandText = val15;
+               Assert.AreEqual(val15, appTask.AppTaskCommandText);
+               string val16 = "Some text";
+               appTask.AppTaskStatusText = val16;
+               Assert.AreEqual(val16, appTask.AppTaskStatusText);
+               string val17 = "Some text";
+               appTask.LanguageText = val17;
+               Assert.AreEqual(val17, appTask.LanguageText);
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>().AsEnumerable();
+               appTask.ValidationResults = val54;
+               Assert.AreEqual(val54, appTask.ValidationResults);
         }
     }
 }

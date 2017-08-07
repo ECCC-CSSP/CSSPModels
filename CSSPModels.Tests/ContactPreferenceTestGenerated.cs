@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void ContactPreference_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactPreferenceID", "ContactID", "TVType", "MarkerSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TVTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ContactPreference).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ContactPreference_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "Contact",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -95,7 +95,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactPreferenceMarkerSize);
                Assert.IsNotNull(ModelsRes.ContactPreferenceLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.ContactPreferenceLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.ContactPreferenceContact);
+               Assert.IsNotNull(ModelsRes.ContactPreferenceTVTypeText);
         }
         [TestMethod]
         public void ContactPreference_Every_Property_Has_Get_Set_Test()
@@ -118,9 +118,9 @@ namespace CSSPModels.Tests
                int val6 = 45;
                contactPreference.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, contactPreference.LastUpdateContactTVItemID);
-               Contact val15 = new Contact();
-               contactPreference.Contact = val15;
-               Assert.AreEqual(val15, contactPreference.Contact);
+               string val7 = "Some text";
+               contactPreference.TVTypeText = val7;
+               Assert.AreEqual(val7, contactPreference.TVTypeText);
                IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
                contactPreference.ValidationResults = val24;
                Assert.AreEqual(val24, contactPreference.ValidationResults);

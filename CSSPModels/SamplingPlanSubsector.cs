@@ -11,18 +11,14 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int SamplingPlanSubsectorID { get; set; }
-        [CSSPExist(TypeName = "SamplingPlan", Plurial = "s", FieldID = "SamplingPlanID")]
+        [CSSPExist(ExistTypeName = "SamplingPlan", ExistPlurial = "s", ExistFieldID = "SamplingPlanID")]
         public int SamplingPlanID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Subsector)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "20")]
         public int SubsectorTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<SamplingPlanSubsectorSite> SamplingPlanSubsectorSites { get; set; }
-        public virtual SamplingPlan SamplingPlan { get; set; }
-        public virtual TVItem SubsectorTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
@@ -33,7 +29,7 @@ namespace CSSPModels
         #region Constructors
         public SamplingPlanSubsector()
         {
-            SamplingPlanSubsectorSites = new HashSet<SamplingPlanSubsectorSite>();
+            // empty for now
         }
         #endregion Constructors
 

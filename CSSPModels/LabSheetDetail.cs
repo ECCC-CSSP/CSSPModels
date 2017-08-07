@@ -11,11 +11,11 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int LabSheetDetailID { get; set; }
-        [CSSPExist(TypeName = "LabSheet", Plurial = "s", FieldID = "LabSheetID")]
+        [CSSPExist(ExistTypeName = "LabSheet", ExistPlurial = "s", ExistFieldID = "LabSheetID")]
         public int LabSheetID { get; set; }
-        [CSSPExist(TypeName = "LabSheet", Plurial = "s", FieldID = "LabSheetID")]
+        [CSSPExist(ExistTypeName = "LabSheet", ExistPlurial = "s", ExistFieldID = "LabSheetID")]
         public int SamplingPlanID { get; set; }
-        [CSSPExist(TypeName = "LabSheet", Plurial = "s", FieldID = "LabSheetID")]
+        [CSSPExist(ExistTypeName = "LabSheet", ExistPlurial = "s", ExistFieldID = "LabSheetID")]
         public int SubsectorTVItemID { get; set; }
         [Range(1, 5)]
         public int Version { get; set; }
@@ -164,13 +164,8 @@ namespace CSSPModels
         public bool? IntertechReadAcceptable { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<LabSheetTubeMPNDetail> LabSheetTubeMPNDetails { get; set; }
-        public virtual LabSheet LabSheet { get; set; }
-        public virtual SamplingPlan SamplingPlan { get; set; }
-        public virtual TVItem SubsectorTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
@@ -181,7 +176,7 @@ namespace CSSPModels
         #region Constructors
         public LabSheetDetail()
         {
-            LabSheetTubeMPNDetails = new HashSet<LabSheetTubeMPNDetail>();
+            // empty for now
         }
         #endregion Constructors
 

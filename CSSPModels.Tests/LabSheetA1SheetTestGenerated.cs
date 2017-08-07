@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LabSheetA1Sheet_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "Version", "SamplingPlanType", "SampleType", "LabSheetType", "SubsectorName", "SubsectorLocation", "SubsectorTVItemID", "RunYear", "RunMonth", "RunDay", "RunNumber", "Tides", "SampleCrewInitials", "IncubationStartSameDay", "WaterBathCount", "IncubationBath1StartTime", "IncubationBath2StartTime", "IncubationBath3StartTime", "IncubationBath1EndTime", "IncubationBath2EndTime", "IncubationBath3EndTime", "IncubationBath1TimeCalculated", "IncubationBath2TimeCalculated", "IncubationBath3TimeCalculated", "WaterBath1", "WaterBath2", "WaterBath3", "TCField1", "TCLab1", "TCHas2Coolers", "TCField2", "TCLab2", "TCFirst", "TCAverage", "ControlLot", "Positive35", "NonTarget35", "Negative35", "Bath1Positive44_5", "Bath2Positive44_5", "Bath3Positive44_5", "Bath1NonTarget44_5", "Bath2NonTarget44_5", "Bath3NonTarget44_5", "Bath1Negative44_5", "Bath2Negative44_5", "Bath3Negative44_5", "Blank35", "Bath1Blank44_5", "Bath2Blank44_5", "Bath3Blank44_5", "Lot35", "Lot44_5", "RunComment", "RunWeatherComment", "SampleBottleLotNumber", "SalinitiesReadBy", "SalinitiesReadYear", "SalinitiesReadMonth", "SalinitiesReadDay", "ResultsReadBy", "ResultsReadYear", "ResultsReadMonth", "ResultsReadDay", "ResultsRecordedBy", "ResultsRecordedYear", "ResultsRecordedMonth", "ResultsRecordedDay", "DailyDuplicateRLog", "DailyDuplicatePrecisionCriteria", "DailyDuplicateAcceptableOrUnacceptable", "IntertechDuplicateRLog", "IntertechDuplicatePrecisionCriteria", "IntertechDuplicateAcceptableOrUnacceptable", "IntertechReadAcceptableOrUnacceptable", "ApprovalYear", "ApprovalMonth", "ApprovalDay", "ApprovedBySupervisorInitials", "IncludeLaboratoryQAQC", "Log", "LabSheetA1MeasurementList",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Error", "Version", "SamplingPlanType", "SampleType", "LabSheetType", "SubsectorName", "SubsectorLocation", "SubsectorTVItemID", "RunYear", "RunMonth", "RunDay", "RunNumber", "Tides", "SampleCrewInitials", "IncubationStartSameDay", "WaterBathCount", "IncubationBath1StartTime", "IncubationBath2StartTime", "IncubationBath3StartTime", "IncubationBath1EndTime", "IncubationBath2EndTime", "IncubationBath3EndTime", "IncubationBath1TimeCalculated", "IncubationBath2TimeCalculated", "IncubationBath3TimeCalculated", "WaterBath1", "WaterBath2", "WaterBath3", "TCField1", "TCLab1", "TCHas2Coolers", "TCField2", "TCLab2", "TCFirst", "TCAverage", "ControlLot", "Positive35", "NonTarget35", "Negative35", "Bath1Positive44_5", "Bath2Positive44_5", "Bath3Positive44_5", "Bath1NonTarget44_5", "Bath2NonTarget44_5", "Bath3NonTarget44_5", "Bath1Negative44_5", "Bath2Negative44_5", "Bath3Negative44_5", "Blank35", "Bath1Blank44_5", "Bath2Blank44_5", "Bath3Blank44_5", "Lot35", "Lot44_5", "RunComment", "RunWeatherComment", "SampleBottleLotNumber", "SalinitiesReadBy", "SalinitiesReadYear", "SalinitiesReadMonth", "SalinitiesReadDay", "ResultsReadBy", "ResultsReadYear", "ResultsReadMonth", "ResultsReadDay", "ResultsRecordedBy", "ResultsRecordedYear", "ResultsRecordedMonth", "ResultsRecordedDay", "DailyDuplicateRLog", "DailyDuplicatePrecisionCriteria", "DailyDuplicateAcceptableOrUnacceptable", "IntertechDuplicateRLog", "IntertechDuplicatePrecisionCriteria", "IntertechDuplicateAcceptableOrUnacceptable", "IntertechReadAcceptableOrUnacceptable", "ApprovalYear", "ApprovalMonth", "ApprovalDay", "ApprovedBySupervisorInitials", "IncludeLaboratoryQAQC", "Log", "SamplingPlanTypeText", "SampleTypeText", "LabSheetTypeText", "LabSheetA1MeasurementList",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -119,6 +119,9 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.LabSheetA1SheetApprovedBySupervisorInitials);
                Assert.IsNotNull(ModelsRes.LabSheetA1SheetIncludeLaboratoryQAQC);
                Assert.IsNotNull(ModelsRes.LabSheetA1SheetLog);
+               Assert.IsNotNull(ModelsRes.LabSheetA1SheetSamplingPlanTypeText);
+               Assert.IsNotNull(ModelsRes.LabSheetA1SheetSampleTypeText);
+               Assert.IsNotNull(ModelsRes.LabSheetA1SheetLabSheetTypeText);
                Assert.IsNotNull(ModelsRes.LabSheetA1SheetLabSheetA1MeasurementList);
         }
         [TestMethod]
@@ -370,12 +373,21 @@ namespace CSSPModels.Tests
                string val82 = "Some text";
                labSheetA1Sheet.Log = val82;
                Assert.AreEqual(val82, labSheetA1Sheet.Log);
-               List<LabSheetA1Measurement> val167 = new List<LabSheetA1Measurement>();
-               labSheetA1Sheet.LabSheetA1MeasurementList = val167;
-               Assert.AreEqual(val167, labSheetA1Sheet.LabSheetA1MeasurementList);
-               IEnumerable<ValidationResult> val252 = new List<ValidationResult>().AsEnumerable();
-               labSheetA1Sheet.ValidationResults = val252;
-               Assert.AreEqual(val252, labSheetA1Sheet.ValidationResults);
+               string val83 = "Some text";
+               labSheetA1Sheet.SamplingPlanTypeText = val83;
+               Assert.AreEqual(val83, labSheetA1Sheet.SamplingPlanTypeText);
+               string val84 = "Some text";
+               labSheetA1Sheet.SampleTypeText = val84;
+               Assert.AreEqual(val84, labSheetA1Sheet.SampleTypeText);
+               string val85 = "Some text";
+               labSheetA1Sheet.LabSheetTypeText = val85;
+               Assert.AreEqual(val85, labSheetA1Sheet.LabSheetTypeText);
+               List<LabSheetA1Measurement> val173 = new List<LabSheetA1Measurement>();
+               labSheetA1Sheet.LabSheetA1MeasurementList = val173;
+               Assert.AreEqual(val173, labSheetA1Sheet.LabSheetA1MeasurementList);
+               IEnumerable<ValidationResult> val261 = new List<ValidationResult>().AsEnumerable();
+               labSheetA1Sheet.ValidationResults = val261;
+               Assert.AreEqual(val261, labSheetA1Sheet.ValidationResults);
         }
     }
 }

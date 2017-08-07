@@ -22,6 +22,14 @@ namespace CSSPModels
         public TVTypeEnum TVType { get; set; }
         [CSSPEnumType]
         public TVTypeEnum SubTVType { get; set; }
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
+        public string TVTypeText { get; set; }
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "SubTVType")]
+        public string SubTVTypeText { get; set; }
 
         public virtual List<MapObj> MapObjList { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

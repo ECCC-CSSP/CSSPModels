@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void EmailDistributionListContact_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "EmailDistributionList",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -102,7 +102,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.EmailDistributionListContactReopeningAllTypes);
                Assert.IsNotNull(ModelsRes.EmailDistributionListContactLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.EmailDistributionListContactLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.EmailDistributionListContactEmailDistributionList);
         }
         [TestMethod]
         public void EmailDistributionListContact_Every_Property_Has_Get_Set_Test()
@@ -146,12 +145,9 @@ namespace CSSPModels.Tests
                int val13 = 45;
                emailDistributionListContact.LastUpdateContactTVItemID = val13;
                Assert.AreEqual(val13, emailDistributionListContact.LastUpdateContactTVItemID);
-               EmailDistributionList val29 = new EmailDistributionList();
-               emailDistributionListContact.EmailDistributionList = val29;
-               Assert.AreEqual(val29, emailDistributionListContact.EmailDistributionList);
-               IEnumerable<ValidationResult> val45 = new List<ValidationResult>().AsEnumerable();
-               emailDistributionListContact.ValidationResults = val45;
-               Assert.AreEqual(val45, emailDistributionListContact.ValidationResults);
+               IEnumerable<ValidationResult> val42 = new List<ValidationResult>().AsEnumerable();
+               emailDistributionListContact.ValidationResults = val42;
+               Assert.AreEqual(val42, emailDistributionListContact.ValidationResults);
         }
     }
 }

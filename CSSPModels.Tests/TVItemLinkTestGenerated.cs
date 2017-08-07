@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TVItemLink_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemLinkID", "FromTVItemID", "ToTVItemID", "FromTVType", "ToTVType", "StartDateTime_Local", "EndDateTime_Local", "Ordinal", "TVLevel", "TVPath", "ParentTVItemLinkID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "FromTVTypeText", "ToTVTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVItemLink).GetProperties().OrderBy(c => c.Name))
@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVItemLink_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "FromTVItem", "ParentTVItemLink", "ToTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "InverseParentTVItemLink",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(TVItemLink).GetProperties())
@@ -102,10 +102,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemLinkParentTVItemLinkID);
                Assert.IsNotNull(ModelsRes.TVItemLinkLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TVItemLinkLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.TVItemLinkFromTVItem);
-               Assert.IsNotNull(ModelsRes.TVItemLinkParentTVItemLink);
-               Assert.IsNotNull(ModelsRes.TVItemLinkInverseParentTVItemLink);
-               Assert.IsNotNull(ModelsRes.TVItemLinkToTVItem);
+               Assert.IsNotNull(ModelsRes.TVItemLinkFromTVTypeText);
+               Assert.IsNotNull(ModelsRes.TVItemLinkToTVTypeText);
         }
         [TestMethod]
         public void TVItemLink_Every_Property_Has_Get_Set_Test()
@@ -149,21 +147,15 @@ namespace CSSPModels.Tests
                int val13 = 45;
                tVItemLink.LastUpdateContactTVItemID = val13;
                Assert.AreEqual(val13, tVItemLink.LastUpdateContactTVItemID);
-               TVItem val32 = new TVItem();
-               tVItemLink.FromTVItem = val32;
-               Assert.AreEqual(val32, tVItemLink.FromTVItem);
-               TVItemLink val33 = new TVItemLink();
-               tVItemLink.ParentTVItemLink = val33;
-               Assert.AreEqual(val33, tVItemLink.ParentTVItemLink);
-               ICollection<TVItemLink> val34 = new List<TVItemLink>();
-               tVItemLink.InverseParentTVItemLink = val34;
-               Assert.AreEqual(val34, tVItemLink.InverseParentTVItemLink);
-               TVItem val35 = new TVItem();
-               tVItemLink.ToTVItem = val35;
-               Assert.AreEqual(val35, tVItemLink.ToTVItem);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>().AsEnumerable();
-               tVItemLink.ValidationResults = val54;
-               Assert.AreEqual(val54, tVItemLink.ValidationResults);
+               string val14 = "Some text";
+               tVItemLink.FromTVTypeText = val14;
+               Assert.AreEqual(val14, tVItemLink.FromTVTypeText);
+               string val15 = "Some text";
+               tVItemLink.ToTVTypeText = val15;
+               Assert.AreEqual(val15, tVItemLink.ToTVTypeText);
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>().AsEnumerable();
+               tVItemLink.ValidationResults = val48;
+               Assert.AreEqual(val48, tVItemLink.ValidationResults);
         }
     }
 }

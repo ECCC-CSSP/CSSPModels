@@ -17,6 +17,14 @@ namespace CSSPModels
         public PolSourceObsInfoEnum PolSourceObsInfo { get; set; }
         [CSSPEnumType]
         public PolSourceObsInfoEnum PolSourceObsInfoChildStart { get; set; }
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "PolSourceObsInfoEnum", EnumType = "PolSourceObsInfo")]
+        public string PolSourceObsInfoText { get; set; }
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "PolSourceObsInfoEnum", EnumType = "PolSourceObsInfoChildStart")]
+        public string PolSourceObsInfoChildStartText { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB

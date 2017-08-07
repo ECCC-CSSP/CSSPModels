@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TVItemStat_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemStatID", "TVItemID", "TVType", "ChildCount", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TVTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVItemStat).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVItemStat_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "TVItem",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -95,7 +95,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemStatChildCount);
                Assert.IsNotNull(ModelsRes.TVItemStatLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TVItemStatLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.TVItemStatTVItem);
+               Assert.IsNotNull(ModelsRes.TVItemStatTVTypeText);
         }
         [TestMethod]
         public void TVItemStat_Every_Property_Has_Get_Set_Test()
@@ -118,9 +118,9 @@ namespace CSSPModels.Tests
                int val6 = 45;
                tVItemStat.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, tVItemStat.LastUpdateContactTVItemID);
-               TVItem val15 = new TVItem();
-               tVItemStat.TVItem = val15;
-               Assert.AreEqual(val15, tVItemStat.TVItem);
+               string val7 = "Some text";
+               tVItemStat.TVTypeText = val7;
+               Assert.AreEqual(val7, tVItemStat.TVTypeText);
                IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
                tVItemStat.ValidationResults = val24;
                Assert.AreEqual(val24, tVItemStat.ValidationResults);

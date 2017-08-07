@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void DocTemplate_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "DocTemplateID", "Language", "TVType", "TVFileTVItemID", "FileName", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LanguageText", "TVTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.DocTemplate).GetProperties().OrderBy(c => c.Name))
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void DocTemplate_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "TVFileTVItem",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -96,7 +96,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.DocTemplateFileName);
                Assert.IsNotNull(ModelsRes.DocTemplateLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.DocTemplateLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.DocTemplateTVFileTVItem);
+               Assert.IsNotNull(ModelsRes.DocTemplateLanguageText);
+               Assert.IsNotNull(ModelsRes.DocTemplateTVTypeText);
         }
         [TestMethod]
         public void DocTemplate_Every_Property_Has_Get_Set_Test()
@@ -122,12 +123,15 @@ namespace CSSPModels.Tests
                int val7 = 45;
                docTemplate.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, docTemplate.LastUpdateContactTVItemID);
-               TVItem val17 = new TVItem();
-               docTemplate.TVFileTVItem = val17;
-               Assert.AreEqual(val17, docTemplate.TVFileTVItem);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               docTemplate.ValidationResults = val27;
-               Assert.AreEqual(val27, docTemplate.ValidationResults);
+               string val8 = "Some text";
+               docTemplate.LanguageText = val8;
+               Assert.AreEqual(val8, docTemplate.LanguageText);
+               string val9 = "Some text";
+               docTemplate.TVTypeText = val9;
+               Assert.AreEqual(val9, docTemplate.TVTypeText);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               docTemplate.ValidationResults = val30;
+               Assert.AreEqual(val30, docTemplate.ValidationResults);
         }
     }
 }

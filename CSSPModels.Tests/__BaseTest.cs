@@ -49,16 +49,27 @@ namespace CSSPModels.Tests
             Assert.AreEqual(true, retBool);
 
             CSSPExistAttribute csspExistAttribute = new CSSPExistAttribute();
-            csspExistAttribute.TypeName = "Something";
-            Assert.AreEqual("Something", csspExistAttribute.TypeName);
-            csspExistAttribute.Plurial = "s";
-            Assert.AreEqual("s", csspExistAttribute.Plurial);
-            csspExistAttribute.FieldID = "Something";
-            Assert.AreEqual("Something", csspExistAttribute.FieldID);
-            csspExistAttribute.TVType = TVTypeEnum.Address;
-            Assert.AreEqual(TVTypeEnum.Address, csspExistAttribute.TVType);
-            csspExistAttribute.OrTVType = TVTypeEnum.Area;
-            Assert.AreEqual(TVTypeEnum.Area, csspExistAttribute.OrTVType);
+            csspExistAttribute.ExistTypeName = "Something";
+            Assert.AreEqual("Something", csspExistAttribute.ExistTypeName);
+            csspExistAttribute.ExistPlurial = "s";
+            Assert.AreEqual("s", csspExistAttribute.ExistPlurial);
+            csspExistAttribute.ExistFieldID = "Something";
+            Assert.AreEqual("Something", csspExistAttribute.ExistFieldID);
+            csspExistAttribute.AllowableTVTypeList = "2,9";
+            Assert.AreEqual("2,9", csspExistAttribute.AllowableTVTypeList);
+
+            CSSPFillAttribute csspFillAttribute = new CSSPFillAttribute();
+            csspFillAttribute.FillTypeName = "Something";
+            Assert.AreEqual("Something", csspFillAttribute.FillTypeName);
+            csspFillAttribute.FillPlurial = "Something";
+            Assert.AreEqual("Something", csspFillAttribute.FillPlurial);
+            csspFillAttribute.FillFieldID = "Something";
+            Assert.AreEqual("Something", csspFillAttribute.FillFieldID);
+            csspFillAttribute.FillEqualField = "Something";
+            Assert.AreEqual("Something", csspFillAttribute.FillEqualField);
+            csspFillAttribute.FillReturnField = "Something";
+            Assert.AreEqual("Something", csspFillAttribute.FillReturnField);
+
             retBool = csspExistAttribute.IsValid(new object());
             Assert.AreEqual(true, retBool);
 

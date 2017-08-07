@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int BoxModelID { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Infrastructure)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]
         public int InfrastructureTVItemID { get; set; }
         [Range(0.0D, 10000.0D)]
         public double Flow_m3_day { get; set; }
@@ -35,12 +35,8 @@ namespace CSSPModels
         public double FlowDuration_hour { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<BoxModelLanguage> BoxModelLanguages { get; set; }
-        public virtual ICollection<BoxModelResult> BoxModelResults { get; set; }
-        public virtual TVItem InfrastructureTVItem { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
@@ -51,9 +47,7 @@ namespace CSSPModels
         #region Constructors
         public BoxModel()
         {
-            BoxModelLanguages = new HashSet<BoxModelLanguage>();
-            BoxModelResults = new HashSet<BoxModelResult>();
-
+            // empty for now
         }
         #endregion Constructors
     }

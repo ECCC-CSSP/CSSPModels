@@ -17,6 +17,10 @@ namespace CSSPModels
         public int MapInfoID { get; set; }
         [CSSPEnumType]
         public MapInfoDrawTypeEnum MapInfoDrawType { get; set; } // 0 = point, 1 = polyline, 2 = polygon
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "MapInfoDrawTypeEnum", EnumType = "MapInfoDrawType")]
+        public string MapInfoDrawTypeText { get; set; }
 
         public virtual List<Coord> CoordList { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }

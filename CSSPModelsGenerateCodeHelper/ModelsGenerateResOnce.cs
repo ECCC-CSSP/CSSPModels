@@ -25,6 +25,10 @@ namespace CSSPModelsGenerateCodeHelper
 
             ResxTopPart(sb);
 
+            sb.AppendLine(@"<data name=""_IsRequired"" xml:space=""preserve"">");
+            sb.AppendLine(@"  <value>{0} is required</value>");
+            sb.AppendLine(@"</data>");
+
             var importAssembly = Assembly.LoadFile(fiDLL.FullName);
             Type[] types = importAssembly.GetTypes();
             foreach (Type type in types)

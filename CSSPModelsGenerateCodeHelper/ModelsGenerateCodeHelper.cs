@@ -1,6 +1,7 @@
 ﻿using CSSPEnums;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq;
@@ -243,29 +244,100 @@ namespace CSSPModelsGenerateCodeHelper
                 {
                     switch (customAttributeData.NamedArguments.ToArray()[i].MemberName)
                     {
-                        case "TypeName":
+                        case "ExistTypeName":
                             {
-                                csspProp.ObjectExistTypeName = ((string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                                csspProp.ExistTypeName = ((string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
                             }
                             break;
-                        case "Plurial":
+                        case "ExistPlurial":
                             {
-                                csspProp.ObjectExistPlurial = ((string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                                csspProp.ExistPlurial = ((string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
                             }
                             break;
-                        case "FieldID":
+                        case "ExistFieldID":
                             {
-                                csspProp.ObjectExistFieldID = ((string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                                csspProp.ExistFieldID = ((string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
                             }
                             break;
-                        case "TVType":
+                        case "AllowableTVTypeList":
                             {
-                                csspProp.TVType = ((TVTypeEnum)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                                csspProp.AllowableTVTypeList = new List<TVTypeEnum>();
+
+                                string tvTypes = (string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value;
+                                foreach (string TVType in tvTypes.Split(",".ToCharArray(), StringSplitOptions.RemoveEmptyEntries).ToList())
+                                {
+                                    csspProp.AllowableTVTypeList.Add(((TVTypeEnum)int.Parse(TVType)));
+                                }
                             }
                             break;
-                        case "OrTVType":
+                        default:
+                            csspProp.Error = "Property [" + csspProp.PropName + "] of type [" + csspProp.PropType + "] --- member name " + customAttributeData.NamedArguments.ToArray()[i].MemberName + " does not exist for CSSPExistAttribute";
+                            return false;
+                    }
+                }
+            }
+
+            if (propInfo.CustomAttributes.Where(c => c.AttributeType.Name == "CSSPFillAttribute").Any())
+            {
+                csspProp.HasCSSPFillAttribute = true;
+                CustomAttributeData customAttributeData = propInfo.CustomAttributes.Where(c => c.AttributeType.Name == "CSSPFillAttribute").First();
+                for (int i = 0, count = customAttributeData.NamedArguments.ToArray().Count(); i < count; i++)
+                {
+                    switch (customAttributeData.NamedArguments.ToArray()[i].MemberName)
+                    {
+                        case "FillTypeName":
                             {
-                                csspProp.OrTVType = ((TVTypeEnum)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                                csspProp.FillTypeName = ((string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                            }
+                            break;
+                        case "FillPlurial":
+                            {
+                                csspProp.FillPlurial = ((string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                            }
+                            break;
+                        case "FillFieldID":
+                            {
+                                csspProp.FillFieldID = ((string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                            }
+                            break;
+                        case "FillEqualField":
+                            {
+                                csspProp.FillEqualField = ((string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                            }
+                            break;
+                        case "FillReturnField":
+                            {
+                                csspProp.FillReturnField = ((string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                            }
+                            break;
+                        case "FillNeedLanguage":
+                            {
+                                csspProp.FillNeedLanguage = ((bool)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                            }
+                            break;
+                        default:
+                            csspProp.Error = "Property [" + csspProp.PropName + "] of type [" + csspProp.PropType + "] --- member name " + customAttributeData.NamedArguments.ToArray()[i].MemberName + " does not exist for CSSPExistAttribute";
+                            return false;
+                    }
+                }
+            }
+
+            if (propInfo.CustomAttributes.Where(c => c.AttributeType.Name == "CSSPEnumTypeTextAttribute").Any())
+            {
+                csspProp.HasCSSPEnumTypeTextAttribute = true;
+                CustomAttributeData customAttributeData = propInfo.CustomAttributes.Where(c => c.AttributeType.Name == "CSSPEnumTypeTextAttribute").First();
+                for (int i = 0, count = customAttributeData.NamedArguments.ToArray().Count(); i < count; i++)
+                {
+                    switch (customAttributeData.NamedArguments.ToArray()[i].MemberName)
+                    {
+                        case "EnumTypeName":
+                            {
+                                csspProp.EnumTypeName = ((string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
+                            }
+                            break;
+                        case "EnumType":
+                            {
+                                csspProp.EnumType = ((string)customAttributeData.NamedArguments.ToArray()[i].TypedValue.Value);
                             }
                             break;
                         default:
@@ -292,7 +364,9 @@ namespace CSSPModelsGenerateCodeHelper
                 || type.Name.StartsWith("CSSPAllowNull")
                 || type.Name.StartsWith("CSSPBigger")
                 || type.Name.StartsWith("CSSPEnumType")
-                || type.Name.StartsWith("CSSPExist"))
+                || type.Name.StartsWith("CSSPExist")
+                || type.Name.StartsWith("CSSPFill")
+                || type.Name.StartsWith("CSSPEnumTypeText"))
             {
                 return true;
             }
@@ -438,9 +512,9 @@ namespace CSSPModelsGenerateCodeHelper
             OtherField = "";
             Year = null;
             Compare = "";
-            ObjectExistTypeName = "";
-            ObjectExistPlurial = "";
-            ObjectExistFieldID = "";
+            ExistTypeName = "";
+            ExistPlurial = "";
+            ExistFieldID = "";
             dataType = DataType.Custom;
             IsVirtual = false;
             HasNotMappedAttribute = false;
@@ -449,14 +523,23 @@ namespace CSSPModelsGenerateCodeHelper
             HasCSSPBiggerAttribute = false;
             HasCSSPEnumTypeAttribute = false;
             HasCSSPExistAttribute = false;
+            HasCSSPFillAttribute = false;
             HasStringLengthAttribute = false;
             HasRangeAttribute = false;
             HasCompareAttribute = false;
             HasDataTypeAttribute = false;
-            TVType = TVTypeEnum.Error;
-            OrTVType = TVTypeEnum.Error;
+            AllowableTVTypeList = new List<TVTypeEnum>() { TVTypeEnum.Error };
             IsCollection = false;
             IsList = false;
+            FillTypeName = "";
+            FillPlurial = "";
+            FillFieldID = "";
+            FillEqualField = "";
+            FillReturnField = "";
+            HasCSSPEnumTypeTextAttribute = false;
+            EnumTypeName = "";
+            EnumType = "";
+            FillNeedLanguage = false;
         }
         public string Error { get; set; }
         public string PropName { get; set; }
@@ -468,9 +551,9 @@ namespace CSSPModelsGenerateCodeHelper
         public string OtherField { get; set; }
         public int? Year { get; set; }
         public string Compare { get; set; }
-        public string ObjectExistTypeName { get; set; }
-        public string ObjectExistPlurial { get; set; }
-        public string ObjectExistFieldID { get; set; }
+        public string ExistTypeName { get; set; }
+        public string ExistPlurial { get; set; }
+        public string ExistFieldID { get; set; }
         public DataType dataType { get; set; }
         public bool IsVirtual { get; set; }
         public bool HasNotMappedAttribute { get; set; }
@@ -479,14 +562,23 @@ namespace CSSPModelsGenerateCodeHelper
         public bool HasCSSPBiggerAttribute { get; set; }
         public bool HasCSSPEnumTypeAttribute { get; set; }
         public bool HasCSSPExistAttribute { get; set; }
+        public bool HasCSSPFillAttribute { get; set; }
         public bool HasStringLengthAttribute { get; set; }
         public bool HasRangeAttribute { get; set; }
         public bool HasCompareAttribute { get; set; }
         public bool HasDataTypeAttribute { get; set; }
-        public TVTypeEnum TVType { get; set; }
-        public TVTypeEnum OrTVType { get; set; }
+        public List<TVTypeEnum> AllowableTVTypeList { get; set; }
         public bool IsCollection { get; set; }
         public bool IsList { get; set; }
+        public string FillTypeName { get; set; }
+        public string FillPlurial { get; set; }
+        public string FillFieldID { get; set; }
+        public string FillEqualField { get; set; }
+        public string FillReturnField { get; set; }
+        public bool HasCSSPEnumTypeTextAttribute { get; set; }
+        public string EnumTypeName { get; set; }
+        public string EnumType { get; set; }
+        public bool FillNeedLanguage { get; set; }
     }
     #endregion Other Classes
 }

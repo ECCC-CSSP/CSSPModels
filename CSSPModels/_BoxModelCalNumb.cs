@@ -29,6 +29,10 @@ namespace CSSPModels
         public double CalWidth_m { get; set; }
         public bool FixLength { get; set; }
         public bool FixWidth { get; set; }
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "BoxModelResultTypeEnum", EnumType = "BoxModelResultType")]
+        public string BoxModelResultTypeText { get; set; }
 
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB

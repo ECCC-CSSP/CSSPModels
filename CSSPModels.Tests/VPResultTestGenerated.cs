@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void VPResult_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "VPScenario",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -99,7 +99,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.VPResultTravelTime_hour);
                Assert.IsNotNull(ModelsRes.VPResultLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.VPResultLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.VPResultVPScenario);
         }
         [TestMethod]
         public void VPResult_Every_Property_Has_Get_Set_Test()
@@ -134,12 +133,9 @@ namespace CSSPModels.Tests
                int val10 = 45;
                vPResult.LastUpdateContactTVItemID = val10;
                Assert.AreEqual(val10, vPResult.LastUpdateContactTVItemID);
-               VPScenario val23 = new VPScenario();
-               vPResult.VPScenario = val23;
-               Assert.AreEqual(val23, vPResult.VPScenario);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               vPResult.ValidationResults = val36;
-               Assert.AreEqual(val36, vPResult.ValidationResults);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               vPResult.ValidationResults = val33;
+               Assert.AreEqual(val33, vPResult.ValidationResults);
         }
     }
 }

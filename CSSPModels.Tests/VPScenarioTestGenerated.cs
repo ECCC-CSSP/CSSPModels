@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void VPScenario_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "VPScenarioID", "InfrastructureTVItemID", "VPScenarioStatus", "UseAsBestEstimate", "EffluentFlow_m3_s", "EffluentConcentration_MPN_100ml", "FroudeNumber", "PortDiameter_m", "PortDepth_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "NumberOfPorts", "PortSpacing_m", "AcuteMixZone_m", "ChronicMixZone_m", "EffluentSalinity_PSU", "EffluentTemperature_C", "EffluentVelocity_m_s", "RawResults", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "VPScenarioStatusText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.VPScenario).GetProperties().OrderBy(c => c.Name))
@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void VPScenario_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "InfrastructureTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "VPAmbients", "VPResults", "VPScenarioLanguages",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(VPScenario).GetProperties())
@@ -111,10 +111,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.VPScenarioRawResults);
                Assert.IsNotNull(ModelsRes.VPScenarioLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.VPScenarioLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.VPScenarioVPAmbients);
-               Assert.IsNotNull(ModelsRes.VPScenarioVPResults);
-               Assert.IsNotNull(ModelsRes.VPScenarioVPScenarioLanguages);
-               Assert.IsNotNull(ModelsRes.VPScenarioInfrastructureTVItem);
+               Assert.IsNotNull(ModelsRes.VPScenarioVPScenarioStatusText);
         }
         [TestMethod]
         public void VPScenario_Every_Property_Has_Get_Set_Test()
@@ -185,21 +182,12 @@ namespace CSSPModels.Tests
                int val22 = 45;
                vPScenario.LastUpdateContactTVItemID = val22;
                Assert.AreEqual(val22, vPScenario.LastUpdateContactTVItemID);
-               ICollection<VPAmbient> val50 = new List<VPAmbient>();
-               vPScenario.VPAmbients = val50;
-               Assert.AreEqual(val50, vPScenario.VPAmbients);
-               ICollection<VPResult> val51 = new List<VPResult>();
-               vPScenario.VPResults = val51;
-               Assert.AreEqual(val51, vPScenario.VPResults);
-               ICollection<VPScenarioLanguage> val52 = new List<VPScenarioLanguage>();
-               vPScenario.VPScenarioLanguages = val52;
-               Assert.AreEqual(val52, vPScenario.VPScenarioLanguages);
-               TVItem val53 = new TVItem();
-               vPScenario.InfrastructureTVItem = val53;
-               Assert.AreEqual(val53, vPScenario.InfrastructureTVItem);
-               IEnumerable<ValidationResult> val81 = new List<ValidationResult>().AsEnumerable();
-               vPScenario.ValidationResults = val81;
-               Assert.AreEqual(val81, vPScenario.ValidationResults);
+               string val23 = "Some text";
+               vPScenario.VPScenarioStatusText = val23;
+               Assert.AreEqual(val23, vPScenario.VPScenarioStatusText);
+               IEnumerable<ValidationResult> val72 = new List<ValidationResult>().AsEnumerable();
+               vPScenario.ValidationResults = val72;
+               Assert.AreEqual(val72, vPScenario.ValidationResults);
         }
     }
 }

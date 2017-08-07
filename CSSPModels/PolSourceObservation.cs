@@ -11,21 +11,17 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int PolSourceObservationID { get; set; }
-        [CSSPExist(TypeName = "PolSourceSite", Plurial = "s", FieldID = "PolSourceSiteID")]
+        [CSSPExist(ExistTypeName = "PolSourceSite", ExistPlurial = "s", ExistFieldID = "PolSourceSiteID")]
         public int PolSourceSiteID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime ObservationDate_Local { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int ContactTVItemID { get; set; }
         public string Observation_ToBeDeleted { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(TypeName = "TVItem", Plurial = "s", FieldID = "TVItemID", TVType = TVTypeEnum.Contact)]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
-
-        public virtual ICollection<PolSourceObservationIssue> PolSourceObservationIssues { get; set; }
-        public virtual TVItem ContactTVItem { get; set; }
-        public virtual PolSourceSite PolSourceSite { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
@@ -36,7 +32,7 @@ namespace CSSPModels
         #region Constructors
         public PolSourceObservation()
         {
-            PolSourceObservationIssues = new HashSet<PolSourceObservationIssue>();
+            // empty for now
         }
         #endregion Constructors
 

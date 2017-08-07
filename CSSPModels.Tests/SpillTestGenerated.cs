@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Spill_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "InfrastructureTVItem", "MunicipalityTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "SpillLanguages",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(Spill).GetProperties())
@@ -97,9 +97,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SpillAverageFlow_m3_day);
                Assert.IsNotNull(ModelsRes.SpillLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.SpillLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.SpillSpillLanguages);
-               Assert.IsNotNull(ModelsRes.SpillInfrastructureTVItem);
-               Assert.IsNotNull(ModelsRes.SpillMunicipalityTVItem);
         }
         [TestMethod]
         public void Spill_Every_Property_Has_Get_Set_Test()
@@ -128,18 +125,9 @@ namespace CSSPModels.Tests
                int val8 = 45;
                spill.LastUpdateContactTVItemID = val8;
                Assert.AreEqual(val8, spill.LastUpdateContactTVItemID);
-               ICollection<SpillLanguage> val21 = new List<SpillLanguage>();
-               spill.SpillLanguages = val21;
-               Assert.AreEqual(val21, spill.SpillLanguages);
-               TVItem val22 = new TVItem();
-               spill.InfrastructureTVItem = val22;
-               Assert.AreEqual(val22, spill.InfrastructureTVItem);
-               TVItem val23 = new TVItem();
-               spill.MunicipalityTVItem = val23;
-               Assert.AreEqual(val23, spill.MunicipalityTVItem);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               spill.ValidationResults = val36;
-               Assert.AreEqual(val36, spill.ValidationResults);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               spill.ValidationResults = val27;
+               Assert.AreEqual(val27, spill.ValidationResults);
         }
     }
 }

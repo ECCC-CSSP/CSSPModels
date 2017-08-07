@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVTextLanguage_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "TVText", "Language",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TVText", "Language", "LanguageText",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,6 +39,7 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.TVTextLanguageTVText);
                Assert.IsNotNull(ModelsRes.TVTextLanguageLanguage);
+               Assert.IsNotNull(ModelsRes.TVTextLanguageLanguageText);
         }
         [TestMethod]
         public void TVTextLanguage_Every_Property_Has_Get_Set_Test()
@@ -49,9 +50,12 @@ namespace CSSPModels.Tests
                LanguageEnum val2 = (LanguageEnum)3;
                tVTextLanguage.Language = val2;
                Assert.AreEqual(val2, tVTextLanguage.Language);
-               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
-               tVTextLanguage.ValidationResults = val9;
-               Assert.AreEqual(val9, tVTextLanguage.ValidationResults);
+               string val3 = "Some text";
+               tVTextLanguage.LanguageText = val3;
+               Assert.AreEqual(val3, tVTextLanguage.LanguageText);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               tVTextLanguage.ValidationResults = val12;
+               Assert.AreEqual(val12, tVTextLanguage.ValidationResults);
         }
     }
 }

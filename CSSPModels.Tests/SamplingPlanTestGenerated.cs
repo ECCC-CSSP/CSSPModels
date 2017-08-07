@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void SamplingPlan_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SamplingPlanID", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "SampleTypeText", "SamplingPlanTypeText", "LabSheetTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.SamplingPlan).GetProperties().OrderBy(c => c.Name))
@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SamplingPlan_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "CreatorTVItem", "ProvinceTVItem", "SamplingPlanFileTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "LabSheetDetails", "LabSheets", "SamplingPlanSubsectors",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(SamplingPlan).GetProperties())
@@ -106,12 +106,9 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SamplingPlanSamplingPlanFileTVItemID);
                Assert.IsNotNull(ModelsRes.SamplingPlanLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.SamplingPlanLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.SamplingPlanLabSheetDetails);
-               Assert.IsNotNull(ModelsRes.SamplingPlanLabSheets);
-               Assert.IsNotNull(ModelsRes.SamplingPlanSamplingPlanSubsectors);
-               Assert.IsNotNull(ModelsRes.SamplingPlanCreatorTVItem);
-               Assert.IsNotNull(ModelsRes.SamplingPlanProvinceTVItem);
-               Assert.IsNotNull(ModelsRes.SamplingPlanSamplingPlanFileTVItem);
+               Assert.IsNotNull(ModelsRes.SamplingPlanSampleTypeText);
+               Assert.IsNotNull(ModelsRes.SamplingPlanSamplingPlanTypeText);
+               Assert.IsNotNull(ModelsRes.SamplingPlanLabSheetTypeText);
         }
         [TestMethod]
         public void SamplingPlan_Every_Property_Has_Get_Set_Test()
@@ -167,27 +164,18 @@ namespace CSSPModels.Tests
                int val17 = 45;
                samplingPlan.LastUpdateContactTVItemID = val17;
                Assert.AreEqual(val17, samplingPlan.LastUpdateContactTVItemID);
-               ICollection<LabSheetDetail> val42 = new List<LabSheetDetail>();
-               samplingPlan.LabSheetDetails = val42;
-               Assert.AreEqual(val42, samplingPlan.LabSheetDetails);
-               ICollection<LabSheet> val43 = new List<LabSheet>();
-               samplingPlan.LabSheets = val43;
-               Assert.AreEqual(val43, samplingPlan.LabSheets);
-               ICollection<SamplingPlanSubsector> val44 = new List<SamplingPlanSubsector>();
-               samplingPlan.SamplingPlanSubsectors = val44;
-               Assert.AreEqual(val44, samplingPlan.SamplingPlanSubsectors);
-               TVItem val45 = new TVItem();
-               samplingPlan.CreatorTVItem = val45;
-               Assert.AreEqual(val45, samplingPlan.CreatorTVItem);
-               TVItem val46 = new TVItem();
-               samplingPlan.ProvinceTVItem = val46;
-               Assert.AreEqual(val46, samplingPlan.ProvinceTVItem);
-               TVItem val47 = new TVItem();
-               samplingPlan.SamplingPlanFileTVItem = val47;
-               Assert.AreEqual(val47, samplingPlan.SamplingPlanFileTVItem);
-               IEnumerable<ValidationResult> val72 = new List<ValidationResult>().AsEnumerable();
-               samplingPlan.ValidationResults = val72;
-               Assert.AreEqual(val72, samplingPlan.ValidationResults);
+               string val18 = "Some text";
+               samplingPlan.SampleTypeText = val18;
+               Assert.AreEqual(val18, samplingPlan.SampleTypeText);
+               string val19 = "Some text";
+               samplingPlan.SamplingPlanTypeText = val19;
+               Assert.AreEqual(val19, samplingPlan.SamplingPlanTypeText);
+               string val20 = "Some text";
+               samplingPlan.LabSheetTypeText = val20;
+               Assert.AreEqual(val20, samplingPlan.LabSheetTypeText);
+               IEnumerable<ValidationResult> val63 = new List<ValidationResult>().AsEnumerable();
+               samplingPlan.ValidationResults = val63;
+               Assert.AreEqual(val63, samplingPlan.ValidationResults);
         }
     }
 }

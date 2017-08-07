@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Contact_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactID", "Id", "ContactTVItemID", "LoginEmail", "FirstName", "LastName", "Initial", "WebName", "ContactTitle", "IsAdmin", "EmailValidated", "Disabled", "IsNew", "SamplingPlanner_ProvincesTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ParentTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "ParentTVItemID", "ContactTitleText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Contact).GetProperties().OrderBy(c => c.Name))
@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Contact_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "ContactTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "ContactLogins", "ContactPreferences", "ContactShortcuts",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(Contact).GetProperties())
@@ -105,11 +105,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactSamplingPlanner_ProvincesTVItemID);
                Assert.IsNotNull(ModelsRes.ContactLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.ContactLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.ContactContactLogins);
-               Assert.IsNotNull(ModelsRes.ContactContactPreferences);
-               Assert.IsNotNull(ModelsRes.ContactContactShortcuts);
-               Assert.IsNotNull(ModelsRes.ContactContactTVItem);
                Assert.IsNotNull(ModelsRes.ContactParentTVItemID);
+               Assert.IsNotNull(ModelsRes.ContactContactTitleText);
         }
         [TestMethod]
         public void Contact_Every_Property_Has_Get_Set_Test()
@@ -162,24 +159,15 @@ namespace CSSPModels.Tests
                int val16 = 45;
                contact.LastUpdateContactTVItemID = val16;
                Assert.AreEqual(val16, contact.LastUpdateContactTVItemID);
-               int val21 = 45;
-               contact.ParentTVItemID = val21;
-               Assert.AreEqual(val21, contact.ParentTVItemID);
-               ICollection<ContactLogin> val39 = new List<ContactLogin>();
-               contact.ContactLogins = val39;
-               Assert.AreEqual(val39, contact.ContactLogins);
-               ICollection<ContactPreference> val40 = new List<ContactPreference>();
-               contact.ContactPreferences = val40;
-               Assert.AreEqual(val40, contact.ContactPreferences);
-               ICollection<ContactShortcut> val41 = new List<ContactShortcut>();
-               contact.ContactShortcuts = val41;
-               Assert.AreEqual(val41, contact.ContactShortcuts);
-               TVItem val42 = new TVItem();
-               contact.ContactTVItem = val42;
-               Assert.AreEqual(val42, contact.ContactTVItem);
-               IEnumerable<ValidationResult> val66 = new List<ValidationResult>().AsEnumerable();
-               contact.ValidationResults = val66;
-               Assert.AreEqual(val66, contact.ValidationResults);
+               int val17 = 45;
+               contact.ParentTVItemID = val17;
+               Assert.AreEqual(val17, contact.ParentTVItemID);
+               string val18 = "Some text";
+               contact.ContactTitleText = val18;
+               Assert.AreEqual(val18, contact.ContactTitleText);
+               IEnumerable<ValidationResult> val57 = new List<ValidationResult>().AsEnumerable();
+               contact.ValidationResults = val57;
+               Assert.AreEqual(val57, contact.ValidationResults);
         }
     }
 }

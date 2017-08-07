@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MWQMRun_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMRunID", "SubsectorTVItemID", "MWQMRunTVItemID", "RunSampleType", "DateTime_Local", "RunNumber", "StartDateTime_Local", "EndDateTime_Local", "LabReceivedDateTime_Local", "TemperatureControl1_C", "TemperatureControl2_C", "SeaStateAtStart_BeaufortScale", "SeaStateAtEnd_BeaufortScale", "WaterLevelAtBrook_m", "WaveHightAtStart_m", "WaveHightAtEnd_m", "SampleCrewInitials", "AnalyzeMethod", "SampleMatrix", "Laboratory", "SampleStatus", "LabSampleApprovalContactTVItemID", "LabAnalyzeBath1IncubationStartDateTime_Local", "LabAnalyzeBath2IncubationStartDateTime_Local", "LabAnalyzeBath3IncubationStartDateTime_Local", "LabRunSampleApprovalDateTime_Local", "Tide_Start", "Tide_End", "RainDay0_mm", "RainDay1_mm", "RainDay2_mm", "RainDay3_mm", "RainDay4_mm", "RainDay5_mm", "RainDay6_mm", "RainDay7_mm", "RainDay8_mm", "RainDay9_mm", "RainDay10_mm", "RemoveFromStat", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "RunSampleTypeText", "SeaStateAtStart_BeaufortScaleText", "SeaStateAtEnd_BeaufortScaleText", "AnalyzeMethodText", "SampleMatrixText", "LaboratoryText", "SampleStatusText", "Tide_StartText", "Tide_EndText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMRun).GetProperties().OrderBy(c => c.Name))
@@ -53,8 +53,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMRun_Navigation_Test()
         {
-            List<string> foreignNameList = new List<string>() { "LabSampleApprovalContactTVItem", "MWQMRunTVItem", "SubsectorTVItem",  }.OrderBy(c => c).ToList();
-            List<string> foreignNameCollectionList = new List<string>() { "MWQMRunLanguages",  }.OrderBy(c => c).ToList();
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(MWQMRun).GetProperties())
@@ -131,10 +131,15 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMRunRemoveFromStat);
                Assert.IsNotNull(ModelsRes.MWQMRunLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MWQMRunLastUpdateContactTVItemID);
-               Assert.IsNotNull(ModelsRes.MWQMRunMWQMRunLanguages);
-               Assert.IsNotNull(ModelsRes.MWQMRunLabSampleApprovalContactTVItem);
-               Assert.IsNotNull(ModelsRes.MWQMRunMWQMRunTVItem);
-               Assert.IsNotNull(ModelsRes.MWQMRunSubsectorTVItem);
+               Assert.IsNotNull(ModelsRes.MWQMRunRunSampleTypeText);
+               Assert.IsNotNull(ModelsRes.MWQMRunSeaStateAtStart_BeaufortScaleText);
+               Assert.IsNotNull(ModelsRes.MWQMRunSeaStateAtEnd_BeaufortScaleText);
+               Assert.IsNotNull(ModelsRes.MWQMRunAnalyzeMethodText);
+               Assert.IsNotNull(ModelsRes.MWQMRunSampleMatrixText);
+               Assert.IsNotNull(ModelsRes.MWQMRunLaboratoryText);
+               Assert.IsNotNull(ModelsRes.MWQMRunSampleStatusText);
+               Assert.IsNotNull(ModelsRes.MWQMRunTide_StartText);
+               Assert.IsNotNull(ModelsRes.MWQMRunTide_EndText);
         }
         [TestMethod]
         public void MWQMRun_Every_Property_Has_Get_Set_Test()
@@ -265,21 +270,36 @@ namespace CSSPModels.Tests
                int val42 = 45;
                mWQMRun.LastUpdateContactTVItemID = val42;
                Assert.AreEqual(val42, mWQMRun.LastUpdateContactTVItemID);
-               ICollection<MWQMRunLanguage> val90 = new List<MWQMRunLanguage>();
-               mWQMRun.MWQMRunLanguages = val90;
-               Assert.AreEqual(val90, mWQMRun.MWQMRunLanguages);
-               TVItem val91 = new TVItem();
-               mWQMRun.LabSampleApprovalContactTVItem = val91;
-               Assert.AreEqual(val91, mWQMRun.LabSampleApprovalContactTVItem);
-               TVItem val92 = new TVItem();
-               mWQMRun.MWQMRunTVItem = val92;
-               Assert.AreEqual(val92, mWQMRun.MWQMRunTVItem);
-               TVItem val93 = new TVItem();
-               mWQMRun.SubsectorTVItem = val93;
-               Assert.AreEqual(val93, mWQMRun.SubsectorTVItem);
-               IEnumerable<ValidationResult> val141 = new List<ValidationResult>().AsEnumerable();
-               mWQMRun.ValidationResults = val141;
-               Assert.AreEqual(val141, mWQMRun.ValidationResults);
+               string val43 = "Some text";
+               mWQMRun.RunSampleTypeText = val43;
+               Assert.AreEqual(val43, mWQMRun.RunSampleTypeText);
+               string val44 = "Some text";
+               mWQMRun.SeaStateAtStart_BeaufortScaleText = val44;
+               Assert.AreEqual(val44, mWQMRun.SeaStateAtStart_BeaufortScaleText);
+               string val45 = "Some text";
+               mWQMRun.SeaStateAtEnd_BeaufortScaleText = val45;
+               Assert.AreEqual(val45, mWQMRun.SeaStateAtEnd_BeaufortScaleText);
+               string val46 = "Some text";
+               mWQMRun.AnalyzeMethodText = val46;
+               Assert.AreEqual(val46, mWQMRun.AnalyzeMethodText);
+               string val47 = "Some text";
+               mWQMRun.SampleMatrixText = val47;
+               Assert.AreEqual(val47, mWQMRun.SampleMatrixText);
+               string val48 = "Some text";
+               mWQMRun.LaboratoryText = val48;
+               Assert.AreEqual(val48, mWQMRun.LaboratoryText);
+               string val49 = "Some text";
+               mWQMRun.SampleStatusText = val49;
+               Assert.AreEqual(val49, mWQMRun.SampleStatusText);
+               string val50 = "Some text";
+               mWQMRun.Tide_StartText = val50;
+               Assert.AreEqual(val50, mWQMRun.Tide_StartText);
+               string val51 = "Some text";
+               mWQMRun.Tide_EndText = val51;
+               Assert.AreEqual(val51, mWQMRun.Tide_EndText);
+               IEnumerable<ValidationResult> val156 = new List<ValidationResult>().AsEnumerable();
+               mWQMRun.ValidationResults = val156;
+               Assert.AreEqual(val156, mWQMRun.ValidationResults);
         }
     }
 }
