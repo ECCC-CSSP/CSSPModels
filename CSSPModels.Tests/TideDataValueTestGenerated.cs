@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TideDataValue_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TideDataValueID", "TideSiteTVItemID", "DateTime_Local", "Keep", "TideDataType", "StorageDataType", "Depth_m", "UVelocity_m_s", "VVelocity_m_s", "TideStart", "TideEnd", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "TideDataTypeText", "StorageDataTypeText", "TideStartText", "TideEndText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TideSiteTVText", "LastUpdateContactTVText", "TideDataTypeText", "StorageDataTypeText", "TideStartText", "TideEndText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TideDataValue).GetProperties().OrderBy(c => c.Name))
@@ -102,6 +102,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TideDataValueTideEnd);
                Assert.IsNotNull(ModelsRes.TideDataValueLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TideDataValueLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.TideDataValueTideSiteTVText);
+               Assert.IsNotNull(ModelsRes.TideDataValueLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.TideDataValueTideDataTypeText);
                Assert.IsNotNull(ModelsRes.TideDataValueStorageDataTypeText);
                Assert.IsNotNull(ModelsRes.TideDataValueTideStartText);
@@ -150,20 +152,26 @@ namespace CSSPModels.Tests
                tideDataValue.LastUpdateContactTVItemID = val13;
                Assert.AreEqual(val13, tideDataValue.LastUpdateContactTVItemID);
                string val14 = "Some text";
-               tideDataValue.TideDataTypeText = val14;
-               Assert.AreEqual(val14, tideDataValue.TideDataTypeText);
+               tideDataValue.TideSiteTVText = val14;
+               Assert.AreEqual(val14, tideDataValue.TideSiteTVText);
                string val15 = "Some text";
-               tideDataValue.StorageDataTypeText = val15;
-               Assert.AreEqual(val15, tideDataValue.StorageDataTypeText);
+               tideDataValue.LastUpdateContactTVText = val15;
+               Assert.AreEqual(val15, tideDataValue.LastUpdateContactTVText);
                string val16 = "Some text";
-               tideDataValue.TideStartText = val16;
-               Assert.AreEqual(val16, tideDataValue.TideStartText);
+               tideDataValue.TideDataTypeText = val16;
+               Assert.AreEqual(val16, tideDataValue.TideDataTypeText);
                string val17 = "Some text";
-               tideDataValue.TideEndText = val17;
-               Assert.AreEqual(val17, tideDataValue.TideEndText);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>().AsEnumerable();
-               tideDataValue.ValidationResults = val54;
-               Assert.AreEqual(val54, tideDataValue.ValidationResults);
+               tideDataValue.StorageDataTypeText = val17;
+               Assert.AreEqual(val17, tideDataValue.StorageDataTypeText);
+               string val18 = "Some text";
+               tideDataValue.TideStartText = val18;
+               Assert.AreEqual(val18, tideDataValue.TideStartText);
+               string val19 = "Some text";
+               tideDataValue.TideEndText = val19;
+               Assert.AreEqual(val19, tideDataValue.TideEndText);
+               IEnumerable<ValidationResult> val60 = new List<ValidationResult>().AsEnumerable();
+               tideDataValue.ValidationResults = val60;
+               Assert.AreEqual(val60, tideDataValue.ValidationResults);
         }
     }
 }

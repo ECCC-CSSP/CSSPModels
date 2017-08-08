@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void VPResult_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "VPResultID", "VPScenarioID", "Ordinal", "Concentration_MPN_100ml", "Dilution", "FarFieldWidth_m", "DispersionDistance_m", "TravelTime_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.VPResult).GetProperties().OrderBy(c => c.Name))
@@ -99,6 +99,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.VPResultTravelTime_hour);
                Assert.IsNotNull(ModelsRes.VPResultLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.VPResultLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.VPResultLastUpdateContactTVText);
         }
         [TestMethod]
         public void VPResult_Every_Property_Has_Get_Set_Test()
@@ -133,9 +134,12 @@ namespace CSSPModels.Tests
                int val10 = 45;
                vPResult.LastUpdateContactTVItemID = val10;
                Assert.AreEqual(val10, vPResult.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               vPResult.ValidationResults = val33;
-               Assert.AreEqual(val33, vPResult.ValidationResults);
+               string val11 = "Some text";
+               vPResult.LastUpdateContactTVText = val11;
+               Assert.AreEqual(val11, vPResult.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
+               vPResult.ValidationResults = val36;
+               Assert.AreEqual(val36, vPResult.ValidationResults);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TVFile_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVFileID", "TVFileTVItemID", "TemplateTVType", "Language", "FilePurpose", "FileType", "FileSize_kb", "FileInfo", "FileCreatedDate_UTC", "FromWater", "ClientFilePath", "ServerFileName", "ServerFilePath", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "TemplateTVTypeText", "LanguageText", "FilePurposeText", "FileTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TVFileTVText", "LastUpdateContactTVText", "TemplateTVTypeText", "LanguageText", "FilePurposeText", "FileTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVFile).GetProperties().OrderBy(c => c.Name))
@@ -104,6 +104,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVFileServerFilePath);
                Assert.IsNotNull(ModelsRes.TVFileLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TVFileLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.TVFileTVFileTVText);
+               Assert.IsNotNull(ModelsRes.TVFileLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.TVFileTemplateTVTypeText);
                Assert.IsNotNull(ModelsRes.TVFileLanguageText);
                Assert.IsNotNull(ModelsRes.TVFileFilePurposeText);
@@ -158,20 +160,26 @@ namespace CSSPModels.Tests
                tVFile.LastUpdateContactTVItemID = val15;
                Assert.AreEqual(val15, tVFile.LastUpdateContactTVItemID);
                string val16 = "Some text";
-               tVFile.TemplateTVTypeText = val16;
-               Assert.AreEqual(val16, tVFile.TemplateTVTypeText);
+               tVFile.TVFileTVText = val16;
+               Assert.AreEqual(val16, tVFile.TVFileTVText);
                string val17 = "Some text";
-               tVFile.LanguageText = val17;
-               Assert.AreEqual(val17, tVFile.LanguageText);
+               tVFile.LastUpdateContactTVText = val17;
+               Assert.AreEqual(val17, tVFile.LastUpdateContactTVText);
                string val18 = "Some text";
-               tVFile.FilePurposeText = val18;
-               Assert.AreEqual(val18, tVFile.FilePurposeText);
+               tVFile.TemplateTVTypeText = val18;
+               Assert.AreEqual(val18, tVFile.TemplateTVTypeText);
                string val19 = "Some text";
-               tVFile.FileTypeText = val19;
-               Assert.AreEqual(val19, tVFile.FileTypeText);
-               IEnumerable<ValidationResult> val60 = new List<ValidationResult>().AsEnumerable();
-               tVFile.ValidationResults = val60;
-               Assert.AreEqual(val60, tVFile.ValidationResults);
+               tVFile.LanguageText = val19;
+               Assert.AreEqual(val19, tVFile.LanguageText);
+               string val20 = "Some text";
+               tVFile.FilePurposeText = val20;
+               Assert.AreEqual(val20, tVFile.FilePurposeText);
+               string val21 = "Some text";
+               tVFile.FileTypeText = val21;
+               Assert.AreEqual(val21, tVFile.FileTypeText);
+               IEnumerable<ValidationResult> val66 = new List<ValidationResult>().AsEnumerable();
+               tVFile.ValidationResults = val66;
+               Assert.AreEqual(val66, tVFile.ValidationResults);
         }
     }
 }

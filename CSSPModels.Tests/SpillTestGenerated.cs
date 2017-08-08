@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Spill_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SpillID", "MunicipalityTVItemID", "InfrastructureTVItemID", "StartDateTime_Local", "EndDateTime_Local", "AverageFlow_m3_day", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MunicipalityTVText", "InfrastructureTVText", "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Spill).GetProperties().OrderBy(c => c.Name))
@@ -97,6 +97,9 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SpillAverageFlow_m3_day);
                Assert.IsNotNull(ModelsRes.SpillLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.SpillLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.SpillMunicipalityTVText);
+               Assert.IsNotNull(ModelsRes.SpillInfrastructureTVText);
+               Assert.IsNotNull(ModelsRes.SpillLastUpdateContactTVText);
         }
         [TestMethod]
         public void Spill_Every_Property_Has_Get_Set_Test()
@@ -125,9 +128,18 @@ namespace CSSPModels.Tests
                int val8 = 45;
                spill.LastUpdateContactTVItemID = val8;
                Assert.AreEqual(val8, spill.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               spill.ValidationResults = val27;
-               Assert.AreEqual(val27, spill.ValidationResults);
+               string val9 = "Some text";
+               spill.MunicipalityTVText = val9;
+               Assert.AreEqual(val9, spill.MunicipalityTVText);
+               string val10 = "Some text";
+               spill.InfrastructureTVText = val10;
+               Assert.AreEqual(val10, spill.InfrastructureTVText);
+               string val11 = "Some text";
+               spill.LastUpdateContactTVText = val11;
+               Assert.AreEqual(val11, spill.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
+               spill.ValidationResults = val36;
+               Assert.AreEqual(val36, spill.ValidationResults);
         }
     }
 }

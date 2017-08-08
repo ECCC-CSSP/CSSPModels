@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void LabSheetTubeMPNDetail_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LabSheetTubeMPNDetailID", "LabSheetDetailID", "Ordinal", "MWQMSiteTVItemID", "SampleDateTime", "MPN", "Tube10", "Tube1_0", "Tube0_1", "Salinity", "Temperature", "ProcessedBy", "SampleType", "SiteComment", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "SampleTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteTVText", "LastUpdateContactTVText", "SampleTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.LabSheetTubeMPNDetail).GetProperties().OrderBy(c => c.Name))
@@ -105,6 +105,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.LabSheetTubeMPNDetailSiteComment);
                Assert.IsNotNull(ModelsRes.LabSheetTubeMPNDetailLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.LabSheetTubeMPNDetailLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.LabSheetTubeMPNDetailMWQMSiteTVText);
+               Assert.IsNotNull(ModelsRes.LabSheetTubeMPNDetailLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.LabSheetTubeMPNDetailSampleTypeText);
         }
         [TestMethod]
@@ -159,11 +161,17 @@ namespace CSSPModels.Tests
                labSheetTubeMPNDetail.LastUpdateContactTVItemID = val16;
                Assert.AreEqual(val16, labSheetTubeMPNDetail.LastUpdateContactTVItemID);
                string val17 = "Some text";
-               labSheetTubeMPNDetail.SampleTypeText = val17;
-               Assert.AreEqual(val17, labSheetTubeMPNDetail.SampleTypeText);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>().AsEnumerable();
-               labSheetTubeMPNDetail.ValidationResults = val54;
-               Assert.AreEqual(val54, labSheetTubeMPNDetail.ValidationResults);
+               labSheetTubeMPNDetail.MWQMSiteTVText = val17;
+               Assert.AreEqual(val17, labSheetTubeMPNDetail.MWQMSiteTVText);
+               string val18 = "Some text";
+               labSheetTubeMPNDetail.LastUpdateContactTVText = val18;
+               Assert.AreEqual(val18, labSheetTubeMPNDetail.LastUpdateContactTVText);
+               string val19 = "Some text";
+               labSheetTubeMPNDetail.SampleTypeText = val19;
+               Assert.AreEqual(val19, labSheetTubeMPNDetail.SampleTypeText);
+               IEnumerable<ValidationResult> val60 = new List<ValidationResult>().AsEnumerable();
+               labSheetTubeMPNDetail.ValidationResults = val60;
+               Assert.AreEqual(val60, labSheetTubeMPNDetail.ValidationResults);
         }
     }
 }

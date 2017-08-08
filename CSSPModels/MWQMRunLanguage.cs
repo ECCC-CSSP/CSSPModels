@@ -29,6 +29,11 @@ namespace CSSPModels
 
         #region Properties not in DB
         [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        [NotMapped]
         [StringLength(100)]
         [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]

@@ -46,6 +46,26 @@ namespace CSSPModels
 
         #region Properties not in DB
         [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ProvinceTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string ProvinceTVText { get; set; }
+        [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CreatorTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string CreatorTVText { get; set; }
+        [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SamplingPlanFileTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string SamplingPlanFileTVText { get; set; }
+        [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        [NotMapped]
         [StringLength(100)]
         [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType")]

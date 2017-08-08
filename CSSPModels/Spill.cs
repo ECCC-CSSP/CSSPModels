@@ -31,6 +31,21 @@ namespace CSSPModels
 
         #region Properties not in DB
         [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MunicipalityTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string MunicipalityTVText { get; set; }
+        [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string InfrastructureTVText { get; set; }
+        [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 

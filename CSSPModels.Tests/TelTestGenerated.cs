@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Tel_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TelID", "TelTVItemID", "TelNumber", "TelType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "TelTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TelTVText", "LastUpdateContactTVText", "TelTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Tel).GetProperties().OrderBy(c => c.Name))
@@ -95,6 +95,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TelTelType);
                Assert.IsNotNull(ModelsRes.TelLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TelLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.TelTelTVText);
+               Assert.IsNotNull(ModelsRes.TelLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.TelTelTypeText);
         }
         [TestMethod]
@@ -119,11 +121,17 @@ namespace CSSPModels.Tests
                tel.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, tel.LastUpdateContactTVItemID);
                string val7 = "Some text";
-               tel.TelTypeText = val7;
-               Assert.AreEqual(val7, tel.TelTypeText);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               tel.ValidationResults = val24;
-               Assert.AreEqual(val24, tel.ValidationResults);
+               tel.TelTVText = val7;
+               Assert.AreEqual(val7, tel.TelTVText);
+               string val8 = "Some text";
+               tel.LastUpdateContactTVText = val8;
+               Assert.AreEqual(val8, tel.LastUpdateContactTVText);
+               string val9 = "Some text";
+               tel.TelTypeText = val9;
+               Assert.AreEqual(val9, tel.TelTypeText);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               tel.ValidationResults = val30;
+               Assert.AreEqual(val30, tel.ValidationResults);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void UseOfSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "SiteType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "SiteTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "SiteTVText", "SubsectorTVText", "LastUpdateContactTVText", "SiteTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.UseOfSite).GetProperties().OrderBy(c => c.Name))
@@ -105,6 +105,9 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.UseOfSiteParam4);
                Assert.IsNotNull(ModelsRes.UseOfSiteLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.UseOfSiteLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.UseOfSiteSiteTVText);
+               Assert.IsNotNull(ModelsRes.UseOfSiteSubsectorTVText);
+               Assert.IsNotNull(ModelsRes.UseOfSiteLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.UseOfSiteSiteTypeText);
         }
         [TestMethod]
@@ -159,11 +162,20 @@ namespace CSSPModels.Tests
                useOfSite.LastUpdateContactTVItemID = val16;
                Assert.AreEqual(val16, useOfSite.LastUpdateContactTVItemID);
                string val17 = "Some text";
-               useOfSite.SiteTypeText = val17;
-               Assert.AreEqual(val17, useOfSite.SiteTypeText);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>().AsEnumerable();
-               useOfSite.ValidationResults = val54;
-               Assert.AreEqual(val54, useOfSite.ValidationResults);
+               useOfSite.SiteTVText = val17;
+               Assert.AreEqual(val17, useOfSite.SiteTVText);
+               string val18 = "Some text";
+               useOfSite.SubsectorTVText = val18;
+               Assert.AreEqual(val18, useOfSite.SubsectorTVText);
+               string val19 = "Some text";
+               useOfSite.LastUpdateContactTVText = val19;
+               Assert.AreEqual(val19, useOfSite.LastUpdateContactTVText);
+               string val20 = "Some text";
+               useOfSite.SiteTypeText = val20;
+               Assert.AreEqual(val20, useOfSite.SiteTypeText);
+               IEnumerable<ValidationResult> val63 = new List<ValidationResult>().AsEnumerable();
+               useOfSite.ValidationResults = val63;
+               Assert.AreEqual(val63, useOfSite.ValidationResults);
         }
     }
 }

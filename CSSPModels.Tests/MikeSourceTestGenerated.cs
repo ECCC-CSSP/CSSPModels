@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MikeSource_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeSourceID", "MikeSourceTVItemID", "IsContinuous", "Include", "IsRiver", "SourceNumberString", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MikeSourceTVText", "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MikeSource).GetProperties().OrderBy(c => c.Name))
@@ -97,6 +97,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MikeSourceSourceNumberString);
                Assert.IsNotNull(ModelsRes.MikeSourceLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MikeSourceLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.MikeSourceMikeSourceTVText);
+               Assert.IsNotNull(ModelsRes.MikeSourceLastUpdateContactTVText);
         }
         [TestMethod]
         public void MikeSource_Every_Property_Has_Get_Set_Test()
@@ -125,9 +127,15 @@ namespace CSSPModels.Tests
                int val8 = 45;
                mikeSource.LastUpdateContactTVItemID = val8;
                Assert.AreEqual(val8, mikeSource.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               mikeSource.ValidationResults = val27;
-               Assert.AreEqual(val27, mikeSource.ValidationResults);
+               string val9 = "Some text";
+               mikeSource.MikeSourceTVText = val9;
+               Assert.AreEqual(val9, mikeSource.MikeSourceTVText);
+               string val10 = "Some text";
+               mikeSource.LastUpdateContactTVText = val10;
+               Assert.AreEqual(val10, mikeSource.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               mikeSource.ValidationResults = val33;
+               Assert.AreEqual(val33, mikeSource.ValidationResults);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void ContactShortcut_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactShortcutID", "ContactID", "ShortCutText", "ShortCutAddress", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ContactShortcut).GetProperties().OrderBy(c => c.Name))
@@ -95,6 +95,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactShortcutShortCutAddress);
                Assert.IsNotNull(ModelsRes.ContactShortcutLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.ContactShortcutLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.ContactShortcutLastUpdateContactTVText);
         }
         [TestMethod]
         public void ContactShortcut_Every_Property_Has_Get_Set_Test()
@@ -117,9 +118,12 @@ namespace CSSPModels.Tests
                int val6 = 45;
                contactShortcut.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, contactShortcut.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val21 = new List<ValidationResult>().AsEnumerable();
-               contactShortcut.ValidationResults = val21;
-               Assert.AreEqual(val21, contactShortcut.ValidationResults);
+               string val7 = "Some text";
+               contactShortcut.LastUpdateContactTVText = val7;
+               Assert.AreEqual(val7, contactShortcut.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               contactShortcut.ValidationResults = val24;
+               Assert.AreEqual(val24, contactShortcut.ValidationResults);
         }
     }
 }

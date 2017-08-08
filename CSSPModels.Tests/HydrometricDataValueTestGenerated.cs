@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void HydrometricDataValue_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "HydrometricDataValueID", "HydrometricSiteID", "DateTime_Local", "Keep", "StorageDataType", "Flow_m3_s", "HourlyValues", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "StorageDataTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "StorageDataTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.HydrometricDataValue).GetProperties().OrderBy(c => c.Name))
@@ -98,6 +98,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.HydrometricDataValueHourlyValues);
                Assert.IsNotNull(ModelsRes.HydrometricDataValueLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.HydrometricDataValueLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.HydrometricDataValueLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.HydrometricDataValueStorageDataTypeText);
         }
         [TestMethod]
@@ -131,11 +132,14 @@ namespace CSSPModels.Tests
                hydrometricDataValue.LastUpdateContactTVItemID = val9;
                Assert.AreEqual(val9, hydrometricDataValue.LastUpdateContactTVItemID);
                string val10 = "Some text";
-               hydrometricDataValue.StorageDataTypeText = val10;
-               Assert.AreEqual(val10, hydrometricDataValue.StorageDataTypeText);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               hydrometricDataValue.ValidationResults = val33;
-               Assert.AreEqual(val33, hydrometricDataValue.ValidationResults);
+               hydrometricDataValue.LastUpdateContactTVText = val10;
+               Assert.AreEqual(val10, hydrometricDataValue.LastUpdateContactTVText);
+               string val11 = "Some text";
+               hydrometricDataValue.StorageDataTypeText = val11;
+               Assert.AreEqual(val11, hydrometricDataValue.StorageDataTypeText);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
+               hydrometricDataValue.ValidationResults = val36;
+               Assert.AreEqual(val36, hydrometricDataValue.ValidationResults);
         }
     }
 }

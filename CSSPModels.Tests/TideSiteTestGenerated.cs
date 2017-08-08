@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TideSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TideSiteID", "TideSiteTVItemID", "WebTideModel", "WebTideDatum_m", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TideSiteTVText", "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TideSite).GetProperties().OrderBy(c => c.Name))
@@ -95,6 +95,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TideSiteWebTideDatum_m);
                Assert.IsNotNull(ModelsRes.TideSiteLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TideSiteLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.TideSiteTideSiteTVText);
+               Assert.IsNotNull(ModelsRes.TideSiteLastUpdateContactTVText);
         }
         [TestMethod]
         public void TideSite_Every_Property_Has_Get_Set_Test()
@@ -117,9 +119,15 @@ namespace CSSPModels.Tests
                int val6 = 45;
                tideSite.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, tideSite.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val21 = new List<ValidationResult>().AsEnumerable();
-               tideSite.ValidationResults = val21;
-               Assert.AreEqual(val21, tideSite.ValidationResults);
+               string val7 = "Some text";
+               tideSite.TideSiteTVText = val7;
+               Assert.AreEqual(val7, tideSite.TideSiteTVText);
+               string val8 = "Some text";
+               tideSite.LastUpdateContactTVText = val8;
+               Assert.AreEqual(val8, tideSite.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               tideSite.ValidationResults = val27;
+               Assert.AreEqual(val27, tideSite.ValidationResults);
         }
     }
 }

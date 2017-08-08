@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MikeBoundaryCondition_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeBoundaryConditionID", "MikeBoundaryConditionTVItemID", "MikeBoundaryConditionCode", "MikeBoundaryConditionName", "MikeBoundaryConditionLength_m", "MikeBoundaryConditionFormat", "MikeBoundaryConditionLevelOrVelocity", "WebTideDataSet", "NumberOfWebTideNodes", "WebTideDataFromStartToEndDate", "TVType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MikeBoundaryConditionLevelOrVelocityText", "WebTideDataSetText", "TVTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MikeBoundaryConditionTVText", "LastUpdateContactTVText", "MikeBoundaryConditionLevelOrVelocityText", "WebTideDataSetText", "TVTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MikeBoundaryCondition).GetProperties().OrderBy(c => c.Name))
@@ -102,6 +102,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionTVType);
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.MikeBoundaryConditionMikeBoundaryConditionTVText);
+               Assert.IsNotNull(ModelsRes.MikeBoundaryConditionLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionMikeBoundaryConditionLevelOrVelocityText);
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionWebTideDataSetText);
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionTVTypeText);
@@ -149,17 +151,23 @@ namespace CSSPModels.Tests
                mikeBoundaryCondition.LastUpdateContactTVItemID = val13;
                Assert.AreEqual(val13, mikeBoundaryCondition.LastUpdateContactTVItemID);
                string val14 = "Some text";
-               mikeBoundaryCondition.MikeBoundaryConditionLevelOrVelocityText = val14;
-               Assert.AreEqual(val14, mikeBoundaryCondition.MikeBoundaryConditionLevelOrVelocityText);
+               mikeBoundaryCondition.MikeBoundaryConditionTVText = val14;
+               Assert.AreEqual(val14, mikeBoundaryCondition.MikeBoundaryConditionTVText);
                string val15 = "Some text";
-               mikeBoundaryCondition.WebTideDataSetText = val15;
-               Assert.AreEqual(val15, mikeBoundaryCondition.WebTideDataSetText);
+               mikeBoundaryCondition.LastUpdateContactTVText = val15;
+               Assert.AreEqual(val15, mikeBoundaryCondition.LastUpdateContactTVText);
                string val16 = "Some text";
-               mikeBoundaryCondition.TVTypeText = val16;
-               Assert.AreEqual(val16, mikeBoundaryCondition.TVTypeText);
-               IEnumerable<ValidationResult> val51 = new List<ValidationResult>().AsEnumerable();
-               mikeBoundaryCondition.ValidationResults = val51;
-               Assert.AreEqual(val51, mikeBoundaryCondition.ValidationResults);
+               mikeBoundaryCondition.MikeBoundaryConditionLevelOrVelocityText = val16;
+               Assert.AreEqual(val16, mikeBoundaryCondition.MikeBoundaryConditionLevelOrVelocityText);
+               string val17 = "Some text";
+               mikeBoundaryCondition.WebTideDataSetText = val17;
+               Assert.AreEqual(val17, mikeBoundaryCondition.WebTideDataSetText);
+               string val18 = "Some text";
+               mikeBoundaryCondition.TVTypeText = val18;
+               Assert.AreEqual(val18, mikeBoundaryCondition.TVTypeText);
+               IEnumerable<ValidationResult> val57 = new List<ValidationResult>().AsEnumerable();
+               mikeBoundaryCondition.ValidationResults = val57;
+               Assert.AreEqual(val57, mikeBoundaryCondition.ValidationResults);
         }
     }
 }

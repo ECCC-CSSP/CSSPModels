@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void AppTask_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "AppTaskID", "TVItemID", "TVItemID2", "AppTaskCommand", "AppTaskStatus", "PercentCompleted", "Parameters", "Language", "StartDateTime_UTC", "EndDateTime_UTC", "EstimatedLength_second", "RemainingTime_second", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "AppTaskCommandText", "AppTaskStatusText", "LanguageText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TVItemTVText", "TVItem2TVText", "LastUpdateContactTVText", "AppTaskCommandText", "AppTaskStatusText", "LanguageText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.AppTask).GetProperties().OrderBy(c => c.Name))
@@ -103,6 +103,9 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.AppTaskRemainingTime_second);
                Assert.IsNotNull(ModelsRes.AppTaskLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.AppTaskLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.AppTaskTVItemTVText);
+               Assert.IsNotNull(ModelsRes.AppTaskTVItem2TVText);
+               Assert.IsNotNull(ModelsRes.AppTaskLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.AppTaskAppTaskCommandText);
                Assert.IsNotNull(ModelsRes.AppTaskAppTaskStatusText);
                Assert.IsNotNull(ModelsRes.AppTaskLanguageText);
@@ -153,17 +156,26 @@ namespace CSSPModels.Tests
                appTask.LastUpdateContactTVItemID = val14;
                Assert.AreEqual(val14, appTask.LastUpdateContactTVItemID);
                string val15 = "Some text";
-               appTask.AppTaskCommandText = val15;
-               Assert.AreEqual(val15, appTask.AppTaskCommandText);
+               appTask.TVItemTVText = val15;
+               Assert.AreEqual(val15, appTask.TVItemTVText);
                string val16 = "Some text";
-               appTask.AppTaskStatusText = val16;
-               Assert.AreEqual(val16, appTask.AppTaskStatusText);
+               appTask.TVItem2TVText = val16;
+               Assert.AreEqual(val16, appTask.TVItem2TVText);
                string val17 = "Some text";
-               appTask.LanguageText = val17;
-               Assert.AreEqual(val17, appTask.LanguageText);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>().AsEnumerable();
-               appTask.ValidationResults = val54;
-               Assert.AreEqual(val54, appTask.ValidationResults);
+               appTask.LastUpdateContactTVText = val17;
+               Assert.AreEqual(val17, appTask.LastUpdateContactTVText);
+               string val18 = "Some text";
+               appTask.AppTaskCommandText = val18;
+               Assert.AreEqual(val18, appTask.AppTaskCommandText);
+               string val19 = "Some text";
+               appTask.AppTaskStatusText = val19;
+               Assert.AreEqual(val19, appTask.AppTaskStatusText);
+               string val20 = "Some text";
+               appTask.LanguageText = val20;
+               Assert.AreEqual(val20, appTask.LanguageText);
+               IEnumerable<ValidationResult> val63 = new List<ValidationResult>().AsEnumerable();
+               appTask.ValidationResults = val63;
+               Assert.AreEqual(val63, appTask.ValidationResults);
         }
     }
 }

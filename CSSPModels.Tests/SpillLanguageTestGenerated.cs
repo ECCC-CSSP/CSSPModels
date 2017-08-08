@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void SpillLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SpillLanguageID", "SpillID", "Language", "SpillComment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LanguageText", "TranslationStatusText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.SpillLanguage).GetProperties().OrderBy(c => c.Name))
@@ -96,6 +96,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SpillLanguageTranslationStatus);
                Assert.IsNotNull(ModelsRes.SpillLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.SpillLanguageLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.SpillLanguageLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.SpillLanguageLanguageText);
                Assert.IsNotNull(ModelsRes.SpillLanguageTranslationStatusText);
         }
@@ -124,14 +125,17 @@ namespace CSSPModels.Tests
                spillLanguage.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, spillLanguage.LastUpdateContactTVItemID);
                string val8 = "Some text";
-               spillLanguage.LanguageText = val8;
-               Assert.AreEqual(val8, spillLanguage.LanguageText);
+               spillLanguage.LastUpdateContactTVText = val8;
+               Assert.AreEqual(val8, spillLanguage.LastUpdateContactTVText);
                string val9 = "Some text";
-               spillLanguage.TranslationStatusText = val9;
-               Assert.AreEqual(val9, spillLanguage.TranslationStatusText);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               spillLanguage.ValidationResults = val30;
-               Assert.AreEqual(val30, spillLanguage.ValidationResults);
+               spillLanguage.LanguageText = val9;
+               Assert.AreEqual(val9, spillLanguage.LanguageText);
+               string val10 = "Some text";
+               spillLanguage.TranslationStatusText = val10;
+               Assert.AreEqual(val10, spillLanguage.TranslationStatusText);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               spillLanguage.ValidationResults = val33;
+               Assert.AreEqual(val33, spillLanguage.ValidationResults);
         }
     }
 }

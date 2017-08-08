@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Contact_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactID", "Id", "ContactTVItemID", "LoginEmail", "FirstName", "LastName", "Initial", "WebName", "ContactTitle", "IsAdmin", "EmailValidated", "Disabled", "IsNew", "SamplingPlanner_ProvincesTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ParentTVItemID", "ContactTitleText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "ContactTVText", "LastUpdateContactTVText", "ParentTVItemID", "ContactTitleText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Contact).GetProperties().OrderBy(c => c.Name))
@@ -105,6 +105,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactSamplingPlanner_ProvincesTVItemID);
                Assert.IsNotNull(ModelsRes.ContactLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.ContactLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.ContactContactTVText);
+               Assert.IsNotNull(ModelsRes.ContactLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.ContactParentTVItemID);
                Assert.IsNotNull(ModelsRes.ContactContactTitleText);
         }
@@ -159,15 +161,21 @@ namespace CSSPModels.Tests
                int val16 = 45;
                contact.LastUpdateContactTVItemID = val16;
                Assert.AreEqual(val16, contact.LastUpdateContactTVItemID);
-               int val17 = 45;
-               contact.ParentTVItemID = val17;
-               Assert.AreEqual(val17, contact.ParentTVItemID);
+               string val17 = "Some text";
+               contact.ContactTVText = val17;
+               Assert.AreEqual(val17, contact.ContactTVText);
                string val18 = "Some text";
-               contact.ContactTitleText = val18;
-               Assert.AreEqual(val18, contact.ContactTitleText);
-               IEnumerable<ValidationResult> val57 = new List<ValidationResult>().AsEnumerable();
-               contact.ValidationResults = val57;
-               Assert.AreEqual(val57, contact.ValidationResults);
+               contact.LastUpdateContactTVText = val18;
+               Assert.AreEqual(val18, contact.LastUpdateContactTVText);
+               int val19 = 45;
+               contact.ParentTVItemID = val19;
+               Assert.AreEqual(val19, contact.ParentTVItemID);
+               string val20 = "Some text";
+               contact.ContactTitleText = val20;
+               Assert.AreEqual(val20, contact.ContactTitleText);
+               IEnumerable<ValidationResult> val63 = new List<ValidationResult>().AsEnumerable();
+               contact.ValidationResults = val63;
+               Assert.AreEqual(val63, contact.ValidationResults);
         }
     }
 }

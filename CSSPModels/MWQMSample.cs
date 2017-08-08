@@ -48,6 +48,21 @@ namespace CSSPModels
 
         #region Properties not in DB
         [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string MWQMSiteTVText { get; set; }
+        [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMRunTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string MWQMRunTVText { get; set; }
+        [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        [NotMapped]
         [StringLength(100)]
         [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType_old")]

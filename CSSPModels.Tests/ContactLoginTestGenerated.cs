@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void ContactLogin_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactLoginID", "ContactID", "LoginEmail", "PasswordHash", "PasswordSalt", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "Password", "ConfirmPassword",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "Password", "ConfirmPassword",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ContactLogin).GetProperties().OrderBy(c => c.Name))
@@ -96,6 +96,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactLoginPasswordSalt);
                Assert.IsNotNull(ModelsRes.ContactLoginLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.ContactLoginLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.ContactLoginLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.ContactLoginPassword);
                Assert.IsNotNull(ModelsRes.ContactLoginConfirmPassword);
         }
@@ -124,14 +125,17 @@ namespace CSSPModels.Tests
                contactLogin.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, contactLogin.LastUpdateContactTVItemID);
                string val8 = "Some text";
-               contactLogin.Password = val8;
-               Assert.AreEqual(val8, contactLogin.Password);
+               contactLogin.LastUpdateContactTVText = val8;
+               Assert.AreEqual(val8, contactLogin.LastUpdateContactTVText);
                string val9 = "Some text";
-               contactLogin.ConfirmPassword = val9;
-               Assert.AreEqual(val9, contactLogin.ConfirmPassword);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               contactLogin.ValidationResults = val30;
-               Assert.AreEqual(val30, contactLogin.ValidationResults);
+               contactLogin.Password = val9;
+               Assert.AreEqual(val9, contactLogin.Password);
+               string val10 = "Some text";
+               contactLogin.ConfirmPassword = val10;
+               Assert.AreEqual(val10, contactLogin.ConfirmPassword);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               contactLogin.ValidationResults = val33;
+               Assert.AreEqual(val33, contactLogin.ValidationResults);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void RainExceedance_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "RainExceedanceID", "YearRound", "StartDate_Local", "EndDate_Local", "RainMaximum_mm", "RainExtreme_mm", "DaysPriorToStart", "RepeatEveryYear", "ProvinceTVItemIDs", "SubsectorTVItemIDs", "ClimateSiteTVItemIDs", "EmailDistributionListIDs", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.RainExceedance).GetProperties().OrderBy(c => c.Name))
@@ -103,6 +103,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.RainExceedanceEmailDistributionListIDs);
                Assert.IsNotNull(ModelsRes.RainExceedanceLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.RainExceedanceLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.RainExceedanceLastUpdateContactTVText);
         }
         [TestMethod]
         public void RainExceedance_Every_Property_Has_Get_Set_Test()
@@ -149,9 +150,12 @@ namespace CSSPModels.Tests
                int val14 = 45;
                rainExceedance.LastUpdateContactTVItemID = val14;
                Assert.AreEqual(val14, rainExceedance.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val45 = new List<ValidationResult>().AsEnumerable();
-               rainExceedance.ValidationResults = val45;
-               Assert.AreEqual(val45, rainExceedance.ValidationResults);
+               string val15 = "Some text";
+               rainExceedance.LastUpdateContactTVText = val15;
+               Assert.AreEqual(val15, rainExceedance.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>().AsEnumerable();
+               rainExceedance.ValidationResults = val48;
+               Assert.AreEqual(val48, rainExceedance.ValidationResults);
         }
     }
 }

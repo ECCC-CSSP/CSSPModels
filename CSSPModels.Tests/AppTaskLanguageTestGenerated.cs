@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void AppTaskLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "AppTaskLanguageID", "AppTaskID", "Language", "StatusText", "ErrorText", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LanguageText", "TranslationStatusText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.AppTaskLanguage).GetProperties().OrderBy(c => c.Name))
@@ -97,6 +97,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.AppTaskLanguageTranslationStatus);
                Assert.IsNotNull(ModelsRes.AppTaskLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.AppTaskLanguageLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.AppTaskLanguageLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.AppTaskLanguageLanguageText);
                Assert.IsNotNull(ModelsRes.AppTaskLanguageTranslationStatusText);
         }
@@ -128,14 +129,17 @@ namespace CSSPModels.Tests
                appTaskLanguage.LastUpdateContactTVItemID = val8;
                Assert.AreEqual(val8, appTaskLanguage.LastUpdateContactTVItemID);
                string val9 = "Some text";
-               appTaskLanguage.LanguageText = val9;
-               Assert.AreEqual(val9, appTaskLanguage.LanguageText);
+               appTaskLanguage.LastUpdateContactTVText = val9;
+               Assert.AreEqual(val9, appTaskLanguage.LastUpdateContactTVText);
                string val10 = "Some text";
-               appTaskLanguage.TranslationStatusText = val10;
-               Assert.AreEqual(val10, appTaskLanguage.TranslationStatusText);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               appTaskLanguage.ValidationResults = val33;
-               Assert.AreEqual(val33, appTaskLanguage.ValidationResults);
+               appTaskLanguage.LanguageText = val10;
+               Assert.AreEqual(val10, appTaskLanguage.LanguageText);
+               string val11 = "Some text";
+               appTaskLanguage.TranslationStatusText = val11;
+               Assert.AreEqual(val11, appTaskLanguage.TranslationStatusText);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
+               appTaskLanguage.ValidationResults = val36;
+               Assert.AreEqual(val36, appTaskLanguage.ValidationResults);
         }
     }
 }

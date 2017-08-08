@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void SamplingPlanSubsector_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SamplingPlanSubsectorID", "SamplingPlanID", "SubsectorTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "SubsectorTVText", "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.SamplingPlanSubsector).GetProperties().OrderBy(c => c.Name))
@@ -94,6 +94,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSubsectorTVItemID);
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSubsectorTVText);
+               Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorLastUpdateContactTVText);
         }
         [TestMethod]
         public void SamplingPlanSubsector_Every_Property_Has_Get_Set_Test()
@@ -113,9 +115,15 @@ namespace CSSPModels.Tests
                int val5 = 45;
                samplingPlanSubsector.LastUpdateContactTVItemID = val5;
                Assert.AreEqual(val5, samplingPlanSubsector.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val18 = new List<ValidationResult>().AsEnumerable();
-               samplingPlanSubsector.ValidationResults = val18;
-               Assert.AreEqual(val18, samplingPlanSubsector.ValidationResults);
+               string val6 = "Some text";
+               samplingPlanSubsector.SubsectorTVText = val6;
+               Assert.AreEqual(val6, samplingPlanSubsector.SubsectorTVText);
+               string val7 = "Some text";
+               samplingPlanSubsector.LastUpdateContactTVText = val7;
+               Assert.AreEqual(val7, samplingPlanSubsector.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               samplingPlanSubsector.ValidationResults = val24;
+               Assert.AreEqual(val24, samplingPlanSubsector.ValidationResults);
         }
     }
 }

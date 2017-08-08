@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MikeSourceStartEnd_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeSourceStartEndID", "MikeSourceID", "StartDateAndTime_Local", "EndDateAndTime_Local", "SourceFlowStart_m3_day", "SourceFlowEnd_m3_day", "SourcePollutionStart_MPN_100ml", "SourcePollutionEnd_MPN_100ml", "SourceTemperatureStart_C", "SourceTemperatureEnd_C", "SourceSalinityStart_PSU", "SourceSalinityEnd_PSU", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MikeSourceStartEnd).GetProperties().OrderBy(c => c.Name))
@@ -103,6 +103,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MikeSourceStartEndSourceSalinityEnd_PSU);
                Assert.IsNotNull(ModelsRes.MikeSourceStartEndLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MikeSourceStartEndLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.MikeSourceStartEndLastUpdateContactTVText);
         }
         [TestMethod]
         public void MikeSourceStartEnd_Every_Property_Has_Get_Set_Test()
@@ -149,9 +150,12 @@ namespace CSSPModels.Tests
                int val14 = 45;
                mikeSourceStartEnd.LastUpdateContactTVItemID = val14;
                Assert.AreEqual(val14, mikeSourceStartEnd.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val45 = new List<ValidationResult>().AsEnumerable();
-               mikeSourceStartEnd.ValidationResults = val45;
-               Assert.AreEqual(val45, mikeSourceStartEnd.ValidationResults);
+               string val15 = "Some text";
+               mikeSourceStartEnd.LastUpdateContactTVText = val15;
+               Assert.AreEqual(val15, mikeSourceStartEnd.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>().AsEnumerable();
+               mikeSourceStartEnd.ValidationResults = val48;
+               Assert.AreEqual(val48, mikeSourceStartEnd.ValidationResults);
         }
     }
 }

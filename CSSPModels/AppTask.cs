@@ -41,6 +41,21 @@ namespace CSSPModels
 
         #region Properties not in DB
         [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string TVItemTVText { get; set; }
+        [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID2", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string TVItem2TVText { get; set; }
+        [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        [NotMapped]
         [StringLength(100)]
         [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "AppTaskCommandEnum", EnumType = "AppTaskCommand")]

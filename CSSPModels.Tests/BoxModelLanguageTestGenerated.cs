@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void BoxModelLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "BoxModelLanguageID", "BoxModelID", "Language", "ScenarioName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LanguageText", "TranslationStatusText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.BoxModelLanguage).GetProperties().OrderBy(c => c.Name))
@@ -96,6 +96,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.BoxModelLanguageTranslationStatus);
                Assert.IsNotNull(ModelsRes.BoxModelLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.BoxModelLanguageLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.BoxModelLanguageLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.BoxModelLanguageLanguageText);
                Assert.IsNotNull(ModelsRes.BoxModelLanguageTranslationStatusText);
         }
@@ -124,14 +125,17 @@ namespace CSSPModels.Tests
                boxModelLanguage.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, boxModelLanguage.LastUpdateContactTVItemID);
                string val8 = "Some text";
-               boxModelLanguage.LanguageText = val8;
-               Assert.AreEqual(val8, boxModelLanguage.LanguageText);
+               boxModelLanguage.LastUpdateContactTVText = val8;
+               Assert.AreEqual(val8, boxModelLanguage.LastUpdateContactTVText);
                string val9 = "Some text";
-               boxModelLanguage.TranslationStatusText = val9;
-               Assert.AreEqual(val9, boxModelLanguage.TranslationStatusText);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               boxModelLanguage.ValidationResults = val30;
-               Assert.AreEqual(val30, boxModelLanguage.ValidationResults);
+               boxModelLanguage.LanguageText = val9;
+               Assert.AreEqual(val9, boxModelLanguage.LanguageText);
+               string val10 = "Some text";
+               boxModelLanguage.TranslationStatusText = val10;
+               Assert.AreEqual(val10, boxModelLanguage.TranslationStatusText);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               boxModelLanguage.ValidationResults = val33;
+               Assert.AreEqual(val33, boxModelLanguage.ValidationResults);
         }
     }
 }

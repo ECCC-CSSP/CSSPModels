@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void RatingCurve_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "RatingCurveID", "HydrometricSiteID", "RatingCurveNumber", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.RatingCurve).GetProperties().OrderBy(c => c.Name))
@@ -94,6 +94,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.RatingCurveRatingCurveNumber);
                Assert.IsNotNull(ModelsRes.RatingCurveLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.RatingCurveLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.RatingCurveLastUpdateContactTVText);
         }
         [TestMethod]
         public void RatingCurve_Every_Property_Has_Get_Set_Test()
@@ -113,9 +114,12 @@ namespace CSSPModels.Tests
                int val5 = 45;
                ratingCurve.LastUpdateContactTVItemID = val5;
                Assert.AreEqual(val5, ratingCurve.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val18 = new List<ValidationResult>().AsEnumerable();
-               ratingCurve.ValidationResults = val18;
-               Assert.AreEqual(val18, ratingCurve.ValidationResults);
+               string val6 = "Some text";
+               ratingCurve.LastUpdateContactTVText = val6;
+               Assert.AreEqual(val6, ratingCurve.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val21 = new List<ValidationResult>().AsEnumerable();
+               ratingCurve.ValidationResults = val21;
+               Assert.AreEqual(val21, ratingCurve.ValidationResults);
         }
     }
 }

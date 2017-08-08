@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void VPScenario_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "VPScenarioID", "InfrastructureTVItemID", "VPScenarioStatus", "UseAsBestEstimate", "EffluentFlow_m3_s", "EffluentConcentration_MPN_100ml", "FroudeNumber", "PortDiameter_m", "PortDepth_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "NumberOfPorts", "PortSpacing_m", "AcuteMixZone_m", "ChronicMixZone_m", "EffluentSalinity_PSU", "EffluentTemperature_C", "EffluentVelocity_m_s", "RawResults", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "VPScenarioStatusText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "SubsectorTVText", "LastUpdateContactTVText", "VPScenarioStatusText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.VPScenario).GetProperties().OrderBy(c => c.Name))
@@ -111,6 +111,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.VPScenarioRawResults);
                Assert.IsNotNull(ModelsRes.VPScenarioLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.VPScenarioLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.VPScenarioSubsectorTVText);
+               Assert.IsNotNull(ModelsRes.VPScenarioLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.VPScenarioVPScenarioStatusText);
         }
         [TestMethod]
@@ -183,11 +185,17 @@ namespace CSSPModels.Tests
                vPScenario.LastUpdateContactTVItemID = val22;
                Assert.AreEqual(val22, vPScenario.LastUpdateContactTVItemID);
                string val23 = "Some text";
-               vPScenario.VPScenarioStatusText = val23;
-               Assert.AreEqual(val23, vPScenario.VPScenarioStatusText);
-               IEnumerable<ValidationResult> val72 = new List<ValidationResult>().AsEnumerable();
-               vPScenario.ValidationResults = val72;
-               Assert.AreEqual(val72, vPScenario.ValidationResults);
+               vPScenario.SubsectorTVText = val23;
+               Assert.AreEqual(val23, vPScenario.SubsectorTVText);
+               string val24 = "Some text";
+               vPScenario.LastUpdateContactTVText = val24;
+               Assert.AreEqual(val24, vPScenario.LastUpdateContactTVText);
+               string val25 = "Some text";
+               vPScenario.VPScenarioStatusText = val25;
+               Assert.AreEqual(val25, vPScenario.VPScenarioStatusText);
+               IEnumerable<ValidationResult> val78 = new List<ValidationResult>().AsEnumerable();
+               vPScenario.ValidationResults = val78;
+               Assert.AreEqual(val78, vPScenario.ValidationResults);
         }
     }
 }

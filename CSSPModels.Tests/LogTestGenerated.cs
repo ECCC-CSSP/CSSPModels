@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Log_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LogID", "TableName", "ID", "LogCommand", "Information", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LogCommandText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LogCommandText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Log).GetProperties().OrderBy(c => c.Name))
@@ -96,6 +96,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.LogInformation);
                Assert.IsNotNull(ModelsRes.LogLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.LogLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.LogLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.LogLogCommandText);
         }
         [TestMethod]
@@ -123,11 +124,14 @@ namespace CSSPModels.Tests
                log.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, log.LastUpdateContactTVItemID);
                string val8 = "Some text";
-               log.LogCommandText = val8;
-               Assert.AreEqual(val8, log.LogCommandText);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               log.ValidationResults = val27;
-               Assert.AreEqual(val27, log.ValidationResults);
+               log.LastUpdateContactTVText = val8;
+               Assert.AreEqual(val8, log.LastUpdateContactTVText);
+               string val9 = "Some text";
+               log.LogCommandText = val9;
+               Assert.AreEqual(val9, log.LogCommandText);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               log.ValidationResults = val30;
+               Assert.AreEqual(val30, log.ValidationResults);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void LabSheetDetail_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LabSheetDetailID", "LabSheetID", "SamplingPlanID", "SubsectorTVItemID", "Version", "RunDate", "Tides", "SampleCrewInitials", "WaterBathCount", "IncubationBath1StartTime", "IncubationBath2StartTime", "IncubationBath3StartTime", "IncubationBath1EndTime", "IncubationBath2EndTime", "IncubationBath3EndTime", "IncubationBath1TimeCalculated_minutes", "IncubationBath2TimeCalculated_minutes", "IncubationBath3TimeCalculated_minutes", "WaterBath1", "WaterBath2", "WaterBath3", "TCField1", "TCLab1", "TCField2", "TCLab2", "TCFirst", "TCAverage", "ControlLot", "Positive35", "NonTarget35", "Negative35", "Bath1Positive44_5", "Bath2Positive44_5", "Bath3Positive44_5", "Bath1NonTarget44_5", "Bath2NonTarget44_5", "Bath3NonTarget44_5", "Bath1Negative44_5", "Bath2Negative44_5", "Bath3Negative44_5", "Blank35", "Bath1Blank44_5", "Bath2Blank44_5", "Bath3Blank44_5", "Lot35", "Lot44_5", "Weather", "RunComment", "RunWeatherComment", "SampleBottleLotNumber", "SalinitiesReadBy", "SalinitiesReadDate", "ResultsReadBy", "ResultsReadDate", "ResultsRecordedBy", "ResultsRecordedDate", "DailyDuplicateRLog", "DailyDuplicatePrecisionCriteria", "DailyDuplicateAcceptable", "IntertechDuplicateRLog", "IntertechDuplicatePrecisionCriteria", "IntertechDuplicateAcceptable", "IntertechReadAcceptable", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "SubsectorTVText", "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.LabSheetDetail).GetProperties().OrderBy(c => c.Name))
@@ -154,6 +154,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.LabSheetDetailIntertechReadAcceptable);
                Assert.IsNotNull(ModelsRes.LabSheetDetailLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.LabSheetDetailLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.LabSheetDetailSubsectorTVText);
+               Assert.IsNotNull(ModelsRes.LabSheetDetailLastUpdateContactTVText);
         }
         [TestMethod]
         public void LabSheetDetail_Every_Property_Has_Get_Set_Test()
@@ -353,9 +355,15 @@ namespace CSSPModels.Tests
                int val65 = 45;
                labSheetDetail.LastUpdateContactTVItemID = val65;
                Assert.AreEqual(val65, labSheetDetail.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val198 = new List<ValidationResult>().AsEnumerable();
-               labSheetDetail.ValidationResults = val198;
-               Assert.AreEqual(val198, labSheetDetail.ValidationResults);
+               string val66 = "Some text";
+               labSheetDetail.SubsectorTVText = val66;
+               Assert.AreEqual(val66, labSheetDetail.SubsectorTVText);
+               string val67 = "Some text";
+               labSheetDetail.LastUpdateContactTVText = val67;
+               Assert.AreEqual(val67, labSheetDetail.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val204 = new List<ValidationResult>().AsEnumerable();
+               labSheetDetail.ValidationResults = val204;
+               Assert.AreEqual(val204, labSheetDetail.ValidationResults);
         }
     }
 }

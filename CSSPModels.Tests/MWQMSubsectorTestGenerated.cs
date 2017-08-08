@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MWQMSubsector_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSubsectorID", "MWQMSubsectorTVItemID", "SubsectorHistoricKey", "TideLocationSIDText", "RainDay0Limit", "RainDay1Limit", "RainDay2Limit", "RainDay3Limit", "RainDay4Limit", "RainDay5Limit", "RainDay6Limit", "RainDay7Limit", "RainDay8Limit", "RainDay9Limit", "RainDay10Limit", "IncludeRainStartDate", "IncludeRainEndDate", "IncludeRainRunCount", "IncludeRainSelectFullYear", "NoRainStartDate", "NoRainEndDate", "NoRainRunCount", "NoRainSelectFullYear", "OnlyRainStartDate", "OnlyRainEndDate", "OnlyRainRunCount", "OnlyRainSelectFullYear", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "SubsectorTVText", "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMSubsector).GetProperties().OrderBy(c => c.Name))
@@ -118,6 +118,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMSubsectorOnlyRainSelectFullYear);
                Assert.IsNotNull(ModelsRes.MWQMSubsectorLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MWQMSubsectorLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.MWQMSubsectorSubsectorTVText);
+               Assert.IsNotNull(ModelsRes.MWQMSubsectorLastUpdateContactTVText);
         }
         [TestMethod]
         public void MWQMSubsector_Every_Property_Has_Get_Set_Test()
@@ -209,9 +211,15 @@ namespace CSSPModels.Tests
                int val29 = 45;
                mWQMSubsector.LastUpdateContactTVItemID = val29;
                Assert.AreEqual(val29, mWQMSubsector.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val90 = new List<ValidationResult>().AsEnumerable();
-               mWQMSubsector.ValidationResults = val90;
-               Assert.AreEqual(val90, mWQMSubsector.ValidationResults);
+               string val30 = "Some text";
+               mWQMSubsector.SubsectorTVText = val30;
+               Assert.AreEqual(val30, mWQMSubsector.SubsectorTVText);
+               string val31 = "Some text";
+               mWQMSubsector.LastUpdateContactTVText = val31;
+               Assert.AreEqual(val31, mWQMSubsector.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val96 = new List<ValidationResult>().AsEnumerable();
+               mWQMSubsector.ValidationResults = val96;
+               Assert.AreEqual(val96, mWQMSubsector.ValidationResults);
         }
     }
 }

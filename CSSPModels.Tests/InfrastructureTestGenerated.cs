@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Infrastructure_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "InfrastructureTypeText", "FacilityTypeText", "AerationTypeText", "PreliminaryTreatmentTypeText", "PrimaryTreatmentTypeText", "SecondaryTreatmentTypeText", "TertiaryTreatmentTypeText", "TreatmentTypeText", "DisinfectionTypeText", "CollectionSystemTypeText", "AlarmSystemTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "InfrastructureTVText", "SeeOtherTVText", "CivicAddressTVText", "LastUpdateContactTVText", "InfrastructureTypeText", "FacilityTypeText", "AerationTypeText", "PreliminaryTreatmentTypeText", "PrimaryTreatmentTypeText", "SecondaryTreatmentTypeText", "TertiaryTreatmentTypeText", "TreatmentTypeText", "DisinfectionTypeText", "CollectionSystemTypeText", "AlarmSystemTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Infrastructure).GetProperties().OrderBy(c => c.Name))
@@ -137,6 +137,10 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.InfrastructureCivicAddressTVItemID);
                Assert.IsNotNull(ModelsRes.InfrastructureLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.InfrastructureLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.InfrastructureInfrastructureTVText);
+               Assert.IsNotNull(ModelsRes.InfrastructureSeeOtherTVText);
+               Assert.IsNotNull(ModelsRes.InfrastructureCivicAddressTVText);
+               Assert.IsNotNull(ModelsRes.InfrastructureLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.InfrastructureInfrastructureTypeText);
                Assert.IsNotNull(ModelsRes.InfrastructureFacilityTypeText);
                Assert.IsNotNull(ModelsRes.InfrastructureAerationTypeText);
@@ -297,41 +301,53 @@ namespace CSSPModels.Tests
                infrastructure.LastUpdateContactTVItemID = val48;
                Assert.AreEqual(val48, infrastructure.LastUpdateContactTVItemID);
                string val49 = "Some text";
-               infrastructure.InfrastructureTypeText = val49;
-               Assert.AreEqual(val49, infrastructure.InfrastructureTypeText);
+               infrastructure.InfrastructureTVText = val49;
+               Assert.AreEqual(val49, infrastructure.InfrastructureTVText);
                string val50 = "Some text";
-               infrastructure.FacilityTypeText = val50;
-               Assert.AreEqual(val50, infrastructure.FacilityTypeText);
+               infrastructure.SeeOtherTVText = val50;
+               Assert.AreEqual(val50, infrastructure.SeeOtherTVText);
                string val51 = "Some text";
-               infrastructure.AerationTypeText = val51;
-               Assert.AreEqual(val51, infrastructure.AerationTypeText);
+               infrastructure.CivicAddressTVText = val51;
+               Assert.AreEqual(val51, infrastructure.CivicAddressTVText);
                string val52 = "Some text";
-               infrastructure.PreliminaryTreatmentTypeText = val52;
-               Assert.AreEqual(val52, infrastructure.PreliminaryTreatmentTypeText);
+               infrastructure.LastUpdateContactTVText = val52;
+               Assert.AreEqual(val52, infrastructure.LastUpdateContactTVText);
                string val53 = "Some text";
-               infrastructure.PrimaryTreatmentTypeText = val53;
-               Assert.AreEqual(val53, infrastructure.PrimaryTreatmentTypeText);
+               infrastructure.InfrastructureTypeText = val53;
+               Assert.AreEqual(val53, infrastructure.InfrastructureTypeText);
                string val54 = "Some text";
-               infrastructure.SecondaryTreatmentTypeText = val54;
-               Assert.AreEqual(val54, infrastructure.SecondaryTreatmentTypeText);
+               infrastructure.FacilityTypeText = val54;
+               Assert.AreEqual(val54, infrastructure.FacilityTypeText);
                string val55 = "Some text";
-               infrastructure.TertiaryTreatmentTypeText = val55;
-               Assert.AreEqual(val55, infrastructure.TertiaryTreatmentTypeText);
+               infrastructure.AerationTypeText = val55;
+               Assert.AreEqual(val55, infrastructure.AerationTypeText);
                string val56 = "Some text";
-               infrastructure.TreatmentTypeText = val56;
-               Assert.AreEqual(val56, infrastructure.TreatmentTypeText);
+               infrastructure.PreliminaryTreatmentTypeText = val56;
+               Assert.AreEqual(val56, infrastructure.PreliminaryTreatmentTypeText);
                string val57 = "Some text";
-               infrastructure.DisinfectionTypeText = val57;
-               Assert.AreEqual(val57, infrastructure.DisinfectionTypeText);
+               infrastructure.PrimaryTreatmentTypeText = val57;
+               Assert.AreEqual(val57, infrastructure.PrimaryTreatmentTypeText);
                string val58 = "Some text";
-               infrastructure.CollectionSystemTypeText = val58;
-               Assert.AreEqual(val58, infrastructure.CollectionSystemTypeText);
+               infrastructure.SecondaryTreatmentTypeText = val58;
+               Assert.AreEqual(val58, infrastructure.SecondaryTreatmentTypeText);
                string val59 = "Some text";
-               infrastructure.AlarmSystemTypeText = val59;
-               Assert.AreEqual(val59, infrastructure.AlarmSystemTypeText);
-               IEnumerable<ValidationResult> val180 = new List<ValidationResult>().AsEnumerable();
-               infrastructure.ValidationResults = val180;
-               Assert.AreEqual(val180, infrastructure.ValidationResults);
+               infrastructure.TertiaryTreatmentTypeText = val59;
+               Assert.AreEqual(val59, infrastructure.TertiaryTreatmentTypeText);
+               string val60 = "Some text";
+               infrastructure.TreatmentTypeText = val60;
+               Assert.AreEqual(val60, infrastructure.TreatmentTypeText);
+               string val61 = "Some text";
+               infrastructure.DisinfectionTypeText = val61;
+               Assert.AreEqual(val61, infrastructure.DisinfectionTypeText);
+               string val62 = "Some text";
+               infrastructure.CollectionSystemTypeText = val62;
+               Assert.AreEqual(val62, infrastructure.CollectionSystemTypeText);
+               string val63 = "Some text";
+               infrastructure.AlarmSystemTypeText = val63;
+               Assert.AreEqual(val63, infrastructure.AlarmSystemTypeText);
+               IEnumerable<ValidationResult> val192 = new List<ValidationResult>().AsEnumerable();
+               infrastructure.ValidationResults = val192;
+               Assert.AreEqual(val192, infrastructure.ValidationResults);
         }
     }
 }

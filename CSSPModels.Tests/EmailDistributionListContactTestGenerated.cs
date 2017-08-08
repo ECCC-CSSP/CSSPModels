@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void EmailDistributionListContact_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "EmailDistributionListContactID", "EmailDistributionListID", "IsCC", "Agency", "Name", "Email", "CMPRainfallSeasonal", "CMPWastewater", "EmergencyWeather", "EmergencyWastewater", "ReopeningAllTypes", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.EmailDistributionListContact).GetProperties().OrderBy(c => c.Name))
@@ -102,6 +102,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.EmailDistributionListContactReopeningAllTypes);
                Assert.IsNotNull(ModelsRes.EmailDistributionListContactLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.EmailDistributionListContactLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.EmailDistributionListContactLastUpdateContactTVText);
         }
         [TestMethod]
         public void EmailDistributionListContact_Every_Property_Has_Get_Set_Test()
@@ -145,9 +146,12 @@ namespace CSSPModels.Tests
                int val13 = 45;
                emailDistributionListContact.LastUpdateContactTVItemID = val13;
                Assert.AreEqual(val13, emailDistributionListContact.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val42 = new List<ValidationResult>().AsEnumerable();
-               emailDistributionListContact.ValidationResults = val42;
-               Assert.AreEqual(val42, emailDistributionListContact.ValidationResults);
+               string val14 = "Some text";
+               emailDistributionListContact.LastUpdateContactTVText = val14;
+               Assert.AreEqual(val14, emailDistributionListContact.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val45 = new List<ValidationResult>().AsEnumerable();
+               emailDistributionListContact.ValidationResults = val45;
+               Assert.AreEqual(val45, emailDistributionListContact.ValidationResults);
         }
     }
 }

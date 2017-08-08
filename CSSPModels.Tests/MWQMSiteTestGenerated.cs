@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MWQMSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSiteID", "MWQMSiteTVItemID", "MWQMSiteNumber", "MWQMSiteDescription", "MWQMSiteLatestClassification", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteLatestClassificationText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteTVText", "LastUpdateContactTVText", "MWQMSiteLatestClassificationText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMSite).GetProperties().OrderBy(c => c.Name))
@@ -97,6 +97,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMSiteOrdinal);
                Assert.IsNotNull(ModelsRes.MWQMSiteLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MWQMSiteLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.MWQMSiteMWQMSiteTVText);
+               Assert.IsNotNull(ModelsRes.MWQMSiteLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.MWQMSiteMWQMSiteLatestClassificationText);
         }
         [TestMethod]
@@ -127,11 +129,17 @@ namespace CSSPModels.Tests
                mWQMSite.LastUpdateContactTVItemID = val8;
                Assert.AreEqual(val8, mWQMSite.LastUpdateContactTVItemID);
                string val9 = "Some text";
-               mWQMSite.MWQMSiteLatestClassificationText = val9;
-               Assert.AreEqual(val9, mWQMSite.MWQMSiteLatestClassificationText);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               mWQMSite.ValidationResults = val30;
-               Assert.AreEqual(val30, mWQMSite.ValidationResults);
+               mWQMSite.MWQMSiteTVText = val9;
+               Assert.AreEqual(val9, mWQMSite.MWQMSiteTVText);
+               string val10 = "Some text";
+               mWQMSite.LastUpdateContactTVText = val10;
+               Assert.AreEqual(val10, mWQMSite.LastUpdateContactTVText);
+               string val11 = "Some text";
+               mWQMSite.MWQMSiteLatestClassificationText = val11;
+               Assert.AreEqual(val11, mWQMSite.MWQMSiteLatestClassificationText);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
+               mWQMSite.ValidationResults = val36;
+               Assert.AreEqual(val36, mWQMSite.ValidationResults);
         }
     }
 }

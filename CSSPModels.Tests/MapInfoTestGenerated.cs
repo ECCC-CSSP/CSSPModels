@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MapInfo_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MapInfoID", "TVItemID", "TVType", "LatMin", "LatMax", "LngMin", "LngMax", "MapInfoDrawType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "TVTypeText", "MapInfoDrawTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TVText", "LastUpdateContactTVText", "TVTypeText", "MapInfoDrawTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MapInfo).GetProperties().OrderBy(c => c.Name))
@@ -99,6 +99,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MapInfoMapInfoDrawType);
                Assert.IsNotNull(ModelsRes.MapInfoLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MapInfoLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.MapInfoTVText);
+               Assert.IsNotNull(ModelsRes.MapInfoLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.MapInfoTVTypeText);
                Assert.IsNotNull(ModelsRes.MapInfoMapInfoDrawTypeText);
         }
@@ -136,14 +138,20 @@ namespace CSSPModels.Tests
                mapInfo.LastUpdateContactTVItemID = val10;
                Assert.AreEqual(val10, mapInfo.LastUpdateContactTVItemID);
                string val11 = "Some text";
-               mapInfo.TVTypeText = val11;
-               Assert.AreEqual(val11, mapInfo.TVTypeText);
+               mapInfo.TVText = val11;
+               Assert.AreEqual(val11, mapInfo.TVText);
                string val12 = "Some text";
-               mapInfo.MapInfoDrawTypeText = val12;
-               Assert.AreEqual(val12, mapInfo.MapInfoDrawTypeText);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>().AsEnumerable();
-               mapInfo.ValidationResults = val39;
-               Assert.AreEqual(val39, mapInfo.ValidationResults);
+               mapInfo.LastUpdateContactTVText = val12;
+               Assert.AreEqual(val12, mapInfo.LastUpdateContactTVText);
+               string val13 = "Some text";
+               mapInfo.TVTypeText = val13;
+               Assert.AreEqual(val13, mapInfo.TVTypeText);
+               string val14 = "Some text";
+               mapInfo.MapInfoDrawTypeText = val14;
+               Assert.AreEqual(val14, mapInfo.MapInfoDrawTypeText);
+               IEnumerable<ValidationResult> val45 = new List<ValidationResult>().AsEnumerable();
+               mapInfo.ValidationResults = val45;
+               Assert.AreEqual(val45, mapInfo.ValidationResults);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void PolSourceObservation_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "PolSourceObservationID", "PolSourceSiteID", "ObservationDate_Local", "ContactTVItemID", "Observation_ToBeDeleted", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "PolSourceSiteTVText", "ContactTVText", "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.PolSourceObservation).GetProperties().OrderBy(c => c.Name))
@@ -96,6 +96,9 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.PolSourceObservationObservation_ToBeDeleted);
                Assert.IsNotNull(ModelsRes.PolSourceObservationLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.PolSourceObservationLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.PolSourceObservationPolSourceSiteTVText);
+               Assert.IsNotNull(ModelsRes.PolSourceObservationContactTVText);
+               Assert.IsNotNull(ModelsRes.PolSourceObservationLastUpdateContactTVText);
         }
         [TestMethod]
         public void PolSourceObservation_Every_Property_Has_Get_Set_Test()
@@ -121,9 +124,18 @@ namespace CSSPModels.Tests
                int val7 = 45;
                polSourceObservation.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, polSourceObservation.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               polSourceObservation.ValidationResults = val24;
-               Assert.AreEqual(val24, polSourceObservation.ValidationResults);
+               string val8 = "Some text";
+               polSourceObservation.PolSourceSiteTVText = val8;
+               Assert.AreEqual(val8, polSourceObservation.PolSourceSiteTVText);
+               string val9 = "Some text";
+               polSourceObservation.ContactTVText = val9;
+               Assert.AreEqual(val9, polSourceObservation.ContactTVText);
+               string val10 = "Some text";
+               polSourceObservation.LastUpdateContactTVText = val10;
+               Assert.AreEqual(val10, polSourceObservation.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               polSourceObservation.ValidationResults = val33;
+               Assert.AreEqual(val33, polSourceObservation.ValidationResults);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void LabSheet_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LabSheetID", "OtherServerLabSheetID", "SamplingPlanID", "SamplingPlanName", "Year", "Month", "Day", "RunNumber", "SubsectorTVItemID", "MWQMRunTVItemID", "SamplingPlanType", "SampleType", "LabSheetType", "LabSheetStatus", "FileName", "FileLastModifiedDate_Local", "FileContent", "AcceptedOrRejectedByContactTVItemID", "AcceptedOrRejectedDateTime", "RejectReason", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "SamplingPlanTypeText", "SampleTypeText", "LabSheetTypeText", "LabSheetStatusText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "SubsectorTVText", "MWQMRunTVText", "AcceptedOrRejectedByContactTVText", "LastUpdateContactTVText", "SamplingPlanTypeText", "SampleTypeText", "LabSheetTypeText", "LabSheetStatusText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.LabSheet).GetProperties().OrderBy(c => c.Name))
@@ -111,6 +111,10 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.LabSheetRejectReason);
                Assert.IsNotNull(ModelsRes.LabSheetLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.LabSheetLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.LabSheetSubsectorTVText);
+               Assert.IsNotNull(ModelsRes.LabSheetMWQMRunTVText);
+               Assert.IsNotNull(ModelsRes.LabSheetAcceptedOrRejectedByContactTVText);
+               Assert.IsNotNull(ModelsRes.LabSheetLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.LabSheetSamplingPlanTypeText);
                Assert.IsNotNull(ModelsRes.LabSheetSampleTypeText);
                Assert.IsNotNull(ModelsRes.LabSheetLabSheetTypeText);
@@ -186,20 +190,32 @@ namespace CSSPModels.Tests
                labSheet.LastUpdateContactTVItemID = val22;
                Assert.AreEqual(val22, labSheet.LastUpdateContactTVItemID);
                string val23 = "Some text";
-               labSheet.SamplingPlanTypeText = val23;
-               Assert.AreEqual(val23, labSheet.SamplingPlanTypeText);
+               labSheet.SubsectorTVText = val23;
+               Assert.AreEqual(val23, labSheet.SubsectorTVText);
                string val24 = "Some text";
-               labSheet.SampleTypeText = val24;
-               Assert.AreEqual(val24, labSheet.SampleTypeText);
+               labSheet.MWQMRunTVText = val24;
+               Assert.AreEqual(val24, labSheet.MWQMRunTVText);
                string val25 = "Some text";
-               labSheet.LabSheetTypeText = val25;
-               Assert.AreEqual(val25, labSheet.LabSheetTypeText);
+               labSheet.AcceptedOrRejectedByContactTVText = val25;
+               Assert.AreEqual(val25, labSheet.AcceptedOrRejectedByContactTVText);
                string val26 = "Some text";
-               labSheet.LabSheetStatusText = val26;
-               Assert.AreEqual(val26, labSheet.LabSheetStatusText);
-               IEnumerable<ValidationResult> val81 = new List<ValidationResult>().AsEnumerable();
-               labSheet.ValidationResults = val81;
-               Assert.AreEqual(val81, labSheet.ValidationResults);
+               labSheet.LastUpdateContactTVText = val26;
+               Assert.AreEqual(val26, labSheet.LastUpdateContactTVText);
+               string val27 = "Some text";
+               labSheet.SamplingPlanTypeText = val27;
+               Assert.AreEqual(val27, labSheet.SamplingPlanTypeText);
+               string val28 = "Some text";
+               labSheet.SampleTypeText = val28;
+               Assert.AreEqual(val28, labSheet.SampleTypeText);
+               string val29 = "Some text";
+               labSheet.LabSheetTypeText = val29;
+               Assert.AreEqual(val29, labSheet.LabSheetTypeText);
+               string val30 = "Some text";
+               labSheet.LabSheetStatusText = val30;
+               Assert.AreEqual(val30, labSheet.LabSheetStatusText);
+               IEnumerable<ValidationResult> val93 = new List<ValidationResult>().AsEnumerable();
+               labSheet.ValidationResults = val93;
+               Assert.AreEqual(val93, labSheet.ValidationResults);
         }
     }
 }

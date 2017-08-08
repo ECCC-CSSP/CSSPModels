@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TVItemLink_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemLinkID", "FromTVItemID", "ToTVItemID", "FromTVType", "ToTVType", "StartDateTime_Local", "EndDateTime_Local", "Ordinal", "TVLevel", "TVPath", "ParentTVItemLinkID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "FromTVTypeText", "ToTVTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "FromTVText", "ToTVText", "LastUpdateContactTVText", "FromTVTypeText", "ToTVTypeText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVItemLink).GetProperties().OrderBy(c => c.Name))
@@ -102,6 +102,9 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemLinkParentTVItemLinkID);
                Assert.IsNotNull(ModelsRes.TVItemLinkLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.TVItemLinkLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.TVItemLinkFromTVText);
+               Assert.IsNotNull(ModelsRes.TVItemLinkToTVText);
+               Assert.IsNotNull(ModelsRes.TVItemLinkLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.TVItemLinkFromTVTypeText);
                Assert.IsNotNull(ModelsRes.TVItemLinkToTVTypeText);
         }
@@ -148,14 +151,23 @@ namespace CSSPModels.Tests
                tVItemLink.LastUpdateContactTVItemID = val13;
                Assert.AreEqual(val13, tVItemLink.LastUpdateContactTVItemID);
                string val14 = "Some text";
-               tVItemLink.FromTVTypeText = val14;
-               Assert.AreEqual(val14, tVItemLink.FromTVTypeText);
+               tVItemLink.FromTVText = val14;
+               Assert.AreEqual(val14, tVItemLink.FromTVText);
                string val15 = "Some text";
-               tVItemLink.ToTVTypeText = val15;
-               Assert.AreEqual(val15, tVItemLink.ToTVTypeText);
-               IEnumerable<ValidationResult> val48 = new List<ValidationResult>().AsEnumerable();
-               tVItemLink.ValidationResults = val48;
-               Assert.AreEqual(val48, tVItemLink.ValidationResults);
+               tVItemLink.ToTVText = val15;
+               Assert.AreEqual(val15, tVItemLink.ToTVText);
+               string val16 = "Some text";
+               tVItemLink.LastUpdateContactTVText = val16;
+               Assert.AreEqual(val16, tVItemLink.LastUpdateContactTVText);
+               string val17 = "Some text";
+               tVItemLink.FromTVTypeText = val17;
+               Assert.AreEqual(val17, tVItemLink.FromTVTypeText);
+               string val18 = "Some text";
+               tVItemLink.ToTVTypeText = val18;
+               Assert.AreEqual(val18, tVItemLink.ToTVTypeText);
+               IEnumerable<ValidationResult> val57 = new List<ValidationResult>().AsEnumerable();
+               tVItemLink.ValidationResults = val57;
+               Assert.AreEqual(val57, tVItemLink.ValidationResults);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void ResetPassword_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ResetPasswordID", "Email", "ExpireDate_Local", "Code", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "Password", "ConfirmPassword",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "Password", "ConfirmPassword",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ResetPassword).GetProperties().OrderBy(c => c.Name))
@@ -95,6 +95,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ResetPasswordCode);
                Assert.IsNotNull(ModelsRes.ResetPasswordLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.ResetPasswordLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.ResetPasswordLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.ResetPasswordPassword);
                Assert.IsNotNull(ModelsRes.ResetPasswordConfirmPassword);
         }
@@ -120,14 +121,17 @@ namespace CSSPModels.Tests
                resetPassword.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, resetPassword.LastUpdateContactTVItemID);
                string val7 = "Some text";
-               resetPassword.Password = val7;
-               Assert.AreEqual(val7, resetPassword.Password);
+               resetPassword.LastUpdateContactTVText = val7;
+               Assert.AreEqual(val7, resetPassword.LastUpdateContactTVText);
                string val8 = "Some text";
-               resetPassword.ConfirmPassword = val8;
-               Assert.AreEqual(val8, resetPassword.ConfirmPassword);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               resetPassword.ValidationResults = val27;
-               Assert.AreEqual(val27, resetPassword.ValidationResults);
+               resetPassword.Password = val8;
+               Assert.AreEqual(val8, resetPassword.Password);
+               string val9 = "Some text";
+               resetPassword.ConfirmPassword = val9;
+               Assert.AreEqual(val9, resetPassword.ConfirmPassword);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               resetPassword.ValidationResults = val30;
+               Assert.AreEqual(val30, resetPassword.ValidationResults);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void VPAmbient_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "VPAmbientID", "VPScenarioID", "Row", "MeasurementDepth_m", "CurrentSpeed_m_s", "CurrentDirection_deg", "AmbientSalinity_PSU", "AmbientTemperature_C", "BackgroundConcentration_MPN_100ml", "PollutantDecayRate_per_day", "FarFieldCurrentSpeed_m_s", "FarFieldCurrentDirection_deg", "FarFieldDiffusionCoefficient", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.VPAmbient).GetProperties().OrderBy(c => c.Name))
@@ -104,6 +104,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.VPAmbientFarFieldDiffusionCoefficient);
                Assert.IsNotNull(ModelsRes.VPAmbientLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.VPAmbientLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.VPAmbientLastUpdateContactTVText);
         }
         [TestMethod]
         public void VPAmbient_Every_Property_Has_Get_Set_Test()
@@ -153,9 +154,12 @@ namespace CSSPModels.Tests
                int val15 = 45;
                vPAmbient.LastUpdateContactTVItemID = val15;
                Assert.AreEqual(val15, vPAmbient.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val48 = new List<ValidationResult>().AsEnumerable();
-               vPAmbient.ValidationResults = val48;
-               Assert.AreEqual(val48, vPAmbient.ValidationResults);
+               string val16 = "Some text";
+               vPAmbient.LastUpdateContactTVText = val16;
+               Assert.AreEqual(val16, vPAmbient.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val51 = new List<ValidationResult>().AsEnumerable();
+               vPAmbient.ValidationResults = val51;
+               Assert.AreEqual(val51, vPAmbient.ValidationResults);
         }
     }
 }

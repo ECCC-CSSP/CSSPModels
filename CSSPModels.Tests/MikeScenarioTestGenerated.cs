@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MikeScenario_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeScenarioID", "MikeScenarioTVItemID", "ParentMikeScenarioID", "ScenarioStatus", "ErrorInfo", "MikeScenarioStartDateTime_Local", "MikeScenarioEndDateTime_Local", "MikeScenarioStartExecutionDateTime_Local", "MikeScenarioExecutionTime_min", "WindSpeed_km_h", "WindDirection_deg", "DecayFactor_per_day", "DecayIsConstant", "DecayFactorAmplitude", "ResultFrequency_min", "AmbientTemperature_C", "AmbientSalinity_PSU", "ManningNumber", "NumberOfElements", "NumberOfTimeSteps", "NumberOfSigmaLayers", "NumberOfZLayers", "NumberOfHydroOutputParameters", "NumberOfTransOutputParameters", "EstimatedHydroFileSize", "EstimatedTransFileSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ScenarioStatusText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MikeScenarioTVText", "LastUpdateContactTVText", "ScenarioStatusText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MikeScenario).GetProperties().OrderBy(c => c.Name))
@@ -117,6 +117,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MikeScenarioEstimatedTransFileSize);
                Assert.IsNotNull(ModelsRes.MikeScenarioLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MikeScenarioLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.MikeScenarioMikeScenarioTVText);
+               Assert.IsNotNull(ModelsRes.MikeScenarioLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.MikeScenarioScenarioStatusText);
         }
         [TestMethod]
@@ -207,11 +209,17 @@ namespace CSSPModels.Tests
                mikeScenario.LastUpdateContactTVItemID = val28;
                Assert.AreEqual(val28, mikeScenario.LastUpdateContactTVItemID);
                string val29 = "Some text";
-               mikeScenario.ScenarioStatusText = val29;
-               Assert.AreEqual(val29, mikeScenario.ScenarioStatusText);
-               IEnumerable<ValidationResult> val90 = new List<ValidationResult>().AsEnumerable();
-               mikeScenario.ValidationResults = val90;
-               Assert.AreEqual(val90, mikeScenario.ValidationResults);
+               mikeScenario.MikeScenarioTVText = val29;
+               Assert.AreEqual(val29, mikeScenario.MikeScenarioTVText);
+               string val30 = "Some text";
+               mikeScenario.LastUpdateContactTVText = val30;
+               Assert.AreEqual(val30, mikeScenario.LastUpdateContactTVText);
+               string val31 = "Some text";
+               mikeScenario.ScenarioStatusText = val31;
+               Assert.AreEqual(val31, mikeScenario.ScenarioStatusText);
+               IEnumerable<ValidationResult> val96 = new List<ValidationResult>().AsEnumerable();
+               mikeScenario.ValidationResults = val96;
+               Assert.AreEqual(val96, mikeScenario.ValidationResults);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void AppErrLog_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "AppErrLogID", "Tag", "LineNumber", "Source", "Message", "DateTime_UTC", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.AppErrLog).GetProperties().OrderBy(c => c.Name))
@@ -97,6 +97,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.AppErrLogDateTime_UTC);
                Assert.IsNotNull(ModelsRes.AppErrLogLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.AppErrLogLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.AppErrLogLastUpdateContactTVText);
         }
         [TestMethod]
         public void AppErrLog_Every_Property_Has_Get_Set_Test()
@@ -125,9 +126,12 @@ namespace CSSPModels.Tests
                int val8 = 45;
                appErrLog.LastUpdateContactTVItemID = val8;
                Assert.AreEqual(val8, appErrLog.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               appErrLog.ValidationResults = val27;
-               Assert.AreEqual(val27, appErrLog.ValidationResults);
+               string val9 = "Some text";
+               appErrLog.LastUpdateContactTVText = val9;
+               Assert.AreEqual(val9, appErrLog.LastUpdateContactTVText);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               appErrLog.ValidationResults = val30;
+               Assert.AreEqual(val30, appErrLog.ValidationResults);
         }
     }
 }
