@@ -38,7 +38,7 @@ namespace CSSPModels
         #region Constructors
         public MapInfoPoint()
         {
-            // empty for now
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

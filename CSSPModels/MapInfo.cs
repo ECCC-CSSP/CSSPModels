@@ -12,7 +12,7 @@ namespace CSSPModels
         [Key]
         public int MapInfoID { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID",
-            AllowableTVTypeList = "1,6,18,3,19,20,4,8,9,10,12,11,13,14,15,31,16,23,17,40,26,22,28,25,42,38,73,72,74,36,33,29,35,39")]
+            AllowableTVTypeList = "1,2,6,18,3,19,20,4,8,9,10,12,11,13,14,15,31,16,23,17,40,26,22,28,25,42,38,73,72,74,36,33,29,35,39")]
         public int TVItemID { get; set; }
         [CSSPEnumType]
         public TVTypeEnum TVType { get; set; }
@@ -60,7 +60,7 @@ namespace CSSPModels
         #region Constructors
         public MapInfo()
         {
-            // empty for now
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
 
