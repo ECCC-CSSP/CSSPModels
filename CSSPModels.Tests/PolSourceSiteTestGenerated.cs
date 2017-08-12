@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void PolSourceSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "PolSourceSiteID", "PolSourceSiteTVItemID", "Temp_Locator_CanDelete", "Oldsiteid", "Site", "SiteID", "IsPointSource", "InactiveReason", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "PolSourceSiteTVText", "LastUpdateContactTVText", "InactiveReasonText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "PolSourceSiteTVText", "LastUpdateContactTVText", "InactiveReasonText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.PolSourceSite).GetProperties().OrderBy(c => c.Name))
@@ -103,6 +103,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.PolSourceSitePolSourceSiteTVText);
                Assert.IsNotNull(ModelsRes.PolSourceSiteLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.PolSourceSiteInactiveReasonText);
+               Assert.IsNotNull(ModelsRes.PolSourceSiteHasErrors);
         }
         [TestMethod]
         public void PolSourceSite_Every_Property_Has_Get_Set_Test()
@@ -149,9 +150,12 @@ namespace CSSPModels.Tests
                string val14 = "Some text";
                polSourceSite.InactiveReasonText = val14;
                Assert.AreEqual(val14, polSourceSite.InactiveReasonText);
-               IEnumerable<ValidationResult> val45 = new List<ValidationResult>().AsEnumerable();
-               polSourceSite.ValidationResults = val45;
-               Assert.AreEqual(val45, polSourceSite.ValidationResults);
+               bool val15 = true;
+               polSourceSite.HasErrors = val15;
+               Assert.AreEqual(val15, polSourceSite.HasErrors);
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>().AsEnumerable();
+               polSourceSite.ValidationResults = val48;
+               Assert.AreEqual(val48, polSourceSite.ValidationResults);
         }
     }
 }

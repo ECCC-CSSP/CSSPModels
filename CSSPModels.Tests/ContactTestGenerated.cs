@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Contact_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactID", "Id", "ContactTVItemID", "LoginEmail", "FirstName", "LastName", "Initial", "WebName", "ContactTitle", "IsAdmin", "EmailValidated", "Disabled", "IsNew", "SamplingPlanner_ProvincesTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ContactTVText", "LastUpdateContactTVText", "ParentTVItemID", "ContactTitleText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "ContactTVText", "LastUpdateContactTVText", "ParentTVItemID", "ContactTitleText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Contact).GetProperties().OrderBy(c => c.Name))
@@ -109,6 +109,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.ContactParentTVItemID);
                Assert.IsNotNull(ModelsRes.ContactContactTitleText);
+               Assert.IsNotNull(ModelsRes.ContactHasErrors);
         }
         [TestMethod]
         public void Contact_Every_Property_Has_Get_Set_Test()
@@ -173,9 +174,12 @@ namespace CSSPModels.Tests
                string val20 = "Some text";
                contact.ContactTitleText = val20;
                Assert.AreEqual(val20, contact.ContactTitleText);
-               IEnumerable<ValidationResult> val63 = new List<ValidationResult>().AsEnumerable();
-               contact.ValidationResults = val63;
-               Assert.AreEqual(val63, contact.ValidationResults);
+               bool val21 = true;
+               contact.HasErrors = val21;
+               Assert.AreEqual(val21, contact.HasErrors);
+               IEnumerable<ValidationResult> val66 = new List<ValidationResult>().AsEnumerable();
+               contact.ValidationResults = val66;
+               Assert.AreEqual(val66, contact.ValidationResults);
         }
     }
 }

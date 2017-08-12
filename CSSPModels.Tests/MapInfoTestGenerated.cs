@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MapInfo_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MapInfoID", "TVItemID", "TVType", "LatMin", "LatMax", "LngMin", "LngMax", "MapInfoDrawType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "TVText", "LastUpdateContactTVText", "TVTypeText", "MapInfoDrawTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TVText", "LastUpdateContactTVText", "TVTypeText", "MapInfoDrawTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MapInfo).GetProperties().OrderBy(c => c.Name))
@@ -103,6 +103,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MapInfoLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.MapInfoTVTypeText);
                Assert.IsNotNull(ModelsRes.MapInfoMapInfoDrawTypeText);
+               Assert.IsNotNull(ModelsRes.MapInfoHasErrors);
         }
         [TestMethod]
         public void MapInfo_Every_Property_Has_Get_Set_Test()
@@ -149,9 +150,12 @@ namespace CSSPModels.Tests
                string val14 = "Some text";
                mapInfo.MapInfoDrawTypeText = val14;
                Assert.AreEqual(val14, mapInfo.MapInfoDrawTypeText);
-               IEnumerable<ValidationResult> val45 = new List<ValidationResult>().AsEnumerable();
-               mapInfo.ValidationResults = val45;
-               Assert.AreEqual(val45, mapInfo.ValidationResults);
+               bool val15 = true;
+               mapInfo.HasErrors = val15;
+               Assert.AreEqual(val15, mapInfo.HasErrors);
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>().AsEnumerable();
+               mapInfo.ValidationResults = val48;
+               Assert.AreEqual(val48, mapInfo.ValidationResults);
         }
     }
 }

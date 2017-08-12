@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void AppTaskParameter_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Name", "Value",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Name", "Value", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,6 +39,7 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.AppTaskParameterName);
                Assert.IsNotNull(ModelsRes.AppTaskParameterValue);
+               Assert.IsNotNull(ModelsRes.AppTaskParameterHasErrors);
         }
         [TestMethod]
         public void AppTaskParameter_Every_Property_Has_Get_Set_Test()
@@ -49,9 +50,12 @@ namespace CSSPModels.Tests
                string val2 = "Some text";
                appTaskParameter.Value = val2;
                Assert.AreEqual(val2, appTaskParameter.Value);
-               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
-               appTaskParameter.ValidationResults = val9;
-               Assert.AreEqual(val9, appTaskParameter.ValidationResults);
+               bool val3 = true;
+               appTaskParameter.HasErrors = val3;
+               Assert.AreEqual(val3, appTaskParameter.HasErrors);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               appTaskParameter.ValidationResults = val12;
+               Assert.AreEqual(val12, appTaskParameter.ValidationResults);
         }
     }
 }

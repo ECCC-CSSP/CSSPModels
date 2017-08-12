@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolSourceObsInfoChild_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "PolSourceObsInfo", "PolSourceObsInfoChildStart", "PolSourceObsInfoText", "PolSourceObsInfoChildStartText",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "PolSourceObsInfo", "PolSourceObsInfoChildStart", "PolSourceObsInfoText", "PolSourceObsInfoChildStartText", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -41,6 +41,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.PolSourceObsInfoChildPolSourceObsInfoChildStart);
                Assert.IsNotNull(ModelsRes.PolSourceObsInfoChildPolSourceObsInfoText);
                Assert.IsNotNull(ModelsRes.PolSourceObsInfoChildPolSourceObsInfoChildStartText);
+               Assert.IsNotNull(ModelsRes.PolSourceObsInfoChildHasErrors);
         }
         [TestMethod]
         public void PolSourceObsInfoChild_Every_Property_Has_Get_Set_Test()
@@ -57,9 +58,12 @@ namespace CSSPModels.Tests
                string val4 = "Some text";
                polSourceObsInfoChild.PolSourceObsInfoChildStartText = val4;
                Assert.AreEqual(val4, polSourceObsInfoChild.PolSourceObsInfoChildStartText);
-               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
-               polSourceObsInfoChild.ValidationResults = val15;
-               Assert.AreEqual(val15, polSourceObsInfoChild.ValidationResults);
+               bool val5 = true;
+               polSourceObsInfoChild.HasErrors = val5;
+               Assert.AreEqual(val5, polSourceObsInfoChild.HasErrors);
+               IEnumerable<ValidationResult> val18 = new List<ValidationResult>().AsEnumerable();
+               polSourceObsInfoChild.ValidationResults = val18;
+               Assert.AreEqual(val18, polSourceObsInfoChild.ValidationResults);
         }
     }
 }

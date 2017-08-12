@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolyPoint_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "XCoord", "YCoord", "Z",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "XCoord", "YCoord", "Z", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -40,6 +40,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.PolyPointXCoord);
                Assert.IsNotNull(ModelsRes.PolyPointYCoord);
                Assert.IsNotNull(ModelsRes.PolyPointZ);
+               Assert.IsNotNull(ModelsRes.PolyPointHasErrors);
         }
         [TestMethod]
         public void PolyPoint_Every_Property_Has_Get_Set_Test()
@@ -53,9 +54,12 @@ namespace CSSPModels.Tests
                double val3 = 87.9D;
                polyPoint.Z = val3;
                Assert.AreEqual(val3, polyPoint.Z);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
-               polyPoint.ValidationResults = val12;
-               Assert.AreEqual(val12, polyPoint.ValidationResults);
+               bool val4 = true;
+               polyPoint.HasErrors = val4;
+               Assert.AreEqual(val4, polyPoint.HasErrors);
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
+               polyPoint.ValidationResults = val15;
+               Assert.AreEqual(val15, polyPoint.ValidationResults);
         }
     }
 }

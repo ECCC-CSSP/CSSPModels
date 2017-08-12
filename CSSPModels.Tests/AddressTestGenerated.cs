@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Address_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "AddressID", "AddressTVItemID", "AddressType", "CountryTVItemID", "ProvinceTVItemID", "MunicipalityTVItemID", "StreetName", "StreetNumber", "StreetType", "PostalCode", "GoogleAddressText", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ParentTVItemID", "AddressTVText", "CountryTVText", "ProvinceTVText", "MunicipalityTVText", "LastUpdateContactTVText", "AddressTypeText", "StreetTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "ParentTVItemID", "AddressTVText", "CountryTVText", "ProvinceTVText", "MunicipalityTVText", "LastUpdateContactTVText", "AddressTypeText", "StreetTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Address).GetProperties().OrderBy(c => c.Name))
@@ -110,6 +110,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.AddressLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.AddressAddressTypeText);
                Assert.IsNotNull(ModelsRes.AddressStreetTypeText);
+               Assert.IsNotNull(ModelsRes.AddressHasErrors);
         }
         [TestMethod]
         public void Address_Every_Property_Has_Get_Set_Test()
@@ -177,9 +178,12 @@ namespace CSSPModels.Tests
                string val21 = "Some text";
                address.StreetTypeText = val21;
                Assert.AreEqual(val21, address.StreetTypeText);
-               IEnumerable<ValidationResult> val66 = new List<ValidationResult>().AsEnumerable();
-               address.ValidationResults = val66;
-               Assert.AreEqual(val66, address.ValidationResults);
+               bool val22 = true;
+               address.HasErrors = val22;
+               Assert.AreEqual(val22, address.HasErrors);
+               IEnumerable<ValidationResult> val69 = new List<ValidationResult>().AsEnumerable();
+               address.ValidationResults = val69;
+               Assert.AreEqual(val69, address.ValidationResults);
         }
     }
 }

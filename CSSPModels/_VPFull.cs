@@ -17,6 +17,7 @@ namespace CSSPModels
         public virtual VPScenario VPScenario { get; set; }
         public virtual List<VPAmbient> AmbientList { get; set; }
         public virtual List<VPResult> ResultList { get; set; }
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
@@ -25,6 +26,7 @@ namespace CSSPModels
         {
             AmbientList = new List<VPAmbient>();
             ResultList = new List<VPResult>();
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

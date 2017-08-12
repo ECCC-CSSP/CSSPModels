@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SamplingPlanAndFilesLabSheetCount_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LabSheetHistoryCount", "LabSheetTransferredCount", "SamplingPlan", "TVFileSamplingPlanFileTXT",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LabSheetHistoryCount", "LabSheetTransferredCount", "SamplingPlan", "TVFileSamplingPlanFileTXT", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -41,6 +41,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SamplingPlanAndFilesLabSheetCountLabSheetTransferredCount);
                Assert.IsNotNull(ModelsRes.SamplingPlanAndFilesLabSheetCountSamplingPlan);
                Assert.IsNotNull(ModelsRes.SamplingPlanAndFilesLabSheetCountTVFileSamplingPlanFileTXT);
+               Assert.IsNotNull(ModelsRes.SamplingPlanAndFilesLabSheetCountHasErrors);
         }
         [TestMethod]
         public void SamplingPlanAndFilesLabSheetCount_Every_Property_Has_Get_Set_Test()
@@ -51,15 +52,18 @@ namespace CSSPModels.Tests
                int val2 = 45;
                samplingPlanAndFilesLabSheetCount.LabSheetTransferredCount = val2;
                Assert.AreEqual(val2, samplingPlanAndFilesLabSheetCount.LabSheetTransferredCount);
-               SamplingPlan val8 = new SamplingPlan();
-               samplingPlanAndFilesLabSheetCount.SamplingPlan = val8;
-               Assert.AreEqual(val8, samplingPlanAndFilesLabSheetCount.SamplingPlan);
-               TVFile val9 = new TVFile();
-               samplingPlanAndFilesLabSheetCount.TVFileSamplingPlanFileTXT = val9;
-               Assert.AreEqual(val9, samplingPlanAndFilesLabSheetCount.TVFileSamplingPlanFileTXT);
-               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
-               samplingPlanAndFilesLabSheetCount.ValidationResults = val15;
-               Assert.AreEqual(val15, samplingPlanAndFilesLabSheetCount.ValidationResults);
+               bool val5 = true;
+               samplingPlanAndFilesLabSheetCount.HasErrors = val5;
+               Assert.AreEqual(val5, samplingPlanAndFilesLabSheetCount.HasErrors);
+               SamplingPlan val9 = new SamplingPlan();
+               samplingPlanAndFilesLabSheetCount.SamplingPlan = val9;
+               Assert.AreEqual(val9, samplingPlanAndFilesLabSheetCount.SamplingPlan);
+               TVFile val10 = new TVFile();
+               samplingPlanAndFilesLabSheetCount.TVFileSamplingPlanFileTXT = val10;
+               Assert.AreEqual(val10, samplingPlanAndFilesLabSheetCount.TVFileSamplingPlanFileTXT);
+               IEnumerable<ValidationResult> val18 = new List<ValidationResult>().AsEnumerable();
+               samplingPlanAndFilesLabSheetCount.ValidationResults = val18;
+               Assert.AreEqual(val18, samplingPlanAndFilesLabSheetCount.ValidationResults);
         }
     }
 }

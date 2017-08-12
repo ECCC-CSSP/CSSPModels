@@ -32,6 +32,7 @@ namespace CSSPModels
         public virtual List<int> DailyDuplicateMWQMSiteTVItemIDList { get; set; }
         public virtual List<string> InfrastructureList { get; set; }
         public virtual List<int> InfrastructureTVItemIDList { get; set; }
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
@@ -45,6 +46,7 @@ namespace CSSPModels
             DailyDuplicateMWQMSiteTVItemIDList = new List<int>();
             InfrastructureList = new List<string>();
             InfrastructureTVItemIDList = new List<int>();
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

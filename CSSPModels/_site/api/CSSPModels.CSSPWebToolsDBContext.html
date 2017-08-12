@@ -1,0 +1,2519 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CSSPWebToolsDBContext
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CSSPWebToolsDBContext
+   ">
+    <meta name="generator" content="docfx 2.22.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSSPModels.CSSPWebToolsDBContext">
+  
+  
+  <h1 id="CSSPModels_CSSPWebToolsDBContext" data-uid="CSSPModels.CSSPWebToolsDBContext" class="text-break">Class CSSPWebToolsDBContext
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.EntityFrameworkCore.DbContext</span></div>
+    <div class="level2"><span class="xref">CSSPWebToolsDBContext</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChanges()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChanges(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Boolean, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Entry&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Entry(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Add&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddAsync&lt;TEntity&gt;(TEntity, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Attach&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Update&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Remove&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Add(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddAsync(System.Object, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Attach(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Update(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Remove(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRangeAsync(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AttachRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.UpdateRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.RemoveRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRangeAsync(System.Collections.Generic.IEnumerable&lt;System.Object&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AttachRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.UpdateRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.RemoveRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Set&lt;TEntity&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Find(System.Type, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync(System.Type, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync(System.Type, System.Object[], System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Find&lt;TEntity&gt;(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync&lt;TEntity&gt;(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync&lt;TEntity&gt;(System.Object[], System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure&lt;System.IServiceProvider&gt;.Instance</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Database</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.ChangeTracker</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Model</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSSPModels.html">CSSPModels</a></h6>
+  <h6><strong>Assembly</strong>: CSSPModels.dll</h6>
+  <h5 id="CSSPModels_CSSPWebToolsDBContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CSSPWebToolsDBContext : DbContext, IDisposable, IInfrastructure&lt;IServiceProvider&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext__ctor.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L92">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext__ctor_" data-uid="CSSPModels.CSSPWebToolsDBContext.#ctor*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext__ctor" data-uid="CSSPModels.CSSPWebToolsDBContext.#ctor">CSSPWebToolsDBContext()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSSPWebToolsDBContext()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext__ctor_CSSPEnums_DatabaseTypeEnum_.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.%23ctor(CSSPEnums.DatabaseTypeEnum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L97">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext__ctor_" data-uid="CSSPModels.CSSPWebToolsDBContext.#ctor*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext__ctor_CSSPEnums_DatabaseTypeEnum_" data-uid="CSSPModels.CSSPWebToolsDBContext.#ctor(CSSPEnums.DatabaseTypeEnum)">CSSPWebToolsDBContext(DatabaseTypeEnum)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSSPWebToolsDBContext(DatabaseTypeEnum DatabaseType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CSSPEnums.DatabaseTypeEnum</span></td>
+        <td><span class="parametername">DatabaseType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Addresses.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Addresses%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L20">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_Addresses_" data-uid="CSSPModels.CSSPWebToolsDBContext.Addresses*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_Addresses" data-uid="CSSPModels.CSSPWebToolsDBContext.Addresses">Addresses</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;Address&gt; Addresses { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Address.html">Address</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_AppErrLogs.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.AppErrLogs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L21">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_AppErrLogs_" data-uid="CSSPModels.CSSPWebToolsDBContext.AppErrLogs*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_AppErrLogs" data-uid="CSSPModels.CSSPWebToolsDBContext.AppErrLogs">AppErrLogs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;AppErrLog&gt; AppErrLogs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.AppErrLog.html">AppErrLog</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_AppTaskLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.AppTaskLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L23">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_AppTaskLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.AppTaskLanguages*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_AppTaskLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.AppTaskLanguages">AppTaskLanguages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;AppTaskLanguage&gt; AppTaskLanguages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.AppTaskLanguage.html">AppTaskLanguage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_AppTasks.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.AppTasks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L22">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_AppTasks_" data-uid="CSSPModels.CSSPWebToolsDBContext.AppTasks*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_AppTasks" data-uid="CSSPModels.CSSPWebToolsDBContext.AppTasks">AppTasks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;AppTask&gt; AppTasks { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.AppTask.html">AppTask</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_BoxModelLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.BoxModelLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L25">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_BoxModelLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.BoxModelLanguages*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_BoxModelLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.BoxModelLanguages">BoxModelLanguages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;BoxModelLanguage&gt; BoxModelLanguages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.BoxModelLanguage.html">BoxModelLanguage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_BoxModelResults.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.BoxModelResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L26">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_BoxModelResults_" data-uid="CSSPModels.CSSPWebToolsDBContext.BoxModelResults*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_BoxModelResults" data-uid="CSSPModels.CSSPWebToolsDBContext.BoxModelResults">BoxModelResults</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;BoxModelResult&gt; BoxModelResults { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.BoxModelResult.html">BoxModelResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_BoxModels.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.BoxModels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L24">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_BoxModels_" data-uid="CSSPModels.CSSPWebToolsDBContext.BoxModels*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_BoxModels" data-uid="CSSPModels.CSSPWebToolsDBContext.BoxModels">BoxModels</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;BoxModel&gt; BoxModels { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.BoxModel.html">BoxModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ClimateDataValues.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ClimateDataValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L27">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_ClimateDataValues_" data-uid="CSSPModels.CSSPWebToolsDBContext.ClimateDataValues*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_ClimateDataValues" data-uid="CSSPModels.CSSPWebToolsDBContext.ClimateDataValues">ClimateDataValues</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;ClimateDataValue&gt; ClimateDataValues { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.ClimateDataValue.html">ClimateDataValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ClimateSites.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ClimateSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L28">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_ClimateSites_" data-uid="CSSPModels.CSSPWebToolsDBContext.ClimateSites*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_ClimateSites" data-uid="CSSPModels.CSSPWebToolsDBContext.ClimateSites">ClimateSites</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;ClimateSite&gt; ClimateSites { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.ClimateSite.html">ClimateSite</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ContactLogins.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ContactLogins%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L30">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_ContactLogins_" data-uid="CSSPModels.CSSPWebToolsDBContext.ContactLogins*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_ContactLogins" data-uid="CSSPModels.CSSPWebToolsDBContext.ContactLogins">ContactLogins</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;ContactLogin&gt; ContactLogins { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.ContactLogin.html">ContactLogin</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ContactPreferences.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ContactPreferences%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L31">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_ContactPreferences_" data-uid="CSSPModels.CSSPWebToolsDBContext.ContactPreferences*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_ContactPreferences" data-uid="CSSPModels.CSSPWebToolsDBContext.ContactPreferences">ContactPreferences</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;ContactPreference&gt; ContactPreferences { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.ContactPreference.html">ContactPreference</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Contacts.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Contacts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L29">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_Contacts_" data-uid="CSSPModels.CSSPWebToolsDBContext.Contacts*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_Contacts" data-uid="CSSPModels.CSSPWebToolsDBContext.Contacts">Contacts</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;Contact&gt; Contacts { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Contact.html">Contact</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ContactShortcuts.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ContactShortcuts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L32">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_ContactShortcuts_" data-uid="CSSPModels.CSSPWebToolsDBContext.ContactShortcuts*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_ContactShortcuts" data-uid="CSSPModels.CSSPWebToolsDBContext.ContactShortcuts">ContactShortcuts</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;ContactShortcut&gt; ContactShortcuts { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.ContactShortcut.html">ContactShortcut</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_DatabaseType.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.DatabaseType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L17">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_DatabaseType_" data-uid="CSSPModels.CSSPWebToolsDBContext.DatabaseType*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_DatabaseType" data-uid="CSSPModels.CSSPWebToolsDBContext.DatabaseType">DatabaseType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DatabaseTypeEnum DatabaseType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CSSPEnums.DatabaseTypeEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_DocTemplates.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.DocTemplates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L33">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_DocTemplates_" data-uid="CSSPModels.CSSPWebToolsDBContext.DocTemplates*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_DocTemplates" data-uid="CSSPModels.CSSPWebToolsDBContext.DocTemplates">DocTemplates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;DocTemplate&gt; DocTemplates { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.DocTemplate.html">DocTemplate</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_EmailDistributionListContacts.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.EmailDistributionListContacts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L36">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_EmailDistributionListContacts_" data-uid="CSSPModels.CSSPWebToolsDBContext.EmailDistributionListContacts*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_EmailDistributionListContacts" data-uid="CSSPModels.CSSPWebToolsDBContext.EmailDistributionListContacts">EmailDistributionListContacts</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;EmailDistributionListContact&gt; EmailDistributionListContacts { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.EmailDistributionListContact.html">EmailDistributionListContact</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_EmailDistributionLists.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.EmailDistributionLists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L35">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_EmailDistributionLists_" data-uid="CSSPModels.CSSPWebToolsDBContext.EmailDistributionLists*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_EmailDistributionLists" data-uid="CSSPModels.CSSPWebToolsDBContext.EmailDistributionLists">EmailDistributionLists</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;EmailDistributionList&gt; EmailDistributionLists { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.EmailDistributionList.html">EmailDistributionList</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Emails.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Emails%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L34">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_Emails_" data-uid="CSSPModels.CSSPWebToolsDBContext.Emails*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_Emails" data-uid="CSSPModels.CSSPWebToolsDBContext.Emails">Emails</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;Email&gt; Emails { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Email.html">Email</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Error.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Error%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L18">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_Error_" data-uid="CSSPModels.CSSPWebToolsDBContext.Error*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_Error" data-uid="CSSPModels.CSSPWebToolsDBContext.Error">Error</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Error { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_HydrometricDataValues.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.HydrometricDataValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L37">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_HydrometricDataValues_" data-uid="CSSPModels.CSSPWebToolsDBContext.HydrometricDataValues*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_HydrometricDataValues" data-uid="CSSPModels.CSSPWebToolsDBContext.HydrometricDataValues">HydrometricDataValues</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;HydrometricDataValue&gt; HydrometricDataValues { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.HydrometricDataValue.html">HydrometricDataValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_HydrometricSites.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.HydrometricSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L38">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_HydrometricSites_" data-uid="CSSPModels.CSSPWebToolsDBContext.HydrometricSites*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_HydrometricSites" data-uid="CSSPModels.CSSPWebToolsDBContext.HydrometricSites">HydrometricSites</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;HydrometricSite&gt; HydrometricSites { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.HydrometricSite.html">HydrometricSite</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_InfrastructureLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.InfrastructureLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L40">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_InfrastructureLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.InfrastructureLanguages*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_InfrastructureLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.InfrastructureLanguages">InfrastructureLanguages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;InfrastructureLanguage&gt; InfrastructureLanguages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.InfrastructureLanguage.html">InfrastructureLanguage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Infrastructures.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Infrastructures%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L39">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_Infrastructures_" data-uid="CSSPModels.CSSPWebToolsDBContext.Infrastructures*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_Infrastructures" data-uid="CSSPModels.CSSPWebToolsDBContext.Infrastructures">Infrastructures</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;Infrastructure&gt; Infrastructures { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Infrastructure.html">Infrastructure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_LabSheetDetails.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.LabSheetDetails%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L41">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_LabSheetDetails_" data-uid="CSSPModels.CSSPWebToolsDBContext.LabSheetDetails*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_LabSheetDetails" data-uid="CSSPModels.CSSPWebToolsDBContext.LabSheetDetails">LabSheetDetails</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;LabSheetDetail&gt; LabSheetDetails { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.LabSheetDetail.html">LabSheetDetail</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_LabSheets.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.LabSheets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L43">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_LabSheets_" data-uid="CSSPModels.CSSPWebToolsDBContext.LabSheets*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_LabSheets" data-uid="CSSPModels.CSSPWebToolsDBContext.LabSheets">LabSheets</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;LabSheet&gt; LabSheets { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.LabSheet.html">LabSheet</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_LabSheetTubeMPNDetails.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.LabSheetTubeMPNDetails%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L42">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_LabSheetTubeMPNDetails_" data-uid="CSSPModels.CSSPWebToolsDBContext.LabSheetTubeMPNDetails*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_LabSheetTubeMPNDetails" data-uid="CSSPModels.CSSPWebToolsDBContext.LabSheetTubeMPNDetails">LabSheetTubeMPNDetails</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;LabSheetTubeMPNDetail&gt; LabSheetTubeMPNDetails { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.LabSheetTubeMPNDetail.html">LabSheetTubeMPNDetail</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Logs.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Logs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L44">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_Logs_" data-uid="CSSPModels.CSSPWebToolsDBContext.Logs*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_Logs" data-uid="CSSPModels.CSSPWebToolsDBContext.Logs">Logs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;Log&gt; Logs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Log.html">Log</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MapInfoPoints.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MapInfoPoints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L45">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MapInfoPoints_" data-uid="CSSPModels.CSSPWebToolsDBContext.MapInfoPoints*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MapInfoPoints" data-uid="CSSPModels.CSSPWebToolsDBContext.MapInfoPoints">MapInfoPoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MapInfoPoint&gt; MapInfoPoints { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MapInfoPoint.html">MapInfoPoint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MapInfos.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MapInfos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L46">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MapInfos_" data-uid="CSSPModels.CSSPWebToolsDBContext.MapInfos*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MapInfos" data-uid="CSSPModels.CSSPWebToolsDBContext.MapInfos">MapInfos</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MapInfo&gt; MapInfos { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MapInfo.html">MapInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MikeBoundaryConditions.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MikeBoundaryConditions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L47">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MikeBoundaryConditions_" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeBoundaryConditions*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MikeBoundaryConditions" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeBoundaryConditions">MikeBoundaryConditions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MikeBoundaryCondition&gt; MikeBoundaryConditions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MikeBoundaryCondition.html">MikeBoundaryCondition</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MikeScenarios.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MikeScenarios%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L48">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MikeScenarios_" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeScenarios*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MikeScenarios" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeScenarios">MikeScenarios</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MikeScenario&gt; MikeScenarios { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MikeScenario.html">MikeScenario</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MikeSources.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MikeSources%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L50">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MikeSources_" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeSources*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MikeSources" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeSources">MikeSources</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MikeSource&gt; MikeSources { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MikeSource.html">MikeSource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MikeSourceStartEnds.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MikeSourceStartEnds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L49">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MikeSourceStartEnds_" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeSourceStartEnds*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MikeSourceStartEnds" data-uid="CSSPModels.CSSPWebToolsDBContext.MikeSourceStartEnds">MikeSourceStartEnds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MikeSourceStartEnd&gt; MikeSourceStartEnds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MikeSourceStartEnd.html">MikeSourceStartEnd</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMLookupMPNs.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMLookupMPNs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L51">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MWQMLookupMPNs_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMLookupMPNs*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMLookupMPNs" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMLookupMPNs">MWQMLookupMPNs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MWQMLookupMPN&gt; MWQMLookupMPNs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMLookupMPN.html">MWQMLookupMPN</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMRunLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMRunLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L52">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MWQMRunLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMRunLanguages*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMRunLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMRunLanguages">MWQMRunLanguages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MWQMRunLanguage&gt; MWQMRunLanguages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMRunLanguage.html">MWQMRunLanguage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMRuns.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMRuns%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L53">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MWQMRuns_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMRuns*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMRuns" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMRuns">MWQMRuns</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MWQMRun&gt; MWQMRuns { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMRun.html">MWQMRun</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMSampleLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMSampleLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L54">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MWQMSampleLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSampleLanguages*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMSampleLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSampleLanguages">MWQMSampleLanguages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MWQMSampleLanguage&gt; MWQMSampleLanguages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMSampleLanguage.html">MWQMSampleLanguage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMSamples.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMSamples%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L55">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MWQMSamples_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSamples*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMSamples" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSamples">MWQMSamples</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MWQMSample&gt; MWQMSamples { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMSample.html">MWQMSample</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMSites.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L57">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MWQMSites_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSites*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMSites" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSites">MWQMSites</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MWQMSite&gt; MWQMSites { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMSite.html">MWQMSite</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMSiteStartEndDates.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMSiteStartEndDates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L56">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MWQMSiteStartEndDates_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSiteStartEndDates*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMSiteStartEndDates" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSiteStartEndDates">MWQMSiteStartEndDates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MWQMSiteStartEndDate&gt; MWQMSiteStartEndDates { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMSiteStartEndDate.html">MWQMSiteStartEndDate</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMSubsectorLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMSubsectorLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L58">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MWQMSubsectorLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSubsectorLanguages*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMSubsectorLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSubsectorLanguages">MWQMSubsectorLanguages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MWQMSubsectorLanguage&gt; MWQMSubsectorLanguages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMSubsectorLanguage.html">MWQMSubsectorLanguage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_MWQMSubsectors.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.MWQMSubsectors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L59">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_MWQMSubsectors_" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSubsectors*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_MWQMSubsectors" data-uid="CSSPModels.CSSPWebToolsDBContext.MWQMSubsectors">MWQMSubsectors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MWQMSubsector&gt; MWQMSubsectors { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.MWQMSubsector.html">MWQMSubsector</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_PolSourceObservationIssues.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.PolSourceObservationIssues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L60">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_PolSourceObservationIssues_" data-uid="CSSPModels.CSSPWebToolsDBContext.PolSourceObservationIssues*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_PolSourceObservationIssues" data-uid="CSSPModels.CSSPWebToolsDBContext.PolSourceObservationIssues">PolSourceObservationIssues</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;PolSourceObservationIssue&gt; PolSourceObservationIssues { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.PolSourceObservationIssue.html">PolSourceObservationIssue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_PolSourceObservations.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.PolSourceObservations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L61">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_PolSourceObservations_" data-uid="CSSPModels.CSSPWebToolsDBContext.PolSourceObservations*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_PolSourceObservations" data-uid="CSSPModels.CSSPWebToolsDBContext.PolSourceObservations">PolSourceObservations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;PolSourceObservation&gt; PolSourceObservations { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.PolSourceObservation.html">PolSourceObservation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_PolSourceSites.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.PolSourceSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L62">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_PolSourceSites_" data-uid="CSSPModels.CSSPWebToolsDBContext.PolSourceSites*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_PolSourceSites" data-uid="CSSPModels.CSSPWebToolsDBContext.PolSourceSites">PolSourceSites</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;PolSourceSite&gt; PolSourceSites { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.PolSourceSite.html">PolSourceSite</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_RainExceedances.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.RainExceedances%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L64">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_RainExceedances_" data-uid="CSSPModels.CSSPWebToolsDBContext.RainExceedances*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_RainExceedances" data-uid="CSSPModels.CSSPWebToolsDBContext.RainExceedances">RainExceedances</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;RainExceedance&gt; RainExceedances { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.RainExceedance.html">RainExceedance</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_RatingCurves.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.RatingCurves%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L65">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_RatingCurves_" data-uid="CSSPModels.CSSPWebToolsDBContext.RatingCurves*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_RatingCurves" data-uid="CSSPModels.CSSPWebToolsDBContext.RatingCurves">RatingCurves</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;RatingCurve&gt; RatingCurves { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.RatingCurve.html">RatingCurve</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_RatingCurveValues.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.RatingCurveValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L63">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_RatingCurveValues_" data-uid="CSSPModels.CSSPWebToolsDBContext.RatingCurveValues*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_RatingCurveValues" data-uid="CSSPModels.CSSPWebToolsDBContext.RatingCurveValues">RatingCurveValues</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;RatingCurveValue&gt; RatingCurveValues { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.RatingCurveValue.html">RatingCurveValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_ResetPasswords.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.ResetPasswords%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L66">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_ResetPasswords_" data-uid="CSSPModels.CSSPWebToolsDBContext.ResetPasswords*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_ResetPasswords" data-uid="CSSPModels.CSSPWebToolsDBContext.ResetPasswords">ResetPasswords</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;ResetPassword&gt; ResetPasswords { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.ResetPassword.html">ResetPassword</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_SamplingPlans.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.SamplingPlans%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L69">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_SamplingPlans_" data-uid="CSSPModels.CSSPWebToolsDBContext.SamplingPlans*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_SamplingPlans" data-uid="CSSPModels.CSSPWebToolsDBContext.SamplingPlans">SamplingPlans</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;SamplingPlan&gt; SamplingPlans { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.SamplingPlan.html">SamplingPlan</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_SamplingPlanSubsectors.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.SamplingPlanSubsectors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L68">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_SamplingPlanSubsectors_" data-uid="CSSPModels.CSSPWebToolsDBContext.SamplingPlanSubsectors*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_SamplingPlanSubsectors" data-uid="CSSPModels.CSSPWebToolsDBContext.SamplingPlanSubsectors">SamplingPlanSubsectors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;SamplingPlanSubsector&gt; SamplingPlanSubsectors { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.SamplingPlanSubsector.html">SamplingPlanSubsector</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_SamplingPlanSubsectorSites.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.SamplingPlanSubsectorSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L67">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_SamplingPlanSubsectorSites_" data-uid="CSSPModels.CSSPWebToolsDBContext.SamplingPlanSubsectorSites*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_SamplingPlanSubsectorSites" data-uid="CSSPModels.CSSPWebToolsDBContext.SamplingPlanSubsectorSites">SamplingPlanSubsectorSites</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;SamplingPlanSubsectorSite&gt; SamplingPlanSubsectorSites { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.SamplingPlanSubsectorSite.html">SamplingPlanSubsectorSite</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_SpillLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.SpillLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L70">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_SpillLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.SpillLanguages*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_SpillLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.SpillLanguages">SpillLanguages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;SpillLanguage&gt; SpillLanguages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.SpillLanguage.html">SpillLanguage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Spills.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Spills%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L71">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_Spills_" data-uid="CSSPModels.CSSPWebToolsDBContext.Spills*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_Spills" data-uid="CSSPModels.CSSPWebToolsDBContext.Spills">Spills</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;Spill&gt; Spills { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Spill.html">Spill</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_Tels.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.Tels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L72">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_Tels_" data-uid="CSSPModels.CSSPWebToolsDBContext.Tels*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_Tels" data-uid="CSSPModels.CSSPWebToolsDBContext.Tels">Tels</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;Tel&gt; Tels { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.Tel.html">Tel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TideDataValues.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TideDataValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L73">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_TideDataValues_" data-uid="CSSPModels.CSSPWebToolsDBContext.TideDataValues*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_TideDataValues" data-uid="CSSPModels.CSSPWebToolsDBContext.TideDataValues">TideDataValues</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;TideDataValue&gt; TideDataValues { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TideDataValue.html">TideDataValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TideLocations.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TideLocations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L74">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_TideLocations_" data-uid="CSSPModels.CSSPWebToolsDBContext.TideLocations*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_TideLocations" data-uid="CSSPModels.CSSPWebToolsDBContext.TideLocations">TideLocations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;TideLocation&gt; TideLocations { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TideLocation.html">TideLocation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TideSites.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TideSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L75">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_TideSites_" data-uid="CSSPModels.CSSPWebToolsDBContext.TideSites*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_TideSites" data-uid="CSSPModels.CSSPWebToolsDBContext.TideSites">TideSites</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;TideSite&gt; TideSites { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TideSite.html">TideSite</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVFileLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVFileLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L76">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_TVFileLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVFileLanguages*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_TVFileLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.TVFileLanguages">TVFileLanguages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;TVFileLanguage&gt; TVFileLanguages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVFileLanguage.html">TVFileLanguage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVFiles.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L77">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_TVFiles_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVFiles*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_TVFiles" data-uid="CSSPModels.CSSPWebToolsDBContext.TVFiles">TVFiles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;TVFile&gt; TVFiles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVFile.html">TVFile</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVItemLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVItemLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L78">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_TVItemLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemLanguages*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_TVItemLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemLanguages">TVItemLanguages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;TVItemLanguage&gt; TVItemLanguages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVItemLanguage.html">TVItemLanguage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVItemLinks.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVItemLinks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L79">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_TVItemLinks_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemLinks*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_TVItemLinks" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemLinks">TVItemLinks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;TVItemLink&gt; TVItemLinks { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVItemLink.html">TVItemLink</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVItems.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L82">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_TVItems_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItems*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_TVItems" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItems">TVItems</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;TVItem&gt; TVItems { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVItem.html">TVItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVItemStats.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVItemStats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L80">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_TVItemStats_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemStats*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_TVItemStats" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemStats">TVItemStats</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;TVItemStat&gt; TVItemStats { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVItemStat.html">TVItemStat</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVItemUserAuthorizations.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVItemUserAuthorizations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L81">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_TVItemUserAuthorizations_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemUserAuthorizations*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_TVItemUserAuthorizations" data-uid="CSSPModels.CSSPWebToolsDBContext.TVItemUserAuthorizations">TVItemUserAuthorizations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;TVItemUserAuthorization&gt; TVItemUserAuthorizations { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVItemUserAuthorization.html">TVItemUserAuthorization</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_TVTypeUserAuthorizations.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.TVTypeUserAuthorizations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L83">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_TVTypeUserAuthorizations_" data-uid="CSSPModels.CSSPWebToolsDBContext.TVTypeUserAuthorizations*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_TVTypeUserAuthorizations" data-uid="CSSPModels.CSSPWebToolsDBContext.TVTypeUserAuthorizations">TVTypeUserAuthorizations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;TVTypeUserAuthorization&gt; TVTypeUserAuthorizations { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.TVTypeUserAuthorization.html">TVTypeUserAuthorization</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_UseOfSites.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.UseOfSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L84">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_UseOfSites_" data-uid="CSSPModels.CSSPWebToolsDBContext.UseOfSites*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_UseOfSites" data-uid="CSSPModels.CSSPWebToolsDBContext.UseOfSites">UseOfSites</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;UseOfSite&gt; UseOfSites { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.UseOfSite.html">UseOfSite</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_VPAmbients.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.VPAmbients%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L85">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_VPAmbients_" data-uid="CSSPModels.CSSPWebToolsDBContext.VPAmbients*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_VPAmbients" data-uid="CSSPModels.CSSPWebToolsDBContext.VPAmbients">VPAmbients</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;VPAmbient&gt; VPAmbients { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.VPAmbient.html">VPAmbient</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_VPResults.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.VPResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L86">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_VPResults_" data-uid="CSSPModels.CSSPWebToolsDBContext.VPResults*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_VPResults" data-uid="CSSPModels.CSSPWebToolsDBContext.VPResults">VPResults</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;VPResult&gt; VPResults { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.VPResult.html">VPResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_VPScenarioLanguages.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.VPScenarioLanguages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L87">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_VPScenarioLanguages_" data-uid="CSSPModels.CSSPWebToolsDBContext.VPScenarioLanguages*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_VPScenarioLanguages" data-uid="CSSPModels.CSSPWebToolsDBContext.VPScenarioLanguages">VPScenarioLanguages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;VPScenarioLanguage&gt; VPScenarioLanguages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.VPScenarioLanguage.html">VPScenarioLanguage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_VPScenarios.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.VPScenarios%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L88">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_VPScenarios_" data-uid="CSSPModels.CSSPWebToolsDBContext.VPScenarios*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_VPScenarios" data-uid="CSSPModels.CSSPWebToolsDBContext.VPScenarios">VPScenarios</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;VPScenario&gt; VPScenarios { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="CSSPModels.VPScenario.html">VPScenario</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_OnConfiguring_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L121">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_OnConfiguring_" data-uid="CSSPModels.CSSPWebToolsDBContext.OnConfiguring*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_OnConfiguring_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_" data-uid="CSSPModels.CSSPWebToolsDBContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">OnConfiguring(DbContextOptionsBuilder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbContextOptionsBuilder</span></td>
+        <td><span class="parametername">optionsBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.EntityFrameworkCore.DbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L154">View Source</a>
+  </span>
+  <a id="CSSPModels_CSSPWebToolsDBContext_OnModelCreating_" data-uid="CSSPModels.CSSPWebToolsDBContext.OnModelCreating*"></a>
+  <h4 id="CSSPModels_CSSPWebToolsDBContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_" data-uid="CSSPModels.CSSPWebToolsDBContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">OnModelCreating(ModelBuilder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnModelCreating(ModelBuilder modelBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.ModelBuilder</span></td>
+        <td><span class="parametername">modelBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.EntityFrameworkCore.DbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ECCC-CSSP/CSSPModels/new/master/apiSpec/new?filename=CSSPModels_CSSPWebToolsDBContext.md&amp;value=---%0Auid%3A%20CSSPModels.CSSPWebToolsDBContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ECCC-CSSP/CSSPModels/blob/master/CSSPModels/CSSPWebToolsDBContext.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

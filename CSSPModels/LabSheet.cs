@@ -99,13 +99,15 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "LabSheetStatusEnum", EnumType = "LabSheetStatus")]
         public string LabSheetStatusText { get; set; }
         [NotMapped]
+        public bool HasErrors { get; set; }
+        [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public LabSheet()
         {
-            // empty for now
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
 

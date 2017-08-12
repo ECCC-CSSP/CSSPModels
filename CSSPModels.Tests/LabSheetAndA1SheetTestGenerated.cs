@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LabSheetAndA1Sheet_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LabSheet", "LabSheetA1Sheet",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LabSheet", "LabSheetA1Sheet", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,19 +39,23 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.LabSheetAndA1SheetLabSheet);
                Assert.IsNotNull(ModelsRes.LabSheetAndA1SheetLabSheetA1Sheet);
+               Assert.IsNotNull(ModelsRes.LabSheetAndA1SheetHasErrors);
         }
         [TestMethod]
         public void LabSheetAndA1Sheet_Every_Property_Has_Get_Set_Test()
         {
-               LabSheet val4 = new LabSheet();
-               labSheetAndA1Sheet.LabSheet = val4;
-               Assert.AreEqual(val4, labSheetAndA1Sheet.LabSheet);
-               LabSheetA1Sheet val5 = new LabSheetA1Sheet();
-               labSheetAndA1Sheet.LabSheetA1Sheet = val5;
-               Assert.AreEqual(val5, labSheetAndA1Sheet.LabSheetA1Sheet);
-               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
-               labSheetAndA1Sheet.ValidationResults = val9;
-               Assert.AreEqual(val9, labSheetAndA1Sheet.ValidationResults);
+               bool val3 = true;
+               labSheetAndA1Sheet.HasErrors = val3;
+               Assert.AreEqual(val3, labSheetAndA1Sheet.HasErrors);
+               LabSheet val5 = new LabSheet();
+               labSheetAndA1Sheet.LabSheet = val5;
+               Assert.AreEqual(val5, labSheetAndA1Sheet.LabSheet);
+               LabSheetA1Sheet val6 = new LabSheetA1Sheet();
+               labSheetAndA1Sheet.LabSheetA1Sheet = val6;
+               Assert.AreEqual(val6, labSheetAndA1Sheet.LabSheetA1Sheet);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               labSheetAndA1Sheet.ValidationResults = val12;
+               Assert.AreEqual(val12, labSheetAndA1Sheet.ValidationResults);
         }
     }
 }

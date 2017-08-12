@@ -22,6 +22,7 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "WebTideDataSetEnum", EnumType = "WebTideDataSet")]
         public string WebTideDataSetText { get; set; }
 
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
@@ -30,6 +31,7 @@ namespace CSSPModels
         {
             Text = "";
             WebTideDataSet = WebTideDataSetEnum.Error;
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

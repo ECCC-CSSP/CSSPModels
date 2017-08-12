@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LastUpdateAndTVText_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "LastUpdateDate_UTC", "LastUpdateDate_Local", "TVText",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Error", "LastUpdateDate_UTC", "LastUpdateDate_Local", "TVText", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -41,6 +41,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.LastUpdateAndTVTextLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.LastUpdateAndTVTextLastUpdateDate_Local);
                Assert.IsNotNull(ModelsRes.LastUpdateAndTVTextTVText);
+               Assert.IsNotNull(ModelsRes.LastUpdateAndTVTextHasErrors);
         }
         [TestMethod]
         public void LastUpdateAndTVText_Every_Property_Has_Get_Set_Test()
@@ -57,9 +58,12 @@ namespace CSSPModels.Tests
                string val4 = "Some text";
                lastUpdateAndTVText.TVText = val4;
                Assert.AreEqual(val4, lastUpdateAndTVText.TVText);
-               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
-               lastUpdateAndTVText.ValidationResults = val15;
-               Assert.AreEqual(val15, lastUpdateAndTVText.ValidationResults);
+               bool val5 = true;
+               lastUpdateAndTVText.HasErrors = val5;
+               Assert.AreEqual(val5, lastUpdateAndTVText.HasErrors);
+               IEnumerable<ValidationResult> val18 = new List<ValidationResult>().AsEnumerable();
+               lastUpdateAndTVText.ValidationResults = val18;
+               Assert.AreEqual(val18, lastUpdateAndTVText.ValidationResults);
         }
     }
 }

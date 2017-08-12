@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void SamplingPlan_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SamplingPlanID", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ProvinceTVText", "CreatorTVText", "SamplingPlanFileTVText", "LastUpdateContactTVText", "SampleTypeText", "SamplingPlanTypeText", "LabSheetTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "ProvinceTVText", "CreatorTVText", "SamplingPlanFileTVText", "LastUpdateContactTVText", "SampleTypeText", "SamplingPlanTypeText", "LabSheetTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.SamplingPlan).GetProperties().OrderBy(c => c.Name))
@@ -113,6 +113,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SamplingPlanSampleTypeText);
                Assert.IsNotNull(ModelsRes.SamplingPlanSamplingPlanTypeText);
                Assert.IsNotNull(ModelsRes.SamplingPlanLabSheetTypeText);
+               Assert.IsNotNull(ModelsRes.SamplingPlanHasErrors);
         }
         [TestMethod]
         public void SamplingPlan_Every_Property_Has_Get_Set_Test()
@@ -189,9 +190,12 @@ namespace CSSPModels.Tests
                string val24 = "Some text";
                samplingPlan.LabSheetTypeText = val24;
                Assert.AreEqual(val24, samplingPlan.LabSheetTypeText);
-               IEnumerable<ValidationResult> val75 = new List<ValidationResult>().AsEnumerable();
-               samplingPlan.ValidationResults = val75;
-               Assert.AreEqual(val75, samplingPlan.ValidationResults);
+               bool val25 = true;
+               samplingPlan.HasErrors = val25;
+               Assert.AreEqual(val25, samplingPlan.HasErrors);
+               IEnumerable<ValidationResult> val78 = new List<ValidationResult>().AsEnumerable();
+               samplingPlan.ValidationResults = val78;
+               Assert.AreEqual(val78, samplingPlan.ValidationResults);
         }
     }
 }

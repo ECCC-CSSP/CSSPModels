@@ -19,13 +19,14 @@ namespace CSSPModels
         [Range(1, -1)]
         public int LastUpdateContactTVItemID { get; set; }
 
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public LastUpdateAndContact()
         {
-            // empty for now
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

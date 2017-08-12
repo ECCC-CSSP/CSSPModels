@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Log_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LogID", "TableName", "ID", "LogCommand", "Information", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LogCommandText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LogCommandText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Log).GetProperties().OrderBy(c => c.Name))
@@ -98,6 +98,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.LogLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.LogLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.LogLogCommandText);
+               Assert.IsNotNull(ModelsRes.LogHasErrors);
         }
         [TestMethod]
         public void Log_Every_Property_Has_Get_Set_Test()
@@ -129,9 +130,12 @@ namespace CSSPModels.Tests
                string val9 = "Some text";
                log.LogCommandText = val9;
                Assert.AreEqual(val9, log.LogCommandText);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               log.ValidationResults = val30;
-               Assert.AreEqual(val30, log.ValidationResults);
+               bool val10 = true;
+               log.HasErrors = val10;
+               Assert.AreEqual(val10, log.HasErrors);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               log.ValidationResults = val33;
+               Assert.AreEqual(val33, log.ValidationResults);
         }
     }
 }

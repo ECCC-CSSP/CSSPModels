@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TideLocation_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TideLocationID", "Zone", "Name", "Prov", "sid", "Lat", "Lng",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TideLocation).GetProperties().OrderBy(c => c.Name))
@@ -96,6 +96,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TideLocationsid);
                Assert.IsNotNull(ModelsRes.TideLocationLat);
                Assert.IsNotNull(ModelsRes.TideLocationLng);
+               Assert.IsNotNull(ModelsRes.TideLocationHasErrors);
         }
         [TestMethod]
         public void TideLocation_Every_Property_Has_Get_Set_Test()
@@ -121,9 +122,12 @@ namespace CSSPModels.Tests
                double val7 = 87.9D;
                tideLocation.Lng = val7;
                Assert.AreEqual(val7, tideLocation.Lng);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               tideLocation.ValidationResults = val24;
-               Assert.AreEqual(val24, tideLocation.ValidationResults);
+               bool val8 = true;
+               tideLocation.HasErrors = val8;
+               Assert.AreEqual(val8, tideLocation.HasErrors);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               tideLocation.ValidationResults = val27;
+               Assert.AreEqual(val27, tideLocation.ValidationResults);
         }
     }
 }

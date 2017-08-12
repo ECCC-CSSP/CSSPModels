@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void FilePurposeAndText_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "FilePurpose", "FilePurposeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "FilePurpose", "FilePurposeText", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,6 +39,7 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.FilePurposeAndTextFilePurpose);
                Assert.IsNotNull(ModelsRes.FilePurposeAndTextFilePurposeText);
+               Assert.IsNotNull(ModelsRes.FilePurposeAndTextHasErrors);
         }
         [TestMethod]
         public void FilePurposeAndText_Every_Property_Has_Get_Set_Test()
@@ -49,9 +50,12 @@ namespace CSSPModels.Tests
                string val2 = "Some text";
                filePurposeAndText.FilePurposeText = val2;
                Assert.AreEqual(val2, filePurposeAndText.FilePurposeText);
-               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
-               filePurposeAndText.ValidationResults = val9;
-               Assert.AreEqual(val9, filePurposeAndText.ValidationResults);
+               bool val3 = true;
+               filePurposeAndText.HasErrors = val3;
+               Assert.AreEqual(val3, filePurposeAndText.HasErrors);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               filePurposeAndText.ValidationResults = val12;
+               Assert.AreEqual(val12, filePurposeAndText.ValidationResults);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void NewContact_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LoginEmail", "FirstName", "LastName", "Initial", "ContactTitle", "ContactTitleText",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LoginEmail", "FirstName", "LastName", "Initial", "ContactTitle", "ContactTitleText", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -43,6 +43,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.NewContactInitial);
                Assert.IsNotNull(ModelsRes.NewContactContactTitle);
                Assert.IsNotNull(ModelsRes.NewContactContactTitleText);
+               Assert.IsNotNull(ModelsRes.NewContactHasErrors);
         }
         [TestMethod]
         public void NewContact_Every_Property_Has_Get_Set_Test()
@@ -65,9 +66,12 @@ namespace CSSPModels.Tests
                string val6 = "Some text";
                newContact.ContactTitleText = val6;
                Assert.AreEqual(val6, newContact.ContactTitleText);
-               IEnumerable<ValidationResult> val21 = new List<ValidationResult>().AsEnumerable();
-               newContact.ValidationResults = val21;
-               Assert.AreEqual(val21, newContact.ValidationResults);
+               bool val7 = true;
+               newContact.HasErrors = val7;
+               Assert.AreEqual(val7, newContact.HasErrors);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               newContact.ValidationResults = val24;
+               Assert.AreEqual(val24, newContact.ValidationResults);
         }
     }
 }

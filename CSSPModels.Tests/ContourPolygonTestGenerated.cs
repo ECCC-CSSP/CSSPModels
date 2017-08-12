@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ContourPolygon_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ContourValue", "Layer", "Depth", "ContourNodeList",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ContourValue", "Layer", "Depth", "ContourNodeList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -41,6 +41,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContourPolygonLayer);
                Assert.IsNotNull(ModelsRes.ContourPolygonDepth);
                Assert.IsNotNull(ModelsRes.ContourPolygonContourNodeList);
+               Assert.IsNotNull(ModelsRes.ContourPolygonHasErrors);
         }
         [TestMethod]
         public void ContourPolygon_Every_Property_Has_Get_Set_Test()
@@ -54,12 +55,15 @@ namespace CSSPModels.Tests
                double val3 = 87.9D;
                contourPolygon.Depth = val3;
                Assert.AreEqual(val3, contourPolygon.Depth);
-               List<Node> val9 = new List<Node>();
-               contourPolygon.ContourNodeList = val9;
-               Assert.AreEqual(val9, contourPolygon.ContourNodeList);
-               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
-               contourPolygon.ValidationResults = val15;
-               Assert.AreEqual(val15, contourPolygon.ValidationResults);
+               bool val5 = true;
+               contourPolygon.HasErrors = val5;
+               Assert.AreEqual(val5, contourPolygon.HasErrors);
+               List<Node> val10 = new List<Node>();
+               contourPolygon.ContourNodeList = val10;
+               Assert.AreEqual(val10, contourPolygon.ContourNodeList);
+               IEnumerable<ValidationResult> val18 = new List<ValidationResult>().AsEnumerable();
+               contourPolygon.ValidationResults = val18;
+               Assert.AreEqual(val18, contourPolygon.ValidationResults);
         }
     }
 }

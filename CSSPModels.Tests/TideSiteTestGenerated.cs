@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TideSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TideSiteID", "TideSiteTVItemID", "WebTideModel", "WebTideDatum_m", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "TideSiteTVText", "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TideSiteTVText", "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TideSite).GetProperties().OrderBy(c => c.Name))
@@ -97,6 +97,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TideSiteLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.TideSiteTideSiteTVText);
                Assert.IsNotNull(ModelsRes.TideSiteLastUpdateContactTVText);
+               Assert.IsNotNull(ModelsRes.TideSiteHasErrors);
         }
         [TestMethod]
         public void TideSite_Every_Property_Has_Get_Set_Test()
@@ -125,9 +126,12 @@ namespace CSSPModels.Tests
                string val8 = "Some text";
                tideSite.LastUpdateContactTVText = val8;
                Assert.AreEqual(val8, tideSite.LastUpdateContactTVText);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               tideSite.ValidationResults = val27;
-               Assert.AreEqual(val27, tideSite.ValidationResults);
+               bool val9 = true;
+               tideSite.HasErrors = val9;
+               Assert.AreEqual(val9, tideSite.HasErrors);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               tideSite.ValidationResults = val30;
+               Assert.AreEqual(val30, tideSite.ValidationResults);
         }
     }
 }

@@ -21,6 +21,7 @@ namespace CSSPModels
         public string SearchTagText { get; set; }
 
         public virtual List<string> SearchTermList { get; set; }
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
@@ -28,6 +29,7 @@ namespace CSSPModels
         public SearchTagAndTerms()
         {
             SearchTermList = new List<string>();
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

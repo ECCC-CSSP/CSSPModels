@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void OtherFilesToUpload_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "MikeScenarioID", "TVFileList",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Error", "MikeScenarioID", "TVFileList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -40,6 +40,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.OtherFilesToUploadError);
                Assert.IsNotNull(ModelsRes.OtherFilesToUploadMikeScenarioID);
                Assert.IsNotNull(ModelsRes.OtherFilesToUploadTVFileList);
+               Assert.IsNotNull(ModelsRes.OtherFilesToUploadHasErrors);
         }
         [TestMethod]
         public void OtherFilesToUpload_Every_Property_Has_Get_Set_Test()
@@ -50,12 +51,15 @@ namespace CSSPModels.Tests
                int val2 = 45;
                otherFilesToUpload.MikeScenarioID = val2;
                Assert.AreEqual(val2, otherFilesToUpload.MikeScenarioID);
-               List<TVFile> val7 = new List<TVFile>();
-               otherFilesToUpload.TVFileList = val7;
-               Assert.AreEqual(val7, otherFilesToUpload.TVFileList);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
-               otherFilesToUpload.ValidationResults = val12;
-               Assert.AreEqual(val12, otherFilesToUpload.ValidationResults);
+               bool val4 = true;
+               otherFilesToUpload.HasErrors = val4;
+               Assert.AreEqual(val4, otherFilesToUpload.HasErrors);
+               List<TVFile> val8 = new List<TVFile>();
+               otherFilesToUpload.TVFileList = val8;
+               Assert.AreEqual(val8, otherFilesToUpload.TVFileList);
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
+               otherFilesToUpload.ValidationResults = val15;
+               Assert.AreEqual(val15, otherFilesToUpload.ValidationResults);
         }
     }
 }

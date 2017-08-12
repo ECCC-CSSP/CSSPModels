@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MWQMSample_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSampleID", "MWQMSiteTVItemID", "MWQMRunTVItemID", "SampleDateTime_Local", "Depth_m", "FecCol_MPN_100ml", "Salinity_PPT", "WaterTemp_C", "PH", "SampleTypesText", "SampleType_old", "Tube_10", "Tube_1_0", "Tube_0_1", "ProcessedBy", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteTVText", "MWQMRunTVText", "LastUpdateContactTVText", "SampleType_oldText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteTVText", "MWQMRunTVText", "LastUpdateContactTVText", "SampleType_oldText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMSample).GetProperties().OrderBy(c => c.Name))
@@ -110,6 +110,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMSampleMWQMRunTVText);
                Assert.IsNotNull(ModelsRes.MWQMSampleLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.MWQMSampleSampleType_oldText);
+               Assert.IsNotNull(ModelsRes.MWQMSampleHasErrors);
         }
         [TestMethod]
         public void MWQMSample_Every_Property_Has_Get_Set_Test()
@@ -177,9 +178,12 @@ namespace CSSPModels.Tests
                string val21 = "Some text";
                mWQMSample.SampleType_oldText = val21;
                Assert.AreEqual(val21, mWQMSample.SampleType_oldText);
-               IEnumerable<ValidationResult> val66 = new List<ValidationResult>().AsEnumerable();
-               mWQMSample.ValidationResults = val66;
-               Assert.AreEqual(val66, mWQMSample.ValidationResults);
+               bool val22 = true;
+               mWQMSample.HasErrors = val22;
+               Assert.AreEqual(val22, mWQMSample.HasErrors);
+               IEnumerable<ValidationResult> val69 = new List<ValidationResult>().AsEnumerable();
+               mWQMSample.ValidationResults = val69;
+               Assert.AreEqual(val69, mWQMSample.ValidationResults);
         }
     }
 }

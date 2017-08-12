@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MapObj_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MapInfoID", "MapInfoDrawType", "MapInfoDrawTypeText", "CoordList",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MapInfoID", "MapInfoDrawType", "MapInfoDrawTypeText", "CoordList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -41,6 +41,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MapObjMapInfoDrawType);
                Assert.IsNotNull(ModelsRes.MapObjMapInfoDrawTypeText);
                Assert.IsNotNull(ModelsRes.MapObjCoordList);
+               Assert.IsNotNull(ModelsRes.MapObjHasErrors);
         }
         [TestMethod]
         public void MapObj_Every_Property_Has_Get_Set_Test()
@@ -54,12 +55,15 @@ namespace CSSPModels.Tests
                string val3 = "Some text";
                mapObj.MapInfoDrawTypeText = val3;
                Assert.AreEqual(val3, mapObj.MapInfoDrawTypeText);
-               List<Coord> val9 = new List<Coord>();
-               mapObj.CoordList = val9;
-               Assert.AreEqual(val9, mapObj.CoordList);
-               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
-               mapObj.ValidationResults = val15;
-               Assert.AreEqual(val15, mapObj.ValidationResults);
+               bool val5 = true;
+               mapObj.HasErrors = val5;
+               Assert.AreEqual(val5, mapObj.HasErrors);
+               List<Coord> val10 = new List<Coord>();
+               mapObj.CoordList = val10;
+               Assert.AreEqual(val10, mapObj.CoordList);
+               IEnumerable<ValidationResult> val18 = new List<ValidationResult>().AsEnumerable();
+               mapObj.ValidationResults = val18;
+               Assert.AreEqual(val18, mapObj.ValidationResults);
         }
     }
 }

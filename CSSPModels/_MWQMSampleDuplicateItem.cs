@@ -18,13 +18,14 @@ namespace CSSPModels
         [StringLength(200, MinimumLength = 1)]
         public string DuplicateSite { get; set; }
 
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public MWQMSampleDuplicateItem()
         {
-            // empty for now
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

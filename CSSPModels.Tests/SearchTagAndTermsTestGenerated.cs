@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SearchTagAndTerms_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SearchTag", "SearchTagText", "SearchTermList",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SearchTag", "SearchTagText", "SearchTermList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -40,6 +40,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SearchTagAndTermsSearchTag);
                Assert.IsNotNull(ModelsRes.SearchTagAndTermsSearchTagText);
                Assert.IsNotNull(ModelsRes.SearchTagAndTermsSearchTermList);
+               Assert.IsNotNull(ModelsRes.SearchTagAndTermsHasErrors);
         }
         [TestMethod]
         public void SearchTagAndTerms_Every_Property_Has_Get_Set_Test()
@@ -50,12 +51,15 @@ namespace CSSPModels.Tests
                string val2 = "Some text";
                searchTagAndTerms.SearchTagText = val2;
                Assert.AreEqual(val2, searchTagAndTerms.SearchTagText);
-               List<String> val7 = new List<String>();
-               searchTagAndTerms.SearchTermList = val7;
-               Assert.AreEqual(val7, searchTagAndTerms.SearchTermList);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
-               searchTagAndTerms.ValidationResults = val12;
-               Assert.AreEqual(val12, searchTagAndTerms.ValidationResults);
+               bool val4 = true;
+               searchTagAndTerms.HasErrors = val4;
+               Assert.AreEqual(val4, searchTagAndTerms.HasErrors);
+               List<String> val8 = new List<String>();
+               searchTagAndTerms.SearchTermList = val8;
+               Assert.AreEqual(val8, searchTagAndTerms.SearchTermList);
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
+               searchTagAndTerms.ValidationResults = val15;
+               Assert.AreEqual(val15, searchTagAndTerms.ValidationResults);
         }
     }
 }

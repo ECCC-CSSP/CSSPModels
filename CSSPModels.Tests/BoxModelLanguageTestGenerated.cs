@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void BoxModelLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "BoxModelLanguageID", "BoxModelID", "Language", "ScenarioName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.BoxModelLanguage).GetProperties().OrderBy(c => c.Name))
@@ -99,6 +99,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.BoxModelLanguageLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.BoxModelLanguageLanguageText);
                Assert.IsNotNull(ModelsRes.BoxModelLanguageTranslationStatusText);
+               Assert.IsNotNull(ModelsRes.BoxModelLanguageHasErrors);
         }
         [TestMethod]
         public void BoxModelLanguage_Every_Property_Has_Get_Set_Test()
@@ -133,9 +134,12 @@ namespace CSSPModels.Tests
                string val10 = "Some text";
                boxModelLanguage.TranslationStatusText = val10;
                Assert.AreEqual(val10, boxModelLanguage.TranslationStatusText);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               boxModelLanguage.ValidationResults = val33;
-               Assert.AreEqual(val33, boxModelLanguage.ValidationResults);
+               bool val11 = true;
+               boxModelLanguage.HasErrors = val11;
+               Assert.AreEqual(val11, boxModelLanguage.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
+               boxModelLanguage.ValidationResults = val36;
+               Assert.AreEqual(val36, boxModelLanguage.ValidationResults);
         }
     }
 }

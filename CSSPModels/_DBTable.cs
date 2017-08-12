@@ -18,13 +18,14 @@ namespace CSSPModels
         [StringLength(3, MinimumLength = 1)]
         public string Plurial { get; set; }
 
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public DBTable()
         {
-            // empty for now
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

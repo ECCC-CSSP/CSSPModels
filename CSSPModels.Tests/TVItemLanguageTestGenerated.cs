@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TVItemLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemLanguageID", "TVItemID", "Language", "TVText", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVItemLanguage).GetProperties().OrderBy(c => c.Name))
@@ -99,6 +99,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemLanguageLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.TVItemLanguageLanguageText);
                Assert.IsNotNull(ModelsRes.TVItemLanguageTranslationStatusText);
+               Assert.IsNotNull(ModelsRes.TVItemLanguageHasErrors);
         }
         [TestMethod]
         public void TVItemLanguage_Every_Property_Has_Get_Set_Test()
@@ -133,9 +134,12 @@ namespace CSSPModels.Tests
                string val10 = "Some text";
                tVItemLanguage.TranslationStatusText = val10;
                Assert.AreEqual(val10, tVItemLanguage.TranslationStatusText);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               tVItemLanguage.ValidationResults = val33;
-               Assert.AreEqual(val33, tVItemLanguage.ValidationResults);
+               bool val11 = true;
+               tVItemLanguage.HasErrors = val11;
+               Assert.AreEqual(val11, tVItemLanguage.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
+               tVItemLanguage.ValidationResults = val36;
+               Assert.AreEqual(val36, tVItemLanguage.ValidationResults);
         }
     }
 }

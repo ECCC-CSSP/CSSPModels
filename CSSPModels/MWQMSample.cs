@@ -68,13 +68,15 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType_old")]
         public string SampleType_oldText { get; set; }
         [NotMapped]
+        public bool HasErrors { get; set; }
+        [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public MWQMSample()
         {
-            // empty for now
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
 

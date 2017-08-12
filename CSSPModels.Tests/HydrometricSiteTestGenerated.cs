@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void HydrometricSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "HydrometricSiteID", "HydrometricSiteTVItemID", "FedSiteNumber", "QuebecSiteNumber", "HydrometricSiteName", "Description", "Province", "Elevation_m", "StartDate_Local", "EndDate_Local", "TimeOffset_hour", "DrainageArea_km2", "IsNatural", "IsActive", "Sediment", "RHBN", "RealTime", "HasRatingCurve", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "HydrometricTVText", "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HydrometricTVText", "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.HydrometricSite).GetProperties().OrderBy(c => c.Name))
@@ -111,6 +111,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.HydrometricSiteLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.HydrometricSiteHydrometricTVText);
                Assert.IsNotNull(ModelsRes.HydrometricSiteLastUpdateContactTVText);
+               Assert.IsNotNull(ModelsRes.HydrometricSiteHasErrors);
         }
         [TestMethod]
         public void HydrometricSite_Every_Property_Has_Get_Set_Test()
@@ -181,9 +182,12 @@ namespace CSSPModels.Tests
                string val22 = "Some text";
                hydrometricSite.LastUpdateContactTVText = val22;
                Assert.AreEqual(val22, hydrometricSite.LastUpdateContactTVText);
-               IEnumerable<ValidationResult> val69 = new List<ValidationResult>().AsEnumerable();
-               hydrometricSite.ValidationResults = val69;
-               Assert.AreEqual(val69, hydrometricSite.ValidationResults);
+               bool val23 = true;
+               hydrometricSite.HasErrors = val23;
+               Assert.AreEqual(val23, hydrometricSite.HasErrors);
+               IEnumerable<ValidationResult> val72 = new List<ValidationResult>().AsEnumerable();
+               hydrometricSite.ValidationResults = val72;
+               Assert.AreEqual(val72, hydrometricSite.ValidationResults);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TVItem_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemID", "TVLevel", "TVPath", "TVType", "ParentID", "IsActive", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "TVText", "LastUpdateContactTVText", "TVTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TVText", "LastUpdateContactTVText", "TVTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVItem).GetProperties().OrderBy(c => c.Name))
@@ -100,6 +100,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemTVText);
                Assert.IsNotNull(ModelsRes.TVItemLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.TVItemTVTypeText);
+               Assert.IsNotNull(ModelsRes.TVItemHasErrors);
         }
         [TestMethod]
         public void TVItem_Every_Property_Has_Get_Set_Test()
@@ -137,9 +138,12 @@ namespace CSSPModels.Tests
                string val11 = "Some text";
                tVItem.TVTypeText = val11;
                Assert.AreEqual(val11, tVItem.TVTypeText);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               tVItem.ValidationResults = val36;
-               Assert.AreEqual(val36, tVItem.ValidationResults);
+               bool val12 = true;
+               tVItem.HasErrors = val12;
+               Assert.AreEqual(val12, tVItem.HasErrors);
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>().AsEnumerable();
+               tVItem.ValidationResults = val39;
+               Assert.AreEqual(val39, tVItem.ValidationResults);
         }
     }
 }

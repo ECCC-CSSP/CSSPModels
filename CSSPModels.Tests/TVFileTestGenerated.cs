@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TVFile_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVFileID", "TVFileTVItemID", "TemplateTVType", "Language", "FilePurpose", "FileType", "FileSize_kb", "FileInfo", "FileCreatedDate_UTC", "FromWater", "ClientFilePath", "ServerFileName", "ServerFilePath", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "TVFileTVText", "LastUpdateContactTVText", "TemplateTVTypeText", "LanguageText", "FilePurposeText", "FileTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TVFileTVText", "LastUpdateContactTVText", "TemplateTVTypeText", "LanguageText", "FilePurposeText", "FileTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVFile).GetProperties().OrderBy(c => c.Name))
@@ -110,6 +110,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVFileLanguageText);
                Assert.IsNotNull(ModelsRes.TVFileFilePurposeText);
                Assert.IsNotNull(ModelsRes.TVFileFileTypeText);
+               Assert.IsNotNull(ModelsRes.TVFileHasErrors);
         }
         [TestMethod]
         public void TVFile_Every_Property_Has_Get_Set_Test()
@@ -177,9 +178,12 @@ namespace CSSPModels.Tests
                string val21 = "Some text";
                tVFile.FileTypeText = val21;
                Assert.AreEqual(val21, tVFile.FileTypeText);
-               IEnumerable<ValidationResult> val66 = new List<ValidationResult>().AsEnumerable();
-               tVFile.ValidationResults = val66;
-               Assert.AreEqual(val66, tVFile.ValidationResults);
+               bool val22 = true;
+               tVFile.HasErrors = val22;
+               Assert.AreEqual(val22, tVFile.HasErrors);
+               IEnumerable<ValidationResult> val69 = new List<ValidationResult>().AsEnumerable();
+               tVFile.ValidationResults = val69;
+               Assert.AreEqual(val69, tVFile.ValidationResults);
         }
     }
 }

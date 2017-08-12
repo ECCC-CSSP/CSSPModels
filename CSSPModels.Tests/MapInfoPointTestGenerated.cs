@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MapInfoPoint_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MapInfoPointID", "MapInfoID", "Ordinal", "Lat", "Lng", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MapInfoPoint).GetProperties().OrderBy(c => c.Name))
@@ -97,6 +97,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MapInfoPointLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MapInfoPointLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.MapInfoPointLastUpdateContactTVText);
+               Assert.IsNotNull(ModelsRes.MapInfoPointHasErrors);
         }
         [TestMethod]
         public void MapInfoPoint_Every_Property_Has_Get_Set_Test()
@@ -125,9 +126,12 @@ namespace CSSPModels.Tests
                string val8 = "Some text";
                mapInfoPoint.LastUpdateContactTVText = val8;
                Assert.AreEqual(val8, mapInfoPoint.LastUpdateContactTVText);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               mapInfoPoint.ValidationResults = val27;
-               Assert.AreEqual(val27, mapInfoPoint.ValidationResults);
+               bool val9 = true;
+               mapInfoPoint.HasErrors = val9;
+               Assert.AreEqual(val9, mapInfoPoint.HasErrors);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               mapInfoPoint.ValidationResults = val30;
+               Assert.AreEqual(val30, mapInfoPoint.ValidationResults);
         }
     }
 }

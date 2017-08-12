@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Spill_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SpillID", "MunicipalityTVItemID", "InfrastructureTVItemID", "StartDateTime_Local", "EndDateTime_Local", "AverageFlow_m3_day", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MunicipalityTVText", "InfrastructureTVText", "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MunicipalityTVText", "InfrastructureTVText", "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Spill).GetProperties().OrderBy(c => c.Name))
@@ -100,6 +100,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SpillMunicipalityTVText);
                Assert.IsNotNull(ModelsRes.SpillInfrastructureTVText);
                Assert.IsNotNull(ModelsRes.SpillLastUpdateContactTVText);
+               Assert.IsNotNull(ModelsRes.SpillHasErrors);
         }
         [TestMethod]
         public void Spill_Every_Property_Has_Get_Set_Test()
@@ -137,9 +138,12 @@ namespace CSSPModels.Tests
                string val11 = "Some text";
                spill.LastUpdateContactTVText = val11;
                Assert.AreEqual(val11, spill.LastUpdateContactTVText);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               spill.ValidationResults = val36;
-               Assert.AreEqual(val36, spill.ValidationResults);
+               bool val12 = true;
+               spill.HasErrors = val12;
+               Assert.AreEqual(val12, spill.HasErrors);
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>().AsEnumerable();
+               spill.ValidationResults = val39;
+               Assert.AreEqual(val39, spill.ValidationResults);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TVItemUserAuthorization_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemUserAuthorizationID", "ContactTVItemID", "TVItemID1", "TVItemID2", "TVItemID3", "TVItemID4", "TVAuth", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ContactTVText", "TVText1", "TVText2", "TVText3", "TVText4", "LastUpdateContactTVText", "TVAuthText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "ContactTVText", "TVText1", "TVText2", "TVText3", "TVText4", "LastUpdateContactTVText", "TVAuthText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVItemUserAuthorization).GetProperties().OrderBy(c => c.Name))
@@ -105,6 +105,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemUserAuthorizationTVText4);
                Assert.IsNotNull(ModelsRes.TVItemUserAuthorizationLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.TVItemUserAuthorizationTVAuthText);
+               Assert.IsNotNull(ModelsRes.TVItemUserAuthorizationHasErrors);
         }
         [TestMethod]
         public void TVItemUserAuthorization_Every_Property_Has_Get_Set_Test()
@@ -157,9 +158,12 @@ namespace CSSPModels.Tests
                string val16 = "Some text";
                tVItemUserAuthorization.TVAuthText = val16;
                Assert.AreEqual(val16, tVItemUserAuthorization.TVAuthText);
-               IEnumerable<ValidationResult> val51 = new List<ValidationResult>().AsEnumerable();
-               tVItemUserAuthorization.ValidationResults = val51;
-               Assert.AreEqual(val51, tVItemUserAuthorization.ValidationResults);
+               bool val17 = true;
+               tVItemUserAuthorization.HasErrors = val17;
+               Assert.AreEqual(val17, tVItemUserAuthorization.HasErrors);
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>().AsEnumerable();
+               tVItemUserAuthorization.ValidationResults = val54;
+               Assert.AreEqual(val54, tVItemUserAuthorization.ValidationResults);
         }
     }
 }

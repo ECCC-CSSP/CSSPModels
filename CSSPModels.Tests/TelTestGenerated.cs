@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Tel_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TelID", "TelTVItemID", "TelNumber", "TelType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "TelTVText", "LastUpdateContactTVText", "TelTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TelTVText", "LastUpdateContactTVText", "TelTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Tel).GetProperties().OrderBy(c => c.Name))
@@ -98,6 +98,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TelTelTVText);
                Assert.IsNotNull(ModelsRes.TelLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.TelTelTypeText);
+               Assert.IsNotNull(ModelsRes.TelHasErrors);
         }
         [TestMethod]
         public void Tel_Every_Property_Has_Get_Set_Test()
@@ -129,9 +130,12 @@ namespace CSSPModels.Tests
                string val9 = "Some text";
                tel.TelTypeText = val9;
                Assert.AreEqual(val9, tel.TelTypeText);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               tel.ValidationResults = val30;
-               Assert.AreEqual(val30, tel.ValidationResults);
+               bool val10 = true;
+               tel.HasErrors = val10;
+               Assert.AreEqual(val10, tel.HasErrors);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               tel.ValidationResults = val33;
+               Assert.AreEqual(val33, tel.ValidationResults);
         }
     }
 }

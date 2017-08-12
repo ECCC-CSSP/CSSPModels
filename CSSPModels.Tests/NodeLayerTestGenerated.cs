@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void NodeLayer_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Layer", "Z", "Node",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Layer", "Z", "Node", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -40,6 +40,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.NodeLayerLayer);
                Assert.IsNotNull(ModelsRes.NodeLayerZ);
                Assert.IsNotNull(ModelsRes.NodeLayerNode);
+               Assert.IsNotNull(ModelsRes.NodeLayerHasErrors);
         }
         [TestMethod]
         public void NodeLayer_Every_Property_Has_Get_Set_Test()
@@ -50,12 +51,15 @@ namespace CSSPModels.Tests
                double val2 = 87.9D;
                nodeLayer.Z = val2;
                Assert.AreEqual(val2, nodeLayer.Z);
-               Node val7 = new Node();
-               nodeLayer.Node = val7;
-               Assert.AreEqual(val7, nodeLayer.Node);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
-               nodeLayer.ValidationResults = val12;
-               Assert.AreEqual(val12, nodeLayer.ValidationResults);
+               bool val4 = true;
+               nodeLayer.HasErrors = val4;
+               Assert.AreEqual(val4, nodeLayer.HasErrors);
+               Node val8 = new Node();
+               nodeLayer.Node = val8;
+               Assert.AreEqual(val8, nodeLayer.Node);
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
+               nodeLayer.ValidationResults = val15;
+               Assert.AreEqual(val15, nodeLayer.ValidationResults);
         }
     }
 }

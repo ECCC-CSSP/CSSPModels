@@ -186,6 +186,9 @@
 <data name="AddressStreetTypeText" xml:space="preserve">
   <value>AddressStreetTypeText</value>
 </data>
+<data name="AddressHasErrors" xml:space="preserve">
+  <value>AddressHasErrors</value>
+</data>
 <data name="AppErrLog" xml:space="preserve">
   <value>AppErrLog</value>
 </data>
@@ -215,6 +218,9 @@
 </data>
 <data name="AppErrLogLastUpdateContactTVText" xml:space="preserve">
   <value>AppErrLogLastUpdateContactTVText</value>
+</data>
+<data name="AppErrLogHasErrors" xml:space="preserve">
+  <value>AppErrLogHasErrors</value>
 </data>
 <data name="AppTask" xml:space="preserve">
   <value>AppTask</value>
@@ -279,6 +285,9 @@
 <data name="AppTaskLanguageText" xml:space="preserve">
   <value>AppTaskLanguageText</value>
 </data>
+<data name="AppTaskHasErrors" xml:space="preserve">
+  <value>AppTaskHasErrors</value>
+</data>
 <data name="EmailDistributionListContact" xml:space="preserve">
   <value>EmailDistributionListContact</value>
 </data>
@@ -324,6 +333,9 @@
 <data name="EmailDistributionListContactLastUpdateContactTVText" xml:space="preserve">
   <value>EmailDistributionListContactLastUpdateContactTVText</value>
 </data>
+<data name="EmailDistributionListContactHasErrors" xml:space="preserve">
+  <value>EmailDistributionListContactHasErrors</value>
+</data>
 <data name="EmailDistributionList" xml:space="preserve">
   <value>EmailDistributionList</value>
 </data>
@@ -350,6 +362,9 @@
 </data>
 <data name="EmailDistributionListLastUpdateContactTVText" xml:space="preserve">
   <value>EmailDistributionListLastUpdateContactTVText</value>
+</data>
+<data name="EmailDistributionListHasErrors" xml:space="preserve">
+  <value>EmailDistributionListHasErrors</value>
 </data>
 <data name="RainExceedance" xml:space="preserve">
   <value>RainExceedance</value>
@@ -399,6 +414,9 @@
 <data name="RainExceedanceLastUpdateContactTVText" xml:space="preserve">
   <value>RainExceedanceLastUpdateContactTVText</value>
 </data>
+<data name="RainExceedanceHasErrors" xml:space="preserve">
+  <value>RainExceedanceHasErrors</value>
+</data>
 <data name="MWQMSampleDuplicateItem" xml:space="preserve">
   <value>MWQMSampleDuplicateItem</value>
 </data>
@@ -407,6 +425,9 @@
 </data>
 <data name="MWQMSampleDuplicateItemDuplicateSite" xml:space="preserve">
   <value>MWQMSampleDuplicateItemDuplicateSite</value>
+</data>
+<data name="MWQMSampleDuplicateItemHasErrors" xml:space="preserve">
+  <value>MWQMSampleDuplicateItemHasErrors</value>
 </data>
 <data name="MWQMSiteSampleFC" xml:space="preserve">
   <value>MWQMSiteSampleFC</value>
@@ -459,6 +480,9 @@
 <data name="MWQMSiteSampleFCPercOver260" xml:space="preserve">
   <value>MWQMSiteSampleFCPercOver260</value>
 </data>
+<data name="MWQMSiteSampleFCHasErrors" xml:space="preserve">
+  <value>MWQMSiteSampleFCHasErrors</value>
+</data>
 <data name="NewContact" xml:space="preserve">
   <value>NewContact</value>
 </data>
@@ -480,6 +504,9 @@
 <data name="NewContactContactTitleText" xml:space="preserve">
   <value>NewContactContactTitleText</value>
 </data>
+<data name="NewContactHasErrors" xml:space="preserve">
+  <value>NewContactHasErrors</value>
+</data>
 <data name="URLNumberOfSamples" xml:space="preserve">
   <value>URLNumberOfSamples</value>
 </data>
@@ -489,6 +516,9 @@
 <data name="URLNumberOfSamplesNumberOfSamples" xml:space="preserve">
   <value>URLNumberOfSamplesNumberOfSamples</value>
 </data>
+<data name="URLNumberOfSamplesHasErrors" xml:space="preserve">
+  <value>URLNumberOfSamplesHasErrors</value>
+</data>
 <data name="VPScenarioIDAndRawResults" xml:space="preserve">
   <value>VPScenarioIDAndRawResults</value>
 </data>
@@ -497,6 +527,9 @@
 </data>
 <data name="VPScenarioIDAndRawResultsRawResults" xml:space="preserve">
   <value>VPScenarioIDAndRawResultsRawResults</value>
+</data>
+<data name="VPScenarioIDAndRawResultsHasErrors" xml:space="preserve">
+  <value>VPScenarioIDAndRawResultsHasErrors</value>
 </data>
 <data name="VPResValues" xml:space="preserve">
   <value>VPResValues</value>
@@ -519,6 +552,9 @@
 <data name="VPResValuesDecay" xml:space="preserve">
   <value>VPResValuesDecay</value>
 </data>
+<data name="VPResValuesHasErrors" xml:space="preserve">
+  <value>VPResValuesHasErrors</value>
+</data>
 <data name="VPFull" xml:space="preserve">
   <value>VPFull</value>
 </data>
@@ -531,6 +567,9 @@
 <data name="VPFullResultList" xml:space="preserve">
   <value>VPFullResultList</value>
 </data>
+<data name="VPFullHasErrors" xml:space="preserve">
+  <value>VPFullHasErrors</value>
+</data>
 <data name="Vector" xml:space="preserve">
   <value>Vector</value>
 </data>
@@ -539,6 +578,9 @@
 </data>
 <data name="VectorEndNode" xml:space="preserve">
   <value>VectorEndNode</value>
+</data>
+<data name="VectorHasErrors" xml:space="preserve">
+  <value>VectorHasErrors</value>
 </data>
 <data name="TVTypeNamesAndPath" xml:space="preserve">
   <value>TVTypeNamesAndPath</value>
@@ -552,6 +594,9 @@
 <data name="TVTypeNamesAndPathTVPath" xml:space="preserve">
   <value>TVTypeNamesAndPathTVPath</value>
 </data>
+<data name="TVTypeNamesAndPathHasErrors" xml:space="preserve">
+  <value>TVTypeNamesAndPathHasErrors</value>
+</data>
 <data name="TVTextLanguage" xml:space="preserve">
   <value>TVTextLanguage</value>
 </data>
@@ -563,6 +608,9 @@
 </data>
 <data name="TVTextLanguageLanguageText" xml:space="preserve">
   <value>TVTextLanguageLanguageText</value>
+</data>
+<data name="TVTextLanguageHasErrors" xml:space="preserve">
+  <value>TVTextLanguageHasErrors</value>
 </data>
 <data name="TVLocation" xml:space="preserve">
   <value>TVLocation</value>
@@ -591,6 +639,9 @@
 <data name="TVLocationMapObjList" xml:space="preserve">
   <value>TVLocationMapObjList</value>
 </data>
+<data name="TVLocationHasErrors" xml:space="preserve">
+  <value>TVLocationHasErrors</value>
+</data>
 <data name="TVItemTVAuth" xml:space="preserve">
   <value>TVItemTVAuth</value>
 </data>
@@ -615,6 +666,9 @@
 <data name="TVItemTVAuthTVAuthText" xml:space="preserve">
   <value>TVItemTVAuthTVAuthText</value>
 </data>
+<data name="TVItemTVAuthHasErrors" xml:space="preserve">
+  <value>TVItemTVAuthHasErrors</value>
+</data>
 <data name="TVItemInfrastructureTypeTVItemLink" xml:space="preserve">
   <value>TVItemInfrastructureTypeTVItemLink</value>
 </data>
@@ -636,6 +690,9 @@
 <data name="TVItemInfrastructureTypeTVItemLinkFlowTo" xml:space="preserve">
   <value>TVItemInfrastructureTypeTVItemLinkFlowTo</value>
 </data>
+<data name="TVItemInfrastructureTypeTVItemLinkHasErrors" xml:space="preserve">
+  <value>TVItemInfrastructureTypeTVItemLinkHasErrors</value>
+</data>
 <data name="TVItemSubsectorAndMWQMSite" xml:space="preserve">
   <value>TVItemSubsectorAndMWQMSite</value>
 </data>
@@ -648,6 +705,9 @@
 <data name="TVItemSubsectorAndMWQMSiteTVItemMWQMSiteDuplicate" xml:space="preserve">
   <value>TVItemSubsectorAndMWQMSiteTVItemMWQMSiteDuplicate</value>
 </data>
+<data name="TVItemSubsectorAndMWQMSiteHasErrors" xml:space="preserve">
+  <value>TVItemSubsectorAndMWQMSiteHasErrors</value>
+</data>
 <data name="TVFullText" xml:space="preserve">
   <value>TVFullText</value>
 </data>
@@ -656,6 +716,9 @@
 </data>
 <data name="TVFullTextFullText" xml:space="preserve">
   <value>TVFullTextFullText</value>
+</data>
+<data name="TVFullTextHasErrors" xml:space="preserve">
+  <value>TVFullTextHasErrors</value>
 </data>
 <data name="SubsectorMWQMSampleYear" xml:space="preserve">
   <value>SubsectorMWQMSampleYear</value>
@@ -672,6 +735,9 @@
 <data name="SubsectorMWQMSampleYearLatestDate" xml:space="preserve">
   <value>SubsectorMWQMSampleYearLatestDate</value>
 </data>
+<data name="SubsectorMWQMSampleYearHasErrors" xml:space="preserve">
+  <value>SubsectorMWQMSampleYearHasErrors</value>
+</data>
 <data name="SearchTagAndTerms" xml:space="preserve">
   <value>SearchTagAndTerms</value>
 </data>
@@ -684,6 +750,9 @@
 <data name="SearchTagAndTermsSearchTermList" xml:space="preserve">
   <value>SearchTagAndTermsSearchTermList</value>
 </data>
+<data name="SearchTagAndTermsHasErrors" xml:space="preserve">
+  <value>SearchTagAndTermsHasErrors</value>
+</data>
 <data name="Search" xml:space="preserve">
   <value>Search</value>
 </data>
@@ -692,6 +761,9 @@
 </data>
 <data name="Searchid" xml:space="preserve">
   <value>Searchid</value>
+</data>
+<data name="SearchHasErrors" xml:space="preserve">
+  <value>SearchHasErrors</value>
 </data>
 <data name="RTBStringPos" xml:space="preserve">
   <value>RTBStringPos</value>
@@ -708,6 +780,9 @@
 <data name="RTBStringPosTagText" xml:space="preserve">
   <value>RTBStringPosTagText</value>
 </data>
+<data name="RTBStringPosHasErrors" xml:space="preserve">
+  <value>RTBStringPosHasErrors</value>
+</data>
 <data name="PolSourceObsInfoChild" xml:space="preserve">
   <value>PolSourceObsInfoChild</value>
 </data>
@@ -723,6 +798,9 @@
 <data name="PolSourceObsInfoChildPolSourceObsInfoChildStartText" xml:space="preserve">
   <value>PolSourceObsInfoChildPolSourceObsInfoChildStartText</value>
 </data>
+<data name="PolSourceObsInfoChildHasErrors" xml:space="preserve">
+  <value>PolSourceObsInfoChildHasErrors</value>
+</data>
 <data name="PolSourceObsInfoEnumTextAndID" xml:space="preserve">
   <value>PolSourceObsInfoEnumTextAndID</value>
 </data>
@@ -732,6 +810,9 @@
 <data name="PolSourceObsInfoEnumTextAndIDID" xml:space="preserve">
   <value>PolSourceObsInfoEnumTextAndIDID</value>
 </data>
+<data name="PolSourceObsInfoEnumTextAndIDHasErrors" xml:space="preserve">
+  <value>PolSourceObsInfoEnumTextAndIDHasErrors</value>
+</data>
 <data name="PolSourceInactiveReasonEnumTextAndID" xml:space="preserve">
   <value>PolSourceInactiveReasonEnumTextAndID</value>
 </data>
@@ -740,6 +821,9 @@
 </data>
 <data name="PolSourceInactiveReasonEnumTextAndIDID" xml:space="preserve">
   <value>PolSourceInactiveReasonEnumTextAndIDID</value>
+</data>
+<data name="PolSourceInactiveReasonEnumTextAndIDHasErrors" xml:space="preserve">
+  <value>PolSourceInactiveReasonEnumTextAndIDHasErrors</value>
 </data>
 <data name="PolyPoint" xml:space="preserve">
   <value>PolyPoint</value>
@@ -753,6 +837,9 @@
 <data name="PolyPointZ" xml:space="preserve">
   <value>PolyPointZ</value>
 </data>
+<data name="PolyPointHasErrors" xml:space="preserve">
+  <value>PolyPointHasErrors</value>
+</data>
 <data name="OtherFilesToUpload" xml:space="preserve">
   <value>OtherFilesToUpload</value>
 </data>
@@ -765,6 +852,9 @@
 <data name="OtherFilesToUploadTVFileList" xml:space="preserve">
   <value>OtherFilesToUploadTVFileList</value>
 </data>
+<data name="OtherFilesToUploadHasErrors" xml:space="preserve">
+  <value>OtherFilesToUploadHasErrors</value>
+</data>
 <data name="NodeLayer" xml:space="preserve">
   <value>NodeLayer</value>
 </data>
@@ -776,6 +866,9 @@
 </data>
 <data name="NodeLayerNode" xml:space="preserve">
   <value>NodeLayerNode</value>
+</data>
+<data name="NodeLayerHasErrors" xml:space="preserve">
+  <value>NodeLayerHasErrors</value>
 </data>
 <data name="Node" xml:space="preserve">
   <value>Node</value>
@@ -804,6 +897,9 @@
 <data name="NodeConnectNodeList" xml:space="preserve">
   <value>NodeConnectNodeList</value>
 </data>
+<data name="NodeHasErrors" xml:space="preserve">
+  <value>NodeHasErrors</value>
+</data>
 <data name="SamplingPlanAndFilesLabSheetCount" xml:space="preserve">
   <value>SamplingPlanAndFilesLabSheetCount</value>
 </data>
@@ -818,6 +914,9 @@
 </data>
 <data name="SamplingPlanAndFilesLabSheetCountTVFileSamplingPlanFileTXT" xml:space="preserve">
   <value>SamplingPlanAndFilesLabSheetCountTVFileSamplingPlanFileTXT</value>
+</data>
+<data name="SamplingPlanAndFilesLabSheetCountHasErrors" xml:space="preserve">
+  <value>SamplingPlanAndFilesLabSheetCountHasErrors</value>
 </data>
 <data name="MapObj" xml:space="preserve">
   <value>MapObj</value>
@@ -834,6 +933,9 @@
 <data name="MapObjCoordList" xml:space="preserve">
   <value>MapObjCoordList</value>
 </data>
+<data name="MapObjHasErrors" xml:space="preserve">
+  <value>MapObjHasErrors</value>
+</data>
 <data name="LatLng" xml:space="preserve">
   <value>LatLng</value>
 </data>
@@ -842,6 +944,9 @@
 </data>
 <data name="LatLngLng" xml:space="preserve">
   <value>LatLngLng</value>
+</data>
+<data name="LatLngHasErrors" xml:space="preserve">
+  <value>LatLngHasErrors</value>
 </data>
 <data name="LastUpdateAndTVText" xml:space="preserve">
   <value>LastUpdateAndTVText</value>
@@ -858,6 +963,9 @@
 <data name="LastUpdateAndTVTextTVText" xml:space="preserve">
   <value>LastUpdateAndTVTextTVText</value>
 </data>
+<data name="LastUpdateAndTVTextHasErrors" xml:space="preserve">
+  <value>LastUpdateAndTVTextHasErrors</value>
+</data>
 <data name="LastUpdateAndContact" xml:space="preserve">
   <value>LastUpdateAndContact</value>
 </data>
@@ -870,6 +978,9 @@
 <data name="LastUpdateAndContactLastUpdateContactTVItemID" xml:space="preserve">
   <value>LastUpdateAndContactLastUpdateContactTVItemID</value>
 </data>
+<data name="LastUpdateAndContactHasErrors" xml:space="preserve">
+  <value>LastUpdateAndContactHasErrors</value>
+</data>
 <data name="LabSheetAndA1Sheet" xml:space="preserve">
   <value>LabSheetAndA1Sheet</value>
 </data>
@@ -878,6 +989,9 @@
 </data>
 <data name="LabSheetAndA1SheetLabSheetA1Sheet" xml:space="preserve">
   <value>LabSheetAndA1SheetLabSheetA1Sheet</value>
+</data>
+<data name="LabSheetAndA1SheetHasErrors" xml:space="preserve">
+  <value>LabSheetAndA1SheetHasErrors</value>
 </data>
 <data name="LabSheetA1Measurement" xml:space="preserve">
   <value>LabSheetA1Measurement</value>
@@ -920,6 +1034,9 @@
 </data>
 <data name="LabSheetA1MeasurementSampleTypeText" xml:space="preserve">
   <value>LabSheetA1MeasurementSampleTypeText</value>
+</data>
+<data name="LabSheetA1MeasurementHasErrors" xml:space="preserve">
+  <value>LabSheetA1MeasurementHasErrors</value>
 </data>
 <data name="LabSheetA1Sheet" xml:space="preserve">
   <value>LabSheetA1Sheet</value>
@@ -1182,6 +1299,9 @@
 <data name="LabSheetA1SheetLabSheetA1MeasurementList" xml:space="preserve">
   <value>LabSheetA1SheetLabSheetA1MeasurementList</value>
 </data>
+<data name="LabSheetA1SheetHasErrors" xml:space="preserve">
+  <value>LabSheetA1SheetHasErrors</value>
+</data>
 <data name="InputSummary" xml:space="preserve">
   <value>InputSummary</value>
 </data>
@@ -1190,6 +1310,9 @@
 </data>
 <data name="InputSummarySummary" xml:space="preserve">
   <value>InputSummarySummary</value>
+</data>
+<data name="InputSummaryHasErrors" xml:space="preserve">
+  <value>InputSummaryHasErrors</value>
 </data>
 <data name="FilePurposeAndText" xml:space="preserve">
   <value>FilePurposeAndText</value>
@@ -1200,6 +1323,9 @@
 <data name="FilePurposeAndTextFilePurposeText" xml:space="preserve">
   <value>FilePurposeAndTextFilePurposeText</value>
 </data>
+<data name="FilePurposeAndTextHasErrors" xml:space="preserve">
+  <value>FilePurposeAndTextHasErrors</value>
+</data>
 <data name="FileItemList" xml:space="preserve">
   <value>FileItemList</value>
 </data>
@@ -1209,6 +1335,9 @@
 <data name="FileItemListFileName" xml:space="preserve">
   <value>FileItemListFileName</value>
 </data>
+<data name="FileItemListHasErrors" xml:space="preserve">
+  <value>FileItemListHasErrors</value>
+</data>
 <data name="FileItem" xml:space="preserve">
   <value>FileItem</value>
 </data>
@@ -1217,6 +1346,9 @@
 </data>
 <data name="FileItemTVItemID" xml:space="preserve">
   <value>FileItemTVItemID</value>
+</data>
+<data name="FileItemHasErrors" xml:space="preserve">
+  <value>FileItemHasErrors</value>
 </data>
 <data name="ElementLayer" xml:space="preserve">
   <value>ElementLayer</value>
@@ -1232,6 +1364,9 @@
 </data>
 <data name="ElementLayerElement" xml:space="preserve">
   <value>ElementLayerElement</value>
+</data>
+<data name="ElementLayerHasErrors" xml:space="preserve">
+  <value>ElementLayerHasErrors</value>
 </data>
 <data name="Element" xml:space="preserve">
   <value>Element</value>
@@ -1260,6 +1395,9 @@
 <data name="ElementNodeList" xml:space="preserve">
   <value>ElementNodeList</value>
 </data>
+<data name="ElementHasErrors" xml:space="preserve">
+  <value>ElementHasErrors</value>
+</data>
 <data name="DataPathOfTide" xml:space="preserve">
   <value>DataPathOfTide</value>
 </data>
@@ -1271,6 +1409,9 @@
 </data>
 <data name="DataPathOfTideWebTideDataSetText" xml:space="preserve">
   <value>DataPathOfTideWebTideDataSetText</value>
+</data>
+<data name="DataPathOfTideHasErrors" xml:space="preserve">
+  <value>DataPathOfTideHasErrors</value>
 </data>
 <data name="CSSPWQInputParam" xml:space="preserve">
   <value>CSSPWQInputParam</value>
@@ -1308,6 +1449,9 @@
 <data name="CSSPWQInputParamInfrastructureTVItemIDList" xml:space="preserve">
   <value>CSSPWQInputParamInfrastructureTVItemIDList</value>
 </data>
+<data name="CSSPWQInputParamHasErrors" xml:space="preserve">
+  <value>CSSPWQInputParamHasErrors</value>
+</data>
 <data name="CSSPWQInputApp" xml:space="preserve">
   <value>CSSPWQInputApp</value>
 </data>
@@ -1332,6 +1476,9 @@
 <data name="CSSPWQInputAppApprovalDate" xml:space="preserve">
   <value>CSSPWQInputAppApprovalDate</value>
 </data>
+<data name="CSSPWQInputAppHasErrors" xml:space="preserve">
+  <value>CSSPWQInputAppHasErrors</value>
+</data>
 <data name="CSSPMPNTable" xml:space="preserve">
   <value>CSSPMPNTable</value>
 </data>
@@ -1347,6 +1494,9 @@
 <data name="CSSPMPNTableMPN" xml:space="preserve">
   <value>CSSPMPNTableMPN</value>
 </data>
+<data name="CSSPMPNTableHasErrors" xml:space="preserve">
+  <value>CSSPMPNTableHasErrors</value>
+</data>
 <data name="Coord" xml:space="preserve">
   <value>Coord</value>
 </data>
@@ -1358,6 +1508,9 @@
 </data>
 <data name="CoordOrdinal" xml:space="preserve">
   <value>CoordOrdinal</value>
+</data>
+<data name="CoordHasErrors" xml:space="preserve">
+  <value>CoordHasErrors</value>
 </data>
 <data name="ContourPolygon" xml:space="preserve">
   <value>ContourPolygon</value>
@@ -1374,6 +1527,9 @@
 <data name="ContourPolygonContourNodeList" xml:space="preserve">
   <value>ContourPolygonContourNodeList</value>
 </data>
+<data name="ContourPolygonHasErrors" xml:space="preserve">
+  <value>ContourPolygonHasErrors</value>
+</data>
 <data name="ContactSearch" xml:space="preserve">
   <value>ContactSearch</value>
 </data>
@@ -1385,6 +1541,9 @@
 </data>
 <data name="ContactSearchFullName" xml:space="preserve">
   <value>ContactSearchFullName</value>
+</data>
+<data name="ContactSearchHasErrors" xml:space="preserve">
+  <value>ContactSearchHasErrors</value>
 </data>
 <data name="ContactOK" xml:space="preserve">
   <value>ContactOK</value>
@@ -1398,6 +1557,9 @@
 <data name="ContactOKContactTVItemID" xml:space="preserve">
   <value>ContactOKContactTVItemID</value>
 </data>
+<data name="ContactOKHasErrors" xml:space="preserve">
+  <value>ContactOKHasErrors</value>
+</data>
 <data name="CalDecay" xml:space="preserve">
   <value>CalDecay</value>
 </data>
@@ -1407,6 +1569,9 @@
 <data name="CalDecayDecay" xml:space="preserve">
   <value>CalDecayDecay</value>
 </data>
+<data name="CalDecayHasErrors" xml:space="preserve">
+  <value>CalDecayHasErrors</value>
+</data>
 <data name="DBTable" xml:space="preserve">
   <value>DBTable</value>
 </data>
@@ -1415,6 +1580,9 @@
 </data>
 <data name="DBTablePlurial" xml:space="preserve">
   <value>DBTablePlurial</value>
+</data>
+<data name="DBTableHasErrors" xml:space="preserve">
+  <value>DBTableHasErrors</value>
 </data>
 <data name="BoxModelCalNumb" xml:space="preserve">
   <value>BoxModelCalNumb</value>
@@ -1449,6 +1617,9 @@
 <data name="BoxModelCalNumbBoxModelResultTypeText" xml:space="preserve">
   <value>BoxModelCalNumbBoxModelResultTypeText</value>
 </data>
+<data name="BoxModelCalNumbHasErrors" xml:space="preserve">
+  <value>BoxModelCalNumbHasErrors</value>
+</data>
 <data name="AppTaskParameter" xml:space="preserve">
   <value>AppTaskParameter</value>
 </data>
@@ -1457,6 +1628,9 @@
 </data>
 <data name="AppTaskParameterValue" xml:space="preserve">
   <value>AppTaskParameterValue</value>
+</data>
+<data name="AppTaskParameterHasErrors" xml:space="preserve">
+  <value>AppTaskParameterHasErrors</value>
 </data>
 <data name="AppTaskLanguage" xml:space="preserve">
   <value>AppTaskLanguage</value>
@@ -1493,6 +1667,9 @@
 </data>
 <data name="AppTaskLanguageTranslationStatusText" xml:space="preserve">
   <value>AppTaskLanguageTranslationStatusText</value>
+</data>
+<data name="AppTaskLanguageHasErrors" xml:space="preserve">
+  <value>AppTaskLanguageHasErrors</value>
 </data>
 <data name="BoxModel" xml:space="preserve">
   <value>BoxModel</value>
@@ -1545,6 +1722,9 @@
 <data name="BoxModelLastUpdateContactTVText" xml:space="preserve">
   <value>BoxModelLastUpdateContactTVText</value>
 </data>
+<data name="BoxModelHasErrors" xml:space="preserve">
+  <value>BoxModelHasErrors</value>
+</data>
 <data name="BoxModelLanguage" xml:space="preserve">
   <value>BoxModelLanguage</value>
 </data>
@@ -1577,6 +1757,9 @@
 </data>
 <data name="BoxModelLanguageTranslationStatusText" xml:space="preserve">
   <value>BoxModelLanguageTranslationStatusText</value>
+</data>
+<data name="BoxModelLanguageHasErrors" xml:space="preserve">
+  <value>BoxModelLanguageHasErrors</value>
 </data>
 <data name="BoxModelResult" xml:space="preserve">
   <value>BoxModelResult</value>
@@ -1640,6 +1823,9 @@
 </data>
 <data name="BoxModelResultBoxModelResultTypeText" xml:space="preserve">
   <value>BoxModelResultBoxModelResultTypeText</value>
+</data>
+<data name="BoxModelResultHasErrors" xml:space="preserve">
+  <value>BoxModelResultHasErrors</value>
 </data>
 <data name="ClimateDataValue" xml:space="preserve">
   <value>ClimateDataValue</value>
@@ -1706,6 +1892,9 @@
 </data>
 <data name="ClimateDataValueStorageDataTypeEnumText" xml:space="preserve">
   <value>ClimateDataValueStorageDataTypeEnumText</value>
+</data>
+<data name="ClimateDataValueHasErrors" xml:space="preserve">
+  <value>ClimateDataValueHasErrors</value>
 </data>
 <data name="ClimateSite" xml:space="preserve">
   <value>ClimateSite</value>
@@ -1788,6 +1977,9 @@
 <data name="ClimateSiteLastUpdateContactTVText" xml:space="preserve">
   <value>ClimateSiteLastUpdateContactTVText</value>
 </data>
+<data name="ClimateSiteHasErrors" xml:space="preserve">
+  <value>ClimateSiteHasErrors</value>
+</data>
 <data name="ContactLogin" xml:space="preserve">
   <value>ContactLogin</value>
 </data>
@@ -1821,6 +2013,9 @@
 <data name="ContactLoginConfirmPassword" xml:space="preserve">
   <value>ContactLoginConfirmPassword</value>
 </data>
+<data name="ContactLoginHasErrors" xml:space="preserve">
+  <value>ContactLoginHasErrors</value>
+</data>
 <data name="Register" xml:space="preserve">
   <value>Register</value>
 </data>
@@ -1845,6 +2040,9 @@
 <data name="RegisterConfirmPassword" xml:space="preserve">
   <value>RegisterConfirmPassword</value>
 </data>
+<data name="RegisterHasErrors" xml:space="preserve">
+  <value>RegisterHasErrors</value>
+</data>
 <data name="Login" xml:space="preserve">
   <value>Login</value>
 </data>
@@ -1856,6 +2054,9 @@
 </data>
 <data name="LoginConfirmPassword" xml:space="preserve">
   <value>LoginConfirmPassword</value>
+</data>
+<data name="LoginHasErrors" xml:space="preserve">
+  <value>LoginHasErrors</value>
 </data>
 <data name="Contact" xml:space="preserve">
   <value>Contact</value>
@@ -1920,6 +2121,9 @@
 <data name="ContactContactTitleText" xml:space="preserve">
   <value>ContactContactTitleText</value>
 </data>
+<data name="ContactHasErrors" xml:space="preserve">
+  <value>ContactHasErrors</value>
+</data>
 <data name="ContactPreference" xml:space="preserve">
   <value>ContactPreference</value>
 </data>
@@ -1947,6 +2151,9 @@
 <data name="ContactPreferenceTVTypeText" xml:space="preserve">
   <value>ContactPreferenceTVTypeText</value>
 </data>
+<data name="ContactPreferenceHasErrors" xml:space="preserve">
+  <value>ContactPreferenceHasErrors</value>
+</data>
 <data name="ContactShortcut" xml:space="preserve">
   <value>ContactShortcut</value>
 </data>
@@ -1970,6 +2177,9 @@
 </data>
 <data name="ContactShortcutLastUpdateContactTVText" xml:space="preserve">
   <value>ContactShortcutLastUpdateContactTVText</value>
+</data>
+<data name="ContactShortcutHasErrors" xml:space="preserve">
+  <value>ContactShortcutHasErrors</value>
 </data>
 <data name="DocTemplate" xml:space="preserve">
   <value>DocTemplate</value>
@@ -2004,6 +2214,9 @@
 <data name="DocTemplateTVTypeText" xml:space="preserve">
   <value>DocTemplateTVTypeText</value>
 </data>
+<data name="DocTemplateHasErrors" xml:space="preserve">
+  <value>DocTemplateHasErrors</value>
+</data>
 <data name="Email" xml:space="preserve">
   <value>Email</value>
 </data>
@@ -2033,6 +2246,9 @@
 </data>
 <data name="EmailEmailTypeText" xml:space="preserve">
   <value>EmailEmailTypeText</value>
+</data>
+<data name="EmailHasErrors" xml:space="preserve">
+  <value>EmailHasErrors</value>
 </data>
 <data name="HydrometricDataValue" xml:space="preserve">
   <value>HydrometricDataValue</value>
@@ -2069,6 +2285,9 @@
 </data>
 <data name="HydrometricDataValueStorageDataTypeText" xml:space="preserve">
   <value>HydrometricDataValueStorageDataTypeText</value>
+</data>
+<data name="HydrometricDataValueHasErrors" xml:space="preserve">
+  <value>HydrometricDataValueHasErrors</value>
 </data>
 <data name="HydrometricSite" xml:space="preserve">
   <value>HydrometricSite</value>
@@ -2138,6 +2357,9 @@
 </data>
 <data name="HydrometricSiteLastUpdateContactTVText" xml:space="preserve">
   <value>HydrometricSiteLastUpdateContactTVText</value>
+</data>
+<data name="HydrometricSiteHasErrors" xml:space="preserve">
+  <value>HydrometricSiteHasErrors</value>
 </data>
 <data name="Infrastructure" xml:space="preserve">
   <value>Infrastructure</value>
@@ -2331,6 +2553,9 @@
 <data name="InfrastructureAlarmSystemTypeText" xml:space="preserve">
   <value>InfrastructureAlarmSystemTypeText</value>
 </data>
+<data name="InfrastructureHasErrors" xml:space="preserve">
+  <value>InfrastructureHasErrors</value>
+</data>
 <data name="InfrastructureLanguage" xml:space="preserve">
   <value>InfrastructureLanguage</value>
 </data>
@@ -2363,6 +2588,9 @@
 </data>
 <data name="InfrastructureLanguageTranslationStatusText" xml:space="preserve">
   <value>InfrastructureLanguageTranslationStatusText</value>
+</data>
+<data name="InfrastructureLanguageHasErrors" xml:space="preserve">
+  <value>InfrastructureLanguageHasErrors</value>
 </data>
 <data name="LabSheet" xml:space="preserve">
   <value>LabSheet</value>
@@ -2456,6 +2684,9 @@
 </data>
 <data name="LabSheetLabSheetStatusText" xml:space="preserve">
   <value>LabSheetLabSheetStatusText</value>
+</data>
+<data name="LabSheetHasErrors" xml:space="preserve">
+  <value>LabSheetHasErrors</value>
 </data>
 <data name="LabSheetDetail" xml:space="preserve">
   <value>LabSheetDetail</value>
@@ -2661,6 +2892,9 @@
 <data name="LabSheetDetailLastUpdateContactTVText" xml:space="preserve">
   <value>LabSheetDetailLastUpdateContactTVText</value>
 </data>
+<data name="LabSheetDetailHasErrors" xml:space="preserve">
+  <value>LabSheetDetailHasErrors</value>
+</data>
 <data name="LabSheetTubeMPNDetail" xml:space="preserve">
   <value>LabSheetTubeMPNDetail</value>
 </data>
@@ -2721,6 +2955,9 @@
 <data name="LabSheetTubeMPNDetailSampleTypeText" xml:space="preserve">
   <value>LabSheetTubeMPNDetailSampleTypeText</value>
 </data>
+<data name="LabSheetTubeMPNDetailHasErrors" xml:space="preserve">
+  <value>LabSheetTubeMPNDetailHasErrors</value>
+</data>
 <data name="Log" xml:space="preserve">
   <value>Log</value>
 </data>
@@ -2750,6 +2987,9 @@
 </data>
 <data name="LogLogCommandText" xml:space="preserve">
   <value>LogLogCommandText</value>
+</data>
+<data name="LogHasErrors" xml:space="preserve">
+  <value>LogHasErrors</value>
 </data>
 <data name="MapInfo" xml:space="preserve">
   <value>MapInfo</value>
@@ -2796,6 +3036,9 @@
 <data name="MapInfoMapInfoDrawTypeText" xml:space="preserve">
   <value>MapInfoMapInfoDrawTypeText</value>
 </data>
+<data name="MapInfoHasErrors" xml:space="preserve">
+  <value>MapInfoHasErrors</value>
+</data>
 <data name="MapInfoPoint" xml:space="preserve">
   <value>MapInfoPoint</value>
 </data>
@@ -2822,6 +3065,9 @@
 </data>
 <data name="MapInfoPointLastUpdateContactTVText" xml:space="preserve">
   <value>MapInfoPointLastUpdateContactTVText</value>
+</data>
+<data name="MapInfoPointHasErrors" xml:space="preserve">
+  <value>MapInfoPointHasErrors</value>
 </data>
 <data name="MikeBoundaryCondition" xml:space="preserve">
   <value>MikeBoundaryCondition</value>
@@ -2879,6 +3125,9 @@
 </data>
 <data name="MikeBoundaryConditionTVTypeText" xml:space="preserve">
   <value>MikeBoundaryConditionTVTypeText</value>
+</data>
+<data name="MikeBoundaryConditionHasErrors" xml:space="preserve">
+  <value>MikeBoundaryConditionHasErrors</value>
 </data>
 <data name="MikeScenario" xml:space="preserve">
   <value>MikeScenario</value>
@@ -2976,6 +3225,9 @@
 <data name="MikeScenarioScenarioStatusText" xml:space="preserve">
   <value>MikeScenarioScenarioStatusText</value>
 </data>
+<data name="MikeScenarioHasErrors" xml:space="preserve">
+  <value>MikeScenarioHasErrors</value>
+</data>
 <data name="MikeSource" xml:space="preserve">
   <value>MikeSource</value>
 </data>
@@ -3008,6 +3260,9 @@
 </data>
 <data name="MikeSourceLastUpdateContactTVText" xml:space="preserve">
   <value>MikeSourceLastUpdateContactTVText</value>
+</data>
+<data name="MikeSourceHasErrors" xml:space="preserve">
+  <value>MikeSourceHasErrors</value>
 </data>
 <data name="MikeSourceStartEnd" xml:space="preserve">
   <value>MikeSourceStartEnd</value>
@@ -3057,6 +3312,9 @@
 <data name="MikeSourceStartEndLastUpdateContactTVText" xml:space="preserve">
   <value>MikeSourceStartEndLastUpdateContactTVText</value>
 </data>
+<data name="MikeSourceStartEndHasErrors" xml:space="preserve">
+  <value>MikeSourceStartEndHasErrors</value>
+</data>
 <data name="MWQMLookupMPN" xml:space="preserve">
   <value>MWQMLookupMPN</value>
 </data>
@@ -3083,6 +3341,9 @@
 </data>
 <data name="MWQMLookupMPNLastUpdateContactTVText" xml:space="preserve">
   <value>MWQMLookupMPNLastUpdateContactTVText</value>
+</data>
+<data name="MWQMLookupMPNHasErrors" xml:space="preserve">
+  <value>MWQMLookupMPNHasErrors</value>
 </data>
 <data name="MWQMRun" xml:space="preserve">
   <value>MWQMRun</value>
@@ -3252,6 +3513,9 @@
 <data name="MWQMRunTide_EndText" xml:space="preserve">
   <value>MWQMRunTide_EndText</value>
 </data>
+<data name="MWQMRunHasErrors" xml:space="preserve">
+  <value>MWQMRunHasErrors</value>
+</data>
 <data name="MWQMRunLanguage" xml:space="preserve">
   <value>MWQMRunLanguage</value>
 </data>
@@ -3293,6 +3557,9 @@
 </data>
 <data name="MWQMRunLanguageTranslationStatusRunWeatherCommentText" xml:space="preserve">
   <value>MWQMRunLanguageTranslationStatusRunWeatherCommentText</value>
+</data>
+<data name="MWQMRunLanguageHasErrors" xml:space="preserve">
+  <value>MWQMRunLanguageHasErrors</value>
 </data>
 <data name="MWQMSample" xml:space="preserve">
   <value>MWQMSample</value>
@@ -3360,6 +3627,9 @@
 <data name="MWQMSampleSampleType_oldText" xml:space="preserve">
   <value>MWQMSampleSampleType_oldText</value>
 </data>
+<data name="MWQMSampleHasErrors" xml:space="preserve">
+  <value>MWQMSampleHasErrors</value>
+</data>
 <data name="MWQMSampleLanguage" xml:space="preserve">
   <value>MWQMSampleLanguage</value>
 </data>
@@ -3392,6 +3662,9 @@
 </data>
 <data name="MWQMSampleLanguageTranslationStatusText" xml:space="preserve">
   <value>MWQMSampleLanguageTranslationStatusText</value>
+</data>
+<data name="MWQMSampleLanguageHasErrors" xml:space="preserve">
+  <value>MWQMSampleLanguageHasErrors</value>
 </data>
 <data name="MWQMSite" xml:space="preserve">
   <value>MWQMSite</value>
@@ -3429,6 +3702,9 @@
 <data name="MWQMSiteMWQMSiteLatestClassificationText" xml:space="preserve">
   <value>MWQMSiteMWQMSiteLatestClassificationText</value>
 </data>
+<data name="MWQMSiteHasErrors" xml:space="preserve">
+  <value>MWQMSiteHasErrors</value>
+</data>
 <data name="MWQMSiteStartEndDate" xml:space="preserve">
   <value>MWQMSiteStartEndDate</value>
 </data>
@@ -3455,6 +3731,9 @@
 </data>
 <data name="MWQMSiteStartEndDateLastUpdateContactTVText" xml:space="preserve">
   <value>MWQMSiteStartEndDateLastUpdateContactTVText</value>
+</data>
+<data name="MWQMSiteStartEndDateHasErrors" xml:space="preserve">
+  <value>MWQMSiteStartEndDateHasErrors</value>
 </data>
 <data name="MWQMSubsector" xml:space="preserve">
   <value>MWQMSubsector</value>
@@ -3552,6 +3831,9 @@
 <data name="MWQMSubsectorLastUpdateContactTVText" xml:space="preserve">
   <value>MWQMSubsectorLastUpdateContactTVText</value>
 </data>
+<data name="MWQMSubsectorHasErrors" xml:space="preserve">
+  <value>MWQMSubsectorHasErrors</value>
+</data>
 <data name="MWQMSubsectorLanguage" xml:space="preserve">
   <value>MWQMSubsectorLanguage</value>
 </data>
@@ -3584,6 +3866,9 @@
 </data>
 <data name="MWQMSubsectorLanguageTranslationStatusText" xml:space="preserve">
   <value>MWQMSubsectorLanguageTranslationStatusText</value>
+</data>
+<data name="MWQMSubsectorLanguageHasErrors" xml:space="preserve">
+  <value>MWQMSubsectorLanguageHasErrors</value>
 </data>
 <data name="PolSourceObservation" xml:space="preserve">
   <value>PolSourceObservation</value>
@@ -3618,6 +3903,9 @@
 <data name="PolSourceObservationLastUpdateContactTVText" xml:space="preserve">
   <value>PolSourceObservationLastUpdateContactTVText</value>
 </data>
+<data name="PolSourceObservationHasErrors" xml:space="preserve">
+  <value>PolSourceObservationHasErrors</value>
+</data>
 <data name="PolSourceObservationIssue" xml:space="preserve">
   <value>PolSourceObservationIssue</value>
 </data>
@@ -3641,6 +3929,9 @@
 </data>
 <data name="PolSourceObservationIssueLastUpdateContactTVText" xml:space="preserve">
   <value>PolSourceObservationIssueLastUpdateContactTVText</value>
+</data>
+<data name="PolSourceObservationIssueHasErrors" xml:space="preserve">
+  <value>PolSourceObservationIssueHasErrors</value>
 </data>
 <data name="PolSourceSite" xml:space="preserve">
   <value>PolSourceSite</value>
@@ -3687,6 +3978,9 @@
 <data name="PolSourceSiteInactiveReasonText" xml:space="preserve">
   <value>PolSourceSiteInactiveReasonText</value>
 </data>
+<data name="PolSourceSiteHasErrors" xml:space="preserve">
+  <value>PolSourceSiteHasErrors</value>
+</data>
 <data name="RatingCurve" xml:space="preserve">
   <value>RatingCurve</value>
 </data>
@@ -3707,6 +4001,9 @@
 </data>
 <data name="RatingCurveLastUpdateContactTVText" xml:space="preserve">
   <value>RatingCurveLastUpdateContactTVText</value>
+</data>
+<data name="RatingCurveHasErrors" xml:space="preserve">
+  <value>RatingCurveHasErrors</value>
 </data>
 <data name="RatingCurveValue" xml:space="preserve">
   <value>RatingCurveValue</value>
@@ -3731,6 +4028,9 @@
 </data>
 <data name="RatingCurveValueLastUpdateContactTVText" xml:space="preserve">
   <value>RatingCurveValueLastUpdateContactTVText</value>
+</data>
+<data name="RatingCurveValueHasErrors" xml:space="preserve">
+  <value>RatingCurveValueHasErrors</value>
 </data>
 <data name="ResetPassword" xml:space="preserve">
   <value>ResetPassword</value>
@@ -3761,6 +4061,9 @@
 </data>
 <data name="ResetPasswordConfirmPassword" xml:space="preserve">
   <value>ResetPasswordConfirmPassword</value>
+</data>
+<data name="ResetPasswordHasErrors" xml:space="preserve">
+  <value>ResetPasswordHasErrors</value>
 </data>
 <data name="SamplingPlan" xml:space="preserve">
   <value>SamplingPlan</value>
@@ -3837,6 +4140,9 @@
 <data name="SamplingPlanLabSheetTypeText" xml:space="preserve">
   <value>SamplingPlanLabSheetTypeText</value>
 </data>
+<data name="SamplingPlanHasErrors" xml:space="preserve">
+  <value>SamplingPlanHasErrors</value>
+</data>
 <data name="SamplingPlanSubsector" xml:space="preserve">
   <value>SamplingPlanSubsector</value>
 </data>
@@ -3860,6 +4166,9 @@
 </data>
 <data name="SamplingPlanSubsectorLastUpdateContactTVText" xml:space="preserve">
   <value>SamplingPlanSubsectorLastUpdateContactTVText</value>
+</data>
+<data name="SamplingPlanSubsectorHasErrors" xml:space="preserve">
+  <value>SamplingPlanSubsectorHasErrors</value>
 </data>
 <data name="SamplingPlanSubsectorSite" xml:space="preserve">
   <value>SamplingPlanSubsectorSite</value>
@@ -3887,6 +4196,9 @@
 </data>
 <data name="SamplingPlanSubsectorSiteLastUpdateContactTVText" xml:space="preserve">
   <value>SamplingPlanSubsectorSiteLastUpdateContactTVText</value>
+</data>
+<data name="SamplingPlanSubsectorSiteHasErrors" xml:space="preserve">
+  <value>SamplingPlanSubsectorSiteHasErrors</value>
 </data>
 <data name="Spill" xml:space="preserve">
   <value>Spill</value>
@@ -3924,6 +4236,9 @@
 <data name="SpillLastUpdateContactTVText" xml:space="preserve">
   <value>SpillLastUpdateContactTVText</value>
 </data>
+<data name="SpillHasErrors" xml:space="preserve">
+  <value>SpillHasErrors</value>
+</data>
 <data name="SpillLanguage" xml:space="preserve">
   <value>SpillLanguage</value>
 </data>
@@ -3957,6 +4272,9 @@
 <data name="SpillLanguageTranslationStatusText" xml:space="preserve">
   <value>SpillLanguageTranslationStatusText</value>
 </data>
+<data name="SpillLanguageHasErrors" xml:space="preserve">
+  <value>SpillLanguageHasErrors</value>
+</data>
 <data name="Tel" xml:space="preserve">
   <value>Tel</value>
 </data>
@@ -3986,6 +4304,9 @@
 </data>
 <data name="TelTelTypeText" xml:space="preserve">
   <value>TelTelTypeText</value>
+</data>
+<data name="TelHasErrors" xml:space="preserve">
+  <value>TelHasErrors</value>
 </data>
 <data name="TideDataValue" xml:space="preserve">
   <value>TideDataValue</value>
@@ -4047,6 +4368,9 @@
 <data name="TideDataValueTideEndText" xml:space="preserve">
   <value>TideDataValueTideEndText</value>
 </data>
+<data name="TideDataValueHasErrors" xml:space="preserve">
+  <value>TideDataValueHasErrors</value>
+</data>
 <data name="TideLocation" xml:space="preserve">
   <value>TideLocation</value>
 </data>
@@ -4070,6 +4394,9 @@
 </data>
 <data name="TideLocationLng" xml:space="preserve">
   <value>TideLocationLng</value>
+</data>
+<data name="TideLocationHasErrors" xml:space="preserve">
+  <value>TideLocationHasErrors</value>
 </data>
 <data name="TideSite" xml:space="preserve">
   <value>TideSite</value>
@@ -4097,6 +4424,9 @@
 </data>
 <data name="TideSiteLastUpdateContactTVText" xml:space="preserve">
   <value>TideSiteLastUpdateContactTVText</value>
+</data>
+<data name="TideSiteHasErrors" xml:space="preserve">
+  <value>TideSiteHasErrors</value>
 </data>
 <data name="TVFile" xml:space="preserve">
   <value>TVFile</value>
@@ -4164,6 +4494,9 @@
 <data name="TVFileFileTypeText" xml:space="preserve">
   <value>TVFileFileTypeText</value>
 </data>
+<data name="TVFileHasErrors" xml:space="preserve">
+  <value>TVFileHasErrors</value>
+</data>
 <data name="TVFileLanguage" xml:space="preserve">
   <value>TVFileLanguage</value>
 </data>
@@ -4196,6 +4529,9 @@
 </data>
 <data name="TVFileLanguageTranslationStatusText" xml:space="preserve">
   <value>TVFileLanguageTranslationStatusText</value>
+</data>
+<data name="TVFileLanguageHasErrors" xml:space="preserve">
+  <value>TVFileLanguageHasErrors</value>
 </data>
 <data name="TVItem" xml:space="preserve">
   <value>TVItem</value>
@@ -4233,6 +4569,9 @@
 <data name="TVItemTVTypeText" xml:space="preserve">
   <value>TVItemTVTypeText</value>
 </data>
+<data name="TVItemHasErrors" xml:space="preserve">
+  <value>TVItemHasErrors</value>
+</data>
 <data name="TVItemLanguage" xml:space="preserve">
   <value>TVItemLanguage</value>
 </data>
@@ -4265,6 +4604,9 @@
 </data>
 <data name="TVItemLanguageTranslationStatusText" xml:space="preserve">
   <value>TVItemLanguageTranslationStatusText</value>
+</data>
+<data name="TVItemLanguageHasErrors" xml:space="preserve">
+  <value>TVItemLanguageHasErrors</value>
 </data>
 <data name="TVItemLink" xml:space="preserve">
   <value>TVItemLink</value>
@@ -4323,6 +4665,9 @@
 <data name="TVItemLinkToTVTypeText" xml:space="preserve">
   <value>TVItemLinkToTVTypeText</value>
 </data>
+<data name="TVItemLinkHasErrors" xml:space="preserve">
+  <value>TVItemLinkHasErrors</value>
+</data>
 <data name="TVItemStat" xml:space="preserve">
   <value>TVItemStat</value>
 </data>
@@ -4352,6 +4697,9 @@
 </data>
 <data name="TVItemStatTVTypeText" xml:space="preserve">
   <value>TVItemStatTVTypeText</value>
+</data>
+<data name="TVItemStatHasErrors" xml:space="preserve">
+  <value>TVItemStatHasErrors</value>
 </data>
 <data name="TVItemUserAuthorization" xml:space="preserve">
   <value>TVItemUserAuthorization</value>
@@ -4404,6 +4752,9 @@
 <data name="TVItemUserAuthorizationTVAuthText" xml:space="preserve">
   <value>TVItemUserAuthorizationTVAuthText</value>
 </data>
+<data name="TVItemUserAuthorizationHasErrors" xml:space="preserve">
+  <value>TVItemUserAuthorizationHasErrors</value>
+</data>
 <data name="TVTypeUserAuthorization" xml:space="preserve">
   <value>TVTypeUserAuthorization</value>
 </data>
@@ -4436,6 +4787,9 @@
 </data>
 <data name="TVTypeUserAuthorizationTVAuthText" xml:space="preserve">
   <value>TVTypeUserAuthorizationTVAuthText</value>
+</data>
+<data name="TVTypeUserAuthorizationHasErrors" xml:space="preserve">
+  <value>TVTypeUserAuthorizationHasErrors</value>
 </data>
 <data name="UseOfSite" xml:space="preserve">
   <value>UseOfSite</value>
@@ -4500,6 +4854,9 @@
 <data name="UseOfSiteSiteTypeText" xml:space="preserve">
   <value>UseOfSiteSiteTypeText</value>
 </data>
+<data name="UseOfSiteHasErrors" xml:space="preserve">
+  <value>UseOfSiteHasErrors</value>
+</data>
 <data name="VPAmbient" xml:space="preserve">
   <value>VPAmbient</value>
 </data>
@@ -4551,6 +4908,9 @@
 <data name="VPAmbientLastUpdateContactTVText" xml:space="preserve">
   <value>VPAmbientLastUpdateContactTVText</value>
 </data>
+<data name="VPAmbientHasErrors" xml:space="preserve">
+  <value>VPAmbientHasErrors</value>
+</data>
 <data name="VPResult" xml:space="preserve">
   <value>VPResult</value>
 </data>
@@ -4586,6 +4946,9 @@
 </data>
 <data name="VPResultLastUpdateContactTVText" xml:space="preserve">
   <value>VPResultLastUpdateContactTVText</value>
+</data>
+<data name="VPResultHasErrors" xml:space="preserve">
+  <value>VPResultHasErrors</value>
 </data>
 <data name="VPScenario" xml:space="preserve">
   <value>VPScenario</value>
@@ -4665,6 +5028,9 @@
 <data name="VPScenarioVPScenarioStatusText" xml:space="preserve">
   <value>VPScenarioVPScenarioStatusText</value>
 </data>
+<data name="VPScenarioHasErrors" xml:space="preserve">
+  <value>VPScenarioHasErrors</value>
+</data>
 <data name="VPScenarioLanguage" xml:space="preserve">
   <value>VPScenarioLanguage</value>
 </data>
@@ -4697,5 +5063,8 @@
 </data>
 <data name="VPScenarioLanguageTranslationStatusText" xml:space="preserve">
   <value>VPScenarioLanguageTranslationStatusText</value>
+</data>
+<data name="VPScenarioLanguageHasErrors" xml:space="preserve">
+  <value>VPScenarioLanguageHasErrors</value>
 </data>
 </root>

@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void URLNumberOfSamples_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "url", "NumberOfSamples",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "url", "NumberOfSamples", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,6 +39,7 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.URLNumberOfSamplesurl);
                Assert.IsNotNull(ModelsRes.URLNumberOfSamplesNumberOfSamples);
+               Assert.IsNotNull(ModelsRes.URLNumberOfSamplesHasErrors);
         }
         [TestMethod]
         public void URLNumberOfSamples_Every_Property_Has_Get_Set_Test()
@@ -49,9 +50,12 @@ namespace CSSPModels.Tests
                int val2 = 45;
                uRLNumberOfSamples.NumberOfSamples = val2;
                Assert.AreEqual(val2, uRLNumberOfSamples.NumberOfSamples);
-               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
-               uRLNumberOfSamples.ValidationResults = val9;
-               Assert.AreEqual(val9, uRLNumberOfSamples.ValidationResults);
+               bool val3 = true;
+               uRLNumberOfSamples.HasErrors = val3;
+               Assert.AreEqual(val3, uRLNumberOfSamples.HasErrors);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               uRLNumberOfSamples.ValidationResults = val12;
+               Assert.AreEqual(val12, uRLNumberOfSamples.ValidationResults);
         }
     }
 }

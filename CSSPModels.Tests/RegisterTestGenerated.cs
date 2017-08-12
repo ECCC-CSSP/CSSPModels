@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Register_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LoginEmail", "FirstName", "Initial", "LastName", "WebName", "Password", "ConfirmPassword",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LoginEmail", "FirstName", "Initial", "LastName", "WebName", "Password", "ConfirmPassword", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -44,6 +44,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.RegisterWebName);
                Assert.IsNotNull(ModelsRes.RegisterPassword);
                Assert.IsNotNull(ModelsRes.RegisterConfirmPassword);
+               Assert.IsNotNull(ModelsRes.RegisterHasErrors);
         }
         [TestMethod]
         public void Register_Every_Property_Has_Get_Set_Test()
@@ -69,9 +70,12 @@ namespace CSSPModels.Tests
                string val7 = "Some text";
                register.ConfirmPassword = val7;
                Assert.AreEqual(val7, register.ConfirmPassword);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               register.ValidationResults = val24;
-               Assert.AreEqual(val24, register.ValidationResults);
+               bool val8 = true;
+               register.HasErrors = val8;
+               Assert.AreEqual(val8, register.HasErrors);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               register.ValidationResults = val27;
+               Assert.AreEqual(val27, register.ValidationResults);
         }
     }
 }

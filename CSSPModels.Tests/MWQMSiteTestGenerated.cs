@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MWQMSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSiteID", "MWQMSiteTVItemID", "MWQMSiteNumber", "MWQMSiteDescription", "MWQMSiteLatestClassification", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteTVText", "LastUpdateContactTVText", "MWQMSiteLatestClassificationText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteTVText", "LastUpdateContactTVText", "MWQMSiteLatestClassificationText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMSite).GetProperties().OrderBy(c => c.Name))
@@ -100,6 +100,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMSiteMWQMSiteTVText);
                Assert.IsNotNull(ModelsRes.MWQMSiteLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.MWQMSiteMWQMSiteLatestClassificationText);
+               Assert.IsNotNull(ModelsRes.MWQMSiteHasErrors);
         }
         [TestMethod]
         public void MWQMSite_Every_Property_Has_Get_Set_Test()
@@ -137,9 +138,12 @@ namespace CSSPModels.Tests
                string val11 = "Some text";
                mWQMSite.MWQMSiteLatestClassificationText = val11;
                Assert.AreEqual(val11, mWQMSite.MWQMSiteLatestClassificationText);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               mWQMSite.ValidationResults = val36;
-               Assert.AreEqual(val36, mWQMSite.ValidationResults);
+               bool val12 = true;
+               mWQMSite.HasErrors = val12;
+               Assert.AreEqual(val12, mWQMSite.HasErrors);
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>().AsEnumerable();
+               mWQMSite.ValidationResults = val39;
+               Assert.AreEqual(val39, mWQMSite.ValidationResults);
         }
     }
 }

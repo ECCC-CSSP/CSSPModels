@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LatLng_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Lat", "Lng",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Lat", "Lng", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,6 +39,7 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.LatLngLat);
                Assert.IsNotNull(ModelsRes.LatLngLng);
+               Assert.IsNotNull(ModelsRes.LatLngHasErrors);
         }
         [TestMethod]
         public void LatLng_Every_Property_Has_Get_Set_Test()
@@ -49,9 +50,12 @@ namespace CSSPModels.Tests
                double val2 = 87.9D;
                latLng.Lng = val2;
                Assert.AreEqual(val2, latLng.Lng);
-               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
-               latLng.ValidationResults = val9;
-               Assert.AreEqual(val9, latLng.ValidationResults);
+               bool val3 = true;
+               latLng.HasErrors = val3;
+               Assert.AreEqual(val3, latLng.HasErrors);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               latLng.ValidationResults = val12;
+               Assert.AreEqual(val12, latLng.ValidationResults);
         }
     }
 }

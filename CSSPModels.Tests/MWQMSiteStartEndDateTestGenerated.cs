@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MWQMSiteStartEndDate_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSiteStartEndDateID", "MWQMSiteTVItemID", "StartDate", "EndDate", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteTVText", "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteTVText", "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMSiteStartEndDate).GetProperties().OrderBy(c => c.Name))
@@ -97,6 +97,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMSiteStartEndDateLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.MWQMSiteStartEndDateMWQMSiteTVText);
                Assert.IsNotNull(ModelsRes.MWQMSiteStartEndDateLastUpdateContactTVText);
+               Assert.IsNotNull(ModelsRes.MWQMSiteStartEndDateHasErrors);
         }
         [TestMethod]
         public void MWQMSiteStartEndDate_Every_Property_Has_Get_Set_Test()
@@ -125,9 +126,12 @@ namespace CSSPModels.Tests
                string val8 = "Some text";
                mWQMSiteStartEndDate.LastUpdateContactTVText = val8;
                Assert.AreEqual(val8, mWQMSiteStartEndDate.LastUpdateContactTVText);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               mWQMSiteStartEndDate.ValidationResults = val27;
-               Assert.AreEqual(val27, mWQMSiteStartEndDate.ValidationResults);
+               bool val9 = true;
+               mWQMSiteStartEndDate.HasErrors = val9;
+               Assert.AreEqual(val9, mWQMSiteStartEndDate.HasErrors);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               mWQMSiteStartEndDate.ValidationResults = val30;
+               Assert.AreEqual(val30, mWQMSiteStartEndDate.ValidationResults);
         }
     }
 }

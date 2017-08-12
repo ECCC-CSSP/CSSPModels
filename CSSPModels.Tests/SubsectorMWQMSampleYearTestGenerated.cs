@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SubsectorMWQMSampleYear_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SubsectorTVItemID", "Year", "EarliestDate", "LatestDate",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SubsectorTVItemID", "Year", "EarliestDate", "LatestDate", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -41,6 +41,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SubsectorMWQMSampleYearYear);
                Assert.IsNotNull(ModelsRes.SubsectorMWQMSampleYearEarliestDate);
                Assert.IsNotNull(ModelsRes.SubsectorMWQMSampleYearLatestDate);
+               Assert.IsNotNull(ModelsRes.SubsectorMWQMSampleYearHasErrors);
         }
         [TestMethod]
         public void SubsectorMWQMSampleYear_Every_Property_Has_Get_Set_Test()
@@ -57,9 +58,12 @@ namespace CSSPModels.Tests
                DateTime val4 = new DateTime(2010, 3, 4);
                subsectorMWQMSampleYear.LatestDate = val4;
                Assert.AreEqual(val4, subsectorMWQMSampleYear.LatestDate);
-               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
-               subsectorMWQMSampleYear.ValidationResults = val15;
-               Assert.AreEqual(val15, subsectorMWQMSampleYear.ValidationResults);
+               bool val5 = true;
+               subsectorMWQMSampleYear.HasErrors = val5;
+               Assert.AreEqual(val5, subsectorMWQMSampleYear.HasErrors);
+               IEnumerable<ValidationResult> val18 = new List<ValidationResult>().AsEnumerable();
+               subsectorMWQMSampleYear.ValidationResults = val18;
+               Assert.AreEqual(val18, subsectorMWQMSampleYear.ValidationResults);
         }
     }
 }

@@ -46,13 +46,15 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
         public string TVTypeText { get; set; }
         [NotMapped]
+        public bool HasErrors { get; set; }
+        [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public TVItem()
         {
-            // empty for now
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

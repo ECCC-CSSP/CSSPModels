@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void BoxModelResult_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "BoxModelResultID", "BoxModelID", "BoxModelResultType", "Volume_m3", "Surface_m2", "Radius_m", "LeftSideDiameterLineAngle_deg", "CircleCenterLatitude", "CircleCenterLongitude", "FixLength", "FixWidth", "RectLength_m", "RectWidth_m", "LeftSideLineAngle_deg", "LeftSideLineStartLatitude", "LeftSideLineStartLongitude", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "BoxModelResultTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "BoxModelResultTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.BoxModelResult).GetProperties().OrderBy(c => c.Name))
@@ -109,6 +109,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.BoxModelResultLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.BoxModelResultLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.BoxModelResultBoxModelResultTypeText);
+               Assert.IsNotNull(ModelsRes.BoxModelResultHasErrors);
         }
         [TestMethod]
         public void BoxModelResult_Every_Property_Has_Get_Set_Test()
@@ -173,9 +174,12 @@ namespace CSSPModels.Tests
                string val20 = "Some text";
                boxModelResult.BoxModelResultTypeText = val20;
                Assert.AreEqual(val20, boxModelResult.BoxModelResultTypeText);
-               IEnumerable<ValidationResult> val63 = new List<ValidationResult>().AsEnumerable();
-               boxModelResult.ValidationResults = val63;
-               Assert.AreEqual(val63, boxModelResult.ValidationResults);
+               bool val21 = true;
+               boxModelResult.HasErrors = val21;
+               Assert.AreEqual(val21, boxModelResult.HasErrors);
+               IEnumerable<ValidationResult> val66 = new List<ValidationResult>().AsEnumerable();
+               boxModelResult.ValidationResults = val66;
+               Assert.AreEqual(val66, boxModelResult.ValidationResults);
         }
     }
 }

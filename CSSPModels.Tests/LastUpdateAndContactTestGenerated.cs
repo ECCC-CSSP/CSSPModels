@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LastUpdateAndContact_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Error", "LastUpdateDate_UTC", "LastUpdateContactTVItemID", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -40,6 +40,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.LastUpdateAndContactError);
                Assert.IsNotNull(ModelsRes.LastUpdateAndContactLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.LastUpdateAndContactLastUpdateContactTVItemID);
+               Assert.IsNotNull(ModelsRes.LastUpdateAndContactHasErrors);
         }
         [TestMethod]
         public void LastUpdateAndContact_Every_Property_Has_Get_Set_Test()
@@ -53,9 +54,12 @@ namespace CSSPModels.Tests
                int val3 = 45;
                lastUpdateAndContact.LastUpdateContactTVItemID = val3;
                Assert.AreEqual(val3, lastUpdateAndContact.LastUpdateContactTVItemID);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
-               lastUpdateAndContact.ValidationResults = val12;
-               Assert.AreEqual(val12, lastUpdateAndContact.ValidationResults);
+               bool val4 = true;
+               lastUpdateAndContact.HasErrors = val4;
+               Assert.AreEqual(val4, lastUpdateAndContact.HasErrors);
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
+               lastUpdateAndContact.ValidationResults = val15;
+               Assert.AreEqual(val15, lastUpdateAndContact.ValidationResults);
         }
     }
 }

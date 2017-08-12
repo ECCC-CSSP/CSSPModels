@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void SpillLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SpillLanguageID", "SpillID", "Language", "SpillComment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.SpillLanguage).GetProperties().OrderBy(c => c.Name))
@@ -99,6 +99,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SpillLanguageLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.SpillLanguageLanguageText);
                Assert.IsNotNull(ModelsRes.SpillLanguageTranslationStatusText);
+               Assert.IsNotNull(ModelsRes.SpillLanguageHasErrors);
         }
         [TestMethod]
         public void SpillLanguage_Every_Property_Has_Get_Set_Test()
@@ -133,9 +134,12 @@ namespace CSSPModels.Tests
                string val10 = "Some text";
                spillLanguage.TranslationStatusText = val10;
                Assert.AreEqual(val10, spillLanguage.TranslationStatusText);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               spillLanguage.ValidationResults = val33;
-               Assert.AreEqual(val33, spillLanguage.ValidationResults);
+               bool val11 = true;
+               spillLanguage.HasErrors = val11;
+               Assert.AreEqual(val11, spillLanguage.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
+               spillLanguage.ValidationResults = val36;
+               Assert.AreEqual(val36, spillLanguage.ValidationResults);
         }
     }
 }

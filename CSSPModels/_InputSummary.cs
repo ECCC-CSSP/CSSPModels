@@ -16,13 +16,14 @@ namespace CSSPModels
         public string Error { get; set; }
         public string Summary { get; set; }
 
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public InputSummary()
         {
-            // empty for now
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

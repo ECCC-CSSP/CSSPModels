@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolSourceObsInfoEnumTextAndID_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Text", "ID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Text", "ID", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,6 +39,7 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.PolSourceObsInfoEnumTextAndIDText);
                Assert.IsNotNull(ModelsRes.PolSourceObsInfoEnumTextAndIDID);
+               Assert.IsNotNull(ModelsRes.PolSourceObsInfoEnumTextAndIDHasErrors);
         }
         [TestMethod]
         public void PolSourceObsInfoEnumTextAndID_Every_Property_Has_Get_Set_Test()
@@ -49,9 +50,12 @@ namespace CSSPModels.Tests
                int val2 = 45;
                polSourceObsInfoEnumTextAndID.ID = val2;
                Assert.AreEqual(val2, polSourceObsInfoEnumTextAndID.ID);
-               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
-               polSourceObsInfoEnumTextAndID.ValidationResults = val9;
-               Assert.AreEqual(val9, polSourceObsInfoEnumTextAndID.ValidationResults);
+               bool val3 = true;
+               polSourceObsInfoEnumTextAndID.HasErrors = val3;
+               Assert.AreEqual(val3, polSourceObsInfoEnumTextAndID.HasErrors);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               polSourceObsInfoEnumTextAndID.ValidationResults = val12;
+               Assert.AreEqual(val12, polSourceObsInfoEnumTextAndID.ValidationResults);
         }
     }
 }

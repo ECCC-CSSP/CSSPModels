@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void CalDecay_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "Decay",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Error", "Decay", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,6 +39,7 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.CalDecayError);
                Assert.IsNotNull(ModelsRes.CalDecayDecay);
+               Assert.IsNotNull(ModelsRes.CalDecayHasErrors);
         }
         [TestMethod]
         public void CalDecay_Every_Property_Has_Get_Set_Test()
@@ -49,9 +50,12 @@ namespace CSSPModels.Tests
                double val2 = 87.9D;
                calDecay.Decay = val2;
                Assert.AreEqual(val2, calDecay.Decay);
-               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
-               calDecay.ValidationResults = val9;
-               Assert.AreEqual(val9, calDecay.ValidationResults);
+               bool val3 = true;
+               calDecay.HasErrors = val3;
+               Assert.AreEqual(val3, calDecay.HasErrors);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               calDecay.ValidationResults = val12;
+               Assert.AreEqual(val12, calDecay.ValidationResults);
         }
     }
 }

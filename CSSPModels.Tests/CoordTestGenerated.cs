@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Coord_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Lat", "Lng", "Ordinal",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Lat", "Lng", "Ordinal", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -40,6 +40,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.CoordLat);
                Assert.IsNotNull(ModelsRes.CoordLng);
                Assert.IsNotNull(ModelsRes.CoordOrdinal);
+               Assert.IsNotNull(ModelsRes.CoordHasErrors);
         }
         [TestMethod]
         public void Coord_Every_Property_Has_Get_Set_Test()
@@ -53,9 +54,12 @@ namespace CSSPModels.Tests
                int val3 = 45;
                coord.Ordinal = val3;
                Assert.AreEqual(val3, coord.Ordinal);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
-               coord.ValidationResults = val12;
-               Assert.AreEqual(val12, coord.ValidationResults);
+               bool val4 = true;
+               coord.HasErrors = val4;
+               Assert.AreEqual(val4, coord.HasErrors);
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
+               coord.ValidationResults = val15;
+               Assert.AreEqual(val15, coord.ValidationResults);
         }
     }
 }

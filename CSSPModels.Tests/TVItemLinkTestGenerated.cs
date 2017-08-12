@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void TVItemLink_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemLinkID", "FromTVItemID", "ToTVItemID", "FromTVType", "ToTVType", "StartDateTime_Local", "EndDateTime_Local", "Ordinal", "TVLevel", "TVPath", "ParentTVItemLinkID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "FromTVText", "ToTVText", "LastUpdateContactTVText", "FromTVTypeText", "ToTVTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "FromTVText", "ToTVText", "LastUpdateContactTVText", "FromTVTypeText", "ToTVTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVItemLink).GetProperties().OrderBy(c => c.Name))
@@ -107,6 +107,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemLinkLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.TVItemLinkFromTVTypeText);
                Assert.IsNotNull(ModelsRes.TVItemLinkToTVTypeText);
+               Assert.IsNotNull(ModelsRes.TVItemLinkHasErrors);
         }
         [TestMethod]
         public void TVItemLink_Every_Property_Has_Get_Set_Test()
@@ -165,9 +166,12 @@ namespace CSSPModels.Tests
                string val18 = "Some text";
                tVItemLink.ToTVTypeText = val18;
                Assert.AreEqual(val18, tVItemLink.ToTVTypeText);
-               IEnumerable<ValidationResult> val57 = new List<ValidationResult>().AsEnumerable();
-               tVItemLink.ValidationResults = val57;
-               Assert.AreEqual(val57, tVItemLink.ValidationResults);
+               bool val19 = true;
+               tVItemLink.HasErrors = val19;
+               Assert.AreEqual(val19, tVItemLink.HasErrors);
+               IEnumerable<ValidationResult> val60 = new List<ValidationResult>().AsEnumerable();
+               tVItemLink.ValidationResults = val60;
+               Assert.AreEqual(val60, tVItemLink.ValidationResults);
         }
     }
 }

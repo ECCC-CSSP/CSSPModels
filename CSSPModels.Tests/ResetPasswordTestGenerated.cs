@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void ResetPassword_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ResetPasswordID", "Email", "ExpireDate_Local", "Code", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "Password", "ConfirmPassword",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "Password", "ConfirmPassword", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ResetPassword).GetProperties().OrderBy(c => c.Name))
@@ -98,6 +98,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ResetPasswordLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.ResetPasswordPassword);
                Assert.IsNotNull(ModelsRes.ResetPasswordConfirmPassword);
+               Assert.IsNotNull(ModelsRes.ResetPasswordHasErrors);
         }
         [TestMethod]
         public void ResetPassword_Every_Property_Has_Get_Set_Test()
@@ -129,9 +130,12 @@ namespace CSSPModels.Tests
                string val9 = "Some text";
                resetPassword.ConfirmPassword = val9;
                Assert.AreEqual(val9, resetPassword.ConfirmPassword);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               resetPassword.ValidationResults = val30;
-               Assert.AreEqual(val30, resetPassword.ValidationResults);
+               bool val10 = true;
+               resetPassword.HasErrors = val10;
+               Assert.AreEqual(val10, resetPassword.HasErrors);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               resetPassword.ValidationResults = val33;
+               Assert.AreEqual(val33, resetPassword.ValidationResults);
         }
     }
 }

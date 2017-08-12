@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void ContactShortcut_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactShortcutID", "ContactID", "ShortCutText", "ShortCutAddress", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ContactShortcut).GetProperties().OrderBy(c => c.Name))
@@ -96,6 +96,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactShortcutLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.ContactShortcutLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.ContactShortcutLastUpdateContactTVText);
+               Assert.IsNotNull(ModelsRes.ContactShortcutHasErrors);
         }
         [TestMethod]
         public void ContactShortcut_Every_Property_Has_Get_Set_Test()
@@ -121,9 +122,12 @@ namespace CSSPModels.Tests
                string val7 = "Some text";
                contactShortcut.LastUpdateContactTVText = val7;
                Assert.AreEqual(val7, contactShortcut.LastUpdateContactTVText);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               contactShortcut.ValidationResults = val24;
-               Assert.AreEqual(val24, contactShortcut.ValidationResults);
+               bool val8 = true;
+               contactShortcut.HasErrors = val8;
+               Assert.AreEqual(val8, contactShortcut.HasErrors);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               contactShortcut.ValidationResults = val27;
+               Assert.AreEqual(val27, contactShortcut.ValidationResults);
         }
     }
 }

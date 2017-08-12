@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Infrastructure_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "InfrastructureTVText", "SeeOtherTVText", "CivicAddressTVText", "LastUpdateContactTVText", "InfrastructureTypeText", "FacilityTypeText", "AerationTypeText", "PreliminaryTreatmentTypeText", "PrimaryTreatmentTypeText", "SecondaryTreatmentTypeText", "TertiaryTreatmentTypeText", "TreatmentTypeText", "DisinfectionTypeText", "CollectionSystemTypeText", "AlarmSystemTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "InfrastructureTVText", "SeeOtherTVText", "CivicAddressTVText", "LastUpdateContactTVText", "InfrastructureTypeText", "FacilityTypeText", "AerationTypeText", "PreliminaryTreatmentTypeText", "PrimaryTreatmentTypeText", "SecondaryTreatmentTypeText", "TertiaryTreatmentTypeText", "TreatmentTypeText", "DisinfectionTypeText", "CollectionSystemTypeText", "AlarmSystemTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Infrastructure).GetProperties().OrderBy(c => c.Name))
@@ -152,6 +152,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.InfrastructureDisinfectionTypeText);
                Assert.IsNotNull(ModelsRes.InfrastructureCollectionSystemTypeText);
                Assert.IsNotNull(ModelsRes.InfrastructureAlarmSystemTypeText);
+               Assert.IsNotNull(ModelsRes.InfrastructureHasErrors);
         }
         [TestMethod]
         public void Infrastructure_Every_Property_Has_Get_Set_Test()
@@ -345,9 +346,12 @@ namespace CSSPModels.Tests
                string val63 = "Some text";
                infrastructure.AlarmSystemTypeText = val63;
                Assert.AreEqual(val63, infrastructure.AlarmSystemTypeText);
-               IEnumerable<ValidationResult> val192 = new List<ValidationResult>().AsEnumerable();
-               infrastructure.ValidationResults = val192;
-               Assert.AreEqual(val192, infrastructure.ValidationResults);
+               bool val64 = true;
+               infrastructure.HasErrors = val64;
+               Assert.AreEqual(val64, infrastructure.HasErrors);
+               IEnumerable<ValidationResult> val195 = new List<ValidationResult>().AsEnumerable();
+               infrastructure.ValidationResults = val195;
+               Assert.AreEqual(val195, infrastructure.ValidationResults);
         }
     }
 }

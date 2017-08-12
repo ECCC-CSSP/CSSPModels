@@ -18,6 +18,7 @@ namespace CSSPModels
         public int MikeScenarioID { get; set; }
 
         public virtual List<TVFile> TVFileList { get; set; }
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
@@ -25,6 +26,7 @@ namespace CSSPModels
         public OtherFilesToUpload()
         {
             TVFileList = new List<TVFile>();
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

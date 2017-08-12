@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void CSSPWQInputParam_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "CSSPWQInputType", "Name", "TVItemID", "CSSPWQInputTypeText", "sidList", "MWQMSiteList", "MWQMSiteTVItemIDList", "DailyDuplicateMWQMSiteList", "DailyDuplicateMWQMSiteTVItemIDList", "InfrastructureList", "InfrastructureTVItemIDList",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "CSSPWQInputType", "Name", "TVItemID", "CSSPWQInputTypeText", "sidList", "MWQMSiteList", "MWQMSiteTVItemIDList", "DailyDuplicateMWQMSiteList", "DailyDuplicateMWQMSiteTVItemIDList", "InfrastructureList", "InfrastructureTVItemIDList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -48,6 +48,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.CSSPWQInputParamDailyDuplicateMWQMSiteTVItemIDList);
                Assert.IsNotNull(ModelsRes.CSSPWQInputParamInfrastructureList);
                Assert.IsNotNull(ModelsRes.CSSPWQInputParamInfrastructureTVItemIDList);
+               Assert.IsNotNull(ModelsRes.CSSPWQInputParamHasErrors);
         }
         [TestMethod]
         public void CSSPWQInputParam_Every_Property_Has_Get_Set_Test()
@@ -64,30 +65,33 @@ namespace CSSPModels.Tests
                string val4 = "Some text";
                cSSPWQInputParam.CSSPWQInputTypeText = val4;
                Assert.AreEqual(val4, cSSPWQInputParam.CSSPWQInputTypeText);
-               List<String> val17 = new List<String>();
-               cSSPWQInputParam.sidList = val17;
-               Assert.AreEqual(val17, cSSPWQInputParam.sidList);
+               bool val12 = true;
+               cSSPWQInputParam.HasErrors = val12;
+               Assert.AreEqual(val12, cSSPWQInputParam.HasErrors);
                List<String> val18 = new List<String>();
-               cSSPWQInputParam.MWQMSiteList = val18;
-               Assert.AreEqual(val18, cSSPWQInputParam.MWQMSiteList);
-               List<Int32> val19 = new List<Int32>();
-               cSSPWQInputParam.MWQMSiteTVItemIDList = val19;
-               Assert.AreEqual(val19, cSSPWQInputParam.MWQMSiteTVItemIDList);
-               List<String> val20 = new List<String>();
-               cSSPWQInputParam.DailyDuplicateMWQMSiteList = val20;
-               Assert.AreEqual(val20, cSSPWQInputParam.DailyDuplicateMWQMSiteList);
-               List<Int32> val21 = new List<Int32>();
-               cSSPWQInputParam.DailyDuplicateMWQMSiteTVItemIDList = val21;
-               Assert.AreEqual(val21, cSSPWQInputParam.DailyDuplicateMWQMSiteTVItemIDList);
-               List<String> val22 = new List<String>();
-               cSSPWQInputParam.InfrastructureList = val22;
-               Assert.AreEqual(val22, cSSPWQInputParam.InfrastructureList);
-               List<Int32> val23 = new List<Int32>();
-               cSSPWQInputParam.InfrastructureTVItemIDList = val23;
-               Assert.AreEqual(val23, cSSPWQInputParam.InfrastructureTVItemIDList);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               cSSPWQInputParam.ValidationResults = val36;
-               Assert.AreEqual(val36, cSSPWQInputParam.ValidationResults);
+               cSSPWQInputParam.sidList = val18;
+               Assert.AreEqual(val18, cSSPWQInputParam.sidList);
+               List<String> val19 = new List<String>();
+               cSSPWQInputParam.MWQMSiteList = val19;
+               Assert.AreEqual(val19, cSSPWQInputParam.MWQMSiteList);
+               List<Int32> val20 = new List<Int32>();
+               cSSPWQInputParam.MWQMSiteTVItemIDList = val20;
+               Assert.AreEqual(val20, cSSPWQInputParam.MWQMSiteTVItemIDList);
+               List<String> val21 = new List<String>();
+               cSSPWQInputParam.DailyDuplicateMWQMSiteList = val21;
+               Assert.AreEqual(val21, cSSPWQInputParam.DailyDuplicateMWQMSiteList);
+               List<Int32> val22 = new List<Int32>();
+               cSSPWQInputParam.DailyDuplicateMWQMSiteTVItemIDList = val22;
+               Assert.AreEqual(val22, cSSPWQInputParam.DailyDuplicateMWQMSiteTVItemIDList);
+               List<String> val23 = new List<String>();
+               cSSPWQInputParam.InfrastructureList = val23;
+               Assert.AreEqual(val23, cSSPWQInputParam.InfrastructureList);
+               List<Int32> val24 = new List<Int32>();
+               cSSPWQInputParam.InfrastructureTVItemIDList = val24;
+               Assert.AreEqual(val24, cSSPWQInputParam.InfrastructureTVItemIDList);
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>().AsEnumerable();
+               cSSPWQInputParam.ValidationResults = val39;
+               Assert.AreEqual(val39, cSSPWQInputParam.ValidationResults);
         }
     }
 }

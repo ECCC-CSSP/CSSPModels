@@ -22,13 +22,14 @@ namespace CSSPModels
         [Range(0, 100000000)]
         public int MPN { get; set; }
 
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public CSSPMPNTable()
         {
-            // empty for now
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

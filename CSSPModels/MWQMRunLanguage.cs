@@ -49,13 +49,15 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusRunWeatherComment")]
         public string TranslationStatusRunWeatherCommentText { get; set; }
         [NotMapped]
+        public bool HasErrors { get; set; }
+        [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public MWQMRunLanguage()
         {
-            // empty for now
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

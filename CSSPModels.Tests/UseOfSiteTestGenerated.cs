@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void UseOfSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "SiteType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "SiteTVText", "SubsectorTVText", "LastUpdateContactTVText", "SiteTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "SiteTVText", "SubsectorTVText", "LastUpdateContactTVText", "SiteTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.UseOfSite).GetProperties().OrderBy(c => c.Name))
@@ -109,6 +109,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.UseOfSiteSubsectorTVText);
                Assert.IsNotNull(ModelsRes.UseOfSiteLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.UseOfSiteSiteTypeText);
+               Assert.IsNotNull(ModelsRes.UseOfSiteHasErrors);
         }
         [TestMethod]
         public void UseOfSite_Every_Property_Has_Get_Set_Test()
@@ -173,9 +174,12 @@ namespace CSSPModels.Tests
                string val20 = "Some text";
                useOfSite.SiteTypeText = val20;
                Assert.AreEqual(val20, useOfSite.SiteTypeText);
-               IEnumerable<ValidationResult> val63 = new List<ValidationResult>().AsEnumerable();
-               useOfSite.ValidationResults = val63;
-               Assert.AreEqual(val63, useOfSite.ValidationResults);
+               bool val21 = true;
+               useOfSite.HasErrors = val21;
+               Assert.AreEqual(val21, useOfSite.HasErrors);
+               IEnumerable<ValidationResult> val66 = new List<ValidationResult>().AsEnumerable();
+               useOfSite.ValidationResults = val66;
+               Assert.AreEqual(val66, useOfSite.ValidationResults);
         }
     }
 }

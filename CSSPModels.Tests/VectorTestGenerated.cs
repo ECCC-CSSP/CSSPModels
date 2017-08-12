@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Vector_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "StartNode", "EndNode",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "StartNode", "EndNode", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,19 +39,23 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.VectorStartNode);
                Assert.IsNotNull(ModelsRes.VectorEndNode);
+               Assert.IsNotNull(ModelsRes.VectorHasErrors);
         }
         [TestMethod]
         public void Vector_Every_Property_Has_Get_Set_Test()
         {
-               Node val4 = new Node();
-               vector.StartNode = val4;
-               Assert.AreEqual(val4, vector.StartNode);
+               bool val3 = true;
+               vector.HasErrors = val3;
+               Assert.AreEqual(val3, vector.HasErrors);
                Node val5 = new Node();
-               vector.EndNode = val5;
-               Assert.AreEqual(val5, vector.EndNode);
-               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
-               vector.ValidationResults = val9;
-               Assert.AreEqual(val9, vector.ValidationResults);
+               vector.StartNode = val5;
+               Assert.AreEqual(val5, vector.StartNode);
+               Node val6 = new Node();
+               vector.EndNode = val6;
+               Assert.AreEqual(val6, vector.EndNode);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               vector.ValidationResults = val12;
+               Assert.AreEqual(val12, vector.ValidationResults);
         }
     }
 }

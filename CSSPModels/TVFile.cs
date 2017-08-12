@@ -73,12 +73,15 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "FileTypeEnum", EnumType = "FileType")]
         public string FileTypeText { get; set; }
         [NotMapped]
+        public bool HasErrors { get; set; }
+        [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public TVFile()
         {
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
 

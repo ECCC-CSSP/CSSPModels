@@ -25,6 +25,7 @@ namespace CSSPModels
         public double ZNode0 { get; set; }
 
         public virtual List<Node> NodeList { get; set; }
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
@@ -32,6 +33,7 @@ namespace CSSPModels
         public Element()
         {
             NodeList = new List<Node>();
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

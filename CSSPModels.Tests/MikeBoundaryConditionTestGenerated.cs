@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MikeBoundaryCondition_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeBoundaryConditionID", "MikeBoundaryConditionTVItemID", "MikeBoundaryConditionCode", "MikeBoundaryConditionName", "MikeBoundaryConditionLength_m", "MikeBoundaryConditionFormat", "MikeBoundaryConditionLevelOrVelocity", "WebTideDataSet", "NumberOfWebTideNodes", "WebTideDataFromStartToEndDate", "TVType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MikeBoundaryConditionTVText", "LastUpdateContactTVText", "MikeBoundaryConditionLevelOrVelocityText", "WebTideDataSetText", "TVTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MikeBoundaryConditionTVText", "LastUpdateContactTVText", "MikeBoundaryConditionLevelOrVelocityText", "WebTideDataSetText", "TVTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MikeBoundaryCondition).GetProperties().OrderBy(c => c.Name))
@@ -107,6 +107,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionMikeBoundaryConditionLevelOrVelocityText);
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionWebTideDataSetText);
                Assert.IsNotNull(ModelsRes.MikeBoundaryConditionTVTypeText);
+               Assert.IsNotNull(ModelsRes.MikeBoundaryConditionHasErrors);
         }
         [TestMethod]
         public void MikeBoundaryCondition_Every_Property_Has_Get_Set_Test()
@@ -165,9 +166,12 @@ namespace CSSPModels.Tests
                string val18 = "Some text";
                mikeBoundaryCondition.TVTypeText = val18;
                Assert.AreEqual(val18, mikeBoundaryCondition.TVTypeText);
-               IEnumerable<ValidationResult> val57 = new List<ValidationResult>().AsEnumerable();
-               mikeBoundaryCondition.ValidationResults = val57;
-               Assert.AreEqual(val57, mikeBoundaryCondition.ValidationResults);
+               bool val19 = true;
+               mikeBoundaryCondition.HasErrors = val19;
+               Assert.AreEqual(val19, mikeBoundaryCondition.HasErrors);
+               IEnumerable<ValidationResult> val60 = new List<ValidationResult>().AsEnumerable();
+               mikeBoundaryCondition.ValidationResults = val60;
+               Assert.AreEqual(val60, mikeBoundaryCondition.ValidationResults);
         }
     }
 }

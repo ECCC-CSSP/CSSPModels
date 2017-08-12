@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMSiteSampleFC_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "SampleDate", "FC", "Sal", "Temp", "PH", "DO", "Depth", "SampCount", "MinFC", "MaxFC", "GeoMean", "Median", "P90", "PercOver43", "PercOver260",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Error", "SampleDate", "FC", "Sal", "Temp", "PH", "DO", "Depth", "SampCount", "MinFC", "MaxFC", "GeoMean", "Median", "P90", "PercOver43", "PercOver260", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -53,6 +53,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMSiteSampleFCP90);
                Assert.IsNotNull(ModelsRes.MWQMSiteSampleFCPercOver43);
                Assert.IsNotNull(ModelsRes.MWQMSiteSampleFCPercOver260);
+               Assert.IsNotNull(ModelsRes.MWQMSiteSampleFCHasErrors);
         }
         [TestMethod]
         public void MWQMSiteSampleFC_Every_Property_Has_Get_Set_Test()
@@ -105,9 +106,12 @@ namespace CSSPModels.Tests
                double val16 = 87.9D;
                mWQMSiteSampleFC.PercOver260 = val16;
                Assert.AreEqual(val16, mWQMSiteSampleFC.PercOver260);
-               IEnumerable<ValidationResult> val51 = new List<ValidationResult>().AsEnumerable();
-               mWQMSiteSampleFC.ValidationResults = val51;
-               Assert.AreEqual(val51, mWQMSiteSampleFC.ValidationResults);
+               bool val17 = true;
+               mWQMSiteSampleFC.HasErrors = val17;
+               Assert.AreEqual(val17, mWQMSiteSampleFC.HasErrors);
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>().AsEnumerable();
+               mWQMSiteSampleFC.ValidationResults = val54;
+               Assert.AreEqual(val54, mWQMSiteSampleFC.ValidationResults);
         }
     }
 }

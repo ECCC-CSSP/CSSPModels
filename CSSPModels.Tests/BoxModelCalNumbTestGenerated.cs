@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void BoxModelCalNumb_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "BoxModelResultType", "CalLength_m", "CalRadius_m", "CalSurface_m2", "CalVolume_m3", "CalWidth_m", "FixLength", "FixWidth", "BoxModelResultTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Error", "BoxModelResultType", "CalLength_m", "CalRadius_m", "CalSurface_m2", "CalVolume_m3", "CalWidth_m", "FixLength", "FixWidth", "BoxModelResultTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -47,6 +47,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.BoxModelCalNumbFixLength);
                Assert.IsNotNull(ModelsRes.BoxModelCalNumbFixWidth);
                Assert.IsNotNull(ModelsRes.BoxModelCalNumbBoxModelResultTypeText);
+               Assert.IsNotNull(ModelsRes.BoxModelCalNumbHasErrors);
         }
         [TestMethod]
         public void BoxModelCalNumb_Every_Property_Has_Get_Set_Test()
@@ -81,9 +82,12 @@ namespace CSSPModels.Tests
                string val10 = "Some text";
                boxModelCalNumb.BoxModelResultTypeText = val10;
                Assert.AreEqual(val10, boxModelCalNumb.BoxModelResultTypeText);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               boxModelCalNumb.ValidationResults = val33;
-               Assert.AreEqual(val33, boxModelCalNumb.ValidationResults);
+               bool val11 = true;
+               boxModelCalNumb.HasErrors = val11;
+               Assert.AreEqual(val11, boxModelCalNumb.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
+               boxModelCalNumb.ValidationResults = val36;
+               Assert.AreEqual(val36, boxModelCalNumb.ValidationResults);
         }
     }
 }

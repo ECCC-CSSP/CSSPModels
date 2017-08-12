@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MWQMRun_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMRunID", "SubsectorTVItemID", "MWQMRunTVItemID", "RunSampleType", "DateTime_Local", "RunNumber", "StartDateTime_Local", "EndDateTime_Local", "LabReceivedDateTime_Local", "TemperatureControl1_C", "TemperatureControl2_C", "SeaStateAtStart_BeaufortScale", "SeaStateAtEnd_BeaufortScale", "WaterLevelAtBrook_m", "WaveHightAtStart_m", "WaveHightAtEnd_m", "SampleCrewInitials", "AnalyzeMethod", "SampleMatrix", "Laboratory", "SampleStatus", "LabSampleApprovalContactTVItemID", "LabAnalyzeBath1IncubationStartDateTime_Local", "LabAnalyzeBath2IncubationStartDateTime_Local", "LabAnalyzeBath3IncubationStartDateTime_Local", "LabRunSampleApprovalDateTime_Local", "Tide_Start", "Tide_End", "RainDay0_mm", "RainDay1_mm", "RainDay2_mm", "RainDay3_mm", "RainDay4_mm", "RainDay5_mm", "RainDay6_mm", "RainDay7_mm", "RainDay8_mm", "RainDay9_mm", "RainDay10_mm", "RemoveFromStat", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "SubsectorTVText", "MWQMRunTVText", "LabSampleApprovalContactTVText", "LastUpdateContactTVText", "RunSampleTypeText", "SeaStateAtStart_BeaufortScaleText", "SeaStateAtEnd_BeaufortScaleText", "AnalyzeMethodText", "SampleMatrixText", "LaboratoryText", "SampleStatusText", "Tide_StartText", "Tide_EndText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "SubsectorTVText", "MWQMRunTVText", "LabSampleApprovalContactTVText", "LastUpdateContactTVText", "RunSampleTypeText", "SeaStateAtStart_BeaufortScaleText", "SeaStateAtEnd_BeaufortScaleText", "AnalyzeMethodText", "SampleMatrixText", "LaboratoryText", "SampleStatusText", "Tide_StartText", "Tide_EndText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMRun).GetProperties().OrderBy(c => c.Name))
@@ -144,6 +144,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMRunSampleStatusText);
                Assert.IsNotNull(ModelsRes.MWQMRunTide_StartText);
                Assert.IsNotNull(ModelsRes.MWQMRunTide_EndText);
+               Assert.IsNotNull(ModelsRes.MWQMRunHasErrors);
         }
         [TestMethod]
         public void MWQMRun_Every_Property_Has_Get_Set_Test()
@@ -313,9 +314,12 @@ namespace CSSPModels.Tests
                string val55 = "Some text";
                mWQMRun.Tide_EndText = val55;
                Assert.AreEqual(val55, mWQMRun.Tide_EndText);
-               IEnumerable<ValidationResult> val168 = new List<ValidationResult>().AsEnumerable();
-               mWQMRun.ValidationResults = val168;
-               Assert.AreEqual(val168, mWQMRun.ValidationResults);
+               bool val56 = true;
+               mWQMRun.HasErrors = val56;
+               Assert.AreEqual(val56, mWQMRun.HasErrors);
+               IEnumerable<ValidationResult> val171 = new List<ValidationResult>().AsEnumerable();
+               mWQMRun.ValidationResults = val171;
+               Assert.AreEqual(val171, mWQMRun.ValidationResults);
         }
     }
 }

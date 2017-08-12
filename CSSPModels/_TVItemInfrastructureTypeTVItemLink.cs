@@ -24,6 +24,7 @@ namespace CSSPModels
         public virtual TVItem TVItem { get; set; }
         public virtual List<TVItemLink> TVItemLinkList { get; set; }
         public virtual TVItemInfrastructureTypeTVItemLink FlowTo { get; set; }
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
@@ -31,6 +32,7 @@ namespace CSSPModels
         public TVItemInfrastructureTypeTVItemLink()
         {
             TVItemLinkList = new List<TVItemLink>();
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

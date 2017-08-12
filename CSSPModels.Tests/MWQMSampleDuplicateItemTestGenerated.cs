@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMSampleDuplicateItem_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ParentSite", "DuplicateSite",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ParentSite", "DuplicateSite", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,6 +39,7 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.MWQMSampleDuplicateItemParentSite);
                Assert.IsNotNull(ModelsRes.MWQMSampleDuplicateItemDuplicateSite);
+               Assert.IsNotNull(ModelsRes.MWQMSampleDuplicateItemHasErrors);
         }
         [TestMethod]
         public void MWQMSampleDuplicateItem_Every_Property_Has_Get_Set_Test()
@@ -49,9 +50,12 @@ namespace CSSPModels.Tests
                string val2 = "Some text";
                mWQMSampleDuplicateItem.DuplicateSite = val2;
                Assert.AreEqual(val2, mWQMSampleDuplicateItem.DuplicateSite);
-               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
-               mWQMSampleDuplicateItem.ValidationResults = val9;
-               Assert.AreEqual(val9, mWQMSampleDuplicateItem.ValidationResults);
+               bool val3 = true;
+               mWQMSampleDuplicateItem.HasErrors = val3;
+               Assert.AreEqual(val3, mWQMSampleDuplicateItem.HasErrors);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               mWQMSampleDuplicateItem.ValidationResults = val12;
+               Assert.AreEqual(val12, mWQMSampleDuplicateItem.ValidationResults);
         }
     }
 }

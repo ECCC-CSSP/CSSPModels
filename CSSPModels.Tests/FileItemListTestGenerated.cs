@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void FileItemList_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Text", "FileName",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Text", "FileName", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,6 +39,7 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.FileItemListText);
                Assert.IsNotNull(ModelsRes.FileItemListFileName);
+               Assert.IsNotNull(ModelsRes.FileItemListHasErrors);
         }
         [TestMethod]
         public void FileItemList_Every_Property_Has_Get_Set_Test()
@@ -49,9 +50,12 @@ namespace CSSPModels.Tests
                string val2 = "Some text";
                fileItemList.FileName = val2;
                Assert.AreEqual(val2, fileItemList.FileName);
-               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
-               fileItemList.ValidationResults = val9;
-               Assert.AreEqual(val9, fileItemList.ValidationResults);
+               bool val3 = true;
+               fileItemList.HasErrors = val3;
+               Assert.AreEqual(val3, fileItemList.HasErrors);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               fileItemList.ValidationResults = val12;
+               Assert.AreEqual(val12, fileItemList.ValidationResults);
         }
     }
 }

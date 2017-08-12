@@ -16,12 +16,14 @@ namespace CSSPModels
 
         public virtual Node StartNode { get; set; }
         public virtual Node EndNode { get; set; }
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public Vector()
         {
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

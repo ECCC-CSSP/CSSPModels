@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void DocTemplate_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "DocTemplateID", "Language", "TVType", "TVFileTVItemID", "FileName", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TVTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TVTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.DocTemplate).GetProperties().OrderBy(c => c.Name))
@@ -99,6 +99,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.DocTemplateLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.DocTemplateLanguageText);
                Assert.IsNotNull(ModelsRes.DocTemplateTVTypeText);
+               Assert.IsNotNull(ModelsRes.DocTemplateHasErrors);
         }
         [TestMethod]
         public void DocTemplate_Every_Property_Has_Get_Set_Test()
@@ -133,9 +134,12 @@ namespace CSSPModels.Tests
                string val10 = "Some text";
                docTemplate.TVTypeText = val10;
                Assert.AreEqual(val10, docTemplate.TVTypeText);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               docTemplate.ValidationResults = val33;
-               Assert.AreEqual(val33, docTemplate.ValidationResults);
+               bool val11 = true;
+               docTemplate.HasErrors = val11;
+               Assert.AreEqual(val11, docTemplate.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
+               docTemplate.ValidationResults = val36;
+               Assert.AreEqual(val36, docTemplate.ValidationResults);
         }
     }
 }

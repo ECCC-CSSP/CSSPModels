@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void SamplingPlanSubsector_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SamplingPlanSubsectorID", "SamplingPlanID", "SubsectorTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "SubsectorTVText", "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "SubsectorTVText", "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.SamplingPlanSubsector).GetProperties().OrderBy(c => c.Name))
@@ -96,6 +96,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorSubsectorTVText);
                Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorLastUpdateContactTVText);
+               Assert.IsNotNull(ModelsRes.SamplingPlanSubsectorHasErrors);
         }
         [TestMethod]
         public void SamplingPlanSubsector_Every_Property_Has_Get_Set_Test()
@@ -121,9 +122,12 @@ namespace CSSPModels.Tests
                string val7 = "Some text";
                samplingPlanSubsector.LastUpdateContactTVText = val7;
                Assert.AreEqual(val7, samplingPlanSubsector.LastUpdateContactTVText);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               samplingPlanSubsector.ValidationResults = val24;
-               Assert.AreEqual(val24, samplingPlanSubsector.ValidationResults);
+               bool val8 = true;
+               samplingPlanSubsector.HasErrors = val8;
+               Assert.AreEqual(val8, samplingPlanSubsector.HasErrors);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               samplingPlanSubsector.ValidationResults = val27;
+               Assert.AreEqual(val27, samplingPlanSubsector.ValidationResults);
         }
     }
 }

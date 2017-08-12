@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void CSSPMPNTable_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Tube10", "Tube1_0", "Tube0_1", "MPN",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Tube10", "Tube1_0", "Tube0_1", "MPN", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -41,6 +41,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.CSSPMPNTableTube1_0);
                Assert.IsNotNull(ModelsRes.CSSPMPNTableTube0_1);
                Assert.IsNotNull(ModelsRes.CSSPMPNTableMPN);
+               Assert.IsNotNull(ModelsRes.CSSPMPNTableHasErrors);
         }
         [TestMethod]
         public void CSSPMPNTable_Every_Property_Has_Get_Set_Test()
@@ -57,9 +58,12 @@ namespace CSSPModels.Tests
                int val4 = 45;
                cSSPMPNTable.MPN = val4;
                Assert.AreEqual(val4, cSSPMPNTable.MPN);
-               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
-               cSSPMPNTable.ValidationResults = val15;
-               Assert.AreEqual(val15, cSSPMPNTable.ValidationResults);
+               bool val5 = true;
+               cSSPMPNTable.HasErrors = val5;
+               Assert.AreEqual(val5, cSSPMPNTable.HasErrors);
+               IEnumerable<ValidationResult> val18 = new List<ValidationResult>().AsEnumerable();
+               cSSPMPNTable.ValidationResults = val18;
+               Assert.AreEqual(val18, cSSPMPNTable.ValidationResults);
         }
     }
 }

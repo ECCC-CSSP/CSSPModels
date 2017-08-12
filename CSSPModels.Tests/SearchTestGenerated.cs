@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Search_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "value", "id",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "value", "id", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,6 +39,7 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.Searchvalue);
                Assert.IsNotNull(ModelsRes.Searchid);
+               Assert.IsNotNull(ModelsRes.SearchHasErrors);
         }
         [TestMethod]
         public void Search_Every_Property_Has_Get_Set_Test()
@@ -49,9 +50,12 @@ namespace CSSPModels.Tests
                int val2 = 45;
                search.id = val2;
                Assert.AreEqual(val2, search.id);
-               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
-               search.ValidationResults = val9;
-               Assert.AreEqual(val9, search.ValidationResults);
+               bool val3 = true;
+               search.HasErrors = val3;
+               Assert.AreEqual(val3, search.HasErrors);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               search.ValidationResults = val12;
+               Assert.AreEqual(val12, search.ValidationResults);
         }
     }
 }

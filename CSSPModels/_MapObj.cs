@@ -23,6 +23,7 @@ namespace CSSPModels
         public string MapInfoDrawTypeText { get; set; }
 
         public virtual List<Coord> CoordList { get; set; }
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
@@ -30,6 +31,7 @@ namespace CSSPModels
         public MapObj()
         {
             CoordList = new List<Coord>();
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

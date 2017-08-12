@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void ContactLogin_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactLoginID", "ContactID", "LoginEmail", "PasswordHash", "PasswordSalt", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "Password", "ConfirmPassword",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "Password", "ConfirmPassword", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ContactLogin).GetProperties().OrderBy(c => c.Name))
@@ -99,6 +99,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactLoginLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.ContactLoginPassword);
                Assert.IsNotNull(ModelsRes.ContactLoginConfirmPassword);
+               Assert.IsNotNull(ModelsRes.ContactLoginHasErrors);
         }
         [TestMethod]
         public void ContactLogin_Every_Property_Has_Get_Set_Test()
@@ -133,9 +134,12 @@ namespace CSSPModels.Tests
                string val10 = "Some text";
                contactLogin.ConfirmPassword = val10;
                Assert.AreEqual(val10, contactLogin.ConfirmPassword);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               contactLogin.ValidationResults = val33;
-               Assert.AreEqual(val33, contactLogin.ValidationResults);
+               bool val11 = true;
+               contactLogin.HasErrors = val11;
+               Assert.AreEqual(val11, contactLogin.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
+               contactLogin.ValidationResults = val36;
+               Assert.AreEqual(val36, contactLogin.ValidationResults);
         }
     }
 }

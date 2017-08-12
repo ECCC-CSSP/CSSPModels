@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ElementLayer_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Layer", "ZMin", "ZMax", "Element",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Layer", "ZMin", "ZMax", "Element", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -41,6 +41,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ElementLayerZMin);
                Assert.IsNotNull(ModelsRes.ElementLayerZMax);
                Assert.IsNotNull(ModelsRes.ElementLayerElement);
+               Assert.IsNotNull(ModelsRes.ElementLayerHasErrors);
         }
         [TestMethod]
         public void ElementLayer_Every_Property_Has_Get_Set_Test()
@@ -54,12 +55,15 @@ namespace CSSPModels.Tests
                double val3 = 87.9D;
                elementLayer.ZMax = val3;
                Assert.AreEqual(val3, elementLayer.ZMax);
-               Element val9 = new Element();
-               elementLayer.Element = val9;
-               Assert.AreEqual(val9, elementLayer.Element);
-               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
-               elementLayer.ValidationResults = val15;
-               Assert.AreEqual(val15, elementLayer.ValidationResults);
+               bool val5 = true;
+               elementLayer.HasErrors = val5;
+               Assert.AreEqual(val5, elementLayer.HasErrors);
+               Element val10 = new Element();
+               elementLayer.Element = val10;
+               Assert.AreEqual(val10, elementLayer.Element);
+               IEnumerable<ValidationResult> val18 = new List<ValidationResult>().AsEnumerable();
+               elementLayer.ValidationResults = val18;
+               Assert.AreEqual(val18, elementLayer.ValidationResults);
         }
     }
 }

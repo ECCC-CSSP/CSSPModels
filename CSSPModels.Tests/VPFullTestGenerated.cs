@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void VPFull_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "VPScenario", "AmbientList", "ResultList",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "VPScenario", "AmbientList", "ResultList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -40,22 +40,26 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.VPFullVPScenario);
                Assert.IsNotNull(ModelsRes.VPFullAmbientList);
                Assert.IsNotNull(ModelsRes.VPFullResultList);
+               Assert.IsNotNull(ModelsRes.VPFullHasErrors);
         }
         [TestMethod]
         public void VPFull_Every_Property_Has_Get_Set_Test()
         {
-               VPScenario val5 = new VPScenario();
-               vPFull.VPScenario = val5;
-               Assert.AreEqual(val5, vPFull.VPScenario);
-               List<VPAmbient> val6 = new List<VPAmbient>();
-               vPFull.AmbientList = val6;
-               Assert.AreEqual(val6, vPFull.AmbientList);
-               List<VPResult> val7 = new List<VPResult>();
-               vPFull.ResultList = val7;
-               Assert.AreEqual(val7, vPFull.ResultList);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
-               vPFull.ValidationResults = val12;
-               Assert.AreEqual(val12, vPFull.ValidationResults);
+               bool val4 = true;
+               vPFull.HasErrors = val4;
+               Assert.AreEqual(val4, vPFull.HasErrors);
+               VPScenario val6 = new VPScenario();
+               vPFull.VPScenario = val6;
+               Assert.AreEqual(val6, vPFull.VPScenario);
+               List<VPAmbient> val7 = new List<VPAmbient>();
+               vPFull.AmbientList = val7;
+               Assert.AreEqual(val7, vPFull.AmbientList);
+               List<VPResult> val8 = new List<VPResult>();
+               vPFull.ResultList = val8;
+               Assert.AreEqual(val8, vPFull.ResultList);
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
+               vPFull.ValidationResults = val15;
+               Assert.AreEqual(val15, vPFull.ValidationResults);
         }
     }
 }

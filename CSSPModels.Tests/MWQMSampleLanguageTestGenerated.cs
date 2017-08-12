@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MWQMSampleLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSampleLanguageID", "MWQMSampleID", "Language", "MWQMSampleNote", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMSampleLanguage).GetProperties().OrderBy(c => c.Name))
@@ -99,6 +99,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMSampleLanguageLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.MWQMSampleLanguageLanguageText);
                Assert.IsNotNull(ModelsRes.MWQMSampleLanguageTranslationStatusText);
+               Assert.IsNotNull(ModelsRes.MWQMSampleLanguageHasErrors);
         }
         [TestMethod]
         public void MWQMSampleLanguage_Every_Property_Has_Get_Set_Test()
@@ -133,9 +134,12 @@ namespace CSSPModels.Tests
                string val10 = "Some text";
                mWQMSampleLanguage.TranslationStatusText = val10;
                Assert.AreEqual(val10, mWQMSampleLanguage.TranslationStatusText);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               mWQMSampleLanguage.ValidationResults = val33;
-               Assert.AreEqual(val33, mWQMSampleLanguage.ValidationResults);
+               bool val11 = true;
+               mWQMSampleLanguage.HasErrors = val11;
+               Assert.AreEqual(val11, mWQMSampleLanguage.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
+               mWQMSampleLanguage.ValidationResults = val36;
+               Assert.AreEqual(val36, mWQMSampleLanguage.ValidationResults);
         }
     }
 }

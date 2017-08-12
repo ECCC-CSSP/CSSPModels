@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void VPResValues_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Conc", "Dilu", "FarfieldWidth", "Distance", "TheTime", "Decay",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Conc", "Dilu", "FarfieldWidth", "Distance", "TheTime", "Decay", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -43,6 +43,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.VPResValuesDistance);
                Assert.IsNotNull(ModelsRes.VPResValuesTheTime);
                Assert.IsNotNull(ModelsRes.VPResValuesDecay);
+               Assert.IsNotNull(ModelsRes.VPResValuesHasErrors);
         }
         [TestMethod]
         public void VPResValues_Every_Property_Has_Get_Set_Test()
@@ -65,9 +66,12 @@ namespace CSSPModels.Tests
                double val6 = 87.9D;
                vPResValues.Decay = val6;
                Assert.AreEqual(val6, vPResValues.Decay);
-               IEnumerable<ValidationResult> val21 = new List<ValidationResult>().AsEnumerable();
-               vPResValues.ValidationResults = val21;
-               Assert.AreEqual(val21, vPResValues.ValidationResults);
+               bool val7 = true;
+               vPResValues.HasErrors = val7;
+               Assert.AreEqual(val7, vPResValues.HasErrors);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               vPResValues.ValidationResults = val24;
+               Assert.AreEqual(val24, vPResValues.ValidationResults);
         }
     }
 }

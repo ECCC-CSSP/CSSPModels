@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void DataPathOfTide_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Text", "WebTideDataSet", "WebTideDataSetText",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Text", "WebTideDataSet", "WebTideDataSetText", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -40,6 +40,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.DataPathOfTideText);
                Assert.IsNotNull(ModelsRes.DataPathOfTideWebTideDataSet);
                Assert.IsNotNull(ModelsRes.DataPathOfTideWebTideDataSetText);
+               Assert.IsNotNull(ModelsRes.DataPathOfTideHasErrors);
         }
         [TestMethod]
         public void DataPathOfTide_Every_Property_Has_Get_Set_Test()
@@ -53,9 +54,12 @@ namespace CSSPModels.Tests
                string val3 = "Some text";
                dataPathOfTide.WebTideDataSetText = val3;
                Assert.AreEqual(val3, dataPathOfTide.WebTideDataSetText);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
-               dataPathOfTide.ValidationResults = val12;
-               Assert.AreEqual(val12, dataPathOfTide.ValidationResults);
+               bool val4 = true;
+               dataPathOfTide.HasErrors = val4;
+               Assert.AreEqual(val4, dataPathOfTide.HasErrors);
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
+               dataPathOfTide.ValidationResults = val15;
+               Assert.AreEqual(val15, dataPathOfTide.ValidationResults);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVTypeNamesAndPath_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "TVTypeName", "Index", "TVPath",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TVTypeName", "Index", "TVPath", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -40,6 +40,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVTypeNamesAndPathTVTypeName);
                Assert.IsNotNull(ModelsRes.TVTypeNamesAndPathIndex);
                Assert.IsNotNull(ModelsRes.TVTypeNamesAndPathTVPath);
+               Assert.IsNotNull(ModelsRes.TVTypeNamesAndPathHasErrors);
         }
         [TestMethod]
         public void TVTypeNamesAndPath_Every_Property_Has_Get_Set_Test()
@@ -53,9 +54,12 @@ namespace CSSPModels.Tests
                string val3 = "Some text";
                tVTypeNamesAndPath.TVPath = val3;
                Assert.AreEqual(val3, tVTypeNamesAndPath.TVPath);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
-               tVTypeNamesAndPath.ValidationResults = val12;
-               Assert.AreEqual(val12, tVTypeNamesAndPath.ValidationResults);
+               bool val4 = true;
+               tVTypeNamesAndPath.HasErrors = val4;
+               Assert.AreEqual(val4, tVTypeNamesAndPath.HasErrors);
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
+               tVTypeNamesAndPath.ValidationResults = val15;
+               Assert.AreEqual(val15, tVTypeNamesAndPath.ValidationResults);
         }
     }
 }

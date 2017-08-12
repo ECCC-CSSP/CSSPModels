@@ -17,13 +17,14 @@ namespace CSSPModels
         public virtual LabSheet LabSheet { get; set; }
         public virtual LabSheetA1Sheet LabSheetA1Sheet { get; set; }
 
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public LabSheetAndA1Sheet()
         {
-            // empty for now
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

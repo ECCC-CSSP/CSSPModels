@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void MWQMLookupMPN_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMLookupMPNID", "Tubes10", "Tubes1", "Tubes01", "MPN_100ml", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMLookupMPN).GetProperties().OrderBy(c => c.Name))
@@ -97,6 +97,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMLookupMPNLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MWQMLookupMPNLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.MWQMLookupMPNLastUpdateContactTVText);
+               Assert.IsNotNull(ModelsRes.MWQMLookupMPNHasErrors);
         }
         [TestMethod]
         public void MWQMLookupMPN_Every_Property_Has_Get_Set_Test()
@@ -125,9 +126,12 @@ namespace CSSPModels.Tests
                string val8 = "Some text";
                mWQMLookupMPN.LastUpdateContactTVText = val8;
                Assert.AreEqual(val8, mWQMLookupMPN.LastUpdateContactTVText);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               mWQMLookupMPN.ValidationResults = val27;
-               Assert.AreEqual(val27, mWQMLookupMPN.ValidationResults);
+               bool val9 = true;
+               mWQMLookupMPN.HasErrors = val9;
+               Assert.AreEqual(val9, mWQMLookupMPN.HasErrors);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               mWQMLookupMPN.ValidationResults = val30;
+               Assert.AreEqual(val30, mWQMLookupMPN.ValidationResults);
         }
     }
 }

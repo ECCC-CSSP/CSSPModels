@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void Email_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "EmailID", "EmailTVItemID", "EmailAddress", "EmailType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "EmailTVText", "LastUpdateContactTVText", "EmailTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "EmailTVText", "LastUpdateContactTVText", "EmailTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Email).GetProperties().OrderBy(c => c.Name))
@@ -98,6 +98,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.EmailEmailTVText);
                Assert.IsNotNull(ModelsRes.EmailLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.EmailEmailTypeText);
+               Assert.IsNotNull(ModelsRes.EmailHasErrors);
         }
         [TestMethod]
         public void Email_Every_Property_Has_Get_Set_Test()
@@ -129,9 +130,12 @@ namespace CSSPModels.Tests
                string val9 = "Some text";
                email.EmailTypeText = val9;
                Assert.AreEqual(val9, email.EmailTypeText);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               email.ValidationResults = val30;
-               Assert.AreEqual(val30, email.ValidationResults);
+               bool val10 = true;
+               email.HasErrors = val10;
+               Assert.AreEqual(val10, email.HasErrors);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               email.ValidationResults = val33;
+               Assert.AreEqual(val33, email.ValidationResults);
         }
     }
 }

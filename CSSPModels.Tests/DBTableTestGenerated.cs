@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void DBTable_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "TableName", "Plurial",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TableName", "Plurial", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,6 +39,7 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.DBTableTableName);
                Assert.IsNotNull(ModelsRes.DBTablePlurial);
+               Assert.IsNotNull(ModelsRes.DBTableHasErrors);
         }
         [TestMethod]
         public void DBTable_Every_Property_Has_Get_Set_Test()
@@ -49,9 +50,12 @@ namespace CSSPModels.Tests
                string val2 = "Some text";
                dBTable.Plurial = val2;
                Assert.AreEqual(val2, dBTable.Plurial);
-               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
-               dBTable.ValidationResults = val9;
-               Assert.AreEqual(val9, dBTable.ValidationResults);
+               bool val3 = true;
+               dBTable.HasErrors = val3;
+               Assert.AreEqual(val3, dBTable.HasErrors);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               dBTable.ValidationResults = val12;
+               Assert.AreEqual(val12, dBTable.ValidationResults);
         }
     }
 }

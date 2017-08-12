@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ContactSearch_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ContactID", "ContactTVItemID", "FullName",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ContactID", "ContactTVItemID", "FullName", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -40,6 +40,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactSearchContactID);
                Assert.IsNotNull(ModelsRes.ContactSearchContactTVItemID);
                Assert.IsNotNull(ModelsRes.ContactSearchFullName);
+               Assert.IsNotNull(ModelsRes.ContactSearchHasErrors);
         }
         [TestMethod]
         public void ContactSearch_Every_Property_Has_Get_Set_Test()
@@ -53,9 +54,12 @@ namespace CSSPModels.Tests
                string val3 = "Some text";
                contactSearch.FullName = val3;
                Assert.AreEqual(val3, contactSearch.FullName);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
-               contactSearch.ValidationResults = val12;
-               Assert.AreEqual(val12, contactSearch.ValidationResults);
+               bool val4 = true;
+               contactSearch.HasErrors = val4;
+               Assert.AreEqual(val4, contactSearch.HasErrors);
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
+               contactSearch.ValidationResults = val15;
+               Assert.AreEqual(val15, contactSearch.ValidationResults);
         }
     }
 }

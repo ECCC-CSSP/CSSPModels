@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void ClimateDataValue_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ClimateDataValueID", "ClimateSiteID", "DateTime_Local", "Keep", "StorageDataType", "Snow_cm", "Rainfall_mm", "RainfallEntered_mm", "TotalPrecip_mm_cm", "MaxTemp_C", "MinTemp_C", "HeatDegDays_C", "CoolDegDays_C", "SnowOnGround_cm", "DirMaxGust_0North", "SpdMaxGust_kmh", "HourlyValues", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "StorageDataTypeEnumText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "StorageDataTypeEnumText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ClimateDataValue).GetProperties().OrderBy(c => c.Name))
@@ -110,6 +110,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ClimateDataValueLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.ClimateDataValueLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.ClimateDataValueStorageDataTypeEnumText);
+               Assert.IsNotNull(ModelsRes.ClimateDataValueHasErrors);
         }
         [TestMethod]
         public void ClimateDataValue_Every_Property_Has_Get_Set_Test()
@@ -177,9 +178,12 @@ namespace CSSPModels.Tests
                string val21 = "Some text";
                climateDataValue.StorageDataTypeEnumText = val21;
                Assert.AreEqual(val21, climateDataValue.StorageDataTypeEnumText);
-               IEnumerable<ValidationResult> val66 = new List<ValidationResult>().AsEnumerable();
-               climateDataValue.ValidationResults = val66;
-               Assert.AreEqual(val66, climateDataValue.ValidationResults);
+               bool val22 = true;
+               climateDataValue.HasErrors = val22;
+               Assert.AreEqual(val22, climateDataValue.HasErrors);
+               IEnumerable<ValidationResult> val69 = new List<ValidationResult>().AsEnumerable();
+               climateDataValue.ValidationResults = val69;
+               Assert.AreEqual(val69, climateDataValue.ValidationResults);
         }
     }
 }

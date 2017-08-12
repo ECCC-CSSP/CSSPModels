@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVItemInfrastructureTypeTVItemLink_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "InfrastructureType", "SeeOtherTVItemID", "InfrastructureTypeText", "TVItem", "TVItemLinkList", "FlowTo",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "InfrastructureType", "SeeOtherTVItemID", "InfrastructureTypeText", "TVItem", "TVItemLinkList", "FlowTo", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -43,6 +43,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemInfrastructureTypeTVItemLinkTVItem);
                Assert.IsNotNull(ModelsRes.TVItemInfrastructureTypeTVItemLinkTVItemLinkList);
                Assert.IsNotNull(ModelsRes.TVItemInfrastructureTypeTVItemLinkFlowTo);
+               Assert.IsNotNull(ModelsRes.TVItemInfrastructureTypeTVItemLinkHasErrors);
         }
         [TestMethod]
         public void TVItemInfrastructureTypeTVItemLink_Every_Property_Has_Get_Set_Test()
@@ -56,18 +57,21 @@ namespace CSSPModels.Tests
                string val3 = "Some text";
                tVItemInfrastructureTypeTVItemLink.InfrastructureTypeText = val3;
                Assert.AreEqual(val3, tVItemInfrastructureTypeTVItemLink.InfrastructureTypeText);
-               TVItem val11 = new TVItem();
-               tVItemInfrastructureTypeTVItemLink.TVItem = val11;
-               Assert.AreEqual(val11, tVItemInfrastructureTypeTVItemLink.TVItem);
-               List<TVItemLink> val12 = new List<TVItemLink>();
-               tVItemInfrastructureTypeTVItemLink.TVItemLinkList = val12;
-               Assert.AreEqual(val12, tVItemInfrastructureTypeTVItemLink.TVItemLinkList);
-               TVItemInfrastructureTypeTVItemLink val13 = new TVItemInfrastructureTypeTVItemLink();
-               tVItemInfrastructureTypeTVItemLink.FlowTo = val13;
-               Assert.AreEqual(val13, tVItemInfrastructureTypeTVItemLink.FlowTo);
-               IEnumerable<ValidationResult> val21 = new List<ValidationResult>().AsEnumerable();
-               tVItemInfrastructureTypeTVItemLink.ValidationResults = val21;
-               Assert.AreEqual(val21, tVItemInfrastructureTypeTVItemLink.ValidationResults);
+               bool val7 = true;
+               tVItemInfrastructureTypeTVItemLink.HasErrors = val7;
+               Assert.AreEqual(val7, tVItemInfrastructureTypeTVItemLink.HasErrors);
+               TVItem val12 = new TVItem();
+               tVItemInfrastructureTypeTVItemLink.TVItem = val12;
+               Assert.AreEqual(val12, tVItemInfrastructureTypeTVItemLink.TVItem);
+               List<TVItemLink> val13 = new List<TVItemLink>();
+               tVItemInfrastructureTypeTVItemLink.TVItemLinkList = val13;
+               Assert.AreEqual(val13, tVItemInfrastructureTypeTVItemLink.TVItemLinkList);
+               TVItemInfrastructureTypeTVItemLink val14 = new TVItemInfrastructureTypeTVItemLink();
+               tVItemInfrastructureTypeTVItemLink.FlowTo = val14;
+               Assert.AreEqual(val14, tVItemInfrastructureTypeTVItemLink.FlowTo);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
+               tVItemInfrastructureTypeTVItemLink.ValidationResults = val24;
+               Assert.AreEqual(val24, tVItemInfrastructureTypeTVItemLink.ValidationResults);
         }
     }
 }

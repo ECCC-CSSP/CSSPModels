@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void LabSheetTubeMPNDetail_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LabSheetTubeMPNDetailID", "LabSheetDetailID", "Ordinal", "MWQMSiteTVItemID", "SampleDateTime", "MPN", "Tube10", "Tube1_0", "Tube0_1", "Salinity", "Temperature", "ProcessedBy", "SampleType", "SiteComment", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteTVText", "LastUpdateContactTVText", "SampleTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteTVText", "LastUpdateContactTVText", "SampleTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.LabSheetTubeMPNDetail).GetProperties().OrderBy(c => c.Name))
@@ -108,6 +108,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.LabSheetTubeMPNDetailMWQMSiteTVText);
                Assert.IsNotNull(ModelsRes.LabSheetTubeMPNDetailLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.LabSheetTubeMPNDetailSampleTypeText);
+               Assert.IsNotNull(ModelsRes.LabSheetTubeMPNDetailHasErrors);
         }
         [TestMethod]
         public void LabSheetTubeMPNDetail_Every_Property_Has_Get_Set_Test()
@@ -169,9 +170,12 @@ namespace CSSPModels.Tests
                string val19 = "Some text";
                labSheetTubeMPNDetail.SampleTypeText = val19;
                Assert.AreEqual(val19, labSheetTubeMPNDetail.SampleTypeText);
-               IEnumerable<ValidationResult> val60 = new List<ValidationResult>().AsEnumerable();
-               labSheetTubeMPNDetail.ValidationResults = val60;
-               Assert.AreEqual(val60, labSheetTubeMPNDetail.ValidationResults);
+               bool val20 = true;
+               labSheetTubeMPNDetail.HasErrors = val20;
+               Assert.AreEqual(val20, labSheetTubeMPNDetail.HasErrors);
+               IEnumerable<ValidationResult> val63 = new List<ValidationResult>().AsEnumerable();
+               labSheetTubeMPNDetail.ValidationResults = val63;
+               Assert.AreEqual(val63, labSheetTubeMPNDetail.ValidationResults);
         }
     }
 }

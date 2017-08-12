@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void ContactPreference_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactPreferenceID", "ContactID", "TVType", "MarkerSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "TVTypeText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "TVTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ContactPreference).GetProperties().OrderBy(c => c.Name))
@@ -97,6 +97,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ContactPreferenceLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.ContactPreferenceLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.ContactPreferenceTVTypeText);
+               Assert.IsNotNull(ModelsRes.ContactPreferenceHasErrors);
         }
         [TestMethod]
         public void ContactPreference_Every_Property_Has_Get_Set_Test()
@@ -125,9 +126,12 @@ namespace CSSPModels.Tests
                string val8 = "Some text";
                contactPreference.TVTypeText = val8;
                Assert.AreEqual(val8, contactPreference.TVTypeText);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               contactPreference.ValidationResults = val27;
-               Assert.AreEqual(val27, contactPreference.ValidationResults);
+               bool val9 = true;
+               contactPreference.HasErrors = val9;
+               Assert.AreEqual(val9, contactPreference.HasErrors);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               contactPreference.ValidationResults = val30;
+               Assert.AreEqual(val30, contactPreference.ValidationResults);
         }
     }
 }

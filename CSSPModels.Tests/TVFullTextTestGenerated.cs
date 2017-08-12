@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVFullText_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "TVPath", "FullText",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TVPath", "FullText", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -39,6 +39,7 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.TVFullTextTVPath);
                Assert.IsNotNull(ModelsRes.TVFullTextFullText);
+               Assert.IsNotNull(ModelsRes.TVFullTextHasErrors);
         }
         [TestMethod]
         public void TVFullText_Every_Property_Has_Get_Set_Test()
@@ -49,9 +50,12 @@ namespace CSSPModels.Tests
                string val2 = "Some text";
                tVFullText.FullText = val2;
                Assert.AreEqual(val2, tVFullText.FullText);
-               IEnumerable<ValidationResult> val9 = new List<ValidationResult>().AsEnumerable();
-               tVFullText.ValidationResults = val9;
-               Assert.AreEqual(val9, tVFullText.ValidationResults);
+               bool val3 = true;
+               tVFullText.HasErrors = val3;
+               Assert.AreEqual(val3, tVFullText.HasErrors);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
+               tVFullText.ValidationResults = val12;
+               Assert.AreEqual(val12, tVFullText.ValidationResults);
         }
     }
 }

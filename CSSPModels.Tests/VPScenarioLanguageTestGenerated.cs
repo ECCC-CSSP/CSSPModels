@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void VPScenarioLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "VPScenarioLanguageID", "VPScenarioID", "Language", "VPScenarioName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.VPScenarioLanguage).GetProperties().OrderBy(c => c.Name))
@@ -99,6 +99,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.VPScenarioLanguageLastUpdateContactTVText);
                Assert.IsNotNull(ModelsRes.VPScenarioLanguageLanguageText);
                Assert.IsNotNull(ModelsRes.VPScenarioLanguageTranslationStatusText);
+               Assert.IsNotNull(ModelsRes.VPScenarioLanguageHasErrors);
         }
         [TestMethod]
         public void VPScenarioLanguage_Every_Property_Has_Get_Set_Test()
@@ -133,9 +134,12 @@ namespace CSSPModels.Tests
                string val10 = "Some text";
                vPScenarioLanguage.TranslationStatusText = val10;
                Assert.AreEqual(val10, vPScenarioLanguage.TranslationStatusText);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               vPScenarioLanguage.ValidationResults = val33;
-               Assert.AreEqual(val33, vPScenarioLanguage.ValidationResults);
+               bool val11 = true;
+               vPScenarioLanguage.HasErrors = val11;
+               Assert.AreEqual(val11, vPScenarioLanguage.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
+               vPScenarioLanguage.ValidationResults = val36;
+               Assert.AreEqual(val36, vPScenarioLanguage.ValidationResults);
         }
     }
 }

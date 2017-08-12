@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void CSSPWQInputApp_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "AccessCode", "ActiveYear", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "ApprovalDate",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "AccessCode", "ActiveYear", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "ApprovalDate", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -44,6 +44,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.CSSPWQInputAppIncludeLaboratoryQAQC);
                Assert.IsNotNull(ModelsRes.CSSPWQInputAppApprovalCode);
                Assert.IsNotNull(ModelsRes.CSSPWQInputAppApprovalDate);
+               Assert.IsNotNull(ModelsRes.CSSPWQInputAppHasErrors);
         }
         [TestMethod]
         public void CSSPWQInputApp_Every_Property_Has_Get_Set_Test()
@@ -69,9 +70,12 @@ namespace CSSPModels.Tests
                DateTime val7 = new DateTime(2010, 3, 4);
                cSSPWQInputApp.ApprovalDate = val7;
                Assert.AreEqual(val7, cSSPWQInputApp.ApprovalDate);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               cSSPWQInputApp.ValidationResults = val24;
-               Assert.AreEqual(val24, cSSPWQInputApp.ValidationResults);
+               bool val8 = true;
+               cSSPWQInputApp.HasErrors = val8;
+               Assert.AreEqual(val8, cSSPWQInputApp.HasErrors);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               cSSPWQInputApp.ValidationResults = val27;
+               Assert.AreEqual(val27, cSSPWQInputApp.ValidationResults);
         }
     }
 }

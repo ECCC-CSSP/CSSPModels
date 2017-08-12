@@ -19,6 +19,7 @@ namespace CSSPModels
         [Range(0.0D, -1.0D)]
         public double Decay { get; set; }
 
+        public bool HasErrors { get; set; }
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
@@ -26,6 +27,7 @@ namespace CSSPModels
         public CalDecay()
         {
             Error = "";
+            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

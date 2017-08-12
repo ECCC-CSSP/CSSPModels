@@ -18,7 +18,7 @@ namespace CSSPModels.Tests
         public void AppTask_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "AppTaskID", "TVItemID", "TVItemID2", "AppTaskCommand", "AppTaskStatus", "PercentCompleted", "Parameters", "Language", "StartDateTime_UTC", "EndDateTime_UTC", "EstimatedLength_second", "RemainingTime_second", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "TVItemTVText", "TVItem2TVText", "LastUpdateContactTVText", "AppTaskCommandText", "AppTaskStatusText", "LanguageText",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TVItemTVText", "TVItem2TVText", "LastUpdateContactTVText", "AppTaskCommandText", "AppTaskStatusText", "LanguageText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.AppTask).GetProperties().OrderBy(c => c.Name))
@@ -109,6 +109,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.AppTaskAppTaskCommandText);
                Assert.IsNotNull(ModelsRes.AppTaskAppTaskStatusText);
                Assert.IsNotNull(ModelsRes.AppTaskLanguageText);
+               Assert.IsNotNull(ModelsRes.AppTaskHasErrors);
         }
         [TestMethod]
         public void AppTask_Every_Property_Has_Get_Set_Test()
@@ -173,9 +174,12 @@ namespace CSSPModels.Tests
                string val20 = "Some text";
                appTask.LanguageText = val20;
                Assert.AreEqual(val20, appTask.LanguageText);
-               IEnumerable<ValidationResult> val63 = new List<ValidationResult>().AsEnumerable();
-               appTask.ValidationResults = val63;
-               Assert.AreEqual(val63, appTask.ValidationResults);
+               bool val21 = true;
+               appTask.HasErrors = val21;
+               Assert.AreEqual(val21, appTask.HasErrors);
+               IEnumerable<ValidationResult> val66 = new List<ValidationResult>().AsEnumerable();
+               appTask.ValidationResults = val66;
+               Assert.AreEqual(val66, appTask.ValidationResults);
         }
     }
 }

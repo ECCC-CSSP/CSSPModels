@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Node_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ID", "X", "Y", "Z", "Code", "Value", "ElementList", "ConnectNodeList",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ID", "X", "Y", "Z", "Code", "Value", "ElementList", "ConnectNodeList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -45,6 +45,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.NodeValue);
                Assert.IsNotNull(ModelsRes.NodeElementList);
                Assert.IsNotNull(ModelsRes.NodeConnectNodeList);
+               Assert.IsNotNull(ModelsRes.NodeHasErrors);
         }
         [TestMethod]
         public void Node_Every_Property_Has_Get_Set_Test()
@@ -67,15 +68,18 @@ namespace CSSPModels.Tests
                double val6 = 87.9D;
                node.Value = val6;
                Assert.AreEqual(val6, node.Value);
-               List<Element> val16 = new List<Element>();
-               node.ElementList = val16;
-               Assert.AreEqual(val16, node.ElementList);
-               List<Node> val17 = new List<Node>();
-               node.ConnectNodeList = val17;
-               Assert.AreEqual(val17, node.ConnectNodeList);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               node.ValidationResults = val27;
-               Assert.AreEqual(val27, node.ValidationResults);
+               bool val9 = true;
+               node.HasErrors = val9;
+               Assert.AreEqual(val9, node.HasErrors);
+               List<Element> val17 = new List<Element>();
+               node.ElementList = val17;
+               Assert.AreEqual(val17, node.ElementList);
+               List<Node> val18 = new List<Node>();
+               node.ConnectNodeList = val18;
+               Assert.AreEqual(val18, node.ConnectNodeList);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               node.ValidationResults = val30;
+               Assert.AreEqual(val30, node.ValidationResults);
         }
     }
 }

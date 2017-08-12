@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Element_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ID", "Type", "NumbOfNodes", "Value", "XNode0", "YNode0", "ZNode0", "NodeList",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ID", "Type", "NumbOfNodes", "Value", "XNode0", "YNode0", "ZNode0", "NodeList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -45,6 +45,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.ElementYNode0);
                Assert.IsNotNull(ModelsRes.ElementZNode0);
                Assert.IsNotNull(ModelsRes.ElementNodeList);
+               Assert.IsNotNull(ModelsRes.ElementHasErrors);
         }
         [TestMethod]
         public void Element_Every_Property_Has_Get_Set_Test()
@@ -70,12 +71,15 @@ namespace CSSPModels.Tests
                double val7 = 87.9D;
                element.ZNode0 = val7;
                Assert.AreEqual(val7, element.ZNode0);
-               List<Node> val17 = new List<Node>();
-               element.NodeList = val17;
-               Assert.AreEqual(val17, element.NodeList);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               element.ValidationResults = val27;
-               Assert.AreEqual(val27, element.ValidationResults);
+               bool val9 = true;
+               element.HasErrors = val9;
+               Assert.AreEqual(val9, element.HasErrors);
+               List<Node> val18 = new List<Node>();
+               element.NodeList = val18;
+               Assert.AreEqual(val18, element.NodeList);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
+               element.ValidationResults = val30;
+               Assert.AreEqual(val30, element.ValidationResults);
         }
     }
 }

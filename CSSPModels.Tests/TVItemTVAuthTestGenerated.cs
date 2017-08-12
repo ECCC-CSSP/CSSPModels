@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVItemTVAuth_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "TVItemUserAuthID", "TVText", "TVItemID1", "TVTypeStr", "TVAuth", "TVAuthText",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Error", "TVItemUserAuthID", "TVText", "TVItemID1", "TVTypeStr", "TVAuth", "TVAuthText", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -44,6 +44,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.TVItemTVAuthTVTypeStr);
                Assert.IsNotNull(ModelsRes.TVItemTVAuthTVAuth);
                Assert.IsNotNull(ModelsRes.TVItemTVAuthTVAuthText);
+               Assert.IsNotNull(ModelsRes.TVItemTVAuthHasErrors);
         }
         [TestMethod]
         public void TVItemTVAuth_Every_Property_Has_Get_Set_Test()
@@ -69,9 +70,12 @@ namespace CSSPModels.Tests
                string val7 = "Some text";
                tVItemTVAuth.TVAuthText = val7;
                Assert.AreEqual(val7, tVItemTVAuth.TVAuthText);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               tVItemTVAuth.ValidationResults = val24;
-               Assert.AreEqual(val24, tVItemTVAuth.ValidationResults);
+               bool val8 = true;
+               tVItemTVAuth.HasErrors = val8;
+               Assert.AreEqual(val8, tVItemTVAuth.HasErrors);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               tVItemTVAuth.ValidationResults = val27;
+               Assert.AreEqual(val27, tVItemTVAuth.ValidationResults);
         }
     }
 }
