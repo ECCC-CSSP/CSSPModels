@@ -371,21 +371,8 @@
     <Compile Include="VPScenarioLanguage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="api\index.md" />
     <None Include="app.config" />
-    <None Include="articles\intro.md" />
-    <None Include="articles\toc.md" />
-    <None Include="docfx.json" />
-    <None Include="index.md" />
     <None Include="packages.config" />
-    <None Include="toc.yml" />
-    <None Include="_site\fonts\glyphicons-halflings-regular.eot" />
-    <None Include="_site\fonts\glyphicons-halflings-regular.ttf" />
-    <None Include="_site\fonts\glyphicons-halflings-regular.woff" />
-    <None Include="_site\fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="_site\manifest.json" />
-    <None Include="_site\search-stopwords.json" />
-    <None Include="_site\xrefmap.yml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\ModelsRes.resx">
@@ -399,166 +386,11 @@
       <LastGenOutput>ModelsRes.fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="_site\api\CSSPModels.Address.html" />
-    <Content Include="_site\api\CSSPModels.AppErrLog.html" />
-    <Content Include="_site\api\CSSPModels.AppTask.html" />
-    <Content Include="_site\api\CSSPModels.AppTaskLanguage.html" />
-    <Content Include="_site\api\CSSPModels.AppTaskParameter.html" />
-    <Content Include="_site\api\CSSPModels.BoxModel.html" />
-    <Content Include="_site\api\CSSPModels.BoxModelCalNumb.html" />
-    <Content Include="_site\api\CSSPModels.BoxModelLanguage.html" />
-    <Content Include="_site\api\CSSPModels.BoxModelResult.html" />
-    <Content Include="_site\api\CSSPModels.CalDecay.html" />
-    <Content Include="_site\api\CSSPModels.ClimateDataValue.html" />
-    <Content Include="_site\api\CSSPModels.ClimateSite.html" />
-    <Content Include="_site\api\CSSPModels.Contact.html" />
-    <Content Include="_site\api\CSSPModels.ContactLogin.html" />
-    <Content Include="_site\api\CSSPModels.ContactOK.html" />
-    <Content Include="_site\api\CSSPModels.ContactPreference.html" />
-    <Content Include="_site\api\CSSPModels.ContactSearch.html" />
-    <Content Include="_site\api\CSSPModels.ContactShortcut.html" />
-    <Content Include="_site\api\CSSPModels.ContourPolygon.html" />
-    <Content Include="_site\api\CSSPModels.Coord.html" />
-    <Content Include="_site\api\CSSPModels.CSSPAfterAttribute.html" />
-    <Content Include="_site\api\CSSPModels.CSSPAllowNullAttribute.html" />
-    <Content Include="_site\api\CSSPModels.CSSPBiggerAttribute.html" />
-    <Content Include="_site\api\CSSPModels.CSSPEnumTypeAttribute.html" />
-    <Content Include="_site\api\CSSPModels.CSSPEnumTypeTextAttribute.html" />
-    <Content Include="_site\api\CSSPModels.CSSPExistAttribute.html" />
-    <Content Include="_site\api\CSSPModels.CSSPFillAttribute.html" />
-    <Content Include="_site\api\CSSPModels.CSSPMPNTable.html" />
-    <Content Include="_site\api\CSSPModels.CSSPWebToolsDBContext.html" />
-    <Content Include="_site\api\CSSPModels.CSSPWQInputApp.html" />
-    <Content Include="_site\api\CSSPModels.CSSPWQInputParam.html" />
-    <Content Include="_site\api\CSSPModels.DataPathOfTide.html" />
-    <Content Include="_site\api\CSSPModels.DBTable.html" />
-    <Content Include="_site\api\CSSPModels.DocTemplate.html" />
-    <Content Include="_site\api\CSSPModels.Element.html" />
-    <Content Include="_site\api\CSSPModels.ElementLayer.html" />
-    <Content Include="_site\api\CSSPModels.Email.html" />
-    <Content Include="_site\api\CSSPModels.EmailDistributionList.html" />
-    <Content Include="_site\api\CSSPModels.EmailDistributionListContact.html" />
-    <Content Include="_site\api\CSSPModels.FileItem.html" />
-    <Content Include="_site\api\CSSPModels.FileItemList.html" />
-    <Content Include="_site\api\CSSPModels.FilePurposeAndText.html" />
-    <Content Include="_site\api\CSSPModels.html" />
-    <Content Include="_site\api\CSSPModels.HydrometricDataValue.html" />
-    <Content Include="_site\api\CSSPModels.HydrometricSite.html" />
-    <Content Include="_site\api\CSSPModels.Infrastructure.html" />
-    <Content Include="_site\api\CSSPModels.InfrastructureLanguage.html" />
-    <Content Include="_site\api\CSSPModels.InputSummary.html" />
-    <Content Include="_site\api\CSSPModels.LabSheet.html" />
-    <Content Include="_site\api\CSSPModels.LabSheetA1Measurement.html" />
-    <Content Include="_site\api\CSSPModels.LabSheetA1Sheet.html" />
-    <Content Include="_site\api\CSSPModels.LabSheetAndA1Sheet.html" />
-    <Content Include="_site\api\CSSPModels.LabSheetDetail.html" />
-    <Content Include="_site\api\CSSPModels.LabSheetTubeMPNDetail.html" />
-    <Content Include="_site\api\CSSPModels.LastUpdateAndContact.html" />
-    <Content Include="_site\api\CSSPModels.LastUpdateAndTVText.html" />
-    <Content Include="_site\api\CSSPModels.LatLng.html" />
-    <Content Include="_site\api\CSSPModels.Log.html" />
-    <Content Include="_site\api\CSSPModels.Login.html" />
-    <Content Include="_site\api\CSSPModels.MapInfo.html" />
-    <Content Include="_site\api\CSSPModels.MapInfoPoint.html" />
-    <Content Include="_site\api\CSSPModels.MapObj.html" />
-    <Content Include="_site\api\CSSPModels.MikeBoundaryCondition.html" />
-    <Content Include="_site\api\CSSPModels.MikeScenario.html" />
-    <Content Include="_site\api\CSSPModels.MikeSource.html" />
-    <Content Include="_site\api\CSSPModels.MikeSourceStartEnd.html" />
-    <Content Include="_site\api\CSSPModels.MWQMLookupMPN.html" />
-    <Content Include="_site\api\CSSPModels.MWQMRun.html" />
-    <Content Include="_site\api\CSSPModels.MWQMRunLanguage.html" />
-    <Content Include="_site\api\CSSPModels.MWQMSample.html" />
-    <Content Include="_site\api\CSSPModels.MWQMSampleDuplicateItem.html" />
-    <Content Include="_site\api\CSSPModels.MWQMSampleLanguage.html" />
-    <Content Include="_site\api\CSSPModels.MWQMSite.html" />
-    <Content Include="_site\api\CSSPModels.MWQMSiteSampleFC.html" />
-    <Content Include="_site\api\CSSPModels.MWQMSiteStartEndDate.html" />
-    <Content Include="_site\api\CSSPModels.MWQMSubsector.html" />
-    <Content Include="_site\api\CSSPModels.MWQMSubsectorLanguage.html" />
-    <Content Include="_site\api\CSSPModels.NewContact.html" />
-    <Content Include="_site\api\CSSPModels.Node.html" />
-    <Content Include="_site\api\CSSPModels.NodeLayer.html" />
-    <Content Include="_site\api\CSSPModels.OtherFilesToUpload.html" />
-    <Content Include="_site\api\CSSPModels.PolSourceInactiveReasonEnumTextAndID.html" />
-    <Content Include="_site\api\CSSPModels.PolSourceObservation.html" />
-    <Content Include="_site\api\CSSPModels.PolSourceObservationIssue.html" />
-    <Content Include="_site\api\CSSPModels.PolSourceObsInfoChild.html" />
-    <Content Include="_site\api\CSSPModels.PolSourceObsInfoEnumTextAndID.html" />
-    <Content Include="_site\api\CSSPModels.PolSourceSite.html" />
-    <Content Include="_site\api\CSSPModels.PolyPoint.html" />
-    <Content Include="_site\api\CSSPModels.RainExceedance.html" />
-    <Content Include="_site\api\CSSPModels.RatingCurve.html" />
-    <Content Include="_site\api\CSSPModels.RatingCurveValue.html" />
-    <Content Include="_site\api\CSSPModels.Register.html" />
-    <Content Include="_site\api\CSSPModels.ResetPassword.html" />
-    <Content Include="_site\api\CSSPModels.Resources.html" />
-    <Content Include="_site\api\CSSPModels.Resources.ModelsRes.html" />
-    <Content Include="_site\api\CSSPModels.RTBStringPos.html" />
-    <Content Include="_site\api\CSSPModels.SamplingPlan.html" />
-    <Content Include="_site\api\CSSPModels.SamplingPlanAndFilesLabSheetCount.html" />
-    <Content Include="_site\api\CSSPModels.SamplingPlanSubsector.html" />
-    <Content Include="_site\api\CSSPModels.SamplingPlanSubsectorSite.html" />
-    <Content Include="_site\api\CSSPModels.Search.html" />
-    <Content Include="_site\api\CSSPModels.SearchTagAndTerms.html" />
-    <Content Include="_site\api\CSSPModels.Spill.html" />
-    <Content Include="_site\api\CSSPModels.SpillLanguage.html" />
-    <Content Include="_site\api\CSSPModels.SubsectorMWQMSampleYear.html" />
-    <Content Include="_site\api\CSSPModels.Tel.html" />
-    <Content Include="_site\api\CSSPModels.TideDataValue.html" />
-    <Content Include="_site\api\CSSPModels.TideLocation.html" />
-    <Content Include="_site\api\CSSPModels.TideSite.html" />
-    <Content Include="_site\api\CSSPModels.TVFile.html" />
-    <Content Include="_site\api\CSSPModels.TVFileLanguage.html" />
-    <Content Include="_site\api\CSSPModels.TVFullText.html" />
-    <Content Include="_site\api\CSSPModels.TVItem.html" />
-    <Content Include="_site\api\CSSPModels.TVItemInfrastructureTypeTVItemLink.html" />
-    <Content Include="_site\api\CSSPModels.TVItemLanguage.html" />
-    <Content Include="_site\api\CSSPModels.TVItemLink.html" />
-    <Content Include="_site\api\CSSPModels.TVItemStat.html" />
-    <Content Include="_site\api\CSSPModels.TVItemSubsectorAndMWQMSite.html" />
-    <Content Include="_site\api\CSSPModels.TVItemTVAuth.html" />
-    <Content Include="_site\api\CSSPModels.TVItemUserAuthorization.html" />
-    <Content Include="_site\api\CSSPModels.TVLocation.html" />
-    <Content Include="_site\api\CSSPModels.TVTextLanguage.html" />
-    <Content Include="_site\api\CSSPModels.TVTypeNamesAndPath.html" />
-    <Content Include="_site\api\CSSPModels.TVTypeUserAuthorization.html" />
-    <Content Include="_site\api\CSSPModels.URLNumberOfSamples.html" />
-    <Content Include="_site\api\CSSPModels.UseOfSite.html" />
-    <Content Include="_site\api\CSSPModels.Vector.html" />
-    <Content Include="_site\api\CSSPModels.VPAmbient.html" />
-    <Content Include="_site\api\CSSPModels.VPFull.html" />
-    <Content Include="_site\api\CSSPModels.VPResult.html" />
-    <Content Include="_site\api\CSSPModels.VPResValues.html" />
-    <Content Include="_site\api\CSSPModels.VPScenario.html" />
-    <Content Include="_site\api\CSSPModels.VPScenarioIDAndRawResults.html" />
-    <Content Include="_site\api\CSSPModels.VPScenarioLanguage.html" />
-    <Content Include="_site\api\index.html" />
-    <Content Include="_site\api\toc.html" />
-    <Content Include="_site\articles\intro.html" />
-    <Content Include="_site\articles\toc.html" />
-    <Content Include="_site\favicon.ico" />
-    <Content Include="_site\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="_site\index.html" />
-    <Content Include="_site\logo.svg" />
-    <Content Include="_site\styles\docfx.css" />
-    <Content Include="_site\styles\docfx.js" />
-    <Content Include="_site\styles\docfx.vendor.css" />
-    <Content Include="_site\styles\docfx.vendor.js" />
-    <Content Include="_site\styles\lunr.min.js" />
-    <Content Include="_site\styles\main.css" />
-    <Content Include="_site\styles\main.js" />
-    <Content Include="_site\styles\search-worker.js" />
-    <Content Include="_site\toc.html" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\SQLite.3.13.0\build\net45\SQLite.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SQLite.3.13.0\build\net45\SQLite.props'))" />
-    <Error Condition="!Exists('..\packages\docfx.console.2.22.1\build\docfx.console.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\docfx.console.2.22.1\build\docfx.console.targets'))" />
   </Target>
-  <Import Project="..\packages\docfx.console.2.22.1\build\docfx.console.targets" Condition="Exists('..\packages\docfx.console.2.22.1\build\docfx.console.targets')" />
 </Project>

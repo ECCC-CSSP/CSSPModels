@@ -10,27 +10,27 @@ using System.Linq;
 namespace CSSPModels
 {
     /// <summary>
-    ///     Entity object for Addresses DB Table
+    /// >    Entity object for Addresses DB Table
+    /// >   <c>[CSSPServices.AddressService] (../../../../CSSPServices/CSSPServices/_site/api/CSSPServices.AddressService.html)</c>
     /// </summary>
     public partial class Address
     {
         #region Properties in DB
         /// <summary>
-        /// Unique DB ID for the Addresses DB Table
+        /// > Unique DB ID for the Addresses DB Table
         /// </summary>
-        /// <param name="AddressID">The <see cref="AddressID" /> bonjour.</param>
         [Key]
         public int AddressID { get; set; }
         /// <summary description="Relational ID to the TVItems DB Table pointing to the Address">
         ///  Relational ID to the TVItems DB Table pointing to the Address
-        /// <para>Here's how you could make a second paragraph in a description. <see cref="System.Console.WriteLine(System.String)"/> for information about output statements.</para>
-        /// <seealso cref="TVItem"/>
+        ///  
+        /// See also: <seealso cref="TVItem"/>
         /// </summary>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "2")]
         public int AddressTVItemID { get; set; }
         /// <summary>
         /// Address type
-        /// See Also: <seealso cref="AddressTypeEnum"/>
+        /// See Also: <c>[CSSPEnums.AddressTypeEnum] (../../../../CSSPEnums/CSSPEnums/_site/api/CSSPEnums.AddressTypeEnum.html)</c>
         /// <remarks>
         /// <para>Allowable types</para>
         /// <code>
@@ -47,7 +47,11 @@ namespace CSSPModels
         [CSSPEnumType]
         public AddressTypeEnum AddressType { get; set; }
         /// <summary>
-        ///     Relational ID to the TVItems DB Table pointing to the Country
+        /// >   Relational ID to the TVItems DB Table pointing to the Country
+        /// >   
+        /// >   CSSP Attribute:
+        /// >   
+        /// >   <code>[CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "6")]</code>
         /// </summary>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "6")]
         public int CountryTVItemID { get; set; }

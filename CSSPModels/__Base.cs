@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
@@ -26,23 +27,12 @@ namespace CSSPModels
     /// }
     /// </code>
     /// </remarks>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public class CSSPAfterAttribute : ValidationAttribute
+    public class CSSPAfterAttribute : Attribute
     {
         /// <summary>
         /// Year for which the Date has to be after
         /// </summary>
         public int Year { get; set; }
-
-        /// <summary>
-        /// No used. Using own validation system.
-        /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
-        public override bool IsValid(object value)
-        {
-            return true;
-        }
     }
 
     /// <summary>
