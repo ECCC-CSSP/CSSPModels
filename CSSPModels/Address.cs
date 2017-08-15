@@ -11,7 +11,7 @@ namespace CSSPModels
 {
     /// <summary>
     /// >    Entity object for Addresses DB Table
-    /// >   <c>[CSSPServices.AddressService] (../../../../CSSPServices/CSSPServices/_site/api/CSSPServices.AddressService.html)</c>
+    /// >   <c>[CSSPServices.AddressService] (CSSPServices.AddressService.html)</c>
     /// </summary>
     public partial class Address
     {
@@ -30,7 +30,7 @@ namespace CSSPModels
         public int AddressTVItemID { get; set; }
         /// <summary>
         /// Address type
-        /// See Also: <c>[CSSPEnums.AddressTypeEnum] (../../../../CSSPEnums/CSSPEnums/_site/api/CSSPEnums.AddressTypeEnum.html)</c>
+        /// See Also: <c>[CSSPEnums.AddressTypeEnum] (CSSPEnums.AddressTypeEnum.html)</c>
         /// <remarks>
         /// <para>Allowable types</para>
         /// <code>
