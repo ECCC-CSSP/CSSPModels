@@ -58,10 +58,10 @@ namespace CSSPModelsGenerateCodeHelper
 
             sb.AppendLine(@"</root>");
 
-            StatusPermanantEvent(new StatusEventArgs("Files: "));
-            StatusPermanantEvent(new StatusEventArgs(modelsFiles.BaseDir + @"\CSSPModels\Resources\ModelsRes.resx"));
-            StatusPermanantEvent(new StatusEventArgs(modelsFiles.BaseDir + @"\CSSPModels\Resources\ModelsRes.fr.resx"));
-            StatusPermanantEvent(new StatusEventArgs("were created"));
+            StatusPermanentEvent(new StatusEventArgs("Files: "));
+            StatusPermanentEvent(new StatusEventArgs(modelsFiles.BaseDir + @"\CSSPModels\Resources\ModelsRes.resx"));
+            StatusPermanentEvent(new StatusEventArgs(modelsFiles.BaseDir + @"\CSSPModels\Resources\ModelsRes.fr.resx"));
+            StatusPermanentEvent(new StatusEventArgs("were created"));
 
             FileInfo fiOutput = new FileInfo(modelsFiles.BaseDir + @"\CSSPModels\Resources\ModelsRes.resx");
 

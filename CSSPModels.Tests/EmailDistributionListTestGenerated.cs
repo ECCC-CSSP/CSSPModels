@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void EmailDistributionList_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "EmailDistributionListID", "CountryTVItemID", "RegionName", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "EmailDistributionListID", "CountryTVItemID", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "CountryTVText", "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -91,7 +91,6 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(ModelsRes.EmailDistributionListEmailDistributionListID);
                Assert.IsNotNull(ModelsRes.EmailDistributionListCountryTVItemID);
-               Assert.IsNotNull(ModelsRes.EmailDistributionListRegionName);
                Assert.IsNotNull(ModelsRes.EmailDistributionListOrdinal);
                Assert.IsNotNull(ModelsRes.EmailDistributionListLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.EmailDistributionListLastUpdateContactTVItemID);
@@ -108,30 +107,27 @@ namespace CSSPModels.Tests
                int val2 = 45;
                emailDistributionList.CountryTVItemID = val2;
                Assert.AreEqual(val2, emailDistributionList.CountryTVItemID);
-               string val3 = "Some text";
-               emailDistributionList.RegionName = val3;
-               Assert.AreEqual(val3, emailDistributionList.RegionName);
-               int val4 = 45;
-               emailDistributionList.Ordinal = val4;
-               Assert.AreEqual(val4, emailDistributionList.Ordinal);
-               DateTime val5 = new DateTime(2010, 3, 4);
-               emailDistributionList.LastUpdateDate_UTC = val5;
-               Assert.AreEqual(val5, emailDistributionList.LastUpdateDate_UTC);
-               int val6 = 45;
-               emailDistributionList.LastUpdateContactTVItemID = val6;
-               Assert.AreEqual(val6, emailDistributionList.LastUpdateContactTVItemID);
+               int val3 = 45;
+               emailDistributionList.Ordinal = val3;
+               Assert.AreEqual(val3, emailDistributionList.Ordinal);
+               DateTime val4 = new DateTime(2010, 3, 4);
+               emailDistributionList.LastUpdateDate_UTC = val4;
+               Assert.AreEqual(val4, emailDistributionList.LastUpdateDate_UTC);
+               int val5 = 45;
+               emailDistributionList.LastUpdateContactTVItemID = val5;
+               Assert.AreEqual(val5, emailDistributionList.LastUpdateContactTVItemID);
+               string val6 = "Some text";
+               emailDistributionList.CountryTVText = val6;
+               Assert.AreEqual(val6, emailDistributionList.CountryTVText);
                string val7 = "Some text";
-               emailDistributionList.CountryTVText = val7;
-               Assert.AreEqual(val7, emailDistributionList.CountryTVText);
-               string val8 = "Some text";
-               emailDistributionList.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, emailDistributionList.LastUpdateContactTVText);
-               bool val9 = true;
-               emailDistributionList.HasErrors = val9;
-               Assert.AreEqual(val9, emailDistributionList.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               emailDistributionList.ValidationResults = val30;
-               Assert.AreEqual(val30, emailDistributionList.ValidationResults);
+               emailDistributionList.LastUpdateContactTVText = val7;
+               Assert.AreEqual(val7, emailDistributionList.LastUpdateContactTVText);
+               bool val8 = true;
+               emailDistributionList.HasErrors = val8;
+               Assert.AreEqual(val8, emailDistributionList.HasErrors);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
+               emailDistributionList.ValidationResults = val27;
+               Assert.AreEqual(val27, emailDistributionList.ValidationResults);
         }
     }
 }

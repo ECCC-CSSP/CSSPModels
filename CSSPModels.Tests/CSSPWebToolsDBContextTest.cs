@@ -63,12 +63,6 @@ namespace CSSPModels.Tests
             {
                 Assert.AreEqual(DatabaseTypeEnum.MemoryTestDB, db.DatabaseType);
                 Assert.AreEqual("", db.Error);
-
-                TVItem tvItem = (from c in db.TVItems
-                                 where c.TVLevel == 0
-                                 select c).FirstOrDefault();
-
-                Assert.AreEqual("", db.Error);
             }
         }
         [TestMethod]
@@ -77,12 +71,6 @@ namespace CSSPModels.Tests
             using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryCSSPWebToolsDB))
             {
                 Assert.AreEqual(DatabaseTypeEnum.MemoryCSSPWebToolsDB, db.DatabaseType);
-                Assert.AreEqual("", db.Error);
-
-                TVItem tvItem = (from c in db.TVItems
-                                 where c.TVLevel == 0
-                                 select c).FirstOrDefault();
-
                 Assert.AreEqual("", db.Error);
             }
         }
@@ -93,12 +81,6 @@ namespace CSSPModels.Tests
             {
                 Assert.AreEqual(DatabaseTypeEnum.SqlServerTestDB, db.DatabaseType);
                 Assert.AreEqual("", db.Error);
-
-                TVItem tvItem = (from c in db.TVItems
-                                 where c.TVLevel == 0
-                                 select c).FirstOrDefault();
-
-                Assert.AreEqual("", db.Error);
             }
         }
         [TestMethod]
@@ -107,12 +89,6 @@ namespace CSSPModels.Tests
             using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.SqlServerCSSPWebToolsDB))
             {
                 Assert.AreEqual(DatabaseTypeEnum.SqlServerCSSPWebToolsDB, db.DatabaseType);
-                Assert.AreEqual("", db.Error);
-
-                TVItem tvItem = (from c in db.TVItems
-                                 where c.TVLevel == 0
-                                 select c).FirstOrDefault();
-
                 Assert.AreEqual("", db.Error);
             }
         }

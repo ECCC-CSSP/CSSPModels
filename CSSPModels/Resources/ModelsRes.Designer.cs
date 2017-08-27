@@ -19,7 +19,7 @@ namespace CSSPModels.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class ModelsRes {
@@ -3067,15 +3067,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EmailDistributionListContactAgency.
-        /// </summary>
-        public static string EmailDistributionListContactAgency {
-            get {
-                return ResourceManager.GetString("EmailDistributionListContactAgency", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to EmailDistributionListContactCMPRainfallSeasonal.
         /// </summary>
         public static string EmailDistributionListContactCMPRainfallSeasonal {
@@ -3153,6 +3144,114 @@ namespace CSSPModels.Resources {
         public static string EmailDistributionListContactIsCC {
             get {
                 return ResourceManager.GetString("EmailDistributionListContactIsCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactLanguage.
+        /// </summary>
+        public static string EmailDistributionListContactLanguage {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactLanguageAgency.
+        /// </summary>
+        public static string EmailDistributionListContactLanguageAgency {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactLanguageAgency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactLanguageEmailDistributionListContactID.
+        /// </summary>
+        public static string EmailDistributionListContactLanguageEmailDistributionListContactID {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactLanguageEmailDistributionListContactID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactLanguageEmailDistributionListContactLanguageID.
+        /// </summary>
+        public static string EmailDistributionListContactLanguageEmailDistributionListContactLanguageID {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactLanguageEmailDistributionListContactLanguageID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactLanguageHasErrors.
+        /// </summary>
+        public static string EmailDistributionListContactLanguageHasErrors {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactLanguageHasErrors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactLanguageLanguage.
+        /// </summary>
+        public static string EmailDistributionListContactLanguageLanguage {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactLanguageLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactLanguageLanguageText.
+        /// </summary>
+        public static string EmailDistributionListContactLanguageLanguageText {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactLanguageLanguageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactLanguageLastUpdateContactTVItemID.
+        /// </summary>
+        public static string EmailDistributionListContactLanguageLastUpdateContactTVItemID {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactLanguageLastUpdateContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactLanguageLastUpdateContactTVText.
+        /// </summary>
+        public static string EmailDistributionListContactLanguageLastUpdateContactTVText {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactLanguageLastUpdateContactTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactLanguageLastUpdateDate_UTC.
+        /// </summary>
+        public static string EmailDistributionListContactLanguageLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactLanguageLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactLanguageTranslationStatus.
+        /// </summary>
+        public static string EmailDistributionListContactLanguageTranslationStatus {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactLanguageTranslationStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListContactLanguageTranslationStatusText.
+        /// </summary>
+        public static string EmailDistributionListContactLanguageTranslationStatusText {
+            get {
+                return ResourceManager.GetString("EmailDistributionListContactLanguageTranslationStatusText", resourceCulture);
             }
         }
         
@@ -3238,6 +3337,114 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListLanguage.
+        /// </summary>
+        public static string EmailDistributionListLanguage {
+            get {
+                return ResourceManager.GetString("EmailDistributionListLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListLanguageEmailDistributionListID.
+        /// </summary>
+        public static string EmailDistributionListLanguageEmailDistributionListID {
+            get {
+                return ResourceManager.GetString("EmailDistributionListLanguageEmailDistributionListID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListLanguageEmailDistributionListLanguageID.
+        /// </summary>
+        public static string EmailDistributionListLanguageEmailDistributionListLanguageID {
+            get {
+                return ResourceManager.GetString("EmailDistributionListLanguageEmailDistributionListLanguageID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListLanguageHasErrors.
+        /// </summary>
+        public static string EmailDistributionListLanguageHasErrors {
+            get {
+                return ResourceManager.GetString("EmailDistributionListLanguageHasErrors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListLanguageLanguage.
+        /// </summary>
+        public static string EmailDistributionListLanguageLanguage {
+            get {
+                return ResourceManager.GetString("EmailDistributionListLanguageLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListLanguageLanguageText.
+        /// </summary>
+        public static string EmailDistributionListLanguageLanguageText {
+            get {
+                return ResourceManager.GetString("EmailDistributionListLanguageLanguageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListLanguageLastUpdateContactTVItemID.
+        /// </summary>
+        public static string EmailDistributionListLanguageLastUpdateContactTVItemID {
+            get {
+                return ResourceManager.GetString("EmailDistributionListLanguageLastUpdateContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListLanguageLastUpdateContactTVText.
+        /// </summary>
+        public static string EmailDistributionListLanguageLastUpdateContactTVText {
+            get {
+                return ResourceManager.GetString("EmailDistributionListLanguageLastUpdateContactTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListLanguageLastUpdateDate_UTC.
+        /// </summary>
+        public static string EmailDistributionListLanguageLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("EmailDistributionListLanguageLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListLanguageRegionName.
+        /// </summary>
+        public static string EmailDistributionListLanguageRegionName {
+            get {
+                return ResourceManager.GetString("EmailDistributionListLanguageRegionName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListLanguageTranslationStatus.
+        /// </summary>
+        public static string EmailDistributionListLanguageTranslationStatus {
+            get {
+                return ResourceManager.GetString("EmailDistributionListLanguageTranslationStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailDistributionListLanguageTranslationStatusText.
+        /// </summary>
+        public static string EmailDistributionListLanguageTranslationStatusText {
+            get {
+                return ResourceManager.GetString("EmailDistributionListLanguageTranslationStatusText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EmailDistributionListLastUpdateContactTVItemID.
         /// </summary>
         public static string EmailDistributionListLastUpdateContactTVItemID {
@@ -3270,15 +3477,6 @@ namespace CSSPModels.Resources {
         public static string EmailDistributionListOrdinal {
             get {
                 return ResourceManager.GetString("EmailDistributionListOrdinal", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to EmailDistributionListRegionName.
-        /// </summary>
-        public static string EmailDistributionListRegionName {
-            get {
-                return ResourceManager.GetString("EmailDistributionListRegionName", resourceCulture);
             }
         }
         
@@ -7909,6 +8107,231 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameter.
+        /// </summary>
+        public static string MWQMAnalysisReportParameter {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterAnalysisCalculationType.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterAnalysisCalculationType {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterAnalysisCalculationType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterAnalysisReportYear.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterAnalysisReportYear {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterAnalysisReportYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterDryLimit24h.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterDryLimit24h {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterDryLimit24h", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterDryLimit48h.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterDryLimit48h {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterDryLimit48h", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterDryLimit72h.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterDryLimit72h {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterDryLimit72h", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterDryLimit96h.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterDryLimit96h {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterDryLimit96h", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterEndDate_Local.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterEndDate_Local {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterEndDate_Local", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterFullYear.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterFullYear {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterFullYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterHasErrors.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterHasErrors {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterHasErrors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterLastUpdateContactTVItemID.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterLastUpdateContactTVItemID {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterLastUpdateContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterLastUpdateContactTVText.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterLastUpdateContactTVText {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterLastUpdateContactTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterLastUpdateDate_UTC.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterMidRangeNumberOfDays.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterMidRangeNumberOfDays {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterMidRangeNumberOfDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterMWQMAnalysisReportParameterID.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterMWQMAnalysisReportParameterID {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterMWQMAnalysisReportParameterID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterMWQMSubsectorTVItemID.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterMWQMSubsectorTVItemID {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterMWQMSubsectorTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterName.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterName {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterNumberOfRuns.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterNumberOfRuns {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterNumberOfRuns", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterSalinityHighlightDeviationFromAverage.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterSalinityHighlightDeviationFromAverage {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterSalinityHighlightDeviationFromAverage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterShortRangeNumberOfDays.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterShortRangeNumberOfDays {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterShortRangeNumberOfDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterStartDate_Local.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterStartDate_Local {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterStartDate_Local", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterWetLimit24h.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterWetLimit24h {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterWetLimit24h", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterWetLimit48h.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterWetLimit48h {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterWetLimit48h", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterWetLimit72h.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterWetLimit72h {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterWetLimit72h", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterWetLimit96h.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterWetLimit96h {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterWetLimit96h", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMLookupMPN.
         /// </summary>
         public static string MWQMLookupMPN {
@@ -9385,42 +9808,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorIncludeRainEndDate.
-        /// </summary>
-        public static string MWQMSubsectorIncludeRainEndDate {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorIncludeRainEndDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorIncludeRainRunCount.
-        /// </summary>
-        public static string MWQMSubsectorIncludeRainRunCount {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorIncludeRainRunCount", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorIncludeRainSelectFullYear.
-        /// </summary>
-        public static string MWQMSubsectorIncludeRainSelectFullYear {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorIncludeRainSelectFullYear", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorIncludeRainStartDate.
-        /// </summary>
-        public static string MWQMSubsectorIncludeRainStartDate {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorIncludeRainStartDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to MWQMSubsectorLanguage.
         /// </summary>
         public static string MWQMSubsectorLanguage {
@@ -9570,177 +9957,6 @@ namespace CSSPModels.Resources {
         public static string MWQMSubsectorMWQMSubsectorTVItemID {
             get {
                 return ResourceManager.GetString("MWQMSubsectorMWQMSubsectorTVItemID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorNoRainEndDate.
-        /// </summary>
-        public static string MWQMSubsectorNoRainEndDate {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorNoRainEndDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorNoRainRunCount.
-        /// </summary>
-        public static string MWQMSubsectorNoRainRunCount {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorNoRainRunCount", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorNoRainSelectFullYear.
-        /// </summary>
-        public static string MWQMSubsectorNoRainSelectFullYear {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorNoRainSelectFullYear", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorNoRainStartDate.
-        /// </summary>
-        public static string MWQMSubsectorNoRainStartDate {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorNoRainStartDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorOnlyRainEndDate.
-        /// </summary>
-        public static string MWQMSubsectorOnlyRainEndDate {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorOnlyRainEndDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorOnlyRainRunCount.
-        /// </summary>
-        public static string MWQMSubsectorOnlyRainRunCount {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorOnlyRainRunCount", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorOnlyRainSelectFullYear.
-        /// </summary>
-        public static string MWQMSubsectorOnlyRainSelectFullYear {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorOnlyRainSelectFullYear", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorOnlyRainStartDate.
-        /// </summary>
-        public static string MWQMSubsectorOnlyRainStartDate {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorOnlyRainStartDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorRainDay0Limit.
-        /// </summary>
-        public static string MWQMSubsectorRainDay0Limit {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorRainDay0Limit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorRainDay10Limit.
-        /// </summary>
-        public static string MWQMSubsectorRainDay10Limit {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorRainDay10Limit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorRainDay1Limit.
-        /// </summary>
-        public static string MWQMSubsectorRainDay1Limit {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorRainDay1Limit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorRainDay2Limit.
-        /// </summary>
-        public static string MWQMSubsectorRainDay2Limit {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorRainDay2Limit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorRainDay3Limit.
-        /// </summary>
-        public static string MWQMSubsectorRainDay3Limit {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorRainDay3Limit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorRainDay4Limit.
-        /// </summary>
-        public static string MWQMSubsectorRainDay4Limit {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorRainDay4Limit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorRainDay5Limit.
-        /// </summary>
-        public static string MWQMSubsectorRainDay5Limit {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorRainDay5Limit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorRainDay6Limit.
-        /// </summary>
-        public static string MWQMSubsectorRainDay6Limit {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorRainDay6Limit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorRainDay7Limit.
-        /// </summary>
-        public static string MWQMSubsectorRainDay7Limit {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorRainDay7Limit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorRainDay8Limit.
-        /// </summary>
-        public static string MWQMSubsectorRainDay8Limit {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorRainDay8Limit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorRainDay9Limit.
-        /// </summary>
-        public static string MWQMSubsectorRainDay9Limit {
-            get {
-                return ResourceManager.GetString("MWQMSubsectorRainDay9Limit", resourceCulture);
             }
         }
         

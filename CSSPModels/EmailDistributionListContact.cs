@@ -14,8 +14,6 @@ namespace CSSPModels
         [CSSPExist(ExistTypeName = "EmailDistributionList", ExistPlurial = "s", ExistFieldID = "EmailDistributionListID")]
         public int EmailDistributionListID { get; set; }
         public bool IsCC { get; set; }
-        [StringLength(20)]
-        public string Agency { get; set; }
         [StringLength(100)]
         public string Name { get; set; }
         [StringLength(200)]

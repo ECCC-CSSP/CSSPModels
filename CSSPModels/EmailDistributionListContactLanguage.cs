@@ -6,18 +6,19 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class MWQMSubsector
+    public partial class EmailDistributionListContactLanguage
     {
         #region Properties in DB
         [Key]
-        public int MWQMSubsectorID { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "20")]
-        public int MWQMSubsectorTVItemID { get; set; }
-        [StringLength(20)]
-        public string SubsectorHistoricKey { get; set; }
-        [StringLength(20)]
-        [CSSPAllowNull]
-        public string TideLocationSIDText { get; set; }
+        public int EmailDistributionListContactLanguageID { get; set; }
+        [CSSPExist(ExistTypeName = "EmailDistributionListContact", ExistPlurial = "s", ExistFieldID = "EmailDistributionListContactID")]
+        public int EmailDistributionListContactID { get; set; }
+        [CSSPEnumType]
+        public LanguageEnum Language { get; set; }
+        [StringLength(100, MinimumLength = 1)]
+        public string Agency { get; set; }
+        [CSSPEnumType]
+        public TranslationStatusEnum TranslationStatus { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
@@ -28,13 +29,18 @@ namespace CSSPModels
         [NotMapped]
         [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSubsectorTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string SubsectorTVText { get; set; }
-        [NotMapped]
-        [StringLength(200)]
-        [CSSPAllowNull]
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
         public string LastUpdateContactTVText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
+        public string LanguageText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatus")]
+        public string TranslationStatusText { get; set; }
         [NotMapped]
         public bool HasErrors { get; set; }
         [NotMapped]
@@ -42,11 +48,10 @@ namespace CSSPModels
         #endregion Properties not in DB
 
         #region Constructors
-        public MWQMSubsector()
+        public EmailDistributionListContactLanguage()
         {
             ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
-
     }
 }

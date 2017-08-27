@@ -10,26 +10,26 @@ using CSSPEnums;
 namespace CSSPModels.Tests
 {
     [TestClass]
-    public partial class LastUpdateAndContactModelTest
+    public partial class MWQMAnalysisReportParameterTest
     {
         #region Variables
         #endregion Variables
 
         #region Properties
         private CSSPWebToolsDBContext db { get; set; }
-        private LastUpdateAndContactModel lastUpdateAndContactModel { get; set; }
+        private MWQMAnalysisReportParameter mWQMAnalysisReportParameter { get; set; }
         #endregion Properties
 
         #region Constructors
-        public LastUpdateAndContactModelTest()
+        public MWQMAnalysisReportParameterTest()
         {
             db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            lastUpdateAndContactModel = new LastUpdateAndContactModel();
+            mWQMAnalysisReportParameter = new MWQMAnalysisReportParameter();
         }
         #endregion Constructors
 
         #region Tests
-        // most of the tests are located under LastUpdateAndContactModelTestGenerated.cs
+        // most of the tests are located under MWQMAnalysisReportParameterTestGenerated.cs
         #endregion Tests
     }
 }

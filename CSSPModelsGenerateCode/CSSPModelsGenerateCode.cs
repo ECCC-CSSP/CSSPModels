@@ -19,6 +19,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.ComponentModel.DataAnnotations;
+using CSSPGenerateCodeBase;
 
 namespace CSSPModelsGenerateCode
 {
@@ -44,17 +45,6 @@ namespace CSSPModelsGenerateCode
         #endregion Construtors
 
         #region Events
-        private void butGenerate_DBReadTest_Click(object sender, EventArgs e)
-        {
-            // -----------------------------------------------------------------
-            // -----------------------------------------------------------------
-            // Will generate CSSPModels.Tests/_DBReadTestGenerated.cs files
-            // -----------------------------------------------------------------
-            // -----------------------------------------------------------------
-
-            richTextBoxStatus.Text = "";
-            modelsGenerateCodeHelper.Generate_DBReadTest(CSSPWebToolsDBConnectionString);
-        }
         private void butGenerateAllCodeFiles_Click(object sender, EventArgs e)
         {
             // -----------------------------------------------------------------
@@ -102,15 +92,15 @@ namespace CSSPModelsGenerateCode
             richTextBoxStatus.Text = "";
             modelsGenerateCodeHelper.RunModelLint(CSSPWebToolsDBConnectionString);
         }
-        private void ModelsGenerateCodeHelper_ErrorHandler(object sender, CSSPModelsGenerateCodeHelper.ErrorEventArgs e)
+        private void ModelsGenerateCodeHelper_ErrorHandler(object sender, GenerateCodeBase.ErrorEventArgs e)
         {
             richTextBoxStatus.AppendText(e.Error + "\r\n");
         }
-        private void ModelsGenerateCodeHelper_StatusPermanentHandler(object sender, StatusEventArgs e)
+        private void ModelsGenerateCodeHelper_StatusPermanentHandler(object sender, GenerateCodeBase.StatusEventArgs e)
         {
             richTextBoxStatus.AppendText(e.Status + "\r\n");
         }
-        private void ModelsGenerateCodeHelper_StatusTempHandler(object sender, StatusEventArgs e)
+        private void ModelsGenerateCodeHelper_StatusTempHandler(object sender, GenerateCodeBase.StatusEventArgs e)
         {
             lblStatus.Text = e.Status;
         }
@@ -144,6 +134,17 @@ namespace CSSPModelsGenerateCode
         }
         #endregion Functions private
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.SqlServerCSSPWebToolsDB))
+            {
+                TVItem tvItem = (from c in db.TVItems
+                                 where c.TVLevel == 0
+                                 select c).FirstOrDefault();
+
+                richTextBoxStatus.AppendText(tvItem.TVPath);
+            }
+        }
     }
 
 

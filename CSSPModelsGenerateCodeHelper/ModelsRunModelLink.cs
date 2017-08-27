@@ -323,7 +323,7 @@ namespace CSSPModelsGenerateCodeHelper
                 }
             }
 
-            StatusPermanantEvent(new StatusEventArgs(sb.ToString()));
+            StatusPermanentEvent(new StatusEventArgs(sb.ToString()));
 
             return true;
         }

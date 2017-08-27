@@ -45,7 +45,6 @@
             this.butRunModelLint = new System.Windows.Forms.Button();
             this.butGenerateAllCodeFiles = new System.Windows.Forms.Button();
             this.richTextBoxStatus = new System.Windows.Forms.RichTextBox();
-            this.butGenerate_DBReadTest = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -71,7 +70,6 @@
             this.splitContainer1.Panel1.Controls.Add(this.lblBaseDirTest);
             this.splitContainer1.Panel1.Controls.Add(this.textBoxBaseDir);
             this.splitContainer1.Panel1.Controls.Add(this.lblBaseDir);
-            this.splitContainer1.Panel1.Controls.Add(this.butGenerate_DBReadTest);
             this.splitContainer1.Panel1.Controls.Add(this.butGenerateSetupOnce);
             this.splitContainer1.Panel1.Controls.Add(this.butGenerateResOnce);
             this.splitContainer1.Panel1.Controls.Add(this.butRunModelLint);
@@ -229,16 +227,6 @@
             this.richTextBoxStatus.TabIndex = 0;
             this.richTextBoxStatus.Text = "";
             // 
-            // butGenerate_DBReadTest
-            // 
-            this.butGenerate_DBReadTest.Location = new System.Drawing.Point(557, 197);
-            this.butGenerate_DBReadTest.Name = "butGenerate_DBReadTest";
-            this.butGenerate_DBReadTest.Size = new System.Drawing.Size(163, 23);
-            this.butGenerate_DBReadTest.TabIndex = 11;
-            this.butGenerate_DBReadTest.Text = "Generate _DBRead Test";
-            this.butGenerate_DBReadTest.UseVisualStyleBackColor = true;
-            this.butGenerate_DBReadTest.Click += new System.EventHandler(this.butGenerate_DBReadTest_Click);
-            // 
             // CSSPModelsGenerateCode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -277,7 +265,6 @@
         private System.Windows.Forms.Button butGenerateSetupOnce;
         private System.Windows.Forms.Button butGenerateResOnce;
         private System.Windows.Forms.Button butRunModelLint;
-        private System.Windows.Forms.Button butGenerate_DBReadTest;
     }
 }
 

@@ -10,26 +10,26 @@ using CSSPEnums;
 namespace CSSPModels.Tests
 {
     [TestClass]
-    public partial class CSSPFillAttributeTest
+    public partial class EmailDistributionListLanguageTest
     {
         #region Variables
         #endregion Variables
 
         #region Properties
         private CSSPWebToolsDBContext db { get; set; }
-        private CSSPFillAttribute cSSPFillAttribute { get; set; }
+        private EmailDistributionListLanguage emailDistributionListLanguage { get; set; }
         #endregion Properties
 
         #region Constructors
-        public CSSPFillAttributeTest()
+        public EmailDistributionListLanguageTest()
         {
             db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            cSSPFillAttribute = new CSSPFillAttribute();
+            emailDistributionListLanguage = new EmailDistributionListLanguage();
         }
         #endregion Constructors
 
         #region Tests
-        // most of the tests are located under CSSPFillAttributeTestGenerated.cs
+        // most of the tests are located under EmailDistributionListLanguageTestGenerated.cs
         #endregion Tests
     }
 }

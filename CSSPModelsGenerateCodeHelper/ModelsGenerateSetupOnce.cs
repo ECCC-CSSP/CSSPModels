@@ -83,7 +83,7 @@ namespace CSSPModelsGenerateCodeHelper
                     sw2.Write(sb.ToString());
                 }
 
-                StatusPermanantEvent(new StatusEventArgs("Created [" + fiOutputGen.FullName + "] ..."));
+                StatusPermanentEvent(new StatusEventArgs("Created [" + fiOutputGen.FullName + "] ..."));
 
                 StatusTempEvent(new StatusEventArgs("Done ..."));
             }

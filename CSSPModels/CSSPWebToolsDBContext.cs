@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using System.Configuration;
 using CSSPEnums;
 using CSSPModels.Resources;
+using JetBrains.Annotations;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace CSSPModels
 {
@@ -33,7 +35,9 @@ namespace CSSPModels
         public virtual DbSet<DocTemplate> DocTemplates { get; set; }
         public virtual DbSet<Email> Emails { get; set; }
         public virtual DbSet<EmailDistributionList> EmailDistributionLists { get; set; }
+        public virtual DbSet<EmailDistributionListLanguage> EmailDistributionListLanguages { get; set; }
         public virtual DbSet<EmailDistributionListContact> EmailDistributionListContacts { get; set; }
+        public virtual DbSet<EmailDistributionListContactLanguage> EmailDistributionListContactLanguages { get; set; }
         public virtual DbSet<HydrometricDataValue> HydrometricDataValues { get; set; }
         public virtual DbSet<HydrometricSite> HydrometricSites { get; set; }
         public virtual DbSet<Infrastructure> Infrastructures { get; set; }
@@ -47,6 +51,7 @@ namespace CSSPModels
         public virtual DbSet<MikeBoundaryCondition> MikeBoundaryConditions { get; set; }
         public virtual DbSet<MikeScenario> MikeScenarios { get; set; }
         public virtual DbSet<MikeSourceStartEnd> MikeSourceStartEnds { get; set; }
+        public virtual DbSet<MWQMAnalysisReportParameter> MWQMAnalysisReportParameters { get; set; }
         public virtual DbSet<MikeSource> MikeSources { get; set; }
         public virtual DbSet<MWQMLookupMPN> MWQMLookupMPNs { get; set; }
         public virtual DbSet<MWQMRunLanguage> MWQMRunLanguages { get; set; }
@@ -150,6 +155,8 @@ namespace CSSPModels
             {
                 optionsBuilder.UseSqlServer(TestDBConnectionString);
             }
+
+            base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -13,8 +13,6 @@ namespace CSSPModels
         public int EmailDistributionListID { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "6")]
         public int CountryTVItemID { get; set; }
-        [StringLength(100)]
-        public string RegionName { get; set; }
         [Range(0, 1000)]
         public int Ordinal { get; set; }
         [CSSPAfter(Year = 1980)]

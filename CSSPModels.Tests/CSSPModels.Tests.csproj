@@ -136,8 +136,9 @@
     <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
     </Reference>
-    <Reference Include="System.Net.Http, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+    <Reference Include="System.Net.Http">
       <HintPath>..\packages\System.Net.Http.4.3.2\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
@@ -225,8 +226,12 @@
     <Compile Include="ElementLayerTestGenerated.cs" />
     <Compile Include="ElementTest.cs" />
     <Compile Include="ElementTestGenerated.cs" />
+    <Compile Include="EmailDistributionListContactLanguageTest.cs" />
+    <Compile Include="EmailDistributionListContactLanguageTestGenerated.cs" />
     <Compile Include="EmailDistributionListContactTest.cs" />
     <Compile Include="EmailDistributionListContactTestGenerated.cs" />
+    <Compile Include="EmailDistributionListLanguageTest.cs" />
+    <Compile Include="EmailDistributionListLanguageTestGenerated.cs" />
     <Compile Include="EmailDistributionListTest.cs" />
     <Compile Include="EmailDistributionListTestGenerated.cs" />
     <Compile Include="EmailTest.cs" />
@@ -283,6 +288,8 @@
     <Compile Include="MikeSourceStartEndTestGenerated.cs" />
     <Compile Include="MikeSourceTest.cs" />
     <Compile Include="MikeSourceTestGenerated.cs" />
+    <Compile Include="MWQMAnalysisReportParameterTest.cs" />
+    <Compile Include="MWQMAnalysisReportParameterTestGenerated.cs" />
     <Compile Include="MWQMLookupMPNTest.cs" />
     <Compile Include="MWQMLookupMPNTestGenerated.cs" />
     <Compile Include="MWQMRunLanguageTest.cs" />
@@ -417,7 +424,6 @@
     <Compile Include="VPScenarioLanguageTestGenerated.cs" />
     <Compile Include="VPScenarioTest.cs" />
     <Compile Include="VPScenarioTestGenerated.cs" />
-    <Compile Include="_DBReadTestGenerated.cs" />
     <Compile Include="CSSPWebToolsDBContextTest.cs" />
     <Compile Include="__BaseTest.cs" />
   </ItemGroup>
