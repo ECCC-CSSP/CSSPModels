@@ -447,11 +447,11 @@
 <data name="MWQMAnalysisReportParameterAnalysisReportYear" xml:space="preserve">
   <value>MWQMAnalysisReportParameterAnalysisReportYear</value>
 </data>
-<data name="MWQMAnalysisReportParameterStartDate_Local" xml:space="preserve">
-  <value>MWQMAnalysisReportParameterStartDate_Local</value>
+<data name="MWQMAnalysisReportParameterStartDate" xml:space="preserve">
+  <value>MWQMAnalysisReportParameterStartDate</value>
 </data>
-<data name="MWQMAnalysisReportParameterEndDate_Local" xml:space="preserve">
-  <value>MWQMAnalysisReportParameterEndDate_Local</value>
+<data name="MWQMAnalysisReportParameterEndDate" xml:space="preserve">
+  <value>MWQMAnalysisReportParameterEndDate</value>
 </data>
 <data name="MWQMAnalysisReportParameterAnalysisCalculationType" xml:space="preserve">
   <value>MWQMAnalysisReportParameterAnalysisCalculationType</value>

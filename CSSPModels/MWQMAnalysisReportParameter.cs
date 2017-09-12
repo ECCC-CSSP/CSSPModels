@@ -18,10 +18,10 @@ namespace CSSPModels
         [Range(1980, 2050)]
         public int AnalysisReportYear { get; set; }
         [CSSPAfter(Year = 1980)]
-        public DateTime StartDate_Local { get; set; }
-        [CSSPBigger(OtherField = "StartDate_Local")]
+        public DateTime StartDate { get; set; }
+        [CSSPBigger(OtherField = "StartDate")]
         [CSSPAfter(Year = 1980)]
-        public DateTime EndDate_Local { get; set; }
+        public DateTime EndDate { get; set; }
         [CSSPEnumType]
         public AnalysisCalculationTypeEnum AnalysisCalculationType { get; set; }
         [Range(1, 1000)]
@@ -51,6 +51,7 @@ namespace CSSPModels
         public int WetLimit96h { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB

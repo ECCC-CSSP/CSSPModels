@@ -13,6 +13,7 @@ namespace CSSPModels
         public int ContactID { get; set; }
         [StringLength(128)]
         public string Id { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int ContactTVItemID { get; set; }
         [StringLength(255, MinimumLength = 6)]
@@ -39,6 +40,7 @@ namespace CSSPModels
         public string SamplingPlanner_ProvincesTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB

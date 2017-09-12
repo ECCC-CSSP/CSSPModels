@@ -11,6 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int TVFileID { get; set; }
+        // AllowableTVTypeList TVTypeEnum.File
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "8")]
         public int TVFileTVItemID { get; set; }
         [CSSPEnumType]
@@ -37,6 +38,7 @@ namespace CSSPModels
         public string ServerFilePath { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB

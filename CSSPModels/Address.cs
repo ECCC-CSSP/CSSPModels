@@ -1,11 +1,8 @@
 ﻿using CSSPEnums;
-using CSSPModels.Resources;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
 
 namespace CSSPModels
 {
@@ -26,6 +23,7 @@ namespace CSSPModels
         ///  
         /// See also: <seealso cref="TVItem"/>
         /// </summary>
+        // AllowableTVTypeList TVTypeEnum.Address
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "2")]
         public int AddressTVItemID { get; set; }
         /// <summary>
@@ -53,16 +51,19 @@ namespace CSSPModels
         /// >   
         /// >   <code>[CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "6")]</code>
         /// </summary>
+        // AllowableTVTypeList TVTypeEnum.Country
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "6")]
         public int CountryTVItemID { get; set; }
         /// <summary>
         ///     Relational ID to the TVItems DB Table pointing to the Province
         /// </summary>
+        // AllowableTVTypeList TVTypeEnum.Province
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "18")]
         public int ProvinceTVItemID { get; set; }
         /// <summary>
         ///     Relational ID to the TVItems DB Table pointing to the Municipatlity
         /// </summary>
+        // AllowableTVTypeList TVTypeEnum.Municipality
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "15")]
         public int MunicipalityTVItemID { get; set; }
         [CSSPAllowNull]
@@ -75,7 +76,6 @@ namespace CSSPModels
         [StringLength(50)]
         public string StreetNumber { get; set; }
         /// <summary>
-        /// Street type
         /// <remarks>
         /// <para>Allowable types</para>
         /// <code>
@@ -106,12 +106,14 @@ namespace CSSPModels
         public string GoogleAddressText { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
+        // AllowableTVTypeList TVTypeEnum.Root, TVTypeEnum.Infrastructure, TVTypeEnum.Contact, TVTypeEnum.PolSourceSite
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,10,5,17")]
         [CSSPFill(FillTypeName = "TVItem", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "AddressTVItemID", FillReturnField = "ParentID", FillNeedLanguage = false)]
         public int ParentTVItemID { get; set; }

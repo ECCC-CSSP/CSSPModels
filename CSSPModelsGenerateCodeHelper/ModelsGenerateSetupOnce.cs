@@ -14,7 +14,7 @@ namespace CSSPModelsGenerateCodeHelper
     {
         public void GenerateSetupOnce()
         {
-            FileInfo fiDLL = new FileInfo(modelsFiles.CSSPModelsDLL);
+            FileInfo fiDLL = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll");
 
             if (!fiDLL.Exists)
             {
@@ -77,7 +77,7 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"    }");
                 sb.AppendLine(@"}");
 
-                FileInfo fiOutputGen = new FileInfo(modelsFiles.BaseDir + modelsFiles.BaseDirTest + type.Name + "Test.cs");
+                FileInfo fiOutputGen = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels.Tests\" + type.Name + "Test.cs");
                 using (StreamWriter sw2 = fiOutputGen.CreateText())
                 {
                     sw2.Write(sb.ToString());

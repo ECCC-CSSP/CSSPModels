@@ -11,6 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int TideDataValueID { get; set; }
+        // AllowableTVTypeList TVTypeEnum.TideSite
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "22")]
         public int TideSiteTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
@@ -34,6 +35,7 @@ namespace CSSPModels
         public TideTextEnum? TideEnd { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB

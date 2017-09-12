@@ -11,8 +11,10 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int UseOfSiteID { get; set; }
+        // AllowableTVTypeList TVTypeEnum.ClimateSite, TVTypeEnum.HydrometricSite, TVTypeEnum.TideSite
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "4,9,22")]
         public int SiteTVItemID { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Subsector
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "20")]
         public int SubsectorTVItemID { get; set; }
         [CSSPEnumType]
@@ -37,6 +39,7 @@ namespace CSSPModels
         public double? Param4 { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB

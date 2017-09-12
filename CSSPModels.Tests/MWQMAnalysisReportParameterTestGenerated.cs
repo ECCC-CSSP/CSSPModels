@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMAnalysisReportParameter_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MWQMAnalysisReportParameterID", "MWQMSubsectorTVItemID", "Name", "AnalysisReportYear", "StartDate_Local", "EndDate_Local", "AnalysisCalculationType", "NumberOfRuns", "FullYear", "SalinityHighlightDeviationFromAverage", "ShortRangeNumberOfDays", "MidRangeNumberOfDays", "DryLimit24h", "DryLimit48h", "DryLimit72h", "DryLimit96h", "WetLimit24h", "WetLimit48h", "WetLimit72h", "WetLimit96h", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MWQMAnalysisReportParameterID", "MWQMSubsectorTVItemID", "Name", "AnalysisReportYear", "StartDate", "EndDate", "AnalysisCalculationType", "NumberOfRuns", "FullYear", "SalinityHighlightDeviationFromAverage", "ShortRangeNumberOfDays", "MidRangeNumberOfDays", "DryLimit24h", "DryLimit48h", "DryLimit72h", "DryLimit96h", "WetLimit24h", "WetLimit48h", "WetLimit72h", "WetLimit96h", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -93,8 +93,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterMWQMSubsectorTVItemID);
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterName);
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterAnalysisReportYear);
-               Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterStartDate_Local);
-               Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterEndDate_Local);
+               Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterStartDate);
+               Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterEndDate);
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterAnalysisCalculationType);
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterNumberOfRuns);
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterFullYear);
@@ -130,11 +130,11 @@ namespace CSSPModels.Tests
                mWQMAnalysisReportParameter.AnalysisReportYear = val4;
                Assert.AreEqual(val4, mWQMAnalysisReportParameter.AnalysisReportYear);
                DateTime val5 = new DateTime(2010, 3, 4);
-               mWQMAnalysisReportParameter.StartDate_Local = val5;
-               Assert.AreEqual(val5, mWQMAnalysisReportParameter.StartDate_Local);
+               mWQMAnalysisReportParameter.StartDate = val5;
+               Assert.AreEqual(val5, mWQMAnalysisReportParameter.StartDate);
                DateTime val6 = new DateTime(2010, 3, 4);
-               mWQMAnalysisReportParameter.EndDate_Local = val6;
-               Assert.AreEqual(val6, mWQMAnalysisReportParameter.EndDate_Local);
+               mWQMAnalysisReportParameter.EndDate = val6;
+               Assert.AreEqual(val6, mWQMAnalysisReportParameter.EndDate);
                AnalysisCalculationTypeEnum val7 = (AnalysisCalculationTypeEnum)3;
                mWQMAnalysisReportParameter.AnalysisCalculationType = val7;
                Assert.AreEqual(val7, mWQMAnalysisReportParameter.AnalysisCalculationType);

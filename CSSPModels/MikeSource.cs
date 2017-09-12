@@ -11,6 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int MikeSourceID { get; set; }
+        // AllowableTVTypeList TVTypeEnum.MikeSource
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "14")]
         public int MikeSourceTVItemID { get; set; }
         public bool IsContinuous { get; set; }
@@ -20,6 +21,7 @@ namespace CSSPModels
         public string SourceNumberString { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB

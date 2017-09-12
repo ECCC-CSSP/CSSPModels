@@ -15,6 +15,7 @@ namespace CSSPModels
         public int LabSheetID { get; set; }
         [CSSPExist(ExistTypeName = "SamplingPlan", ExistPlurial = "s", ExistFieldID = "SamplingPlanID")]
         public int SamplingPlanID { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Subsector
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "20")]
         public int SubsectorTVItemID { get; set; }
         [Range(1, 5)]
@@ -164,6 +165,7 @@ namespace CSSPModels
         public bool? IntertechReadAcceptable { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB

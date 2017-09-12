@@ -14,7 +14,7 @@ namespace CSSPModelsGenerateCodeHelper
         #region Functions public
         public void GenerateModelsTest()
         {
-            FileInfo fiDLL = new FileInfo(modelsFiles.CSSPModelsDLL);
+            FileInfo fiDLL = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll");
 
             if (!fiDLL.Exists)
             {
@@ -345,7 +345,7 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"}");
 
                 //FileInfo fiOutput = new FileInfo(textBoxBaseDir.Text + textBoxFile1ToGenerate.Text + type.Name + "TestGenerated.cs");
-                FileInfo fiOutput = new FileInfo(modelsFiles.BaseDir + modelsFiles.BaseDirTest + type.Name + "TestGenerated.cs");
+                FileInfo fiOutput = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels.Tests\" + type.Name + "TestGenerated.cs");
 
                 using (StreamWriter sw = fiOutput.CreateText())
                 {

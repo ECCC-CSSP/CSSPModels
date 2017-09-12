@@ -21,8 +21,10 @@ namespace CSSPModels
         public SamplingPlanTypeEnum SamplingPlanType { get; set; }
         [CSSPEnumType]
         public LabSheetTypeEnum LabSheetType { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Province
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "18")]
         public int ProvinceTVItemID { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int CreatorTVItemID { get; set; }
         [Range(2000, 2050)]
@@ -36,10 +38,12 @@ namespace CSSPModels
         public bool IncludeLaboratoryQAQC { get; set; }
         [StringLength(15)]
         public string ApprovalCode { get; set; }
+        // AllowableTVTypeList TVTypeEnum.File
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "8")]
         public int? SamplingPlanFileTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB

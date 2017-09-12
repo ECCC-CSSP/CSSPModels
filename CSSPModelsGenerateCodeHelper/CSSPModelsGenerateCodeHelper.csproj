@@ -99,6 +99,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModelsWithHelpGenerate.cs" />
     <Compile Include="ModelsRunModelLink.cs" />
     <Compile Include="ModelsResTopPart.cs" />
     <Compile Include="ModelsGenerateSetupOnce.cs" />

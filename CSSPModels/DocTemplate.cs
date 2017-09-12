@@ -15,12 +15,14 @@ namespace CSSPModels
         public LanguageEnum Language { get; set; }
         [CSSPEnumType]
         public TVTypeEnum TVType { get; set; }
+        // AllowableTVTypeList TVTypeEnum.File
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "8")]
         public int TVFileTVItemID { get; set; }
         [StringLength(150)]
         public string FileName { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB

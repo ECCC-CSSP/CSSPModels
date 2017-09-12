@@ -13,11 +13,13 @@ namespace CSSPModels
         public int SamplingPlanSubsectorSiteID { get; set; }
         [CSSPExist(ExistTypeName = "SamplingPlanSubsector", ExistPlurial = "s", ExistFieldID = "SamplingPlanSubsectorID")]
         public int SamplingPlanSubsectorID { get; set; }
+        // AllowableTVTypeList TVTypeEnum.MWQMSite
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "16")]
         public int MWQMSiteTVItemID { get; set; }
         public bool IsDuplicate { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB

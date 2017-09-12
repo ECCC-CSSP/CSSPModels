@@ -8170,11 +8170,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMAnalysisReportParameterEndDate_Local.
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterEndDate.
         /// </summary>
-        public static string MWQMAnalysisReportParameterEndDate_Local {
+        public static string MWQMAnalysisReportParameterEndDate {
             get {
-                return ResourceManager.GetString("MWQMAnalysisReportParameterEndDate_Local", resourceCulture);
+                return ResourceManager.GetString("MWQMAnalysisReportParameterEndDate", resourceCulture);
             }
         }
         
@@ -8287,11 +8287,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMAnalysisReportParameterStartDate_Local.
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterStartDate.
         /// </summary>
-        public static string MWQMAnalysisReportParameterStartDate_Local {
+        public static string MWQMAnalysisReportParameterStartDate {
             get {
-                return ResourceManager.GetString("MWQMAnalysisReportParameterStartDate_Local", resourceCulture);
+                return ResourceManager.GetString("MWQMAnalysisReportParameterStartDate", resourceCulture);
             }
         }
         

@@ -330,7 +330,7 @@ namespace CSSPModelsGenerateCodeHelper
         private bool LoadCSSPModelsDLLInfo(List<TypeProp> typePropList)
         {
 
-            FileInfo fiDLL = new FileInfo(modelsFiles.CSSPModelsDLL);
+            FileInfo fiDLL = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll");
 
             if (!fiDLL.Exists)
             {

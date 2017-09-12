@@ -15,7 +15,7 @@ namespace CSSPModelsGenerateCodeHelper
         public void GenerateResOnce()
         {
             StringBuilder sb = new StringBuilder();
-            FileInfo fiDLL = new FileInfo(modelsFiles.CSSPModelsDLL);
+            FileInfo fiDLL = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll");
 
             if (!fiDLL.Exists)
             {
@@ -59,18 +59,18 @@ namespace CSSPModelsGenerateCodeHelper
             sb.AppendLine(@"</root>");
 
             StatusPermanentEvent(new StatusEventArgs("Files: "));
-            StatusPermanentEvent(new StatusEventArgs(modelsFiles.BaseDir + @"\CSSPModels\Resources\ModelsRes.resx"));
-            StatusPermanentEvent(new StatusEventArgs(modelsFiles.BaseDir + @"\CSSPModels\Resources\ModelsRes.fr.resx"));
+            StatusPermanentEvent(new StatusEventArgs(@"C:\CSSP Code\CSSPModels\CSSPModels\Resources\ModelsRes.resx"));
+            StatusPermanentEvent(new StatusEventArgs(@"C:\CSSP Code\CSSPModels\CSSPModels\Resources\ModelsRes.fr.resx"));
             StatusPermanentEvent(new StatusEventArgs("were created"));
 
-            FileInfo fiOutput = new FileInfo(modelsFiles.BaseDir + @"\CSSPModels\Resources\ModelsRes.resx");
+            FileInfo fiOutput = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\Resources\ModelsRes.resx");
 
             using (StreamWriter sw = fiOutput.CreateText())
             {
                 sw.Write(sb.ToString());
             }
 
-            fiOutput = new FileInfo(modelsFiles.BaseDir + @"\CSSPModels\Resources\ModelsRes.fr.resx");
+            fiOutput = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\Resources\ModelsRes.fr.resx");
 
             using (StreamWriter sw = fiOutput.CreateText())
             {

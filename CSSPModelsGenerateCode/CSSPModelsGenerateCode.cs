@@ -81,6 +81,18 @@ namespace CSSPModelsGenerateCode
             richTextBoxStatus.Text = "";
             modelsGenerateCodeHelper.GenerateSetupOnce();
         }
+        private void butGenerateModelsWithHelp_Click(object sender, EventArgs e)
+        {
+            // -----------------------------------------------------------------
+            // -----------------------------------------------------------------
+            // Will generate CSSPModels.Tests/[ClassName]Test.cs files this should only be run once
+            // -----------------------------------------------------------------
+            // -----------------------------------------------------------------
+
+            richTextBoxStatus.Text = "";
+            richTextBoxStatus2.Text = "";
+            modelsGenerateCodeHelper.ModelsWithHelpGenerate();
+        }
         private void butRunModelLint_Click(object sender, EventArgs e)
         {
             // -----------------------------------------------------------------
@@ -100,9 +112,15 @@ namespace CSSPModelsGenerateCode
         {
             richTextBoxStatus.AppendText(e.Status + "\r\n");
         }
+        private void ModelsGenerateCodeHelper_StatusPermanent2Handler(object sender, GenerateCodeBase.StatusEventArgs e)
+        {
+            richTextBoxStatus2.AppendText(e.Status + "\r\n");
+        }
         private void ModelsGenerateCodeHelper_StatusTempHandler(object sender, GenerateCodeBase.StatusEventArgs e)
         {
             lblStatus.Text = e.Status;
+            lblStatus.Refresh();
+            Application.DoEvents();
         }
         #endregion Events
 
@@ -112,15 +130,11 @@ namespace CSSPModelsGenerateCode
         #region Functions private
         private void StartUp()
         {
-            ModelsFiles modelsFiles = new ModelsFiles();
-            modelsFiles.BaseDir = textBoxBaseDir.Text;
-            modelsFiles.CSSPModelsDLL = textBoxCSSPModelsDLL.Text;
-            modelsFiles.BaseDirTest = textBoxBaseDirTest.Text;
-
-            modelsGenerateCodeHelper = new ModelsGenerateCodeHelper(modelsFiles);
+            modelsGenerateCodeHelper = new ModelsGenerateCodeHelper();
 
             modelsGenerateCodeHelper.ErrorHandler += ModelsGenerateCodeHelper_ErrorHandler;
             modelsGenerateCodeHelper.StatusPermanentHandler += ModelsGenerateCodeHelper_StatusPermanentHandler;
+            modelsGenerateCodeHelper.StatusPermanent2Handler += ModelsGenerateCodeHelper_StatusPermanent2Handler;
             modelsGenerateCodeHelper.StatusTempHandler += ModelsGenerateCodeHelper_StatusTempHandler;
 
             db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
@@ -133,19 +147,5 @@ namespace CSSPModelsGenerateCode
             }
         }
         #endregion Functions private
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.SqlServerCSSPWebToolsDB))
-            {
-                TVItem tvItem = (from c in db.TVItems
-                                 where c.TVLevel == 0
-                                 select c).FirstOrDefault();
-
-                richTextBoxStatus.AppendText(tvItem.TVPath);
-            }
-        }
     }
-
-
 }

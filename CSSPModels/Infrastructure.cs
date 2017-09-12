@@ -11,6 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int InfrastructureID { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Infrastructure
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]
         public int InfrastructureTVItemID { get; set; }
         [Range(0, 100000)]
@@ -107,12 +108,15 @@ namespace CSSPModels
         public int? ReceivingWater_MPN_per_100ml { get; set; }
         [Range(0.0D, 1000.0D)]
         public double? DistanceFromShore_m { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Infrastructure
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]
         public int? SeeOtherTVItemID { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]
+        // AllowableTVTypeList TVTypeEnum.Address
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "2")]
         public int? CivicAddressTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB

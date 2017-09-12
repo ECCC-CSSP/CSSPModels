@@ -11,8 +11,10 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int MWQMRunID { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Subsector
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "20")]
         public int SubsectorTVItemID { get; set; }
+        // AllowableTVTypeList TVTypeEnum.MWQMRun
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "31")]
         public int MWQMRunTVItemID { get; set; }
         [CSSPEnumType]
@@ -59,6 +61,7 @@ namespace CSSPModels
         [CSSPEnumType]
         [CSSPAllowNull]
         public SampleStatusEnum? SampleStatus { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int? LabSampleApprovalContactTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
@@ -100,6 +103,7 @@ namespace CSSPModels
         public bool? RemoveFromStat { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB

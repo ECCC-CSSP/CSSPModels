@@ -11,6 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int PolSourceSiteID { get; set; }
+        // AllowableTVTypeList TVTypeEnum.PolSourceSite
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "17")]
         public int PolSourceSiteTVItemID { get; set; }
         [StringLength(50)]
@@ -26,10 +27,12 @@ namespace CSSPModels
         [CSSPEnumType]
         [CSSPAllowNull]
         public PolSourceInactiveReasonEnum? InactiveReason { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Address
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "2")]
         public int? CivicAddressTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
+        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
