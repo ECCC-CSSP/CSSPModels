@@ -25,12 +25,9 @@ namespace CSSPModels
         public int Day { get; set; }
         [Range(1, 100)]
         public int RunNumber { get; set; }
-        // AllowableTVTypeList TVTypeEnum.Subsector
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "20")]
         public int SubsectorTVItemID { get; set; }
-        // AllowableTVTypeList TVTypeEnum.MWQMRun
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "31")]
-        [CSSPAllowNull]
         public int? MWQMRunTVItemID { get; set; }
         [CSSPEnumType]
         public SamplingPlanTypeEnum SamplingPlanType { get; set; }
@@ -44,9 +41,7 @@ namespace CSSPModels
         public string FileName { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime FileLastModifiedDate_Local { get; set; }
-
         public string FileContent { get; set; }
-        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int? AcceptedOrRejectedByContactTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
@@ -56,7 +51,6 @@ namespace CSSPModels
         public string RejectReason { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
@@ -114,6 +108,5 @@ namespace CSSPModels
             ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
-
     }
 }

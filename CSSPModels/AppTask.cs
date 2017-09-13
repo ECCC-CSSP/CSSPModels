@@ -11,20 +11,8 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int AppTaskID { get; set; }
-        // AllowableTVTypeList 
-        // TVTypeEnum.Root, TVTypeEnum.Country, TVTypeEnum.Province, TVTypeEnum.Area, TVTypeEnum.Sector, TVTypeEnum.Subsector
-        // TVTypeEnum.ClimateSite, TVTypeEnum.File, TVTypeEnum.Hydrometric, TVTypeEnum.Infrastructure, TVTypeEnum.MikeBoundaryConditionMesh 
-        // TVTypeEnum.MikeBoundaryConditionWebTide, TVTypeEnum.MikeScenario, TVTypeEnum.MikeSource, TVTypeEnum.Municipality
-        // TVTypeEnum.MWQMRun, TVTypeEnum.MWQMSite, TVTypeEnum.MWQMSiteSample, TVTypeEnum.PolSourceSite, TVTypeEnum.SamplingPlan
-        // TVTypeEnum.Spill, TVTypeEnum.TideSite, TVTypeEnum.VisualPlumesScenario 
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,6,18,3,19,20,4,8,9,10,12,11,13,14,15,31,16,23,17,40,26,22,28")]  
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,6,18,3,19,20,4,8,9,10,12,11,13,14,15,31,16,23,17,40,26,22,28")]
         public int TVItemID { get; set; }
-        // AllowableTVTypeList 
-        // TVTypeEnum.Root, TVTypeEnum.Country, TVTypeEnum.Province, TVTypeEnum.Area, TVTypeEnum.Sector, TVTypeEnum.Subsector
-        // TVTypeEnum.ClimateSite, TVTypeEnum.File, TVTypeEnum.Hydrometric, TVTypeEnum.Infrastructure, TVTypeEnum.MikeBoundaryConditionMesh 
-        // TVTypeEnum.MikeBoundaryConditionWebTide, TVTypeEnum.MikeScenario, TVTypeEnum.MikeSource, TVTypeEnum.Municipality
-        // TVTypeEnum.MWQMRun, TVTypeEnum.MWQMSite, TVTypeEnum.MWQMSiteSample, TVTypeEnum.PolSourceSite, TVTypeEnum.SamplingPlan
-        // TVTypeEnum.Spill, TVTypeEnum.TideSite, TVTypeEnum.VisualPlumesScenario 
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,6,18,3,19,20,4,8,9,10,12,11,13,14,15,31,16,23,17,40,26,22,28")]
         public int TVItemID2 { get; set; }
         [CSSPEnumType]
@@ -47,7 +35,6 @@ namespace CSSPModels
         public int? RemainingTime_second { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
@@ -95,6 +82,5 @@ namespace CSSPModels
             ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
-
     }
 }

@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     public partial class ContactLogin
-    {     
+    {
         #region Properties in DB
         [Key]
         public int ContactLoginID { get; set; }
@@ -20,7 +20,6 @@ namespace CSSPModels
         public byte[] PasswordSalt { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
-        // AllowableTVTypeList TVTypeEnum.Contact
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
