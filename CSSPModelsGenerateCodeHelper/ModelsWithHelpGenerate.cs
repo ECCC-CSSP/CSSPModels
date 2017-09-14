@@ -15,21 +15,6 @@ namespace CSSPModelsGenerateCodeHelper
         #region Functions public
         public void ModelsWithHelpGenerate()
         {
-            FileInfo fiCodeFile = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\Address.cs");
-
-            if (!fiCodeFile.Exists)
-            {
-                ErrorEvent(new ErrorEventArgs(fiCodeFile.FullName + " does not exist"));
-                return;
-            }
-
-            StreamReader sr = fiCodeFile.OpenText();
-            string OriginalCodeFile = sr.ReadToEnd();
-            sr.Close();
-
-            StatusPermanentEvent(new StatusEventArgs(OriginalCodeFile));
-            Application.DoEvents();
-
             StringBuilder sb = new StringBuilder();
 
             //FileInfo fiCSSPEnumsDLL = new FileInfo(@"C:\CSSP Code\CSSPEnums\CSSPEnums\bin\Debug\CSSPEnums.dll");
@@ -75,6 +60,9 @@ namespace CSSPModelsGenerateCodeHelper
 
             foreach (DLLTypeInfo dllTypeInfoModels in DLLTypeInfoCSSPModelsList)
             {
+                bool PleaseStop = false;
+                bool NotMappedClass = false;
+
                 StatusTempEvent(new StatusEventArgs(dllTypeInfoModels.Type.Name));
                 Application.DoEvents();
 
@@ -83,10 +71,10 @@ namespace CSSPModelsGenerateCodeHelper
                     continue;
                 }
 
-                if (dllTypeInfoModels.Type.Name != "BoxModel")
-                {
-                    continue;
-                }
+                //if (dllTypeInfoModels.Type.Name != "BoxModelCalNumb")
+                //{
+                //    continue;
+                //}
 
                 sb.AppendLine(@"using CSSPEnums;");
                 sb.AppendLine(@"using System;");
@@ -99,39 +87,70 @@ namespace CSSPModelsGenerateCodeHelper
                 //sb.AppendLine(@"    /// <summary>");
                 //sb.AppendLine(@"    ///     Entity object for " + dllTypeInfoModels.Type + (dllTypeInfoModels.Type.Name == "Address" ? "es" : "s") + " DB Table");
                 //sb.AppendLine(@"    /// <summary>");
+
+                FileInfo fiCodeFile = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\" + dllTypeInfoModels.Type.Name + ".cs");
+
+                if (!fiCodeFile.Exists)
+                {
+                    NotMappedClass = true;
+                    fiCodeFile = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\_" + dllTypeInfoModels.Type.Name + ".cs");
+                    if (!fiCodeFile.Exists)
+                    {
+                        ErrorEvent(new ErrorEventArgs("Could not find file for [" + dllTypeInfoModels.Type.Name + "]"));
+                        return;
+                    }
+                }
+
+                StreamReader sr = fiCodeFile.OpenText();
+                string OriginalCodeFile = sr.ReadToEnd();
+                sr.Close();
+
+                StatusPermanentEvent(new StatusEventArgs(OriginalCodeFile));
+                Application.DoEvents();
+
+                if (NotMappedClass)
+                {
+                    sb.AppendLine(@"    [NotMapped]");
+                }
                 sb.AppendLine(@"    public partial class " + dllTypeInfoModels.Type.Name);
                 sb.AppendLine(@"    {");
                 sb.AppendLine(@"        #region Properties in DB");
-                foreach (DLLPropertyInfo dllPropertyInfo in dllTypeInfoModels.PropertyInfoList)
+                if (!NotMappedClass)
                 {
-                    if (dllPropertyInfo.CSSPProp.HasNotMappedAttribute)
+                    foreach (DLLPropertyInfo dllPropertyInfo in dllTypeInfoModels.PropertyInfoList)
                     {
-                        continue;
+                        if (dllPropertyInfo.CSSPProp.HasNotMappedAttribute)
+                        {
+                            continue;
+                        }
+                        if (dllPropertyInfo.CSSPProp.PropName == "ValidationResults")
+                        {
+                            continue;
+                        }
+                        if (!WriteAttributes(dllPropertyInfo, sb))
+                        {
+                            return;
+                        }
+                        string PropTypeText = GetTypeText(dllPropertyInfo.CSSPProp.PropType);
+                        if (string.IsNullOrWhiteSpace(PropTypeText))
+                        {
+                            StatusPermanent2Event(new StatusEventArgs(dllPropertyInfo.CSSPProp.PropType + " is not implemented"));
+                            return;
+                        }
+                        sb.AppendLine(@"        public " + PropTypeText + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") + " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
                     }
-                    if (dllPropertyInfo.CSSPProp.PropName == "ValidationResults")
-                    {
-                        continue;
-                    }
-                    if (!WriteAttributes(dllPropertyInfo, sb))
-                    {
-                        return;
-                    }
-                    string PropTypeText = GetTypeText(dllPropertyInfo.CSSPProp.PropType);
-                    if (string.IsNullOrWhiteSpace(PropTypeText))
-                    {
-                        StatusPermanent2Event(new StatusEventArgs(dllPropertyInfo.CSSPProp.PropType + " is not implemented"));
-                        return;
-                    }
-                    sb.AppendLine(@"        public " + PropTypeText + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") + " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
                 }
                 sb.AppendLine(@"        #endregion Properties in DB");
                 sb.AppendLine(@"");
                 sb.AppendLine(@"        #region Properties not in DB");
                 foreach (DLLPropertyInfo dllPropertyInfo in dllTypeInfoModels.PropertyInfoList)
                 {
-                    if (!dllPropertyInfo.CSSPProp.HasNotMappedAttribute)
+                    if (!NotMappedClass)
                     {
-                        continue;
+                        if (!dllPropertyInfo.CSSPProp.HasNotMappedAttribute)
+                        {
+                            continue;
+                        }
                     }
                     if (dllPropertyInfo.CSSPProp.PropName == "ValidationResults")
                     {
@@ -149,7 +168,10 @@ namespace CSSPModelsGenerateCodeHelper
                     }
                     sb.AppendLine(@"        public " + PropTypeText + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") + " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
                 }
-                sb.AppendLine(@"        [NotMapped]");
+                if (!NotMappedClass)
+                {
+                    sb.AppendLine(@"        [NotMapped]");
+                }
                 sb.AppendLine(@"        public IEnumerable<ValidationResult> ValidationResults { get; set; }");
                 sb.AppendLine(@"        #endregion Properties not in DB");
                 sb.AppendLine(@"");
@@ -161,17 +183,76 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"        #endregion Constructors");
                 sb.AppendLine(@"    }");
                 sb.AppendLine(@"}");
+
+                //FileInfo fiOutput = new FileInfo(fiCodeFile.FullName.Replace(".cs", "Help.cs"));
+
+                //using (StreamWriter sw = fiOutput.CreateText())
+                //{
+                //    sw.Write(sb.ToString());
+                //}
+
+                List<string> OriginalLineList = new List<string>();
+                StringReader StrReadOriginal = new StringReader(OriginalCodeFile);
+
+                string line = "empty";
+                while (true)
+                {
+                    line = StrReadOriginal.ReadLine();
+
+                    if (line == null)
+                    {
+                        break;
+                    }
+
+                    OriginalLineList.Add(line);
+                }
+                StrReadOriginal.Close();
+
+                List<string> NewLineList = new List<string>();
+                StringReader StrReadNew = new StringReader(sb.ToString());
+
+                line = "empty";
+                while (true)
+                {
+                    line = StrReadNew.ReadLine();
+
+                    if (line == null)
+                    {
+                        break;
+                    }
+
+                    NewLineList.Add(line);
+                }
+                StrReadNew.Close();
+
+                int NewLineListCount = NewLineList.Count;
+                if (OriginalLineList.Count > NewLineList.Count)
+                {
+                    for (int i = NewLineListCount; i < OriginalLineList.Count; i++)
+                    {
+                        NewLineList.Add("\r\n");
+                    }
+                }
+
+                for (int i = 0; i < OriginalLineList.Count; i++)
+                {
+                    if (OriginalLineList[i] != NewLineList[i])
+                    {
+                        PleaseStop = true;
+                        StatusPermanent2Event(new StatusEventArgs(NewLineList[i] + "|||||||||||||||||||| line [" + (i + 1).ToString() + "]"));
+                        Application.DoEvents();
+                        return;
+                    }
+                    StatusPermanent2Event(new StatusEventArgs(NewLineList[i]));
+                    Application.DoEvents();
+                }
+
+                if (PleaseStop)
+                {
+                    break;
+                }
             }
 
-            FileInfo fiOutput = new FileInfo(fiCodeFile.FullName.Replace(".cs", "Help.cs"));
-
-            using (StreamWriter sw = fiOutput.CreateText())
-            {
-                sw.Write(sb.ToString());
-            }
-
-            StatusPermanent2Event(new StatusEventArgs(sb.ToString()));
-            Application.DoEvents();
 
 
             StatusTempEvent(new StatusEventArgs("Done ..."));

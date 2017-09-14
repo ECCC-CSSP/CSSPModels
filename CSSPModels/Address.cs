@@ -86,7 +86,7 @@ namespace CSSPModels
         public bool HasErrors { get; set; }
         [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
-        #endregion Properties not id DB
+        #endregion Properties not in DB
 
         #region Constructors
         public Address()

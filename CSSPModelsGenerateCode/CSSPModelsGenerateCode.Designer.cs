@@ -33,15 +33,14 @@
             this.lblStatusText = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblNote = new System.Windows.Forms.Label();
+            this.butGenerateModelsWithHelp = new System.Windows.Forms.Button();
             this.butGenerateSetupOnce = new System.Windows.Forms.Button();
             this.butGenerateResOnce = new System.Windows.Forms.Button();
             this.butRunModelLint = new System.Windows.Forms.Button();
             this.butGenerateAllCodeFiles = new System.Windows.Forms.Button();
-            this.richTextBoxStatus = new System.Windows.Forms.RichTextBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.richTextBoxStatus = new System.Windows.Forms.RichTextBox();
             this.richTextBoxStatus2 = new System.Windows.Forms.RichTextBox();
-            this.butGenerateModelsWithHelp = new System.Windows.Forms.Button();
-            this.textBoxCodeFileName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -62,7 +61,6 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.textBoxCodeFileName);
             this.splitContainer1.Panel1.Controls.Add(this.panel2);
             this.splitContainer1.Panel1.Controls.Add(this.lblNote);
             this.splitContainer1.Panel1.Controls.Add(this.butGenerateModelsWithHelp);
@@ -115,6 +113,16 @@
             this.lblNote.TabIndex = 26;
             this.lblNote.Text = "Note: You will have to recompile the CSSPModels project.";
             // 
+            // butGenerateModelsWithHelp
+            // 
+            this.butGenerateModelsWithHelp.Location = new System.Drawing.Point(803, 12);
+            this.butGenerateModelsWithHelp.Name = "butGenerateModelsWithHelp";
+            this.butGenerateModelsWithHelp.Size = new System.Drawing.Size(163, 23);
+            this.butGenerateModelsWithHelp.TabIndex = 11;
+            this.butGenerateModelsWithHelp.Text = "Generate Models With Help";
+            this.butGenerateModelsWithHelp.UseVisualStyleBackColor = true;
+            this.butGenerateModelsWithHelp.Click += new System.EventHandler(this.butGenerateModelsWithHelp_Click);
+            // 
             // butGenerateSetupOnce
             // 
             this.butGenerateSetupOnce.Location = new System.Drawing.Point(337, 12);
@@ -155,15 +163,6 @@
             this.butGenerateAllCodeFiles.UseVisualStyleBackColor = true;
             this.butGenerateAllCodeFiles.Click += new System.EventHandler(this.butGenerateAllCodeFiles_Click);
             // 
-            // richTextBoxStatus
-            // 
-            this.richTextBoxStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBoxStatus.Location = new System.Drawing.Point(0, 0);
-            this.richTextBoxStatus.Name = "richTextBoxStatus";
-            this.richTextBoxStatus.Size = new System.Drawing.Size(501, 559);
-            this.richTextBoxStatus.TabIndex = 0;
-            this.richTextBoxStatus.Text = "";
-            // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -181,6 +180,15 @@
             this.splitContainer2.SplitterDistance = 501;
             this.splitContainer2.TabIndex = 1;
             // 
+            // richTextBoxStatus
+            // 
+            this.richTextBoxStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBoxStatus.Location = new System.Drawing.Point(0, 0);
+            this.richTextBoxStatus.Name = "richTextBoxStatus";
+            this.richTextBoxStatus.Size = new System.Drawing.Size(501, 559);
+            this.richTextBoxStatus.TabIndex = 0;
+            this.richTextBoxStatus.Text = "";
+            // 
             // richTextBoxStatus2
             // 
             this.richTextBoxStatus2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -189,24 +197,6 @@
             this.richTextBoxStatus2.Size = new System.Drawing.Size(536, 559);
             this.richTextBoxStatus2.TabIndex = 0;
             this.richTextBoxStatus2.Text = "";
-            // 
-            // butGenerateModelsWithHelp
-            // 
-            this.butGenerateModelsWithHelp.Location = new System.Drawing.Point(803, 12);
-            this.butGenerateModelsWithHelp.Name = "butGenerateModelsWithHelp";
-            this.butGenerateModelsWithHelp.Size = new System.Drawing.Size(163, 23);
-            this.butGenerateModelsWithHelp.TabIndex = 11;
-            this.butGenerateModelsWithHelp.Text = "Generate Models With Help";
-            this.butGenerateModelsWithHelp.UseVisualStyleBackColor = true;
-            this.butGenerateModelsWithHelp.Click += new System.EventHandler(this.butGenerateModelsWithHelp_Click);
-            // 
-            // textBoxCodeFileName
-            // 
-            this.textBoxCodeFileName.Location = new System.Drawing.Point(803, 43);
-            this.textBoxCodeFileName.Name = "textBoxCodeFileName";
-            this.textBoxCodeFileName.Size = new System.Drawing.Size(163, 20);
-            this.textBoxCodeFileName.TabIndex = 31;
-            this.textBoxCodeFileName.Text = "Address";
             // 
             // CSSPModelsGenerateCode
             // 
@@ -243,7 +233,6 @@
         private System.Windows.Forms.Button butGenerateSetupOnce;
         private System.Windows.Forms.Button butGenerateResOnce;
         private System.Windows.Forms.Button butRunModelLint;
-        private System.Windows.Forms.TextBox textBoxCodeFileName;
         private System.Windows.Forms.Button butGenerateModelsWithHelp;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.RichTextBox richTextBoxStatus2;
