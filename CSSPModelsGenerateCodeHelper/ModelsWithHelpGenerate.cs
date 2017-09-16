@@ -13,26 +13,42 @@ namespace CSSPModelsGenerateCodeHelper
     public partial class ModelsGenerateCodeHelper
     {
         #region Functions public
-        public void ModelsWithHelpGenerate()
+        public void ModelsWithHelpGenerate(bool WithHelp)
         {
-            StringBuilder sb = new StringBuilder();
-
-            //FileInfo fiCSSPEnumsDLL = new FileInfo(@"C:\CSSP Code\CSSPEnums\CSSPEnums\bin\Debug\CSSPEnums.dll");
+            FileInfo fiCSSPEnumsDLL = null;
+            FileInfo fiCSSPServicesDLL = null;
             FileInfo fiCSSPModelsDLL = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll");
-            //FileInfo fiCSSPServicesDLL = new FileInfo(@"C:\CSSP Code\CSSPServices\CSSPServices\bin\Debug\CSSPServices.dll");
 
-            //if (!fiCSSPEnumsDLL.Exists)
-            //{
-            //    ErrorEvent(new ErrorEventArgs("File does not exist [" + fiCSSPEnumsDLL.FullName + "]"));
-            //    return;
-            //}
+            if (WithHelp)
+            {
+                fiCSSPEnumsDLL = new FileInfo(@"C:\CSSP Code\CSSPEnums\CSSPEnums\bin\Debug\CSSPEnums.dll");
+                fiCSSPServicesDLL = new FileInfo(@"C:\CSSP Code\CSSPServices\CSSPServices\bin\Debug\CSSPServices.dll");
 
-            //List<DLLTypeInfo> DLLTypeInfoCSSPEnumsList = new List<DLLTypeInfo>();
-            //if (FillDLLTypeInfoList(fiCSSPEnumsDLL, DLLTypeInfoCSSPEnumsList))
-            //{
-            //    ErrorEvent(new ErrorEventArgs("Could not read the file [" + fiCSSPEnumsDLL.FullName + "]"));
-            //    return;
-            //}
+                if (!fiCSSPEnumsDLL.Exists)
+                {
+                    ErrorEvent(new ErrorEventArgs("File does not exist [" + fiCSSPEnumsDLL.FullName + "]"));
+                    return;
+                }
+
+                List<DLLTypeInfo> DLLTypeInfoCSSPEnumsList = new List<DLLTypeInfo>();
+                if (FillDLLTypeInfoList(fiCSSPEnumsDLL, DLLTypeInfoCSSPEnumsList))
+                {
+                    ErrorEvent(new ErrorEventArgs("Could not read the file [" + fiCSSPEnumsDLL.FullName + "]"));
+                    return;
+                }
+
+                if (!fiCSSPServicesDLL.Exists)
+                {
+                    ErrorEvent(new ErrorEventArgs("File does not exist [" + fiCSSPServicesDLL.FullName + "]"));
+                    return;
+                }
+                List<DLLTypeInfo> DLLTypeInfoCSSPServicesList = new List<DLLTypeInfo>();
+                if (FillDLLTypeInfoList(fiCSSPServicesDLL, DLLTypeInfoCSSPServicesList))
+                {
+                    ErrorEvent(new ErrorEventArgs("Could not read the file [" + fiCSSPServicesDLL.FullName + "]"));
+                    return;
+                }
+            }
 
             if (!fiCSSPModelsDLL.Exists)
             {
@@ -46,22 +62,14 @@ namespace CSSPModelsGenerateCodeHelper
                 return;
             }
 
-            //if (!fiCSSPServicesDLL.Exists)
-            //{
-            //    ErrorEvent(new ErrorEventArgs("File does not exist [" + fiCSSPServicesDLL.FullName + "]"));
-            //    return;
-            //}
-            //List<DLLTypeInfo> DLLTypeInfoCSSPServicesList = new List<DLLTypeInfo>();
-            //if (FillDLLTypeInfoList(fiCSSPServicesDLL, DLLTypeInfoCSSPServicesList))
-            //{
-            //    ErrorEvent(new ErrorEventArgs("Could not read the file [" + fiCSSPServicesDLL.FullName + "]"));
-            //    return;
-            //}
-
             foreach (DLLTypeInfo dllTypeInfoModels in DLLTypeInfoCSSPModelsList)
             {
+                StringBuilder sb = new StringBuilder();
                 bool PleaseStop = false;
                 bool NotMappedClass = false;
+
+                ClearPermanentEvent(new StatusEventArgs(""));
+                ClearPermanent2Event(new StatusEventArgs(""));
 
                 StatusTempEvent(new StatusEventArgs(dllTypeInfoModels.Type.Name));
                 Application.DoEvents();
@@ -71,10 +79,10 @@ namespace CSSPModelsGenerateCodeHelper
                     continue;
                 }
 
-                //if (dllTypeInfoModels.Type.Name != "BoxModelCalNumb")
-                //{
-                //    continue;
-                //}
+                if (dllTypeInfoModels.Type.Name != "Address")
+                {
+                    continue;
+                }
 
                 sb.AppendLine(@"using CSSPEnums;");
                 sb.AppendLine(@"using System;");
@@ -84,16 +92,18 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"");
                 sb.AppendLine(@"namespace CSSPModels");
                 sb.AppendLine(@"{");
-                //sb.AppendLine(@"    /// <summary>");
-                //sb.AppendLine(@"    ///     Entity object for " + dllTypeInfoModels.Type + (dllTypeInfoModels.Type.Name == "Address" ? "es" : "s") + " DB Table");
-                //sb.AppendLine(@"    /// <summary>");
-
-                FileInfo fiCodeFile = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\" + dllTypeInfoModels.Type.Name + ".cs");
+                if (WithHelp)
+                {
+                    sb.AppendLine(@"    /// <summary>");
+                    sb.AppendLine(@"    ///     Entity object for " + dllTypeInfoModels.Type + (dllTypeInfoModels.Type.Name == "Address" ? "es" : "s") + " DB Table");
+                    sb.AppendLine(@"    /// <summary>");
+                }
+                FileInfo fiCodeFile = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\src\" + dllTypeInfoModels.Type.Name + ".cs");
 
                 if (!fiCodeFile.Exists)
                 {
                     NotMappedClass = true;
-                    fiCodeFile = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\_" + dllTypeInfoModels.Type.Name + ".cs");
+                    fiCodeFile = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\src\_" + dllTypeInfoModels.Type.Name + ".cs");
                     if (!fiCodeFile.Exists)
                     {
                         ErrorEvent(new ErrorEventArgs("Could not find file for [" + dllTypeInfoModels.Type.Name + "]"));
@@ -137,7 +147,10 @@ namespace CSSPModelsGenerateCodeHelper
                             StatusPermanent2Event(new StatusEventArgs(dllPropertyInfo.CSSPProp.PropType + " is not implemented"));
                             return;
                         }
-                        sb.AppendLine(@"        public " + PropTypeText + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") + " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                        sb.AppendLine(@"        public " + (dllPropertyInfo.CSSPProp.IsList ? 
+                            PropTypeText.Replace(dllPropertyInfo.CSSPProp.PropType, "List<" + dllPropertyInfo.CSSPProp.PropType + ">") : 
+                            PropTypeText) + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") + 
+                            " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
                     }
                 }
                 sb.AppendLine(@"        #endregion Properties in DB");
@@ -166,7 +179,21 @@ namespace CSSPModelsGenerateCodeHelper
                         StatusPermanent2Event(new StatusEventArgs(dllPropertyInfo.CSSPProp.PropType + " is not implemented"));
                         return;
                     }
-                    sb.AppendLine(@"        public " + PropTypeText + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") + " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                    if (PropTypeText == "string" && dllPropertyInfo.CSSPProp.IsList)
+                    {
+                        sb.AppendLine(@"        public virtual List<string> " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                    }
+                    else if (PropTypeText == "int" && dllPropertyInfo.CSSPProp.IsList)
+                    {
+                        sb.AppendLine(@"        public virtual List<int> " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                    }
+                    else
+                    {
+                        sb.AppendLine(@"        public " + (dllPropertyInfo.CSSPProp.IsList ?
+                            PropTypeText.Replace(dllPropertyInfo.CSSPProp.PropType, "List<" + dllPropertyInfo.CSSPProp.PropType + ">") :
+                            PropTypeText) + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") +
+                            " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                    }
                 }
                 if (!NotMappedClass)
                 {
@@ -178,82 +205,150 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"        #region Constructors");
                 sb.AppendLine(@"        public " + dllTypeInfoModels.Type.Name + "()");
                 sb.AppendLine(@"        {");
+                if (dllTypeInfoModels.Type.Name == "VPFull")
+                {
+                    sb.AppendLine(@"            VPAmbientList = new List<VPAmbient>();");
+                    sb.AppendLine(@"            VPResultList = new List<VPResult>();");
+                }
+                if (dllTypeInfoModels.Type.Name == "TVLocation")
+                {
+                    sb.AppendLine(@"            MapObjList = new List<MapObj>();");
+                }
+                if (dllTypeInfoModels.Type.Name == "TVItemInfrastructureTypeTVItemLink")
+                {
+                    sb.AppendLine(@"            TVItemLinkList = new List<TVItemLink>();");
+                }
+                if (dllTypeInfoModels.Type.Name == "TVItemSubsectorAndMWQMSite")
+                {
+                    sb.AppendLine(@"            TVItemMWQMSiteList = new List<TVItem>();");
+                }
+                if (dllTypeInfoModels.Type.Name == "SearchTagAndTerms")
+                {
+                    sb.AppendLine(@"            SearchTermList = new List<string>();");
+                }
+                if (dllTypeInfoModels.Type.Name == "OtherFilesToUpload")
+                {
+                    sb.AppendLine(@"            TVFileList = new List<TVFile>();");
+                }
+                if (dllTypeInfoModels.Type.Name == "Node")
+                {
+                    sb.AppendLine(@"            ElementList = new List<Element>();");
+                    sb.AppendLine(@"            ConnectNodeList = new List<Node>();");
+                }
+                if (dllTypeInfoModels.Type.Name == "MapObj")
+                {
+                    sb.AppendLine(@"            CoordList = new List<Coord>();");
+                }
+                if (dllTypeInfoModels.Type.Name == "LabSheetA1Sheet")
+                {
+                    sb.AppendLine(@"            LabSheetA1MeasurementList = new List<LabSheetA1Measurement>();");
+                }
+                if (dllTypeInfoModels.Type.Name == "Element")
+                {
+                    sb.AppendLine(@"            NodeList = new List<Node>();");
+                }
+                if (dllTypeInfoModels.Type.Name == "DataPathOfTide")
+                {
+                    sb.AppendLine(@"            Text = """";");
+                    sb.AppendLine(@"            WebTideDataSet = WebTideDataSetEnum.Error;");
+                }
+                if (dllTypeInfoModels.Type.Name == "CSSPWQInputParam")
+                {
+                    sb.AppendLine(@"            sidList = new List<string>();");
+                    sb.AppendLine(@"            MWQMSiteList = new List<string>();");
+                    sb.AppendLine(@"            MWQMSiteTVItemIDList = new List<int>();");
+                    sb.AppendLine(@"            DailyDuplicateMWQMSiteList = new List<string>();");
+                    sb.AppendLine(@"            DailyDuplicateMWQMSiteTVItemIDList = new List<int>();");
+                    sb.AppendLine(@"            InfrastructureList = new List<string>();");
+                    sb.AppendLine(@"            InfrastructureTVItemIDList = new List<int>();");
+                }
+                if (dllTypeInfoModels.Type.Name == "ContourPolygon")
+                {
+                    sb.AppendLine(@"            ContourNodeList = new List<Node>();");
+                }
+                if (dllTypeInfoModels.Type.Name == "CalDecay")
+                {
+                    sb.AppendLine(@"            Error = """";");
+                }
+                
                 sb.AppendLine(@"            ValidationResults = new List<ValidationResult>();");
                 sb.AppendLine(@"        }");
                 sb.AppendLine(@"        #endregion Constructors");
                 sb.AppendLine(@"    }");
                 sb.AppendLine(@"}");
 
-                //FileInfo fiOutput = new FileInfo(fiCodeFile.FullName.Replace(".cs", "Help.cs"));
-
-                //using (StreamWriter sw = fiOutput.CreateText())
-                //{
-                //    sw.Write(sb.ToString());
-                //}
-
-                List<string> OriginalLineList = new List<string>();
-                StringReader StrReadOriginal = new StringReader(OriginalCodeFile);
-
-                string line = "empty";
-                while (true)
+                if (!WithHelp)
                 {
-                    line = StrReadOriginal.ReadLine();
+                    List<string> OriginalLineList = new List<string>();
+                    StringReader StrReadOriginal = new StringReader(OriginalCodeFile);
 
-                    if (line == null)
+                    string line = "empty";
+                    while (true)
                     {
-                        break;
+                        line = StrReadOriginal.ReadLine();
+
+                        if (line == null)
+                        {
+                            break;
+                        }
+
+                        OriginalLineList.Add(line);
+                    }
+                    StrReadOriginal.Close();
+
+                    List<string> NewLineList = new List<string>();
+                    StringReader StrReadNew = new StringReader(sb.ToString());
+
+                    line = "empty";
+                    while (true)
+                    {
+                        line = StrReadNew.ReadLine();
+
+                        if (line == null)
+                        {
+                            break;
+                        }
+
+                        NewLineList.Add(line);
+                    }
+                    StrReadNew.Close();
+
+                    int NewLineListCount = NewLineList.Count;
+                    if (OriginalLineList.Count > NewLineList.Count)
+                    {
+                        for (int i = NewLineListCount; i < OriginalLineList.Count; i++)
+                        {
+                            NewLineList.Add("\r\n");
+                        }
                     }
 
-                    OriginalLineList.Add(line);
-                }
-                StrReadOriginal.Close();
-
-                List<string> NewLineList = new List<string>();
-                StringReader StrReadNew = new StringReader(sb.ToString());
-
-                line = "empty";
-                while (true)
-                {
-                    line = StrReadNew.ReadLine();
-
-                    if (line == null)
+                    for (int i = 0; i < OriginalLineList.Count; i++)
                     {
-                        break;
-                    }
-
-                    NewLineList.Add(line);
-                }
-                StrReadNew.Close();
-
-                int NewLineListCount = NewLineList.Count;
-                if (OriginalLineList.Count > NewLineList.Count)
-                {
-                    for (int i = NewLineListCount; i < OriginalLineList.Count; i++)
-                    {
-                        NewLineList.Add("\r\n");
-                    }
-                }
-
-                for (int i = 0; i < OriginalLineList.Count; i++)
-                {
-                    if (OriginalLineList[i] != NewLineList[i])
-                    {
-                        PleaseStop = true;
-                        StatusPermanent2Event(new StatusEventArgs(NewLineList[i] + "|||||||||||||||||||| line [" + (i + 1).ToString() + "]"));
+                        if (OriginalLineList[i] != NewLineList[i])
+                        {
+                            PleaseStop = true;
+                            StatusPermanent2Event(new StatusEventArgs(NewLineList[i] + "|||||||||||||||||||| line [" + (i + 1).ToString() + "]"));
+                            Application.DoEvents();
+                            return;
+                        }
+                        StatusPermanent2Event(new StatusEventArgs(NewLineList[i]));
                         Application.DoEvents();
-                        return;
                     }
-                    StatusPermanent2Event(new StatusEventArgs(NewLineList[i]));
-                    Application.DoEvents();
+
+                    if (PleaseStop)
+                    {
+                        break;
+                    }
                 }
 
-                if (PleaseStop)
+                FileInfo fiNew = new FileInfo(fiCodeFile.FullName.Replace(@"\src\", @"\srcWithHelp\"));
+                using (StreamWriter sw = fiNew.CreateText())
                 {
-                    break;
+                    sw.Write(sb.ToString());
                 }
+                StatusTempEvent(new StatusEventArgs("Created [" + fiNew.FullName + "] ..."));
+                StatusPermanentEvent(new StatusEventArgs("Created [" + fiNew.FullName + "] ..."));
             }
-
-
 
             StatusTempEvent(new StatusEventArgs("Done ..."));
         }
@@ -280,6 +375,36 @@ namespace CSSPModelsGenerateCodeHelper
                     return "long";
                 case "String":
                     return "string";
+                case "VPScenario":
+                    return "virtual VPScenario";
+                case "VPAmbient":
+                    return "virtual VPAmbient";
+                case "VPResult":
+                    return "virtual VPResult";
+                case "Node":
+                    return "virtual Node";
+                case "MapObj":
+                    return "virtual MapObj";
+                case "TVItem":
+                    return "virtual TVItem";
+                case "TVItemLink":
+                    return "virtual TVItemLink";
+                case "TVItemInfrastructureTypeTVItemLink":
+                    return "virtual TVItemInfrastructureTypeTVItemLink";
+                case "TVFile":
+                    return "virtual TVFile";
+                case "Element":
+                    return "virtual Element";
+                case "SamplingPlan":
+                    return "virtual SamplingPlan";
+                case "Coord":
+                    return "virtual Coord";
+                case "LabSheet":
+                    return "virtual LabSheet";
+                case "LabSheetA1Sheet":
+                    return "virtual LabSheetA1Sheet";
+                case "LabSheetA1Measurement":
+                    return "virtual LabSheetA1Measurement";
                 default:
                     {
                         if (propType.EndsWith("Enum"))
@@ -358,6 +483,10 @@ namespace CSSPModelsGenerateCodeHelper
             if (dllPropertyInfo.CSSPProp.HasDataTypeAttribute)
             {
                 sb.AppendLine(@"        [DataType(DataType.EmailAddress)]");
+            }
+            if (dllPropertyInfo.CSSPProp.HasCompareAttribute)
+            {
+                sb.AppendLine(@"        [Compare(""" + dllPropertyInfo.CSSPProp.Compare + @""")]");
             }
             if (dllPropertyInfo.CSSPProp.HasRangeAttribute)
             {

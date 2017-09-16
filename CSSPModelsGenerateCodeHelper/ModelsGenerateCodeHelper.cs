@@ -49,6 +49,8 @@ namespace CSSPModelsGenerateCodeHelper
                 new TableFieldEnumException() { TableName = "MWQMRuns", FieldName = "SeaStateAtEnd_BeaufortScale", EnumText = "BeaufortScaleEnum" },
                 new TableFieldEnumException() { TableName = "MWQMRuns", FieldName = "Tide_Start", EnumText = "TideTextEnum" },
                 new TableFieldEnumException() { TableName = "MWQMRuns", FieldName = "Tide_End", EnumText = "TideTextEnum" },
+                new TableFieldEnumException() { TableName = "MWQMSubsectorLanguages", FieldName = "TranslationStatusSubsectorDesc", EnumText = "TranslationStatusEnum" },
+                new TableFieldEnumException() { TableName = "MWQMSubsectorLanguages", FieldName = "TranslationStatusLogBook", EnumText = "TranslationStatusEnum" },
                 new TableFieldEnumException() { TableName = "MWQMSamples", FieldName = "SampleType_old", EnumText = "SampleTypeEnum" },
                 new TableFieldEnumException() { TableName = "PolSourceSites", FieldName = "InactiveReason", EnumText = "PolSourceInactiveReasonEnum" },
                 new TableFieldEnumException() { TableName = "TideDataValues", FieldName = "TideStart", EnumText = "TideTextEnum" },

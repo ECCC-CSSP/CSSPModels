@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void VPFull_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "VPScenario", "AmbientList", "ResultList", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "VPScenario", "VPAmbientList", "VPResultList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -38,8 +38,8 @@ namespace CSSPModels.Tests
         public void VPFull_Every_Property_Has_A_Resource_OK()
         {
                Assert.IsNotNull(ModelsRes.VPFullVPScenario);
-               Assert.IsNotNull(ModelsRes.VPFullAmbientList);
-               Assert.IsNotNull(ModelsRes.VPFullResultList);
+               Assert.IsNotNull(ModelsRes.VPFullVPAmbientList);
+               Assert.IsNotNull(ModelsRes.VPFullVPResultList);
                Assert.IsNotNull(ModelsRes.VPFullHasErrors);
         }
         [TestMethod]
@@ -52,11 +52,11 @@ namespace CSSPModels.Tests
                vPFull.VPScenario = val6;
                Assert.AreEqual(val6, vPFull.VPScenario);
                List<VPAmbient> val7 = new List<VPAmbient>();
-               vPFull.AmbientList = val7;
-               Assert.AreEqual(val7, vPFull.AmbientList);
+               vPFull.VPAmbientList = val7;
+               Assert.AreEqual(val7, vPFull.VPAmbientList);
                List<VPResult> val8 = new List<VPResult>();
-               vPFull.ResultList = val8;
-               Assert.AreEqual(val8, vPFull.ResultList);
+               vPFull.VPResultList = val8;
+               Assert.AreEqual(val8, vPFull.VPResultList);
                IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
                vPFull.ValidationResults = val15;
                Assert.AreEqual(val15, vPFull.ValidationResults);

@@ -8125,6 +8125,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterAnalysisName.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterAnalysisName {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterAnalysisName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMAnalysisReportParameterAnalysisReportYear.
         /// </summary>
         public static string MWQMAnalysisReportParameterAnalysisReportYear {
@@ -8242,29 +8251,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMAnalysisReportParameterMWQMSubsectorTVItemID.
-        /// </summary>
-        public static string MWQMAnalysisReportParameterMWQMSubsectorTVItemID {
-            get {
-                return ResourceManager.GetString("MWQMAnalysisReportParameterMWQMSubsectorTVItemID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MWQMAnalysisReportParameterName.
-        /// </summary>
-        public static string MWQMAnalysisReportParameterName {
-            get {
-                return ResourceManager.GetString("MWQMAnalysisReportParameterName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to MWQMAnalysisReportParameterNumberOfRuns.
         /// </summary>
         public static string MWQMAnalysisReportParameterNumberOfRuns {
             get {
                 return ResourceManager.GetString("MWQMAnalysisReportParameterNumberOfRuns", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterRunsToOmit.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterRunsToOmit {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterRunsToOmit", resourceCulture);
             }
         }
         
@@ -8292,6 +8292,15 @@ namespace CSSPModels.Resources {
         public static string MWQMAnalysisReportParameterStartDate {
             get {
                 return ResourceManager.GetString("MWQMAnalysisReportParameterStartDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterSubsectorTVItemID.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterSubsectorTVItemID {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterSubsectorTVItemID", resourceCulture);
             }
         }
         
@@ -9871,6 +9880,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageLogBook.
+        /// </summary>
+        public static string MWQMSubsectorLanguageLogBook {
+            get {
+                return ResourceManager.GetString("MWQMSubsectorLanguageLogBook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMSubsectorLanguageMWQMSubsectorID.
         /// </summary>
         public static string MWQMSubsectorLanguageMWQMSubsectorID {
@@ -9898,20 +9916,38 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorLanguageTranslationStatus.
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageTranslationStatusLogBook.
         /// </summary>
-        public static string MWQMSubsectorLanguageTranslationStatus {
+        public static string MWQMSubsectorLanguageTranslationStatusLogBook {
             get {
-                return ResourceManager.GetString("MWQMSubsectorLanguageTranslationStatus", resourceCulture);
+                return ResourceManager.GetString("MWQMSubsectorLanguageTranslationStatusLogBook", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MWQMSubsectorLanguageTranslationStatusText.
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageTranslationStatusLogBookText.
         /// </summary>
-        public static string MWQMSubsectorLanguageTranslationStatusText {
+        public static string MWQMSubsectorLanguageTranslationStatusLogBookText {
             get {
-                return ResourceManager.GetString("MWQMSubsectorLanguageTranslationStatusText", resourceCulture);
+                return ResourceManager.GetString("MWQMSubsectorLanguageTranslationStatusLogBookText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageTranslationStatusSubsectorDesc.
+        /// </summary>
+        public static string MWQMSubsectorLanguageTranslationStatusSubsectorDesc {
+            get {
+                return ResourceManager.GetString("MWQMSubsectorLanguageTranslationStatusSubsectorDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMSubsectorLanguageTranslationStatusSubsectorDescText.
+        /// </summary>
+        public static string MWQMSubsectorLanguageTranslationStatusSubsectorDescText {
+            get {
+                return ResourceManager.GetString("MWQMSubsectorLanguageTranslationStatusSubsectorDescText", resourceCulture);
             }
         }
         
@@ -14497,15 +14533,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPFullAmbientList.
-        /// </summary>
-        public static string VPFullAmbientList {
-            get {
-                return ResourceManager.GetString("VPFullAmbientList", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to VPFullHasErrors.
         /// </summary>
         public static string VPFullHasErrors {
@@ -14515,11 +14542,20 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VPFullResultList.
+        ///   Looks up a localized string similar to VPFullVPAmbientList.
         /// </summary>
-        public static string VPFullResultList {
+        public static string VPFullVPAmbientList {
             get {
-                return ResourceManager.GetString("VPFullResultList", resourceCulture);
+                return ResourceManager.GetString("VPFullVPAmbientList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VPFullVPResultList.
+        /// </summary>
+        public static string VPFullVPResultList {
+            get {
+                return ResourceManager.GetString("VPFullVPResultList", resourceCulture);
             }
         }
         

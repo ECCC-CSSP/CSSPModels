@@ -17,7 +17,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMAnalysisReportParameter_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MWQMAnalysisReportParameterID", "MWQMSubsectorTVItemID", "Name", "AnalysisReportYear", "StartDate", "EndDate", "AnalysisCalculationType", "NumberOfRuns", "FullYear", "SalinityHighlightDeviationFromAverage", "ShortRangeNumberOfDays", "MidRangeNumberOfDays", "DryLimit24h", "DryLimit48h", "DryLimit72h", "DryLimit96h", "WetLimit24h", "WetLimit48h", "WetLimit72h", "WetLimit96h", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MWQMAnalysisReportParameterID", "SubsectorTVItemID", "AnalysisName", "AnalysisReportYear", "StartDate", "EndDate", "AnalysisCalculationType", "NumberOfRuns", "FullYear", "SalinityHighlightDeviationFromAverage", "ShortRangeNumberOfDays", "MidRangeNumberOfDays", "DryLimit24h", "DryLimit48h", "DryLimit72h", "DryLimit96h", "WetLimit24h", "WetLimit48h", "WetLimit72h", "WetLimit96h", "RunsToOmit", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -90,8 +90,8 @@ namespace CSSPModels.Tests
         public void MWQMAnalysisReportParameter_Every_Property_Has_A_Resource_OK()
         {
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterMWQMAnalysisReportParameterID);
-               Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterMWQMSubsectorTVItemID);
-               Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterName);
+               Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterSubsectorTVItemID);
+               Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterAnalysisName);
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterAnalysisReportYear);
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterStartDate);
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterEndDate);
@@ -109,6 +109,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterWetLimit48h);
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterWetLimit72h);
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterWetLimit96h);
+               Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterRunsToOmit);
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterLastUpdateDate_UTC);
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterLastUpdateContactTVItemID);
                Assert.IsNotNull(ModelsRes.MWQMAnalysisReportParameterLastUpdateContactTVText);
@@ -121,11 +122,11 @@ namespace CSSPModels.Tests
                mWQMAnalysisReportParameter.MWQMAnalysisReportParameterID = val1;
                Assert.AreEqual(val1, mWQMAnalysisReportParameter.MWQMAnalysisReportParameterID);
                int val2 = 45;
-               mWQMAnalysisReportParameter.MWQMSubsectorTVItemID = val2;
-               Assert.AreEqual(val2, mWQMAnalysisReportParameter.MWQMSubsectorTVItemID);
+               mWQMAnalysisReportParameter.SubsectorTVItemID = val2;
+               Assert.AreEqual(val2, mWQMAnalysisReportParameter.SubsectorTVItemID);
                string val3 = "Some text";
-               mWQMAnalysisReportParameter.Name = val3;
-               Assert.AreEqual(val3, mWQMAnalysisReportParameter.Name);
+               mWQMAnalysisReportParameter.AnalysisName = val3;
+               Assert.AreEqual(val3, mWQMAnalysisReportParameter.AnalysisName);
                int val4 = 45;
                mWQMAnalysisReportParameter.AnalysisReportYear = val4;
                Assert.AreEqual(val4, mWQMAnalysisReportParameter.AnalysisReportYear);
@@ -177,21 +178,24 @@ namespace CSSPModels.Tests
                int val20 = 45;
                mWQMAnalysisReportParameter.WetLimit96h = val20;
                Assert.AreEqual(val20, mWQMAnalysisReportParameter.WetLimit96h);
-               DateTime val21 = new DateTime(2010, 3, 4);
-               mWQMAnalysisReportParameter.LastUpdateDate_UTC = val21;
-               Assert.AreEqual(val21, mWQMAnalysisReportParameter.LastUpdateDate_UTC);
-               int val22 = 45;
-               mWQMAnalysisReportParameter.LastUpdateContactTVItemID = val22;
-               Assert.AreEqual(val22, mWQMAnalysisReportParameter.LastUpdateContactTVItemID);
-               string val23 = "Some text";
-               mWQMAnalysisReportParameter.LastUpdateContactTVText = val23;
-               Assert.AreEqual(val23, mWQMAnalysisReportParameter.LastUpdateContactTVText);
-               bool val24 = true;
-               mWQMAnalysisReportParameter.HasErrors = val24;
-               Assert.AreEqual(val24, mWQMAnalysisReportParameter.HasErrors);
-               IEnumerable<ValidationResult> val75 = new List<ValidationResult>().AsEnumerable();
-               mWQMAnalysisReportParameter.ValidationResults = val75;
-               Assert.AreEqual(val75, mWQMAnalysisReportParameter.ValidationResults);
+               string val21 = "Some text";
+               mWQMAnalysisReportParameter.RunsToOmit = val21;
+               Assert.AreEqual(val21, mWQMAnalysisReportParameter.RunsToOmit);
+               DateTime val22 = new DateTime(2010, 3, 4);
+               mWQMAnalysisReportParameter.LastUpdateDate_UTC = val22;
+               Assert.AreEqual(val22, mWQMAnalysisReportParameter.LastUpdateDate_UTC);
+               int val23 = 45;
+               mWQMAnalysisReportParameter.LastUpdateContactTVItemID = val23;
+               Assert.AreEqual(val23, mWQMAnalysisReportParameter.LastUpdateContactTVItemID);
+               string val24 = "Some text";
+               mWQMAnalysisReportParameter.LastUpdateContactTVText = val24;
+               Assert.AreEqual(val24, mWQMAnalysisReportParameter.LastUpdateContactTVText);
+               bool val25 = true;
+               mWQMAnalysisReportParameter.HasErrors = val25;
+               Assert.AreEqual(val25, mWQMAnalysisReportParameter.HasErrors);
+               IEnumerable<ValidationResult> val78 = new List<ValidationResult>().AsEnumerable();
+               mWQMAnalysisReportParameter.ValidationResults = val78;
+               Assert.AreEqual(val78, mWQMAnalysisReportParameter.ValidationResults);
         }
     }
 }

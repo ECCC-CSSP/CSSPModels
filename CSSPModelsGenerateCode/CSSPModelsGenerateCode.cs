@@ -91,7 +91,7 @@ namespace CSSPModelsGenerateCode
 
             richTextBoxStatus.Text = "";
             richTextBoxStatus2.Text = "";
-            modelsGenerateCodeHelper.ModelsWithHelpGenerate();
+            modelsGenerateCodeHelper.ModelsWithHelpGenerate(true);
         }
         private void butRunModelLint_Click(object sender, EventArgs e)
         {
@@ -103,6 +103,14 @@ namespace CSSPModelsGenerateCode
 
             richTextBoxStatus.Text = "";
             modelsGenerateCodeHelper.RunModelLint(CSSPWebToolsDBConnectionString);
+        }
+        private void ModelsGenerateCodeHelper_ClearPermanentHandler(object sender, GenerateCodeBase.StatusEventArgs e)
+        {
+            richTextBoxStatus.Text = "";
+        }
+        private void ModelsGenerateCodeHelper_ClearPermanent2Handler(object sender, GenerateCodeBase.StatusEventArgs e)
+        {
+            richTextBoxStatus2.Text = "";
         }
         private void ModelsGenerateCodeHelper_ErrorHandler(object sender, GenerateCodeBase.ErrorEventArgs e)
         {
@@ -136,6 +144,8 @@ namespace CSSPModelsGenerateCode
             modelsGenerateCodeHelper.StatusPermanentHandler += ModelsGenerateCodeHelper_StatusPermanentHandler;
             modelsGenerateCodeHelper.StatusPermanent2Handler += ModelsGenerateCodeHelper_StatusPermanent2Handler;
             modelsGenerateCodeHelper.StatusTempHandler += ModelsGenerateCodeHelper_StatusTempHandler;
+            modelsGenerateCodeHelper.ClearPermanentHandler += ModelsGenerateCodeHelper_ClearPermanentHandler;
+            modelsGenerateCodeHelper.ClearPermanent2Handler += ModelsGenerateCodeHelper_ClearPermanent2Handler;
 
             db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
             CSSPWebToolsDBConnectionString = ConfigurationManager.ConnectionStrings["CSSPWebToolsDB"].ConnectionString;
