@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.EmailDistributionListLanguages DB Table
+    /// </summary>
     public partial class EmailDistributionListLanguage
     {
         #region Properties in DB

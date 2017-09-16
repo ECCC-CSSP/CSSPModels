@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.LabSheetTubeMPNDetails DB Table
+    /// </summary>
     public partial class LabSheetTubeMPNDetail
     {
         #region Properties in DB

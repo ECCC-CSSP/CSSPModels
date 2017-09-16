@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.TVItemLanguages DB Table
+    /// </summary>
     public partial class TVItemLanguage
     {
         #region Properties in DB

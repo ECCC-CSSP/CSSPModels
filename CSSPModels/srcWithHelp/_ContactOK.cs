@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.ContactOKs DB Table
+    /// </summary>
     [NotMapped]
     public partial class ContactOK
     {

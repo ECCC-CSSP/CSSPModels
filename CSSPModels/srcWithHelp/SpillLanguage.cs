@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.SpillLanguages DB Table
+    /// </summary>
     public partial class SpillLanguage
     {
         #region Properties in DB

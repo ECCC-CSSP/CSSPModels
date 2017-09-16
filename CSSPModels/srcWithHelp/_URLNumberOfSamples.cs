@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.URLNumberOfSampless DB Table
+    /// </summary>
     [NotMapped]
     public partial class URLNumberOfSamples
     {

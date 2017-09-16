@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.VPScenarioLanguages DB Table
+    /// </summary>
     public partial class VPScenarioLanguage
     {
         #region Properties in DB

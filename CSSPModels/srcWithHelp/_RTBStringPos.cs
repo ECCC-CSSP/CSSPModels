@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.RTBStringPoss DB Table
+    /// </summary>
     [NotMapped]
     public partial class RTBStringPos
     {

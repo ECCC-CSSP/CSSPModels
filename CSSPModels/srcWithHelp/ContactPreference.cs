@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.ContactPreferences DB Table
+    /// </summary>
     public partial class ContactPreference
     {
         #region Properties in DB

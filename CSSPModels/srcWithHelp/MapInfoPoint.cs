@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.MapInfoPoints DB Table
+    /// </summary>
     public partial class MapInfoPoint
     {
         #region Properties in DB

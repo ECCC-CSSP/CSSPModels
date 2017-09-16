@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.AppTasks DB Table
+    /// </summary>
     public partial class AppTask
     {
         #region Properties in DB

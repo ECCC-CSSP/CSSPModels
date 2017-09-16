@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.VPResults DB Table
+    /// </summary>
     public partial class VPResult
     {
         #region Properties in DB

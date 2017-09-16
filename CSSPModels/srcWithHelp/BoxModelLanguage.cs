@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.BoxModelLanguages DB Table
+    /// </summary>
     public partial class BoxModelLanguage
     {
         #region Properties in DB

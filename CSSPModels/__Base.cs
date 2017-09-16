@@ -12,18 +12,18 @@ namespace CSSPModels
     /// <para>Year: Determine the year for which the DateTime has to be after</para>
     /// </summary>
     /// <example>
-    /// [CSSPAfter(Year = 1980)]
-    /// public DateTime StartDate { get; set; }
-    /// [CSSPAfter(OtherField = "StartDate")]
-    /// public DateTime EndDate { get; set; }
+    /// <code>
+    ///     [CSSPAfter(Year = 1980)]
+    ///     public DateTime StartDate { get; set; }
+    /// </code>
     /// </example>
     /// <remarks>
     /// <para>Validation code produced</para>
     /// <code>
-    /// if (mwqmSample.SampleDateTime_Local.Year &lt; 1980)
+    /// if (mwqmSample.StartDate.Year &lt; 1980)
     /// {
     ///     mwqmSample.HasErrors = true;
-    ///     yield return new ValidationResult(string.Format(ServicesRes._YearShouldBeBiggerThan_, ModelsRes.MWQMSampleSampleDateTime_Local, "1980"), new[] { "SampleDateTime_Local" });
+    ///     yield return new ValidationResult(string.Format(ServicesRes._YearShouldBeBiggerThan_, ModelsRes.MWQMSampleStartDate, "1980"), new[] { "StartDate" });
     /// }
     /// </code>
     /// </remarks>
@@ -43,9 +43,11 @@ namespace CSSPModels
     /// <para>No parameter</para>
     /// </summary>
     /// <example>
-    /// [CSSPAllowNull]
-    /// [StringLength(200)]
-    /// public string StreetName { get; set; }
+    /// <code>
+    ///     [CSSPAllowNull]
+    ///     [StringLength(200)]
+    ///     public string StreetName { get; set; }
+    /// </code>
     /// </example>
     /// <remarks>
     /// <para>Validation code produced</para>
@@ -79,11 +81,13 @@ namespace CSSPModels
     /// <para>OtherField: Determine the other field for which the DateTime has to be bigger</para>
     /// </summary>
     /// <example>
-    /// [CSSPAfter(Year = 1980)]
-    /// public DateTime StartDateTime_UTC { get; set; }
-    /// [CSSPAfter(Year = 1980)]
-    /// [CSSPBigger(OtherField = "StartDateTime_UTC")]
-    /// public DateTime? EndDateTime_UTC { get; set; }
+    /// <code>
+    ///     [CSSPAfter(Year = 1980)]
+    ///     public DateTime StartDateTime_UTC { get; set; }
+    ///     [CSSPAfter(Year = 1980)]
+    ///     [CSSPBigger(OtherField = "StartDateTime_UTC")]
+    ///     public DateTime? EndDateTime_UTC { get; set; }
+    /// </code>
     /// </example>
     /// <remarks>
     /// <para>Validation code produced</para>
@@ -122,8 +126,10 @@ namespace CSSPModels
     /// <para>No parameter</para>
     /// </summary>
     /// <example>
-    /// [CSSPEnumType]
-    /// public AddressTypeEnum AddressType { get; set; }
+    /// <code>
+    ///     [CSSPEnumType]
+    ///     public AddressTypeEnum AddressType { get; set; }
+    /// </code>
     /// </example>
     /// <remarks>
     /// <para>Validation code produced</para>
@@ -159,8 +165,10 @@ namespace CSSPModels
     /// <para>EnumType: Property name</para>
     /// </summary>
     /// <example>
-    /// [CSSPEnumTypeText(EnumTypeName = "AddressTypeEnum", EnumType = "AddressType")]
-    /// public string AddressTypeText { get; set; }
+    /// <code>
+    ///     [CSSPEnumTypeText(EnumTypeName = "AddressTypeEnum", EnumType = "AddressType")]
+    ///     public string AddressTypeText { get; set; }
+    /// </code>
     /// </example>
     /// <remarks>
     /// <para>Validation code produced</para>
@@ -206,8 +214,10 @@ namespace CSSPModels
     /// <para>AllowableTVTypeList: List of TVTypeEnum numbers separated by commas (only used with TVItems DB table)</para>
     /// </summary>
     /// <example>
-    /// [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,6,18,3,19,20,4,8,9,10,12,11,13,14,15,31,16,23,17,40,26,22,28")]
-    /// public int TVItemID { get; set; }
+    /// <code>
+    ///     [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,6,18,3,19,20,4,8,9,10,12,11,13,14,15,31,16,23,17,40,26,22,28")]
+    ///     public int TVItemID { get; set; }
+    /// </code>
     /// </example>
     /// <example>
     /// [CSSPExist(ExistTypeName = "AppTask", ExistPlurial = "s", ExistFieldID = "AppTaskID")]
@@ -302,11 +312,13 @@ namespace CSSPModels
     /// <para>FillNeedLanguage: If true, a language comparision will also be included</para>
     /// </summary>
     /// <example>
-    /// [NotMapped]
-    /// [StringLength(200)]
-    /// [CSSPAllowNull]
-    /// [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "AddressTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-    /// public string AddressTVText { get; set; }
+    /// <code>
+    ///     [NotMapped]
+    ///     [StringLength(200)]
+    ///     [CSSPAllowNull]
+    ///     [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "AddressTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+    ///     public string AddressTVText { get; set; }
+    /// </code>
     /// </example>
     /// <remarks>
     /// <para>Validation code produced</para>

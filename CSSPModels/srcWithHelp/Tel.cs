@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.Tels DB Table
+    /// </summary>
     public partial class Tel
     {
         #region Properties in DB

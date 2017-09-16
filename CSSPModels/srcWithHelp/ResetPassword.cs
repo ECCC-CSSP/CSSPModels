@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.ResetPasswords DB Table
+    /// </summary>
     public partial class ResetPassword
     {
         #region Properties in DB

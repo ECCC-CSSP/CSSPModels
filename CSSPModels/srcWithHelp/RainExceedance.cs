@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.RainExceedances DB Table
+    /// </summary>
     public partial class RainExceedance
     {
         #region Properties in DB

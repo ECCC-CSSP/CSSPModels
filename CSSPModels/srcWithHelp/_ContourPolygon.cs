@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.ContourPolygons DB Table
+    /// </summary>
     [NotMapped]
     public partial class ContourPolygon
     {

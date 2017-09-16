@@ -79,10 +79,10 @@ namespace CSSPModelsGenerateCodeHelper
                     continue;
                 }
 
-                if (dllTypeInfoModels.Type.Name != "Address")
-                {
-                    continue;
-                }
+                //if (dllTypeInfoModels.Type.Name != "Address")
+                //{
+                //    continue;
+                //}
 
                 sb.AppendLine(@"using CSSPEnums;");
                 sb.AppendLine(@"using System;");
@@ -96,7 +96,7 @@ namespace CSSPModelsGenerateCodeHelper
                 {
                     sb.AppendLine(@"    /// <summary>");
                     sb.AppendLine(@"    ///     Entity object for " + dllTypeInfoModels.Type + (dllTypeInfoModels.Type.Name == "Address" ? "es" : "s") + " DB Table");
-                    sb.AppendLine(@"    /// <summary>");
+                    sb.AppendLine(@"    /// </summary>");
                 }
                 FileInfo fiCodeFile = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\src\" + dllTypeInfoModels.Type.Name + ".cs");
 

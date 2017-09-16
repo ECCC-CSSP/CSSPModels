@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.ContactShortcuts DB Table
+    /// </summary>
     public partial class ContactShortcut
     {
         #region Properties in DB

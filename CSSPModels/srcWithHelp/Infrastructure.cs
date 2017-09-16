@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.Infrastructures DB Table
+    /// </summary>
     public partial class Infrastructure
     {
         #region Properties in DB

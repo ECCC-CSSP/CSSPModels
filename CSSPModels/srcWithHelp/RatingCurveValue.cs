@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.RatingCurveValues DB Table
+    /// </summary>
     public partial class RatingCurveValue
     {
         #region Properties in DB

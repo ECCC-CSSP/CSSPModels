@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.SamplingPlans DB Table
+    /// </summary>
     public partial class SamplingPlan
     {
         #region Properties in DB

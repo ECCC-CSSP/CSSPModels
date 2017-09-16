@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.PolSourceObservations DB Table
+    /// </summary>
     public partial class PolSourceObservation
     {
         #region Properties in DB

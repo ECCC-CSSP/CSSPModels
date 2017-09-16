@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.TVItemLinks DB Table
+    /// </summary>
     public partial class TVItemLink
     {
         #region Properties in DB

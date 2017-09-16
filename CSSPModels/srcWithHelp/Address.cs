@@ -8,7 +8,7 @@ namespace CSSPModels
 {
     /// <summary>
     ///     Entity object for CSSPModels.Addresses DB Table
-    /// <summary>
+    /// </summary>
     public partial class Address
     {
         #region Properties in DB

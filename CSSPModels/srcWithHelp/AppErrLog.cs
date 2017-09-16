@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.AppErrLogs DB Table
+    /// </summary>
     public partial class AppErrLog
     {
         #region Properties in DB

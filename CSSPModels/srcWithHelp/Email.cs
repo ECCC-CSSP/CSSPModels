@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.Emails DB Table
+    /// </summary>
     public partial class Email
     {
         #region Properties in DB

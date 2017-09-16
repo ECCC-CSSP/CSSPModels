@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.Spills DB Table
+    /// </summary>
     public partial class Spill
     {
         #region Properties in DB

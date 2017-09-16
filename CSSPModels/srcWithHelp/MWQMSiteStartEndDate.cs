@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.MWQMSiteStartEndDates DB Table
+    /// </summary>
     public partial class MWQMSiteStartEndDate
     {
         #region Properties in DB

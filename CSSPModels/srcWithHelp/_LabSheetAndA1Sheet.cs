@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.LabSheetAndA1Sheets DB Table
+    /// </summary>
     [NotMapped]
     public partial class LabSheetAndA1Sheet
     {

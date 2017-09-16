@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.MWQMSubsectors DB Table
+    /// </summary>
     public partial class MWQMSubsector
     {
         #region Properties in DB

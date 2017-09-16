@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.DocTemplates DB Table
+    /// </summary>
     public partial class DocTemplate
     {
         #region Properties in DB

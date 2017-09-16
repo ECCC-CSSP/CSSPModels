@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.CalDecays DB Table
+    /// </summary>
     [NotMapped]
     public partial class CalDecay
     {

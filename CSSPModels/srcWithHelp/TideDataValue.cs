@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.TideDataValues DB Table
+    /// </summary>
     public partial class TideDataValue
     {
         #region Properties in DB

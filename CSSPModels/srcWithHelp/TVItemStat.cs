@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.TVItemStats DB Table
+    /// </summary>
     public partial class TVItemStat
     {
         #region Properties in DB

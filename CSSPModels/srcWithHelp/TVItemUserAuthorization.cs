@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.TVItemUserAuthorizations DB Table
+    /// </summary>
     public partial class TVItemUserAuthorization
     {
         #region Properties in DB

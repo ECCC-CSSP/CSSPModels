@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.MWQMRunLanguages DB Table
+    /// </summary>
     public partial class MWQMRunLanguage
     {
         #region Properties in DB

@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    /// <summary>
+    ///     Entity object for CSSPModels.HydrometricDataValues DB Table
+    /// </summary>
     public partial class HydrometricDataValue
     {
         #region Properties in DB
