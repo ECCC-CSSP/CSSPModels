@@ -32,7 +32,7 @@ namespace CSSPModels.Tests
             using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext())
             {
                 Assert.AreEqual(DatabaseTypeEnum.Error, db.DatabaseType);
-                Assert.AreEqual(string.Format(ModelsRes._IsRequired, "DataType"), db.Error);
+                Assert.AreEqual(string.Format(CSSPModelsRes._IsRequired, "DataType"), db.Error);
                 db.Error = "";
 
                 try
@@ -44,7 +44,7 @@ namespace CSSPModels.Tests
                     // nothing
                 }
 
-                Assert.AreEqual(string.Format(ModelsRes._IsRequired, "DataType"), db.Error);
+                Assert.AreEqual(string.Format(CSSPModelsRes._IsRequired, "DataType"), db.Error);
             }
         }
         [TestMethod]
@@ -53,7 +53,7 @@ namespace CSSPModels.Tests
             using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.Error))
             {
                 Assert.AreEqual(DatabaseTypeEnum.Error, db.DatabaseType);
-                Assert.AreEqual(string.Format(ModelsRes._IsRequired, "DataType"), db.Error);
+                Assert.AreEqual(string.Format(CSSPModelsRes._IsRequired, "DataType"), db.Error);
             }
         }
         [TestMethod]
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext((DatabaseTypeEnum)1000000))
             {
                 Assert.AreEqual(DatabaseTypeEnum.Error, db.DatabaseType);
-                Assert.AreEqual(string.Format(ModelsRes._IsRequired, "DataType"), db.Error);
+                Assert.AreEqual(string.Format(CSSPModelsRes._IsRequired, "DataType"), db.Error);
                 db.Error = "";
 
                 try
@@ -110,7 +110,7 @@ namespace CSSPModels.Tests
                     // nothing
                 }
 
-                Assert.AreEqual(string.Format(ModelsRes._IsRequired, "DataType"), db.Error);
+                Assert.AreEqual(string.Format(CSSPModelsRes._IsRequired, "DataType"), db.Error);
             }
         }
         #endregion Tests

@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class MWQMSiteSampleFCTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private MWQMSiteSampleFC mWQMSiteSampleFC { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public MWQMSiteSampleFCTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            mWQMSiteSampleFC = new MWQMSiteSampleFC();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under MWQMSiteSampleFCTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under MWQMSiteSampleFCTestGenerated.cs
+        [TestMethod]
+        public void MWQMSiteSampleFC_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class SamplingPlanSubsectorTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private SamplingPlanSubsector samplingPlanSubsector { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public SamplingPlanSubsectorTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            samplingPlanSubsector = new SamplingPlanSubsector();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under SamplingPlanSubsectorTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under SamplingPlanSubsectorTestGenerated.cs
+        [TestMethod]
+        public void SamplingPlanSubsector_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

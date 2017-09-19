@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class OtherFilesToUploadTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private OtherFilesToUpload otherFilesToUpload { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public OtherFilesToUploadTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            otherFilesToUpload = new OtherFilesToUpload();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under OtherFilesToUploadTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under OtherFilesToUploadTestGenerated.cs
+        [TestMethod]
+        public void OtherFilesToUpload_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

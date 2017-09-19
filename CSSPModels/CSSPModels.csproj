@@ -274,15 +274,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Resources\ModelsRes.Designer.cs">
+    <Compile Include="Resources\CSSPModelsRes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelsRes.resx</DependentUpon>
+      <DependentUpon>CSSPModelsRes.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\ModelsRes.fr.Designer.cs">
+    <Compile Include="Resources\CSSPModelsRes.fr.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelsRes.fr.resx</DependentUpon>
+      <DependentUpon>CSSPModelsRes.fr.resx</DependentUpon>
     </Compile>
     <Compile Include="srcWithHelp\Address.cs" />
     <Compile Include="srcWithHelp\AppErrLog.cs" />
@@ -419,18 +419,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\ModelsRes.resx">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="Resources\CSSPModelsRes.fr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ModelsRes.Designer.cs</LastGenOutput>
+      <LastGenOutput>CSSPModelsRes.fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ModelsRes.fr.resx">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="Resources\CSSPModelsRes.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ModelsRes.fr.Designer.cs</LastGenOutput>
+      <LastGenOutput>CSSPModelsRes.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

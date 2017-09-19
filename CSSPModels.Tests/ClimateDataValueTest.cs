@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class ClimateDataValueTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private ClimateDataValue climateDataValue { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public ClimateDataValueTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            climateDataValue = new ClimateDataValue();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under ClimateDataValueTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under ClimateDataValueTestGenerated.cs
+        [TestMethod]
+        public void ClimateDataValue_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

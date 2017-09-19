@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class PolSourceObsInfoChildTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private PolSourceObsInfoChild polSourceObsInfoChild { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public PolSourceObsInfoChildTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            polSourceObsInfoChild = new PolSourceObsInfoChild();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under PolSourceObsInfoChildTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under PolSourceObsInfoChildTestGenerated.cs
+        [TestMethod]
+        public void PolSourceObsInfoChild_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

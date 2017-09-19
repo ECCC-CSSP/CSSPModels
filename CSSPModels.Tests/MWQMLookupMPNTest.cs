@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class MWQMLookupMPNTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private MWQMLookupMPN mWQMLookupMPN { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public MWQMLookupMPNTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            mWQMLookupMPN = new MWQMLookupMPN();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under MWQMLookupMPNTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under MWQMLookupMPNTestGenerated.cs
+        [TestMethod]
+        public void MWQMLookupMPN_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

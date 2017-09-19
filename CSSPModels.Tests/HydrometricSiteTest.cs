@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class HydrometricSiteTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private HydrometricSite hydrometricSite { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public HydrometricSiteTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            hydrometricSite = new HydrometricSite();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under HydrometricSiteTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under HydrometricSiteTestGenerated.cs
+        [TestMethod]
+        public void HydrometricSite_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

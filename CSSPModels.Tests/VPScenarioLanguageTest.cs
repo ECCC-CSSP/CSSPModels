@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class VPScenarioLanguageTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private VPScenarioLanguage vPScenarioLanguage { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public VPScenarioLanguageTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            vPScenarioLanguage = new VPScenarioLanguage();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under VPScenarioLanguageTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under VPScenarioLanguageTestGenerated.cs
+        [TestMethod]
+        public void VPScenarioLanguage_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

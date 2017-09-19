@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class TVTextLanguageTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private TVTextLanguage tVTextLanguage { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public TVTextLanguageTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            tVTextLanguage = new TVTextLanguage();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under TVTextLanguageTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under TVTextLanguageTestGenerated.cs
+        [TestMethod]
+        public void TVTextLanguage_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

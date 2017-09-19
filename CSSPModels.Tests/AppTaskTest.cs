@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class AppTaskTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private AppTask appTask { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public AppTaskTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            appTask = new AppTask();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under AppTaskTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under AppTaskTestGenerated.cs
+        [TestMethod]
+        public void AppTask_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

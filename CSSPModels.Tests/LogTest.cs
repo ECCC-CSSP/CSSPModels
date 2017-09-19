@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class LogTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private Log log { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public LogTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            log = new Log();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under LogTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under LogTestGenerated.cs
+        [TestMethod]
+        public void Log_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

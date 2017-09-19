@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class VPResValuesTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private VPResValues vPResValues { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public VPResValuesTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            vPResValues = new VPResValues();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under VPResValuesTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under VPResValuesTestGenerated.cs
+        [TestMethod]
+        public void VPResValues_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

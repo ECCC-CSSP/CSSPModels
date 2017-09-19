@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class FileItemListTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private FileItemList fileItemList { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public FileItemListTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            fileItemList = new FileItemList();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under FileItemListTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under FileItemListTestGenerated.cs
+        [TestMethod]
+        public void FileItemList_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

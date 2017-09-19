@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class LabSheetA1MeasurementTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private LabSheetA1Measurement labSheetA1Measurement { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public LabSheetA1MeasurementTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            labSheetA1Measurement = new LabSheetA1Measurement();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under LabSheetA1MeasurementTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under LabSheetA1MeasurementTestGenerated.cs
+        [TestMethod]
+        public void LabSheetA1Measurement_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

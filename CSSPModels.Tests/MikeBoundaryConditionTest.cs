@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class MikeBoundaryConditionTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private MikeBoundaryCondition mikeBoundaryCondition { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public MikeBoundaryConditionTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            mikeBoundaryCondition = new MikeBoundaryCondition();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under MikeBoundaryConditionTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under MikeBoundaryConditionTestGenerated.cs
+        [TestMethod]
+        public void MikeBoundaryCondition_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

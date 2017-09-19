@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class PolSourceObsInfoEnumTextAndIDTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private PolSourceObsInfoEnumTextAndID polSourceObsInfoEnumTextAndID { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public PolSourceObsInfoEnumTextAndIDTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            polSourceObsInfoEnumTextAndID = new PolSourceObsInfoEnumTextAndID();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under PolSourceObsInfoEnumTextAndIDTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under PolSourceObsInfoEnumTextAndIDTestGenerated.cs
+        [TestMethod]
+        public void PolSourceObsInfoEnumTextAndID_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

@@ -96,7 +96,7 @@ namespace CSSPModels
         #region Constructors
         public CSSPWebToolsDBContext()
         {
-            this.Error = string.Format(ModelsRes._IsRequired, "DataType");
+            this.Error = string.Format(CSSPModelsRes._IsRequired, "DataType");
             DatabaseType = DatabaseTypeEnum.Error;
         }
         public CSSPWebToolsDBContext(DatabaseTypeEnum DatabaseType)
@@ -114,7 +114,7 @@ namespace CSSPModels
                     break;
                 default:
                     {
-                        this.Error = string.Format(ModelsRes._IsRequired, "DataType");
+                        this.Error = string.Format(CSSPModelsRes._IsRequired, "DataType");
                         this.DatabaseType = DatabaseTypeEnum.Error;
                     }
                     break;
@@ -135,7 +135,7 @@ namespace CSSPModels
 
             if (DatabaseType == DatabaseTypeEnum.Error)
             {
-                this.Error = string.Format(ModelsRes._IsRequired, "DataType");
+                this.Error = string.Format(CSSPModelsRes._IsRequired, "DataType");
                 return;
             }
 

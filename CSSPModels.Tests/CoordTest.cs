@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class CoordTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private Coord coord { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public CoordTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            coord = new Coord();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under CoordTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under CoordTestGenerated.cs
+        [TestMethod]
+        public void Coord_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

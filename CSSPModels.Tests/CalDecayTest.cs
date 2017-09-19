@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class CalDecayTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private CalDecay calDecay { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public CalDecayTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            calDecay = new CalDecay();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under CalDecayTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under CalDecayTestGenerated.cs
+        [TestMethod]
+        public void CalDecay_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

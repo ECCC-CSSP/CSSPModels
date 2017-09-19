@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class DocTemplateTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private DocTemplate docTemplate { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public DocTemplateTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            docTemplate = new DocTemplate();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under DocTemplateTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under DocTemplateTestGenerated.cs
+        [TestMethod]
+        public void DocTemplate_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

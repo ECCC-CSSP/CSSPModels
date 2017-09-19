@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class VectorTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private Vector vector { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public VectorTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            vector = new Vector();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under VectorTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under VectorTestGenerated.cs
+        [TestMethod]
+        public void Vector_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

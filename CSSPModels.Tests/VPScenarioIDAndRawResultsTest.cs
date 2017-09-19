@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class VPScenarioIDAndRawResultsTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private VPScenarioIDAndRawResults vPScenarioIDAndRawResults { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public VPScenarioIDAndRawResultsTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            vPScenarioIDAndRawResults = new VPScenarioIDAndRawResults();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under VPScenarioIDAndRawResultsTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under VPScenarioIDAndRawResultsTestGenerated.cs
+        [TestMethod]
+        public void VPScenarioIDAndRawResults_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

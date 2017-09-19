@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class LastUpdateAndContactTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private LastUpdateAndContact lastUpdateAndContact { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public LastUpdateAndContactTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            lastUpdateAndContact = new LastUpdateAndContact();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under LastUpdateAndContactTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under LastUpdateAndContactTestGenerated.cs
+        [TestMethod]
+        public void LastUpdateAndContact_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

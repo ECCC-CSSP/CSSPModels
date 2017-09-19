@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class PolSourceSiteTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private PolSourceSite polSourceSite { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public PolSourceSiteTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            polSourceSite = new PolSourceSite();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under PolSourceSiteTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under PolSourceSiteTestGenerated.cs
+        [TestMethod]
+        public void PolSourceSite_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

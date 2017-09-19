@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class MWQMSubsectorLanguageTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private MWQMSubsectorLanguage mWQMSubsectorLanguage { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public MWQMSubsectorLanguageTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            mWQMSubsectorLanguage = new MWQMSubsectorLanguage();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under MWQMSubsectorLanguageTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under MWQMSubsectorLanguageTestGenerated.cs
+        [TestMethod]
+        public void MWQMSubsectorLanguage_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

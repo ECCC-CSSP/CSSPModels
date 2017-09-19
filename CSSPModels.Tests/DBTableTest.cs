@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class DBTableTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private DBTable dBTable { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public DBTableTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            dBTable = new DBTable();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under DBTableTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under DBTableTestGenerated.cs
+        [TestMethod]
+        public void DBTable_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

@@ -33,11 +33,12 @@
             this.lblStatusText = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblNote = new System.Windows.Forms.Label();
+            this.butGenerateModelsNoHelp = new System.Windows.Forms.Button();
             this.butGenerateModelsWithHelp = new System.Windows.Forms.Button();
             this.butGenerateSetupOnce = new System.Windows.Forms.Button();
             this.butGenerateResOnce = new System.Windows.Forms.Button();
             this.butRunModelLint = new System.Windows.Forms.Button();
-            this.butGenerateAllCodeFiles = new System.Windows.Forms.Button();
+            this.butGenerateModelsTest = new System.Windows.Forms.Button();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.richTextBoxStatus = new System.Windows.Forms.RichTextBox();
             this.richTextBoxStatus2 = new System.Windows.Forms.RichTextBox();
@@ -63,11 +64,12 @@
             // 
             this.splitContainer1.Panel1.Controls.Add(this.panel2);
             this.splitContainer1.Panel1.Controls.Add(this.lblNote);
+            this.splitContainer1.Panel1.Controls.Add(this.butGenerateModelsNoHelp);
             this.splitContainer1.Panel1.Controls.Add(this.butGenerateModelsWithHelp);
             this.splitContainer1.Panel1.Controls.Add(this.butGenerateSetupOnce);
             this.splitContainer1.Panel1.Controls.Add(this.butGenerateResOnce);
             this.splitContainer1.Panel1.Controls.Add(this.butRunModelLint);
-            this.splitContainer1.Panel1.Controls.Add(this.butGenerateAllCodeFiles);
+            this.splitContainer1.Panel1.Controls.Add(this.butGenerateModelsTest);
             // 
             // splitContainer1.Panel2
             // 
@@ -113,9 +115,19 @@
             this.lblNote.TabIndex = 26;
             this.lblNote.Text = "Note: You will have to recompile the CSSPModels project.";
             // 
+            // butGenerateModelsNoHelp
+            // 
+            this.butGenerateModelsNoHelp.Location = new System.Drawing.Point(616, 12);
+            this.butGenerateModelsNoHelp.Name = "butGenerateModelsNoHelp";
+            this.butGenerateModelsNoHelp.Size = new System.Drawing.Size(163, 23);
+            this.butGenerateModelsNoHelp.TabIndex = 11;
+            this.butGenerateModelsNoHelp.Text = "Generate Models No Help";
+            this.butGenerateModelsNoHelp.UseVisualStyleBackColor = true;
+            this.butGenerateModelsNoHelp.Click += new System.EventHandler(this.butGenerateModelsNoHelp_Click);
+            // 
             // butGenerateModelsWithHelp
             // 
-            this.butGenerateModelsWithHelp.Location = new System.Drawing.Point(803, 12);
+            this.butGenerateModelsWithHelp.Location = new System.Drawing.Point(866, 12);
             this.butGenerateModelsWithHelp.Name = "butGenerateModelsWithHelp";
             this.butGenerateModelsWithHelp.Size = new System.Drawing.Size(163, 23);
             this.butGenerateModelsWithHelp.TabIndex = 11;
@@ -125,6 +137,7 @@
             // 
             // butGenerateSetupOnce
             // 
+            this.butGenerateSetupOnce.Enabled = false;
             this.butGenerateSetupOnce.Location = new System.Drawing.Point(337, 12);
             this.butGenerateSetupOnce.Name = "butGenerateSetupOnce";
             this.butGenerateSetupOnce.Size = new System.Drawing.Size(140, 23);
@@ -153,15 +166,15 @@
             this.butRunModelLint.UseVisualStyleBackColor = true;
             this.butRunModelLint.Click += new System.EventHandler(this.butRunModelLint_Click);
             // 
-            // butGenerateAllCodeFiles
+            // butGenerateModelsTest
             // 
-            this.butGenerateAllCodeFiles.Location = new System.Drawing.Point(15, 12);
-            this.butGenerateAllCodeFiles.Name = "butGenerateAllCodeFiles";
-            this.butGenerateAllCodeFiles.Size = new System.Drawing.Size(143, 23);
-            this.butGenerateAllCodeFiles.TabIndex = 11;
-            this.butGenerateAllCodeFiles.Text = "Generate all code files";
-            this.butGenerateAllCodeFiles.UseVisualStyleBackColor = true;
-            this.butGenerateAllCodeFiles.Click += new System.EventHandler(this.butGenerateAllCodeFiles_Click);
+            this.butGenerateModelsTest.Location = new System.Drawing.Point(15, 12);
+            this.butGenerateModelsTest.Name = "butGenerateModelsTest";
+            this.butGenerateModelsTest.Size = new System.Drawing.Size(143, 23);
+            this.butGenerateModelsTest.TabIndex = 11;
+            this.butGenerateModelsTest.Text = "Generate Models Test";
+            this.butGenerateModelsTest.UseVisualStyleBackColor = true;
+            this.butGenerateModelsTest.Click += new System.EventHandler(this.butGenerateModelsTest_Click);
             // 
             // splitContainer2
             // 
@@ -228,7 +241,7 @@
         private System.Windows.Forms.Label lblStatusText;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Label lblNote;
-        private System.Windows.Forms.Button butGenerateAllCodeFiles;
+        private System.Windows.Forms.Button butGenerateModelsTest;
         private System.Windows.Forms.RichTextBox richTextBoxStatus;
         private System.Windows.Forms.Button butGenerateSetupOnce;
         private System.Windows.Forms.Button butGenerateResOnce;
@@ -236,6 +249,7 @@
         private System.Windows.Forms.Button butGenerateModelsWithHelp;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.RichTextBox richTextBoxStatus2;
+        private System.Windows.Forms.Button butGenerateModelsNoHelp;
     }
 }
 

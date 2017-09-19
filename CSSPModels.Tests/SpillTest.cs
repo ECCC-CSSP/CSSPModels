@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class SpillTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private Spill spill { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public SpillTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            spill = new Spill();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under SpillTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under SpillTestGenerated.cs
+        [TestMethod]
+        public void Spill_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

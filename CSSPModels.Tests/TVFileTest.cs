@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class TVFileTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private TVFile tVFile { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public TVFileTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            tVFile = new TVFile();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under TVFileTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under TVFileTestGenerated.cs
+        [TestMethod]
+        public void TVFile_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

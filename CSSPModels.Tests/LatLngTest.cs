@@ -9,27 +9,18 @@ using CSSPEnums;
 
 namespace CSSPModels.Tests
 {
-    [TestClass]
     public partial class LatLngTest
     {
-        #region Variables
-        #endregion Variables
-
-        #region Properties
-        private CSSPWebToolsDBContext db { get; set; }
-        private LatLng latLng { get; set; }
-        #endregion Properties
-
-        #region Constructors
-        public LatLngTest()
-        {
-            db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB);
-            latLng = new LatLng();
-        }
-        #endregion Constructors
+        // most of the tests are auto generated and are located under LatLngTestGenerated.cs
+        // use this section to add other manual test
 
         #region Tests
-        // most of the tests are located under LatLngTestGenerated.cs
+        [TestMethod]
+        public void LatLng_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
         #endregion Tests
     }
 }

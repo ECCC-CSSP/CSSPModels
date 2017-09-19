@@ -45,7 +45,7 @@ namespace CSSPModelsGenerateCode
         #endregion Construtors
 
         #region Events
-        private void butGenerateAllCodeFiles_Click(object sender, EventArgs e)
+        private void butGenerateModelsTest_Click(object sender, EventArgs e)
         {
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
@@ -81,11 +81,23 @@ namespace CSSPModelsGenerateCode
             richTextBoxStatus.Text = "";
             modelsGenerateCodeHelper.GenerateSetupOnce();
         }
+        private void butGenerateModelsNoHelp_Click(object sender, EventArgs e)
+        {
+            // -----------------------------------------------------------------
+            // -----------------------------------------------------------------
+            // Will generate \srcWithHelp\[ClassName].cs files without any help doc
+            // -----------------------------------------------------------------
+            // -----------------------------------------------------------------
+
+            richTextBoxStatus.Text = "";
+            richTextBoxStatus2.Text = "";
+            modelsGenerateCodeHelper.ModelsWithHelpGenerate(false);
+        }
         private void butGenerateModelsWithHelp_Click(object sender, EventArgs e)
         {
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
-            // Will generate CSSPModels.Tests/[ClassName]Test.cs files this should only be run once
+            // Will generate \srcWithHelp\[ClassName].cs files with help doc
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
 
@@ -97,7 +109,7 @@ namespace CSSPModelsGenerateCode
         {
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
-            // Will generate CSSPModels.Tests/[ClassName]Test.cs files this should only be run once
+            // Will verify that all tables, fields and types matches between DB and Models
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
 
@@ -157,5 +169,6 @@ namespace CSSPModelsGenerateCode
             }
         }
         #endregion Functions private
+
     }
 }
