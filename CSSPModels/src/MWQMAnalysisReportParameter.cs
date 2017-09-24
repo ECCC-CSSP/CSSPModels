@@ -16,7 +16,7 @@ namespace CSSPModels
         [StringLength(250, MinimumLength = 5)]
         public string AnalysisName { get; set; }
         [Range(1980, 2050)]
-        public int AnalysisReportYear { get; set; }
+        public int? AnalysisReportYear { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime StartDate { get; set; }
         [CSSPAfter(Year = 1980)]
@@ -51,6 +51,10 @@ namespace CSSPModels
         public int WetLimit96h { get; set; }
         [StringLength(250)]
         public string RunsToOmit { get; set; }
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "8")]
+        public int? ExcelTVFileTVItemID { get; set; }
+        [CSSPEnumType]
+        public AnalysisReportExportCommandEnum Command { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
@@ -58,6 +62,16 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ExcelTVFileTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string ExcelTVFileTVText { get; set; }
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "AnalysisReportExportCommandEnum", EnumType = "Command")]
+        public string CommandText { get; set; }
         [NotMapped]
         [StringLength(200)]
         [CSSPAllowNull]

@@ -17,11 +17,11 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MWQMAnalysisReportParameters** : [MWQMAnalysisReportParameterID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_MWQMAnalysisReportParameterID), [SubsectorTVItemID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_SubsectorTVItemID), [AnalysisName](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisName), [AnalysisReportYear](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisReportYear), [StartDate](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_StartDate), [EndDate](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_EndDate), [AnalysisCalculationType](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisCalculationType), [NumberOfRuns](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_NumberOfRuns), [FullYear](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_FullYear), [SalinityHighlightDeviationFromAverage](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_SalinityHighlightDeviationFromAverage), [ShortRangeNumberOfDays](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ShortRangeNumberOfDays), [MidRangeNumberOfDays](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_MidRangeNumberOfDays), [DryLimit24h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit24h), [DryLimit48h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit48h), [DryLimit72h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit72h), [DryLimit96h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit96h), [WetLimit24h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit24h), [WetLimit48h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit48h), [WetLimit72h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit72h), [WetLimit96h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit96h), [RunsToOmit](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_RunsToOmit), [LastUpdateDate_UTC](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [LastUpdateContactTVText](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_LastUpdateContactTVText), [HasErrors](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_HasErrors), [ValidationResults](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ValidationResults), </para>
+    /// > <para>**DB properties for table MWQMAnalysisReportParameters** : [MWQMAnalysisReportParameterID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_MWQMAnalysisReportParameterID), [SubsectorTVItemID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_SubsectorTVItemID), [AnalysisName](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisName), [AnalysisReportYear](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisReportYear), [StartDate](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_StartDate), [EndDate](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_EndDate), [AnalysisCalculationType](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisCalculationType), [NumberOfRuns](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_NumberOfRuns), [FullYear](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_FullYear), [SalinityHighlightDeviationFromAverage](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_SalinityHighlightDeviationFromAverage), [ShortRangeNumberOfDays](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ShortRangeNumberOfDays), [MidRangeNumberOfDays](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_MidRangeNumberOfDays), [DryLimit24h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit24h), [DryLimit48h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit48h), [DryLimit72h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit72h), [DryLimit96h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit96h), [WetLimit24h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit24h), [WetLimit48h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit48h), [WetLimit72h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit72h), [WetLimit96h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit96h), [RunsToOmit](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_RunsToOmit), [ExcelTVFileTVItemID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ExcelTVFileTVItemID), [Command](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_Command), [LastUpdateDate_UTC](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_LastUpdateContactTVItemID), </para>
+    /// > <para>**Other properties** : [ExcelTVFileTVText](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ExcelTVFileTVText), [CommandText](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_CommandText), [LastUpdateContactTVText](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_LastUpdateContactTVText), [HasErrors](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_HasErrors), [ValidationResults](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMAnalysisReportParameterService](CSSPServices.MWQMAnalysisReportParameterService.html)</para>
-    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [AnalysisCalculationTypeEnum](CSSPEnums.AnalysisCalculationTypeEnum.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [AnalysisCalculationTypeEnum](CSSPEnums.AnalysisCalculationTypeEnum.html), [AnalysisReportExportCommandEnum](CSSPEnums.AnalysisReportExportCommandEnum.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MWQMAnalysisReportParameter
@@ -39,7 +39,7 @@ namespace CSSPModels
         [StringLength(250, MinimumLength = 5)]
         public string AnalysisName { get; set; }
         [Range(1980, 2050)]
-        public int AnalysisReportYear { get; set; }
+        public int? AnalysisReportYear { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
@@ -93,6 +93,22 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
+        /// > <para>8 == File</para>
+        /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "8")]</para>
+        /// </summary>
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "8")]
+        public int? ExcelTVFileTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// </summary>
+        [CSSPEnumType]
+        public AnalysisReportExportCommandEnum Command { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
         /// </summary>
         [CSSPAfter(Year = 1980)]
@@ -109,6 +125,28 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
+        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ExcelTVFileTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]</para>
+        /// </summary>
+        [NotMapped]
+        [StringLength(200)]
+        [CSSPAllowNull]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ExcelTVFileTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string ExcelTVFileTVText { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
+        /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "AnalysisReportExportCommandEnum", EnumType = "Command")]</para>
+        /// </summary>
+        [NotMapped]
+        [StringLength(100)]
+        [CSSPAllowNull]
+        [CSSPEnumTypeText(EnumTypeName = "AnalysisReportExportCommandEnum", EnumType = "Command")]
+        public string CommandText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>

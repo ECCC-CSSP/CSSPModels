@@ -8143,6 +8143,24 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterCommand.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterCommand {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterCommand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterCommandText.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterCommandText {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterCommandText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MWQMAnalysisReportParameterDryLimit24h.
         /// </summary>
         public static string MWQMAnalysisReportParameterDryLimit24h {
@@ -8184,6 +8202,24 @@ namespace CSSPModels.Resources {
         public static string MWQMAnalysisReportParameterEndDate {
             get {
                 return ResourceManager.GetString("MWQMAnalysisReportParameterEndDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterExcelTVFileTVItemID.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterExcelTVFileTVItemID {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterExcelTVFileTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterExcelTVFileTVText.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterExcelTVFileTVText {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterExcelTVFileTVText", resourceCulture);
             }
         }
         

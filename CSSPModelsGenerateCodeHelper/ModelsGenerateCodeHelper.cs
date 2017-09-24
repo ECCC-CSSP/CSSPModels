@@ -42,6 +42,7 @@ namespace CSSPModelsGenerateCodeHelper
         {
             TableFieldEnumExceptionList = new List<TableFieldEnumException>()
             {
+                new TableFieldEnumException() { TableName = "MWQMAnalysisReportParameters", FieldName = "Command", EnumText = "AnalysisReportExportCommandEnum" },
                 new TableFieldEnumException() { TableName = "MWQMRunLanguages", FieldName = "TranslationStatusRunComment", EnumText = "TranslationStatusEnum" },
                 new TableFieldEnumException() { TableName = "MWQMRunLanguages", FieldName = "TranslationStatusRunWeatherComment", EnumText = "TranslationStatusEnum" },
                 new TableFieldEnumException() { TableName = "MWQMRuns", FieldName = "RunSampleType", EnumText = "SampleTypeEnum" },

@@ -137,7 +137,6 @@
             // 
             // butGenerateSetupOnce
             // 
-            this.butGenerateSetupOnce.Enabled = false;
             this.butGenerateSetupOnce.Location = new System.Drawing.Point(337, 12);
             this.butGenerateSetupOnce.Name = "butGenerateSetupOnce";
             this.butGenerateSetupOnce.Size = new System.Drawing.Size(140, 23);
@@ -158,6 +157,7 @@
             // 
             // butRunModelLint
             // 
+            this.butRunModelLint.Enabled = false;
             this.butRunModelLint.Location = new System.Drawing.Point(485, 12);
             this.butRunModelLint.Name = "butRunModelLint";
             this.butRunModelLint.Size = new System.Drawing.Size(107, 23);

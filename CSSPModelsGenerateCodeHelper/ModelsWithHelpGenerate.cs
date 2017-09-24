@@ -146,7 +146,7 @@ namespace CSSPModelsGenerateCodeHelper
                     {
                         if (dllPropertyInfo.CSSPProp.HasCSSPEnumTypeAttribute)
                         {
-                            EnumTextLink +=  "[" + dllPropertyInfo.CSSPProp.PropType + "](CSSPEnums." + dllPropertyInfo.CSSPProp.PropType + ".html), ";
+                            EnumTextLink += "[" + dllPropertyInfo.CSSPProp.PropType + "](CSSPEnums." + dllPropertyInfo.CSSPProp.PropType + ".html), ";
                         }
                     }
                     if (!string.IsNullOrWhiteSpace(EnumTextLink))
@@ -224,9 +224,9 @@ namespace CSSPModelsGenerateCodeHelper
                             return;
                         }
 
-                        sb.AppendLine(@"        public " + (dllPropertyInfo.CSSPProp.IsList ? 
-                            PropTypeText.Replace(dllPropertyInfo.CSSPProp.PropType, "List<" + dllPropertyInfo.CSSPProp.PropType + ">") : 
-                            PropTypeText) + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") + 
+                        sb.AppendLine(@"        public " + (dllPropertyInfo.CSSPProp.IsList ?
+                            PropTypeText.Replace(dllPropertyInfo.CSSPProp.PropType, "List<" + dllPropertyInfo.CSSPProp.PropType + ">") :
+                            PropTypeText) + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") +
                             " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
                     }
                 }
@@ -260,14 +260,14 @@ namespace CSSPModelsGenerateCodeHelper
                             sb.Append(sbCustomAttribute.ToString());
                             sb.AppendLine(@"        /// </summary>");
                         }
-                    }
 
-                    if (dllPropertyInfo.CSSPProp.PropName == "HasErrors")
-                    {
-                        sb.AppendLine(@"        /// <summary>");
-                        sb.AppendLine(@"        /// > [!NOTE]");
-                        sb.AppendLine(@"        /// > <para>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of [" + dllTypeInfoModels.Type.Name + "](CSSPModels." + dllTypeInfoModels.Type.Name + ")</para>");
-                        sb.AppendLine(@"        /// </summary>");
+                        if (dllPropertyInfo.CSSPProp.PropName == "HasErrors")
+                        {
+                            sb.AppendLine(@"        /// <summary>");
+                            sb.AppendLine(@"        /// > [!NOTE]");
+                            sb.AppendLine(@"        /// > <para>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of [" + dllTypeInfoModels.Type.Name + "](CSSPModels." + dllTypeInfoModels.Type.Name + ")</para>");
+                            sb.AppendLine(@"        /// </summary>");
+                        }
                     }
 
                     if (!WriteAttributes(dllPropertyInfo, sb))
@@ -296,10 +296,13 @@ namespace CSSPModelsGenerateCodeHelper
                             " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
                     }
                 }
-                sb.AppendLine(@"        /// <summary>");
-                sb.AppendLine(@"        /// > [!NOTE]");
-                sb.AppendLine(@"        /// > <para>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of [" + dllTypeInfoModels.Type.Name + "](CSSPModels." + dllTypeInfoModels.Type.Name + ")</para>");
-                sb.AppendLine(@"        /// </summary>");
+                if (WithHelp) //------------------------------------------------------------------ help
+                {
+                    sb.AppendLine(@"        /// <summary>");
+                    sb.AppendLine(@"        /// > [!NOTE]");
+                    sb.AppendLine(@"        /// > <para>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of [" + dllTypeInfoModels.Type.Name + "](CSSPModels." + dllTypeInfoModels.Type.Name + ")</para>");
+                    sb.AppendLine(@"        /// </summary>");
+                }
                 if (!NotMappedClass)
                 {
                     sb.AppendLine(@"        [NotMapped]");
@@ -375,7 +378,7 @@ namespace CSSPModelsGenerateCodeHelper
                 {
                     sb.AppendLine(@"            Error = """";");
                 }
-                
+
                 sb.AppendLine(@"            ValidationResults = new List<ValidationResult>();");
                 sb.AppendLine(@"        }");
                 sb.AppendLine(@"        #endregion Constructors");
