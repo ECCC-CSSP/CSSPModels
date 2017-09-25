@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int MWQMAnalysisReportParameterID { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID")]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "20")]
         public int SubsectorTVItemID { get; set; }
         [StringLength(250, MinimumLength = 5)]
         public string AnalysisName { get; set; }
