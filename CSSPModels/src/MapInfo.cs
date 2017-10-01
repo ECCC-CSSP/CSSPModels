@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class MapInfo
+    public partial class MapInfo : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -25,43 +25,53 @@ namespace CSSPModels
         public double LngMax { get; set; }
         [CSSPEnumType]
         public MapInfoDrawTypeEnum MapInfoDrawType { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string TVText { get; set; }
+        public MapInfoWeb MapInfoWeb { get; set; }
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
-        public string TVTypeText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "MapInfoDrawTypeEnum", EnumType = "MapInfoDrawType")]
-        public string MapInfoDrawTypeText { get; set; }
-        [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        public MapInfoReport MapInfoReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public MapInfo()
+        public MapInfo() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class MapInfoWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string TVText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
+        public string TVTypeText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "MapInfoDrawTypeEnum", EnumType = "MapInfoDrawType")]
+        public string MapInfoDrawTypeText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public MapInfoWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class MapInfoReport
+    {
+        #region Properties for report information
+        public string MapInfoReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public MapInfoReport()
+        {
         }
         #endregion Constructors
     }

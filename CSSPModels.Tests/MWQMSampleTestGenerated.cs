@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void MWQMSample_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSampleID", "MWQMSiteTVItemID", "MWQMRunTVItemID", "SampleDateTime_Local", "Depth_m", "FecCol_MPN_100ml", "Salinity_PPT", "WaterTemp_C", "PH", "SampleTypesText", "SampleType_old", "Tube_10", "Tube_1_0", "Tube_0_1", "ProcessedBy", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteTVText", "MWQMRunTVText", "LastUpdateContactTVText", "SampleType_oldText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MWQMSampleWeb", "MWQMSampleReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMSample).GetProperties().OrderBy(c => c.Name))
@@ -130,10 +130,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.MWQMSampleProcessedBy);
                Assert.IsNotNull(CSSPModelsRes.MWQMSampleLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.MWQMSampleLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSampleMWQMSiteTVText);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSampleMWQMRunTVText);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSampleLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSampleSampleType_oldText);
                Assert.IsNotNull(CSSPModelsRes.MWQMSampleHasErrors);
         }
         [TestMethod]
@@ -190,24 +186,12 @@ namespace CSSPModels.Tests
                int val17 = 45;
                mWQMSample.LastUpdateContactTVItemID = val17;
                Assert.AreEqual(val17, mWQMSample.LastUpdateContactTVItemID);
-               string val18 = "Some text";
-               mWQMSample.MWQMSiteTVText = val18;
-               Assert.AreEqual(val18, mWQMSample.MWQMSiteTVText);
-               string val19 = "Some text";
-               mWQMSample.MWQMRunTVText = val19;
-               Assert.AreEqual(val19, mWQMSample.MWQMRunTVText);
-               string val20 = "Some text";
-               mWQMSample.LastUpdateContactTVText = val20;
-               Assert.AreEqual(val20, mWQMSample.LastUpdateContactTVText);
-               string val21 = "Some text";
-               mWQMSample.SampleType_oldText = val21;
-               Assert.AreEqual(val21, mWQMSample.SampleType_oldText);
-               bool val22 = true;
-               mWQMSample.HasErrors = val22;
-               Assert.AreEqual(val22, mWQMSample.HasErrors);
-               IEnumerable<ValidationResult> val69 = new List<ValidationResult>().AsEnumerable();
-               mWQMSample.ValidationResults = val69;
-               Assert.AreEqual(val69, mWQMSample.ValidationResults);
+               bool val18 = true;
+               mWQMSample.HasErrors = val18;
+               Assert.AreEqual(val18, mWQMSample.HasErrors);
+               IEnumerable<ValidationResult> val61 = new List<ValidationResult>().AsEnumerable();
+               mWQMSample.ValidationResults = val61;
+               Assert.AreEqual(val61, mWQMSample.ValidationResults);
         }
         #endregion Tests
     }

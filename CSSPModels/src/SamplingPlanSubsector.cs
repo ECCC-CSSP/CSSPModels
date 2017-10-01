@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class SamplingPlanSubsector
+    public partial class SamplingPlanSubsector : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -15,33 +15,49 @@ namespace CSSPModels
         public int SamplingPlanID { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "20")]
         public int SubsectorTVItemID { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SubsectorTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string SubsectorTVText { get; set; }
+        public SamplingPlanSubsectorWeb SamplingPlanSubsectorWeb { get; set; }
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
-        [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        public SamplingPlanSubsectorReport SamplingPlanSubsectorReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public SamplingPlanSubsector()
+        public SamplingPlanSubsector() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class SamplingPlanSubsectorWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SubsectorTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string SubsectorTVText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public SamplingPlanSubsectorWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class SamplingPlanSubsectorReport
+    {
+        #region Properties for report information
+        public string SamplingPlanSubsectorReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public SamplingPlanSubsectorReport()
+        {
         }
         #endregion Constructors
     }

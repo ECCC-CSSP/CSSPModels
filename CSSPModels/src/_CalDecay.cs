@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class CalDecay
+    public partial class CalDecay : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -18,15 +18,12 @@ namespace CSSPModels
         public string Error { get; set; }
         [Range(0.0D, -1.0D)]
         public double Decay { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public CalDecay()
+        public CalDecay() : base()
         {
             Error = "";
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

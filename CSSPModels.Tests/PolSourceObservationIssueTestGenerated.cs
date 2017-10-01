@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void PolSourceObservationIssue_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "PolSourceObservationIssueID", "PolSourceObservationID", "ObservationInfo", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "PolSourceObservationIssueWeb", "PolSourceObservationIssueReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.PolSourceObservationIssue).GetProperties().OrderBy(c => c.Name))
@@ -119,7 +119,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.PolSourceObservationIssueOrdinal);
                Assert.IsNotNull(CSSPModelsRes.PolSourceObservationIssueLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.PolSourceObservationIssueLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObservationIssueLastUpdateContactTVText);
                Assert.IsNotNull(CSSPModelsRes.PolSourceObservationIssueHasErrors);
         }
         [TestMethod]
@@ -143,15 +142,12 @@ namespace CSSPModels.Tests
                int val6 = 45;
                polSourceObservationIssue.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, polSourceObservationIssue.LastUpdateContactTVItemID);
-               string val7 = "Some text";
-               polSourceObservationIssue.LastUpdateContactTVText = val7;
-               Assert.AreEqual(val7, polSourceObservationIssue.LastUpdateContactTVText);
-               bool val8 = true;
-               polSourceObservationIssue.HasErrors = val8;
-               Assert.AreEqual(val8, polSourceObservationIssue.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               polSourceObservationIssue.ValidationResults = val27;
-               Assert.AreEqual(val27, polSourceObservationIssue.ValidationResults);
+               bool val7 = true;
+               polSourceObservationIssue.HasErrors = val7;
+               Assert.AreEqual(val7, polSourceObservationIssue.HasErrors);
+               IEnumerable<ValidationResult> val28 = new List<ValidationResult>().AsEnumerable();
+               polSourceObservationIssue.ValidationResults = val28;
+               Assert.AreEqual(val28, polSourceObservationIssue.ValidationResults);
         }
         #endregion Tests
     }

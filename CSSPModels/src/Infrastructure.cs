@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class Infrastructure
+    public partial class Infrastructure : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -111,98 +111,75 @@ namespace CSSPModels
         public int? SeeOtherTVItemID { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "2")]
         public int? CivicAddressTVItemID { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string InfrastructureTVText { get; set; }
+        public InfrastructureWeb InfrastructureWeb { get; set; }
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SeeOtherTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string SeeOtherTVText { get; set; }
-        [NotMapped]
-        [StringLength(200)]
-        [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CivicAddressTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string CivicAddressTVText { get; set; }
-        [NotMapped]
-        [StringLength(200)]
-        [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "InfrastructureTypeEnum", EnumType = "InfrastructureType")]
-        public string InfrastructureTypeText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "FacilityTypeEnum", EnumType = "FacilityType")]
-        public string FacilityTypeText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "AerationTypeEnum", EnumType = "AerationType")]
-        public string AerationTypeText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "PreliminaryTreatmentTypeEnum", EnumType = "PreliminaryTreatmentType")]
-        public string PreliminaryTreatmentTypeText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "PrimaryTreatmentTypeEnum", EnumType = "PrimaryTreatmentType")]
-        public string PrimaryTreatmentTypeText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "SecondaryTreatmentTypeEnum", EnumType = "SecondaryTreatmentType")]
-        public string SecondaryTreatmentTypeText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "TertiaryTreatmentTypeEnum", EnumType = "TertiaryTreatmentType")]
-        public string TertiaryTreatmentTypeText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "TreatmentTypeEnum", EnumType = "TreatmentType")]
-        public string TreatmentTypeText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "DisinfectionTypeEnum", EnumType = "DisinfectionType")]
-        public string DisinfectionTypeText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "CollectionSystemTypeEnum", EnumType = "CollectionSystemType")]
-        public string CollectionSystemTypeText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "AlarmSystemTypeEnum", EnumType = "AlarmSystemType")]
-        public string AlarmSystemTypeText { get; set; }
-        [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        public InfrastructureReport InfrastructureReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public Infrastructure()
+        public Infrastructure() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class InfrastructureWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string InfrastructureTVText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SeeOtherTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string SeeOtherTVText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CivicAddressTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string CivicAddressTVText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "InfrastructureTypeEnum", EnumType = "InfrastructureType")]
+        public string InfrastructureTypeText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "FacilityTypeEnum", EnumType = "FacilityType")]
+        public string FacilityTypeText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "AerationTypeEnum", EnumType = "AerationType")]
+        public string AerationTypeText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "PreliminaryTreatmentTypeEnum", EnumType = "PreliminaryTreatmentType")]
+        public string PreliminaryTreatmentTypeText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "PrimaryTreatmentTypeEnum", EnumType = "PrimaryTreatmentType")]
+        public string PrimaryTreatmentTypeText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "SecondaryTreatmentTypeEnum", EnumType = "SecondaryTreatmentType")]
+        public string SecondaryTreatmentTypeText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "TertiaryTreatmentTypeEnum", EnumType = "TertiaryTreatmentType")]
+        public string TertiaryTreatmentTypeText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "TreatmentTypeEnum", EnumType = "TreatmentType")]
+        public string TreatmentTypeText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "DisinfectionTypeEnum", EnumType = "DisinfectionType")]
+        public string DisinfectionTypeText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "CollectionSystemTypeEnum", EnumType = "CollectionSystemType")]
+        public string CollectionSystemTypeText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "AlarmSystemTypeEnum", EnumType = "AlarmSystemType")]
+        public string AlarmSystemTypeText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public InfrastructureWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class InfrastructureReport
+    {
+        #region Properties for report information
+        public string InfrastructureReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public InfrastructureReport()
+        {
         }
         #endregion Constructors
     }

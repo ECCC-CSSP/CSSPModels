@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class AppErrLog
+    public partial class AppErrLog : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -19,28 +19,50 @@ namespace CSSPModels
         public string Message { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime DateTime_UTC { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
+        [NotMapped]
+        [CSSPAllowNull]
+        public AppErrLogWeb AppErrLogWeb { get; set; }
+        [NotMapped]
+        [CSSPAllowNull]
+        public AppErrLogReport AppErrLogReport { get; set; }
+        #endregion Properties not in DB
+
+        #region Constructors
+        public AppErrLog() : base()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class AppErrLogWeb
+    {
+        #region Properties for web information
         [NotMapped]
         [StringLength(200)]
         [CSSPAllowNull]
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
         public string LastUpdateContactTVText { get; set; }
-        [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
-        #endregion Properties not in DB
+        #endregion Properties for web information
 
         #region Constructors
-        public AppErrLog()
+        public AppErrLogWeb()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class AppErrLogReport
+    {
+        #region Properties for report information
+        public string AppErrLogTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public AppErrLogReport()
+        {
         }
         #endregion Constructors
     }

@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void MikeScenario_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeScenarioID", "MikeScenarioTVItemID", "ParentMikeScenarioID", "ScenarioStatus", "ErrorInfo", "MikeScenarioStartDateTime_Local", "MikeScenarioEndDateTime_Local", "MikeScenarioStartExecutionDateTime_Local", "MikeScenarioExecutionTime_min", "WindSpeed_km_h", "WindDirection_deg", "DecayFactor_per_day", "DecayIsConstant", "DecayFactorAmplitude", "ResultFrequency_min", "AmbientTemperature_C", "AmbientSalinity_PSU", "ManningNumber", "NumberOfElements", "NumberOfTimeSteps", "NumberOfSigmaLayers", "NumberOfZLayers", "NumberOfHydroOutputParameters", "NumberOfTransOutputParameters", "EstimatedHydroFileSize", "EstimatedTransFileSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MikeScenarioTVText", "LastUpdateContactTVText", "ScenarioStatusText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MikeScenarioWeb", "MikeScenarioReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MikeScenario).GetProperties().OrderBy(c => c.Name))
@@ -141,9 +141,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.MikeScenarioEstimatedTransFileSize);
                Assert.IsNotNull(CSSPModelsRes.MikeScenarioLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.MikeScenarioLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MikeScenarioMikeScenarioTVText);
-               Assert.IsNotNull(CSSPModelsRes.MikeScenarioLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.MikeScenarioScenarioStatusText);
                Assert.IsNotNull(CSSPModelsRes.MikeScenarioHasErrors);
         }
         [TestMethod]
@@ -233,21 +230,12 @@ namespace CSSPModels.Tests
                int val28 = 45;
                mikeScenario.LastUpdateContactTVItemID = val28;
                Assert.AreEqual(val28, mikeScenario.LastUpdateContactTVItemID);
-               string val29 = "Some text";
-               mikeScenario.MikeScenarioTVText = val29;
-               Assert.AreEqual(val29, mikeScenario.MikeScenarioTVText);
-               string val30 = "Some text";
-               mikeScenario.LastUpdateContactTVText = val30;
-               Assert.AreEqual(val30, mikeScenario.LastUpdateContactTVText);
-               string val31 = "Some text";
-               mikeScenario.ScenarioStatusText = val31;
-               Assert.AreEqual(val31, mikeScenario.ScenarioStatusText);
-               bool val32 = true;
-               mikeScenario.HasErrors = val32;
-               Assert.AreEqual(val32, mikeScenario.HasErrors);
-               IEnumerable<ValidationResult> val99 = new List<ValidationResult>().AsEnumerable();
-               mikeScenario.ValidationResults = val99;
-               Assert.AreEqual(val99, mikeScenario.ValidationResults);
+               bool val29 = true;
+               mikeScenario.HasErrors = val29;
+               Assert.AreEqual(val29, mikeScenario.HasErrors);
+               IEnumerable<ValidationResult> val94 = new List<ValidationResult>().AsEnumerable();
+               mikeScenario.ValidationResults = val94;
+               Assert.AreEqual(val94, mikeScenario.ValidationResults);
         }
         #endregion Tests
     }

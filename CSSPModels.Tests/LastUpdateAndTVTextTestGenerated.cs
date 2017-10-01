@@ -41,7 +41,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LastUpdateAndTVText_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "LastUpdateDate_UTC", "LastUpdateDate_Local", "TVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Error", "LastUpdateAndTVTextDate_UTC", "LastUpdateDate_Local", "TVText", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -62,7 +62,7 @@ namespace CSSPModels.Tests
         public void LastUpdateAndTVText_Every_Property_Has_A_Resource_OK()
         {
                Assert.IsNotNull(CSSPModelsRes.LastUpdateAndTVTextError);
-               Assert.IsNotNull(CSSPModelsRes.LastUpdateAndTVTextLastUpdateDate_UTC);
+               Assert.IsNotNull(CSSPModelsRes.LastUpdateAndTVTextLastUpdateAndTVTextDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.LastUpdateAndTVTextLastUpdateDate_Local);
                Assert.IsNotNull(CSSPModelsRes.LastUpdateAndTVTextTVText);
                Assert.IsNotNull(CSSPModelsRes.LastUpdateAndTVTextHasErrors);
@@ -74,8 +74,8 @@ namespace CSSPModels.Tests
                lastUpdateAndTVText.Error = val1;
                Assert.AreEqual(val1, lastUpdateAndTVText.Error);
                DateTime val2 = new DateTime(2010, 3, 4);
-               lastUpdateAndTVText.LastUpdateDate_UTC = val2;
-               Assert.AreEqual(val2, lastUpdateAndTVText.LastUpdateDate_UTC);
+               lastUpdateAndTVText.LastUpdateAndTVTextDate_UTC = val2;
+               Assert.AreEqual(val2, lastUpdateAndTVText.LastUpdateAndTVTextDate_UTC);
                DateTime val3 = new DateTime(2010, 3, 4);
                lastUpdateAndTVText.LastUpdateDate_Local = val3;
                Assert.AreEqual(val3, lastUpdateAndTVText.LastUpdateDate_Local);

@@ -37,7 +37,7 @@ namespace CSSPModelsGenerateCodeHelper
                     continue;
                 }
 
-                //if (type.Name != "AppTask")
+                //if (type.Name != "Address")
                 //{
                 //    continue;
                 //}
@@ -235,6 +235,10 @@ namespace CSSPModelsGenerateCodeHelper
 
                 foreach (PropertyInfo prop in type.GetProperties())
                 {
+                    if (prop.Name.EndsWith("Web") || prop.Name.EndsWith("Report"))
+                    {
+                        continue;
+                    }
                     if (!prop.Name.Contains("ValidationResults"))
                     {
                         sb.AppendLine(@"               Assert.IsNotNull(CSSPModelsRes." + type.Name + prop.Name + @");");
@@ -250,6 +254,11 @@ namespace CSSPModelsGenerateCodeHelper
                 // doing properties which are not virtual nor contains 'ValidationResults'
                 foreach (PropertyInfo prop in type.GetProperties())
                 {
+                    if (prop.Name.EndsWith("Web") || prop.Name.EndsWith("Report"))
+                    {
+                        continue;
+                    }
+
                     count += 1;
                     if (!prop.GetGetMethod().IsVirtual && !prop.Name.Contains("ValidationResults"))
                     {

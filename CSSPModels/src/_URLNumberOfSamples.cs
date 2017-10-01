@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class URLNumberOfSamples
+    public partial class URLNumberOfSamples : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -16,14 +16,11 @@ namespace CSSPModels
         [StringLength(255, MinimumLength = 1)]
         public string url { get; set; }
         public int NumberOfSamples { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public URLNumberOfSamples()
+        public URLNumberOfSamples() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

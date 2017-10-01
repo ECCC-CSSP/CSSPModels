@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void InfrastructureLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "InfrastructureLanguageID", "InfrastructureID", "Language", "Comment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "InfrastructureLanguageWeb", "InfrastructureLanguageReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.InfrastructureLanguage).GetProperties().OrderBy(c => c.Name))
@@ -120,9 +120,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.InfrastructureLanguageTranslationStatus);
                Assert.IsNotNull(CSSPModelsRes.InfrastructureLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.InfrastructureLanguageLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureLanguageLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureLanguageLanguageText);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureLanguageTranslationStatusText);
                Assert.IsNotNull(CSSPModelsRes.InfrastructureLanguageHasErrors);
         }
         [TestMethod]
@@ -149,21 +146,12 @@ namespace CSSPModels.Tests
                int val7 = 45;
                infrastructureLanguage.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, infrastructureLanguage.LastUpdateContactTVItemID);
-               string val8 = "Some text";
-               infrastructureLanguage.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, infrastructureLanguage.LastUpdateContactTVText);
-               string val9 = "Some text";
-               infrastructureLanguage.LanguageText = val9;
-               Assert.AreEqual(val9, infrastructureLanguage.LanguageText);
-               string val10 = "Some text";
-               infrastructureLanguage.TranslationStatusText = val10;
-               Assert.AreEqual(val10, infrastructureLanguage.TranslationStatusText);
-               bool val11 = true;
-               infrastructureLanguage.HasErrors = val11;
-               Assert.AreEqual(val11, infrastructureLanguage.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               infrastructureLanguage.ValidationResults = val36;
-               Assert.AreEqual(val36, infrastructureLanguage.ValidationResults);
+               bool val8 = true;
+               infrastructureLanguage.HasErrors = val8;
+               Assert.AreEqual(val8, infrastructureLanguage.HasErrors);
+               IEnumerable<ValidationResult> val31 = new List<ValidationResult>().AsEnumerable();
+               infrastructureLanguage.ValidationResults = val31;
+               Assert.AreEqual(val31, infrastructureLanguage.ValidationResults);
         }
         #endregion Tests
     }

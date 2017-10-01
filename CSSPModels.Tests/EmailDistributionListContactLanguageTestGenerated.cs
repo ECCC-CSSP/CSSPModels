@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void EmailDistributionListContactLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "EmailDistributionListContactLanguageID", "EmailDistributionListContactID", "Language", "Agency", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "EmailDistributionListContactLanguageWeb", "EmailDistributionListContactLanguageReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.EmailDistributionListContactLanguage).GetProperties().OrderBy(c => c.Name))
@@ -120,9 +120,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.EmailDistributionListContactLanguageTranslationStatus);
                Assert.IsNotNull(CSSPModelsRes.EmailDistributionListContactLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.EmailDistributionListContactLanguageLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.EmailDistributionListContactLanguageLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.EmailDistributionListContactLanguageLanguageText);
-               Assert.IsNotNull(CSSPModelsRes.EmailDistributionListContactLanguageTranslationStatusText);
                Assert.IsNotNull(CSSPModelsRes.EmailDistributionListContactLanguageHasErrors);
         }
         [TestMethod]
@@ -149,21 +146,12 @@ namespace CSSPModels.Tests
                int val7 = 45;
                emailDistributionListContactLanguage.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, emailDistributionListContactLanguage.LastUpdateContactTVItemID);
-               string val8 = "Some text";
-               emailDistributionListContactLanguage.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, emailDistributionListContactLanguage.LastUpdateContactTVText);
-               string val9 = "Some text";
-               emailDistributionListContactLanguage.LanguageText = val9;
-               Assert.AreEqual(val9, emailDistributionListContactLanguage.LanguageText);
-               string val10 = "Some text";
-               emailDistributionListContactLanguage.TranslationStatusText = val10;
-               Assert.AreEqual(val10, emailDistributionListContactLanguage.TranslationStatusText);
-               bool val11 = true;
-               emailDistributionListContactLanguage.HasErrors = val11;
-               Assert.AreEqual(val11, emailDistributionListContactLanguage.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               emailDistributionListContactLanguage.ValidationResults = val36;
-               Assert.AreEqual(val36, emailDistributionListContactLanguage.ValidationResults);
+               bool val8 = true;
+               emailDistributionListContactLanguage.HasErrors = val8;
+               Assert.AreEqual(val8, emailDistributionListContactLanguage.HasErrors);
+               IEnumerable<ValidationResult> val31 = new List<ValidationResult>().AsEnumerable();
+               emailDistributionListContactLanguage.ValidationResults = val31;
+               Assert.AreEqual(val31, emailDistributionListContactLanguage.ValidationResults);
         }
         #endregion Tests
     }

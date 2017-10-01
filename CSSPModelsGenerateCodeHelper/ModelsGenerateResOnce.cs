@@ -38,7 +38,10 @@ namespace CSSPModelsGenerateCodeHelper
 
                 if (SkipType(type))
                 {
-                    continue;
+                    if (!(type.Name.EndsWith("Web") || type.Name.EndsWith("Report")))
+                    {
+                        continue;
+                    }
                 }
 
                 sb.AppendLine(@"<data name=""" + type.Name + @""" xml:space=""preserve"">");

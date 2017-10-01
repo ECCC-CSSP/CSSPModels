@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class HydrometricDataValue
+    public partial class HydrometricDataValue : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -22,33 +22,49 @@ namespace CSSPModels
         public double Flow_m3_s { get; set; }
         [CSSPAllowNull]
         public string HourlyValues { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
+        public HydrometricDataValueWeb HydrometricDataValueWeb { get; set; }
         [NotMapped]
-        [StringLength(100)]
         [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "StorageDataTypeEnum", EnumType = "StorageDataType")]
-        public string StorageDataTypeText { get; set; }
-        [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        public HydrometricDataValueReport HydrometricDataValueReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public HydrometricDataValue()
+        public HydrometricDataValue() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class HydrometricDataValueWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "StorageDataTypeEnum", EnumType = "StorageDataType")]
+        public string StorageDataTypeText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public HydrometricDataValueWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class HydrometricDataValueReport
+    {
+        #region Properties for report information
+        public string HydrometricDataValueReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public HydrometricDataValueReport()
+        {
         }
         #endregion Constructors
     }

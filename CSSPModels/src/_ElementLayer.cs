@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class ElementLayer
+    public partial class ElementLayer : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -18,14 +18,11 @@ namespace CSSPModels
         public double ZMin { get; set; }
         public double ZMax { get; set; }
         public virtual Element Element { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public ElementLayer()
+        public ElementLayer() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

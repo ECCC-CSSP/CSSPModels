@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void ClimateDataValue_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ClimateDataValueID", "ClimateSiteID", "DateTime_Local", "Keep", "StorageDataType", "Snow_cm", "Rainfall_mm", "RainfallEntered_mm", "TotalPrecip_mm_cm", "MaxTemp_C", "MinTemp_C", "HeatDegDays_C", "CoolDegDays_C", "SnowOnGround_cm", "DirMaxGust_0North", "SpdMaxGust_kmh", "HourlyValues", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "StorageDataTypeEnumText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "ClimateDataValueWeb", "ClimateDataValueReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ClimateDataValue).GetProperties().OrderBy(c => c.Name))
@@ -132,8 +132,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.ClimateDataValueHourlyValues);
                Assert.IsNotNull(CSSPModelsRes.ClimateDataValueLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.ClimateDataValueLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.ClimateDataValueLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.ClimateDataValueStorageDataTypeEnumText);
                Assert.IsNotNull(CSSPModelsRes.ClimateDataValueHasErrors);
         }
         [TestMethod]
@@ -196,18 +194,12 @@ namespace CSSPModels.Tests
                int val19 = 45;
                climateDataValue.LastUpdateContactTVItemID = val19;
                Assert.AreEqual(val19, climateDataValue.LastUpdateContactTVItemID);
-               string val20 = "Some text";
-               climateDataValue.LastUpdateContactTVText = val20;
-               Assert.AreEqual(val20, climateDataValue.LastUpdateContactTVText);
-               string val21 = "Some text";
-               climateDataValue.StorageDataTypeEnumText = val21;
-               Assert.AreEqual(val21, climateDataValue.StorageDataTypeEnumText);
-               bool val22 = true;
-               climateDataValue.HasErrors = val22;
-               Assert.AreEqual(val22, climateDataValue.HasErrors);
-               IEnumerable<ValidationResult> val69 = new List<ValidationResult>().AsEnumerable();
-               climateDataValue.ValidationResults = val69;
-               Assert.AreEqual(val69, climateDataValue.ValidationResults);
+               bool val20 = true;
+               climateDataValue.HasErrors = val20;
+               Assert.AreEqual(val20, climateDataValue.HasErrors);
+               IEnumerable<ValidationResult> val67 = new List<ValidationResult>().AsEnumerable();
+               climateDataValue.ValidationResults = val67;
+               Assert.AreEqual(val67, climateDataValue.ValidationResults);
         }
         #endregion Tests
     }

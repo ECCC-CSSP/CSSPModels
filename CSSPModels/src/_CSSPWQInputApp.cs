@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class CSSPWQInputApp
+    public partial class CSSPWQInputApp : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -26,14 +26,11 @@ namespace CSSPModels
         public string ApprovalCode { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime ApprovalDate { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public CSSPWQInputApp()
+        public CSSPWQInputApp() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

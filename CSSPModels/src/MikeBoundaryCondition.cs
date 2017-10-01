@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class MikeBoundaryCondition
+    public partial class MikeBoundaryCondition : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -30,48 +30,55 @@ namespace CSSPModels
         public string WebTideDataFromStartToEndDate { get; set; }
         [CSSPEnumType]
         public TVTypeEnum TVType { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MikeBoundaryConditionTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string MikeBoundaryConditionTVText { get; set; }
+        public MikeBoundaryConditionWeb MikeBoundaryConditionWeb { get; set; }
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "MikeBoundaryConditionLevelOrVelocityEnum", EnumType = "MikeBoundaryConditionLevelOrVelocity")]
-        public string MikeBoundaryConditionLevelOrVelocityText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "WebTideDataSetEnum", EnumType = "WebTideDataSet")]
-        public string WebTideDataSetText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
-        public string TVTypeText { get; set; }
-        [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        public MikeBoundaryConditionReport MikeBoundaryConditionReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public MikeBoundaryCondition()
+        public MikeBoundaryCondition() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class MikeBoundaryConditionWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MikeBoundaryConditionTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string MikeBoundaryConditionTVText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "MikeBoundaryConditionLevelOrVelocityEnum", EnumType = "MikeBoundaryConditionLevelOrVelocity")]
+        public string MikeBoundaryConditionLevelOrVelocityText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "WebTideDataSetEnum", EnumType = "WebTideDataSet")]
+        public string WebTideDataSetText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
+        public string TVTypeText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public MikeBoundaryConditionWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class MikeBoundaryConditionReport
+    {
+        #region Properties for report information
+        public string MikeBoundaryConditionReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public MikeBoundaryConditionReport()
+        {
         }
         #endregion Constructors
     }

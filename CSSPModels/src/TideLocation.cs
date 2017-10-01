@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class TideLocation
+    public partial class TideLocation : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -27,15 +27,43 @@ namespace CSSPModels
 
         #region Properties not in DB
         [NotMapped]
-        public bool HasErrors { get; set; }
+        [CSSPAllowNull]
+        public TideLocationWeb TideLocationWeb { get; set; }
         [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        [CSSPAllowNull]
+        public TideLocationReport TideLocationReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public TideLocation()
+        public TideLocation() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class TideLocationWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public TideLocationWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class TideLocationReport
+    {
+        #region Properties for report information
+        public string TideLocationReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public TideLocationReport()
+        {
         }
         #endregion Constructors
     }

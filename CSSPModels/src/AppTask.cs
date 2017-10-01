@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class AppTask
+    public partial class AppTask : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -33,53 +33,57 @@ namespace CSSPModels
         public int? EstimatedLength_second { get; set; }
         [Range(0, 1000000)]
         public int? RemainingTime_second { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string TVItemTVText { get; set; }
+        public AppTaskWeb AppTaskWeb { get; set; }
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID2", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string TVItem2TVText { get; set; }
-        [NotMapped]
-        [StringLength(200)]
-        [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "AppTaskCommandEnum", EnumType = "AppTaskCommand")]
-        public string AppTaskCommandText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "AppTaskStatusEnum", EnumType = "AppTaskStatus")]
-        public string AppTaskStatusText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
-        public string LanguageText { get; set; }
-        [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        public AppTaskReport AppTaskReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public AppTask()
+        public AppTask() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class AppTaskWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string TVItemTVText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID2", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string TVItem2TVText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "AppTaskCommandEnum", EnumType = "AppTaskCommand")]
+        public string AppTaskCommandText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "AppTaskStatusEnum", EnumType = "AppTaskStatus")]
+        public string AppTaskStatusText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
+        public string LanguageText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public AppTaskWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class AppTaskReport
+    {
+        #region Properties for report information
+        public string AppTaskReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public AppTaskReport()
+        {
         }
         #endregion Constructors
     }

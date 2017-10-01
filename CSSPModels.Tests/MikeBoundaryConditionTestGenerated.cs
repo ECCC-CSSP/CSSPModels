@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void MikeBoundaryCondition_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeBoundaryConditionID", "MikeBoundaryConditionTVItemID", "MikeBoundaryConditionCode", "MikeBoundaryConditionName", "MikeBoundaryConditionLength_m", "MikeBoundaryConditionFormat", "MikeBoundaryConditionLevelOrVelocity", "WebTideDataSet", "NumberOfWebTideNodes", "WebTideDataFromStartToEndDate", "TVType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MikeBoundaryConditionTVText", "LastUpdateContactTVText", "MikeBoundaryConditionLevelOrVelocityText", "WebTideDataSetText", "TVTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MikeBoundaryConditionWeb", "MikeBoundaryConditionReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MikeBoundaryCondition).GetProperties().OrderBy(c => c.Name))
@@ -126,11 +126,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.MikeBoundaryConditionTVType);
                Assert.IsNotNull(CSSPModelsRes.MikeBoundaryConditionLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.MikeBoundaryConditionLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MikeBoundaryConditionMikeBoundaryConditionTVText);
-               Assert.IsNotNull(CSSPModelsRes.MikeBoundaryConditionLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.MikeBoundaryConditionMikeBoundaryConditionLevelOrVelocityText);
-               Assert.IsNotNull(CSSPModelsRes.MikeBoundaryConditionWebTideDataSetText);
-               Assert.IsNotNull(CSSPModelsRes.MikeBoundaryConditionTVTypeText);
                Assert.IsNotNull(CSSPModelsRes.MikeBoundaryConditionHasErrors);
         }
         [TestMethod]
@@ -175,27 +170,12 @@ namespace CSSPModels.Tests
                int val13 = 45;
                mikeBoundaryCondition.LastUpdateContactTVItemID = val13;
                Assert.AreEqual(val13, mikeBoundaryCondition.LastUpdateContactTVItemID);
-               string val14 = "Some text";
-               mikeBoundaryCondition.MikeBoundaryConditionTVText = val14;
-               Assert.AreEqual(val14, mikeBoundaryCondition.MikeBoundaryConditionTVText);
-               string val15 = "Some text";
-               mikeBoundaryCondition.LastUpdateContactTVText = val15;
-               Assert.AreEqual(val15, mikeBoundaryCondition.LastUpdateContactTVText);
-               string val16 = "Some text";
-               mikeBoundaryCondition.MikeBoundaryConditionLevelOrVelocityText = val16;
-               Assert.AreEqual(val16, mikeBoundaryCondition.MikeBoundaryConditionLevelOrVelocityText);
-               string val17 = "Some text";
-               mikeBoundaryCondition.WebTideDataSetText = val17;
-               Assert.AreEqual(val17, mikeBoundaryCondition.WebTideDataSetText);
-               string val18 = "Some text";
-               mikeBoundaryCondition.TVTypeText = val18;
-               Assert.AreEqual(val18, mikeBoundaryCondition.TVTypeText);
-               bool val19 = true;
-               mikeBoundaryCondition.HasErrors = val19;
-               Assert.AreEqual(val19, mikeBoundaryCondition.HasErrors);
-               IEnumerable<ValidationResult> val60 = new List<ValidationResult>().AsEnumerable();
-               mikeBoundaryCondition.ValidationResults = val60;
-               Assert.AreEqual(val60, mikeBoundaryCondition.ValidationResults);
+               bool val14 = true;
+               mikeBoundaryCondition.HasErrors = val14;
+               Assert.AreEqual(val14, mikeBoundaryCondition.HasErrors);
+               IEnumerable<ValidationResult> val49 = new List<ValidationResult>().AsEnumerable();
+               mikeBoundaryCondition.ValidationResults = val49;
+               Assert.AreEqual(val49, mikeBoundaryCondition.ValidationResults);
         }
         #endregion Tests
     }

@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class MWQMSite
+    public partial class MWQMSite : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -21,38 +21,51 @@ namespace CSSPModels
         public MWQMSiteLatestClassificationEnum MWQMSiteLatestClassification { get; set; }
         [Range(0, 1000)]
         public int Ordinal { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string MWQMSiteTVText { get; set; }
+        public MWQMSiteWeb MWQMSiteWeb { get; set; }
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "MWQMSiteLatestClassificationEnum", EnumType = "MWQMSiteLatestClassification")]
-        public string MWQMSiteLatestClassificationText { get; set; }
-        [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        public MWQMSiteReport MWQMSiteReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public MWQMSite()
+        public MWQMSite() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class MWQMSiteWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string MWQMSiteTVText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "MWQMSiteLatestClassificationEnum", EnumType = "MWQMSiteLatestClassification")]
+        public string MWQMSiteLatestClassificationText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public MWQMSiteWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class MWQMSiteReport
+    {
+        #region Properties for report information
+        public string MWQMSiteReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public MWQMSiteReport()
+        {
         }
         #endregion Constructors
     }

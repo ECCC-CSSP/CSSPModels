@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class InputSummary
+    public partial class InputSummary : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -15,14 +15,11 @@ namespace CSSPModels
         #region Properties not in DB
         public string Error { get; set; }
         public string Summary { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public InputSummary()
+        public InputSummary() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

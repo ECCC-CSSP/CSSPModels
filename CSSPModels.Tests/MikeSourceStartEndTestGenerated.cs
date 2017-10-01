@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void MikeSourceStartEnd_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeSourceStartEndID", "MikeSourceID", "StartDateAndTime_Local", "EndDateAndTime_Local", "SourceFlowStart_m3_day", "SourceFlowEnd_m3_day", "SourcePollutionStart_MPN_100ml", "SourcePollutionEnd_MPN_100ml", "SourceTemperatureStart_C", "SourceTemperatureEnd_C", "SourceSalinityStart_PSU", "SourceSalinityEnd_PSU", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MikeSourceStartEndWeb", "MikeSourceStartEndReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MikeSourceStartEnd).GetProperties().OrderBy(c => c.Name))
@@ -127,7 +127,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndSourceSalinityEnd_PSU);
                Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndLastUpdateContactTVText);
                Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndHasErrors);
         }
         [TestMethod]
@@ -175,15 +174,12 @@ namespace CSSPModels.Tests
                int val14 = 45;
                mikeSourceStartEnd.LastUpdateContactTVItemID = val14;
                Assert.AreEqual(val14, mikeSourceStartEnd.LastUpdateContactTVItemID);
-               string val15 = "Some text";
-               mikeSourceStartEnd.LastUpdateContactTVText = val15;
-               Assert.AreEqual(val15, mikeSourceStartEnd.LastUpdateContactTVText);
-               bool val16 = true;
-               mikeSourceStartEnd.HasErrors = val16;
-               Assert.AreEqual(val16, mikeSourceStartEnd.HasErrors);
-               IEnumerable<ValidationResult> val51 = new List<ValidationResult>().AsEnumerable();
-               mikeSourceStartEnd.ValidationResults = val51;
-               Assert.AreEqual(val51, mikeSourceStartEnd.ValidationResults);
+               bool val15 = true;
+               mikeSourceStartEnd.HasErrors = val15;
+               Assert.AreEqual(val15, mikeSourceStartEnd.HasErrors);
+               IEnumerable<ValidationResult> val52 = new List<ValidationResult>().AsEnumerable();
+               mikeSourceStartEnd.ValidationResults = val52;
+               Assert.AreEqual(val52, mikeSourceStartEnd.ValidationResults);
         }
         #endregion Tests
     }

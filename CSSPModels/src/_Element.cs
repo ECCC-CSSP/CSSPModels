@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class Element
+    public partial class Element : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -24,15 +24,12 @@ namespace CSSPModels
         public double YNode0 { get; set; }
         public double ZNode0 { get; set; }
         public virtual List<Node> NodeList { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public Element()
+        public Element() : base()
         {
             NodeList = new List<Node>();
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

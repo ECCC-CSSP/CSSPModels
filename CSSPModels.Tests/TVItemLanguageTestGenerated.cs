@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void TVItemLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemLanguageID", "TVItemID", "Language", "TVText", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TVItemLanguageWeb", "TVItemLanguageReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVItemLanguage).GetProperties().OrderBy(c => c.Name))
@@ -120,9 +120,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.TVItemLanguageTranslationStatus);
                Assert.IsNotNull(CSSPModelsRes.TVItemLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.TVItemLanguageLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.TVItemLanguageLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.TVItemLanguageLanguageText);
-               Assert.IsNotNull(CSSPModelsRes.TVItemLanguageTranslationStatusText);
                Assert.IsNotNull(CSSPModelsRes.TVItemLanguageHasErrors);
         }
         [TestMethod]
@@ -149,21 +146,12 @@ namespace CSSPModels.Tests
                int val7 = 45;
                tVItemLanguage.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, tVItemLanguage.LastUpdateContactTVItemID);
-               string val8 = "Some text";
-               tVItemLanguage.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, tVItemLanguage.LastUpdateContactTVText);
-               string val9 = "Some text";
-               tVItemLanguage.LanguageText = val9;
-               Assert.AreEqual(val9, tVItemLanguage.LanguageText);
-               string val10 = "Some text";
-               tVItemLanguage.TranslationStatusText = val10;
-               Assert.AreEqual(val10, tVItemLanguage.TranslationStatusText);
-               bool val11 = true;
-               tVItemLanguage.HasErrors = val11;
-               Assert.AreEqual(val11, tVItemLanguage.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               tVItemLanguage.ValidationResults = val36;
-               Assert.AreEqual(val36, tVItemLanguage.ValidationResults);
+               bool val8 = true;
+               tVItemLanguage.HasErrors = val8;
+               Assert.AreEqual(val8, tVItemLanguage.HasErrors);
+               IEnumerable<ValidationResult> val31 = new List<ValidationResult>().AsEnumerable();
+               tVItemLanguage.ValidationResults = val31;
+               Assert.AreEqual(val31, tVItemLanguage.ValidationResults);
         }
         #endregion Tests
     }

@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class FileItemList
+    public partial class FileItemList : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -17,14 +17,11 @@ namespace CSSPModels
         public string Text { get; set; }
         [StringLength(255, MinimumLength = 1)]
         public string FileName { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public FileItemList()
+        public FileItemList() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

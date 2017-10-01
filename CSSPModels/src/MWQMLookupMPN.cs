@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class MWQMLookupMPN
+    public partial class MWQMLookupMPN : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -19,28 +19,47 @@ namespace CSSPModels
         public int Tubes01 { get; set; }
         [Range(1, 10000)]
         public int MPN_100ml { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
+        public MWQMLookupMPNWeb MWQMLookupMPNWeb { get; set; }
         [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        [CSSPAllowNull]
+        public MWQMLookupMPNReport MWQMLookupMPNReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public MWQMLookupMPN()
+        public MWQMLookupMPN() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class MWQMLookupMPNWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public MWQMLookupMPNWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class MWQMLookupMPNReport
+    {
+        #region Properties for report information
+        public string MWQMLookupMPNReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public MWQMLookupMPNReport()
+        {
         }
         #endregion Constructors
     }

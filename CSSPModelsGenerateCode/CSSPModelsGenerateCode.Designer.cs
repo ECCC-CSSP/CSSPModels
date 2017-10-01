@@ -157,7 +157,6 @@
             // 
             // butRunModelLint
             // 
-            this.butRunModelLint.Enabled = false;
             this.butRunModelLint.Location = new System.Drawing.Point(485, 12);
             this.butRunModelLint.Name = "butRunModelLint";
             this.butRunModelLint.Size = new System.Drawing.Size(107, 23);

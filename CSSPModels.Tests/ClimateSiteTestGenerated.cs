@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void ClimateSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ClimateSiteID", "ClimateSiteTVItemID", "ECDBID", "ClimateSiteName", "Province", "Elevation_m", "ClimateID", "WMOID", "TCID", "IsProvincial", "ProvSiteID", "TimeOffset_hour", "File_desc", "HourlyStartDate_Local", "HourlyEndDate_Local", "HourlyNow", "DailyStartDate_Local", "DailyEndDate_Local", "DailyNow", "MonthlyStartDate_Local", "MonthlyEndDate_Local", "MonthlyNow", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ClimateSiteTVText", "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "ClimateSiteWeb", "ClimateSiteReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ClimateSite).GetProperties().OrderBy(c => c.Name))
@@ -137,8 +137,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.ClimateSiteMonthlyNow);
                Assert.IsNotNull(CSSPModelsRes.ClimateSiteLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.ClimateSiteLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.ClimateSiteClimateSiteTVText);
-               Assert.IsNotNull(CSSPModelsRes.ClimateSiteLastUpdateContactTVText);
                Assert.IsNotNull(CSSPModelsRes.ClimateSiteHasErrors);
         }
         [TestMethod]
@@ -216,18 +214,12 @@ namespace CSSPModels.Tests
                int val24 = 45;
                climateSite.LastUpdateContactTVItemID = val24;
                Assert.AreEqual(val24, climateSite.LastUpdateContactTVItemID);
-               string val25 = "Some text";
-               climateSite.ClimateSiteTVText = val25;
-               Assert.AreEqual(val25, climateSite.ClimateSiteTVText);
-               string val26 = "Some text";
-               climateSite.LastUpdateContactTVText = val26;
-               Assert.AreEqual(val26, climateSite.LastUpdateContactTVText);
-               bool val27 = true;
-               climateSite.HasErrors = val27;
-               Assert.AreEqual(val27, climateSite.HasErrors);
-               IEnumerable<ValidationResult> val84 = new List<ValidationResult>().AsEnumerable();
-               climateSite.ValidationResults = val84;
-               Assert.AreEqual(val84, climateSite.ValidationResults);
+               bool val25 = true;
+               climateSite.HasErrors = val25;
+               Assert.AreEqual(val25, climateSite.HasErrors);
+               IEnumerable<ValidationResult> val82 = new List<ValidationResult>().AsEnumerable();
+               climateSite.ValidationResults = val82;
+               Assert.AreEqual(val82, climateSite.ValidationResults);
         }
         #endregion Tests
     }

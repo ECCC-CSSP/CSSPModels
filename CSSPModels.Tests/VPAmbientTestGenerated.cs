@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void VPAmbient_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "VPAmbientID", "VPScenarioID", "Row", "MeasurementDepth_m", "CurrentSpeed_m_s", "CurrentDirection_deg", "AmbientSalinity_PSU", "AmbientTemperature_C", "BackgroundConcentration_MPN_100ml", "PollutantDecayRate_per_day", "FarFieldCurrentSpeed_m_s", "FarFieldCurrentDirection_deg", "FarFieldDiffusionCoefficient", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "VPAmbientWeb", "VPAmbientReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.VPAmbient).GetProperties().OrderBy(c => c.Name))
@@ -128,7 +128,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.VPAmbientFarFieldDiffusionCoefficient);
                Assert.IsNotNull(CSSPModelsRes.VPAmbientLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.VPAmbientLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.VPAmbientLastUpdateContactTVText);
                Assert.IsNotNull(CSSPModelsRes.VPAmbientHasErrors);
         }
         [TestMethod]
@@ -179,15 +178,12 @@ namespace CSSPModels.Tests
                int val15 = 45;
                vPAmbient.LastUpdateContactTVItemID = val15;
                Assert.AreEqual(val15, vPAmbient.LastUpdateContactTVItemID);
-               string val16 = "Some text";
-               vPAmbient.LastUpdateContactTVText = val16;
-               Assert.AreEqual(val16, vPAmbient.LastUpdateContactTVText);
-               bool val17 = true;
-               vPAmbient.HasErrors = val17;
-               Assert.AreEqual(val17, vPAmbient.HasErrors);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>().AsEnumerable();
-               vPAmbient.ValidationResults = val54;
-               Assert.AreEqual(val54, vPAmbient.ValidationResults);
+               bool val16 = true;
+               vPAmbient.HasErrors = val16;
+               Assert.AreEqual(val16, vPAmbient.HasErrors);
+               IEnumerable<ValidationResult> val55 = new List<ValidationResult>().AsEnumerable();
+               vPAmbient.ValidationResults = val55;
+               Assert.AreEqual(val55, vPAmbient.ValidationResults);
         }
         #endregion Tests
     }

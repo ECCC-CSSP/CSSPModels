@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void TVItemStat_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemStatID", "TVItemID", "TVType", "ChildCount", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "TVText", "LastUpdateContactTVText", "TVTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TVItemStatWeb", "TVItemStatReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVItemStat).GetProperties().OrderBy(c => c.Name))
@@ -119,9 +119,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.TVItemStatChildCount);
                Assert.IsNotNull(CSSPModelsRes.TVItemStatLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.TVItemStatLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.TVItemStatTVText);
-               Assert.IsNotNull(CSSPModelsRes.TVItemStatLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.TVItemStatTVTypeText);
                Assert.IsNotNull(CSSPModelsRes.TVItemStatHasErrors);
         }
         [TestMethod]
@@ -145,21 +142,12 @@ namespace CSSPModels.Tests
                int val6 = 45;
                tVItemStat.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, tVItemStat.LastUpdateContactTVItemID);
-               string val7 = "Some text";
-               tVItemStat.TVText = val7;
-               Assert.AreEqual(val7, tVItemStat.TVText);
-               string val8 = "Some text";
-               tVItemStat.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, tVItemStat.LastUpdateContactTVText);
-               string val9 = "Some text";
-               tVItemStat.TVTypeText = val9;
-               Assert.AreEqual(val9, tVItemStat.TVTypeText);
-               bool val10 = true;
-               tVItemStat.HasErrors = val10;
-               Assert.AreEqual(val10, tVItemStat.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               tVItemStat.ValidationResults = val33;
-               Assert.AreEqual(val33, tVItemStat.ValidationResults);
+               bool val7 = true;
+               tVItemStat.HasErrors = val7;
+               Assert.AreEqual(val7, tVItemStat.HasErrors);
+               IEnumerable<ValidationResult> val28 = new List<ValidationResult>().AsEnumerable();
+               tVItemStat.ValidationResults = val28;
+               Assert.AreEqual(val28, tVItemStat.ValidationResults);
         }
         #endregion Tests
     }

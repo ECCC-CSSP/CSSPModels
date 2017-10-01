@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void MWQMSiteStartEndDate_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSiteStartEndDateID", "MWQMSiteTVItemID", "StartDate", "EndDate", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteTVText", "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteStartEndDateWeb", "MWQMSiteStartEndDateReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMSiteStartEndDate).GetProperties().OrderBy(c => c.Name))
@@ -119,8 +119,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.MWQMSiteStartEndDateEndDate);
                Assert.IsNotNull(CSSPModelsRes.MWQMSiteStartEndDateLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.MWQMSiteStartEndDateLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteStartEndDateMWQMSiteTVText);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteStartEndDateLastUpdateContactTVText);
                Assert.IsNotNull(CSSPModelsRes.MWQMSiteStartEndDateHasErrors);
         }
         [TestMethod]
@@ -144,18 +142,12 @@ namespace CSSPModels.Tests
                int val6 = 45;
                mWQMSiteStartEndDate.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, mWQMSiteStartEndDate.LastUpdateContactTVItemID);
-               string val7 = "Some text";
-               mWQMSiteStartEndDate.MWQMSiteTVText = val7;
-               Assert.AreEqual(val7, mWQMSiteStartEndDate.MWQMSiteTVText);
-               string val8 = "Some text";
-               mWQMSiteStartEndDate.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, mWQMSiteStartEndDate.LastUpdateContactTVText);
-               bool val9 = true;
-               mWQMSiteStartEndDate.HasErrors = val9;
-               Assert.AreEqual(val9, mWQMSiteStartEndDate.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               mWQMSiteStartEndDate.ValidationResults = val30;
-               Assert.AreEqual(val30, mWQMSiteStartEndDate.ValidationResults);
+               bool val7 = true;
+               mWQMSiteStartEndDate.HasErrors = val7;
+               Assert.AreEqual(val7, mWQMSiteStartEndDate.HasErrors);
+               IEnumerable<ValidationResult> val28 = new List<ValidationResult>().AsEnumerable();
+               mWQMSiteStartEndDate.ValidationResults = val28;
+               Assert.AreEqual(val28, mWQMSiteStartEndDate.ValidationResults);
         }
         #endregion Tests
     }

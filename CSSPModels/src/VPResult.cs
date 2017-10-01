@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class VPResult
+    public partial class VPResult : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -25,28 +25,47 @@ namespace CSSPModels
         public double DispersionDistance_m { get; set; }
         [Range(0.0D, 100.0D)]
         public double TravelTime_hour { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
+        public VPResultWeb VPResultWeb { get; set; }
         [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        [CSSPAllowNull]
+        public VPResultReport VPResultReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public VPResult()
+        public VPResult() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class VPResultWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public VPResultWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class VPResultReport
+    {
+        #region Properties for report information
+        public string VPResultReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public VPResultReport()
+        {
         }
         #endregion Constructors
     }

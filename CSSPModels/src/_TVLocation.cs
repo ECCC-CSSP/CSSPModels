@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class TVLocation
+    public partial class TVLocation : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -31,15 +31,12 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "SubTVType")]
         public string SubTVTypeText { get; set; }
         public virtual List<MapObj> MapObjList { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public TVLocation()
+        public TVLocation() : base()
         {
             MapObjList = new List<MapObj>();
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

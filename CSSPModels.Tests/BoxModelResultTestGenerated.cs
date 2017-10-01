@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void BoxModelResult_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "BoxModelResultID", "BoxModelID", "BoxModelResultType", "Volume_m3", "Surface_m2", "Radius_m", "LeftSideDiameterLineAngle_deg", "CircleCenterLatitude", "CircleCenterLongitude", "FixLength", "FixWidth", "RectLength_m", "RectWidth_m", "LeftSideLineAngle_deg", "LeftSideLineStartLatitude", "LeftSideLineStartLongitude", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "BoxModelResultTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "BoxModelResultWeb", "BoxModelResultReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.BoxModelResult).GetProperties().OrderBy(c => c.Name))
@@ -131,8 +131,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.BoxModelResultLeftSideLineStartLongitude);
                Assert.IsNotNull(CSSPModelsRes.BoxModelResultLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.BoxModelResultLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultBoxModelResultTypeText);
                Assert.IsNotNull(CSSPModelsRes.BoxModelResultHasErrors);
         }
         [TestMethod]
@@ -192,18 +190,12 @@ namespace CSSPModels.Tests
                int val18 = 45;
                boxModelResult.LastUpdateContactTVItemID = val18;
                Assert.AreEqual(val18, boxModelResult.LastUpdateContactTVItemID);
-               string val19 = "Some text";
-               boxModelResult.LastUpdateContactTVText = val19;
-               Assert.AreEqual(val19, boxModelResult.LastUpdateContactTVText);
-               string val20 = "Some text";
-               boxModelResult.BoxModelResultTypeText = val20;
-               Assert.AreEqual(val20, boxModelResult.BoxModelResultTypeText);
-               bool val21 = true;
-               boxModelResult.HasErrors = val21;
-               Assert.AreEqual(val21, boxModelResult.HasErrors);
-               IEnumerable<ValidationResult> val66 = new List<ValidationResult>().AsEnumerable();
-               boxModelResult.ValidationResults = val66;
-               Assert.AreEqual(val66, boxModelResult.ValidationResults);
+               bool val19 = true;
+               boxModelResult.HasErrors = val19;
+               Assert.AreEqual(val19, boxModelResult.HasErrors);
+               IEnumerable<ValidationResult> val64 = new List<ValidationResult>().AsEnumerable();
+               boxModelResult.ValidationResults = val64;
+               Assert.AreEqual(val64, boxModelResult.ValidationResults);
         }
         #endregion Tests
     }

@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void AppTaskLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "AppTaskLanguageID", "AppTaskID", "Language", "StatusText", "ErrorText", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "AppTaskLanguageWeb", "AppTaskLanguageReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.AppTaskLanguage).GetProperties().OrderBy(c => c.Name))
@@ -121,9 +121,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.AppTaskLanguageTranslationStatus);
                Assert.IsNotNull(CSSPModelsRes.AppTaskLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.AppTaskLanguageLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskLanguageLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskLanguageLanguageText);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskLanguageTranslationStatusText);
                Assert.IsNotNull(CSSPModelsRes.AppTaskLanguageHasErrors);
         }
         [TestMethod]
@@ -153,21 +150,12 @@ namespace CSSPModels.Tests
                int val8 = 45;
                appTaskLanguage.LastUpdateContactTVItemID = val8;
                Assert.AreEqual(val8, appTaskLanguage.LastUpdateContactTVItemID);
-               string val9 = "Some text";
-               appTaskLanguage.LastUpdateContactTVText = val9;
-               Assert.AreEqual(val9, appTaskLanguage.LastUpdateContactTVText);
-               string val10 = "Some text";
-               appTaskLanguage.LanguageText = val10;
-               Assert.AreEqual(val10, appTaskLanguage.LanguageText);
-               string val11 = "Some text";
-               appTaskLanguage.TranslationStatusText = val11;
-               Assert.AreEqual(val11, appTaskLanguage.TranslationStatusText);
-               bool val12 = true;
-               appTaskLanguage.HasErrors = val12;
-               Assert.AreEqual(val12, appTaskLanguage.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>().AsEnumerable();
-               appTaskLanguage.ValidationResults = val39;
-               Assert.AreEqual(val39, appTaskLanguage.ValidationResults);
+               bool val9 = true;
+               appTaskLanguage.HasErrors = val9;
+               Assert.AreEqual(val9, appTaskLanguage.HasErrors);
+               IEnumerable<ValidationResult> val34 = new List<ValidationResult>().AsEnumerable();
+               appTaskLanguage.ValidationResults = val34;
+               Assert.AreEqual(val34, appTaskLanguage.ValidationResults);
         }
         #endregion Tests
     }

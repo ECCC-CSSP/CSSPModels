@@ -41,7 +41,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LastUpdateAndContact_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "LastUpdateDate_UTC", "LastUpdateContactTVItemID", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Err", "LastUpdateAndContactDate_UTC", "LastUpdateAndContactTVItemID", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -61,23 +61,23 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LastUpdateAndContact_Every_Property_Has_A_Resource_OK()
         {
-               Assert.IsNotNull(CSSPModelsRes.LastUpdateAndContactError);
-               Assert.IsNotNull(CSSPModelsRes.LastUpdateAndContactLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.LastUpdateAndContactLastUpdateContactTVItemID);
+               Assert.IsNotNull(CSSPModelsRes.LastUpdateAndContactErr);
+               Assert.IsNotNull(CSSPModelsRes.LastUpdateAndContactLastUpdateAndContactDate_UTC);
+               Assert.IsNotNull(CSSPModelsRes.LastUpdateAndContactLastUpdateAndContactTVItemID);
                Assert.IsNotNull(CSSPModelsRes.LastUpdateAndContactHasErrors);
         }
         [TestMethod]
         public void LastUpdateAndContact_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               lastUpdateAndContact.Error = val1;
-               Assert.AreEqual(val1, lastUpdateAndContact.Error);
+               lastUpdateAndContact.Err = val1;
+               Assert.AreEqual(val1, lastUpdateAndContact.Err);
                DateTime val2 = new DateTime(2010, 3, 4);
-               lastUpdateAndContact.LastUpdateDate_UTC = val2;
-               Assert.AreEqual(val2, lastUpdateAndContact.LastUpdateDate_UTC);
+               lastUpdateAndContact.LastUpdateAndContactDate_UTC = val2;
+               Assert.AreEqual(val2, lastUpdateAndContact.LastUpdateAndContactDate_UTC);
                int val3 = 45;
-               lastUpdateAndContact.LastUpdateContactTVItemID = val3;
-               Assert.AreEqual(val3, lastUpdateAndContact.LastUpdateContactTVItemID);
+               lastUpdateAndContact.LastUpdateAndContactTVItemID = val3;
+               Assert.AreEqual(val3, lastUpdateAndContact.LastUpdateAndContactTVItemID);
                bool val4 = true;
                lastUpdateAndContact.HasErrors = val4;
                Assert.AreEqual(val4, lastUpdateAndContact.HasErrors);

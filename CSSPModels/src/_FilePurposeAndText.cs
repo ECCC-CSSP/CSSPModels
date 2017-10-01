@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class FilePurposeAndText
+    public partial class FilePurposeAndText : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -19,14 +19,11 @@ namespace CSSPModels
         [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "FilePurposeEnum", EnumType = "FilePurpose")]
         public string FilePurposeText { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public FilePurposeAndText()
+        public FilePurposeAndText() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

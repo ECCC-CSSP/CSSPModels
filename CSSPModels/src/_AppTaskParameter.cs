@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class AppTaskParameter
+    public partial class AppTaskParameter : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -17,14 +17,11 @@ namespace CSSPModels
         public string Name { get; set; }
         [StringLength(255)]
         public string Value { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public AppTaskParameter()
+        public AppTaskParameter() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

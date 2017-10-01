@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class TVTypeNamesAndPath
+    public partial class TVTypeNamesAndPath : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -19,14 +19,11 @@ namespace CSSPModels
         public int Index { get; set; }
         [StringLength(255, MinimumLength = 1)]
         public string TVPath { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public TVTypeNamesAndPath()
+        public TVTypeNamesAndPath() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

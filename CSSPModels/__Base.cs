@@ -1,9 +1,66 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
+    #region Properties
+    public partial class Error
+    {
+        #region Properties for error handling
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of [Address](CSSPModels.Address)</para>
+        /// </summary>
+        [NotMapped]
+        public bool HasErrors { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of [Address](CSSPModels.Address)</para>
+        /// </summary>
+        [NotMapped]
+        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        #endregion Properties for error handling
+
+        #region Constructors
+        public Error()
+        {
+            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    public partial class LastUpdate : Error
+    {
+        #region Properties in DB all tables
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// </summary>
+        [CSSPAfter(Year = 1980)]
+        public DateTime LastUpdateDate_UTC { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
+        /// > <para>5 == Contact</para>
+        /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]</para>
+        /// </summary>
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
+        public int LastUpdateContactTVItemID { get; set; }
+        #endregion Properties in DB all tables
+
+        #region Constructors
+        public LastUpdate() : base()
+        {
+
+        }
+        #endregion Constructors
+    }
+    #endregion Properties
+
+    #region Attributes
     /// <summary>
     /// > [!NOTE]
     /// > Custom validation attribute used when generating code
@@ -469,4 +526,5 @@ namespace CSSPModels
             return true;
         }
     }
+    #endregion Attributes
 }

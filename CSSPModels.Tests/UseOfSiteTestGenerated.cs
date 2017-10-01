@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void UseOfSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "SiteType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "SiteTVText", "SubsectorTVText", "LastUpdateContactTVText", "SiteTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "UseOfSiteWeb", "UseOfSiteReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.UseOfSite).GetProperties().OrderBy(c => c.Name))
@@ -129,10 +129,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.UseOfSiteParam4);
                Assert.IsNotNull(CSSPModelsRes.UseOfSiteLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.UseOfSiteLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.UseOfSiteSiteTVText);
-               Assert.IsNotNull(CSSPModelsRes.UseOfSiteSubsectorTVText);
-               Assert.IsNotNull(CSSPModelsRes.UseOfSiteLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.UseOfSiteSiteTypeText);
                Assert.IsNotNull(CSSPModelsRes.UseOfSiteHasErrors);
         }
         [TestMethod]
@@ -186,24 +182,12 @@ namespace CSSPModels.Tests
                int val16 = 45;
                useOfSite.LastUpdateContactTVItemID = val16;
                Assert.AreEqual(val16, useOfSite.LastUpdateContactTVItemID);
-               string val17 = "Some text";
-               useOfSite.SiteTVText = val17;
-               Assert.AreEqual(val17, useOfSite.SiteTVText);
-               string val18 = "Some text";
-               useOfSite.SubsectorTVText = val18;
-               Assert.AreEqual(val18, useOfSite.SubsectorTVText);
-               string val19 = "Some text";
-               useOfSite.LastUpdateContactTVText = val19;
-               Assert.AreEqual(val19, useOfSite.LastUpdateContactTVText);
-               string val20 = "Some text";
-               useOfSite.SiteTypeText = val20;
-               Assert.AreEqual(val20, useOfSite.SiteTypeText);
-               bool val21 = true;
-               useOfSite.HasErrors = val21;
-               Assert.AreEqual(val21, useOfSite.HasErrors);
-               IEnumerable<ValidationResult> val66 = new List<ValidationResult>().AsEnumerable();
-               useOfSite.ValidationResults = val66;
-               Assert.AreEqual(val66, useOfSite.ValidationResults);
+               bool val17 = true;
+               useOfSite.HasErrors = val17;
+               Assert.AreEqual(val17, useOfSite.HasErrors);
+               IEnumerable<ValidationResult> val58 = new List<ValidationResult>().AsEnumerable();
+               useOfSite.ValidationResults = val58;
+               Assert.AreEqual(val58, useOfSite.ValidationResults);
         }
         #endregion Tests
     }

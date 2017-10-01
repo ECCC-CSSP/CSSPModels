@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void HydrometricSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "HydrometricSiteID", "HydrometricSiteTVItemID", "FedSiteNumber", "QuebecSiteNumber", "HydrometricSiteName", "Description", "Province", "Elevation_m", "StartDate_Local", "EndDate_Local", "TimeOffset_hour", "DrainageArea_km2", "IsNatural", "IsActive", "Sediment", "RHBN", "RealTime", "HasRatingCurve", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "HydrometricTVText", "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HydrometricSiteWeb", "HydrometricSiteReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.HydrometricSite).GetProperties().OrderBy(c => c.Name))
@@ -133,8 +133,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.HydrometricSiteHasRatingCurve);
                Assert.IsNotNull(CSSPModelsRes.HydrometricSiteLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.HydrometricSiteLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.HydrometricSiteHydrometricTVText);
-               Assert.IsNotNull(CSSPModelsRes.HydrometricSiteLastUpdateContactTVText);
                Assert.IsNotNull(CSSPModelsRes.HydrometricSiteHasErrors);
         }
         [TestMethod]
@@ -200,18 +198,12 @@ namespace CSSPModels.Tests
                int val20 = 45;
                hydrometricSite.LastUpdateContactTVItemID = val20;
                Assert.AreEqual(val20, hydrometricSite.LastUpdateContactTVItemID);
-               string val21 = "Some text";
-               hydrometricSite.HydrometricTVText = val21;
-               Assert.AreEqual(val21, hydrometricSite.HydrometricTVText);
-               string val22 = "Some text";
-               hydrometricSite.LastUpdateContactTVText = val22;
-               Assert.AreEqual(val22, hydrometricSite.LastUpdateContactTVText);
-               bool val23 = true;
-               hydrometricSite.HasErrors = val23;
-               Assert.AreEqual(val23, hydrometricSite.HasErrors);
-               IEnumerable<ValidationResult> val72 = new List<ValidationResult>().AsEnumerable();
-               hydrometricSite.ValidationResults = val72;
-               Assert.AreEqual(val72, hydrometricSite.ValidationResults);
+               bool val21 = true;
+               hydrometricSite.HasErrors = val21;
+               Assert.AreEqual(val21, hydrometricSite.HasErrors);
+               IEnumerable<ValidationResult> val70 = new List<ValidationResult>().AsEnumerable();
+               hydrometricSite.ValidationResults = val70;
+               Assert.AreEqual(val70, hydrometricSite.ValidationResults);
         }
         #endregion Tests
     }

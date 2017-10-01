@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class TVFile
+    public partial class TVFile : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -35,53 +35,57 @@ namespace CSSPModels
         public string ServerFileName { get; set; }
         [StringLength(250)]
         public string ServerFilePath { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVFileTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string TVFileTVText { get; set; }
+        public TVFileWeb TVFileWeb { get; set; }
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TemplateTVType")]
-        public string TemplateTVTypeText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
-        public string LanguageText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "FilePurposeEnum", EnumType = "FilePurpose")]
-        public string FilePurposeText { get; set; }
-        [NotMapped]
-        [StringLength(100)]
-        [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "FileTypeEnum", EnumType = "FileType")]
-        public string FileTypeText { get; set; }
-        [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        public TVFileReport TVFileReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public TVFile()
+        public TVFile() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class TVFileWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVFileTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string TVFileTVText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TemplateTVType")]
+        public string TemplateTVTypeText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
+        public string LanguageText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "FilePurposeEnum", EnumType = "FilePurpose")]
+        public string FilePurposeText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "FileTypeEnum", EnumType = "FileType")]
+        public string FileTypeText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public TVFileWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class TVFileReport
+    {
+        #region Properties for report information
+        public string TVFileReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public TVFileReport()
+        {
         }
         #endregion Constructors
     }

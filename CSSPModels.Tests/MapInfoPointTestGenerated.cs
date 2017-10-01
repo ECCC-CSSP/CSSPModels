@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void MapInfoPoint_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MapInfoPointID", "MapInfoID", "Ordinal", "Lat", "Lng", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MapInfoPointWeb", "MapInfoPointReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MapInfoPoint).GetProperties().OrderBy(c => c.Name))
@@ -120,7 +120,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.MapInfoPointLng);
                Assert.IsNotNull(CSSPModelsRes.MapInfoPointLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.MapInfoPointLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MapInfoPointLastUpdateContactTVText);
                Assert.IsNotNull(CSSPModelsRes.MapInfoPointHasErrors);
         }
         [TestMethod]
@@ -147,15 +146,12 @@ namespace CSSPModels.Tests
                int val7 = 45;
                mapInfoPoint.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, mapInfoPoint.LastUpdateContactTVItemID);
-               string val8 = "Some text";
-               mapInfoPoint.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, mapInfoPoint.LastUpdateContactTVText);
-               bool val9 = true;
-               mapInfoPoint.HasErrors = val9;
-               Assert.AreEqual(val9, mapInfoPoint.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               mapInfoPoint.ValidationResults = val30;
-               Assert.AreEqual(val30, mapInfoPoint.ValidationResults);
+               bool val8 = true;
+               mapInfoPoint.HasErrors = val8;
+               Assert.AreEqual(val8, mapInfoPoint.HasErrors);
+               IEnumerable<ValidationResult> val31 = new List<ValidationResult>().AsEnumerable();
+               mapInfoPoint.ValidationResults = val31;
+               Assert.AreEqual(val31, mapInfoPoint.ValidationResults);
         }
         #endregion Tests
     }

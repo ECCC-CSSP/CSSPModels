@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class MWQMAnalysisReportParameter
+    public partial class MWQMAnalysisReportParameter : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -55,38 +55,51 @@ namespace CSSPModels
         public int? ExcelTVFileTVItemID { get; set; }
         [CSSPEnumType]
         public AnalysisReportExportCommandEnum Command { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ExcelTVFileTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string ExcelTVFileTVText { get; set; }
+        public MWQMAnalysisReportParameterWeb MWQMAnalysisReportParameterWeb { get; set; }
         [NotMapped]
-        [StringLength(100)]
         [CSSPAllowNull]
-        [CSSPEnumTypeText(EnumTypeName = "AnalysisReportExportCommandEnum", EnumType = "Command")]
-        public string CommandText { get; set; }
-        [NotMapped]
-        [StringLength(200)]
-        [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
-        [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        public MWQMAnalysisReportParameterReport MWQMAnalysisReportParameterReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public MWQMAnalysisReportParameter()
+        public MWQMAnalysisReportParameter() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class MWQMAnalysisReportParameterWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ExcelTVFileTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string ExcelTVFileTVText { get; set; }
+        [CSSPEnumTypeText(EnumTypeName = "AnalysisReportExportCommandEnum", EnumType = "Command")]
+        public string CommandText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public MWQMAnalysisReportParameterWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class MWQMAnalysisReportParameterReport
+    {
+        #region Properties for report information
+        public string MWQMAnalysisReportParameterReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public MWQMAnalysisReportParameterReport()
+        {
         }
         #endregion Constructors
     }

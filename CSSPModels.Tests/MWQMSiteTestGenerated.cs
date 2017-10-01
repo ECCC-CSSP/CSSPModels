@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void MWQMSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSiteID", "MWQMSiteTVItemID", "MWQMSiteNumber", "MWQMSiteDescription", "MWQMSiteLatestClassification", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteTVText", "LastUpdateContactTVText", "MWQMSiteLatestClassificationText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteWeb", "MWQMSiteReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMSite).GetProperties().OrderBy(c => c.Name))
@@ -121,9 +121,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.MWQMSiteOrdinal);
                Assert.IsNotNull(CSSPModelsRes.MWQMSiteLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.MWQMSiteLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteMWQMSiteTVText);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteMWQMSiteLatestClassificationText);
                Assert.IsNotNull(CSSPModelsRes.MWQMSiteHasErrors);
         }
         [TestMethod]
@@ -153,21 +150,12 @@ namespace CSSPModels.Tests
                int val8 = 45;
                mWQMSite.LastUpdateContactTVItemID = val8;
                Assert.AreEqual(val8, mWQMSite.LastUpdateContactTVItemID);
-               string val9 = "Some text";
-               mWQMSite.MWQMSiteTVText = val9;
-               Assert.AreEqual(val9, mWQMSite.MWQMSiteTVText);
-               string val10 = "Some text";
-               mWQMSite.LastUpdateContactTVText = val10;
-               Assert.AreEqual(val10, mWQMSite.LastUpdateContactTVText);
-               string val11 = "Some text";
-               mWQMSite.MWQMSiteLatestClassificationText = val11;
-               Assert.AreEqual(val11, mWQMSite.MWQMSiteLatestClassificationText);
-               bool val12 = true;
-               mWQMSite.HasErrors = val12;
-               Assert.AreEqual(val12, mWQMSite.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>().AsEnumerable();
-               mWQMSite.ValidationResults = val39;
-               Assert.AreEqual(val39, mWQMSite.ValidationResults);
+               bool val9 = true;
+               mWQMSite.HasErrors = val9;
+               Assert.AreEqual(val9, mWQMSite.HasErrors);
+               IEnumerable<ValidationResult> val34 = new List<ValidationResult>().AsEnumerable();
+               mWQMSite.ValidationResults = val34;
+               Assert.AreEqual(val34, mWQMSite.ValidationResults);
         }
         #endregion Tests
     }

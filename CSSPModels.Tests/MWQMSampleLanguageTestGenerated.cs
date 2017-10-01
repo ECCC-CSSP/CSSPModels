@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void MWQMSampleLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSampleLanguageID", "MWQMSampleID", "Language", "MWQMSampleNote", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MWQMSampleLanguageWeb", "MWQMSampleLanguageReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMSampleLanguage).GetProperties().OrderBy(c => c.Name))
@@ -120,9 +120,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.MWQMSampleLanguageTranslationStatus);
                Assert.IsNotNull(CSSPModelsRes.MWQMSampleLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.MWQMSampleLanguageLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSampleLanguageLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSampleLanguageLanguageText);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSampleLanguageTranslationStatusText);
                Assert.IsNotNull(CSSPModelsRes.MWQMSampleLanguageHasErrors);
         }
         [TestMethod]
@@ -149,21 +146,12 @@ namespace CSSPModels.Tests
                int val7 = 45;
                mWQMSampleLanguage.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, mWQMSampleLanguage.LastUpdateContactTVItemID);
-               string val8 = "Some text";
-               mWQMSampleLanguage.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, mWQMSampleLanguage.LastUpdateContactTVText);
-               string val9 = "Some text";
-               mWQMSampleLanguage.LanguageText = val9;
-               Assert.AreEqual(val9, mWQMSampleLanguage.LanguageText);
-               string val10 = "Some text";
-               mWQMSampleLanguage.TranslationStatusText = val10;
-               Assert.AreEqual(val10, mWQMSampleLanguage.TranslationStatusText);
-               bool val11 = true;
-               mWQMSampleLanguage.HasErrors = val11;
-               Assert.AreEqual(val11, mWQMSampleLanguage.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               mWQMSampleLanguage.ValidationResults = val36;
-               Assert.AreEqual(val36, mWQMSampleLanguage.ValidationResults);
+               bool val8 = true;
+               mWQMSampleLanguage.HasErrors = val8;
+               Assert.AreEqual(val8, mWQMSampleLanguage.HasErrors);
+               IEnumerable<ValidationResult> val31 = new List<ValidationResult>().AsEnumerable();
+               mWQMSampleLanguage.ValidationResults = val31;
+               Assert.AreEqual(val31, mWQMSampleLanguage.ValidationResults);
         }
         #endregion Tests
     }

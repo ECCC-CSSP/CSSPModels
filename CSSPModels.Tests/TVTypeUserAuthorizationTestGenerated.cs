@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void TVTypeUserAuthorization_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVTypeUserAuthorizationID", "ContactTVItemID", "TVType", "TVAuth", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ContactTVText", "LastUpdateContactTVText", "TVTypeText", "TVAuthText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TVTypeUserAuthorizationWeb", "TVTypeUserAuthorizationReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TVTypeUserAuthorization).GetProperties().OrderBy(c => c.Name))
@@ -119,10 +119,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.TVTypeUserAuthorizationTVAuth);
                Assert.IsNotNull(CSSPModelsRes.TVTypeUserAuthorizationLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.TVTypeUserAuthorizationLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.TVTypeUserAuthorizationContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.TVTypeUserAuthorizationLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.TVTypeUserAuthorizationTVTypeText);
-               Assert.IsNotNull(CSSPModelsRes.TVTypeUserAuthorizationTVAuthText);
                Assert.IsNotNull(CSSPModelsRes.TVTypeUserAuthorizationHasErrors);
         }
         [TestMethod]
@@ -146,24 +142,12 @@ namespace CSSPModels.Tests
                int val6 = 45;
                tVTypeUserAuthorization.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, tVTypeUserAuthorization.LastUpdateContactTVItemID);
-               string val7 = "Some text";
-               tVTypeUserAuthorization.ContactTVText = val7;
-               Assert.AreEqual(val7, tVTypeUserAuthorization.ContactTVText);
-               string val8 = "Some text";
-               tVTypeUserAuthorization.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, tVTypeUserAuthorization.LastUpdateContactTVText);
-               string val9 = "Some text";
-               tVTypeUserAuthorization.TVTypeText = val9;
-               Assert.AreEqual(val9, tVTypeUserAuthorization.TVTypeText);
-               string val10 = "Some text";
-               tVTypeUserAuthorization.TVAuthText = val10;
-               Assert.AreEqual(val10, tVTypeUserAuthorization.TVAuthText);
-               bool val11 = true;
-               tVTypeUserAuthorization.HasErrors = val11;
-               Assert.AreEqual(val11, tVTypeUserAuthorization.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               tVTypeUserAuthorization.ValidationResults = val36;
-               Assert.AreEqual(val36, tVTypeUserAuthorization.ValidationResults);
+               bool val7 = true;
+               tVTypeUserAuthorization.HasErrors = val7;
+               Assert.AreEqual(val7, tVTypeUserAuthorization.HasErrors);
+               IEnumerable<ValidationResult> val28 = new List<ValidationResult>().AsEnumerable();
+               tVTypeUserAuthorization.ValidationResults = val28;
+               Assert.AreEqual(val28, tVTypeUserAuthorization.ValidationResults);
         }
         #endregion Tests
     }

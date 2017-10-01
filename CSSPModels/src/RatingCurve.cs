@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class RatingCurve
+    public partial class RatingCurve : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -15,28 +15,47 @@ namespace CSSPModels
         public int HydrometricSiteID { get; set; }
         [StringLength(50)]
         public string RatingCurveNumber { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
+        public RatingCurveWeb RatingCurveWeb { get; set; }
         [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        [CSSPAllowNull]
+        public RatingCurveReport RatingCurveReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public RatingCurve()
+        public RatingCurve() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class RatingCurveWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public RatingCurveWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class RatingCurveReport
+    {
+        #region Properties for report information
+        public string RatingCurveReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public RatingCurveReport()
+        {
         }
         #endregion Constructors
     }

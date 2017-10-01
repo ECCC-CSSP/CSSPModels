@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class MapObj
+    public partial class MapObj : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -22,15 +22,12 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "MapInfoDrawTypeEnum", EnumType = "MapInfoDrawType")]
         public string MapInfoDrawTypeText { get; set; }
         public virtual List<Coord> CoordList { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public MapObj()
+        public MapObj() : base()
         {
             CoordList = new List<Coord>();
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

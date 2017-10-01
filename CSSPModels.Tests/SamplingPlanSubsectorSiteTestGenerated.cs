@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void SamplingPlanSubsectorSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SamplingPlanSubsectorSiteID", "SamplingPlanSubsectorID", "MWQMSiteTVItemID", "IsDuplicate", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MWQMSiteTVText", "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "SamplingPlanSubsectorSiteWeb", "SamplingPlanSubsectorSiteReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.SamplingPlanSubsectorSite).GetProperties().OrderBy(c => c.Name))
@@ -119,8 +119,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanSubsectorSiteIsDuplicate);
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanSubsectorSiteLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanSubsectorSiteLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanSubsectorSiteMWQMSiteTVText);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanSubsectorSiteLastUpdateContactTVText);
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanSubsectorSiteHasErrors);
         }
         [TestMethod]
@@ -144,18 +142,12 @@ namespace CSSPModels.Tests
                int val6 = 45;
                samplingPlanSubsectorSite.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, samplingPlanSubsectorSite.LastUpdateContactTVItemID);
-               string val7 = "Some text";
-               samplingPlanSubsectorSite.MWQMSiteTVText = val7;
-               Assert.AreEqual(val7, samplingPlanSubsectorSite.MWQMSiteTVText);
-               string val8 = "Some text";
-               samplingPlanSubsectorSite.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, samplingPlanSubsectorSite.LastUpdateContactTVText);
-               bool val9 = true;
-               samplingPlanSubsectorSite.HasErrors = val9;
-               Assert.AreEqual(val9, samplingPlanSubsectorSite.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               samplingPlanSubsectorSite.ValidationResults = val30;
-               Assert.AreEqual(val30, samplingPlanSubsectorSite.ValidationResults);
+               bool val7 = true;
+               samplingPlanSubsectorSite.HasErrors = val7;
+               Assert.AreEqual(val7, samplingPlanSubsectorSite.HasErrors);
+               IEnumerable<ValidationResult> val28 = new List<ValidationResult>().AsEnumerable();
+               samplingPlanSubsectorSite.ValidationResults = val28;
+               Assert.AreEqual(val28, samplingPlanSubsectorSite.ValidationResults);
         }
         #endregion Tests
     }

@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void ContactLogin_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactLoginID", "ContactID", "LoginEmail", "PasswordHash", "PasswordSalt", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "Password", "ConfirmPassword", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "ContactLoginWeb", "ContactLoginReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ContactLogin).GetProperties().OrderBy(c => c.Name))
@@ -120,9 +120,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.ContactLoginPasswordSalt);
                Assert.IsNotNull(CSSPModelsRes.ContactLoginLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.ContactLoginLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.ContactLoginLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.ContactLoginPassword);
-               Assert.IsNotNull(CSSPModelsRes.ContactLoginConfirmPassword);
                Assert.IsNotNull(CSSPModelsRes.ContactLoginHasErrors);
         }
         [TestMethod]
@@ -149,21 +146,12 @@ namespace CSSPModels.Tests
                int val7 = 45;
                contactLogin.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, contactLogin.LastUpdateContactTVItemID);
-               string val8 = "Some text";
-               contactLogin.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, contactLogin.LastUpdateContactTVText);
-               string val9 = "Some text";
-               contactLogin.Password = val9;
-               Assert.AreEqual(val9, contactLogin.Password);
-               string val10 = "Some text";
-               contactLogin.ConfirmPassword = val10;
-               Assert.AreEqual(val10, contactLogin.ConfirmPassword);
-               bool val11 = true;
-               contactLogin.HasErrors = val11;
-               Assert.AreEqual(val11, contactLogin.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               contactLogin.ValidationResults = val36;
-               Assert.AreEqual(val36, contactLogin.ValidationResults);
+               bool val8 = true;
+               contactLogin.HasErrors = val8;
+               Assert.AreEqual(val8, contactLogin.HasErrors);
+               IEnumerable<ValidationResult> val31 = new List<ValidationResult>().AsEnumerable();
+               contactLogin.ValidationResults = val31;
+               Assert.AreEqual(val31, contactLogin.ValidationResults);
         }
         #endregion Tests
     }

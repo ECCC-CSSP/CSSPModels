@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class TVItemInfrastructureTypeTVItemLink
+    public partial class TVItemInfrastructureTypeTVItemLink : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -23,15 +23,12 @@ namespace CSSPModels
         public virtual TVItem TVItem { get; set; }
         public virtual List<TVItemLink> TVItemLinkList { get; set; }
         public virtual TVItemInfrastructureTypeTVItemLink FlowTo { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public TVItemInfrastructureTypeTVItemLink()
+        public TVItemInfrastructureTypeTVItemLink() : base()
         {
             TVItemLinkList = new List<TVItemLink>();
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

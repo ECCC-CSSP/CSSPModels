@@ -156,38 +156,53 @@
 <data name="AddressGoogleAddressText" xml:space="preserve">
   <value>AddressGoogleAddressText</value>
 </data>
+<data name="AddressAddressWeb" xml:space="preserve">
+  <value>AddressAddressWeb</value>
+</data>
+<data name="AddressAddressReport" xml:space="preserve">
+  <value>AddressAddressReport</value>
+</data>
 <data name="AddressLastUpdateDate_UTC" xml:space="preserve">
   <value>AddressLastUpdateDate_UTC</value>
 </data>
 <data name="AddressLastUpdateContactTVItemID" xml:space="preserve">
   <value>AddressLastUpdateContactTVItemID</value>
 </data>
-<data name="AddressParentTVItemID" xml:space="preserve">
-  <value>AddressParentTVItemID</value>
-</data>
-<data name="AddressAddressTVText" xml:space="preserve">
-  <value>AddressAddressTVText</value>
-</data>
-<data name="AddressCountryTVText" xml:space="preserve">
-  <value>AddressCountryTVText</value>
-</data>
-<data name="AddressProvinceTVText" xml:space="preserve">
-  <value>AddressProvinceTVText</value>
-</data>
-<data name="AddressMunicipalityTVText" xml:space="preserve">
-  <value>AddressMunicipalityTVText</value>
-</data>
-<data name="AddressLastUpdateContactTVText" xml:space="preserve">
-  <value>AddressLastUpdateContactTVText</value>
-</data>
-<data name="AddressAddressTypeText" xml:space="preserve">
-  <value>AddressAddressTypeText</value>
-</data>
-<data name="AddressStreetTypeText" xml:space="preserve">
-  <value>AddressStreetTypeText</value>
-</data>
 <data name="AddressHasErrors" xml:space="preserve">
   <value>AddressHasErrors</value>
+</data>
+<data name="AddressWeb" xml:space="preserve">
+  <value>AddressWeb</value>
+</data>
+<data name="AddressWebParentTVItemID" xml:space="preserve">
+  <value>AddressWebParentTVItemID</value>
+</data>
+<data name="AddressWebAddressTVText" xml:space="preserve">
+  <value>AddressWebAddressTVText</value>
+</data>
+<data name="AddressWebCountryTVText" xml:space="preserve">
+  <value>AddressWebCountryTVText</value>
+</data>
+<data name="AddressWebProvinceTVText" xml:space="preserve">
+  <value>AddressWebProvinceTVText</value>
+</data>
+<data name="AddressWebMunicipalityTVText" xml:space="preserve">
+  <value>AddressWebMunicipalityTVText</value>
+</data>
+<data name="AddressWebLastUpdateContactTVText" xml:space="preserve">
+  <value>AddressWebLastUpdateContactTVText</value>
+</data>
+<data name="AddressWebAddressTypeText" xml:space="preserve">
+  <value>AddressWebAddressTypeText</value>
+</data>
+<data name="AddressWebStreetTypeText" xml:space="preserve">
+  <value>AddressWebStreetTypeText</value>
+</data>
+<data name="AddressReport" xml:space="preserve">
+  <value>AddressReport</value>
+</data>
+<data name="AddressReportAddressReportTest" xml:space="preserve">
+  <value>AddressReportAddressReportTest</value>
 </data>
 <data name="AppErrLog" xml:space="preserve">
   <value>AppErrLog</value>
@@ -210,17 +225,32 @@
 <data name="AppErrLogDateTime_UTC" xml:space="preserve">
   <value>AppErrLogDateTime_UTC</value>
 </data>
+<data name="AppErrLogAppErrLogWeb" xml:space="preserve">
+  <value>AppErrLogAppErrLogWeb</value>
+</data>
+<data name="AppErrLogAppErrLogReport" xml:space="preserve">
+  <value>AppErrLogAppErrLogReport</value>
+</data>
 <data name="AppErrLogLastUpdateDate_UTC" xml:space="preserve">
   <value>AppErrLogLastUpdateDate_UTC</value>
 </data>
 <data name="AppErrLogLastUpdateContactTVItemID" xml:space="preserve">
   <value>AppErrLogLastUpdateContactTVItemID</value>
 </data>
-<data name="AppErrLogLastUpdateContactTVText" xml:space="preserve">
-  <value>AppErrLogLastUpdateContactTVText</value>
-</data>
 <data name="AppErrLogHasErrors" xml:space="preserve">
   <value>AppErrLogHasErrors</value>
+</data>
+<data name="AppErrLogWeb" xml:space="preserve">
+  <value>AppErrLogWeb</value>
+</data>
+<data name="AppErrLogWebLastUpdateContactTVText" xml:space="preserve">
+  <value>AppErrLogWebLastUpdateContactTVText</value>
+</data>
+<data name="AppErrLogReport" xml:space="preserve">
+  <value>AppErrLogReport</value>
+</data>
+<data name="AppErrLogReportAppErrLogTest" xml:space="preserve">
+  <value>AppErrLogReportAppErrLogTest</value>
 </data>
 <data name="AppTask" xml:space="preserve">
   <value>AppTask</value>
@@ -261,32 +291,47 @@
 <data name="AppTaskRemainingTime_second" xml:space="preserve">
   <value>AppTaskRemainingTime_second</value>
 </data>
+<data name="AppTaskAppTaskWeb" xml:space="preserve">
+  <value>AppTaskAppTaskWeb</value>
+</data>
+<data name="AppTaskAppTaskReport" xml:space="preserve">
+  <value>AppTaskAppTaskReport</value>
+</data>
 <data name="AppTaskLastUpdateDate_UTC" xml:space="preserve">
   <value>AppTaskLastUpdateDate_UTC</value>
 </data>
 <data name="AppTaskLastUpdateContactTVItemID" xml:space="preserve">
   <value>AppTaskLastUpdateContactTVItemID</value>
 </data>
-<data name="AppTaskTVItemTVText" xml:space="preserve">
-  <value>AppTaskTVItemTVText</value>
-</data>
-<data name="AppTaskTVItem2TVText" xml:space="preserve">
-  <value>AppTaskTVItem2TVText</value>
-</data>
-<data name="AppTaskLastUpdateContactTVText" xml:space="preserve">
-  <value>AppTaskLastUpdateContactTVText</value>
-</data>
-<data name="AppTaskAppTaskCommandText" xml:space="preserve">
-  <value>AppTaskAppTaskCommandText</value>
-</data>
-<data name="AppTaskAppTaskStatusText" xml:space="preserve">
-  <value>AppTaskAppTaskStatusText</value>
-</data>
-<data name="AppTaskLanguageText" xml:space="preserve">
-  <value>AppTaskLanguageText</value>
-</data>
 <data name="AppTaskHasErrors" xml:space="preserve">
   <value>AppTaskHasErrors</value>
+</data>
+<data name="AppTaskWeb" xml:space="preserve">
+  <value>AppTaskWeb</value>
+</data>
+<data name="AppTaskWebTVItemTVText" xml:space="preserve">
+  <value>AppTaskWebTVItemTVText</value>
+</data>
+<data name="AppTaskWebTVItem2TVText" xml:space="preserve">
+  <value>AppTaskWebTVItem2TVText</value>
+</data>
+<data name="AppTaskWebLastUpdateContactTVText" xml:space="preserve">
+  <value>AppTaskWebLastUpdateContactTVText</value>
+</data>
+<data name="AppTaskWebAppTaskCommandText" xml:space="preserve">
+  <value>AppTaskWebAppTaskCommandText</value>
+</data>
+<data name="AppTaskWebAppTaskStatusText" xml:space="preserve">
+  <value>AppTaskWebAppTaskStatusText</value>
+</data>
+<data name="AppTaskWebLanguageText" xml:space="preserve">
+  <value>AppTaskWebLanguageText</value>
+</data>
+<data name="AppTaskReport" xml:space="preserve">
+  <value>AppTaskReport</value>
+</data>
+<data name="AppTaskReportAppTaskReportTest" xml:space="preserve">
+  <value>AppTaskReportAppTaskReportTest</value>
 </data>
 <data name="AppTaskLanguage" xml:space="preserve">
   <value>AppTaskLanguage</value>
@@ -309,23 +354,38 @@
 <data name="AppTaskLanguageTranslationStatus" xml:space="preserve">
   <value>AppTaskLanguageTranslationStatus</value>
 </data>
+<data name="AppTaskLanguageAppTaskLanguageWeb" xml:space="preserve">
+  <value>AppTaskLanguageAppTaskLanguageWeb</value>
+</data>
+<data name="AppTaskLanguageAppTaskLanguageReport" xml:space="preserve">
+  <value>AppTaskLanguageAppTaskLanguageReport</value>
+</data>
 <data name="AppTaskLanguageLastUpdateDate_UTC" xml:space="preserve">
   <value>AppTaskLanguageLastUpdateDate_UTC</value>
 </data>
 <data name="AppTaskLanguageLastUpdateContactTVItemID" xml:space="preserve">
   <value>AppTaskLanguageLastUpdateContactTVItemID</value>
 </data>
-<data name="AppTaskLanguageLastUpdateContactTVText" xml:space="preserve">
-  <value>AppTaskLanguageLastUpdateContactTVText</value>
-</data>
-<data name="AppTaskLanguageLanguageText" xml:space="preserve">
-  <value>AppTaskLanguageLanguageText</value>
-</data>
-<data name="AppTaskLanguageTranslationStatusText" xml:space="preserve">
-  <value>AppTaskLanguageTranslationStatusText</value>
-</data>
 <data name="AppTaskLanguageHasErrors" xml:space="preserve">
   <value>AppTaskLanguageHasErrors</value>
+</data>
+<data name="AppTaskLanguageWeb" xml:space="preserve">
+  <value>AppTaskLanguageWeb</value>
+</data>
+<data name="AppTaskLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>AppTaskLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="AppTaskLanguageWebLanguageText" xml:space="preserve">
+  <value>AppTaskLanguageWebLanguageText</value>
+</data>
+<data name="AppTaskLanguageWebTranslationStatusText" xml:space="preserve">
+  <value>AppTaskLanguageWebTranslationStatusText</value>
+</data>
+<data name="AppTaskLanguageReport" xml:space="preserve">
+  <value>AppTaskLanguageReport</value>
+</data>
+<data name="AppTaskLanguageReportAppTaskLanguageReportTest" xml:space="preserve">
+  <value>AppTaskLanguageReportAppTaskLanguageReportTest</value>
 </data>
 <data name="BoxModel" xml:space="preserve">
   <value>BoxModel</value>
@@ -366,20 +426,35 @@
 <data name="BoxModelFlowDuration_hour" xml:space="preserve">
   <value>BoxModelFlowDuration_hour</value>
 </data>
+<data name="BoxModelBoxModelWeb" xml:space="preserve">
+  <value>BoxModelBoxModelWeb</value>
+</data>
+<data name="BoxModelBoxModelReport" xml:space="preserve">
+  <value>BoxModelBoxModelReport</value>
+</data>
 <data name="BoxModelLastUpdateDate_UTC" xml:space="preserve">
   <value>BoxModelLastUpdateDate_UTC</value>
 </data>
 <data name="BoxModelLastUpdateContactTVItemID" xml:space="preserve">
   <value>BoxModelLastUpdateContactTVItemID</value>
 </data>
-<data name="BoxModelInfrastructureTVText" xml:space="preserve">
-  <value>BoxModelInfrastructureTVText</value>
-</data>
-<data name="BoxModelLastUpdateContactTVText" xml:space="preserve">
-  <value>BoxModelLastUpdateContactTVText</value>
-</data>
 <data name="BoxModelHasErrors" xml:space="preserve">
   <value>BoxModelHasErrors</value>
+</data>
+<data name="BoxModelWeb" xml:space="preserve">
+  <value>BoxModelWeb</value>
+</data>
+<data name="BoxModelWebInfrastructureTVText" xml:space="preserve">
+  <value>BoxModelWebInfrastructureTVText</value>
+</data>
+<data name="BoxModelWebLastUpdateContactTVText" xml:space="preserve">
+  <value>BoxModelWebLastUpdateContactTVText</value>
+</data>
+<data name="BoxModelReport" xml:space="preserve">
+  <value>BoxModelReport</value>
+</data>
+<data name="BoxModelReportBoxModelReportTest" xml:space="preserve">
+  <value>BoxModelReportBoxModelReportTest</value>
 </data>
 <data name="BoxModelLanguage" xml:space="preserve">
   <value>BoxModelLanguage</value>
@@ -399,23 +474,38 @@
 <data name="BoxModelLanguageTranslationStatus" xml:space="preserve">
   <value>BoxModelLanguageTranslationStatus</value>
 </data>
+<data name="BoxModelLanguageBoxModelLanguageWeb" xml:space="preserve">
+  <value>BoxModelLanguageBoxModelLanguageWeb</value>
+</data>
+<data name="BoxModelLanguageBoxModelLanguageReport" xml:space="preserve">
+  <value>BoxModelLanguageBoxModelLanguageReport</value>
+</data>
 <data name="BoxModelLanguageLastUpdateDate_UTC" xml:space="preserve">
   <value>BoxModelLanguageLastUpdateDate_UTC</value>
 </data>
 <data name="BoxModelLanguageLastUpdateContactTVItemID" xml:space="preserve">
   <value>BoxModelLanguageLastUpdateContactTVItemID</value>
 </data>
-<data name="BoxModelLanguageLastUpdateContactTVText" xml:space="preserve">
-  <value>BoxModelLanguageLastUpdateContactTVText</value>
-</data>
-<data name="BoxModelLanguageLanguageText" xml:space="preserve">
-  <value>BoxModelLanguageLanguageText</value>
-</data>
-<data name="BoxModelLanguageTranslationStatusText" xml:space="preserve">
-  <value>BoxModelLanguageTranslationStatusText</value>
-</data>
 <data name="BoxModelLanguageHasErrors" xml:space="preserve">
   <value>BoxModelLanguageHasErrors</value>
+</data>
+<data name="BoxModelLanguageWeb" xml:space="preserve">
+  <value>BoxModelLanguageWeb</value>
+</data>
+<data name="BoxModelLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>BoxModelLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="BoxModelLanguageWebLanguageText" xml:space="preserve">
+  <value>BoxModelLanguageWebLanguageText</value>
+</data>
+<data name="BoxModelLanguageWebTranslationStatusText" xml:space="preserve">
+  <value>BoxModelLanguageWebTranslationStatusText</value>
+</data>
+<data name="BoxModelLanguageReport" xml:space="preserve">
+  <value>BoxModelLanguageReport</value>
+</data>
+<data name="BoxModelLanguageReportBoxModelLanguageReportTest" xml:space="preserve">
+  <value>BoxModelLanguageReportBoxModelLanguageReportTest</value>
 </data>
 <data name="BoxModelResult" xml:space="preserve">
   <value>BoxModelResult</value>
@@ -468,20 +558,35 @@
 <data name="BoxModelResultLeftSideLineStartLongitude" xml:space="preserve">
   <value>BoxModelResultLeftSideLineStartLongitude</value>
 </data>
+<data name="BoxModelResultBoxModelResultWeb" xml:space="preserve">
+  <value>BoxModelResultBoxModelResultWeb</value>
+</data>
+<data name="BoxModelResultBoxModelResultReport" xml:space="preserve">
+  <value>BoxModelResultBoxModelResultReport</value>
+</data>
 <data name="BoxModelResultLastUpdateDate_UTC" xml:space="preserve">
   <value>BoxModelResultLastUpdateDate_UTC</value>
 </data>
 <data name="BoxModelResultLastUpdateContactTVItemID" xml:space="preserve">
   <value>BoxModelResultLastUpdateContactTVItemID</value>
 </data>
-<data name="BoxModelResultLastUpdateContactTVText" xml:space="preserve">
-  <value>BoxModelResultLastUpdateContactTVText</value>
-</data>
-<data name="BoxModelResultBoxModelResultTypeText" xml:space="preserve">
-  <value>BoxModelResultBoxModelResultTypeText</value>
-</data>
 <data name="BoxModelResultHasErrors" xml:space="preserve">
   <value>BoxModelResultHasErrors</value>
+</data>
+<data name="BoxModelResultWeb" xml:space="preserve">
+  <value>BoxModelResultWeb</value>
+</data>
+<data name="BoxModelResultWebLastUpdateContactTVText" xml:space="preserve">
+  <value>BoxModelResultWebLastUpdateContactTVText</value>
+</data>
+<data name="BoxModelResultWebBoxModelResultTypeText" xml:space="preserve">
+  <value>BoxModelResultWebBoxModelResultTypeText</value>
+</data>
+<data name="BoxModelResultReport" xml:space="preserve">
+  <value>BoxModelResultReport</value>
+</data>
+<data name="BoxModelResultReportBoxModelResultReportTest" xml:space="preserve">
+  <value>BoxModelResultReportBoxModelResultReportTest</value>
 </data>
 <data name="ClimateDataValue" xml:space="preserve">
   <value>ClimateDataValue</value>
@@ -537,20 +642,35 @@
 <data name="ClimateDataValueHourlyValues" xml:space="preserve">
   <value>ClimateDataValueHourlyValues</value>
 </data>
+<data name="ClimateDataValueClimateDataValueWeb" xml:space="preserve">
+  <value>ClimateDataValueClimateDataValueWeb</value>
+</data>
+<data name="ClimateDataValueClimateDataValueReport" xml:space="preserve">
+  <value>ClimateDataValueClimateDataValueReport</value>
+</data>
 <data name="ClimateDataValueLastUpdateDate_UTC" xml:space="preserve">
   <value>ClimateDataValueLastUpdateDate_UTC</value>
 </data>
 <data name="ClimateDataValueLastUpdateContactTVItemID" xml:space="preserve">
   <value>ClimateDataValueLastUpdateContactTVItemID</value>
 </data>
-<data name="ClimateDataValueLastUpdateContactTVText" xml:space="preserve">
-  <value>ClimateDataValueLastUpdateContactTVText</value>
-</data>
-<data name="ClimateDataValueStorageDataTypeEnumText" xml:space="preserve">
-  <value>ClimateDataValueStorageDataTypeEnumText</value>
-</data>
 <data name="ClimateDataValueHasErrors" xml:space="preserve">
   <value>ClimateDataValueHasErrors</value>
+</data>
+<data name="ClimateDataValueWeb" xml:space="preserve">
+  <value>ClimateDataValueWeb</value>
+</data>
+<data name="ClimateDataValueWebLastUpdateContactTVText" xml:space="preserve">
+  <value>ClimateDataValueWebLastUpdateContactTVText</value>
+</data>
+<data name="ClimateDataValueWebStorageDataTypeEnumText" xml:space="preserve">
+  <value>ClimateDataValueWebStorageDataTypeEnumText</value>
+</data>
+<data name="ClimateDataValueReport" xml:space="preserve">
+  <value>ClimateDataValueReport</value>
+</data>
+<data name="ClimateDataValueReportClimateDataValueReportTest" xml:space="preserve">
+  <value>ClimateDataValueReportClimateDataValueReportTest</value>
 </data>
 <data name="ClimateSite" xml:space="preserve">
   <value>ClimateSite</value>
@@ -621,20 +741,35 @@
 <data name="ClimateSiteMonthlyNow" xml:space="preserve">
   <value>ClimateSiteMonthlyNow</value>
 </data>
+<data name="ClimateSiteClimateSiteWeb" xml:space="preserve">
+  <value>ClimateSiteClimateSiteWeb</value>
+</data>
+<data name="ClimateSiteClimateSiteReport" xml:space="preserve">
+  <value>ClimateSiteClimateSiteReport</value>
+</data>
 <data name="ClimateSiteLastUpdateDate_UTC" xml:space="preserve">
   <value>ClimateSiteLastUpdateDate_UTC</value>
 </data>
 <data name="ClimateSiteLastUpdateContactTVItemID" xml:space="preserve">
   <value>ClimateSiteLastUpdateContactTVItemID</value>
 </data>
-<data name="ClimateSiteClimateSiteTVText" xml:space="preserve">
-  <value>ClimateSiteClimateSiteTVText</value>
-</data>
-<data name="ClimateSiteLastUpdateContactTVText" xml:space="preserve">
-  <value>ClimateSiteLastUpdateContactTVText</value>
-</data>
 <data name="ClimateSiteHasErrors" xml:space="preserve">
   <value>ClimateSiteHasErrors</value>
+</data>
+<data name="ClimateSiteWeb" xml:space="preserve">
+  <value>ClimateSiteWeb</value>
+</data>
+<data name="ClimateSiteWebClimateSiteTVText" xml:space="preserve">
+  <value>ClimateSiteWebClimateSiteTVText</value>
+</data>
+<data name="ClimateSiteWebLastUpdateContactTVText" xml:space="preserve">
+  <value>ClimateSiteWebLastUpdateContactTVText</value>
+</data>
+<data name="ClimateSiteReport" xml:space="preserve">
+  <value>ClimateSiteReport</value>
+</data>
+<data name="ClimateSiteReportClimateSiteReportTest" xml:space="preserve">
+  <value>ClimateSiteReportClimateSiteReportTest</value>
 </data>
 <data name="Contact" xml:space="preserve">
   <value>Contact</value>
@@ -681,26 +816,41 @@
 <data name="ContactSamplingPlanner_ProvincesTVItemID" xml:space="preserve">
   <value>ContactSamplingPlanner_ProvincesTVItemID</value>
 </data>
+<data name="ContactContactWeb" xml:space="preserve">
+  <value>ContactContactWeb</value>
+</data>
+<data name="ContactContactReport" xml:space="preserve">
+  <value>ContactContactReport</value>
+</data>
 <data name="ContactLastUpdateDate_UTC" xml:space="preserve">
   <value>ContactLastUpdateDate_UTC</value>
 </data>
 <data name="ContactLastUpdateContactTVItemID" xml:space="preserve">
   <value>ContactLastUpdateContactTVItemID</value>
 </data>
-<data name="ContactContactTVText" xml:space="preserve">
-  <value>ContactContactTVText</value>
-</data>
-<data name="ContactLastUpdateContactTVText" xml:space="preserve">
-  <value>ContactLastUpdateContactTVText</value>
-</data>
-<data name="ContactParentTVItemID" xml:space="preserve">
-  <value>ContactParentTVItemID</value>
-</data>
-<data name="ContactContactTitleText" xml:space="preserve">
-  <value>ContactContactTitleText</value>
-</data>
 <data name="ContactHasErrors" xml:space="preserve">
   <value>ContactHasErrors</value>
+</data>
+<data name="ContactWeb" xml:space="preserve">
+  <value>ContactWeb</value>
+</data>
+<data name="ContactWebContactTVText" xml:space="preserve">
+  <value>ContactWebContactTVText</value>
+</data>
+<data name="ContactWebLastUpdateContactTVText" xml:space="preserve">
+  <value>ContactWebLastUpdateContactTVText</value>
+</data>
+<data name="ContactWebParentTVItemID" xml:space="preserve">
+  <value>ContactWebParentTVItemID</value>
+</data>
+<data name="ContactWebContactTitleText" xml:space="preserve">
+  <value>ContactWebContactTitleText</value>
+</data>
+<data name="ContactReport" xml:space="preserve">
+  <value>ContactReport</value>
+</data>
+<data name="ContactReportContactReportTest" xml:space="preserve">
+  <value>ContactReportContactReportTest</value>
 </data>
 <data name="ContactLogin" xml:space="preserve">
   <value>ContactLogin</value>
@@ -720,23 +870,38 @@
 <data name="ContactLoginPasswordSalt" xml:space="preserve">
   <value>ContactLoginPasswordSalt</value>
 </data>
+<data name="ContactLoginContactLoginWeb" xml:space="preserve">
+  <value>ContactLoginContactLoginWeb</value>
+</data>
+<data name="ContactLoginContactLoginReport" xml:space="preserve">
+  <value>ContactLoginContactLoginReport</value>
+</data>
 <data name="ContactLoginLastUpdateDate_UTC" xml:space="preserve">
   <value>ContactLoginLastUpdateDate_UTC</value>
 </data>
 <data name="ContactLoginLastUpdateContactTVItemID" xml:space="preserve">
   <value>ContactLoginLastUpdateContactTVItemID</value>
 </data>
-<data name="ContactLoginLastUpdateContactTVText" xml:space="preserve">
-  <value>ContactLoginLastUpdateContactTVText</value>
-</data>
-<data name="ContactLoginPassword" xml:space="preserve">
-  <value>ContactLoginPassword</value>
-</data>
-<data name="ContactLoginConfirmPassword" xml:space="preserve">
-  <value>ContactLoginConfirmPassword</value>
-</data>
 <data name="ContactLoginHasErrors" xml:space="preserve">
   <value>ContactLoginHasErrors</value>
+</data>
+<data name="ContactLoginWeb" xml:space="preserve">
+  <value>ContactLoginWeb</value>
+</data>
+<data name="ContactLoginWebLastUpdateContactTVText" xml:space="preserve">
+  <value>ContactLoginWebLastUpdateContactTVText</value>
+</data>
+<data name="ContactLoginWebPassword" xml:space="preserve">
+  <value>ContactLoginWebPassword</value>
+</data>
+<data name="ContactLoginWebConfirmPassword" xml:space="preserve">
+  <value>ContactLoginWebConfirmPassword</value>
+</data>
+<data name="ContactLoginReport" xml:space="preserve">
+  <value>ContactLoginReport</value>
+</data>
+<data name="ContactLoginReportContactLoginReportTest" xml:space="preserve">
+  <value>ContactLoginReportContactLoginReportTest</value>
 </data>
 <data name="ContactPreference" xml:space="preserve">
   <value>ContactPreference</value>
@@ -753,20 +918,35 @@
 <data name="ContactPreferenceMarkerSize" xml:space="preserve">
   <value>ContactPreferenceMarkerSize</value>
 </data>
+<data name="ContactPreferenceContactPreferenceWeb" xml:space="preserve">
+  <value>ContactPreferenceContactPreferenceWeb</value>
+</data>
+<data name="ContactPreferenceContactPreferenceReport" xml:space="preserve">
+  <value>ContactPreferenceContactPreferenceReport</value>
+</data>
 <data name="ContactPreferenceLastUpdateDate_UTC" xml:space="preserve">
   <value>ContactPreferenceLastUpdateDate_UTC</value>
 </data>
 <data name="ContactPreferenceLastUpdateContactTVItemID" xml:space="preserve">
   <value>ContactPreferenceLastUpdateContactTVItemID</value>
 </data>
-<data name="ContactPreferenceLastUpdateContactTVText" xml:space="preserve">
-  <value>ContactPreferenceLastUpdateContactTVText</value>
-</data>
-<data name="ContactPreferenceTVTypeText" xml:space="preserve">
-  <value>ContactPreferenceTVTypeText</value>
-</data>
 <data name="ContactPreferenceHasErrors" xml:space="preserve">
   <value>ContactPreferenceHasErrors</value>
+</data>
+<data name="ContactPreferenceWeb" xml:space="preserve">
+  <value>ContactPreferenceWeb</value>
+</data>
+<data name="ContactPreferenceWebLastUpdateContactTVText" xml:space="preserve">
+  <value>ContactPreferenceWebLastUpdateContactTVText</value>
+</data>
+<data name="ContactPreferenceWebTVTypeText" xml:space="preserve">
+  <value>ContactPreferenceWebTVTypeText</value>
+</data>
+<data name="ContactPreferenceReport" xml:space="preserve">
+  <value>ContactPreferenceReport</value>
+</data>
+<data name="ContactPreferenceReportContactPreferenceReportText" xml:space="preserve">
+  <value>ContactPreferenceReportContactPreferenceReportText</value>
 </data>
 <data name="ContactShortcut" xml:space="preserve">
   <value>ContactShortcut</value>
@@ -783,17 +963,32 @@
 <data name="ContactShortcutShortCutAddress" xml:space="preserve">
   <value>ContactShortcutShortCutAddress</value>
 </data>
+<data name="ContactShortcutContactShortcutWeb" xml:space="preserve">
+  <value>ContactShortcutContactShortcutWeb</value>
+</data>
+<data name="ContactShortcutContactShortcutReport" xml:space="preserve">
+  <value>ContactShortcutContactShortcutReport</value>
+</data>
 <data name="ContactShortcutLastUpdateDate_UTC" xml:space="preserve">
   <value>ContactShortcutLastUpdateDate_UTC</value>
 </data>
 <data name="ContactShortcutLastUpdateContactTVItemID" xml:space="preserve">
   <value>ContactShortcutLastUpdateContactTVItemID</value>
 </data>
-<data name="ContactShortcutLastUpdateContactTVText" xml:space="preserve">
-  <value>ContactShortcutLastUpdateContactTVText</value>
-</data>
 <data name="ContactShortcutHasErrors" xml:space="preserve">
   <value>ContactShortcutHasErrors</value>
+</data>
+<data name="ContactShortcutWeb" xml:space="preserve">
+  <value>ContactShortcutWeb</value>
+</data>
+<data name="ContactShortcutWebLastUpdateContactTVText" xml:space="preserve">
+  <value>ContactShortcutWebLastUpdateContactTVText</value>
+</data>
+<data name="ContactShortcutReport" xml:space="preserve">
+  <value>ContactShortcutReport</value>
+</data>
+<data name="ContactShortcutReportContactShortcutReportTest" xml:space="preserve">
+  <value>ContactShortcutReportContactShortcutReportTest</value>
 </data>
 <data name="DocTemplate" xml:space="preserve">
   <value>DocTemplate</value>
@@ -813,23 +1008,38 @@
 <data name="DocTemplateFileName" xml:space="preserve">
   <value>DocTemplateFileName</value>
 </data>
+<data name="DocTemplateDocTemplateWeb" xml:space="preserve">
+  <value>DocTemplateDocTemplateWeb</value>
+</data>
+<data name="DocTemplateDocTemplateReport" xml:space="preserve">
+  <value>DocTemplateDocTemplateReport</value>
+</data>
 <data name="DocTemplateLastUpdateDate_UTC" xml:space="preserve">
   <value>DocTemplateLastUpdateDate_UTC</value>
 </data>
 <data name="DocTemplateLastUpdateContactTVItemID" xml:space="preserve">
   <value>DocTemplateLastUpdateContactTVItemID</value>
 </data>
-<data name="DocTemplateLastUpdateContactTVText" xml:space="preserve">
-  <value>DocTemplateLastUpdateContactTVText</value>
-</data>
-<data name="DocTemplateLanguageText" xml:space="preserve">
-  <value>DocTemplateLanguageText</value>
-</data>
-<data name="DocTemplateTVTypeText" xml:space="preserve">
-  <value>DocTemplateTVTypeText</value>
-</data>
 <data name="DocTemplateHasErrors" xml:space="preserve">
   <value>DocTemplateHasErrors</value>
+</data>
+<data name="DocTemplateWeb" xml:space="preserve">
+  <value>DocTemplateWeb</value>
+</data>
+<data name="DocTemplateWebLastUpdateContactTVText" xml:space="preserve">
+  <value>DocTemplateWebLastUpdateContactTVText</value>
+</data>
+<data name="DocTemplateWebLanguageText" xml:space="preserve">
+  <value>DocTemplateWebLanguageText</value>
+</data>
+<data name="DocTemplateWebTVTypeText" xml:space="preserve">
+  <value>DocTemplateWebTVTypeText</value>
+</data>
+<data name="DocTemplateReport" xml:space="preserve">
+  <value>DocTemplateReport</value>
+</data>
+<data name="DocTemplateReportDocTemplateReportTest" xml:space="preserve">
+  <value>DocTemplateReportDocTemplateReportTest</value>
 </data>
 <data name="Email" xml:space="preserve">
   <value>Email</value>
@@ -846,23 +1056,38 @@
 <data name="EmailEmailType" xml:space="preserve">
   <value>EmailEmailType</value>
 </data>
+<data name="EmailEmailWeb" xml:space="preserve">
+  <value>EmailEmailWeb</value>
+</data>
+<data name="EmailEmailReport" xml:space="preserve">
+  <value>EmailEmailReport</value>
+</data>
 <data name="EmailLastUpdateDate_UTC" xml:space="preserve">
   <value>EmailLastUpdateDate_UTC</value>
 </data>
 <data name="EmailLastUpdateContactTVItemID" xml:space="preserve">
   <value>EmailLastUpdateContactTVItemID</value>
 </data>
-<data name="EmailEmailTVText" xml:space="preserve">
-  <value>EmailEmailTVText</value>
-</data>
-<data name="EmailLastUpdateContactTVText" xml:space="preserve">
-  <value>EmailLastUpdateContactTVText</value>
-</data>
-<data name="EmailEmailTypeText" xml:space="preserve">
-  <value>EmailEmailTypeText</value>
-</data>
 <data name="EmailHasErrors" xml:space="preserve">
   <value>EmailHasErrors</value>
+</data>
+<data name="EmailWeb" xml:space="preserve">
+  <value>EmailWeb</value>
+</data>
+<data name="EmailWebEmailTVText" xml:space="preserve">
+  <value>EmailWebEmailTVText</value>
+</data>
+<data name="EmailWebLastUpdateContactTVText" xml:space="preserve">
+  <value>EmailWebLastUpdateContactTVText</value>
+</data>
+<data name="EmailWebEmailTypeText" xml:space="preserve">
+  <value>EmailWebEmailTypeText</value>
+</data>
+<data name="EmailReport" xml:space="preserve">
+  <value>EmailReport</value>
+</data>
+<data name="EmailReportEmailReportTest" xml:space="preserve">
+  <value>EmailReportEmailReportTest</value>
 </data>
 <data name="EmailDistributionList" xml:space="preserve">
   <value>EmailDistributionList</value>
@@ -876,20 +1101,35 @@
 <data name="EmailDistributionListOrdinal" xml:space="preserve">
   <value>EmailDistributionListOrdinal</value>
 </data>
+<data name="EmailDistributionListEmailDistributionListWeb" xml:space="preserve">
+  <value>EmailDistributionListEmailDistributionListWeb</value>
+</data>
+<data name="EmailDistributionListEmailDistributionListReport" xml:space="preserve">
+  <value>EmailDistributionListEmailDistributionListReport</value>
+</data>
 <data name="EmailDistributionListLastUpdateDate_UTC" xml:space="preserve">
   <value>EmailDistributionListLastUpdateDate_UTC</value>
 </data>
 <data name="EmailDistributionListLastUpdateContactTVItemID" xml:space="preserve">
   <value>EmailDistributionListLastUpdateContactTVItemID</value>
 </data>
-<data name="EmailDistributionListCountryTVText" xml:space="preserve">
-  <value>EmailDistributionListCountryTVText</value>
-</data>
-<data name="EmailDistributionListLastUpdateContactTVText" xml:space="preserve">
-  <value>EmailDistributionListLastUpdateContactTVText</value>
-</data>
 <data name="EmailDistributionListHasErrors" xml:space="preserve">
   <value>EmailDistributionListHasErrors</value>
+</data>
+<data name="EmailDistributionListWeb" xml:space="preserve">
+  <value>EmailDistributionListWeb</value>
+</data>
+<data name="EmailDistributionListWebCountryTVText" xml:space="preserve">
+  <value>EmailDistributionListWebCountryTVText</value>
+</data>
+<data name="EmailDistributionListWebLastUpdateContactTVText" xml:space="preserve">
+  <value>EmailDistributionListWebLastUpdateContactTVText</value>
+</data>
+<data name="EmailDistributionListReport" xml:space="preserve">
+  <value>EmailDistributionListReport</value>
+</data>
+<data name="EmailDistributionListReportEmailDistributionReportTest" xml:space="preserve">
+  <value>EmailDistributionListReportEmailDistributionReportTest</value>
 </data>
 <data name="EmailDistributionListContact" xml:space="preserve">
   <value>EmailDistributionListContact</value>
@@ -924,17 +1164,32 @@
 <data name="EmailDistributionListContactReopeningAllTypes" xml:space="preserve">
   <value>EmailDistributionListContactReopeningAllTypes</value>
 </data>
+<data name="EmailDistributionListContactEmailDistributionListContactWeb" xml:space="preserve">
+  <value>EmailDistributionListContactEmailDistributionListContactWeb</value>
+</data>
+<data name="EmailDistributionListContactEmailDistributionListContactReport" xml:space="preserve">
+  <value>EmailDistributionListContactEmailDistributionListContactReport</value>
+</data>
 <data name="EmailDistributionListContactLastUpdateDate_UTC" xml:space="preserve">
   <value>EmailDistributionListContactLastUpdateDate_UTC</value>
 </data>
 <data name="EmailDistributionListContactLastUpdateContactTVItemID" xml:space="preserve">
   <value>EmailDistributionListContactLastUpdateContactTVItemID</value>
 </data>
-<data name="EmailDistributionListContactLastUpdateContactTVText" xml:space="preserve">
-  <value>EmailDistributionListContactLastUpdateContactTVText</value>
-</data>
 <data name="EmailDistributionListContactHasErrors" xml:space="preserve">
   <value>EmailDistributionListContactHasErrors</value>
+</data>
+<data name="EmailDistributionListContactWeb" xml:space="preserve">
+  <value>EmailDistributionListContactWeb</value>
+</data>
+<data name="EmailDistributionListContactWebLastUpdateContactTVText" xml:space="preserve">
+  <value>EmailDistributionListContactWebLastUpdateContactTVText</value>
+</data>
+<data name="EmailDistributionListContactReport" xml:space="preserve">
+  <value>EmailDistributionListContactReport</value>
+</data>
+<data name="EmailDistributionListContactReportEmailDistributionListContactReportTest" xml:space="preserve">
+  <value>EmailDistributionListContactReportEmailDistributionListContactReportTest</value>
 </data>
 <data name="EmailDistributionListContactLanguage" xml:space="preserve">
   <value>EmailDistributionListContactLanguage</value>
@@ -954,23 +1209,38 @@
 <data name="EmailDistributionListContactLanguageTranslationStatus" xml:space="preserve">
   <value>EmailDistributionListContactLanguageTranslationStatus</value>
 </data>
+<data name="EmailDistributionListContactLanguageEmailDistributionListContactLanguageWeb" xml:space="preserve">
+  <value>EmailDistributionListContactLanguageEmailDistributionListContactLanguageWeb</value>
+</data>
+<data name="EmailDistributionListContactLanguageEmailDistributionListContactLanguageReport" xml:space="preserve">
+  <value>EmailDistributionListContactLanguageEmailDistributionListContactLanguageReport</value>
+</data>
 <data name="EmailDistributionListContactLanguageLastUpdateDate_UTC" xml:space="preserve">
   <value>EmailDistributionListContactLanguageLastUpdateDate_UTC</value>
 </data>
 <data name="EmailDistributionListContactLanguageLastUpdateContactTVItemID" xml:space="preserve">
   <value>EmailDistributionListContactLanguageLastUpdateContactTVItemID</value>
 </data>
-<data name="EmailDistributionListContactLanguageLastUpdateContactTVText" xml:space="preserve">
-  <value>EmailDistributionListContactLanguageLastUpdateContactTVText</value>
-</data>
-<data name="EmailDistributionListContactLanguageLanguageText" xml:space="preserve">
-  <value>EmailDistributionListContactLanguageLanguageText</value>
-</data>
-<data name="EmailDistributionListContactLanguageTranslationStatusText" xml:space="preserve">
-  <value>EmailDistributionListContactLanguageTranslationStatusText</value>
-</data>
 <data name="EmailDistributionListContactLanguageHasErrors" xml:space="preserve">
   <value>EmailDistributionListContactLanguageHasErrors</value>
+</data>
+<data name="EmailDistributionListContactLanguageWeb" xml:space="preserve">
+  <value>EmailDistributionListContactLanguageWeb</value>
+</data>
+<data name="EmailDistributionListContactLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>EmailDistributionListContactLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="EmailDistributionListContactLanguageWebLanguageText" xml:space="preserve">
+  <value>EmailDistributionListContactLanguageWebLanguageText</value>
+</data>
+<data name="EmailDistributionListContactLanguageWebTranslationStatusText" xml:space="preserve">
+  <value>EmailDistributionListContactLanguageWebTranslationStatusText</value>
+</data>
+<data name="EmailDistributionListContactLanguageReport" xml:space="preserve">
+  <value>EmailDistributionListContactLanguageReport</value>
+</data>
+<data name="EmailDistributionListContactLanguageReportEmailDistributionListContactLanguageReportTest" xml:space="preserve">
+  <value>EmailDistributionListContactLanguageReportEmailDistributionListContactLanguageReportTest</value>
 </data>
 <data name="EmailDistributionListLanguage" xml:space="preserve">
   <value>EmailDistributionListLanguage</value>
@@ -990,23 +1260,38 @@
 <data name="EmailDistributionListLanguageTranslationStatus" xml:space="preserve">
   <value>EmailDistributionListLanguageTranslationStatus</value>
 </data>
+<data name="EmailDistributionListLanguageEmailDistributionListLanguageWeb" xml:space="preserve">
+  <value>EmailDistributionListLanguageEmailDistributionListLanguageWeb</value>
+</data>
+<data name="EmailDistributionListLanguageEmailDistributionListLanguageReport" xml:space="preserve">
+  <value>EmailDistributionListLanguageEmailDistributionListLanguageReport</value>
+</data>
 <data name="EmailDistributionListLanguageLastUpdateDate_UTC" xml:space="preserve">
   <value>EmailDistributionListLanguageLastUpdateDate_UTC</value>
 </data>
 <data name="EmailDistributionListLanguageLastUpdateContactTVItemID" xml:space="preserve">
   <value>EmailDistributionListLanguageLastUpdateContactTVItemID</value>
 </data>
-<data name="EmailDistributionListLanguageLastUpdateContactTVText" xml:space="preserve">
-  <value>EmailDistributionListLanguageLastUpdateContactTVText</value>
-</data>
-<data name="EmailDistributionListLanguageLanguageText" xml:space="preserve">
-  <value>EmailDistributionListLanguageLanguageText</value>
-</data>
-<data name="EmailDistributionListLanguageTranslationStatusText" xml:space="preserve">
-  <value>EmailDistributionListLanguageTranslationStatusText</value>
-</data>
 <data name="EmailDistributionListLanguageHasErrors" xml:space="preserve">
   <value>EmailDistributionListLanguageHasErrors</value>
+</data>
+<data name="EmailDistributionListLanguageWeb" xml:space="preserve">
+  <value>EmailDistributionListLanguageWeb</value>
+</data>
+<data name="EmailDistributionListLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>EmailDistributionListLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="EmailDistributionListLanguageWebLanguageText" xml:space="preserve">
+  <value>EmailDistributionListLanguageWebLanguageText</value>
+</data>
+<data name="EmailDistributionListLanguageWebTranslationStatusText" xml:space="preserve">
+  <value>EmailDistributionListLanguageWebTranslationStatusText</value>
+</data>
+<data name="EmailDistributionListLanguageReport" xml:space="preserve">
+  <value>EmailDistributionListLanguageReport</value>
+</data>
+<data name="EmailDistributionListLanguageReportEmailDistributionListLanguageReportTest" xml:space="preserve">
+  <value>EmailDistributionListLanguageReportEmailDistributionListLanguageReportTest</value>
 </data>
 <data name="HydrometricDataValue" xml:space="preserve">
   <value>HydrometricDataValue</value>
@@ -1032,20 +1317,35 @@
 <data name="HydrometricDataValueHourlyValues" xml:space="preserve">
   <value>HydrometricDataValueHourlyValues</value>
 </data>
+<data name="HydrometricDataValueHydrometricDataValueWeb" xml:space="preserve">
+  <value>HydrometricDataValueHydrometricDataValueWeb</value>
+</data>
+<data name="HydrometricDataValueHydrometricDataValueReport" xml:space="preserve">
+  <value>HydrometricDataValueHydrometricDataValueReport</value>
+</data>
 <data name="HydrometricDataValueLastUpdateDate_UTC" xml:space="preserve">
   <value>HydrometricDataValueLastUpdateDate_UTC</value>
 </data>
 <data name="HydrometricDataValueLastUpdateContactTVItemID" xml:space="preserve">
   <value>HydrometricDataValueLastUpdateContactTVItemID</value>
 </data>
-<data name="HydrometricDataValueLastUpdateContactTVText" xml:space="preserve">
-  <value>HydrometricDataValueLastUpdateContactTVText</value>
-</data>
-<data name="HydrometricDataValueStorageDataTypeText" xml:space="preserve">
-  <value>HydrometricDataValueStorageDataTypeText</value>
-</data>
 <data name="HydrometricDataValueHasErrors" xml:space="preserve">
   <value>HydrometricDataValueHasErrors</value>
+</data>
+<data name="HydrometricDataValueWeb" xml:space="preserve">
+  <value>HydrometricDataValueWeb</value>
+</data>
+<data name="HydrometricDataValueWebLastUpdateContactTVText" xml:space="preserve">
+  <value>HydrometricDataValueWebLastUpdateContactTVText</value>
+</data>
+<data name="HydrometricDataValueWebStorageDataTypeText" xml:space="preserve">
+  <value>HydrometricDataValueWebStorageDataTypeText</value>
+</data>
+<data name="HydrometricDataValueReport" xml:space="preserve">
+  <value>HydrometricDataValueReport</value>
+</data>
+<data name="HydrometricDataValueReportHydrometricDataValueReportTest" xml:space="preserve">
+  <value>HydrometricDataValueReportHydrometricDataValueReportTest</value>
 </data>
 <data name="HydrometricSite" xml:space="preserve">
   <value>HydrometricSite</value>
@@ -1104,20 +1404,35 @@
 <data name="HydrometricSiteHasRatingCurve" xml:space="preserve">
   <value>HydrometricSiteHasRatingCurve</value>
 </data>
+<data name="HydrometricSiteHydrometricSiteWeb" xml:space="preserve">
+  <value>HydrometricSiteHydrometricSiteWeb</value>
+</data>
+<data name="HydrometricSiteHydrometricSiteReport" xml:space="preserve">
+  <value>HydrometricSiteHydrometricSiteReport</value>
+</data>
 <data name="HydrometricSiteLastUpdateDate_UTC" xml:space="preserve">
   <value>HydrometricSiteLastUpdateDate_UTC</value>
 </data>
 <data name="HydrometricSiteLastUpdateContactTVItemID" xml:space="preserve">
   <value>HydrometricSiteLastUpdateContactTVItemID</value>
 </data>
-<data name="HydrometricSiteHydrometricTVText" xml:space="preserve">
-  <value>HydrometricSiteHydrometricTVText</value>
-</data>
-<data name="HydrometricSiteLastUpdateContactTVText" xml:space="preserve">
-  <value>HydrometricSiteLastUpdateContactTVText</value>
-</data>
 <data name="HydrometricSiteHasErrors" xml:space="preserve">
   <value>HydrometricSiteHasErrors</value>
+</data>
+<data name="HydrometricSiteWeb" xml:space="preserve">
+  <value>HydrometricSiteWeb</value>
+</data>
+<data name="HydrometricSiteWebHydrometricTVText" xml:space="preserve">
+  <value>HydrometricSiteWebHydrometricTVText</value>
+</data>
+<data name="HydrometricSiteWebLastUpdateContactTVText" xml:space="preserve">
+  <value>HydrometricSiteWebLastUpdateContactTVText</value>
+</data>
+<data name="HydrometricSiteReport" xml:space="preserve">
+  <value>HydrometricSiteReport</value>
+</data>
+<data name="HydrometricSiteReportHydrometricSiteReportTest" xml:space="preserve">
+  <value>HydrometricSiteReportHydrometricSiteReportTest</value>
 </data>
 <data name="Infrastructure" xml:space="preserve">
   <value>Infrastructure</value>
@@ -1260,59 +1575,74 @@
 <data name="InfrastructureCivicAddressTVItemID" xml:space="preserve">
   <value>InfrastructureCivicAddressTVItemID</value>
 </data>
+<data name="InfrastructureInfrastructureWeb" xml:space="preserve">
+  <value>InfrastructureInfrastructureWeb</value>
+</data>
+<data name="InfrastructureInfrastructureReport" xml:space="preserve">
+  <value>InfrastructureInfrastructureReport</value>
+</data>
 <data name="InfrastructureLastUpdateDate_UTC" xml:space="preserve">
   <value>InfrastructureLastUpdateDate_UTC</value>
 </data>
 <data name="InfrastructureLastUpdateContactTVItemID" xml:space="preserve">
   <value>InfrastructureLastUpdateContactTVItemID</value>
 </data>
-<data name="InfrastructureInfrastructureTVText" xml:space="preserve">
-  <value>InfrastructureInfrastructureTVText</value>
-</data>
-<data name="InfrastructureSeeOtherTVText" xml:space="preserve">
-  <value>InfrastructureSeeOtherTVText</value>
-</data>
-<data name="InfrastructureCivicAddressTVText" xml:space="preserve">
-  <value>InfrastructureCivicAddressTVText</value>
-</data>
-<data name="InfrastructureLastUpdateContactTVText" xml:space="preserve">
-  <value>InfrastructureLastUpdateContactTVText</value>
-</data>
-<data name="InfrastructureInfrastructureTypeText" xml:space="preserve">
-  <value>InfrastructureInfrastructureTypeText</value>
-</data>
-<data name="InfrastructureFacilityTypeText" xml:space="preserve">
-  <value>InfrastructureFacilityTypeText</value>
-</data>
-<data name="InfrastructureAerationTypeText" xml:space="preserve">
-  <value>InfrastructureAerationTypeText</value>
-</data>
-<data name="InfrastructurePreliminaryTreatmentTypeText" xml:space="preserve">
-  <value>InfrastructurePreliminaryTreatmentTypeText</value>
-</data>
-<data name="InfrastructurePrimaryTreatmentTypeText" xml:space="preserve">
-  <value>InfrastructurePrimaryTreatmentTypeText</value>
-</data>
-<data name="InfrastructureSecondaryTreatmentTypeText" xml:space="preserve">
-  <value>InfrastructureSecondaryTreatmentTypeText</value>
-</data>
-<data name="InfrastructureTertiaryTreatmentTypeText" xml:space="preserve">
-  <value>InfrastructureTertiaryTreatmentTypeText</value>
-</data>
-<data name="InfrastructureTreatmentTypeText" xml:space="preserve">
-  <value>InfrastructureTreatmentTypeText</value>
-</data>
-<data name="InfrastructureDisinfectionTypeText" xml:space="preserve">
-  <value>InfrastructureDisinfectionTypeText</value>
-</data>
-<data name="InfrastructureCollectionSystemTypeText" xml:space="preserve">
-  <value>InfrastructureCollectionSystemTypeText</value>
-</data>
-<data name="InfrastructureAlarmSystemTypeText" xml:space="preserve">
-  <value>InfrastructureAlarmSystemTypeText</value>
-</data>
 <data name="InfrastructureHasErrors" xml:space="preserve">
   <value>InfrastructureHasErrors</value>
+</data>
+<data name="InfrastructureWeb" xml:space="preserve">
+  <value>InfrastructureWeb</value>
+</data>
+<data name="InfrastructureWebInfrastructureTVText" xml:space="preserve">
+  <value>InfrastructureWebInfrastructureTVText</value>
+</data>
+<data name="InfrastructureWebSeeOtherTVText" xml:space="preserve">
+  <value>InfrastructureWebSeeOtherTVText</value>
+</data>
+<data name="InfrastructureWebCivicAddressTVText" xml:space="preserve">
+  <value>InfrastructureWebCivicAddressTVText</value>
+</data>
+<data name="InfrastructureWebLastUpdateContactTVText" xml:space="preserve">
+  <value>InfrastructureWebLastUpdateContactTVText</value>
+</data>
+<data name="InfrastructureWebInfrastructureTypeText" xml:space="preserve">
+  <value>InfrastructureWebInfrastructureTypeText</value>
+</data>
+<data name="InfrastructureWebFacilityTypeText" xml:space="preserve">
+  <value>InfrastructureWebFacilityTypeText</value>
+</data>
+<data name="InfrastructureWebAerationTypeText" xml:space="preserve">
+  <value>InfrastructureWebAerationTypeText</value>
+</data>
+<data name="InfrastructureWebPreliminaryTreatmentTypeText" xml:space="preserve">
+  <value>InfrastructureWebPreliminaryTreatmentTypeText</value>
+</data>
+<data name="InfrastructureWebPrimaryTreatmentTypeText" xml:space="preserve">
+  <value>InfrastructureWebPrimaryTreatmentTypeText</value>
+</data>
+<data name="InfrastructureWebSecondaryTreatmentTypeText" xml:space="preserve">
+  <value>InfrastructureWebSecondaryTreatmentTypeText</value>
+</data>
+<data name="InfrastructureWebTertiaryTreatmentTypeText" xml:space="preserve">
+  <value>InfrastructureWebTertiaryTreatmentTypeText</value>
+</data>
+<data name="InfrastructureWebTreatmentTypeText" xml:space="preserve">
+  <value>InfrastructureWebTreatmentTypeText</value>
+</data>
+<data name="InfrastructureWebDisinfectionTypeText" xml:space="preserve">
+  <value>InfrastructureWebDisinfectionTypeText</value>
+</data>
+<data name="InfrastructureWebCollectionSystemTypeText" xml:space="preserve">
+  <value>InfrastructureWebCollectionSystemTypeText</value>
+</data>
+<data name="InfrastructureWebAlarmSystemTypeText" xml:space="preserve">
+  <value>InfrastructureWebAlarmSystemTypeText</value>
+</data>
+<data name="InfrastructureReport" xml:space="preserve">
+  <value>InfrastructureReport</value>
+</data>
+<data name="InfrastructureReportInfrastructureReportTest" xml:space="preserve">
+  <value>InfrastructureReportInfrastructureReportTest</value>
 </data>
 <data name="InfrastructureLanguage" xml:space="preserve">
   <value>InfrastructureLanguage</value>
@@ -1332,23 +1662,38 @@
 <data name="InfrastructureLanguageTranslationStatus" xml:space="preserve">
   <value>InfrastructureLanguageTranslationStatus</value>
 </data>
+<data name="InfrastructureLanguageInfrastructureLanguageWeb" xml:space="preserve">
+  <value>InfrastructureLanguageInfrastructureLanguageWeb</value>
+</data>
+<data name="InfrastructureLanguageInfrastructureLanguageReport" xml:space="preserve">
+  <value>InfrastructureLanguageInfrastructureLanguageReport</value>
+</data>
 <data name="InfrastructureLanguageLastUpdateDate_UTC" xml:space="preserve">
   <value>InfrastructureLanguageLastUpdateDate_UTC</value>
 </data>
 <data name="InfrastructureLanguageLastUpdateContactTVItemID" xml:space="preserve">
   <value>InfrastructureLanguageLastUpdateContactTVItemID</value>
 </data>
-<data name="InfrastructureLanguageLastUpdateContactTVText" xml:space="preserve">
-  <value>InfrastructureLanguageLastUpdateContactTVText</value>
-</data>
-<data name="InfrastructureLanguageLanguageText" xml:space="preserve">
-  <value>InfrastructureLanguageLanguageText</value>
-</data>
-<data name="InfrastructureLanguageTranslationStatusText" xml:space="preserve">
-  <value>InfrastructureLanguageTranslationStatusText</value>
-</data>
 <data name="InfrastructureLanguageHasErrors" xml:space="preserve">
   <value>InfrastructureLanguageHasErrors</value>
+</data>
+<data name="InfrastructureLanguageWeb" xml:space="preserve">
+  <value>InfrastructureLanguageWeb</value>
+</data>
+<data name="InfrastructureLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>InfrastructureLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="InfrastructureLanguageWebLanguageText" xml:space="preserve">
+  <value>InfrastructureLanguageWebLanguageText</value>
+</data>
+<data name="InfrastructureLanguageWebTranslationStatusText" xml:space="preserve">
+  <value>InfrastructureLanguageWebTranslationStatusText</value>
+</data>
+<data name="InfrastructureLanguageReport" xml:space="preserve">
+  <value>InfrastructureLanguageReport</value>
+</data>
+<data name="InfrastructureLanguageReportInfrastructureLanguageReportTest" xml:space="preserve">
+  <value>InfrastructureLanguageReportInfrastructureLanguageReportTest</value>
 </data>
 <data name="LabSheet" xml:space="preserve">
   <value>LabSheet</value>
@@ -1413,38 +1758,53 @@
 <data name="LabSheetRejectReason" xml:space="preserve">
   <value>LabSheetRejectReason</value>
 </data>
+<data name="LabSheetLabSheetWeb" xml:space="preserve">
+  <value>LabSheetLabSheetWeb</value>
+</data>
+<data name="LabSheetLabSheetReport" xml:space="preserve">
+  <value>LabSheetLabSheetReport</value>
+</data>
 <data name="LabSheetLastUpdateDate_UTC" xml:space="preserve">
   <value>LabSheetLastUpdateDate_UTC</value>
 </data>
 <data name="LabSheetLastUpdateContactTVItemID" xml:space="preserve">
   <value>LabSheetLastUpdateContactTVItemID</value>
 </data>
-<data name="LabSheetSubsectorTVText" xml:space="preserve">
-  <value>LabSheetSubsectorTVText</value>
-</data>
-<data name="LabSheetMWQMRunTVText" xml:space="preserve">
-  <value>LabSheetMWQMRunTVText</value>
-</data>
-<data name="LabSheetAcceptedOrRejectedByContactTVText" xml:space="preserve">
-  <value>LabSheetAcceptedOrRejectedByContactTVText</value>
-</data>
-<data name="LabSheetLastUpdateContactTVText" xml:space="preserve">
-  <value>LabSheetLastUpdateContactTVText</value>
-</data>
-<data name="LabSheetSamplingPlanTypeText" xml:space="preserve">
-  <value>LabSheetSamplingPlanTypeText</value>
-</data>
-<data name="LabSheetSampleTypeText" xml:space="preserve">
-  <value>LabSheetSampleTypeText</value>
-</data>
-<data name="LabSheetLabSheetTypeText" xml:space="preserve">
-  <value>LabSheetLabSheetTypeText</value>
-</data>
-<data name="LabSheetLabSheetStatusText" xml:space="preserve">
-  <value>LabSheetLabSheetStatusText</value>
-</data>
 <data name="LabSheetHasErrors" xml:space="preserve">
   <value>LabSheetHasErrors</value>
+</data>
+<data name="LabSheetWeb" xml:space="preserve">
+  <value>LabSheetWeb</value>
+</data>
+<data name="LabSheetWebSubsectorTVText" xml:space="preserve">
+  <value>LabSheetWebSubsectorTVText</value>
+</data>
+<data name="LabSheetWebMWQMRunTVText" xml:space="preserve">
+  <value>LabSheetWebMWQMRunTVText</value>
+</data>
+<data name="LabSheetWebAcceptedOrRejectedByContactTVText" xml:space="preserve">
+  <value>LabSheetWebAcceptedOrRejectedByContactTVText</value>
+</data>
+<data name="LabSheetWebLastUpdateContactTVText" xml:space="preserve">
+  <value>LabSheetWebLastUpdateContactTVText</value>
+</data>
+<data name="LabSheetWebSamplingPlanTypeText" xml:space="preserve">
+  <value>LabSheetWebSamplingPlanTypeText</value>
+</data>
+<data name="LabSheetWebSampleTypeText" xml:space="preserve">
+  <value>LabSheetWebSampleTypeText</value>
+</data>
+<data name="LabSheetWebLabSheetTypeText" xml:space="preserve">
+  <value>LabSheetWebLabSheetTypeText</value>
+</data>
+<data name="LabSheetWebLabSheetStatusText" xml:space="preserve">
+  <value>LabSheetWebLabSheetStatusText</value>
+</data>
+<data name="LabSheetReport" xml:space="preserve">
+  <value>LabSheetReport</value>
+</data>
+<data name="LabSheetReportLabSheetReportTest" xml:space="preserve">
+  <value>LabSheetReportLabSheetReportTest</value>
 </data>
 <data name="LabSheetDetail" xml:space="preserve">
   <value>LabSheetDetail</value>
@@ -1638,20 +1998,35 @@
 <data name="LabSheetDetailIntertechReadAcceptable" xml:space="preserve">
   <value>LabSheetDetailIntertechReadAcceptable</value>
 </data>
+<data name="LabSheetDetailLabSheetDetailWeb" xml:space="preserve">
+  <value>LabSheetDetailLabSheetDetailWeb</value>
+</data>
+<data name="LabSheetDetailLabSheetDetailReport" xml:space="preserve">
+  <value>LabSheetDetailLabSheetDetailReport</value>
+</data>
 <data name="LabSheetDetailLastUpdateDate_UTC" xml:space="preserve">
   <value>LabSheetDetailLastUpdateDate_UTC</value>
 </data>
 <data name="LabSheetDetailLastUpdateContactTVItemID" xml:space="preserve">
   <value>LabSheetDetailLastUpdateContactTVItemID</value>
 </data>
-<data name="LabSheetDetailSubsectorTVText" xml:space="preserve">
-  <value>LabSheetDetailSubsectorTVText</value>
-</data>
-<data name="LabSheetDetailLastUpdateContactTVText" xml:space="preserve">
-  <value>LabSheetDetailLastUpdateContactTVText</value>
-</data>
 <data name="LabSheetDetailHasErrors" xml:space="preserve">
   <value>LabSheetDetailHasErrors</value>
+</data>
+<data name="LabSheetDetailWeb" xml:space="preserve">
+  <value>LabSheetDetailWeb</value>
+</data>
+<data name="LabSheetDetailWebSubsectorTVText" xml:space="preserve">
+  <value>LabSheetDetailWebSubsectorTVText</value>
+</data>
+<data name="LabSheetDetailWebLastUpdateContactTVText" xml:space="preserve">
+  <value>LabSheetDetailWebLastUpdateContactTVText</value>
+</data>
+<data name="LabSheetDetailReport" xml:space="preserve">
+  <value>LabSheetDetailReport</value>
+</data>
+<data name="LabSheetDetailReportLabSheetDetailReportTest" xml:space="preserve">
+  <value>LabSheetDetailReportLabSheetDetailReportTest</value>
 </data>
 <data name="LabSheetTubeMPNDetail" xml:space="preserve">
   <value>LabSheetTubeMPNDetail</value>
@@ -1698,23 +2073,38 @@
 <data name="LabSheetTubeMPNDetailSiteComment" xml:space="preserve">
   <value>LabSheetTubeMPNDetailSiteComment</value>
 </data>
+<data name="LabSheetTubeMPNDetailLabSheetTubeMPNDetailWeb" xml:space="preserve">
+  <value>LabSheetTubeMPNDetailLabSheetTubeMPNDetailWeb</value>
+</data>
+<data name="LabSheetTubeMPNDetailLabSheetTubeMPNDetailReport" xml:space="preserve">
+  <value>LabSheetTubeMPNDetailLabSheetTubeMPNDetailReport</value>
+</data>
 <data name="LabSheetTubeMPNDetailLastUpdateDate_UTC" xml:space="preserve">
   <value>LabSheetTubeMPNDetailLastUpdateDate_UTC</value>
 </data>
 <data name="LabSheetTubeMPNDetailLastUpdateContactTVItemID" xml:space="preserve">
   <value>LabSheetTubeMPNDetailLastUpdateContactTVItemID</value>
 </data>
-<data name="LabSheetTubeMPNDetailMWQMSiteTVText" xml:space="preserve">
-  <value>LabSheetTubeMPNDetailMWQMSiteTVText</value>
-</data>
-<data name="LabSheetTubeMPNDetailLastUpdateContactTVText" xml:space="preserve">
-  <value>LabSheetTubeMPNDetailLastUpdateContactTVText</value>
-</data>
-<data name="LabSheetTubeMPNDetailSampleTypeText" xml:space="preserve">
-  <value>LabSheetTubeMPNDetailSampleTypeText</value>
-</data>
 <data name="LabSheetTubeMPNDetailHasErrors" xml:space="preserve">
   <value>LabSheetTubeMPNDetailHasErrors</value>
+</data>
+<data name="LabSheetTubeMPNDetailWeb" xml:space="preserve">
+  <value>LabSheetTubeMPNDetailWeb</value>
+</data>
+<data name="LabSheetTubeMPNDetailWebMWQMSiteTVText" xml:space="preserve">
+  <value>LabSheetTubeMPNDetailWebMWQMSiteTVText</value>
+</data>
+<data name="LabSheetTubeMPNDetailWebLastUpdateContactTVText" xml:space="preserve">
+  <value>LabSheetTubeMPNDetailWebLastUpdateContactTVText</value>
+</data>
+<data name="LabSheetTubeMPNDetailWebSampleTypeText" xml:space="preserve">
+  <value>LabSheetTubeMPNDetailWebSampleTypeText</value>
+</data>
+<data name="LabSheetTubeMPNDetailReport" xml:space="preserve">
+  <value>LabSheetTubeMPNDetailReport</value>
+</data>
+<data name="LabSheetTubeMPNDetailReportLabSheetTubeMPNDetailReportTest" xml:space="preserve">
+  <value>LabSheetTubeMPNDetailReportLabSheetTubeMPNDetailReportTest</value>
 </data>
 <data name="Log" xml:space="preserve">
   <value>Log</value>
@@ -1734,20 +2124,35 @@
 <data name="LogInformation" xml:space="preserve">
   <value>LogInformation</value>
 </data>
+<data name="LogLogWeb" xml:space="preserve">
+  <value>LogLogWeb</value>
+</data>
+<data name="LogLogReport" xml:space="preserve">
+  <value>LogLogReport</value>
+</data>
 <data name="LogLastUpdateDate_UTC" xml:space="preserve">
   <value>LogLastUpdateDate_UTC</value>
 </data>
 <data name="LogLastUpdateContactTVItemID" xml:space="preserve">
   <value>LogLastUpdateContactTVItemID</value>
 </data>
-<data name="LogLastUpdateContactTVText" xml:space="preserve">
-  <value>LogLastUpdateContactTVText</value>
-</data>
-<data name="LogLogCommandText" xml:space="preserve">
-  <value>LogLogCommandText</value>
-</data>
 <data name="LogHasErrors" xml:space="preserve">
   <value>LogHasErrors</value>
+</data>
+<data name="LogWeb" xml:space="preserve">
+  <value>LogWeb</value>
+</data>
+<data name="LogWebLastUpdateContactTVText" xml:space="preserve">
+  <value>LogWebLastUpdateContactTVText</value>
+</data>
+<data name="LogWebLogCommandText" xml:space="preserve">
+  <value>LogWebLogCommandText</value>
+</data>
+<data name="LogReport" xml:space="preserve">
+  <value>LogReport</value>
+</data>
+<data name="LogReportLogReportTest" xml:space="preserve">
+  <value>LogReportLogReportTest</value>
 </data>
 <data name="MapInfo" xml:space="preserve">
   <value>MapInfo</value>
@@ -1776,26 +2181,41 @@
 <data name="MapInfoMapInfoDrawType" xml:space="preserve">
   <value>MapInfoMapInfoDrawType</value>
 </data>
+<data name="MapInfoMapInfoWeb" xml:space="preserve">
+  <value>MapInfoMapInfoWeb</value>
+</data>
+<data name="MapInfoMapInfoReport" xml:space="preserve">
+  <value>MapInfoMapInfoReport</value>
+</data>
 <data name="MapInfoLastUpdateDate_UTC" xml:space="preserve">
   <value>MapInfoLastUpdateDate_UTC</value>
 </data>
 <data name="MapInfoLastUpdateContactTVItemID" xml:space="preserve">
   <value>MapInfoLastUpdateContactTVItemID</value>
 </data>
-<data name="MapInfoTVText" xml:space="preserve">
-  <value>MapInfoTVText</value>
-</data>
-<data name="MapInfoLastUpdateContactTVText" xml:space="preserve">
-  <value>MapInfoLastUpdateContactTVText</value>
-</data>
-<data name="MapInfoTVTypeText" xml:space="preserve">
-  <value>MapInfoTVTypeText</value>
-</data>
-<data name="MapInfoMapInfoDrawTypeText" xml:space="preserve">
-  <value>MapInfoMapInfoDrawTypeText</value>
-</data>
 <data name="MapInfoHasErrors" xml:space="preserve">
   <value>MapInfoHasErrors</value>
+</data>
+<data name="MapInfoWeb" xml:space="preserve">
+  <value>MapInfoWeb</value>
+</data>
+<data name="MapInfoWebTVText" xml:space="preserve">
+  <value>MapInfoWebTVText</value>
+</data>
+<data name="MapInfoWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MapInfoWebLastUpdateContactTVText</value>
+</data>
+<data name="MapInfoWebTVTypeText" xml:space="preserve">
+  <value>MapInfoWebTVTypeText</value>
+</data>
+<data name="MapInfoWebMapInfoDrawTypeText" xml:space="preserve">
+  <value>MapInfoWebMapInfoDrawTypeText</value>
+</data>
+<data name="MapInfoReport" xml:space="preserve">
+  <value>MapInfoReport</value>
+</data>
+<data name="MapInfoReportMapInfoReportTest" xml:space="preserve">
+  <value>MapInfoReportMapInfoReportTest</value>
 </data>
 <data name="MapInfoPoint" xml:space="preserve">
   <value>MapInfoPoint</value>
@@ -1815,17 +2235,32 @@
 <data name="MapInfoPointLng" xml:space="preserve">
   <value>MapInfoPointLng</value>
 </data>
+<data name="MapInfoPointMapInfoPointWeb" xml:space="preserve">
+  <value>MapInfoPointMapInfoPointWeb</value>
+</data>
+<data name="MapInfoPointMapInfoPointReport" xml:space="preserve">
+  <value>MapInfoPointMapInfoPointReport</value>
+</data>
 <data name="MapInfoPointLastUpdateDate_UTC" xml:space="preserve">
   <value>MapInfoPointLastUpdateDate_UTC</value>
 </data>
 <data name="MapInfoPointLastUpdateContactTVItemID" xml:space="preserve">
   <value>MapInfoPointLastUpdateContactTVItemID</value>
 </data>
-<data name="MapInfoPointLastUpdateContactTVText" xml:space="preserve">
-  <value>MapInfoPointLastUpdateContactTVText</value>
-</data>
 <data name="MapInfoPointHasErrors" xml:space="preserve">
   <value>MapInfoPointHasErrors</value>
+</data>
+<data name="MapInfoPointWeb" xml:space="preserve">
+  <value>MapInfoPointWeb</value>
+</data>
+<data name="MapInfoPointWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MapInfoPointWebLastUpdateContactTVText</value>
+</data>
+<data name="MapInfoPointReport" xml:space="preserve">
+  <value>MapInfoPointReport</value>
+</data>
+<data name="MapInfoPointReportMapInfoPointReportTest" xml:space="preserve">
+  <value>MapInfoPointReportMapInfoPointReportTest</value>
 </data>
 <data name="MikeBoundaryCondition" xml:space="preserve">
   <value>MikeBoundaryCondition</value>
@@ -1863,29 +2298,44 @@
 <data name="MikeBoundaryConditionTVType" xml:space="preserve">
   <value>MikeBoundaryConditionTVType</value>
 </data>
+<data name="MikeBoundaryConditionMikeBoundaryConditionWeb" xml:space="preserve">
+  <value>MikeBoundaryConditionMikeBoundaryConditionWeb</value>
+</data>
+<data name="MikeBoundaryConditionMikeBoundaryConditionReport" xml:space="preserve">
+  <value>MikeBoundaryConditionMikeBoundaryConditionReport</value>
+</data>
 <data name="MikeBoundaryConditionLastUpdateDate_UTC" xml:space="preserve">
   <value>MikeBoundaryConditionLastUpdateDate_UTC</value>
 </data>
 <data name="MikeBoundaryConditionLastUpdateContactTVItemID" xml:space="preserve">
   <value>MikeBoundaryConditionLastUpdateContactTVItemID</value>
 </data>
-<data name="MikeBoundaryConditionMikeBoundaryConditionTVText" xml:space="preserve">
-  <value>MikeBoundaryConditionMikeBoundaryConditionTVText</value>
-</data>
-<data name="MikeBoundaryConditionLastUpdateContactTVText" xml:space="preserve">
-  <value>MikeBoundaryConditionLastUpdateContactTVText</value>
-</data>
-<data name="MikeBoundaryConditionMikeBoundaryConditionLevelOrVelocityText" xml:space="preserve">
-  <value>MikeBoundaryConditionMikeBoundaryConditionLevelOrVelocityText</value>
-</data>
-<data name="MikeBoundaryConditionWebTideDataSetText" xml:space="preserve">
-  <value>MikeBoundaryConditionWebTideDataSetText</value>
-</data>
-<data name="MikeBoundaryConditionTVTypeText" xml:space="preserve">
-  <value>MikeBoundaryConditionTVTypeText</value>
-</data>
 <data name="MikeBoundaryConditionHasErrors" xml:space="preserve">
   <value>MikeBoundaryConditionHasErrors</value>
+</data>
+<data name="MikeBoundaryConditionWeb" xml:space="preserve">
+  <value>MikeBoundaryConditionWeb</value>
+</data>
+<data name="MikeBoundaryConditionWebMikeBoundaryConditionTVText" xml:space="preserve">
+  <value>MikeBoundaryConditionWebMikeBoundaryConditionTVText</value>
+</data>
+<data name="MikeBoundaryConditionWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MikeBoundaryConditionWebLastUpdateContactTVText</value>
+</data>
+<data name="MikeBoundaryConditionWebMikeBoundaryConditionLevelOrVelocityText" xml:space="preserve">
+  <value>MikeBoundaryConditionWebMikeBoundaryConditionLevelOrVelocityText</value>
+</data>
+<data name="MikeBoundaryConditionWebWebTideDataSetText" xml:space="preserve">
+  <value>MikeBoundaryConditionWebWebTideDataSetText</value>
+</data>
+<data name="MikeBoundaryConditionWebTVTypeText" xml:space="preserve">
+  <value>MikeBoundaryConditionWebTVTypeText</value>
+</data>
+<data name="MikeBoundaryConditionReport" xml:space="preserve">
+  <value>MikeBoundaryConditionReport</value>
+</data>
+<data name="MikeBoundaryConditionReportMikeBoundaryConditionReportTest" xml:space="preserve">
+  <value>MikeBoundaryConditionReportMikeBoundaryConditionReportTest</value>
 </data>
 <data name="MikeScenario" xml:space="preserve">
   <value>MikeScenario</value>
@@ -1968,23 +2418,38 @@
 <data name="MikeScenarioEstimatedTransFileSize" xml:space="preserve">
   <value>MikeScenarioEstimatedTransFileSize</value>
 </data>
+<data name="MikeScenarioMikeScenarioWeb" xml:space="preserve">
+  <value>MikeScenarioMikeScenarioWeb</value>
+</data>
+<data name="MikeScenarioMikeScenarioReport" xml:space="preserve">
+  <value>MikeScenarioMikeScenarioReport</value>
+</data>
 <data name="MikeScenarioLastUpdateDate_UTC" xml:space="preserve">
   <value>MikeScenarioLastUpdateDate_UTC</value>
 </data>
 <data name="MikeScenarioLastUpdateContactTVItemID" xml:space="preserve">
   <value>MikeScenarioLastUpdateContactTVItemID</value>
 </data>
-<data name="MikeScenarioMikeScenarioTVText" xml:space="preserve">
-  <value>MikeScenarioMikeScenarioTVText</value>
-</data>
-<data name="MikeScenarioLastUpdateContactTVText" xml:space="preserve">
-  <value>MikeScenarioLastUpdateContactTVText</value>
-</data>
-<data name="MikeScenarioScenarioStatusText" xml:space="preserve">
-  <value>MikeScenarioScenarioStatusText</value>
-</data>
 <data name="MikeScenarioHasErrors" xml:space="preserve">
   <value>MikeScenarioHasErrors</value>
+</data>
+<data name="MikeScenarioWeb" xml:space="preserve">
+  <value>MikeScenarioWeb</value>
+</data>
+<data name="MikeScenarioWebMikeScenarioTVText" xml:space="preserve">
+  <value>MikeScenarioWebMikeScenarioTVText</value>
+</data>
+<data name="MikeScenarioWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MikeScenarioWebLastUpdateContactTVText</value>
+</data>
+<data name="MikeScenarioWebScenarioStatusText" xml:space="preserve">
+  <value>MikeScenarioWebScenarioStatusText</value>
+</data>
+<data name="MikeScenarioReport" xml:space="preserve">
+  <value>MikeScenarioReport</value>
+</data>
+<data name="MikeScenarioReportMikeScenarioReportTest" xml:space="preserve">
+  <value>MikeScenarioReportMikeScenarioReportTest</value>
 </data>
 <data name="MikeSource" xml:space="preserve">
   <value>MikeSource</value>
@@ -2007,20 +2472,35 @@
 <data name="MikeSourceSourceNumberString" xml:space="preserve">
   <value>MikeSourceSourceNumberString</value>
 </data>
+<data name="MikeSourceMikeSourceWeb" xml:space="preserve">
+  <value>MikeSourceMikeSourceWeb</value>
+</data>
+<data name="MikeSourceMikeSourceReport" xml:space="preserve">
+  <value>MikeSourceMikeSourceReport</value>
+</data>
 <data name="MikeSourceLastUpdateDate_UTC" xml:space="preserve">
   <value>MikeSourceLastUpdateDate_UTC</value>
 </data>
 <data name="MikeSourceLastUpdateContactTVItemID" xml:space="preserve">
   <value>MikeSourceLastUpdateContactTVItemID</value>
 </data>
-<data name="MikeSourceMikeSourceTVText" xml:space="preserve">
-  <value>MikeSourceMikeSourceTVText</value>
-</data>
-<data name="MikeSourceLastUpdateContactTVText" xml:space="preserve">
-  <value>MikeSourceLastUpdateContactTVText</value>
-</data>
 <data name="MikeSourceHasErrors" xml:space="preserve">
   <value>MikeSourceHasErrors</value>
+</data>
+<data name="MikeSourceWeb" xml:space="preserve">
+  <value>MikeSourceWeb</value>
+</data>
+<data name="MikeSourceWebMikeSourceTVText" xml:space="preserve">
+  <value>MikeSourceWebMikeSourceTVText</value>
+</data>
+<data name="MikeSourceWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MikeSourceWebLastUpdateContactTVText</value>
+</data>
+<data name="MikeSourceReport" xml:space="preserve">
+  <value>MikeSourceReport</value>
+</data>
+<data name="MikeSourceReportMikeSourceReportTest" xml:space="preserve">
+  <value>MikeSourceReportMikeSourceReportTest</value>
 </data>
 <data name="MikeSourceStartEnd" xml:space="preserve">
   <value>MikeSourceStartEnd</value>
@@ -2061,17 +2541,32 @@
 <data name="MikeSourceStartEndSourceSalinityEnd_PSU" xml:space="preserve">
   <value>MikeSourceStartEndSourceSalinityEnd_PSU</value>
 </data>
+<data name="MikeSourceStartEndMikeSourceStartEndWeb" xml:space="preserve">
+  <value>MikeSourceStartEndMikeSourceStartEndWeb</value>
+</data>
+<data name="MikeSourceStartEndMikeSourceStartEndReport" xml:space="preserve">
+  <value>MikeSourceStartEndMikeSourceStartEndReport</value>
+</data>
 <data name="MikeSourceStartEndLastUpdateDate_UTC" xml:space="preserve">
   <value>MikeSourceStartEndLastUpdateDate_UTC</value>
 </data>
 <data name="MikeSourceStartEndLastUpdateContactTVItemID" xml:space="preserve">
   <value>MikeSourceStartEndLastUpdateContactTVItemID</value>
 </data>
-<data name="MikeSourceStartEndLastUpdateContactTVText" xml:space="preserve">
-  <value>MikeSourceStartEndLastUpdateContactTVText</value>
-</data>
 <data name="MikeSourceStartEndHasErrors" xml:space="preserve">
   <value>MikeSourceStartEndHasErrors</value>
+</data>
+<data name="MikeSourceStartEndWeb" xml:space="preserve">
+  <value>MikeSourceStartEndWeb</value>
+</data>
+<data name="MikeSourceStartEndWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MikeSourceStartEndWebLastUpdateContactTVText</value>
+</data>
+<data name="MikeSourceStartEndReport" xml:space="preserve">
+  <value>MikeSourceStartEndReport</value>
+</data>
+<data name="MikeSourceStartEndReportMikeSourceStartEndReportTest" xml:space="preserve">
+  <value>MikeSourceStartEndReportMikeSourceStartEndReportTest</value>
 </data>
 <data name="MWQMAnalysisReportParameter" xml:space="preserve">
   <value>MWQMAnalysisReportParameter</value>
@@ -2145,23 +2640,38 @@
 <data name="MWQMAnalysisReportParameterCommand" xml:space="preserve">
   <value>MWQMAnalysisReportParameterCommand</value>
 </data>
+<data name="MWQMAnalysisReportParameterMWQMAnalysisReportParameterWeb" xml:space="preserve">
+  <value>MWQMAnalysisReportParameterMWQMAnalysisReportParameterWeb</value>
+</data>
+<data name="MWQMAnalysisReportParameterMWQMAnalysisReportParameterReport" xml:space="preserve">
+  <value>MWQMAnalysisReportParameterMWQMAnalysisReportParameterReport</value>
+</data>
 <data name="MWQMAnalysisReportParameterLastUpdateDate_UTC" xml:space="preserve">
   <value>MWQMAnalysisReportParameterLastUpdateDate_UTC</value>
 </data>
 <data name="MWQMAnalysisReportParameterLastUpdateContactTVItemID" xml:space="preserve">
   <value>MWQMAnalysisReportParameterLastUpdateContactTVItemID</value>
 </data>
-<data name="MWQMAnalysisReportParameterExcelTVFileTVText" xml:space="preserve">
-  <value>MWQMAnalysisReportParameterExcelTVFileTVText</value>
-</data>
-<data name="MWQMAnalysisReportParameterCommandText" xml:space="preserve">
-  <value>MWQMAnalysisReportParameterCommandText</value>
-</data>
-<data name="MWQMAnalysisReportParameterLastUpdateContactTVText" xml:space="preserve">
-  <value>MWQMAnalysisReportParameterLastUpdateContactTVText</value>
-</data>
 <data name="MWQMAnalysisReportParameterHasErrors" xml:space="preserve">
   <value>MWQMAnalysisReportParameterHasErrors</value>
+</data>
+<data name="MWQMAnalysisReportParameterWeb" xml:space="preserve">
+  <value>MWQMAnalysisReportParameterWeb</value>
+</data>
+<data name="MWQMAnalysisReportParameterWebExcelTVFileTVText" xml:space="preserve">
+  <value>MWQMAnalysisReportParameterWebExcelTVFileTVText</value>
+</data>
+<data name="MWQMAnalysisReportParameterWebCommandText" xml:space="preserve">
+  <value>MWQMAnalysisReportParameterWebCommandText</value>
+</data>
+<data name="MWQMAnalysisReportParameterWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MWQMAnalysisReportParameterWebLastUpdateContactTVText</value>
+</data>
+<data name="MWQMAnalysisReportParameterReport" xml:space="preserve">
+  <value>MWQMAnalysisReportParameterReport</value>
+</data>
+<data name="MWQMAnalysisReportParameterReportMWQMAnalysisReportParameterReportTest" xml:space="preserve">
+  <value>MWQMAnalysisReportParameterReportMWQMAnalysisReportParameterReportTest</value>
 </data>
 <data name="MWQMLookupMPN" xml:space="preserve">
   <value>MWQMLookupMPN</value>
@@ -2181,17 +2691,32 @@
 <data name="MWQMLookupMPNMPN_100ml" xml:space="preserve">
   <value>MWQMLookupMPNMPN_100ml</value>
 </data>
+<data name="MWQMLookupMPNMWQMLookupMPNWeb" xml:space="preserve">
+  <value>MWQMLookupMPNMWQMLookupMPNWeb</value>
+</data>
+<data name="MWQMLookupMPNMWQMLookupMPNReport" xml:space="preserve">
+  <value>MWQMLookupMPNMWQMLookupMPNReport</value>
+</data>
 <data name="MWQMLookupMPNLastUpdateDate_UTC" xml:space="preserve">
   <value>MWQMLookupMPNLastUpdateDate_UTC</value>
 </data>
 <data name="MWQMLookupMPNLastUpdateContactTVItemID" xml:space="preserve">
   <value>MWQMLookupMPNLastUpdateContactTVItemID</value>
 </data>
-<data name="MWQMLookupMPNLastUpdateContactTVText" xml:space="preserve">
-  <value>MWQMLookupMPNLastUpdateContactTVText</value>
-</data>
 <data name="MWQMLookupMPNHasErrors" xml:space="preserve">
   <value>MWQMLookupMPNHasErrors</value>
+</data>
+<data name="MWQMLookupMPNWeb" xml:space="preserve">
+  <value>MWQMLookupMPNWeb</value>
+</data>
+<data name="MWQMLookupMPNWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MWQMLookupMPNWebLastUpdateContactTVText</value>
+</data>
+<data name="MWQMLookupMPNReport" xml:space="preserve">
+  <value>MWQMLookupMPNReport</value>
+</data>
+<data name="MWQMLookupMPNReportMWQMLookupMPNReportTest" xml:space="preserve">
+  <value>MWQMLookupMPNReportMWQMLookupMPNReportTest</value>
 </data>
 <data name="MWQMRun" xml:space="preserve">
   <value>MWQMRun</value>
@@ -2316,53 +2841,68 @@
 <data name="MWQMRunRemoveFromStat" xml:space="preserve">
   <value>MWQMRunRemoveFromStat</value>
 </data>
+<data name="MWQMRunMWQMRunWeb" xml:space="preserve">
+  <value>MWQMRunMWQMRunWeb</value>
+</data>
+<data name="MWQMRunMWQMRunReport" xml:space="preserve">
+  <value>MWQMRunMWQMRunReport</value>
+</data>
 <data name="MWQMRunLastUpdateDate_UTC" xml:space="preserve">
   <value>MWQMRunLastUpdateDate_UTC</value>
 </data>
 <data name="MWQMRunLastUpdateContactTVItemID" xml:space="preserve">
   <value>MWQMRunLastUpdateContactTVItemID</value>
 </data>
-<data name="MWQMRunSubsectorTVText" xml:space="preserve">
-  <value>MWQMRunSubsectorTVText</value>
-</data>
-<data name="MWQMRunMWQMRunTVText" xml:space="preserve">
-  <value>MWQMRunMWQMRunTVText</value>
-</data>
-<data name="MWQMRunLabSampleApprovalContactTVText" xml:space="preserve">
-  <value>MWQMRunLabSampleApprovalContactTVText</value>
-</data>
-<data name="MWQMRunLastUpdateContactTVText" xml:space="preserve">
-  <value>MWQMRunLastUpdateContactTVText</value>
-</data>
-<data name="MWQMRunRunSampleTypeText" xml:space="preserve">
-  <value>MWQMRunRunSampleTypeText</value>
-</data>
-<data name="MWQMRunSeaStateAtStart_BeaufortScaleText" xml:space="preserve">
-  <value>MWQMRunSeaStateAtStart_BeaufortScaleText</value>
-</data>
-<data name="MWQMRunSeaStateAtEnd_BeaufortScaleText" xml:space="preserve">
-  <value>MWQMRunSeaStateAtEnd_BeaufortScaleText</value>
-</data>
-<data name="MWQMRunAnalyzeMethodText" xml:space="preserve">
-  <value>MWQMRunAnalyzeMethodText</value>
-</data>
-<data name="MWQMRunSampleMatrixText" xml:space="preserve">
-  <value>MWQMRunSampleMatrixText</value>
-</data>
-<data name="MWQMRunLaboratoryText" xml:space="preserve">
-  <value>MWQMRunLaboratoryText</value>
-</data>
-<data name="MWQMRunSampleStatusText" xml:space="preserve">
-  <value>MWQMRunSampleStatusText</value>
-</data>
-<data name="MWQMRunTide_StartText" xml:space="preserve">
-  <value>MWQMRunTide_StartText</value>
-</data>
-<data name="MWQMRunTide_EndText" xml:space="preserve">
-  <value>MWQMRunTide_EndText</value>
-</data>
 <data name="MWQMRunHasErrors" xml:space="preserve">
   <value>MWQMRunHasErrors</value>
+</data>
+<data name="MWQMRunWeb" xml:space="preserve">
+  <value>MWQMRunWeb</value>
+</data>
+<data name="MWQMRunWebSubsectorTVText" xml:space="preserve">
+  <value>MWQMRunWebSubsectorTVText</value>
+</data>
+<data name="MWQMRunWebMWQMRunTVText" xml:space="preserve">
+  <value>MWQMRunWebMWQMRunTVText</value>
+</data>
+<data name="MWQMRunWebLabSampleApprovalContactTVText" xml:space="preserve">
+  <value>MWQMRunWebLabSampleApprovalContactTVText</value>
+</data>
+<data name="MWQMRunWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MWQMRunWebLastUpdateContactTVText</value>
+</data>
+<data name="MWQMRunWebRunSampleTypeText" xml:space="preserve">
+  <value>MWQMRunWebRunSampleTypeText</value>
+</data>
+<data name="MWQMRunWebSeaStateAtStart_BeaufortScaleText" xml:space="preserve">
+  <value>MWQMRunWebSeaStateAtStart_BeaufortScaleText</value>
+</data>
+<data name="MWQMRunWebSeaStateAtEnd_BeaufortScaleText" xml:space="preserve">
+  <value>MWQMRunWebSeaStateAtEnd_BeaufortScaleText</value>
+</data>
+<data name="MWQMRunWebAnalyzeMethodText" xml:space="preserve">
+  <value>MWQMRunWebAnalyzeMethodText</value>
+</data>
+<data name="MWQMRunWebSampleMatrixText" xml:space="preserve">
+  <value>MWQMRunWebSampleMatrixText</value>
+</data>
+<data name="MWQMRunWebLaboratoryText" xml:space="preserve">
+  <value>MWQMRunWebLaboratoryText</value>
+</data>
+<data name="MWQMRunWebSampleStatusText" xml:space="preserve">
+  <value>MWQMRunWebSampleStatusText</value>
+</data>
+<data name="MWQMRunWebTide_StartText" xml:space="preserve">
+  <value>MWQMRunWebTide_StartText</value>
+</data>
+<data name="MWQMRunWebTide_EndText" xml:space="preserve">
+  <value>MWQMRunWebTide_EndText</value>
+</data>
+<data name="MWQMRunReport" xml:space="preserve">
+  <value>MWQMRunReport</value>
+</data>
+<data name="MWQMRunReportMWQMRunReportTest" xml:space="preserve">
+  <value>MWQMRunReportMWQMRunReportTest</value>
 </data>
 <data name="MWQMRunLanguage" xml:space="preserve">
   <value>MWQMRunLanguage</value>
@@ -2388,26 +2928,41 @@
 <data name="MWQMRunLanguageTranslationStatusRunWeatherComment" xml:space="preserve">
   <value>MWQMRunLanguageTranslationStatusRunWeatherComment</value>
 </data>
+<data name="MWQMRunLanguageMWQMRunLanguageWeb" xml:space="preserve">
+  <value>MWQMRunLanguageMWQMRunLanguageWeb</value>
+</data>
+<data name="MWQMRunLanguageMWQMRunLanguageReport" xml:space="preserve">
+  <value>MWQMRunLanguageMWQMRunLanguageReport</value>
+</data>
 <data name="MWQMRunLanguageLastUpdateDate_UTC" xml:space="preserve">
   <value>MWQMRunLanguageLastUpdateDate_UTC</value>
 </data>
 <data name="MWQMRunLanguageLastUpdateContactTVItemID" xml:space="preserve">
   <value>MWQMRunLanguageLastUpdateContactTVItemID</value>
 </data>
-<data name="MWQMRunLanguageLastUpdateContactTVText" xml:space="preserve">
-  <value>MWQMRunLanguageLastUpdateContactTVText</value>
-</data>
-<data name="MWQMRunLanguageLanguageText" xml:space="preserve">
-  <value>MWQMRunLanguageLanguageText</value>
-</data>
-<data name="MWQMRunLanguageTranslationStatusRunCommentText" xml:space="preserve">
-  <value>MWQMRunLanguageTranslationStatusRunCommentText</value>
-</data>
-<data name="MWQMRunLanguageTranslationStatusRunWeatherCommentText" xml:space="preserve">
-  <value>MWQMRunLanguageTranslationStatusRunWeatherCommentText</value>
-</data>
 <data name="MWQMRunLanguageHasErrors" xml:space="preserve">
   <value>MWQMRunLanguageHasErrors</value>
+</data>
+<data name="MWQMRunLanguageWeb" xml:space="preserve">
+  <value>MWQMRunLanguageWeb</value>
+</data>
+<data name="MWQMRunLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MWQMRunLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="MWQMRunLanguageWebLanguageText" xml:space="preserve">
+  <value>MWQMRunLanguageWebLanguageText</value>
+</data>
+<data name="MWQMRunLanguageWebTranslationStatusRunCommentText" xml:space="preserve">
+  <value>MWQMRunLanguageWebTranslationStatusRunCommentText</value>
+</data>
+<data name="MWQMRunLanguageWebTranslationStatusRunWeatherCommentText" xml:space="preserve">
+  <value>MWQMRunLanguageWebTranslationStatusRunWeatherCommentText</value>
+</data>
+<data name="MWQMRunLanguageReport" xml:space="preserve">
+  <value>MWQMRunLanguageReport</value>
+</data>
+<data name="MWQMRunLanguageReportMWQMRunLanguageReportTest" xml:space="preserve">
+  <value>MWQMRunLanguageReportMWQMRunLanguageReportTest</value>
 </data>
 <data name="MWQMSample" xml:space="preserve">
   <value>MWQMSample</value>
@@ -2457,26 +3012,41 @@
 <data name="MWQMSampleProcessedBy" xml:space="preserve">
   <value>MWQMSampleProcessedBy</value>
 </data>
+<data name="MWQMSampleMWQMSampleWeb" xml:space="preserve">
+  <value>MWQMSampleMWQMSampleWeb</value>
+</data>
+<data name="MWQMSampleMWQMSampleReport" xml:space="preserve">
+  <value>MWQMSampleMWQMSampleReport</value>
+</data>
 <data name="MWQMSampleLastUpdateDate_UTC" xml:space="preserve">
   <value>MWQMSampleLastUpdateDate_UTC</value>
 </data>
 <data name="MWQMSampleLastUpdateContactTVItemID" xml:space="preserve">
   <value>MWQMSampleLastUpdateContactTVItemID</value>
 </data>
-<data name="MWQMSampleMWQMSiteTVText" xml:space="preserve">
-  <value>MWQMSampleMWQMSiteTVText</value>
-</data>
-<data name="MWQMSampleMWQMRunTVText" xml:space="preserve">
-  <value>MWQMSampleMWQMRunTVText</value>
-</data>
-<data name="MWQMSampleLastUpdateContactTVText" xml:space="preserve">
-  <value>MWQMSampleLastUpdateContactTVText</value>
-</data>
-<data name="MWQMSampleSampleType_oldText" xml:space="preserve">
-  <value>MWQMSampleSampleType_oldText</value>
-</data>
 <data name="MWQMSampleHasErrors" xml:space="preserve">
   <value>MWQMSampleHasErrors</value>
+</data>
+<data name="MWQMSampleWeb" xml:space="preserve">
+  <value>MWQMSampleWeb</value>
+</data>
+<data name="MWQMSampleWebMWQMSiteTVText" xml:space="preserve">
+  <value>MWQMSampleWebMWQMSiteTVText</value>
+</data>
+<data name="MWQMSampleWebMWQMRunTVText" xml:space="preserve">
+  <value>MWQMSampleWebMWQMRunTVText</value>
+</data>
+<data name="MWQMSampleWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MWQMSampleWebLastUpdateContactTVText</value>
+</data>
+<data name="MWQMSampleWebSampleType_oldText" xml:space="preserve">
+  <value>MWQMSampleWebSampleType_oldText</value>
+</data>
+<data name="MWQMSampleReport" xml:space="preserve">
+  <value>MWQMSampleReport</value>
+</data>
+<data name="MWQMSampleReportMWQMSampleReportTest" xml:space="preserve">
+  <value>MWQMSampleReportMWQMSampleReportTest</value>
 </data>
 <data name="MWQMSampleLanguage" xml:space="preserve">
   <value>MWQMSampleLanguage</value>
@@ -2496,23 +3066,38 @@
 <data name="MWQMSampleLanguageTranslationStatus" xml:space="preserve">
   <value>MWQMSampleLanguageTranslationStatus</value>
 </data>
+<data name="MWQMSampleLanguageMWQMSampleLanguageWeb" xml:space="preserve">
+  <value>MWQMSampleLanguageMWQMSampleLanguageWeb</value>
+</data>
+<data name="MWQMSampleLanguageMWQMSampleLanguageReport" xml:space="preserve">
+  <value>MWQMSampleLanguageMWQMSampleLanguageReport</value>
+</data>
 <data name="MWQMSampleLanguageLastUpdateDate_UTC" xml:space="preserve">
   <value>MWQMSampleLanguageLastUpdateDate_UTC</value>
 </data>
 <data name="MWQMSampleLanguageLastUpdateContactTVItemID" xml:space="preserve">
   <value>MWQMSampleLanguageLastUpdateContactTVItemID</value>
 </data>
-<data name="MWQMSampleLanguageLastUpdateContactTVText" xml:space="preserve">
-  <value>MWQMSampleLanguageLastUpdateContactTVText</value>
-</data>
-<data name="MWQMSampleLanguageLanguageText" xml:space="preserve">
-  <value>MWQMSampleLanguageLanguageText</value>
-</data>
-<data name="MWQMSampleLanguageTranslationStatusText" xml:space="preserve">
-  <value>MWQMSampleLanguageTranslationStatusText</value>
-</data>
 <data name="MWQMSampleLanguageHasErrors" xml:space="preserve">
   <value>MWQMSampleLanguageHasErrors</value>
+</data>
+<data name="MWQMSampleLanguageWeb" xml:space="preserve">
+  <value>MWQMSampleLanguageWeb</value>
+</data>
+<data name="MWQMSampleLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MWQMSampleLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="MWQMSampleLanguageWebLanguageText" xml:space="preserve">
+  <value>MWQMSampleLanguageWebLanguageText</value>
+</data>
+<data name="MWQMSampleLanguageWebTranslationStatusText" xml:space="preserve">
+  <value>MWQMSampleLanguageWebTranslationStatusText</value>
+</data>
+<data name="MWQMSampleLanguageReport" xml:space="preserve">
+  <value>MWQMSampleLanguageReport</value>
+</data>
+<data name="MWQMSampleLanguageReportMWQMSampleLanguageReportTest" xml:space="preserve">
+  <value>MWQMSampleLanguageReportMWQMSampleLanguageReportTest</value>
 </data>
 <data name="MWQMSite" xml:space="preserve">
   <value>MWQMSite</value>
@@ -2535,23 +3120,38 @@
 <data name="MWQMSiteOrdinal" xml:space="preserve">
   <value>MWQMSiteOrdinal</value>
 </data>
+<data name="MWQMSiteMWQMSiteWeb" xml:space="preserve">
+  <value>MWQMSiteMWQMSiteWeb</value>
+</data>
+<data name="MWQMSiteMWQMSiteReport" xml:space="preserve">
+  <value>MWQMSiteMWQMSiteReport</value>
+</data>
 <data name="MWQMSiteLastUpdateDate_UTC" xml:space="preserve">
   <value>MWQMSiteLastUpdateDate_UTC</value>
 </data>
 <data name="MWQMSiteLastUpdateContactTVItemID" xml:space="preserve">
   <value>MWQMSiteLastUpdateContactTVItemID</value>
 </data>
-<data name="MWQMSiteMWQMSiteTVText" xml:space="preserve">
-  <value>MWQMSiteMWQMSiteTVText</value>
-</data>
-<data name="MWQMSiteLastUpdateContactTVText" xml:space="preserve">
-  <value>MWQMSiteLastUpdateContactTVText</value>
-</data>
-<data name="MWQMSiteMWQMSiteLatestClassificationText" xml:space="preserve">
-  <value>MWQMSiteMWQMSiteLatestClassificationText</value>
-</data>
 <data name="MWQMSiteHasErrors" xml:space="preserve">
   <value>MWQMSiteHasErrors</value>
+</data>
+<data name="MWQMSiteWeb" xml:space="preserve">
+  <value>MWQMSiteWeb</value>
+</data>
+<data name="MWQMSiteWebMWQMSiteTVText" xml:space="preserve">
+  <value>MWQMSiteWebMWQMSiteTVText</value>
+</data>
+<data name="MWQMSiteWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MWQMSiteWebLastUpdateContactTVText</value>
+</data>
+<data name="MWQMSiteWebMWQMSiteLatestClassificationText" xml:space="preserve">
+  <value>MWQMSiteWebMWQMSiteLatestClassificationText</value>
+</data>
+<data name="MWQMSiteReport" xml:space="preserve">
+  <value>MWQMSiteReport</value>
+</data>
+<data name="MWQMSiteReportMWQMSiteReportTest" xml:space="preserve">
+  <value>MWQMSiteReportMWQMSiteReportTest</value>
 </data>
 <data name="MWQMSiteStartEndDate" xml:space="preserve">
   <value>MWQMSiteStartEndDate</value>
@@ -2568,20 +3168,35 @@
 <data name="MWQMSiteStartEndDateEndDate" xml:space="preserve">
   <value>MWQMSiteStartEndDateEndDate</value>
 </data>
+<data name="MWQMSiteStartEndDateMWQMSiteStartEndDateWeb" xml:space="preserve">
+  <value>MWQMSiteStartEndDateMWQMSiteStartEndDateWeb</value>
+</data>
+<data name="MWQMSiteStartEndDateMWQMSiteStartEndDateReport" xml:space="preserve">
+  <value>MWQMSiteStartEndDateMWQMSiteStartEndDateReport</value>
+</data>
 <data name="MWQMSiteStartEndDateLastUpdateDate_UTC" xml:space="preserve">
   <value>MWQMSiteStartEndDateLastUpdateDate_UTC</value>
 </data>
 <data name="MWQMSiteStartEndDateLastUpdateContactTVItemID" xml:space="preserve">
   <value>MWQMSiteStartEndDateLastUpdateContactTVItemID</value>
 </data>
-<data name="MWQMSiteStartEndDateMWQMSiteTVText" xml:space="preserve">
-  <value>MWQMSiteStartEndDateMWQMSiteTVText</value>
-</data>
-<data name="MWQMSiteStartEndDateLastUpdateContactTVText" xml:space="preserve">
-  <value>MWQMSiteStartEndDateLastUpdateContactTVText</value>
-</data>
 <data name="MWQMSiteStartEndDateHasErrors" xml:space="preserve">
   <value>MWQMSiteStartEndDateHasErrors</value>
+</data>
+<data name="MWQMSiteStartEndDateWeb" xml:space="preserve">
+  <value>MWQMSiteStartEndDateWeb</value>
+</data>
+<data name="MWQMSiteStartEndDateWebMWQMSiteTVText" xml:space="preserve">
+  <value>MWQMSiteStartEndDateWebMWQMSiteTVText</value>
+</data>
+<data name="MWQMSiteStartEndDateWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MWQMSiteStartEndDateWebLastUpdateContactTVText</value>
+</data>
+<data name="MWQMSiteStartEndDateReport" xml:space="preserve">
+  <value>MWQMSiteStartEndDateReport</value>
+</data>
+<data name="MWQMSiteStartEndDateReportMWQMSiteStartEndDateReportTest" xml:space="preserve">
+  <value>MWQMSiteStartEndDateReportMWQMSiteStartEndDateReportTest</value>
 </data>
 <data name="MWQMSubsector" xml:space="preserve">
   <value>MWQMSubsector</value>
@@ -2598,20 +3213,35 @@
 <data name="MWQMSubsectorTideLocationSIDText" xml:space="preserve">
   <value>MWQMSubsectorTideLocationSIDText</value>
 </data>
+<data name="MWQMSubsectorMWQMSubsectorWeb" xml:space="preserve">
+  <value>MWQMSubsectorMWQMSubsectorWeb</value>
+</data>
+<data name="MWQMSubsectorMWQMSubsectorReport" xml:space="preserve">
+  <value>MWQMSubsectorMWQMSubsectorReport</value>
+</data>
 <data name="MWQMSubsectorLastUpdateDate_UTC" xml:space="preserve">
   <value>MWQMSubsectorLastUpdateDate_UTC</value>
 </data>
 <data name="MWQMSubsectorLastUpdateContactTVItemID" xml:space="preserve">
   <value>MWQMSubsectorLastUpdateContactTVItemID</value>
 </data>
-<data name="MWQMSubsectorSubsectorTVText" xml:space="preserve">
-  <value>MWQMSubsectorSubsectorTVText</value>
-</data>
-<data name="MWQMSubsectorLastUpdateContactTVText" xml:space="preserve">
-  <value>MWQMSubsectorLastUpdateContactTVText</value>
-</data>
 <data name="MWQMSubsectorHasErrors" xml:space="preserve">
   <value>MWQMSubsectorHasErrors</value>
+</data>
+<data name="MWQMSubsectorWeb" xml:space="preserve">
+  <value>MWQMSubsectorWeb</value>
+</data>
+<data name="MWQMSubsectorWebSubsectorTVText" xml:space="preserve">
+  <value>MWQMSubsectorWebSubsectorTVText</value>
+</data>
+<data name="MWQMSubsectorWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MWQMSubsectorWebLastUpdateContactTVText</value>
+</data>
+<data name="MWQMSubsectorReport" xml:space="preserve">
+  <value>MWQMSubsectorReport</value>
+</data>
+<data name="MWQMSubsectorReportMWQMSubsectorReportTest" xml:space="preserve">
+  <value>MWQMSubsectorReportMWQMSubsectorReportTest</value>
 </data>
 <data name="MWQMSubsectorLanguage" xml:space="preserve">
   <value>MWQMSubsectorLanguage</value>
@@ -2637,26 +3267,41 @@
 <data name="MWQMSubsectorLanguageTranslationStatusLogBook" xml:space="preserve">
   <value>MWQMSubsectorLanguageTranslationStatusLogBook</value>
 </data>
+<data name="MWQMSubsectorLanguageMWQMSubsectorLanguageWeb" xml:space="preserve">
+  <value>MWQMSubsectorLanguageMWQMSubsectorLanguageWeb</value>
+</data>
+<data name="MWQMSubsectorLanguageMWQMSubsectorLanguageReport" xml:space="preserve">
+  <value>MWQMSubsectorLanguageMWQMSubsectorLanguageReport</value>
+</data>
 <data name="MWQMSubsectorLanguageLastUpdateDate_UTC" xml:space="preserve">
   <value>MWQMSubsectorLanguageLastUpdateDate_UTC</value>
 </data>
 <data name="MWQMSubsectorLanguageLastUpdateContactTVItemID" xml:space="preserve">
   <value>MWQMSubsectorLanguageLastUpdateContactTVItemID</value>
 </data>
-<data name="MWQMSubsectorLanguageLastUpdateContactTVText" xml:space="preserve">
-  <value>MWQMSubsectorLanguageLastUpdateContactTVText</value>
-</data>
-<data name="MWQMSubsectorLanguageLanguageText" xml:space="preserve">
-  <value>MWQMSubsectorLanguageLanguageText</value>
-</data>
-<data name="MWQMSubsectorLanguageTranslationStatusSubsectorDescText" xml:space="preserve">
-  <value>MWQMSubsectorLanguageTranslationStatusSubsectorDescText</value>
-</data>
-<data name="MWQMSubsectorLanguageTranslationStatusLogBookText" xml:space="preserve">
-  <value>MWQMSubsectorLanguageTranslationStatusLogBookText</value>
-</data>
 <data name="MWQMSubsectorLanguageHasErrors" xml:space="preserve">
   <value>MWQMSubsectorLanguageHasErrors</value>
+</data>
+<data name="MWQMSubsectorLanguageWeb" xml:space="preserve">
+  <value>MWQMSubsectorLanguageWeb</value>
+</data>
+<data name="MWQMSubsectorLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>MWQMSubsectorLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="MWQMSubsectorLanguageWebLanguageText" xml:space="preserve">
+  <value>MWQMSubsectorLanguageWebLanguageText</value>
+</data>
+<data name="MWQMSubsectorLanguageWebTranslationStatusSubsectorDescText" xml:space="preserve">
+  <value>MWQMSubsectorLanguageWebTranslationStatusSubsectorDescText</value>
+</data>
+<data name="MWQMSubsectorLanguageWebTranslationStatusLogBookText" xml:space="preserve">
+  <value>MWQMSubsectorLanguageWebTranslationStatusLogBookText</value>
+</data>
+<data name="MWQMSubsectorLanguageReport" xml:space="preserve">
+  <value>MWQMSubsectorLanguageReport</value>
+</data>
+<data name="MWQMSubsectorLanguageReportMWQMSubsectorLanguageReportTest" xml:space="preserve">
+  <value>MWQMSubsectorLanguageReportMWQMSubsectorLanguageReportTest</value>
 </data>
 <data name="PolSourceObservation" xml:space="preserve">
   <value>PolSourceObservation</value>
@@ -2676,23 +3321,38 @@
 <data name="PolSourceObservationObservation_ToBeDeleted" xml:space="preserve">
   <value>PolSourceObservationObservation_ToBeDeleted</value>
 </data>
+<data name="PolSourceObservationPolSourceObservationWeb" xml:space="preserve">
+  <value>PolSourceObservationPolSourceObservationWeb</value>
+</data>
+<data name="PolSourceObservationPolSourceObservationReport" xml:space="preserve">
+  <value>PolSourceObservationPolSourceObservationReport</value>
+</data>
 <data name="PolSourceObservationLastUpdateDate_UTC" xml:space="preserve">
   <value>PolSourceObservationLastUpdateDate_UTC</value>
 </data>
 <data name="PolSourceObservationLastUpdateContactTVItemID" xml:space="preserve">
   <value>PolSourceObservationLastUpdateContactTVItemID</value>
 </data>
-<data name="PolSourceObservationPolSourceSiteTVText" xml:space="preserve">
-  <value>PolSourceObservationPolSourceSiteTVText</value>
-</data>
-<data name="PolSourceObservationContactTVText" xml:space="preserve">
-  <value>PolSourceObservationContactTVText</value>
-</data>
-<data name="PolSourceObservationLastUpdateContactTVText" xml:space="preserve">
-  <value>PolSourceObservationLastUpdateContactTVText</value>
-</data>
 <data name="PolSourceObservationHasErrors" xml:space="preserve">
   <value>PolSourceObservationHasErrors</value>
+</data>
+<data name="PolSourceObservationWeb" xml:space="preserve">
+  <value>PolSourceObservationWeb</value>
+</data>
+<data name="PolSourceObservationWebPolSourceSiteTVText" xml:space="preserve">
+  <value>PolSourceObservationWebPolSourceSiteTVText</value>
+</data>
+<data name="PolSourceObservationWebContactTVText" xml:space="preserve">
+  <value>PolSourceObservationWebContactTVText</value>
+</data>
+<data name="PolSourceObservationWebLastUpdateContactTVText" xml:space="preserve">
+  <value>PolSourceObservationWebLastUpdateContactTVText</value>
+</data>
+<data name="PolSourceObservationReport" xml:space="preserve">
+  <value>PolSourceObservationReport</value>
+</data>
+<data name="PolSourceObservationReportPolSourceObservationReportTest" xml:space="preserve">
+  <value>PolSourceObservationReportPolSourceObservationReportTest</value>
 </data>
 <data name="PolSourceObservationIssue" xml:space="preserve">
   <value>PolSourceObservationIssue</value>
@@ -2709,17 +3369,32 @@
 <data name="PolSourceObservationIssueOrdinal" xml:space="preserve">
   <value>PolSourceObservationIssueOrdinal</value>
 </data>
+<data name="PolSourceObservationIssuePolSourceObservationIssueWeb" xml:space="preserve">
+  <value>PolSourceObservationIssuePolSourceObservationIssueWeb</value>
+</data>
+<data name="PolSourceObservationIssuePolSourceObservationIssueReport" xml:space="preserve">
+  <value>PolSourceObservationIssuePolSourceObservationIssueReport</value>
+</data>
 <data name="PolSourceObservationIssueLastUpdateDate_UTC" xml:space="preserve">
   <value>PolSourceObservationIssueLastUpdateDate_UTC</value>
 </data>
 <data name="PolSourceObservationIssueLastUpdateContactTVItemID" xml:space="preserve">
   <value>PolSourceObservationIssueLastUpdateContactTVItemID</value>
 </data>
-<data name="PolSourceObservationIssueLastUpdateContactTVText" xml:space="preserve">
-  <value>PolSourceObservationIssueLastUpdateContactTVText</value>
-</data>
 <data name="PolSourceObservationIssueHasErrors" xml:space="preserve">
   <value>PolSourceObservationIssueHasErrors</value>
+</data>
+<data name="PolSourceObservationIssueWeb" xml:space="preserve">
+  <value>PolSourceObservationIssueWeb</value>
+</data>
+<data name="PolSourceObservationIssueWebLastUpdateContactTVText" xml:space="preserve">
+  <value>PolSourceObservationIssueWebLastUpdateContactTVText</value>
+</data>
+<data name="PolSourceObservationIssueReport" xml:space="preserve">
+  <value>PolSourceObservationIssueReport</value>
+</data>
+<data name="PolSourceObservationIssueReportPolSourceObservationIssueReportTest" xml:space="preserve">
+  <value>PolSourceObservationIssueReportPolSourceObservationIssueReportTest</value>
 </data>
 <data name="PolSourceSite" xml:space="preserve">
   <value>PolSourceSite</value>
@@ -2751,23 +3426,38 @@
 <data name="PolSourceSiteCivicAddressTVItemID" xml:space="preserve">
   <value>PolSourceSiteCivicAddressTVItemID</value>
 </data>
+<data name="PolSourceSitePolSourceSiteWeb" xml:space="preserve">
+  <value>PolSourceSitePolSourceSiteWeb</value>
+</data>
+<data name="PolSourceSitePolSourceSiteReport" xml:space="preserve">
+  <value>PolSourceSitePolSourceSiteReport</value>
+</data>
 <data name="PolSourceSiteLastUpdateDate_UTC" xml:space="preserve">
   <value>PolSourceSiteLastUpdateDate_UTC</value>
 </data>
 <data name="PolSourceSiteLastUpdateContactTVItemID" xml:space="preserve">
   <value>PolSourceSiteLastUpdateContactTVItemID</value>
 </data>
-<data name="PolSourceSitePolSourceSiteTVText" xml:space="preserve">
-  <value>PolSourceSitePolSourceSiteTVText</value>
-</data>
-<data name="PolSourceSiteLastUpdateContactTVText" xml:space="preserve">
-  <value>PolSourceSiteLastUpdateContactTVText</value>
-</data>
-<data name="PolSourceSiteInactiveReasonText" xml:space="preserve">
-  <value>PolSourceSiteInactiveReasonText</value>
-</data>
 <data name="PolSourceSiteHasErrors" xml:space="preserve">
   <value>PolSourceSiteHasErrors</value>
+</data>
+<data name="PolSourceSiteWeb" xml:space="preserve">
+  <value>PolSourceSiteWeb</value>
+</data>
+<data name="PolSourceSiteWebPolSourceSiteTVText" xml:space="preserve">
+  <value>PolSourceSiteWebPolSourceSiteTVText</value>
+</data>
+<data name="PolSourceSiteWebLastUpdateContactTVText" xml:space="preserve">
+  <value>PolSourceSiteWebLastUpdateContactTVText</value>
+</data>
+<data name="PolSourceSiteWebInactiveReasonText" xml:space="preserve">
+  <value>PolSourceSiteWebInactiveReasonText</value>
+</data>
+<data name="PolSourceSiteReport" xml:space="preserve">
+  <value>PolSourceSiteReport</value>
+</data>
+<data name="PolSourceSiteReportPolSourceSiteReportTest" xml:space="preserve">
+  <value>PolSourceSiteReportPolSourceSiteReportTest</value>
 </data>
 <data name="RainExceedance" xml:space="preserve">
   <value>RainExceedance</value>
@@ -2808,17 +3498,32 @@
 <data name="RainExceedanceEmailDistributionListIDs" xml:space="preserve">
   <value>RainExceedanceEmailDistributionListIDs</value>
 </data>
+<data name="RainExceedanceRainExceedanceWeb" xml:space="preserve">
+  <value>RainExceedanceRainExceedanceWeb</value>
+</data>
+<data name="RainExceedanceRainExceedanceReport" xml:space="preserve">
+  <value>RainExceedanceRainExceedanceReport</value>
+</data>
 <data name="RainExceedanceLastUpdateDate_UTC" xml:space="preserve">
   <value>RainExceedanceLastUpdateDate_UTC</value>
 </data>
 <data name="RainExceedanceLastUpdateContactTVItemID" xml:space="preserve">
   <value>RainExceedanceLastUpdateContactTVItemID</value>
 </data>
-<data name="RainExceedanceLastUpdateContactTVText" xml:space="preserve">
-  <value>RainExceedanceLastUpdateContactTVText</value>
-</data>
 <data name="RainExceedanceHasErrors" xml:space="preserve">
   <value>RainExceedanceHasErrors</value>
+</data>
+<data name="RainExceedanceWeb" xml:space="preserve">
+  <value>RainExceedanceWeb</value>
+</data>
+<data name="RainExceedanceWebLastUpdateContactTVText" xml:space="preserve">
+  <value>RainExceedanceWebLastUpdateContactTVText</value>
+</data>
+<data name="RainExceedanceReport" xml:space="preserve">
+  <value>RainExceedanceReport</value>
+</data>
+<data name="RainExceedanceReportRainExceedanceReportTest" xml:space="preserve">
+  <value>RainExceedanceReportRainExceedanceReportTest</value>
 </data>
 <data name="RatingCurve" xml:space="preserve">
   <value>RatingCurve</value>
@@ -2832,17 +3537,32 @@
 <data name="RatingCurveRatingCurveNumber" xml:space="preserve">
   <value>RatingCurveRatingCurveNumber</value>
 </data>
+<data name="RatingCurveRatingCurveWeb" xml:space="preserve">
+  <value>RatingCurveRatingCurveWeb</value>
+</data>
+<data name="RatingCurveRatingCurveReport" xml:space="preserve">
+  <value>RatingCurveRatingCurveReport</value>
+</data>
 <data name="RatingCurveLastUpdateDate_UTC" xml:space="preserve">
   <value>RatingCurveLastUpdateDate_UTC</value>
 </data>
 <data name="RatingCurveLastUpdateContactTVItemID" xml:space="preserve">
   <value>RatingCurveLastUpdateContactTVItemID</value>
 </data>
-<data name="RatingCurveLastUpdateContactTVText" xml:space="preserve">
-  <value>RatingCurveLastUpdateContactTVText</value>
-</data>
 <data name="RatingCurveHasErrors" xml:space="preserve">
   <value>RatingCurveHasErrors</value>
+</data>
+<data name="RatingCurveWeb" xml:space="preserve">
+  <value>RatingCurveWeb</value>
+</data>
+<data name="RatingCurveWebLastUpdateContactTVText" xml:space="preserve">
+  <value>RatingCurveWebLastUpdateContactTVText</value>
+</data>
+<data name="RatingCurveReport" xml:space="preserve">
+  <value>RatingCurveReport</value>
+</data>
+<data name="RatingCurveReportRatingCurveReportTest" xml:space="preserve">
+  <value>RatingCurveReportRatingCurveReportTest</value>
 </data>
 <data name="RatingCurveValue" xml:space="preserve">
   <value>RatingCurveValue</value>
@@ -2859,17 +3579,32 @@
 <data name="RatingCurveValueDischargeValue_m3_s" xml:space="preserve">
   <value>RatingCurveValueDischargeValue_m3_s</value>
 </data>
+<data name="RatingCurveValueRatingCurveValueWeb" xml:space="preserve">
+  <value>RatingCurveValueRatingCurveValueWeb</value>
+</data>
+<data name="RatingCurveValueRatingCurveValueReport" xml:space="preserve">
+  <value>RatingCurveValueRatingCurveValueReport</value>
+</data>
 <data name="RatingCurveValueLastUpdateDate_UTC" xml:space="preserve">
   <value>RatingCurveValueLastUpdateDate_UTC</value>
 </data>
 <data name="RatingCurveValueLastUpdateContactTVItemID" xml:space="preserve">
   <value>RatingCurveValueLastUpdateContactTVItemID</value>
 </data>
-<data name="RatingCurveValueLastUpdateContactTVText" xml:space="preserve">
-  <value>RatingCurveValueLastUpdateContactTVText</value>
-</data>
 <data name="RatingCurveValueHasErrors" xml:space="preserve">
   <value>RatingCurveValueHasErrors</value>
+</data>
+<data name="RatingCurveValueWeb" xml:space="preserve">
+  <value>RatingCurveValueWeb</value>
+</data>
+<data name="RatingCurveValueWebLastUpdateContactTVText" xml:space="preserve">
+  <value>RatingCurveValueWebLastUpdateContactTVText</value>
+</data>
+<data name="RatingCurveValueReport" xml:space="preserve">
+  <value>RatingCurveValueReport</value>
+</data>
+<data name="RatingCurveValueReportRatingCurveValueReportTest" xml:space="preserve">
+  <value>RatingCurveValueReportRatingCurveValueReportTest</value>
 </data>
 <data name="ResetPassword" xml:space="preserve">
   <value>ResetPassword</value>
@@ -2886,23 +3621,38 @@
 <data name="ResetPasswordCode" xml:space="preserve">
   <value>ResetPasswordCode</value>
 </data>
+<data name="ResetPasswordResetPasswordWeb" xml:space="preserve">
+  <value>ResetPasswordResetPasswordWeb</value>
+</data>
+<data name="ResetPasswordResetPasswordReport" xml:space="preserve">
+  <value>ResetPasswordResetPasswordReport</value>
+</data>
 <data name="ResetPasswordLastUpdateDate_UTC" xml:space="preserve">
   <value>ResetPasswordLastUpdateDate_UTC</value>
 </data>
 <data name="ResetPasswordLastUpdateContactTVItemID" xml:space="preserve">
   <value>ResetPasswordLastUpdateContactTVItemID</value>
 </data>
-<data name="ResetPasswordLastUpdateContactTVText" xml:space="preserve">
-  <value>ResetPasswordLastUpdateContactTVText</value>
-</data>
-<data name="ResetPasswordPassword" xml:space="preserve">
-  <value>ResetPasswordPassword</value>
-</data>
-<data name="ResetPasswordConfirmPassword" xml:space="preserve">
-  <value>ResetPasswordConfirmPassword</value>
-</data>
 <data name="ResetPasswordHasErrors" xml:space="preserve">
   <value>ResetPasswordHasErrors</value>
+</data>
+<data name="ResetPasswordWeb" xml:space="preserve">
+  <value>ResetPasswordWeb</value>
+</data>
+<data name="ResetPasswordWebLastUpdateContactTVText" xml:space="preserve">
+  <value>ResetPasswordWebLastUpdateContactTVText</value>
+</data>
+<data name="ResetPasswordWebPassword" xml:space="preserve">
+  <value>ResetPasswordWebPassword</value>
+</data>
+<data name="ResetPasswordWebConfirmPassword" xml:space="preserve">
+  <value>ResetPasswordWebConfirmPassword</value>
+</data>
+<data name="ResetPasswordReport" xml:space="preserve">
+  <value>ResetPasswordReport</value>
+</data>
+<data name="ResetPasswordReportResetPasswordReportTest" xml:space="preserve">
+  <value>ResetPasswordReportResetPasswordReportTest</value>
 </data>
 <data name="SamplingPlan" xml:space="preserve">
   <value>SamplingPlan</value>
@@ -2952,35 +3702,50 @@
 <data name="SamplingPlanSamplingPlanFileTVItemID" xml:space="preserve">
   <value>SamplingPlanSamplingPlanFileTVItemID</value>
 </data>
+<data name="SamplingPlanSamplingPlanWeb" xml:space="preserve">
+  <value>SamplingPlanSamplingPlanWeb</value>
+</data>
+<data name="SamplingPlanSamplingPlanReport" xml:space="preserve">
+  <value>SamplingPlanSamplingPlanReport</value>
+</data>
 <data name="SamplingPlanLastUpdateDate_UTC" xml:space="preserve">
   <value>SamplingPlanLastUpdateDate_UTC</value>
 </data>
 <data name="SamplingPlanLastUpdateContactTVItemID" xml:space="preserve">
   <value>SamplingPlanLastUpdateContactTVItemID</value>
 </data>
-<data name="SamplingPlanProvinceTVText" xml:space="preserve">
-  <value>SamplingPlanProvinceTVText</value>
-</data>
-<data name="SamplingPlanCreatorTVText" xml:space="preserve">
-  <value>SamplingPlanCreatorTVText</value>
-</data>
-<data name="SamplingPlanSamplingPlanFileTVText" xml:space="preserve">
-  <value>SamplingPlanSamplingPlanFileTVText</value>
-</data>
-<data name="SamplingPlanLastUpdateContactTVText" xml:space="preserve">
-  <value>SamplingPlanLastUpdateContactTVText</value>
-</data>
-<data name="SamplingPlanSampleTypeText" xml:space="preserve">
-  <value>SamplingPlanSampleTypeText</value>
-</data>
-<data name="SamplingPlanSamplingPlanTypeText" xml:space="preserve">
-  <value>SamplingPlanSamplingPlanTypeText</value>
-</data>
-<data name="SamplingPlanLabSheetTypeText" xml:space="preserve">
-  <value>SamplingPlanLabSheetTypeText</value>
-</data>
 <data name="SamplingPlanHasErrors" xml:space="preserve">
   <value>SamplingPlanHasErrors</value>
+</data>
+<data name="SamplingPlanWeb" xml:space="preserve">
+  <value>SamplingPlanWeb</value>
+</data>
+<data name="SamplingPlanWebProvinceTVText" xml:space="preserve">
+  <value>SamplingPlanWebProvinceTVText</value>
+</data>
+<data name="SamplingPlanWebCreatorTVText" xml:space="preserve">
+  <value>SamplingPlanWebCreatorTVText</value>
+</data>
+<data name="SamplingPlanWebSamplingPlanFileTVText" xml:space="preserve">
+  <value>SamplingPlanWebSamplingPlanFileTVText</value>
+</data>
+<data name="SamplingPlanWebLastUpdateContactTVText" xml:space="preserve">
+  <value>SamplingPlanWebLastUpdateContactTVText</value>
+</data>
+<data name="SamplingPlanWebSampleTypeText" xml:space="preserve">
+  <value>SamplingPlanWebSampleTypeText</value>
+</data>
+<data name="SamplingPlanWebSamplingPlanTypeText" xml:space="preserve">
+  <value>SamplingPlanWebSamplingPlanTypeText</value>
+</data>
+<data name="SamplingPlanWebLabSheetTypeText" xml:space="preserve">
+  <value>SamplingPlanWebLabSheetTypeText</value>
+</data>
+<data name="SamplingPlanReport" xml:space="preserve">
+  <value>SamplingPlanReport</value>
+</data>
+<data name="SamplingPlanReportSamplingPlanReportTest" xml:space="preserve">
+  <value>SamplingPlanReportSamplingPlanReportTest</value>
 </data>
 <data name="SamplingPlanSubsector" xml:space="preserve">
   <value>SamplingPlanSubsector</value>
@@ -2994,20 +3759,35 @@
 <data name="SamplingPlanSubsectorSubsectorTVItemID" xml:space="preserve">
   <value>SamplingPlanSubsectorSubsectorTVItemID</value>
 </data>
+<data name="SamplingPlanSubsectorSamplingPlanSubsectorWeb" xml:space="preserve">
+  <value>SamplingPlanSubsectorSamplingPlanSubsectorWeb</value>
+</data>
+<data name="SamplingPlanSubsectorSamplingPlanSubsectorReport" xml:space="preserve">
+  <value>SamplingPlanSubsectorSamplingPlanSubsectorReport</value>
+</data>
 <data name="SamplingPlanSubsectorLastUpdateDate_UTC" xml:space="preserve">
   <value>SamplingPlanSubsectorLastUpdateDate_UTC</value>
 </data>
 <data name="SamplingPlanSubsectorLastUpdateContactTVItemID" xml:space="preserve">
   <value>SamplingPlanSubsectorLastUpdateContactTVItemID</value>
 </data>
-<data name="SamplingPlanSubsectorSubsectorTVText" xml:space="preserve">
-  <value>SamplingPlanSubsectorSubsectorTVText</value>
-</data>
-<data name="SamplingPlanSubsectorLastUpdateContactTVText" xml:space="preserve">
-  <value>SamplingPlanSubsectorLastUpdateContactTVText</value>
-</data>
 <data name="SamplingPlanSubsectorHasErrors" xml:space="preserve">
   <value>SamplingPlanSubsectorHasErrors</value>
+</data>
+<data name="SamplingPlanSubsectorWeb" xml:space="preserve">
+  <value>SamplingPlanSubsectorWeb</value>
+</data>
+<data name="SamplingPlanSubsectorWebSubsectorTVText" xml:space="preserve">
+  <value>SamplingPlanSubsectorWebSubsectorTVText</value>
+</data>
+<data name="SamplingPlanSubsectorWebLastUpdateContactTVText" xml:space="preserve">
+  <value>SamplingPlanSubsectorWebLastUpdateContactTVText</value>
+</data>
+<data name="SamplingPlanSubsectorReport" xml:space="preserve">
+  <value>SamplingPlanSubsectorReport</value>
+</data>
+<data name="SamplingPlanSubsectorReportSamplingPlanSubsectorReportTest" xml:space="preserve">
+  <value>SamplingPlanSubsectorReportSamplingPlanSubsectorReportTest</value>
 </data>
 <data name="SamplingPlanSubsectorSite" xml:space="preserve">
   <value>SamplingPlanSubsectorSite</value>
@@ -3024,20 +3804,35 @@
 <data name="SamplingPlanSubsectorSiteIsDuplicate" xml:space="preserve">
   <value>SamplingPlanSubsectorSiteIsDuplicate</value>
 </data>
+<data name="SamplingPlanSubsectorSiteSamplingPlanSubsectorSiteWeb" xml:space="preserve">
+  <value>SamplingPlanSubsectorSiteSamplingPlanSubsectorSiteWeb</value>
+</data>
+<data name="SamplingPlanSubsectorSiteSamplingPlanSubsectorSiteReport" xml:space="preserve">
+  <value>SamplingPlanSubsectorSiteSamplingPlanSubsectorSiteReport</value>
+</data>
 <data name="SamplingPlanSubsectorSiteLastUpdateDate_UTC" xml:space="preserve">
   <value>SamplingPlanSubsectorSiteLastUpdateDate_UTC</value>
 </data>
 <data name="SamplingPlanSubsectorSiteLastUpdateContactTVItemID" xml:space="preserve">
   <value>SamplingPlanSubsectorSiteLastUpdateContactTVItemID</value>
 </data>
-<data name="SamplingPlanSubsectorSiteMWQMSiteTVText" xml:space="preserve">
-  <value>SamplingPlanSubsectorSiteMWQMSiteTVText</value>
-</data>
-<data name="SamplingPlanSubsectorSiteLastUpdateContactTVText" xml:space="preserve">
-  <value>SamplingPlanSubsectorSiteLastUpdateContactTVText</value>
-</data>
 <data name="SamplingPlanSubsectorSiteHasErrors" xml:space="preserve">
   <value>SamplingPlanSubsectorSiteHasErrors</value>
+</data>
+<data name="SamplingPlanSubsectorSiteWeb" xml:space="preserve">
+  <value>SamplingPlanSubsectorSiteWeb</value>
+</data>
+<data name="SamplingPlanSubsectorSiteWebMWQMSiteTVText" xml:space="preserve">
+  <value>SamplingPlanSubsectorSiteWebMWQMSiteTVText</value>
+</data>
+<data name="SamplingPlanSubsectorSiteWebLastUpdateContactTVText" xml:space="preserve">
+  <value>SamplingPlanSubsectorSiteWebLastUpdateContactTVText</value>
+</data>
+<data name="SamplingPlanSubsectorSiteReport" xml:space="preserve">
+  <value>SamplingPlanSubsectorSiteReport</value>
+</data>
+<data name="SamplingPlanSubsectorSiteReportSamplingPlanSubsectorSiteReportTest" xml:space="preserve">
+  <value>SamplingPlanSubsectorSiteReportSamplingPlanSubsectorSiteReportTest</value>
 </data>
 <data name="Spill" xml:space="preserve">
   <value>Spill</value>
@@ -3060,23 +3855,38 @@
 <data name="SpillAverageFlow_m3_day" xml:space="preserve">
   <value>SpillAverageFlow_m3_day</value>
 </data>
+<data name="SpillSpillWeb" xml:space="preserve">
+  <value>SpillSpillWeb</value>
+</data>
+<data name="SpillSpillReport" xml:space="preserve">
+  <value>SpillSpillReport</value>
+</data>
 <data name="SpillLastUpdateDate_UTC" xml:space="preserve">
   <value>SpillLastUpdateDate_UTC</value>
 </data>
 <data name="SpillLastUpdateContactTVItemID" xml:space="preserve">
   <value>SpillLastUpdateContactTVItemID</value>
 </data>
-<data name="SpillMunicipalityTVText" xml:space="preserve">
-  <value>SpillMunicipalityTVText</value>
-</data>
-<data name="SpillInfrastructureTVText" xml:space="preserve">
-  <value>SpillInfrastructureTVText</value>
-</data>
-<data name="SpillLastUpdateContactTVText" xml:space="preserve">
-  <value>SpillLastUpdateContactTVText</value>
-</data>
 <data name="SpillHasErrors" xml:space="preserve">
   <value>SpillHasErrors</value>
+</data>
+<data name="SpillWeb" xml:space="preserve">
+  <value>SpillWeb</value>
+</data>
+<data name="SpillWebMunicipalityTVText" xml:space="preserve">
+  <value>SpillWebMunicipalityTVText</value>
+</data>
+<data name="SpillWebInfrastructureTVText" xml:space="preserve">
+  <value>SpillWebInfrastructureTVText</value>
+</data>
+<data name="SpillWebLastUpdateContactTVText" xml:space="preserve">
+  <value>SpillWebLastUpdateContactTVText</value>
+</data>
+<data name="SpillReport" xml:space="preserve">
+  <value>SpillReport</value>
+</data>
+<data name="SpillReportSpillReportTest" xml:space="preserve">
+  <value>SpillReportSpillReportTest</value>
 </data>
 <data name="SpillLanguage" xml:space="preserve">
   <value>SpillLanguage</value>
@@ -3096,23 +3906,38 @@
 <data name="SpillLanguageTranslationStatus" xml:space="preserve">
   <value>SpillLanguageTranslationStatus</value>
 </data>
+<data name="SpillLanguageSpillLanguageWeb" xml:space="preserve">
+  <value>SpillLanguageSpillLanguageWeb</value>
+</data>
+<data name="SpillLanguageSpillLanguageReport" xml:space="preserve">
+  <value>SpillLanguageSpillLanguageReport</value>
+</data>
 <data name="SpillLanguageLastUpdateDate_UTC" xml:space="preserve">
   <value>SpillLanguageLastUpdateDate_UTC</value>
 </data>
 <data name="SpillLanguageLastUpdateContactTVItemID" xml:space="preserve">
   <value>SpillLanguageLastUpdateContactTVItemID</value>
 </data>
-<data name="SpillLanguageLastUpdateContactTVText" xml:space="preserve">
-  <value>SpillLanguageLastUpdateContactTVText</value>
-</data>
-<data name="SpillLanguageLanguageText" xml:space="preserve">
-  <value>SpillLanguageLanguageText</value>
-</data>
-<data name="SpillLanguageTranslationStatusText" xml:space="preserve">
-  <value>SpillLanguageTranslationStatusText</value>
-</data>
 <data name="SpillLanguageHasErrors" xml:space="preserve">
   <value>SpillLanguageHasErrors</value>
+</data>
+<data name="SpillLanguageWeb" xml:space="preserve">
+  <value>SpillLanguageWeb</value>
+</data>
+<data name="SpillLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>SpillLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="SpillLanguageWebLanguageText" xml:space="preserve">
+  <value>SpillLanguageWebLanguageText</value>
+</data>
+<data name="SpillLanguageWebTranslationStatusText" xml:space="preserve">
+  <value>SpillLanguageWebTranslationStatusText</value>
+</data>
+<data name="SpillLanguageReport" xml:space="preserve">
+  <value>SpillLanguageReport</value>
+</data>
+<data name="SpillLanguageReportSpillLanguageReportTest" xml:space="preserve">
+  <value>SpillLanguageReportSpillLanguageReportTest</value>
 </data>
 <data name="Tel" xml:space="preserve">
   <value>Tel</value>
@@ -3129,23 +3954,38 @@
 <data name="TelTelType" xml:space="preserve">
   <value>TelTelType</value>
 </data>
+<data name="TelTelWeb" xml:space="preserve">
+  <value>TelTelWeb</value>
+</data>
+<data name="TelTelReport" xml:space="preserve">
+  <value>TelTelReport</value>
+</data>
 <data name="TelLastUpdateDate_UTC" xml:space="preserve">
   <value>TelLastUpdateDate_UTC</value>
 </data>
 <data name="TelLastUpdateContactTVItemID" xml:space="preserve">
   <value>TelLastUpdateContactTVItemID</value>
 </data>
-<data name="TelTelTVText" xml:space="preserve">
-  <value>TelTelTVText</value>
-</data>
-<data name="TelLastUpdateContactTVText" xml:space="preserve">
-  <value>TelLastUpdateContactTVText</value>
-</data>
-<data name="TelTelTypeText" xml:space="preserve">
-  <value>TelTelTypeText</value>
-</data>
 <data name="TelHasErrors" xml:space="preserve">
   <value>TelHasErrors</value>
+</data>
+<data name="TelWeb" xml:space="preserve">
+  <value>TelWeb</value>
+</data>
+<data name="TelWebTelTVText" xml:space="preserve">
+  <value>TelWebTelTVText</value>
+</data>
+<data name="TelWebLastUpdateContactTVText" xml:space="preserve">
+  <value>TelWebLastUpdateContactTVText</value>
+</data>
+<data name="TelWebTelTypeText" xml:space="preserve">
+  <value>TelWebTelTypeText</value>
+</data>
+<data name="TelReport" xml:space="preserve">
+  <value>TelReport</value>
+</data>
+<data name="TelReportTelReportTest" xml:space="preserve">
+  <value>TelReportTelReportTest</value>
 </data>
 <data name="TideDataValue" xml:space="preserve">
   <value>TideDataValue</value>
@@ -3183,32 +4023,47 @@
 <data name="TideDataValueTideEnd" xml:space="preserve">
   <value>TideDataValueTideEnd</value>
 </data>
+<data name="TideDataValueTideDataValueWeb" xml:space="preserve">
+  <value>TideDataValueTideDataValueWeb</value>
+</data>
+<data name="TideDataValueTideDataValueReport" xml:space="preserve">
+  <value>TideDataValueTideDataValueReport</value>
+</data>
 <data name="TideDataValueLastUpdateDate_UTC" xml:space="preserve">
   <value>TideDataValueLastUpdateDate_UTC</value>
 </data>
 <data name="TideDataValueLastUpdateContactTVItemID" xml:space="preserve">
   <value>TideDataValueLastUpdateContactTVItemID</value>
 </data>
-<data name="TideDataValueTideSiteTVText" xml:space="preserve">
-  <value>TideDataValueTideSiteTVText</value>
-</data>
-<data name="TideDataValueLastUpdateContactTVText" xml:space="preserve">
-  <value>TideDataValueLastUpdateContactTVText</value>
-</data>
-<data name="TideDataValueTideDataTypeText" xml:space="preserve">
-  <value>TideDataValueTideDataTypeText</value>
-</data>
-<data name="TideDataValueStorageDataTypeText" xml:space="preserve">
-  <value>TideDataValueStorageDataTypeText</value>
-</data>
-<data name="TideDataValueTideStartText" xml:space="preserve">
-  <value>TideDataValueTideStartText</value>
-</data>
-<data name="TideDataValueTideEndText" xml:space="preserve">
-  <value>TideDataValueTideEndText</value>
-</data>
 <data name="TideDataValueHasErrors" xml:space="preserve">
   <value>TideDataValueHasErrors</value>
+</data>
+<data name="TideDataValueWeb" xml:space="preserve">
+  <value>TideDataValueWeb</value>
+</data>
+<data name="TideDataValueWebTideSiteTVText" xml:space="preserve">
+  <value>TideDataValueWebTideSiteTVText</value>
+</data>
+<data name="TideDataValueWebLastUpdateContactTVText" xml:space="preserve">
+  <value>TideDataValueWebLastUpdateContactTVText</value>
+</data>
+<data name="TideDataValueWebTideDataTypeText" xml:space="preserve">
+  <value>TideDataValueWebTideDataTypeText</value>
+</data>
+<data name="TideDataValueWebStorageDataTypeText" xml:space="preserve">
+  <value>TideDataValueWebStorageDataTypeText</value>
+</data>
+<data name="TideDataValueWebTideStartText" xml:space="preserve">
+  <value>TideDataValueWebTideStartText</value>
+</data>
+<data name="TideDataValueWebTideEndText" xml:space="preserve">
+  <value>TideDataValueWebTideEndText</value>
+</data>
+<data name="TideDataValueReport" xml:space="preserve">
+  <value>TideDataValueReport</value>
+</data>
+<data name="TideDataValueReportTideDataValueReportTest" xml:space="preserve">
+  <value>TideDataValueReportTideDataValueReportTest</value>
 </data>
 <data name="TideLocation" xml:space="preserve">
   <value>TideLocation</value>
@@ -3234,8 +4089,32 @@
 <data name="TideLocationLng" xml:space="preserve">
   <value>TideLocationLng</value>
 </data>
+<data name="TideLocationTideLocationWeb" xml:space="preserve">
+  <value>TideLocationTideLocationWeb</value>
+</data>
+<data name="TideLocationTideLocationReport" xml:space="preserve">
+  <value>TideLocationTideLocationReport</value>
+</data>
+<data name="TideLocationLastUpdateDate_UTC" xml:space="preserve">
+  <value>TideLocationLastUpdateDate_UTC</value>
+</data>
+<data name="TideLocationLastUpdateContactTVItemID" xml:space="preserve">
+  <value>TideLocationLastUpdateContactTVItemID</value>
+</data>
 <data name="TideLocationHasErrors" xml:space="preserve">
   <value>TideLocationHasErrors</value>
+</data>
+<data name="TideLocationWeb" xml:space="preserve">
+  <value>TideLocationWeb</value>
+</data>
+<data name="TideLocationWebLastUpdateContactTVText" xml:space="preserve">
+  <value>TideLocationWebLastUpdateContactTVText</value>
+</data>
+<data name="TideLocationReport" xml:space="preserve">
+  <value>TideLocationReport</value>
+</data>
+<data name="TideLocationReportTideLocationReportTest" xml:space="preserve">
+  <value>TideLocationReportTideLocationReportTest</value>
 </data>
 <data name="TideSite" xml:space="preserve">
   <value>TideSite</value>
@@ -3252,20 +4131,35 @@
 <data name="TideSiteWebTideDatum_m" xml:space="preserve">
   <value>TideSiteWebTideDatum_m</value>
 </data>
+<data name="TideSiteTideSiteWeb" xml:space="preserve">
+  <value>TideSiteTideSiteWeb</value>
+</data>
+<data name="TideSiteTideSiteReport" xml:space="preserve">
+  <value>TideSiteTideSiteReport</value>
+</data>
 <data name="TideSiteLastUpdateDate_UTC" xml:space="preserve">
   <value>TideSiteLastUpdateDate_UTC</value>
 </data>
 <data name="TideSiteLastUpdateContactTVItemID" xml:space="preserve">
   <value>TideSiteLastUpdateContactTVItemID</value>
 </data>
-<data name="TideSiteTideSiteTVText" xml:space="preserve">
-  <value>TideSiteTideSiteTVText</value>
-</data>
-<data name="TideSiteLastUpdateContactTVText" xml:space="preserve">
-  <value>TideSiteLastUpdateContactTVText</value>
-</data>
 <data name="TideSiteHasErrors" xml:space="preserve">
   <value>TideSiteHasErrors</value>
+</data>
+<data name="TideSiteWeb" xml:space="preserve">
+  <value>TideSiteWeb</value>
+</data>
+<data name="TideSiteWebTideSiteTVText" xml:space="preserve">
+  <value>TideSiteWebTideSiteTVText</value>
+</data>
+<data name="TideSiteWebLastUpdateContactTVText" xml:space="preserve">
+  <value>TideSiteWebLastUpdateContactTVText</value>
+</data>
+<data name="TideSiteReport" xml:space="preserve">
+  <value>TideSiteReport</value>
+</data>
+<data name="TideSiteReportTideSiteReportTest" xml:space="preserve">
+  <value>TideSiteReportTideSiteReportTest</value>
 </data>
 <data name="TVFile" xml:space="preserve">
   <value>TVFile</value>
@@ -3309,32 +4203,47 @@
 <data name="TVFileServerFilePath" xml:space="preserve">
   <value>TVFileServerFilePath</value>
 </data>
+<data name="TVFileTVFileWeb" xml:space="preserve">
+  <value>TVFileTVFileWeb</value>
+</data>
+<data name="TVFileTVFileReport" xml:space="preserve">
+  <value>TVFileTVFileReport</value>
+</data>
 <data name="TVFileLastUpdateDate_UTC" xml:space="preserve">
   <value>TVFileLastUpdateDate_UTC</value>
 </data>
 <data name="TVFileLastUpdateContactTVItemID" xml:space="preserve">
   <value>TVFileLastUpdateContactTVItemID</value>
 </data>
-<data name="TVFileTVFileTVText" xml:space="preserve">
-  <value>TVFileTVFileTVText</value>
-</data>
-<data name="TVFileLastUpdateContactTVText" xml:space="preserve">
-  <value>TVFileLastUpdateContactTVText</value>
-</data>
-<data name="TVFileTemplateTVTypeText" xml:space="preserve">
-  <value>TVFileTemplateTVTypeText</value>
-</data>
-<data name="TVFileLanguageText" xml:space="preserve">
-  <value>TVFileLanguageText</value>
-</data>
-<data name="TVFileFilePurposeText" xml:space="preserve">
-  <value>TVFileFilePurposeText</value>
-</data>
-<data name="TVFileFileTypeText" xml:space="preserve">
-  <value>TVFileFileTypeText</value>
-</data>
 <data name="TVFileHasErrors" xml:space="preserve">
   <value>TVFileHasErrors</value>
+</data>
+<data name="TVFileWeb" xml:space="preserve">
+  <value>TVFileWeb</value>
+</data>
+<data name="TVFileWebTVFileTVText" xml:space="preserve">
+  <value>TVFileWebTVFileTVText</value>
+</data>
+<data name="TVFileWebLastUpdateContactTVText" xml:space="preserve">
+  <value>TVFileWebLastUpdateContactTVText</value>
+</data>
+<data name="TVFileWebTemplateTVTypeText" xml:space="preserve">
+  <value>TVFileWebTemplateTVTypeText</value>
+</data>
+<data name="TVFileWebLanguageText" xml:space="preserve">
+  <value>TVFileWebLanguageText</value>
+</data>
+<data name="TVFileWebFilePurposeText" xml:space="preserve">
+  <value>TVFileWebFilePurposeText</value>
+</data>
+<data name="TVFileWebFileTypeText" xml:space="preserve">
+  <value>TVFileWebFileTypeText</value>
+</data>
+<data name="TVFileReport" xml:space="preserve">
+  <value>TVFileReport</value>
+</data>
+<data name="TVFileReportTVFileReportTest" xml:space="preserve">
+  <value>TVFileReportTVFileReportTest</value>
 </data>
 <data name="TVFileLanguage" xml:space="preserve">
   <value>TVFileLanguage</value>
@@ -3354,23 +4263,38 @@
 <data name="TVFileLanguageTranslationStatus" xml:space="preserve">
   <value>TVFileLanguageTranslationStatus</value>
 </data>
+<data name="TVFileLanguageTVFileLanguageWeb" xml:space="preserve">
+  <value>TVFileLanguageTVFileLanguageWeb</value>
+</data>
+<data name="TVFileLanguageTVFileLanguageReport" xml:space="preserve">
+  <value>TVFileLanguageTVFileLanguageReport</value>
+</data>
 <data name="TVFileLanguageLastUpdateDate_UTC" xml:space="preserve">
   <value>TVFileLanguageLastUpdateDate_UTC</value>
 </data>
 <data name="TVFileLanguageLastUpdateContactTVItemID" xml:space="preserve">
   <value>TVFileLanguageLastUpdateContactTVItemID</value>
 </data>
-<data name="TVFileLanguageLastUpdateContactTVText" xml:space="preserve">
-  <value>TVFileLanguageLastUpdateContactTVText</value>
-</data>
-<data name="TVFileLanguageLanguageText" xml:space="preserve">
-  <value>TVFileLanguageLanguageText</value>
-</data>
-<data name="TVFileLanguageTranslationStatusText" xml:space="preserve">
-  <value>TVFileLanguageTranslationStatusText</value>
-</data>
 <data name="TVFileLanguageHasErrors" xml:space="preserve">
   <value>TVFileLanguageHasErrors</value>
+</data>
+<data name="TVFileLanguageWeb" xml:space="preserve">
+  <value>TVFileLanguageWeb</value>
+</data>
+<data name="TVFileLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>TVFileLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="TVFileLanguageWebLanguageText" xml:space="preserve">
+  <value>TVFileLanguageWebLanguageText</value>
+</data>
+<data name="TVFileLanguageWebTranslationStatusText" xml:space="preserve">
+  <value>TVFileLanguageWebTranslationStatusText</value>
+</data>
+<data name="TVFileLanguageReport" xml:space="preserve">
+  <value>TVFileLanguageReport</value>
+</data>
+<data name="TVFileLanguageReportTVFileLanguageReportTest" xml:space="preserve">
+  <value>TVFileLanguageReportTVFileLanguageReportTest</value>
 </data>
 <data name="TVItem" xml:space="preserve">
   <value>TVItem</value>
@@ -3393,23 +4317,38 @@
 <data name="TVItemIsActive" xml:space="preserve">
   <value>TVItemIsActive</value>
 </data>
+<data name="TVItemTVItemWeb" xml:space="preserve">
+  <value>TVItemTVItemWeb</value>
+</data>
+<data name="TVItemTVItemReport" xml:space="preserve">
+  <value>TVItemTVItemReport</value>
+</data>
 <data name="TVItemLastUpdateDate_UTC" xml:space="preserve">
   <value>TVItemLastUpdateDate_UTC</value>
 </data>
 <data name="TVItemLastUpdateContactTVItemID" xml:space="preserve">
   <value>TVItemLastUpdateContactTVItemID</value>
 </data>
-<data name="TVItemTVText" xml:space="preserve">
-  <value>TVItemTVText</value>
-</data>
-<data name="TVItemLastUpdateContactTVText" xml:space="preserve">
-  <value>TVItemLastUpdateContactTVText</value>
-</data>
-<data name="TVItemTVTypeText" xml:space="preserve">
-  <value>TVItemTVTypeText</value>
-</data>
 <data name="TVItemHasErrors" xml:space="preserve">
   <value>TVItemHasErrors</value>
+</data>
+<data name="TVItemWeb" xml:space="preserve">
+  <value>TVItemWeb</value>
+</data>
+<data name="TVItemWebTVText" xml:space="preserve">
+  <value>TVItemWebTVText</value>
+</data>
+<data name="TVItemWebLastUpdateContactTVText" xml:space="preserve">
+  <value>TVItemWebLastUpdateContactTVText</value>
+</data>
+<data name="TVItemWebTVTypeText" xml:space="preserve">
+  <value>TVItemWebTVTypeText</value>
+</data>
+<data name="TVItemReport" xml:space="preserve">
+  <value>TVItemReport</value>
+</data>
+<data name="TVItemReportTVItemReportTest" xml:space="preserve">
+  <value>TVItemReportTVItemReportTest</value>
 </data>
 <data name="TVItemLanguage" xml:space="preserve">
   <value>TVItemLanguage</value>
@@ -3429,23 +4368,38 @@
 <data name="TVItemLanguageTranslationStatus" xml:space="preserve">
   <value>TVItemLanguageTranslationStatus</value>
 </data>
+<data name="TVItemLanguageTVItemLanguageWeb" xml:space="preserve">
+  <value>TVItemLanguageTVItemLanguageWeb</value>
+</data>
+<data name="TVItemLanguageTVItemLanguageReport" xml:space="preserve">
+  <value>TVItemLanguageTVItemLanguageReport</value>
+</data>
 <data name="TVItemLanguageLastUpdateDate_UTC" xml:space="preserve">
   <value>TVItemLanguageLastUpdateDate_UTC</value>
 </data>
 <data name="TVItemLanguageLastUpdateContactTVItemID" xml:space="preserve">
   <value>TVItemLanguageLastUpdateContactTVItemID</value>
 </data>
-<data name="TVItemLanguageLastUpdateContactTVText" xml:space="preserve">
-  <value>TVItemLanguageLastUpdateContactTVText</value>
-</data>
-<data name="TVItemLanguageLanguageText" xml:space="preserve">
-  <value>TVItemLanguageLanguageText</value>
-</data>
-<data name="TVItemLanguageTranslationStatusText" xml:space="preserve">
-  <value>TVItemLanguageTranslationStatusText</value>
-</data>
 <data name="TVItemLanguageHasErrors" xml:space="preserve">
   <value>TVItemLanguageHasErrors</value>
+</data>
+<data name="TVItemLanguageWeb" xml:space="preserve">
+  <value>TVItemLanguageWeb</value>
+</data>
+<data name="TVItemLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>TVItemLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="TVItemLanguageWebLanguageText" xml:space="preserve">
+  <value>TVItemLanguageWebLanguageText</value>
+</data>
+<data name="TVItemLanguageWebTranslationStatusText" xml:space="preserve">
+  <value>TVItemLanguageWebTranslationStatusText</value>
+</data>
+<data name="TVItemLanguageReport" xml:space="preserve">
+  <value>TVItemLanguageReport</value>
+</data>
+<data name="TVItemLanguageReportTVItemLanguageReportTest" xml:space="preserve">
+  <value>TVItemLanguageReportTVItemLanguageReportTest</value>
 </data>
 <data name="TVItemLink" xml:space="preserve">
   <value>TVItemLink</value>
@@ -3483,29 +4437,44 @@
 <data name="TVItemLinkParentTVItemLinkID" xml:space="preserve">
   <value>TVItemLinkParentTVItemLinkID</value>
 </data>
+<data name="TVItemLinkTVItemLinkWeb" xml:space="preserve">
+  <value>TVItemLinkTVItemLinkWeb</value>
+</data>
+<data name="TVItemLinkTVItemLinkReport" xml:space="preserve">
+  <value>TVItemLinkTVItemLinkReport</value>
+</data>
 <data name="TVItemLinkLastUpdateDate_UTC" xml:space="preserve">
   <value>TVItemLinkLastUpdateDate_UTC</value>
 </data>
 <data name="TVItemLinkLastUpdateContactTVItemID" xml:space="preserve">
   <value>TVItemLinkLastUpdateContactTVItemID</value>
 </data>
-<data name="TVItemLinkFromTVText" xml:space="preserve">
-  <value>TVItemLinkFromTVText</value>
-</data>
-<data name="TVItemLinkToTVText" xml:space="preserve">
-  <value>TVItemLinkToTVText</value>
-</data>
-<data name="TVItemLinkLastUpdateContactTVText" xml:space="preserve">
-  <value>TVItemLinkLastUpdateContactTVText</value>
-</data>
-<data name="TVItemLinkFromTVTypeText" xml:space="preserve">
-  <value>TVItemLinkFromTVTypeText</value>
-</data>
-<data name="TVItemLinkToTVTypeText" xml:space="preserve">
-  <value>TVItemLinkToTVTypeText</value>
-</data>
 <data name="TVItemLinkHasErrors" xml:space="preserve">
   <value>TVItemLinkHasErrors</value>
+</data>
+<data name="TVItemLinkWeb" xml:space="preserve">
+  <value>TVItemLinkWeb</value>
+</data>
+<data name="TVItemLinkWebFromTVText" xml:space="preserve">
+  <value>TVItemLinkWebFromTVText</value>
+</data>
+<data name="TVItemLinkWebToTVText" xml:space="preserve">
+  <value>TVItemLinkWebToTVText</value>
+</data>
+<data name="TVItemLinkWebLastUpdateContactTVText" xml:space="preserve">
+  <value>TVItemLinkWebLastUpdateContactTVText</value>
+</data>
+<data name="TVItemLinkWebFromTVTypeText" xml:space="preserve">
+  <value>TVItemLinkWebFromTVTypeText</value>
+</data>
+<data name="TVItemLinkWebToTVTypeText" xml:space="preserve">
+  <value>TVItemLinkWebToTVTypeText</value>
+</data>
+<data name="TVItemLinkReport" xml:space="preserve">
+  <value>TVItemLinkReport</value>
+</data>
+<data name="TVItemLinkReportTVItemLinkReportTest" xml:space="preserve">
+  <value>TVItemLinkReportTVItemLinkReportTest</value>
 </data>
 <data name="TVItemStat" xml:space="preserve">
   <value>TVItemStat</value>
@@ -3522,23 +4491,38 @@
 <data name="TVItemStatChildCount" xml:space="preserve">
   <value>TVItemStatChildCount</value>
 </data>
+<data name="TVItemStatTVItemStatWeb" xml:space="preserve">
+  <value>TVItemStatTVItemStatWeb</value>
+</data>
+<data name="TVItemStatTVItemStatReport" xml:space="preserve">
+  <value>TVItemStatTVItemStatReport</value>
+</data>
 <data name="TVItemStatLastUpdateDate_UTC" xml:space="preserve">
   <value>TVItemStatLastUpdateDate_UTC</value>
 </data>
 <data name="TVItemStatLastUpdateContactTVItemID" xml:space="preserve">
   <value>TVItemStatLastUpdateContactTVItemID</value>
 </data>
-<data name="TVItemStatTVText" xml:space="preserve">
-  <value>TVItemStatTVText</value>
-</data>
-<data name="TVItemStatLastUpdateContactTVText" xml:space="preserve">
-  <value>TVItemStatLastUpdateContactTVText</value>
-</data>
-<data name="TVItemStatTVTypeText" xml:space="preserve">
-  <value>TVItemStatTVTypeText</value>
-</data>
 <data name="TVItemStatHasErrors" xml:space="preserve">
   <value>TVItemStatHasErrors</value>
+</data>
+<data name="TVItemStatWeb" xml:space="preserve">
+  <value>TVItemStatWeb</value>
+</data>
+<data name="TVItemStatWebTVText" xml:space="preserve">
+  <value>TVItemStatWebTVText</value>
+</data>
+<data name="TVItemStatWebLastUpdateContactTVText" xml:space="preserve">
+  <value>TVItemStatWebLastUpdateContactTVText</value>
+</data>
+<data name="TVItemStatWebTVTypeText" xml:space="preserve">
+  <value>TVItemStatWebTVTypeText</value>
+</data>
+<data name="TVItemStatReport" xml:space="preserve">
+  <value>TVItemStatReport</value>
+</data>
+<data name="TVItemStatReportTVItemStatReportTest" xml:space="preserve">
+  <value>TVItemStatReportTVItemStatReportTest</value>
 </data>
 <data name="TVItemUserAuthorization" xml:space="preserve">
   <value>TVItemUserAuthorization</value>
@@ -3564,35 +4548,50 @@
 <data name="TVItemUserAuthorizationTVAuth" xml:space="preserve">
   <value>TVItemUserAuthorizationTVAuth</value>
 </data>
+<data name="TVItemUserAuthorizationTVItemUserAuthorizationWeb" xml:space="preserve">
+  <value>TVItemUserAuthorizationTVItemUserAuthorizationWeb</value>
+</data>
+<data name="TVItemUserAuthorizationTVItemUserAuthorizationReport" xml:space="preserve">
+  <value>TVItemUserAuthorizationTVItemUserAuthorizationReport</value>
+</data>
 <data name="TVItemUserAuthorizationLastUpdateDate_UTC" xml:space="preserve">
   <value>TVItemUserAuthorizationLastUpdateDate_UTC</value>
 </data>
 <data name="TVItemUserAuthorizationLastUpdateContactTVItemID" xml:space="preserve">
   <value>TVItemUserAuthorizationLastUpdateContactTVItemID</value>
 </data>
-<data name="TVItemUserAuthorizationContactTVText" xml:space="preserve">
-  <value>TVItemUserAuthorizationContactTVText</value>
-</data>
-<data name="TVItemUserAuthorizationTVText1" xml:space="preserve">
-  <value>TVItemUserAuthorizationTVText1</value>
-</data>
-<data name="TVItemUserAuthorizationTVText2" xml:space="preserve">
-  <value>TVItemUserAuthorizationTVText2</value>
-</data>
-<data name="TVItemUserAuthorizationTVText3" xml:space="preserve">
-  <value>TVItemUserAuthorizationTVText3</value>
-</data>
-<data name="TVItemUserAuthorizationTVText4" xml:space="preserve">
-  <value>TVItemUserAuthorizationTVText4</value>
-</data>
-<data name="TVItemUserAuthorizationLastUpdateContactTVText" xml:space="preserve">
-  <value>TVItemUserAuthorizationLastUpdateContactTVText</value>
-</data>
-<data name="TVItemUserAuthorizationTVAuthText" xml:space="preserve">
-  <value>TVItemUserAuthorizationTVAuthText</value>
-</data>
 <data name="TVItemUserAuthorizationHasErrors" xml:space="preserve">
   <value>TVItemUserAuthorizationHasErrors</value>
+</data>
+<data name="TVItemUserAuthorizationWeb" xml:space="preserve">
+  <value>TVItemUserAuthorizationWeb</value>
+</data>
+<data name="TVItemUserAuthorizationWebContactTVText" xml:space="preserve">
+  <value>TVItemUserAuthorizationWebContactTVText</value>
+</data>
+<data name="TVItemUserAuthorizationWebTVText1" xml:space="preserve">
+  <value>TVItemUserAuthorizationWebTVText1</value>
+</data>
+<data name="TVItemUserAuthorizationWebTVText2" xml:space="preserve">
+  <value>TVItemUserAuthorizationWebTVText2</value>
+</data>
+<data name="TVItemUserAuthorizationWebTVText3" xml:space="preserve">
+  <value>TVItemUserAuthorizationWebTVText3</value>
+</data>
+<data name="TVItemUserAuthorizationWebTVText4" xml:space="preserve">
+  <value>TVItemUserAuthorizationWebTVText4</value>
+</data>
+<data name="TVItemUserAuthorizationWebLastUpdateContactTVText" xml:space="preserve">
+  <value>TVItemUserAuthorizationWebLastUpdateContactTVText</value>
+</data>
+<data name="TVItemUserAuthorizationWebTVAuthText" xml:space="preserve">
+  <value>TVItemUserAuthorizationWebTVAuthText</value>
+</data>
+<data name="TVItemUserAuthorizationReport" xml:space="preserve">
+  <value>TVItemUserAuthorizationReport</value>
+</data>
+<data name="TVItemUserAuthorizationReportTVItemUserAuthorizationReportTest" xml:space="preserve">
+  <value>TVItemUserAuthorizationReportTVItemUserAuthorizationReportTest</value>
 </data>
 <data name="TVTypeUserAuthorization" xml:space="preserve">
   <value>TVTypeUserAuthorization</value>
@@ -3609,26 +4608,41 @@
 <data name="TVTypeUserAuthorizationTVAuth" xml:space="preserve">
   <value>TVTypeUserAuthorizationTVAuth</value>
 </data>
+<data name="TVTypeUserAuthorizationTVTypeUserAuthorizationWeb" xml:space="preserve">
+  <value>TVTypeUserAuthorizationTVTypeUserAuthorizationWeb</value>
+</data>
+<data name="TVTypeUserAuthorizationTVTypeUserAuthorizationReport" xml:space="preserve">
+  <value>TVTypeUserAuthorizationTVTypeUserAuthorizationReport</value>
+</data>
 <data name="TVTypeUserAuthorizationLastUpdateDate_UTC" xml:space="preserve">
   <value>TVTypeUserAuthorizationLastUpdateDate_UTC</value>
 </data>
 <data name="TVTypeUserAuthorizationLastUpdateContactTVItemID" xml:space="preserve">
   <value>TVTypeUserAuthorizationLastUpdateContactTVItemID</value>
 </data>
-<data name="TVTypeUserAuthorizationContactTVText" xml:space="preserve">
-  <value>TVTypeUserAuthorizationContactTVText</value>
-</data>
-<data name="TVTypeUserAuthorizationLastUpdateContactTVText" xml:space="preserve">
-  <value>TVTypeUserAuthorizationLastUpdateContactTVText</value>
-</data>
-<data name="TVTypeUserAuthorizationTVTypeText" xml:space="preserve">
-  <value>TVTypeUserAuthorizationTVTypeText</value>
-</data>
-<data name="TVTypeUserAuthorizationTVAuthText" xml:space="preserve">
-  <value>TVTypeUserAuthorizationTVAuthText</value>
-</data>
 <data name="TVTypeUserAuthorizationHasErrors" xml:space="preserve">
   <value>TVTypeUserAuthorizationHasErrors</value>
+</data>
+<data name="TVTypeUserAuthorizationWeb" xml:space="preserve">
+  <value>TVTypeUserAuthorizationWeb</value>
+</data>
+<data name="TVTypeUserAuthorizationWebContactTVText" xml:space="preserve">
+  <value>TVTypeUserAuthorizationWebContactTVText</value>
+</data>
+<data name="TVTypeUserAuthorizationWebLastUpdateContactTVText" xml:space="preserve">
+  <value>TVTypeUserAuthorizationWebLastUpdateContactTVText</value>
+</data>
+<data name="TVTypeUserAuthorizationWebTVTypeText" xml:space="preserve">
+  <value>TVTypeUserAuthorizationWebTVTypeText</value>
+</data>
+<data name="TVTypeUserAuthorizationWebTVAuthText" xml:space="preserve">
+  <value>TVTypeUserAuthorizationWebTVAuthText</value>
+</data>
+<data name="TVTypeUserAuthorizationReport" xml:space="preserve">
+  <value>TVTypeUserAuthorizationReport</value>
+</data>
+<data name="TVTypeUserAuthorizationReportTVTypeUserAuthorizationReportTest" xml:space="preserve">
+  <value>TVTypeUserAuthorizationReportTVTypeUserAuthorizationReportTest</value>
 </data>
 <data name="UseOfSite" xml:space="preserve">
   <value>UseOfSite</value>
@@ -3675,26 +4689,41 @@
 <data name="UseOfSiteParam4" xml:space="preserve">
   <value>UseOfSiteParam4</value>
 </data>
+<data name="UseOfSiteUseOfSiteWeb" xml:space="preserve">
+  <value>UseOfSiteUseOfSiteWeb</value>
+</data>
+<data name="UseOfSiteUseOfSiteReport" xml:space="preserve">
+  <value>UseOfSiteUseOfSiteReport</value>
+</data>
 <data name="UseOfSiteLastUpdateDate_UTC" xml:space="preserve">
   <value>UseOfSiteLastUpdateDate_UTC</value>
 </data>
 <data name="UseOfSiteLastUpdateContactTVItemID" xml:space="preserve">
   <value>UseOfSiteLastUpdateContactTVItemID</value>
 </data>
-<data name="UseOfSiteSiteTVText" xml:space="preserve">
-  <value>UseOfSiteSiteTVText</value>
-</data>
-<data name="UseOfSiteSubsectorTVText" xml:space="preserve">
-  <value>UseOfSiteSubsectorTVText</value>
-</data>
-<data name="UseOfSiteLastUpdateContactTVText" xml:space="preserve">
-  <value>UseOfSiteLastUpdateContactTVText</value>
-</data>
-<data name="UseOfSiteSiteTypeText" xml:space="preserve">
-  <value>UseOfSiteSiteTypeText</value>
-</data>
 <data name="UseOfSiteHasErrors" xml:space="preserve">
   <value>UseOfSiteHasErrors</value>
+</data>
+<data name="UseOfSiteWeb" xml:space="preserve">
+  <value>UseOfSiteWeb</value>
+</data>
+<data name="UseOfSiteWebSiteTVText" xml:space="preserve">
+  <value>UseOfSiteWebSiteTVText</value>
+</data>
+<data name="UseOfSiteWebSubsectorTVText" xml:space="preserve">
+  <value>UseOfSiteWebSubsectorTVText</value>
+</data>
+<data name="UseOfSiteWebLastUpdateContactTVText" xml:space="preserve">
+  <value>UseOfSiteWebLastUpdateContactTVText</value>
+</data>
+<data name="UseOfSiteWebSiteTypeText" xml:space="preserve">
+  <value>UseOfSiteWebSiteTypeText</value>
+</data>
+<data name="UseOfSiteReport" xml:space="preserve">
+  <value>UseOfSiteReport</value>
+</data>
+<data name="UseOfSiteReportUseOfSiteReportTest" xml:space="preserve">
+  <value>UseOfSiteReportUseOfSiteReportTest</value>
 </data>
 <data name="VPAmbient" xml:space="preserve">
   <value>VPAmbient</value>
@@ -3738,17 +4767,32 @@
 <data name="VPAmbientFarFieldDiffusionCoefficient" xml:space="preserve">
   <value>VPAmbientFarFieldDiffusionCoefficient</value>
 </data>
+<data name="VPAmbientVPAmbientWeb" xml:space="preserve">
+  <value>VPAmbientVPAmbientWeb</value>
+</data>
+<data name="VPAmbientVPAmbientReport" xml:space="preserve">
+  <value>VPAmbientVPAmbientReport</value>
+</data>
 <data name="VPAmbientLastUpdateDate_UTC" xml:space="preserve">
   <value>VPAmbientLastUpdateDate_UTC</value>
 </data>
 <data name="VPAmbientLastUpdateContactTVItemID" xml:space="preserve">
   <value>VPAmbientLastUpdateContactTVItemID</value>
 </data>
-<data name="VPAmbientLastUpdateContactTVText" xml:space="preserve">
-  <value>VPAmbientLastUpdateContactTVText</value>
-</data>
 <data name="VPAmbientHasErrors" xml:space="preserve">
   <value>VPAmbientHasErrors</value>
+</data>
+<data name="VPAmbientWeb" xml:space="preserve">
+  <value>VPAmbientWeb</value>
+</data>
+<data name="VPAmbientWebLastUpdateContactTVText" xml:space="preserve">
+  <value>VPAmbientWebLastUpdateContactTVText</value>
+</data>
+<data name="VPAmbientReport" xml:space="preserve">
+  <value>VPAmbientReport</value>
+</data>
+<data name="VPAmbientReportVPAmbientReportTest" xml:space="preserve">
+  <value>VPAmbientReportVPAmbientReportTest</value>
 </data>
 <data name="VPResult" xml:space="preserve">
   <value>VPResult</value>
@@ -3777,17 +4821,32 @@
 <data name="VPResultTravelTime_hour" xml:space="preserve">
   <value>VPResultTravelTime_hour</value>
 </data>
+<data name="VPResultVPResultWeb" xml:space="preserve">
+  <value>VPResultVPResultWeb</value>
+</data>
+<data name="VPResultVPResultReport" xml:space="preserve">
+  <value>VPResultVPResultReport</value>
+</data>
 <data name="VPResultLastUpdateDate_UTC" xml:space="preserve">
   <value>VPResultLastUpdateDate_UTC</value>
 </data>
 <data name="VPResultLastUpdateContactTVItemID" xml:space="preserve">
   <value>VPResultLastUpdateContactTVItemID</value>
 </data>
-<data name="VPResultLastUpdateContactTVText" xml:space="preserve">
-  <value>VPResultLastUpdateContactTVText</value>
-</data>
 <data name="VPResultHasErrors" xml:space="preserve">
   <value>VPResultHasErrors</value>
+</data>
+<data name="VPResultWeb" xml:space="preserve">
+  <value>VPResultWeb</value>
+</data>
+<data name="VPResultWebLastUpdateContactTVText" xml:space="preserve">
+  <value>VPResultWebLastUpdateContactTVText</value>
+</data>
+<data name="VPResultReport" xml:space="preserve">
+  <value>VPResultReport</value>
+</data>
+<data name="VPResultReportVPResultReportTest" xml:space="preserve">
+  <value>VPResultReportVPResultReportTest</value>
 </data>
 <data name="VPScenario" xml:space="preserve">
   <value>VPScenario</value>
@@ -3852,23 +4911,38 @@
 <data name="VPScenarioRawResults" xml:space="preserve">
   <value>VPScenarioRawResults</value>
 </data>
+<data name="VPScenarioVPScenarioWeb" xml:space="preserve">
+  <value>VPScenarioVPScenarioWeb</value>
+</data>
+<data name="VPScenarioVPScenarioReport" xml:space="preserve">
+  <value>VPScenarioVPScenarioReport</value>
+</data>
 <data name="VPScenarioLastUpdateDate_UTC" xml:space="preserve">
   <value>VPScenarioLastUpdateDate_UTC</value>
 </data>
 <data name="VPScenarioLastUpdateContactTVItemID" xml:space="preserve">
   <value>VPScenarioLastUpdateContactTVItemID</value>
 </data>
-<data name="VPScenarioSubsectorTVText" xml:space="preserve">
-  <value>VPScenarioSubsectorTVText</value>
-</data>
-<data name="VPScenarioLastUpdateContactTVText" xml:space="preserve">
-  <value>VPScenarioLastUpdateContactTVText</value>
-</data>
-<data name="VPScenarioVPScenarioStatusText" xml:space="preserve">
-  <value>VPScenarioVPScenarioStatusText</value>
-</data>
 <data name="VPScenarioHasErrors" xml:space="preserve">
   <value>VPScenarioHasErrors</value>
+</data>
+<data name="VPScenarioWeb" xml:space="preserve">
+  <value>VPScenarioWeb</value>
+</data>
+<data name="VPScenarioWebSubsectorTVText" xml:space="preserve">
+  <value>VPScenarioWebSubsectorTVText</value>
+</data>
+<data name="VPScenarioWebLastUpdateContactTVText" xml:space="preserve">
+  <value>VPScenarioWebLastUpdateContactTVText</value>
+</data>
+<data name="VPScenarioWebVPScenarioStatusText" xml:space="preserve">
+  <value>VPScenarioWebVPScenarioStatusText</value>
+</data>
+<data name="VPScenarioReport" xml:space="preserve">
+  <value>VPScenarioReport</value>
+</data>
+<data name="VPScenarioReportVPScenarioReportTest" xml:space="preserve">
+  <value>VPScenarioReportVPScenarioReportTest</value>
 </data>
 <data name="VPScenarioLanguage" xml:space="preserve">
   <value>VPScenarioLanguage</value>
@@ -3888,23 +4962,38 @@
 <data name="VPScenarioLanguageTranslationStatus" xml:space="preserve">
   <value>VPScenarioLanguageTranslationStatus</value>
 </data>
+<data name="VPScenarioLanguageVPScenarioLanguageWeb" xml:space="preserve">
+  <value>VPScenarioLanguageVPScenarioLanguageWeb</value>
+</data>
+<data name="VPScenarioLanguageVPScenarioLanguageReport" xml:space="preserve">
+  <value>VPScenarioLanguageVPScenarioLanguageReport</value>
+</data>
 <data name="VPScenarioLanguageLastUpdateDate_UTC" xml:space="preserve">
   <value>VPScenarioLanguageLastUpdateDate_UTC</value>
 </data>
 <data name="VPScenarioLanguageLastUpdateContactTVItemID" xml:space="preserve">
   <value>VPScenarioLanguageLastUpdateContactTVItemID</value>
 </data>
-<data name="VPScenarioLanguageLastUpdateContactTVText" xml:space="preserve">
-  <value>VPScenarioLanguageLastUpdateContactTVText</value>
-</data>
-<data name="VPScenarioLanguageLanguageText" xml:space="preserve">
-  <value>VPScenarioLanguageLanguageText</value>
-</data>
-<data name="VPScenarioLanguageTranslationStatusText" xml:space="preserve">
-  <value>VPScenarioLanguageTranslationStatusText</value>
-</data>
 <data name="VPScenarioLanguageHasErrors" xml:space="preserve">
   <value>VPScenarioLanguageHasErrors</value>
+</data>
+<data name="VPScenarioLanguageWeb" xml:space="preserve">
+  <value>VPScenarioLanguageWeb</value>
+</data>
+<data name="VPScenarioLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>VPScenarioLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="VPScenarioLanguageWebLanguageText" xml:space="preserve">
+  <value>VPScenarioLanguageWebLanguageText</value>
+</data>
+<data name="VPScenarioLanguageWebTranslationStatusText" xml:space="preserve">
+  <value>VPScenarioLanguageWebTranslationStatusText</value>
+</data>
+<data name="VPScenarioLanguageReport" xml:space="preserve">
+  <value>VPScenarioLanguageReport</value>
+</data>
+<data name="VPScenarioLanguageReportVPScenarioLanguageReportTest" xml:space="preserve">
+  <value>VPScenarioLanguageReportVPScenarioLanguageReportTest</value>
 </data>
 <data name="AppTaskParameter" xml:space="preserve">
   <value>AppTaskParameter</value>
@@ -4560,14 +5649,14 @@
 <data name="LastUpdateAndContact" xml:space="preserve">
   <value>LastUpdateAndContact</value>
 </data>
-<data name="LastUpdateAndContactError" xml:space="preserve">
-  <value>LastUpdateAndContactError</value>
+<data name="LastUpdateAndContactErr" xml:space="preserve">
+  <value>LastUpdateAndContactErr</value>
 </data>
-<data name="LastUpdateAndContactLastUpdateDate_UTC" xml:space="preserve">
-  <value>LastUpdateAndContactLastUpdateDate_UTC</value>
+<data name="LastUpdateAndContactLastUpdateAndContactDate_UTC" xml:space="preserve">
+  <value>LastUpdateAndContactLastUpdateAndContactDate_UTC</value>
 </data>
-<data name="LastUpdateAndContactLastUpdateContactTVItemID" xml:space="preserve">
-  <value>LastUpdateAndContactLastUpdateContactTVItemID</value>
+<data name="LastUpdateAndContactLastUpdateAndContactTVItemID" xml:space="preserve">
+  <value>LastUpdateAndContactLastUpdateAndContactTVItemID</value>
 </data>
 <data name="LastUpdateAndContactHasErrors" xml:space="preserve">
   <value>LastUpdateAndContactHasErrors</value>
@@ -4578,8 +5667,8 @@
 <data name="LastUpdateAndTVTextError" xml:space="preserve">
   <value>LastUpdateAndTVTextError</value>
 </data>
-<data name="LastUpdateAndTVTextLastUpdateDate_UTC" xml:space="preserve">
-  <value>LastUpdateAndTVTextLastUpdateDate_UTC</value>
+<data name="LastUpdateAndTVTextLastUpdateAndTVTextDate_UTC" xml:space="preserve">
+  <value>LastUpdateAndTVTextLastUpdateAndTVTextDate_UTC</value>
 </data>
 <data name="LastUpdateAndTVTextLastUpdateDate_Local" xml:space="preserve">
   <value>LastUpdateAndTVTextLastUpdateDate_Local</value>

@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void Address_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "AddressID", "AddressTVItemID", "AddressType", "CountryTVItemID", "ProvinceTVItemID", "MunicipalityTVItemID", "StreetName", "StreetNumber", "StreetType", "PostalCode", "GoogleAddressText", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ParentTVItemID", "AddressTVText", "CountryTVText", "ProvinceTVText", "MunicipalityTVText", "LastUpdateContactTVText", "AddressTypeText", "StreetTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "AddressWeb", "AddressReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Address).GetProperties().OrderBy(c => c.Name))
@@ -126,14 +126,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.AddressGoogleAddressText);
                Assert.IsNotNull(CSSPModelsRes.AddressLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.AddressLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.AddressParentTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.AddressAddressTVText);
-               Assert.IsNotNull(CSSPModelsRes.AddressCountryTVText);
-               Assert.IsNotNull(CSSPModelsRes.AddressProvinceTVText);
-               Assert.IsNotNull(CSSPModelsRes.AddressMunicipalityTVText);
-               Assert.IsNotNull(CSSPModelsRes.AddressLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.AddressAddressTypeText);
-               Assert.IsNotNull(CSSPModelsRes.AddressStreetTypeText);
                Assert.IsNotNull(CSSPModelsRes.AddressHasErrors);
         }
         [TestMethod]
@@ -178,36 +170,12 @@ namespace CSSPModels.Tests
                int val13 = 45;
                address.LastUpdateContactTVItemID = val13;
                Assert.AreEqual(val13, address.LastUpdateContactTVItemID);
-               int val14 = 45;
-               address.ParentTVItemID = val14;
-               Assert.AreEqual(val14, address.ParentTVItemID);
-               string val15 = "Some text";
-               address.AddressTVText = val15;
-               Assert.AreEqual(val15, address.AddressTVText);
-               string val16 = "Some text";
-               address.CountryTVText = val16;
-               Assert.AreEqual(val16, address.CountryTVText);
-               string val17 = "Some text";
-               address.ProvinceTVText = val17;
-               Assert.AreEqual(val17, address.ProvinceTVText);
-               string val18 = "Some text";
-               address.MunicipalityTVText = val18;
-               Assert.AreEqual(val18, address.MunicipalityTVText);
-               string val19 = "Some text";
-               address.LastUpdateContactTVText = val19;
-               Assert.AreEqual(val19, address.LastUpdateContactTVText);
-               string val20 = "Some text";
-               address.AddressTypeText = val20;
-               Assert.AreEqual(val20, address.AddressTypeText);
-               string val21 = "Some text";
-               address.StreetTypeText = val21;
-               Assert.AreEqual(val21, address.StreetTypeText);
-               bool val22 = true;
-               address.HasErrors = val22;
-               Assert.AreEqual(val22, address.HasErrors);
-               IEnumerable<ValidationResult> val69 = new List<ValidationResult>().AsEnumerable();
-               address.ValidationResults = val69;
-               Assert.AreEqual(val69, address.ValidationResults);
+               bool val14 = true;
+               address.HasErrors = val14;
+               Assert.AreEqual(val14, address.HasErrors);
+               IEnumerable<ValidationResult> val49 = new List<ValidationResult>().AsEnumerable();
+               address.ValidationResults = val49;
+               Assert.AreEqual(val49, address.ValidationResults);
         }
         #endregion Tests
     }

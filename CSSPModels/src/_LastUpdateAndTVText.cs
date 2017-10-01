@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class LastUpdateAndTVText
+    public partial class LastUpdateAndTVText : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -15,19 +15,16 @@ namespace CSSPModels
         #region Properties not in DB
         public string Error { get; set; }
         [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
+        public DateTime LastUpdateAndTVTextDate_UTC { get; set; }
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_Local { get; set; }
         [StringLength(200, MinimumLength = 1)]
         public string TVText { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public LastUpdateAndTVText()
+        public LastUpdateAndTVText() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void RatingCurve_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "RatingCurveID", "HydrometricSiteID", "RatingCurveNumber", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "RatingCurveWeb", "RatingCurveReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.RatingCurve).GetProperties().OrderBy(c => c.Name))
@@ -118,7 +118,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.RatingCurveRatingCurveNumber);
                Assert.IsNotNull(CSSPModelsRes.RatingCurveLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.RatingCurveLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.RatingCurveLastUpdateContactTVText);
                Assert.IsNotNull(CSSPModelsRes.RatingCurveHasErrors);
         }
         [TestMethod]
@@ -139,15 +138,12 @@ namespace CSSPModels.Tests
                int val5 = 45;
                ratingCurve.LastUpdateContactTVItemID = val5;
                Assert.AreEqual(val5, ratingCurve.LastUpdateContactTVItemID);
-               string val6 = "Some text";
-               ratingCurve.LastUpdateContactTVText = val6;
-               Assert.AreEqual(val6, ratingCurve.LastUpdateContactTVText);
-               bool val7 = true;
-               ratingCurve.HasErrors = val7;
-               Assert.AreEqual(val7, ratingCurve.HasErrors);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               ratingCurve.ValidationResults = val24;
-               Assert.AreEqual(val24, ratingCurve.ValidationResults);
+               bool val6 = true;
+               ratingCurve.HasErrors = val6;
+               Assert.AreEqual(val6, ratingCurve.HasErrors);
+               IEnumerable<ValidationResult> val25 = new List<ValidationResult>().AsEnumerable();
+               ratingCurve.ValidationResults = val25;
+               Assert.AreEqual(val25, ratingCurve.ValidationResults);
         }
         #endregion Tests
     }

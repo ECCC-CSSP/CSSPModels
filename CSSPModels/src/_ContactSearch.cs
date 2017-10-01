@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class ContactSearch
+    public partial class ContactSearch : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -19,14 +19,11 @@ namespace CSSPModels
         public int ContactTVItemID { get; set; }
         [StringLength(255)]
         public string FullName { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public ContactSearch()
+        public ContactSearch() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

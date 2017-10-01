@@ -16,6 +16,8 @@ namespace CSSPModelsGenerateCodeHelper
         #region Functions public
         public void ModelsWithHelpGenerate(bool WithHelp)
         {
+            List<string> PropertiesToSkipList = new List<string>() { "ValidationResults", "HasErrors", "LastUpdateDate_UTC", "LastUpdateContactTVItemID" };
+            #region Variables and loading DLL properties
             FileInfo fiCSSPEnumsDLL = null;
             FileInfo fiCSSPServicesDLL = null;
             FileInfo fiCSSPModelsDLL = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll");
@@ -64,6 +66,8 @@ namespace CSSPModelsGenerateCodeHelper
                 ErrorEvent(new ErrorEventArgs("Could not read the file [" + fiCSSPModelsDLL.FullName + "]"));
                 return;
             }
+            #endregion Variables and loading DLL properties
+
 
             foreach (DLLTypeInfo dllTypeInfoModels in DLLTypeInfoCSSPModelsList)
             {
@@ -82,11 +86,35 @@ namespace CSSPModelsGenerateCodeHelper
                     continue;
                 }
 
-                //if (dllTypeInfoModels.Type.Name != "Address")
+                //if (dllTypeInfoModels.Type.Name != "AppErrLog")
                 //{
                 //    continue;
                 //}
 
+                #region Show type file in richTextBoxStatus
+                FileInfo fiCodeFile = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\src\" + dllTypeInfoModels.Type.Name + ".cs");
+
+                if (!fiCodeFile.Exists)
+                {
+                    NotMappedClass = true;
+                    fiCodeFile = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\src\_" + dllTypeInfoModels.Type.Name + ".cs");
+                    if (!fiCodeFile.Exists)
+                    {
+                        ErrorEvent(new ErrorEventArgs("Could not find file for [" + dllTypeInfoModels.Type.Name + "]"));
+                        return;
+                    }
+                }
+
+                StreamReader sr = fiCodeFile.OpenText();
+                string OriginalCodeFile = sr.ReadToEnd();
+                sr.Close();
+
+                StatusPermanentEvent(new StatusEventArgs(OriginalCodeFile));
+                Application.DoEvents();
+                #endregion Show type file in richTextBoxStatus
+
+
+                #region Top part
                 if (WithHelp) //------------------------------------------------------------------ help
                 {
                     sb.AppendLine(@"/*");
@@ -107,7 +135,9 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"");
                 sb.AppendLine(@"namespace CSSPModels");
                 sb.AppendLine(@"{");
+                #endregion Top part
 
+                #region Help of class
                 if (WithHelp) //------------------------------------------------------------------ help
                 {
                     sb.AppendLine(@"    /// <summary>");
@@ -157,43 +187,25 @@ namespace CSSPModelsGenerateCodeHelper
                     sb.AppendLine(@"    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>");
                     sb.AppendLine(@"    /// </summary>");
                 } //------------------------------------------------------------------ help
+                #endregion Help of class
 
-                FileInfo fiCodeFile = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\src\" + dllTypeInfoModels.Type.Name + ".cs");
-
-                if (!fiCodeFile.Exists)
-                {
-                    NotMappedClass = true;
-                    fiCodeFile = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\src\_" + dllTypeInfoModels.Type.Name + ".cs");
-                    if (!fiCodeFile.Exists)
-                    {
-                        ErrorEvent(new ErrorEventArgs("Could not find file for [" + dllTypeInfoModels.Type.Name + "]"));
-                        return;
-                    }
-                }
-
-                StreamReader sr = fiCodeFile.OpenText();
-                string OriginalCodeFile = sr.ReadToEnd();
-                sr.Close();
-
-                StatusPermanentEvent(new StatusEventArgs(OriginalCodeFile));
-                Application.DoEvents();
-
+                #region doing type -- type[Web] and type[Report] will be done later
                 if (NotMappedClass)
                 {
                     sb.AppendLine(@"    [NotMapped]");
+                    sb.AppendLine(@"    public partial class " + dllTypeInfoModels.Type.Name + " : Error");
                 }
-                sb.AppendLine(@"    public partial class " + dllTypeInfoModels.Type.Name);
+                else
+                {
+                    sb.AppendLine(@"    public partial class " + dllTypeInfoModels.Type.Name + " : LastUpdate");
+                }
                 sb.AppendLine(@"    {");
                 sb.AppendLine(@"        #region Properties in DB");
                 if (!NotMappedClass)
                 {
                     foreach (DLLPropertyInfo dllPropertyInfo in dllTypeInfoModels.PropertyInfoList)
                     {
-                        if (dllPropertyInfo.CSSPProp.HasNotMappedAttribute)
-                        {
-                            continue;
-                        }
-                        if (dllPropertyInfo.CSSPProp.PropName == "ValidationResults")
+                        if (dllPropertyInfo.CSSPProp.HasNotMappedAttribute || PropertiesToSkipList.Contains(dllPropertyInfo.CSSPProp.PropName))
                         {
                             continue;
                         }
@@ -242,7 +254,7 @@ namespace CSSPModelsGenerateCodeHelper
                             continue;
                         }
                     }
-                    if (dllPropertyInfo.CSSPProp.PropName == "ValidationResults")
+                    if (PropertiesToSkipList.Contains(dllPropertyInfo.CSSPProp.PropName))
                     {
                         continue;
                     }
@@ -260,20 +272,13 @@ namespace CSSPModelsGenerateCodeHelper
                             sb.Append(sbCustomAttribute.ToString());
                             sb.AppendLine(@"        /// </summary>");
                         }
-
-                        if (dllPropertyInfo.CSSPProp.PropName == "HasErrors")
-                        {
-                            sb.AppendLine(@"        /// <summary>");
-                            sb.AppendLine(@"        /// > [!NOTE]");
-                            sb.AppendLine(@"        /// > <para>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of [" + dllTypeInfoModels.Type.Name + "](CSSPModels." + dllTypeInfoModels.Type.Name + ")</para>");
-                            sb.AppendLine(@"        /// </summary>");
-                        }
                     }
 
                     if (!WriteAttributes(dllPropertyInfo, sb))
                     {
                         return;
                     }
+
                     string PropTypeText = GetTypeText(dllPropertyInfo.CSSPProp.PropType);
                     if (string.IsNullOrWhiteSpace(PropTypeText))
                     {
@@ -288,6 +293,10 @@ namespace CSSPModelsGenerateCodeHelper
                     {
                         sb.AppendLine(@"        public virtual List<int> " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
                     }
+                    else if (PropTypeText.EndsWith("Web") || PropTypeText.EndsWith("Report"))
+                    {
+                        sb.AppendLine(@"        public " + PropTypeText + " " + PropTypeText + " { get; set; }");
+                    }
                     else
                     {
                         sb.AppendLine(@"        public " + (dllPropertyInfo.CSSPProp.IsList ?
@@ -296,22 +305,10 @@ namespace CSSPModelsGenerateCodeHelper
                             " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
                     }
                 }
-                if (WithHelp) //------------------------------------------------------------------ help
-                {
-                    sb.AppendLine(@"        /// <summary>");
-                    sb.AppendLine(@"        /// > [!NOTE]");
-                    sb.AppendLine(@"        /// > <para>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of [" + dllTypeInfoModels.Type.Name + "](CSSPModels." + dllTypeInfoModels.Type.Name + ")</para>");
-                    sb.AppendLine(@"        /// </summary>");
-                }
-                if (!NotMappedClass)
-                {
-                    sb.AppendLine(@"        [NotMapped]");
-                }
-                sb.AppendLine(@"        public IEnumerable<ValidationResult> ValidationResults { get; set; }");
                 sb.AppendLine(@"        #endregion Properties not in DB");
                 sb.AppendLine(@"");
                 sb.AppendLine(@"        #region Constructors");
-                sb.AppendLine(@"        public " + dllTypeInfoModels.Type.Name + "()");
+                sb.AppendLine(@"        public " + dllTypeInfoModels.Type.Name + "() : base()");
                 sb.AppendLine(@"        {");
                 if (dllTypeInfoModels.Type.Name == "VPFull")
                 {
@@ -379,12 +376,188 @@ namespace CSSPModelsGenerateCodeHelper
                     sb.AppendLine(@"            Error = """";");
                 }
 
-                sb.AppendLine(@"            ValidationResults = new List<ValidationResult>();");
+                //sb.AppendLine(@"            ValidationResults = new List<ValidationResult>();");
                 sb.AppendLine(@"        }");
                 sb.AppendLine(@"        #endregion Constructors");
                 sb.AppendLine(@"    }");
+                #endregion doing type -- type[Web] and type[Report] will be done later
+
+                #region doing type[Web]
+                if (!NotMappedClass)
+                {
+                    foreach (DLLTypeInfo dllTypeInfoModelsWeb in DLLTypeInfoCSSPModelsList)
+                    {
+                        if (dllTypeInfoModelsWeb.Type.Name == dllTypeInfoModels.Type.Name + "Web")
+                        {
+                            sb.AppendLine(@"    [NotMapped]");
+                            sb.AppendLine(@"    public partial class " + dllTypeInfoModelsWeb.Type.Name);
+                            sb.AppendLine(@"    {");
+                            sb.AppendLine(@"        #region Properties for web information");
+
+                            foreach (DLLPropertyInfo dllPropertyInfo in dllTypeInfoModelsWeb.PropertyInfoList)
+                            {
+                                //if (!NotMappedClass)
+                                //{
+                                //    if (!dllPropertyInfo.CSSPProp.HasNotMappedAttribute)
+                                //    {
+                                //        continue;
+                                //    }
+                                //}
+                                //if (PropertiesToSkipList.Contains(dllPropertyInfo.CSSPProp.PropName))
+                                //{
+                                //    continue;
+                                //}
+
+                                if (WithHelp) //------------------------------------------------------------------ help
+                                {
+                                    StringBuilder sbCustomAttribute = new StringBuilder();
+                                    GetCustomAttribute(dllPropertyInfo, sbCustomAttribute);
+
+                                    if (sbCustomAttribute.Length > 0)
+                                    {
+                                        sb.AppendLine(@"        /// <summary>");
+                                        sb.AppendLine(@"        /// > [!NOTE]");
+                                        sb.AppendLine(@"        /// > <para>**Other custom attributes**</para>");
+                                        sb.Append(sbCustomAttribute.ToString());
+                                        sb.AppendLine(@"        /// </summary>");
+                                    }
+                                }
+
+                                if (!WriteAttributes(dllPropertyInfo, sb))
+                                {
+                                    return;
+                                }
+
+                                string PropTypeText = GetTypeText(dllPropertyInfo.CSSPProp.PropType);
+                                if (string.IsNullOrWhiteSpace(PropTypeText))
+                                {
+                                    StatusPermanent2Event(new StatusEventArgs(dllPropertyInfo.CSSPProp.PropType + " is not implemented"));
+                                    return;
+                                }
+                                //if (PropTypeText == "string" && dllPropertyInfo.CSSPProp.IsList)
+                                //{
+                                //    sb.AppendLine(@"        public virtual List<string> " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                                //}
+                                //else if (PropTypeText == "int" && dllPropertyInfo.CSSPProp.IsList)
+                                //{
+                                //    sb.AppendLine(@"        public virtual List<int> " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                                //}
+                                //else if (PropTypeText.EndsWith("Web") || PropTypeText.EndsWith("Report"))
+                                //{
+                                //    sb.AppendLine(@"        public " + PropTypeText + " " + PropTypeText + " { get; set; }");
+                                //}
+                                //else
+                                //{
+                                    sb.AppendLine(@"        public " + (dllPropertyInfo.CSSPProp.IsList ?
+                                        PropTypeText.Replace(dllPropertyInfo.CSSPProp.PropType, "List<" + dllPropertyInfo.CSSPProp.PropType + ">") :
+                                        PropTypeText) + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") +
+                                        " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                                //}
+                            }
+
+                            sb.AppendLine(@"        #endregion Properties for web information");
+                            sb.AppendLine(@"");
+                            sb.AppendLine(@"        #region Constructors");
+                            sb.AppendLine(@"        public " + dllTypeInfoModelsWeb.Type.Name + "()");
+                            sb.AppendLine(@"        {");
+                            sb.AppendLine(@"        }");
+                            sb.AppendLine(@"        #endregion Constructors");
+                            sb.AppendLine(@"    }");
+
+                        }
+                    }
+                }
+                #endregion doing type[Web]
+                #region doing type[Report]
+                if (!NotMappedClass)
+                {
+                    foreach (DLLTypeInfo dllTypeInfoModelsReport in DLLTypeInfoCSSPModelsList)
+                    {
+                        if (dllTypeInfoModelsReport.Type.Name == dllTypeInfoModels.Type.Name + "Report")
+                        {
+                            sb.AppendLine(@"    [NotMapped]");
+                            sb.AppendLine(@"    public partial class " + dllTypeInfoModelsReport.Type.Name);
+                            sb.AppendLine(@"    {");
+                            sb.AppendLine(@"        #region Properties for report information");
+
+                            foreach (DLLPropertyInfo dllPropertyInfo in dllTypeInfoModelsReport.PropertyInfoList)
+                            {
+                                //if (!NotMappedClass)
+                                //{
+                                //    if (!dllPropertyInfo.CSSPProp.HasNotMappedAttribute)
+                                //    {
+                                //        continue;
+                                //    }
+                                //}
+                                //if (PropertiesToSkipList.Contains(dllPropertyInfo.CSSPProp.PropName))
+                                //{
+                                //    continue;
+                                //}
+
+                                if (WithHelp) //------------------------------------------------------------------ help
+                                {
+                                    StringBuilder sbCustomAttribute = new StringBuilder();
+                                    GetCustomAttribute(dllPropertyInfo, sbCustomAttribute);
+
+                                    if (sbCustomAttribute.Length > 0)
+                                    {
+                                        sb.AppendLine(@"        /// <summary>");
+                                        sb.AppendLine(@"        /// > [!NOTE]");
+                                        sb.AppendLine(@"        /// > <para>**Other custom attributes**</para>");
+                                        sb.Append(sbCustomAttribute.ToString());
+                                        sb.AppendLine(@"        /// </summary>");
+                                    }
+                                }
+
+                                if (!WriteAttributes(dllPropertyInfo, sb))
+                                {
+                                    return;
+                                }
+
+                                string PropTypeText = GetTypeText(dllPropertyInfo.CSSPProp.PropType);
+                                if (string.IsNullOrWhiteSpace(PropTypeText))
+                                {
+                                    StatusPermanent2Event(new StatusEventArgs(dllPropertyInfo.CSSPProp.PropType + " is not implemented"));
+                                    return;
+                                }
+                                //if (PropTypeText == "string" && dllPropertyInfo.CSSPProp.IsList)
+                                //{
+                                //    sb.AppendLine(@"        public virtual List<string> " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                                //}
+                                //else if (PropTypeText == "int" && dllPropertyInfo.CSSPProp.IsList)
+                                //{
+                                //    sb.AppendLine(@"        public virtual List<int> " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                                //}
+                                //else if (PropTypeText.EndsWith("Web") || PropTypeText.EndsWith("Report"))
+                                //{
+                                //    sb.AppendLine(@"        public " + PropTypeText + " " + PropTypeText + " { get; set; }");
+                                //}
+                                //else
+                                //{
+                                sb.AppendLine(@"        public " + (dllPropertyInfo.CSSPProp.IsList ?
+                                    PropTypeText.Replace(dllPropertyInfo.CSSPProp.PropType, "List<" + dllPropertyInfo.CSSPProp.PropType + ">") :
+                                    PropTypeText) + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") +
+                                    " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                                //}
+                            }
+
+                            sb.AppendLine(@"        #endregion Properties for report information");
+                            sb.AppendLine(@"");
+                            sb.AppendLine(@"        #region Constructors");
+                            sb.AppendLine(@"        public " + dllTypeInfoModelsReport.Type.Name + "()");
+                            sb.AppendLine(@"        {");
+                            sb.AppendLine(@"        }");
+                            sb.AppendLine(@"        #endregion Constructors");
+                            sb.AppendLine(@"    }");
+
+                        }
+                    }
+                }
+                #endregion doing type[Web]
+
                 sb.AppendLine(@"}");
 
+                #region Comparing existing document with created document
                 if (!WithHelp) //------------------------------------------------------------------ help
                 {
                     List<string> OriginalLineList = new List<string>();
@@ -448,6 +621,7 @@ namespace CSSPModelsGenerateCodeHelper
                         break;
                     }
                 } //------------------------------------------------------------------ help
+                #endregion Comparing existing document with created document
 
                 FileInfo fiNew = new FileInfo(fiCodeFile.FullName.Replace(@"\src\", @"\srcWithHelp\"));
                 using (StreamWriter sw = fiNew.CreateText())
@@ -582,6 +756,14 @@ namespace CSSPModelsGenerateCodeHelper
                         {
                             return propType;
                         }
+                        else if (propType.EndsWith("Web"))
+                        {
+                            return propType;
+                        }
+                        else if (propType.EndsWith("Report"))
+                        {
+                            return propType;
+                        }
                         else
                         {
                             return "";
@@ -632,6 +814,14 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"        [CSSPAllowNull]");
             }
             if (dllPropertyInfo.CSSPProp.PropType == "String" && dllPropertyInfo.CSSPProp.IsNullable)
+            {
+                sb.AppendLine(@"        [CSSPAllowNull]");
+            }
+            if (dllPropertyInfo.CSSPProp.PropType.EndsWith("Web") && dllPropertyInfo.CSSPProp.IsNullable)
+            {
+                sb.AppendLine(@"        [CSSPAllowNull]");
+            }
+            if (dllPropertyInfo.CSSPProp.PropType.EndsWith("Report") && dllPropertyInfo.CSSPProp.IsNullable)
             {
                 sb.AppendLine(@"        [CSSPAllowNull]");
             }

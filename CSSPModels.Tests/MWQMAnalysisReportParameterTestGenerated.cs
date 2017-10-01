@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void MWQMAnalysisReportParameter_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMAnalysisReportParameterID", "SubsectorTVItemID", "AnalysisName", "AnalysisReportYear", "StartDate", "EndDate", "AnalysisCalculationType", "NumberOfRuns", "FullYear", "SalinityHighlightDeviationFromAverage", "ShortRangeNumberOfDays", "MidRangeNumberOfDays", "DryLimit24h", "DryLimit48h", "DryLimit72h", "DryLimit96h", "WetLimit24h", "WetLimit48h", "WetLimit72h", "WetLimit96h", "RunsToOmit", "ExcelTVFileTVItemID", "Command", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ExcelTVFileTVText", "CommandText", "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MWQMAnalysisReportParameterWeb", "MWQMAnalysisReportParameterReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMAnalysisReportParameter).GetProperties().OrderBy(c => c.Name))
@@ -138,9 +138,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.MWQMAnalysisReportParameterCommand);
                Assert.IsNotNull(CSSPModelsRes.MWQMAnalysisReportParameterLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.MWQMAnalysisReportParameterLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MWQMAnalysisReportParameterExcelTVFileTVText);
-               Assert.IsNotNull(CSSPModelsRes.MWQMAnalysisReportParameterCommandText);
-               Assert.IsNotNull(CSSPModelsRes.MWQMAnalysisReportParameterLastUpdateContactTVText);
                Assert.IsNotNull(CSSPModelsRes.MWQMAnalysisReportParameterHasErrors);
         }
         [TestMethod]
@@ -221,21 +218,12 @@ namespace CSSPModels.Tests
                int val25 = 45;
                mWQMAnalysisReportParameter.LastUpdateContactTVItemID = val25;
                Assert.AreEqual(val25, mWQMAnalysisReportParameter.LastUpdateContactTVItemID);
-               string val26 = "Some text";
-               mWQMAnalysisReportParameter.ExcelTVFileTVText = val26;
-               Assert.AreEqual(val26, mWQMAnalysisReportParameter.ExcelTVFileTVText);
-               string val27 = "Some text";
-               mWQMAnalysisReportParameter.CommandText = val27;
-               Assert.AreEqual(val27, mWQMAnalysisReportParameter.CommandText);
-               string val28 = "Some text";
-               mWQMAnalysisReportParameter.LastUpdateContactTVText = val28;
-               Assert.AreEqual(val28, mWQMAnalysisReportParameter.LastUpdateContactTVText);
-               bool val29 = true;
-               mWQMAnalysisReportParameter.HasErrors = val29;
-               Assert.AreEqual(val29, mWQMAnalysisReportParameter.HasErrors);
-               IEnumerable<ValidationResult> val90 = new List<ValidationResult>().AsEnumerable();
-               mWQMAnalysisReportParameter.ValidationResults = val90;
-               Assert.AreEqual(val90, mWQMAnalysisReportParameter.ValidationResults);
+               bool val26 = true;
+               mWQMAnalysisReportParameter.HasErrors = val26;
+               Assert.AreEqual(val26, mWQMAnalysisReportParameter.HasErrors);
+               IEnumerable<ValidationResult> val85 = new List<ValidationResult>().AsEnumerable();
+               mWQMAnalysisReportParameter.ValidationResults = val85;
+               Assert.AreEqual(val85, mWQMAnalysisReportParameter.ValidationResults);
         }
         #endregion Tests
     }

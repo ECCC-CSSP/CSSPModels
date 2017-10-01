@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void DocTemplate_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "DocTemplateID", "Language", "TVType", "TVFileTVItemID", "FileName", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TVTypeText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "DocTemplateWeb", "DocTemplateReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.DocTemplate).GetProperties().OrderBy(c => c.Name))
@@ -120,9 +120,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.DocTemplateFileName);
                Assert.IsNotNull(CSSPModelsRes.DocTemplateLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.DocTemplateLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.DocTemplateLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.DocTemplateLanguageText);
-               Assert.IsNotNull(CSSPModelsRes.DocTemplateTVTypeText);
                Assert.IsNotNull(CSSPModelsRes.DocTemplateHasErrors);
         }
         [TestMethod]
@@ -149,21 +146,12 @@ namespace CSSPModels.Tests
                int val7 = 45;
                docTemplate.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, docTemplate.LastUpdateContactTVItemID);
-               string val8 = "Some text";
-               docTemplate.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, docTemplate.LastUpdateContactTVText);
-               string val9 = "Some text";
-               docTemplate.LanguageText = val9;
-               Assert.AreEqual(val9, docTemplate.LanguageText);
-               string val10 = "Some text";
-               docTemplate.TVTypeText = val10;
-               Assert.AreEqual(val10, docTemplate.TVTypeText);
-               bool val11 = true;
-               docTemplate.HasErrors = val11;
-               Assert.AreEqual(val11, docTemplate.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               docTemplate.ValidationResults = val36;
-               Assert.AreEqual(val36, docTemplate.ValidationResults);
+               bool val8 = true;
+               docTemplate.HasErrors = val8;
+               Assert.AreEqual(val8, docTemplate.HasErrors);
+               IEnumerable<ValidationResult> val31 = new List<ValidationResult>().AsEnumerable();
+               docTemplate.ValidationResults = val31;
+               Assert.AreEqual(val31, docTemplate.ValidationResults);
         }
         #endregion Tests
     }

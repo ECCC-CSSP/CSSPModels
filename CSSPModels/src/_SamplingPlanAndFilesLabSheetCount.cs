@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class SamplingPlanAndFilesLabSheetCount
+    public partial class SamplingPlanAndFilesLabSheetCount : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -19,14 +19,11 @@ namespace CSSPModels
         public int LabSheetTransferredCount { get; set; }
         public virtual SamplingPlan SamplingPlan { get; set; }
         public virtual TVFile TVFileSamplingPlanFileTXT { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public SamplingPlanAndFilesLabSheetCount()
+        public SamplingPlanAndFilesLabSheetCount() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

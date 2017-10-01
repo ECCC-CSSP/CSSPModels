@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class OtherFilesToUpload
+    public partial class OtherFilesToUpload : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -17,15 +17,12 @@ namespace CSSPModels
         [Range(1, -1)]
         public int MikeScenarioID { get; set; }
         public virtual List<TVFile> TVFileList { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public OtherFilesToUpload()
+        public OtherFilesToUpload() : base()
         {
             TVFileList = new List<TVFile>();
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

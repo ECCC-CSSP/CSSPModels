@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class MapInfoPoint
+    public partial class MapInfoPoint : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -19,28 +19,47 @@ namespace CSSPModels
         public double Lat { get; set; }
         [Range(-180.0D, 180.0D)]
         public double Lng { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
+        public MapInfoPointWeb MapInfoPointWeb { get; set; }
         [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        [CSSPAllowNull]
+        public MapInfoPointReport MapInfoPointReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public MapInfoPoint()
+        public MapInfoPoint() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class MapInfoPointWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public MapInfoPointWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class MapInfoPointReport
+    {
+        #region Properties for report information
+        public string MapInfoPointReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public MapInfoPointReport()
+        {
         }
         #endregion Constructors
     }

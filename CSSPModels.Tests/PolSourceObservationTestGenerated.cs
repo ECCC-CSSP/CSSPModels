@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void PolSourceObservation_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "PolSourceObservationID", "PolSourceSiteID", "ObservationDate_Local", "ContactTVItemID", "Observation_ToBeDeleted", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "PolSourceSiteTVText", "ContactTVText", "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "PolSourceObservationWeb", "PolSourceObservationReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.PolSourceObservation).GetProperties().OrderBy(c => c.Name))
@@ -120,9 +120,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.PolSourceObservationObservation_ToBeDeleted);
                Assert.IsNotNull(CSSPModelsRes.PolSourceObservationLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.PolSourceObservationLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObservationPolSourceSiteTVText);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObservationContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObservationLastUpdateContactTVText);
                Assert.IsNotNull(CSSPModelsRes.PolSourceObservationHasErrors);
         }
         [TestMethod]
@@ -149,21 +146,12 @@ namespace CSSPModels.Tests
                int val7 = 45;
                polSourceObservation.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, polSourceObservation.LastUpdateContactTVItemID);
-               string val8 = "Some text";
-               polSourceObservation.PolSourceSiteTVText = val8;
-               Assert.AreEqual(val8, polSourceObservation.PolSourceSiteTVText);
-               string val9 = "Some text";
-               polSourceObservation.ContactTVText = val9;
-               Assert.AreEqual(val9, polSourceObservation.ContactTVText);
-               string val10 = "Some text";
-               polSourceObservation.LastUpdateContactTVText = val10;
-               Assert.AreEqual(val10, polSourceObservation.LastUpdateContactTVText);
-               bool val11 = true;
-               polSourceObservation.HasErrors = val11;
-               Assert.AreEqual(val11, polSourceObservation.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               polSourceObservation.ValidationResults = val36;
-               Assert.AreEqual(val36, polSourceObservation.ValidationResults);
+               bool val8 = true;
+               polSourceObservation.HasErrors = val8;
+               Assert.AreEqual(val8, polSourceObservation.HasErrors);
+               IEnumerable<ValidationResult> val31 = new List<ValidationResult>().AsEnumerable();
+               polSourceObservation.ValidationResults = val31;
+               Assert.AreEqual(val31, polSourceObservation.ValidationResults);
         }
         #endregion Tests
     }

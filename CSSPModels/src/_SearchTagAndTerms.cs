@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class SearchTagAndTerms
+    public partial class SearchTagAndTerms : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -20,15 +20,12 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "SearchTagEnum", EnumType = "SearchTag")]
         public string SearchTagText { get; set; }
         public virtual List<string> SearchTermList { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public SearchTagAndTerms()
+        public SearchTagAndTerms() : base()
         {
             SearchTermList = new List<string>();
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

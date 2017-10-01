@@ -41,8 +41,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TideLocation_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "TideLocationID", "Zone", "Name", "Prov", "sid", "Lat", "Lng",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TideLocationID", "Zone", "Name", "Prov", "sid", "Lat", "Lng", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TideLocationWeb", "TideLocationReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TideLocation).GetProperties().OrderBy(c => c.Name))
@@ -120,6 +120,8 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.TideLocationsid);
                Assert.IsNotNull(CSSPModelsRes.TideLocationLat);
                Assert.IsNotNull(CSSPModelsRes.TideLocationLng);
+               Assert.IsNotNull(CSSPModelsRes.TideLocationLastUpdateDate_UTC);
+               Assert.IsNotNull(CSSPModelsRes.TideLocationLastUpdateContactTVItemID);
                Assert.IsNotNull(CSSPModelsRes.TideLocationHasErrors);
         }
         [TestMethod]
@@ -146,12 +148,18 @@ namespace CSSPModels.Tests
                double val7 = 87.9D;
                tideLocation.Lng = val7;
                Assert.AreEqual(val7, tideLocation.Lng);
-               bool val8 = true;
-               tideLocation.HasErrors = val8;
-               Assert.AreEqual(val8, tideLocation.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>().AsEnumerable();
-               tideLocation.ValidationResults = val27;
-               Assert.AreEqual(val27, tideLocation.ValidationResults);
+               DateTime val8 = new DateTime(2010, 3, 4);
+               tideLocation.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, tideLocation.LastUpdateDate_UTC);
+               int val9 = 45;
+               tideLocation.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, tideLocation.LastUpdateContactTVItemID);
+               bool val10 = true;
+               tideLocation.HasErrors = val10;
+               Assert.AreEqual(val10, tideLocation.HasErrors);
+               IEnumerable<ValidationResult> val37 = new List<ValidationResult>().AsEnumerable();
+               tideLocation.ValidationResults = val37;
+               Assert.AreEqual(val37, tideLocation.ValidationResults);
         }
         #endregion Tests
     }

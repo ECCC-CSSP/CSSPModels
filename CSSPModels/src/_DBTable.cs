@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class DBTable
+    public partial class DBTable : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -17,14 +17,11 @@ namespace CSSPModels
         public string TableName { get; set; }
         [StringLength(3, MinimumLength = 1)]
         public string Plurial { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public DBTable()
+        public DBTable() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

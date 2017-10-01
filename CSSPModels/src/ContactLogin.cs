@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class ContactLogin
+    public partial class ContactLogin : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -18,34 +18,49 @@ namespace CSSPModels
         public string LoginEmail { get; set; }
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
+        public ContactLoginWeb ContactLoginWeb { get; set; }
         [NotMapped]
-        [StringLength(100, MinimumLength = 6)]
-        public string Password { get; set; }
-        [NotMapped]
-        [StringLength(100, MinimumLength = 6)]
-        public string ConfirmPassword { get; set; }
-        [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        [CSSPAllowNull]
+        public ContactLoginReport ContactLoginReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public ContactLogin()
+        public ContactLogin() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class ContactLoginWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        public string Password { get; set; }
+        public string ConfirmPassword { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public ContactLoginWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class ContactLoginReport
+    {
+        #region Properties for report information
+        public string ContactLoginReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public ContactLoginReport()
+        {
         }
         #endregion Constructors
     }

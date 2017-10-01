@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class PolyPoint
+    public partial class PolyPoint : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -18,14 +18,11 @@ namespace CSSPModels
         [Range(-90.0D, 90.0D)]
         public double YCoord { get; set; }
         public double Z { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public PolyPoint()
+        public PolyPoint() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

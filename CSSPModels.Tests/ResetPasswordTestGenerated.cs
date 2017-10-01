@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void ResetPassword_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ResetPasswordID", "Email", "ExpireDate_Local", "Code", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "Password", "ConfirmPassword", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "ResetPasswordWeb", "ResetPasswordReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ResetPassword).GetProperties().OrderBy(c => c.Name))
@@ -119,9 +119,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.ResetPasswordCode);
                Assert.IsNotNull(CSSPModelsRes.ResetPasswordLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.ResetPasswordLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.ResetPasswordLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.ResetPasswordPassword);
-               Assert.IsNotNull(CSSPModelsRes.ResetPasswordConfirmPassword);
                Assert.IsNotNull(CSSPModelsRes.ResetPasswordHasErrors);
         }
         [TestMethod]
@@ -145,21 +142,12 @@ namespace CSSPModels.Tests
                int val6 = 45;
                resetPassword.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, resetPassword.LastUpdateContactTVItemID);
-               string val7 = "Some text";
-               resetPassword.LastUpdateContactTVText = val7;
-               Assert.AreEqual(val7, resetPassword.LastUpdateContactTVText);
-               string val8 = "Some text";
-               resetPassword.Password = val8;
-               Assert.AreEqual(val8, resetPassword.Password);
-               string val9 = "Some text";
-               resetPassword.ConfirmPassword = val9;
-               Assert.AreEqual(val9, resetPassword.ConfirmPassword);
-               bool val10 = true;
-               resetPassword.HasErrors = val10;
-               Assert.AreEqual(val10, resetPassword.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               resetPassword.ValidationResults = val33;
-               Assert.AreEqual(val33, resetPassword.ValidationResults);
+               bool val7 = true;
+               resetPassword.HasErrors = val7;
+               Assert.AreEqual(val7, resetPassword.HasErrors);
+               IEnumerable<ValidationResult> val28 = new List<ValidationResult>().AsEnumerable();
+               resetPassword.ValidationResults = val28;
+               Assert.AreEqual(val28, resetPassword.ValidationResults);
         }
         #endregion Tests
     }

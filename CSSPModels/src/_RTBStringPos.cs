@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class RTBStringPos
+    public partial class RTBStringPos : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -19,14 +19,11 @@ namespace CSSPModels
         public int EndPos { get; set; }
         public string Text { get; set; }
         public string TagText { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public RTBStringPos()
+        public RTBStringPos() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

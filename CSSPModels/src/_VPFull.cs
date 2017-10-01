@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class VPFull
+    public partial class VPFull : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -16,16 +16,13 @@ namespace CSSPModels
         public virtual VPScenario VPScenario { get; set; }
         public virtual List<VPAmbient> VPAmbientList { get; set; }
         public virtual List<VPResult> VPResultList { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public VPFull()
+        public VPFull() : base()
         {
             VPAmbientList = new List<VPAmbient>();
             VPResultList = new List<VPResult>();
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void MWQMSubsector_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSubsectorID", "MWQMSubsectorTVItemID", "SubsectorHistoricKey", "TideLocationSIDText", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "SubsectorTVText", "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "MWQMSubsectorWeb", "MWQMSubsectorReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMSubsector).GetProperties().OrderBy(c => c.Name))
@@ -119,8 +119,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.MWQMSubsectorTideLocationSIDText);
                Assert.IsNotNull(CSSPModelsRes.MWQMSubsectorLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.MWQMSubsectorLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSubsectorSubsectorTVText);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSubsectorLastUpdateContactTVText);
                Assert.IsNotNull(CSSPModelsRes.MWQMSubsectorHasErrors);
         }
         [TestMethod]
@@ -144,18 +142,12 @@ namespace CSSPModels.Tests
                int val6 = 45;
                mWQMSubsector.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, mWQMSubsector.LastUpdateContactTVItemID);
-               string val7 = "Some text";
-               mWQMSubsector.SubsectorTVText = val7;
-               Assert.AreEqual(val7, mWQMSubsector.SubsectorTVText);
-               string val8 = "Some text";
-               mWQMSubsector.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, mWQMSubsector.LastUpdateContactTVText);
-               bool val9 = true;
-               mWQMSubsector.HasErrors = val9;
-               Assert.AreEqual(val9, mWQMSubsector.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               mWQMSubsector.ValidationResults = val30;
-               Assert.AreEqual(val30, mWQMSubsector.ValidationResults);
+               bool val7 = true;
+               mWQMSubsector.HasErrors = val7;
+               Assert.AreEqual(val7, mWQMSubsector.HasErrors);
+               IEnumerable<ValidationResult> val28 = new List<ValidationResult>().AsEnumerable();
+               mWQMSubsector.ValidationResults = val28;
+               Assert.AreEqual(val28, mWQMSubsector.ValidationResults);
         }
         #endregion Tests
     }

@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    public partial class VPAmbient
+    public partial class VPAmbient : LastUpdate
     {
         #region Properties in DB
         [Key]
@@ -35,28 +35,47 @@ namespace CSSPModels
         public double FarFieldCurrentDirection_deg { get; set; }
         [Range(0.0D, 1.0D)]
         public double FarFieldDiffusionCoefficient { get; set; }
-        [CSSPAfter(Year = 1980)]
-        public DateTime LastUpdateDate_UTC { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
-        public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
         [NotMapped]
-        [StringLength(200)]
         [CSSPAllowNull]
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
-        public string LastUpdateContactTVText { get; set; }
+        public VPAmbientWeb VPAmbientWeb { get; set; }
         [NotMapped]
-        public bool HasErrors { get; set; }
-        [NotMapped]
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
+        [CSSPAllowNull]
+        public VPAmbientReport VPAmbientReport { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public VPAmbient()
+        public VPAmbient() : base()
         {
-            ValidationResults = new List<ValidationResult>();
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class VPAmbientWeb
+    {
+        #region Properties for web information
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        public string LastUpdateContactTVText { get; set; }
+        #endregion Properties for web information
+
+        #region Constructors
+        public VPAmbientWeb()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class VPAmbientReport
+    {
+        #region Properties for report information
+        public string VPAmbientReportTest { get; set; }
+        #endregion Properties for report information
+
+        #region Constructors
+        public VPAmbientReport()
+        {
         }
         #endregion Constructors
     }

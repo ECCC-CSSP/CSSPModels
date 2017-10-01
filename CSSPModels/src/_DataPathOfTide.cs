@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class DataPathOfTide
+    public partial class DataPathOfTide : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -21,16 +21,13 @@ namespace CSSPModels
         [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "WebTideDataSetEnum", EnumType = "WebTideDataSet")]
         public string WebTideDataSetText { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public DataPathOfTide()
+        public DataPathOfTide() : base()
         {
             Text = "";
             WebTideDataSet = WebTideDataSetEnum.Error;
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

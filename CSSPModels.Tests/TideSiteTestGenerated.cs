@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void TideSite_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TideSiteID", "TideSiteTVItemID", "WebTideModel", "WebTideDatum_m", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "TideSiteTVText", "LastUpdateContactTVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "TideSiteWeb", "TideSiteReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.TideSite).GetProperties().OrderBy(c => c.Name))
@@ -119,8 +119,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.TideSiteWebTideDatum_m);
                Assert.IsNotNull(CSSPModelsRes.TideSiteLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.TideSiteLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.TideSiteTideSiteTVText);
-               Assert.IsNotNull(CSSPModelsRes.TideSiteLastUpdateContactTVText);
                Assert.IsNotNull(CSSPModelsRes.TideSiteHasErrors);
         }
         [TestMethod]
@@ -144,18 +142,12 @@ namespace CSSPModels.Tests
                int val6 = 45;
                tideSite.LastUpdateContactTVItemID = val6;
                Assert.AreEqual(val6, tideSite.LastUpdateContactTVItemID);
-               string val7 = "Some text";
-               tideSite.TideSiteTVText = val7;
-               Assert.AreEqual(val7, tideSite.TideSiteTVText);
-               string val8 = "Some text";
-               tideSite.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, tideSite.LastUpdateContactTVText);
-               bool val9 = true;
-               tideSite.HasErrors = val9;
-               Assert.AreEqual(val9, tideSite.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               tideSite.ValidationResults = val30;
-               Assert.AreEqual(val30, tideSite.ValidationResults);
+               bool val7 = true;
+               tideSite.HasErrors = val7;
+               Assert.AreEqual(val7, tideSite.HasErrors);
+               IEnumerable<ValidationResult> val28 = new List<ValidationResult>().AsEnumerable();
+               tideSite.ValidationResults = val28;
+               Assert.AreEqual(val28, tideSite.ValidationResults);
         }
         #endregion Tests
     }

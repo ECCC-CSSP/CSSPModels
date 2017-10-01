@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void Log_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LogID", "TableName", "ID", "LogCommand", "Information", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LogCommandText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "LogWeb", "LogReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Log).GetProperties().OrderBy(c => c.Name))
@@ -120,8 +120,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.LogInformation);
                Assert.IsNotNull(CSSPModelsRes.LogLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.LogLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.LogLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.LogLogCommandText);
                Assert.IsNotNull(CSSPModelsRes.LogHasErrors);
         }
         [TestMethod]
@@ -148,18 +146,12 @@ namespace CSSPModels.Tests
                int val7 = 45;
                log.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, log.LastUpdateContactTVItemID);
-               string val8 = "Some text";
-               log.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, log.LastUpdateContactTVText);
-               string val9 = "Some text";
-               log.LogCommandText = val9;
-               Assert.AreEqual(val9, log.LogCommandText);
-               bool val10 = true;
-               log.HasErrors = val10;
-               Assert.AreEqual(val10, log.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
-               log.ValidationResults = val33;
-               Assert.AreEqual(val33, log.ValidationResults);
+               bool val8 = true;
+               log.HasErrors = val8;
+               Assert.AreEqual(val8, log.HasErrors);
+               IEnumerable<ValidationResult> val31 = new List<ValidationResult>().AsEnumerable();
+               log.ValidationResults = val31;
+               Assert.AreEqual(val31, log.ValidationResults);
         }
         #endregion Tests
     }

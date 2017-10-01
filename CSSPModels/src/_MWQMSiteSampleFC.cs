@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class MWQMSiteSampleFC
+    public partial class MWQMSiteSampleFC : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -31,14 +31,11 @@ namespace CSSPModels
         public double? P90 { get; set; }
         public double? PercOver43 { get; set; }
         public double? PercOver260 { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public MWQMSiteSampleFC()
+        public MWQMSiteSampleFC() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

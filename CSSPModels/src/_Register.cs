@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class Register
+    public partial class Register : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -29,14 +29,11 @@ namespace CSSPModels
         [StringLength(100, MinimumLength = 6)]
         [Compare("Password")]
         public string ConfirmPassword { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public Register()
+        public Register() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }

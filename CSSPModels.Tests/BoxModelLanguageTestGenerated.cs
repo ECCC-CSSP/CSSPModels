@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         public void BoxModelLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "BoxModelLanguageID", "BoxModelID", "Language", "ScenarioName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LastUpdateContactTVText", "LanguageText", "TranslationStatusText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "BoxModelLanguageWeb", "BoxModelLanguageReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.BoxModelLanguage).GetProperties().OrderBy(c => c.Name))
@@ -120,9 +120,6 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageTranslationStatus);
                Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageLastUpdateContactTVText);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageLanguageText);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageTranslationStatusText);
                Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageHasErrors);
         }
         [TestMethod]
@@ -149,21 +146,12 @@ namespace CSSPModels.Tests
                int val7 = 45;
                boxModelLanguage.LastUpdateContactTVItemID = val7;
                Assert.AreEqual(val7, boxModelLanguage.LastUpdateContactTVItemID);
-               string val8 = "Some text";
-               boxModelLanguage.LastUpdateContactTVText = val8;
-               Assert.AreEqual(val8, boxModelLanguage.LastUpdateContactTVText);
-               string val9 = "Some text";
-               boxModelLanguage.LanguageText = val9;
-               Assert.AreEqual(val9, boxModelLanguage.LanguageText);
-               string val10 = "Some text";
-               boxModelLanguage.TranslationStatusText = val10;
-               Assert.AreEqual(val10, boxModelLanguage.TranslationStatusText);
-               bool val11 = true;
-               boxModelLanguage.HasErrors = val11;
-               Assert.AreEqual(val11, boxModelLanguage.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>().AsEnumerable();
-               boxModelLanguage.ValidationResults = val36;
-               Assert.AreEqual(val36, boxModelLanguage.ValidationResults);
+               bool val8 = true;
+               boxModelLanguage.HasErrors = val8;
+               Assert.AreEqual(val8, boxModelLanguage.HasErrors);
+               IEnumerable<ValidationResult> val31 = new List<ValidationResult>().AsEnumerable();
+               boxModelLanguage.ValidationResults = val31;
+               Assert.AreEqual(val31, boxModelLanguage.ValidationResults);
         }
         #endregion Tests
     }

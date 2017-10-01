@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class MWQMSampleDuplicateItem
+    public partial class MWQMSampleDuplicateItem : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -17,14 +17,11 @@ namespace CSSPModels
         public string ParentSite { get; set; }
         [StringLength(200, MinimumLength = 1)]
         public string DuplicateSite { get; set; }
-        public bool HasErrors { get; set; }
-        public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
-        public MWQMSampleDuplicateItem()
+        public MWQMSampleDuplicateItem() : base()
         {
-            ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }
