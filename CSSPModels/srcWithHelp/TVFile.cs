@@ -57,16 +57,22 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVFileTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string TVFileTVText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string LastUpdateContactTVText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TemplateTVType")]
+        [CSSPAllowNull]
         public string TemplateTVTypeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
+        [CSSPAllowNull]
         public string LanguageText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "FilePurposeEnum", EnumType = "FilePurpose")]
+        [CSSPAllowNull]
         public string FilePurposeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "FileTypeEnum", EnumType = "FileType")]
+        [CSSPAllowNull]
         public string FileTypeText { get; set; }
         #endregion Properties for web information
 
@@ -80,6 +86,7 @@ namespace CSSPModels
     public partial class TVFileReport
     {
         #region Properties for report information
+        [CSSPAllowNull]
         public string TVFileReportTest { get; set; }
         #endregion Properties for report information
 

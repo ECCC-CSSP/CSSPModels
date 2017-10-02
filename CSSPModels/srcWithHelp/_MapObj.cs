@@ -18,8 +18,8 @@ namespace CSSPModels
         [CSSPEnumType]
         public MapInfoDrawTypeEnum MapInfoDrawType { get; set; }
         [StringLength(100)]
-        [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "MapInfoDrawTypeEnum", EnumType = "MapInfoDrawType")]
+        [CSSPAllowNull]
         public string MapInfoDrawTypeText { get; set; }
         public virtual List<Coord> CoordList { get; set; }
         #endregion Properties not in DB

@@ -55,16 +55,22 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string TVItemTVText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID2", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string TVItem2TVText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string LastUpdateContactTVText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "AppTaskCommandEnum", EnumType = "AppTaskCommand")]
+        [CSSPAllowNull]
         public string AppTaskCommandText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "AppTaskStatusEnum", EnumType = "AppTaskStatus")]
+        [CSSPAllowNull]
         public string AppTaskStatusText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
+        [CSSPAllowNull]
         public string LanguageText { get; set; }
         #endregion Properties for web information
 
@@ -78,6 +84,7 @@ namespace CSSPModels
     public partial class AppTaskReport
     {
         #region Properties for report information
+        [CSSPAllowNull]
         public string AppTaskReportTest { get; set; }
         #endregion Properties for report information
 

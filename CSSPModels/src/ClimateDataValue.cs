@@ -64,8 +64,10 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string LastUpdateContactTVText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "StorageDataTypeEnum", EnumType = "StorageDataType")]
+        [CSSPAllowNull]
         public string StorageDataTypeEnumText { get; set; }
         #endregion Properties for web information
 
@@ -79,6 +81,7 @@ namespace CSSPModels
     public partial class ClimateDataValueReport
     {
         #region Properties for report information
+        [CSSPAllowNull]
         public string ClimateDataValueReportTest { get; set; }
         #endregion Properties for report information
 

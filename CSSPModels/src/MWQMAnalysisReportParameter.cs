@@ -77,10 +77,13 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ExcelTVFileTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string ExcelTVFileTVText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "AnalysisReportExportCommandEnum", EnumType = "Command")]
+        [CSSPAllowNull]
         public string CommandText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string LastUpdateContactTVText { get; set; }
         #endregion Properties for web information
 
@@ -94,6 +97,7 @@ namespace CSSPModels
     public partial class MWQMAnalysisReportParameterReport
     {
         #region Properties for report information
+        [CSSPAllowNull]
         public string MWQMAnalysisReportParameterReportTest { get; set; }
         #endregion Properties for report information
 

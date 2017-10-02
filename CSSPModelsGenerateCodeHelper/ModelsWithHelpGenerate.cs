@@ -213,7 +213,7 @@ namespace CSSPModelsGenerateCodeHelper
                         if (WithHelp) //------------------------------------------------------------------ help
                         {
                             StringBuilder sbCustomAttribute = new StringBuilder();
-                            GetCustomAttribute(dllPropertyInfo, sbCustomAttribute);
+                            GetCustomAttribute(dllTypeInfoModels, dllPropertyInfo, sbCustomAttribute);
 
                             if (sbCustomAttribute.Length > 0)
                             {
@@ -225,7 +225,7 @@ namespace CSSPModelsGenerateCodeHelper
                             }
                         }
 
-                        if (!WriteAttributes(dllPropertyInfo, sb))
+                        if (!WriteAttributes(dllTypeInfoModels, dllPropertyInfo, sb))
                         {
                             return;
                         }
@@ -262,7 +262,7 @@ namespace CSSPModelsGenerateCodeHelper
                     if (WithHelp) //------------------------------------------------------------------ help
                     {
                         StringBuilder sbCustomAttribute = new StringBuilder();
-                        GetCustomAttribute(dllPropertyInfo, sbCustomAttribute);
+                        GetCustomAttribute(dllTypeInfoModels, dllPropertyInfo, sbCustomAttribute);
 
                         if (sbCustomAttribute.Length > 0)
                         {
@@ -274,7 +274,7 @@ namespace CSSPModelsGenerateCodeHelper
                         }
                     }
 
-                    if (!WriteAttributes(dllPropertyInfo, sb))
+                    if (!WriteAttributes(dllTypeInfoModels, dllPropertyInfo, sb))
                     {
                         return;
                     }
@@ -411,7 +411,7 @@ namespace CSSPModelsGenerateCodeHelper
                                 if (WithHelp) //------------------------------------------------------------------ help
                                 {
                                     StringBuilder sbCustomAttribute = new StringBuilder();
-                                    GetCustomAttribute(dllPropertyInfo, sbCustomAttribute);
+                                    GetCustomAttribute(dllTypeInfoModels, dllPropertyInfo, sbCustomAttribute);
 
                                     if (sbCustomAttribute.Length > 0)
                                     {
@@ -423,7 +423,7 @@ namespace CSSPModelsGenerateCodeHelper
                                     }
                                 }
 
-                                if (!WriteAttributes(dllPropertyInfo, sb))
+                                if (!WriteAttributes(dllTypeInfoModels, dllPropertyInfo, sb))
                                 {
                                     return;
                                 }
@@ -497,7 +497,7 @@ namespace CSSPModelsGenerateCodeHelper
                                 if (WithHelp) //------------------------------------------------------------------ help
                                 {
                                     StringBuilder sbCustomAttribute = new StringBuilder();
-                                    GetCustomAttribute(dllPropertyInfo, sbCustomAttribute);
+                                    GetCustomAttribute(dllTypeInfoModels, dllPropertyInfo, sbCustomAttribute);
 
                                     if (sbCustomAttribute.Length > 0)
                                     {
@@ -509,7 +509,7 @@ namespace CSSPModelsGenerateCodeHelper
                                     }
                                 }
 
-                                if (!WriteAttributes(dllPropertyInfo, sb))
+                                if (!WriteAttributes(dllTypeInfoModels, dllPropertyInfo, sb))
                                 {
                                     return;
                                 }
@@ -635,7 +635,7 @@ namespace CSSPModelsGenerateCodeHelper
             StatusTempEvent(new StatusEventArgs("Done ..."));
         }
 
-        private void GetCustomAttribute(DLLPropertyInfo dllPropertyInfo, StringBuilder sbCustomAttribute)
+        private void GetCustomAttribute(DLLTypeInfo dllTypeInfoModels, DLLPropertyInfo dllPropertyInfo, StringBuilder sbCustomAttribute)
         {
             if (dllPropertyInfo.CSSPProp.HasCSSPExistAttribute)
             {
@@ -672,14 +672,6 @@ namespace CSSPModelsGenerateCodeHelper
             {
                 sbCustomAttribute.AppendLine(@"        /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>");
             }
-            if (dllPropertyInfo.CSSPProp.HasCSSPEnumTypeAttribute && dllPropertyInfo.CSSPProp.IsNullable)
-            {
-                sbCustomAttribute.AppendLine(@"        /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>");
-            }
-            if (dllPropertyInfo.CSSPProp.PropType == "String" && dllPropertyInfo.CSSPProp.IsNullable)
-            {
-                sbCustomAttribute.AppendLine(@"        /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>");
-            }
             if (dllPropertyInfo.CSSPProp.HasCSSPAfterAttribute)
             {
                 sbCustomAttribute.AppendLine(@"        /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = " + dllPropertyInfo.CSSPProp.Year + ")]</para>");
@@ -695,6 +687,18 @@ namespace CSSPModelsGenerateCodeHelper
             if (dllPropertyInfo.CSSPProp.HasCSSPEnumTypeTextAttribute)
             {
                 sbCustomAttribute.AppendLine(@"        /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = """ + dllPropertyInfo.CSSPProp.EnumTypeName + @""", EnumType = """ + dllPropertyInfo.CSSPProp.EnumType + @""")]</para>");
+            }
+            if (dllPropertyInfo.CSSPProp.HasCSSPEnumTypeAttribute && dllPropertyInfo.CSSPProp.IsNullable)
+            {
+                sbCustomAttribute.AppendLine(@"        /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>");
+            }
+            else if (dllPropertyInfo.CSSPProp.PropType == "String" && dllPropertyInfo.CSSPProp.IsNullable)
+            {
+                sbCustomAttribute.AppendLine(@"        /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>");
+            }
+            else if (dllTypeInfoModels.HasNotMappedAttribute && dllPropertyInfo.CSSPProp.IsNullable)
+            {
+                sbCustomAttribute.AppendLine(@"        /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>");
             }
         }
 
@@ -772,7 +776,7 @@ namespace CSSPModelsGenerateCodeHelper
             }
         }
 
-        private bool WriteAttributes(DLLPropertyInfo dllPropertyInfo, StringBuilder sb)
+        private bool WriteAttributes(DLLTypeInfo dllTypeInfoModels, DLLPropertyInfo dllPropertyInfo, StringBuilder sb)
         {
             if (dllPropertyInfo.CSSPProp.IsKey)
             {
@@ -808,22 +812,6 @@ namespace CSSPModelsGenerateCodeHelper
             if (dllPropertyInfo.CSSPProp.HasCSSPEnumTypeAttribute)
             {
                 sb.AppendLine(@"        [CSSPEnumType]");
-            }
-            if (dllPropertyInfo.CSSPProp.HasCSSPEnumTypeAttribute && dllPropertyInfo.CSSPProp.IsNullable)
-            {
-                sb.AppendLine(@"        [CSSPAllowNull]");
-            }
-            if (dllPropertyInfo.CSSPProp.PropType == "String" && dllPropertyInfo.CSSPProp.IsNullable)
-            {
-                sb.AppendLine(@"        [CSSPAllowNull]");
-            }
-            if (dllPropertyInfo.CSSPProp.PropType.EndsWith("Web") && dllPropertyInfo.CSSPProp.IsNullable)
-            {
-                sb.AppendLine(@"        [CSSPAllowNull]");
-            }
-            if (dllPropertyInfo.CSSPProp.PropType.EndsWith("Report") && dllPropertyInfo.CSSPProp.IsNullable)
-            {
-                sb.AppendLine(@"        [CSSPAllowNull]");
             }
             if (dllPropertyInfo.CSSPProp.HasCSSPAfterAttribute)
             {
@@ -914,6 +902,26 @@ namespace CSSPModelsGenerateCodeHelper
                     }
                 }
                 sb.AppendLine(@"        [Range(" + MinText + ", " + MaxText + ")]");
+            }
+            if (dllPropertyInfo.CSSPProp.HasCSSPEnumTypeAttribute && dllPropertyInfo.CSSPProp.IsNullable)
+            {
+                sb.AppendLine(@"        [CSSPAllowNull]");
+            }
+            else if (dllPropertyInfo.CSSPProp.PropType == "String" && dllPropertyInfo.CSSPProp.IsNullable)
+            {
+                sb.AppendLine(@"        [CSSPAllowNull]");
+            }
+            else if (dllPropertyInfo.CSSPProp.PropType.EndsWith("Web") && dllPropertyInfo.CSSPProp.IsNullable)
+            {
+                sb.AppendLine(@"        [CSSPAllowNull]");
+            }
+            else if (dllPropertyInfo.CSSPProp.PropType.EndsWith("Report") && dllPropertyInfo.CSSPProp.IsNullable)
+            {
+                sb.AppendLine(@"        [CSSPAllowNull]");
+            }
+            else if (dllTypeInfoModels.HasNotMappedAttribute && dllPropertyInfo.CSSPProp.IsNullable)
+            {
+                sb.AppendLine(@"        [CSSPAllowNull]");
             }
 
             return true;

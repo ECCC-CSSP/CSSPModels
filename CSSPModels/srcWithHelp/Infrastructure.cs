@@ -133,34 +133,49 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string InfrastructureTVText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SeeOtherTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string SeeOtherTVText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CivicAddressTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string CivicAddressTVText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string LastUpdateContactTVText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "InfrastructureTypeEnum", EnumType = "InfrastructureType")]
+        [CSSPAllowNull]
         public string InfrastructureTypeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "FacilityTypeEnum", EnumType = "FacilityType")]
+        [CSSPAllowNull]
         public string FacilityTypeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "AerationTypeEnum", EnumType = "AerationType")]
+        [CSSPAllowNull]
         public string AerationTypeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "PreliminaryTreatmentTypeEnum", EnumType = "PreliminaryTreatmentType")]
+        [CSSPAllowNull]
         public string PreliminaryTreatmentTypeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "PrimaryTreatmentTypeEnum", EnumType = "PrimaryTreatmentType")]
+        [CSSPAllowNull]
         public string PrimaryTreatmentTypeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "SecondaryTreatmentTypeEnum", EnumType = "SecondaryTreatmentType")]
+        [CSSPAllowNull]
         public string SecondaryTreatmentTypeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TertiaryTreatmentTypeEnum", EnumType = "TertiaryTreatmentType")]
+        [CSSPAllowNull]
         public string TertiaryTreatmentTypeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TreatmentTypeEnum", EnumType = "TreatmentType")]
+        [CSSPAllowNull]
         public string TreatmentTypeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "DisinfectionTypeEnum", EnumType = "DisinfectionType")]
+        [CSSPAllowNull]
         public string DisinfectionTypeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "CollectionSystemTypeEnum", EnumType = "CollectionSystemType")]
+        [CSSPAllowNull]
         public string CollectionSystemTypeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "AlarmSystemTypeEnum", EnumType = "AlarmSystemType")]
+        [CSSPAllowNull]
         public string AlarmSystemTypeText { get; set; }
         #endregion Properties for web information
 
@@ -174,6 +189,7 @@ namespace CSSPModels
     public partial class InfrastructureReport
     {
         #region Properties for report information
+        [CSSPAllowNull]
         public string InfrastructureReportTest { get; set; }
         #endregion Properties for report information
 

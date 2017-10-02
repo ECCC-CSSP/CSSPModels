@@ -43,12 +43,16 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string LastUpdateContactTVText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
+        [CSSPAllowNull]
         public string LanguageText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusRunComment")]
+        [CSSPAllowNull]
         public string TranslationStatusRunCommentText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusRunWeatherComment")]
+        [CSSPAllowNull]
         public string TranslationStatusRunWeatherCommentText { get; set; }
         #endregion Properties for web information
 
@@ -62,6 +66,7 @@ namespace CSSPModels
     public partial class MWQMRunLanguageReport
     {
         #region Properties for report information
+        [CSSPAllowNull]
         public string MWQMRunLanguageReportTest { get; set; }
         #endregion Properties for report information
 

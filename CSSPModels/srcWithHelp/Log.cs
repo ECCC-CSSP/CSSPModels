@@ -40,8 +40,10 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string LastUpdateContactTVText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "LogCommandEnum", EnumType = "LogCommand")]
+        [CSSPAllowNull]
         public string LogCommandText { get; set; }
         #endregion Properties for web information
 
@@ -55,6 +57,7 @@ namespace CSSPModels
     public partial class LogReport
     {
         #region Properties for report information
+        [CSSPAllowNull]
         public string LogReportTest { get; set; }
         #endregion Properties for report information
 

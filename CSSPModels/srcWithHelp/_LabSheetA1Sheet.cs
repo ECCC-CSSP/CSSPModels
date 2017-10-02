@@ -100,16 +100,16 @@ namespace CSSPModels
         public bool IncludeLaboratoryQAQC { get; set; }
         public string Log { get; set; }
         [StringLength(100)]
-        [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "SamplingPlanTypeEnum", EnumType = "SamplingPlanType")]
+        [CSSPAllowNull]
         public string SamplingPlanTypeText { get; set; }
         [StringLength(100)]
-        [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType")]
+        [CSSPAllowNull]
         public string SampleTypeText { get; set; }
         [StringLength(100)]
-        [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "LabSheetTypeEnum", EnumType = "LabSheetType")]
+        [CSSPAllowNull]
         public string LabSheetTypeText { get; set; }
         public virtual List<LabSheetA1Measurement> LabSheetA1MeasurementList { get; set; }
         #endregion Properties not in DB

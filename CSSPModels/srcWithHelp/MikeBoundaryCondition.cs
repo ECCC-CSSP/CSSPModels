@@ -52,14 +52,19 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MikeBoundaryConditionTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string MikeBoundaryConditionTVText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string LastUpdateContactTVText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "MikeBoundaryConditionLevelOrVelocityEnum", EnumType = "MikeBoundaryConditionLevelOrVelocity")]
+        [CSSPAllowNull]
         public string MikeBoundaryConditionLevelOrVelocityText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "WebTideDataSetEnum", EnumType = "WebTideDataSet")]
+        [CSSPAllowNull]
         public string WebTideDataSetText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
+        [CSSPAllowNull]
         public string TVTypeText { get; set; }
         #endregion Properties for web information
 
@@ -73,6 +78,7 @@ namespace CSSPModels
     public partial class MikeBoundaryConditionReport
     {
         #region Properties for report information
+        [CSSPAllowNull]
         public string MikeBoundaryConditionReportTest { get; set; }
         #endregion Properties for report information
 

@@ -15,10 +15,11 @@ namespace CSSPModels
         #region Properties not in DB
         [CSSPEnumType]
         public InfrastructureTypeEnum InfrastructureType { get; set; }
+        [CSSPAllowNull]
         public int? SeeOtherTVItemID { get; set; }
         [StringLength(100)]
-        [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "InfrastructureTypeEnum", EnumType = "InfrastructureType")]
+        [CSSPAllowNull]
         public string InfrastructureTypeText { get; set; }
         public virtual TVItem TVItem { get; set; }
         public virtual List<TVItemLink> TVItemLinkList { get; set; }

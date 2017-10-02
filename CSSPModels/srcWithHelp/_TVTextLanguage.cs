@@ -17,8 +17,8 @@ namespace CSSPModels
         [CSSPEnumType]
         public LanguageEnum Language { get; set; }
         [StringLength(100)]
-        [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
+        [CSSPAllowNull]
         public string LanguageText { get; set; }
         #endregion Properties not in DB
 

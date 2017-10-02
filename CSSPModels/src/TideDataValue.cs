@@ -54,16 +54,22 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TideSiteTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string TideSiteTVText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string LastUpdateContactTVText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TideDataTypeEnum", EnumType = "TideDataType")]
+        [CSSPAllowNull]
         public string TideDataTypeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "StorageDataTypeEnum", EnumType = "StorageDataType")]
+        [CSSPAllowNull]
         public string StorageDataTypeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TideTextEnum", EnumType = "TideStart")]
+        [CSSPAllowNull]
         public string TideStartText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TideTextEnum", EnumType = "TideEnd")]
+        [CSSPAllowNull]
         public string TideEndText { get; set; }
         #endregion Properties for web information
 
@@ -77,6 +83,7 @@ namespace CSSPModels
     public partial class TideDataValueReport
     {
         #region Properties for report information
+        [CSSPAllowNull]
         public string TideDataValueReportTest { get; set; }
         #endregion Properties for report information
 

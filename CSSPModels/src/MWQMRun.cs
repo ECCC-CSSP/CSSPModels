@@ -120,30 +120,43 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SubsectorTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string SubsectorTVText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMRunTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string MWQMRunTVText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LabSampleApprovalContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string LabSampleApprovalContactTVText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string LastUpdateContactTVText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "RunSampleType")]
+        [CSSPAllowNull]
         public string RunSampleTypeText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "BeaufortScaleEnum", EnumType = "SeaStateAtStart_BeaufortScale")]
+        [CSSPAllowNull]
         public string SeaStateAtStart_BeaufortScaleText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "BeaufortScaleEnum", EnumType = "SeaStateAtEnd_BeaufortScale")]
+        [CSSPAllowNull]
         public string SeaStateAtEnd_BeaufortScaleText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "AnalyzeMethodEnum", EnumType = "AnalyzeMethod")]
+        [CSSPAllowNull]
         public string AnalyzeMethodText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "SampleMatrixEnum", EnumType = "SampleMatrix")]
+        [CSSPAllowNull]
         public string SampleMatrixText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "LaboratoryEnum", EnumType = "Laboratory")]
+        [CSSPAllowNull]
         public string LaboratoryText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "SampleStatusEnum", EnumType = "SampleStatus")]
+        [CSSPAllowNull]
         public string SampleStatusText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TideTextEnum", EnumType = "Tide_Start")]
+        [CSSPAllowNull]
         public string Tide_StartText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TideTextEnum", EnumType = "Tide_End")]
+        [CSSPAllowNull]
         public string Tide_EndText { get; set; }
         #endregion Properties for web information
 
@@ -157,6 +170,7 @@ namespace CSSPModels
     public partial class MWQMRunReport
     {
         #region Properties for report information
+        [CSSPAllowNull]
         public string MWQMRunReportTest { get; set; }
         #endregion Properties for report information
 

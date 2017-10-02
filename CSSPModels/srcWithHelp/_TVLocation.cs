@@ -23,12 +23,12 @@ namespace CSSPModels
         [CSSPEnumType]
         public TVTypeEnum SubTVType { get; set; }
         [StringLength(100)]
-        [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
+        [CSSPAllowNull]
         public string TVTypeText { get; set; }
         [StringLength(100)]
-        [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "SubTVType")]
+        [CSSPAllowNull]
         public string SubTVTypeText { get; set; }
         public virtual List<MapObj> MapObjList { get; set; }
         #endregion Properties not in DB

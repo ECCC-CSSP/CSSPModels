@@ -40,10 +40,8 @@ namespace CSSPModels
     public partial class AppErrLogWeb
     {
         #region Properties for web information
-        [NotMapped]
-        [StringLength(200)]
-        [CSSPAllowNull]
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string LastUpdateContactTVText { get; set; }
         #endregion Properties for web information
 
@@ -57,6 +55,7 @@ namespace CSSPModels
     public partial class AppErrLogReport
     {
         #region Properties for report information
+        [CSSPAllowNull]
         public string AppErrLogTest { get; set; }
         #endregion Properties for report information
 

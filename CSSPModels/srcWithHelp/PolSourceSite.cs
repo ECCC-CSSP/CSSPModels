@@ -50,10 +50,13 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "PolSourceSiteTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string PolSourceSiteTVText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string LastUpdateContactTVText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "PolSourceInactiveReasonEnum", EnumType = "InactiveReason")]
+        [CSSPAllowNull]
         public string InactiveReasonText { get; set; }
         #endregion Properties for web information
 
@@ -67,6 +70,7 @@ namespace CSSPModels
     public partial class PolSourceSiteReport
     {
         #region Properties for report information
+        [CSSPAllowNull]
         public string PolSourceSiteReportTest { get; set; }
         #endregion Properties for report information
 

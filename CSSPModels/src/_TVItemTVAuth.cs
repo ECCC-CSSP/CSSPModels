@@ -25,8 +25,8 @@ namespace CSSPModels
         [CSSPEnumType]
         public TVAuthEnum TVAuth { get; set; }
         [StringLength(100)]
-        [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "TVAuthEnum", EnumType = "TVAuth")]
+        [CSSPAllowNull]
         public string TVAuthText { get; set; }
         #endregion Properties not in DB
 

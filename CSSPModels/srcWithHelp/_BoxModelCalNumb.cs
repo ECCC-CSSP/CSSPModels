@@ -30,8 +30,8 @@ namespace CSSPModels
         public bool FixLength { get; set; }
         public bool FixWidth { get; set; }
         [StringLength(100)]
-        [CSSPAllowNull]
         [CSSPEnumTypeText(EnumTypeName = "BoxModelResultTypeEnum", EnumType = "BoxModelResultType")]
+        [CSSPAllowNull]
         public string BoxModelResultTypeText { get; set; }
         #endregion Properties not in DB
 

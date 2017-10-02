@@ -55,8 +55,10 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string InfrastructureTVText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
+        [CSSPAllowNull]
         public string LastUpdateContactTVText { get; set; }
         #endregion Properties for web information
 
@@ -70,6 +72,7 @@ namespace CSSPModels
     public partial class BoxModelReport
     {
         #region Properties for report information
+        [CSSPAllowNull]
         public string BoxModelReportTest { get; set; }
         #endregion Properties for report information
 
