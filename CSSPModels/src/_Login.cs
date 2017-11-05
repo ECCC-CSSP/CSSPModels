@@ -17,8 +17,8 @@ namespace CSSPModels
         public string LoginEmail { get; set; }
         [StringLength(100, MinimumLength = 6)]
         public string Password { get; set; }
-        [StringLength(100, MinimumLength = 6)]
-        public string ConfirmPassword { get; set; }
+        //[StringLength(100, MinimumLength = 6)]
+        //public string ConfirmPassword { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

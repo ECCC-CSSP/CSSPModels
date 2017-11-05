@@ -37,6 +37,10 @@ namespace CSSPModels
         [StringLength(200)]
         [CSSPAllowNull]
         public string SamplingPlanner_ProvincesTVItemID { get; set; }
+        [CSSPAllowNull]
+        public byte[] PasswordHash { get; set; }
+        [CSSPAllowNull]
+        public byte[] PasswordSalt { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

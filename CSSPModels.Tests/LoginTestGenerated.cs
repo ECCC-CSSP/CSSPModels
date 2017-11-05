@@ -75,9 +75,9 @@ namespace CSSPModels.Tests
                string val2 = "Some text";
                login.Password = val2;
                Assert.AreEqual(val2, login.Password);
-               string val3 = "Some text";
-               login.ConfirmPassword = val3;
-               Assert.AreEqual(val3, login.ConfirmPassword);
+               //string val3 = "Some text";
+               //login.ConfirmPassword = val3;
+               //Assert.AreEqual(val3, login.ConfirmPassword);
                bool val4 = true;
                login.HasErrors = val4;
                Assert.AreEqual(val4, login.HasErrors);
