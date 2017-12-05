@@ -45,6 +45,10 @@ namespace CSSPModels
 
         #region Properties not in DB
         [NotMapped]
+        [StringLength(50)]
+        [CSSPAllowNull]
+        public string Password { get; set; }
+        [NotMapped]
         [CSSPAllowNull]
         public ContactWeb ContactWeb { get; set; }
         [NotMapped]

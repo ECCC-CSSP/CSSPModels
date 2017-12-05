@@ -15,6 +15,10 @@ namespace CSSPModels
         public int TVFileTVItemID { get; set; }
         [CSSPEnumType]
         public TVTypeEnum TemplateTVType { get; set; }
+        [CSSPExist(ExistTypeName = "ReportType", ExistPlurial = "s", ExistFieldID = "ReportTypeID")]
+        public int? ReportTypeID { get; set; }
+        [CSSPAllowNull]
+        public string Parameters { get; set; }
         [CSSPEnumType]
         public LanguageEnum Language { get; set; }
         [CSSPEnumType]

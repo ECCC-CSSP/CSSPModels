@@ -41,8 +41,8 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Contact_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ContactID", "Id", "ContactTVItemID", "LoginEmail", "FirstName", "LastName", "Initial", "WebName", "ContactTitle", "IsAdmin", "EmailValidated", "Disabled", "IsNew", "SamplingPlanner_ProvincesTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ContactWeb", "ContactReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ContactID", "Id", "ContactTVItemID", "LoginEmail", "FirstName", "LastName", "Initial", "WebName", "ContactTitle", "IsAdmin", "EmailValidated", "Disabled", "IsNew", "SamplingPlanner_ProvincesTVItemID", "PasswordHash", "PasswordSalt", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "Password", "ContactWeb", "ContactReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
             foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Contact).GetProperties().OrderBy(c => c.Name))
@@ -127,6 +127,9 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.ContactDisabled);
                Assert.IsNotNull(CSSPModelsRes.ContactIsNew);
                Assert.IsNotNull(CSSPModelsRes.ContactSamplingPlanner_ProvincesTVItemID);
+               Assert.IsNotNull(CSSPModelsRes.ContactPasswordHash);
+               Assert.IsNotNull(CSSPModelsRes.ContactPasswordSalt);
+               Assert.IsNotNull(CSSPModelsRes.ContactPassword);
                Assert.IsNotNull(CSSPModelsRes.ContactLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.ContactLastUpdateContactTVItemID);
                Assert.IsNotNull(CSSPModelsRes.ContactHasErrors);
@@ -176,18 +179,27 @@ namespace CSSPModels.Tests
                string val14 = "Some text";
                contact.SamplingPlanner_ProvincesTVItemID = val14;
                Assert.AreEqual(val14, contact.SamplingPlanner_ProvincesTVItemID);
-               DateTime val15 = new DateTime(2010, 3, 4);
-               contact.LastUpdateDate_UTC = val15;
-               Assert.AreEqual(val15, contact.LastUpdateDate_UTC);
-               int val16 = 45;
-               contact.LastUpdateContactTVItemID = val16;
-               Assert.AreEqual(val16, contact.LastUpdateContactTVItemID);
-               bool val17 = true;
-               contact.HasErrors = val17;
-               Assert.AreEqual(val17, contact.HasErrors);
-               IEnumerable<ValidationResult> val58 = new List<ValidationResult>().AsEnumerable();
-               contact.ValidationResults = val58;
-               Assert.AreEqual(val58, contact.ValidationResults);
+               byte[] val15 = new byte[5];
+               contact.PasswordHash = val15;
+               Assert.AreEqual(val15, contact.PasswordHash);
+               byte[] val16 = new byte[5];
+               contact.PasswordSalt = val16;
+               Assert.AreEqual(val16, contact.PasswordSalt);
+               string val17 = "Some text";
+               contact.Password = val17;
+               Assert.AreEqual(val17, contact.Password);
+               DateTime val18 = new DateTime(2010, 3, 4);
+               contact.LastUpdateDate_UTC = val18;
+               Assert.AreEqual(val18, contact.LastUpdateDate_UTC);
+               int val19 = 45;
+               contact.LastUpdateContactTVItemID = val19;
+               Assert.AreEqual(val19, contact.LastUpdateContactTVItemID);
+               bool val20 = true;
+               contact.HasErrors = val20;
+               Assert.AreEqual(val20, contact.HasErrors);
+               IEnumerable<ValidationResult> val67 = new List<ValidationResult>().AsEnumerable();
+               contact.ValidationResults = val67;
+               Assert.AreEqual(val67, contact.ValidationResults);
         }
         #endregion Tests
     }

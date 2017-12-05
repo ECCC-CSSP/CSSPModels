@@ -456,6 +456,75 @@
 <data name="BoxModelReportBoxModelReportTest" xml:space="preserve">
   <value>BoxModelReportBoxModelReportTest</value>
 </data>
+<data name="ReportTypeLanguage" xml:space="preserve">
+  <value>ReportTypeLanguage</value>
+</data>
+<data name="ReportTypeLanguageReportTypeLanguageID" xml:space="preserve">
+  <value>ReportTypeLanguageReportTypeLanguageID</value>
+</data>
+<data name="ReportTypeLanguageReportTypeID" xml:space="preserve">
+  <value>ReportTypeLanguageReportTypeID</value>
+</data>
+<data name="ReportTypeLanguageLanguage" xml:space="preserve">
+  <value>ReportTypeLanguageLanguage</value>
+</data>
+<data name="ReportTypeLanguageName" xml:space="preserve">
+  <value>ReportTypeLanguageName</value>
+</data>
+<data name="ReportTypeLanguageTranslationStatusName" xml:space="preserve">
+  <value>ReportTypeLanguageTranslationStatusName</value>
+</data>
+<data name="ReportTypeLanguageDescription" xml:space="preserve">
+  <value>ReportTypeLanguageDescription</value>
+</data>
+<data name="ReportTypeLanguageTranslationStatusDescription" xml:space="preserve">
+  <value>ReportTypeLanguageTranslationStatusDescription</value>
+</data>
+<data name="ReportTypeLanguageStartOfFileName" xml:space="preserve">
+  <value>ReportTypeLanguageStartOfFileName</value>
+</data>
+<data name="ReportTypeLanguageTranslationStatusStartOfFileName" xml:space="preserve">
+  <value>ReportTypeLanguageTranslationStatusStartOfFileName</value>
+</data>
+<data name="ReportTypeLanguageReportTypeLanguageWeb" xml:space="preserve">
+  <value>ReportTypeLanguageReportTypeLanguageWeb</value>
+</data>
+<data name="ReportTypeLanguageReportTypeLanguageReport" xml:space="preserve">
+  <value>ReportTypeLanguageReportTypeLanguageReport</value>
+</data>
+<data name="ReportTypeLanguageLastUpdateDate_UTC" xml:space="preserve">
+  <value>ReportTypeLanguageLastUpdateDate_UTC</value>
+</data>
+<data name="ReportTypeLanguageLastUpdateContactTVItemID" xml:space="preserve">
+  <value>ReportTypeLanguageLastUpdateContactTVItemID</value>
+</data>
+<data name="ReportTypeLanguageHasErrors" xml:space="preserve">
+  <value>ReportTypeLanguageHasErrors</value>
+</data>
+<data name="ReportTypeLanguageWeb" xml:space="preserve">
+  <value>ReportTypeLanguageWeb</value>
+</data>
+<data name="ReportTypeLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>ReportTypeLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="ReportTypeLanguageWebLanguageText" xml:space="preserve">
+  <value>ReportTypeLanguageWebLanguageText</value>
+</data>
+<data name="ReportTypeLanguageWebTranslationStatusNameText" xml:space="preserve">
+  <value>ReportTypeLanguageWebTranslationStatusNameText</value>
+</data>
+<data name="ReportTypeLanguageWebTranslationStatusDescriptionText" xml:space="preserve">
+  <value>ReportTypeLanguageWebTranslationStatusDescriptionText</value>
+</data>
+<data name="ReportTypeLanguageWebTranslationStatusStartOfFileNameText" xml:space="preserve">
+  <value>ReportTypeLanguageWebTranslationStatusStartOfFileNameText</value>
+</data>
+<data name="ReportTypeLanguageReport" xml:space="preserve">
+  <value>ReportTypeLanguageReport</value>
+</data>
+<data name="ReportTypeLanguageReportReportTypeLanguageReportTest" xml:space="preserve">
+  <value>ReportTypeLanguageReportReportTypeLanguageReportTest</value>
+</data>
 <data name="BoxModelLanguage" xml:space="preserve">
   <value>BoxModelLanguage</value>
 </data>
@@ -816,6 +885,15 @@
 <data name="ContactSamplingPlanner_ProvincesTVItemID" xml:space="preserve">
   <value>ContactSamplingPlanner_ProvincesTVItemID</value>
 </data>
+<data name="ContactPasswordHash" xml:space="preserve">
+  <value>ContactPasswordHash</value>
+</data>
+<data name="ContactPasswordSalt" xml:space="preserve">
+  <value>ContactPasswordSalt</value>
+</data>
+<data name="ContactPassword" xml:space="preserve">
+  <value>ContactPassword</value>
+</data>
 <data name="ContactContactWeb" xml:space="preserve">
   <value>ContactContactWeb</value>
 </data>
@@ -851,57 +929,6 @@
 </data>
 <data name="ContactReportContactReportTest" xml:space="preserve">
   <value>ContactReportContactReportTest</value>
-</data>
-<data name="ContactLogin" xml:space="preserve">
-  <value>ContactLogin</value>
-</data>
-<data name="ContactLoginContactLoginID" xml:space="preserve">
-  <value>ContactLoginContactLoginID</value>
-</data>
-<data name="ContactLoginContactID" xml:space="preserve">
-  <value>ContactLoginContactID</value>
-</data>
-<data name="ContactLoginLoginEmail" xml:space="preserve">
-  <value>ContactLoginLoginEmail</value>
-</data>
-<data name="ContactLoginPasswordHash" xml:space="preserve">
-  <value>ContactLoginPasswordHash</value>
-</data>
-<data name="ContactLoginPasswordSalt" xml:space="preserve">
-  <value>ContactLoginPasswordSalt</value>
-</data>
-<data name="ContactLoginContactLoginWeb" xml:space="preserve">
-  <value>ContactLoginContactLoginWeb</value>
-</data>
-<data name="ContactLoginContactLoginReport" xml:space="preserve">
-  <value>ContactLoginContactLoginReport</value>
-</data>
-<data name="ContactLoginLastUpdateDate_UTC" xml:space="preserve">
-  <value>ContactLoginLastUpdateDate_UTC</value>
-</data>
-<data name="ContactLoginLastUpdateContactTVItemID" xml:space="preserve">
-  <value>ContactLoginLastUpdateContactTVItemID</value>
-</data>
-<data name="ContactLoginHasErrors" xml:space="preserve">
-  <value>ContactLoginHasErrors</value>
-</data>
-<data name="ContactLoginWeb" xml:space="preserve">
-  <value>ContactLoginWeb</value>
-</data>
-<data name="ContactLoginWebLastUpdateContactTVText" xml:space="preserve">
-  <value>ContactLoginWebLastUpdateContactTVText</value>
-</data>
-<data name="ContactLoginWebPassword" xml:space="preserve">
-  <value>ContactLoginWebPassword</value>
-</data>
-<data name="ContactLoginWebConfirmPassword" xml:space="preserve">
-  <value>ContactLoginWebConfirmPassword</value>
-</data>
-<data name="ContactLoginReport" xml:space="preserve">
-  <value>ContactLoginReport</value>
-</data>
-<data name="ContactLoginReportContactLoginReportTest" xml:space="preserve">
-  <value>ContactLoginReportContactLoginReportTest</value>
 </data>
 <data name="ContactPreference" xml:space="preserve">
   <value>ContactPreference</value>
@@ -2634,6 +2661,9 @@
 <data name="MWQMAnalysisReportParameterRunsToOmit" xml:space="preserve">
   <value>MWQMAnalysisReportParameterRunsToOmit</value>
 </data>
+<data name="MWQMAnalysisReportParameterShowDataTypes" xml:space="preserve">
+  <value>MWQMAnalysisReportParameterShowDataTypes</value>
+</data>
 <data name="MWQMAnalysisReportParameterExcelTVFileTVItemID" xml:space="preserve">
   <value>MWQMAnalysisReportParameterExcelTVFileTVItemID</value>
 </data>
@@ -3525,6 +3555,48 @@
 <data name="RainExceedanceReportRainExceedanceReportTest" xml:space="preserve">
   <value>RainExceedanceReportRainExceedanceReportTest</value>
 </data>
+<data name="ReportType" xml:space="preserve">
+  <value>ReportType</value>
+</data>
+<data name="ReportTypeReportTypeID" xml:space="preserve">
+  <value>ReportTypeReportTypeID</value>
+</data>
+<data name="ReportTypeTVType" xml:space="preserve">
+  <value>ReportTypeTVType</value>
+</data>
+<data name="ReportTypeFileType" xml:space="preserve">
+  <value>ReportTypeFileType</value>
+</data>
+<data name="ReportTypeUniqueCode" xml:space="preserve">
+  <value>ReportTypeUniqueCode</value>
+</data>
+<data name="ReportTypeReportTypeWeb" xml:space="preserve">
+  <value>ReportTypeReportTypeWeb</value>
+</data>
+<data name="ReportTypeReportTypeReport" xml:space="preserve">
+  <value>ReportTypeReportTypeReport</value>
+</data>
+<data name="ReportTypeLastUpdateDate_UTC" xml:space="preserve">
+  <value>ReportTypeLastUpdateDate_UTC</value>
+</data>
+<data name="ReportTypeLastUpdateContactTVItemID" xml:space="preserve">
+  <value>ReportTypeLastUpdateContactTVItemID</value>
+</data>
+<data name="ReportTypeHasErrors" xml:space="preserve">
+  <value>ReportTypeHasErrors</value>
+</data>
+<data name="ReportTypeWeb" xml:space="preserve">
+  <value>ReportTypeWeb</value>
+</data>
+<data name="ReportTypeWebLastUpdateContactTVText" xml:space="preserve">
+  <value>ReportTypeWebLastUpdateContactTVText</value>
+</data>
+<data name="ReportTypeReport" xml:space="preserve">
+  <value>ReportTypeReport</value>
+</data>
+<data name="ReportTypeReportReportTypeReportTest" xml:space="preserve">
+  <value>ReportTypeReportReportTypeReportTest</value>
+</data>
 <data name="RatingCurve" xml:space="preserve">
   <value>RatingCurve</value>
 </data>
@@ -4172,6 +4244,12 @@
 </data>
 <data name="TVFileTemplateTVType" xml:space="preserve">
   <value>TVFileTemplateTVType</value>
+</data>
+<data name="TVFileReportTypeID" xml:space="preserve">
+  <value>TVFileReportTypeID</value>
+</data>
+<data name="TVFileParameters" xml:space="preserve">
+  <value>TVFileParameters</value>
 </data>
 <data name="TVFileLanguage" xml:space="preserve">
   <value>TVFileLanguage</value>
@@ -5690,21 +5768,6 @@
 </data>
 <data name="LatLngHasErrors" xml:space="preserve">
   <value>LatLngHasErrors</value>
-</data>
-<data name="Login" xml:space="preserve">
-  <value>Login</value>
-</data>
-<data name="LoginLoginEmail" xml:space="preserve">
-  <value>LoginLoginEmail</value>
-</data>
-<data name="LoginPassword" xml:space="preserve">
-  <value>LoginPassword</value>
-</data>
-<data name="LoginConfirmPassword" xml:space="preserve">
-  <value>LoginConfirmPassword</value>
-</data>
-<data name="LoginHasErrors" xml:space="preserve">
-  <value>LoginHasErrors</value>
 </data>
 <data name="MapObj" xml:space="preserve">
   <value>MapObj</value>

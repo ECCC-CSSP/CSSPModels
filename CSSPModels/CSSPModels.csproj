@@ -297,12 +297,12 @@
     <Compile Include="src\AppTask.cs" />
     <Compile Include="src\AppTaskLanguage.cs" />
     <Compile Include="src\BoxModel.cs" />
+    <Compile Include="src\ReportTypeLanguage.cs" />
     <Compile Include="src\BoxModelLanguage.cs" />
     <Compile Include="src\BoxModelResult.cs" />
     <Compile Include="src\ClimateDataValue.cs" />
     <Compile Include="src\ClimateSite.cs" />
     <Compile Include="src\Contact.cs" />
-    <Compile Include="src\ContactLogin.cs" />
     <Compile Include="src\ContactPreference.cs" />
     <Compile Include="src\ContactShortcut.cs" />
     <Compile Include="src\DocTemplate.cs" />
@@ -339,6 +339,7 @@
     <Compile Include="src\PolSourceObservationIssue.cs" />
     <Compile Include="src\PolSourceSite.cs" />
     <Compile Include="src\RainExceedance.cs" />
+    <Compile Include="src\ReportType.cs" />
     <Compile Include="src\RatingCurve.cs" />
     <Compile Include="src\RatingCurveValue.cs" />
     <Compile Include="src\ResetPassword.cs" />

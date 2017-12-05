@@ -229,8 +229,6 @@
     <Compile Include="LastUpdateAndTVTextTestGenerated.cs" />
     <Compile Include="LatLngTest.cs" />
     <Compile Include="LatLngTestGenerated.cs" />
-    <Compile Include="LoginTest.cs" />
-    <Compile Include="LoginTestGenerated.cs" />
     <Compile Include="LogTest.cs" />
     <Compile Include="LogTestGenerated.cs" />
     <Compile Include="MapInfoPointTest.cs" />

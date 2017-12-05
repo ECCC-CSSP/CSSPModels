@@ -646,29 +646,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AppTaskLanguageReportLanguageText.
+        ///   Looks up a localized string similar to AppTaskLanguageReportAppTaskLanguageReportTest.
         /// </summary>
-        public static string AppTaskLanguageReportLanguageText {
+        public static string AppTaskLanguageReportAppTaskLanguageReportTest {
             get {
-                return ResourceManager.GetString("AppTaskLanguageReportLanguageText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AppTaskLanguageReportLastUpdateContactTVText.
-        /// </summary>
-        public static string AppTaskLanguageReportLastUpdateContactTVText {
-            get {
-                return ResourceManager.GetString("AppTaskLanguageReportLastUpdateContactTVText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AppTaskLanguageReportTranslationStatusText.
-        /// </summary>
-        public static string AppTaskLanguageReportTranslationStatusText {
-            get {
-                return ResourceManager.GetString("AppTaskLanguageReportTranslationStatusText", resourceCulture);
+                return ResourceManager.GetString("AppTaskLanguageReportAppTaskLanguageReportTest", resourceCulture);
             }
         }
         
@@ -1834,20 +1816,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ClimateDataValueReportLastUpdateContactTVText.
+        ///   Looks up a localized string similar to ClimateDataValueReportClimateDataValueReportTest.
         /// </summary>
-        public static string ClimateDataValueReportLastUpdateContactTVText {
+        public static string ClimateDataValueReportClimateDataValueReportTest {
             get {
-                return ResourceManager.GetString("ClimateDataValueReportLastUpdateContactTVText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ClimateDataValueReportStorageDataTypeEnumText.
-        /// </summary>
-        public static string ClimateDataValueReportStorageDataTypeEnumText {
-            get {
-                return ResourceManager.GetString("ClimateDataValueReportStorageDataTypeEnumText", resourceCulture);
+                return ResourceManager.GetString("ClimateDataValueReportClimateDataValueReportTest", resourceCulture);
             }
         }
         
@@ -2374,164 +2347,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ContactLogin.
-        /// </summary>
-        public static string ContactLogin {
-            get {
-                return ResourceManager.GetString("ContactLogin", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginContactID.
-        /// </summary>
-        public static string ContactLoginContactID {
-            get {
-                return ResourceManager.GetString("ContactLoginContactID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginContactLoginID.
-        /// </summary>
-        public static string ContactLoginContactLoginID {
-            get {
-                return ResourceManager.GetString("ContactLoginContactLoginID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginContactLoginReport.
-        /// </summary>
-        public static string ContactLoginContactLoginReport {
-            get {
-                return ResourceManager.GetString("ContactLoginContactLoginReport", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginContactLoginWeb.
-        /// </summary>
-        public static string ContactLoginContactLoginWeb {
-            get {
-                return ResourceManager.GetString("ContactLoginContactLoginWeb", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to ContactLoginEmail.
         /// </summary>
         public static string ContactLoginEmail {
             get {
                 return ResourceManager.GetString("ContactLoginEmail", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginHasErrors.
-        /// </summary>
-        public static string ContactLoginHasErrors {
-            get {
-                return ResourceManager.GetString("ContactLoginHasErrors", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginLastUpdateContactTVItemID.
-        /// </summary>
-        public static string ContactLoginLastUpdateContactTVItemID {
-            get {
-                return ResourceManager.GetString("ContactLoginLastUpdateContactTVItemID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginLastUpdateDate_UTC.
-        /// </summary>
-        public static string ContactLoginLastUpdateDate_UTC {
-            get {
-                return ResourceManager.GetString("ContactLoginLastUpdateDate_UTC", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginLoginEmail.
-        /// </summary>
-        public static string ContactLoginLoginEmail {
-            get {
-                return ResourceManager.GetString("ContactLoginLoginEmail", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginPasswordHash.
-        /// </summary>
-        public static string ContactLoginPasswordHash {
-            get {
-                return ResourceManager.GetString("ContactLoginPasswordHash", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginPasswordSalt.
-        /// </summary>
-        public static string ContactLoginPasswordSalt {
-            get {
-                return ResourceManager.GetString("ContactLoginPasswordSalt", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginReport.
-        /// </summary>
-        public static string ContactLoginReport {
-            get {
-                return ResourceManager.GetString("ContactLoginReport", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginReportContactLoginReportTest.
-        /// </summary>
-        public static string ContactLoginReportContactLoginReportTest {
-            get {
-                return ResourceManager.GetString("ContactLoginReportContactLoginReportTest", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginWeb.
-        /// </summary>
-        public static string ContactLoginWeb {
-            get {
-                return ResourceManager.GetString("ContactLoginWeb", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginWebConfirmPassword.
-        /// </summary>
-        public static string ContactLoginWebConfirmPassword {
-            get {
-                return ResourceManager.GetString("ContactLoginWebConfirmPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginWebLastUpdateContactTVText.
-        /// </summary>
-        public static string ContactLoginWebLastUpdateContactTVText {
-            get {
-                return ResourceManager.GetString("ContactLoginWebLastUpdateContactTVText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactLoginWebPassword.
-        /// </summary>
-        public static string ContactLoginWebPassword {
-            get {
-                return ResourceManager.GetString("ContactLoginWebPassword", resourceCulture);
             }
         }
         
@@ -2577,6 +2397,33 @@ namespace CSSPModels.Resources {
         public static string ContactOKHasErrors {
             get {
                 return ResourceManager.GetString("ContactOKHasErrors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContactPassword.
+        /// </summary>
+        public static string ContactPassword {
+            get {
+                return ResourceManager.GetString("ContactPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContactPasswordHash.
+        /// </summary>
+        public static string ContactPasswordHash {
+            get {
+                return ResourceManager.GetString("ContactPasswordHash", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContactPasswordSalt.
+        /// </summary>
+        public static string ContactPasswordSalt {
+            get {
+                return ResourceManager.GetString("ContactPasswordSalt", resourceCulture);
             }
         }
         
@@ -8162,56 +8009,11 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Login.
-        /// </summary>
-        public static string Login {
-            get {
-                return ResourceManager.GetString("Login", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LoginConfirmPassword.
-        /// </summary>
-        public static string LoginConfirmPassword {
-            get {
-                return ResourceManager.GetString("LoginConfirmPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to LogInformation.
         /// </summary>
         public static string LogInformation {
             get {
                 return ResourceManager.GetString("LogInformation", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LoginHasErrors.
-        /// </summary>
-        public static string LoginHasErrors {
-            get {
-                return ResourceManager.GetString("LoginHasErrors", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LoginLoginEmail.
-        /// </summary>
-        public static string LoginLoginEmail {
-            get {
-                return ResourceManager.GetString("LoginLoginEmail", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LoginPassword.
-        /// </summary>
-        public static string LoginPassword {
-            get {
-                return ResourceManager.GetString("LoginPassword", resourceCulture);
             }
         }
         
@@ -9841,6 +9643,15 @@ namespace CSSPModels.Resources {
         public static string MWQMAnalysisReportParameterShortRangeNumberOfDays {
             get {
                 return ResourceManager.GetString("MWQMAnalysisReportParameterShortRangeNumberOfDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MWQMAnalysisReportParameterShowDataTypes.
+        /// </summary>
+        public static string MWQMAnalysisReportParameterShowDataTypes {
+            get {
+                return ResourceManager.GetString("MWQMAnalysisReportParameterShowDataTypes", resourceCulture);
             }
         }
         
@@ -13436,6 +13247,339 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ReportType.
+        /// </summary>
+        public static string ReportType {
+            get {
+                return ResourceManager.GetString("ReportType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeFileType.
+        /// </summary>
+        public static string ReportTypeFileType {
+            get {
+                return ResourceManager.GetString("ReportTypeFileType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeHasErrors.
+        /// </summary>
+        public static string ReportTypeHasErrors {
+            get {
+                return ResourceManager.GetString("ReportTypeHasErrors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguage.
+        /// </summary>
+        public static string ReportTypeLanguage {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageDescription.
+        /// </summary>
+        public static string ReportTypeLanguageDescription {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageHasErrors.
+        /// </summary>
+        public static string ReportTypeLanguageHasErrors {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageHasErrors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageLanguage.
+        /// </summary>
+        public static string ReportTypeLanguageLanguage {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageLastUpdateContactTVItemID.
+        /// </summary>
+        public static string ReportTypeLanguageLastUpdateContactTVItemID {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageLastUpdateContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageLastUpdateDate_UTC.
+        /// </summary>
+        public static string ReportTypeLanguageLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageName.
+        /// </summary>
+        public static string ReportTypeLanguageName {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageReport.
+        /// </summary>
+        public static string ReportTypeLanguageReport {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageReportReportTypeLanguageReportTest.
+        /// </summary>
+        public static string ReportTypeLanguageReportReportTypeLanguageReportTest {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageReportReportTypeLanguageReportTest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageReportTypeID.
+        /// </summary>
+        public static string ReportTypeLanguageReportTypeID {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageReportTypeID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageReportTypeLanguageID.
+        /// </summary>
+        public static string ReportTypeLanguageReportTypeLanguageID {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageReportTypeLanguageID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageReportTypeLanguageReport.
+        /// </summary>
+        public static string ReportTypeLanguageReportTypeLanguageReport {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageReportTypeLanguageReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageReportTypeLanguageWeb.
+        /// </summary>
+        public static string ReportTypeLanguageReportTypeLanguageWeb {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageReportTypeLanguageWeb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageStartOfFileName.
+        /// </summary>
+        public static string ReportTypeLanguageStartOfFileName {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageStartOfFileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageTranslationStatusDescription.
+        /// </summary>
+        public static string ReportTypeLanguageTranslationStatusDescription {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageTranslationStatusDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageTranslationStatusName.
+        /// </summary>
+        public static string ReportTypeLanguageTranslationStatusName {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageTranslationStatusName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageTranslationStatusStartOfFileName.
+        /// </summary>
+        public static string ReportTypeLanguageTranslationStatusStartOfFileName {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageTranslationStatusStartOfFileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageWeb.
+        /// </summary>
+        public static string ReportTypeLanguageWeb {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageWeb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageWebLanguageText.
+        /// </summary>
+        public static string ReportTypeLanguageWebLanguageText {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageWebLanguageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageWebLastUpdateContactTVText.
+        /// </summary>
+        public static string ReportTypeLanguageWebLastUpdateContactTVText {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageWebLastUpdateContactTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageWebTranslationStatusDescriptionText.
+        /// </summary>
+        public static string ReportTypeLanguageWebTranslationStatusDescriptionText {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageWebTranslationStatusDescriptionText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageWebTranslationStatusNameText.
+        /// </summary>
+        public static string ReportTypeLanguageWebTranslationStatusNameText {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageWebTranslationStatusNameText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLanguageWebTranslationStatusStartOfFileNameText.
+        /// </summary>
+        public static string ReportTypeLanguageWebTranslationStatusStartOfFileNameText {
+            get {
+                return ResourceManager.GetString("ReportTypeLanguageWebTranslationStatusStartOfFileNameText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLastUpdateContactTVItemID.
+        /// </summary>
+        public static string ReportTypeLastUpdateContactTVItemID {
+            get {
+                return ResourceManager.GetString("ReportTypeLastUpdateContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeLastUpdateDate_UTC.
+        /// </summary>
+        public static string ReportTypeLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("ReportTypeLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeReport.
+        /// </summary>
+        public static string ReportTypeReport {
+            get {
+                return ResourceManager.GetString("ReportTypeReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeReportReportTypeReportTest.
+        /// </summary>
+        public static string ReportTypeReportReportTypeReportTest {
+            get {
+                return ResourceManager.GetString("ReportTypeReportReportTypeReportTest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeReportTypeID.
+        /// </summary>
+        public static string ReportTypeReportTypeID {
+            get {
+                return ResourceManager.GetString("ReportTypeReportTypeID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeReportTypeReport.
+        /// </summary>
+        public static string ReportTypeReportTypeReport {
+            get {
+                return ResourceManager.GetString("ReportTypeReportTypeReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeReportTypeWeb.
+        /// </summary>
+        public static string ReportTypeReportTypeWeb {
+            get {
+                return ResourceManager.GetString("ReportTypeReportTypeWeb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeTVType.
+        /// </summary>
+        public static string ReportTypeTVType {
+            get {
+                return ResourceManager.GetString("ReportTypeTVType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeUniqueCode.
+        /// </summary>
+        public static string ReportTypeUniqueCode {
+            get {
+                return ResourceManager.GetString("ReportTypeUniqueCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeWeb.
+        /// </summary>
+        public static string ReportTypeWeb {
+            get {
+                return ResourceManager.GetString("ReportTypeWeb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportTypeWebLastUpdateContactTVText.
+        /// </summary>
+        public static string ReportTypeWebLastUpdateContactTVText {
+            get {
+                return ResourceManager.GetString("ReportTypeWebLastUpdateContactTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ResetPassword.
         /// </summary>
         public static string ResetPassword {
@@ -15596,6 +15740,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TVFileParameters.
+        /// </summary>
+        public static string TVFileParameters {
+            get {
+                return ResourceManager.GetString("TVFileParameters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TVFileReport.
         /// </summary>
         public static string TVFileReport {
@@ -15610,6 +15763,15 @@ namespace CSSPModels.Resources {
         public static string TVFileReportTVFileReportTest {
             get {
                 return ResourceManager.GetString("TVFileReportTVFileReportTest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVFileReportTypeID.
+        /// </summary>
+        public static string TVFileReportTypeID {
+            get {
+                return ResourceManager.GetString("TVFileReportTypeID", resourceCulture);
             }
         }
         

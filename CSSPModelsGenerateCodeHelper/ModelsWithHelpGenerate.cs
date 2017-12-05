@@ -86,7 +86,7 @@ namespace CSSPModelsGenerateCodeHelper
                     continue;
                 }
 
-                //if (dllTypeInfoModels.Type.Name != "AppErrLog")
+                //if (dllTypeInfoModels.Type.Name != "Contact")
                 //{
                 //    continue;
                 //}
@@ -236,10 +236,18 @@ namespace CSSPModelsGenerateCodeHelper
                             return;
                         }
 
-                        sb.AppendLine(@"        public " + (dllPropertyInfo.CSSPProp.IsList ?
-                            PropTypeText.Replace(dllPropertyInfo.CSSPProp.PropType, "List<" + dllPropertyInfo.CSSPProp.PropType + ">") :
-                            PropTypeText) + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") +
-                            " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                        if (dllTypeInfoModels.Type.Name == "Contact" && (dllPropertyInfo.PropertyInfo.Name == "PasswordHash" || dllPropertyInfo.PropertyInfo.Name == "PasswordSalt"))
+                        {
+                            sb.AppendLine(@"        public byte[] " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                        }
+                        else
+                        {
+                            sb.AppendLine(@"        public " + (dllPropertyInfo.CSSPProp.IsList ?
+                                PropTypeText.Replace(dllPropertyInfo.CSSPProp.PropType, "List<" + dllPropertyInfo.CSSPProp.PropType + ">") :
+                                PropTypeText) + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") +
+                                " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                        }
+
                     }
                 }
                 sb.AppendLine(@"        #endregion Properties in DB");
@@ -448,10 +456,10 @@ namespace CSSPModelsGenerateCodeHelper
                                 //}
                                 //else
                                 //{
-                                    sb.AppendLine(@"        public " + (dllPropertyInfo.CSSPProp.IsList ?
-                                        PropTypeText.Replace(dllPropertyInfo.CSSPProp.PropType, "List<" + dllPropertyInfo.CSSPProp.PropType + ">") :
-                                        PropTypeText) + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") +
-                                        " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
+                                sb.AppendLine(@"        public " + (dllPropertyInfo.CSSPProp.IsList ?
+                                    PropTypeText.Replace(dllPropertyInfo.CSSPProp.PropType, "List<" + dllPropertyInfo.CSSPProp.PropType + ">") :
+                                    PropTypeText) + (dllPropertyInfo.CSSPProp.IsNullable ? (PropTypeText == "string" ? "" : "?") : "") +
+                                    " " + dllPropertyInfo.CSSPProp.PropName + " { get; set; }");
                                 //}
                             }
 
@@ -920,6 +928,10 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"        [CSSPAllowNull]");
             }
             else if (dllTypeInfoModels.HasNotMappedAttribute && dllPropertyInfo.CSSPProp.IsNullable)
+            {
+                sb.AppendLine(@"        [CSSPAllowNull]");
+            }
+            else if (dllTypeInfoModels.Type.Name == "Contact" && (dllPropertyInfo.PropertyInfo.Name == "PasswordHash" || dllPropertyInfo.PropertyInfo.Name == "PasswordSalt"))
             {
                 sb.AppendLine(@"        [CSSPAllowNull]");
             }

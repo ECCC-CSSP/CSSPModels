@@ -51,6 +51,9 @@ namespace CSSPModels
         public int WetLimit96h { get; set; }
         [StringLength(250)]
         public string RunsToOmit { get; set; }
+        [StringLength(20)]
+        [CSSPAllowNull]
+        public string ShowDataTypes { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "8")]
         public int? ExcelTVFileTVItemID { get; set; }
         [CSSPEnumType]
