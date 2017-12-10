@@ -6,6 +6,7 @@ using CSSPEnums;
 using CSSPModels.Resources;
 using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.Extensions.Configuration;
 
 namespace CSSPModels
 {
@@ -127,8 +128,13 @@ namespace CSSPModels
         #region Overrides
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string CSSPWebToolsDBConnectionString = ConfigurationManager.ConnectionStrings["CSSPWebToolsDB"].ConnectionString;
-            string TestDBConnectionString = ConfigurationManager.ConnectionStrings["TestDB"].ConnectionString;
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+           .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+           .AddJsonFile("appsettings.json")
+           .Build();
+
+            string CSSPWebToolsDBConnectionString = configuration.GetConnectionString("CSSPWebToolsDB");
+            string TestDBConnectionString = configuration.GetConnectionString("TestDB");
             if (System.Environment.UserName == "Charles")
             {
                 CSSPWebToolsDBConnectionString = CSSPWebToolsDBConnectionString.Replace("wmon01dtchlebl2", "charles-pc");

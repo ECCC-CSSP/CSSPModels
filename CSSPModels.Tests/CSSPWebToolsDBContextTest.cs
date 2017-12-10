@@ -39,7 +39,7 @@ namespace CSSPModels.Tests
                 {
                     var values = db.TVItems.FirstOrDefault();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     // nothing
                 }
