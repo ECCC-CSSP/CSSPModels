@@ -353,10 +353,10 @@ namespace CSSPModelsGenerateCodeHelper
                         typeProp.Plurial = "es";
                     }
 
-                    if (type.Name == "AddressWeb")
-                    {
-                        int seflij = 34;
-                    }
+                    //if (type.Name == "AddressWeb")
+                    //{
+                    //    int seflij = 34;
+                    //}
                     if (SkipType(type))
                     {
                         continue;

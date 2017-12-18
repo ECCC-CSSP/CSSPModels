@@ -13247,6 +13247,375 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ReportSection.
+        /// </summary>
+        public static string ReportSection {
+            get {
+                return ResourceManager.GetString("ReportSection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionHasErrors.
+        /// </summary>
+        public static string ReportSectionHasErrors {
+            get {
+                return ResourceManager.GetString("ReportSectionHasErrors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionIsStatic.
+        /// </summary>
+        public static string ReportSectionIsStatic {
+            get {
+                return ResourceManager.GetString("ReportSectionIsStatic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguage.
+        /// </summary>
+        public static string ReportSectionLanguage {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageHasErrors.
+        /// </summary>
+        public static string ReportSectionLanguageHasErrors {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageHasErrors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageLanguage.
+        /// </summary>
+        public static string ReportSectionLanguageLanguage {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageLastUpdateContactTVItemID.
+        /// </summary>
+        public static string ReportSectionLanguageLastUpdateContactTVItemID {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageLastUpdateContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageLastUpdateDate_UTC.
+        /// </summary>
+        public static string ReportSectionLanguageLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageReport.
+        /// </summary>
+        public static string ReportSectionLanguageReport {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageReportReportSectionLanguageReportTest.
+        /// </summary>
+        public static string ReportSectionLanguageReportReportSectionLanguageReportTest {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageReportReportSectionLanguageReportTest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageReportSectionID.
+        /// </summary>
+        public static string ReportSectionLanguageReportSectionID {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageReportSectionID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageReportSectionLanguageID.
+        /// </summary>
+        public static string ReportSectionLanguageReportSectionLanguageID {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageReportSectionLanguageID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageReportSectionLanguageReport.
+        /// </summary>
+        public static string ReportSectionLanguageReportSectionLanguageReport {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageReportSectionLanguageReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageReportSectionLanguageWeb.
+        /// </summary>
+        public static string ReportSectionLanguageReportSectionLanguageWeb {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageReportSectionLanguageWeb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageReportSectionName.
+        /// </summary>
+        public static string ReportSectionLanguageReportSectionName {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageReportSectionName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageReportSectionText.
+        /// </summary>
+        public static string ReportSectionLanguageReportSectionText {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageReportSectionText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageTranslationStatusReportSectionName.
+        /// </summary>
+        public static string ReportSectionLanguageTranslationStatusReportSectionName {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageTranslationStatusReportSectionName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageTranslationStatusReportSectionText.
+        /// </summary>
+        public static string ReportSectionLanguageTranslationStatusReportSectionText {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageTranslationStatusReportSectionText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageWeb.
+        /// </summary>
+        public static string ReportSectionLanguageWeb {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageWeb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageWebLanguageText.
+        /// </summary>
+        public static string ReportSectionLanguageWebLanguageText {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageWebLanguageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageWebLastUpdateContactTVText.
+        /// </summary>
+        public static string ReportSectionLanguageWebLastUpdateContactTVText {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageWebLastUpdateContactTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageWebTranslationStatusReportSectionNameText.
+        /// </summary>
+        public static string ReportSectionLanguageWebTranslationStatusReportSectionNameText {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageWebTranslationStatusReportSectionNameText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLanguageWebTranslationStatusReportSectionNameTextText.
+        /// </summary>
+        public static string ReportSectionLanguageWebTranslationStatusReportSectionNameTextText {
+            get {
+                return ResourceManager.GetString("ReportSectionLanguageWebTranslationStatusReportSectionNameTextText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLastUpdateContactTVItemID.
+        /// </summary>
+        public static string ReportSectionLastUpdateContactTVItemID {
+            get {
+                return ResourceManager.GetString("ReportSectionLastUpdateContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLastUpdateDate_UTC.
+        /// </summary>
+        public static string ReportSectionLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("ReportSectionLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionLocked.
+        /// </summary>
+        public static string ReportSectionLocked {
+            get {
+                return ResourceManager.GetString("ReportSectionLocked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionOrdinal.
+        /// </summary>
+        public static string ReportSectionOrdinal {
+            get {
+                return ResourceManager.GetString("ReportSectionOrdinal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionParentReportSectionID.
+        /// </summary>
+        public static string ReportSectionParentReportSectionID {
+            get {
+                return ResourceManager.GetString("ReportSectionParentReportSectionID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionReport.
+        /// </summary>
+        public static string ReportSectionReport {
+            get {
+                return ResourceManager.GetString("ReportSectionReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionReportReportSectionReportTest.
+        /// </summary>
+        public static string ReportSectionReportReportSectionReportTest {
+            get {
+                return ResourceManager.GetString("ReportSectionReportReportSectionReportTest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionReportSectionID.
+        /// </summary>
+        public static string ReportSectionReportSectionID {
+            get {
+                return ResourceManager.GetString("ReportSectionReportSectionID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionReportSectionReport.
+        /// </summary>
+        public static string ReportSectionReportSectionReport {
+            get {
+                return ResourceManager.GetString("ReportSectionReportSectionReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionReportSectionWeb.
+        /// </summary>
+        public static string ReportSectionReportSectionWeb {
+            get {
+                return ResourceManager.GetString("ReportSectionReportSectionWeb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionReportTypeID.
+        /// </summary>
+        public static string ReportSectionReportTypeID {
+            get {
+                return ResourceManager.GetString("ReportSectionReportTypeID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionTemplateReportSectionID.
+        /// </summary>
+        public static string ReportSectionTemplateReportSectionID {
+            get {
+                return ResourceManager.GetString("ReportSectionTemplateReportSectionID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionTVItemID.
+        /// </summary>
+        public static string ReportSectionTVItemID {
+            get {
+                return ResourceManager.GetString("ReportSectionTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionWeb.
+        /// </summary>
+        public static string ReportSectionWeb {
+            get {
+                return ResourceManager.GetString("ReportSectionWeb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionWebLastUpdateContactTVText.
+        /// </summary>
+        public static string ReportSectionWebLastUpdateContactTVText {
+            get {
+                return ResourceManager.GetString("ReportSectionWebLastUpdateContactTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionWebReportSectionName.
+        /// </summary>
+        public static string ReportSectionWebReportSectionName {
+            get {
+                return ResourceManager.GetString("ReportSectionWebReportSectionName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionWebReportSectionText.
+        /// </summary>
+        public static string ReportSectionWebReportSectionText {
+            get {
+                return ResourceManager.GetString("ReportSectionWebReportSectionText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ReportSectionYear.
+        /// </summary>
+        public static string ReportSectionYear {
+            get {
+                return ResourceManager.GetString("ReportSectionYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ReportType.
         /// </summary>
         public static string ReportType {

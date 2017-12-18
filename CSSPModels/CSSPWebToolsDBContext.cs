@@ -70,6 +70,8 @@ namespace CSSPModels
         public virtual DbSet<RainExceedance> RainExceedances { get; set; }
         public virtual DbSet<RatingCurve> RatingCurves { get; set; }
         public virtual DbSet<ResetPassword> ResetPasswords { get; set; }
+        public virtual DbSet<ReportSectionLanguage> ReportSectionLanguages { get; set; }
+        public virtual DbSet<ReportSection> ReportSections { get; set; }
         public virtual DbSet<ReportTypeLanguage> ReportTypeLanguages { get; set; }
         public virtual DbSet<ReportType> ReportTypes { get; set; }
         public virtual DbSet<SamplingPlanSubsectorSite> SamplingPlanSubsectorSites { get; set; }

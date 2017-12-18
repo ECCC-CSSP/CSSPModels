@@ -57,6 +57,8 @@ namespace CSSPModelsGenerateCodeHelper
                 new TableFieldEnumException() { TableName = "ReportTypeLanguages", FieldName = "TranslationStatusName", EnumText = "TranslationStatusEnum" },
                 new TableFieldEnumException() { TableName = "ReportTypeLanguages", FieldName = "TranslationStatusDescription", EnumText = "TranslationStatusEnum" },
                 new TableFieldEnumException() { TableName = "ReportTypeLanguages", FieldName = "TranslationStatusStartOfFileName", EnumText = "TranslationStatusEnum" },
+                new TableFieldEnumException() { TableName = "ReportSectionLanguages", FieldName = "TranslationStatusReportSectionName", EnumText = "TranslationStatusEnum" },
+                new TableFieldEnumException() { TableName = "ReportSectionLanguages", FieldName = "TranslationStatusReportSectionText", EnumText = "TranslationStatusEnum" },
                 new TableFieldEnumException() { TableName = "TideDataValues", FieldName = "TideStart", EnumText = "TideTextEnum" },
                 new TableFieldEnumException() { TableName = "TideDataValues", FieldName = "TideEnd", EnumText = "TideTextEnum" },
                 new TableFieldEnumException() { TableName = "TVFiles", FieldName = "TemplateTVType", EnumText = "TVTypeEnum" },
