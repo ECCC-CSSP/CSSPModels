@@ -104,6 +104,10 @@ namespace CSSPModelsGenerateCode
             richTextBoxStatus.Text = "";
             richTextBoxStatus2.Text = "";
             modelsGenerateCodeHelper.ModelsWithHelpGenerate(true);
+
+            richTextBoxStatus.AppendText("In order to compile the CSSPModels project with documentation\r\n");
+            richTextBoxStatus.AppendText("You need to [EXCLUDE] the directory [src] and [INCLUDE] the directory [srcWithHelp] from the CSSPModels project\r\n");
+
         }
         private void butRunModelLint_Click(object sender, EventArgs e)
         {
