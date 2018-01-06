@@ -456,198 +456,6 @@
 <data name="BoxModelReportBoxModelReportTest" xml:space="preserve">
   <value>BoxModelReportBoxModelReportTest</value>
 </data>
-<data name="ReportSectionLanguage" xml:space="preserve">
-  <value>ReportSectionLanguage</value>
-</data>
-<data name="ReportSectionLanguageReportSectionLanguageID" xml:space="preserve">
-  <value>ReportSectionLanguageReportSectionLanguageID</value>
-</data>
-<data name="ReportSectionLanguageReportSectionID" xml:space="preserve">
-  <value>ReportSectionLanguageReportSectionID</value>
-</data>
-<data name="ReportSectionLanguageLanguage" xml:space="preserve">
-  <value>ReportSectionLanguageLanguage</value>
-</data>
-<data name="ReportSectionLanguageReportSectionName" xml:space="preserve">
-  <value>ReportSectionLanguageReportSectionName</value>
-</data>
-<data name="ReportSectionLanguageTranslationStatusReportSectionName" xml:space="preserve">
-  <value>ReportSectionLanguageTranslationStatusReportSectionName</value>
-</data>
-<data name="ReportSectionLanguageReportSectionText" xml:space="preserve">
-  <value>ReportSectionLanguageReportSectionText</value>
-</data>
-<data name="ReportSectionLanguageTranslationStatusReportSectionText" xml:space="preserve">
-  <value>ReportSectionLanguageTranslationStatusReportSectionText</value>
-</data>
-<data name="ReportSectionLanguageReportSectionLanguageWeb" xml:space="preserve">
-  <value>ReportSectionLanguageReportSectionLanguageWeb</value>
-</data>
-<data name="ReportSectionLanguageReportSectionLanguageReport" xml:space="preserve">
-  <value>ReportSectionLanguageReportSectionLanguageReport</value>
-</data>
-<data name="ReportSectionLanguageLastUpdateDate_UTC" xml:space="preserve">
-  <value>ReportSectionLanguageLastUpdateDate_UTC</value>
-</data>
-<data name="ReportSectionLanguageLastUpdateContactTVItemID" xml:space="preserve">
-  <value>ReportSectionLanguageLastUpdateContactTVItemID</value>
-</data>
-<data name="ReportSectionLanguageHasErrors" xml:space="preserve">
-  <value>ReportSectionLanguageHasErrors</value>
-</data>
-<data name="ReportSectionLanguageWeb" xml:space="preserve">
-  <value>ReportSectionLanguageWeb</value>
-</data>
-<data name="ReportSectionLanguageWebLastUpdateContactTVText" xml:space="preserve">
-  <value>ReportSectionLanguageWebLastUpdateContactTVText</value>
-</data>
-<data name="ReportSectionLanguageWebLanguageText" xml:space="preserve">
-  <value>ReportSectionLanguageWebLanguageText</value>
-</data>
-<data name="ReportSectionLanguageWebTranslationStatusReportSectionNameText" xml:space="preserve">
-  <value>ReportSectionLanguageWebTranslationStatusReportSectionNameText</value>
-</data>
-<data name="ReportSectionLanguageWebTranslationStatusReportSectionNameTextText" xml:space="preserve">
-  <value>ReportSectionLanguageWebTranslationStatusReportSectionNameTextText</value>
-</data>
-<data name="ReportSectionLanguageReport" xml:space="preserve">
-  <value>ReportSectionLanguageReport</value>
-</data>
-<data name="ReportSectionLanguageReportReportSectionLanguageReportTest" xml:space="preserve">
-  <value>ReportSectionLanguageReportReportSectionLanguageReportTest</value>
-</data>
-<data name="ReportSection" xml:space="preserve">
-  <value>ReportSection</value>
-</data>
-<data name="ReportSectionReportSectionID" xml:space="preserve">
-  <value>ReportSectionReportSectionID</value>
-</data>
-<data name="ReportSectionReportTypeID" xml:space="preserve">
-  <value>ReportSectionReportTypeID</value>
-</data>
-<data name="ReportSectionTVItemID" xml:space="preserve">
-  <value>ReportSectionTVItemID</value>
-</data>
-<data name="ReportSectionOrdinal" xml:space="preserve">
-  <value>ReportSectionOrdinal</value>
-</data>
-<data name="ReportSectionIsStatic" xml:space="preserve">
-  <value>ReportSectionIsStatic</value>
-</data>
-<data name="ReportSectionParentReportSectionID" xml:space="preserve">
-  <value>ReportSectionParentReportSectionID</value>
-</data>
-<data name="ReportSectionYear" xml:space="preserve">
-  <value>ReportSectionYear</value>
-</data>
-<data name="ReportSectionLocked" xml:space="preserve">
-  <value>ReportSectionLocked</value>
-</data>
-<data name="ReportSectionTemplateReportSectionID" xml:space="preserve">
-  <value>ReportSectionTemplateReportSectionID</value>
-</data>
-<data name="ReportSectionReportSectionWeb" xml:space="preserve">
-  <value>ReportSectionReportSectionWeb</value>
-</data>
-<data name="ReportSectionReportSectionReport" xml:space="preserve">
-  <value>ReportSectionReportSectionReport</value>
-</data>
-<data name="ReportSectionLastUpdateDate_UTC" xml:space="preserve">
-  <value>ReportSectionLastUpdateDate_UTC</value>
-</data>
-<data name="ReportSectionLastUpdateContactTVItemID" xml:space="preserve">
-  <value>ReportSectionLastUpdateContactTVItemID</value>
-</data>
-<data name="ReportSectionHasErrors" xml:space="preserve">
-  <value>ReportSectionHasErrors</value>
-</data>
-<data name="ReportSectionWeb" xml:space="preserve">
-  <value>ReportSectionWeb</value>
-</data>
-<data name="ReportSectionWebLastUpdateContactTVText" xml:space="preserve">
-  <value>ReportSectionWebLastUpdateContactTVText</value>
-</data>
-<data name="ReportSectionWebReportSectionName" xml:space="preserve">
-  <value>ReportSectionWebReportSectionName</value>
-</data>
-<data name="ReportSectionWebReportSectionText" xml:space="preserve">
-  <value>ReportSectionWebReportSectionText</value>
-</data>
-<data name="ReportSectionReport" xml:space="preserve">
-  <value>ReportSectionReport</value>
-</data>
-<data name="ReportSectionReportReportSectionReportTest" xml:space="preserve">
-  <value>ReportSectionReportReportSectionReportTest</value>
-</data>
-<data name="ReportTypeLanguage" xml:space="preserve">
-  <value>ReportTypeLanguage</value>
-</data>
-<data name="ReportTypeLanguageReportTypeLanguageID" xml:space="preserve">
-  <value>ReportTypeLanguageReportTypeLanguageID</value>
-</data>
-<data name="ReportTypeLanguageReportTypeID" xml:space="preserve">
-  <value>ReportTypeLanguageReportTypeID</value>
-</data>
-<data name="ReportTypeLanguageLanguage" xml:space="preserve">
-  <value>ReportTypeLanguageLanguage</value>
-</data>
-<data name="ReportTypeLanguageName" xml:space="preserve">
-  <value>ReportTypeLanguageName</value>
-</data>
-<data name="ReportTypeLanguageTranslationStatusName" xml:space="preserve">
-  <value>ReportTypeLanguageTranslationStatusName</value>
-</data>
-<data name="ReportTypeLanguageDescription" xml:space="preserve">
-  <value>ReportTypeLanguageDescription</value>
-</data>
-<data name="ReportTypeLanguageTranslationStatusDescription" xml:space="preserve">
-  <value>ReportTypeLanguageTranslationStatusDescription</value>
-</data>
-<data name="ReportTypeLanguageStartOfFileName" xml:space="preserve">
-  <value>ReportTypeLanguageStartOfFileName</value>
-</data>
-<data name="ReportTypeLanguageTranslationStatusStartOfFileName" xml:space="preserve">
-  <value>ReportTypeLanguageTranslationStatusStartOfFileName</value>
-</data>
-<data name="ReportTypeLanguageReportTypeLanguageWeb" xml:space="preserve">
-  <value>ReportTypeLanguageReportTypeLanguageWeb</value>
-</data>
-<data name="ReportTypeLanguageReportTypeLanguageReport" xml:space="preserve">
-  <value>ReportTypeLanguageReportTypeLanguageReport</value>
-</data>
-<data name="ReportTypeLanguageLastUpdateDate_UTC" xml:space="preserve">
-  <value>ReportTypeLanguageLastUpdateDate_UTC</value>
-</data>
-<data name="ReportTypeLanguageLastUpdateContactTVItemID" xml:space="preserve">
-  <value>ReportTypeLanguageLastUpdateContactTVItemID</value>
-</data>
-<data name="ReportTypeLanguageHasErrors" xml:space="preserve">
-  <value>ReportTypeLanguageHasErrors</value>
-</data>
-<data name="ReportTypeLanguageWeb" xml:space="preserve">
-  <value>ReportTypeLanguageWeb</value>
-</data>
-<data name="ReportTypeLanguageWebLastUpdateContactTVText" xml:space="preserve">
-  <value>ReportTypeLanguageWebLastUpdateContactTVText</value>
-</data>
-<data name="ReportTypeLanguageWebLanguageText" xml:space="preserve">
-  <value>ReportTypeLanguageWebLanguageText</value>
-</data>
-<data name="ReportTypeLanguageWebTranslationStatusNameText" xml:space="preserve">
-  <value>ReportTypeLanguageWebTranslationStatusNameText</value>
-</data>
-<data name="ReportTypeLanguageWebTranslationStatusDescriptionText" xml:space="preserve">
-  <value>ReportTypeLanguageWebTranslationStatusDescriptionText</value>
-</data>
-<data name="ReportTypeLanguageWebTranslationStatusStartOfFileNameText" xml:space="preserve">
-  <value>ReportTypeLanguageWebTranslationStatusStartOfFileNameText</value>
-</data>
-<data name="ReportTypeLanguageReport" xml:space="preserve">
-  <value>ReportTypeLanguageReport</value>
-</data>
-<data name="ReportTypeLanguageReportReportTypeLanguageReportTest" xml:space="preserve">
-  <value>ReportTypeLanguageReportReportTypeLanguageReportTest</value>
-</data>
 <data name="BoxModelLanguage" xml:space="preserve">
   <value>BoxModelLanguage</value>
 </data>
@@ -3678,48 +3486,6 @@
 <data name="RainExceedanceReportRainExceedanceReportTest" xml:space="preserve">
   <value>RainExceedanceReportRainExceedanceReportTest</value>
 </data>
-<data name="ReportType" xml:space="preserve">
-  <value>ReportType</value>
-</data>
-<data name="ReportTypeReportTypeID" xml:space="preserve">
-  <value>ReportTypeReportTypeID</value>
-</data>
-<data name="ReportTypeTVType" xml:space="preserve">
-  <value>ReportTypeTVType</value>
-</data>
-<data name="ReportTypeFileType" xml:space="preserve">
-  <value>ReportTypeFileType</value>
-</data>
-<data name="ReportTypeUniqueCode" xml:space="preserve">
-  <value>ReportTypeUniqueCode</value>
-</data>
-<data name="ReportTypeReportTypeWeb" xml:space="preserve">
-  <value>ReportTypeReportTypeWeb</value>
-</data>
-<data name="ReportTypeReportTypeReport" xml:space="preserve">
-  <value>ReportTypeReportTypeReport</value>
-</data>
-<data name="ReportTypeLastUpdateDate_UTC" xml:space="preserve">
-  <value>ReportTypeLastUpdateDate_UTC</value>
-</data>
-<data name="ReportTypeLastUpdateContactTVItemID" xml:space="preserve">
-  <value>ReportTypeLastUpdateContactTVItemID</value>
-</data>
-<data name="ReportTypeHasErrors" xml:space="preserve">
-  <value>ReportTypeHasErrors</value>
-</data>
-<data name="ReportTypeWeb" xml:space="preserve">
-  <value>ReportTypeWeb</value>
-</data>
-<data name="ReportTypeWebLastUpdateContactTVText" xml:space="preserve">
-  <value>ReportTypeWebLastUpdateContactTVText</value>
-</data>
-<data name="ReportTypeReport" xml:space="preserve">
-  <value>ReportTypeReport</value>
-</data>
-<data name="ReportTypeReportReportTypeReportTest" xml:space="preserve">
-  <value>ReportTypeReportReportTypeReportTest</value>
-</data>
 <data name="RatingCurve" xml:space="preserve">
   <value>RatingCurve</value>
 </data>
@@ -3800,6 +3566,240 @@
 </data>
 <data name="RatingCurveValueReportRatingCurveValueReportTest" xml:space="preserve">
   <value>RatingCurveValueReportRatingCurveValueReportTest</value>
+</data>
+<data name="ReportSection" xml:space="preserve">
+  <value>ReportSection</value>
+</data>
+<data name="ReportSectionReportSectionID" xml:space="preserve">
+  <value>ReportSectionReportSectionID</value>
+</data>
+<data name="ReportSectionReportTypeID" xml:space="preserve">
+  <value>ReportSectionReportTypeID</value>
+</data>
+<data name="ReportSectionTVItemID" xml:space="preserve">
+  <value>ReportSectionTVItemID</value>
+</data>
+<data name="ReportSectionOrdinal" xml:space="preserve">
+  <value>ReportSectionOrdinal</value>
+</data>
+<data name="ReportSectionIsStatic" xml:space="preserve">
+  <value>ReportSectionIsStatic</value>
+</data>
+<data name="ReportSectionParentReportSectionID" xml:space="preserve">
+  <value>ReportSectionParentReportSectionID</value>
+</data>
+<data name="ReportSectionYear" xml:space="preserve">
+  <value>ReportSectionYear</value>
+</data>
+<data name="ReportSectionLocked" xml:space="preserve">
+  <value>ReportSectionLocked</value>
+</data>
+<data name="ReportSectionTemplateReportSectionID" xml:space="preserve">
+  <value>ReportSectionTemplateReportSectionID</value>
+</data>
+<data name="ReportSectionReportSectionWeb" xml:space="preserve">
+  <value>ReportSectionReportSectionWeb</value>
+</data>
+<data name="ReportSectionReportSectionReport" xml:space="preserve">
+  <value>ReportSectionReportSectionReport</value>
+</data>
+<data name="ReportSectionLastUpdateDate_UTC" xml:space="preserve">
+  <value>ReportSectionLastUpdateDate_UTC</value>
+</data>
+<data name="ReportSectionLastUpdateContactTVItemID" xml:space="preserve">
+  <value>ReportSectionLastUpdateContactTVItemID</value>
+</data>
+<data name="ReportSectionHasErrors" xml:space="preserve">
+  <value>ReportSectionHasErrors</value>
+</data>
+<data name="ReportSectionWeb" xml:space="preserve">
+  <value>ReportSectionWeb</value>
+</data>
+<data name="ReportSectionWebLastUpdateContactTVText" xml:space="preserve">
+  <value>ReportSectionWebLastUpdateContactTVText</value>
+</data>
+<data name="ReportSectionWebReportSectionName" xml:space="preserve">
+  <value>ReportSectionWebReportSectionName</value>
+</data>
+<data name="ReportSectionWebReportSectionText" xml:space="preserve">
+  <value>ReportSectionWebReportSectionText</value>
+</data>
+<data name="ReportSectionReport" xml:space="preserve">
+  <value>ReportSectionReport</value>
+</data>
+<data name="ReportSectionReportReportSectionReportTest" xml:space="preserve">
+  <value>ReportSectionReportReportSectionReportTest</value>
+</data>
+<data name="ReportSectionLanguage" xml:space="preserve">
+  <value>ReportSectionLanguage</value>
+</data>
+<data name="ReportSectionLanguageReportSectionLanguageID" xml:space="preserve">
+  <value>ReportSectionLanguageReportSectionLanguageID</value>
+</data>
+<data name="ReportSectionLanguageReportSectionID" xml:space="preserve">
+  <value>ReportSectionLanguageReportSectionID</value>
+</data>
+<data name="ReportSectionLanguageLanguage" xml:space="preserve">
+  <value>ReportSectionLanguageLanguage</value>
+</data>
+<data name="ReportSectionLanguageReportSectionName" xml:space="preserve">
+  <value>ReportSectionLanguageReportSectionName</value>
+</data>
+<data name="ReportSectionLanguageTranslationStatusReportSectionName" xml:space="preserve">
+  <value>ReportSectionLanguageTranslationStatusReportSectionName</value>
+</data>
+<data name="ReportSectionLanguageReportSectionText" xml:space="preserve">
+  <value>ReportSectionLanguageReportSectionText</value>
+</data>
+<data name="ReportSectionLanguageTranslationStatusReportSectionText" xml:space="preserve">
+  <value>ReportSectionLanguageTranslationStatusReportSectionText</value>
+</data>
+<data name="ReportSectionLanguageReportSectionLanguageWeb" xml:space="preserve">
+  <value>ReportSectionLanguageReportSectionLanguageWeb</value>
+</data>
+<data name="ReportSectionLanguageReportSectionLanguageReport" xml:space="preserve">
+  <value>ReportSectionLanguageReportSectionLanguageReport</value>
+</data>
+<data name="ReportSectionLanguageLastUpdateDate_UTC" xml:space="preserve">
+  <value>ReportSectionLanguageLastUpdateDate_UTC</value>
+</data>
+<data name="ReportSectionLanguageLastUpdateContactTVItemID" xml:space="preserve">
+  <value>ReportSectionLanguageLastUpdateContactTVItemID</value>
+</data>
+<data name="ReportSectionLanguageHasErrors" xml:space="preserve">
+  <value>ReportSectionLanguageHasErrors</value>
+</data>
+<data name="ReportSectionLanguageWeb" xml:space="preserve">
+  <value>ReportSectionLanguageWeb</value>
+</data>
+<data name="ReportSectionLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>ReportSectionLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="ReportSectionLanguageWebLanguageText" xml:space="preserve">
+  <value>ReportSectionLanguageWebLanguageText</value>
+</data>
+<data name="ReportSectionLanguageWebTranslationStatusReportSectionNameText" xml:space="preserve">
+  <value>ReportSectionLanguageWebTranslationStatusReportSectionNameText</value>
+</data>
+<data name="ReportSectionLanguageWebTranslationStatusReportSectionNameTextText" xml:space="preserve">
+  <value>ReportSectionLanguageWebTranslationStatusReportSectionNameTextText</value>
+</data>
+<data name="ReportSectionLanguageReport" xml:space="preserve">
+  <value>ReportSectionLanguageReport</value>
+</data>
+<data name="ReportSectionLanguageReportReportSectionLanguageReportTest" xml:space="preserve">
+  <value>ReportSectionLanguageReportReportSectionLanguageReportTest</value>
+</data>
+<data name="ReportType" xml:space="preserve">
+  <value>ReportType</value>
+</data>
+<data name="ReportTypeReportTypeID" xml:space="preserve">
+  <value>ReportTypeReportTypeID</value>
+</data>
+<data name="ReportTypeTVType" xml:space="preserve">
+  <value>ReportTypeTVType</value>
+</data>
+<data name="ReportTypeFileType" xml:space="preserve">
+  <value>ReportTypeFileType</value>
+</data>
+<data name="ReportTypeUniqueCode" xml:space="preserve">
+  <value>ReportTypeUniqueCode</value>
+</data>
+<data name="ReportTypeReportTypeWeb" xml:space="preserve">
+  <value>ReportTypeReportTypeWeb</value>
+</data>
+<data name="ReportTypeReportTypeReport" xml:space="preserve">
+  <value>ReportTypeReportTypeReport</value>
+</data>
+<data name="ReportTypeLastUpdateDate_UTC" xml:space="preserve">
+  <value>ReportTypeLastUpdateDate_UTC</value>
+</data>
+<data name="ReportTypeLastUpdateContactTVItemID" xml:space="preserve">
+  <value>ReportTypeLastUpdateContactTVItemID</value>
+</data>
+<data name="ReportTypeHasErrors" xml:space="preserve">
+  <value>ReportTypeHasErrors</value>
+</data>
+<data name="ReportTypeWeb" xml:space="preserve">
+  <value>ReportTypeWeb</value>
+</data>
+<data name="ReportTypeWebLastUpdateContactTVText" xml:space="preserve">
+  <value>ReportTypeWebLastUpdateContactTVText</value>
+</data>
+<data name="ReportTypeReport" xml:space="preserve">
+  <value>ReportTypeReport</value>
+</data>
+<data name="ReportTypeReportReportTypeReportTest" xml:space="preserve">
+  <value>ReportTypeReportReportTypeReportTest</value>
+</data>
+<data name="ReportTypeLanguage" xml:space="preserve">
+  <value>ReportTypeLanguage</value>
+</data>
+<data name="ReportTypeLanguageReportTypeLanguageID" xml:space="preserve">
+  <value>ReportTypeLanguageReportTypeLanguageID</value>
+</data>
+<data name="ReportTypeLanguageReportTypeID" xml:space="preserve">
+  <value>ReportTypeLanguageReportTypeID</value>
+</data>
+<data name="ReportTypeLanguageLanguage" xml:space="preserve">
+  <value>ReportTypeLanguageLanguage</value>
+</data>
+<data name="ReportTypeLanguageName" xml:space="preserve">
+  <value>ReportTypeLanguageName</value>
+</data>
+<data name="ReportTypeLanguageTranslationStatusName" xml:space="preserve">
+  <value>ReportTypeLanguageTranslationStatusName</value>
+</data>
+<data name="ReportTypeLanguageDescription" xml:space="preserve">
+  <value>ReportTypeLanguageDescription</value>
+</data>
+<data name="ReportTypeLanguageTranslationStatusDescription" xml:space="preserve">
+  <value>ReportTypeLanguageTranslationStatusDescription</value>
+</data>
+<data name="ReportTypeLanguageStartOfFileName" xml:space="preserve">
+  <value>ReportTypeLanguageStartOfFileName</value>
+</data>
+<data name="ReportTypeLanguageTranslationStatusStartOfFileName" xml:space="preserve">
+  <value>ReportTypeLanguageTranslationStatusStartOfFileName</value>
+</data>
+<data name="ReportTypeLanguageReportTypeLanguageWeb" xml:space="preserve">
+  <value>ReportTypeLanguageReportTypeLanguageWeb</value>
+</data>
+<data name="ReportTypeLanguageReportTypeLanguageReport" xml:space="preserve">
+  <value>ReportTypeLanguageReportTypeLanguageReport</value>
+</data>
+<data name="ReportTypeLanguageLastUpdateDate_UTC" xml:space="preserve">
+  <value>ReportTypeLanguageLastUpdateDate_UTC</value>
+</data>
+<data name="ReportTypeLanguageLastUpdateContactTVItemID" xml:space="preserve">
+  <value>ReportTypeLanguageLastUpdateContactTVItemID</value>
+</data>
+<data name="ReportTypeLanguageHasErrors" xml:space="preserve">
+  <value>ReportTypeLanguageHasErrors</value>
+</data>
+<data name="ReportTypeLanguageWeb" xml:space="preserve">
+  <value>ReportTypeLanguageWeb</value>
+</data>
+<data name="ReportTypeLanguageWebLastUpdateContactTVText" xml:space="preserve">
+  <value>ReportTypeLanguageWebLastUpdateContactTVText</value>
+</data>
+<data name="ReportTypeLanguageWebLanguageText" xml:space="preserve">
+  <value>ReportTypeLanguageWebLanguageText</value>
+</data>
+<data name="ReportTypeLanguageWebTranslationStatusNameText" xml:space="preserve">
+  <value>ReportTypeLanguageWebTranslationStatusNameText</value>
+</data>
+<data name="ReportTypeLanguageWebTranslationStatusDescriptionText" xml:space="preserve">
+  <value>ReportTypeLanguageWebTranslationStatusDescriptionText</value>
+</data>
+<data name="ReportTypeLanguageWebTranslationStatusStartOfFileNameText" xml:space="preserve">
+  <value>ReportTypeLanguageWebTranslationStatusStartOfFileNameText</value>
+</data>
+<data name="ReportTypeLanguageReport" xml:space="preserve">
+  <value>ReportTypeLanguageReport</value>
+</data>
+<data name="ReportTypeLanguageReportReportTypeLanguageReportTest" xml:space="preserve">
+  <value>ReportTypeLanguageReportReportTypeLanguageReportTest</value>
 </data>
 <data name="ResetPassword" xml:space="preserve">
   <value>ResetPassword</value>
