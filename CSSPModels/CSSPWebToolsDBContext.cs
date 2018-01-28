@@ -7,6 +7,8 @@ using CSSPModels.Resources;
 using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.Extensions.Configuration;
+using System.IO;
+using System.Reflection;
 
 namespace CSSPModels
 {
@@ -99,6 +101,12 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
+        // should be something like
+        //public CSSPWebToolsDBContext(DbContextOptions<CSSPWebToolsDBContext> options) : base(options)
+        //{
+        //    this.Error = string.Format(CSSPModelsRes._IsRequired, "DataType");
+        //    DatabaseType = DatabaseTypeEnum.Error;
+        //}
         public CSSPWebToolsDBContext()
         {
             this.Error = string.Format(CSSPModelsRes._IsRequired, "DataType");
@@ -134,6 +142,12 @@ namespace CSSPModels
            .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
            .AddJsonFile("appsettings.json")
            .Build();
+
+            FileInfo fi = new FileInfo(@"C:\CSSP Code\log.txt");
+            StreamWriter sw = fi.CreateText();
+            sw.WriteLine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location));
+            sw.WriteLine(AppDomain.CurrentDomain.BaseDirectory);
+            sw.Close();
 
             string CSSPWebToolsDBConnectionString = configuration.GetConnectionString("CSSPWebToolsDB");
             string TestDBConnectionString = configuration.GetConnectionString("TestDB");
