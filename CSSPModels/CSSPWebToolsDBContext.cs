@@ -26,6 +26,7 @@ namespace CSSPModels
         public virtual DbSet<AppErrLog> AppErrLogs { get; set; }
         public virtual DbSet<AppTask> AppTasks { get; set; }
         public virtual DbSet<AppTaskLanguage> AppTaskLanguages { get; set; }
+        public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
         public virtual DbSet<BoxModel> BoxModels { get; set; }
         public virtual DbSet<BoxModelLanguage> BoxModelLanguages { get; set; }
         public virtual DbSet<BoxModelResult> BoxModelResults { get; set; }
@@ -101,12 +102,6 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        // should be something like
-        //public CSSPWebToolsDBContext(DbContextOptions<CSSPWebToolsDBContext> options) : base(options)
-        //{
-        //    this.Error = string.Format(CSSPModelsRes._IsRequired, "DataType");
-        //    DatabaseType = DatabaseTypeEnum.Error;
-        //}
         public CSSPWebToolsDBContext()
         {
             this.Error = string.Format(CSSPModelsRes._IsRequired, "DataType");
@@ -138,19 +133,8 @@ namespace CSSPModels
         #region Overrides
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            IConfigurationRoot configuration = new ConfigurationBuilder()
-           .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-           .AddJsonFile("appsettings.json")
-           .Build();
-
-            FileInfo fi = new FileInfo(@"C:\CSSP Code\log.txt");
-            StreamWriter sw = fi.CreateText();
-            sw.WriteLine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location));
-            sw.WriteLine(AppDomain.CurrentDomain.BaseDirectory);
-            sw.Close();
-
-            string CSSPWebToolsDBConnectionString = configuration.GetConnectionString("CSSPWebToolsDB");
-            string TestDBConnectionString = configuration.GetConnectionString("TestDB");
+            string CSSPWebToolsDBConnectionString = ConfigurationManager.ConnectionStrings["CSSPWebToolsDB"].ConnectionString;
+            string TestDBConnectionString = ConfigurationManager.ConnectionStrings["TestDB"].ConnectionString;
             if (System.Environment.UserName == "Charles")
             {
                 CSSPWebToolsDBConnectionString = CSSPWebToolsDBConnectionString.Replace("wmon01dtchlebl2", "charles-pc");

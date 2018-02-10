@@ -41,7 +41,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVFile_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "TVFileID", "TVFileTVItemID", "TemplateTVType", "ReportTypeID", "Parameters", "Language", "FilePurpose", "FileType", "FileSize_kb", "FileInfo", "FileCreatedDate_UTC", "FromWater", "ClientFilePath", "ServerFileName", "ServerFilePath", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TVFileID", "TVFileTVItemID", "TemplateTVType", "ReportTypeID", "Parameters", "Year", "Language", "FilePurpose", "FileType", "FileSize_kb", "FileInfo", "FileCreatedDate_UTC", "FromWater", "ClientFilePath", "ServerFileName", "ServerFilePath", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "TVFileWeb", "TVFileReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -118,6 +118,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.TVFileTemplateTVType);
                Assert.IsNotNull(CSSPModelsRes.TVFileReportTypeID);
                Assert.IsNotNull(CSSPModelsRes.TVFileParameters);
+               Assert.IsNotNull(CSSPModelsRes.TVFileYear);
                Assert.IsNotNull(CSSPModelsRes.TVFileLanguage);
                Assert.IsNotNull(CSSPModelsRes.TVFileFilePurpose);
                Assert.IsNotNull(CSSPModelsRes.TVFileFileType);
@@ -150,48 +151,51 @@ namespace CSSPModels.Tests
                string val5 = "Some text";
                tVFile.Parameters = val5;
                Assert.AreEqual(val5, tVFile.Parameters);
-               LanguageEnum val6 = (LanguageEnum)3;
-               tVFile.Language = val6;
-               Assert.AreEqual(val6, tVFile.Language);
-               FilePurposeEnum val7 = (FilePurposeEnum)3;
-               tVFile.FilePurpose = val7;
-               Assert.AreEqual(val7, tVFile.FilePurpose);
-               FileTypeEnum val8 = (FileTypeEnum)3;
-               tVFile.FileType = val8;
-               Assert.AreEqual(val8, tVFile.FileType);
-               int val9 = 45;
-               tVFile.FileSize_kb = val9;
-               Assert.AreEqual(val9, tVFile.FileSize_kb);
-               string val10 = "Some text";
-               tVFile.FileInfo = val10;
-               Assert.AreEqual(val10, tVFile.FileInfo);
-               DateTime val11 = new DateTime(2010, 3, 4);
-               tVFile.FileCreatedDate_UTC = val11;
-               Assert.AreEqual(val11, tVFile.FileCreatedDate_UTC);
-               bool val12 = true;
-               tVFile.FromWater = val12;
-               Assert.AreEqual(val12, tVFile.FromWater);
-               string val13 = "Some text";
-               tVFile.ClientFilePath = val13;
-               Assert.AreEqual(val13, tVFile.ClientFilePath);
+               int val6 = 45;
+               tVFile.Year = val6;
+               Assert.AreEqual(val6, tVFile.Year);
+               LanguageEnum val7 = (LanguageEnum)3;
+               tVFile.Language = val7;
+               Assert.AreEqual(val7, tVFile.Language);
+               FilePurposeEnum val8 = (FilePurposeEnum)3;
+               tVFile.FilePurpose = val8;
+               Assert.AreEqual(val8, tVFile.FilePurpose);
+               FileTypeEnum val9 = (FileTypeEnum)3;
+               tVFile.FileType = val9;
+               Assert.AreEqual(val9, tVFile.FileType);
+               int val10 = 45;
+               tVFile.FileSize_kb = val10;
+               Assert.AreEqual(val10, tVFile.FileSize_kb);
+               string val11 = "Some text";
+               tVFile.FileInfo = val11;
+               Assert.AreEqual(val11, tVFile.FileInfo);
+               DateTime val12 = new DateTime(2010, 3, 4);
+               tVFile.FileCreatedDate_UTC = val12;
+               Assert.AreEqual(val12, tVFile.FileCreatedDate_UTC);
+               bool val13 = true;
+               tVFile.FromWater = val13;
+               Assert.AreEqual(val13, tVFile.FromWater);
                string val14 = "Some text";
-               tVFile.ServerFileName = val14;
-               Assert.AreEqual(val14, tVFile.ServerFileName);
+               tVFile.ClientFilePath = val14;
+               Assert.AreEqual(val14, tVFile.ClientFilePath);
                string val15 = "Some text";
-               tVFile.ServerFilePath = val15;
-               Assert.AreEqual(val15, tVFile.ServerFilePath);
-               DateTime val16 = new DateTime(2010, 3, 4);
-               tVFile.LastUpdateDate_UTC = val16;
-               Assert.AreEqual(val16, tVFile.LastUpdateDate_UTC);
-               int val17 = 45;
-               tVFile.LastUpdateContactTVItemID = val17;
-               Assert.AreEqual(val17, tVFile.LastUpdateContactTVItemID);
-               bool val18 = true;
-               tVFile.HasErrors = val18;
-               Assert.AreEqual(val18, tVFile.HasErrors);
-               IEnumerable<ValidationResult> val61 = new List<ValidationResult>().AsEnumerable();
-               tVFile.ValidationResults = val61;
-               Assert.AreEqual(val61, tVFile.ValidationResults);
+               tVFile.ServerFileName = val15;
+               Assert.AreEqual(val15, tVFile.ServerFileName);
+               string val16 = "Some text";
+               tVFile.ServerFilePath = val16;
+               Assert.AreEqual(val16, tVFile.ServerFilePath);
+               DateTime val17 = new DateTime(2010, 3, 4);
+               tVFile.LastUpdateDate_UTC = val17;
+               Assert.AreEqual(val17, tVFile.LastUpdateDate_UTC);
+               int val18 = 45;
+               tVFile.LastUpdateContactTVItemID = val18;
+               Assert.AreEqual(val18, tVFile.LastUpdateContactTVItemID);
+               bool val19 = true;
+               tVFile.HasErrors = val19;
+               Assert.AreEqual(val19, tVFile.HasErrors);
+               IEnumerable<ValidationResult> val64 = new List<ValidationResult>().AsEnumerable();
+               tVFile.ValidationResults = val64;
+               Assert.AreEqual(val64, tVFile.ValidationResults);
         }
         #endregion Tests
     }

@@ -898,6 +898,123 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AspNetUser.
+        /// </summary>
+        public static string AspNetUser {
+            get {
+                return ResourceManager.GetString("AspNetUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AspNetUserAccessFailedCount.
+        /// </summary>
+        public static string AspNetUserAccessFailedCount {
+            get {
+                return ResourceManager.GetString("AspNetUserAccessFailedCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AspNetUserEmail.
+        /// </summary>
+        public static string AspNetUserEmail {
+            get {
+                return ResourceManager.GetString("AspNetUserEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AspNetUserEmailConfirmed.
+        /// </summary>
+        public static string AspNetUserEmailConfirmed {
+            get {
+                return ResourceManager.GetString("AspNetUserEmailConfirmed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AspNetUserId.
+        /// </summary>
+        public static string AspNetUserId {
+            get {
+                return ResourceManager.GetString("AspNetUserId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AspNetUserLockoutEnabled.
+        /// </summary>
+        public static string AspNetUserLockoutEnabled {
+            get {
+                return ResourceManager.GetString("AspNetUserLockoutEnabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AspNetUserLockoutEndDateUtc.
+        /// </summary>
+        public static string AspNetUserLockoutEndDateUtc {
+            get {
+                return ResourceManager.GetString("AspNetUserLockoutEndDateUtc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AspNetUserPasswordHash.
+        /// </summary>
+        public static string AspNetUserPasswordHash {
+            get {
+                return ResourceManager.GetString("AspNetUserPasswordHash", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AspNetUserPhoneNumber.
+        /// </summary>
+        public static string AspNetUserPhoneNumber {
+            get {
+                return ResourceManager.GetString("AspNetUserPhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AspNetUserPhoneNumberConfirmed.
+        /// </summary>
+        public static string AspNetUserPhoneNumberConfirmed {
+            get {
+                return ResourceManager.GetString("AspNetUserPhoneNumberConfirmed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AspNetUserSecurityStamp.
+        /// </summary>
+        public static string AspNetUserSecurityStamp {
+            get {
+                return ResourceManager.GetString("AspNetUserSecurityStamp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AspNetUserTwoFactorEnabled.
+        /// </summary>
+        public static string AspNetUserTwoFactorEnabled {
+            get {
+                return ResourceManager.GetString("AspNetUserTwoFactorEnabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AspNetUserUserName.
+        /// </summary>
+        public static string AspNetUserUserName {
+            get {
+                return ResourceManager.GetString("AspNetUserUserName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to BoxModel.
         /// </summary>
         public static string BoxModel {
@@ -2397,33 +2514,6 @@ namespace CSSPModels.Resources {
         public static string ContactOKHasErrors {
             get {
                 return ResourceManager.GetString("ContactOKHasErrors", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactPassword.
-        /// </summary>
-        public static string ContactPassword {
-            get {
-                return ResourceManager.GetString("ContactPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactPasswordHash.
-        /// </summary>
-        public static string ContactPasswordHash {
-            get {
-                return ResourceManager.GetString("ContactPasswordHash", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContactPasswordSalt.
-        /// </summary>
-        public static string ContactPasswordSalt {
-            get {
-                return ResourceManager.GetString("ContactPasswordSalt", resourceCulture);
             }
         }
         
@@ -16267,6 +16357,15 @@ namespace CSSPModels.Resources {
         public static string TVFileWebTVFileTVText {
             get {
                 return ResourceManager.GetString("TVFileWebTVFileTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TVFileYear.
+        /// </summary>
+        public static string TVFileYear {
+            get {
+                return ResourceManager.GetString("TVFileYear", resourceCulture);
             }
         }
         

@@ -11,6 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int ContactID { get; set; }
+        [CSSPExist(ExistTypeName = "AspNetUser", ExistPlurial = "s", ExistFieldID = "Id")]
         [StringLength(128)]
         public string Id { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
@@ -37,17 +38,9 @@ namespace CSSPModels
         [StringLength(200)]
         [CSSPAllowNull]
         public string SamplingPlanner_ProvincesTVItemID { get; set; }
-        [CSSPAllowNull]
-        public byte[] PasswordHash { get; set; }
-        [CSSPAllowNull]
-        public byte[] PasswordSalt { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
-        [NotMapped]
-        [StringLength(50)]
-        [CSSPAllowNull]
-        public string Password { get; set; }
         [NotMapped]
         [CSSPAllowNull]
         public ContactWeb ContactWeb { get; set; }

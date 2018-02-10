@@ -197,7 +197,14 @@ namespace CSSPModelsGenerateCodeHelper
                 }
                 else
                 {
-                    sb.AppendLine(@"    public partial class " + dllTypeInfoModels.Type.Name + " : LastUpdate");
+                    if (dllTypeInfoModels.Type.Name == "AspNetUser")
+                    {
+                        sb.AppendLine(@"    public partial class " + dllTypeInfoModels.Type.Name + " : Error");
+                    }
+                    else
+                    {
+                        sb.AppendLine(@"    public partial class " + dllTypeInfoModels.Type.Name + " : LastUpdate");
+                    }
                 }
                 sb.AppendLine(@"    {");
                 sb.AppendLine(@"        #region Properties in DB");
@@ -316,7 +323,14 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"        #endregion Properties not in DB");
                 sb.AppendLine(@"");
                 sb.AppendLine(@"        #region Constructors");
-                sb.AppendLine(@"        public " + dllTypeInfoModels.Type.Name + "() : base()");
+                if (dllTypeInfoModels.Type.Name == "AspNetUser")
+                {
+                    sb.AppendLine(@"        public " + dllTypeInfoModels.Type.Name + "()");
+                }
+                else
+                {
+                    sb.AppendLine(@"        public " + dllTypeInfoModels.Type.Name + "() : base()");
+                }
                 sb.AppendLine(@"        {");
                 if (dllTypeInfoModels.Type.Name == "VPFull")
                 {

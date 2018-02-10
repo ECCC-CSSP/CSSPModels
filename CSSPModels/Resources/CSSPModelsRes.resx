@@ -120,6 +120,48 @@
 <data name="_IsRequired" xml:space="preserve">
   <value>{0} is required</value>
 </data>
+<data name="AspNetUser" xml:space="preserve">
+  <value>AspNetUser</value>
+</data>
+<data name="AspNetUserId" xml:space="preserve">
+  <value>AspNetUserId</value>
+</data>
+<data name="AspNetUserEmail" xml:space="preserve">
+  <value>AspNetUserEmail</value>
+</data>
+<data name="AspNetUserEmailConfirmed" xml:space="preserve">
+  <value>AspNetUserEmailConfirmed</value>
+</data>
+<data name="AspNetUserPasswordHash" xml:space="preserve">
+  <value>AspNetUserPasswordHash</value>
+</data>
+<data name="AspNetUserSecurityStamp" xml:space="preserve">
+  <value>AspNetUserSecurityStamp</value>
+</data>
+<data name="AspNetUserPhoneNumber" xml:space="preserve">
+  <value>AspNetUserPhoneNumber</value>
+</data>
+<data name="AspNetUserPhoneNumberConfirmed" xml:space="preserve">
+  <value>AspNetUserPhoneNumberConfirmed</value>
+</data>
+<data name="AspNetUserTwoFactorEnabled" xml:space="preserve">
+  <value>AspNetUserTwoFactorEnabled</value>
+</data>
+<data name="AspNetUserLockoutEndDateUtc" xml:space="preserve">
+  <value>AspNetUserLockoutEndDateUtc</value>
+</data>
+<data name="AspNetUserLockoutEnabled" xml:space="preserve">
+  <value>AspNetUserLockoutEnabled</value>
+</data>
+<data name="AspNetUserAccessFailedCount" xml:space="preserve">
+  <value>AspNetUserAccessFailedCount</value>
+</data>
+<data name="AspNetUserUserName" xml:space="preserve">
+  <value>AspNetUserUserName</value>
+</data>
+<data name="AspNetUserHasErrors" xml:space="preserve">
+  <value>AspNetUserHasErrors</value>
+</data>
 <data name="Address" xml:space="preserve">
   <value>Address</value>
 </data>
@@ -815,15 +857,6 @@
 </data>
 <data name="ContactSamplingPlanner_ProvincesTVItemID" xml:space="preserve">
   <value>ContactSamplingPlanner_ProvincesTVItemID</value>
-</data>
-<data name="ContactPasswordHash" xml:space="preserve">
-  <value>ContactPasswordHash</value>
-</data>
-<data name="ContactPasswordSalt" xml:space="preserve">
-  <value>ContactPasswordSalt</value>
-</data>
-<data name="ContactPassword" xml:space="preserve">
-  <value>ContactPassword</value>
 </data>
 <data name="ContactContactWeb" xml:space="preserve">
   <value>ContactContactWeb</value>
@@ -4373,6 +4406,9 @@
 </data>
 <data name="TVFileParameters" xml:space="preserve">
   <value>TVFileParameters</value>
+</data>
+<data name="TVFileYear" xml:space="preserve">
+  <value>TVFileYear</value>
 </data>
 <data name="TVFileLanguage" xml:space="preserve">
   <value>TVFileLanguage</value>

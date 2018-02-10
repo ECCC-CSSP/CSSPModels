@@ -19,6 +19,8 @@ namespace CSSPModels
         public int? ReportTypeID { get; set; }
         [CSSPAllowNull]
         public string Parameters { get; set; }
+        [Range(1980, 2050)]
+        public int? Year { get; set; }
         [CSSPEnumType]
         public LanguageEnum Language { get; set; }
         [CSSPEnumType]

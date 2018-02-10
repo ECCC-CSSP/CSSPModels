@@ -17,7 +17,7 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table TVFiles** : [TVFileID](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileID), [TVFileTVItemID](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileTVItemID), [TemplateTVType](CSSPModels.TVFile.html#CSSPModels_TVFile_TemplateTVType), [ReportTypeID](CSSPModels.TVFile.html#CSSPModels_TVFile_ReportTypeID), [Parameters](CSSPModels.TVFile.html#CSSPModels_TVFile_Parameters), [Language](CSSPModels.TVFile.html#CSSPModels_TVFile_Language), [FilePurpose](CSSPModels.TVFile.html#CSSPModels_TVFile_FilePurpose), [FileType](CSSPModels.TVFile.html#CSSPModels_TVFile_FileType), [FileSize_kb](CSSPModels.TVFile.html#CSSPModels_TVFile_FileSize_kb), [FileInfo](CSSPModels.TVFile.html#CSSPModels_TVFile_FileInfo), [FileCreatedDate_UTC](CSSPModels.TVFile.html#CSSPModels_TVFile_FileCreatedDate_UTC), [FromWater](CSSPModels.TVFile.html#CSSPModels_TVFile_FromWater), [ClientFilePath](CSSPModels.TVFile.html#CSSPModels_TVFile_ClientFilePath), [ServerFileName](CSSPModels.TVFile.html#CSSPModels_TVFile_ServerFileName), [ServerFilePath](CSSPModels.TVFile.html#CSSPModels_TVFile_ServerFilePath), [LastUpdateDate_UTC](CSSPModels.TVFile.html#CSSPModels_TVFile_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TVFile.html#CSSPModels_TVFile_LastUpdateContactTVItemID), </para>
+    /// > <para>**DB properties for table TVFiles** : [TVFileID](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileID), [TVFileTVItemID](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileTVItemID), [TemplateTVType](CSSPModels.TVFile.html#CSSPModels_TVFile_TemplateTVType), [ReportTypeID](CSSPModels.TVFile.html#CSSPModels_TVFile_ReportTypeID), [Parameters](CSSPModels.TVFile.html#CSSPModels_TVFile_Parameters), [Year](CSSPModels.TVFile.html#CSSPModels_TVFile_Year), [Language](CSSPModels.TVFile.html#CSSPModels_TVFile_Language), [FilePurpose](CSSPModels.TVFile.html#CSSPModels_TVFile_FilePurpose), [FileType](CSSPModels.TVFile.html#CSSPModels_TVFile_FileType), [FileSize_kb](CSSPModels.TVFile.html#CSSPModels_TVFile_FileSize_kb), [FileInfo](CSSPModels.TVFile.html#CSSPModels_TVFile_FileInfo), [FileCreatedDate_UTC](CSSPModels.TVFile.html#CSSPModels_TVFile_FileCreatedDate_UTC), [FromWater](CSSPModels.TVFile.html#CSSPModels_TVFile_FromWater), [ClientFilePath](CSSPModels.TVFile.html#CSSPModels_TVFile_ClientFilePath), [ServerFileName](CSSPModels.TVFile.html#CSSPModels_TVFile_ServerFileName), [ServerFilePath](CSSPModels.TVFile.html#CSSPModels_TVFile_ServerFilePath), [LastUpdateDate_UTC](CSSPModels.TVFile.html#CSSPModels_TVFile_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TVFile.html#CSSPModels_TVFile_LastUpdateContactTVItemID), </para>
     /// > <para>**Other properties** : [TVFileWeb](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileWeb), [TVFileReport](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileReport), [HasErrors](CSSPModels.TVFile.html#CSSPModels_TVFile_HasErrors), [ValidationResults](CSSPModels.TVFile.html#CSSPModels_TVFile_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVFileService](CSSPServices.TVFileService.html)</para>
@@ -59,6 +59,8 @@ namespace CSSPModels
         /// </summary>
         [CSSPAllowNull]
         public string Parameters { get; set; }
+        [Range(1980, 2050)]
+        public int? Year { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>

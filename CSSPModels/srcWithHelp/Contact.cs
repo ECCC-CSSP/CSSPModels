@@ -17,8 +17,8 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table Contacts** : [ContactID](CSSPModels.Contact.html#CSSPModels_Contact_ContactID), [Id](CSSPModels.Contact.html#CSSPModels_Contact_Id), [ContactTVItemID](CSSPModels.Contact.html#CSSPModels_Contact_ContactTVItemID), [LoginEmail](CSSPModels.Contact.html#CSSPModels_Contact_LoginEmail), [FirstName](CSSPModels.Contact.html#CSSPModels_Contact_FirstName), [LastName](CSSPModels.Contact.html#CSSPModels_Contact_LastName), [Initial](CSSPModels.Contact.html#CSSPModels_Contact_Initial), [WebName](CSSPModels.Contact.html#CSSPModels_Contact_WebName), [ContactTitle](CSSPModels.Contact.html#CSSPModels_Contact_ContactTitle), [IsAdmin](CSSPModels.Contact.html#CSSPModels_Contact_IsAdmin), [EmailValidated](CSSPModels.Contact.html#CSSPModels_Contact_EmailValidated), [Disabled](CSSPModels.Contact.html#CSSPModels_Contact_Disabled), [IsNew](CSSPModels.Contact.html#CSSPModels_Contact_IsNew), [SamplingPlanner_ProvincesTVItemID](CSSPModels.Contact.html#CSSPModels_Contact_SamplingPlanner_ProvincesTVItemID), [PasswordHash](CSSPModels.Contact.html#CSSPModels_Contact_PasswordHash), [PasswordSalt](CSSPModels.Contact.html#CSSPModels_Contact_PasswordSalt), [LastUpdateDate_UTC](CSSPModels.Contact.html#CSSPModels_Contact_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Contact.html#CSSPModels_Contact_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [Password](CSSPModels.Contact.html#CSSPModels_Contact_Password), [ContactWeb](CSSPModels.Contact.html#CSSPModels_Contact_ContactWeb), [ContactReport](CSSPModels.Contact.html#CSSPModels_Contact_ContactReport), [HasErrors](CSSPModels.Contact.html#CSSPModels_Contact_HasErrors), [ValidationResults](CSSPModels.Contact.html#CSSPModels_Contact_ValidationResults), </para>
+    /// > <para>**DB properties for table Contacts** : [ContactID](CSSPModels.Contact.html#CSSPModels_Contact_ContactID), [Id](CSSPModels.Contact.html#CSSPModels_Contact_Id), [ContactTVItemID](CSSPModels.Contact.html#CSSPModels_Contact_ContactTVItemID), [LoginEmail](CSSPModels.Contact.html#CSSPModels_Contact_LoginEmail), [FirstName](CSSPModels.Contact.html#CSSPModels_Contact_FirstName), [LastName](CSSPModels.Contact.html#CSSPModels_Contact_LastName), [Initial](CSSPModels.Contact.html#CSSPModels_Contact_Initial), [WebName](CSSPModels.Contact.html#CSSPModels_Contact_WebName), [ContactTitle](CSSPModels.Contact.html#CSSPModels_Contact_ContactTitle), [IsAdmin](CSSPModels.Contact.html#CSSPModels_Contact_IsAdmin), [EmailValidated](CSSPModels.Contact.html#CSSPModels_Contact_EmailValidated), [Disabled](CSSPModels.Contact.html#CSSPModels_Contact_Disabled), [IsNew](CSSPModels.Contact.html#CSSPModels_Contact_IsNew), [SamplingPlanner_ProvincesTVItemID](CSSPModels.Contact.html#CSSPModels_Contact_SamplingPlanner_ProvincesTVItemID), [LastUpdateDate_UTC](CSSPModels.Contact.html#CSSPModels_Contact_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Contact.html#CSSPModels_Contact_LastUpdateContactTVItemID), </para>
+    /// > <para>**Other properties** : [ContactWeb](CSSPModels.Contact.html#CSSPModels_Contact_ContactWeb), [ContactReport](CSSPModels.Contact.html#CSSPModels_Contact_ContactReport), [HasErrors](CSSPModels.Contact.html#CSSPModels_Contact_HasErrors), [ValidationResults](CSSPModels.Contact.html#CSSPModels_Contact_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactService](CSSPServices.ContactService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ContactTitleEnum](CSSPEnums.ContactTitleEnum.html)</para>
@@ -29,6 +29,12 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int ContactID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "AspNetUser", ExistPlurial = "s", ExistFieldID = "Id")]</para>
+        /// </summary>
+        [CSSPExist(ExistTypeName = "AspNetUser", ExistPlurial = "s", ExistFieldID = "Id")]
         [StringLength(128)]
         public string Id { get; set; }
         /// <summary>
@@ -78,22 +84,9 @@ namespace CSSPModels
         [StringLength(200)]
         [CSSPAllowNull]
         public string SamplingPlanner_ProvincesTVItemID { get; set; }
-        [CSSPAllowNull]
-        public byte[] PasswordHash { get; set; }
-        [CSSPAllowNull]
-        public byte[] PasswordSalt { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
-        /// <summary>
-        /// > [!NOTE]
-        /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
-        /// </summary>
-        [NotMapped]
-        [StringLength(50)]
-        [CSSPAllowNull]
-        public string Password { get; set; }
         [NotMapped]
         [CSSPAllowNull]
         public ContactWeb ContactWeb { get; set; }
