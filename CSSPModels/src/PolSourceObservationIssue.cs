@@ -17,6 +17,8 @@ namespace CSSPModels
         public string ObservationInfo { get; set; }
         [Range(0, 1000)]
         public int Ordinal { get; set; }
+        [CSSPAllowNull]
+        public string ExtraComment { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

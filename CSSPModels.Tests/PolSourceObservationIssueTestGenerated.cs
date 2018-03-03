@@ -41,7 +41,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolSourceObservationIssue_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "PolSourceObservationIssueID", "PolSourceObservationID", "ObservationInfo", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "PolSourceObservationIssueID", "PolSourceObservationID", "ObservationInfo", "Ordinal", "ExtraComment", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "PolSourceObservationIssueWeb", "PolSourceObservationIssueReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -117,6 +117,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.PolSourceObservationIssuePolSourceObservationID);
                Assert.IsNotNull(CSSPModelsRes.PolSourceObservationIssueObservationInfo);
                Assert.IsNotNull(CSSPModelsRes.PolSourceObservationIssueOrdinal);
+               Assert.IsNotNull(CSSPModelsRes.PolSourceObservationIssueExtraComment);
                Assert.IsNotNull(CSSPModelsRes.PolSourceObservationIssueLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.PolSourceObservationIssueLastUpdateContactTVItemID);
                Assert.IsNotNull(CSSPModelsRes.PolSourceObservationIssueHasErrors);
@@ -136,18 +137,21 @@ namespace CSSPModels.Tests
                int val4 = 45;
                polSourceObservationIssue.Ordinal = val4;
                Assert.AreEqual(val4, polSourceObservationIssue.Ordinal);
-               DateTime val5 = new DateTime(2010, 3, 4);
-               polSourceObservationIssue.LastUpdateDate_UTC = val5;
-               Assert.AreEqual(val5, polSourceObservationIssue.LastUpdateDate_UTC);
-               int val6 = 45;
-               polSourceObservationIssue.LastUpdateContactTVItemID = val6;
-               Assert.AreEqual(val6, polSourceObservationIssue.LastUpdateContactTVItemID);
-               bool val7 = true;
-               polSourceObservationIssue.HasErrors = val7;
-               Assert.AreEqual(val7, polSourceObservationIssue.HasErrors);
-               IEnumerable<ValidationResult> val28 = new List<ValidationResult>().AsEnumerable();
-               polSourceObservationIssue.ValidationResults = val28;
-               Assert.AreEqual(val28, polSourceObservationIssue.ValidationResults);
+               string val5 = "Some text";
+               polSourceObservationIssue.ExtraComment = val5;
+               Assert.AreEqual(val5, polSourceObservationIssue.ExtraComment);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               polSourceObservationIssue.LastUpdateDate_UTC = val6;
+               Assert.AreEqual(val6, polSourceObservationIssue.LastUpdateDate_UTC);
+               int val7 = 45;
+               polSourceObservationIssue.LastUpdateContactTVItemID = val7;
+               Assert.AreEqual(val7, polSourceObservationIssue.LastUpdateContactTVItemID);
+               bool val8 = true;
+               polSourceObservationIssue.HasErrors = val8;
+               Assert.AreEqual(val8, polSourceObservationIssue.HasErrors);
+               IEnumerable<ValidationResult> val31 = new List<ValidationResult>().AsEnumerable();
+               polSourceObservationIssue.ValidationResults = val31;
+               Assert.AreEqual(val31, polSourceObservationIssue.ValidationResults);
         }
         #endregion Tests
     }

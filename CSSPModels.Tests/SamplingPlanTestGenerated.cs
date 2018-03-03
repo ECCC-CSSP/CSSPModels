@@ -41,7 +41,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SamplingPlan_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SamplingPlanID", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SamplingPlanID", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "AnalyzeMethodDefault", "SampleMatrixDefault", "LaboratoryDefault", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "SamplingPlanWeb", "SamplingPlanReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -128,6 +128,9 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanIncludeLaboratoryQAQC);
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanApprovalCode);
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanSamplingPlanFileTVItemID);
+               Assert.IsNotNull(CSSPModelsRes.SamplingPlanAnalyzeMethodDefault);
+               Assert.IsNotNull(CSSPModelsRes.SamplingPlanSampleMatrixDefault);
+               Assert.IsNotNull(CSSPModelsRes.SamplingPlanLaboratoryDefault);
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanLastUpdateContactTVItemID);
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanHasErrors);
@@ -180,18 +183,27 @@ namespace CSSPModels.Tests
                int val15 = 45;
                samplingPlan.SamplingPlanFileTVItemID = val15;
                Assert.AreEqual(val15, samplingPlan.SamplingPlanFileTVItemID);
-               DateTime val16 = new DateTime(2010, 3, 4);
-               samplingPlan.LastUpdateDate_UTC = val16;
-               Assert.AreEqual(val16, samplingPlan.LastUpdateDate_UTC);
-               int val17 = 45;
-               samplingPlan.LastUpdateContactTVItemID = val17;
-               Assert.AreEqual(val17, samplingPlan.LastUpdateContactTVItemID);
-               bool val18 = true;
-               samplingPlan.HasErrors = val18;
-               Assert.AreEqual(val18, samplingPlan.HasErrors);
-               IEnumerable<ValidationResult> val61 = new List<ValidationResult>().AsEnumerable();
-               samplingPlan.ValidationResults = val61;
-               Assert.AreEqual(val61, samplingPlan.ValidationResults);
+               AnalyzeMethodEnum val16 = (AnalyzeMethodEnum)3;
+               samplingPlan.AnalyzeMethodDefault = val16;
+               Assert.AreEqual(val16, samplingPlan.AnalyzeMethodDefault);
+               SampleMatrixEnum val17 = (SampleMatrixEnum)3;
+               samplingPlan.SampleMatrixDefault = val17;
+               Assert.AreEqual(val17, samplingPlan.SampleMatrixDefault);
+               LaboratoryEnum val18 = (LaboratoryEnum)3;
+               samplingPlan.LaboratoryDefault = val18;
+               Assert.AreEqual(val18, samplingPlan.LaboratoryDefault);
+               DateTime val19 = new DateTime(2010, 3, 4);
+               samplingPlan.LastUpdateDate_UTC = val19;
+               Assert.AreEqual(val19, samplingPlan.LastUpdateDate_UTC);
+               int val20 = 45;
+               samplingPlan.LastUpdateContactTVItemID = val20;
+               Assert.AreEqual(val20, samplingPlan.LastUpdateContactTVItemID);
+               bool val21 = true;
+               samplingPlan.HasErrors = val21;
+               Assert.AreEqual(val21, samplingPlan.HasErrors);
+               IEnumerable<ValidationResult> val70 = new List<ValidationResult>().AsEnumerable();
+               samplingPlan.ValidationResults = val70;
+               Assert.AreEqual(val70, samplingPlan.ValidationResults);
         }
         #endregion Tests
     }

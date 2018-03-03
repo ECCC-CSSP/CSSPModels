@@ -41,7 +41,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Login_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LoginEmail", "Password", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LoginEmail", "Password", "ConfirmPassword", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -63,6 +63,7 @@ namespace CSSPModels.Tests
         {
                Assert.IsNotNull(CSSPModelsRes.LoginLoginEmail);
                Assert.IsNotNull(CSSPModelsRes.LoginPassword);
+               Assert.IsNotNull(CSSPModelsRes.LoginConfirmPassword);
                Assert.IsNotNull(CSSPModelsRes.LoginHasErrors);
         }
         [TestMethod]
@@ -74,12 +75,15 @@ namespace CSSPModels.Tests
                string val2 = "Some text";
                login.Password = val2;
                Assert.AreEqual(val2, login.Password);
-               bool val3 = true;
-               login.HasErrors = val3;
-               Assert.AreEqual(val3, login.HasErrors);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>().AsEnumerable();
-               login.ValidationResults = val12;
-               Assert.AreEqual(val12, login.ValidationResults);
+               string val3 = "Some text";
+               login.ConfirmPassword = val3;
+               Assert.AreEqual(val3, login.ConfirmPassword);
+               bool val4 = true;
+               login.HasErrors = val4;
+               Assert.AreEqual(val4, login.HasErrors);
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>().AsEnumerable();
+               login.ValidationResults = val15;
+               Assert.AreEqual(val15, login.ValidationResults);
         }
         #endregion Tests
     }

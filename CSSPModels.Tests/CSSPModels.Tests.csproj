@@ -161,8 +161,6 @@
     <Compile Include="ClimateDataValueTestGenerated.cs" />
     <Compile Include="ClimateSiteTest.cs" />
     <Compile Include="ClimateSiteTestGenerated.cs" />
-    <Compile Include="ContactLoginTest.cs" />
-    <Compile Include="ContactLoginTestGenerated.cs" />
     <Compile Include="ContactOKTest.cs" />
     <Compile Include="ContactOKTestGenerated.cs" />
     <Compile Include="ContactPreferenceTest.cs" />

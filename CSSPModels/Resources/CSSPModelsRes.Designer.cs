@@ -934,6 +934,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AspNetUserHasErrors.
+        /// </summary>
+        public static string AspNetUserHasErrors {
+            get {
+                return ResourceManager.GetString("AspNetUserHasErrors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AspNetUserId.
         /// </summary>
         public static string AspNetUserId {
@@ -12248,6 +12257,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PolSourceObservationIssueExtraComment.
+        /// </summary>
+        public static string PolSourceObservationIssueExtraComment {
+            get {
+                return ResourceManager.GetString("PolSourceObservationIssueExtraComment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PolSourceObservationIssueHasErrors.
         /// </summary>
         public static string PolSourceObservationIssueHasErrors {
@@ -14255,6 +14273,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SamplingPlanAnalyzeMethodDefault.
+        /// </summary>
+        public static string SamplingPlanAnalyzeMethodDefault {
+            get {
+                return ResourceManager.GetString("SamplingPlanAnalyzeMethodDefault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SamplingPlanAndFilesLabSheetCount.
         /// </summary>
         public static string SamplingPlanAndFilesLabSheetCount {
@@ -14372,6 +14399,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SamplingPlanLaboratoryDefault.
+        /// </summary>
+        public static string SamplingPlanLaboratoryDefault {
+            get {
+                return ResourceManager.GetString("SamplingPlanLaboratoryDefault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SamplingPlanLabSheetType.
         /// </summary>
         public static string SamplingPlanLabSheetType {
@@ -14422,6 +14458,15 @@ namespace CSSPModels.Resources {
         public static string SamplingPlanReportSamplingPlanReportTest {
             get {
                 return ResourceManager.GetString("SamplingPlanReportSamplingPlanReportTest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SamplingPlanSampleMatrixDefault.
+        /// </summary>
+        public static string SamplingPlanSampleMatrixDefault {
+            get {
+                return ResourceManager.GetString("SamplingPlanSampleMatrixDefault", resourceCulture);
             }
         }
         

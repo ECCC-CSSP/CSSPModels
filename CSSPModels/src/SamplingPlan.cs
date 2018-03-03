@@ -38,6 +38,15 @@ namespace CSSPModels
         public string ApprovalCode { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "8")]
         public int? SamplingPlanFileTVItemID { get; set; }
+        [CSSPEnumType]
+        [CSSPAllowNull]
+        public AnalyzeMethodEnum? AnalyzeMethodDefault { get; set; }
+        [CSSPEnumType]
+        [CSSPAllowNull]
+        public SampleMatrixEnum? SampleMatrixDefault { get; set; }
+        [CSSPEnumType]
+        [CSSPAllowNull]
+        public LaboratoryEnum? LaboratoryDefault { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

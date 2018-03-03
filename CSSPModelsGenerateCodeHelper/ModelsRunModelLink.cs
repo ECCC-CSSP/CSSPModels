@@ -80,7 +80,7 @@ namespace CSSPModelsGenerateCodeHelper
                             sb.AppendLine(table.TableName + "\t" + col.FieldName + "\t---------------- should be " + (col.AllowNull ? "Nullable" : "Not Nullable"));
                             continue;
                         }
-                        
+
                         // ---------------------------------------
                         // Check if field types correspond and proper Attributes
                         // ---------------------------------------
@@ -127,6 +127,10 @@ namespace CSSPModelsGenerateCodeHelper
                                             if (tableFieldEnumException == null)
                                             {
                                                 sb.AppendLine(table.TableName + "\t" + col.FieldName + "\t---------------- wrong type It is [" + csspProp.PropType + "] should be [Int32]");
+                                                sb.AppendLine("\r\n");
+                                                sb.AppendLine("You might need to add this enumeration type within the FillPublicList() within the ModelsGenerateCodeHelper.cs\r\n");
+                                                sb.AppendLine("Suggestion line to add:\r\n");
+                                                sb.AppendLine(@"new TableFieldEnumException() { TableName = """ + table.TableName + @""", FieldName = """ + col.FieldName + @""", EnumText = """ + csspProp.PropType + @""" }," + "\r\n");
                                             }
                                             else
                                             {

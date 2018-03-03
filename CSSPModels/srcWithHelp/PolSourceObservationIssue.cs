@@ -17,7 +17,7 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table PolSourceObservationIssues** : [PolSourceObservationIssueID](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationIssueID), [PolSourceObservationID](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationID), [ObservationInfo](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_ObservationInfo), [Ordinal](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_Ordinal), [LastUpdateDate_UTC](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_LastUpdateContactTVItemID), </para>
+    /// > <para>**DB properties for table PolSourceObservationIssues** : [PolSourceObservationIssueID](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationIssueID), [PolSourceObservationID](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationID), [ObservationInfo](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_ObservationInfo), [Ordinal](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_Ordinal), [ExtraComment](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_ExtraComment), [LastUpdateDate_UTC](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_LastUpdateContactTVItemID), </para>
     /// > <para>**Other properties** : [PolSourceObservationIssueWeb](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationIssueWeb), [PolSourceObservationIssueReport](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationIssueReport), [HasErrors](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_HasErrors), [ValidationResults](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceObservationIssueService](CSSPServices.PolSourceObservationIssueService.html)</para>
@@ -39,6 +39,13 @@ namespace CSSPModels
         public string ObservationInfo { get; set; }
         [Range(0, 1000)]
         public int Ordinal { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
+        /// </summary>
+        [CSSPAllowNull]
+        public string ExtraComment { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

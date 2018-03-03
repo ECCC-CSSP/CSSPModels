@@ -308,7 +308,6 @@
     <Compile Include="srcWithHelp\ClimateDataValue.cs" />
     <Compile Include="srcWithHelp\ClimateSite.cs" />
     <Compile Include="srcWithHelp\Contact.cs" />
-    <Compile Include="srcWithHelp\ContactLogin.cs" />
     <Compile Include="srcWithHelp\ContactPreference.cs" />
     <Compile Include="srcWithHelp\ContactShortcut.cs" />
     <Compile Include="srcWithHelp\DocTemplate.cs" />
@@ -398,7 +397,6 @@
     <Compile Include="srcWithHelp\_LastUpdateAndContact.cs" />
     <Compile Include="srcWithHelp\_LastUpdateAndTVText.cs" />
     <Compile Include="srcWithHelp\_LatLng.cs" />
-    <Compile Include="srcWithHelp\_Login.cs" />
     <Compile Include="srcWithHelp\_MapObj.cs" />
     <Compile Include="srcWithHelp\_MWQMSampleDuplicateItem.cs" />
     <Compile Include="srcWithHelp\_MWQMSiteSampleFC.cs" />
