@@ -157,11 +157,11 @@ namespace CSSPModels
             }
             else if (DatabaseType == DatabaseTypeEnum.SqlServerCSSPWebToolsDB)
             {
-                optionsBuilder.UseSqlServer(CSSPWebToolsDBConnectionString);
+                optionsBuilder.UseSqlServer(CSSPWebToolsDBConnectionString, b => b.UseRowNumberForPaging());
             }
             else //if (DatabaseType == DatabaseTypeEnum.SqlServerTestDB)
             {
-                optionsBuilder.UseSqlServer(TestDBConnectionString);
+                optionsBuilder.UseSqlServer(TestDBConnectionString, b => b.UseRowNumberForPaging());
             }
 
             base.OnConfiguring(optionsBuilder);

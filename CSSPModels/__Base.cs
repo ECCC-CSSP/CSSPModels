@@ -1,11 +1,12 @@
-﻿using System;
+﻿using CSSPEnums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CSSPModels
 {
-    #region Properties
+    #region Classes
     public partial class Error
     {
         #region Properties for error handling
@@ -58,7 +59,7 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
-    #endregion Properties
+    #endregion Classes
 
     #region Attributes
     /// <summary>

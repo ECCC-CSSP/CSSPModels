@@ -397,11 +397,44 @@ namespace CSSPModelsGenerateCodeHelper
                 {
                     sb.AppendLine(@"            Error = """";");
                 }
+                if (dllTypeInfoModels.Type.Name == "GetParam")
+                {
+                    sb.AppendLine(@"            Language = LanguageEnum.en;");
+                    sb.AppendLine(@"            Skip = 0;");
+                    sb.AppendLine(@"            Take = 100;");
+                    sb.AppendLine(@"            OrderAscending = true;");
+                    sb.AppendLine(@"            EntityQueryDetailType = EntityQueryDetailTypeEnum.EntityOnly;");
+                    sb.AppendLine(@"            EntityQueryType = EntityQueryTypeEnum.AsNoTracking;");
+                }
 
                 //sb.AppendLine(@"            ValidationResults = new List<ValidationResult>();");
                 sb.AppendLine(@"        }");
                 sb.AppendLine(@"        #endregion Constructors");
+
+                if (dllTypeInfoModels.Type.Name == "GetParam")
+                {
+                    sb.AppendLine(@"");
+                    sb.AppendLine(@"        #region Functions public");
+                    sb.AppendLine(@"        public GetParam FillProp(string lang = ""en"", int skip = 0, int take = 100, bool orderAscending = true,");
+                    sb.AppendLine(@"                  EntityQueryDetailTypeEnum EntityQueryDetailType = EntityQueryDetailTypeEnum.EntityOnly,");
+                    sb.AppendLine(@"                  EntityQueryTypeEnum EntityQueryType = EntityQueryTypeEnum.AsNoTracking)");
+                    sb.AppendLine(@"        {");
+                    sb.AppendLine(@"            GetParam getParam = new GetParam();");
+                    sb.AppendLine(@"");
+                    sb.AppendLine(@"            getParam.Language = (lang == ""fr"" ? LanguageEnum.fr : LanguageEnum.en);");
+                    sb.AppendLine(@"            getParam.Skip = skip;");
+                    sb.AppendLine(@"            getParam.Take = take;");
+                    sb.AppendLine(@"            getParam.OrderAscending = orderAscending;");
+                    sb.AppendLine(@"            getParam.EntityQueryDetailType = EntityQueryDetailType;");
+                    sb.AppendLine(@"            getParam.EntityQueryType = EntityQueryType;");
+                    sb.AppendLine(@"");
+                    sb.AppendLine(@"            return getParam;");
+                    sb.AppendLine(@"        }");
+                    sb.AppendLine(@"        #endregion Functions public");
+                }
+
                 sb.AppendLine(@"    }");
+
                 #endregion doing type -- type[Web] and type[Report] will be done later
 
                 #region doing type[Web]
