@@ -387,6 +387,48 @@
 <data name="AppTaskLanguageReportAppTaskLanguageReportTest" xml:space="preserve">
   <value>AppTaskLanguageReportAppTaskLanguageReportTest</value>
 </data>
+<data name="AspNetUser" xml:space="preserve">
+  <value>AspNetUser</value>
+</data>
+<data name="AspNetUserId" xml:space="preserve">
+  <value>AspNetUserId</value>
+</data>
+<data name="AspNetUserEmail" xml:space="preserve">
+  <value>AspNetUserEmail</value>
+</data>
+<data name="AspNetUserEmailConfirmed" xml:space="preserve">
+  <value>AspNetUserEmailConfirmed</value>
+</data>
+<data name="AspNetUserPasswordHash" xml:space="preserve">
+  <value>AspNetUserPasswordHash</value>
+</data>
+<data name="AspNetUserSecurityStamp" xml:space="preserve">
+  <value>AspNetUserSecurityStamp</value>
+</data>
+<data name="AspNetUserPhoneNumber" xml:space="preserve">
+  <value>AspNetUserPhoneNumber</value>
+</data>
+<data name="AspNetUserPhoneNumberConfirmed" xml:space="preserve">
+  <value>AspNetUserPhoneNumberConfirmed</value>
+</data>
+<data name="AspNetUserTwoFactorEnabled" xml:space="preserve">
+  <value>AspNetUserTwoFactorEnabled</value>
+</data>
+<data name="AspNetUserLockoutEndDateUtc" xml:space="preserve">
+  <value>AspNetUserLockoutEndDateUtc</value>
+</data>
+<data name="AspNetUserLockoutEnabled" xml:space="preserve">
+  <value>AspNetUserLockoutEnabled</value>
+</data>
+<data name="AspNetUserAccessFailedCount" xml:space="preserve">
+  <value>AspNetUserAccessFailedCount</value>
+</data>
+<data name="AspNetUserUserName" xml:space="preserve">
+  <value>AspNetUserUserName</value>
+</data>
+<data name="AspNetUserHasErrors" xml:space="preserve">
+  <value>AspNetUserHasErrors</value>
+</data>
 <data name="BoxModel" xml:space="preserve">
   <value>BoxModel</value>
 </data>
@@ -3899,6 +3941,9 @@
 </data>
 <data name="SamplingPlanLaboratoryDefault" xml:space="preserve">
   <value>SamplingPlanLaboratoryDefault</value>
+</data>
+<data name="SamplingPlanBackupDirectory" xml:space="preserve">
+  <value>SamplingPlanBackupDirectory</value>
 </data>
 <data name="SamplingPlanSamplingPlanWeb" xml:space="preserve">
   <value>SamplingPlanSamplingPlanWeb</value>

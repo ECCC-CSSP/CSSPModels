@@ -4508,6 +4508,78 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GetParam.
+        /// </summary>
+        public static string GetParam {
+            get {
+                return ResourceManager.GetString("GetParam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetParamEntityQueryDetailType.
+        /// </summary>
+        public static string GetParamEntityQueryDetailType {
+            get {
+                return ResourceManager.GetString("GetParamEntityQueryDetailType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetParamEntityQueryType.
+        /// </summary>
+        public static string GetParamEntityQueryType {
+            get {
+                return ResourceManager.GetString("GetParamEntityQueryType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetParamHasErrors.
+        /// </summary>
+        public static string GetParamHasErrors {
+            get {
+                return ResourceManager.GetString("GetParamHasErrors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetParamLanguage.
+        /// </summary>
+        public static string GetParamLanguage {
+            get {
+                return ResourceManager.GetString("GetParamLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetParamOrderAscending.
+        /// </summary>
+        public static string GetParamOrderAscending {
+            get {
+                return ResourceManager.GetString("GetParamOrderAscending", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetParamSkip.
+        /// </summary>
+        public static string GetParamSkip {
+            get {
+                return ResourceManager.GetString("GetParamSkip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetParamTake.
+        /// </summary>
+        public static string GetParamTake {
+            get {
+                return ResourceManager.GetString("GetParamTake", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to HydrometricDataValue.
         /// </summary>
         public static string HydrometricDataValue {
@@ -14341,6 +14413,15 @@ namespace CSSPModels.Resources {
         public static string SamplingPlanApprovalCode {
             get {
                 return ResourceManager.GetString("SamplingPlanApprovalCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SamplingPlanBackupDirectory.
+        /// </summary>
+        public static string SamplingPlanBackupDirectory {
+            get {
+                return ResourceManager.GetString("SamplingPlanBackupDirectory", resourceCulture);
             }
         }
         

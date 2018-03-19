@@ -41,7 +41,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SamplingPlan_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SamplingPlanID", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "AnalyzeMethodDefault", "SampleMatrixDefault", "LaboratoryDefault", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SamplingPlanID", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "AnalyzeMethodDefault", "SampleMatrixDefault", "LaboratoryDefault", "BackupDirectory", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "SamplingPlanWeb", "SamplingPlanReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -131,6 +131,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanAnalyzeMethodDefault);
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanSampleMatrixDefault);
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanLaboratoryDefault);
+               Assert.IsNotNull(CSSPModelsRes.SamplingPlanBackupDirectory);
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanLastUpdateContactTVItemID);
                Assert.IsNotNull(CSSPModelsRes.SamplingPlanHasErrors);
@@ -192,18 +193,21 @@ namespace CSSPModels.Tests
                LaboratoryEnum val18 = (LaboratoryEnum)3;
                samplingPlan.LaboratoryDefault = val18;
                Assert.AreEqual(val18, samplingPlan.LaboratoryDefault);
-               DateTime val19 = new DateTime(2010, 3, 4);
-               samplingPlan.LastUpdateDate_UTC = val19;
-               Assert.AreEqual(val19, samplingPlan.LastUpdateDate_UTC);
-               int val20 = 45;
-               samplingPlan.LastUpdateContactTVItemID = val20;
-               Assert.AreEqual(val20, samplingPlan.LastUpdateContactTVItemID);
-               bool val21 = true;
-               samplingPlan.HasErrors = val21;
-               Assert.AreEqual(val21, samplingPlan.HasErrors);
-               IEnumerable<ValidationResult> val70 = new List<ValidationResult>().AsEnumerable();
-               samplingPlan.ValidationResults = val70;
-               Assert.AreEqual(val70, samplingPlan.ValidationResults);
+               string val19 = "Some text";
+               samplingPlan.BackupDirectory = val19;
+               Assert.AreEqual(val19, samplingPlan.BackupDirectory);
+               DateTime val20 = new DateTime(2010, 3, 4);
+               samplingPlan.LastUpdateDate_UTC = val20;
+               Assert.AreEqual(val20, samplingPlan.LastUpdateDate_UTC);
+               int val21 = 45;
+               samplingPlan.LastUpdateContactTVItemID = val21;
+               Assert.AreEqual(val21, samplingPlan.LastUpdateContactTVItemID);
+               bool val22 = true;
+               samplingPlan.HasErrors = val22;
+               Assert.AreEqual(val22, samplingPlan.HasErrors);
+               IEnumerable<ValidationResult> val73 = new List<ValidationResult>().AsEnumerable();
+               samplingPlan.ValidationResults = val73;
+               Assert.AreEqual(val73, samplingPlan.ValidationResults);
         }
         #endregion Tests
     }

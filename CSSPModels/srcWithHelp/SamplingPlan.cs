@@ -47,6 +47,8 @@ namespace CSSPModels
         [CSSPEnumType]
         [CSSPAllowNull]
         public LaboratoryEnum? LaboratoryDefault { get; set; }
+        [StringLength(250)]
+        public string BackupDirectory { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
