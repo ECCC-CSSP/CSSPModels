@@ -11,6 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int SamplingPlanID { get; set; }
+        public bool IsActive { get; set; }
         [StringLength(200)]
         public string SamplingPlanName { get; set; }
         [StringLength(100)]

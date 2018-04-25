@@ -41,7 +41,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMSample_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MWQMSampleID", "MWQMSiteTVItemID", "MWQMRunTVItemID", "SampleDateTime_Local", "Depth_m", "FecCol_MPN_100ml", "Salinity_PPT", "WaterTemp_C", "PH", "SampleTypesText", "SampleType_old", "Tube_10", "Tube_1_0", "Tube_0_1", "ProcessedBy", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MWQMSampleID", "MWQMSiteTVItemID", "MWQMRunTVItemID", "SampleDateTime_Local", "Depth_m", "FecCol_MPN_100ml", "Salinity_PPT", "WaterTemp_C", "PH", "SampleTypesText", "SampleType_old", "Tube_10", "Tube_1_0", "Tube_0_1", "ProcessedBy", "UseForOpenData", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "MWQMSampleWeb", "MWQMSampleReport", "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -128,6 +128,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.MWQMSampleTube_1_0);
                Assert.IsNotNull(CSSPModelsRes.MWQMSampleTube_0_1);
                Assert.IsNotNull(CSSPModelsRes.MWQMSampleProcessedBy);
+               Assert.IsNotNull(CSSPModelsRes.MWQMSampleUseForOpenData);
                Assert.IsNotNull(CSSPModelsRes.MWQMSampleLastUpdateDate_UTC);
                Assert.IsNotNull(CSSPModelsRes.MWQMSampleLastUpdateContactTVItemID);
                Assert.IsNotNull(CSSPModelsRes.MWQMSampleHasErrors);
@@ -180,18 +181,21 @@ namespace CSSPModels.Tests
                string val15 = "Some text";
                mWQMSample.ProcessedBy = val15;
                Assert.AreEqual(val15, mWQMSample.ProcessedBy);
-               DateTime val16 = new DateTime(2010, 3, 4);
-               mWQMSample.LastUpdateDate_UTC = val16;
-               Assert.AreEqual(val16, mWQMSample.LastUpdateDate_UTC);
-               int val17 = 45;
-               mWQMSample.LastUpdateContactTVItemID = val17;
-               Assert.AreEqual(val17, mWQMSample.LastUpdateContactTVItemID);
-               bool val18 = true;
-               mWQMSample.HasErrors = val18;
-               Assert.AreEqual(val18, mWQMSample.HasErrors);
-               IEnumerable<ValidationResult> val61 = new List<ValidationResult>().AsEnumerable();
-               mWQMSample.ValidationResults = val61;
-               Assert.AreEqual(val61, mWQMSample.ValidationResults);
+               bool val16 = true;
+               mWQMSample.UseForOpenData = val16;
+               Assert.AreEqual(val16, mWQMSample.UseForOpenData);
+               DateTime val17 = new DateTime(2010, 3, 4);
+               mWQMSample.LastUpdateDate_UTC = val17;
+               Assert.AreEqual(val17, mWQMSample.LastUpdateDate_UTC);
+               int val18 = 45;
+               mWQMSample.LastUpdateContactTVItemID = val18;
+               Assert.AreEqual(val18, mWQMSample.LastUpdateContactTVItemID);
+               bool val19 = true;
+               mWQMSample.HasErrors = val19;
+               Assert.AreEqual(val19, mWQMSample.HasErrors);
+               IEnumerable<ValidationResult> val64 = new List<ValidationResult>().AsEnumerable();
+               mWQMSample.ValidationResults = val64;
+               Assert.AreEqual(val64, mWQMSample.ValidationResults);
         }
         #endregion Tests
     }

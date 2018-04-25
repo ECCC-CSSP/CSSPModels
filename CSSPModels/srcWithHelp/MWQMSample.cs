@@ -40,6 +40,7 @@ namespace CSSPModels
         [StringLength(10)]
         [CSSPAllowNull]
         public string ProcessedBy { get; set; }
+        public bool UseForOpenData { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
