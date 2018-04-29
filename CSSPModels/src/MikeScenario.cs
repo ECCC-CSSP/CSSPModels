@@ -44,9 +44,9 @@ namespace CSSPModels
         public double AmbientSalinity_PSU { get; set; }
         [Range(0.0D, 100.0D)]
         public double ManningNumber { get; set; }
-        [Range(1, 10000)]
+        [Range(1, 1000000)]
         public int? NumberOfElements { get; set; }
-        [Range(1, 10000)]
+        [Range(1, 1000000)]
         public int? NumberOfTimeSteps { get; set; }
         [Range(0, 100)]
         public int? NumberOfSigmaLayers { get; set; }

@@ -17,7 +17,7 @@ namespace CSSPModels
         public string TVPath { get; set; }
         [CSSPEnumType]
         public TVTypeEnum TVType { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,6,18,3,19,20,4,8,9,10,12,11,13,14,15,31,16,23,17,40,26,22")]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,2,3,4,5,6,9,10,11,12,13,14,15,16,17,18,19,20,31")]
         public int ParentID { get; set; }
         public bool IsActive { get; set; }
         #endregion Properties in DB

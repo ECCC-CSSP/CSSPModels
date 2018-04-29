@@ -30,7 +30,8 @@ namespace CSSPModels
         [StringLength(50)]
         public string SampleTypesText { get; set; }
         [CSSPEnumType]
-        public SampleTypeEnum SampleType_old { get; set; }
+        [CSSPAllowNull]
+        public SampleTypeEnum? SampleType_old { get; set; }
         [Range(0, 5)]
         public int? Tube_10 { get; set; }
         [Range(0, 5)]

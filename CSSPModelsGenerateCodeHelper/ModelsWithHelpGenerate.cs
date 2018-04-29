@@ -982,6 +982,22 @@ namespace CSSPModelsGenerateCodeHelper
             {
                 sb.AppendLine(@"        [CSSPAllowNull]");
             }
+            if (dllPropertyInfo.CSSPProp.HasCSSPDisplayENAttribute)
+            {
+                sb.AppendLine(@"        [CSSPDisplayEN(DisplayEN = """ + dllPropertyInfo.CSSPProp.DisplayEN + @""")]");
+            }
+            if (dllPropertyInfo.CSSPProp.HasCSSPDisplayFRAttribute)
+            {
+                sb.AppendLine(@"        [CSSPDisplayFR(DisplayFR = """ + dllPropertyInfo.CSSPProp.DisplayFR + @""")]");
+            }
+            if (dllPropertyInfo.CSSPProp.HasCSSPDescriptionENAttribute)
+            {
+                sb.AppendLine(@"        [CSSPDescriptionEN(DescriptionEN = @""" + dllPropertyInfo.CSSPProp.DescriptionEN.Replace("\"", "\"\"") + @""")]");
+            }
+            if (dllPropertyInfo.CSSPProp.HasCSSPDescriptionFRAttribute)
+            {
+                sb.AppendLine(@"        [CSSPDescriptionFR(DescriptionFR = @""" + dllPropertyInfo.CSSPProp.DescriptionFR.Replace("\"", "\"\"") + @""")]");
+            }
 
             return true;
         }

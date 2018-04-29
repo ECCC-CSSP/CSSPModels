@@ -14,7 +14,8 @@ namespace CSSPModels
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "8")]
         public int TVFileTVItemID { get; set; }
         [CSSPEnumType]
-        public TVTypeEnum TemplateTVType { get; set; }
+        [CSSPAllowNull]
+        public TVTypeEnum? TemplateTVType { get; set; }
         [CSSPExist(ExistTypeName = "ReportType", ExistPlurial = "s", ExistFieldID = "ReportTypeID")]
         public int? ReportTypeID { get; set; }
         [CSSPAllowNull]
@@ -27,7 +28,7 @@ namespace CSSPModels
         public FilePurposeEnum FilePurpose { get; set; }
         [CSSPEnumType]
         public FileTypeEnum FileType { get; set; }
-        [Range(0, 1000000)]
+        [Range(0, 100000000)]
         public int FileSize_kb { get; set; }
         [CSSPAllowNull]
         public string FileInfo { get; set; }

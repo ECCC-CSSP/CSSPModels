@@ -11,7 +11,7 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         public int MapInfoID { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,2,6,18,3,19,20,4,8,9,10,12,11,13,14,15,31,16,23,17,40,26,22,28,25,42,38,73,72,74,36,33,29,35,39")]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,2,3,4,6,8,9,11,12,14,15,16,17,18,19,20,22,24,25,26,29,30,41,42")]
         public int TVItemID { get; set; }
         [CSSPEnumType]
         public TVTypeEnum TVType { get; set; }

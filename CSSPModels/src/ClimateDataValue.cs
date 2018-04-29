@@ -18,6 +18,7 @@ namespace CSSPModels
         public bool Keep { get; set; }
         [CSSPEnumType]
         public StorageDataTypeEnum StorageDataType { get; set; }
+        public bool HasBeenRead { get; set; }
         [Range(0.0D, 10000.0D)]
         public double? Snow_cm { get; set; }
         [Range(0.0D, 10000.0D)]

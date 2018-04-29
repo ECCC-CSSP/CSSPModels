@@ -1726,6 +1726,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ClimateDataValueHasBeenRead.
+        /// </summary>
+        public static string ClimateDataValueHasBeenRead {
+            get {
+                return ResourceManager.GetString("ClimateDataValueHasBeenRead", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ClimateDataValueHasErrors.
         /// </summary>
         public static string ClimateDataValueHasErrors {

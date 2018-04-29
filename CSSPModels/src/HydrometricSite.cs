@@ -28,9 +28,9 @@ namespace CSSPModels
         public string Province { get; set; }
         [Range(0.0D, 10000.0D)]
         public double? Elevation_m { get; set; }
-        [CSSPAfter(Year = 1980)]
+        [CSSPAfter(Year = 1849)]
         public DateTime? StartDate_Local { get; set; }
-        [CSSPAfter(Year = 1980)]
+        [CSSPAfter(Year = 1849)]
         [CSSPBigger(OtherField = "StartDate_Local")]
         public DateTime? EndDate_Local { get; set; }
         [Range(-10.0D, 0.0D)]

@@ -65,6 +65,138 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > Custom validation attribute used when generating code
+    /// > <para>Used when generating some codes</para>
+    /// > <para>Used on every field</para>
+    /// > <para>**DescriptionEN** : Defines the text to be used when creating html (Angular) and documentation base text</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
+    /// <example>
+    ///     <code>
+    ///         [CSSPDescriptionEN(DescriptionEN = "First Name")]
+    ///         public string FirstName { get; set; }
+    ///     </code>
+    /// </example>
+    public class CSSPDescriptionENAttribute : ValidationAttribute
+    {
+        /// <summary>
+        /// > [!NOTE]
+        /// > Description text explaining the field withing html (Angular) and documentation
+        /// </summary>
+        public string DescriptionEN { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > Not used. Using own validation system.
+        /// </summary>
+        /// <param name="value">Not used</param>
+        /// <returns>Not used</returns>
+        public override bool IsValid(object value)
+        {
+            return true;
+        }
+    }
+
+    /// <summary>
+    /// > [!NOTE]
+    /// > Custom validation attribute used when generating code
+    /// > <para>Used when generating some codes</para>
+    /// > <para>Used on every field</para>
+    /// > <para>**DescriptionFR** : Defines the text to be used when creating html (Angular) and documentation base text</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
+    /// <example>
+    ///     <code>
+    ///         [CSSPDescriptionFR(DescriptionEN = "Prénom")]
+    ///         public string FirstName { get; set; }
+    ///     </code>
+    /// </example>
+    public class CSSPDescriptionFRAttribute : ValidationAttribute
+    {
+        /// <summary>
+        /// > [!NOTE]
+        /// > Description text explaining the field withing html (Angular) and documentation
+        /// </summary>
+        public string DescriptionFR { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > Not used. Using own validation system.
+        /// </summary>
+        /// <param name="value">Not used</param>
+        /// <returns>Not used</returns>
+        public override bool IsValid(object value)
+        {
+            return true;
+        }
+    }
+
+    /// <summary>
+    /// > [!NOTE]
+    /// > Custom validation attribute used when generating code
+    /// > <para>Used when generating some codes</para>
+    /// > <para>Used on every field</para>
+    /// > <para>**DisplayEN** : Defines the text to be used when creating html (Angular) base text</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
+    /// <example>
+    ///     <code>
+    ///         [CSSPDisplayEN(DisplayEN = "First Name")]
+    ///         public string FirstName { get; set; }
+    ///     </code>
+    /// </example>
+    public class CSSPDisplayENAttribute : ValidationAttribute
+    {
+        /// <summary>
+        /// > [!NOTE]
+        /// > Display text used in html (Angular) and documentation
+        /// </summary>
+        public string DisplayEN { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > Not used. Using own validation system.
+        /// </summary>
+        /// <param name="value">Not used</param>
+        /// <returns>Not used</returns>
+        public override bool IsValid(object value)
+        {
+            return true;
+        }
+    }
+
+    /// <summary>
+    /// > [!NOTE]
+    /// > Custom validation attribute used when generating code
+    /// > <para>Used when generating some codes</para>
+    /// > <para>Used on every field</para>
+    /// > <para>**DisplayFR** : Defines the text to be used when creating html (Angular) base text</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
+    /// <example>
+    ///     <code>
+    ///         [CSSPDisplayFR(DisplayEN = "First Name")]
+    ///         public string FirstName { get; set; }
+    ///     </code>
+    /// </example>
+    public class CSSPDisplayFRAttribute : ValidationAttribute
+    {
+        /// <summary>
+        /// > [!NOTE]
+        /// > Display text used in html (Angular) and documentation
+        /// </summary>
+        public string DisplayFR { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > Not used. Using own validation system.
+        /// </summary>
+        /// <param name="value">Not used</param>
+        /// <returns>Not used</returns>
+        public override bool IsValid(object value)
+        {
+            return true;
+        }
+    }
+
+    /// <summary>
+    /// > [!NOTE]
+    /// > Custom validation attribute used when generating code
     /// > <para>Used when generating [class]ServiceGenerated.cs and [class]ServiceTestGenerated.cs codes</para>
     /// > <para>Used on type: **DateTime**</para>
     /// > <para>DateTime only valid for years after **Year**</para>
@@ -354,7 +486,7 @@ namespace CSSPModels
     ///     </code>
     ///     or
     ///     <code>
-    ///         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,6,18,3,19,20,4,8,9,10,12,11,13,14,15,31,16,23,17,40,26,22,28")]
+    ///         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,24,25,26,27,28,30,31,38,39,40,41,42,52,53")]
     ///         public int TVItemID { get; set; }
     ///     </code>
     /// </example>

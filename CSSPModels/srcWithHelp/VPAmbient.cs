@@ -16,25 +16,25 @@ namespace CSSPModels
         [Range(0, 10)]
         public int Row { get; set; }
         [Range(0.0D, 1000.0D)]
-        public double MeasurementDepth_m { get; set; }
+        public double? MeasurementDepth_m { get; set; }
         [Range(0.0D, 10.0D)]
-        public double CurrentSpeed_m_s { get; set; }
+        public double? CurrentSpeed_m_s { get; set; }
         [Range(-180.0D, 180.0D)]
-        public double CurrentDirection_deg { get; set; }
+        public double? CurrentDirection_deg { get; set; }
         [Range(0.0D, 40.0D)]
-        public double AmbientSalinity_PSU { get; set; }
+        public double? AmbientSalinity_PSU { get; set; }
         [Range(-10.0D, 40.0D)]
-        public double AmbientTemperature_C { get; set; }
+        public double? AmbientTemperature_C { get; set; }
         [Range(0, 10000000)]
-        public int BackgroundConcentration_MPN_100ml { get; set; }
+        public int? BackgroundConcentration_MPN_100ml { get; set; }
         [Range(0.0D, 100.0D)]
-        public double PollutantDecayRate_per_day { get; set; }
+        public double? PollutantDecayRate_per_day { get; set; }
         [Range(0.0D, 10.0D)]
-        public double FarFieldCurrentSpeed_m_s { get; set; }
+        public double? FarFieldCurrentSpeed_m_s { get; set; }
         [Range(-180.0D, 180.0D)]
-        public double FarFieldCurrentDirection_deg { get; set; }
+        public double? FarFieldCurrentDirection_deg { get; set; }
         [Range(0.0D, 1.0D)]
-        public double FarFieldDiffusionCoefficient { get; set; }
+        public double? FarFieldDiffusionCoefficient { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB

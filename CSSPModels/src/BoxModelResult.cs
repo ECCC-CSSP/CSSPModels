@@ -22,11 +22,11 @@ namespace CSSPModels
         [Range(0.0D, 100000.0D)]
         public double Radius_m { get; set; }
         [Range(0.0D, 360.0D)]
-        public double LeftSideDiameterLineAngle_deg { get; set; }
+        public double? LeftSideDiameterLineAngle_deg { get; set; }
         [Range(-90.0D, 90.0D)]
-        public double CircleCenterLatitude { get; set; }
+        public double? CircleCenterLatitude { get; set; }
         [Range(-180.0D, 180.0D)]
-        public double CircleCenterLongitude { get; set; }
+        public double? CircleCenterLongitude { get; set; }
         public bool FixLength { get; set; }
         public bool FixWidth { get; set; }
         [Range(0.0D, 100000.0D)]
@@ -34,11 +34,11 @@ namespace CSSPModels
         [Range(0.0D, 100000.0D)]
         public double RectWidth_m { get; set; }
         [Range(0.0D, 360.0D)]
-        public double LeftSideLineAngle_deg { get; set; }
+        public double? LeftSideLineAngle_deg { get; set; }
         [Range(-90.0D, 90.0D)]
-        public double LeftSideLineStartLatitude { get; set; }
+        public double? LeftSideLineStartLatitude { get; set; }
         [Range(-180.0D, 180.0D)]
-        public double LeftSideLineStartLongitude { get; set; }
+        public double? LeftSideLineStartLongitude { get; set; }
         #endregion Properties in DB
 
         #region Properties not in DB
