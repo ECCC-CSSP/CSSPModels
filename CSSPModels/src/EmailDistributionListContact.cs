@@ -10,6 +10,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "EmailDistributionListContact ID")]
+        [CSSPDisplayFR(DisplayFR = "EmailDistributionListContact ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the EmailDistributionListContacts table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau EmailDistributionListContacts")]
         public int EmailDistributionListContactID { get; set; }
         [CSSPExist(ExistTypeName = "EmailDistributionList", ExistPlurial = "s", ExistFieldID = "EmailDistributionListID")]
         public int EmailDistributionListID { get; set; }

@@ -28,6 +28,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "HydrometricDataValue ID")]
+        [CSSPDisplayFR(DisplayFR = "HydrometricDataValue ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the HydrometricDataValues table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau HydrometricDataValues")]
         public int HydrometricDataValueID { get; set; }
         /// <summary>
         /// > [!NOTE]

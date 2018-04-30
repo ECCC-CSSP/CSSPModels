@@ -28,6 +28,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "TVTypeUserAuthorization ID")]
+        [CSSPDisplayFR(DisplayFR = "TVTypeUserAuthorization ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the TVTypeUserAuthorizations table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau TVTypeUserAuthorizations")]
         public int TVTypeUserAuthorizationID { get; set; }
         /// <summary>
         /// > [!NOTE]

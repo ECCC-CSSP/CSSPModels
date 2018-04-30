@@ -10,6 +10,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "PolSourceObservationIssue ID")]
+        [CSSPDisplayFR(DisplayFR = "PolSourceObservationIssue ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the PolSourceObservationIssues table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau PolSourceObservationIssues")]
         public int PolSourceObservationIssueID { get; set; }
         [CSSPExist(ExistTypeName = "PolSourceObservation", ExistPlurial = "s", ExistFieldID = "PolSourceObservationID")]
         public int PolSourceObservationID { get; set; }

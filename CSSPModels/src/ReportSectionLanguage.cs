@@ -10,6 +10,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "ReportSectionLanguage ID")]
+        [CSSPDisplayFR(DisplayFR = "ReportSectionLanguage ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the ReportSectionLanguages table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau ReportSectionLanguages")]
         public int ReportSectionLanguageID { get; set; }
         [CSSPExist(ExistTypeName = "ReportSection", ExistPlurial = "s", ExistFieldID = "ReportSectionID")]
         public int ReportSectionID { get; set; }

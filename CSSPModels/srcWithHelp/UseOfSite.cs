@@ -28,6 +28,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "UseOfSite ID")]
+        [CSSPDisplayFR(DisplayFR = "UseOfSite ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the UseOfSites table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau UseOfSites")]
         public int UseOfSiteID { get; set; }
         /// <summary>
         /// > [!NOTE]

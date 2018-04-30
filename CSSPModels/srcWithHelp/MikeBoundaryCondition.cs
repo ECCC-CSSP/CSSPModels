@@ -28,6 +28,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "MikeBoundaryCondition ID")]
+        [CSSPDisplayFR(DisplayFR = "MikeBoundaryCondition ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the MikeBoundaryConditions table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau MikeBoundaryConditions")]
         public int MikeBoundaryConditionID { get; set; }
         /// <summary>
         /// > [!NOTE]

@@ -10,6 +10,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "TVItem ID")]
+        [CSSPDisplayFR(DisplayFR = "TVItem ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the TVItems table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau TVItems")]
         public int TVItemID { get; set; }
         [Range(0, 100)]
         public int TVLevel { get; set; }

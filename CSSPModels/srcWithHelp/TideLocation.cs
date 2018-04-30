@@ -27,6 +27,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "TideLocation ID")]
+        [CSSPDisplayFR(DisplayFR = "TideLocation ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the TideLocations table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau TideLocations")]
         public int TideLocationID { get; set; }
         [Range(0, 10000)]
         public int Zone { get; set; }

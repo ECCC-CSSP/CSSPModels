@@ -28,6 +28,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "AppTaskLanguage ID")]
+        [CSSPDisplayFR(DisplayFR = "AppTaskLanguage ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the AppTaskLanguages table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau AppTaskLanguages")]
         public int AppTaskLanguageID { get; set; }
         /// <summary>
         /// > [!NOTE]

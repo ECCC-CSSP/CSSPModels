@@ -10,6 +10,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "DocTemplate ID")]
+        [CSSPDisplayFR(DisplayFR = "DocTemplate ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the DocTemplates table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau DocTemplates")]
         public int DocTemplateID { get; set; }
         [CSSPEnumType]
         public LanguageEnum Language { get; set; }

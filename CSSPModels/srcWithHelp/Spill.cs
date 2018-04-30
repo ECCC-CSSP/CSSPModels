@@ -27,6 +27,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "Spill ID")]
+        [CSSPDisplayFR(DisplayFR = "Spill ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the Spills table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau Spills")]
         public int SpillID { get; set; }
         /// <summary>
         /// > [!NOTE]

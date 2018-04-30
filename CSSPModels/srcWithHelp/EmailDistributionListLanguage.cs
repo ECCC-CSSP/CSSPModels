@@ -28,6 +28,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "EmailDistributionListLanguage ID")]
+        [CSSPDisplayFR(DisplayFR = "EmailDistributionListLanguage ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the EmailDistributionListLanguages table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau EmailDistributionListLanguages")]
         public int EmailDistributionListLanguageID { get; set; }
         /// <summary>
         /// > [!NOTE]

@@ -28,6 +28,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "MWQMAnalysisReportParameter ID")]
+        [CSSPDisplayFR(DisplayFR = "MWQMAnalysisReportParameter ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the MWQMAnalysisReportParameters table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau MWQMAnalysisReportParameters")]
         public int MWQMAnalysisReportParameterID { get; set; }
         /// <summary>
         /// > [!NOTE]

@@ -27,6 +27,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "SamplingPlanSubsectorSite ID")]
+        [CSSPDisplayFR(DisplayFR = "SamplingPlanSubsectorSite ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the SamplingPlanSubsectorSites table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau SamplingPlanSubsectorSites")]
         public int SamplingPlanSubsectorSiteID { get; set; }
         /// <summary>
         /// > [!NOTE]

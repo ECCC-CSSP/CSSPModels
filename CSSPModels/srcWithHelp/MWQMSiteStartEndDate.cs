@@ -27,6 +27,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "MWQMSiteStartEndDate ID")]
+        [CSSPDisplayFR(DisplayFR = "MWQMSiteStartEndDate ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the MWQMSiteStartEndDates table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau MWQMSiteStartEndDates")]
         public int MWQMSiteStartEndDateID { get; set; }
         /// <summary>
         /// > [!NOTE]

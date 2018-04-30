@@ -28,6 +28,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "Contact ID")]
+        [CSSPDisplayFR(DisplayFR = "Contact ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the Contacts table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau Contacts")]
         public int ContactID { get; set; }
         /// <summary>
         /// > [!NOTE]

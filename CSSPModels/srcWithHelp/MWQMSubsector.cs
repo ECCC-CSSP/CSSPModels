@@ -27,6 +27,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "MWQMSubsector ID")]
+        [CSSPDisplayFR(DisplayFR = "MWQMSubsector ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the MWQMSubsectors table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau MWQMSubsectors")]
         public int MWQMSubsectorID { get; set; }
         /// <summary>
         /// > [!NOTE]

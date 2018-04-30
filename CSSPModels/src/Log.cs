@@ -10,6 +10,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "Log ID")]
+        [CSSPDisplayFR(DisplayFR = "Log ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the Logs table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau Logs")]
         public int LogID { get; set; }
         [StringLength(50)]
         public string TableName { get; set; }

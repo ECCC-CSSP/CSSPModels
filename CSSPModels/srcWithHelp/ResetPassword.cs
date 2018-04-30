@@ -27,6 +27,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "ResetPassword ID")]
+        [CSSPDisplayFR(DisplayFR = "ResetPassword ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the ResetPasswords table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau ResetPasswords")]
         public int ResetPasswordID { get; set; }
         [StringLength(256)]
         public string Email { get; set; }

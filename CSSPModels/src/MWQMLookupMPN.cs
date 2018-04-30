@@ -10,6 +10,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "MWQMLookupMPN ID")]
+        [CSSPDisplayFR(DisplayFR = "MWQMLookupMPN ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the MWQMLookupMPNs table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau MWQMLookupMPNs")]
         public int MWQMLookupMPNID { get; set; }
         [Range(0, 5)]
         public int Tubes10 { get; set; }

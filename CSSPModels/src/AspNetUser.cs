@@ -11,6 +11,10 @@ namespace CSSPModels
         #region Properties in DB
         [Key]
         [StringLength(128)]
+        [CSSPDisplayEN(DisplayEN = "ID")]
+        [CSSPDisplayFR(DisplayFR = "ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the AspNetUsers table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau AspNetUsers")]
         public string Id { get; set; }
         [StringLength(256)]
         [CSSPAllowNull]

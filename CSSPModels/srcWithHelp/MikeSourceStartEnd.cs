@@ -27,6 +27,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "MikeSourceStartEnd ID")]
+        [CSSPDisplayFR(DisplayFR = "MikeSourceStartEnd ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the MikeSourceStartEnds table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau MikeSourceStartEnds")]
         public int MikeSourceStartEndID { get; set; }
         /// <summary>
         /// > [!NOTE]

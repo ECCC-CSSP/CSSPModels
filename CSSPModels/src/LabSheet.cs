@@ -10,6 +10,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "LabSheet ID")]
+        [CSSPDisplayFR(DisplayFR = "LabSheet ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the LabSheets table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau LabSheets")]
         public int LabSheetID { get; set; }
         [Range(1, -1)]
         public int OtherServerLabSheetID { get; set; }

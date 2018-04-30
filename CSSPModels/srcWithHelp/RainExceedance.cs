@@ -27,6 +27,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "RainExceedance ID")]
+        [CSSPDisplayFR(DisplayFR = "RainExceedance ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the RainExceedances table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau RainExceedances")]
         public int RainExceedanceID { get; set; }
         public bool YearRound { get; set; }
         /// <summary>

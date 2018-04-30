@@ -28,6 +28,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "TVFileLanguage ID")]
+        [CSSPDisplayFR(DisplayFR = "TVFileLanguage ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the TVFileLanguages table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau TVFileLanguages")]
         public int TVFileLanguageID { get; set; }
         /// <summary>
         /// > [!NOTE]

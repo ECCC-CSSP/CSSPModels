@@ -7,26 +7,33 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     #region Classes
+    /// <param name="HasErrors">true if an error has occured, false if everything is ok</param>
+    /// <param name="ValidationResults">Will contain the list of ValidationResults if an error has occured, otherwise the list will be empty</param>
     public partial class Error
     {
         #region Properties for error handling
         /// <summary>
         /// > [!NOTE]
-        /// > <para>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting) of [Address](CSSPModels.Address)</para>
+        /// > <para>Will be set to true if an error occurs during CRUD (Creating, Reading, Updating or Deleting)</para>
         /// </summary>
         [NotMapped]
         public bool HasErrors { get; set; }
         /// <summary>
         /// > [!NOTE]
-        /// > <para>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting) of [Address](CSSPModels.Address)</para>
+        /// > <para>Will hold all errors which were detected prior or during CRUD (Creating, Reading, Updating or Deleting)</para>
         /// </summary>
         [NotMapped]
         public IEnumerable<ValidationResult> ValidationResults { get; set; }
         #endregion Properties for error handling
 
         #region Constructors
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>Constructor will set the HasErrors field to false and ValidationResults with an empty list of ValidationResult)</para>
+        /// </summary>
         public Error()
         {
+            HasErrors = false;
             ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
@@ -39,6 +46,7 @@ namespace CSSPModels
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
         /// </summary>
+        /// <param name="LastUpdateDate_UTC">Every table within the database contains a field called LastUpdateDate_UTC which holds the last time the row of information was changed</param>
         [CSSPAfter(Year = 1980)]
         public DateTime LastUpdateDate_UTC { get; set; }
         /// <summary>
@@ -48,6 +56,7 @@ namespace CSSPModels
         /// > <para>5 == Contact</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]</para>
         /// </summary>
+        /// <param name="LastUpdateContactTVItemID">Every table within the database contains a field called LastUpdateContactTVItemID which holds the TVItemID of the last person who changed the row of information</param>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int LastUpdateContactTVItemID { get; set; }
         #endregion Properties in DB all tables
@@ -76,6 +85,7 @@ namespace CSSPModels
     ///         public string FirstName { get; set; }
     ///     </code>
     /// </example>
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
     public class CSSPDescriptionENAttribute : ValidationAttribute
     {
         /// <summary>
@@ -109,6 +119,7 @@ namespace CSSPModels
     ///         public string FirstName { get; set; }
     ///     </code>
     /// </example>
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
     public class CSSPDescriptionFRAttribute : ValidationAttribute
     {
         /// <summary>
@@ -142,6 +153,7 @@ namespace CSSPModels
     ///         public string FirstName { get; set; }
     ///     </code>
     /// </example>
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
     public class CSSPDisplayENAttribute : ValidationAttribute
     {
         /// <summary>
@@ -175,6 +187,7 @@ namespace CSSPModels
     ///         public string FirstName { get; set; }
     ///     </code>
     /// </example>
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
     public class CSSPDisplayFRAttribute : ValidationAttribute
     {
         /// <summary>
@@ -219,6 +232,7 @@ namespace CSSPModels
     ///         public DateTime StartDate { get; set; }
     ///     </code>
     /// </example>
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
     public class CSSPAfterAttribute : ValidationAttribute
     {
         /// <summary>

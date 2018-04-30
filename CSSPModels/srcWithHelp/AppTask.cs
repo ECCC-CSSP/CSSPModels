@@ -28,6 +28,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "AppTask ID")]
+        [CSSPDisplayFR(DisplayFR = "AppTask ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the AppTasks table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau AppTasks")]
         public int AppTaskID { get; set; }
         /// <summary>
         /// > [!NOTE]

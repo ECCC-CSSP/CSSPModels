@@ -27,6 +27,10 @@ namespace CSSPModels
     {
         #region Properties in DB
         [Key]
+        [CSSPDisplayEN(DisplayEN = "VPAmbient ID")]
+        [CSSPDisplayFR(DisplayFR = "VPAmbient ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the VPAmbients table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau VPAmbients")]
         public int VPAmbientID { get; set; }
         /// <summary>
         /// > [!NOTE]
