@@ -15,7 +15,7 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the TVItemLanguages table")]
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau TVItemLanguages")]
         public int TVItemLanguageID { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,31")]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,2,3,4,5,6,7,9,10,11,12,13,14,15,16,17,18,19,20,21,31,79")]
         public int TVItemID { get; set; }
         [CSSPEnumType]
         public LanguageEnum Language { get; set; }

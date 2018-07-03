@@ -588,6 +588,51 @@
 <data name="BoxModelResultReportBoxModelResultReportTest" xml:space="preserve">
   <value>BoxModelResultReportBoxModelResultReportTest</value>
 </data>
+<data name="Classification" xml:space="preserve">
+  <value>Classification</value>
+</data>
+<data name="ClassificationClassificationID" xml:space="preserve">
+  <value>ClassificationClassificationID</value>
+</data>
+<data name="ClassificationClassificationTVItemID" xml:space="preserve">
+  <value>ClassificationClassificationTVItemID</value>
+</data>
+<data name="ClassificationClassificationType" xml:space="preserve">
+  <value>ClassificationClassificationType</value>
+</data>
+<data name="ClassificationOrdinal" xml:space="preserve">
+  <value>ClassificationOrdinal</value>
+</data>
+<data name="ClassificationClassificationWeb" xml:space="preserve">
+  <value>ClassificationClassificationWeb</value>
+</data>
+<data name="ClassificationClassificationReport" xml:space="preserve">
+  <value>ClassificationClassificationReport</value>
+</data>
+<data name="ClassificationLastUpdateDate_UTC" xml:space="preserve">
+  <value>ClassificationLastUpdateDate_UTC</value>
+</data>
+<data name="ClassificationLastUpdateContactTVItemID" xml:space="preserve">
+  <value>ClassificationLastUpdateContactTVItemID</value>
+</data>
+<data name="ClassificationHasErrors" xml:space="preserve">
+  <value>ClassificationHasErrors</value>
+</data>
+<data name="ClassificationWeb" xml:space="preserve">
+  <value>ClassificationWeb</value>
+</data>
+<data name="ClassificationWebLastUpdateContactTVText" xml:space="preserve">
+  <value>ClassificationWebLastUpdateContactTVText</value>
+</data>
+<data name="ClassificationWebClassificationTVText" xml:space="preserve">
+  <value>ClassificationWebClassificationTVText</value>
+</data>
+<data name="ClassificationReport" xml:space="preserve">
+  <value>ClassificationReport</value>
+</data>
+<data name="ClassificationReportClassificationReportTest" xml:space="preserve">
+  <value>ClassificationReportClassificationReportTest</value>
+</data>
 <data name="ClimateDataValue" xml:space="preserve">
   <value>ClimateDataValue</value>
 </data>
@@ -5532,6 +5577,30 @@
 <data name="FilePurposeAndTextHasErrors" xml:space="preserve">
   <value>FilePurposeAndTextHasErrors</value>
 </data>
+<data name="GetParam" xml:space="preserve">
+  <value>GetParam</value>
+</data>
+<data name="GetParamLanguage" xml:space="preserve">
+  <value>GetParamLanguage</value>
+</data>
+<data name="GetParamSkip" xml:space="preserve">
+  <value>GetParamSkip</value>
+</data>
+<data name="GetParamTake" xml:space="preserve">
+  <value>GetParamTake</value>
+</data>
+<data name="GetParamOrderAscending" xml:space="preserve">
+  <value>GetParamOrderAscending</value>
+</data>
+<data name="GetParamEntityQueryDetailType" xml:space="preserve">
+  <value>GetParamEntityQueryDetailType</value>
+</data>
+<data name="GetParamEntityQueryType" xml:space="preserve">
+  <value>GetParamEntityQueryType</value>
+</data>
+<data name="GetParamHasErrors" xml:space="preserve">
+  <value>GetParamHasErrors</value>
+</data>
 <data name="InputSummary" xml:space="preserve">
   <value>InputSummary</value>
 </data>
@@ -5897,30 +5966,6 @@
 </data>
 <data name="LastUpdateAndTVTextHasErrors" xml:space="preserve">
   <value>LastUpdateAndTVTextHasErrors</value>
-</data>
-<data name="GetParam" xml:space="preserve">
-  <value>GetParam</value>
-</data>
-<data name="GetParamLanguage" xml:space="preserve">
-  <value>GetParamLanguage</value>
-</data>
-<data name="GetParamSkip" xml:space="preserve">
-  <value>GetParamSkip</value>
-</data>
-<data name="GetParamTake" xml:space="preserve">
-  <value>GetParamTake</value>
-</data>
-<data name="GetParamOrderAscending" xml:space="preserve">
-  <value>GetParamOrderAscending</value>
-</data>
-<data name="GetParamEntityQueryDetailType" xml:space="preserve">
-  <value>GetParamEntityQueryDetailType</value>
-</data>
-<data name="GetParamEntityQueryType" xml:space="preserve">
-  <value>GetParamEntityQueryType</value>
-</data>
-<data name="GetParamHasErrors" xml:space="preserve">
-  <value>GetParamHasErrors</value>
 </data>
 <data name="LatLng" xml:space="preserve">
   <value>LatLng</value>
