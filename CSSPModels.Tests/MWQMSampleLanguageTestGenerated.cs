@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void MWQMSampleLanguage_Properties_Test()
         {
@@ -153,6 +153,6 @@ namespace CSSPModels.Tests
                mWQMSampleLanguage.ValidationResults = val31;
                Assert.AreEqual(val31, mWQMSampleLanguage.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

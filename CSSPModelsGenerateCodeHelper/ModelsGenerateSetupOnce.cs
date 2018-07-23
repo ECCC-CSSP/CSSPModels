@@ -69,12 +69,18 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"}");
 
                 FileInfo fiOutputGen = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels.Tests\" + type.Name + "Test.cs");
-                using (StreamWriter sw2 = fiOutputGen.CreateText())
+                if (!fiOutputGen.Exists)
                 {
-                    sw2.Write(sb.ToString());
+                    using (StreamWriter sw2 = fiOutputGen.CreateText())
+                    {
+                        sw2.Write(sb.ToString());
+                    }
+                    StatusPermanentEvent(new StatusEventArgs("Created New [" + fiOutputGen.FullName + "] ..."));
                 }
-
-                StatusPermanentEvent(new StatusEventArgs("Created [" + fiOutputGen.FullName + "] ..."));
+                else
+                {
+                    StatusPermanentEvent(new StatusEventArgs("Already created [" + fiOutputGen.FullName + "] ..."));
+                }
 
                 StatusTempEvent(new StatusEventArgs("Done ..."));
             }

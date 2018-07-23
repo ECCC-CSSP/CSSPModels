@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void CSSPWQInputApp_Properties_Test()
         {
@@ -101,6 +101,6 @@ namespace CSSPModels.Tests
                cSSPWQInputApp.ValidationResults = val27;
                Assert.AreEqual(val27, cSSPWQInputApp.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

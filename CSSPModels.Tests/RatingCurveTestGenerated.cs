@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void RatingCurve_Properties_Test()
         {
@@ -145,6 +145,6 @@ namespace CSSPModels.Tests
                ratingCurve.ValidationResults = val25;
                Assert.AreEqual(val25, ratingCurve.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

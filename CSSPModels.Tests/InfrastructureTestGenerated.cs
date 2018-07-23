@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void Infrastructure_Properties_Test()
         {
@@ -317,6 +317,6 @@ namespace CSSPModels.Tests
                infrastructure.ValidationResults = val154;
                Assert.AreEqual(val154, infrastructure.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

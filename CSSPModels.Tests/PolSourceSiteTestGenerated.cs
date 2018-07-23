@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void PolSourceSite_Properties_Test()
         {
@@ -169,6 +169,6 @@ namespace CSSPModels.Tests
                polSourceSite.ValidationResults = val43;
                Assert.AreEqual(val43, polSourceSite.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

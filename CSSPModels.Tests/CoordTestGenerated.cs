@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void Coord_Properties_Test()
         {
@@ -85,6 +85,6 @@ namespace CSSPModels.Tests
                coord.ValidationResults = val15;
                Assert.AreEqual(val15, coord.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

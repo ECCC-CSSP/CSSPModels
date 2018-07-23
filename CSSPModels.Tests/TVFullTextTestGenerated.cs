@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void TVFullText_Properties_Test()
         {
@@ -81,6 +81,6 @@ namespace CSSPModels.Tests
                tVFullText.ValidationResults = val12;
                Assert.AreEqual(val12, tVFullText.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

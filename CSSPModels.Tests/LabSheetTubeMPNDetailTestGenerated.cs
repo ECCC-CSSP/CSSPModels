@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void LabSheetTubeMPNDetail_Properties_Test()
         {
@@ -189,6 +189,6 @@ namespace CSSPModels.Tests
                labSheetTubeMPNDetail.ValidationResults = val58;
                Assert.AreEqual(val58, labSheetTubeMPNDetail.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

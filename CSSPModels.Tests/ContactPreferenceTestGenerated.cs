@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void ContactPreference_Properties_Test()
         {
@@ -149,6 +149,6 @@ namespace CSSPModels.Tests
                contactPreference.ValidationResults = val28;
                Assert.AreEqual(val28, contactPreference.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

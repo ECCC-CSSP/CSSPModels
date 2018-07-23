@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void Contact_Properties_Test()
         {
@@ -189,6 +189,6 @@ namespace CSSPModels.Tests
                contact.ValidationResults = val58;
                Assert.AreEqual(val58, contact.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

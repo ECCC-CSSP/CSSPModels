@@ -15,7 +15,7 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the Classification table")]
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau Classification")]
         public int ClassificationID { get; set; }
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "80,81,82,83,84")]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "79")]
         public int ClassificationTVItemID { get; set; }
         [CSSPEnumType]
         public ClassificationTypeEnum ClassificationType { get; set; }
@@ -45,7 +45,7 @@ namespace CSSPModels
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
         [CSSPAllowNull]
         public string LastUpdateContactTVText { get; set; }
-        [CSSPEnumTypeText(EnumTypeName = "ClassificationEnum", EnumType = "ClassificationType")]
+        [CSSPEnumTypeText(EnumTypeName = "ClassificationTypeEnum", EnumType = "ClassificationType")]
         [CSSPAllowNull]
         public string ClassificationTVText { get; set; }
         #endregion Properties for web information

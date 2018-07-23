@@ -14,71 +14,42 @@ namespace CSSPModelsGenerateCodeHelper
         #region Functions public
         public void GenerateResOnce()
         {
-            StringBuilder sb = new StringBuilder();
-            FileInfo fiDLL = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll");
 
-            if (!fiDLL.Exists)
+            foreach (string lang in new List<string>() { "", "fr" })
             {
-                ErrorEvent(new ErrorEventArgs(fiDLL.FullName + " does not exist"));
-                return;
-            }
+                StringBuilder sb = new StringBuilder();
 
-            ResxTopPart(sb);
+                ResxTopPart(sb);
+                ResxManual(sb, lang);
+                ResxDLL(sb);
 
-            sb.AppendLine(@"<data name=""_IsRequired"" xml:space=""preserve"">");
-            sb.AppendLine(@"  <value>{0} is required</value>");
-            sb.AppendLine(@"</data>");
+                sb.AppendLine(@"</root>");
 
-            var importAssembly = Assembly.LoadFile(fiDLL.FullName);
-            Type[] types = importAssembly.GetTypes();
-            foreach (Type type in types)
-            {
-                StatusTempEvent(new StatusEventArgs(type.Name));
-                Application.DoEvents();
-
-                if (SkipType(type))
+                if (lang == "fr")
                 {
-                    if (!(type.Name.EndsWith("Web") || type.Name.EndsWith("Report")))
+                    FileInfo fiOutput = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\Resources\CSSPModelsRes.fr.resx");
+
+                    using (StreamWriter sw = fiOutput.CreateText())
                     {
-                        continue;
+                        sw.Write(sb.ToString());
                     }
                 }
-
-                sb.AppendLine(@"<data name=""" + type.Name + @""" xml:space=""preserve"">");
-                sb.AppendLine(@"  <value>" + type.Name + "</value>");
-                sb.AppendLine(@"</data>");
-
-                foreach (PropertyInfo prop in type.GetProperties().ToList())
+                else
                 {
-                    if (!prop.Name.Contains("ValidationResults"))
+                    FileInfo fiOutput = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\Resources\CSSPModelsRes.resx");
+
+                    using (StreamWriter sw = fiOutput.CreateText())
                     {
-                        sb.AppendLine(@"<data name=""" + type.Name + prop.Name + @""" xml:space=""preserve"">");
-                        sb.AppendLine(@"  <value>" + type.Name + prop.Name + "</value>");
-                        sb.AppendLine(@"</data>");
+                        sw.Write(sb.ToString());
                     }
+
                 }
             }
-
-            sb.AppendLine(@"</root>");
 
             StatusPermanentEvent(new StatusEventArgs("Files: "));
             StatusPermanentEvent(new StatusEventArgs(@"C:\CSSP Code\CSSPModels\CSSPModels\Resources\CSSPModelsRes.resx"));
             StatusPermanentEvent(new StatusEventArgs(@"C:\CSSP Code\CSSPModels\CSSPModels\Resources\CSSPModelsRes.fr.resx"));
             StatusPermanentEvent(new StatusEventArgs("were created"));
-
-            FileInfo fiOutput = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\Resources\CSSPModelsRes.resx");
-
-            using (StreamWriter sw = fiOutput.CreateText())
-            {
-                sw.Write(sb.ToString());
-            }
-
-            fiOutput = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\Resources\CSSPModelsRes.fr.resx");
-
-            using (StreamWriter sw = fiOutput.CreateText())
-            {
-                sw.Write(sb.ToString());
-            }
 
             StatusTempEvent(new StatusEventArgs("Done ..."));
         }

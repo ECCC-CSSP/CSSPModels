@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void VPResult_Properties_Test()
         {
@@ -165,6 +165,6 @@ namespace CSSPModels.Tests
                vPResult.ValidationResults = val40;
                Assert.AreEqual(val40, vPResult.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

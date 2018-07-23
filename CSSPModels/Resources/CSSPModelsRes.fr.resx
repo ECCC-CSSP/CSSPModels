@@ -117,8 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+<data name="DoNotWriteInThisDocument" xml:space="preserve">
+  <value>Use the ResxManual in teh ModelsResManual.cs files</value>
+</data>
 <data name="_IsRequired" xml:space="preserve">
-  <value>{0} is required</value>
+  <value>{0} est requis</value>
+</data>
+<data name="AspNetUser" xml:space="preserve">
+  <value>AspNetUser</value>
 </data>
 <data name="Address" xml:space="preserve">
   <value>Address</value>
@@ -5577,11 +5583,47 @@
 <data name="FilePurposeAndTextHasErrors" xml:space="preserve">
   <value>FilePurposeAndTextHasErrors</value>
 </data>
+<data name="WhereInfo" xml:space="preserve">
+  <value>WhereInfo</value>
+</data>
+<data name="WhereInfoPropertyName" xml:space="preserve">
+  <value>WhereInfoPropertyName</value>
+</data>
+<data name="WhereInfoWhereOperator" xml:space="preserve">
+  <value>WhereInfoWhereOperator</value>
+</data>
+<data name="WhereInfoValue" xml:space="preserve">
+  <value>WhereInfoValue</value>
+</data>
+<data name="WhereInfoValueInt" xml:space="preserve">
+  <value>WhereInfoValueInt</value>
+</data>
+<data name="WhereInfoValueDouble" xml:space="preserve">
+  <value>WhereInfoValueDouble</value>
+</data>
+<data name="WhereInfoValueBool" xml:space="preserve">
+  <value>WhereInfoValueBool</value>
+</data>
+<data name="WhereInfoValueDateTime" xml:space="preserve">
+  <value>WhereInfoValueDateTime</value>
+</data>
+<data name="WhereInfoValueEnumText" xml:space="preserve">
+  <value>WhereInfoValueEnumText</value>
+</data>
+<data name="WhereInfoHasErrors" xml:space="preserve">
+  <value>WhereInfoHasErrors</value>
+</data>
 <data name="GetParam" xml:space="preserve">
   <value>GetParam</value>
 </data>
+<data name="GetParamModelType" xml:space="preserve">
+  <value>GetParamModelType</value>
+</data>
 <data name="GetParamLanguage" xml:space="preserve">
   <value>GetParamLanguage</value>
+</data>
+<data name="GetParamLang" xml:space="preserve">
+  <value>GetParamLang</value>
 </data>
 <data name="GetParamSkip" xml:space="preserve">
   <value>GetParamSkip</value>
@@ -5589,14 +5631,23 @@
 <data name="GetParamTake" xml:space="preserve">
   <value>GetParamTake</value>
 </data>
-<data name="GetParamOrderAscending" xml:space="preserve">
-  <value>GetParamOrderAscending</value>
+<data name="GetParamOrderByNames" xml:space="preserve">
+  <value>GetParamOrderByNames</value>
+</data>
+<data name="GetParamWhere" xml:space="preserve">
+  <value>GetParamWhere</value>
 </data>
 <data name="GetParamEntityQueryDetailType" xml:space="preserve">
   <value>GetParamEntityQueryDetailType</value>
 </data>
 <data name="GetParamEntityQueryType" xml:space="preserve">
   <value>GetParamEntityQueryType</value>
+</data>
+<data name="GetParamOrderList" xml:space="preserve">
+  <value>GetParamOrderList</value>
+</data>
+<data name="GetParamWhereInfoList" xml:space="preserve">
+  <value>GetParamWhereInfoList</value>
 </data>
 <data name="GetParamHasErrors" xml:space="preserve">
   <value>GetParamHasErrors</value>

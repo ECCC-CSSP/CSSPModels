@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void EmailDistributionListContact_Properties_Test()
         {
@@ -173,6 +173,6 @@ namespace CSSPModels.Tests
                emailDistributionListContact.ValidationResults = val46;
                Assert.AreEqual(val46, emailDistributionListContact.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

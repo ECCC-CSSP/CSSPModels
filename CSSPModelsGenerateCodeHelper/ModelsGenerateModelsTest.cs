@@ -90,7 +90,7 @@ namespace CSSPModelsGenerateCodeHelper
                 sb.AppendLine(@"        }");
                 sb.AppendLine(@"        #endregion Constructors");
                 sb.AppendLine(@"");
-                sb.AppendLine(@"        #region Tests");
+                sb.AppendLine(@"        #region Tests Functions public");
                 sb.AppendLine(@"        [TestMethod]");
                 sb.AppendLine(@"        public void " + type.Name + "_Properties_Test()");
                 sb.AppendLine(@"        {");
@@ -308,6 +308,11 @@ namespace CSSPModelsGenerateCodeHelper
                                     sb.AppendLine(@"               byte[] val" + count.ToString() + @" = new byte[5];");
                                 }
                                 break;
+                            case "Type":
+                                {
+                                    sb.AppendLine(@"               Type val" + count.ToString() + @" = typeof(" + type.Name + "); ");
+                                }
+                                break;
                             default:
                                 {
                                     if (csspProp.HasCSSPEnumTypeAttribute)
@@ -374,7 +379,7 @@ namespace CSSPModelsGenerateCodeHelper
                     }
                 }
                 sb.AppendLine(@"        }");
-                sb.AppendLine(@"        #endregion Tests");
+                sb.AppendLine(@"        #endregion Tests Functions public");
                 sb.AppendLine(@"    }");
                 sb.AppendLine(@"}");
 

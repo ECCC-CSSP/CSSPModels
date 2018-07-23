@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void AppTask_Properties_Test()
         {
@@ -181,6 +181,6 @@ namespace CSSPModels.Tests
                appTask.ValidationResults = val52;
                Assert.AreEqual(val52, appTask.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

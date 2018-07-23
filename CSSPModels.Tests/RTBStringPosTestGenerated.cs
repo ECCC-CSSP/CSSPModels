@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void RTBStringPos_Properties_Test()
         {
@@ -89,6 +89,6 @@ namespace CSSPModels.Tests
                rTBStringPos.ValidationResults = val18;
                Assert.AreEqual(val18, rTBStringPos.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

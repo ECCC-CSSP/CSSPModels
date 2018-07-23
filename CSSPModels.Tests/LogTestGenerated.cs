@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void Log_Properties_Test()
         {
@@ -153,6 +153,6 @@ namespace CSSPModels.Tests
                log.ValidationResults = val31;
                Assert.AreEqual(val31, log.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

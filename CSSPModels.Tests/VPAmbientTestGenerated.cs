@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void VPAmbient_Properties_Test()
         {
@@ -185,6 +185,6 @@ namespace CSSPModels.Tests
                vPAmbient.ValidationResults = val55;
                Assert.AreEqual(val55, vPAmbient.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

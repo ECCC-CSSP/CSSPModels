@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void TVFile_Properties_Test()
         {
@@ -197,6 +197,6 @@ namespace CSSPModels.Tests
                tVFile.ValidationResults = val64;
                Assert.AreEqual(val64, tVFile.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

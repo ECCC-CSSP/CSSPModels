@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void ReportSectionLanguage_Properties_Test()
         {
@@ -161,6 +161,6 @@ namespace CSSPModels.Tests
                reportSectionLanguage.ValidationResults = val37;
                Assert.AreEqual(val37, reportSectionLanguage.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

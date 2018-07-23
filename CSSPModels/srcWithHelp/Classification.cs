@@ -37,10 +37,10 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
-        /// > <para>80 == Approved, 81 == Restricted, 82 == Prohibited, 83 == ConditionallyApproved, 84 == ConditionallyRestricted</para>
-        /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "80,81,82,83,84")]</para>
+        /// > <para>79 == Classification</para>
+        /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "79")]</para>
         /// </summary>
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "80,81,82,83,84")]
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "79")]
         public int ClassificationTVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -84,10 +84,10 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "ClassificationEnum", EnumType = "ClassificationType")]</para>
+        /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "ClassificationTypeEnum", EnumType = "ClassificationType")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
-        [CSSPEnumTypeText(EnumTypeName = "ClassificationEnum", EnumType = "ClassificationType")]
+        [CSSPEnumTypeText(EnumTypeName = "ClassificationTypeEnum", EnumType = "ClassificationType")]
         [CSSPAllowNull]
         public string ClassificationTVText { get; set; }
         #endregion Properties for web information

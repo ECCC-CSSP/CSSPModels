@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void AppErrLog_Properties_Test()
         {
@@ -157,6 +157,6 @@ namespace CSSPModels.Tests
                appErrLog.ValidationResults = val34;
                Assert.AreEqual(val34, appErrLog.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

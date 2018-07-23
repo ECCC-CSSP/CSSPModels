@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void TVTypeNamesAndPath_Properties_Test()
         {
@@ -85,6 +85,6 @@ namespace CSSPModels.Tests
                tVTypeNamesAndPath.ValidationResults = val15;
                Assert.AreEqual(val15, tVTypeNamesAndPath.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

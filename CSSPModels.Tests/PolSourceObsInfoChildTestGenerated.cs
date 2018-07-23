@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void PolSourceObsInfoChild_Properties_Test()
         {
@@ -89,6 +89,6 @@ namespace CSSPModels.Tests
                polSourceObsInfoChild.ValidationResults = val18;
                Assert.AreEqual(val18, polSourceObsInfoChild.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void RainExceedance_Properties_Test()
         {
@@ -181,6 +181,6 @@ namespace CSSPModels.Tests
                rainExceedance.ValidationResults = val52;
                Assert.AreEqual(val52, rainExceedance.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

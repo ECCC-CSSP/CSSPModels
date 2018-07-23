@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void MikeScenario_Properties_Test()
         {
@@ -237,6 +237,6 @@ namespace CSSPModels.Tests
                mikeScenario.ValidationResults = val94;
                Assert.AreEqual(val94, mikeScenario.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

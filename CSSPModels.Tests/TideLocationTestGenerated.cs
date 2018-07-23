@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void TideLocation_Properties_Test()
         {
@@ -161,6 +161,6 @@ namespace CSSPModels.Tests
                tideLocation.ValidationResults = val37;
                Assert.AreEqual(val37, tideLocation.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

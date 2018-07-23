@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void MWQMRun_Properties_Test()
         {
@@ -293,6 +293,6 @@ namespace CSSPModels.Tests
                mWQMRun.ValidationResults = val136;
                Assert.AreEqual(val136, mWQMRun.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

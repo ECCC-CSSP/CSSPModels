@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void TVItemInfrastructureTypeTVItemLink_Properties_Test()
         {
@@ -97,6 +97,6 @@ namespace CSSPModels.Tests
                tVItemInfrastructureTypeTVItemLink.ValidationResults = val24;
                Assert.AreEqual(val24, tVItemInfrastructureTypeTVItemLink.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

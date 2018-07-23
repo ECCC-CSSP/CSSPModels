@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void UseOfSite_Properties_Test()
         {
@@ -189,6 +189,6 @@ namespace CSSPModels.Tests
                useOfSite.ValidationResults = val58;
                Assert.AreEqual(val58, useOfSite.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

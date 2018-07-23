@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void ClimateSite_Properties_Test()
         {
@@ -221,6 +221,6 @@ namespace CSSPModels.Tests
                climateSite.ValidationResults = val82;
                Assert.AreEqual(val82, climateSite.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void URLNumberOfSamples_Properties_Test()
         {
@@ -81,6 +81,6 @@ namespace CSSPModels.Tests
                uRLNumberOfSamples.ValidationResults = val12;
                Assert.AreEqual(val12, uRLNumberOfSamples.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void BoxModelResult_Properties_Test()
         {
@@ -197,6 +197,6 @@ namespace CSSPModels.Tests
                boxModelResult.ValidationResults = val64;
                Assert.AreEqual(val64, boxModelResult.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

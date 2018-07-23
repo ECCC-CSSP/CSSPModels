@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void PolSourceObsInfoEnumTextAndID_Properties_Test()
         {
@@ -81,6 +81,6 @@ namespace CSSPModels.Tests
                polSourceObsInfoEnumTextAndID.ValidationResults = val12;
                Assert.AreEqual(val12, polSourceObsInfoEnumTextAndID.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

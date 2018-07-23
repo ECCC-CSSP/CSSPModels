@@ -61,11 +61,110 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} does not exist for ModelType = {1}.
+        /// </summary>
+        public static string _DoesNotExistForModelType_ {
+            get {
+                return ResourceManager.GetString("_DoesNotExistForModelType_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0} is required.
         /// </summary>
         public static string _IsRequired {
             get {
                 return ResourceManager.GetString("_IsRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{0}] needs to be a date for {1} of model {2}.
+        /// </summary>
+        public static string _NeedsToBeADateFor_OfModel_ {
+            get {
+                return ResourceManager.GetString("_NeedsToBeADateFor_OfModel_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{0}] needs to be a number for {1} of model {2}.
+        /// </summary>
+        public static string _NeedsToBeANumberFor_OfModel_ {
+            get {
+                return ResourceManager.GetString("_NeedsToBeANumberFor_OfModel_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{0}] needs to be a valid enum number for {1} of model {2}.
+        /// </summary>
+        public static string _NeedsToBeAValidEnumNumberFor_OfModel_ {
+            get {
+                return ResourceManager.GetString("_NeedsToBeAValidEnumNumberFor_OfModel_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{0}] needs to be a valid enum text for {1} of model {2}.
+        /// </summary>
+        public static string _NeedsToBeAValidEnumTextFor_OfModel_ {
+            get {
+                return ResourceManager.GetString("_NeedsToBeAValidEnumTextFor_OfModel_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{0}] needs to be true or false for {1} of model {2}.
+        /// </summary>
+        public static string _NeedsToBeTrueOrFalseFor_OfModel_ {
+            get {
+                return ResourceManager.GetString("_NeedsToBeTrueOrFalseFor_OfModel_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} need to have valid string format - Ex: {1}.
+        /// </summary>
+        public static string _NeedToHaveValidStringFormatEx_ {
+            get {
+                return ResourceManager.GetString("_NeedToHaveValidStringFormatEx_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} not implemented yet.
+        /// </summary>
+        public static string _NotImplementedYet {
+            get {
+                return ResourceManager.GetString("_NotImplementedYet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} should be &gt; {1}.
+        /// </summary>
+        public static string _ShouldBeAbove_ {
+            get {
+                return ResourceManager.GetString("_ShouldBeAbove_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} should be &lt; {1}.
+        /// </summary>
+        public static string _ShouldBeBelow_ {
+            get {
+                return ResourceManager.GetString("_ShouldBeBelow_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} should not be null or empty.
+        /// </summary>
+        public static string _ShouldNotBeNullOrEmpty {
+            get {
+                return ResourceManager.GetString("_ShouldNotBeNullOrEmpty", resourceCulture);
             }
         }
         
@@ -318,6 +417,15 @@ namespace CSSPModels.Resources {
         public static string AddressWebStreetTypeText {
             get {
                 return ResourceManager.GetString("AddressWebStreetTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Allowable languages are [fr and en].
+        /// </summary>
+        public static string AllowableLanguagesAreFRAndEN {
+            get {
+                return ResourceManager.GetString("AllowableLanguagesAreFRAndEN", resourceCulture);
             }
         }
         
@@ -1654,6 +1762,141 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Classification.
+        /// </summary>
+        public static string Classification {
+            get {
+                return ResourceManager.GetString("Classification", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ClassificationClassificationID.
+        /// </summary>
+        public static string ClassificationClassificationID {
+            get {
+                return ResourceManager.GetString("ClassificationClassificationID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ClassificationClassificationReport.
+        /// </summary>
+        public static string ClassificationClassificationReport {
+            get {
+                return ResourceManager.GetString("ClassificationClassificationReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ClassificationClassificationTVItemID.
+        /// </summary>
+        public static string ClassificationClassificationTVItemID {
+            get {
+                return ResourceManager.GetString("ClassificationClassificationTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ClassificationClassificationType.
+        /// </summary>
+        public static string ClassificationClassificationType {
+            get {
+                return ResourceManager.GetString("ClassificationClassificationType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ClassificationClassificationWeb.
+        /// </summary>
+        public static string ClassificationClassificationWeb {
+            get {
+                return ResourceManager.GetString("ClassificationClassificationWeb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ClassificationHasErrors.
+        /// </summary>
+        public static string ClassificationHasErrors {
+            get {
+                return ResourceManager.GetString("ClassificationHasErrors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ClassificationLastUpdateContactTVItemID.
+        /// </summary>
+        public static string ClassificationLastUpdateContactTVItemID {
+            get {
+                return ResourceManager.GetString("ClassificationLastUpdateContactTVItemID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ClassificationLastUpdateDate_UTC.
+        /// </summary>
+        public static string ClassificationLastUpdateDate_UTC {
+            get {
+                return ResourceManager.GetString("ClassificationLastUpdateDate_UTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ClassificationOrdinal.
+        /// </summary>
+        public static string ClassificationOrdinal {
+            get {
+                return ResourceManager.GetString("ClassificationOrdinal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ClassificationReport.
+        /// </summary>
+        public static string ClassificationReport {
+            get {
+                return ResourceManager.GetString("ClassificationReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ClassificationReportClassificationReportTest.
+        /// </summary>
+        public static string ClassificationReportClassificationReportTest {
+            get {
+                return ResourceManager.GetString("ClassificationReportClassificationReportTest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ClassificationWeb.
+        /// </summary>
+        public static string ClassificationWeb {
+            get {
+                return ResourceManager.GetString("ClassificationWeb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ClassificationWebClassificationTVText.
+        /// </summary>
+        public static string ClassificationWebClassificationTVText {
+            get {
+                return ResourceManager.GetString("ClassificationWebClassificationTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ClassificationWebLastUpdateContactTVText.
+        /// </summary>
+        public static string ClassificationWebLastUpdateContactTVText {
+            get {
+                return ResourceManager.GetString("ClassificationWebLastUpdateContactTVText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ClimateDataValue.
         /// </summary>
         public static string ClimateDataValue {
@@ -2905,6 +3148,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Could not find file [{0}].
+        /// </summary>
+        public static string CouldNotFindFile_ {
+            get {
+                return ResourceManager.GetString("CouldNotFindFile_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CSSPMPNTable.
         /// </summary>
         public static string CSSPMPNTable {
@@ -3387,6 +3639,15 @@ namespace CSSPModels.Resources {
         public static string DocTemplateWebTVTypeText {
             get {
                 return ResourceManager.GetString("DocTemplateWebTVTypeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is required.
+        /// </summary>
+        public static string DoNotWriteInThisDocument {
+            get {
+                return ResourceManager.GetString("DoNotWriteInThisDocument", resourceCulture);
             }
         }
         
@@ -4436,6 +4697,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GetParamLang.
+        /// </summary>
+        public static string GetParamLang {
+            get {
+                return ResourceManager.GetString("GetParamLang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to GetParamLanguage.
         /// </summary>
         public static string GetParamLanguage {
@@ -4445,11 +4715,29 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetParamOrderAscending.
+        ///   Looks up a localized string similar to GetParamModelType.
         /// </summary>
-        public static string GetParamOrderAscending {
+        public static string GetParamModelType {
             get {
-                return ResourceManager.GetString("GetParamOrderAscending", resourceCulture);
+                return ResourceManager.GetString("GetParamModelType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetParamOrderByNames.
+        /// </summary>
+        public static string GetParamOrderByNames {
+            get {
+                return ResourceManager.GetString("GetParamOrderByNames", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetParamOrderList.
+        /// </summary>
+        public static string GetParamOrderList {
+            get {
+                return ResourceManager.GetString("GetParamOrderList", resourceCulture);
             }
         }
         
@@ -4468,6 +4756,24 @@ namespace CSSPModels.Resources {
         public static string GetParamTake {
             get {
                 return ResourceManager.GetString("GetParamTake", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetParamWhere.
+        /// </summary>
+        public static string GetParamWhere {
+            get {
+                return ResourceManager.GetString("GetParamWhere", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetParamWhereInfoList.
+        /// </summary>
+        public static string GetParamWhereInfoList {
+            get {
+                return ResourceManager.GetString("GetParamWhereInfoList", resourceCulture);
             }
         }
         
@@ -19138,6 +19444,105 @@ namespace CSSPModels.Resources {
         public static string VPScenarioWebVPScenarioStatusText {
             get {
                 return ResourceManager.GetString("VPScenarioWebVPScenarioStatusText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WhereInfo.
+        /// </summary>
+        public static string WhereInfo {
+            get {
+                return ResourceManager.GetString("WhereInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WhereInfoHasErrors.
+        /// </summary>
+        public static string WhereInfoHasErrors {
+            get {
+                return ResourceManager.GetString("WhereInfoHasErrors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WhereInfoPropertyName.
+        /// </summary>
+        public static string WhereInfoPropertyName {
+            get {
+                return ResourceManager.GetString("WhereInfoPropertyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WhereInfoValue.
+        /// </summary>
+        public static string WhereInfoValue {
+            get {
+                return ResourceManager.GetString("WhereInfoValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WhereInfoValueBool.
+        /// </summary>
+        public static string WhereInfoValueBool {
+            get {
+                return ResourceManager.GetString("WhereInfoValueBool", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WhereInfoValueDateTime.
+        /// </summary>
+        public static string WhereInfoValueDateTime {
+            get {
+                return ResourceManager.GetString("WhereInfoValueDateTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WhereInfoValueDouble.
+        /// </summary>
+        public static string WhereInfoValueDouble {
+            get {
+                return ResourceManager.GetString("WhereInfoValueDouble", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WhereInfoValueEnumText.
+        /// </summary>
+        public static string WhereInfoValueEnumText {
+            get {
+                return ResourceManager.GetString("WhereInfoValueEnumText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WhereInfoValueInt.
+        /// </summary>
+        public static string WhereInfoValueInt {
+            get {
+                return ResourceManager.GetString("WhereInfoValueInt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WhereInfoWhereOperator.
+        /// </summary>
+        public static string WhereInfoWhereOperator {
+            get {
+                return ResourceManager.GetString("WhereInfoWhereOperator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Where operator {0} not implemented yet.
+        /// </summary>
+        public static string WhereOperator_NotImplementedYet {
+            get {
+                return ResourceManager.GetString("WhereOperator_NotImplementedYet", resourceCulture);
             }
         }
     }

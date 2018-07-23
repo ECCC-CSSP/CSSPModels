@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void CSSPWQInputParam_Properties_Test()
         {
@@ -117,6 +117,6 @@ namespace CSSPModels.Tests
                cSSPWQInputParam.ValidationResults = val39;
                Assert.AreEqual(val39, cSSPWQInputParam.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

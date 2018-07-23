@@ -37,11 +37,11 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void GetParam_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Language", "Skip", "Take", "OrderAscending", "EntityQueryDetailType", "EntityQueryType", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ModelType", "Language", "Lang", "Skip", "Take", "OrderByNames", "Where", "EntityQueryDetailType", "EntityQueryType", "OrderList", "WhereInfoList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -61,42 +61,62 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void GetParam_Every_Property_Has_A_Resource_OK()
         {
+               Assert.IsNotNull(CSSPModelsRes.GetParamModelType);
                Assert.IsNotNull(CSSPModelsRes.GetParamLanguage);
+               Assert.IsNotNull(CSSPModelsRes.GetParamLang);
                Assert.IsNotNull(CSSPModelsRes.GetParamSkip);
                Assert.IsNotNull(CSSPModelsRes.GetParamTake);
-               Assert.IsNotNull(CSSPModelsRes.GetParamOrderAscending);
+               Assert.IsNotNull(CSSPModelsRes.GetParamOrderByNames);
+               Assert.IsNotNull(CSSPModelsRes.GetParamWhere);
                Assert.IsNotNull(CSSPModelsRes.GetParamEntityQueryDetailType);
                Assert.IsNotNull(CSSPModelsRes.GetParamEntityQueryType);
+               Assert.IsNotNull(CSSPModelsRes.GetParamOrderList);
+               Assert.IsNotNull(CSSPModelsRes.GetParamWhereInfoList);
                Assert.IsNotNull(CSSPModelsRes.GetParamHasErrors);
         }
         [TestMethod]
         public void GetParam_Every_Property_Has_Get_Set_Test()
         {
-               LanguageEnum val1 = (LanguageEnum)3;
-               getParam.Language = val1;
-               Assert.AreEqual(val1, getParam.Language);
-               int val2 = 45;
-               getParam.Skip = val2;
-               Assert.AreEqual(val2, getParam.Skip);
-               int val3 = 45;
-               getParam.Take = val3;
-               Assert.AreEqual(val3, getParam.Take);
-               bool val4 = true;
-               getParam.OrderAscending = val4;
-               Assert.AreEqual(val4, getParam.OrderAscending);
-                TypeNotImplemented___CSSPModels.GetParam____EntityQueryDetailType___EntityQueryDetailTypeEnum
-               getParam.EntityQueryDetailType = val5;
-               Assert.AreEqual(val5, getParam.EntityQueryDetailType);
-                TypeNotImplemented___CSSPModels.GetParam____EntityQueryType___EntityQueryTypeEnum
-               getParam.EntityQueryType = val6;
-               Assert.AreEqual(val6, getParam.EntityQueryType);
-               bool val7 = true;
-               getParam.HasErrors = val7;
-               Assert.AreEqual(val7, getParam.HasErrors);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>().AsEnumerable();
-               getParam.ValidationResults = val24;
-               Assert.AreEqual(val24, getParam.ValidationResults);
+               Type val1 = typeof(GetParam); 
+               getParam.ModelType = val1;
+               Assert.AreEqual(val1, getParam.ModelType);
+               LanguageEnum val2 = (LanguageEnum)3;
+               getParam.Language = val2;
+               Assert.AreEqual(val2, getParam.Language);
+               string val3 = "Some text";
+               getParam.Lang = val3;
+               Assert.AreEqual(val3, getParam.Lang);
+               int val4 = 45;
+               getParam.Skip = val4;
+               Assert.AreEqual(val4, getParam.Skip);
+               int val5 = 45;
+               getParam.Take = val5;
+               Assert.AreEqual(val5, getParam.Take);
+               string val6 = "Some text";
+               getParam.OrderByNames = val6;
+               Assert.AreEqual(val6, getParam.OrderByNames);
+               string val7 = "Some text";
+               getParam.Where = val7;
+               Assert.AreEqual(val7, getParam.Where);
+               EntityQueryDetailTypeEnum val8 = (EntityQueryDetailTypeEnum)3;
+               getParam.EntityQueryDetailType = val8;
+               Assert.AreEqual(val8, getParam.EntityQueryDetailType);
+               EntityQueryTypeEnum val9 = (EntityQueryTypeEnum)3;
+               getParam.EntityQueryType = val9;
+               Assert.AreEqual(val9, getParam.EntityQueryType);
+               bool val12 = true;
+               getParam.HasErrors = val12;
+               Assert.AreEqual(val12, getParam.HasErrors);
+               List<String> val23 = new List<String>();
+               getParam.OrderList = val23;
+               Assert.AreEqual(val23, getParam.OrderList);
+               List<WhereInfo> val24 = new List<WhereInfo>();
+               getParam.WhereInfoList = val24;
+               Assert.AreEqual(val24, getParam.WhereInfoList);
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>().AsEnumerable();
+               getParam.ValidationResults = val39;
+               Assert.AreEqual(val39, getParam.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

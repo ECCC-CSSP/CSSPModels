@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void DocTemplate_Properties_Test()
         {
@@ -153,6 +153,6 @@ namespace CSSPModels.Tests
                docTemplate.ValidationResults = val31;
                Assert.AreEqual(val31, docTemplate.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

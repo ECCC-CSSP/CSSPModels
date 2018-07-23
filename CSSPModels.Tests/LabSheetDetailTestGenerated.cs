@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void LabSheetDetail_Properties_Test()
         {
@@ -385,6 +385,6 @@ namespace CSSPModels.Tests
                labSheetDetail.ValidationResults = val205;
                Assert.AreEqual(val205, labSheetDetail.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

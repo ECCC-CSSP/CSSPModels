@@ -18,10 +18,10 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Language](CSSPModels.GetParam.html#CSSPModels_GetParam_Language), [Skip](CSSPModels.GetParam.html#CSSPModels_GetParam_Skip), [Take](CSSPModels.GetParam.html#CSSPModels_GetParam_Take), [OrderAscending](CSSPModels.GetParam.html#CSSPModels_GetParam_OrderAscending), [EntityQueryDetailType](CSSPModels.GetParam.html#CSSPModels_GetParam_EntityQueryDetailType), [EntityQueryType](CSSPModels.GetParam.html#CSSPModels_GetParam_EntityQueryType), [HasErrors](CSSPModels.GetParam.html#CSSPModels_GetParam_HasErrors), [ValidationResults](CSSPModels.GetParam.html#CSSPModels_GetParam_ValidationResults), </para>
+    /// > <para>**Other properties** : [ModelType](CSSPModels.GetParam.html#CSSPModels_GetParam_ModelType), [Language](CSSPModels.GetParam.html#CSSPModels_GetParam_Language), [Lang](CSSPModels.GetParam.html#CSSPModels_GetParam_Lang), [Skip](CSSPModels.GetParam.html#CSSPModels_GetParam_Skip), [Take](CSSPModels.GetParam.html#CSSPModels_GetParam_Take), [OrderByNames](CSSPModels.GetParam.html#CSSPModels_GetParam_OrderByNames), [Where](CSSPModels.GetParam.html#CSSPModels_GetParam_Where), [EntityQueryDetailType](CSSPModels.GetParam.html#CSSPModels_GetParam_EntityQueryDetailType), [EntityQueryType](CSSPModels.GetParam.html#CSSPModels_GetParam_EntityQueryType), [OrderList](CSSPModels.GetParam.html#CSSPModels_GetParam_OrderList), [WhereInfoList](CSSPModels.GetParam.html#CSSPModels_GetParam_WhereInfoList), [HasErrors](CSSPModels.GetParam.html#CSSPModels_GetParam_HasErrors), [ValidationResults](CSSPModels.GetParam.html#CSSPModels_GetParam_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [GetParamService](CSSPServices.GetParamService.html)</para>
-    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [EntityQueryDetailTypeEnum](CSSPEnums.EntityQueryDetailTypeEnum.html), [EntityQueryTypeEnum](CSSPEnums.EntityQueryTypeEnum.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]
@@ -31,6 +31,7 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        public Type ModelType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
@@ -38,43 +39,49 @@ namespace CSSPModels
         /// </summary>
         [CSSPEnumType]
         public LanguageEnum Language { get; set; }
+        [StringLength(2)]
+        public string Lang { get; set; }
         [Range(0, -1)]
         public int Skip { get; set; }
         [Range(0, -1)]
         public int Take { get; set; }
-        public bool OrderAscending { get; set; }
+        [StringLength(200)]
+        public string OrderByNames { get; set; }
+        [StringLength(200)]
+        public string Where { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// </summary>
+        [CSSPEnumType]
         public EntityQueryDetailTypeEnum EntityQueryDetailType { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// </summary>
+        [CSSPEnumType]
         public EntityQueryTypeEnum EntityQueryType { get; set; }
+        public virtual List<string> OrderList { get; set; }
+        public virtual List<WhereInfo> WhereInfoList { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public GetParam() : base()
         {
+            ModelType = null;
             Language = LanguageEnum.en;
+            Lang = "";
             Skip = 0;
             Take = 100;
-            OrderAscending = true;
+            OrderByNames = "";
+            Where = "";
             EntityQueryDetailType = EntityQueryDetailTypeEnum.EntityOnly;
             EntityQueryType = EntityQueryTypeEnum.AsNoTracking;
+            OrderList = new List<string>();
+            WhereInfoList = new List<WhereInfo>();
         }
         #endregion Constructors
-
-        #region Functions public
-        public GetParam FillProp(string lang = "en", int skip = 0, int take = 100, bool orderAscending = true,
-                  EntityQueryDetailTypeEnum EntityQueryDetailType = EntityQueryDetailTypeEnum.EntityOnly,
-                  EntityQueryTypeEnum EntityQueryType = EntityQueryTypeEnum.AsNoTracking)
-        {
-            GetParam getParam = new GetParam();
-
-            getParam.Language = (lang == "fr" ? LanguageEnum.fr : LanguageEnum.en);
-            getParam.Skip = skip;
-            getParam.Take = take;
-            getParam.OrderAscending = orderAscending;
-            getParam.EntityQueryDetailType = EntityQueryDetailType;
-            getParam.EntityQueryType = EntityQueryType;
-
-            return getParam;
-        }
-        #endregion Functions public
     }
 }

@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void TVLocation_Properties_Test()
         {
@@ -105,6 +105,6 @@ namespace CSSPModels.Tests
                tVLocation.ValidationResults = val30;
                Assert.AreEqual(val30, tVLocation.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

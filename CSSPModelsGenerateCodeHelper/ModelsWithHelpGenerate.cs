@@ -86,7 +86,7 @@ namespace CSSPModelsGenerateCodeHelper
                     continue;
                 }
 
-                //if (dllTypeInfoModels.Type.Name != "Contact")
+                //if (dllTypeInfoModels.Type.Name != "GetParam")
                 //{
                 //    continue;
                 //}
@@ -399,39 +399,22 @@ namespace CSSPModelsGenerateCodeHelper
                 }
                 if (dllTypeInfoModels.Type.Name == "GetParam")
                 {
+                    sb.AppendLine(@"            ModelType = null;");
                     sb.AppendLine(@"            Language = LanguageEnum.en;");
+                    sb.AppendLine(@"            Lang = """";");
                     sb.AppendLine(@"            Skip = 0;");
                     sb.AppendLine(@"            Take = 100;");
-                    sb.AppendLine(@"            OrderAscending = true;");
+                    sb.AppendLine(@"            OrderByNames = """";");
+                    sb.AppendLine(@"            Where = """";");
                     sb.AppendLine(@"            EntityQueryDetailType = EntityQueryDetailTypeEnum.EntityOnly;");
                     sb.AppendLine(@"            EntityQueryType = EntityQueryTypeEnum.AsNoTracking;");
+                    sb.AppendLine(@"            OrderList = new List<string>();");
+                    sb.AppendLine(@"            WhereInfoList = new List<WhereInfo>();");
                 }
 
                 //sb.AppendLine(@"            ValidationResults = new List<ValidationResult>();");
                 sb.AppendLine(@"        }");
                 sb.AppendLine(@"        #endregion Constructors");
-
-                if (dllTypeInfoModels.Type.Name == "GetParam")
-                {
-                    sb.AppendLine(@"");
-                    sb.AppendLine(@"        #region Functions public");
-                    sb.AppendLine(@"        public GetParam FillProp(string lang = ""en"", int skip = 0, int take = 100, bool orderAscending = true,");
-                    sb.AppendLine(@"                  EntityQueryDetailTypeEnum EntityQueryDetailType = EntityQueryDetailTypeEnum.EntityOnly,");
-                    sb.AppendLine(@"                  EntityQueryTypeEnum EntityQueryType = EntityQueryTypeEnum.AsNoTracking)");
-                    sb.AppendLine(@"        {");
-                    sb.AppendLine(@"            GetParam getParam = new GetParam();");
-                    sb.AppendLine(@"");
-                    sb.AppendLine(@"            getParam.Language = (lang == ""fr"" ? LanguageEnum.fr : LanguageEnum.en);");
-                    sb.AppendLine(@"            getParam.Skip = skip;");
-                    sb.AppendLine(@"            getParam.Take = take;");
-                    sb.AppendLine(@"            getParam.OrderAscending = orderAscending;");
-                    sb.AppendLine(@"            getParam.EntityQueryDetailType = EntityQueryDetailType;");
-                    sb.AppendLine(@"            getParam.EntityQueryType = EntityQueryType;");
-                    sb.AppendLine(@"");
-                    sb.AppendLine(@"            return getParam;");
-                    sb.AppendLine(@"        }");
-                    sb.AppendLine(@"        #endregion Functions public");
-                }
 
                 sb.AppendLine(@"    }");
 
@@ -761,6 +744,10 @@ namespace CSSPModelsGenerateCodeHelper
         {
             switch (propType)
             {
+                case "WhereInfo":
+                    return "virtual WhereInfo";
+                case "Type":
+                    return "Type";
                 case "Boolean":
                     return "bool";
                 case "Byte[]":

@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void ContourPolygon_Properties_Test()
         {
@@ -89,6 +89,6 @@ namespace CSSPModels.Tests
                contourPolygon.ValidationResults = val18;
                Assert.AreEqual(val18, contourPolygon.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

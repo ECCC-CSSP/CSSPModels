@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void Search_Properties_Test()
         {
@@ -81,6 +81,6 @@ namespace CSSPModels.Tests
                search.ValidationResults = val12;
                Assert.AreEqual(val12, search.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void TideDataValue_Properties_Test()
         {
@@ -177,6 +177,6 @@ namespace CSSPModels.Tests
                tideDataValue.ValidationResults = val49;
                Assert.AreEqual(val49, tideDataValue.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

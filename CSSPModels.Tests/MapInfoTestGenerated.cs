@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void MapInfo_Properties_Test()
         {
@@ -165,6 +165,6 @@ namespace CSSPModels.Tests
                mapInfo.ValidationResults = val40;
                Assert.AreEqual(val40, mapInfo.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

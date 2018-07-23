@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void SamplingPlan_Properties_Test()
         {
@@ -213,6 +213,6 @@ namespace CSSPModels.Tests
                samplingPlan.ValidationResults = val76;
                Assert.AreEqual(val76, samplingPlan.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

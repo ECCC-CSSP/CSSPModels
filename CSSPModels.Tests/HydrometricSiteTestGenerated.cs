@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void HydrometricSite_Properties_Test()
         {
@@ -205,6 +205,6 @@ namespace CSSPModels.Tests
                hydrometricSite.ValidationResults = val70;
                Assert.AreEqual(val70, hydrometricSite.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

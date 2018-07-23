@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void TVTextLanguage_Properties_Test()
         {
@@ -85,6 +85,6 @@ namespace CSSPModels.Tests
                tVTextLanguage.ValidationResults = val15;
                Assert.AreEqual(val15, tVTextLanguage.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }

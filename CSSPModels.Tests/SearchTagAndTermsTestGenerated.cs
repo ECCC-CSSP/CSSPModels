@@ -37,7 +37,7 @@ namespace CSSPModels.Tests
         }
         #endregion Constructors
 
-        #region Tests
+        #region Tests Functions public
         [TestMethod]
         public void SearchTagAndTerms_Properties_Test()
         {
@@ -85,6 +85,6 @@ namespace CSSPModels.Tests
                searchTagAndTerms.ValidationResults = val15;
                Assert.AreEqual(val15, searchTagAndTerms.ValidationResults);
         }
-        #endregion Tests
+        #endregion Tests Functions public
     }
 }
