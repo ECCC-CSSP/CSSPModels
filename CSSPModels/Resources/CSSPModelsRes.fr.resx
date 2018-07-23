@@ -5589,6 +5589,9 @@
 <data name="WhereInfoPropertyName" xml:space="preserve">
   <value>WhereInfoPropertyName</value>
 </data>
+<data name="WhereInfoPropertyType" xml:space="preserve">
+  <value>WhereInfoPropertyType</value>
+</data>
 <data name="WhereInfoWhereOperator" xml:space="preserve">
   <value>WhereInfoWhereOperator</value>
 </data>
@@ -5631,8 +5634,8 @@
 <data name="GetParamTake" xml:space="preserve">
   <value>GetParamTake</value>
 </data>
-<data name="GetParamOrderByNames" xml:space="preserve">
-  <value>GetParamOrderByNames</value>
+<data name="GetParamOrder" xml:space="preserve">
+  <value>GetParamOrder</value>
 </data>
 <data name="GetParamWhere" xml:space="preserve">
   <value>GetParamWhere</value>

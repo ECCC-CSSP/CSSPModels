@@ -23,7 +23,7 @@ namespace CSSPModels
         [Range(0, -1)]
         public int Take { get; set; }
         [StringLength(200)]
-        public string OrderByNames { get; set; }
+        public string Order { get; set; }
         [StringLength(200)]
         public string Where { get; set; }
         [CSSPEnumType]
@@ -42,7 +42,7 @@ namespace CSSPModels
             Lang = "";
             Skip = 0;
             Take = 100;
-            OrderByNames = "";
+            Order = "";
             Where = "";
             EntityQueryDetailType = EntityQueryDetailTypeEnum.EntityOnly;
             EntityQueryType = EntityQueryTypeEnum.AsNoTracking;

@@ -16,6 +16,8 @@ namespace CSSPModels
         [StringLength(100)]
         public string PropertyName { get; set; }
         [CSSPEnumType]
+        public PropertyTypeEnum PropertyType { get; set; }
+        [CSSPEnumType]
         public WhereOperatorEnum WhereOperator { get; set; }
         [StringLength(100)]
         public string Value { get; set; }

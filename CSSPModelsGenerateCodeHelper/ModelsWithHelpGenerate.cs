@@ -404,7 +404,7 @@ namespace CSSPModelsGenerateCodeHelper
                     sb.AppendLine(@"            Lang = """";");
                     sb.AppendLine(@"            Skip = 0;");
                     sb.AppendLine(@"            Take = 100;");
-                    sb.AppendLine(@"            OrderByNames = """";");
+                    sb.AppendLine(@"            Order = """";");
                     sb.AppendLine(@"            Where = """";");
                     sb.AppendLine(@"            EntityQueryDetailType = EntityQueryDetailTypeEnum.EntityOnly;");
                     sb.AppendLine(@"            EntityQueryType = EntityQueryTypeEnum.AsNoTracking;");

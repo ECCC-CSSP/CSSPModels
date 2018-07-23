@@ -41,7 +41,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void WhereInfo_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "PropertyName", "WhereOperator", "Value", "ValueInt", "ValueDouble", "ValueBool", "ValueDateTime", "ValueEnumText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "PropertyName", "PropertyType", "WhereOperator", "Value", "ValueInt", "ValueDouble", "ValueBool", "ValueDateTime", "ValueEnumText", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -62,6 +62,7 @@ namespace CSSPModels.Tests
         public void WhereInfo_Every_Property_Has_A_Resource_OK()
         {
                Assert.IsNotNull(CSSPModelsRes.WhereInfoPropertyName);
+               Assert.IsNotNull(CSSPModelsRes.WhereInfoPropertyType);
                Assert.IsNotNull(CSSPModelsRes.WhereInfoWhereOperator);
                Assert.IsNotNull(CSSPModelsRes.WhereInfoValue);
                Assert.IsNotNull(CSSPModelsRes.WhereInfoValueInt);
@@ -77,33 +78,36 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                whereInfo.PropertyName = val1;
                Assert.AreEqual(val1, whereInfo.PropertyName);
-               WhereOperatorEnum val2 = (WhereOperatorEnum)3;
-               whereInfo.WhereOperator = val2;
-               Assert.AreEqual(val2, whereInfo.WhereOperator);
-               string val3 = "Some text";
-               whereInfo.Value = val3;
-               Assert.AreEqual(val3, whereInfo.Value);
-               int val4 = 45;
-               whereInfo.ValueInt = val4;
-               Assert.AreEqual(val4, whereInfo.ValueInt);
-               double val5 = 87.9D;
-               whereInfo.ValueDouble = val5;
-               Assert.AreEqual(val5, whereInfo.ValueDouble);
-               bool val6 = true;
-               whereInfo.ValueBool = val6;
-               Assert.AreEqual(val6, whereInfo.ValueBool);
-               DateTime val7 = new DateTime(2010, 3, 4);
-               whereInfo.ValueDateTime = val7;
-               Assert.AreEqual(val7, whereInfo.ValueDateTime);
-               string val8 = "Some text";
-               whereInfo.ValueEnumText = val8;
-               Assert.AreEqual(val8, whereInfo.ValueEnumText);
-               bool val9 = true;
-               whereInfo.HasErrors = val9;
-               Assert.AreEqual(val9, whereInfo.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>().AsEnumerable();
-               whereInfo.ValidationResults = val30;
-               Assert.AreEqual(val30, whereInfo.ValidationResults);
+               PropertyTypeEnum val2 = (PropertyTypeEnum)3;
+               whereInfo.PropertyType = val2;
+               Assert.AreEqual(val2, whereInfo.PropertyType);
+               WhereOperatorEnum val3 = (WhereOperatorEnum)3;
+               whereInfo.WhereOperator = val3;
+               Assert.AreEqual(val3, whereInfo.WhereOperator);
+               string val4 = "Some text";
+               whereInfo.Value = val4;
+               Assert.AreEqual(val4, whereInfo.Value);
+               int val5 = 45;
+               whereInfo.ValueInt = val5;
+               Assert.AreEqual(val5, whereInfo.ValueInt);
+               double val6 = 87.9D;
+               whereInfo.ValueDouble = val6;
+               Assert.AreEqual(val6, whereInfo.ValueDouble);
+               bool val7 = true;
+               whereInfo.ValueBool = val7;
+               Assert.AreEqual(val7, whereInfo.ValueBool);
+               DateTime val8 = new DateTime(2010, 3, 4);
+               whereInfo.ValueDateTime = val8;
+               Assert.AreEqual(val8, whereInfo.ValueDateTime);
+               string val9 = "Some text";
+               whereInfo.ValueEnumText = val9;
+               Assert.AreEqual(val9, whereInfo.ValueEnumText);
+               bool val10 = true;
+               whereInfo.HasErrors = val10;
+               Assert.AreEqual(val10, whereInfo.HasErrors);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>().AsEnumerable();
+               whereInfo.ValidationResults = val33;
+               Assert.AreEqual(val33, whereInfo.ValidationResults);
         }
         #endregion Tests Functions public
     }

@@ -41,7 +41,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void GetParam_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ModelType", "Language", "Lang", "Skip", "Take", "OrderByNames", "Where", "EntityQueryDetailType", "EntityQueryType", "OrderList", "WhereInfoList", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ModelType", "Language", "Lang", "Skip", "Take", "Order", "Where", "EntityQueryDetailType", "EntityQueryType", "OrderList", "WhereInfoList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -66,7 +66,7 @@ namespace CSSPModels.Tests
                Assert.IsNotNull(CSSPModelsRes.GetParamLang);
                Assert.IsNotNull(CSSPModelsRes.GetParamSkip);
                Assert.IsNotNull(CSSPModelsRes.GetParamTake);
-               Assert.IsNotNull(CSSPModelsRes.GetParamOrderByNames);
+               Assert.IsNotNull(CSSPModelsRes.GetParamOrder);
                Assert.IsNotNull(CSSPModelsRes.GetParamWhere);
                Assert.IsNotNull(CSSPModelsRes.GetParamEntityQueryDetailType);
                Assert.IsNotNull(CSSPModelsRes.GetParamEntityQueryType);
@@ -93,8 +93,8 @@ namespace CSSPModels.Tests
                getParam.Take = val5;
                Assert.AreEqual(val5, getParam.Take);
                string val6 = "Some text";
-               getParam.OrderByNames = val6;
-               Assert.AreEqual(val6, getParam.OrderByNames);
+               getParam.Order = val6;
+               Assert.AreEqual(val6, getParam.Order);
                string val7 = "Some text";
                getParam.Where = val7;
                Assert.AreEqual(val7, getParam.Where);
