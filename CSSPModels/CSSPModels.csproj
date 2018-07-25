@@ -435,7 +435,7 @@
     <Compile Include="src\_FileItemList.cs" />
     <Compile Include="src\_FilePurposeAndText.cs" />
     <Compile Include="src\_WhereInfo.cs" />
-    <Compile Include="src\_GetParam.cs" />
+    <Compile Include="src\_Query.cs" />
     <Compile Include="src\_InputSummary.cs" />
     <Compile Include="src\_LabSheetA1Measurement.cs" />
     <Compile Include="src\_LabSheetA1Sheet.cs" />

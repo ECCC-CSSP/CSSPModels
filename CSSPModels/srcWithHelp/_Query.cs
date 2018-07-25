@@ -1,4 +1,4 @@
-﻿using CSSPEnums;
+using CSSPEnums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class GetParam : Error
+    public partial class Query : Error
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -18,9 +18,9 @@ namespace CSSPModels
         public LanguageEnum Language { get; set; }
         [StringLength(2)]
         public string Lang { get; set; }
-        [Range(0, -1)]
+        [Range(0, 1000000)]
         public int Skip { get; set; }
-        [Range(0, -1)]
+        [Range(1, 1000000)]
         public int Take { get; set; }
         [StringLength(200)]
         public string Order { get; set; }
@@ -35,11 +35,10 @@ namespace CSSPModels
         #endregion Properties not in DB
 
         #region Constructors
-        public GetParam() : base()
+        public Query() : base()
         {
-            ModelType = null;
             Language = LanguageEnum.en;
-            Lang = "";
+            Lang = "en";
             Skip = 0;
             Take = 100;
             Order = "";

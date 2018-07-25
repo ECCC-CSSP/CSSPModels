@@ -6,10 +6,6 @@ using CSSPModels;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Reflection;
 using CSSPEnums;
-using System.Threading;
-using System.Globalization;
-using CSSPModels.Resources;
-using System.ComponentModel.DataAnnotations;
 
 namespace CSSPModels.Tests
 {
@@ -18,7 +14,13 @@ namespace CSSPModels.Tests
         // most of the tests are auto generated and are located under QueryTestGenerated.cs
         // use this section to add other manual test
 
-        #region Tests Functions public
-        #endregion Tests Functions public
+        #region Tests
+        [TestMethod]
+        public void Query_Example_Manual_Test()
+        {
+            int i = 5;
+            Assert.AreEqual(5, i);
+        }
+        #endregion Tests
     }
 }

@@ -5616,44 +5616,44 @@
 <data name="WhereInfoHasErrors" xml:space="preserve">
   <value>WhereInfoHasErrors</value>
 </data>
-<data name="GetParam" xml:space="preserve">
-  <value>GetParam</value>
+<data name="Query" xml:space="preserve">
+  <value>Query</value>
 </data>
-<data name="GetParamModelType" xml:space="preserve">
-  <value>GetParamModelType</value>
+<data name="QueryModelType" xml:space="preserve">
+  <value>QueryModelType</value>
 </data>
-<data name="GetParamLanguage" xml:space="preserve">
-  <value>GetParamLanguage</value>
+<data name="QueryLanguage" xml:space="preserve">
+  <value>QueryLanguage</value>
 </data>
-<data name="GetParamLang" xml:space="preserve">
-  <value>GetParamLang</value>
+<data name="QueryLang" xml:space="preserve">
+  <value>QueryLang</value>
 </data>
-<data name="GetParamSkip" xml:space="preserve">
-  <value>GetParamSkip</value>
+<data name="QuerySkip" xml:space="preserve">
+  <value>QuerySkip</value>
 </data>
-<data name="GetParamTake" xml:space="preserve">
-  <value>GetParamTake</value>
+<data name="QueryTake" xml:space="preserve">
+  <value>QueryTake</value>
 </data>
-<data name="GetParamOrder" xml:space="preserve">
-  <value>GetParamOrder</value>
+<data name="QueryOrder" xml:space="preserve">
+  <value>QueryOrder</value>
 </data>
-<data name="GetParamWhere" xml:space="preserve">
-  <value>GetParamWhere</value>
+<data name="QueryWhere" xml:space="preserve">
+  <value>QueryWhere</value>
 </data>
-<data name="GetParamEntityQueryDetailType" xml:space="preserve">
-  <value>GetParamEntityQueryDetailType</value>
+<data name="QueryEntityQueryDetailType" xml:space="preserve">
+  <value>QueryEntityQueryDetailType</value>
 </data>
-<data name="GetParamEntityQueryType" xml:space="preserve">
-  <value>GetParamEntityQueryType</value>
+<data name="QueryEntityQueryType" xml:space="preserve">
+  <value>QueryEntityQueryType</value>
 </data>
-<data name="GetParamOrderList" xml:space="preserve">
-  <value>GetParamOrderList</value>
+<data name="QueryOrderList" xml:space="preserve">
+  <value>QueryOrderList</value>
 </data>
-<data name="GetParamWhereInfoList" xml:space="preserve">
-  <value>GetParamWhereInfoList</value>
+<data name="QueryWhereInfoList" xml:space="preserve">
+  <value>QueryWhereInfoList</value>
 </data>
-<data name="GetParamHasErrors" xml:space="preserve">
-  <value>GetParamHasErrors</value>
+<data name="QueryHasErrors" xml:space="preserve">
+  <value>QueryHasErrors</value>
 </data>
 <data name="InputSummary" xml:space="preserve">
   <value>InputSummary</value>

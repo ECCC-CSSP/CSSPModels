@@ -86,7 +86,7 @@ namespace CSSPModelsGenerateCodeHelper
                     continue;
                 }
 
-                //if (dllTypeInfoModels.Type.Name != "GetParam")
+                //if (dllTypeInfoModels.Type.Name != "Query")
                 //{
                 //    continue;
                 //}
@@ -397,11 +397,10 @@ namespace CSSPModelsGenerateCodeHelper
                 {
                     sb.AppendLine(@"            Error = """";");
                 }
-                if (dllTypeInfoModels.Type.Name == "GetParam")
+                if (dllTypeInfoModels.Type.Name == "Query")
                 {
-                    sb.AppendLine(@"            ModelType = null;");
                     sb.AppendLine(@"            Language = LanguageEnum.en;");
-                    sb.AppendLine(@"            Lang = """";");
+                    sb.AppendLine(@"            Lang = ""en"";");
                     sb.AppendLine(@"            Skip = 0;");
                     sb.AppendLine(@"            Take = 100;");
                     sb.AppendLine(@"            Order = """";");
