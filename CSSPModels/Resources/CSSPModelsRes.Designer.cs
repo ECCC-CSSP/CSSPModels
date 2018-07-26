@@ -4544,123 +4544,6 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Query.
-        /// </summary>
-        public static string Query {
-            get {
-                return ResourceManager.GetString("Query", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to QueryEntityQueryDetailType.
-        /// </summary>
-        public static string QueryEntityQueryDetailType {
-            get {
-                return ResourceManager.GetString("QueryEntityQueryDetailType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to QueryEntityQueryType.
-        /// </summary>
-        public static string QueryEntityQueryType {
-            get {
-                return ResourceManager.GetString("QueryEntityQueryType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to QueryHasErrors.
-        /// </summary>
-        public static string QueryHasErrors {
-            get {
-                return ResourceManager.GetString("QueryHasErrors", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to QueryLang.
-        /// </summary>
-        public static string QueryLang {
-            get {
-                return ResourceManager.GetString("QueryLang", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to QueryLanguage.
-        /// </summary>
-        public static string QueryLanguage {
-            get {
-                return ResourceManager.GetString("QueryLanguage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to QueryModelType.
-        /// </summary>
-        public static string QueryModelType {
-            get {
-                return ResourceManager.GetString("QueryModelType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to QueryOrder.
-        /// </summary>
-        public static string QueryOrder {
-            get {
-                return ResourceManager.GetString("QueryOrder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to QueryOrderList.
-        /// </summary>
-        public static string QueryOrderList {
-            get {
-                return ResourceManager.GetString("QueryOrderList", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to QuerySkip.
-        /// </summary>
-        public static string QuerySkip {
-            get {
-                return ResourceManager.GetString("QuerySkip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to QueryTake.
-        /// </summary>
-        public static string QueryTake {
-            get {
-                return ResourceManager.GetString("QueryTake", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to QueryWhere.
-        /// </summary>
-        public static string QueryWhere {
-            get {
-                return ResourceManager.GetString("QueryWhere", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to QueryWhereInfoList.
-        /// </summary>
-        public static string QueryWhereInfoList {
-            get {
-                return ResourceManager.GetString("QueryWhereInfoList", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to HydrometricDataValue.
         /// </summary>
         public static string HydrometricDataValue {
@@ -12991,6 +12874,123 @@ namespace CSSPModels.Resources {
         public static string PolyPointZ {
             get {
                 return ResourceManager.GetString("PolyPointZ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Query.
+        /// </summary>
+        public static string Query {
+            get {
+                return ResourceManager.GetString("Query", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QueryEntityQueryDetailType.
+        /// </summary>
+        public static string QueryEntityQueryDetailType {
+            get {
+                return ResourceManager.GetString("QueryEntityQueryDetailType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QueryEntityQueryType.
+        /// </summary>
+        public static string QueryEntityQueryType {
+            get {
+                return ResourceManager.GetString("QueryEntityQueryType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QueryHasErrors.
+        /// </summary>
+        public static string QueryHasErrors {
+            get {
+                return ResourceManager.GetString("QueryHasErrors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QueryLang.
+        /// </summary>
+        public static string QueryLang {
+            get {
+                return ResourceManager.GetString("QueryLang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QueryLanguage.
+        /// </summary>
+        public static string QueryLanguage {
+            get {
+                return ResourceManager.GetString("QueryLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QueryModelType.
+        /// </summary>
+        public static string QueryModelType {
+            get {
+                return ResourceManager.GetString("QueryModelType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QueryOrder.
+        /// </summary>
+        public static string QueryOrder {
+            get {
+                return ResourceManager.GetString("QueryOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QueryOrderList.
+        /// </summary>
+        public static string QueryOrderList {
+            get {
+                return ResourceManager.GetString("QueryOrderList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QuerySkip.
+        /// </summary>
+        public static string QuerySkip {
+            get {
+                return ResourceManager.GetString("QuerySkip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QueryTake.
+        /// </summary>
+        public static string QueryTake {
+            get {
+                return ResourceManager.GetString("QueryTake", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QueryWhere.
+        /// </summary>
+        public static string QueryWhere {
+            get {
+                return ResourceManager.GetString("QueryWhere", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QueryWhereInfoList.
+        /// </summary>
+        public static string QueryWhereInfoList {
+            get {
+                return ResourceManager.GetString("QueryWhereInfoList", resourceCulture);
             }
         }
         
