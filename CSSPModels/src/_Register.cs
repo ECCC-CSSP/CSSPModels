@@ -1,4 +1,8 @@
-﻿using CSSPEnums;
+﻿/*
+ * Manually edited by Charles LeBlanc 
+ * 
+ */
+using CSSPEnums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

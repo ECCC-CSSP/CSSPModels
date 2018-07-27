@@ -1,14 +1,11 @@
-﻿using System;
+﻿/*
+ * Manually edited by Charles LeBlanc 
+ * 
+ */
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 using System.Configuration;
 using CSSPEnums;
 using CSSPModels.Resources;
-using JetBrains.Annotations;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Microsoft.Extensions.Configuration;
-using System.IO;
-using System.Reflection;
 
 namespace CSSPModels
 {
