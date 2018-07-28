@@ -61,6 +61,15 @@ namespace CSSPModels.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SVP ne pas écrire dans ce document. SVP utiliser ResxManual dans le document ModelResManual.cs.
+        /// </summary>
+        public static string ___DoNotWriteInThisDocument {
+            get {
+                return ResourceManager.GetString("___DoNotWriteInThisDocument", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0} is required.
         /// </summary>
         public static string _IsRequired {
@@ -3522,15 +3531,6 @@ namespace CSSPModels.Resources {
         public static string DocTemplateWebTVTypeText {
             get {
                 return ResourceManager.GetString("DocTemplateWebTVTypeText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {0} is required.
-        /// </summary>
-        public static string DoNotWriteInThisDocument {
-            get {
-                return ResourceManager.GetString("DoNotWriteInThisDocument", resourceCulture);
             }
         }
         
