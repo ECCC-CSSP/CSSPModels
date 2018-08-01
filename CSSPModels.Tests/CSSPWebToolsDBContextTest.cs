@@ -31,7 +31,7 @@ namespace CSSPModels.Tests
         {
             using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext())
             {
-                Assert.AreEqual(DatabaseTypeEnum.Error, db.DatabaseType);
+                Assert.AreEqual(null, db.DatabaseType);
                 Assert.AreEqual(string.Format(CSSPModelsRes._IsRequired, "DataType"), db.Error);
                 db.Error = "";
 
@@ -50,9 +50,9 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void CSSPWebToolsDBContext_DataType_Error_Test()
         {
-            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.Error))
+            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(null))
             {
-                Assert.AreEqual(DatabaseTypeEnum.Error, db.DatabaseType);
+                Assert.AreEqual(null, db.DatabaseType);
                 Assert.AreEqual(string.Format(CSSPModelsRes._IsRequired, "DataType"), db.Error);
             }
         }
@@ -97,7 +97,7 @@ namespace CSSPModels.Tests
         {
             using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext((DatabaseTypeEnum)1000000))
             {
-                Assert.AreEqual(DatabaseTypeEnum.Error, db.DatabaseType);
+                Assert.AreEqual(null, db.DatabaseType);
                 Assert.AreEqual(string.Format(CSSPModelsRes._IsRequired, "DataType"), db.Error);
                 db.Error = "";
 

@@ -16,7 +16,7 @@ namespace CSSPModels
         #endregion Variables
 
         #region Properties
-        public DatabaseTypeEnum DatabaseType { get; set; }
+        public DatabaseTypeEnum? DatabaseType { get; set; }
         public string Error { get; set; }
 
         public virtual DbSet<Address> Addresses { get; set; }
@@ -103,9 +103,9 @@ namespace CSSPModels
         public CSSPWebToolsDBContext()
         {
             this.Error = string.Format(CSSPModelsRes._IsRequired, "DataType");
-            DatabaseType = DatabaseTypeEnum.Error;
+            DatabaseType = null;
         }
-        public CSSPWebToolsDBContext(DatabaseTypeEnum DatabaseType)
+        public CSSPWebToolsDBContext(DatabaseTypeEnum? DatabaseType)
         {
             this.Error = "";
             switch (DatabaseType)
@@ -121,7 +121,7 @@ namespace CSSPModels
                 default:
                     {
                         this.Error = string.Format(CSSPModelsRes._IsRequired, "DataType");
-                        this.DatabaseType = DatabaseTypeEnum.Error;
+                        this.DatabaseType = null;
                     }
                     break;
             }
@@ -139,7 +139,7 @@ namespace CSSPModels
                 TestDBConnectionString = TestDBConnectionString.Replace("wmon01dtchlebl2", "charles-pc");
             }
 
-            if (DatabaseType == DatabaseTypeEnum.Error)
+            if (DatabaseType == null)
             {
                 this.Error = string.Format(CSSPModelsRes._IsRequired, "DataType");
                 return;

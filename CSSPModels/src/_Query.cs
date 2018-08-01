@@ -19,7 +19,8 @@ namespace CSSPModels
         #region Properties not in DB
         public Type ModelType { get; set; }
         [CSSPEnumType]
-        public LanguageEnum Language { get; set; }
+        [CSSPAllowNull]
+        public LanguageEnum? Language { get; set; }
         [StringLength(2)]
         public string Lang { get; set; }
         [Range(0, 1000000)]
@@ -31,9 +32,11 @@ namespace CSSPModels
         [StringLength(200)]
         public string Where { get; set; }
         [CSSPEnumType]
-        public EntityQueryDetailTypeEnum EntityQueryDetailType { get; set; }
+        [CSSPAllowNull]
+        public EntityQueryDetailTypeEnum? EntityQueryDetailType { get; set; }
         [CSSPEnumType]
-        public EntityQueryTypeEnum EntityQueryType { get; set; }
+        [CSSPAllowNull]
+        public EntityQueryTypeEnum? EntityQueryType { get; set; }
         public virtual List<string> OrderList { get; set; }
         public virtual List<WhereInfo> WhereInfoList { get; set; }
         #endregion Properties not in DB

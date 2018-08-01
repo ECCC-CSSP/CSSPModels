@@ -20,7 +20,8 @@ namespace CSSPModels
         [StringLength(200, MinimumLength = 1)]
         public string Text { get; set; }
         [CSSPEnumType]
-        public WebTideDataSetEnum WebTideDataSet { get; set; }
+        [CSSPAllowNull]
+        public WebTideDataSetEnum? WebTideDataSet { get; set; }
         [StringLength(100)]
         [CSSPEnumTypeText(EnumTypeName = "WebTideDataSetEnum", EnumType = "WebTideDataSet")]
         [CSSPAllowNull]
@@ -31,7 +32,7 @@ namespace CSSPModels
         public DataPathOfTide() : base()
         {
             Text = "";
-            WebTideDataSet = WebTideDataSetEnum.Error;
+            WebTideDataSet = null;
         }
         #endregion Constructors
     }
