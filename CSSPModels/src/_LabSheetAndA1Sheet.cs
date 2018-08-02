@@ -17,8 +17,8 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        public virtual LabSheet LabSheet { get; set; }
-        public virtual LabSheetA1Sheet LabSheetA1Sheet { get; set; }
+        public LabSheet LabSheet { get; set; }
+        public LabSheetA1Sheet LabSheetA1Sheet { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

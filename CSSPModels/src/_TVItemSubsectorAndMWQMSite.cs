@@ -17,9 +17,9 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        public virtual TVItem TVItemSubsector { get; set; }
-        public virtual List<TVItem> TVItemMWQMSiteList { get; set; }
-        public virtual TVItem TVItemMWQMSiteDuplicate { get; set; }
+        public TVItem TVItemSubsector { get; set; }
+        public List<TVItem> TVItemMWQMSiteList { get; set; }
+        public TVItem TVItemMWQMSiteDuplicate { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

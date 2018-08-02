@@ -20,7 +20,7 @@ namespace CSSPModels
         [Range(1, 100)]
         public int Layer { get; set; }
         public double Z { get; set; }
-        public virtual Node Node { get; set; }
+        public Node Node { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

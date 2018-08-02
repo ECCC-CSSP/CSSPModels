@@ -21,8 +21,8 @@ namespace CSSPModels
         public int LabSheetHistoryCount { get; set; }
         [Range(0, -1)]
         public int LabSheetTransferredCount { get; set; }
-        public virtual SamplingPlan SamplingPlan { get; set; }
-        public virtual TVFile TVFileSamplingPlanFileTXT { get; set; }
+        public SamplingPlan SamplingPlan { get; set; }
+        public TVFile TVFileSamplingPlanFileTXT { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

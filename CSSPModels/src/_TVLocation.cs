@@ -34,7 +34,7 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "SubTVType")]
         [CSSPAllowNull]
         public string SubTVTypeText { get; set; }
-        public virtual List<MapObj> MapObjList { get; set; }
+        public List<MapObj> MapObjList { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

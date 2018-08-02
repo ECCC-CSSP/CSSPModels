@@ -21,7 +21,7 @@ namespace CSSPModels
         public int Layer { get; set; }
         public double ZMin { get; set; }
         public double ZMax { get; set; }
-        public virtual Element Element { get; set; }
+        public Element Element { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

@@ -20,7 +20,7 @@ namespace CSSPModels
         public string Error { get; set; }
         [Range(1, -1)]
         public int MikeScenarioID { get; set; }
-        public virtual List<TVFile> TVFileList { get; set; }
+        public List<TVFile> TVFileList { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

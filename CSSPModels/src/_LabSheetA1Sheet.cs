@@ -115,7 +115,7 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "LabSheetTypeEnum", EnumType = "LabSheetType")]
         [CSSPAllowNull]
         public string LabSheetTypeText { get; set; }
-        public virtual List<LabSheetA1Measurement> LabSheetA1MeasurementList { get; set; }
+        public List<LabSheetA1Measurement> LabSheetA1MeasurementList { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

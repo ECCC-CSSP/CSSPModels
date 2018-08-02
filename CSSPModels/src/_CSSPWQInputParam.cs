@@ -27,13 +27,13 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "CSSPWQInputTypeEnum", EnumType = "CSSPWQInputType")]
         [CSSPAllowNull]
         public string CSSPWQInputTypeText { get; set; }
-        public virtual List<string> sidList { get; set; }
-        public virtual List<string> MWQMSiteList { get; set; }
-        public virtual List<int> MWQMSiteTVItemIDList { get; set; }
-        public virtual List<string> DailyDuplicateMWQMSiteList { get; set; }
-        public virtual List<int> DailyDuplicateMWQMSiteTVItemIDList { get; set; }
-        public virtual List<string> InfrastructureList { get; set; }
-        public virtual List<int> InfrastructureTVItemIDList { get; set; }
+        public List<string> sidList { get; set; }
+        public List<string> MWQMSiteList { get; set; }
+        public List<int> MWQMSiteTVItemIDList { get; set; }
+        public List<string> DailyDuplicateMWQMSiteList { get; set; }
+        public List<int> DailyDuplicateMWQMSiteTVItemIDList { get; set; }
+        public List<string> InfrastructureList { get; set; }
+        public List<int> InfrastructureTVItemIDList { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

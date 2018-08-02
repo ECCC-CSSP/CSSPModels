@@ -23,7 +23,7 @@ namespace CSSPModels
         public int Layer { get; set; }
         [Range(1.0D, 10000.0D)]
         public double Depth { get; set; }
-        public virtual List<Node> ContourNodeList { get; set; }
+        public List<Node> ContourNodeList { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

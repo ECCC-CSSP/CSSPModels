@@ -23,7 +23,7 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "SearchTagEnum", EnumType = "SearchTag")]
         [CSSPAllowNull]
         public string SearchTagText { get; set; }
-        public virtual List<string> SearchTermList { get; set; }
+        public List<string> SearchTermList { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

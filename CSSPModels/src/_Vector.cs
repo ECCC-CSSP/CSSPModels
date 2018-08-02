@@ -17,8 +17,8 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        public virtual Node StartNode { get; set; }
-        public virtual Node EndNode { get; set; }
+        public Node StartNode { get; set; }
+        public Node EndNode { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

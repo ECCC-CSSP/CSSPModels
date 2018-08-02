@@ -37,8 +37,8 @@ namespace CSSPModels
         [CSSPEnumType]
         [CSSPAllowNull]
         public EntityQueryTypeEnum? EntityQueryType { get; set; }
-        public virtual List<string> OrderList { get; set; }
-        public virtual List<WhereInfo> WhereInfoList { get; set; }
+        public List<string> OrderList { get; set; }
+        public List<WhereInfo> WhereInfoList { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

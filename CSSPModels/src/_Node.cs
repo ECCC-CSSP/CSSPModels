@@ -24,8 +24,8 @@ namespace CSSPModels
         public double Z { get; set; }
         public int Code { get; set; }
         public double Value { get; set; }
-        public virtual List<Element> ElementList { get; set; }
-        public virtual List<Node> ConnectNodeList { get; set; }
+        public List<Element> ElementList { get; set; }
+        public List<Node> ConnectNodeList { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

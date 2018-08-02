@@ -25,9 +25,9 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "InfrastructureTypeEnum", EnumType = "InfrastructureType")]
         [CSSPAllowNull]
         public string InfrastructureTypeText { get; set; }
-        public virtual TVItem TVItem { get; set; }
-        public virtual List<TVItemLink> TVItemLinkList { get; set; }
-        public virtual TVItemInfrastructureTypeTVItemLink FlowTo { get; set; }
+        public TVItem TVItem { get; set; }
+        public List<TVItemLink> TVItemLinkList { get; set; }
+        public TVItemInfrastructureTypeTVItemLink FlowTo { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

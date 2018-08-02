@@ -27,7 +27,7 @@ namespace CSSPModels
         public double XNode0 { get; set; }
         public double YNode0 { get; set; }
         public double ZNode0 { get; set; }
-        public virtual List<Node> NodeList { get; set; }
+        public List<Node> NodeList { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
