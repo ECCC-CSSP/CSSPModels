@@ -60,18 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(TVItemTVAuth).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TVItemTVAuth_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.TVItemTVAuthError);
-               Assert.IsNotNull(CSSPModelsRes.TVItemTVAuthTVItemUserAuthID);
-               Assert.IsNotNull(CSSPModelsRes.TVItemTVAuthTVText);
-               Assert.IsNotNull(CSSPModelsRes.TVItemTVAuthTVItemID1);
-               Assert.IsNotNull(CSSPModelsRes.TVItemTVAuthTVTypeStr);
-               Assert.IsNotNull(CSSPModelsRes.TVItemTVAuthTVAuth);
-               Assert.IsNotNull(CSSPModelsRes.TVItemTVAuthTVAuthText);
-               Assert.IsNotNull(CSSPModelsRes.TVItemTVAuthHasErrors);
-        }
-        [TestMethod]
         public void TVItemTVAuth_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

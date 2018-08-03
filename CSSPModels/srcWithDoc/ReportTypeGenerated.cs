@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table ReportTypes** : [ReportTypeID](CSSPModels.ReportType.html#CSSPModels_ReportType_ReportTypeID), [TVType](CSSPModels.ReportType.html#CSSPModels_ReportType_TVType), [FileType](CSSPModels.ReportType.html#CSSPModels_ReportType_FileType), [UniqueCode](CSSPModels.ReportType.html#CSSPModels_ReportType_UniqueCode), [LastUpdateDate_UTC](CSSPModels.ReportType.html#CSSPModels_ReportType_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ReportType.html#CSSPModels_ReportType_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [ReportTypeWeb](CSSPModels.ReportType.html#CSSPModels_ReportType_ReportTypeWeb), [ReportTypeReport](CSSPModels.ReportType.html#CSSPModels_ReportType_ReportTypeReport), [HasErrors](CSSPModels.ReportType.html#CSSPModels_ReportType_HasErrors), [ValidationResults](CSSPModels.ReportType.html#CSSPModels_ReportType_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.ReportType.html#CSSPModels_ReportType_HasErrors), [ValidationResults](CSSPModels.ReportType.html#CSSPModels_ReportType_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ReportTypeService](CSSPServices.ReportTypeService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [FileTypeEnum](CSSPEnums.FileTypeEnum.html)</para>
@@ -51,15 +51,6 @@ namespace CSSPModels
         public string UniqueCode { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ReportTypeWeb ReportTypeWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ReportTypeReport ReportTypeReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public ReportType() : base()
         {
@@ -67,7 +58,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportTypeWeb
+    public partial class ReportTypeWeb : ReportType
     {
         #region Properties for web information
         /// <summary>
@@ -80,13 +71,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ReportTypeWeb()
+        public ReportTypeWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportTypeReport
+    public partial class ReportTypeReport : ReportTypeWeb
     {
         #region Properties for report information
         /// <summary>
@@ -99,7 +90,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ReportTypeReport()
+        public ReportTypeReport() : base()
         {
         }
         #endregion Constructors

@@ -60,15 +60,6 @@ namespace CSSPModels
         public string BackupDirectory { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public SamplingPlanWeb SamplingPlanWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public SamplingPlanReport SamplingPlanReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public SamplingPlan() : base()
         {
@@ -76,7 +67,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanWeb
+    public partial class SamplingPlanWeb : SamplingPlan
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ProvinceTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -99,13 +90,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public SamplingPlanWeb()
+        public SamplingPlanWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanReport
+    public partial class SamplingPlanReport : SamplingPlanWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -113,7 +104,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public SamplingPlanReport()
+        public SamplingPlanReport() : base()
         {
         }
         #endregion Constructors

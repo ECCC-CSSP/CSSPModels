@@ -42,15 +42,6 @@ namespace CSSPModels
         public int? ParentTVItemLinkID { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVItemLinkWeb TVItemLinkWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVItemLinkReport TVItemLinkReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TVItemLink() : base()
         {
@@ -58,7 +49,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemLinkWeb
+    public partial class TVItemLinkWeb : TVItemLink
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "FromTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -76,13 +67,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TVItemLinkWeb()
+        public TVItemLinkWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemLinkReport
+    public partial class TVItemLinkReport : TVItemLinkWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -90,7 +81,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TVItemLinkReport()
+        public TVItemLinkReport() : base()
         {
         }
         #endregion Constructors

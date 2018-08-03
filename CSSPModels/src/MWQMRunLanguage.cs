@@ -31,15 +31,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatusRunWeatherComment { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMRunLanguageWeb MWQMRunLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMRunLanguageReport MWQMRunLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMRunLanguage() : base()
         {
@@ -47,7 +38,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMRunLanguageWeb
+    public partial class MWQMRunLanguageWeb : MWQMRunLanguage
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -64,13 +55,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMRunLanguageWeb()
+        public MWQMRunLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMRunLanguageReport
+    public partial class MWQMRunLanguageReport : MWQMRunLanguageWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -78,7 +69,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMRunLanguageReport()
+        public MWQMRunLanguageReport() : base()
         {
         }
         #endregion Constructors

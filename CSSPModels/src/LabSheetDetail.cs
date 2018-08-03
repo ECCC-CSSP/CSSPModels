@@ -172,15 +172,6 @@ namespace CSSPModels
         public bool? IntertechReadAcceptable { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public LabSheetDetailWeb LabSheetDetailWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public LabSheetDetailReport LabSheetDetailReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public LabSheetDetail() : base()
         {
@@ -188,7 +179,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetDetailWeb
+    public partial class LabSheetDetailWeb : LabSheetDetail
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SubsectorTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -198,13 +189,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public LabSheetDetailWeb()
+        public LabSheetDetailWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetDetailReport
+    public partial class LabSheetDetailReport : LabSheetDetailWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -212,7 +203,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public LabSheetDetailReport()
+        public LabSheetDetailReport() : base()
         {
         }
         #endregion Constructors

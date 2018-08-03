@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private MikeSource mikeSource { get; set; }
+        private MikeSourceWeb mikeSourceWeb { get; set; }
+        private MikeSourceReport mikeSourceReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public MikeSourceTest()
         {
             mikeSource = new MikeSource();
+            mikeSourceWeb = new MikeSourceWeb();
+            mikeSourceReport = new MikeSourceReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void MikeSource_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeSourceID", "MikeSourceTVItemID", "IsContinuous", "Include", "IsRiver", "SourceNumberString", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MikeSourceWeb", "MikeSourceReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MikeSource).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MikeSource).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(MikeSource).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void MikeSourceWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "MikeSourceTVItemLanguage", "LastUpdateContactTVItemLanguage", "MikeSourceID", "MikeSourceTVItemID", "IsContinuous", "Include", "IsRiver", "SourceNumberString", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void MikeSourceReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "MikeSourceReportTest", "MikeSourceTVItemLanguage", "LastUpdateContactTVItemLanguage", "MikeSourceID", "MikeSourceTVItemID", "IsContinuous", "Include", "IsRiver", "SourceNumberString", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,22 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void MikeSourceWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void MikeSourceReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void MikeSource_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(MikeSource).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MikeSource_Every_Property_Has_A_Resource_OK()
+        public void MikeSourceWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceMikeSourceID);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceMikeSourceTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceIsContinuous);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceInclude);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceIsRiver);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceSourceNumberString);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceHasErrors);
+             Assert.IsTrue(typeof(MikeSourceWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void MikeSourceReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(MikeSourceReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void MikeSource_Every_Property_Has_Get_Set_Test()
@@ -154,9 +289,92 @@ namespace CSSPModels.Tests
                bool val9 = true;
                mikeSource.HasErrors = val9;
                Assert.AreEqual(val9, mikeSource.HasErrors);
-               IEnumerable<ValidationResult> val34 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mikeSource.ValidationResults = val34;
-               Assert.AreEqual(val34, mikeSource.ValidationResults);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mikeSource.ValidationResults = val30;
+               Assert.AreEqual(val30, mikeSource.ValidationResults);
+        }
+        [TestMethod]
+        public void MikeSourceWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               mikeSourceWeb.MikeSourceTVItemLanguage = val1;
+               Assert.AreEqual(val1, mikeSourceWeb.MikeSourceTVItemLanguage);
+               TVItemLanguage val2 = new TVItemLanguage();
+               mikeSourceWeb.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, mikeSourceWeb.LastUpdateContactTVItemLanguage);
+               int val3 = 45;
+               mikeSourceWeb.MikeSourceID = val3;
+               Assert.AreEqual(val3, mikeSourceWeb.MikeSourceID);
+               int val4 = 45;
+               mikeSourceWeb.MikeSourceTVItemID = val4;
+               Assert.AreEqual(val4, mikeSourceWeb.MikeSourceTVItemID);
+               bool val5 = true;
+               mikeSourceWeb.IsContinuous = val5;
+               Assert.AreEqual(val5, mikeSourceWeb.IsContinuous);
+               bool val6 = true;
+               mikeSourceWeb.Include = val6;
+               Assert.AreEqual(val6, mikeSourceWeb.Include);
+               bool val7 = true;
+               mikeSourceWeb.IsRiver = val7;
+               Assert.AreEqual(val7, mikeSourceWeb.IsRiver);
+               string val8 = "Some text";
+               mikeSourceWeb.SourceNumberString = val8;
+               Assert.AreEqual(val8, mikeSourceWeb.SourceNumberString);
+               DateTime val9 = new DateTime(2010, 3, 4);
+               mikeSourceWeb.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, mikeSourceWeb.LastUpdateDate_UTC);
+               int val10 = 45;
+               mikeSourceWeb.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, mikeSourceWeb.LastUpdateContactTVItemID);
+               bool val11 = true;
+               mikeSourceWeb.HasErrors = val11;
+               Assert.AreEqual(val11, mikeSourceWeb.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mikeSourceWeb.ValidationResults = val36;
+               Assert.AreEqual(val36, mikeSourceWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void MikeSourceReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               mikeSourceReport.MikeSourceReportTest = val1;
+               Assert.AreEqual(val1, mikeSourceReport.MikeSourceReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               mikeSourceReport.MikeSourceTVItemLanguage = val2;
+               Assert.AreEqual(val2, mikeSourceReport.MikeSourceTVItemLanguage);
+               TVItemLanguage val3 = new TVItemLanguage();
+               mikeSourceReport.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, mikeSourceReport.LastUpdateContactTVItemLanguage);
+               int val4 = 45;
+               mikeSourceReport.MikeSourceID = val4;
+               Assert.AreEqual(val4, mikeSourceReport.MikeSourceID);
+               int val5 = 45;
+               mikeSourceReport.MikeSourceTVItemID = val5;
+               Assert.AreEqual(val5, mikeSourceReport.MikeSourceTVItemID);
+               bool val6 = true;
+               mikeSourceReport.IsContinuous = val6;
+               Assert.AreEqual(val6, mikeSourceReport.IsContinuous);
+               bool val7 = true;
+               mikeSourceReport.Include = val7;
+               Assert.AreEqual(val7, mikeSourceReport.Include);
+               bool val8 = true;
+               mikeSourceReport.IsRiver = val8;
+               Assert.AreEqual(val8, mikeSourceReport.IsRiver);
+               string val9 = "Some text";
+               mikeSourceReport.SourceNumberString = val9;
+               Assert.AreEqual(val9, mikeSourceReport.SourceNumberString);
+               DateTime val10 = new DateTime(2010, 3, 4);
+               mikeSourceReport.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, mikeSourceReport.LastUpdateDate_UTC);
+               int val11 = 45;
+               mikeSourceReport.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, mikeSourceReport.LastUpdateContactTVItemID);
+               bool val12 = true;
+               mikeSourceReport.HasErrors = val12;
+               Assert.AreEqual(val12, mikeSourceReport.HasErrors);
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mikeSourceReport.ValidationResults = val39;
+               Assert.AreEqual(val39, mikeSourceReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

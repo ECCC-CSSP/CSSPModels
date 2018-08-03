@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table TVTypeUserAuthorizations** : [TVTypeUserAuthorizationID](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVTypeUserAuthorizationID), [ContactTVItemID](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_ContactTVItemID), [TVType](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVType), [TVAuth](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVAuth), [LastUpdateDate_UTC](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [TVTypeUserAuthorizationWeb](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVTypeUserAuthorizationWeb), [TVTypeUserAuthorizationReport](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVTypeUserAuthorizationReport), [HasErrors](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_HasErrors), [ValidationResults](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_HasErrors), [ValidationResults](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVTypeUserAuthorizationService](CSSPServices.TVTypeUserAuthorizationService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [TVAuthEnum](CSSPEnums.TVAuthEnum.html)</para>
@@ -58,15 +58,6 @@ namespace CSSPModels
         public TVAuthEnum TVAuth { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVTypeUserAuthorizationWeb TVTypeUserAuthorizationWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVTypeUserAuthorizationReport TVTypeUserAuthorizationReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TVTypeUserAuthorization() : base()
         {
@@ -74,7 +65,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVTypeUserAuthorizationWeb
+    public partial class TVTypeUserAuthorizationWeb : TVTypeUserAuthorization
     {
         #region Properties for web information
         /// <summary>
@@ -112,13 +103,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TVTypeUserAuthorizationWeb()
+        public TVTypeUserAuthorizationWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVTypeUserAuthorizationReport
+    public partial class TVTypeUserAuthorizationReport : TVTypeUserAuthorizationWeb
     {
         #region Properties for report information
         /// <summary>
@@ -131,7 +122,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TVTypeUserAuthorizationReport()
+        public TVTypeUserAuthorizationReport() : base()
         {
         }
         #endregion Constructors

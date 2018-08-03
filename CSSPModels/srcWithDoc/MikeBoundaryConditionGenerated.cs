@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table MikeBoundaryConditions** : [MikeBoundaryConditionID](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionID), [MikeBoundaryConditionTVItemID](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionTVItemID), [MikeBoundaryConditionCode](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionCode), [MikeBoundaryConditionName](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionName), [MikeBoundaryConditionLength_m](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionLength_m), [MikeBoundaryConditionFormat](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionFormat), [MikeBoundaryConditionLevelOrVelocity](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionLevelOrVelocity), [WebTideDataSet](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_WebTideDataSet), [NumberOfWebTideNodes](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_NumberOfWebTideNodes), [WebTideDataFromStartToEndDate](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_WebTideDataFromStartToEndDate), [TVType](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_TVType), [LastUpdateDate_UTC](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [MikeBoundaryConditionWeb](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionWeb), [MikeBoundaryConditionReport](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionReport), [HasErrors](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_HasErrors), [ValidationResults](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_HasErrors), [ValidationResults](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeBoundaryConditionService](CSSPServices.MikeBoundaryConditionService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [MikeBoundaryConditionLevelOrVelocityEnum](CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html), [WebTideDataSetEnum](CSSPEnums.WebTideDataSetEnum.html), [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
@@ -76,15 +76,6 @@ namespace CSSPModels
         public TVTypeEnum TVType { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MikeBoundaryConditionWeb MikeBoundaryConditionWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MikeBoundaryConditionReport MikeBoundaryConditionReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MikeBoundaryCondition() : base()
         {
@@ -92,7 +83,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeBoundaryConditionWeb
+    public partial class MikeBoundaryConditionWeb : MikeBoundaryCondition
     {
         #region Properties for web information
         /// <summary>
@@ -139,13 +130,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MikeBoundaryConditionWeb()
+        public MikeBoundaryConditionWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeBoundaryConditionReport
+    public partial class MikeBoundaryConditionReport : MikeBoundaryConditionWeb
     {
         #region Properties for report information
         /// <summary>
@@ -158,7 +149,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MikeBoundaryConditionReport()
+        public MikeBoundaryConditionReport() : base()
         {
         }
         #endregion Constructors

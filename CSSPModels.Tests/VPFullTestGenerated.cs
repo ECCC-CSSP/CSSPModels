@@ -60,14 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(VPFull).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void VPFull_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.VPFullVPScenario);
-               Assert.IsNotNull(CSSPModelsRes.VPFullVPAmbientList);
-               Assert.IsNotNull(CSSPModelsRes.VPFullVPResultList);
-               Assert.IsNotNull(CSSPModelsRes.VPFullHasErrors);
-        }
-        [TestMethod]
         public void VPFull_Every_Property_Has_Get_Set_Test()
         {
                VPScenario val1 = new VPScenario();

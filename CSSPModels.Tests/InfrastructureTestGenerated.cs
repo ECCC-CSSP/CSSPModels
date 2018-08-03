@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private Infrastructure infrastructure { get; set; }
+        private InfrastructureWeb infrastructureWeb { get; set; }
+        private InfrastructureReport infrastructureReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public InfrastructureTest()
         {
             infrastructure = new Infrastructure();
+            infrastructureWeb = new InfrastructureWeb();
+            infrastructureReport = new InfrastructureReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void Infrastructure_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "InfrastructureWeb", "InfrastructureReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Infrastructure).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(Infrastructure).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(Infrastructure).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void InfrastructureWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "InfrastructureTVItemLanguage", "SeeOtherTVItemLanguage", "CivicAddressTVItemLanguage", "LastUpdateContactTVItemLanguage", "InfrastructureTypeText", "FacilityTypeText", "AerationTypeText", "PreliminaryTreatmentTypeText", "PrimaryTreatmentTypeText", "SecondaryTreatmentTypeText", "TertiaryTreatmentTypeText", "TreatmentTypeText", "DisinfectionTypeText", "CollectionSystemTypeText", "AlarmSystemTypeText", "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void InfrastructureReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "InfrastructureReportTest", "InfrastructureTVItemLanguage", "SeeOtherTVItemLanguage", "CivicAddressTVItemLanguage", "LastUpdateContactTVItemLanguage", "InfrastructureTypeText", "FacilityTypeText", "AerationTypeText", "PreliminaryTreatmentTypeText", "PrimaryTreatmentTypeText", "SecondaryTreatmentTypeText", "TertiaryTreatmentTypeText", "TreatmentTypeText", "DisinfectionTypeText", "CollectionSystemTypeText", "AlarmSystemTypeText", "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,62 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void InfrastructureWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void InfrastructureReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void Infrastructure_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(Infrastructure).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Infrastructure_Every_Property_Has_A_Resource_OK()
+        public void InfrastructureWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureInfrastructureID);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureInfrastructureTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructurePrismID);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureTPID);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureLSID);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureSiteID);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureSite);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureInfrastructureCategory);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureInfrastructureType);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureFacilityType);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureIsMechanicallyAerated);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureNumberOfCells);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureNumberOfAeratedCells);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureAerationType);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructurePreliminaryTreatmentType);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructurePrimaryTreatmentType);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureSecondaryTreatmentType);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureTertiaryTreatmentType);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureTreatmentType);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureDisinfectionType);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureCollectionSystemType);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureAlarmSystemType);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureDesignFlow_m3_day);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureAverageFlow_m3_day);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructurePeakFlow_m3_day);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructurePopServed);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureCanOverflow);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructurePercFlowOfTotal);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureTimeOffset_hour);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureTempCatchAllRemoveLater);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureAverageDepth_m);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureNumberOfPorts);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructurePortDiameter_m);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructurePortSpacing_m);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructurePortElevation_m);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureVerticalAngle_deg);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureHorizontalAngle_deg);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureDecayRate_per_day);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureNearFieldVelocity_m_s);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureFarFieldVelocity_m_s);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureReceivingWaterSalinity_PSU);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureReceivingWaterTemperature_C);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureReceivingWater_MPN_per_100ml);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureDistanceFromShore_m);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureSeeOtherTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureCivicAddressTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.InfrastructureHasErrors);
+             Assert.IsTrue(typeof(InfrastructureWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void InfrastructureReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(InfrastructureReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void Infrastructure_Every_Property_Has_Get_Set_Test()
@@ -314,9 +409,410 @@ namespace CSSPModels.Tests
                bool val49 = true;
                infrastructure.HasErrors = val49;
                Assert.AreEqual(val49, infrastructure.HasErrors);
-               IEnumerable<ValidationResult> val154 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               infrastructure.ValidationResults = val154;
-               Assert.AreEqual(val154, infrastructure.ValidationResults);
+               IEnumerable<ValidationResult> val150 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               infrastructure.ValidationResults = val150;
+               Assert.AreEqual(val150, infrastructure.ValidationResults);
+        }
+        [TestMethod]
+        public void InfrastructureWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               infrastructureWeb.InfrastructureTVItemLanguage = val1;
+               Assert.AreEqual(val1, infrastructureWeb.InfrastructureTVItemLanguage);
+               TVItemLanguage val2 = new TVItemLanguage();
+               infrastructureWeb.SeeOtherTVItemLanguage = val2;
+               Assert.AreEqual(val2, infrastructureWeb.SeeOtherTVItemLanguage);
+               TVItemLanguage val3 = new TVItemLanguage();
+               infrastructureWeb.CivicAddressTVItemLanguage = val3;
+               Assert.AreEqual(val3, infrastructureWeb.CivicAddressTVItemLanguage);
+               TVItemLanguage val4 = new TVItemLanguage();
+               infrastructureWeb.LastUpdateContactTVItemLanguage = val4;
+               Assert.AreEqual(val4, infrastructureWeb.LastUpdateContactTVItemLanguage);
+               string val5 = "Some text";
+               infrastructureWeb.InfrastructureTypeText = val5;
+               Assert.AreEqual(val5, infrastructureWeb.InfrastructureTypeText);
+               string val6 = "Some text";
+               infrastructureWeb.FacilityTypeText = val6;
+               Assert.AreEqual(val6, infrastructureWeb.FacilityTypeText);
+               string val7 = "Some text";
+               infrastructureWeb.AerationTypeText = val7;
+               Assert.AreEqual(val7, infrastructureWeb.AerationTypeText);
+               string val8 = "Some text";
+               infrastructureWeb.PreliminaryTreatmentTypeText = val8;
+               Assert.AreEqual(val8, infrastructureWeb.PreliminaryTreatmentTypeText);
+               string val9 = "Some text";
+               infrastructureWeb.PrimaryTreatmentTypeText = val9;
+               Assert.AreEqual(val9, infrastructureWeb.PrimaryTreatmentTypeText);
+               string val10 = "Some text";
+               infrastructureWeb.SecondaryTreatmentTypeText = val10;
+               Assert.AreEqual(val10, infrastructureWeb.SecondaryTreatmentTypeText);
+               string val11 = "Some text";
+               infrastructureWeb.TertiaryTreatmentTypeText = val11;
+               Assert.AreEqual(val11, infrastructureWeb.TertiaryTreatmentTypeText);
+               string val12 = "Some text";
+               infrastructureWeb.TreatmentTypeText = val12;
+               Assert.AreEqual(val12, infrastructureWeb.TreatmentTypeText);
+               string val13 = "Some text";
+               infrastructureWeb.DisinfectionTypeText = val13;
+               Assert.AreEqual(val13, infrastructureWeb.DisinfectionTypeText);
+               string val14 = "Some text";
+               infrastructureWeb.CollectionSystemTypeText = val14;
+               Assert.AreEqual(val14, infrastructureWeb.CollectionSystemTypeText);
+               string val15 = "Some text";
+               infrastructureWeb.AlarmSystemTypeText = val15;
+               Assert.AreEqual(val15, infrastructureWeb.AlarmSystemTypeText);
+               int val16 = 45;
+               infrastructureWeb.InfrastructureID = val16;
+               Assert.AreEqual(val16, infrastructureWeb.InfrastructureID);
+               int val17 = 45;
+               infrastructureWeb.InfrastructureTVItemID = val17;
+               Assert.AreEqual(val17, infrastructureWeb.InfrastructureTVItemID);
+               int val18 = 45;
+               infrastructureWeb.PrismID = val18;
+               Assert.AreEqual(val18, infrastructureWeb.PrismID);
+               int val19 = 45;
+               infrastructureWeb.TPID = val19;
+               Assert.AreEqual(val19, infrastructureWeb.TPID);
+               int val20 = 45;
+               infrastructureWeb.LSID = val20;
+               Assert.AreEqual(val20, infrastructureWeb.LSID);
+               int val21 = 45;
+               infrastructureWeb.SiteID = val21;
+               Assert.AreEqual(val21, infrastructureWeb.SiteID);
+               int val22 = 45;
+               infrastructureWeb.Site = val22;
+               Assert.AreEqual(val22, infrastructureWeb.Site);
+               string val23 = "Some text";
+               infrastructureWeb.InfrastructureCategory = val23;
+               Assert.AreEqual(val23, infrastructureWeb.InfrastructureCategory);
+               InfrastructureTypeEnum val24 = (InfrastructureTypeEnum)3;
+               infrastructureWeb.InfrastructureType = val24;
+               Assert.AreEqual(val24, infrastructureWeb.InfrastructureType);
+               FacilityTypeEnum val25 = (FacilityTypeEnum)3;
+               infrastructureWeb.FacilityType = val25;
+               Assert.AreEqual(val25, infrastructureWeb.FacilityType);
+               bool val26 = true;
+               infrastructureWeb.IsMechanicallyAerated = val26;
+               Assert.AreEqual(val26, infrastructureWeb.IsMechanicallyAerated);
+               int val27 = 45;
+               infrastructureWeb.NumberOfCells = val27;
+               Assert.AreEqual(val27, infrastructureWeb.NumberOfCells);
+               int val28 = 45;
+               infrastructureWeb.NumberOfAeratedCells = val28;
+               Assert.AreEqual(val28, infrastructureWeb.NumberOfAeratedCells);
+               AerationTypeEnum val29 = (AerationTypeEnum)3;
+               infrastructureWeb.AerationType = val29;
+               Assert.AreEqual(val29, infrastructureWeb.AerationType);
+               PreliminaryTreatmentTypeEnum val30 = (PreliminaryTreatmentTypeEnum)3;
+               infrastructureWeb.PreliminaryTreatmentType = val30;
+               Assert.AreEqual(val30, infrastructureWeb.PreliminaryTreatmentType);
+               PrimaryTreatmentTypeEnum val31 = (PrimaryTreatmentTypeEnum)3;
+               infrastructureWeb.PrimaryTreatmentType = val31;
+               Assert.AreEqual(val31, infrastructureWeb.PrimaryTreatmentType);
+               SecondaryTreatmentTypeEnum val32 = (SecondaryTreatmentTypeEnum)3;
+               infrastructureWeb.SecondaryTreatmentType = val32;
+               Assert.AreEqual(val32, infrastructureWeb.SecondaryTreatmentType);
+               TertiaryTreatmentTypeEnum val33 = (TertiaryTreatmentTypeEnum)3;
+               infrastructureWeb.TertiaryTreatmentType = val33;
+               Assert.AreEqual(val33, infrastructureWeb.TertiaryTreatmentType);
+               TreatmentTypeEnum val34 = (TreatmentTypeEnum)3;
+               infrastructureWeb.TreatmentType = val34;
+               Assert.AreEqual(val34, infrastructureWeb.TreatmentType);
+               DisinfectionTypeEnum val35 = (DisinfectionTypeEnum)3;
+               infrastructureWeb.DisinfectionType = val35;
+               Assert.AreEqual(val35, infrastructureWeb.DisinfectionType);
+               CollectionSystemTypeEnum val36 = (CollectionSystemTypeEnum)3;
+               infrastructureWeb.CollectionSystemType = val36;
+               Assert.AreEqual(val36, infrastructureWeb.CollectionSystemType);
+               AlarmSystemTypeEnum val37 = (AlarmSystemTypeEnum)3;
+               infrastructureWeb.AlarmSystemType = val37;
+               Assert.AreEqual(val37, infrastructureWeb.AlarmSystemType);
+               double val38 = 87.9D;
+               infrastructureWeb.DesignFlow_m3_day = val38;
+               Assert.AreEqual(val38, infrastructureWeb.DesignFlow_m3_day);
+               double val39 = 87.9D;
+               infrastructureWeb.AverageFlow_m3_day = val39;
+               Assert.AreEqual(val39, infrastructureWeb.AverageFlow_m3_day);
+               double val40 = 87.9D;
+               infrastructureWeb.PeakFlow_m3_day = val40;
+               Assert.AreEqual(val40, infrastructureWeb.PeakFlow_m3_day);
+               int val41 = 45;
+               infrastructureWeb.PopServed = val41;
+               Assert.AreEqual(val41, infrastructureWeb.PopServed);
+               bool val42 = true;
+               infrastructureWeb.CanOverflow = val42;
+               Assert.AreEqual(val42, infrastructureWeb.CanOverflow);
+               double val43 = 87.9D;
+               infrastructureWeb.PercFlowOfTotal = val43;
+               Assert.AreEqual(val43, infrastructureWeb.PercFlowOfTotal);
+               double val44 = 87.9D;
+               infrastructureWeb.TimeOffset_hour = val44;
+               Assert.AreEqual(val44, infrastructureWeb.TimeOffset_hour);
+               string val45 = "Some text";
+               infrastructureWeb.TempCatchAllRemoveLater = val45;
+               Assert.AreEqual(val45, infrastructureWeb.TempCatchAllRemoveLater);
+               double val46 = 87.9D;
+               infrastructureWeb.AverageDepth_m = val46;
+               Assert.AreEqual(val46, infrastructureWeb.AverageDepth_m);
+               int val47 = 45;
+               infrastructureWeb.NumberOfPorts = val47;
+               Assert.AreEqual(val47, infrastructureWeb.NumberOfPorts);
+               double val48 = 87.9D;
+               infrastructureWeb.PortDiameter_m = val48;
+               Assert.AreEqual(val48, infrastructureWeb.PortDiameter_m);
+               double val49 = 87.9D;
+               infrastructureWeb.PortSpacing_m = val49;
+               Assert.AreEqual(val49, infrastructureWeb.PortSpacing_m);
+               double val50 = 87.9D;
+               infrastructureWeb.PortElevation_m = val50;
+               Assert.AreEqual(val50, infrastructureWeb.PortElevation_m);
+               double val51 = 87.9D;
+               infrastructureWeb.VerticalAngle_deg = val51;
+               Assert.AreEqual(val51, infrastructureWeb.VerticalAngle_deg);
+               double val52 = 87.9D;
+               infrastructureWeb.HorizontalAngle_deg = val52;
+               Assert.AreEqual(val52, infrastructureWeb.HorizontalAngle_deg);
+               double val53 = 87.9D;
+               infrastructureWeb.DecayRate_per_day = val53;
+               Assert.AreEqual(val53, infrastructureWeb.DecayRate_per_day);
+               double val54 = 87.9D;
+               infrastructureWeb.NearFieldVelocity_m_s = val54;
+               Assert.AreEqual(val54, infrastructureWeb.NearFieldVelocity_m_s);
+               double val55 = 87.9D;
+               infrastructureWeb.FarFieldVelocity_m_s = val55;
+               Assert.AreEqual(val55, infrastructureWeb.FarFieldVelocity_m_s);
+               double val56 = 87.9D;
+               infrastructureWeb.ReceivingWaterSalinity_PSU = val56;
+               Assert.AreEqual(val56, infrastructureWeb.ReceivingWaterSalinity_PSU);
+               double val57 = 87.9D;
+               infrastructureWeb.ReceivingWaterTemperature_C = val57;
+               Assert.AreEqual(val57, infrastructureWeb.ReceivingWaterTemperature_C);
+               int val58 = 45;
+               infrastructureWeb.ReceivingWater_MPN_per_100ml = val58;
+               Assert.AreEqual(val58, infrastructureWeb.ReceivingWater_MPN_per_100ml);
+               double val59 = 87.9D;
+               infrastructureWeb.DistanceFromShore_m = val59;
+               Assert.AreEqual(val59, infrastructureWeb.DistanceFromShore_m);
+               int val60 = 45;
+               infrastructureWeb.SeeOtherTVItemID = val60;
+               Assert.AreEqual(val60, infrastructureWeb.SeeOtherTVItemID);
+               int val61 = 45;
+               infrastructureWeb.CivicAddressTVItemID = val61;
+               Assert.AreEqual(val61, infrastructureWeb.CivicAddressTVItemID);
+               DateTime val62 = new DateTime(2010, 3, 4);
+               infrastructureWeb.LastUpdateDate_UTC = val62;
+               Assert.AreEqual(val62, infrastructureWeb.LastUpdateDate_UTC);
+               int val63 = 45;
+               infrastructureWeb.LastUpdateContactTVItemID = val63;
+               Assert.AreEqual(val63, infrastructureWeb.LastUpdateContactTVItemID);
+               bool val64 = true;
+               infrastructureWeb.HasErrors = val64;
+               Assert.AreEqual(val64, infrastructureWeb.HasErrors);
+               IEnumerable<ValidationResult> val195 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               infrastructureWeb.ValidationResults = val195;
+               Assert.AreEqual(val195, infrastructureWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void InfrastructureReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               infrastructureReport.InfrastructureReportTest = val1;
+               Assert.AreEqual(val1, infrastructureReport.InfrastructureReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               infrastructureReport.InfrastructureTVItemLanguage = val2;
+               Assert.AreEqual(val2, infrastructureReport.InfrastructureTVItemLanguage);
+               TVItemLanguage val3 = new TVItemLanguage();
+               infrastructureReport.SeeOtherTVItemLanguage = val3;
+               Assert.AreEqual(val3, infrastructureReport.SeeOtherTVItemLanguage);
+               TVItemLanguage val4 = new TVItemLanguage();
+               infrastructureReport.CivicAddressTVItemLanguage = val4;
+               Assert.AreEqual(val4, infrastructureReport.CivicAddressTVItemLanguage);
+               TVItemLanguage val5 = new TVItemLanguage();
+               infrastructureReport.LastUpdateContactTVItemLanguage = val5;
+               Assert.AreEqual(val5, infrastructureReport.LastUpdateContactTVItemLanguage);
+               string val6 = "Some text";
+               infrastructureReport.InfrastructureTypeText = val6;
+               Assert.AreEqual(val6, infrastructureReport.InfrastructureTypeText);
+               string val7 = "Some text";
+               infrastructureReport.FacilityTypeText = val7;
+               Assert.AreEqual(val7, infrastructureReport.FacilityTypeText);
+               string val8 = "Some text";
+               infrastructureReport.AerationTypeText = val8;
+               Assert.AreEqual(val8, infrastructureReport.AerationTypeText);
+               string val9 = "Some text";
+               infrastructureReport.PreliminaryTreatmentTypeText = val9;
+               Assert.AreEqual(val9, infrastructureReport.PreliminaryTreatmentTypeText);
+               string val10 = "Some text";
+               infrastructureReport.PrimaryTreatmentTypeText = val10;
+               Assert.AreEqual(val10, infrastructureReport.PrimaryTreatmentTypeText);
+               string val11 = "Some text";
+               infrastructureReport.SecondaryTreatmentTypeText = val11;
+               Assert.AreEqual(val11, infrastructureReport.SecondaryTreatmentTypeText);
+               string val12 = "Some text";
+               infrastructureReport.TertiaryTreatmentTypeText = val12;
+               Assert.AreEqual(val12, infrastructureReport.TertiaryTreatmentTypeText);
+               string val13 = "Some text";
+               infrastructureReport.TreatmentTypeText = val13;
+               Assert.AreEqual(val13, infrastructureReport.TreatmentTypeText);
+               string val14 = "Some text";
+               infrastructureReport.DisinfectionTypeText = val14;
+               Assert.AreEqual(val14, infrastructureReport.DisinfectionTypeText);
+               string val15 = "Some text";
+               infrastructureReport.CollectionSystemTypeText = val15;
+               Assert.AreEqual(val15, infrastructureReport.CollectionSystemTypeText);
+               string val16 = "Some text";
+               infrastructureReport.AlarmSystemTypeText = val16;
+               Assert.AreEqual(val16, infrastructureReport.AlarmSystemTypeText);
+               int val17 = 45;
+               infrastructureReport.InfrastructureID = val17;
+               Assert.AreEqual(val17, infrastructureReport.InfrastructureID);
+               int val18 = 45;
+               infrastructureReport.InfrastructureTVItemID = val18;
+               Assert.AreEqual(val18, infrastructureReport.InfrastructureTVItemID);
+               int val19 = 45;
+               infrastructureReport.PrismID = val19;
+               Assert.AreEqual(val19, infrastructureReport.PrismID);
+               int val20 = 45;
+               infrastructureReport.TPID = val20;
+               Assert.AreEqual(val20, infrastructureReport.TPID);
+               int val21 = 45;
+               infrastructureReport.LSID = val21;
+               Assert.AreEqual(val21, infrastructureReport.LSID);
+               int val22 = 45;
+               infrastructureReport.SiteID = val22;
+               Assert.AreEqual(val22, infrastructureReport.SiteID);
+               int val23 = 45;
+               infrastructureReport.Site = val23;
+               Assert.AreEqual(val23, infrastructureReport.Site);
+               string val24 = "Some text";
+               infrastructureReport.InfrastructureCategory = val24;
+               Assert.AreEqual(val24, infrastructureReport.InfrastructureCategory);
+               InfrastructureTypeEnum val25 = (InfrastructureTypeEnum)3;
+               infrastructureReport.InfrastructureType = val25;
+               Assert.AreEqual(val25, infrastructureReport.InfrastructureType);
+               FacilityTypeEnum val26 = (FacilityTypeEnum)3;
+               infrastructureReport.FacilityType = val26;
+               Assert.AreEqual(val26, infrastructureReport.FacilityType);
+               bool val27 = true;
+               infrastructureReport.IsMechanicallyAerated = val27;
+               Assert.AreEqual(val27, infrastructureReport.IsMechanicallyAerated);
+               int val28 = 45;
+               infrastructureReport.NumberOfCells = val28;
+               Assert.AreEqual(val28, infrastructureReport.NumberOfCells);
+               int val29 = 45;
+               infrastructureReport.NumberOfAeratedCells = val29;
+               Assert.AreEqual(val29, infrastructureReport.NumberOfAeratedCells);
+               AerationTypeEnum val30 = (AerationTypeEnum)3;
+               infrastructureReport.AerationType = val30;
+               Assert.AreEqual(val30, infrastructureReport.AerationType);
+               PreliminaryTreatmentTypeEnum val31 = (PreliminaryTreatmentTypeEnum)3;
+               infrastructureReport.PreliminaryTreatmentType = val31;
+               Assert.AreEqual(val31, infrastructureReport.PreliminaryTreatmentType);
+               PrimaryTreatmentTypeEnum val32 = (PrimaryTreatmentTypeEnum)3;
+               infrastructureReport.PrimaryTreatmentType = val32;
+               Assert.AreEqual(val32, infrastructureReport.PrimaryTreatmentType);
+               SecondaryTreatmentTypeEnum val33 = (SecondaryTreatmentTypeEnum)3;
+               infrastructureReport.SecondaryTreatmentType = val33;
+               Assert.AreEqual(val33, infrastructureReport.SecondaryTreatmentType);
+               TertiaryTreatmentTypeEnum val34 = (TertiaryTreatmentTypeEnum)3;
+               infrastructureReport.TertiaryTreatmentType = val34;
+               Assert.AreEqual(val34, infrastructureReport.TertiaryTreatmentType);
+               TreatmentTypeEnum val35 = (TreatmentTypeEnum)3;
+               infrastructureReport.TreatmentType = val35;
+               Assert.AreEqual(val35, infrastructureReport.TreatmentType);
+               DisinfectionTypeEnum val36 = (DisinfectionTypeEnum)3;
+               infrastructureReport.DisinfectionType = val36;
+               Assert.AreEqual(val36, infrastructureReport.DisinfectionType);
+               CollectionSystemTypeEnum val37 = (CollectionSystemTypeEnum)3;
+               infrastructureReport.CollectionSystemType = val37;
+               Assert.AreEqual(val37, infrastructureReport.CollectionSystemType);
+               AlarmSystemTypeEnum val38 = (AlarmSystemTypeEnum)3;
+               infrastructureReport.AlarmSystemType = val38;
+               Assert.AreEqual(val38, infrastructureReport.AlarmSystemType);
+               double val39 = 87.9D;
+               infrastructureReport.DesignFlow_m3_day = val39;
+               Assert.AreEqual(val39, infrastructureReport.DesignFlow_m3_day);
+               double val40 = 87.9D;
+               infrastructureReport.AverageFlow_m3_day = val40;
+               Assert.AreEqual(val40, infrastructureReport.AverageFlow_m3_day);
+               double val41 = 87.9D;
+               infrastructureReport.PeakFlow_m3_day = val41;
+               Assert.AreEqual(val41, infrastructureReport.PeakFlow_m3_day);
+               int val42 = 45;
+               infrastructureReport.PopServed = val42;
+               Assert.AreEqual(val42, infrastructureReport.PopServed);
+               bool val43 = true;
+               infrastructureReport.CanOverflow = val43;
+               Assert.AreEqual(val43, infrastructureReport.CanOverflow);
+               double val44 = 87.9D;
+               infrastructureReport.PercFlowOfTotal = val44;
+               Assert.AreEqual(val44, infrastructureReport.PercFlowOfTotal);
+               double val45 = 87.9D;
+               infrastructureReport.TimeOffset_hour = val45;
+               Assert.AreEqual(val45, infrastructureReport.TimeOffset_hour);
+               string val46 = "Some text";
+               infrastructureReport.TempCatchAllRemoveLater = val46;
+               Assert.AreEqual(val46, infrastructureReport.TempCatchAllRemoveLater);
+               double val47 = 87.9D;
+               infrastructureReport.AverageDepth_m = val47;
+               Assert.AreEqual(val47, infrastructureReport.AverageDepth_m);
+               int val48 = 45;
+               infrastructureReport.NumberOfPorts = val48;
+               Assert.AreEqual(val48, infrastructureReport.NumberOfPorts);
+               double val49 = 87.9D;
+               infrastructureReport.PortDiameter_m = val49;
+               Assert.AreEqual(val49, infrastructureReport.PortDiameter_m);
+               double val50 = 87.9D;
+               infrastructureReport.PortSpacing_m = val50;
+               Assert.AreEqual(val50, infrastructureReport.PortSpacing_m);
+               double val51 = 87.9D;
+               infrastructureReport.PortElevation_m = val51;
+               Assert.AreEqual(val51, infrastructureReport.PortElevation_m);
+               double val52 = 87.9D;
+               infrastructureReport.VerticalAngle_deg = val52;
+               Assert.AreEqual(val52, infrastructureReport.VerticalAngle_deg);
+               double val53 = 87.9D;
+               infrastructureReport.HorizontalAngle_deg = val53;
+               Assert.AreEqual(val53, infrastructureReport.HorizontalAngle_deg);
+               double val54 = 87.9D;
+               infrastructureReport.DecayRate_per_day = val54;
+               Assert.AreEqual(val54, infrastructureReport.DecayRate_per_day);
+               double val55 = 87.9D;
+               infrastructureReport.NearFieldVelocity_m_s = val55;
+               Assert.AreEqual(val55, infrastructureReport.NearFieldVelocity_m_s);
+               double val56 = 87.9D;
+               infrastructureReport.FarFieldVelocity_m_s = val56;
+               Assert.AreEqual(val56, infrastructureReport.FarFieldVelocity_m_s);
+               double val57 = 87.9D;
+               infrastructureReport.ReceivingWaterSalinity_PSU = val57;
+               Assert.AreEqual(val57, infrastructureReport.ReceivingWaterSalinity_PSU);
+               double val58 = 87.9D;
+               infrastructureReport.ReceivingWaterTemperature_C = val58;
+               Assert.AreEqual(val58, infrastructureReport.ReceivingWaterTemperature_C);
+               int val59 = 45;
+               infrastructureReport.ReceivingWater_MPN_per_100ml = val59;
+               Assert.AreEqual(val59, infrastructureReport.ReceivingWater_MPN_per_100ml);
+               double val60 = 87.9D;
+               infrastructureReport.DistanceFromShore_m = val60;
+               Assert.AreEqual(val60, infrastructureReport.DistanceFromShore_m);
+               int val61 = 45;
+               infrastructureReport.SeeOtherTVItemID = val61;
+               Assert.AreEqual(val61, infrastructureReport.SeeOtherTVItemID);
+               int val62 = 45;
+               infrastructureReport.CivicAddressTVItemID = val62;
+               Assert.AreEqual(val62, infrastructureReport.CivicAddressTVItemID);
+               DateTime val63 = new DateTime(2010, 3, 4);
+               infrastructureReport.LastUpdateDate_UTC = val63;
+               Assert.AreEqual(val63, infrastructureReport.LastUpdateDate_UTC);
+               int val64 = 45;
+               infrastructureReport.LastUpdateContactTVItemID = val64;
+               Assert.AreEqual(val64, infrastructureReport.LastUpdateContactTVItemID);
+               bool val65 = true;
+               infrastructureReport.HasErrors = val65;
+               Assert.AreEqual(val65, infrastructureReport.HasErrors);
+               IEnumerable<ValidationResult> val198 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               infrastructureReport.ValidationResults = val198;
+               Assert.AreEqual(val198, infrastructureReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

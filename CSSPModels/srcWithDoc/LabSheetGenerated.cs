@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table LabSheets** : [LabSheetID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetID), [OtherServerLabSheetID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_OtherServerLabSheetID), [SamplingPlanID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SamplingPlanID), [SamplingPlanName](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SamplingPlanName), [Year](CSSPModels.LabSheet.html#CSSPModels_LabSheet_Year), [Month](CSSPModels.LabSheet.html#CSSPModels_LabSheet_Month), [Day](CSSPModels.LabSheet.html#CSSPModels_LabSheet_Day), [RunNumber](CSSPModels.LabSheet.html#CSSPModels_LabSheet_RunNumber), [SubsectorTVItemID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SubsectorTVItemID), [MWQMRunTVItemID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_MWQMRunTVItemID), [SamplingPlanType](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SamplingPlanType), [SampleType](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SampleType), [LabSheetType](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetType), [LabSheetStatus](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetStatus), [FileName](CSSPModels.LabSheet.html#CSSPModels_LabSheet_FileName), [FileLastModifiedDate_Local](CSSPModels.LabSheet.html#CSSPModels_LabSheet_FileLastModifiedDate_Local), [FileContent](CSSPModels.LabSheet.html#CSSPModels_LabSheet_FileContent), [AcceptedOrRejectedByContactTVItemID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_AcceptedOrRejectedByContactTVItemID), [AcceptedOrRejectedDateTime](CSSPModels.LabSheet.html#CSSPModels_LabSheet_AcceptedOrRejectedDateTime), [RejectReason](CSSPModels.LabSheet.html#CSSPModels_LabSheet_RejectReason), [LastUpdateDate_UTC](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [LabSheetWeb](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetWeb), [LabSheetReport](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetReport), [HasErrors](CSSPModels.LabSheet.html#CSSPModels_LabSheet_HasErrors), [ValidationResults](CSSPModels.LabSheet.html#CSSPModels_LabSheet_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.LabSheet.html#CSSPModels_LabSheet_HasErrors), [ValidationResults](CSSPModels.LabSheet.html#CSSPModels_LabSheet_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LabSheetService](CSSPServices.LabSheetService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SamplingPlanTypeEnum](CSSPEnums.SamplingPlanTypeEnum.html), [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html), [LabSheetTypeEnum](CSSPEnums.LabSheetTypeEnum.html), [LabSheetStatusEnum](CSSPEnums.LabSheetStatusEnum.html)</para>
@@ -134,15 +134,6 @@ namespace CSSPModels
         public string RejectReason { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public LabSheetWeb LabSheetWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public LabSheetReport LabSheetReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public LabSheet() : base()
         {
@@ -150,7 +141,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetWeb
+    public partial class LabSheetWeb : LabSheet
     {
         #region Properties for web information
         /// <summary>
@@ -220,13 +211,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public LabSheetWeb()
+        public LabSheetWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetReport
+    public partial class LabSheetReport : LabSheetWeb
     {
         #region Properties for report information
         /// <summary>
@@ -239,7 +230,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public LabSheetReport()
+        public LabSheetReport() : base()
         {
         }
         #endregion Constructors

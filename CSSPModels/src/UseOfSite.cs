@@ -45,15 +45,6 @@ namespace CSSPModels
         public double? Param4 { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public UseOfSiteWeb UseOfSiteWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public UseOfSiteReport UseOfSiteReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public UseOfSite() : base()
         {
@@ -61,7 +52,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class UseOfSiteWeb
+    public partial class UseOfSiteWeb : UseOfSite
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SiteTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -76,13 +67,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public UseOfSiteWeb()
+        public UseOfSiteWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class UseOfSiteReport
+    public partial class UseOfSiteReport : UseOfSiteWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -90,7 +81,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public UseOfSiteReport()
+        public UseOfSiteReport() : base()
         {
         }
         #endregion Constructors

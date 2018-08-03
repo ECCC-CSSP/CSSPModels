@@ -44,9 +44,6 @@ namespace CSSPModels
         public string UserName { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        #endregion Properties not in DB
-
         #region Constructors
         public AspNetUser()
         {

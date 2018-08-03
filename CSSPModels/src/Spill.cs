@@ -32,15 +32,6 @@ namespace CSSPModels
         public double AverageFlow_m3_day { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public SpillWeb SpillWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public SpillReport SpillReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Spill() : base()
         {
@@ -48,7 +39,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SpillWeb
+    public partial class SpillWeb : Spill
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MunicipalityTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -60,13 +51,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public SpillWeb()
+        public SpillWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SpillReport
+    public partial class SpillReport : SpillWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -74,7 +65,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public SpillReport()
+        public SpillReport() : base()
         {
         }
         #endregion Constructors

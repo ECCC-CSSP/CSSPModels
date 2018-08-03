@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table Spills** : [SpillID](CSSPModels.Spill.html#CSSPModels_Spill_SpillID), [MunicipalityTVItemID](CSSPModels.Spill.html#CSSPModels_Spill_MunicipalityTVItemID), [InfrastructureTVItemID](CSSPModels.Spill.html#CSSPModels_Spill_InfrastructureTVItemID), [StartDateTime_Local](CSSPModels.Spill.html#CSSPModels_Spill_StartDateTime_Local), [EndDateTime_Local](CSSPModels.Spill.html#CSSPModels_Spill_EndDateTime_Local), [AverageFlow_m3_day](CSSPModels.Spill.html#CSSPModels_Spill_AverageFlow_m3_day), [LastUpdateDate_UTC](CSSPModels.Spill.html#CSSPModels_Spill_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Spill.html#CSSPModels_Spill_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [SpillWeb](CSSPModels.Spill.html#CSSPModels_Spill_SpillWeb), [SpillReport](CSSPModels.Spill.html#CSSPModels_Spill_SpillReport), [HasErrors](CSSPModels.Spill.html#CSSPModels_Spill_HasErrors), [ValidationResults](CSSPModels.Spill.html#CSSPModels_Spill_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.Spill.html#CSSPModels_Spill_HasErrors), [ValidationResults](CSSPModels.Spill.html#CSSPModels_Spill_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SpillService](CSSPServices.SpillService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -70,15 +70,6 @@ namespace CSSPModels
         public double AverageFlow_m3_day { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public SpillWeb SpillWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public SpillReport SpillReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Spill() : base()
         {
@@ -86,7 +77,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SpillWeb
+    public partial class SpillWeb : Spill
     {
         #region Properties for web information
         /// <summary>
@@ -113,13 +104,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public SpillWeb()
+        public SpillWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SpillReport
+    public partial class SpillReport : SpillWeb
     {
         #region Properties for report information
         /// <summary>
@@ -132,7 +123,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public SpillReport()
+        public SpillReport() : base()
         {
         }
         #endregion Constructors

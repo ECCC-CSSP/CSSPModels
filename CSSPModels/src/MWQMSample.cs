@@ -52,15 +52,6 @@ namespace CSSPModels
         public bool UseForOpenData { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSampleWeb MWQMSampleWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSampleReport MWQMSampleReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMSample() : base()
         {
@@ -68,7 +59,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSampleWeb
+    public partial class MWQMSampleWeb : MWQMSample
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -83,13 +74,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMSampleWeb()
+        public MWQMSampleWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSampleReport
+    public partial class MWQMSampleReport : MWQMSampleWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -97,7 +88,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMSampleReport()
+        public MWQMSampleReport() : base()
         {
         }
         #endregion Constructors

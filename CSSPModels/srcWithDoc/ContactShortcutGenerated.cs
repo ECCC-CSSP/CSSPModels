@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table ContactShortcuts** : [ContactShortcutID](CSSPModels.ContactShortcut.html#CSSPModels_ContactShortcut_ContactShortcutID), [ContactID](CSSPModels.ContactShortcut.html#CSSPModels_ContactShortcut_ContactID), [ShortCutText](CSSPModels.ContactShortcut.html#CSSPModels_ContactShortcut_ShortCutText), [ShortCutAddress](CSSPModels.ContactShortcut.html#CSSPModels_ContactShortcut_ShortCutAddress), [LastUpdateDate_UTC](CSSPModels.ContactShortcut.html#CSSPModels_ContactShortcut_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ContactShortcut.html#CSSPModels_ContactShortcut_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [ContactShortcutWeb](CSSPModels.ContactShortcut.html#CSSPModels_ContactShortcut_ContactShortcutWeb), [ContactShortcutReport](CSSPModels.ContactShortcut.html#CSSPModels_ContactShortcut_ContactShortcutReport), [HasErrors](CSSPModels.ContactShortcut.html#CSSPModels_ContactShortcut_HasErrors), [ValidationResults](CSSPModels.ContactShortcut.html#CSSPModels_ContactShortcut_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.ContactShortcut.html#CSSPModels_ContactShortcut_HasErrors), [ValidationResults](CSSPModels.ContactShortcut.html#CSSPModels_ContactShortcut_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactShortcutService](CSSPServices.ContactShortcutService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -45,15 +45,6 @@ namespace CSSPModels
         public string ShortCutAddress { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ContactShortcutWeb ContactShortcutWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ContactShortcutReport ContactShortcutReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public ContactShortcut() : base()
         {
@@ -61,7 +52,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactShortcutWeb
+    public partial class ContactShortcutWeb : ContactShortcut
     {
         #region Properties for web information
         /// <summary>
@@ -74,13 +65,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ContactShortcutWeb()
+        public ContactShortcutWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactShortcutReport
+    public partial class ContactShortcutReport : ContactShortcutWeb
     {
         #region Properties for report information
         /// <summary>
@@ -93,7 +84,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ContactShortcutReport()
+        public ContactShortcutReport() : base()
         {
         }
         #endregion Constructors

@@ -28,15 +28,6 @@ namespace CSSPModels
         public DateTime? EndDate { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSiteStartEndDateWeb MWQMSiteStartEndDateWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSiteStartEndDateReport MWQMSiteStartEndDateReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMSiteStartEndDate() : base()
         {
@@ -44,7 +35,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSiteStartEndDateWeb
+    public partial class MWQMSiteStartEndDateWeb : MWQMSiteStartEndDate
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -54,13 +45,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMSiteStartEndDateWeb()
+        public MWQMSiteStartEndDateWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSiteStartEndDateReport
+    public partial class MWQMSiteStartEndDateReport : MWQMSiteStartEndDateWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -68,7 +59,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMSiteStartEndDateReport()
+        public MWQMSiteStartEndDateReport() : base()
         {
         }
         #endregion Constructors

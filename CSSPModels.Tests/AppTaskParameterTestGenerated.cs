@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(AppTaskParameter).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void AppTaskParameter_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.AppTaskParameterName);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskParameterValue);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskParameterHasErrors);
-        }
-        [TestMethod]
         public void AppTaskParameter_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

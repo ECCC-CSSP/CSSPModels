@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table MWQMLookupMPNs** : [MWQMLookupMPNID](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_MWQMLookupMPNID), [Tubes10](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_Tubes10), [Tubes1](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_Tubes1), [Tubes01](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_Tubes01), [MPN_100ml](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_MPN_100ml), [LastUpdateDate_UTC](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [MWQMLookupMPNWeb](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_MWQMLookupMPNWeb), [MWQMLookupMPNReport](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_MWQMLookupMPNReport), [HasErrors](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_HasErrors), [ValidationResults](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_HasErrors), [ValidationResults](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMLookupMPNService](CSSPServices.MWQMLookupMPNService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -42,15 +42,6 @@ namespace CSSPModels
         public int MPN_100ml { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMLookupMPNWeb MWQMLookupMPNWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMLookupMPNReport MWQMLookupMPNReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMLookupMPN() : base()
         {
@@ -58,7 +49,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMLookupMPNWeb
+    public partial class MWQMLookupMPNWeb : MWQMLookupMPN
     {
         #region Properties for web information
         /// <summary>
@@ -71,13 +62,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMLookupMPNWeb()
+        public MWQMLookupMPNWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMLookupMPNReport
+    public partial class MWQMLookupMPNReport : MWQMLookupMPNWeb
     {
         #region Properties for report information
         /// <summary>
@@ -90,7 +81,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMLookupMPNReport()
+        public MWQMLookupMPNReport() : base()
         {
         }
         #endregion Constructors

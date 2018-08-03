@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table MWQMSubsectors** : [MWQMSubsectorID](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_MWQMSubsectorID), [MWQMSubsectorTVItemID](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_MWQMSubsectorTVItemID), [SubsectorHistoricKey](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_SubsectorHistoricKey), [TideLocationSIDText](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_TideLocationSIDText), [LastUpdateDate_UTC](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [MWQMSubsectorWeb](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_MWQMSubsectorWeb), [MWQMSubsectorReport](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_MWQMSubsectorReport), [HasErrors](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_HasErrors), [ValidationResults](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_HasErrors), [ValidationResults](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSubsectorService](CSSPServices.MWQMSubsectorService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -53,15 +53,6 @@ namespace CSSPModels
         public string TideLocationSIDText { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSubsectorWeb MWQMSubsectorWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSubsectorReport MWQMSubsectorReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMSubsector() : base()
         {
@@ -69,7 +60,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSubsectorWeb
+    public partial class MWQMSubsectorWeb : MWQMSubsector
     {
         #region Properties for web information
         /// <summary>
@@ -89,13 +80,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMSubsectorWeb()
+        public MWQMSubsectorWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSubsectorReport
+    public partial class MWQMSubsectorReport : MWQMSubsectorWeb
     {
         #region Properties for report information
         /// <summary>
@@ -108,7 +99,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMSubsectorReport()
+        public MWQMSubsectorReport() : base()
         {
         }
         #endregion Constructors

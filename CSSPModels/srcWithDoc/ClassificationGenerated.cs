@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table Classifications** : [ClassificationID](CSSPModels.Classification.html#CSSPModels_Classification_ClassificationID), [ClassificationTVItemID](CSSPModels.Classification.html#CSSPModels_Classification_ClassificationTVItemID), [ClassificationType](CSSPModels.Classification.html#CSSPModels_Classification_ClassificationType), [Ordinal](CSSPModels.Classification.html#CSSPModels_Classification_Ordinal), [LastUpdateDate_UTC](CSSPModels.Classification.html#CSSPModels_Classification_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Classification.html#CSSPModels_Classification_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [ClassificationWeb](CSSPModels.Classification.html#CSSPModels_Classification_ClassificationWeb), [ClassificationReport](CSSPModels.Classification.html#CSSPModels_Classification_ClassificationReport), [HasErrors](CSSPModels.Classification.html#CSSPModels_Classification_HasErrors), [ValidationResults](CSSPModels.Classification.html#CSSPModels_Classification_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.Classification.html#CSSPModels_Classification_HasErrors), [ValidationResults](CSSPModels.Classification.html#CSSPModels_Classification_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ClassificationService](CSSPServices.ClassificationService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ClassificationTypeEnum](CSSPEnums.ClassificationTypeEnum.html)</para>
@@ -53,15 +53,6 @@ namespace CSSPModels
         public int Ordinal { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ClassificationWeb ClassificationWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ClassificationReport ClassificationReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Classification() : base()
         {
@@ -69,7 +60,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClassificationWeb
+    public partial class ClassificationWeb : Classification
     {
         #region Properties for web information
         /// <summary>
@@ -91,13 +82,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ClassificationWeb()
+        public ClassificationWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClassificationReport
+    public partial class ClassificationReport : ClassificationWeb
     {
         #region Properties for report information
         /// <summary>
@@ -110,7 +101,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ClassificationReport()
+        public ClassificationReport() : base()
         {
         }
         #endregion Constructors

@@ -60,21 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(BoxModelCalNumb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void BoxModelCalNumb_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.BoxModelCalNumbError);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelCalNumbBoxModelResultType);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelCalNumbCalLength_m);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelCalNumbCalRadius_m);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelCalNumbCalSurface_m2);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelCalNumbCalVolume_m3);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelCalNumbCalWidth_m);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelCalNumbFixLength);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelCalNumbFixWidth);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelCalNumbBoxModelResultTypeText);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelCalNumbHasErrors);
-        }
-        [TestMethod]
         public void BoxModelCalNumb_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

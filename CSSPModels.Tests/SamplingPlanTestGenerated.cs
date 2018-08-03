@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private SamplingPlan samplingPlan { get; set; }
+        private SamplingPlanWeb samplingPlanWeb { get; set; }
+        private SamplingPlanReport samplingPlanReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public SamplingPlanTest()
         {
             samplingPlan = new SamplingPlan();
+            samplingPlanWeb = new SamplingPlanWeb();
+            samplingPlanReport = new SamplingPlanReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void SamplingPlan_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SamplingPlanID", "IsActive", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "AnalyzeMethodDefault", "SampleMatrixDefault", "LaboratoryDefault", "BackupDirectory", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "SamplingPlanWeb", "SamplingPlanReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.SamplingPlan).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlan).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(SamplingPlan).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void SamplingPlanWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "ProvinceTVItemLanguage", "CreatorTVItemLanguage", "SamplingPlanFileTVItemLanguage", "LastUpdateContactTVItemLanguage", "SampleTypeText", "SamplingPlanTypeText", "LabSheetTypeText", "SamplingPlanID", "IsActive", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "AnalyzeMethodDefault", "SampleMatrixDefault", "LaboratoryDefault", "BackupDirectory", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void SamplingPlanReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "SamplingPlanReportTest", "ProvinceTVItemLanguage", "CreatorTVItemLanguage", "SamplingPlanFileTVItemLanguage", "LastUpdateContactTVItemLanguage", "SampleTypeText", "SamplingPlanTypeText", "LabSheetTypeText", "SamplingPlanID", "IsActive", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "AnalyzeMethodDefault", "SampleMatrixDefault", "LaboratoryDefault", "BackupDirectory", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,36 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void SamplingPlanWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void SamplingPlanReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void SamplingPlan_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(SamplingPlan).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void SamplingPlan_Every_Property_Has_A_Resource_OK()
+        public void SamplingPlanWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanSamplingPlanID);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanIsActive);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanSamplingPlanName);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanForGroupName);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanSampleType);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanSamplingPlanType);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanLabSheetType);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanProvinceTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanCreatorTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanYear);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanAccessCode);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanDailyDuplicatePrecisionCriteria);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanIntertechDuplicatePrecisionCriteria);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanIncludeLaboratoryQAQC);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanApprovalCode);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanSamplingPlanFileTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanAnalyzeMethodDefault);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanSampleMatrixDefault);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanLaboratoryDefault);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanBackupDirectory);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanHasErrors);
+             Assert.IsTrue(typeof(SamplingPlanWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void SamplingPlanReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(SamplingPlanReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void SamplingPlan_Every_Property_Has_Get_Set_Test()
@@ -210,9 +331,206 @@ namespace CSSPModels.Tests
                bool val23 = true;
                samplingPlan.HasErrors = val23;
                Assert.AreEqual(val23, samplingPlan.HasErrors);
-               IEnumerable<ValidationResult> val76 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               samplingPlan.ValidationResults = val76;
-               Assert.AreEqual(val76, samplingPlan.ValidationResults);
+               IEnumerable<ValidationResult> val72 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               samplingPlan.ValidationResults = val72;
+               Assert.AreEqual(val72, samplingPlan.ValidationResults);
+        }
+        [TestMethod]
+        public void SamplingPlanWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               samplingPlanWeb.ProvinceTVItemLanguage = val1;
+               Assert.AreEqual(val1, samplingPlanWeb.ProvinceTVItemLanguage);
+               TVItemLanguage val2 = new TVItemLanguage();
+               samplingPlanWeb.CreatorTVItemLanguage = val2;
+               Assert.AreEqual(val2, samplingPlanWeb.CreatorTVItemLanguage);
+               TVItemLanguage val3 = new TVItemLanguage();
+               samplingPlanWeb.SamplingPlanFileTVItemLanguage = val3;
+               Assert.AreEqual(val3, samplingPlanWeb.SamplingPlanFileTVItemLanguage);
+               TVItemLanguage val4 = new TVItemLanguage();
+               samplingPlanWeb.LastUpdateContactTVItemLanguage = val4;
+               Assert.AreEqual(val4, samplingPlanWeb.LastUpdateContactTVItemLanguage);
+               string val5 = "Some text";
+               samplingPlanWeb.SampleTypeText = val5;
+               Assert.AreEqual(val5, samplingPlanWeb.SampleTypeText);
+               string val6 = "Some text";
+               samplingPlanWeb.SamplingPlanTypeText = val6;
+               Assert.AreEqual(val6, samplingPlanWeb.SamplingPlanTypeText);
+               string val7 = "Some text";
+               samplingPlanWeb.LabSheetTypeText = val7;
+               Assert.AreEqual(val7, samplingPlanWeb.LabSheetTypeText);
+               int val8 = 45;
+               samplingPlanWeb.SamplingPlanID = val8;
+               Assert.AreEqual(val8, samplingPlanWeb.SamplingPlanID);
+               bool val9 = true;
+               samplingPlanWeb.IsActive = val9;
+               Assert.AreEqual(val9, samplingPlanWeb.IsActive);
+               string val10 = "Some text";
+               samplingPlanWeb.SamplingPlanName = val10;
+               Assert.AreEqual(val10, samplingPlanWeb.SamplingPlanName);
+               string val11 = "Some text";
+               samplingPlanWeb.ForGroupName = val11;
+               Assert.AreEqual(val11, samplingPlanWeb.ForGroupName);
+               SampleTypeEnum val12 = (SampleTypeEnum)3;
+               samplingPlanWeb.SampleType = val12;
+               Assert.AreEqual(val12, samplingPlanWeb.SampleType);
+               SamplingPlanTypeEnum val13 = (SamplingPlanTypeEnum)3;
+               samplingPlanWeb.SamplingPlanType = val13;
+               Assert.AreEqual(val13, samplingPlanWeb.SamplingPlanType);
+               LabSheetTypeEnum val14 = (LabSheetTypeEnum)3;
+               samplingPlanWeb.LabSheetType = val14;
+               Assert.AreEqual(val14, samplingPlanWeb.LabSheetType);
+               int val15 = 45;
+               samplingPlanWeb.ProvinceTVItemID = val15;
+               Assert.AreEqual(val15, samplingPlanWeb.ProvinceTVItemID);
+               int val16 = 45;
+               samplingPlanWeb.CreatorTVItemID = val16;
+               Assert.AreEqual(val16, samplingPlanWeb.CreatorTVItemID);
+               int val17 = 45;
+               samplingPlanWeb.Year = val17;
+               Assert.AreEqual(val17, samplingPlanWeb.Year);
+               string val18 = "Some text";
+               samplingPlanWeb.AccessCode = val18;
+               Assert.AreEqual(val18, samplingPlanWeb.AccessCode);
+               double val19 = 87.9D;
+               samplingPlanWeb.DailyDuplicatePrecisionCriteria = val19;
+               Assert.AreEqual(val19, samplingPlanWeb.DailyDuplicatePrecisionCriteria);
+               double val20 = 87.9D;
+               samplingPlanWeb.IntertechDuplicatePrecisionCriteria = val20;
+               Assert.AreEqual(val20, samplingPlanWeb.IntertechDuplicatePrecisionCriteria);
+               bool val21 = true;
+               samplingPlanWeb.IncludeLaboratoryQAQC = val21;
+               Assert.AreEqual(val21, samplingPlanWeb.IncludeLaboratoryQAQC);
+               string val22 = "Some text";
+               samplingPlanWeb.ApprovalCode = val22;
+               Assert.AreEqual(val22, samplingPlanWeb.ApprovalCode);
+               int val23 = 45;
+               samplingPlanWeb.SamplingPlanFileTVItemID = val23;
+               Assert.AreEqual(val23, samplingPlanWeb.SamplingPlanFileTVItemID);
+               AnalyzeMethodEnum val24 = (AnalyzeMethodEnum)3;
+               samplingPlanWeb.AnalyzeMethodDefault = val24;
+               Assert.AreEqual(val24, samplingPlanWeb.AnalyzeMethodDefault);
+               SampleMatrixEnum val25 = (SampleMatrixEnum)3;
+               samplingPlanWeb.SampleMatrixDefault = val25;
+               Assert.AreEqual(val25, samplingPlanWeb.SampleMatrixDefault);
+               LaboratoryEnum val26 = (LaboratoryEnum)3;
+               samplingPlanWeb.LaboratoryDefault = val26;
+               Assert.AreEqual(val26, samplingPlanWeb.LaboratoryDefault);
+               string val27 = "Some text";
+               samplingPlanWeb.BackupDirectory = val27;
+               Assert.AreEqual(val27, samplingPlanWeb.BackupDirectory);
+               DateTime val28 = new DateTime(2010, 3, 4);
+               samplingPlanWeb.LastUpdateDate_UTC = val28;
+               Assert.AreEqual(val28, samplingPlanWeb.LastUpdateDate_UTC);
+               int val29 = 45;
+               samplingPlanWeb.LastUpdateContactTVItemID = val29;
+               Assert.AreEqual(val29, samplingPlanWeb.LastUpdateContactTVItemID);
+               bool val30 = true;
+               samplingPlanWeb.HasErrors = val30;
+               Assert.AreEqual(val30, samplingPlanWeb.HasErrors);
+               IEnumerable<ValidationResult> val93 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               samplingPlanWeb.ValidationResults = val93;
+               Assert.AreEqual(val93, samplingPlanWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void SamplingPlanReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               samplingPlanReport.SamplingPlanReportTest = val1;
+               Assert.AreEqual(val1, samplingPlanReport.SamplingPlanReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               samplingPlanReport.ProvinceTVItemLanguage = val2;
+               Assert.AreEqual(val2, samplingPlanReport.ProvinceTVItemLanguage);
+               TVItemLanguage val3 = new TVItemLanguage();
+               samplingPlanReport.CreatorTVItemLanguage = val3;
+               Assert.AreEqual(val3, samplingPlanReport.CreatorTVItemLanguage);
+               TVItemLanguage val4 = new TVItemLanguage();
+               samplingPlanReport.SamplingPlanFileTVItemLanguage = val4;
+               Assert.AreEqual(val4, samplingPlanReport.SamplingPlanFileTVItemLanguage);
+               TVItemLanguage val5 = new TVItemLanguage();
+               samplingPlanReport.LastUpdateContactTVItemLanguage = val5;
+               Assert.AreEqual(val5, samplingPlanReport.LastUpdateContactTVItemLanguage);
+               string val6 = "Some text";
+               samplingPlanReport.SampleTypeText = val6;
+               Assert.AreEqual(val6, samplingPlanReport.SampleTypeText);
+               string val7 = "Some text";
+               samplingPlanReport.SamplingPlanTypeText = val7;
+               Assert.AreEqual(val7, samplingPlanReport.SamplingPlanTypeText);
+               string val8 = "Some text";
+               samplingPlanReport.LabSheetTypeText = val8;
+               Assert.AreEqual(val8, samplingPlanReport.LabSheetTypeText);
+               int val9 = 45;
+               samplingPlanReport.SamplingPlanID = val9;
+               Assert.AreEqual(val9, samplingPlanReport.SamplingPlanID);
+               bool val10 = true;
+               samplingPlanReport.IsActive = val10;
+               Assert.AreEqual(val10, samplingPlanReport.IsActive);
+               string val11 = "Some text";
+               samplingPlanReport.SamplingPlanName = val11;
+               Assert.AreEqual(val11, samplingPlanReport.SamplingPlanName);
+               string val12 = "Some text";
+               samplingPlanReport.ForGroupName = val12;
+               Assert.AreEqual(val12, samplingPlanReport.ForGroupName);
+               SampleTypeEnum val13 = (SampleTypeEnum)3;
+               samplingPlanReport.SampleType = val13;
+               Assert.AreEqual(val13, samplingPlanReport.SampleType);
+               SamplingPlanTypeEnum val14 = (SamplingPlanTypeEnum)3;
+               samplingPlanReport.SamplingPlanType = val14;
+               Assert.AreEqual(val14, samplingPlanReport.SamplingPlanType);
+               LabSheetTypeEnum val15 = (LabSheetTypeEnum)3;
+               samplingPlanReport.LabSheetType = val15;
+               Assert.AreEqual(val15, samplingPlanReport.LabSheetType);
+               int val16 = 45;
+               samplingPlanReport.ProvinceTVItemID = val16;
+               Assert.AreEqual(val16, samplingPlanReport.ProvinceTVItemID);
+               int val17 = 45;
+               samplingPlanReport.CreatorTVItemID = val17;
+               Assert.AreEqual(val17, samplingPlanReport.CreatorTVItemID);
+               int val18 = 45;
+               samplingPlanReport.Year = val18;
+               Assert.AreEqual(val18, samplingPlanReport.Year);
+               string val19 = "Some text";
+               samplingPlanReport.AccessCode = val19;
+               Assert.AreEqual(val19, samplingPlanReport.AccessCode);
+               double val20 = 87.9D;
+               samplingPlanReport.DailyDuplicatePrecisionCriteria = val20;
+               Assert.AreEqual(val20, samplingPlanReport.DailyDuplicatePrecisionCriteria);
+               double val21 = 87.9D;
+               samplingPlanReport.IntertechDuplicatePrecisionCriteria = val21;
+               Assert.AreEqual(val21, samplingPlanReport.IntertechDuplicatePrecisionCriteria);
+               bool val22 = true;
+               samplingPlanReport.IncludeLaboratoryQAQC = val22;
+               Assert.AreEqual(val22, samplingPlanReport.IncludeLaboratoryQAQC);
+               string val23 = "Some text";
+               samplingPlanReport.ApprovalCode = val23;
+               Assert.AreEqual(val23, samplingPlanReport.ApprovalCode);
+               int val24 = 45;
+               samplingPlanReport.SamplingPlanFileTVItemID = val24;
+               Assert.AreEqual(val24, samplingPlanReport.SamplingPlanFileTVItemID);
+               AnalyzeMethodEnum val25 = (AnalyzeMethodEnum)3;
+               samplingPlanReport.AnalyzeMethodDefault = val25;
+               Assert.AreEqual(val25, samplingPlanReport.AnalyzeMethodDefault);
+               SampleMatrixEnum val26 = (SampleMatrixEnum)3;
+               samplingPlanReport.SampleMatrixDefault = val26;
+               Assert.AreEqual(val26, samplingPlanReport.SampleMatrixDefault);
+               LaboratoryEnum val27 = (LaboratoryEnum)3;
+               samplingPlanReport.LaboratoryDefault = val27;
+               Assert.AreEqual(val27, samplingPlanReport.LaboratoryDefault);
+               string val28 = "Some text";
+               samplingPlanReport.BackupDirectory = val28;
+               Assert.AreEqual(val28, samplingPlanReport.BackupDirectory);
+               DateTime val29 = new DateTime(2010, 3, 4);
+               samplingPlanReport.LastUpdateDate_UTC = val29;
+               Assert.AreEqual(val29, samplingPlanReport.LastUpdateDate_UTC);
+               int val30 = 45;
+               samplingPlanReport.LastUpdateContactTVItemID = val30;
+               Assert.AreEqual(val30, samplingPlanReport.LastUpdateContactTVItemID);
+               bool val31 = true;
+               samplingPlanReport.HasErrors = val31;
+               Assert.AreEqual(val31, samplingPlanReport.HasErrors);
+               IEnumerable<ValidationResult> val96 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               samplingPlanReport.ValidationResults = val96;
+               Assert.AreEqual(val96, samplingPlanReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

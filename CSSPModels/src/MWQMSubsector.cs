@@ -28,15 +28,6 @@ namespace CSSPModels
         public string TideLocationSIDText { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSubsectorWeb MWQMSubsectorWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSubsectorReport MWQMSubsectorReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMSubsector() : base()
         {
@@ -44,7 +35,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSubsectorWeb
+    public partial class MWQMSubsectorWeb : MWQMSubsector
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSubsectorTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -54,13 +45,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMSubsectorWeb()
+        public MWQMSubsectorWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSubsectorReport
+    public partial class MWQMSubsectorReport : MWQMSubsectorWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -68,7 +59,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMSubsectorReport()
+        public MWQMSubsectorReport() : base()
         {
         }
         #endregion Constructors

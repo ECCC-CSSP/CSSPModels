@@ -34,15 +34,6 @@ namespace CSSPModels
         public bool ReopeningAllTypes { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailDistributionListContactWeb EmailDistributionListContactWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailDistributionListContactReport EmailDistributionListContactReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public EmailDistributionListContact() : base()
         {
@@ -50,7 +41,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListContactWeb
+    public partial class EmailDistributionListContactWeb : EmailDistributionListContact
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -58,13 +49,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public EmailDistributionListContactWeb()
+        public EmailDistributionListContactWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListContactReport
+    public partial class EmailDistributionListContactReport : EmailDistributionListContactWeb
     {
         #region Properties for report information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true)]
@@ -73,7 +64,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public EmailDistributionListContactReport()
+        public EmailDistributionListContactReport() : base()
         {
         }
         #endregion Constructors

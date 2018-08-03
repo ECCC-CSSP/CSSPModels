@@ -60,14 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(TVTypeNamesAndPath).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TVTypeNamesAndPath_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.TVTypeNamesAndPathTVTypeName);
-               Assert.IsNotNull(CSSPModelsRes.TVTypeNamesAndPathIndex);
-               Assert.IsNotNull(CSSPModelsRes.TVTypeNamesAndPathTVPath);
-               Assert.IsNotNull(CSSPModelsRes.TVTypeNamesAndPathHasErrors);
-        }
-        [TestMethod]
         public void TVTypeNamesAndPath_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

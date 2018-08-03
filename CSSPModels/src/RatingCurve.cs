@@ -25,15 +25,6 @@ namespace CSSPModels
         public string RatingCurveNumber { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public RatingCurveWeb RatingCurveWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public RatingCurveReport RatingCurveReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public RatingCurve() : base()
         {
@@ -41,7 +32,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RatingCurveWeb
+    public partial class RatingCurveWeb : RatingCurve
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -49,13 +40,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public RatingCurveWeb()
+        public RatingCurveWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RatingCurveReport
+    public partial class RatingCurveReport : RatingCurveWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -63,7 +54,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public RatingCurveReport()
+        public RatingCurveReport() : base()
         {
         }
         #endregion Constructors

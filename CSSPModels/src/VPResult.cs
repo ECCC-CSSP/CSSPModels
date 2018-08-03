@@ -35,15 +35,6 @@ namespace CSSPModels
         public double TravelTime_hour { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public VPResultWeb VPResultWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public VPResultReport VPResultReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public VPResult() : base()
         {
@@ -51,7 +42,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPResultWeb
+    public partial class VPResultWeb : VPResult
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -59,13 +50,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public VPResultWeb()
+        public VPResultWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPResultReport
+    public partial class VPResultReport : VPResultWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -73,7 +64,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public VPResultReport()
+        public VPResultReport() : base()
         {
         }
         #endregion Constructors

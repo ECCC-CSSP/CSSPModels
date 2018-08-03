@@ -49,15 +49,6 @@ namespace CSSPModels
         public string SiteComment { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public LabSheetTubeMPNDetailWeb LabSheetTubeMPNDetailWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public LabSheetTubeMPNDetailReport LabSheetTubeMPNDetailReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public LabSheetTubeMPNDetail() : base()
         {
@@ -65,7 +56,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetTubeMPNDetailWeb
+    public partial class LabSheetTubeMPNDetailWeb : LabSheetTubeMPNDetail
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -78,13 +69,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public LabSheetTubeMPNDetailWeb()
+        public LabSheetTubeMPNDetailWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetTubeMPNDetailReport
+    public partial class LabSheetTubeMPNDetailReport : LabSheetTubeMPNDetailWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -92,7 +83,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public LabSheetTubeMPNDetailReport()
+        public LabSheetTubeMPNDetailReport() : base()
         {
         }
         #endregion Constructors

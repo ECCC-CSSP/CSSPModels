@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private Contact contact { get; set; }
+        private ContactWeb contactWeb { get; set; }
+        private ContactReport contactReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public ContactTest()
         {
             contact = new Contact();
+            contactWeb = new ContactWeb();
+            contactReport = new ContactReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void Contact_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactID", "Id", "ContactTVItemID", "LoginEmail", "FirstName", "LastName", "Initial", "WebName", "ContactTitle", "IsAdmin", "EmailValidated", "Disabled", "IsNew", "SamplingPlanner_ProvincesTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ContactWeb", "ContactReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Contact).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(Contact).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(Contact).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void ContactWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "ContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "ParentTVItemID", "ContactTitleText", "ContactID", "Id", "ContactTVItemID", "LoginEmail", "FirstName", "LastName", "Initial", "WebName", "ContactTitle", "IsAdmin", "EmailValidated", "Disabled", "IsNew", "SamplingPlanner_ProvincesTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void ContactReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "ContactReportTest", "ContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "ParentTVItemID", "ContactTitleText", "ContactID", "Id", "ContactTVItemID", "LoginEmail", "FirstName", "LastName", "Initial", "WebName", "ContactTitle", "IsAdmin", "EmailValidated", "Disabled", "IsNew", "SamplingPlanner_ProvincesTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,30 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void ContactWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void ContactReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void Contact_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(Contact).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Contact_Every_Property_Has_A_Resource_OK()
+        public void ContactWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.ContactContactID);
-               Assert.IsNotNull(CSSPModelsRes.ContactId);
-               Assert.IsNotNull(CSSPModelsRes.ContactContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.ContactLoginEmail);
-               Assert.IsNotNull(CSSPModelsRes.ContactFirstName);
-               Assert.IsNotNull(CSSPModelsRes.ContactLastName);
-               Assert.IsNotNull(CSSPModelsRes.ContactInitial);
-               Assert.IsNotNull(CSSPModelsRes.ContactWebName);
-               Assert.IsNotNull(CSSPModelsRes.ContactContactTitle);
-               Assert.IsNotNull(CSSPModelsRes.ContactIsAdmin);
-               Assert.IsNotNull(CSSPModelsRes.ContactEmailValidated);
-               Assert.IsNotNull(CSSPModelsRes.ContactDisabled);
-               Assert.IsNotNull(CSSPModelsRes.ContactIsNew);
-               Assert.IsNotNull(CSSPModelsRes.ContactSamplingPlanner_ProvincesTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.ContactLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.ContactLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.ContactHasErrors);
+             Assert.IsTrue(typeof(ContactWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void ContactReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(ContactReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void Contact_Every_Property_Has_Get_Set_Test()
@@ -186,9 +313,152 @@ namespace CSSPModels.Tests
                bool val17 = true;
                contact.HasErrors = val17;
                Assert.AreEqual(val17, contact.HasErrors);
-               IEnumerable<ValidationResult> val58 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               contact.ValidationResults = val58;
-               Assert.AreEqual(val58, contact.ValidationResults);
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               contact.ValidationResults = val54;
+               Assert.AreEqual(val54, contact.ValidationResults);
+        }
+        [TestMethod]
+        public void ContactWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               contactWeb.ContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, contactWeb.ContactTVItemLanguage);
+               TVItemLanguage val2 = new TVItemLanguage();
+               contactWeb.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, contactWeb.LastUpdateContactTVItemLanguage);
+               int val3 = 45;
+               contactWeb.ParentTVItemID = val3;
+               Assert.AreEqual(val3, contactWeb.ParentTVItemID);
+               string val4 = "Some text";
+               contactWeb.ContactTitleText = val4;
+               Assert.AreEqual(val4, contactWeb.ContactTitleText);
+               int val5 = 45;
+               contactWeb.ContactID = val5;
+               Assert.AreEqual(val5, contactWeb.ContactID);
+               string val6 = "Some text";
+               contactWeb.Id = val6;
+               Assert.AreEqual(val6, contactWeb.Id);
+               int val7 = 45;
+               contactWeb.ContactTVItemID = val7;
+               Assert.AreEqual(val7, contactWeb.ContactTVItemID);
+               string val8 = "Some text";
+               contactWeb.LoginEmail = val8;
+               Assert.AreEqual(val8, contactWeb.LoginEmail);
+               string val9 = "Some text";
+               contactWeb.FirstName = val9;
+               Assert.AreEqual(val9, contactWeb.FirstName);
+               string val10 = "Some text";
+               contactWeb.LastName = val10;
+               Assert.AreEqual(val10, contactWeb.LastName);
+               string val11 = "Some text";
+               contactWeb.Initial = val11;
+               Assert.AreEqual(val11, contactWeb.Initial);
+               string val12 = "Some text";
+               contactWeb.WebName = val12;
+               Assert.AreEqual(val12, contactWeb.WebName);
+               ContactTitleEnum val13 = (ContactTitleEnum)3;
+               contactWeb.ContactTitle = val13;
+               Assert.AreEqual(val13, contactWeb.ContactTitle);
+               bool val14 = true;
+               contactWeb.IsAdmin = val14;
+               Assert.AreEqual(val14, contactWeb.IsAdmin);
+               bool val15 = true;
+               contactWeb.EmailValidated = val15;
+               Assert.AreEqual(val15, contactWeb.EmailValidated);
+               bool val16 = true;
+               contactWeb.Disabled = val16;
+               Assert.AreEqual(val16, contactWeb.Disabled);
+               bool val17 = true;
+               contactWeb.IsNew = val17;
+               Assert.AreEqual(val17, contactWeb.IsNew);
+               string val18 = "Some text";
+               contactWeb.SamplingPlanner_ProvincesTVItemID = val18;
+               Assert.AreEqual(val18, contactWeb.SamplingPlanner_ProvincesTVItemID);
+               DateTime val19 = new DateTime(2010, 3, 4);
+               contactWeb.LastUpdateDate_UTC = val19;
+               Assert.AreEqual(val19, contactWeb.LastUpdateDate_UTC);
+               int val20 = 45;
+               contactWeb.LastUpdateContactTVItemID = val20;
+               Assert.AreEqual(val20, contactWeb.LastUpdateContactTVItemID);
+               bool val21 = true;
+               contactWeb.HasErrors = val21;
+               Assert.AreEqual(val21, contactWeb.HasErrors);
+               IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               contactWeb.ValidationResults = val66;
+               Assert.AreEqual(val66, contactWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void ContactReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               contactReport.ContactReportTest = val1;
+               Assert.AreEqual(val1, contactReport.ContactReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               contactReport.ContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, contactReport.ContactTVItemLanguage);
+               TVItemLanguage val3 = new TVItemLanguage();
+               contactReport.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, contactReport.LastUpdateContactTVItemLanguage);
+               int val4 = 45;
+               contactReport.ParentTVItemID = val4;
+               Assert.AreEqual(val4, contactReport.ParentTVItemID);
+               string val5 = "Some text";
+               contactReport.ContactTitleText = val5;
+               Assert.AreEqual(val5, contactReport.ContactTitleText);
+               int val6 = 45;
+               contactReport.ContactID = val6;
+               Assert.AreEqual(val6, contactReport.ContactID);
+               string val7 = "Some text";
+               contactReport.Id = val7;
+               Assert.AreEqual(val7, contactReport.Id);
+               int val8 = 45;
+               contactReport.ContactTVItemID = val8;
+               Assert.AreEqual(val8, contactReport.ContactTVItemID);
+               string val9 = "Some text";
+               contactReport.LoginEmail = val9;
+               Assert.AreEqual(val9, contactReport.LoginEmail);
+               string val10 = "Some text";
+               contactReport.FirstName = val10;
+               Assert.AreEqual(val10, contactReport.FirstName);
+               string val11 = "Some text";
+               contactReport.LastName = val11;
+               Assert.AreEqual(val11, contactReport.LastName);
+               string val12 = "Some text";
+               contactReport.Initial = val12;
+               Assert.AreEqual(val12, contactReport.Initial);
+               string val13 = "Some text";
+               contactReport.WebName = val13;
+               Assert.AreEqual(val13, contactReport.WebName);
+               ContactTitleEnum val14 = (ContactTitleEnum)3;
+               contactReport.ContactTitle = val14;
+               Assert.AreEqual(val14, contactReport.ContactTitle);
+               bool val15 = true;
+               contactReport.IsAdmin = val15;
+               Assert.AreEqual(val15, contactReport.IsAdmin);
+               bool val16 = true;
+               contactReport.EmailValidated = val16;
+               Assert.AreEqual(val16, contactReport.EmailValidated);
+               bool val17 = true;
+               contactReport.Disabled = val17;
+               Assert.AreEqual(val17, contactReport.Disabled);
+               bool val18 = true;
+               contactReport.IsNew = val18;
+               Assert.AreEqual(val18, contactReport.IsNew);
+               string val19 = "Some text";
+               contactReport.SamplingPlanner_ProvincesTVItemID = val19;
+               Assert.AreEqual(val19, contactReport.SamplingPlanner_ProvincesTVItemID);
+               DateTime val20 = new DateTime(2010, 3, 4);
+               contactReport.LastUpdateDate_UTC = val20;
+               Assert.AreEqual(val20, contactReport.LastUpdateDate_UTC);
+               int val21 = 45;
+               contactReport.LastUpdateContactTVItemID = val21;
+               Assert.AreEqual(val21, contactReport.LastUpdateContactTVItemID);
+               bool val22 = true;
+               contactReport.HasErrors = val22;
+               Assert.AreEqual(val22, contactReport.HasErrors);
+               IEnumerable<ValidationResult> val69 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               contactReport.ValidationResults = val69;
+               Assert.AreEqual(val69, contactReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

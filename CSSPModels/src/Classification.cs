@@ -27,15 +27,6 @@ namespace CSSPModels
         public int Ordinal { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ClassificationWeb ClassificationWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ClassificationReport ClassificationReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Classification() : base()
         {
@@ -43,7 +34,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClassificationWeb
+    public partial class ClassificationWeb : Classification
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -54,13 +45,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ClassificationWeb()
+        public ClassificationWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClassificationReport
+    public partial class ClassificationReport : ClassificationWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -68,7 +59,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ClassificationReport()
+        public ClassificationReport() : base()
         {
         }
         #endregion Constructors

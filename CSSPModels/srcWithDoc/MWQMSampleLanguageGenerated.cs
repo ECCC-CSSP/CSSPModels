@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table MWQMSampleLanguages** : [MWQMSampleLanguageID](CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_MWQMSampleLanguageID), [MWQMSampleID](CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_MWQMSampleID), [Language](CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_Language), [MWQMSampleNote](CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_MWQMSampleNote), [TranslationStatus](CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [MWQMSampleLanguageWeb](CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_MWQMSampleLanguageWeb), [MWQMSampleLanguageReport](CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_MWQMSampleLanguageReport), [HasErrors](CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_HasErrors), [ValidationResults](CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_HasErrors), [ValidationResults](CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSampleLanguageService](CSSPServices.MWQMSampleLanguageService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
@@ -57,15 +57,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSampleLanguageWeb MWQMSampleLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSampleLanguageReport MWQMSampleLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMSampleLanguage() : base()
         {
@@ -73,7 +64,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSampleLanguageWeb
+    public partial class MWQMSampleLanguageWeb : MWQMSampleLanguage
     {
         #region Properties for web information
         /// <summary>
@@ -104,13 +95,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMSampleLanguageWeb()
+        public MWQMSampleLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSampleLanguageReport
+    public partial class MWQMSampleLanguageReport : MWQMSampleLanguageWeb
     {
         #region Properties for report information
         /// <summary>
@@ -123,7 +114,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMSampleLanguageReport()
+        public MWQMSampleLanguageReport() : base()
         {
         }
         #endregion Constructors

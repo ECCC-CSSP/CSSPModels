@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private AppTask appTask { get; set; }
+        private AppTaskWeb appTaskWeb { get; set; }
+        private AppTaskReport appTaskReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public AppTaskTest()
         {
             appTask = new AppTask();
+            appTaskWeb = new AppTaskWeb();
+            appTaskReport = new AppTaskReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void AppTask_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "AppTaskID", "TVItemID", "TVItemID2", "AppTaskCommand", "AppTaskStatus", "PercentCompleted", "Parameters", "Language", "StartDateTime_UTC", "EndDateTime_UTC", "EstimatedLength_second", "RemainingTime_second", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "AppTaskWeb", "AppTaskReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.AppTask).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(AppTask).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(AppTask).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void AppTaskWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "TVItemTVItemLanguage", "TVItem2TVItemLanguage", "LastUpdateContactTVItemLanguage", "AppTaskCommandText", "AppTaskStatusText", "LanguageText", "AppTaskID", "TVItemID", "TVItemID2", "AppTaskCommand", "AppTaskStatus", "PercentCompleted", "Parameters", "Language", "StartDateTime_UTC", "EndDateTime_UTC", "EstimatedLength_second", "RemainingTime_second", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void AppTaskReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "AppTaskReportTest", "TVItemTVItemLanguage", "TVItem2TVItemLanguage", "LastUpdateContactTVItemLanguage", "AppTaskCommandText", "AppTaskStatusText", "LanguageText", "AppTaskID", "TVItemID", "TVItemID2", "AppTaskCommand", "AppTaskStatus", "PercentCompleted", "Parameters", "Language", "StartDateTime_UTC", "EndDateTime_UTC", "EstimatedLength_second", "RemainingTime_second", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,28 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void AppTaskWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void AppTaskReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void AppTask_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(AppTask).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void AppTask_Every_Property_Has_A_Resource_OK()
+        public void AppTaskWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.AppTaskAppTaskID);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskTVItemID2);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskAppTaskCommand);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskAppTaskStatus);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskPercentCompleted);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskParameters);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskLanguage);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskStartDateTime_UTC);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskEndDateTime_UTC);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskEstimatedLength_second);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskRemainingTime_second);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.AppTaskHasErrors);
+             Assert.IsTrue(typeof(AppTaskWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void AppTaskReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(AppTaskReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void AppTask_Every_Property_Has_Get_Set_Test()
@@ -178,9 +307,152 @@ namespace CSSPModels.Tests
                bool val15 = true;
                appTask.HasErrors = val15;
                Assert.AreEqual(val15, appTask.HasErrors);
-               IEnumerable<ValidationResult> val52 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               appTask.ValidationResults = val52;
-               Assert.AreEqual(val52, appTask.ValidationResults);
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               appTask.ValidationResults = val48;
+               Assert.AreEqual(val48, appTask.ValidationResults);
+        }
+        [TestMethod]
+        public void AppTaskWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               appTaskWeb.TVItemTVItemLanguage = val1;
+               Assert.AreEqual(val1, appTaskWeb.TVItemTVItemLanguage);
+               TVItemLanguage val2 = new TVItemLanguage();
+               appTaskWeb.TVItem2TVItemLanguage = val2;
+               Assert.AreEqual(val2, appTaskWeb.TVItem2TVItemLanguage);
+               TVItemLanguage val3 = new TVItemLanguage();
+               appTaskWeb.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, appTaskWeb.LastUpdateContactTVItemLanguage);
+               string val4 = "Some text";
+               appTaskWeb.AppTaskCommandText = val4;
+               Assert.AreEqual(val4, appTaskWeb.AppTaskCommandText);
+               string val5 = "Some text";
+               appTaskWeb.AppTaskStatusText = val5;
+               Assert.AreEqual(val5, appTaskWeb.AppTaskStatusText);
+               string val6 = "Some text";
+               appTaskWeb.LanguageText = val6;
+               Assert.AreEqual(val6, appTaskWeb.LanguageText);
+               int val7 = 45;
+               appTaskWeb.AppTaskID = val7;
+               Assert.AreEqual(val7, appTaskWeb.AppTaskID);
+               int val8 = 45;
+               appTaskWeb.TVItemID = val8;
+               Assert.AreEqual(val8, appTaskWeb.TVItemID);
+               int val9 = 45;
+               appTaskWeb.TVItemID2 = val9;
+               Assert.AreEqual(val9, appTaskWeb.TVItemID2);
+               AppTaskCommandEnum val10 = (AppTaskCommandEnum)3;
+               appTaskWeb.AppTaskCommand = val10;
+               Assert.AreEqual(val10, appTaskWeb.AppTaskCommand);
+               AppTaskStatusEnum val11 = (AppTaskStatusEnum)3;
+               appTaskWeb.AppTaskStatus = val11;
+               Assert.AreEqual(val11, appTaskWeb.AppTaskStatus);
+               int val12 = 45;
+               appTaskWeb.PercentCompleted = val12;
+               Assert.AreEqual(val12, appTaskWeb.PercentCompleted);
+               string val13 = "Some text";
+               appTaskWeb.Parameters = val13;
+               Assert.AreEqual(val13, appTaskWeb.Parameters);
+               LanguageEnum val14 = (LanguageEnum)3;
+               appTaskWeb.Language = val14;
+               Assert.AreEqual(val14, appTaskWeb.Language);
+               DateTime val15 = new DateTime(2010, 3, 4);
+               appTaskWeb.StartDateTime_UTC = val15;
+               Assert.AreEqual(val15, appTaskWeb.StartDateTime_UTC);
+               DateTime val16 = new DateTime(2010, 3, 4);
+               appTaskWeb.EndDateTime_UTC = val16;
+               Assert.AreEqual(val16, appTaskWeb.EndDateTime_UTC);
+               int val17 = 45;
+               appTaskWeb.EstimatedLength_second = val17;
+               Assert.AreEqual(val17, appTaskWeb.EstimatedLength_second);
+               int val18 = 45;
+               appTaskWeb.RemainingTime_second = val18;
+               Assert.AreEqual(val18, appTaskWeb.RemainingTime_second);
+               DateTime val19 = new DateTime(2010, 3, 4);
+               appTaskWeb.LastUpdateDate_UTC = val19;
+               Assert.AreEqual(val19, appTaskWeb.LastUpdateDate_UTC);
+               int val20 = 45;
+               appTaskWeb.LastUpdateContactTVItemID = val20;
+               Assert.AreEqual(val20, appTaskWeb.LastUpdateContactTVItemID);
+               bool val21 = true;
+               appTaskWeb.HasErrors = val21;
+               Assert.AreEqual(val21, appTaskWeb.HasErrors);
+               IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               appTaskWeb.ValidationResults = val66;
+               Assert.AreEqual(val66, appTaskWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void AppTaskReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               appTaskReport.AppTaskReportTest = val1;
+               Assert.AreEqual(val1, appTaskReport.AppTaskReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               appTaskReport.TVItemTVItemLanguage = val2;
+               Assert.AreEqual(val2, appTaskReport.TVItemTVItemLanguage);
+               TVItemLanguage val3 = new TVItemLanguage();
+               appTaskReport.TVItem2TVItemLanguage = val3;
+               Assert.AreEqual(val3, appTaskReport.TVItem2TVItemLanguage);
+               TVItemLanguage val4 = new TVItemLanguage();
+               appTaskReport.LastUpdateContactTVItemLanguage = val4;
+               Assert.AreEqual(val4, appTaskReport.LastUpdateContactTVItemLanguage);
+               string val5 = "Some text";
+               appTaskReport.AppTaskCommandText = val5;
+               Assert.AreEqual(val5, appTaskReport.AppTaskCommandText);
+               string val6 = "Some text";
+               appTaskReport.AppTaskStatusText = val6;
+               Assert.AreEqual(val6, appTaskReport.AppTaskStatusText);
+               string val7 = "Some text";
+               appTaskReport.LanguageText = val7;
+               Assert.AreEqual(val7, appTaskReport.LanguageText);
+               int val8 = 45;
+               appTaskReport.AppTaskID = val8;
+               Assert.AreEqual(val8, appTaskReport.AppTaskID);
+               int val9 = 45;
+               appTaskReport.TVItemID = val9;
+               Assert.AreEqual(val9, appTaskReport.TVItemID);
+               int val10 = 45;
+               appTaskReport.TVItemID2 = val10;
+               Assert.AreEqual(val10, appTaskReport.TVItemID2);
+               AppTaskCommandEnum val11 = (AppTaskCommandEnum)3;
+               appTaskReport.AppTaskCommand = val11;
+               Assert.AreEqual(val11, appTaskReport.AppTaskCommand);
+               AppTaskStatusEnum val12 = (AppTaskStatusEnum)3;
+               appTaskReport.AppTaskStatus = val12;
+               Assert.AreEqual(val12, appTaskReport.AppTaskStatus);
+               int val13 = 45;
+               appTaskReport.PercentCompleted = val13;
+               Assert.AreEqual(val13, appTaskReport.PercentCompleted);
+               string val14 = "Some text";
+               appTaskReport.Parameters = val14;
+               Assert.AreEqual(val14, appTaskReport.Parameters);
+               LanguageEnum val15 = (LanguageEnum)3;
+               appTaskReport.Language = val15;
+               Assert.AreEqual(val15, appTaskReport.Language);
+               DateTime val16 = new DateTime(2010, 3, 4);
+               appTaskReport.StartDateTime_UTC = val16;
+               Assert.AreEqual(val16, appTaskReport.StartDateTime_UTC);
+               DateTime val17 = new DateTime(2010, 3, 4);
+               appTaskReport.EndDateTime_UTC = val17;
+               Assert.AreEqual(val17, appTaskReport.EndDateTime_UTC);
+               int val18 = 45;
+               appTaskReport.EstimatedLength_second = val18;
+               Assert.AreEqual(val18, appTaskReport.EstimatedLength_second);
+               int val19 = 45;
+               appTaskReport.RemainingTime_second = val19;
+               Assert.AreEqual(val19, appTaskReport.RemainingTime_second);
+               DateTime val20 = new DateTime(2010, 3, 4);
+               appTaskReport.LastUpdateDate_UTC = val20;
+               Assert.AreEqual(val20, appTaskReport.LastUpdateDate_UTC);
+               int val21 = 45;
+               appTaskReport.LastUpdateContactTVItemID = val21;
+               Assert.AreEqual(val21, appTaskReport.LastUpdateContactTVItemID);
+               bool val22 = true;
+               appTaskReport.HasErrors = val22;
+               Assert.AreEqual(val22, appTaskReport.HasErrors);
+               IEnumerable<ValidationResult> val69 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               appTaskReport.ValidationResults = val69;
+               Assert.AreEqual(val69, appTaskReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

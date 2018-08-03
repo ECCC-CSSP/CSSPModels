@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table ContactPreferences** : [ContactPreferenceID](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ContactPreferenceID), [ContactID](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ContactID), [TVType](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_TVType), [MarkerSize](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_MarkerSize), [LastUpdateDate_UTC](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [ContactPreferenceWeb](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ContactPreferenceWeb), [ContactPreferenceReport](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ContactPreferenceReport), [HasErrors](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_HasErrors), [ValidationResults](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_HasErrors), [ValidationResults](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactPreferenceService](CSSPServices.ContactPreferenceService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
@@ -51,15 +51,6 @@ namespace CSSPModels
         public int MarkerSize { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ContactPreferenceWeb ContactPreferenceWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ContactPreferenceReport ContactPreferenceReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public ContactPreference() : base()
         {
@@ -67,7 +58,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactPreferenceWeb
+    public partial class ContactPreferenceWeb : ContactPreference
     {
         #region Properties for web information
         /// <summary>
@@ -89,13 +80,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ContactPreferenceWeb()
+        public ContactPreferenceWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactPreferenceReport
+    public partial class ContactPreferenceReport : ContactPreferenceWeb
     {
         #region Properties for report information
         /// <summary>
@@ -104,11 +95,11 @@ namespace CSSPModels
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
         [CSSPAllowNull]
-        public string ContactPreferenceReportText { get; set; }
+        public string ContactPreferenceReportTest { get; set; }
         #endregion Properties for report information
 
         #region Constructors
-        public ContactPreferenceReport()
+        public ContactPreferenceReport() : base()
         {
         }
         #endregion Constructors

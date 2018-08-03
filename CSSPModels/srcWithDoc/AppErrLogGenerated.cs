@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table AppErrLogs** : [AppErrLogID](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogID), [Tag](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_Tag), [LineNumber](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_LineNumber), [Source](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_Source), [Message](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_Message), [DateTime_UTC](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_DateTime_UTC), [LastUpdateDate_UTC](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [AppErrLogWeb](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogWeb), [AppErrLogReport](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogReport), [HasErrors](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_HasErrors), [ValidationResults](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_HasErrors), [ValidationResults](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppErrLogService](CSSPServices.AppErrLogService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -47,15 +47,6 @@ namespace CSSPModels
         public DateTime DateTime_UTC { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public AppErrLogWeb AppErrLogWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public AppErrLogReport AppErrLogReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public AppErrLog() : base()
         {
@@ -63,7 +54,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppErrLogWeb
+    public partial class AppErrLogWeb : AppErrLog
     {
         #region Properties for web information
         /// <summary>
@@ -76,13 +67,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public AppErrLogWeb()
+        public AppErrLogWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppErrLogReport
+    public partial class AppErrLogReport : AppErrLogWeb
     {
         #region Properties for report information
         /// <summary>
@@ -91,11 +82,11 @@ namespace CSSPModels
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
         [CSSPAllowNull]
-        public string AppErrLogTest { get; set; }
+        public string AppErrLogReportTest { get; set; }
         #endregion Properties for report information
 
         #region Constructors
-        public AppErrLogReport()
+        public AppErrLogReport() : base()
         {
         }
         #endregion Constructors

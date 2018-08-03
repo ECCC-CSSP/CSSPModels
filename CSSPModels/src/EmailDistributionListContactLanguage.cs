@@ -29,15 +29,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailDistributionListContactLanguageWeb EmailDistributionListContactLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailDistributionListContactLanguageReport EmailDistributionListContactLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public EmailDistributionListContactLanguage() : base()
         {
@@ -45,7 +36,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListContactLanguageWeb
+    public partial class EmailDistributionListContactLanguageWeb : EmailDistributionListContactLanguage
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -59,13 +50,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public EmailDistributionListContactLanguageWeb()
+        public EmailDistributionListContactLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListContactLanguageReport
+    public partial class EmailDistributionListContactLanguageReport : EmailDistributionListContactLanguageWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -73,7 +64,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public EmailDistributionListContactLanguageReport()
+        public EmailDistributionListContactLanguageReport() : base()
         {
         }
         #endregion Constructors

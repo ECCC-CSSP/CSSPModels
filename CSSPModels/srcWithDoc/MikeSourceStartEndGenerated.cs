@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table MikeSourceStartEnds** : [MikeSourceStartEndID](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_MikeSourceStartEndID), [MikeSourceID](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_MikeSourceID), [StartDateAndTime_Local](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_StartDateAndTime_Local), [EndDateAndTime_Local](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_EndDateAndTime_Local), [SourceFlowStart_m3_day](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceFlowStart_m3_day), [SourceFlowEnd_m3_day](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceFlowEnd_m3_day), [SourcePollutionStart_MPN_100ml](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourcePollutionStart_MPN_100ml), [SourcePollutionEnd_MPN_100ml](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourcePollutionEnd_MPN_100ml), [SourceTemperatureStart_C](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceTemperatureStart_C), [SourceTemperatureEnd_C](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceTemperatureEnd_C), [SourceSalinityStart_PSU](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceSalinityStart_PSU), [SourceSalinityEnd_PSU](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceSalinityEnd_PSU), [LastUpdateDate_UTC](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [MikeSourceStartEndWeb](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_MikeSourceStartEndWeb), [MikeSourceStartEndReport](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_MikeSourceStartEndReport), [HasErrors](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_HasErrors), [ValidationResults](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_HasErrors), [ValidationResults](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeSourceStartEndService](CSSPServices.MikeSourceStartEndService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -73,15 +73,6 @@ namespace CSSPModels
         public double SourceSalinityEnd_PSU { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MikeSourceStartEndWeb MikeSourceStartEndWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MikeSourceStartEndReport MikeSourceStartEndReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MikeSourceStartEnd() : base()
         {
@@ -89,7 +80,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeSourceStartEndWeb
+    public partial class MikeSourceStartEndWeb : MikeSourceStartEnd
     {
         #region Properties for web information
         /// <summary>
@@ -102,13 +93,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MikeSourceStartEndWeb()
+        public MikeSourceStartEndWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeSourceStartEndReport
+    public partial class MikeSourceStartEndReport : MikeSourceStartEndWeb
     {
         #region Properties for report information
         /// <summary>
@@ -121,7 +112,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MikeSourceStartEndReport()
+        public MikeSourceStartEndReport() : base()
         {
         }
         #endregion Constructors

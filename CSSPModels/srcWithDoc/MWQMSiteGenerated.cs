@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table MWQMSites** : [MWQMSiteID](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteID), [MWQMSiteTVItemID](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteTVItemID), [MWQMSiteNumber](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteNumber), [MWQMSiteDescription](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteDescription), [MWQMSiteLatestClassification](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteLatestClassification), [Ordinal](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_Ordinal), [LastUpdateDate_UTC](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [MWQMSiteWeb](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteWeb), [MWQMSiteReport](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteReport), [HasErrors](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_HasErrors), [ValidationResults](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_HasErrors), [ValidationResults](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSiteService](CSSPServices.MWQMSiteService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [MWQMSiteLatestClassificationEnum](CSSPEnums.MWQMSiteLatestClassificationEnum.html)</para>
@@ -57,15 +57,6 @@ namespace CSSPModels
         public int Ordinal { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSiteWeb MWQMSiteWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSiteReport MWQMSiteReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMSite() : base()
         {
@@ -73,7 +64,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSiteWeb
+    public partial class MWQMSiteWeb : MWQMSite
     {
         #region Properties for web information
         /// <summary>
@@ -102,13 +93,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMSiteWeb()
+        public MWQMSiteWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSiteReport
+    public partial class MWQMSiteReport : MWQMSiteWeb
     {
         #region Properties for report information
         /// <summary>
@@ -121,7 +112,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMSiteReport()
+        public MWQMSiteReport() : base()
         {
         }
         #endregion Constructors

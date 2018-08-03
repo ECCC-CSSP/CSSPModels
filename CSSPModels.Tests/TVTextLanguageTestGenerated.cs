@@ -60,14 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(TVTextLanguage).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TVTextLanguage_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.TVTextLanguageTVText);
-               Assert.IsNotNull(CSSPModelsRes.TVTextLanguageLanguage);
-               Assert.IsNotNull(CSSPModelsRes.TVTextLanguageLanguageText);
-               Assert.IsNotNull(CSSPModelsRes.TVTextLanguageHasErrors);
-        }
-        [TestMethod]
         public void TVTextLanguage_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

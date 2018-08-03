@@ -45,15 +45,6 @@ namespace CSSPModels
         public double? FarFieldDiffusionCoefficient { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public VPAmbientWeb VPAmbientWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public VPAmbientReport VPAmbientReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public VPAmbient() : base()
         {
@@ -61,7 +52,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPAmbientWeb
+    public partial class VPAmbientWeb : VPAmbient
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -69,13 +60,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public VPAmbientWeb()
+        public VPAmbientWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPAmbientReport
+    public partial class VPAmbientReport : VPAmbientWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -83,7 +74,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public VPAmbientReport()
+        public VPAmbientReport() : base()
         {
         }
         #endregion Constructors

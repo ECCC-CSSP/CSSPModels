@@ -35,15 +35,6 @@ namespace CSSPModels
         public int? TemplateReportSectionID { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ReportSectionWeb ReportSectionWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ReportSectionReport ReportSectionReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public ReportSection() : base()
         {
@@ -51,7 +42,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportSectionWeb
+    public partial class ReportSectionWeb : ReportSection
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -63,13 +54,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ReportSectionWeb()
+        public ReportSectionWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportSectionReport
+    public partial class ReportSectionReport : ReportSectionWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -77,7 +68,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ReportSectionReport()
+        public ReportSectionReport() : base()
         {
         }
         #endregion Constructors

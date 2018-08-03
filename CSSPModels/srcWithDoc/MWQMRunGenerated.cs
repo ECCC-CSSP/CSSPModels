@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table MWQMRuns** : [MWQMRunID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_MWQMRunID), [SubsectorTVItemID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SubsectorTVItemID), [MWQMRunTVItemID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_MWQMRunTVItemID), [RunSampleType](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RunSampleType), [DateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_DateTime_Local), [RunNumber](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RunNumber), [StartDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_StartDateTime_Local), [EndDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_EndDateTime_Local), [LabReceivedDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabReceivedDateTime_Local), [TemperatureControl1_C](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_TemperatureControl1_C), [TemperatureControl2_C](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_TemperatureControl2_C), [SeaStateAtStart_BeaufortScale](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtStart_BeaufortScale), [SeaStateAtEnd_BeaufortScale](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtEnd_BeaufortScale), [WaterLevelAtBrook_m](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_WaterLevelAtBrook_m), [WaveHightAtStart_m](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_WaveHightAtStart_m), [WaveHightAtEnd_m](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_WaveHightAtEnd_m), [SampleCrewInitials](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleCrewInitials), [AnalyzeMethod](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_AnalyzeMethod), [SampleMatrix](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleMatrix), [Laboratory](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Laboratory), [SampleStatus](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleStatus), [LabSampleApprovalContactTVItemID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabSampleApprovalContactTVItemID), [LabAnalyzeBath1IncubationStartDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabAnalyzeBath1IncubationStartDateTime_Local), [LabAnalyzeBath2IncubationStartDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabAnalyzeBath2IncubationStartDateTime_Local), [LabAnalyzeBath3IncubationStartDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabAnalyzeBath3IncubationStartDateTime_Local), [LabRunSampleApprovalDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabRunSampleApprovalDateTime_Local), [Tide_Start](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_Start), [Tide_End](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_End), [RainDay0_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay0_mm), [RainDay1_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay1_mm), [RainDay2_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay2_mm), [RainDay3_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay3_mm), [RainDay4_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay4_mm), [RainDay5_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay5_mm), [RainDay6_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay6_mm), [RainDay7_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay7_mm), [RainDay8_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay8_mm), [RainDay9_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay9_mm), [RainDay10_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay10_mm), [RemoveFromStat](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RemoveFromStat), [LastUpdateDate_UTC](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [MWQMRunWeb](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_MWQMRunWeb), [MWQMRunReport](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_MWQMRunReport), [HasErrors](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_HasErrors), [ValidationResults](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_HasErrors), [ValidationResults](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMRunService](CSSPServices.MWQMRunService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html), [BeaufortScaleEnum](CSSPEnums.BeaufortScaleEnum.html), [BeaufortScaleEnum](CSSPEnums.BeaufortScaleEnum.html), [AnalyzeMethodEnum](CSSPEnums.AnalyzeMethodEnum.html), [SampleMatrixEnum](CSSPEnums.SampleMatrixEnum.html), [LaboratoryEnum](CSSPEnums.LaboratoryEnum.html), [SampleStatusEnum](CSSPEnums.SampleStatusEnum.html), [TideTextEnum](CSSPEnums.TideTextEnum.html), [TideTextEnum](CSSPEnums.TideTextEnum.html)</para>
@@ -242,15 +242,6 @@ namespace CSSPModels
         public bool? RemoveFromStat { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMRunWeb MWQMRunWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMRunReport MWQMRunReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMRun() : base()
         {
@@ -258,7 +249,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMRunWeb
+    public partial class MWQMRunWeb : MWQMRun
     {
         #region Properties for web information
         /// <summary>
@@ -373,13 +364,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMRunWeb()
+        public MWQMRunWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMRunReport
+    public partial class MWQMRunReport : MWQMRunWeb
     {
         #region Properties for report information
         /// <summary>
@@ -392,7 +383,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMRunReport()
+        public MWQMRunReport() : base()
         {
         }
         #endregion Constructors

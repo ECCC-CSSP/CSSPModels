@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table ReportSections** : [ReportSectionID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ReportSectionID), [ReportTypeID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ReportTypeID), [TVItemID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_TVItemID), [Ordinal](CSSPModels.ReportSection.html#CSSPModels_ReportSection_Ordinal), [IsStatic](CSSPModels.ReportSection.html#CSSPModels_ReportSection_IsStatic), [ParentReportSectionID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ParentReportSectionID), [Year](CSSPModels.ReportSection.html#CSSPModels_ReportSection_Year), [Locked](CSSPModels.ReportSection.html#CSSPModels_ReportSection_Locked), [TemplateReportSectionID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_TemplateReportSectionID), [LastUpdateDate_UTC](CSSPModels.ReportSection.html#CSSPModels_ReportSection_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [ReportSectionWeb](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ReportSectionWeb), [ReportSectionReport](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ReportSectionReport), [HasErrors](CSSPModels.ReportSection.html#CSSPModels_ReportSection_HasErrors), [ValidationResults](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.ReportSection.html#CSSPModels_ReportSection_HasErrors), [ValidationResults](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ReportSectionService](CSSPServices.ReportSectionService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -68,15 +68,6 @@ namespace CSSPModels
         public int? TemplateReportSectionID { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ReportSectionWeb ReportSectionWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ReportSectionReport ReportSectionReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public ReportSection() : base()
         {
@@ -84,7 +75,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportSectionWeb
+    public partial class ReportSectionWeb : ReportSection
     {
         #region Properties for web information
         /// <summary>
@@ -111,13 +102,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ReportSectionWeb()
+        public ReportSectionWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportSectionReport
+    public partial class ReportSectionReport : ReportSectionWeb
     {
         #region Properties for report information
         /// <summary>
@@ -130,7 +121,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ReportSectionReport()
+        public ReportSectionReport() : base()
         {
         }
         #endregion Constructors

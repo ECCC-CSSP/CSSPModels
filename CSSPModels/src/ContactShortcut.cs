@@ -27,15 +27,6 @@ namespace CSSPModels
         public string ShortCutAddress { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ContactShortcutWeb ContactShortcutWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ContactShortcutReport ContactShortcutReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public ContactShortcut() : base()
         {
@@ -43,7 +34,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactShortcutWeb
+    public partial class ContactShortcutWeb : ContactShortcut
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -51,13 +42,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ContactShortcutWeb()
+        public ContactShortcutWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactShortcutReport
+    public partial class ContactShortcutReport : ContactShortcutWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -65,7 +56,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ContactShortcutReport()
+        public ContactShortcutReport() : base()
         {
         }
         #endregion Constructors

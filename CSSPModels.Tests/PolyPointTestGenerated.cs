@@ -60,14 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(PolyPoint).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void PolyPoint_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.PolyPointXCoord);
-               Assert.IsNotNull(CSSPModelsRes.PolyPointYCoord);
-               Assert.IsNotNull(CSSPModelsRes.PolyPointZ);
-               Assert.IsNotNull(CSSPModelsRes.PolyPointHasErrors);
-        }
-        [TestMethod]
         public void PolyPoint_Every_Property_Has_Get_Set_Test()
         {
                double val1 = 87.9D;

@@ -60,14 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(ContactOK).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ContactOK_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.ContactOKError);
-               Assert.IsNotNull(CSSPModelsRes.ContactOKContactID);
-               Assert.IsNotNull(CSSPModelsRes.ContactOKContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.ContactOKHasErrors);
-        }
-        [TestMethod]
         public void ContactOK_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

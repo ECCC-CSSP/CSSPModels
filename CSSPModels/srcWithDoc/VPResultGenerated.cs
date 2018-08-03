@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table VPResults** : [VPResultID](CSSPModels.VPResult.html#CSSPModels_VPResult_VPResultID), [VPScenarioID](CSSPModels.VPResult.html#CSSPModels_VPResult_VPScenarioID), [Ordinal](CSSPModels.VPResult.html#CSSPModels_VPResult_Ordinal), [Concentration_MPN_100ml](CSSPModels.VPResult.html#CSSPModels_VPResult_Concentration_MPN_100ml), [Dilution](CSSPModels.VPResult.html#CSSPModels_VPResult_Dilution), [FarFieldWidth_m](CSSPModels.VPResult.html#CSSPModels_VPResult_FarFieldWidth_m), [DispersionDistance_m](CSSPModels.VPResult.html#CSSPModels_VPResult_DispersionDistance_m), [TravelTime_hour](CSSPModels.VPResult.html#CSSPModels_VPResult_TravelTime_hour), [LastUpdateDate_UTC](CSSPModels.VPResult.html#CSSPModels_VPResult_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.VPResult.html#CSSPModels_VPResult_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [VPResultWeb](CSSPModels.VPResult.html#CSSPModels_VPResult_VPResultWeb), [VPResultReport](CSSPModels.VPResult.html#CSSPModels_VPResult_VPResultReport), [HasErrors](CSSPModels.VPResult.html#CSSPModels_VPResult_HasErrors), [ValidationResults](CSSPModels.VPResult.html#CSSPModels_VPResult_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.VPResult.html#CSSPModels_VPResult_HasErrors), [ValidationResults](CSSPModels.VPResult.html#CSSPModels_VPResult_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPResultService](CSSPServices.VPResultService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -53,15 +53,6 @@ namespace CSSPModels
         public double TravelTime_hour { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public VPResultWeb VPResultWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public VPResultReport VPResultReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public VPResult() : base()
         {
@@ -69,7 +60,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPResultWeb
+    public partial class VPResultWeb : VPResult
     {
         #region Properties for web information
         /// <summary>
@@ -82,13 +73,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public VPResultWeb()
+        public VPResultWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPResultReport
+    public partial class VPResultReport : VPResultWeb
     {
         #region Properties for report information
         /// <summary>
@@ -101,7 +92,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public VPResultReport()
+        public VPResultReport() : base()
         {
         }
         #endregion Constructors

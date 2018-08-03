@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table VPScenarios** : [VPScenarioID](CSSPModels.VPScenario.html#CSSPModels_VPScenario_VPScenarioID), [InfrastructureTVItemID](CSSPModels.VPScenario.html#CSSPModels_VPScenario_InfrastructureTVItemID), [VPScenarioStatus](CSSPModels.VPScenario.html#CSSPModels_VPScenario_VPScenarioStatus), [UseAsBestEstimate](CSSPModels.VPScenario.html#CSSPModels_VPScenario_UseAsBestEstimate), [EffluentFlow_m3_s](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentFlow_m3_s), [EffluentConcentration_MPN_100ml](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentConcentration_MPN_100ml), [FroudeNumber](CSSPModels.VPScenario.html#CSSPModels_VPScenario_FroudeNumber), [PortDiameter_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_PortDiameter_m), [PortDepth_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_PortDepth_m), [PortElevation_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_PortElevation_m), [VerticalAngle_deg](CSSPModels.VPScenario.html#CSSPModels_VPScenario_VerticalAngle_deg), [HorizontalAngle_deg](CSSPModels.VPScenario.html#CSSPModels_VPScenario_HorizontalAngle_deg), [NumberOfPorts](CSSPModels.VPScenario.html#CSSPModels_VPScenario_NumberOfPorts), [PortSpacing_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_PortSpacing_m), [AcuteMixZone_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_AcuteMixZone_m), [ChronicMixZone_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_ChronicMixZone_m), [EffluentSalinity_PSU](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentSalinity_PSU), [EffluentTemperature_C](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentTemperature_C), [EffluentVelocity_m_s](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentVelocity_m_s), [RawResults](CSSPModels.VPScenario.html#CSSPModels_VPScenario_RawResults), [LastUpdateDate_UTC](CSSPModels.VPScenario.html#CSSPModels_VPScenario_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.VPScenario.html#CSSPModels_VPScenario_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [VPScenarioWeb](CSSPModels.VPScenario.html#CSSPModels_VPScenario_VPScenarioWeb), [VPScenarioReport](CSSPModels.VPScenario.html#CSSPModels_VPScenario_VPScenarioReport), [HasErrors](CSSPModels.VPScenario.html#CSSPModels_VPScenario_HasErrors), [ValidationResults](CSSPModels.VPScenario.html#CSSPModels_VPScenario_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.VPScenario.html#CSSPModels_VPScenario_HasErrors), [ValidationResults](CSSPModels.VPScenario.html#CSSPModels_VPScenario_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPScenarioService](CSSPServices.VPScenarioService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ScenarioStatusEnum](CSSPEnums.ScenarioStatusEnum.html)</para>
@@ -89,15 +89,6 @@ namespace CSSPModels
         public string RawResults { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public VPScenarioWeb VPScenarioWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public VPScenarioReport VPScenarioReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public VPScenario() : base()
         {
@@ -105,7 +96,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPScenarioWeb
+    public partial class VPScenarioWeb : VPScenario
     {
         #region Properties for web information
         /// <summary>
@@ -134,13 +125,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public VPScenarioWeb()
+        public VPScenarioWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPScenarioReport
+    public partial class VPScenarioReport : VPScenarioWeb
     {
         #region Properties for report information
         /// <summary>
@@ -153,7 +144,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public VPScenarioReport()
+        public VPScenarioReport() : base()
         {
         }
         #endregion Constructors

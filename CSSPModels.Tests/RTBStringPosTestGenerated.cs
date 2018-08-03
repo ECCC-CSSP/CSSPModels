@@ -60,15 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(RTBStringPos).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void RTBStringPos_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.RTBStringPosStartPos);
-               Assert.IsNotNull(CSSPModelsRes.RTBStringPosEndPos);
-               Assert.IsNotNull(CSSPModelsRes.RTBStringPosText);
-               Assert.IsNotNull(CSSPModelsRes.RTBStringPosTagText);
-               Assert.IsNotNull(CSSPModelsRes.RTBStringPosHasErrors);
-        }
-        [TestMethod]
         public void RTBStringPos_Every_Property_Has_Get_Set_Test()
         {
                int val1 = 45;

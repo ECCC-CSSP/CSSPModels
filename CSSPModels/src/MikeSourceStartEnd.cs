@@ -44,15 +44,6 @@ namespace CSSPModels
         public double SourceSalinityEnd_PSU { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MikeSourceStartEndWeb MikeSourceStartEndWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MikeSourceStartEndReport MikeSourceStartEndReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MikeSourceStartEnd() : base()
         {
@@ -60,7 +51,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeSourceStartEndWeb
+    public partial class MikeSourceStartEndWeb : MikeSourceStartEnd
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -68,13 +59,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MikeSourceStartEndWeb()
+        public MikeSourceStartEndWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeSourceStartEndReport
+    public partial class MikeSourceStartEndReport : MikeSourceStartEndWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -82,7 +73,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MikeSourceStartEndReport()
+        public MikeSourceStartEndReport() : base()
         {
         }
         #endregion Constructors

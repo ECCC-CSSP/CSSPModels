@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table VPAmbients** : [VPAmbientID](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_VPAmbientID), [VPScenarioID](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_VPScenarioID), [Row](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_Row), [MeasurementDepth_m](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_MeasurementDepth_m), [CurrentSpeed_m_s](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_CurrentSpeed_m_s), [CurrentDirection_deg](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_CurrentDirection_deg), [AmbientSalinity_PSU](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_AmbientSalinity_PSU), [AmbientTemperature_C](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_AmbientTemperature_C), [BackgroundConcentration_MPN_100ml](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_BackgroundConcentration_MPN_100ml), [PollutantDecayRate_per_day](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_PollutantDecayRate_per_day), [FarFieldCurrentSpeed_m_s](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_FarFieldCurrentSpeed_m_s), [FarFieldCurrentDirection_deg](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_FarFieldCurrentDirection_deg), [FarFieldDiffusionCoefficient](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_FarFieldDiffusionCoefficient), [LastUpdateDate_UTC](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [VPAmbientWeb](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_VPAmbientWeb), [VPAmbientReport](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_VPAmbientReport), [HasErrors](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_HasErrors), [ValidationResults](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_HasErrors), [ValidationResults](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPAmbientService](CSSPServices.VPAmbientService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -63,15 +63,6 @@ namespace CSSPModels
         public double? FarFieldDiffusionCoefficient { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public VPAmbientWeb VPAmbientWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public VPAmbientReport VPAmbientReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public VPAmbient() : base()
         {
@@ -79,7 +70,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPAmbientWeb
+    public partial class VPAmbientWeb : VPAmbient
     {
         #region Properties for web information
         /// <summary>
@@ -92,13 +83,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public VPAmbientWeb()
+        public VPAmbientWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPAmbientReport
+    public partial class VPAmbientReport : VPAmbientWeb
     {
         #region Properties for report information
         /// <summary>
@@ -111,7 +102,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public VPAmbientReport()
+        public VPAmbientReport() : base()
         {
         }
         #endregion Constructors

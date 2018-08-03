@@ -26,15 +26,6 @@ namespace CSSPModels
         public bool IsDuplicate { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public SamplingPlanSubsectorSiteWeb SamplingPlanSubsectorSiteWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public SamplingPlanSubsectorSiteReport SamplingPlanSubsectorSiteReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public SamplingPlanSubsectorSite() : base()
         {
@@ -42,7 +33,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanSubsectorSiteWeb
+    public partial class SamplingPlanSubsectorSiteWeb : SamplingPlanSubsectorSite
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -52,13 +43,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public SamplingPlanSubsectorSiteWeb()
+        public SamplingPlanSubsectorSiteWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanSubsectorSiteReport
+    public partial class SamplingPlanSubsectorSiteReport : SamplingPlanSubsectorSiteWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -66,7 +57,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public SamplingPlanSubsectorSiteReport()
+        public SamplingPlanSubsectorSiteReport() : base()
         {
         }
         #endregion Constructors

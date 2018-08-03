@@ -60,14 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(OtherFilesToUpload).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void OtherFilesToUpload_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.OtherFilesToUploadError);
-               Assert.IsNotNull(CSSPModelsRes.OtherFilesToUploadMikeScenarioID);
-               Assert.IsNotNull(CSSPModelsRes.OtherFilesToUploadTVFileList);
-               Assert.IsNotNull(CSSPModelsRes.OtherFilesToUploadHasErrors);
-        }
-        [TestMethod]
         public void OtherFilesToUpload_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

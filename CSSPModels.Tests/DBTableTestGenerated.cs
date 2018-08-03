@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(DBTable).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void DBTable_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.DBTableTableName);
-               Assert.IsNotNull(CSSPModelsRes.DBTablePlurial);
-               Assert.IsNotNull(CSSPModelsRes.DBTableHasErrors);
-        }
-        [TestMethod]
         public void DBTable_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

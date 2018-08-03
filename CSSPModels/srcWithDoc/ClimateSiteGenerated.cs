@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table ClimateSites** : [ClimateSiteID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateSiteID), [ClimateSiteTVItemID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateSiteTVItemID), [ECDBID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ECDBID), [ClimateSiteName](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateSiteName), [Province](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_Province), [Elevation_m](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_Elevation_m), [ClimateID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateID), [WMOID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_WMOID), [TCID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_TCID), [IsProvincial](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_IsProvincial), [ProvSiteID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ProvSiteID), [TimeOffset_hour](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_TimeOffset_hour), [File_desc](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_File_desc), [HourlyStartDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_HourlyStartDate_Local), [HourlyEndDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_HourlyEndDate_Local), [HourlyNow](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_HourlyNow), [DailyStartDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_DailyStartDate_Local), [DailyEndDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_DailyEndDate_Local), [DailyNow](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_DailyNow), [MonthlyStartDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_MonthlyStartDate_Local), [MonthlyEndDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_MonthlyEndDate_Local), [MonthlyNow](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_MonthlyNow), [LastUpdateDate_UTC](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [ClimateSiteWeb](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateSiteWeb), [ClimateSiteReport](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateSiteReport), [HasErrors](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_HasErrors), [ValidationResults](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_HasErrors), [ValidationResults](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ClimateSiteService](CSSPServices.ClimateSiteService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -133,15 +133,6 @@ namespace CSSPModels
         public bool? MonthlyNow { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ClimateSiteWeb ClimateSiteWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ClimateSiteReport ClimateSiteReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public ClimateSite() : base()
         {
@@ -149,7 +140,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClimateSiteWeb
+    public partial class ClimateSiteWeb : ClimateSite
     {
         #region Properties for web information
         /// <summary>
@@ -169,13 +160,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ClimateSiteWeb()
+        public ClimateSiteWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClimateSiteReport
+    public partial class ClimateSiteReport : ClimateSiteWeb
     {
         #region Properties for report information
         /// <summary>
@@ -188,7 +179,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ClimateSiteReport()
+        public ClimateSiteReport() : base()
         {
         }
         #endregion Constructors

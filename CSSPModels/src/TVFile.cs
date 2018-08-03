@@ -52,15 +52,6 @@ namespace CSSPModels
         public string ServerFilePath { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVFileWeb TVFileWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVFileReport TVFileReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TVFile() : base()
         {
@@ -68,7 +59,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVFileWeb
+    public partial class TVFileWeb : TVFile
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVFileTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -90,13 +81,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TVFileWeb()
+        public TVFileWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVFileReport
+    public partial class TVFileReport : TVFileWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -104,7 +95,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TVFileReport()
+        public TVFileReport() : base()
         {
         }
         #endregion Constructors

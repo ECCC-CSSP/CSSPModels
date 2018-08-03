@@ -28,15 +28,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSampleLanguageWeb MWQMSampleLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSampleLanguageReport MWQMSampleLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMSampleLanguage() : base()
         {
@@ -44,7 +35,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSampleLanguageWeb
+    public partial class MWQMSampleLanguageWeb : MWQMSampleLanguage
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -58,13 +49,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMSampleLanguageWeb()
+        public MWQMSampleLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSampleLanguageReport
+    public partial class MWQMSampleLanguageReport : MWQMSampleLanguageWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -72,7 +63,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMSampleLanguageReport()
+        public MWQMSampleLanguageReport() : base()
         {
         }
         #endregion Constructors

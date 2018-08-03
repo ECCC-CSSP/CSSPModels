@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(FilePurposeAndText).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void FilePurposeAndText_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.FilePurposeAndTextFilePurpose);
-               Assert.IsNotNull(CSSPModelsRes.FilePurposeAndTextFilePurposeText);
-               Assert.IsNotNull(CSSPModelsRes.FilePurposeAndTextHasErrors);
-        }
-        [TestMethod]
         public void FilePurposeAndText_Every_Property_Has_Get_Set_Test()
         {
                FilePurposeEnum val1 = (FilePurposeEnum)3;

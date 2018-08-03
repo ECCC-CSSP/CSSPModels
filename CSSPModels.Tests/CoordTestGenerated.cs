@@ -60,14 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(Coord).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Coord_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.CoordLat);
-               Assert.IsNotNull(CSSPModelsRes.CoordLng);
-               Assert.IsNotNull(CSSPModelsRes.CoordOrdinal);
-               Assert.IsNotNull(CSSPModelsRes.CoordHasErrors);
-        }
-        [TestMethod]
         public void Coord_Every_Property_Has_Get_Set_Test()
         {
                double val1 = 87.9D;

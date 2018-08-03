@@ -60,27 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(MWQMSiteSampleFC).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MWQMSiteSampleFC_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCError);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCSampleDate);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCFC);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCSal);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCTemp);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCPH);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCDO);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCDepth);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCSampCount);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCMinFC);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCMaxFC);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCGeoMean);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCMedian);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCP90);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCPercOver43);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCPercOver260);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSiteSampleFCHasErrors);
-        }
-        [TestMethod]
         public void MWQMSiteSampleFC_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

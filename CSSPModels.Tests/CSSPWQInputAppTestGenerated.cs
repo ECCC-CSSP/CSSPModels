@@ -60,18 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(CSSPWQInputApp).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void CSSPWQInputApp_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputAppAccessCode);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputAppActiveYear);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputAppDailyDuplicatePrecisionCriteria);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputAppIntertechDuplicatePrecisionCriteria);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputAppIncludeLaboratoryQAQC);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputAppApprovalCode);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputAppApprovalDate);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputAppHasErrors);
-        }
-        [TestMethod]
         public void CSSPWQInputApp_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

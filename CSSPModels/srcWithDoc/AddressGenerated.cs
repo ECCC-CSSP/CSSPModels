@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table Addresses** : [AddressID](CSSPModels.Address.html#CSSPModels_Address_AddressID), [AddressTVItemID](CSSPModels.Address.html#CSSPModels_Address_AddressTVItemID), [AddressType](CSSPModels.Address.html#CSSPModels_Address_AddressType), [CountryTVItemID](CSSPModels.Address.html#CSSPModels_Address_CountryTVItemID), [ProvinceTVItemID](CSSPModels.Address.html#CSSPModels_Address_ProvinceTVItemID), [MunicipalityTVItemID](CSSPModels.Address.html#CSSPModels_Address_MunicipalityTVItemID), [StreetName](CSSPModels.Address.html#CSSPModels_Address_StreetName), [StreetNumber](CSSPModels.Address.html#CSSPModels_Address_StreetNumber), [StreetType](CSSPModels.Address.html#CSSPModels_Address_StreetType), [PostalCode](CSSPModels.Address.html#CSSPModels_Address_PostalCode), [GoogleAddressText](CSSPModels.Address.html#CSSPModels_Address_GoogleAddressText), [LastUpdateDate_UTC](CSSPModels.Address.html#CSSPModels_Address_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Address.html#CSSPModels_Address_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [AddressWeb](CSSPModels.Address.html#CSSPModels_Address_AddressWeb), [AddressReport](CSSPModels.Address.html#CSSPModels_Address_AddressReport), [HasErrors](CSSPModels.Address.html#CSSPModels_Address_HasErrors), [ValidationResults](CSSPModels.Address.html#CSSPModels_Address_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.Address.html#CSSPModels_Address_HasErrors), [ValidationResults](CSSPModels.Address.html#CSSPModels_Address_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AddressService](CSSPServices.AddressService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [AddressTypeEnum](CSSPEnums.AddressTypeEnum.html), [StreetTypeEnum](CSSPEnums.StreetTypeEnum.html)</para>
@@ -119,15 +119,6 @@ namespace CSSPModels
         public string GoogleAddressText { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public AddressWeb AddressWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public AddressReport AddressReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Address() : base()
         {
@@ -135,7 +126,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AddressWeb
+    public partial class AddressWeb : Address
     {
         #region Properties for web information
         /// <summary>
@@ -194,13 +185,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public AddressWeb()
+        public AddressWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AddressReport
+    public partial class AddressReport : AddressWeb
     {
         #region Properties for report information
         /// <summary>
@@ -213,7 +204,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public AddressReport()
+        public AddressReport() : base()
         {
         }
         #endregion Constructors

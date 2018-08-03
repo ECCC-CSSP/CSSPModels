@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table MWQMSamples** : [MWQMSampleID](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_MWQMSampleID), [MWQMSiteTVItemID](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_MWQMSiteTVItemID), [MWQMRunTVItemID](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_MWQMRunTVItemID), [SampleDateTime_Local](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_SampleDateTime_Local), [Depth_m](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Depth_m), [FecCol_MPN_100ml](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_FecCol_MPN_100ml), [Salinity_PPT](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Salinity_PPT), [WaterTemp_C](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_WaterTemp_C), [PH](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_PH), [SampleTypesText](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_SampleTypesText), [SampleType_old](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_SampleType_old), [Tube_10](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Tube_10), [Tube_1_0](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Tube_1_0), [Tube_0_1](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Tube_0_1), [ProcessedBy](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_ProcessedBy), [UseForOpenData](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_UseForOpenData), [LastUpdateDate_UTC](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [MWQMSampleWeb](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_MWQMSampleWeb), [MWQMSampleReport](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_MWQMSampleReport), [HasErrors](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_HasErrors), [ValidationResults](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_HasErrors), [ValidationResults](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSampleService](CSSPServices.MWQMSampleService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html)</para>
@@ -96,15 +96,6 @@ namespace CSSPModels
         public bool UseForOpenData { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSampleWeb MWQMSampleWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSampleReport MWQMSampleReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMSample() : base()
         {
@@ -112,7 +103,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSampleWeb
+    public partial class MWQMSampleWeb : MWQMSample
     {
         #region Properties for web information
         /// <summary>
@@ -148,13 +139,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMSampleWeb()
+        public MWQMSampleWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSampleReport
+    public partial class MWQMSampleReport : MWQMSampleWeb
     {
         #region Properties for report information
         /// <summary>
@@ -167,7 +158,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMSampleReport()
+        public MWQMSampleReport() : base()
         {
         }
         #endregion Constructors

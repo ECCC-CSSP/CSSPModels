@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table MikeSources** : [MikeSourceID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_MikeSourceID), [MikeSourceTVItemID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_MikeSourceTVItemID), [IsContinuous](CSSPModels.MikeSource.html#CSSPModels_MikeSource_IsContinuous), [Include](CSSPModels.MikeSource.html#CSSPModels_MikeSource_Include), [IsRiver](CSSPModels.MikeSource.html#CSSPModels_MikeSource_IsRiver), [SourceNumberString](CSSPModels.MikeSource.html#CSSPModels_MikeSource_SourceNumberString), [LastUpdateDate_UTC](CSSPModels.MikeSource.html#CSSPModels_MikeSource_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [MikeSourceWeb](CSSPModels.MikeSource.html#CSSPModels_MikeSource_MikeSourceWeb), [MikeSourceReport](CSSPModels.MikeSource.html#CSSPModels_MikeSource_MikeSourceReport), [HasErrors](CSSPModels.MikeSource.html#CSSPModels_MikeSource_HasErrors), [ValidationResults](CSSPModels.MikeSource.html#CSSPModels_MikeSource_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.MikeSource.html#CSSPModels_MikeSource_HasErrors), [ValidationResults](CSSPModels.MikeSource.html#CSSPModels_MikeSource_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeSourceService](CSSPServices.MikeSourceService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -48,15 +48,6 @@ namespace CSSPModels
         public string SourceNumberString { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MikeSourceWeb MikeSourceWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MikeSourceReport MikeSourceReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MikeSource() : base()
         {
@@ -64,7 +55,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeSourceWeb
+    public partial class MikeSourceWeb : MikeSource
     {
         #region Properties for web information
         /// <summary>
@@ -84,13 +75,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MikeSourceWeb()
+        public MikeSourceWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeSourceReport
+    public partial class MikeSourceReport : MikeSourceWeb
     {
         #region Properties for report information
         /// <summary>
@@ -103,7 +94,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MikeSourceReport()
+        public MikeSourceReport() : base()
         {
         }
         #endregion Constructors

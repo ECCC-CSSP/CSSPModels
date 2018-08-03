@@ -49,15 +49,6 @@ namespace CSSPModels
         public double? LeftSideLineStartLongitude { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public BoxModelResultWeb BoxModelResultWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public BoxModelResultReport BoxModelResultReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public BoxModelResult() : base()
         {
@@ -65,7 +56,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelResultWeb
+    public partial class BoxModelResultWeb : BoxModelResult
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -76,13 +67,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public BoxModelResultWeb()
+        public BoxModelResultWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelResultReport
+    public partial class BoxModelResultReport : BoxModelResultWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -90,7 +81,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public BoxModelResultReport()
+        public BoxModelResultReport() : base()
         {
         }
         #endregion Constructors

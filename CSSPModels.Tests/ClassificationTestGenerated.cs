@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private Classification classification { get; set; }
+        private ClassificationWeb classificationWeb { get; set; }
+        private ClassificationReport classificationReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public ClassificationTest()
         {
             classification = new Classification();
+            classificationWeb = new ClassificationWeb();
+            classificationReport = new ClassificationReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void Classification_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ClassificationID", "ClassificationTVItemID", "ClassificationType", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ClassificationWeb", "ClassificationReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Classification).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(Classification).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(Classification).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void ClassificationWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "ClassificationTVText", "ClassificationID", "ClassificationTVItemID", "ClassificationType", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ClassificationWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ClassificationWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void ClassificationReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "ClassificationReportTest", "LastUpdateContactTVItemLanguage", "ClassificationTVText", "ClassificationID", "ClassificationTVItemID", "ClassificationType", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ClassificationReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ClassificationReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,20 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void ClassificationWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ClassificationWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ClassificationWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void ClassificationReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ClassificationReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ClassificationReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void Classification_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(Classification).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Classification_Every_Property_Has_A_Resource_OK()
+        public void ClassificationWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.ClassificationClassificationID);
-               Assert.IsNotNull(CSSPModelsRes.ClassificationClassificationTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.ClassificationClassificationType);
-               Assert.IsNotNull(CSSPModelsRes.ClassificationOrdinal);
-               Assert.IsNotNull(CSSPModelsRes.ClassificationLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.ClassificationLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.ClassificationHasErrors);
+             Assert.IsTrue(typeof(ClassificationWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void ClassificationReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(ClassificationReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void Classification_Every_Property_Has_Get_Set_Test()
@@ -146,9 +283,80 @@ namespace CSSPModels.Tests
                bool val7 = true;
                classification.HasErrors = val7;
                Assert.AreEqual(val7, classification.HasErrors);
-               IEnumerable<ValidationResult> val28 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               classification.ValidationResults = val28;
-               Assert.AreEqual(val28, classification.ValidationResults);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               classification.ValidationResults = val24;
+               Assert.AreEqual(val24, classification.ValidationResults);
+        }
+        [TestMethod]
+        public void ClassificationWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               classificationWeb.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, classificationWeb.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               classificationWeb.ClassificationTVText = val2;
+               Assert.AreEqual(val2, classificationWeb.ClassificationTVText);
+               int val3 = 45;
+               classificationWeb.ClassificationID = val3;
+               Assert.AreEqual(val3, classificationWeb.ClassificationID);
+               int val4 = 45;
+               classificationWeb.ClassificationTVItemID = val4;
+               Assert.AreEqual(val4, classificationWeb.ClassificationTVItemID);
+               ClassificationTypeEnum val5 = (ClassificationTypeEnum)3;
+               classificationWeb.ClassificationType = val5;
+               Assert.AreEqual(val5, classificationWeb.ClassificationType);
+               int val6 = 45;
+               classificationWeb.Ordinal = val6;
+               Assert.AreEqual(val6, classificationWeb.Ordinal);
+               DateTime val7 = new DateTime(2010, 3, 4);
+               classificationWeb.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, classificationWeb.LastUpdateDate_UTC);
+               int val8 = 45;
+               classificationWeb.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, classificationWeb.LastUpdateContactTVItemID);
+               bool val9 = true;
+               classificationWeb.HasErrors = val9;
+               Assert.AreEqual(val9, classificationWeb.HasErrors);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               classificationWeb.ValidationResults = val30;
+               Assert.AreEqual(val30, classificationWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void ClassificationReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               classificationReport.ClassificationReportTest = val1;
+               Assert.AreEqual(val1, classificationReport.ClassificationReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               classificationReport.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, classificationReport.LastUpdateContactTVItemLanguage);
+               string val3 = "Some text";
+               classificationReport.ClassificationTVText = val3;
+               Assert.AreEqual(val3, classificationReport.ClassificationTVText);
+               int val4 = 45;
+               classificationReport.ClassificationID = val4;
+               Assert.AreEqual(val4, classificationReport.ClassificationID);
+               int val5 = 45;
+               classificationReport.ClassificationTVItemID = val5;
+               Assert.AreEqual(val5, classificationReport.ClassificationTVItemID);
+               ClassificationTypeEnum val6 = (ClassificationTypeEnum)3;
+               classificationReport.ClassificationType = val6;
+               Assert.AreEqual(val6, classificationReport.ClassificationType);
+               int val7 = 45;
+               classificationReport.Ordinal = val7;
+               Assert.AreEqual(val7, classificationReport.Ordinal);
+               DateTime val8 = new DateTime(2010, 3, 4);
+               classificationReport.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, classificationReport.LastUpdateDate_UTC);
+               int val9 = 45;
+               classificationReport.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, classificationReport.LastUpdateContactTVItemID);
+               bool val10 = true;
+               classificationReport.HasErrors = val10;
+               Assert.AreEqual(val10, classificationReport.HasErrors);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               classificationReport.ValidationResults = val33;
+               Assert.AreEqual(val33, classificationReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

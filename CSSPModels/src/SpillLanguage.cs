@@ -28,15 +28,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public SpillLanguageWeb SpillLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public SpillLanguageReport SpillLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public SpillLanguage() : base()
         {
@@ -44,7 +35,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SpillLanguageWeb
+    public partial class SpillLanguageWeb : SpillLanguage
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -58,13 +49,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public SpillLanguageWeb()
+        public SpillLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SpillLanguageReport
+    public partial class SpillLanguageReport : SpillLanguageWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -72,7 +63,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public SpillLanguageReport()
+        public SpillLanguageReport() : base()
         {
         }
         #endregion Constructors

@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table RatingCurveValues** : [RatingCurveValueID](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_RatingCurveValueID), [RatingCurveID](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_RatingCurveID), [StageValue_m](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_StageValue_m), [DischargeValue_m3_s](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_DischargeValue_m3_s), [LastUpdateDate_UTC](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [RatingCurveValueWeb](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_RatingCurveValueWeb), [RatingCurveValueReport](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_RatingCurveValueReport), [HasErrors](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_HasErrors), [ValidationResults](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_HasErrors), [ValidationResults](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [RatingCurveValueService](CSSPServices.RatingCurveValueService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -45,15 +45,6 @@ namespace CSSPModels
         public double DischargeValue_m3_s { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public RatingCurveValueWeb RatingCurveValueWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public RatingCurveValueReport RatingCurveValueReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public RatingCurveValue() : base()
         {
@@ -61,7 +52,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RatingCurveValueWeb
+    public partial class RatingCurveValueWeb : RatingCurveValue
     {
         #region Properties for web information
         /// <summary>
@@ -74,13 +65,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public RatingCurveValueWeb()
+        public RatingCurveValueWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RatingCurveValueReport
+    public partial class RatingCurveValueReport : RatingCurveValueWeb
     {
         #region Properties for report information
         /// <summary>
@@ -93,7 +84,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public RatingCurveValueReport()
+        public RatingCurveValueReport() : base()
         {
         }
         #endregion Constructors

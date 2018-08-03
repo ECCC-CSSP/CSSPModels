@@ -121,15 +121,6 @@ namespace CSSPModels
         public int? CivicAddressTVItemID { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public InfrastructureWeb InfrastructureWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public InfrastructureReport InfrastructureReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Infrastructure() : base()
         {
@@ -137,7 +128,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class InfrastructureWeb
+    public partial class InfrastructureWeb : Infrastructure
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -186,13 +177,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public InfrastructureWeb()
+        public InfrastructureWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class InfrastructureReport
+    public partial class InfrastructureReport : InfrastructureWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -200,7 +191,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public InfrastructureReport()
+        public InfrastructureReport() : base()
         {
         }
         #endregion Constructors

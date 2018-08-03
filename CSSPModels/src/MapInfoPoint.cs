@@ -29,15 +29,6 @@ namespace CSSPModels
         public double Lng { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MapInfoPointWeb MapInfoPointWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MapInfoPointReport MapInfoPointReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MapInfoPoint() : base()
         {
@@ -45,7 +36,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MapInfoPointWeb
+    public partial class MapInfoPointWeb : MapInfoPoint
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -53,13 +44,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MapInfoPointWeb()
+        public MapInfoPointWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MapInfoPointReport
+    public partial class MapInfoPointReport : MapInfoPointWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -67,7 +58,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MapInfoPointReport()
+        public MapInfoPointReport() : base()
         {
         }
         #endregion Constructors

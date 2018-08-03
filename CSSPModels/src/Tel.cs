@@ -27,15 +27,6 @@ namespace CSSPModels
         public TelTypeEnum TelType { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TelWeb TelWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TelReport TelReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Tel() : base()
         {
@@ -43,7 +34,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TelWeb
+    public partial class TelWeb : Tel
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TelTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -56,13 +47,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TelWeb()
+        public TelWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TelReport
+    public partial class TelReport : TelWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -70,7 +61,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TelReport()
+        public TelReport() : base()
         {
         }
         #endregion Constructors

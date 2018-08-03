@@ -29,15 +29,6 @@ namespace CSSPModels
         public DateTime DateTime_UTC { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public AppErrLogWeb AppErrLogWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public AppErrLogReport AppErrLogReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public AppErrLog() : base()
         {
@@ -45,7 +36,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppErrLogWeb
+    public partial class AppErrLogWeb : AppErrLog
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -53,21 +44,21 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public AppErrLogWeb()
+        public AppErrLogWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppErrLogReport
+    public partial class AppErrLogReport : AppErrLogWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
-        public string AppErrLogTest { get; set; }
+        public string AppErrLogReportTest { get; set; }
         #endregion Properties for report information
 
         #region Constructors
-        public AppErrLogReport()
+        public AppErrLogReport() : base()
         {
         }
         #endregion Constructors

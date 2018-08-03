@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(MWQMSampleDuplicateItem).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MWQMSampleDuplicateItem_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.MWQMSampleDuplicateItemParentSite);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSampleDuplicateItemDuplicateSite);
-               Assert.IsNotNull(CSSPModelsRes.MWQMSampleDuplicateItemHasErrors);
-        }
-        [TestMethod]
         public void MWQMSampleDuplicateItem_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

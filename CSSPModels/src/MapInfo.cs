@@ -35,15 +35,6 @@ namespace CSSPModels
         public MapInfoDrawTypeEnum MapInfoDrawType { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MapInfoWeb MapInfoWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MapInfoReport MapInfoReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MapInfo() : base()
         {
@@ -51,7 +42,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MapInfoWeb
+    public partial class MapInfoWeb : MapInfo
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -67,13 +58,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MapInfoWeb()
+        public MapInfoWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MapInfoReport
+    public partial class MapInfoReport : MapInfoWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -81,7 +72,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MapInfoReport()
+        public MapInfoReport() : base()
         {
         }
         #endregion Constructors

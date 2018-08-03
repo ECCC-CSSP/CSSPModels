@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table HydrometricSites** : [HydrometricSiteID](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HydrometricSiteID), [HydrometricSiteTVItemID](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HydrometricSiteTVItemID), [FedSiteNumber](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_FedSiteNumber), [QuebecSiteNumber](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_QuebecSiteNumber), [HydrometricSiteName](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HydrometricSiteName), [Description](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_Description), [Province](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_Province), [Elevation_m](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_Elevation_m), [StartDate_Local](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_StartDate_Local), [EndDate_Local](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_EndDate_Local), [TimeOffset_hour](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_TimeOffset_hour), [DrainageArea_km2](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_DrainageArea_km2), [IsNatural](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_IsNatural), [IsActive](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_IsActive), [Sediment](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_Sediment), [RHBN](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_RHBN), [RealTime](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_RealTime), [HasRatingCurve](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HasRatingCurve), [LastUpdateDate_UTC](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HydrometricSiteWeb](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HydrometricSiteWeb), [HydrometricSiteReport](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HydrometricSiteReport), [HasErrors](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HasErrors), [ValidationResults](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HasErrors), [ValidationResults](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [HydrometricSiteService](CSSPServices.HydrometricSiteService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -99,15 +99,6 @@ namespace CSSPModels
         public bool? HasRatingCurve { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public HydrometricSiteWeb HydrometricSiteWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public HydrometricSiteReport HydrometricSiteReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public HydrometricSite() : base()
         {
@@ -115,7 +106,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class HydrometricSiteWeb
+    public partial class HydrometricSiteWeb : HydrometricSite
     {
         #region Properties for web information
         /// <summary>
@@ -135,13 +126,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public HydrometricSiteWeb()
+        public HydrometricSiteWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class HydrometricSiteReport
+    public partial class HydrometricSiteReport : HydrometricSiteWeb
     {
         #region Properties for report information
         /// <summary>
@@ -154,7 +145,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public HydrometricSiteReport()
+        public HydrometricSiteReport() : base()
         {
         }
         #endregion Constructors

@@ -234,8 +234,6 @@
     <Compile Include="FileItemTestGenerated.cs" />
     <Compile Include="FilePurposeAndTextTest.cs" />
     <Compile Include="FilePurposeAndTextTestGenerated.cs" />
-    <Compile Include="GetParamTest.cs" />
-    <Compile Include="GetParamTestGenerated.cs" />
     <Compile Include="HydrometricDataValueTest.cs" />
     <Compile Include="HydrometricDataValueTestGenerated.cs" />
     <Compile Include="HydrometricSiteTest.cs" />
@@ -327,6 +325,8 @@
     <Compile Include="PolyPointTest.cs" />
     <Compile Include="PolyPointTestGenerated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryTest.cs" />
+    <Compile Include="QueryTestGenerated.cs" />
     <Compile Include="RainExceedanceTest.cs" />
     <Compile Include="RainExceedanceTestGenerated.cs" />
     <Compile Include="RatingCurveTest.cs" />
@@ -424,6 +424,8 @@
     <Compile Include="VPScenarioTest.cs" />
     <Compile Include="VPScenarioTestGenerated.cs" />
     <Compile Include="CSSPWebToolsDBContextTest.cs" />
+    <Compile Include="WhereInfoTest.cs" />
+    <Compile Include="WhereInfoTestGenerated.cs" />
     <Compile Include="__BaseTest.cs" />
   </ItemGroup>
   <ItemGroup>

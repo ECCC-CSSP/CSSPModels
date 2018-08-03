@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table HydrometricDataValues** : [HydrometricDataValueID](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HydrometricDataValueID), [HydrometricSiteID](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HydrometricSiteID), [DateTime_Local](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_DateTime_Local), [Keep](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_Keep), [StorageDataType](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_StorageDataType), [Flow_m3_s](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_Flow_m3_s), [HourlyValues](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HourlyValues), [LastUpdateDate_UTC](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HydrometricDataValueWeb](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HydrometricDataValueWeb), [HydrometricDataValueReport](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HydrometricDataValueReport), [HasErrors](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HasErrors), [ValidationResults](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HasErrors), [ValidationResults](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [HydrometricDataValueService](CSSPServices.HydrometricDataValueService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [StorageDataTypeEnum](CSSPEnums.StorageDataTypeEnum.html)</para>
@@ -66,15 +66,6 @@ namespace CSSPModels
         public string HourlyValues { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public HydrometricDataValueWeb HydrometricDataValueWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public HydrometricDataValueReport HydrometricDataValueReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public HydrometricDataValue() : base()
         {
@@ -82,7 +73,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class HydrometricDataValueWeb
+    public partial class HydrometricDataValueWeb : HydrometricDataValue
     {
         #region Properties for web information
         /// <summary>
@@ -104,13 +95,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public HydrometricDataValueWeb()
+        public HydrometricDataValueWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class HydrometricDataValueReport
+    public partial class HydrometricDataValueReport : HydrometricDataValueWeb
     {
         #region Properties for report information
         /// <summary>
@@ -123,7 +114,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public HydrometricDataValueReport()
+        public HydrometricDataValueReport() : base()
         {
         }
         #endregion Constructors

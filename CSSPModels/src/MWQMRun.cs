@@ -108,15 +108,6 @@ namespace CSSPModels
         public bool? RemoveFromStat { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMRunWeb MWQMRunWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMRunReport MWQMRunReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMRun() : base()
         {
@@ -124,7 +115,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMRunWeb
+    public partial class MWQMRunWeb : MWQMRun
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SubsectorTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -165,13 +156,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMRunWeb()
+        public MWQMRunWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMRunReport
+    public partial class MWQMRunReport : MWQMRunWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -179,7 +170,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMRunReport()
+        public MWQMRunReport() : base()
         {
         }
         #endregion Constructors

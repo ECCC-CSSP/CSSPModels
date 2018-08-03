@@ -60,14 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(LastUpdateAndContact).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void LastUpdateAndContact_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.LastUpdateAndContactErr);
-               Assert.IsNotNull(CSSPModelsRes.LastUpdateAndContactLastUpdateAndContactDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.LastUpdateAndContactLastUpdateAndContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.LastUpdateAndContactHasErrors);
-        }
-        [TestMethod]
         public void LastUpdateAndContact_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

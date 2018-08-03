@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table VPScenarioLanguages** : [VPScenarioLanguageID](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_VPScenarioLanguageID), [VPScenarioID](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_VPScenarioID), [Language](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_Language), [VPScenarioName](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_VPScenarioName), [TranslationStatus](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [VPScenarioLanguageWeb](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_VPScenarioLanguageWeb), [VPScenarioLanguageReport](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_VPScenarioLanguageReport), [HasErrors](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_HasErrors), [ValidationResults](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_HasErrors), [ValidationResults](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPScenarioLanguageService](CSSPServices.VPScenarioLanguageService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
@@ -58,15 +58,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public VPScenarioLanguageWeb VPScenarioLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public VPScenarioLanguageReport VPScenarioLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public VPScenarioLanguage() : base()
         {
@@ -74,7 +65,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPScenarioLanguageWeb
+    public partial class VPScenarioLanguageWeb : VPScenarioLanguage
     {
         #region Properties for web information
         /// <summary>
@@ -105,13 +96,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public VPScenarioLanguageWeb()
+        public VPScenarioLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPScenarioLanguageReport
+    public partial class VPScenarioLanguageReport : VPScenarioLanguageWeb
     {
         #region Properties for report information
         /// <summary>
@@ -124,7 +115,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public VPScenarioLanguageReport()
+        public VPScenarioLanguageReport() : base()
         {
         }
         #endregion Constructors

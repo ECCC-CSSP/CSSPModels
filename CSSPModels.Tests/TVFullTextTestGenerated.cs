@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(TVFullText).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TVFullText_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.TVFullTextTVPath);
-               Assert.IsNotNull(CSSPModelsRes.TVFullTextFullText);
-               Assert.IsNotNull(CSSPModelsRes.TVFullTextHasErrors);
-        }
-        [TestMethod]
         public void TVFullText_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

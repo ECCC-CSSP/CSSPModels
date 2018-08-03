@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private MikeSourceStartEnd mikeSourceStartEnd { get; set; }
+        private MikeSourceStartEndWeb mikeSourceStartEndWeb { get; set; }
+        private MikeSourceStartEndReport mikeSourceStartEndReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public MikeSourceStartEndTest()
         {
             mikeSourceStartEnd = new MikeSourceStartEnd();
+            mikeSourceStartEndWeb = new MikeSourceStartEndWeb();
+            mikeSourceStartEndReport = new MikeSourceStartEndReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void MikeSourceStartEnd_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeSourceStartEndID", "MikeSourceID", "StartDateAndTime_Local", "EndDateAndTime_Local", "SourceFlowStart_m3_day", "SourceFlowEnd_m3_day", "SourcePollutionStart_MPN_100ml", "SourcePollutionEnd_MPN_100ml", "SourceTemperatureStart_C", "SourceTemperatureEnd_C", "SourceSalinityStart_PSU", "SourceSalinityEnd_PSU", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MikeSourceStartEndWeb", "MikeSourceStartEndReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MikeSourceStartEnd).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEnd).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEnd).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void MikeSourceStartEndWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "MikeSourceStartEndID", "MikeSourceID", "StartDateAndTime_Local", "EndDateAndTime_Local", "SourceFlowStart_m3_day", "SourceFlowEnd_m3_day", "SourcePollutionStart_MPN_100ml", "SourcePollutionEnd_MPN_100ml", "SourceTemperatureStart_C", "SourceTemperatureEnd_C", "SourceSalinityStart_PSU", "SourceSalinityEnd_PSU", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void MikeSourceStartEndReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "MikeSourceStartEndReportTest", "LastUpdateContactTVItemLanguage", "MikeSourceStartEndID", "MikeSourceID", "StartDateAndTime_Local", "EndDateAndTime_Local", "SourceFlowStart_m3_day", "SourceFlowEnd_m3_day", "SourcePollutionStart_MPN_100ml", "SourcePollutionEnd_MPN_100ml", "SourceTemperatureStart_C", "SourceTemperatureEnd_C", "SourceSalinityStart_PSU", "SourceSalinityEnd_PSU", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,28 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void MikeSourceStartEndWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void MikeSourceStartEndReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void MikeSourceStartEnd_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(MikeSourceStartEnd).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MikeSourceStartEnd_Every_Property_Has_A_Resource_OK()
+        public void MikeSourceStartEndWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndMikeSourceStartEndID);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndMikeSourceID);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndStartDateAndTime_Local);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndEndDateAndTime_Local);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndSourceFlowStart_m3_day);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndSourceFlowEnd_m3_day);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndSourcePollutionStart_MPN_100ml);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndSourcePollutionEnd_MPN_100ml);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndSourceTemperatureStart_C);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndSourceTemperatureEnd_C);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndSourceSalinityStart_PSU);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndSourceSalinityEnd_PSU);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MikeSourceStartEndHasErrors);
+             Assert.IsTrue(typeof(MikeSourceStartEndWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void MikeSourceStartEndReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(MikeSourceStartEndReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void MikeSourceStartEnd_Every_Property_Has_Get_Set_Test()
@@ -178,9 +307,122 @@ namespace CSSPModels.Tests
                bool val15 = true;
                mikeSourceStartEnd.HasErrors = val15;
                Assert.AreEqual(val15, mikeSourceStartEnd.HasErrors);
-               IEnumerable<ValidationResult> val52 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mikeSourceStartEnd.ValidationResults = val52;
-               Assert.AreEqual(val52, mikeSourceStartEnd.ValidationResults);
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mikeSourceStartEnd.ValidationResults = val48;
+               Assert.AreEqual(val48, mikeSourceStartEnd.ValidationResults);
+        }
+        [TestMethod]
+        public void MikeSourceStartEndWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               mikeSourceStartEndWeb.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, mikeSourceStartEndWeb.LastUpdateContactTVItemLanguage);
+               int val2 = 45;
+               mikeSourceStartEndWeb.MikeSourceStartEndID = val2;
+               Assert.AreEqual(val2, mikeSourceStartEndWeb.MikeSourceStartEndID);
+               int val3 = 45;
+               mikeSourceStartEndWeb.MikeSourceID = val3;
+               Assert.AreEqual(val3, mikeSourceStartEndWeb.MikeSourceID);
+               DateTime val4 = new DateTime(2010, 3, 4);
+               mikeSourceStartEndWeb.StartDateAndTime_Local = val4;
+               Assert.AreEqual(val4, mikeSourceStartEndWeb.StartDateAndTime_Local);
+               DateTime val5 = new DateTime(2010, 3, 4);
+               mikeSourceStartEndWeb.EndDateAndTime_Local = val5;
+               Assert.AreEqual(val5, mikeSourceStartEndWeb.EndDateAndTime_Local);
+               double val6 = 87.9D;
+               mikeSourceStartEndWeb.SourceFlowStart_m3_day = val6;
+               Assert.AreEqual(val6, mikeSourceStartEndWeb.SourceFlowStart_m3_day);
+               double val7 = 87.9D;
+               mikeSourceStartEndWeb.SourceFlowEnd_m3_day = val7;
+               Assert.AreEqual(val7, mikeSourceStartEndWeb.SourceFlowEnd_m3_day);
+               int val8 = 45;
+               mikeSourceStartEndWeb.SourcePollutionStart_MPN_100ml = val8;
+               Assert.AreEqual(val8, mikeSourceStartEndWeb.SourcePollutionStart_MPN_100ml);
+               int val9 = 45;
+               mikeSourceStartEndWeb.SourcePollutionEnd_MPN_100ml = val9;
+               Assert.AreEqual(val9, mikeSourceStartEndWeb.SourcePollutionEnd_MPN_100ml);
+               double val10 = 87.9D;
+               mikeSourceStartEndWeb.SourceTemperatureStart_C = val10;
+               Assert.AreEqual(val10, mikeSourceStartEndWeb.SourceTemperatureStart_C);
+               double val11 = 87.9D;
+               mikeSourceStartEndWeb.SourceTemperatureEnd_C = val11;
+               Assert.AreEqual(val11, mikeSourceStartEndWeb.SourceTemperatureEnd_C);
+               double val12 = 87.9D;
+               mikeSourceStartEndWeb.SourceSalinityStart_PSU = val12;
+               Assert.AreEqual(val12, mikeSourceStartEndWeb.SourceSalinityStart_PSU);
+               double val13 = 87.9D;
+               mikeSourceStartEndWeb.SourceSalinityEnd_PSU = val13;
+               Assert.AreEqual(val13, mikeSourceStartEndWeb.SourceSalinityEnd_PSU);
+               DateTime val14 = new DateTime(2010, 3, 4);
+               mikeSourceStartEndWeb.LastUpdateDate_UTC = val14;
+               Assert.AreEqual(val14, mikeSourceStartEndWeb.LastUpdateDate_UTC);
+               int val15 = 45;
+               mikeSourceStartEndWeb.LastUpdateContactTVItemID = val15;
+               Assert.AreEqual(val15, mikeSourceStartEndWeb.LastUpdateContactTVItemID);
+               bool val16 = true;
+               mikeSourceStartEndWeb.HasErrors = val16;
+               Assert.AreEqual(val16, mikeSourceStartEndWeb.HasErrors);
+               IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mikeSourceStartEndWeb.ValidationResults = val51;
+               Assert.AreEqual(val51, mikeSourceStartEndWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void MikeSourceStartEndReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               mikeSourceStartEndReport.MikeSourceStartEndReportTest = val1;
+               Assert.AreEqual(val1, mikeSourceStartEndReport.MikeSourceStartEndReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               mikeSourceStartEndReport.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, mikeSourceStartEndReport.LastUpdateContactTVItemLanguage);
+               int val3 = 45;
+               mikeSourceStartEndReport.MikeSourceStartEndID = val3;
+               Assert.AreEqual(val3, mikeSourceStartEndReport.MikeSourceStartEndID);
+               int val4 = 45;
+               mikeSourceStartEndReport.MikeSourceID = val4;
+               Assert.AreEqual(val4, mikeSourceStartEndReport.MikeSourceID);
+               DateTime val5 = new DateTime(2010, 3, 4);
+               mikeSourceStartEndReport.StartDateAndTime_Local = val5;
+               Assert.AreEqual(val5, mikeSourceStartEndReport.StartDateAndTime_Local);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               mikeSourceStartEndReport.EndDateAndTime_Local = val6;
+               Assert.AreEqual(val6, mikeSourceStartEndReport.EndDateAndTime_Local);
+               double val7 = 87.9D;
+               mikeSourceStartEndReport.SourceFlowStart_m3_day = val7;
+               Assert.AreEqual(val7, mikeSourceStartEndReport.SourceFlowStart_m3_day);
+               double val8 = 87.9D;
+               mikeSourceStartEndReport.SourceFlowEnd_m3_day = val8;
+               Assert.AreEqual(val8, mikeSourceStartEndReport.SourceFlowEnd_m3_day);
+               int val9 = 45;
+               mikeSourceStartEndReport.SourcePollutionStart_MPN_100ml = val9;
+               Assert.AreEqual(val9, mikeSourceStartEndReport.SourcePollutionStart_MPN_100ml);
+               int val10 = 45;
+               mikeSourceStartEndReport.SourcePollutionEnd_MPN_100ml = val10;
+               Assert.AreEqual(val10, mikeSourceStartEndReport.SourcePollutionEnd_MPN_100ml);
+               double val11 = 87.9D;
+               mikeSourceStartEndReport.SourceTemperatureStart_C = val11;
+               Assert.AreEqual(val11, mikeSourceStartEndReport.SourceTemperatureStart_C);
+               double val12 = 87.9D;
+               mikeSourceStartEndReport.SourceTemperatureEnd_C = val12;
+               Assert.AreEqual(val12, mikeSourceStartEndReport.SourceTemperatureEnd_C);
+               double val13 = 87.9D;
+               mikeSourceStartEndReport.SourceSalinityStart_PSU = val13;
+               Assert.AreEqual(val13, mikeSourceStartEndReport.SourceSalinityStart_PSU);
+               double val14 = 87.9D;
+               mikeSourceStartEndReport.SourceSalinityEnd_PSU = val14;
+               Assert.AreEqual(val14, mikeSourceStartEndReport.SourceSalinityEnd_PSU);
+               DateTime val15 = new DateTime(2010, 3, 4);
+               mikeSourceStartEndReport.LastUpdateDate_UTC = val15;
+               Assert.AreEqual(val15, mikeSourceStartEndReport.LastUpdateDate_UTC);
+               int val16 = 45;
+               mikeSourceStartEndReport.LastUpdateContactTVItemID = val16;
+               Assert.AreEqual(val16, mikeSourceStartEndReport.LastUpdateContactTVItemID);
+               bool val17 = true;
+               mikeSourceStartEndReport.HasErrors = val17;
+               Assert.AreEqual(val17, mikeSourceStartEndReport.HasErrors);
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mikeSourceStartEndReport.ValidationResults = val54;
+               Assert.AreEqual(val54, mikeSourceStartEndReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table TVItemStats** : [TVItemStatID](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVItemStatID), [TVItemID](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVItemID), [TVType](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVType), [ChildCount](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_ChildCount), [LastUpdateDate_UTC](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [TVItemStatWeb](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVItemStatWeb), [TVItemStatReport](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVItemStatReport), [HasErrors](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_HasErrors), [ValidationResults](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_HasErrors), [ValidationResults](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVItemStatService](CSSPServices.TVItemStatService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
@@ -53,15 +53,6 @@ namespace CSSPModels
         public int ChildCount { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVItemStatWeb TVItemStatWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVItemStatReport TVItemStatReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TVItemStat() : base()
         {
@@ -69,7 +60,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemStatWeb
+    public partial class TVItemStatWeb : TVItemStat
     {
         #region Properties for web information
         /// <summary>
@@ -98,13 +89,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TVItemStatWeb()
+        public TVItemStatWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemStatReport
+    public partial class TVItemStatReport : TVItemStatWeb
     {
         #region Properties for report information
         /// <summary>
@@ -117,7 +108,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TVItemStatReport()
+        public TVItemStatReport() : base()
         {
         }
         #endregion Constructors

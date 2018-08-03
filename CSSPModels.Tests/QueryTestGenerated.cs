@@ -60,22 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(Query).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Query_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.QueryModelType);
-               Assert.IsNotNull(CSSPModelsRes.QueryLanguage);
-               Assert.IsNotNull(CSSPModelsRes.QueryLang);
-               Assert.IsNotNull(CSSPModelsRes.QuerySkip);
-               Assert.IsNotNull(CSSPModelsRes.QueryTake);
-               Assert.IsNotNull(CSSPModelsRes.QueryOrder);
-               Assert.IsNotNull(CSSPModelsRes.QueryWhere);
-               Assert.IsNotNull(CSSPModelsRes.QueryEntityQueryDetailType);
-               Assert.IsNotNull(CSSPModelsRes.QueryEntityQueryType);
-               Assert.IsNotNull(CSSPModelsRes.QueryOrderList);
-               Assert.IsNotNull(CSSPModelsRes.QueryWhereInfoList);
-               Assert.IsNotNull(CSSPModelsRes.QueryHasErrors);
-        }
-        [TestMethod]
         public void Query_Every_Property_Has_Get_Set_Test()
         {
                Type val1 = typeof(Query);

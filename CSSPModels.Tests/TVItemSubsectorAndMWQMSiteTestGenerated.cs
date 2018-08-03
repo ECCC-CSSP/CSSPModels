@@ -60,14 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(TVItemSubsectorAndMWQMSite).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TVItemSubsectorAndMWQMSite_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.TVItemSubsectorAndMWQMSiteTVItemSubsector);
-               Assert.IsNotNull(CSSPModelsRes.TVItemSubsectorAndMWQMSiteTVItemMWQMSiteList);
-               Assert.IsNotNull(CSSPModelsRes.TVItemSubsectorAndMWQMSiteTVItemMWQMSiteDuplicate);
-               Assert.IsNotNull(CSSPModelsRes.TVItemSubsectorAndMWQMSiteHasErrors);
-        }
-        [TestMethod]
         public void TVItemSubsectorAndMWQMSite_Every_Property_Has_Get_Set_Test()
         {
                TVItem val1 = new TVItem();

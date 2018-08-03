@@ -60,14 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(NodeLayer).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void NodeLayer_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.NodeLayerLayer);
-               Assert.IsNotNull(CSSPModelsRes.NodeLayerZ);
-               Assert.IsNotNull(CSSPModelsRes.NodeLayerNode);
-               Assert.IsNotNull(CSSPModelsRes.NodeLayerHasErrors);
-        }
-        [TestMethod]
         public void NodeLayer_Every_Property_Has_Get_Set_Test()
         {
                int val1 = 45;

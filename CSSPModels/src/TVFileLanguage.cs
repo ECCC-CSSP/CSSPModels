@@ -29,15 +29,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVFileLanguageWeb TVFileLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVFileLanguageReport TVFileLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TVFileLanguage() : base()
         {
@@ -45,7 +36,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVFileLanguageWeb
+    public partial class TVFileLanguageWeb : TVFileLanguage
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -59,13 +50,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TVFileLanguageWeb()
+        public TVFileLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVFileLanguageReport
+    public partial class TVFileLanguageReport : TVFileLanguageWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -73,7 +64,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TVFileLanguageReport()
+        public TVFileLanguageReport() : base()
         {
         }
         #endregion Constructors

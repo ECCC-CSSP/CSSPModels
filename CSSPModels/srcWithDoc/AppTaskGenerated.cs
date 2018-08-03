@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table AppTasks** : [AppTaskID](CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskID), [TVItemID](CSSPModels.AppTask.html#CSSPModels_AppTask_TVItemID), [TVItemID2](CSSPModels.AppTask.html#CSSPModels_AppTask_TVItemID2), [AppTaskCommand](CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskCommand), [AppTaskStatus](CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskStatus), [PercentCompleted](CSSPModels.AppTask.html#CSSPModels_AppTask_PercentCompleted), [Parameters](CSSPModels.AppTask.html#CSSPModels_AppTask_Parameters), [Language](CSSPModels.AppTask.html#CSSPModels_AppTask_Language), [StartDateTime_UTC](CSSPModels.AppTask.html#CSSPModels_AppTask_StartDateTime_UTC), [EndDateTime_UTC](CSSPModels.AppTask.html#CSSPModels_AppTask_EndDateTime_UTC), [EstimatedLength_second](CSSPModels.AppTask.html#CSSPModels_AppTask_EstimatedLength_second), [RemainingTime_second](CSSPModels.AppTask.html#CSSPModels_AppTask_RemainingTime_second), [LastUpdateDate_UTC](CSSPModels.AppTask.html#CSSPModels_AppTask_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.AppTask.html#CSSPModels_AppTask_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [AppTaskWeb](CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskWeb), [AppTaskReport](CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskReport), [HasErrors](CSSPModels.AppTask.html#CSSPModels_AppTask_HasErrors), [ValidationResults](CSSPModels.AppTask.html#CSSPModels_AppTask_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.AppTask.html#CSSPModels_AppTask_HasErrors), [ValidationResults](CSSPModels.AppTask.html#CSSPModels_AppTask_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskService](CSSPServices.AppTaskService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [AppTaskCommandEnum](CSSPEnums.AppTaskCommandEnum.html), [AppTaskStatusEnum](CSSPEnums.AppTaskStatusEnum.html), [LanguageEnum](CSSPEnums.LanguageEnum.html)</para>
@@ -97,15 +97,6 @@ namespace CSSPModels
         public int? RemainingTime_second { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public AppTaskWeb AppTaskWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public AppTaskReport AppTaskReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public AppTask() : base()
         {
@@ -113,7 +104,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppTaskWeb
+    public partial class AppTaskWeb : AppTask
     {
         #region Properties for web information
         /// <summary>
@@ -167,13 +158,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public AppTaskWeb()
+        public AppTaskWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppTaskReport
+    public partial class AppTaskReport : AppTaskWeb
     {
         #region Properties for report information
         /// <summary>
@@ -186,7 +177,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public AppTaskReport()
+        public AppTaskReport() : base()
         {
         }
         #endregion Constructors

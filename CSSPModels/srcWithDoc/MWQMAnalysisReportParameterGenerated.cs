@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table MWQMAnalysisReportParameters** : [MWQMAnalysisReportParameterID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_MWQMAnalysisReportParameterID), [SubsectorTVItemID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_SubsectorTVItemID), [AnalysisName](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisName), [AnalysisReportYear](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisReportYear), [StartDate](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_StartDate), [EndDate](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_EndDate), [AnalysisCalculationType](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisCalculationType), [NumberOfRuns](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_NumberOfRuns), [FullYear](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_FullYear), [SalinityHighlightDeviationFromAverage](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_SalinityHighlightDeviationFromAverage), [ShortRangeNumberOfDays](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ShortRangeNumberOfDays), [MidRangeNumberOfDays](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_MidRangeNumberOfDays), [DryLimit24h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit24h), [DryLimit48h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit48h), [DryLimit72h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit72h), [DryLimit96h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit96h), [WetLimit24h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit24h), [WetLimit48h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit48h), [WetLimit72h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit72h), [WetLimit96h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit96h), [RunsToOmit](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_RunsToOmit), [ShowDataTypes](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ShowDataTypes), [ExcelTVFileTVItemID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ExcelTVFileTVItemID), [Command](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_Command), [LastUpdateDate_UTC](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [MWQMAnalysisReportParameterWeb](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_MWQMAnalysisReportParameterWeb), [MWQMAnalysisReportParameterReport](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_MWQMAnalysisReportParameterReport), [HasErrors](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_HasErrors), [ValidationResults](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_HasErrors), [ValidationResults](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMAnalysisReportParameterService](CSSPServices.MWQMAnalysisReportParameterService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [AnalysisCalculationTypeEnum](CSSPEnums.AnalysisCalculationTypeEnum.html), [AnalysisReportExportCommandEnum](CSSPEnums.AnalysisReportExportCommandEnum.html)</para>
@@ -122,15 +122,6 @@ namespace CSSPModels
         public AnalysisReportExportCommandEnum Command { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMAnalysisReportParameterWeb MWQMAnalysisReportParameterWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMAnalysisReportParameterReport MWQMAnalysisReportParameterReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMAnalysisReportParameter() : base()
         {
@@ -138,7 +129,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMAnalysisReportParameterWeb
+    public partial class MWQMAnalysisReportParameterWeb : MWQMAnalysisReportParameter
     {
         #region Properties for web information
         /// <summary>
@@ -168,13 +159,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMAnalysisReportParameterWeb()
+        public MWQMAnalysisReportParameterWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMAnalysisReportParameterReport
+    public partial class MWQMAnalysisReportParameterReport : MWQMAnalysisReportParameterWeb
     {
         #region Properties for report information
         /// <summary>
@@ -187,7 +178,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMAnalysisReportParameterReport()
+        public MWQMAnalysisReportParameterReport() : base()
         {
         }
         #endregion Constructors

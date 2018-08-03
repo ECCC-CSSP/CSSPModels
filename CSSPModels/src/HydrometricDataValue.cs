@@ -32,15 +32,6 @@ namespace CSSPModels
         public string HourlyValues { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public HydrometricDataValueWeb HydrometricDataValueWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public HydrometricDataValueReport HydrometricDataValueReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public HydrometricDataValue() : base()
         {
@@ -48,7 +39,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class HydrometricDataValueWeb
+    public partial class HydrometricDataValueWeb : HydrometricDataValue
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -59,13 +50,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public HydrometricDataValueWeb()
+        public HydrometricDataValueWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class HydrometricDataValueReport
+    public partial class HydrometricDataValueReport : HydrometricDataValueWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -73,7 +64,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public HydrometricDataValueReport()
+        public HydrometricDataValueReport() : base()
         {
         }
         #endregion Constructors

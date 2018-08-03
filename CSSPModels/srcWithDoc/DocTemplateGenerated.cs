@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table DocTemplates** : [DocTemplateID](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_DocTemplateID), [Language](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_Language), [TVType](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_TVType), [TVFileTVItemID](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_TVFileTVItemID), [FileName](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_FileName), [LastUpdateDate_UTC](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [DocTemplateWeb](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_DocTemplateWeb), [DocTemplateReport](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_DocTemplateReport), [HasErrors](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_HasErrors), [ValidationResults](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_HasErrors), [ValidationResults](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [DocTemplateService](CSSPServices.DocTemplateService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
@@ -60,15 +60,6 @@ namespace CSSPModels
         public string FileName { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public DocTemplateWeb DocTemplateWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public DocTemplateReport DocTemplateReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public DocTemplate() : base()
         {
@@ -76,7 +67,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class DocTemplateWeb
+    public partial class DocTemplateWeb : DocTemplate
     {
         #region Properties for web information
         /// <summary>
@@ -107,13 +98,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public DocTemplateWeb()
+        public DocTemplateWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class DocTemplateReport
+    public partial class DocTemplateReport : DocTemplateWeb
     {
         #region Properties for report information
         /// <summary>
@@ -126,7 +117,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public DocTemplateReport()
+        public DocTemplateReport() : base()
         {
         }
         #endregion Constructors

@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(FileItemList).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void FileItemList_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.FileItemListText);
-               Assert.IsNotNull(CSSPModelsRes.FileItemListFileName);
-               Assert.IsNotNull(CSSPModelsRes.FileItemListHasErrors);
-        }
-        [TestMethod]
         public void FileItemList_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

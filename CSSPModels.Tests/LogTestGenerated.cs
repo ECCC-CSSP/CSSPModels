@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private Log log { get; set; }
+        private LogWeb logWeb { get; set; }
+        private LogReport logReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public LogTest()
         {
             log = new Log();
+            logWeb = new LogWeb();
+            logReport = new LogReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void Log_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LogID", "TableName", "ID", "LogCommand", "Information", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "LogWeb", "LogReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Log).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(Log).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(Log).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void LogWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LogCommandText", "LogID", "TableName", "ID", "LogCommand", "Information", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(LogWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(LogWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void LogReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "LogReportTest", "LastUpdateContactTVItemLanguage", "LogCommandText", "LogID", "TableName", "ID", "LogCommand", "Information", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(LogReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(LogReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,21 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void LogWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(LogWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(LogWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void LogReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(LogReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(LogReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void Log_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(Log).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Log_Every_Property_Has_A_Resource_OK()
+        public void LogWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.LogLogID);
-               Assert.IsNotNull(CSSPModelsRes.LogTableName);
-               Assert.IsNotNull(CSSPModelsRes.LogID);
-               Assert.IsNotNull(CSSPModelsRes.LogLogCommand);
-               Assert.IsNotNull(CSSPModelsRes.LogInformation);
-               Assert.IsNotNull(CSSPModelsRes.LogLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.LogLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.LogHasErrors);
+             Assert.IsTrue(typeof(LogWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void LogReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(LogReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void Log_Every_Property_Has_Get_Set_Test()
@@ -150,9 +286,86 @@ namespace CSSPModels.Tests
                bool val8 = true;
                log.HasErrors = val8;
                Assert.AreEqual(val8, log.HasErrors);
-               IEnumerable<ValidationResult> val31 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               log.ValidationResults = val31;
-               Assert.AreEqual(val31, log.ValidationResults);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               log.ValidationResults = val27;
+               Assert.AreEqual(val27, log.ValidationResults);
+        }
+        [TestMethod]
+        public void LogWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               logWeb.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, logWeb.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               logWeb.LogCommandText = val2;
+               Assert.AreEqual(val2, logWeb.LogCommandText);
+               int val3 = 45;
+               logWeb.LogID = val3;
+               Assert.AreEqual(val3, logWeb.LogID);
+               string val4 = "Some text";
+               logWeb.TableName = val4;
+               Assert.AreEqual(val4, logWeb.TableName);
+               int val5 = 45;
+               logWeb.ID = val5;
+               Assert.AreEqual(val5, logWeb.ID);
+               LogCommandEnum val6 = (LogCommandEnum)3;
+               logWeb.LogCommand = val6;
+               Assert.AreEqual(val6, logWeb.LogCommand);
+               string val7 = "Some text";
+               logWeb.Information = val7;
+               Assert.AreEqual(val7, logWeb.Information);
+               DateTime val8 = new DateTime(2010, 3, 4);
+               logWeb.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, logWeb.LastUpdateDate_UTC);
+               int val9 = 45;
+               logWeb.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, logWeb.LastUpdateContactTVItemID);
+               bool val10 = true;
+               logWeb.HasErrors = val10;
+               Assert.AreEqual(val10, logWeb.HasErrors);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               logWeb.ValidationResults = val33;
+               Assert.AreEqual(val33, logWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void LogReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               logReport.LogReportTest = val1;
+               Assert.AreEqual(val1, logReport.LogReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               logReport.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, logReport.LastUpdateContactTVItemLanguage);
+               string val3 = "Some text";
+               logReport.LogCommandText = val3;
+               Assert.AreEqual(val3, logReport.LogCommandText);
+               int val4 = 45;
+               logReport.LogID = val4;
+               Assert.AreEqual(val4, logReport.LogID);
+               string val5 = "Some text";
+               logReport.TableName = val5;
+               Assert.AreEqual(val5, logReport.TableName);
+               int val6 = 45;
+               logReport.ID = val6;
+               Assert.AreEqual(val6, logReport.ID);
+               LogCommandEnum val7 = (LogCommandEnum)3;
+               logReport.LogCommand = val7;
+               Assert.AreEqual(val7, logReport.LogCommand);
+               string val8 = "Some text";
+               logReport.Information = val8;
+               Assert.AreEqual(val8, logReport.Information);
+               DateTime val9 = new DateTime(2010, 3, 4);
+               logReport.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, logReport.LastUpdateDate_UTC);
+               int val10 = 45;
+               logReport.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, logReport.LastUpdateContactTVItemID);
+               bool val11 = true;
+               logReport.HasErrors = val11;
+               Assert.AreEqual(val11, logReport.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               logReport.ValidationResults = val36;
+               Assert.AreEqual(val36, logReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

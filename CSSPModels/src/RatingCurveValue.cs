@@ -27,15 +27,6 @@ namespace CSSPModels
         public double DischargeValue_m3_s { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public RatingCurveValueWeb RatingCurveValueWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public RatingCurveValueReport RatingCurveValueReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public RatingCurveValue() : base()
         {
@@ -43,7 +34,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RatingCurveValueWeb
+    public partial class RatingCurveValueWeb : RatingCurveValue
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -51,13 +42,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public RatingCurveValueWeb()
+        public RatingCurveValueWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RatingCurveValueReport
+    public partial class RatingCurveValueReport : RatingCurveValueWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -65,7 +56,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public RatingCurveValueReport()
+        public RatingCurveValueReport() : base()
         {
         }
         #endregion Constructors

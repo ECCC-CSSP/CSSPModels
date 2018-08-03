@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table BoxModelLanguages** : [BoxModelLanguageID](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_BoxModelLanguageID), [BoxModelID](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_BoxModelID), [Language](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_Language), [ScenarioName](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_ScenarioName), [TranslationStatus](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [BoxModelLanguageWeb](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_BoxModelLanguageWeb), [BoxModelLanguageReport](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_BoxModelLanguageReport), [HasErrors](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_HasErrors), [ValidationResults](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_HasErrors), [ValidationResults](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [BoxModelLanguageService](CSSPServices.BoxModelLanguageService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
@@ -58,15 +58,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public BoxModelLanguageWeb BoxModelLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public BoxModelLanguageReport BoxModelLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public BoxModelLanguage() : base()
         {
@@ -74,7 +65,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelLanguageWeb
+    public partial class BoxModelLanguageWeb : BoxModelLanguage
     {
         #region Properties for web information
         /// <summary>
@@ -105,13 +96,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public BoxModelLanguageWeb()
+        public BoxModelLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelLanguageReport
+    public partial class BoxModelLanguageReport : BoxModelLanguageWeb
     {
         #region Properties for report information
         /// <summary>
@@ -124,7 +115,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public BoxModelLanguageReport()
+        public BoxModelLanguageReport() : base()
         {
         }
         #endregion Constructors

@@ -46,15 +46,6 @@ namespace CSSPModels
         public string GoogleAddressText { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public AddressWeb AddressWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public AddressReport AddressReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Address() : base()
         {
@@ -62,7 +53,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AddressWeb
+    public partial class AddressWeb : Address
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "AddressTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -84,13 +75,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public AddressWeb()
+        public AddressWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AddressReport
+    public partial class AddressReport : AddressWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -98,7 +89,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public AddressReport()
+        public AddressReport() : base()
         {
         }
         #endregion Constructors

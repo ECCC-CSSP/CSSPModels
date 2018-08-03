@@ -33,15 +33,6 @@ namespace CSSPModels
         public double Lng { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TideLocationWeb TideLocationWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TideLocationReport TideLocationReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TideLocation() : base()
         {
@@ -49,7 +40,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TideLocationWeb
+    public partial class TideLocationWeb : TideLocation
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -57,13 +48,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TideLocationWeb()
+        public TideLocationWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TideLocationReport
+    public partial class TideLocationReport : TideLocationWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -71,7 +62,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TideLocationReport()
+        public TideLocationReport() : base()
         {
         }
         #endregion Constructors

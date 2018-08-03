@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(URLNumberOfSamples).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void URLNumberOfSamples_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.URLNumberOfSamplesurl);
-               Assert.IsNotNull(CSSPModelsRes.URLNumberOfSamplesNumberOfSamples);
-               Assert.IsNotNull(CSSPModelsRes.URLNumberOfSamplesHasErrors);
-        }
-        [TestMethod]
         public void URLNumberOfSamples_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

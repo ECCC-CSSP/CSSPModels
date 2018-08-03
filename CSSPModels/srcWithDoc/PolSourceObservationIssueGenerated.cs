@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table PolSourceObservationIssues** : [PolSourceObservationIssueID](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationIssueID), [PolSourceObservationID](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationID), [ObservationInfo](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_ObservationInfo), [Ordinal](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_Ordinal), [ExtraComment](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_ExtraComment), [LastUpdateDate_UTC](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [PolSourceObservationIssueWeb](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationIssueWeb), [PolSourceObservationIssueReport](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationIssueReport), [HasErrors](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_HasErrors), [ValidationResults](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_HasErrors), [ValidationResults](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceObservationIssueService](CSSPServices.PolSourceObservationIssueService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -52,15 +52,6 @@ namespace CSSPModels
         public string ExtraComment { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public PolSourceObservationIssueWeb PolSourceObservationIssueWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public PolSourceObservationIssueReport PolSourceObservationIssueReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public PolSourceObservationIssue() : base()
         {
@@ -68,7 +59,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class PolSourceObservationIssueWeb
+    public partial class PolSourceObservationIssueWeb : PolSourceObservationIssue
     {
         #region Properties for web information
         /// <summary>
@@ -81,13 +72,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public PolSourceObservationIssueWeb()
+        public PolSourceObservationIssueWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class PolSourceObservationIssueReport
+    public partial class PolSourceObservationIssueReport : PolSourceObservationIssueWeb
     {
         #region Properties for report information
         /// <summary>
@@ -100,7 +91,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public PolSourceObservationIssueReport()
+        public PolSourceObservationIssueReport() : base()
         {
         }
         #endregion Constructors

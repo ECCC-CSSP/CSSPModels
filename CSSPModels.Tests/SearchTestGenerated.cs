@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(Search).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Search_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.Searchvalue);
-               Assert.IsNotNull(CSSPModelsRes.Searchid);
-               Assert.IsNotNull(CSSPModelsRes.SearchHasErrors);
-        }
-        [TestMethod]
         public void Search_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

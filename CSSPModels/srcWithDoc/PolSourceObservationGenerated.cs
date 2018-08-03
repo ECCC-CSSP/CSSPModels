@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table PolSourceObservations** : [PolSourceObservationID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_PolSourceObservationID), [PolSourceSiteID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_PolSourceSiteID), [ObservationDate_Local](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_ObservationDate_Local), [ContactTVItemID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_ContactTVItemID), [Observation_ToBeDeleted](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_Observation_ToBeDeleted), [LastUpdateDate_UTC](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [PolSourceObservationWeb](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_PolSourceObservationWeb), [PolSourceObservationReport](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_PolSourceObservationReport), [HasErrors](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_HasErrors), [ValidationResults](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_HasErrors), [ValidationResults](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceObservationService](CSSPServices.PolSourceObservationService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -58,15 +58,6 @@ namespace CSSPModels
         public string Observation_ToBeDeleted { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public PolSourceObservationWeb PolSourceObservationWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public PolSourceObservationReport PolSourceObservationReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public PolSourceObservation() : base()
         {
@@ -74,7 +65,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class PolSourceObservationWeb
+    public partial class PolSourceObservationWeb : PolSourceObservation
     {
         #region Properties for web information
         /// <summary>
@@ -101,13 +92,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public PolSourceObservationWeb()
+        public PolSourceObservationWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class PolSourceObservationReport
+    public partial class PolSourceObservationReport : PolSourceObservationWeb
     {
         #region Properties for report information
         /// <summary>
@@ -120,7 +111,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public PolSourceObservationReport()
+        public PolSourceObservationReport() : base()
         {
         }
         #endregion Constructors

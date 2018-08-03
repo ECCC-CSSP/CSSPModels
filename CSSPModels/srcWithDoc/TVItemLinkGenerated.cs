@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table TVItemLinks** : [TVItemLinkID](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_TVItemLinkID), [FromTVItemID](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_FromTVItemID), [ToTVItemID](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_ToTVItemID), [FromTVType](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_FromTVType), [ToTVType](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_ToTVType), [StartDateTime_Local](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_StartDateTime_Local), [EndDateTime_Local](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_EndDateTime_Local), [Ordinal](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_Ordinal), [TVLevel](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_TVLevel), [TVPath](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_TVPath), [ParentTVItemLinkID](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_ParentTVItemLinkID), [LastUpdateDate_UTC](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [TVItemLinkWeb](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_TVItemLinkWeb), [TVItemLinkReport](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_TVItemLinkReport), [HasErrors](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_HasErrors), [ValidationResults](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_HasErrors), [ValidationResults](CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVItemLinkService](CSSPServices.TVItemLinkService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
@@ -96,15 +96,6 @@ namespace CSSPModels
         public int? ParentTVItemLinkID { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVItemLinkWeb TVItemLinkWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVItemLinkReport TVItemLinkReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TVItemLink() : base()
         {
@@ -112,7 +103,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemLinkWeb
+    public partial class TVItemLinkWeb : TVItemLink
     {
         #region Properties for web information
         /// <summary>
@@ -157,13 +148,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TVItemLinkWeb()
+        public TVItemLinkWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemLinkReport
+    public partial class TVItemLinkReport : TVItemLinkWeb
     {
         #region Properties for report information
         /// <summary>
@@ -176,7 +167,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TVItemLinkReport()
+        public TVItemLinkReport() : base()
         {
         }
         #endregion Constructors

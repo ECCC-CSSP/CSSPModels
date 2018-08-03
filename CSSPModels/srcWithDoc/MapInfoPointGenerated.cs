@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table MapInfoPoints** : [MapInfoPointID](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_MapInfoPointID), [MapInfoID](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_MapInfoID), [Ordinal](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_Ordinal), [Lat](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_Lat), [Lng](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_Lng), [LastUpdateDate_UTC](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [MapInfoPointWeb](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_MapInfoPointWeb), [MapInfoPointReport](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_MapInfoPointReport), [HasErrors](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_HasErrors), [ValidationResults](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_HasErrors), [ValidationResults](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MapInfoPointService](CSSPServices.MapInfoPointService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -47,15 +47,6 @@ namespace CSSPModels
         public double Lng { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MapInfoPointWeb MapInfoPointWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MapInfoPointReport MapInfoPointReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MapInfoPoint() : base()
         {
@@ -63,7 +54,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MapInfoPointWeb
+    public partial class MapInfoPointWeb : MapInfoPoint
     {
         #region Properties for web information
         /// <summary>
@@ -76,13 +67,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MapInfoPointWeb()
+        public MapInfoPointWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MapInfoPointReport
+    public partial class MapInfoPointReport : MapInfoPointWeb
     {
         #region Properties for report information
         /// <summary>
@@ -95,7 +86,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MapInfoPointReport()
+        public MapInfoPointReport() : base()
         {
         }
         #endregion Constructors

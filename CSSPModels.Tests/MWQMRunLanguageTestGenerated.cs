@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private MWQMRunLanguage mWQMRunLanguage { get; set; }
+        private MWQMRunLanguageWeb mWQMRunLanguageWeb { get; set; }
+        private MWQMRunLanguageReport mWQMRunLanguageReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public MWQMRunLanguageTest()
         {
             mWQMRunLanguage = new MWQMRunLanguage();
+            mWQMRunLanguageWeb = new MWQMRunLanguageWeb();
+            mWQMRunLanguageReport = new MWQMRunLanguageReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void MWQMRunLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMRunLanguageID", "MWQMRunID", "Language", "RunComment", "TranslationStatusRunComment", "RunWeatherComment", "TranslationStatusRunWeatherComment", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MWQMRunLanguageWeb", "MWQMRunLanguageReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMRunLanguage).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunLanguage).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(MWQMRunLanguage).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void MWQMRunLanguageWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusRunCommentText", "TranslationStatusRunWeatherCommentText", "MWQMRunLanguageID", "MWQMRunID", "Language", "RunComment", "TranslationStatusRunComment", "RunWeatherComment", "TranslationStatusRunWeatherComment", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunLanguageWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunLanguageWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void MWQMRunLanguageReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "MWQMRunLanguageReportTest", "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusRunCommentText", "TranslationStatusRunWeatherCommentText", "MWQMRunLanguageID", "MWQMRunID", "Language", "RunComment", "TranslationStatusRunComment", "RunWeatherComment", "TranslationStatusRunWeatherComment", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunLanguageReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunLanguageReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,23 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void MWQMRunLanguageWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunLanguageWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunLanguageWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void MWQMRunLanguageReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunLanguageReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunLanguageReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void MWQMRunLanguage_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(MWQMRunLanguage).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MWQMRunLanguage_Every_Property_Has_A_Resource_OK()
+        public void MWQMRunLanguageWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.MWQMRunLanguageMWQMRunLanguageID);
-               Assert.IsNotNull(CSSPModelsRes.MWQMRunLanguageMWQMRunID);
-               Assert.IsNotNull(CSSPModelsRes.MWQMRunLanguageLanguage);
-               Assert.IsNotNull(CSSPModelsRes.MWQMRunLanguageRunComment);
-               Assert.IsNotNull(CSSPModelsRes.MWQMRunLanguageTranslationStatusRunComment);
-               Assert.IsNotNull(CSSPModelsRes.MWQMRunLanguageRunWeatherComment);
-               Assert.IsNotNull(CSSPModelsRes.MWQMRunLanguageTranslationStatusRunWeatherComment);
-               Assert.IsNotNull(CSSPModelsRes.MWQMRunLanguageLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.MWQMRunLanguageLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MWQMRunLanguageHasErrors);
+             Assert.IsTrue(typeof(MWQMRunLanguageWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void MWQMRunLanguageReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(MWQMRunLanguageReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void MWQMRunLanguage_Every_Property_Has_Get_Set_Test()
@@ -158,9 +292,110 @@ namespace CSSPModels.Tests
                bool val10 = true;
                mWQMRunLanguage.HasErrors = val10;
                Assert.AreEqual(val10, mWQMRunLanguage.HasErrors);
-               IEnumerable<ValidationResult> val37 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMRunLanguage.ValidationResults = val37;
-               Assert.AreEqual(val37, mWQMRunLanguage.ValidationResults);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mWQMRunLanguage.ValidationResults = val33;
+               Assert.AreEqual(val33, mWQMRunLanguage.ValidationResults);
+        }
+        [TestMethod]
+        public void MWQMRunLanguageWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               mWQMRunLanguageWeb.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, mWQMRunLanguageWeb.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               mWQMRunLanguageWeb.LanguageText = val2;
+               Assert.AreEqual(val2, mWQMRunLanguageWeb.LanguageText);
+               string val3 = "Some text";
+               mWQMRunLanguageWeb.TranslationStatusRunCommentText = val3;
+               Assert.AreEqual(val3, mWQMRunLanguageWeb.TranslationStatusRunCommentText);
+               string val4 = "Some text";
+               mWQMRunLanguageWeb.TranslationStatusRunWeatherCommentText = val4;
+               Assert.AreEqual(val4, mWQMRunLanguageWeb.TranslationStatusRunWeatherCommentText);
+               int val5 = 45;
+               mWQMRunLanguageWeb.MWQMRunLanguageID = val5;
+               Assert.AreEqual(val5, mWQMRunLanguageWeb.MWQMRunLanguageID);
+               int val6 = 45;
+               mWQMRunLanguageWeb.MWQMRunID = val6;
+               Assert.AreEqual(val6, mWQMRunLanguageWeb.MWQMRunID);
+               LanguageEnum val7 = (LanguageEnum)3;
+               mWQMRunLanguageWeb.Language = val7;
+               Assert.AreEqual(val7, mWQMRunLanguageWeb.Language);
+               string val8 = "Some text";
+               mWQMRunLanguageWeb.RunComment = val8;
+               Assert.AreEqual(val8, mWQMRunLanguageWeb.RunComment);
+               TranslationStatusEnum val9 = (TranslationStatusEnum)3;
+               mWQMRunLanguageWeb.TranslationStatusRunComment = val9;
+               Assert.AreEqual(val9, mWQMRunLanguageWeb.TranslationStatusRunComment);
+               string val10 = "Some text";
+               mWQMRunLanguageWeb.RunWeatherComment = val10;
+               Assert.AreEqual(val10, mWQMRunLanguageWeb.RunWeatherComment);
+               TranslationStatusEnum val11 = (TranslationStatusEnum)3;
+               mWQMRunLanguageWeb.TranslationStatusRunWeatherComment = val11;
+               Assert.AreEqual(val11, mWQMRunLanguageWeb.TranslationStatusRunWeatherComment);
+               DateTime val12 = new DateTime(2010, 3, 4);
+               mWQMRunLanguageWeb.LastUpdateDate_UTC = val12;
+               Assert.AreEqual(val12, mWQMRunLanguageWeb.LastUpdateDate_UTC);
+               int val13 = 45;
+               mWQMRunLanguageWeb.LastUpdateContactTVItemID = val13;
+               Assert.AreEqual(val13, mWQMRunLanguageWeb.LastUpdateContactTVItemID);
+               bool val14 = true;
+               mWQMRunLanguageWeb.HasErrors = val14;
+               Assert.AreEqual(val14, mWQMRunLanguageWeb.HasErrors);
+               IEnumerable<ValidationResult> val45 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mWQMRunLanguageWeb.ValidationResults = val45;
+               Assert.AreEqual(val45, mWQMRunLanguageWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void MWQMRunLanguageReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               mWQMRunLanguageReport.MWQMRunLanguageReportTest = val1;
+               Assert.AreEqual(val1, mWQMRunLanguageReport.MWQMRunLanguageReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               mWQMRunLanguageReport.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, mWQMRunLanguageReport.LastUpdateContactTVItemLanguage);
+               string val3 = "Some text";
+               mWQMRunLanguageReport.LanguageText = val3;
+               Assert.AreEqual(val3, mWQMRunLanguageReport.LanguageText);
+               string val4 = "Some text";
+               mWQMRunLanguageReport.TranslationStatusRunCommentText = val4;
+               Assert.AreEqual(val4, mWQMRunLanguageReport.TranslationStatusRunCommentText);
+               string val5 = "Some text";
+               mWQMRunLanguageReport.TranslationStatusRunWeatherCommentText = val5;
+               Assert.AreEqual(val5, mWQMRunLanguageReport.TranslationStatusRunWeatherCommentText);
+               int val6 = 45;
+               mWQMRunLanguageReport.MWQMRunLanguageID = val6;
+               Assert.AreEqual(val6, mWQMRunLanguageReport.MWQMRunLanguageID);
+               int val7 = 45;
+               mWQMRunLanguageReport.MWQMRunID = val7;
+               Assert.AreEqual(val7, mWQMRunLanguageReport.MWQMRunID);
+               LanguageEnum val8 = (LanguageEnum)3;
+               mWQMRunLanguageReport.Language = val8;
+               Assert.AreEqual(val8, mWQMRunLanguageReport.Language);
+               string val9 = "Some text";
+               mWQMRunLanguageReport.RunComment = val9;
+               Assert.AreEqual(val9, mWQMRunLanguageReport.RunComment);
+               TranslationStatusEnum val10 = (TranslationStatusEnum)3;
+               mWQMRunLanguageReport.TranslationStatusRunComment = val10;
+               Assert.AreEqual(val10, mWQMRunLanguageReport.TranslationStatusRunComment);
+               string val11 = "Some text";
+               mWQMRunLanguageReport.RunWeatherComment = val11;
+               Assert.AreEqual(val11, mWQMRunLanguageReport.RunWeatherComment);
+               TranslationStatusEnum val12 = (TranslationStatusEnum)3;
+               mWQMRunLanguageReport.TranslationStatusRunWeatherComment = val12;
+               Assert.AreEqual(val12, mWQMRunLanguageReport.TranslationStatusRunWeatherComment);
+               DateTime val13 = new DateTime(2010, 3, 4);
+               mWQMRunLanguageReport.LastUpdateDate_UTC = val13;
+               Assert.AreEqual(val13, mWQMRunLanguageReport.LastUpdateDate_UTC);
+               int val14 = 45;
+               mWQMRunLanguageReport.LastUpdateContactTVItemID = val14;
+               Assert.AreEqual(val14, mWQMRunLanguageReport.LastUpdateContactTVItemID);
+               bool val15 = true;
+               mWQMRunLanguageReport.HasErrors = val15;
+               Assert.AreEqual(val15, mWQMRunLanguageReport.HasErrors);
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mWQMRunLanguageReport.ValidationResults = val48;
+               Assert.AreEqual(val48, mWQMRunLanguageReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

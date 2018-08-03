@@ -60,15 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(CSSPMPNTable).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void CSSPMPNTable_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.CSSPMPNTableTube10);
-               Assert.IsNotNull(CSSPModelsRes.CSSPMPNTableTube1_0);
-               Assert.IsNotNull(CSSPModelsRes.CSSPMPNTableTube0_1);
-               Assert.IsNotNull(CSSPModelsRes.CSSPMPNTableMPN);
-               Assert.IsNotNull(CSSPModelsRes.CSSPMPNTableHasErrors);
-        }
-        [TestMethod]
         public void CSSPMPNTable_Every_Property_Has_Get_Set_Test()
         {
                int val1 = 45;

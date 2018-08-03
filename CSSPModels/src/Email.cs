@@ -28,15 +28,6 @@ namespace CSSPModels
         public EmailTypeEnum EmailType { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailWeb EmailWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailReport EmailReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Email() : base()
         {
@@ -44,7 +35,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailWeb
+    public partial class EmailWeb : Email
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "EmailTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -57,13 +48,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public EmailWeb()
+        public EmailWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailReport
+    public partial class EmailReport : EmailWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -71,7 +62,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public EmailReport()
+        public EmailReport() : base()
         {
         }
         #endregion Constructors

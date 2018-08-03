@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private Email email { get; set; }
+        private EmailWeb emailWeb { get; set; }
+        private EmailReport emailReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public EmailTest()
         {
             email = new Email();
+            emailWeb = new EmailWeb();
+            emailReport = new EmailReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void Email_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "EmailID", "EmailTVItemID", "EmailAddress", "EmailType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "EmailWeb", "EmailReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Email).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(Email).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(Email).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void EmailWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "EmailTVItemLanguage", "LastUpdateContactTVItemLanguage", "EmailTypeText", "EmailID", "EmailTVItemID", "EmailAddress", "EmailType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(EmailWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(EmailWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void EmailReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "EmailReportTest", "EmailTVItemLanguage", "LastUpdateContactTVItemLanguage", "EmailTypeText", "EmailID", "EmailTVItemID", "EmailAddress", "EmailType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(EmailReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(EmailReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,20 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void EmailWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(EmailWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(EmailWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void EmailReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(EmailReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(EmailReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void Email_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(Email).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Email_Every_Property_Has_A_Resource_OK()
+        public void EmailWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.EmailEmailID);
-               Assert.IsNotNull(CSSPModelsRes.EmailEmailTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.EmailEmailAddress);
-               Assert.IsNotNull(CSSPModelsRes.EmailEmailType);
-               Assert.IsNotNull(CSSPModelsRes.EmailLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.EmailLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.EmailHasErrors);
+             Assert.IsTrue(typeof(EmailWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void EmailReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(EmailReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void Email_Every_Property_Has_Get_Set_Test()
@@ -146,9 +283,86 @@ namespace CSSPModels.Tests
                bool val7 = true;
                email.HasErrors = val7;
                Assert.AreEqual(val7, email.HasErrors);
-               IEnumerable<ValidationResult> val28 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               email.ValidationResults = val28;
-               Assert.AreEqual(val28, email.ValidationResults);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               email.ValidationResults = val24;
+               Assert.AreEqual(val24, email.ValidationResults);
+        }
+        [TestMethod]
+        public void EmailWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               emailWeb.EmailTVItemLanguage = val1;
+               Assert.AreEqual(val1, emailWeb.EmailTVItemLanguage);
+               TVItemLanguage val2 = new TVItemLanguage();
+               emailWeb.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, emailWeb.LastUpdateContactTVItemLanguage);
+               string val3 = "Some text";
+               emailWeb.EmailTypeText = val3;
+               Assert.AreEqual(val3, emailWeb.EmailTypeText);
+               int val4 = 45;
+               emailWeb.EmailID = val4;
+               Assert.AreEqual(val4, emailWeb.EmailID);
+               int val5 = 45;
+               emailWeb.EmailTVItemID = val5;
+               Assert.AreEqual(val5, emailWeb.EmailTVItemID);
+               string val6 = "Some text";
+               emailWeb.EmailAddress = val6;
+               Assert.AreEqual(val6, emailWeb.EmailAddress);
+               EmailTypeEnum val7 = (EmailTypeEnum)3;
+               emailWeb.EmailType = val7;
+               Assert.AreEqual(val7, emailWeb.EmailType);
+               DateTime val8 = new DateTime(2010, 3, 4);
+               emailWeb.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, emailWeb.LastUpdateDate_UTC);
+               int val9 = 45;
+               emailWeb.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, emailWeb.LastUpdateContactTVItemID);
+               bool val10 = true;
+               emailWeb.HasErrors = val10;
+               Assert.AreEqual(val10, emailWeb.HasErrors);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               emailWeb.ValidationResults = val33;
+               Assert.AreEqual(val33, emailWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void EmailReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               emailReport.EmailReportTest = val1;
+               Assert.AreEqual(val1, emailReport.EmailReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               emailReport.EmailTVItemLanguage = val2;
+               Assert.AreEqual(val2, emailReport.EmailTVItemLanguage);
+               TVItemLanguage val3 = new TVItemLanguage();
+               emailReport.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, emailReport.LastUpdateContactTVItemLanguage);
+               string val4 = "Some text";
+               emailReport.EmailTypeText = val4;
+               Assert.AreEqual(val4, emailReport.EmailTypeText);
+               int val5 = 45;
+               emailReport.EmailID = val5;
+               Assert.AreEqual(val5, emailReport.EmailID);
+               int val6 = 45;
+               emailReport.EmailTVItemID = val6;
+               Assert.AreEqual(val6, emailReport.EmailTVItemID);
+               string val7 = "Some text";
+               emailReport.EmailAddress = val7;
+               Assert.AreEqual(val7, emailReport.EmailAddress);
+               EmailTypeEnum val8 = (EmailTypeEnum)3;
+               emailReport.EmailType = val8;
+               Assert.AreEqual(val8, emailReport.EmailType);
+               DateTime val9 = new DateTime(2010, 3, 4);
+               emailReport.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, emailReport.LastUpdateDate_UTC);
+               int val10 = 45;
+               emailReport.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, emailReport.LastUpdateContactTVItemID);
+               bool val11 = true;
+               emailReport.HasErrors = val11;
+               Assert.AreEqual(val11, emailReport.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               emailReport.ValidationResults = val36;
+               Assert.AreEqual(val36, emailReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

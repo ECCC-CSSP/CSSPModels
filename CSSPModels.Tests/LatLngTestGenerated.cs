@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(LatLng).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void LatLng_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.LatLngLat);
-               Assert.IsNotNull(CSSPModelsRes.LatLngLng);
-               Assert.IsNotNull(CSSPModelsRes.LatLngHasErrors);
-        }
-        [TestMethod]
         public void LatLng_Every_Property_Has_Get_Set_Test()
         {
                double val1 = 87.9D;

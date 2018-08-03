@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table EmailDistributionListContactLanguages** : [EmailDistributionListContactLanguageID](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_EmailDistributionListContactLanguageID), [EmailDistributionListContactID](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_EmailDistributionListContactID), [Language](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_Language), [Agency](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_Agency), [TranslationStatus](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [EmailDistributionListContactLanguageWeb](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_EmailDistributionListContactLanguageWeb), [EmailDistributionListContactLanguageReport](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_EmailDistributionListContactLanguageReport), [HasErrors](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_HasErrors), [ValidationResults](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_HasErrors), [ValidationResults](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailDistributionListContactLanguageService](CSSPServices.EmailDistributionListContactLanguageService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
@@ -58,15 +58,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailDistributionListContactLanguageWeb EmailDistributionListContactLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailDistributionListContactLanguageReport EmailDistributionListContactLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public EmailDistributionListContactLanguage() : base()
         {
@@ -74,7 +65,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListContactLanguageWeb
+    public partial class EmailDistributionListContactLanguageWeb : EmailDistributionListContactLanguage
     {
         #region Properties for web information
         /// <summary>
@@ -105,13 +96,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public EmailDistributionListContactLanguageWeb()
+        public EmailDistributionListContactLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListContactLanguageReport
+    public partial class EmailDistributionListContactLanguageReport : EmailDistributionListContactLanguageWeb
     {
         #region Properties for report information
         /// <summary>
@@ -124,7 +115,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public EmailDistributionListContactLanguageReport()
+        public EmailDistributionListContactLanguageReport() : base()
         {
         }
         #endregion Constructors

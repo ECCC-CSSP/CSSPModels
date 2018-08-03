@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table Emails** : [EmailID](CSSPModels.Email.html#CSSPModels_Email_EmailID), [EmailTVItemID](CSSPModels.Email.html#CSSPModels_Email_EmailTVItemID), [EmailAddress](CSSPModels.Email.html#CSSPModels_Email_EmailAddress), [EmailType](CSSPModels.Email.html#CSSPModels_Email_EmailType), [LastUpdateDate_UTC](CSSPModels.Email.html#CSSPModels_Email_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Email.html#CSSPModels_Email_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [EmailWeb](CSSPModels.Email.html#CSSPModels_Email_EmailWeb), [EmailReport](CSSPModels.Email.html#CSSPModels_Email_EmailReport), [HasErrors](CSSPModels.Email.html#CSSPModels_Email_HasErrors), [ValidationResults](CSSPModels.Email.html#CSSPModels_Email_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.Email.html#CSSPModels_Email_HasErrors), [ValidationResults](CSSPModels.Email.html#CSSPModels_Email_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailService](CSSPServices.EmailService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [EmailTypeEnum](CSSPEnums.EmailTypeEnum.html)</para>
@@ -54,15 +54,6 @@ namespace CSSPModels
         public EmailTypeEnum EmailType { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailWeb EmailWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailReport EmailReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Email() : base()
         {
@@ -70,7 +61,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailWeb
+    public partial class EmailWeb : Email
     {
         #region Properties for web information
         /// <summary>
@@ -99,13 +90,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public EmailWeb()
+        public EmailWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailReport
+    public partial class EmailReport : EmailWeb
     {
         #region Properties for report information
         /// <summary>
@@ -118,7 +109,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public EmailReport()
+        public EmailReport() : base()
         {
         }
         #endregion Constructors

@@ -60,19 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(TVLocation).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TVLocation_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.TVLocationError);
-               Assert.IsNotNull(CSSPModelsRes.TVLocationTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.TVLocationTVText);
-               Assert.IsNotNull(CSSPModelsRes.TVLocationTVType);
-               Assert.IsNotNull(CSSPModelsRes.TVLocationSubTVType);
-               Assert.IsNotNull(CSSPModelsRes.TVLocationTVTypeText);
-               Assert.IsNotNull(CSSPModelsRes.TVLocationSubTVTypeText);
-               Assert.IsNotNull(CSSPModelsRes.TVLocationMapObjList);
-               Assert.IsNotNull(CSSPModelsRes.TVLocationHasErrors);
-        }
-        [TestMethod]
         public void TVLocation_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

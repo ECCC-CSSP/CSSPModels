@@ -38,15 +38,6 @@ namespace CSSPModels
         public int? CivicAddressTVItemID { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public PolSourceSiteWeb PolSourceSiteWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public PolSourceSiteReport PolSourceSiteReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public PolSourceSite() : base()
         {
@@ -54,7 +45,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class PolSourceSiteWeb
+    public partial class PolSourceSiteWeb : PolSourceSite
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "PolSourceSiteTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -67,13 +58,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public PolSourceSiteWeb()
+        public PolSourceSiteWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class PolSourceSiteReport
+    public partial class PolSourceSiteReport : PolSourceSiteWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -81,7 +72,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public PolSourceSiteReport()
+        public PolSourceSiteReport() : base()
         {
         }
         #endregion Constructors

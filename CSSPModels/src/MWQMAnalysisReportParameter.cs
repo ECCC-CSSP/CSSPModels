@@ -68,15 +68,6 @@ namespace CSSPModels
         public AnalysisReportExportCommandEnum Command { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMAnalysisReportParameterWeb MWQMAnalysisReportParameterWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMAnalysisReportParameterReport MWQMAnalysisReportParameterReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMAnalysisReportParameter() : base()
         {
@@ -84,7 +75,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMAnalysisReportParameterWeb
+    public partial class MWQMAnalysisReportParameterWeb : MWQMAnalysisReportParameter
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ExcelTVFileTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -98,13 +89,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMAnalysisReportParameterWeb()
+        public MWQMAnalysisReportParameterWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMAnalysisReportParameterReport
+    public partial class MWQMAnalysisReportParameterReport : MWQMAnalysisReportParameterWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -112,7 +103,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMAnalysisReportParameterReport()
+        public MWQMAnalysisReportParameterReport() : base()
         {
         }
         #endregion Constructors

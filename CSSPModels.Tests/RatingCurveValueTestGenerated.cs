@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private RatingCurveValue ratingCurveValue { get; set; }
+        private RatingCurveValueWeb ratingCurveValueWeb { get; set; }
+        private RatingCurveValueReport ratingCurveValueReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public RatingCurveValueTest()
         {
             ratingCurveValue = new RatingCurveValue();
+            ratingCurveValueWeb = new RatingCurveValueWeb();
+            ratingCurveValueReport = new RatingCurveValueReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void RatingCurveValue_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "RatingCurveValueID", "RatingCurveID", "StageValue_m", "DischargeValue_m3_s", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "RatingCurveValueWeb", "RatingCurveValueReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.RatingCurveValue).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(RatingCurveValue).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(RatingCurveValue).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void RatingCurveValueWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "RatingCurveValueID", "RatingCurveID", "StageValue_m", "DischargeValue_m3_s", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RatingCurveValueWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RatingCurveValueWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void RatingCurveValueReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "RatingCurveValueReportTest", "LastUpdateContactTVItemLanguage", "RatingCurveValueID", "RatingCurveID", "StageValue_m", "DischargeValue_m3_s", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RatingCurveValueReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RatingCurveValueReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,20 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void RatingCurveValueWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RatingCurveValueWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RatingCurveValueWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void RatingCurveValueReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RatingCurveValueReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RatingCurveValueReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void RatingCurveValue_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(RatingCurveValue).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void RatingCurveValue_Every_Property_Has_A_Resource_OK()
+        public void RatingCurveValueWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.RatingCurveValueRatingCurveValueID);
-               Assert.IsNotNull(CSSPModelsRes.RatingCurveValueRatingCurveID);
-               Assert.IsNotNull(CSSPModelsRes.RatingCurveValueStageValue_m);
-               Assert.IsNotNull(CSSPModelsRes.RatingCurveValueDischargeValue_m3_s);
-               Assert.IsNotNull(CSSPModelsRes.RatingCurveValueLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.RatingCurveValueLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.RatingCurveValueHasErrors);
+             Assert.IsTrue(typeof(RatingCurveValueWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void RatingCurveValueReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(RatingCurveValueReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void RatingCurveValue_Every_Property_Has_Get_Set_Test()
@@ -146,9 +283,74 @@ namespace CSSPModels.Tests
                bool val7 = true;
                ratingCurveValue.HasErrors = val7;
                Assert.AreEqual(val7, ratingCurveValue.HasErrors);
-               IEnumerable<ValidationResult> val28 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               ratingCurveValue.ValidationResults = val28;
-               Assert.AreEqual(val28, ratingCurveValue.ValidationResults);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               ratingCurveValue.ValidationResults = val24;
+               Assert.AreEqual(val24, ratingCurveValue.ValidationResults);
+        }
+        [TestMethod]
+        public void RatingCurveValueWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               ratingCurveValueWeb.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, ratingCurveValueWeb.LastUpdateContactTVItemLanguage);
+               int val2 = 45;
+               ratingCurveValueWeb.RatingCurveValueID = val2;
+               Assert.AreEqual(val2, ratingCurveValueWeb.RatingCurveValueID);
+               int val3 = 45;
+               ratingCurveValueWeb.RatingCurveID = val3;
+               Assert.AreEqual(val3, ratingCurveValueWeb.RatingCurveID);
+               double val4 = 87.9D;
+               ratingCurveValueWeb.StageValue_m = val4;
+               Assert.AreEqual(val4, ratingCurveValueWeb.StageValue_m);
+               double val5 = 87.9D;
+               ratingCurveValueWeb.DischargeValue_m3_s = val5;
+               Assert.AreEqual(val5, ratingCurveValueWeb.DischargeValue_m3_s);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               ratingCurveValueWeb.LastUpdateDate_UTC = val6;
+               Assert.AreEqual(val6, ratingCurveValueWeb.LastUpdateDate_UTC);
+               int val7 = 45;
+               ratingCurveValueWeb.LastUpdateContactTVItemID = val7;
+               Assert.AreEqual(val7, ratingCurveValueWeb.LastUpdateContactTVItemID);
+               bool val8 = true;
+               ratingCurveValueWeb.HasErrors = val8;
+               Assert.AreEqual(val8, ratingCurveValueWeb.HasErrors);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               ratingCurveValueWeb.ValidationResults = val27;
+               Assert.AreEqual(val27, ratingCurveValueWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void RatingCurveValueReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               ratingCurveValueReport.RatingCurveValueReportTest = val1;
+               Assert.AreEqual(val1, ratingCurveValueReport.RatingCurveValueReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               ratingCurveValueReport.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, ratingCurveValueReport.LastUpdateContactTVItemLanguage);
+               int val3 = 45;
+               ratingCurveValueReport.RatingCurveValueID = val3;
+               Assert.AreEqual(val3, ratingCurveValueReport.RatingCurveValueID);
+               int val4 = 45;
+               ratingCurveValueReport.RatingCurveID = val4;
+               Assert.AreEqual(val4, ratingCurveValueReport.RatingCurveID);
+               double val5 = 87.9D;
+               ratingCurveValueReport.StageValue_m = val5;
+               Assert.AreEqual(val5, ratingCurveValueReport.StageValue_m);
+               double val6 = 87.9D;
+               ratingCurveValueReport.DischargeValue_m3_s = val6;
+               Assert.AreEqual(val6, ratingCurveValueReport.DischargeValue_m3_s);
+               DateTime val7 = new DateTime(2010, 3, 4);
+               ratingCurveValueReport.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, ratingCurveValueReport.LastUpdateDate_UTC);
+               int val8 = 45;
+               ratingCurveValueReport.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, ratingCurveValueReport.LastUpdateContactTVItemID);
+               bool val9 = true;
+               ratingCurveValueReport.HasErrors = val9;
+               Assert.AreEqual(val9, ratingCurveValueReport.HasErrors);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               ratingCurveValueReport.ValidationResults = val30;
+               Assert.AreEqual(val30, ratingCurveValueReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

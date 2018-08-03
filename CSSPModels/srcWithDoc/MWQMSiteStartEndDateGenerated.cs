@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table MWQMSiteStartEndDates** : [MWQMSiteStartEndDateID](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_MWQMSiteStartEndDateID), [MWQMSiteTVItemID](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_MWQMSiteTVItemID), [StartDate](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_StartDate), [EndDate](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_EndDate), [LastUpdateDate_UTC](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [MWQMSiteStartEndDateWeb](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_MWQMSiteStartEndDateWeb), [MWQMSiteStartEndDateReport](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_MWQMSiteStartEndDateReport), [HasErrors](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_HasErrors), [ValidationResults](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_HasErrors), [ValidationResults](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSiteStartEndDateService](CSSPServices.MWQMSiteStartEndDateService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -59,15 +59,6 @@ namespace CSSPModels
         public DateTime? EndDate { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSiteStartEndDateWeb MWQMSiteStartEndDateWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSiteStartEndDateReport MWQMSiteStartEndDateReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMSiteStartEndDate() : base()
         {
@@ -75,7 +66,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSiteStartEndDateWeb
+    public partial class MWQMSiteStartEndDateWeb : MWQMSiteStartEndDate
     {
         #region Properties for web information
         /// <summary>
@@ -95,13 +86,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMSiteStartEndDateWeb()
+        public MWQMSiteStartEndDateWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSiteStartEndDateReport
+    public partial class MWQMSiteStartEndDateReport : MWQMSiteStartEndDateWeb
     {
         #region Properties for report information
         /// <summary>
@@ -114,7 +105,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMSiteStartEndDateReport()
+        public MWQMSiteStartEndDateReport() : base()
         {
         }
         #endregion Constructors

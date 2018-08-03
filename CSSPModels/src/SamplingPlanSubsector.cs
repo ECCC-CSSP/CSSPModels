@@ -25,15 +25,6 @@ namespace CSSPModels
         public int SubsectorTVItemID { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public SamplingPlanSubsectorWeb SamplingPlanSubsectorWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public SamplingPlanSubsectorReport SamplingPlanSubsectorReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public SamplingPlanSubsector() : base()
         {
@@ -41,7 +32,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanSubsectorWeb
+    public partial class SamplingPlanSubsectorWeb : SamplingPlanSubsector
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SubsectorTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -51,13 +42,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public SamplingPlanSubsectorWeb()
+        public SamplingPlanSubsectorWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanSubsectorReport
+    public partial class SamplingPlanSubsectorReport : SamplingPlanSubsectorWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -65,7 +56,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public SamplingPlanSubsectorReport()
+        public SamplingPlanSubsectorReport() : base()
         {
         }
         #endregion Constructors

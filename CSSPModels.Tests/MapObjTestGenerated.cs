@@ -60,15 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(MapObj).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MapObj_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.MapObjMapInfoID);
-               Assert.IsNotNull(CSSPModelsRes.MapObjMapInfoDrawType);
-               Assert.IsNotNull(CSSPModelsRes.MapObjMapInfoDrawTypeText);
-               Assert.IsNotNull(CSSPModelsRes.MapObjCoordList);
-               Assert.IsNotNull(CSSPModelsRes.MapObjHasErrors);
-        }
-        [TestMethod]
         public void MapObj_Every_Property_Has_Get_Set_Test()
         {
                int val1 = 45;

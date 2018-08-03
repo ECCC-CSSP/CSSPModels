@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table Contacts** : [ContactID](CSSPModels.Contact.html#CSSPModels_Contact_ContactID), [Id](CSSPModels.Contact.html#CSSPModels_Contact_Id), [ContactTVItemID](CSSPModels.Contact.html#CSSPModels_Contact_ContactTVItemID), [LoginEmail](CSSPModels.Contact.html#CSSPModels_Contact_LoginEmail), [FirstName](CSSPModels.Contact.html#CSSPModels_Contact_FirstName), [LastName](CSSPModels.Contact.html#CSSPModels_Contact_LastName), [Initial](CSSPModels.Contact.html#CSSPModels_Contact_Initial), [WebName](CSSPModels.Contact.html#CSSPModels_Contact_WebName), [ContactTitle](CSSPModels.Contact.html#CSSPModels_Contact_ContactTitle), [IsAdmin](CSSPModels.Contact.html#CSSPModels_Contact_IsAdmin), [EmailValidated](CSSPModels.Contact.html#CSSPModels_Contact_EmailValidated), [Disabled](CSSPModels.Contact.html#CSSPModels_Contact_Disabled), [IsNew](CSSPModels.Contact.html#CSSPModels_Contact_IsNew), [SamplingPlanner_ProvincesTVItemID](CSSPModels.Contact.html#CSSPModels_Contact_SamplingPlanner_ProvincesTVItemID), [LastUpdateDate_UTC](CSSPModels.Contact.html#CSSPModels_Contact_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Contact.html#CSSPModels_Contact_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [ContactWeb](CSSPModels.Contact.html#CSSPModels_Contact_ContactWeb), [ContactReport](CSSPModels.Contact.html#CSSPModels_Contact_ContactReport), [HasErrors](CSSPModels.Contact.html#CSSPModels_Contact_HasErrors), [ValidationResults](CSSPModels.Contact.html#CSSPModels_Contact_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.Contact.html#CSSPModels_Contact_HasErrors), [ValidationResults](CSSPModels.Contact.html#CSSPModels_Contact_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactService](CSSPServices.ContactService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ContactTitleEnum](CSSPEnums.ContactTitleEnum.html)</para>
@@ -90,15 +90,6 @@ namespace CSSPModels
         public string SamplingPlanner_ProvincesTVItemID { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ContactWeb ContactWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ContactReport ContactReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Contact() : base()
         {
@@ -106,7 +97,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactWeb
+    public partial class ContactWeb : Contact
     {
         #region Properties for web information
         /// <summary>
@@ -142,13 +133,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ContactWeb()
+        public ContactWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactReport
+    public partial class ContactReport : ContactWeb
     {
         #region Properties for report information
         /// <summary>
@@ -161,7 +152,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ContactReport()
+        public ContactReport() : base()
         {
         }
         #endregion Constructors

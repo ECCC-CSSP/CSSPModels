@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table EmailDistributionListLanguages** : [EmailDistributionListLanguageID](CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_EmailDistributionListLanguageID), [EmailDistributionListID](CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_EmailDistributionListID), [Language](CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_Language), [RegionName](CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_RegionName), [TranslationStatus](CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [EmailDistributionListLanguageWeb](CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_EmailDistributionListLanguageWeb), [EmailDistributionListLanguageReport](CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_EmailDistributionListLanguageReport), [HasErrors](CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_HasErrors), [ValidationResults](CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_HasErrors), [ValidationResults](CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailDistributionListLanguageService](CSSPServices.EmailDistributionListLanguageService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
@@ -58,15 +58,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailDistributionListLanguageWeb EmailDistributionListLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailDistributionListLanguageReport EmailDistributionListLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public EmailDistributionListLanguage() : base()
         {
@@ -74,7 +65,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListLanguageWeb
+    public partial class EmailDistributionListLanguageWeb : EmailDistributionListLanguage
     {
         #region Properties for web information
         /// <summary>
@@ -105,13 +96,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public EmailDistributionListLanguageWeb()
+        public EmailDistributionListLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListLanguageReport
+    public partial class EmailDistributionListLanguageReport : EmailDistributionListLanguageWeb
     {
         #region Properties for report information
         /// <summary>
@@ -124,7 +115,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public EmailDistributionListLanguageReport()
+        public EmailDistributionListLanguageReport() : base()
         {
         }
         #endregion Constructors

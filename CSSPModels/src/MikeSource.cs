@@ -28,15 +28,6 @@ namespace CSSPModels
         public string SourceNumberString { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MikeSourceWeb MikeSourceWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MikeSourceReport MikeSourceReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MikeSource() : base()
         {
@@ -44,7 +35,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeSourceWeb
+    public partial class MikeSourceWeb : MikeSource
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MikeSourceTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -54,13 +45,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MikeSourceWeb()
+        public MikeSourceWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeSourceReport
+    public partial class MikeSourceReport : MikeSourceWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -68,7 +59,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MikeSourceReport()
+        public MikeSourceReport() : base()
         {
         }
         #endregion Constructors

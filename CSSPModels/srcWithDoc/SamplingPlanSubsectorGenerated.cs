@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table SamplingPlanSubsectors** : [SamplingPlanSubsectorID](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_SamplingPlanSubsectorID), [SamplingPlanID](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_SamplingPlanID), [SubsectorTVItemID](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_SubsectorTVItemID), [LastUpdateDate_UTC](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [SamplingPlanSubsectorWeb](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_SamplingPlanSubsectorWeb), [SamplingPlanSubsectorReport](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_SamplingPlanSubsectorReport), [HasErrors](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_HasErrors), [ValidationResults](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_HasErrors), [ValidationResults](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SamplingPlanSubsectorService](CSSPServices.SamplingPlanSubsectorService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -50,15 +50,6 @@ namespace CSSPModels
         public int SubsectorTVItemID { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public SamplingPlanSubsectorWeb SamplingPlanSubsectorWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public SamplingPlanSubsectorReport SamplingPlanSubsectorReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public SamplingPlanSubsector() : base()
         {
@@ -66,7 +57,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanSubsectorWeb
+    public partial class SamplingPlanSubsectorWeb : SamplingPlanSubsector
     {
         #region Properties for web information
         /// <summary>
@@ -86,13 +77,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public SamplingPlanSubsectorWeb()
+        public SamplingPlanSubsectorWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanSubsectorReport
+    public partial class SamplingPlanSubsectorReport : SamplingPlanSubsectorWeb
     {
         #region Properties for report information
         /// <summary>
@@ -105,7 +96,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public SamplingPlanSubsectorReport()
+        public SamplingPlanSubsectorReport() : base()
         {
         }
         #endregion Constructors

@@ -60,14 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(DataPathOfTide).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void DataPathOfTide_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.DataPathOfTideText);
-               Assert.IsNotNull(CSSPModelsRes.DataPathOfTideWebTideDataSet);
-               Assert.IsNotNull(CSSPModelsRes.DataPathOfTideWebTideDataSetText);
-               Assert.IsNotNull(CSSPModelsRes.DataPathOfTideHasErrors);
-        }
-        [TestMethod]
         public void DataPathOfTide_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table BoxModelResults** : [BoxModelResultID](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_BoxModelResultID), [BoxModelID](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_BoxModelID), [BoxModelResultType](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_BoxModelResultType), [Volume_m3](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_Volume_m3), [Surface_m2](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_Surface_m2), [Radius_m](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_Radius_m), [LeftSideDiameterLineAngle_deg](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_LeftSideDiameterLineAngle_deg), [CircleCenterLatitude](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_CircleCenterLatitude), [CircleCenterLongitude](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_CircleCenterLongitude), [FixLength](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_FixLength), [FixWidth](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_FixWidth), [RectLength_m](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_RectLength_m), [RectWidth_m](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_RectWidth_m), [LeftSideLineAngle_deg](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_LeftSideLineAngle_deg), [LeftSideLineStartLatitude](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_LeftSideLineStartLatitude), [LeftSideLineStartLongitude](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_LeftSideLineStartLongitude), [LastUpdateDate_UTC](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [BoxModelResultWeb](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_BoxModelResultWeb), [BoxModelResultReport](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_BoxModelResultReport), [HasErrors](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_HasErrors), [ValidationResults](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_HasErrors), [ValidationResults](CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [BoxModelResultService](CSSPServices.BoxModelResultService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [BoxModelResultTypeEnum](CSSPEnums.BoxModelResultTypeEnum.html)</para>
@@ -73,15 +73,6 @@ namespace CSSPModels
         public double? LeftSideLineStartLongitude { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public BoxModelResultWeb BoxModelResultWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public BoxModelResultReport BoxModelResultReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public BoxModelResult() : base()
         {
@@ -89,7 +80,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelResultWeb
+    public partial class BoxModelResultWeb : BoxModelResult
     {
         #region Properties for web information
         /// <summary>
@@ -111,13 +102,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public BoxModelResultWeb()
+        public BoxModelResultWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelResultReport
+    public partial class BoxModelResultReport : BoxModelResultWeb
     {
         #region Properties for report information
         /// <summary>
@@ -130,7 +121,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public BoxModelResultReport()
+        public BoxModelResultReport() : base()
         {
         }
         #endregion Constructors

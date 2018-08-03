@@ -43,15 +43,6 @@ namespace CSSPModels
         public double FlowDuration_hour { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public BoxModelWeb BoxModelWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public BoxModelReport BoxModelReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public BoxModel() : base()
         {
@@ -59,7 +50,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelWeb
+    public partial class BoxModelWeb : BoxModel
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -69,13 +60,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public BoxModelWeb()
+        public BoxModelWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelReport
+    public partial class BoxModelReport : BoxModelWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -83,7 +74,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public BoxModelReport()
+        public BoxModelReport() : base()
         {
         }
         #endregion Constructors

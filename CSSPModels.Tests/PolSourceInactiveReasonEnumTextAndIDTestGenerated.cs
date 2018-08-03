@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(PolSourceInactiveReasonEnumTextAndID).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void PolSourceInactiveReasonEnumTextAndID_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.PolSourceInactiveReasonEnumTextAndIDText);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceInactiveReasonEnumTextAndIDID);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceInactiveReasonEnumTextAndIDHasErrors);
-        }
-        [TestMethod]
         public void PolSourceInactiveReasonEnumTextAndID_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

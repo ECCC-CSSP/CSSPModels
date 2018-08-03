@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private SpillLanguage spillLanguage { get; set; }
+        private SpillLanguageWeb spillLanguageWeb { get; set; }
+        private SpillLanguageReport spillLanguageReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public SpillLanguageTest()
         {
             spillLanguage = new SpillLanguage();
+            spillLanguageWeb = new SpillLanguageWeb();
+            spillLanguageReport = new SpillLanguageReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void SpillLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SpillLanguageID", "SpillID", "Language", "SpillComment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "SpillLanguageWeb", "SpillLanguageReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.SpillLanguage).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(SpillLanguage).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(SpillLanguage).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void SpillLanguageWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "SpillLanguageID", "SpillID", "Language", "SpillComment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillLanguageWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillLanguageWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void SpillLanguageReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "SpillLanguageReportTest", "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "SpillLanguageID", "SpillID", "Language", "SpillComment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillLanguageReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillLanguageReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,21 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void SpillLanguageWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillLanguageWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillLanguageWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void SpillLanguageReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillLanguageReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillLanguageReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void SpillLanguage_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(SpillLanguage).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void SpillLanguage_Every_Property_Has_A_Resource_OK()
+        public void SpillLanguageWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.SpillLanguageSpillLanguageID);
-               Assert.IsNotNull(CSSPModelsRes.SpillLanguageSpillID);
-               Assert.IsNotNull(CSSPModelsRes.SpillLanguageLanguage);
-               Assert.IsNotNull(CSSPModelsRes.SpillLanguageSpillComment);
-               Assert.IsNotNull(CSSPModelsRes.SpillLanguageTranslationStatus);
-               Assert.IsNotNull(CSSPModelsRes.SpillLanguageLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.SpillLanguageLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.SpillLanguageHasErrors);
+             Assert.IsTrue(typeof(SpillLanguageWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void SpillLanguageReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(SpillLanguageReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void SpillLanguage_Every_Property_Has_Get_Set_Test()
@@ -150,9 +286,92 @@ namespace CSSPModels.Tests
                bool val8 = true;
                spillLanguage.HasErrors = val8;
                Assert.AreEqual(val8, spillLanguage.HasErrors);
-               IEnumerable<ValidationResult> val31 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               spillLanguage.ValidationResults = val31;
-               Assert.AreEqual(val31, spillLanguage.ValidationResults);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               spillLanguage.ValidationResults = val27;
+               Assert.AreEqual(val27, spillLanguage.ValidationResults);
+        }
+        [TestMethod]
+        public void SpillLanguageWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               spillLanguageWeb.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, spillLanguageWeb.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               spillLanguageWeb.LanguageText = val2;
+               Assert.AreEqual(val2, spillLanguageWeb.LanguageText);
+               string val3 = "Some text";
+               spillLanguageWeb.TranslationStatusText = val3;
+               Assert.AreEqual(val3, spillLanguageWeb.TranslationStatusText);
+               int val4 = 45;
+               spillLanguageWeb.SpillLanguageID = val4;
+               Assert.AreEqual(val4, spillLanguageWeb.SpillLanguageID);
+               int val5 = 45;
+               spillLanguageWeb.SpillID = val5;
+               Assert.AreEqual(val5, spillLanguageWeb.SpillID);
+               LanguageEnum val6 = (LanguageEnum)3;
+               spillLanguageWeb.Language = val6;
+               Assert.AreEqual(val6, spillLanguageWeb.Language);
+               string val7 = "Some text";
+               spillLanguageWeb.SpillComment = val7;
+               Assert.AreEqual(val7, spillLanguageWeb.SpillComment);
+               TranslationStatusEnum val8 = (TranslationStatusEnum)3;
+               spillLanguageWeb.TranslationStatus = val8;
+               Assert.AreEqual(val8, spillLanguageWeb.TranslationStatus);
+               DateTime val9 = new DateTime(2010, 3, 4);
+               spillLanguageWeb.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, spillLanguageWeb.LastUpdateDate_UTC);
+               int val10 = 45;
+               spillLanguageWeb.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, spillLanguageWeb.LastUpdateContactTVItemID);
+               bool val11 = true;
+               spillLanguageWeb.HasErrors = val11;
+               Assert.AreEqual(val11, spillLanguageWeb.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               spillLanguageWeb.ValidationResults = val36;
+               Assert.AreEqual(val36, spillLanguageWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void SpillLanguageReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               spillLanguageReport.SpillLanguageReportTest = val1;
+               Assert.AreEqual(val1, spillLanguageReport.SpillLanguageReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               spillLanguageReport.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, spillLanguageReport.LastUpdateContactTVItemLanguage);
+               string val3 = "Some text";
+               spillLanguageReport.LanguageText = val3;
+               Assert.AreEqual(val3, spillLanguageReport.LanguageText);
+               string val4 = "Some text";
+               spillLanguageReport.TranslationStatusText = val4;
+               Assert.AreEqual(val4, spillLanguageReport.TranslationStatusText);
+               int val5 = 45;
+               spillLanguageReport.SpillLanguageID = val5;
+               Assert.AreEqual(val5, spillLanguageReport.SpillLanguageID);
+               int val6 = 45;
+               spillLanguageReport.SpillID = val6;
+               Assert.AreEqual(val6, spillLanguageReport.SpillID);
+               LanguageEnum val7 = (LanguageEnum)3;
+               spillLanguageReport.Language = val7;
+               Assert.AreEqual(val7, spillLanguageReport.Language);
+               string val8 = "Some text";
+               spillLanguageReport.SpillComment = val8;
+               Assert.AreEqual(val8, spillLanguageReport.SpillComment);
+               TranslationStatusEnum val9 = (TranslationStatusEnum)3;
+               spillLanguageReport.TranslationStatus = val9;
+               Assert.AreEqual(val9, spillLanguageReport.TranslationStatus);
+               DateTime val10 = new DateTime(2010, 3, 4);
+               spillLanguageReport.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, spillLanguageReport.LastUpdateDate_UTC);
+               int val11 = 45;
+               spillLanguageReport.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, spillLanguageReport.LastUpdateContactTVItemID);
+               bool val12 = true;
+               spillLanguageReport.HasErrors = val12;
+               Assert.AreEqual(val12, spillLanguageReport.HasErrors);
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               spillLanguageReport.ValidationResults = val39;
+               Assert.AreEqual(val39, spillLanguageReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

@@ -60,20 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(WhereInfo).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void WhereInfo_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.WhereInfoPropertyName);
-               Assert.IsNotNull(CSSPModelsRes.WhereInfoPropertyType);
-               Assert.IsNotNull(CSSPModelsRes.WhereInfoWhereOperator);
-               Assert.IsNotNull(CSSPModelsRes.WhereInfoValue);
-               Assert.IsNotNull(CSSPModelsRes.WhereInfoValueInt);
-               Assert.IsNotNull(CSSPModelsRes.WhereInfoValueDouble);
-               Assert.IsNotNull(CSSPModelsRes.WhereInfoValueBool);
-               Assert.IsNotNull(CSSPModelsRes.WhereInfoValueDateTime);
-               Assert.IsNotNull(CSSPModelsRes.WhereInfoValueEnumText);
-               Assert.IsNotNull(CSSPModelsRes.WhereInfoHasErrors);
-        }
-        [TestMethod]
         public void WhereInfo_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

@@ -60,22 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(CSSPWQInputParam).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void CSSPWQInputParam_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputParamCSSPWQInputType);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputParamName);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputParamTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputParamCSSPWQInputTypeText);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputParamsidList);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputParamMWQMSiteList);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputParamMWQMSiteTVItemIDList);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputParamDailyDuplicateMWQMSiteList);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputParamDailyDuplicateMWQMSiteTVItemIDList);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputParamInfrastructureList);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputParamInfrastructureTVItemIDList);
-               Assert.IsNotNull(CSSPModelsRes.CSSPWQInputParamHasErrors);
-        }
-        [TestMethod]
         public void CSSPWQInputParam_Every_Property_Has_Get_Set_Test()
         {
                CSSPWQInputTypeEnum val1 = (CSSPWQInputTypeEnum)3;

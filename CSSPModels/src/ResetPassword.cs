@@ -27,15 +27,6 @@ namespace CSSPModels
         public string Code { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ResetPasswordWeb ResetPasswordWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ResetPasswordReport ResetPasswordReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public ResetPassword() : base()
         {
@@ -43,25 +34,21 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ResetPasswordWeb
+    public partial class ResetPasswordWeb : ResetPassword
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
         public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
-        [CSSPAllowNull]
-        public string Password { get; set; }
-        [CSSPAllowNull]
-        public string ConfirmPassword { get; set; }
         #endregion Properties for web information
 
         #region Constructors
-        public ResetPasswordWeb()
+        public ResetPasswordWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ResetPasswordReport
+    public partial class ResetPasswordReport : ResetPasswordWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -69,7 +56,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ResetPasswordReport()
+        public ResetPasswordReport() : base()
         {
         }
         #endregion Constructors

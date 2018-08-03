@@ -60,24 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(LabSheetA1Measurement).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void LabSheetA1Measurement_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.LabSheetA1MeasurementSite);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetA1MeasurementTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetA1MeasurementTime);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetA1MeasurementMPN);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetA1MeasurementTube10);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetA1MeasurementTube1_0);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetA1MeasurementTube0_1);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetA1MeasurementSalinity);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetA1MeasurementTemperature);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetA1MeasurementProcessedBy);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetA1MeasurementSampleType);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetA1MeasurementSiteComment);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetA1MeasurementSampleTypeText);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetA1MeasurementHasErrors);
-        }
-        [TestMethod]
         public void LabSheetA1Measurement_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

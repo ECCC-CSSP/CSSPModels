@@ -60,18 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(Register).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Register_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.RegisterLoginEmail);
-               Assert.IsNotNull(CSSPModelsRes.RegisterFirstName);
-               Assert.IsNotNull(CSSPModelsRes.RegisterInitial);
-               Assert.IsNotNull(CSSPModelsRes.RegisterLastName);
-               Assert.IsNotNull(CSSPModelsRes.RegisterWebName);
-               Assert.IsNotNull(CSSPModelsRes.RegisterPassword);
-               Assert.IsNotNull(CSSPModelsRes.RegisterConfirmPassword);
-               Assert.IsNotNull(CSSPModelsRes.RegisterHasErrors);
-        }
-        [TestMethod]
         public void Register_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

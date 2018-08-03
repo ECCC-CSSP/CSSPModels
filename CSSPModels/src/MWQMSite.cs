@@ -31,15 +31,6 @@ namespace CSSPModels
         public int Ordinal { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSiteWeb MWQMSiteWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSiteReport MWQMSiteReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMSite() : base()
         {
@@ -47,7 +38,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSiteWeb
+    public partial class MWQMSiteWeb : MWQMSite
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -60,13 +51,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMSiteWeb()
+        public MWQMSiteWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSiteReport
+    public partial class MWQMSiteReport : MWQMSiteWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -74,7 +65,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMSiteReport()
+        public MWQMSiteReport() : base()
         {
         }
         #endregion Constructors

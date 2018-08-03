@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private BoxModelResult boxModelResult { get; set; }
+        private BoxModelResultWeb boxModelResultWeb { get; set; }
+        private BoxModelResultReport boxModelResultReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public BoxModelResultTest()
         {
             boxModelResult = new BoxModelResult();
+            boxModelResultWeb = new BoxModelResultWeb();
+            boxModelResultReport = new BoxModelResultReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void BoxModelResult_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "BoxModelResultID", "BoxModelID", "BoxModelResultType", "Volume_m3", "Surface_m2", "Radius_m", "LeftSideDiameterLineAngle_deg", "CircleCenterLatitude", "CircleCenterLongitude", "FixLength", "FixWidth", "RectLength_m", "RectWidth_m", "LeftSideLineAngle_deg", "LeftSideLineStartLatitude", "LeftSideLineStartLongitude", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "BoxModelResultWeb", "BoxModelResultReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.BoxModelResult).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResult).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(BoxModelResult).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void BoxModelResultWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "BoxModelResultTypeText", "BoxModelResultID", "BoxModelID", "BoxModelResultType", "Volume_m3", "Surface_m2", "Radius_m", "LeftSideDiameterLineAngle_deg", "CircleCenterLatitude", "CircleCenterLongitude", "FixLength", "FixWidth", "RectLength_m", "RectWidth_m", "LeftSideLineAngle_deg", "LeftSideLineStartLatitude", "LeftSideLineStartLongitude", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void BoxModelResultReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "BoxModelResultReportTest", "LastUpdateContactTVItemLanguage", "BoxModelResultTypeText", "BoxModelResultID", "BoxModelID", "BoxModelResultType", "Volume_m3", "Surface_m2", "Radius_m", "LeftSideDiameterLineAngle_deg", "CircleCenterLatitude", "CircleCenterLongitude", "FixLength", "FixWidth", "RectLength_m", "RectWidth_m", "LeftSideLineAngle_deg", "LeftSideLineStartLatitude", "LeftSideLineStartLongitude", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,32 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void BoxModelResultWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void BoxModelResultReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void BoxModelResult_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(BoxModelResult).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void BoxModelResult_Every_Property_Has_A_Resource_OK()
+        public void BoxModelResultWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultBoxModelResultID);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultBoxModelID);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultBoxModelResultType);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultVolume_m3);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultSurface_m2);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultRadius_m);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultLeftSideDiameterLineAngle_deg);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultCircleCenterLatitude);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultCircleCenterLongitude);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultFixLength);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultFixWidth);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultRectLength_m);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultRectWidth_m);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultLeftSideLineAngle_deg);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultLeftSideLineStartLatitude);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultLeftSideLineStartLongitude);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelResultHasErrors);
+             Assert.IsTrue(typeof(BoxModelResultWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void BoxModelResultReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(BoxModelResultReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void BoxModelResult_Every_Property_Has_Get_Set_Test()
@@ -194,9 +319,152 @@ namespace CSSPModels.Tests
                bool val19 = true;
                boxModelResult.HasErrors = val19;
                Assert.AreEqual(val19, boxModelResult.HasErrors);
-               IEnumerable<ValidationResult> val64 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               boxModelResult.ValidationResults = val64;
-               Assert.AreEqual(val64, boxModelResult.ValidationResults);
+               IEnumerable<ValidationResult> val60 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               boxModelResult.ValidationResults = val60;
+               Assert.AreEqual(val60, boxModelResult.ValidationResults);
+        }
+        [TestMethod]
+        public void BoxModelResultWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               boxModelResultWeb.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, boxModelResultWeb.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               boxModelResultWeb.BoxModelResultTypeText = val2;
+               Assert.AreEqual(val2, boxModelResultWeb.BoxModelResultTypeText);
+               int val3 = 45;
+               boxModelResultWeb.BoxModelResultID = val3;
+               Assert.AreEqual(val3, boxModelResultWeb.BoxModelResultID);
+               int val4 = 45;
+               boxModelResultWeb.BoxModelID = val4;
+               Assert.AreEqual(val4, boxModelResultWeb.BoxModelID);
+               BoxModelResultTypeEnum val5 = (BoxModelResultTypeEnum)3;
+               boxModelResultWeb.BoxModelResultType = val5;
+               Assert.AreEqual(val5, boxModelResultWeb.BoxModelResultType);
+               double val6 = 87.9D;
+               boxModelResultWeb.Volume_m3 = val6;
+               Assert.AreEqual(val6, boxModelResultWeb.Volume_m3);
+               double val7 = 87.9D;
+               boxModelResultWeb.Surface_m2 = val7;
+               Assert.AreEqual(val7, boxModelResultWeb.Surface_m2);
+               double val8 = 87.9D;
+               boxModelResultWeb.Radius_m = val8;
+               Assert.AreEqual(val8, boxModelResultWeb.Radius_m);
+               double val9 = 87.9D;
+               boxModelResultWeb.LeftSideDiameterLineAngle_deg = val9;
+               Assert.AreEqual(val9, boxModelResultWeb.LeftSideDiameterLineAngle_deg);
+               double val10 = 87.9D;
+               boxModelResultWeb.CircleCenterLatitude = val10;
+               Assert.AreEqual(val10, boxModelResultWeb.CircleCenterLatitude);
+               double val11 = 87.9D;
+               boxModelResultWeb.CircleCenterLongitude = val11;
+               Assert.AreEqual(val11, boxModelResultWeb.CircleCenterLongitude);
+               bool val12 = true;
+               boxModelResultWeb.FixLength = val12;
+               Assert.AreEqual(val12, boxModelResultWeb.FixLength);
+               bool val13 = true;
+               boxModelResultWeb.FixWidth = val13;
+               Assert.AreEqual(val13, boxModelResultWeb.FixWidth);
+               double val14 = 87.9D;
+               boxModelResultWeb.RectLength_m = val14;
+               Assert.AreEqual(val14, boxModelResultWeb.RectLength_m);
+               double val15 = 87.9D;
+               boxModelResultWeb.RectWidth_m = val15;
+               Assert.AreEqual(val15, boxModelResultWeb.RectWidth_m);
+               double val16 = 87.9D;
+               boxModelResultWeb.LeftSideLineAngle_deg = val16;
+               Assert.AreEqual(val16, boxModelResultWeb.LeftSideLineAngle_deg);
+               double val17 = 87.9D;
+               boxModelResultWeb.LeftSideLineStartLatitude = val17;
+               Assert.AreEqual(val17, boxModelResultWeb.LeftSideLineStartLatitude);
+               double val18 = 87.9D;
+               boxModelResultWeb.LeftSideLineStartLongitude = val18;
+               Assert.AreEqual(val18, boxModelResultWeb.LeftSideLineStartLongitude);
+               DateTime val19 = new DateTime(2010, 3, 4);
+               boxModelResultWeb.LastUpdateDate_UTC = val19;
+               Assert.AreEqual(val19, boxModelResultWeb.LastUpdateDate_UTC);
+               int val20 = 45;
+               boxModelResultWeb.LastUpdateContactTVItemID = val20;
+               Assert.AreEqual(val20, boxModelResultWeb.LastUpdateContactTVItemID);
+               bool val21 = true;
+               boxModelResultWeb.HasErrors = val21;
+               Assert.AreEqual(val21, boxModelResultWeb.HasErrors);
+               IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               boxModelResultWeb.ValidationResults = val66;
+               Assert.AreEqual(val66, boxModelResultWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void BoxModelResultReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               boxModelResultReport.BoxModelResultReportTest = val1;
+               Assert.AreEqual(val1, boxModelResultReport.BoxModelResultReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               boxModelResultReport.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, boxModelResultReport.LastUpdateContactTVItemLanguage);
+               string val3 = "Some text";
+               boxModelResultReport.BoxModelResultTypeText = val3;
+               Assert.AreEqual(val3, boxModelResultReport.BoxModelResultTypeText);
+               int val4 = 45;
+               boxModelResultReport.BoxModelResultID = val4;
+               Assert.AreEqual(val4, boxModelResultReport.BoxModelResultID);
+               int val5 = 45;
+               boxModelResultReport.BoxModelID = val5;
+               Assert.AreEqual(val5, boxModelResultReport.BoxModelID);
+               BoxModelResultTypeEnum val6 = (BoxModelResultTypeEnum)3;
+               boxModelResultReport.BoxModelResultType = val6;
+               Assert.AreEqual(val6, boxModelResultReport.BoxModelResultType);
+               double val7 = 87.9D;
+               boxModelResultReport.Volume_m3 = val7;
+               Assert.AreEqual(val7, boxModelResultReport.Volume_m3);
+               double val8 = 87.9D;
+               boxModelResultReport.Surface_m2 = val8;
+               Assert.AreEqual(val8, boxModelResultReport.Surface_m2);
+               double val9 = 87.9D;
+               boxModelResultReport.Radius_m = val9;
+               Assert.AreEqual(val9, boxModelResultReport.Radius_m);
+               double val10 = 87.9D;
+               boxModelResultReport.LeftSideDiameterLineAngle_deg = val10;
+               Assert.AreEqual(val10, boxModelResultReport.LeftSideDiameterLineAngle_deg);
+               double val11 = 87.9D;
+               boxModelResultReport.CircleCenterLatitude = val11;
+               Assert.AreEqual(val11, boxModelResultReport.CircleCenterLatitude);
+               double val12 = 87.9D;
+               boxModelResultReport.CircleCenterLongitude = val12;
+               Assert.AreEqual(val12, boxModelResultReport.CircleCenterLongitude);
+               bool val13 = true;
+               boxModelResultReport.FixLength = val13;
+               Assert.AreEqual(val13, boxModelResultReport.FixLength);
+               bool val14 = true;
+               boxModelResultReport.FixWidth = val14;
+               Assert.AreEqual(val14, boxModelResultReport.FixWidth);
+               double val15 = 87.9D;
+               boxModelResultReport.RectLength_m = val15;
+               Assert.AreEqual(val15, boxModelResultReport.RectLength_m);
+               double val16 = 87.9D;
+               boxModelResultReport.RectWidth_m = val16;
+               Assert.AreEqual(val16, boxModelResultReport.RectWidth_m);
+               double val17 = 87.9D;
+               boxModelResultReport.LeftSideLineAngle_deg = val17;
+               Assert.AreEqual(val17, boxModelResultReport.LeftSideLineAngle_deg);
+               double val18 = 87.9D;
+               boxModelResultReport.LeftSideLineStartLatitude = val18;
+               Assert.AreEqual(val18, boxModelResultReport.LeftSideLineStartLatitude);
+               double val19 = 87.9D;
+               boxModelResultReport.LeftSideLineStartLongitude = val19;
+               Assert.AreEqual(val19, boxModelResultReport.LeftSideLineStartLongitude);
+               DateTime val20 = new DateTime(2010, 3, 4);
+               boxModelResultReport.LastUpdateDate_UTC = val20;
+               Assert.AreEqual(val20, boxModelResultReport.LastUpdateDate_UTC);
+               int val21 = 45;
+               boxModelResultReport.LastUpdateContactTVItemID = val21;
+               Assert.AreEqual(val21, boxModelResultReport.LastUpdateContactTVItemID);
+               bool val22 = true;
+               boxModelResultReport.HasErrors = val22;
+               Assert.AreEqual(val22, boxModelResultReport.HasErrors);
+               IEnumerable<ValidationResult> val69 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               boxModelResultReport.ValidationResults = val69;
+               Assert.AreEqual(val69, boxModelResultReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

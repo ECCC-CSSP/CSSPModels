@@ -60,17 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(TVItemInfrastructureTypeTVItemLink).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TVItemInfrastructureTypeTVItemLink_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.TVItemInfrastructureTypeTVItemLinkInfrastructureType);
-               Assert.IsNotNull(CSSPModelsRes.TVItemInfrastructureTypeTVItemLinkSeeOtherTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.TVItemInfrastructureTypeTVItemLinkInfrastructureTypeText);
-               Assert.IsNotNull(CSSPModelsRes.TVItemInfrastructureTypeTVItemLinkTVItem);
-               Assert.IsNotNull(CSSPModelsRes.TVItemInfrastructureTypeTVItemLinkTVItemLinkList);
-               Assert.IsNotNull(CSSPModelsRes.TVItemInfrastructureTypeTVItemLinkFlowTo);
-               Assert.IsNotNull(CSSPModelsRes.TVItemInfrastructureTypeTVItemLinkHasErrors);
-        }
-        [TestMethod]
         public void TVItemInfrastructureTypeTVItemLink_Every_Property_Has_Get_Set_Test()
         {
                InfrastructureTypeEnum val1 = (InfrastructureTypeEnum)3;

@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table MWQMRunLanguages** : [MWQMRunLanguageID](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_MWQMRunLanguageID), [MWQMRunID](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_MWQMRunID), [Language](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_Language), [RunComment](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_RunComment), [TranslationStatusRunComment](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_TranslationStatusRunComment), [RunWeatherComment](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_RunWeatherComment), [TranslationStatusRunWeatherComment](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_TranslationStatusRunWeatherComment), [LastUpdateDate_UTC](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [MWQMRunLanguageWeb](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_MWQMRunLanguageWeb), [MWQMRunLanguageReport](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_MWQMRunLanguageReport), [HasErrors](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_HasErrors), [ValidationResults](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_HasErrors), [ValidationResults](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMRunLanguageService](CSSPServices.MWQMRunLanguageService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
@@ -65,15 +65,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatusRunWeatherComment { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMRunLanguageWeb MWQMRunLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMRunLanguageReport MWQMRunLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMRunLanguage() : base()
         {
@@ -81,7 +72,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMRunLanguageWeb
+    public partial class MWQMRunLanguageWeb : MWQMRunLanguage
     {
         #region Properties for web information
         /// <summary>
@@ -121,13 +112,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMRunLanguageWeb()
+        public MWQMRunLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMRunLanguageReport
+    public partial class MWQMRunLanguageReport : MWQMRunLanguageWeb
     {
         #region Properties for report information
         /// <summary>
@@ -140,7 +131,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMRunLanguageReport()
+        public MWQMRunLanguageReport() : base()
         {
         }
         #endregion Constructors

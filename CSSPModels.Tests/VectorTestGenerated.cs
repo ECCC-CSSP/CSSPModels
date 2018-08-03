@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(Vector).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Vector_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.VectorStartNode);
-               Assert.IsNotNull(CSSPModelsRes.VectorEndNode);
-               Assert.IsNotNull(CSSPModelsRes.VectorHasErrors);
-        }
-        [TestMethod]
         public void Vector_Every_Property_Has_Get_Set_Test()
         {
                Node val1 = new Node();

@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(PolSourceObsInfoEnumTextAndID).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void PolSourceObsInfoEnumTextAndID_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObsInfoEnumTextAndIDText);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObsInfoEnumTextAndIDID);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObsInfoEnumTextAndIDHasErrors);
-        }
-        [TestMethod]
         public void PolSourceObsInfoEnumTextAndID_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

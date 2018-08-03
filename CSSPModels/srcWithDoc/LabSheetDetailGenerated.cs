@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table LabSheetDetails** : [LabSheetDetailID](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_LabSheetDetailID), [LabSheetID](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_LabSheetID), [SamplingPlanID](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_SamplingPlanID), [SubsectorTVItemID](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_SubsectorTVItemID), [Version](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Version), [RunDate](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_RunDate), [Tides](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Tides), [SampleCrewInitials](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_SampleCrewInitials), [WaterBathCount](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_WaterBathCount), [IncubationBath1StartTime](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_IncubationBath1StartTime), [IncubationBath2StartTime](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_IncubationBath2StartTime), [IncubationBath3StartTime](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_IncubationBath3StartTime), [IncubationBath1EndTime](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_IncubationBath1EndTime), [IncubationBath2EndTime](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_IncubationBath2EndTime), [IncubationBath3EndTime](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_IncubationBath3EndTime), [IncubationBath1TimeCalculated_minutes](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_IncubationBath1TimeCalculated_minutes), [IncubationBath2TimeCalculated_minutes](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_IncubationBath2TimeCalculated_minutes), [IncubationBath3TimeCalculated_minutes](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_IncubationBath3TimeCalculated_minutes), [WaterBath1](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_WaterBath1), [WaterBath2](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_WaterBath2), [WaterBath3](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_WaterBath3), [TCField1](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_TCField1), [TCLab1](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_TCLab1), [TCField2](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_TCField2), [TCLab2](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_TCLab2), [TCFirst](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_TCFirst), [TCAverage](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_TCAverage), [ControlLot](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_ControlLot), [Positive35](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Positive35), [NonTarget35](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_NonTarget35), [Negative35](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Negative35), [Bath1Positive44_5](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Bath1Positive44_5), [Bath2Positive44_5](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Bath2Positive44_5), [Bath3Positive44_5](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Bath3Positive44_5), [Bath1NonTarget44_5](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Bath1NonTarget44_5), [Bath2NonTarget44_5](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Bath2NonTarget44_5), [Bath3NonTarget44_5](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Bath3NonTarget44_5), [Bath1Negative44_5](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Bath1Negative44_5), [Bath2Negative44_5](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Bath2Negative44_5), [Bath3Negative44_5](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Bath3Negative44_5), [Blank35](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Blank35), [Bath1Blank44_5](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Bath1Blank44_5), [Bath2Blank44_5](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Bath2Blank44_5), [Bath3Blank44_5](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Bath3Blank44_5), [Lot35](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Lot35), [Lot44_5](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Lot44_5), [Weather](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_Weather), [RunComment](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_RunComment), [RunWeatherComment](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_RunWeatherComment), [SampleBottleLotNumber](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_SampleBottleLotNumber), [SalinitiesReadBy](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_SalinitiesReadBy), [SalinitiesReadDate](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_SalinitiesReadDate), [ResultsReadBy](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_ResultsReadBy), [ResultsReadDate](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_ResultsReadDate), [ResultsRecordedBy](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_ResultsRecordedBy), [ResultsRecordedDate](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_ResultsRecordedDate), [DailyDuplicateRLog](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_DailyDuplicateRLog), [DailyDuplicatePrecisionCriteria](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_DailyDuplicatePrecisionCriteria), [DailyDuplicateAcceptable](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_DailyDuplicateAcceptable), [IntertechDuplicateRLog](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_IntertechDuplicateRLog), [IntertechDuplicatePrecisionCriteria](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_IntertechDuplicatePrecisionCriteria), [IntertechDuplicateAcceptable](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_IntertechDuplicateAcceptable), [IntertechReadAcceptable](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_IntertechReadAcceptable), [LastUpdateDate_UTC](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [LabSheetDetailWeb](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_LabSheetDetailWeb), [LabSheetDetailReport](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_LabSheetDetailReport), [HasErrors](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_HasErrors), [ValidationResults](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_HasErrors), [ValidationResults](CSSPModels.LabSheetDetail.html#CSSPModels_LabSheetDetail_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LabSheetDetailService](CSSPServices.LabSheetDetailService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -402,15 +402,6 @@ namespace CSSPModels
         public bool? IntertechReadAcceptable { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public LabSheetDetailWeb LabSheetDetailWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public LabSheetDetailReport LabSheetDetailReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public LabSheetDetail() : base()
         {
@@ -418,7 +409,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetDetailWeb
+    public partial class LabSheetDetailWeb : LabSheetDetail
     {
         #region Properties for web information
         /// <summary>
@@ -438,13 +429,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public LabSheetDetailWeb()
+        public LabSheetDetailWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetDetailReport
+    public partial class LabSheetDetailReport : LabSheetDetailWeb
     {
         #region Properties for report information
         /// <summary>
@@ -457,7 +448,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public LabSheetDetailReport()
+        public LabSheetDetailReport() : base()
         {
         }
         #endregion Constructors

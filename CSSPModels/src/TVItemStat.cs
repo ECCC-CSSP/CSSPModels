@@ -27,15 +27,6 @@ namespace CSSPModels
         public int ChildCount { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVItemStatWeb TVItemStatWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVItemStatReport TVItemStatReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TVItemStat() : base()
         {
@@ -43,7 +34,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemStatWeb
+    public partial class TVItemStatWeb : TVItemStat
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -56,13 +47,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TVItemStatWeb()
+        public TVItemStatWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemStatReport
+    public partial class TVItemStatReport : TVItemStatWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -70,7 +61,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TVItemStatReport()
+        public TVItemStatReport() : base()
         {
         }
         #endregion Constructors

@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table EmailDistributionListContacts** : [EmailDistributionListContactID](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_EmailDistributionListContactID), [EmailDistributionListID](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_EmailDistributionListID), [IsCC](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_IsCC), [Name](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_Name), [Email](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_Email), [CMPRainfallSeasonal](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_CMPRainfallSeasonal), [CMPWastewater](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_CMPWastewater), [EmergencyWeather](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_EmergencyWeather), [EmergencyWastewater](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_EmergencyWastewater), [ReopeningAllTypes](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_ReopeningAllTypes), [LastUpdateDate_UTC](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [EmailDistributionListContactWeb](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_EmailDistributionListContactWeb), [EmailDistributionListContactReport](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_EmailDistributionListContactReport), [HasErrors](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_HasErrors), [ValidationResults](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_HasErrors), [ValidationResults](CSSPModels.EmailDistributionListContact.html#CSSPModels_EmailDistributionListContact_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailDistributionListContactService](CSSPServices.EmailDistributionListContactService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -52,15 +52,6 @@ namespace CSSPModels
         public bool ReopeningAllTypes { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailDistributionListContactWeb EmailDistributionListContactWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailDistributionListContactReport EmailDistributionListContactReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public EmailDistributionListContact() : base()
         {
@@ -68,7 +59,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListContactWeb
+    public partial class EmailDistributionListContactWeb : EmailDistributionListContact
     {
         #region Properties for web information
         /// <summary>
@@ -81,13 +72,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public EmailDistributionListContactWeb()
+        public EmailDistributionListContactWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListContactReport
+    public partial class EmailDistributionListContactReport : EmailDistributionListContactWeb
     {
         #region Properties for report information
         /// <summary>
@@ -102,7 +93,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public EmailDistributionListContactReport()
+        public EmailDistributionListContactReport() : base()
         {
         }
         #endregion Constructors

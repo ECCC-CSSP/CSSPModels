@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table AppTaskLanguages** : [AppTaskLanguageID](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_AppTaskLanguageID), [AppTaskID](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_AppTaskID), [Language](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_Language), [StatusText](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_StatusText), [ErrorText](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_ErrorText), [TranslationStatus](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [AppTaskLanguageWeb](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_AppTaskLanguageWeb), [AppTaskLanguageReport](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_AppTaskLanguageReport), [HasErrors](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_HasErrors), [ValidationResults](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_HasErrors), [ValidationResults](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskLanguageService](CSSPServices.AppTaskLanguageService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
@@ -72,15 +72,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public AppTaskLanguageWeb AppTaskLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public AppTaskLanguageReport AppTaskLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public AppTaskLanguage() : base()
         {
@@ -88,7 +79,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppTaskLanguageWeb
+    public partial class AppTaskLanguageWeb : AppTaskLanguage
     {
         #region Properties for web information
         /// <summary>
@@ -119,13 +110,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public AppTaskLanguageWeb()
+        public AppTaskLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppTaskLanguageReport
+    public partial class AppTaskLanguageReport : AppTaskLanguageWeb
     {
         #region Properties for report information
         /// <summary>
@@ -138,7 +129,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public AppTaskLanguageReport()
+        public AppTaskLanguageReport() : base()
         {
         }
         #endregion Constructors

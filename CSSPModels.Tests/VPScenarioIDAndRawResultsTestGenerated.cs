@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(VPScenarioIDAndRawResults).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void VPScenarioIDAndRawResults_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioIDAndRawResultsVPScenarioID);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioIDAndRawResultsRawResults);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioIDAndRawResultsHasErrors);
-        }
-        [TestMethod]
         public void VPScenarioIDAndRawResults_Every_Property_Has_Get_Set_Test()
         {
                int val1 = 45;

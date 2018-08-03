@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table LabSheetTubeMPNDetails** : [LabSheetTubeMPNDetailID](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_LabSheetTubeMPNDetailID), [LabSheetDetailID](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_LabSheetDetailID), [Ordinal](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Ordinal), [MWQMSiteTVItemID](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_MWQMSiteTVItemID), [SampleDateTime](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_SampleDateTime), [MPN](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_MPN), [Tube10](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Tube10), [Tube1_0](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Tube1_0), [Tube0_1](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Tube0_1), [Salinity](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Salinity), [Temperature](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Temperature), [ProcessedBy](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_ProcessedBy), [SampleType](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_SampleType), [SiteComment](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_SiteComment), [LastUpdateDate_UTC](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [LabSheetTubeMPNDetailWeb](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_LabSheetTubeMPNDetailWeb), [LabSheetTubeMPNDetailReport](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_LabSheetTubeMPNDetailReport), [HasErrors](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_HasErrors), [ValidationResults](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_HasErrors), [ValidationResults](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LabSheetTubeMPNDetailService](CSSPServices.LabSheetTubeMPNDetailService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html)</para>
@@ -95,15 +95,6 @@ namespace CSSPModels
         public string SiteComment { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public LabSheetTubeMPNDetailWeb LabSheetTubeMPNDetailWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public LabSheetTubeMPNDetailReport LabSheetTubeMPNDetailReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public LabSheetTubeMPNDetail() : base()
         {
@@ -111,7 +102,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetTubeMPNDetailWeb
+    public partial class LabSheetTubeMPNDetailWeb : LabSheetTubeMPNDetail
     {
         #region Properties for web information
         /// <summary>
@@ -140,13 +131,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public LabSheetTubeMPNDetailWeb()
+        public LabSheetTubeMPNDetailWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetTubeMPNDetailReport
+    public partial class LabSheetTubeMPNDetailReport : LabSheetTubeMPNDetailWeb
     {
         #region Properties for report information
         /// <summary>
@@ -159,7 +150,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public LabSheetTubeMPNDetailReport()
+        public LabSheetTubeMPNDetailReport() : base()
         {
         }
         #endregion Constructors

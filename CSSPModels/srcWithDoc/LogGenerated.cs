@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table Logs** : [LogID](CSSPModels.Log.html#CSSPModels_Log_LogID), [TableName](CSSPModels.Log.html#CSSPModels_Log_TableName), [ID](CSSPModels.Log.html#CSSPModels_Log_ID), [LogCommand](CSSPModels.Log.html#CSSPModels_Log_LogCommand), [Information](CSSPModels.Log.html#CSSPModels_Log_Information), [LastUpdateDate_UTC](CSSPModels.Log.html#CSSPModels_Log_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Log.html#CSSPModels_Log_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [LogWeb](CSSPModels.Log.html#CSSPModels_Log_LogWeb), [LogReport](CSSPModels.Log.html#CSSPModels_Log_LogReport), [HasErrors](CSSPModels.Log.html#CSSPModels_Log_HasErrors), [ValidationResults](CSSPModels.Log.html#CSSPModels_Log_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.Log.html#CSSPModels_Log_HasErrors), [ValidationResults](CSSPModels.Log.html#CSSPModels_Log_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LogService](CSSPServices.LogService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LogCommandEnum](CSSPEnums.LogCommandEnum.html)</para>
@@ -47,15 +47,6 @@ namespace CSSPModels
         public string Information { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public LogWeb LogWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public LogReport LogReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Log() : base()
         {
@@ -63,7 +54,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LogWeb
+    public partial class LogWeb : Log
     {
         #region Properties for web information
         /// <summary>
@@ -85,13 +76,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public LogWeb()
+        public LogWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LogReport
+    public partial class LogReport : LogWeb
     {
         #region Properties for report information
         /// <summary>
@@ -104,7 +95,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public LogReport()
+        public LogReport() : base()
         {
         }
         #endregion Constructors

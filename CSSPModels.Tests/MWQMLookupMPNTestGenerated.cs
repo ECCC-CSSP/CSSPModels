@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private MWQMLookupMPN mWQMLookupMPN { get; set; }
+        private MWQMLookupMPNWeb mWQMLookupMPNWeb { get; set; }
+        private MWQMLookupMPNReport mWQMLookupMPNReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public MWQMLookupMPNTest()
         {
             mWQMLookupMPN = new MWQMLookupMPN();
+            mWQMLookupMPNWeb = new MWQMLookupMPNWeb();
+            mWQMLookupMPNReport = new MWQMLookupMPNReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void MWQMLookupMPN_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMLookupMPNID", "Tubes10", "Tubes1", "Tubes01", "MPN_100ml", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "MWQMLookupMPNWeb", "MWQMLookupMPNReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.MWQMLookupMPN).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MWQMLookupMPN).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(MWQMLookupMPN).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void MWQMLookupMPNWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "MWQMLookupMPNID", "Tubes10", "Tubes1", "Tubes01", "MPN_100ml", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMLookupMPNWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMLookupMPNWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void MWQMLookupMPNReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "MWQMLookupMPNReportTest", "LastUpdateContactTVItemLanguage", "MWQMLookupMPNID", "Tubes10", "Tubes1", "Tubes01", "MPN_100ml", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMLookupMPNReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMLookupMPNReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,21 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void MWQMLookupMPNWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMLookupMPNWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMLookupMPNWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void MWQMLookupMPNReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMLookupMPNReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(MWQMLookupMPNReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void MWQMLookupMPN_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(MWQMLookupMPN).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MWQMLookupMPN_Every_Property_Has_A_Resource_OK()
+        public void MWQMLookupMPNWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.MWQMLookupMPNMWQMLookupMPNID);
-               Assert.IsNotNull(CSSPModelsRes.MWQMLookupMPNTubes10);
-               Assert.IsNotNull(CSSPModelsRes.MWQMLookupMPNTubes1);
-               Assert.IsNotNull(CSSPModelsRes.MWQMLookupMPNTubes01);
-               Assert.IsNotNull(CSSPModelsRes.MWQMLookupMPNMPN_100ml);
-               Assert.IsNotNull(CSSPModelsRes.MWQMLookupMPNLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.MWQMLookupMPNLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.MWQMLookupMPNHasErrors);
+             Assert.IsTrue(typeof(MWQMLookupMPNWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void MWQMLookupMPNReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(MWQMLookupMPNReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void MWQMLookupMPN_Every_Property_Has_Get_Set_Test()
@@ -150,9 +286,80 @@ namespace CSSPModels.Tests
                bool val8 = true;
                mWQMLookupMPN.HasErrors = val8;
                Assert.AreEqual(val8, mWQMLookupMPN.HasErrors);
-               IEnumerable<ValidationResult> val31 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMLookupMPN.ValidationResults = val31;
-               Assert.AreEqual(val31, mWQMLookupMPN.ValidationResults);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mWQMLookupMPN.ValidationResults = val27;
+               Assert.AreEqual(val27, mWQMLookupMPN.ValidationResults);
+        }
+        [TestMethod]
+        public void MWQMLookupMPNWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               mWQMLookupMPNWeb.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, mWQMLookupMPNWeb.LastUpdateContactTVItemLanguage);
+               int val2 = 45;
+               mWQMLookupMPNWeb.MWQMLookupMPNID = val2;
+               Assert.AreEqual(val2, mWQMLookupMPNWeb.MWQMLookupMPNID);
+               int val3 = 45;
+               mWQMLookupMPNWeb.Tubes10 = val3;
+               Assert.AreEqual(val3, mWQMLookupMPNWeb.Tubes10);
+               int val4 = 45;
+               mWQMLookupMPNWeb.Tubes1 = val4;
+               Assert.AreEqual(val4, mWQMLookupMPNWeb.Tubes1);
+               int val5 = 45;
+               mWQMLookupMPNWeb.Tubes01 = val5;
+               Assert.AreEqual(val5, mWQMLookupMPNWeb.Tubes01);
+               int val6 = 45;
+               mWQMLookupMPNWeb.MPN_100ml = val6;
+               Assert.AreEqual(val6, mWQMLookupMPNWeb.MPN_100ml);
+               DateTime val7 = new DateTime(2010, 3, 4);
+               mWQMLookupMPNWeb.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, mWQMLookupMPNWeb.LastUpdateDate_UTC);
+               int val8 = 45;
+               mWQMLookupMPNWeb.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, mWQMLookupMPNWeb.LastUpdateContactTVItemID);
+               bool val9 = true;
+               mWQMLookupMPNWeb.HasErrors = val9;
+               Assert.AreEqual(val9, mWQMLookupMPNWeb.HasErrors);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mWQMLookupMPNWeb.ValidationResults = val30;
+               Assert.AreEqual(val30, mWQMLookupMPNWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void MWQMLookupMPNReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               mWQMLookupMPNReport.MWQMLookupMPNReportTest = val1;
+               Assert.AreEqual(val1, mWQMLookupMPNReport.MWQMLookupMPNReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               mWQMLookupMPNReport.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, mWQMLookupMPNReport.LastUpdateContactTVItemLanguage);
+               int val3 = 45;
+               mWQMLookupMPNReport.MWQMLookupMPNID = val3;
+               Assert.AreEqual(val3, mWQMLookupMPNReport.MWQMLookupMPNID);
+               int val4 = 45;
+               mWQMLookupMPNReport.Tubes10 = val4;
+               Assert.AreEqual(val4, mWQMLookupMPNReport.Tubes10);
+               int val5 = 45;
+               mWQMLookupMPNReport.Tubes1 = val5;
+               Assert.AreEqual(val5, mWQMLookupMPNReport.Tubes1);
+               int val6 = 45;
+               mWQMLookupMPNReport.Tubes01 = val6;
+               Assert.AreEqual(val6, mWQMLookupMPNReport.Tubes01);
+               int val7 = 45;
+               mWQMLookupMPNReport.MPN_100ml = val7;
+               Assert.AreEqual(val7, mWQMLookupMPNReport.MPN_100ml);
+               DateTime val8 = new DateTime(2010, 3, 4);
+               mWQMLookupMPNReport.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, mWQMLookupMPNReport.LastUpdateDate_UTC);
+               int val9 = 45;
+               mWQMLookupMPNReport.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, mWQMLookupMPNReport.LastUpdateContactTVItemID);
+               bool val10 = true;
+               mWQMLookupMPNReport.HasErrors = val10;
+               Assert.AreEqual(val10, mWQMLookupMPNReport.HasErrors);
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mWQMLookupMPNReport.ValidationResults = val33;
+               Assert.AreEqual(val33, mWQMLookupMPNReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

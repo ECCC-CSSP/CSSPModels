@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table BoxModels** : [BoxModelID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_BoxModelID), [InfrastructureTVItemID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_InfrastructureTVItemID), [Flow_m3_day](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Flow_m3_day), [Depth_m](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Depth_m), [Temperature_C](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Temperature_C), [Dilution](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Dilution), [DecayRate_per_day](CSSPModels.BoxModel.html#CSSPModels_BoxModel_DecayRate_per_day), [FCUntreated_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCUntreated_MPN_100ml), [FCPreDisinfection_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCPreDisinfection_MPN_100ml), [Concentration_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Concentration_MPN_100ml), [T90_hour](CSSPModels.BoxModel.html#CSSPModels_BoxModel_T90_hour), [FlowDuration_hour](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FlowDuration_hour), [LastUpdateDate_UTC](CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [BoxModelWeb](CSSPModels.BoxModel.html#CSSPModels_BoxModel_BoxModelWeb), [BoxModelReport](CSSPModels.BoxModel.html#CSSPModels_BoxModel_BoxModelReport), [HasErrors](CSSPModels.BoxModel.html#CSSPModels_BoxModel_HasErrors), [ValidationResults](CSSPModels.BoxModel.html#CSSPModels_BoxModel_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.BoxModel.html#CSSPModels_BoxModel_HasErrors), [ValidationResults](CSSPModels.BoxModel.html#CSSPModels_BoxModel_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [BoxModelService](CSSPServices.BoxModelService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -63,15 +63,6 @@ namespace CSSPModels
         public double FlowDuration_hour { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public BoxModelWeb BoxModelWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public BoxModelReport BoxModelReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public BoxModel() : base()
         {
@@ -79,7 +70,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelWeb
+    public partial class BoxModelWeb : BoxModel
     {
         #region Properties for web information
         /// <summary>
@@ -99,13 +90,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public BoxModelWeb()
+        public BoxModelWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelReport
+    public partial class BoxModelReport : BoxModelWeb
     {
         #region Properties for report information
         /// <summary>
@@ -118,7 +109,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public BoxModelReport()
+        public BoxModelReport() : base()
         {
         }
         #endregion Constructors

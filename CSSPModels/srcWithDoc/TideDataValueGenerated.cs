@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table TideDataValues** : [TideDataValueID](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideDataValueID), [TideSiteTVItemID](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideSiteTVItemID), [DateTime_Local](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_DateTime_Local), [Keep](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_Keep), [TideDataType](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideDataType), [StorageDataType](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_StorageDataType), [Depth_m](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_Depth_m), [UVelocity_m_s](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_UVelocity_m_s), [VVelocity_m_s](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_VVelocity_m_s), [TideStart](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideStart), [TideEnd](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideEnd), [LastUpdateDate_UTC](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [TideDataValueWeb](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideDataValueWeb), [TideDataValueReport](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideDataValueReport), [HasErrors](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_HasErrors), [ValidationResults](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_HasErrors), [ValidationResults](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TideDataValueService](CSSPServices.TideDataValueService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TideDataTypeEnum](CSSPEnums.TideDataTypeEnum.html), [StorageDataTypeEnum](CSSPEnums.StorageDataTypeEnum.html), [TideTextEnum](CSSPEnums.TideTextEnum.html), [TideTextEnum](CSSPEnums.TideTextEnum.html)</para>
@@ -90,15 +90,6 @@ namespace CSSPModels
         public TideTextEnum? TideEnd { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TideDataValueWeb TideDataValueWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TideDataValueReport TideDataValueReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TideDataValue() : base()
         {
@@ -106,7 +97,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TideDataValueWeb
+    public partial class TideDataValueWeb : TideDataValue
     {
         #region Properties for web information
         /// <summary>
@@ -162,13 +153,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TideDataValueWeb()
+        public TideDataValueWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TideDataValueReport
+    public partial class TideDataValueReport : TideDataValueWeb
     {
         #region Properties for report information
         /// <summary>
@@ -181,7 +172,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TideDataValueReport()
+        public TideDataValueReport() : base()
         {
         }
         #endregion Constructors

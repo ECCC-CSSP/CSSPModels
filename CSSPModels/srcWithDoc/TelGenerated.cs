@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table Tels** : [TelID](CSSPModels.Tel.html#CSSPModels_Tel_TelID), [TelTVItemID](CSSPModels.Tel.html#CSSPModels_Tel_TelTVItemID), [TelNumber](CSSPModels.Tel.html#CSSPModels_Tel_TelNumber), [TelType](CSSPModels.Tel.html#CSSPModels_Tel_TelType), [LastUpdateDate_UTC](CSSPModels.Tel.html#CSSPModels_Tel_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Tel.html#CSSPModels_Tel_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [TelWeb](CSSPModels.Tel.html#CSSPModels_Tel_TelWeb), [TelReport](CSSPModels.Tel.html#CSSPModels_Tel_TelReport), [HasErrors](CSSPModels.Tel.html#CSSPModels_Tel_HasErrors), [ValidationResults](CSSPModels.Tel.html#CSSPModels_Tel_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.Tel.html#CSSPModels_Tel_HasErrors), [ValidationResults](CSSPModels.Tel.html#CSSPModels_Tel_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TelService](CSSPServices.TelService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TelTypeEnum](CSSPEnums.TelTypeEnum.html)</para>
@@ -53,15 +53,6 @@ namespace CSSPModels
         public TelTypeEnum TelType { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TelWeb TelWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TelReport TelReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Tel() : base()
         {
@@ -69,7 +60,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TelWeb
+    public partial class TelWeb : Tel
     {
         #region Properties for web information
         /// <summary>
@@ -98,13 +89,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TelWeb()
+        public TelWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TelReport
+    public partial class TelReport : TelWeb
     {
         #region Properties for report information
         /// <summary>
@@ -117,7 +108,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TelReport()
+        public TelReport() : base()
         {
         }
         #endregion Constructors

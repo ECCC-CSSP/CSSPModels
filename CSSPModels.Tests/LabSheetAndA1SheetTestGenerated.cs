@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(LabSheetAndA1Sheet).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void LabSheetAndA1Sheet_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.LabSheetAndA1SheetLabSheet);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetAndA1SheetLabSheetA1Sheet);
-               Assert.IsNotNull(CSSPModelsRes.LabSheetAndA1SheetHasErrors);
-        }
-        [TestMethod]
         public void LabSheetAndA1Sheet_Every_Property_Has_Get_Set_Test()
         {
                LabSheet val1 = new LabSheet();

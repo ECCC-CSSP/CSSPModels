@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table MWQMSubsectorLanguages** : [MWQMSubsectorLanguageID](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_MWQMSubsectorLanguageID), [MWQMSubsectorID](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_MWQMSubsectorID), [Language](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_Language), [SubsectorDesc](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_SubsectorDesc), [TranslationStatusSubsectorDesc](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_TranslationStatusSubsectorDesc), [LogBook](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_LogBook), [TranslationStatusLogBook](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_TranslationStatusLogBook), [LastUpdateDate_UTC](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [MWQMSubsectorLanguageWeb](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_MWQMSubsectorLanguageWeb), [MWQMSubsectorLanguageReport](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_MWQMSubsectorLanguageReport), [HasErrors](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_HasErrors), [ValidationResults](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_HasErrors), [ValidationResults](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSubsectorLanguageService](CSSPServices.MWQMSubsectorLanguageService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
@@ -74,15 +74,6 @@ namespace CSSPModels
         public TranslationStatusEnum? TranslationStatusLogBook { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSubsectorLanguageWeb MWQMSubsectorLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMSubsectorLanguageReport MWQMSubsectorLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMSubsectorLanguage() : base()
         {
@@ -90,7 +81,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSubsectorLanguageWeb
+    public partial class MWQMSubsectorLanguageWeb : MWQMSubsectorLanguage
     {
         #region Properties for web information
         /// <summary>
@@ -130,13 +121,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMSubsectorLanguageWeb()
+        public MWQMSubsectorLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSubsectorLanguageReport
+    public partial class MWQMSubsectorLanguageReport : MWQMSubsectorLanguageWeb
     {
         #region Properties for report information
         /// <summary>
@@ -149,7 +140,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMSubsectorLanguageReport()
+        public MWQMSubsectorLanguageReport() : base()
         {
         }
         #endregion Constructors

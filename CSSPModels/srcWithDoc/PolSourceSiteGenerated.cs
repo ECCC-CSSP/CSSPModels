@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table PolSourceSites** : [PolSourceSiteID](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteID), [PolSourceSiteTVItemID](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteTVItemID), [Temp_Locator_CanDelete](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_Temp_Locator_CanDelete), [Oldsiteid](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_Oldsiteid), [Site](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_Site), [SiteID](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_SiteID), [IsPointSource](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_IsPointSource), [InactiveReason](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_InactiveReason), [CivicAddressTVItemID](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_CivicAddressTVItemID), [LastUpdateDate_UTC](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [PolSourceSiteWeb](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteWeb), [PolSourceSiteReport](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteReport), [HasErrors](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_HasErrors), [ValidationResults](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_HasErrors), [ValidationResults](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceSiteService](CSSPServices.PolSourceSiteService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [PolSourceInactiveReasonEnum](CSSPEnums.PolSourceInactiveReasonEnum.html)</para>
@@ -77,15 +77,6 @@ namespace CSSPModels
         public int? CivicAddressTVItemID { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public PolSourceSiteWeb PolSourceSiteWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public PolSourceSiteReport PolSourceSiteReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public PolSourceSite() : base()
         {
@@ -93,7 +84,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class PolSourceSiteWeb
+    public partial class PolSourceSiteWeb : PolSourceSite
     {
         #region Properties for web information
         /// <summary>
@@ -122,13 +113,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public PolSourceSiteWeb()
+        public PolSourceSiteWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class PolSourceSiteReport
+    public partial class PolSourceSiteReport : PolSourceSiteWeb
     {
         #region Properties for report information
         /// <summary>
@@ -141,7 +132,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public PolSourceSiteReport()
+        public PolSourceSiteReport() : base()
         {
         }
         #endregion Constructors

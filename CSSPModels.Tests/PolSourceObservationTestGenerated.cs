@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private PolSourceObservation polSourceObservation { get; set; }
+        private PolSourceObservationWeb polSourceObservationWeb { get; set; }
+        private PolSourceObservationReport polSourceObservationReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public PolSourceObservationTest()
         {
             polSourceObservation = new PolSourceObservation();
+            polSourceObservationWeb = new PolSourceObservationWeb();
+            polSourceObservationReport = new PolSourceObservationReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void PolSourceObservation_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "PolSourceObservationID", "PolSourceSiteID", "ObservationDate_Local", "ContactTVItemID", "Observation_ToBeDeleted", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "PolSourceObservationWeb", "PolSourceObservationReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.PolSourceObservation).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(PolSourceObservation).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(PolSourceObservation).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void PolSourceObservationWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "PolSourceSiteTVItemLanguage", "ContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "PolSourceObservationID", "PolSourceSiteID", "ObservationDate_Local", "ContactTVItemID", "Observation_ToBeDeleted", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(PolSourceObservationWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(PolSourceObservationWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void PolSourceObservationReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "PolSourceObservationReportTest", "PolSourceSiteTVItemLanguage", "ContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "PolSourceObservationID", "PolSourceSiteID", "ObservationDate_Local", "ContactTVItemID", "Observation_ToBeDeleted", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(PolSourceObservationReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(PolSourceObservationReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,21 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void PolSourceObservationWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(PolSourceObservationWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(PolSourceObservationWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void PolSourceObservationReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(PolSourceObservationReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(PolSourceObservationReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void PolSourceObservation_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(PolSourceObservation).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void PolSourceObservation_Every_Property_Has_A_Resource_OK()
+        public void PolSourceObservationWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObservationPolSourceObservationID);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObservationPolSourceSiteID);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObservationObservationDate_Local);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObservationContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObservationObservation_ToBeDeleted);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObservationLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObservationLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObservationHasErrors);
+             Assert.IsTrue(typeof(PolSourceObservationWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void PolSourceObservationReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(PolSourceObservationReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void PolSourceObservation_Every_Property_Has_Get_Set_Test()
@@ -150,9 +286,92 @@ namespace CSSPModels.Tests
                bool val8 = true;
                polSourceObservation.HasErrors = val8;
                Assert.AreEqual(val8, polSourceObservation.HasErrors);
-               IEnumerable<ValidationResult> val31 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               polSourceObservation.ValidationResults = val31;
-               Assert.AreEqual(val31, polSourceObservation.ValidationResults);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               polSourceObservation.ValidationResults = val27;
+               Assert.AreEqual(val27, polSourceObservation.ValidationResults);
+        }
+        [TestMethod]
+        public void PolSourceObservationWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               polSourceObservationWeb.PolSourceSiteTVItemLanguage = val1;
+               Assert.AreEqual(val1, polSourceObservationWeb.PolSourceSiteTVItemLanguage);
+               TVItemLanguage val2 = new TVItemLanguage();
+               polSourceObservationWeb.ContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, polSourceObservationWeb.ContactTVItemLanguage);
+               TVItemLanguage val3 = new TVItemLanguage();
+               polSourceObservationWeb.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, polSourceObservationWeb.LastUpdateContactTVItemLanguage);
+               int val4 = 45;
+               polSourceObservationWeb.PolSourceObservationID = val4;
+               Assert.AreEqual(val4, polSourceObservationWeb.PolSourceObservationID);
+               int val5 = 45;
+               polSourceObservationWeb.PolSourceSiteID = val5;
+               Assert.AreEqual(val5, polSourceObservationWeb.PolSourceSiteID);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               polSourceObservationWeb.ObservationDate_Local = val6;
+               Assert.AreEqual(val6, polSourceObservationWeb.ObservationDate_Local);
+               int val7 = 45;
+               polSourceObservationWeb.ContactTVItemID = val7;
+               Assert.AreEqual(val7, polSourceObservationWeb.ContactTVItemID);
+               string val8 = "Some text";
+               polSourceObservationWeb.Observation_ToBeDeleted = val8;
+               Assert.AreEqual(val8, polSourceObservationWeb.Observation_ToBeDeleted);
+               DateTime val9 = new DateTime(2010, 3, 4);
+               polSourceObservationWeb.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, polSourceObservationWeb.LastUpdateDate_UTC);
+               int val10 = 45;
+               polSourceObservationWeb.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, polSourceObservationWeb.LastUpdateContactTVItemID);
+               bool val11 = true;
+               polSourceObservationWeb.HasErrors = val11;
+               Assert.AreEqual(val11, polSourceObservationWeb.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               polSourceObservationWeb.ValidationResults = val36;
+               Assert.AreEqual(val36, polSourceObservationWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void PolSourceObservationReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               polSourceObservationReport.PolSourceObservationReportTest = val1;
+               Assert.AreEqual(val1, polSourceObservationReport.PolSourceObservationReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               polSourceObservationReport.PolSourceSiteTVItemLanguage = val2;
+               Assert.AreEqual(val2, polSourceObservationReport.PolSourceSiteTVItemLanguage);
+               TVItemLanguage val3 = new TVItemLanguage();
+               polSourceObservationReport.ContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, polSourceObservationReport.ContactTVItemLanguage);
+               TVItemLanguage val4 = new TVItemLanguage();
+               polSourceObservationReport.LastUpdateContactTVItemLanguage = val4;
+               Assert.AreEqual(val4, polSourceObservationReport.LastUpdateContactTVItemLanguage);
+               int val5 = 45;
+               polSourceObservationReport.PolSourceObservationID = val5;
+               Assert.AreEqual(val5, polSourceObservationReport.PolSourceObservationID);
+               int val6 = 45;
+               polSourceObservationReport.PolSourceSiteID = val6;
+               Assert.AreEqual(val6, polSourceObservationReport.PolSourceSiteID);
+               DateTime val7 = new DateTime(2010, 3, 4);
+               polSourceObservationReport.ObservationDate_Local = val7;
+               Assert.AreEqual(val7, polSourceObservationReport.ObservationDate_Local);
+               int val8 = 45;
+               polSourceObservationReport.ContactTVItemID = val8;
+               Assert.AreEqual(val8, polSourceObservationReport.ContactTVItemID);
+               string val9 = "Some text";
+               polSourceObservationReport.Observation_ToBeDeleted = val9;
+               Assert.AreEqual(val9, polSourceObservationReport.Observation_ToBeDeleted);
+               DateTime val10 = new DateTime(2010, 3, 4);
+               polSourceObservationReport.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, polSourceObservationReport.LastUpdateDate_UTC);
+               int val11 = 45;
+               polSourceObservationReport.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, polSourceObservationReport.LastUpdateContactTVItemID);
+               bool val12 = true;
+               polSourceObservationReport.HasErrors = val12;
+               Assert.AreEqual(val12, polSourceObservationReport.HasErrors);
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               polSourceObservationReport.ValidationResults = val39;
+               Assert.AreEqual(val39, polSourceObservationReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

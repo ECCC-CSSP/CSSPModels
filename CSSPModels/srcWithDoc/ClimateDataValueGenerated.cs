@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table ClimateDataValues** : [ClimateDataValueID](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_ClimateDataValueID), [ClimateSiteID](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_ClimateSiteID), [DateTime_Local](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_DateTime_Local), [Keep](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_Keep), [StorageDataType](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_StorageDataType), [HasBeenRead](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_HasBeenRead), [Snow_cm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_Snow_cm), [Rainfall_mm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_Rainfall_mm), [RainfallEntered_mm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_RainfallEntered_mm), [TotalPrecip_mm_cm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_TotalPrecip_mm_cm), [MaxTemp_C](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_MaxTemp_C), [MinTemp_C](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_MinTemp_C), [HeatDegDays_C](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_HeatDegDays_C), [CoolDegDays_C](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_CoolDegDays_C), [SnowOnGround_cm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_SnowOnGround_cm), [DirMaxGust_0North](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_DirMaxGust_0North), [SpdMaxGust_kmh](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_SpdMaxGust_kmh), [HourlyValues](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_HourlyValues), [LastUpdateDate_UTC](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [ClimateDataValueWeb](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_ClimateDataValueWeb), [ClimateDataValueReport](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_ClimateDataValueReport), [HasErrors](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_HasErrors), [ValidationResults](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_HasErrors), [ValidationResults](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ClimateDataValueService](CSSPServices.ClimateDataValueService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [StorageDataTypeEnum](CSSPEnums.StorageDataTypeEnum.html)</para>
@@ -87,15 +87,6 @@ namespace CSSPModels
         public string HourlyValues { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ClimateDataValueWeb ClimateDataValueWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ClimateDataValueReport ClimateDataValueReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public ClimateDataValue() : base()
         {
@@ -103,7 +94,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClimateDataValueWeb
+    public partial class ClimateDataValueWeb : ClimateDataValue
     {
         #region Properties for web information
         /// <summary>
@@ -125,13 +116,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ClimateDataValueWeb()
+        public ClimateDataValueWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClimateDataValueReport
+    public partial class ClimateDataValueReport : ClimateDataValueWeb
     {
         #region Properties for report information
         /// <summary>
@@ -144,7 +135,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ClimateDataValueReport()
+        public ClimateDataValueReport() : base()
         {
         }
         #endregion Constructors

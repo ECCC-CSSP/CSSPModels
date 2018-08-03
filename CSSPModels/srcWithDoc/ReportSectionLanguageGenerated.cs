@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table ReportSectionLanguages** : [ReportSectionLanguageID](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionLanguageID), [ReportSectionID](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionID), [Language](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_Language), [ReportSectionName](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionName), [TranslationStatusReportSectionName](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_TranslationStatusReportSectionName), [ReportSectionText](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionText), [TranslationStatusReportSectionText](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_TranslationStatusReportSectionText), [LastUpdateDate_UTC](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [ReportSectionLanguageWeb](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionLanguageWeb), [ReportSectionLanguageReport](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionLanguageReport), [HasErrors](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_HasErrors), [ValidationResults](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_HasErrors), [ValidationResults](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ReportSectionLanguageService](CSSPServices.ReportSectionLanguageService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
@@ -67,15 +67,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatusReportSectionText { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ReportSectionLanguageWeb ReportSectionLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ReportSectionLanguageReport ReportSectionLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public ReportSectionLanguage() : base()
         {
@@ -83,7 +74,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportSectionLanguageWeb
+    public partial class ReportSectionLanguageWeb : ReportSectionLanguage
     {
         #region Properties for web information
         /// <summary>
@@ -123,13 +114,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ReportSectionLanguageWeb()
+        public ReportSectionLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportSectionLanguageReport
+    public partial class ReportSectionLanguageReport : ReportSectionLanguageWeb
     {
         #region Properties for report information
         /// <summary>
@@ -142,7 +133,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ReportSectionLanguageReport()
+        public ReportSectionLanguageReport() : base()
         {
         }
         #endregion Constructors

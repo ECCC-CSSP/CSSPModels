@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table TVItemLanguages** : [TVItemLanguageID](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TVItemLanguageID), [TVItemID](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TVItemID), [Language](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_Language), [TVText](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TVText), [TranslationStatus](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [TVItemLanguageWeb](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TVItemLanguageWeb), [TVItemLanguageReport](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TVItemLanguageReport), [HasErrors](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_HasErrors), [ValidationResults](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_HasErrors), [ValidationResults](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVItemLanguageService](CSSPServices.TVItemLanguageService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
@@ -60,15 +60,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVItemLanguageWeb TVItemLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVItemLanguageReport TVItemLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TVItemLanguage() : base()
         {
@@ -76,7 +67,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemLanguageWeb
+    public partial class TVItemLanguageWeb : TVItemLanguage
     {
         #region Properties for web information
         /// <summary>
@@ -107,13 +98,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TVItemLanguageWeb()
+        public TVItemLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemLanguageReport
+    public partial class TVItemLanguageReport : TVItemLanguageWeb
     {
         #region Properties for report information
         /// <summary>
@@ -126,7 +117,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TVItemLanguageReport()
+        public TVItemLanguageReport() : base()
         {
         }
         #endregion Constructors

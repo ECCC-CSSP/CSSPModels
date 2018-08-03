@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table ReportTypeLanguages** : [ReportTypeLanguageID](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_ReportTypeLanguageID), [ReportTypeID](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_ReportTypeID), [Language](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_Language), [Name](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_Name), [TranslationStatusName](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_TranslationStatusName), [Description](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_Description), [TranslationStatusDescription](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_TranslationStatusDescription), [StartOfFileName](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_StartOfFileName), [TranslationStatusStartOfFileName](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_TranslationStatusStartOfFileName), [LastUpdateDate_UTC](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [ReportTypeLanguageWeb](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_ReportTypeLanguageWeb), [ReportTypeLanguageReport](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_ReportTypeLanguageReport), [HasErrors](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_HasErrors), [ValidationResults](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_HasErrors), [ValidationResults](CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ReportTypeLanguageService](CSSPServices.ReportTypeLanguageService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
@@ -76,15 +76,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatusStartOfFileName { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ReportTypeLanguageWeb ReportTypeLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ReportTypeLanguageReport ReportTypeLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public ReportTypeLanguage() : base()
         {
@@ -92,7 +83,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportTypeLanguageWeb
+    public partial class ReportTypeLanguageWeb : ReportTypeLanguage
     {
         #region Properties for web information
         /// <summary>
@@ -141,13 +132,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ReportTypeLanguageWeb()
+        public ReportTypeLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportTypeLanguageReport
+    public partial class ReportTypeLanguageReport : ReportTypeLanguageWeb
     {
         #region Properties for report information
         /// <summary>
@@ -160,7 +151,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ReportTypeLanguageReport()
+        public ReportTypeLanguageReport() : base()
         {
         }
         #endregion Constructors

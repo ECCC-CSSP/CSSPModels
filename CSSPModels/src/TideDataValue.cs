@@ -42,15 +42,6 @@ namespace CSSPModels
         public TideTextEnum? TideEnd { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TideDataValueWeb TideDataValueWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TideDataValueReport TideDataValueReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TideDataValue() : base()
         {
@@ -58,7 +49,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TideDataValueWeb
+    public partial class TideDataValueWeb : TideDataValue
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TideSiteTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -80,13 +71,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TideDataValueWeb()
+        public TideDataValueWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TideDataValueReport
+    public partial class TideDataValueReport : TideDataValueWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -94,7 +85,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TideDataValueReport()
+        public TideDataValueReport() : base()
         {
         }
         #endregion Constructors

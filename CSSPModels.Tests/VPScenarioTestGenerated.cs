@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private VPScenario vPScenario { get; set; }
+        private VPScenarioWeb vPScenarioWeb { get; set; }
+        private VPScenarioReport vPScenarioReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public VPScenarioTest()
         {
             vPScenario = new VPScenario();
+            vPScenarioWeb = new VPScenarioWeb();
+            vPScenarioReport = new VPScenarioReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void VPScenario_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "VPScenarioID", "InfrastructureTVItemID", "VPScenarioStatus", "UseAsBestEstimate", "EffluentFlow_m3_s", "EffluentConcentration_MPN_100ml", "FroudeNumber", "PortDiameter_m", "PortDepth_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "NumberOfPorts", "PortSpacing_m", "AcuteMixZone_m", "ChronicMixZone_m", "EffluentSalinity_PSU", "EffluentTemperature_C", "EffluentVelocity_m_s", "RawResults", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "VPScenarioWeb", "VPScenarioReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.VPScenario).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(VPScenario).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(VPScenario).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void VPScenarioWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "VPScenarioStatusText", "VPScenarioID", "InfrastructureTVItemID", "VPScenarioStatus", "UseAsBestEstimate", "EffluentFlow_m3_s", "EffluentConcentration_MPN_100ml", "FroudeNumber", "PortDiameter_m", "PortDepth_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "NumberOfPorts", "PortSpacing_m", "AcuteMixZone_m", "ChronicMixZone_m", "EffluentSalinity_PSU", "EffluentTemperature_C", "EffluentVelocity_m_s", "RawResults", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(VPScenarioWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(VPScenarioWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void VPScenarioReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "VPScenarioReportTest", "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "VPScenarioStatusText", "VPScenarioID", "InfrastructureTVItemID", "VPScenarioStatus", "UseAsBestEstimate", "EffluentFlow_m3_s", "EffluentConcentration_MPN_100ml", "FroudeNumber", "PortDiameter_m", "PortDepth_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "NumberOfPorts", "PortSpacing_m", "AcuteMixZone_m", "ChronicMixZone_m", "EffluentSalinity_PSU", "EffluentTemperature_C", "EffluentVelocity_m_s", "RawResults", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(VPScenarioReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(VPScenarioReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,36 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void VPScenarioWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(VPScenarioWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(VPScenarioWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void VPScenarioReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(VPScenarioReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(VPScenarioReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void VPScenario_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(VPScenario).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void VPScenario_Every_Property_Has_A_Resource_OK()
+        public void VPScenarioWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioVPScenarioID);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioInfrastructureTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioVPScenarioStatus);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioUseAsBestEstimate);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioEffluentFlow_m3_s);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioEffluentConcentration_MPN_100ml);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioFroudeNumber);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioPortDiameter_m);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioPortDepth_m);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioPortElevation_m);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioVerticalAngle_deg);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioHorizontalAngle_deg);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioNumberOfPorts);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioPortSpacing_m);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioAcuteMixZone_m);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioChronicMixZone_m);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioEffluentSalinity_PSU);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioEffluentTemperature_C);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioEffluentVelocity_m_s);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioRawResults);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.VPScenarioHasErrors);
+             Assert.IsTrue(typeof(VPScenarioWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void VPScenarioReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(VPScenarioReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void VPScenario_Every_Property_Has_Get_Set_Test()
@@ -210,9 +331,182 @@ namespace CSSPModels.Tests
                bool val23 = true;
                vPScenario.HasErrors = val23;
                Assert.AreEqual(val23, vPScenario.HasErrors);
-               IEnumerable<ValidationResult> val76 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               vPScenario.ValidationResults = val76;
-               Assert.AreEqual(val76, vPScenario.ValidationResults);
+               IEnumerable<ValidationResult> val72 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               vPScenario.ValidationResults = val72;
+               Assert.AreEqual(val72, vPScenario.ValidationResults);
+        }
+        [TestMethod]
+        public void VPScenarioWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               vPScenarioWeb.SubsectorTVItemLanguage = val1;
+               Assert.AreEqual(val1, vPScenarioWeb.SubsectorTVItemLanguage);
+               TVItemLanguage val2 = new TVItemLanguage();
+               vPScenarioWeb.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, vPScenarioWeb.LastUpdateContactTVItemLanguage);
+               string val3 = "Some text";
+               vPScenarioWeb.VPScenarioStatusText = val3;
+               Assert.AreEqual(val3, vPScenarioWeb.VPScenarioStatusText);
+               int val4 = 45;
+               vPScenarioWeb.VPScenarioID = val4;
+               Assert.AreEqual(val4, vPScenarioWeb.VPScenarioID);
+               int val5 = 45;
+               vPScenarioWeb.InfrastructureTVItemID = val5;
+               Assert.AreEqual(val5, vPScenarioWeb.InfrastructureTVItemID);
+               ScenarioStatusEnum val6 = (ScenarioStatusEnum)3;
+               vPScenarioWeb.VPScenarioStatus = val6;
+               Assert.AreEqual(val6, vPScenarioWeb.VPScenarioStatus);
+               bool val7 = true;
+               vPScenarioWeb.UseAsBestEstimate = val7;
+               Assert.AreEqual(val7, vPScenarioWeb.UseAsBestEstimate);
+               double val8 = 87.9D;
+               vPScenarioWeb.EffluentFlow_m3_s = val8;
+               Assert.AreEqual(val8, vPScenarioWeb.EffluentFlow_m3_s);
+               int val9 = 45;
+               vPScenarioWeb.EffluentConcentration_MPN_100ml = val9;
+               Assert.AreEqual(val9, vPScenarioWeb.EffluentConcentration_MPN_100ml);
+               double val10 = 87.9D;
+               vPScenarioWeb.FroudeNumber = val10;
+               Assert.AreEqual(val10, vPScenarioWeb.FroudeNumber);
+               double val11 = 87.9D;
+               vPScenarioWeb.PortDiameter_m = val11;
+               Assert.AreEqual(val11, vPScenarioWeb.PortDiameter_m);
+               double val12 = 87.9D;
+               vPScenarioWeb.PortDepth_m = val12;
+               Assert.AreEqual(val12, vPScenarioWeb.PortDepth_m);
+               double val13 = 87.9D;
+               vPScenarioWeb.PortElevation_m = val13;
+               Assert.AreEqual(val13, vPScenarioWeb.PortElevation_m);
+               double val14 = 87.9D;
+               vPScenarioWeb.VerticalAngle_deg = val14;
+               Assert.AreEqual(val14, vPScenarioWeb.VerticalAngle_deg);
+               double val15 = 87.9D;
+               vPScenarioWeb.HorizontalAngle_deg = val15;
+               Assert.AreEqual(val15, vPScenarioWeb.HorizontalAngle_deg);
+               int val16 = 45;
+               vPScenarioWeb.NumberOfPorts = val16;
+               Assert.AreEqual(val16, vPScenarioWeb.NumberOfPorts);
+               double val17 = 87.9D;
+               vPScenarioWeb.PortSpacing_m = val17;
+               Assert.AreEqual(val17, vPScenarioWeb.PortSpacing_m);
+               double val18 = 87.9D;
+               vPScenarioWeb.AcuteMixZone_m = val18;
+               Assert.AreEqual(val18, vPScenarioWeb.AcuteMixZone_m);
+               double val19 = 87.9D;
+               vPScenarioWeb.ChronicMixZone_m = val19;
+               Assert.AreEqual(val19, vPScenarioWeb.ChronicMixZone_m);
+               double val20 = 87.9D;
+               vPScenarioWeb.EffluentSalinity_PSU = val20;
+               Assert.AreEqual(val20, vPScenarioWeb.EffluentSalinity_PSU);
+               double val21 = 87.9D;
+               vPScenarioWeb.EffluentTemperature_C = val21;
+               Assert.AreEqual(val21, vPScenarioWeb.EffluentTemperature_C);
+               double val22 = 87.9D;
+               vPScenarioWeb.EffluentVelocity_m_s = val22;
+               Assert.AreEqual(val22, vPScenarioWeb.EffluentVelocity_m_s);
+               string val23 = "Some text";
+               vPScenarioWeb.RawResults = val23;
+               Assert.AreEqual(val23, vPScenarioWeb.RawResults);
+               DateTime val24 = new DateTime(2010, 3, 4);
+               vPScenarioWeb.LastUpdateDate_UTC = val24;
+               Assert.AreEqual(val24, vPScenarioWeb.LastUpdateDate_UTC);
+               int val25 = 45;
+               vPScenarioWeb.LastUpdateContactTVItemID = val25;
+               Assert.AreEqual(val25, vPScenarioWeb.LastUpdateContactTVItemID);
+               bool val26 = true;
+               vPScenarioWeb.HasErrors = val26;
+               Assert.AreEqual(val26, vPScenarioWeb.HasErrors);
+               IEnumerable<ValidationResult> val81 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               vPScenarioWeb.ValidationResults = val81;
+               Assert.AreEqual(val81, vPScenarioWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void VPScenarioReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               vPScenarioReport.VPScenarioReportTest = val1;
+               Assert.AreEqual(val1, vPScenarioReport.VPScenarioReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               vPScenarioReport.SubsectorTVItemLanguage = val2;
+               Assert.AreEqual(val2, vPScenarioReport.SubsectorTVItemLanguage);
+               TVItemLanguage val3 = new TVItemLanguage();
+               vPScenarioReport.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, vPScenarioReport.LastUpdateContactTVItemLanguage);
+               string val4 = "Some text";
+               vPScenarioReport.VPScenarioStatusText = val4;
+               Assert.AreEqual(val4, vPScenarioReport.VPScenarioStatusText);
+               int val5 = 45;
+               vPScenarioReport.VPScenarioID = val5;
+               Assert.AreEqual(val5, vPScenarioReport.VPScenarioID);
+               int val6 = 45;
+               vPScenarioReport.InfrastructureTVItemID = val6;
+               Assert.AreEqual(val6, vPScenarioReport.InfrastructureTVItemID);
+               ScenarioStatusEnum val7 = (ScenarioStatusEnum)3;
+               vPScenarioReport.VPScenarioStatus = val7;
+               Assert.AreEqual(val7, vPScenarioReport.VPScenarioStatus);
+               bool val8 = true;
+               vPScenarioReport.UseAsBestEstimate = val8;
+               Assert.AreEqual(val8, vPScenarioReport.UseAsBestEstimate);
+               double val9 = 87.9D;
+               vPScenarioReport.EffluentFlow_m3_s = val9;
+               Assert.AreEqual(val9, vPScenarioReport.EffluentFlow_m3_s);
+               int val10 = 45;
+               vPScenarioReport.EffluentConcentration_MPN_100ml = val10;
+               Assert.AreEqual(val10, vPScenarioReport.EffluentConcentration_MPN_100ml);
+               double val11 = 87.9D;
+               vPScenarioReport.FroudeNumber = val11;
+               Assert.AreEqual(val11, vPScenarioReport.FroudeNumber);
+               double val12 = 87.9D;
+               vPScenarioReport.PortDiameter_m = val12;
+               Assert.AreEqual(val12, vPScenarioReport.PortDiameter_m);
+               double val13 = 87.9D;
+               vPScenarioReport.PortDepth_m = val13;
+               Assert.AreEqual(val13, vPScenarioReport.PortDepth_m);
+               double val14 = 87.9D;
+               vPScenarioReport.PortElevation_m = val14;
+               Assert.AreEqual(val14, vPScenarioReport.PortElevation_m);
+               double val15 = 87.9D;
+               vPScenarioReport.VerticalAngle_deg = val15;
+               Assert.AreEqual(val15, vPScenarioReport.VerticalAngle_deg);
+               double val16 = 87.9D;
+               vPScenarioReport.HorizontalAngle_deg = val16;
+               Assert.AreEqual(val16, vPScenarioReport.HorizontalAngle_deg);
+               int val17 = 45;
+               vPScenarioReport.NumberOfPorts = val17;
+               Assert.AreEqual(val17, vPScenarioReport.NumberOfPorts);
+               double val18 = 87.9D;
+               vPScenarioReport.PortSpacing_m = val18;
+               Assert.AreEqual(val18, vPScenarioReport.PortSpacing_m);
+               double val19 = 87.9D;
+               vPScenarioReport.AcuteMixZone_m = val19;
+               Assert.AreEqual(val19, vPScenarioReport.AcuteMixZone_m);
+               double val20 = 87.9D;
+               vPScenarioReport.ChronicMixZone_m = val20;
+               Assert.AreEqual(val20, vPScenarioReport.ChronicMixZone_m);
+               double val21 = 87.9D;
+               vPScenarioReport.EffluentSalinity_PSU = val21;
+               Assert.AreEqual(val21, vPScenarioReport.EffluentSalinity_PSU);
+               double val22 = 87.9D;
+               vPScenarioReport.EffluentTemperature_C = val22;
+               Assert.AreEqual(val22, vPScenarioReport.EffluentTemperature_C);
+               double val23 = 87.9D;
+               vPScenarioReport.EffluentVelocity_m_s = val23;
+               Assert.AreEqual(val23, vPScenarioReport.EffluentVelocity_m_s);
+               string val24 = "Some text";
+               vPScenarioReport.RawResults = val24;
+               Assert.AreEqual(val24, vPScenarioReport.RawResults);
+               DateTime val25 = new DateTime(2010, 3, 4);
+               vPScenarioReport.LastUpdateDate_UTC = val25;
+               Assert.AreEqual(val25, vPScenarioReport.LastUpdateDate_UTC);
+               int val26 = 45;
+               vPScenarioReport.LastUpdateContactTVItemID = val26;
+               Assert.AreEqual(val26, vPScenarioReport.LastUpdateContactTVItemID);
+               bool val27 = true;
+               vPScenarioReport.HasErrors = val27;
+               Assert.AreEqual(val27, vPScenarioReport.HasErrors);
+               IEnumerable<ValidationResult> val84 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               vPScenarioReport.ValidationResults = val84;
+               Assert.AreEqual(val84, vPScenarioReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

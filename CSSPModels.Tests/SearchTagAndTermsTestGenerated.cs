@@ -60,14 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(SearchTagAndTerms).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void SearchTagAndTerms_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.SearchTagAndTermsSearchTag);
-               Assert.IsNotNull(CSSPModelsRes.SearchTagAndTermsSearchTagText);
-               Assert.IsNotNull(CSSPModelsRes.SearchTagAndTermsSearchTermList);
-               Assert.IsNotNull(CSSPModelsRes.SearchTagAndTermsHasErrors);
-        }
-        [TestMethod]
         public void SearchTagAndTerms_Every_Property_Has_Get_Set_Test()
         {
                SearchTagEnum val1 = (SearchTagEnum)3;

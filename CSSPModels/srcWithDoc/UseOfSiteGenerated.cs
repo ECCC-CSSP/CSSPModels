@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table UseOfSites** : [UseOfSiteID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseOfSiteID), [SiteTVItemID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteTVItemID), [SubsectorTVItemID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SubsectorTVItemID), [SiteType](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteType), [Ordinal](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Ordinal), [StartYear](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_StartYear), [EndYear](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_EndYear), [UseWeight](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseWeight), [Weight_perc](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Weight_perc), [UseEquation](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseEquation), [Param1](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param1), [Param2](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param2), [Param3](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param3), [Param4](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param4), [LastUpdateDate_UTC](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [UseOfSiteWeb](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseOfSiteWeb), [UseOfSiteReport](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseOfSiteReport), [HasErrors](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_HasErrors), [ValidationResults](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_HasErrors), [ValidationResults](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [UseOfSiteService](CSSPServices.UseOfSiteService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SiteTypeEnum](CSSPEnums.SiteTypeEnum.html)</para>
@@ -78,15 +78,6 @@ namespace CSSPModels
         public double? Param4 { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public UseOfSiteWeb UseOfSiteWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public UseOfSiteReport UseOfSiteReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public UseOfSite() : base()
         {
@@ -94,7 +85,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class UseOfSiteWeb
+    public partial class UseOfSiteWeb : UseOfSite
     {
         #region Properties for web information
         /// <summary>
@@ -130,13 +121,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public UseOfSiteWeb()
+        public UseOfSiteWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class UseOfSiteReport
+    public partial class UseOfSiteReport : UseOfSiteWeb
     {
         #region Properties for report information
         /// <summary>
@@ -149,7 +140,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public UseOfSiteReport()
+        public UseOfSiteReport() : base()
         {
         }
         #endregion Constructors

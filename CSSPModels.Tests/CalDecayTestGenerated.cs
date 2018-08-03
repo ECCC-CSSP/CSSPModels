@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(CalDecay).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void CalDecay_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.CalDecayError);
-               Assert.IsNotNull(CSSPModelsRes.CalDecayDecay);
-               Assert.IsNotNull(CSSPModelsRes.CalDecayHasErrors);
-        }
-        [TestMethod]
         public void CalDecay_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

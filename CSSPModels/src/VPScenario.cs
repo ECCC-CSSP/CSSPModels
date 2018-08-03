@@ -58,15 +58,6 @@ namespace CSSPModels
         public string RawResults { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public VPScenarioWeb VPScenarioWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public VPScenarioReport VPScenarioReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public VPScenario() : base()
         {
@@ -74,7 +65,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPScenarioWeb
+    public partial class VPScenarioWeb : VPScenario
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -87,13 +78,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public VPScenarioWeb()
+        public VPScenarioWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPScenarioReport
+    public partial class VPScenarioReport : VPScenarioWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -101,7 +92,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public VPScenarioReport()
+        public VPScenarioReport() : base()
         {
         }
         #endregion Constructors

@@ -40,15 +40,6 @@ namespace CSSPModels
         public TVTypeEnum TVType { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MikeBoundaryConditionWeb MikeBoundaryConditionWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MikeBoundaryConditionReport MikeBoundaryConditionReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MikeBoundaryCondition() : base()
         {
@@ -56,7 +47,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeBoundaryConditionWeb
+    public partial class MikeBoundaryConditionWeb : MikeBoundaryCondition
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MikeBoundaryConditionTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -75,13 +66,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MikeBoundaryConditionWeb()
+        public MikeBoundaryConditionWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeBoundaryConditionReport
+    public partial class MikeBoundaryConditionReport : MikeBoundaryConditionWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -89,7 +80,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MikeBoundaryConditionReport()
+        public MikeBoundaryConditionReport() : base()
         {
         }
         #endregion Constructors

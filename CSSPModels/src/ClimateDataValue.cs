@@ -53,15 +53,6 @@ namespace CSSPModels
         public string HourlyValues { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ClimateDataValueWeb ClimateDataValueWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ClimateDataValueReport ClimateDataValueReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public ClimateDataValue() : base()
         {
@@ -69,7 +60,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClimateDataValueWeb
+    public partial class ClimateDataValueWeb : ClimateDataValue
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -80,13 +71,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ClimateDataValueWeb()
+        public ClimateDataValueWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClimateDataValueReport
+    public partial class ClimateDataValueReport : ClimateDataValueWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -94,7 +85,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ClimateDataValueReport()
+        public ClimateDataValueReport() : base()
         {
         }
         #endregion Constructors

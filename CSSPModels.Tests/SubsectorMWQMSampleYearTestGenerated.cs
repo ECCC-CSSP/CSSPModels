@@ -60,15 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(SubsectorMWQMSampleYear).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void SubsectorMWQMSampleYear_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.SubsectorMWQMSampleYearSubsectorTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.SubsectorMWQMSampleYearYear);
-               Assert.IsNotNull(CSSPModelsRes.SubsectorMWQMSampleYearEarliestDate);
-               Assert.IsNotNull(CSSPModelsRes.SubsectorMWQMSampleYearLatestDate);
-               Assert.IsNotNull(CSSPModelsRes.SubsectorMWQMSampleYearHasErrors);
-        }
-        [TestMethod]
         public void SubsectorMWQMSampleYear_Every_Property_Has_Get_Set_Test()
         {
                int val1 = 45;

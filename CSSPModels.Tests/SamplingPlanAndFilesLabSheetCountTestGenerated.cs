@@ -60,15 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(SamplingPlanAndFilesLabSheetCount).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void SamplingPlanAndFilesLabSheetCount_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanAndFilesLabSheetCountLabSheetHistoryCount);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanAndFilesLabSheetCountLabSheetTransferredCount);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanAndFilesLabSheetCountSamplingPlan);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanAndFilesLabSheetCountTVFileSamplingPlanFileTXT);
-               Assert.IsNotNull(CSSPModelsRes.SamplingPlanAndFilesLabSheetCountHasErrors);
-        }
-        [TestMethod]
         public void SamplingPlanAndFilesLabSheetCount_Every_Property_Has_Get_Set_Test()
         {
                int val1 = 45;

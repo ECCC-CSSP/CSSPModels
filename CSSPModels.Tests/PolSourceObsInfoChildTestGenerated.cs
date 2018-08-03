@@ -60,15 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(PolSourceObsInfoChild).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void PolSourceObsInfoChild_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObsInfoChildPolSourceObsInfo);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObsInfoChildPolSourceObsInfoChildStart);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObsInfoChildPolSourceObsInfoText);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObsInfoChildPolSourceObsInfoChildStartText);
-               Assert.IsNotNull(CSSPModelsRes.PolSourceObsInfoChildHasErrors);
-        }
-        [TestMethod]
         public void PolSourceObsInfoChild_Every_Property_Has_Get_Set_Test()
         {
                PolSourceObsInfoEnum val1 = (PolSourceObsInfoEnum)3;

@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table SamplingPlans** : [SamplingPlanID](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanID), [IsActive](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_IsActive), [SamplingPlanName](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanName), [ForGroupName](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_ForGroupName), [SampleType](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SampleType), [SamplingPlanType](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanType), [LabSheetType](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_LabSheetType), [ProvinceTVItemID](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_ProvinceTVItemID), [CreatorTVItemID](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_CreatorTVItemID), [Year](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_Year), [AccessCode](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_AccessCode), [DailyDuplicatePrecisionCriteria](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_DailyDuplicatePrecisionCriteria), [IntertechDuplicatePrecisionCriteria](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_IntertechDuplicatePrecisionCriteria), [IncludeLaboratoryQAQC](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_IncludeLaboratoryQAQC), [ApprovalCode](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_ApprovalCode), [SamplingPlanFileTVItemID](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanFileTVItemID), [AnalyzeMethodDefault](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_AnalyzeMethodDefault), [SampleMatrixDefault](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SampleMatrixDefault), [LaboratoryDefault](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_LaboratoryDefault), [BackupDirectory](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_BackupDirectory), [LastUpdateDate_UTC](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [SamplingPlanWeb](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanWeb), [SamplingPlanReport](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanReport), [HasErrors](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_HasErrors), [ValidationResults](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_HasErrors), [ValidationResults](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SamplingPlanService](CSSPServices.SamplingPlanService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html), [SamplingPlanTypeEnum](CSSPEnums.SamplingPlanTypeEnum.html), [LabSheetTypeEnum](CSSPEnums.LabSheetTypeEnum.html), [AnalyzeMethodEnum](CSSPEnums.AnalyzeMethodEnum.html), [SampleMatrixEnum](CSSPEnums.SampleMatrixEnum.html), [LaboratoryEnum](CSSPEnums.LaboratoryEnum.html)</para>
@@ -128,15 +128,6 @@ namespace CSSPModels
         public string BackupDirectory { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public SamplingPlanWeb SamplingPlanWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public SamplingPlanReport SamplingPlanReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public SamplingPlan() : base()
         {
@@ -144,7 +135,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanWeb
+    public partial class SamplingPlanWeb : SamplingPlan
     {
         #region Properties for web information
         /// <summary>
@@ -205,13 +196,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public SamplingPlanWeb()
+        public SamplingPlanWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanReport
+    public partial class SamplingPlanReport : SamplingPlanWeb
     {
         #region Properties for report information
         /// <summary>
@@ -224,7 +215,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public SamplingPlanReport()
+        public SamplingPlanReport() : base()
         {
         }
         #endregion Constructors

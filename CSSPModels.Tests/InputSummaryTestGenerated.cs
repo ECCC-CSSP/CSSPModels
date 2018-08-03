@@ -60,13 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(InputSummary).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void InputSummary_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.InputSummaryError);
-               Assert.IsNotNull(CSSPModelsRes.InputSummarySummary);
-               Assert.IsNotNull(CSSPModelsRes.InputSummaryHasErrors);
-        }
-        [TestMethod]
         public void InputSummary_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";

@@ -25,15 +25,6 @@ namespace CSSPModels
         public int Ordinal { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailDistributionListWeb EmailDistributionListWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailDistributionListReport EmailDistributionListReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public EmailDistributionList() : base()
         {
@@ -41,7 +32,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListWeb
+    public partial class EmailDistributionListWeb : EmailDistributionList
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CountryTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -51,21 +42,21 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public EmailDistributionListWeb()
+        public EmailDistributionListWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListReport
+    public partial class EmailDistributionListReport : EmailDistributionListWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
-        public string EmailDistributionReportTest { get; set; }
+        public string EmailDistributionListReportTest { get; set; }
         #endregion Properties for report information
 
         #region Constructors
-        public EmailDistributionListReport()
+        public EmailDistributionListReport() : base()
         {
         }
         #endregion Constructors

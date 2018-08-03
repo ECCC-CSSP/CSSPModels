@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table RatingCurves** : [RatingCurveID](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_RatingCurveID), [HydrometricSiteID](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_HydrometricSiteID), [RatingCurveNumber](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_RatingCurveNumber), [LastUpdateDate_UTC](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [RatingCurveWeb](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_RatingCurveWeb), [RatingCurveReport](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_RatingCurveReport), [HasErrors](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_HasErrors), [ValidationResults](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_HasErrors), [ValidationResults](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [RatingCurveService](CSSPServices.RatingCurveService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -43,15 +43,6 @@ namespace CSSPModels
         public string RatingCurveNumber { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public RatingCurveWeb RatingCurveWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public RatingCurveReport RatingCurveReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public RatingCurve() : base()
         {
@@ -59,7 +50,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RatingCurveWeb
+    public partial class RatingCurveWeb : RatingCurve
     {
         #region Properties for web information
         /// <summary>
@@ -72,13 +63,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public RatingCurveWeb()
+        public RatingCurveWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RatingCurveReport
+    public partial class RatingCurveReport : RatingCurveWeb
     {
         #region Properties for report information
         /// <summary>
@@ -91,7 +82,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public RatingCurveReport()
+        public RatingCurveReport() : base()
         {
         }
         #endregion Constructors

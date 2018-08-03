@@ -60,15 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(ContourPolygon).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ContourPolygon_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.ContourPolygonContourValue);
-               Assert.IsNotNull(CSSPModelsRes.ContourPolygonLayer);
-               Assert.IsNotNull(CSSPModelsRes.ContourPolygonDepth);
-               Assert.IsNotNull(CSSPModelsRes.ContourPolygonContourNodeList);
-               Assert.IsNotNull(CSSPModelsRes.ContourPolygonHasErrors);
-        }
-        [TestMethod]
         public void ContourPolygon_Every_Property_Has_Get_Set_Test()
         {
                double val1 = 87.9D;

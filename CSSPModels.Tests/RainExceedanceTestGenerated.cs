@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private RainExceedance rainExceedance { get; set; }
+        private RainExceedanceWeb rainExceedanceWeb { get; set; }
+        private RainExceedanceReport rainExceedanceReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public RainExceedanceTest()
         {
             rainExceedance = new RainExceedance();
+            rainExceedanceWeb = new RainExceedanceWeb();
+            rainExceedanceReport = new RainExceedanceReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void RainExceedance_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "RainExceedanceID", "YearRound", "StartDate_Local", "EndDate_Local", "RainMaximum_mm", "RainExtreme_mm", "DaysPriorToStart", "RepeatEveryYear", "ProvinceTVItemIDs", "SubsectorTVItemIDs", "ClimateSiteTVItemIDs", "EmailDistributionListIDs", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "RainExceedanceWeb", "RainExceedanceReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.RainExceedance).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(RainExceedance).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(RainExceedance).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void RainExceedanceWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "RainExceedanceID", "YearRound", "StartDate_Local", "EndDate_Local", "RainMaximum_mm", "RainExtreme_mm", "DaysPriorToStart", "RepeatEveryYear", "ProvinceTVItemIDs", "SubsectorTVItemIDs", "ClimateSiteTVItemIDs", "EmailDistributionListIDs", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RainExceedanceWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RainExceedanceWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void RainExceedanceReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "RainExceedanceReportTest", "LastUpdateContactTVItemLanguage", "RainExceedanceID", "YearRound", "StartDate_Local", "EndDate_Local", "RainMaximum_mm", "RainExtreme_mm", "DaysPriorToStart", "RepeatEveryYear", "ProvinceTVItemIDs", "SubsectorTVItemIDs", "ClimateSiteTVItemIDs", "EmailDistributionListIDs", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RainExceedanceReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RainExceedanceReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,28 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void RainExceedanceWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RainExceedanceWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RainExceedanceWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void RainExceedanceReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RainExceedanceReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(RainExceedanceReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void RainExceedance_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(RainExceedance).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void RainExceedance_Every_Property_Has_A_Resource_OK()
+        public void RainExceedanceWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceRainExceedanceID);
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceYearRound);
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceStartDate_Local);
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceEndDate_Local);
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceRainMaximum_mm);
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceRainExtreme_mm);
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceDaysPriorToStart);
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceRepeatEveryYear);
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceProvinceTVItemIDs);
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceSubsectorTVItemIDs);
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceClimateSiteTVItemIDs);
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceEmailDistributionListIDs);
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.RainExceedanceHasErrors);
+             Assert.IsTrue(typeof(RainExceedanceWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void RainExceedanceReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(RainExceedanceReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void RainExceedance_Every_Property_Has_Get_Set_Test()
@@ -178,9 +307,122 @@ namespace CSSPModels.Tests
                bool val15 = true;
                rainExceedance.HasErrors = val15;
                Assert.AreEqual(val15, rainExceedance.HasErrors);
-               IEnumerable<ValidationResult> val52 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               rainExceedance.ValidationResults = val52;
-               Assert.AreEqual(val52, rainExceedance.ValidationResults);
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               rainExceedance.ValidationResults = val48;
+               Assert.AreEqual(val48, rainExceedance.ValidationResults);
+        }
+        [TestMethod]
+        public void RainExceedanceWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               rainExceedanceWeb.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, rainExceedanceWeb.LastUpdateContactTVItemLanguage);
+               int val2 = 45;
+               rainExceedanceWeb.RainExceedanceID = val2;
+               Assert.AreEqual(val2, rainExceedanceWeb.RainExceedanceID);
+               bool val3 = true;
+               rainExceedanceWeb.YearRound = val3;
+               Assert.AreEqual(val3, rainExceedanceWeb.YearRound);
+               DateTime val4 = new DateTime(2010, 3, 4);
+               rainExceedanceWeb.StartDate_Local = val4;
+               Assert.AreEqual(val4, rainExceedanceWeb.StartDate_Local);
+               DateTime val5 = new DateTime(2010, 3, 4);
+               rainExceedanceWeb.EndDate_Local = val5;
+               Assert.AreEqual(val5, rainExceedanceWeb.EndDate_Local);
+               double val6 = 87.9D;
+               rainExceedanceWeb.RainMaximum_mm = val6;
+               Assert.AreEqual(val6, rainExceedanceWeb.RainMaximum_mm);
+               double val7 = 87.9D;
+               rainExceedanceWeb.RainExtreme_mm = val7;
+               Assert.AreEqual(val7, rainExceedanceWeb.RainExtreme_mm);
+               int val8 = 45;
+               rainExceedanceWeb.DaysPriorToStart = val8;
+               Assert.AreEqual(val8, rainExceedanceWeb.DaysPriorToStart);
+               bool val9 = true;
+               rainExceedanceWeb.RepeatEveryYear = val9;
+               Assert.AreEqual(val9, rainExceedanceWeb.RepeatEveryYear);
+               string val10 = "Some text";
+               rainExceedanceWeb.ProvinceTVItemIDs = val10;
+               Assert.AreEqual(val10, rainExceedanceWeb.ProvinceTVItemIDs);
+               string val11 = "Some text";
+               rainExceedanceWeb.SubsectorTVItemIDs = val11;
+               Assert.AreEqual(val11, rainExceedanceWeb.SubsectorTVItemIDs);
+               string val12 = "Some text";
+               rainExceedanceWeb.ClimateSiteTVItemIDs = val12;
+               Assert.AreEqual(val12, rainExceedanceWeb.ClimateSiteTVItemIDs);
+               string val13 = "Some text";
+               rainExceedanceWeb.EmailDistributionListIDs = val13;
+               Assert.AreEqual(val13, rainExceedanceWeb.EmailDistributionListIDs);
+               DateTime val14 = new DateTime(2010, 3, 4);
+               rainExceedanceWeb.LastUpdateDate_UTC = val14;
+               Assert.AreEqual(val14, rainExceedanceWeb.LastUpdateDate_UTC);
+               int val15 = 45;
+               rainExceedanceWeb.LastUpdateContactTVItemID = val15;
+               Assert.AreEqual(val15, rainExceedanceWeb.LastUpdateContactTVItemID);
+               bool val16 = true;
+               rainExceedanceWeb.HasErrors = val16;
+               Assert.AreEqual(val16, rainExceedanceWeb.HasErrors);
+               IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               rainExceedanceWeb.ValidationResults = val51;
+               Assert.AreEqual(val51, rainExceedanceWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void RainExceedanceReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               rainExceedanceReport.RainExceedanceReportTest = val1;
+               Assert.AreEqual(val1, rainExceedanceReport.RainExceedanceReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               rainExceedanceReport.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, rainExceedanceReport.LastUpdateContactTVItemLanguage);
+               int val3 = 45;
+               rainExceedanceReport.RainExceedanceID = val3;
+               Assert.AreEqual(val3, rainExceedanceReport.RainExceedanceID);
+               bool val4 = true;
+               rainExceedanceReport.YearRound = val4;
+               Assert.AreEqual(val4, rainExceedanceReport.YearRound);
+               DateTime val5 = new DateTime(2010, 3, 4);
+               rainExceedanceReport.StartDate_Local = val5;
+               Assert.AreEqual(val5, rainExceedanceReport.StartDate_Local);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               rainExceedanceReport.EndDate_Local = val6;
+               Assert.AreEqual(val6, rainExceedanceReport.EndDate_Local);
+               double val7 = 87.9D;
+               rainExceedanceReport.RainMaximum_mm = val7;
+               Assert.AreEqual(val7, rainExceedanceReport.RainMaximum_mm);
+               double val8 = 87.9D;
+               rainExceedanceReport.RainExtreme_mm = val8;
+               Assert.AreEqual(val8, rainExceedanceReport.RainExtreme_mm);
+               int val9 = 45;
+               rainExceedanceReport.DaysPriorToStart = val9;
+               Assert.AreEqual(val9, rainExceedanceReport.DaysPriorToStart);
+               bool val10 = true;
+               rainExceedanceReport.RepeatEveryYear = val10;
+               Assert.AreEqual(val10, rainExceedanceReport.RepeatEveryYear);
+               string val11 = "Some text";
+               rainExceedanceReport.ProvinceTVItemIDs = val11;
+               Assert.AreEqual(val11, rainExceedanceReport.ProvinceTVItemIDs);
+               string val12 = "Some text";
+               rainExceedanceReport.SubsectorTVItemIDs = val12;
+               Assert.AreEqual(val12, rainExceedanceReport.SubsectorTVItemIDs);
+               string val13 = "Some text";
+               rainExceedanceReport.ClimateSiteTVItemIDs = val13;
+               Assert.AreEqual(val13, rainExceedanceReport.ClimateSiteTVItemIDs);
+               string val14 = "Some text";
+               rainExceedanceReport.EmailDistributionListIDs = val14;
+               Assert.AreEqual(val14, rainExceedanceReport.EmailDistributionListIDs);
+               DateTime val15 = new DateTime(2010, 3, 4);
+               rainExceedanceReport.LastUpdateDate_UTC = val15;
+               Assert.AreEqual(val15, rainExceedanceReport.LastUpdateDate_UTC);
+               int val16 = 45;
+               rainExceedanceReport.LastUpdateContactTVItemID = val16;
+               Assert.AreEqual(val16, rainExceedanceReport.LastUpdateContactTVItemID);
+               bool val17 = true;
+               rainExceedanceReport.HasErrors = val17;
+               Assert.AreEqual(val17, rainExceedanceReport.HasErrors);
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               rainExceedanceReport.ValidationResults = val54;
+               Assert.AreEqual(val54, rainExceedanceReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

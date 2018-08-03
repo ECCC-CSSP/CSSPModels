@@ -43,15 +43,6 @@ namespace CSSPModels
         public int? RemainingTime_second { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public AppTaskWeb AppTaskWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public AppTaskReport AppTaskReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public AppTask() : base()
         {
@@ -59,7 +50,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppTaskWeb
+    public partial class AppTaskWeb : AppTask
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -80,13 +71,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public AppTaskWeb()
+        public AppTaskWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppTaskReport
+    public partial class AppTaskReport : AppTaskWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -94,7 +85,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public AppTaskReport()
+        public AppTaskReport() : base()
         {
         }
         #endregion Constructors

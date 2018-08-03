@@ -29,15 +29,6 @@ namespace CSSPModels
         public int MPN_100ml { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMLookupMPNWeb MWQMLookupMPNWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public MWQMLookupMPNReport MWQMLookupMPNReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public MWQMLookupMPN() : base()
         {
@@ -45,7 +36,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMLookupMPNWeb
+    public partial class MWQMLookupMPNWeb : MWQMLookupMPN
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -53,13 +44,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public MWQMLookupMPNWeb()
+        public MWQMLookupMPNWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMLookupMPNReport
+    public partial class MWQMLookupMPNReport : MWQMLookupMPNWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -67,7 +58,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public MWQMLookupMPNReport()
+        public MWQMLookupMPNReport() : base()
         {
         }
         #endregion Constructors

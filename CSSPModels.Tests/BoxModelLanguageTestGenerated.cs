@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private BoxModelLanguage boxModelLanguage { get; set; }
+        private BoxModelLanguageWeb boxModelLanguageWeb { get; set; }
+        private BoxModelLanguageReport boxModelLanguageReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public BoxModelLanguageTest()
         {
             boxModelLanguage = new BoxModelLanguage();
+            boxModelLanguageWeb = new BoxModelLanguageWeb();
+            boxModelLanguageReport = new BoxModelLanguageReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void BoxModelLanguage_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "BoxModelLanguageID", "BoxModelID", "Language", "ScenarioName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "BoxModelLanguageWeb", "BoxModelLanguageReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.BoxModelLanguage).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelLanguage).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(BoxModelLanguage).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void BoxModelLanguageWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "BoxModelLanguageID", "BoxModelID", "Language", "ScenarioName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelLanguageWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelLanguageWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void BoxModelLanguageReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "BoxModelLanguageReportTest", "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "BoxModelLanguageID", "BoxModelID", "Language", "ScenarioName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelLanguageReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelLanguageReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,21 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void BoxModelLanguageWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelLanguageWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelLanguageWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void BoxModelLanguageReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelLanguageReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelLanguageReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void BoxModelLanguage_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(BoxModelLanguage).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void BoxModelLanguage_Every_Property_Has_A_Resource_OK()
+        public void BoxModelLanguageWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageBoxModelLanguageID);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageBoxModelID);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageLanguage);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageScenarioName);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageTranslationStatus);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.BoxModelLanguageHasErrors);
+             Assert.IsTrue(typeof(BoxModelLanguageWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void BoxModelLanguageReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(BoxModelLanguageReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void BoxModelLanguage_Every_Property_Has_Get_Set_Test()
@@ -150,9 +286,92 @@ namespace CSSPModels.Tests
                bool val8 = true;
                boxModelLanguage.HasErrors = val8;
                Assert.AreEqual(val8, boxModelLanguage.HasErrors);
-               IEnumerable<ValidationResult> val31 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               boxModelLanguage.ValidationResults = val31;
-               Assert.AreEqual(val31, boxModelLanguage.ValidationResults);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               boxModelLanguage.ValidationResults = val27;
+               Assert.AreEqual(val27, boxModelLanguage.ValidationResults);
+        }
+        [TestMethod]
+        public void BoxModelLanguageWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               boxModelLanguageWeb.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, boxModelLanguageWeb.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               boxModelLanguageWeb.LanguageText = val2;
+               Assert.AreEqual(val2, boxModelLanguageWeb.LanguageText);
+               string val3 = "Some text";
+               boxModelLanguageWeb.TranslationStatusText = val3;
+               Assert.AreEqual(val3, boxModelLanguageWeb.TranslationStatusText);
+               int val4 = 45;
+               boxModelLanguageWeb.BoxModelLanguageID = val4;
+               Assert.AreEqual(val4, boxModelLanguageWeb.BoxModelLanguageID);
+               int val5 = 45;
+               boxModelLanguageWeb.BoxModelID = val5;
+               Assert.AreEqual(val5, boxModelLanguageWeb.BoxModelID);
+               LanguageEnum val6 = (LanguageEnum)3;
+               boxModelLanguageWeb.Language = val6;
+               Assert.AreEqual(val6, boxModelLanguageWeb.Language);
+               string val7 = "Some text";
+               boxModelLanguageWeb.ScenarioName = val7;
+               Assert.AreEqual(val7, boxModelLanguageWeb.ScenarioName);
+               TranslationStatusEnum val8 = (TranslationStatusEnum)3;
+               boxModelLanguageWeb.TranslationStatus = val8;
+               Assert.AreEqual(val8, boxModelLanguageWeb.TranslationStatus);
+               DateTime val9 = new DateTime(2010, 3, 4);
+               boxModelLanguageWeb.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, boxModelLanguageWeb.LastUpdateDate_UTC);
+               int val10 = 45;
+               boxModelLanguageWeb.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, boxModelLanguageWeb.LastUpdateContactTVItemID);
+               bool val11 = true;
+               boxModelLanguageWeb.HasErrors = val11;
+               Assert.AreEqual(val11, boxModelLanguageWeb.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               boxModelLanguageWeb.ValidationResults = val36;
+               Assert.AreEqual(val36, boxModelLanguageWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void BoxModelLanguageReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               boxModelLanguageReport.BoxModelLanguageReportTest = val1;
+               Assert.AreEqual(val1, boxModelLanguageReport.BoxModelLanguageReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               boxModelLanguageReport.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, boxModelLanguageReport.LastUpdateContactTVItemLanguage);
+               string val3 = "Some text";
+               boxModelLanguageReport.LanguageText = val3;
+               Assert.AreEqual(val3, boxModelLanguageReport.LanguageText);
+               string val4 = "Some text";
+               boxModelLanguageReport.TranslationStatusText = val4;
+               Assert.AreEqual(val4, boxModelLanguageReport.TranslationStatusText);
+               int val5 = 45;
+               boxModelLanguageReport.BoxModelLanguageID = val5;
+               Assert.AreEqual(val5, boxModelLanguageReport.BoxModelLanguageID);
+               int val6 = 45;
+               boxModelLanguageReport.BoxModelID = val6;
+               Assert.AreEqual(val6, boxModelLanguageReport.BoxModelID);
+               LanguageEnum val7 = (LanguageEnum)3;
+               boxModelLanguageReport.Language = val7;
+               Assert.AreEqual(val7, boxModelLanguageReport.Language);
+               string val8 = "Some text";
+               boxModelLanguageReport.ScenarioName = val8;
+               Assert.AreEqual(val8, boxModelLanguageReport.ScenarioName);
+               TranslationStatusEnum val9 = (TranslationStatusEnum)3;
+               boxModelLanguageReport.TranslationStatus = val9;
+               Assert.AreEqual(val9, boxModelLanguageReport.TranslationStatus);
+               DateTime val10 = new DateTime(2010, 3, 4);
+               boxModelLanguageReport.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, boxModelLanguageReport.LastUpdateDate_UTC);
+               int val11 = 45;
+               boxModelLanguageReport.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, boxModelLanguageReport.LastUpdateContactTVItemID);
+               bool val12 = true;
+               boxModelLanguageReport.HasErrors = val12;
+               Assert.AreEqual(val12, boxModelLanguageReport.HasErrors);
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               boxModelLanguageReport.ValidationResults = val39;
+               Assert.AreEqual(val39, boxModelLanguageReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

@@ -53,15 +53,6 @@ namespace CSSPModels
         public bool? HasRatingCurve { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public HydrometricSiteWeb HydrometricSiteWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public HydrometricSiteReport HydrometricSiteReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public HydrometricSite() : base()
         {
@@ -69,7 +60,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class HydrometricSiteWeb
+    public partial class HydrometricSiteWeb : HydrometricSite
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "HydrometricSiteTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -79,13 +70,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public HydrometricSiteWeb()
+        public HydrometricSiteWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class HydrometricSiteReport
+    public partial class HydrometricSiteReport : HydrometricSiteWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -93,7 +84,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public HydrometricSiteReport()
+        public HydrometricSiteReport() : base()
         {
         }
         #endregion Constructors

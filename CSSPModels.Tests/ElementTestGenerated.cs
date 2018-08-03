@@ -60,19 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(Element).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Element_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.ElementID);
-               Assert.IsNotNull(CSSPModelsRes.ElementType);
-               Assert.IsNotNull(CSSPModelsRes.ElementNumbOfNodes);
-               Assert.IsNotNull(CSSPModelsRes.ElementValue);
-               Assert.IsNotNull(CSSPModelsRes.ElementXNode0);
-               Assert.IsNotNull(CSSPModelsRes.ElementYNode0);
-               Assert.IsNotNull(CSSPModelsRes.ElementZNode0);
-               Assert.IsNotNull(CSSPModelsRes.ElementNodeList);
-               Assert.IsNotNull(CSSPModelsRes.ElementHasErrors);
-        }
-        [TestMethod]
         public void Element_Every_Property_Has_Get_Set_Test()
         {
                int val1 = 45;

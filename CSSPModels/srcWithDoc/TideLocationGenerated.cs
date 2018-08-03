@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table TideLocations** : [TideLocationID](CSSPModels.TideLocation.html#CSSPModels_TideLocation_TideLocationID), [Zone](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Zone), [Name](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Name), [Prov](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Prov), [sid](CSSPModels.TideLocation.html#CSSPModels_TideLocation_sid), [Lat](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Lat), [Lng](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Lng), [LastUpdateDate_UTC](CSSPModels.TideLocation.html#CSSPModels_TideLocation_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TideLocation.html#CSSPModels_TideLocation_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [TideLocationWeb](CSSPModels.TideLocation.html#CSSPModels_TideLocation_TideLocationWeb), [TideLocationReport](CSSPModels.TideLocation.html#CSSPModels_TideLocation_TideLocationReport), [HasErrors](CSSPModels.TideLocation.html#CSSPModels_TideLocation_HasErrors), [ValidationResults](CSSPModels.TideLocation.html#CSSPModels_TideLocation_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.TideLocation.html#CSSPModels_TideLocation_HasErrors), [ValidationResults](CSSPModels.TideLocation.html#CSSPModels_TideLocation_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TideLocationService](CSSPServices.TideLocationService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -46,15 +46,6 @@ namespace CSSPModels
         public double Lng { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TideLocationWeb TideLocationWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TideLocationReport TideLocationReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TideLocation() : base()
         {
@@ -62,7 +53,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TideLocationWeb
+    public partial class TideLocationWeb : TideLocation
     {
         #region Properties for web information
         /// <summary>
@@ -75,13 +66,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TideLocationWeb()
+        public TideLocationWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TideLocationReport
+    public partial class TideLocationReport : TideLocationWeb
     {
         #region Properties for report information
         /// <summary>
@@ -94,7 +85,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TideLocationReport()
+        public TideLocationReport() : base()
         {
         }
         #endregion Constructors

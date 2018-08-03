@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private Spill spill { get; set; }
+        private SpillWeb spillWeb { get; set; }
+        private SpillReport spillReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public SpillTest()
         {
             spill = new Spill();
+            spillWeb = new SpillWeb();
+            spillReport = new SpillReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void Spill_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SpillID", "MunicipalityTVItemID", "InfrastructureTVItemID", "StartDateTime_Local", "EndDateTime_Local", "AverageFlow_m3_day", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "SpillWeb", "SpillReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.Spill).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(Spill).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(Spill).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void SpillWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "MunicipalityTVItemLanguage", "InfrastructureTVItemLanguage", "LastUpdateContactTVItemLanguage", "SpillID", "MunicipalityTVItemID", "InfrastructureTVItemID", "StartDateTime_Local", "EndDateTime_Local", "AverageFlow_m3_day", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void SpillReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "SpillReportTest", "MunicipalityTVItemLanguage", "InfrastructureTVItemLanguage", "LastUpdateContactTVItemLanguage", "SpillID", "MunicipalityTVItemID", "InfrastructureTVItemID", "StartDateTime_Local", "EndDateTime_Local", "AverageFlow_m3_day", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,22 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void SpillWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void SpillReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(SpillReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void Spill_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(Spill).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Spill_Every_Property_Has_A_Resource_OK()
+        public void SpillWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.SpillSpillID);
-               Assert.IsNotNull(CSSPModelsRes.SpillMunicipalityTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.SpillInfrastructureTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.SpillStartDateTime_Local);
-               Assert.IsNotNull(CSSPModelsRes.SpillEndDateTime_Local);
-               Assert.IsNotNull(CSSPModelsRes.SpillAverageFlow_m3_day);
-               Assert.IsNotNull(CSSPModelsRes.SpillLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.SpillLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.SpillHasErrors);
+             Assert.IsTrue(typeof(SpillWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void SpillReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(SpillReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void Spill_Every_Property_Has_Get_Set_Test()
@@ -154,9 +289,98 @@ namespace CSSPModels.Tests
                bool val9 = true;
                spill.HasErrors = val9;
                Assert.AreEqual(val9, spill.HasErrors);
-               IEnumerable<ValidationResult> val34 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               spill.ValidationResults = val34;
-               Assert.AreEqual(val34, spill.ValidationResults);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               spill.ValidationResults = val30;
+               Assert.AreEqual(val30, spill.ValidationResults);
+        }
+        [TestMethod]
+        public void SpillWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               spillWeb.MunicipalityTVItemLanguage = val1;
+               Assert.AreEqual(val1, spillWeb.MunicipalityTVItemLanguage);
+               TVItemLanguage val2 = new TVItemLanguage();
+               spillWeb.InfrastructureTVItemLanguage = val2;
+               Assert.AreEqual(val2, spillWeb.InfrastructureTVItemLanguage);
+               TVItemLanguage val3 = new TVItemLanguage();
+               spillWeb.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, spillWeb.LastUpdateContactTVItemLanguage);
+               int val4 = 45;
+               spillWeb.SpillID = val4;
+               Assert.AreEqual(val4, spillWeb.SpillID);
+               int val5 = 45;
+               spillWeb.MunicipalityTVItemID = val5;
+               Assert.AreEqual(val5, spillWeb.MunicipalityTVItemID);
+               int val6 = 45;
+               spillWeb.InfrastructureTVItemID = val6;
+               Assert.AreEqual(val6, spillWeb.InfrastructureTVItemID);
+               DateTime val7 = new DateTime(2010, 3, 4);
+               spillWeb.StartDateTime_Local = val7;
+               Assert.AreEqual(val7, spillWeb.StartDateTime_Local);
+               DateTime val8 = new DateTime(2010, 3, 4);
+               spillWeb.EndDateTime_Local = val8;
+               Assert.AreEqual(val8, spillWeb.EndDateTime_Local);
+               double val9 = 87.9D;
+               spillWeb.AverageFlow_m3_day = val9;
+               Assert.AreEqual(val9, spillWeb.AverageFlow_m3_day);
+               DateTime val10 = new DateTime(2010, 3, 4);
+               spillWeb.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, spillWeb.LastUpdateDate_UTC);
+               int val11 = 45;
+               spillWeb.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, spillWeb.LastUpdateContactTVItemID);
+               bool val12 = true;
+               spillWeb.HasErrors = val12;
+               Assert.AreEqual(val12, spillWeb.HasErrors);
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               spillWeb.ValidationResults = val39;
+               Assert.AreEqual(val39, spillWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void SpillReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               spillReport.SpillReportTest = val1;
+               Assert.AreEqual(val1, spillReport.SpillReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               spillReport.MunicipalityTVItemLanguage = val2;
+               Assert.AreEqual(val2, spillReport.MunicipalityTVItemLanguage);
+               TVItemLanguage val3 = new TVItemLanguage();
+               spillReport.InfrastructureTVItemLanguage = val3;
+               Assert.AreEqual(val3, spillReport.InfrastructureTVItemLanguage);
+               TVItemLanguage val4 = new TVItemLanguage();
+               spillReport.LastUpdateContactTVItemLanguage = val4;
+               Assert.AreEqual(val4, spillReport.LastUpdateContactTVItemLanguage);
+               int val5 = 45;
+               spillReport.SpillID = val5;
+               Assert.AreEqual(val5, spillReport.SpillID);
+               int val6 = 45;
+               spillReport.MunicipalityTVItemID = val6;
+               Assert.AreEqual(val6, spillReport.MunicipalityTVItemID);
+               int val7 = 45;
+               spillReport.InfrastructureTVItemID = val7;
+               Assert.AreEqual(val7, spillReport.InfrastructureTVItemID);
+               DateTime val8 = new DateTime(2010, 3, 4);
+               spillReport.StartDateTime_Local = val8;
+               Assert.AreEqual(val8, spillReport.StartDateTime_Local);
+               DateTime val9 = new DateTime(2010, 3, 4);
+               spillReport.EndDateTime_Local = val9;
+               Assert.AreEqual(val9, spillReport.EndDateTime_Local);
+               double val10 = 87.9D;
+               spillReport.AverageFlow_m3_day = val10;
+               Assert.AreEqual(val10, spillReport.AverageFlow_m3_day);
+               DateTime val11 = new DateTime(2010, 3, 4);
+               spillReport.LastUpdateDate_UTC = val11;
+               Assert.AreEqual(val11, spillReport.LastUpdateDate_UTC);
+               int val12 = 45;
+               spillReport.LastUpdateContactTVItemID = val12;
+               Assert.AreEqual(val12, spillReport.LastUpdateContactTVItemID);
+               bool val13 = true;
+               spillReport.HasErrors = val13;
+               Assert.AreEqual(val13, spillReport.HasErrors);
+               IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               spillReport.ValidationResults = val42;
+               Assert.AreEqual(val42, spillReport.ValidationResults);
         }
         #endregion Tests Functions public
     }

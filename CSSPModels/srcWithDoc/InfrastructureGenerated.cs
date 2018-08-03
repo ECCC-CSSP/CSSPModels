@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table Infrastructures** : [InfrastructureID](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_InfrastructureID), [InfrastructureTVItemID](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_InfrastructureTVItemID), [PrismID](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PrismID), [TPID](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TPID), [LSID](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_LSID), [SiteID](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_SiteID), [Site](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_Site), [InfrastructureCategory](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_InfrastructureCategory), [InfrastructureType](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_InfrastructureType), [FacilityType](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_FacilityType), [IsMechanicallyAerated](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_IsMechanicallyAerated), [NumberOfCells](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_NumberOfCells), [NumberOfAeratedCells](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_NumberOfAeratedCells), [AerationType](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AerationType), [PreliminaryTreatmentType](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PreliminaryTreatmentType), [PrimaryTreatmentType](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PrimaryTreatmentType), [SecondaryTreatmentType](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_SecondaryTreatmentType), [TertiaryTreatmentType](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TertiaryTreatmentType), [TreatmentType](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TreatmentType), [DisinfectionType](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_DisinfectionType), [CollectionSystemType](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_CollectionSystemType), [AlarmSystemType](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AlarmSystemType), [DesignFlow_m3_day](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_DesignFlow_m3_day), [AverageFlow_m3_day](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AverageFlow_m3_day), [PeakFlow_m3_day](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PeakFlow_m3_day), [PopServed](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PopServed), [CanOverflow](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_CanOverflow), [PercFlowOfTotal](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PercFlowOfTotal), [TimeOffset_hour](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TimeOffset_hour), [TempCatchAllRemoveLater](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TempCatchAllRemoveLater), [AverageDepth_m](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AverageDepth_m), [NumberOfPorts](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_NumberOfPorts), [PortDiameter_m](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PortDiameter_m), [PortSpacing_m](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PortSpacing_m), [PortElevation_m](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PortElevation_m), [VerticalAngle_deg](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_VerticalAngle_deg), [HorizontalAngle_deg](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_HorizontalAngle_deg), [DecayRate_per_day](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_DecayRate_per_day), [NearFieldVelocity_m_s](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_NearFieldVelocity_m_s), [FarFieldVelocity_m_s](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_FarFieldVelocity_m_s), [ReceivingWaterSalinity_PSU](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_ReceivingWaterSalinity_PSU), [ReceivingWaterTemperature_C](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_ReceivingWaterTemperature_C), [ReceivingWater_MPN_per_100ml](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_ReceivingWater_MPN_per_100ml), [DistanceFromShore_m](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_DistanceFromShore_m), [SeeOtherTVItemID](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_SeeOtherTVItemID), [CivicAddressTVItemID](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_CivicAddressTVItemID), [LastUpdateDate_UTC](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [InfrastructureWeb](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_InfrastructureWeb), [InfrastructureReport](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_InfrastructureReport), [HasErrors](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_HasErrors), [ValidationResults](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_HasErrors), [ValidationResults](CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [InfrastructureService](CSSPServices.InfrastructureService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [InfrastructureTypeEnum](CSSPEnums.InfrastructureTypeEnum.html), [FacilityTypeEnum](CSSPEnums.FacilityTypeEnum.html), [AerationTypeEnum](CSSPEnums.AerationTypeEnum.html), [PreliminaryTreatmentTypeEnum](CSSPEnums.PreliminaryTreatmentTypeEnum.html), [PrimaryTreatmentTypeEnum](CSSPEnums.PrimaryTreatmentTypeEnum.html), [SecondaryTreatmentTypeEnum](CSSPEnums.SecondaryTreatmentTypeEnum.html), [TertiaryTreatmentTypeEnum](CSSPEnums.TertiaryTreatmentTypeEnum.html), [TreatmentTypeEnum](CSSPEnums.TreatmentTypeEnum.html), [DisinfectionTypeEnum](CSSPEnums.DisinfectionTypeEnum.html), [CollectionSystemTypeEnum](CSSPEnums.CollectionSystemTypeEnum.html), [AlarmSystemTypeEnum](CSSPEnums.AlarmSystemTypeEnum.html)</para>
@@ -232,15 +232,6 @@ namespace CSSPModels
         public int? CivicAddressTVItemID { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public InfrastructureWeb InfrastructureWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public InfrastructureReport InfrastructureReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Infrastructure() : base()
         {
@@ -248,7 +239,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class InfrastructureWeb
+    public partial class InfrastructureWeb : Infrastructure
     {
         #region Properties for web information
         /// <summary>
@@ -383,13 +374,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public InfrastructureWeb()
+        public InfrastructureWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class InfrastructureReport
+    public partial class InfrastructureReport : InfrastructureWeb
     {
         #region Properties for report information
         /// <summary>
@@ -402,7 +393,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public InfrastructureReport()
+        public InfrastructureReport() : base()
         {
         }
         #endregion Constructors

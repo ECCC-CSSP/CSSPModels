@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table SpillLanguages** : [SpillLanguageID](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_SpillLanguageID), [SpillID](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_SpillID), [Language](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_Language), [SpillComment](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_SpillComment), [TranslationStatus](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [SpillLanguageWeb](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_SpillLanguageWeb), [SpillLanguageReport](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_SpillLanguageReport), [HasErrors](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_HasErrors), [ValidationResults](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_HasErrors), [ValidationResults](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SpillLanguageService](CSSPServices.SpillLanguageService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
@@ -57,15 +57,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public SpillLanguageWeb SpillLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public SpillLanguageReport SpillLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public SpillLanguage() : base()
         {
@@ -73,7 +64,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SpillLanguageWeb
+    public partial class SpillLanguageWeb : SpillLanguage
     {
         #region Properties for web information
         /// <summary>
@@ -104,13 +95,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public SpillLanguageWeb()
+        public SpillLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SpillLanguageReport
+    public partial class SpillLanguageReport : SpillLanguageWeb
     {
         #region Properties for report information
         /// <summary>
@@ -123,7 +114,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public SpillLanguageReport()
+        public SpillLanguageReport() : base()
         {
         }
         #endregion Constructors

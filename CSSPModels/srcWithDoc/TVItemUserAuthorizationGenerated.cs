@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table TVItemUserAuthorizations** : [TVItemUserAuthorizationID](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_TVItemUserAuthorizationID), [ContactTVItemID](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_ContactTVItemID), [TVItemID1](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_TVItemID1), [TVItemID2](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_TVItemID2), [TVItemID3](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_TVItemID3), [TVItemID4](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_TVItemID4), [TVAuth](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_TVAuth), [LastUpdateDate_UTC](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [TVItemUserAuthorizationWeb](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_TVItemUserAuthorizationWeb), [TVItemUserAuthorizationReport](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_TVItemUserAuthorizationReport), [HasErrors](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_HasErrors), [ValidationResults](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_HasErrors), [ValidationResults](CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVItemUserAuthorizationService](CSSPServices.TVItemUserAuthorizationService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVAuthEnum](CSSPEnums.TVAuthEnum.html)</para>
@@ -87,15 +87,6 @@ namespace CSSPModels
         public TVAuthEnum TVAuth { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVItemUserAuthorizationWeb TVItemUserAuthorizationWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVItemUserAuthorizationReport TVItemUserAuthorizationReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TVItemUserAuthorization() : base()
         {
@@ -103,7 +94,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemUserAuthorizationWeb
+    public partial class TVItemUserAuthorizationWeb : TVItemUserAuthorization
     {
         #region Properties for web information
         /// <summary>
@@ -163,13 +154,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TVItemUserAuthorizationWeb()
+        public TVItemUserAuthorizationWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemUserAuthorizationReport
+    public partial class TVItemUserAuthorizationReport : TVItemUserAuthorizationWeb
     {
         #region Properties for report information
         /// <summary>
@@ -182,7 +173,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TVItemUserAuthorizationReport()
+        public TVItemUserAuthorizationReport() : base()
         {
         }
         #endregion Constructors

@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table TVFileLanguages** : [TVFileLanguageID](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_TVFileLanguageID), [TVFileID](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_TVFileID), [Language](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_Language), [FileDescription](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_FileDescription), [TranslationStatus](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [TVFileLanguageWeb](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_TVFileLanguageWeb), [TVFileLanguageReport](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_TVFileLanguageReport), [HasErrors](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_HasErrors), [ValidationResults](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_HasErrors), [ValidationResults](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVFileLanguageService](CSSPServices.TVFileLanguageService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
@@ -63,15 +63,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVFileLanguageWeb TVFileLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVFileLanguageReport TVFileLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TVFileLanguage() : base()
         {
@@ -79,7 +70,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVFileLanguageWeb
+    public partial class TVFileLanguageWeb : TVFileLanguage
     {
         #region Properties for web information
         /// <summary>
@@ -110,13 +101,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TVFileLanguageWeb()
+        public TVFileLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVFileLanguageReport
+    public partial class TVFileLanguageReport : TVFileLanguageWeb
     {
         #region Properties for report information
         /// <summary>
@@ -129,7 +120,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TVFileLanguageReport()
+        public TVFileLanguageReport() : base()
         {
         }
         #endregion Constructors

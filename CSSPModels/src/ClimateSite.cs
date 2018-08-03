@@ -63,15 +63,6 @@ namespace CSSPModels
         public bool? MonthlyNow { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ClimateSiteWeb ClimateSiteWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ClimateSiteReport ClimateSiteReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public ClimateSite() : base()
         {
@@ -79,7 +70,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClimateSiteWeb
+    public partial class ClimateSiteWeb : ClimateSite
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ClimateSiteTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -89,13 +80,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ClimateSiteWeb()
+        public ClimateSiteWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClimateSiteReport
+    public partial class ClimateSiteReport : ClimateSiteWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -103,7 +94,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ClimateSiteReport()
+        public ClimateSiteReport() : base()
         {
         }
         #endregion Constructors

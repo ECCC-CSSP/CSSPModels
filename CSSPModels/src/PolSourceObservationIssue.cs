@@ -29,15 +29,6 @@ namespace CSSPModels
         public string ExtraComment { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public PolSourceObservationIssueWeb PolSourceObservationIssueWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public PolSourceObservationIssueReport PolSourceObservationIssueReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public PolSourceObservationIssue() : base()
         {
@@ -45,7 +36,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class PolSourceObservationIssueWeb
+    public partial class PolSourceObservationIssueWeb : PolSourceObservationIssue
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -53,13 +44,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public PolSourceObservationIssueWeb()
+        public PolSourceObservationIssueWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class PolSourceObservationIssueReport
+    public partial class PolSourceObservationIssueReport : PolSourceObservationIssueWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -67,7 +58,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public PolSourceObservationIssueReport()
+        public PolSourceObservationIssueReport() : base()
         {
         }
         #endregion Constructors

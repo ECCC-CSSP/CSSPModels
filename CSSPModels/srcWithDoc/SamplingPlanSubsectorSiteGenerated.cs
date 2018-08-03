@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table SamplingPlanSubsectorSites** : [SamplingPlanSubsectorSiteID](CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_SamplingPlanSubsectorSiteID), [SamplingPlanSubsectorID](CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_SamplingPlanSubsectorID), [MWQMSiteTVItemID](CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_MWQMSiteTVItemID), [IsDuplicate](CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_IsDuplicate), [LastUpdateDate_UTC](CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [SamplingPlanSubsectorSiteWeb](CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_SamplingPlanSubsectorSiteWeb), [SamplingPlanSubsectorSiteReport](CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_SamplingPlanSubsectorSiteReport), [HasErrors](CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_HasErrors), [ValidationResults](CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_HasErrors), [ValidationResults](CSSPModels.SamplingPlanSubsectorSite.html#CSSPModels_SamplingPlanSubsectorSite_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SamplingPlanSubsectorSiteService](CSSPServices.SamplingPlanSubsectorSiteService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -51,15 +51,6 @@ namespace CSSPModels
         public bool IsDuplicate { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public SamplingPlanSubsectorSiteWeb SamplingPlanSubsectorSiteWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public SamplingPlanSubsectorSiteReport SamplingPlanSubsectorSiteReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public SamplingPlanSubsectorSite() : base()
         {
@@ -67,7 +58,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanSubsectorSiteWeb
+    public partial class SamplingPlanSubsectorSiteWeb : SamplingPlanSubsectorSite
     {
         #region Properties for web information
         /// <summary>
@@ -87,13 +78,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public SamplingPlanSubsectorSiteWeb()
+        public SamplingPlanSubsectorSiteWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanSubsectorSiteReport
+    public partial class SamplingPlanSubsectorSiteReport : SamplingPlanSubsectorSiteWeb
     {
         #region Properties for report information
         /// <summary>
@@ -106,7 +97,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public SamplingPlanSubsectorSiteReport()
+        public SamplingPlanSubsectorSiteReport() : base()
         {
         }
         #endregion Constructors

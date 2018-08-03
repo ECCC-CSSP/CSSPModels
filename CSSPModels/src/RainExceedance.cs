@@ -42,15 +42,6 @@ namespace CSSPModels
         public string EmailDistributionListIDs { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public RainExceedanceWeb RainExceedanceWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public RainExceedanceReport RainExceedanceReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public RainExceedance() : base()
         {
@@ -58,7 +49,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RainExceedanceWeb
+    public partial class RainExceedanceWeb : RainExceedance
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -66,13 +57,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public RainExceedanceWeb()
+        public RainExceedanceWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RainExceedanceReport
+    public partial class RainExceedanceReport : RainExceedanceWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -80,7 +71,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public RainExceedanceReport()
+        public RainExceedanceReport() : base()
         {
         }
         #endregion Constructors

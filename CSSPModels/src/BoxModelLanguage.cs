@@ -29,15 +29,6 @@ namespace CSSPModels
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public BoxModelLanguageWeb BoxModelLanguageWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public BoxModelLanguageReport BoxModelLanguageReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public BoxModelLanguage() : base()
         {
@@ -45,7 +36,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelLanguageWeb
+    public partial class BoxModelLanguageWeb : BoxModelLanguage
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -59,13 +50,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public BoxModelLanguageWeb()
+        public BoxModelLanguageWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelLanguageReport
+    public partial class BoxModelLanguageReport : BoxModelLanguageWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -73,7 +64,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public BoxModelLanguageReport()
+        public BoxModelLanguageReport() : base()
         {
         }
         #endregion Constructors

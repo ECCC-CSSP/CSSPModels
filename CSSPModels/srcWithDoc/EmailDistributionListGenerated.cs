@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table EmailDistributionLists** : [EmailDistributionListID](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_EmailDistributionListID), [CountryTVItemID](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_CountryTVItemID), [Ordinal](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_Ordinal), [LastUpdateDate_UTC](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [EmailDistributionListWeb](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_EmailDistributionListWeb), [EmailDistributionListReport](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_EmailDistributionListReport), [HasErrors](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_HasErrors), [ValidationResults](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_HasErrors), [ValidationResults](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailDistributionListService](CSSPServices.EmailDistributionListService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -45,15 +45,6 @@ namespace CSSPModels
         public int Ordinal { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailDistributionListWeb EmailDistributionListWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public EmailDistributionListReport EmailDistributionListReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public EmailDistributionList() : base()
         {
@@ -61,7 +52,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListWeb
+    public partial class EmailDistributionListWeb : EmailDistributionList
     {
         #region Properties for web information
         /// <summary>
@@ -81,13 +72,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public EmailDistributionListWeb()
+        public EmailDistributionListWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListReport
+    public partial class EmailDistributionListReport : EmailDistributionListWeb
     {
         #region Properties for report information
         /// <summary>
@@ -96,11 +87,11 @@ namespace CSSPModels
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
         [CSSPAllowNull]
-        public string EmailDistributionReportTest { get; set; }
+        public string EmailDistributionListReportTest { get; set; }
         #endregion Properties for report information
 
         #region Constructors
-        public EmailDistributionListReport()
+        public EmailDistributionListReport() : base()
         {
         }
         #endregion Constructors

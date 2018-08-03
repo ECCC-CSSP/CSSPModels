@@ -29,15 +29,6 @@ namespace CSSPModels
         public string FileName { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public DocTemplateWeb DocTemplateWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public DocTemplateReport DocTemplateReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public DocTemplate() : base()
         {
@@ -45,7 +36,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class DocTemplateWeb
+    public partial class DocTemplateWeb : DocTemplate
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -59,13 +50,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public DocTemplateWeb()
+        public DocTemplateWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class DocTemplateReport
+    public partial class DocTemplateReport : DocTemplateWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -73,7 +64,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public DocTemplateReport()
+        public DocTemplateReport() : base()
         {
         }
         #endregion Constructors

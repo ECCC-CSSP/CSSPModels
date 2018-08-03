@@ -60,17 +60,6 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(VPResValues).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void VPResValues_Every_Property_Has_A_Resource_OK()
-        {
-               Assert.IsNotNull(CSSPModelsRes.VPResValuesConc);
-               Assert.IsNotNull(CSSPModelsRes.VPResValuesDilu);
-               Assert.IsNotNull(CSSPModelsRes.VPResValuesFarfieldWidth);
-               Assert.IsNotNull(CSSPModelsRes.VPResValuesDistance);
-               Assert.IsNotNull(CSSPModelsRes.VPResValuesTheTime);
-               Assert.IsNotNull(CSSPModelsRes.VPResValuesDecay);
-               Assert.IsNotNull(CSSPModelsRes.VPResValuesHasErrors);
-        }
-        [TestMethod]
         public void VPResValues_Every_Property_Has_Get_Set_Test()
         {
                int val1 = 45;

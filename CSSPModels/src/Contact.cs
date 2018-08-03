@@ -48,15 +48,6 @@ namespace CSSPModels
         public string SamplingPlanner_ProvincesTVItemID { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ContactWeb ContactWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ContactReport ContactReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public Contact() : base()
         {
@@ -64,7 +55,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactWeb
+    public partial class ContactWeb : Contact
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -79,13 +70,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ContactWeb()
+        public ContactWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactReport
+    public partial class ContactReport : ContactWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
@@ -93,7 +84,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public ContactReport()
+        public ContactReport() : base()
         {
         }
         #endregion Constructors

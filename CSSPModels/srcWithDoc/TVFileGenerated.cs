@@ -18,7 +18,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**DB properties for table TVFiles** : [TVFileID](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileID), [TVFileTVItemID](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileTVItemID), [TemplateTVType](CSSPModels.TVFile.html#CSSPModels_TVFile_TemplateTVType), [ReportTypeID](CSSPModels.TVFile.html#CSSPModels_TVFile_ReportTypeID), [Parameters](CSSPModels.TVFile.html#CSSPModels_TVFile_Parameters), [Year](CSSPModels.TVFile.html#CSSPModels_TVFile_Year), [Language](CSSPModels.TVFile.html#CSSPModels_TVFile_Language), [FilePurpose](CSSPModels.TVFile.html#CSSPModels_TVFile_FilePurpose), [FileType](CSSPModels.TVFile.html#CSSPModels_TVFile_FileType), [FileSize_kb](CSSPModels.TVFile.html#CSSPModels_TVFile_FileSize_kb), [FileInfo](CSSPModels.TVFile.html#CSSPModels_TVFile_FileInfo), [FileCreatedDate_UTC](CSSPModels.TVFile.html#CSSPModels_TVFile_FileCreatedDate_UTC), [FromWater](CSSPModels.TVFile.html#CSSPModels_TVFile_FromWater), [ClientFilePath](CSSPModels.TVFile.html#CSSPModels_TVFile_ClientFilePath), [ServerFileName](CSSPModels.TVFile.html#CSSPModels_TVFile_ServerFileName), [ServerFilePath](CSSPModels.TVFile.html#CSSPModels_TVFile_ServerFilePath), [LastUpdateDate_UTC](CSSPModels.TVFile.html#CSSPModels_TVFile_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TVFile.html#CSSPModels_TVFile_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [TVFileWeb](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileWeb), [TVFileReport](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileReport), [HasErrors](CSSPModels.TVFile.html#CSSPModels_TVFile_HasErrors), [ValidationResults](CSSPModels.TVFile.html#CSSPModels_TVFile_ValidationResults), </para>
+    /// > <para>**Other properties** : [HasErrors](CSSPModels.TVFile.html#CSSPModels_TVFile_HasErrors), [ValidationResults](CSSPModels.TVFile.html#CSSPModels_TVFile_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVFileService](CSSPServices.TVFileService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [LanguageEnum](CSSPEnums.LanguageEnum.html), [FilePurposeEnum](CSSPEnums.FilePurposeEnum.html), [FileTypeEnum](CSSPEnums.FileTypeEnum.html)</para>
@@ -119,15 +119,6 @@ namespace CSSPModels
         public string ServerFilePath { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVFileWeb TVFileWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public TVFileReport TVFileReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public TVFile() : base()
         {
@@ -135,7 +126,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVFileWeb
+    public partial class TVFileWeb : TVFile
     {
         #region Properties for web information
         /// <summary>
@@ -191,13 +182,13 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public TVFileWeb()
+        public TVFileWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVFileReport
+    public partial class TVFileReport : TVFileWeb
     {
         #region Properties for report information
         /// <summary>
@@ -210,7 +201,7 @@ namespace CSSPModels
         #endregion Properties for report information
 
         #region Constructors
-        public TVFileReport()
+        public TVFileReport() : base()
         {
         }
         #endregion Constructors

@@ -27,15 +27,6 @@ namespace CSSPModels
         public int MarkerSize { get; set; }
         #endregion Properties in DB
 
-        #region Properties not in DB
-        [NotMapped]
-        [CSSPAllowNull]
-        public ContactPreferenceWeb ContactPreferenceWeb { get; set; }
-        [NotMapped]
-        [CSSPAllowNull]
-        public ContactPreferenceReport ContactPreferenceReport { get; set; }
-        #endregion Properties not in DB
-
         #region Constructors
         public ContactPreference() : base()
         {
@@ -43,7 +34,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactPreferenceWeb
+    public partial class ContactPreferenceWeb : ContactPreference
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
@@ -54,21 +45,21 @@ namespace CSSPModels
         #endregion Properties for web information
 
         #region Constructors
-        public ContactPreferenceWeb()
+        public ContactPreferenceWeb() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactPreferenceReport
+    public partial class ContactPreferenceReport : ContactPreferenceWeb
     {
         #region Properties for report information
         [CSSPAllowNull]
-        public string ContactPreferenceReportText { get; set; }
+        public string ContactPreferenceReportTest { get; set; }
         #endregion Properties for report information
 
         #region Constructors
-        public ContactPreferenceReport()
+        public ContactPreferenceReport() : base()
         {
         }
         #endregion Constructors

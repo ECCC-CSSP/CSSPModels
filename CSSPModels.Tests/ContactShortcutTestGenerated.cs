@@ -29,12 +29,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private ContactShortcut contactShortcut { get; set; }
+        private ContactShortcutWeb contactShortcutWeb { get; set; }
+        private ContactShortcutReport contactShortcutReport { get; set; }
         #endregion Properties
 
         #region Constructors
         public ContactShortcutTest()
         {
             contactShortcut = new ContactShortcut();
+            contactShortcutWeb = new ContactShortcutWeb();
+            contactShortcutReport = new ContactShortcutReport();
         }
         #endregion Constructors
 
@@ -43,10 +47,10 @@ namespace CSSPModels.Tests
         public void ContactShortcut_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactShortcutID", "ContactID", "ShortCutText", "ShortCutAddress", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
-            List<string> propNameNotMappedList = new List<string>() { "ContactShortcutWeb", "ContactShortcutReport", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(CSSPModels.ContactShortcut).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(ContactShortcut).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -61,6 +65,78 @@ namespace CSSPModels.Tests
 
             index = 0;
             foreach (PropertyInfo propertyInfo in typeof(ContactShortcut).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void ContactShortcutWeb_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "ContactShortcutID", "ContactID", "ShortCutText", "ShortCutAddress", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactShortcutWeb).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactShortcutWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
+                {
+                    if (customAttributeData.AttributeType.Name == "NotMappedAttribute")
+                    {
+                        Assert.AreEqual(propertyInfo.Name, propNameNotMappedList[index]);
+                        index += 1;
+                    }
+                }
+            }
+
+            Assert.AreEqual(propNameNotMappedList.Count, index);
+
+        }
+        [TestMethod]
+        public void ContactShortcutReport_Properties_Test()
+        {
+            List<string> propNameList = new List<string>() { "ContactShortcutReportTest", "LastUpdateContactTVItemLanguage", "ContactShortcutID", "ContactID", "ShortCutText", "ShortCutAddress", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactShortcutReport).GetProperties().OrderBy(c => c.Name))
+            {
+                if (!propertyInfo.GetGetMethod().IsVirtual
+                    && propertyInfo.Name != "ValidationResults"
+                    && !propertyInfo.CustomAttributes.Where(c => c.AttributeType.Name.Contains("NotMappedAttribute")).Any())
+                {
+                    Assert.AreEqual(propNameList[index], propertyInfo.Name);
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(propNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactShortcutReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -107,20 +183,81 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
+        public void ContactShortcutWeb_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactShortcutWeb).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactShortcutWeb).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
+        public void ContactShortcutReport_Navigation_Test()
+        {
+            List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
+            List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
+
+            int index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactShortcutReport).GetProperties())
+            {
+                if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameList.Count, index);
+
+            index = 0;
+            foreach (PropertyInfo propertyInfo in typeof(ContactShortcutReport).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            {
+                if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
+                {
+                    Assert.IsTrue(foreignNameCollectionList.Contains(propertyInfo.Name));
+                    index += 1;
+                }
+            }
+
+            Assert.AreEqual(foreignNameCollectionList.Count, index);
+
+        }
+        [TestMethod]
         public void ContactShortcut_Has_ValidationResults_Test()
         {
              Assert.IsTrue(typeof(ContactShortcut).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ContactShortcut_Every_Property_Has_A_Resource_OK()
+        public void ContactShortcutWeb_Has_ValidationResults_Test()
         {
-               Assert.IsNotNull(CSSPModelsRes.ContactShortcutContactShortcutID);
-               Assert.IsNotNull(CSSPModelsRes.ContactShortcutContactID);
-               Assert.IsNotNull(CSSPModelsRes.ContactShortcutShortCutText);
-               Assert.IsNotNull(CSSPModelsRes.ContactShortcutShortCutAddress);
-               Assert.IsNotNull(CSSPModelsRes.ContactShortcutLastUpdateDate_UTC);
-               Assert.IsNotNull(CSSPModelsRes.ContactShortcutLastUpdateContactTVItemID);
-               Assert.IsNotNull(CSSPModelsRes.ContactShortcutHasErrors);
+             Assert.IsTrue(typeof(ContactShortcutWeb).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+        }
+        [TestMethod]
+        public void ContactShortcutReport_Has_ValidationResults_Test()
+        {
+             Assert.IsTrue(typeof(ContactShortcutReport).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void ContactShortcut_Every_Property_Has_Get_Set_Test()
@@ -146,9 +283,74 @@ namespace CSSPModels.Tests
                bool val7 = true;
                contactShortcut.HasErrors = val7;
                Assert.AreEqual(val7, contactShortcut.HasErrors);
-               IEnumerable<ValidationResult> val28 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               contactShortcut.ValidationResults = val28;
-               Assert.AreEqual(val28, contactShortcut.ValidationResults);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               contactShortcut.ValidationResults = val24;
+               Assert.AreEqual(val24, contactShortcut.ValidationResults);
+        }
+        [TestMethod]
+        public void ContactShortcutWeb_Every_Property_Has_Get_Set_Test()
+        {
+               TVItemLanguage val1 = new TVItemLanguage();
+               contactShortcutWeb.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, contactShortcutWeb.LastUpdateContactTVItemLanguage);
+               int val2 = 45;
+               contactShortcutWeb.ContactShortcutID = val2;
+               Assert.AreEqual(val2, contactShortcutWeb.ContactShortcutID);
+               int val3 = 45;
+               contactShortcutWeb.ContactID = val3;
+               Assert.AreEqual(val3, contactShortcutWeb.ContactID);
+               string val4 = "Some text";
+               contactShortcutWeb.ShortCutText = val4;
+               Assert.AreEqual(val4, contactShortcutWeb.ShortCutText);
+               string val5 = "Some text";
+               contactShortcutWeb.ShortCutAddress = val5;
+               Assert.AreEqual(val5, contactShortcutWeb.ShortCutAddress);
+               DateTime val6 = new DateTime(2010, 3, 4);
+               contactShortcutWeb.LastUpdateDate_UTC = val6;
+               Assert.AreEqual(val6, contactShortcutWeb.LastUpdateDate_UTC);
+               int val7 = 45;
+               contactShortcutWeb.LastUpdateContactTVItemID = val7;
+               Assert.AreEqual(val7, contactShortcutWeb.LastUpdateContactTVItemID);
+               bool val8 = true;
+               contactShortcutWeb.HasErrors = val8;
+               Assert.AreEqual(val8, contactShortcutWeb.HasErrors);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               contactShortcutWeb.ValidationResults = val27;
+               Assert.AreEqual(val27, contactShortcutWeb.ValidationResults);
+        }
+        [TestMethod]
+        public void ContactShortcutReport_Every_Property_Has_Get_Set_Test()
+        {
+               string val1 = "Some text";
+               contactShortcutReport.ContactShortcutReportTest = val1;
+               Assert.AreEqual(val1, contactShortcutReport.ContactShortcutReportTest);
+               TVItemLanguage val2 = new TVItemLanguage();
+               contactShortcutReport.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, contactShortcutReport.LastUpdateContactTVItemLanguage);
+               int val3 = 45;
+               contactShortcutReport.ContactShortcutID = val3;
+               Assert.AreEqual(val3, contactShortcutReport.ContactShortcutID);
+               int val4 = 45;
+               contactShortcutReport.ContactID = val4;
+               Assert.AreEqual(val4, contactShortcutReport.ContactID);
+               string val5 = "Some text";
+               contactShortcutReport.ShortCutText = val5;
+               Assert.AreEqual(val5, contactShortcutReport.ShortCutText);
+               string val6 = "Some text";
+               contactShortcutReport.ShortCutAddress = val6;
+               Assert.AreEqual(val6, contactShortcutReport.ShortCutAddress);
+               DateTime val7 = new DateTime(2010, 3, 4);
+               contactShortcutReport.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, contactShortcutReport.LastUpdateDate_UTC);
+               int val8 = 45;
+               contactShortcutReport.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, contactShortcutReport.LastUpdateContactTVItemID);
+               bool val9 = true;
+               contactShortcutReport.HasErrors = val9;
+               Assert.AreEqual(val9, contactShortcutReport.HasErrors);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               contactShortcutReport.ValidationResults = val30;
+               Assert.AreEqual(val30, contactShortcutReport.ValidationResults);
         }
         #endregion Tests Functions public
     }
