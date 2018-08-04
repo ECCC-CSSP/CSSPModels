@@ -47,7 +47,7 @@ namespace CSSPModels
             Language = LanguageEnum.en;
             Lang = "en";
             Skip = 0;
-            Take = 100;
+            Take = 200;
             Order = "";
             Where = "";
             EntityQueryDetailType = EntityQueryDetailTypeEnum.EntityOnly;
