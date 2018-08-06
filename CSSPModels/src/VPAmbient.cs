@@ -17,7 +17,7 @@ namespace CSSPModels
         [CSSPDisplayEN(DisplayEN = "VPAmbient ID")]
         [CSSPDisplayFR(DisplayFR = "VPAmbient ID")]
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the VPAmbients table")]
-        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau VPAmbients")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table VPAmbients")]
         public int VPAmbientID { get; set; }
         [CSSPExist(ExistTypeName = "VPScenario", ExistPlurial = "s", ExistFieldID = "VPScenarioID")]
         public int VPScenarioID { get; set; }
@@ -56,6 +56,10 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
         public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
         #endregion Properties for web information
 
@@ -70,6 +74,10 @@ namespace CSSPModels
     {
         #region Properties for report information
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Report test")]
+        [CSSPDisplayFR(DisplayFR = "Test report")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
         public string VPAmbientReportTest { get; set; }
         #endregion Properties for report information
 

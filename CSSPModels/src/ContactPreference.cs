@@ -17,7 +17,7 @@ namespace CSSPModels
         [CSSPDisplayEN(DisplayEN = "ContactPreference ID")]
         [CSSPDisplayFR(DisplayFR = "ContactPreference ID")]
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the ContactPreferences table")]
-        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau ContactPreferences")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table ContactPreferences")]
         public int ContactPreferenceID { get; set; }
         [CSSPExist(ExistTypeName = "Contact", ExistPlurial = "s", ExistFieldID = "ContactID")]
         public int ContactID { get; set; }
@@ -38,6 +38,10 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
         public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
         [CSSPAllowNull]
@@ -55,6 +59,10 @@ namespace CSSPModels
     {
         #region Properties for report information
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Report test")]
+        [CSSPDisplayFR(DisplayFR = "Test report")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
         public string ContactPreferenceReportTest { get; set; }
         #endregion Properties for report information
 

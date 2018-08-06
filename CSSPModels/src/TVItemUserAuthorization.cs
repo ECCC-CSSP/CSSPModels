@@ -17,7 +17,7 @@ namespace CSSPModels
         [CSSPDisplayEN(DisplayEN = "TVItemUserAuthorization ID")]
         [CSSPDisplayFR(DisplayFR = "TVItemUserAuthorization ID")]
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the TVItemUserAuthorizations table")]
-        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau TVItemUserAuthorizations")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table TVItemUserAuthorizations")]
         public int TVItemUserAuthorizationID { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         public int ContactTVItemID { get; set; }
@@ -57,6 +57,10 @@ namespace CSSPModels
         [CSSPAllowNull]
         public TVItemLanguage TVItemLanguage4 { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
         public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TVAuthEnum", EnumType = "TVAuth")]
         [CSSPAllowNull]
@@ -74,6 +78,10 @@ namespace CSSPModels
     {
         #region Properties for report information
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Report test")]
+        [CSSPDisplayFR(DisplayFR = "Test report")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
         public string TVItemUserAuthorizationReportTest { get; set; }
         #endregion Properties for report information
 

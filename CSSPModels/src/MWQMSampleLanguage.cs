@@ -17,7 +17,7 @@ namespace CSSPModels
         [CSSPDisplayEN(DisplayEN = "MWQMSampleLanguage ID")]
         [CSSPDisplayFR(DisplayFR = "MWQMSampleLanguage ID")]
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the MWQMSampleLanguages table")]
-        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau MWQMSampleLanguages")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table MWQMSampleLanguages")]
         public int MWQMSampleLanguageID { get; set; }
         [CSSPExist(ExistTypeName = "MWQMSample", ExistPlurial = "s", ExistFieldID = "MWQMSampleID")]
         public int MWQMSampleID { get; set; }
@@ -39,6 +39,10 @@ namespace CSSPModels
     {
         #region Properties for web information
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
         public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
         [CSSPAllowNull]
@@ -59,6 +63,10 @@ namespace CSSPModels
     {
         #region Properties for report information
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Report test")]
+        [CSSPDisplayFR(DisplayFR = "Test report")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
         public string MWQMSampleLanguageReportTest { get; set; }
         #endregion Properties for report information
 

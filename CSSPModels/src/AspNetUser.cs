@@ -18,7 +18,7 @@ namespace CSSPModels
         [CSSPDisplayEN(DisplayEN = "ID")]
         [CSSPDisplayFR(DisplayFR = "ID")]
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the AspNetUsers table")]
-        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne du tableau AspNetUsers")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table AspNetUsers")]
         public string Id { get; set; }
         [StringLength(256)]
         [CSSPAllowNull]
