@@ -41,9 +41,9 @@ namespace CSSPModels
         public int MapInfoID { get; set; }
         [Range(0, -1)]
         public int Ordinal { get; set; }
-        [Range(-90,0D, 90,0D)]
+        [Range(-90.0D, 90.0D)]
         public double Lat { get; set; }
-        [Range(-180,0D, 180,0D)]
+        [Range(-180.0D, 180.0D)]
         public double Lng { get; set; }
         #endregion Properties in DB
 

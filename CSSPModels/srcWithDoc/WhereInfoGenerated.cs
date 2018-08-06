@@ -51,7 +51,7 @@ namespace CSSPModels
         public string Value { get; set; }
         [Range(-1, -1)]
         public int ValueInt { get; set; }
-        [Range(-1,0D, -1,0D)]
+        [Range(-1.0D, -1.0D)]
         public double ValueDouble { get; set; }
         public bool ValueBool { get; set; }
         /// <summary>

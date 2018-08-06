@@ -43,7 +43,7 @@ namespace CSSPModels
         public int TideSiteTVItemID { get; set; }
         [StringLength(100)]
         public string WebTideModel { get; set; }
-        [Range(-100,0D, 100,0D)]
+        [Range(-100.0D, 100.0D)]
         public double WebTideDatum_m { get; set; }
         #endregion Properties in DB
 

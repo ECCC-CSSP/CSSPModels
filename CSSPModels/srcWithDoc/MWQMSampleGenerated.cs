@@ -58,15 +58,15 @@ namespace CSSPModels
         /// </summary>
         [CSSPAfter(Year = 1980)]
         public DateTime SampleDateTime_Local { get; set; }
-        [Range(0,0D, 1000,0D)]
+        [Range(0.0D, 1000.0D)]
         public double? Depth_m { get; set; }
         [Range(0, 10000000)]
         public int FecCol_MPN_100ml { get; set; }
-        [Range(0,0D, 40,0D)]
+        [Range(0.0D, 40.0D)]
         public double? Salinity_PPT { get; set; }
-        [Range(-10,0D, 40,0D)]
+        [Range(-10.0D, 40.0D)]
         public double? WaterTemp_C { get; set; }
-        [Range(0,0D, 14,0D)]
+        [Range(0.0D, 14.0D)]
         public double? PH { get; set; }
         [StringLength(50)]
         public string SampleTypesText { get; set; }

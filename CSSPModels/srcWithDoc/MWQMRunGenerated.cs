@@ -90,9 +90,9 @@ namespace CSSPModels
         /// </summary>
         [CSSPAfter(Year = 1980)]
         public DateTime? LabReceivedDateTime_Local { get; set; }
-        [Range(-10,0D, 40,0D)]
+        [Range(-10.0D, 40.0D)]
         public double? TemperatureControl1_C { get; set; }
-        [Range(-10,0D, 40,0D)]
+        [Range(-10.0D, 40.0D)]
         public double? TemperatureControl2_C { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -112,11 +112,11 @@ namespace CSSPModels
         [CSSPEnumType]
         [CSSPAllowNull]
         public BeaufortScaleEnum? SeaStateAtEnd_BeaufortScale { get; set; }
-        [Range(0,0D, 100,0D)]
+        [Range(0.0D, 100.0D)]
         public double? WaterLevelAtBrook_m { get; set; }
-        [Range(0,0D, 100,0D)]
+        [Range(0.0D, 100.0D)]
         public double? WaveHightAtStart_m { get; set; }
-        [Range(0,0D, 100,0D)]
+        [Range(0.0D, 100.0D)]
         public double? WaveHightAtEnd_m { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -217,27 +217,27 @@ namespace CSSPModels
         [CSSPEnumType]
         [CSSPAllowNull]
         public TideTextEnum? Tide_End { get; set; }
-        [Range(0,0D, 300,0D)]
+        [Range(0.0D, 300.0D)]
         public double? RainDay0_mm { get; set; }
-        [Range(0,0D, 300,0D)]
+        [Range(0.0D, 300.0D)]
         public double? RainDay1_mm { get; set; }
-        [Range(0,0D, 300,0D)]
+        [Range(0.0D, 300.0D)]
         public double? RainDay2_mm { get; set; }
-        [Range(0,0D, 300,0D)]
+        [Range(0.0D, 300.0D)]
         public double? RainDay3_mm { get; set; }
-        [Range(0,0D, 300,0D)]
+        [Range(0.0D, 300.0D)]
         public double? RainDay4_mm { get; set; }
-        [Range(0,0D, 300,0D)]
+        [Range(0.0D, 300.0D)]
         public double? RainDay5_mm { get; set; }
-        [Range(0,0D, 300,0D)]
+        [Range(0.0D, 300.0D)]
         public double? RainDay6_mm { get; set; }
-        [Range(0,0D, 300,0D)]
+        [Range(0.0D, 300.0D)]
         public double? RainDay7_mm { get; set; }
-        [Range(0,0D, 300,0D)]
+        [Range(0.0D, 300.0D)]
         public double? RainDay8_mm { get; set; }
-        [Range(0,0D, 300,0D)]
+        [Range(0.0D, 300.0D)]
         public double? RainDay9_mm { get; set; }
-        [Range(0,0D, 300,0D)]
+        [Range(0.0D, 300.0D)]
         public double? RainDay10_mm { get; set; }
         public bool? RemoveFromStat { get; set; }
         #endregion Properties in DB

@@ -49,13 +49,13 @@ namespace CSSPModels
         /// </summary>
         [CSSPEnumType]
         public TVTypeEnum TVType { get; set; }
-        [Range(-90,0D, 90,0D)]
+        [Range(-90.0D, 90.0D)]
         public double LatMin { get; set; }
-        [Range(-90,0D, 90,0D)]
+        [Range(-90.0D, 90.0D)]
         public double LatMax { get; set; }
-        [Range(-180,0D, 180,0D)]
+        [Range(-180.0D, 180.0D)]
         public double LngMin { get; set; }
-        [Range(-180,0D, 180,0D)]
+        [Range(-180.0D, 180.0D)]
         public double LngMax { get; set; }
         /// <summary>
         /// > [!NOTE]

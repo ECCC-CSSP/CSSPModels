@@ -43,13 +43,13 @@ namespace CSSPModels
         public int Ordinal { get; set; }
         [Range(0, 10000000)]
         public int Concentration_MPN_100ml { get; set; }
-        [Range(0,0D, 1000000,0D)]
+        [Range(0.0D, 1000000.0D)]
         public double Dilution { get; set; }
-        [Range(0,0D, 10000,0D)]
+        [Range(0.0D, 10000.0D)]
         public double FarFieldWidth_m { get; set; }
-        [Range(0,0D, 100000,0D)]
+        [Range(0.0D, 100000.0D)]
         public double DispersionDistance_m { get; set; }
-        [Range(0,0D, 100,0D)]
+        [Range(0.0D, 100.0D)]
         public double TravelTime_hour { get; set; }
         #endregion Properties in DB
 

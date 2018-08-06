@@ -64,11 +64,11 @@ namespace CSSPModels
         /// </summary>
         [CSSPEnumType]
         public StorageDataTypeEnum StorageDataType { get; set; }
-        [Range(0,0D, 10000,0D)]
+        [Range(0.0D, 10000.0D)]
         public double Depth_m { get; set; }
-        [Range(0,0D, 10,0D)]
+        [Range(0.0D, 10.0D)]
         public double UVelocity_m_s { get; set; }
-        [Range(0,0D, 10,0D)]
+        [Range(0.0D, 10.0D)]
         public double VVelocity_m_s { get; set; }
         /// <summary>
         /// > [!NOTE]

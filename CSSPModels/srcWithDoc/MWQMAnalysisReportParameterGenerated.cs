@@ -72,7 +72,7 @@ namespace CSSPModels
         [Range(1, 1000)]
         public int NumberOfRuns { get; set; }
         public bool FullYear { get; set; }
-        [Range(1,0D, 20,0D)]
+        [Range(1.0D, 20.0D)]
         public double SalinityHighlightDeviationFromAverage { get; set; }
         [Range(0, 5)]
         public int ShortRangeNumberOfDays { get; set; }

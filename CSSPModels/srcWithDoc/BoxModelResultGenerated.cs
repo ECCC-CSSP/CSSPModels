@@ -47,29 +47,29 @@ namespace CSSPModels
         /// </summary>
         [CSSPEnumType]
         public BoxModelResultTypeEnum BoxModelResultType { get; set; }
-        [Range(0,0D, -1.0D)]
+        [Range(0.0D, -1.0D)]
         public double Volume_m3 { get; set; }
-        [Range(0,0D, -1.0D)]
+        [Range(0.0D, -1.0D)]
         public double Surface_m2 { get; set; }
-        [Range(0,0D, 100000,0D)]
+        [Range(0.0D, 100000.0D)]
         public double Radius_m { get; set; }
-        [Range(0,0D, 360,0D)]
+        [Range(0.0D, 360.0D)]
         public double? LeftSideDiameterLineAngle_deg { get; set; }
-        [Range(-90,0D, 90,0D)]
+        [Range(-90.0D, 90.0D)]
         public double? CircleCenterLatitude { get; set; }
-        [Range(-180,0D, 180,0D)]
+        [Range(-180.0D, 180.0D)]
         public double? CircleCenterLongitude { get; set; }
         public bool FixLength { get; set; }
         public bool FixWidth { get; set; }
-        [Range(0,0D, 100000,0D)]
+        [Range(0.0D, 100000.0D)]
         public double RectLength_m { get; set; }
-        [Range(0,0D, 100000,0D)]
+        [Range(0.0D, 100000.0D)]
         public double RectWidth_m { get; set; }
-        [Range(0,0D, 360,0D)]
+        [Range(0.0D, 360.0D)]
         public double? LeftSideLineAngle_deg { get; set; }
-        [Range(-90,0D, 90,0D)]
+        [Range(-90.0D, 90.0D)]
         public double? LeftSideLineStartLatitude { get; set; }
-        [Range(-180,0D, 180,0D)]
+        [Range(-180.0D, 180.0D)]
         public double? LeftSideLineStartLongitude { get; set; }
         #endregion Properties in DB
 

@@ -66,7 +66,7 @@ namespace CSSPModels
         [CSSPAfter(Year = 1980)]
         [CSSPBigger(OtherField = "StartDateTime_Local")]
         public DateTime? EndDateTime_Local { get; set; }
-        [Range(0,0D, 1000000,0D)]
+        [Range(0.0D, 1000000.0D)]
         public double AverageFlow_m3_day { get; set; }
         #endregion Properties in DB
 

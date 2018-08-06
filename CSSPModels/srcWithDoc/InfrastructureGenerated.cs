@@ -164,18 +164,18 @@ namespace CSSPModels
         [CSSPEnumType]
         [CSSPAllowNull]
         public AlarmSystemTypeEnum? AlarmSystemType { get; set; }
-        [Range(0,0D, 1000000,0D)]
+        [Range(0.0D, 1000000.0D)]
         public double? DesignFlow_m3_day { get; set; }
-        [Range(0,0D, 1000000,0D)]
+        [Range(0.0D, 1000000.0D)]
         public double? AverageFlow_m3_day { get; set; }
-        [Range(0,0D, 1000000,0D)]
+        [Range(0.0D, 1000000.0D)]
         public double? PeakFlow_m3_day { get; set; }
         [Range(0, 1000000)]
         public int? PopServed { get; set; }
         public bool? CanOverflow { get; set; }
-        [Range(0,0D, 100,0D)]
+        [Range(0.0D, 100.0D)]
         public double? PercFlowOfTotal { get; set; }
-        [Range(-10,0D, 0,0D)]
+        [Range(-10.0D, 0.0D)]
         public double? TimeOffset_hour { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -184,33 +184,33 @@ namespace CSSPModels
         /// </summary>
         [CSSPAllowNull]
         public string TempCatchAllRemoveLater { get; set; }
-        [Range(0,0D, 1000,0D)]
+        [Range(0.0D, 1000.0D)]
         public double? AverageDepth_m { get; set; }
         [Range(1, 1000)]
         public int? NumberOfPorts { get; set; }
-        [Range(0,0D, 10,0D)]
+        [Range(0.0D, 10.0D)]
         public double? PortDiameter_m { get; set; }
-        [Range(0,0D, 10000,0D)]
+        [Range(0.0D, 10000.0D)]
         public double? PortSpacing_m { get; set; }
-        [Range(0,0D, 1000,0D)]
+        [Range(0.0D, 1000.0D)]
         public double? PortElevation_m { get; set; }
-        [Range(-90,0D, 90,0D)]
+        [Range(-90.0D, 90.0D)]
         public double? VerticalAngle_deg { get; set; }
-        [Range(-180,0D, 180,0D)]
+        [Range(-180.0D, 180.0D)]
         public double? HorizontalAngle_deg { get; set; }
-        [Range(0,0D, 100,0D)]
+        [Range(0.0D, 100.0D)]
         public double? DecayRate_per_day { get; set; }
-        [Range(0,0D, 10,0D)]
+        [Range(0.0D, 10.0D)]
         public double? NearFieldVelocity_m_s { get; set; }
-        [Range(0,0D, 10,0D)]
+        [Range(0.0D, 10.0D)]
         public double? FarFieldVelocity_m_s { get; set; }
-        [Range(0,0D, 40,0D)]
+        [Range(0.0D, 40.0D)]
         public double? ReceivingWaterSalinity_PSU { get; set; }
-        [Range(-10,0D, 40,0D)]
+        [Range(-10.0D, 40.0D)]
         public double? ReceivingWaterTemperature_C { get; set; }
         [Range(0, 10000000)]
         public int? ReceivingWater_MPN_per_100ml { get; set; }
-        [Range(0,0D, 1000,0D)]
+        [Range(0.0D, 1000.0D)]
         public double? DistanceFromShore_m { get; set; }
         /// <summary>
         /// > [!NOTE]

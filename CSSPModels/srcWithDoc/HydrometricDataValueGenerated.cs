@@ -55,7 +55,7 @@ namespace CSSPModels
         /// </summary>
         [CSSPEnumType]
         public StorageDataTypeEnum StorageDataType { get; set; }
-        [Range(0,0D, 10000,0D)]
+        [Range(0.0D, 10000.0D)]
         public double Flow_m3_s { get; set; }
         /// <summary>
         /// > [!NOTE]

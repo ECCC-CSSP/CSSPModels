@@ -66,9 +66,9 @@ namespace CSSPModels
         public int? Tube1_0 { get; set; }
         [Range(0, 5)]
         public int? Tube0_1 { get; set; }
-        [Range(0,0D, 40,0D)]
+        [Range(0.0D, 40.0D)]
         public double? Salinity { get; set; }
-        [Range(-10,0D, 40,0D)]
+        [Range(-10.0D, 40.0D)]
         public double? Temperature { get; set; }
         /// <summary>
         /// > [!NOTE]

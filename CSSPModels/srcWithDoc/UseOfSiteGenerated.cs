@@ -65,16 +65,16 @@ namespace CSSPModels
         [Range(1980, 2050)]
         public int? EndYear { get; set; }
         public bool? UseWeight { get; set; }
-        [Range(0,0D, 100,0D)]
+        [Range(0.0D, 100.0D)]
         public double? Weight_perc { get; set; }
         public bool? UseEquation { get; set; }
-        [Range(0,0D, 100,0D)]
+        [Range(0.0D, 100.0D)]
         public double? Param1 { get; set; }
-        [Range(0,0D, 100,0D)]
+        [Range(0.0D, 100.0D)]
         public double? Param2 { get; set; }
-        [Range(0,0D, 100,0D)]
+        [Range(0.0D, 100.0D)]
         public double? Param3 { get; set; }
-        [Range(0,0D, 100,0D)]
+        [Range(0.0D, 100.0D)]
         public double? Param4 { get; set; }
         #endregion Properties in DB
 

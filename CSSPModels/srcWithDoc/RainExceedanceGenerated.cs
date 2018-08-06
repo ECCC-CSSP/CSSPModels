@@ -49,9 +49,9 @@ namespace CSSPModels
         [CSSPAfter(Year = 1980)]
         [CSSPBigger(OtherField = "StartDate_Local")]
         public DateTime? EndDate_Local { get; set; }
-        [Range(0,0D, 300,0D)]
+        [Range(0.0D, 300.0D)]
         public double? RainMaximum_mm { get; set; }
-        [Range(0,0D, 300,0D)]
+        [Range(0.0D, 300.0D)]
         public double? RainExtreme_mm { get; set; }
         [Range(0, 30)]
         public int DaysPriorToStart { get; set; }

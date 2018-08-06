@@ -46,7 +46,7 @@ namespace CSSPModels
         public string MikeBoundaryConditionCode { get; set; }
         [StringLength(100)]
         public string MikeBoundaryConditionName { get; set; }
-        [Range(1,0D, 100000,0D)]
+        [Range(1.0D, 100000.0D)]
         public double MikeBoundaryConditionLength_m { get; set; }
         [StringLength(100)]
         public string MikeBoundaryConditionFormat { get; set; }

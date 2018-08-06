@@ -30,9 +30,9 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [Range(-180,0D, 180,0D)]
+        [Range(-180.0D, 180.0D)]
         public double Lat { get; set; }
-        [Range(-90,0D, 90,0D)]
+        [Range(-90.0D, 90.0D)]
         public double Lng { get; set; }
         #endregion Properties not in DB
 

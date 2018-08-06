@@ -55,21 +55,21 @@ namespace CSSPModels
         [CSSPAfter(Year = 1980)]
         [CSSPBigger(OtherField = "StartDateAndTime_Local")]
         public DateTime EndDateAndTime_Local { get; set; }
-        [Range(0,0D, 1000000,0D)]
+        [Range(0.0D, 1000000.0D)]
         public double SourceFlowStart_m3_day { get; set; }
-        [Range(0,0D, 1000000,0D)]
+        [Range(0.0D, 1000000.0D)]
         public double SourceFlowEnd_m3_day { get; set; }
         [Range(0, 10000000)]
         public int SourcePollutionStart_MPN_100ml { get; set; }
         [Range(0, 10000000)]
         public int SourcePollutionEnd_MPN_100ml { get; set; }
-        [Range(-10,0D, 40,0D)]
+        [Range(-10.0D, 40.0D)]
         public double SourceTemperatureStart_C { get; set; }
-        [Range(-10,0D, 40,0D)]
+        [Range(-10.0D, 40.0D)]
         public double SourceTemperatureEnd_C { get; set; }
-        [Range(0,0D, 40,0D)]
+        [Range(0.0D, 40.0D)]
         public double SourceSalinityStart_PSU { get; set; }
-        [Range(0,0D, 40,0D)]
+        [Range(0.0D, 40.0D)]
         public double SourceSalinityEnd_PSU { get; set; }
         #endregion Properties in DB
 
