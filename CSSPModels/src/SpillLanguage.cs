@@ -49,6 +49,10 @@ namespace CSSPModels
         public string LanguageText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatus")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Translation status text")]
+        [CSSPDisplayFR(DisplayFR = "Le texte du statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status text of the Spill")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le texte du statut de la traduction de Spill")]
         public string TranslationStatusText { get; set; }
         #endregion Properties for web information
 

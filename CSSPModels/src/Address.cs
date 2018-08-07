@@ -26,7 +26,7 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems avec l'identifiant unique")]
         public int AddressTVItemID { get; set; }
         [CSSPEnumType]
-        [CSSPDisplayEN(DisplayEN = "Address Type")]
+        [CSSPDisplayEN(DisplayEN = "Address type")]
         [CSSPDisplayFR(DisplayFR = "Type d'address")]
         [CSSPDescriptionEN(DescriptionEN = @"Address type")]
         [CSSPDescriptionFR(DescriptionFR = @"Type d'adresse")]

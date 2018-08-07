@@ -48,8 +48,8 @@ namespace CSSPModels
         [CSSPEnumType]
         [CSSPDisplayEN(DisplayEN = "Translation status")]
         [CSSPDisplayFR(DisplayFR = "Le statut de la traduction")]
-        [CSSPDescriptionEN(DescriptionEN = @"Translation status of the AppTask")]
-        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction de AppTask")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status of status text and error text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction du texte du statut et du texte de l'erreur")]
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
@@ -71,10 +71,10 @@ namespace CSSPModels
         public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
         [CSSPAllowNull]
-        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
+        [CSSPDisplayEN(DisplayEN = "Language text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language text [en, fr]")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du langage [en, fr]")]
         public string LanguageText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatus")]
         [CSSPAllowNull]

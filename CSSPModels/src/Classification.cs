@@ -20,10 +20,22 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table Classification")]
         public int ClassificationID { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "79")]
+        [CSSPDisplayEN(DisplayEN = "Classification TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Classification TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table with the unique identifier")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems avec l'identifiant unique")]
         public int ClassificationTVItemID { get; set; }
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Classification type")]
+        [CSSPDisplayFR(DisplayFR = "Type de classification")]
+        [CSSPDescriptionEN(DescriptionEN = @"Classification type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de classification")]
         public ClassificationTypeEnum ClassificationType { get; set; }
         [Range(0, 10000)]
+        [CSSPDisplayEN(DisplayEN = "Ordinal")]
+        [CSSPDisplayFR(DisplayFR = "Ordre")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ordinal number used to order the classification")]
+        [CSSPDescriptionFR(DescriptionFR = @"Numéro indiquent l'ordre des classification")]
         public int Ordinal { get; set; }
         #endregion Properties in DB
 
@@ -45,6 +57,10 @@ namespace CSSPModels
         public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "ClassificationTypeEnum", EnumType = "ClassificationType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Classification text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de la classification")]
+        [CSSPDescriptionEN(DescriptionEN = @"Classification text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de la classification")]
         public string ClassificationTVText { get; set; }
         #endregion Properties for web information
 

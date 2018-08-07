@@ -81,7 +81,7 @@ namespace CSSPModels
     /// </summary>
     /// <example>
     ///     <code>
-    ///         [CSSPDescriptionEN(DescriptionEN = "First Name")]
+    ///         [CSSPDescriptionEN(DescriptionEN = @"First Name")]
     ///         public string FirstName { get; set; }
     ///     </code>
     /// </example>
