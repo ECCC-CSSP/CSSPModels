@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace CSSPModels
 {
@@ -40,23 +41,23 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemUserAuthorizationWeb : TVItemUserAuthorization
+    public partial class TVItemUserAuthorization_A : TVItemUserAuthorization
     {
-        #region Properties for web information
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         public TVItemLanguage ContactTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID1", FillReturnField = "", FillNeedLanguage = true)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID1", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         public TVItemLanguage TVItemLanguage1 { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID2", FillReturnField = "", FillNeedLanguage = true)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID2", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         public TVItemLanguage TVItemLanguage2 { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID3", FillReturnField = "", FillNeedLanguage = true)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID3", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         public TVItemLanguage TVItemLanguage3 { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID4", FillReturnField = "", FillNeedLanguage = true)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID4", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         public TVItemLanguage TVItemLanguage4 { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
         [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
@@ -65,28 +66,29 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "TVAuthEnum", EnumType = "TVAuth")]
         [CSSPAllowNull]
         public string TVAuthText { get; set; }
-        #endregion Properties for web information
+        #endregion Properties
 
         #region Constructors
-        public TVItemUserAuthorizationWeb() : base()
+        public TVItemUserAuthorization_A() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemUserAuthorizationReport : TVItemUserAuthorizationWeb
+    public partial class TVItemUserAuthorization_B : TVItemUserAuthorization_A
     {
-        #region Properties for report information
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Report test")]
         [CSSPDisplayFR(DisplayFR = "Test report")]
         [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
         [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
         public string TVItemUserAuthorizationReportTest { get; set; }
-        #endregion Properties for report information
+        #endregion Properties
 
         #region Constructors
-        public TVItemUserAuthorizationReport() : base()
+        public TVItemUserAuthorization_B() : base()
         {
         }
         #endregion Constructors

@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace CSSPModels
 {
@@ -35,10 +36,10 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class InfrastructureLanguageWeb : InfrastructureLanguage
+    public partial class InfrastructureLanguage_A : InfrastructureLanguage
     {
-        #region Properties for web information
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
         [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
@@ -54,28 +55,29 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Translation status text of the Infrastructure")]
         [CSSPDescriptionFR(DescriptionFR = @"Le texte du statut de la traduction de Infrastructure")]
         public string TranslationStatusText { get; set; }
-        #endregion Properties for web information
+        #endregion Properties
 
         #region Constructors
-        public InfrastructureLanguageWeb() : base()
+        public InfrastructureLanguage_A() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class InfrastructureLanguageReport : InfrastructureLanguageWeb
+    public partial class InfrastructureLanguage_B : InfrastructureLanguage_A
     {
-        #region Properties for report information
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Report test")]
         [CSSPDisplayFR(DisplayFR = "Test report")]
         [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
         [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
         public string InfrastructureLanguageReportTest { get; set; }
-        #endregion Properties for report information
+        #endregion Properties
 
         #region Constructors
-        public InfrastructureLanguageReport() : base()
+        public InfrastructureLanguage_B() : base()
         {
         }
         #endregion Constructors

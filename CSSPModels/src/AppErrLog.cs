@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace CSSPModels
 {
@@ -56,37 +57,132 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppErrLogWeb : AppErrLog
+    public partial class AppErrLog_A : AppErrLog
     {
-        #region Properties for web information
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
         [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
         [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
         public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
-        #endregion Properties for web information
+        #endregion Properties
 
         #region Constructors
-        public AppErrLogWeb() : base()
+        public AppErrLog_A() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppErrLogReport : AppErrLogWeb
+    public partial class AppErrLog_B : AppErrLog_A
     {
-        #region Properties for report information
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Report test")]
         [CSSPDisplayFR(DisplayFR = "Test report")]
         [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
         [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
         public string AppErrLogReportTest { get; set; }
-        #endregion Properties for report information
+        #endregion Properties
 
         #region Constructors
-        public AppErrLogReport() : base()
+        public AppErrLog_B() : base()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class AppErrLog_C : AppErrLog_B
+    {
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Report test")]
+        [CSSPDisplayFR(DisplayFR = "Test report")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
+        public string AppErrLogReportTest2 { get; set; }
+        #endregion Properties
+
+        #region Constructors
+        public AppErrLog_C() : base()
+        {
+        }
+        #endregion Constructors
+    }
+    [NotMapped]
+    public partial class AppErrLog_D : AppErrLog_C
+    {
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Report test")]
+        [CSSPDisplayFR(DisplayFR = "Test report")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
+        public string AppErrLogReportTest2K { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Report test")]
+        [CSSPDisplayFR(DisplayFR = "Test report")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
+        public string AppErrLogReportTest2H { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Report test")]
+        [CSSPDisplayFR(DisplayFR = "Test report")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
+        public string AppErrLogReportTest2D { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Report test")]
+        [CSSPDisplayFR(DisplayFR = "Test report")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
+        public string AppErrLogReportTest2G { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Report test")]
+        [CSSPDisplayFR(DisplayFR = "Test report")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
+        public string AppErrLogReportTest2S { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Report test")]
+        [CSSPDisplayFR(DisplayFR = "Test report")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
+        public string AppErrLogReportTest2L { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Report test")]
+        [CSSPDisplayFR(DisplayFR = "Test report")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
+        public string AppErrLogReportTest2C { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Report test")]
+        [CSSPDisplayFR(DisplayFR = "Test report")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
+        public string AppErrLogReportTest2B { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Report test")]
+        [CSSPDisplayFR(DisplayFR = "Test report")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
+        public string AppErrLogReportTest2A { get; set; }
+        #endregion Properties
+
+        #region Constructors
+        public AppErrLog_D() : base()
         {
         }
         #endregion Constructors

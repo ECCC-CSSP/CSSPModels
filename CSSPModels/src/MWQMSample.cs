@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace CSSPModels
 {
@@ -59,14 +60,14 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSampleWeb : MWQMSample
+    public partial class MWQMSample_A : MWQMSample
     {
-        #region Properties for web information
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         public TVItemLanguage MWQMSiteTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMRunTVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMRunTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         public TVItemLanguage MWQMRunTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
         [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
@@ -75,28 +76,29 @@ namespace CSSPModels
         [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType_old")]
         [CSSPAllowNull]
         public string SampleType_oldText { get; set; }
-        #endregion Properties for web information
+        #endregion Properties
 
         #region Constructors
-        public MWQMSampleWeb() : base()
+        public MWQMSample_A() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSampleReport : MWQMSampleWeb
+    public partial class MWQMSample_B : MWQMSample_A
     {
-        #region Properties for report information
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Report test")]
         [CSSPDisplayFR(DisplayFR = "Test report")]
         [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
         [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
         public string MWQMSampleReportTest { get; set; }
-        #endregion Properties for report information
+        #endregion Properties
 
         #region Constructors
-        public MWQMSampleReport() : base()
+        public MWQMSample_B() : base()
         {
         }
         #endregion Constructors

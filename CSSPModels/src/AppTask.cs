@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace CSSPModels
 {
@@ -94,21 +95,22 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppTaskWeb : AppTask
+    public partial class AppTask_A : AppTask
     {
-        #region Properties for web information
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Item TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage item")]
         [CSSPDescriptionEN(DescriptionEN = @"Item TVItemLanguage")]
         [CSSPDescriptionFR(DescriptionFR = @"TVItemLanguage de l'item")]
         public TVItemLanguage TVItemTVItemLanguage { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID2", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Item2 TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage item2")]
         [CSSPDescriptionEN(DescriptionEN = @"Item TVItemLanguage")]
         [CSSPDescriptionFR(DescriptionFR = @"TVItemLanguage de l'item")]
         public TVItemLanguage TVItem2TVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
         [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
@@ -135,28 +137,29 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Language of the App task")]
         [CSSPDescriptionFR(DescriptionFR = @"Langage de la commande de la tâche App")]
         public string LanguageText { get; set; }
-        #endregion Properties for web information
+        #endregion Properties
 
         #region Constructors
-        public AppTaskWeb() : base()
+        public AppTask_A() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppTaskReport : AppTaskWeb
+    public partial class AppTask_B : AppTask_A
     {
-        #region Properties for report information
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Report test")]
         [CSSPDisplayFR(DisplayFR = "Test report")]
         [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
         [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
         public string AppTaskReportTest { get; set; }
-        #endregion Properties for report information
+        #endregion Properties
 
         #region Constructors
-        public AppTaskReport() : base()
+        public AppTask_B() : base()
         {
         }
         #endregion Constructors

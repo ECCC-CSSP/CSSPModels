@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace CSSPModels
 {
@@ -93,39 +94,39 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AddressWeb : Address
+    public partial class Address_A : Address
     {
-        #region Properties for web information
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "AddressTVItemID", FillReturnField = "", FillNeedLanguage = true)]
-        [CSSPDisplayEN(DisplayEN = "Address TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de l'adresse")]
-        [CSSPDescriptionEN(DescriptionEN = @"Address TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de l'adresse")]
-        public TVItemLanguage AddressTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CountryTVItemID", FillReturnField = "", FillNeedLanguage = true)]
-        [CSSPDisplayEN(DisplayEN = "Country TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du pays")]
-        [CSSPDescriptionEN(DescriptionEN = @"Country TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du pays")]
-        public TVItemLanguage CountryTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ProvinceTVItemID", FillReturnField = "", FillNeedLanguage = true)]
-        [CSSPDisplayEN(DisplayEN = "Province TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de la province")]
-        [CSSPDescriptionEN(DescriptionEN = @"Province TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de la province")]
-        public TVItemLanguage ProvinceTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MunicipalityTVItemID", FillReturnField = "", FillNeedLanguage = true)]
-        [CSSPDisplayEN(DisplayEN = "Municipality TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de la municipalité")]
-        [CSSPDescriptionEN(DescriptionEN = @"Municipality TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de la municipalité")]
-        public TVItemLanguage MunicipalityTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
-        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
-        public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "AddressTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Address TVText")]
+        [CSSPDisplayFR(DisplayFR = "TVText de Address")]
+        [CSSPDescriptionEN(DescriptionEN = @"Address TVText")]
+        [CSSPDescriptionFR(DescriptionFR = @"TVText de Address")]
+        public string AddressText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CountryTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Country TVText")]
+        [CSSPDisplayFR(DisplayFR = "TVText Pays")]
+        [CSSPDescriptionEN(DescriptionEN = @"Country TVText")]
+        [CSSPDescriptionFR(DescriptionFR = @"TVText Pays")]
+        public string CountryText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ProvinceTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Province TVText")]
+        [CSSPDisplayFR(DisplayFR = "TVText Province")]
+        [CSSPDescriptionEN(DescriptionEN = @"Province TVText")]
+        [CSSPDescriptionFR(DescriptionFR = @"TVText Province")]
+        public string ProvinceText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MunicipalityTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Municipality TVText")]
+        [CSSPDisplayFR(DisplayFR = "TVText Municipalité")]
+        [CSSPDescriptionEN(DescriptionEN = @"Municipality TVText")]
+        [CSSPDescriptionFR(DescriptionFR = @"TVText Municipalité")]
+        public string MunicipalityText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact TVText")]
+        [CSSPDisplayFR(DisplayFR = "TVText Contact du dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVText")]
+        [CSSPDescriptionFR(DescriptionFR = @"TVText Contact du dernière changement")]
+        public string LastUpdateContactText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "AddressTypeEnum", EnumType = "AddressType")]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Address type text")]
@@ -140,28 +141,29 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Street type text")]
         [CSSPDescriptionFR(DescriptionFR = @"Texte du type de rue")]
         public string StreetTypeText { get; set; }
-        #endregion Properties for web information
+        #endregion Properties
 
         #region Constructors
-        public AddressWeb() : base()
+        public Address_A() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AddressReport : AddressWeb
+    public partial class Address_B : Address_A
     {
-        #region Properties for report information
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "AddressTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Report test")]
         [CSSPDisplayFR(DisplayFR = "Test report")]
         [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
         [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
         public string AddressReportTest { get; set; }
-        #endregion Properties for report information
+        #endregion Properties
 
         #region Constructors
-        public AddressReport() : base()
+        public Address_B() : base()
         {
         }
         #endregion Constructors

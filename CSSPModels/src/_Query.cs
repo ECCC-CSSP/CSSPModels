@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace CSSPModels
 {
@@ -31,12 +32,8 @@ namespace CSSPModels
         public string Order { get; set; }
         [StringLength(200)]
         public string Where { get; set; }
-        [CSSPEnumType]
-        [CSSPAllowNull]
-        public EntityQueryDetailTypeEnum? EntityQueryDetailType { get; set; }
-        [CSSPEnumType]
-        [CSSPAllowNull]
-        public EntityQueryTypeEnum? EntityQueryType { get; set; }
+        [StringLength(1)]
+        public string Detail { get; set; }
         public List<string> OrderList { get; set; }
         public List<WhereInfo> WhereInfoList { get; set; }
         #endregion Properties not in DB
@@ -50,8 +47,7 @@ namespace CSSPModels
             Take = 200;
             Order = "";
             Where = "";
-            EntityQueryDetailType = EntityQueryDetailTypeEnum.EntityOnly;
-            EntityQueryType = EntityQueryTypeEnum.AsNoTracking;
+            Detail = "";
             OrderList = new List<string>();
             WhereInfoList = new List<WhereInfo>();
         }

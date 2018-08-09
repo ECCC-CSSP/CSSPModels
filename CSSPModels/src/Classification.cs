@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace CSSPModels
 {
@@ -46,10 +47,10 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClassificationWeb : Classification
+    public partial class Classification_A : Classification
     {
-        #region Properties for web information
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
         [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
@@ -62,28 +63,29 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Classification text")]
         [CSSPDescriptionFR(DescriptionFR = @"Texte de la classification")]
         public string ClassificationTVText { get; set; }
-        #endregion Properties for web information
+        #endregion Properties
 
         #region Constructors
-        public ClassificationWeb() : base()
+        public Classification_A() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClassificationReport : ClassificationWeb
+    public partial class Classification_B : Classification_A
     {
-        #region Properties for report information
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Report test")]
         [CSSPDisplayFR(DisplayFR = "Test report")]
         [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
         [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
         public string ClassificationReportTest { get; set; }
-        #endregion Properties for report information
+        #endregion Properties
 
         #region Constructors
-        public ClassificationReport() : base()
+        public Classification_B() : base()
         {
         }
         #endregion Constructors

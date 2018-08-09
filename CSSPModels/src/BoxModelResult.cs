@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace CSSPModels
 {
@@ -116,10 +117,10 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelResultWeb : BoxModelResult
+    public partial class BoxModelResult_A : BoxModelResult
     {
-        #region Properties for web information
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true)]
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
         [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
@@ -132,28 +133,29 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Result type text")]
         [CSSPDescriptionFR(DescriptionFR = @"Texte du type de résultats")]
         public string BoxModelResultTypeText { get; set; }
-        #endregion Properties for web information
+        #endregion Properties
 
         #region Constructors
-        public BoxModelResultWeb() : base()
+        public BoxModelResult_A() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelResultReport : BoxModelResultWeb
+    public partial class BoxModelResult_B : BoxModelResult_A
     {
-        #region Properties for report information
+        #region Properties
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Report test")]
         [CSSPDisplayFR(DisplayFR = "Test report")]
         [CSSPDescriptionEN(DescriptionEN = @"Report test description")]
         [CSSPDescriptionFR(DescriptionFR = @"Description de test report")]
         public string BoxModelResultReportTest { get; set; }
-        #endregion Properties for report information
+        #endregion Properties
 
         #region Constructors
-        public BoxModelResultReport() : base()
+        public BoxModelResult_B() : base()
         {
         }
         #endregion Constructors

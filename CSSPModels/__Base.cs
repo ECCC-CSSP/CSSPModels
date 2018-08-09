@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace CSSPModels
 {
@@ -661,6 +662,11 @@ namespace CSSPModels
         /// > If true, a language comparision will also be included
         /// </summary>
         public bool FillNeedLanguage { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > If true, a list of items will be included otherwise a single item
+        /// </summary>
+        public bool FillIsList { get; set; }
 
         /// <summary>
         /// > [!NOTE]
