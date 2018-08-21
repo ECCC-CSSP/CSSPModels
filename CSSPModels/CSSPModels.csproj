@@ -395,6 +395,7 @@
     <Compile Include="src\ReportType.cs" />
     <Compile Include="src\ReportTypeLanguage.cs" />
     <Compile Include="src\ResetPassword.cs" />
+    <Compile Include="src\SamplingPlanEmail.cs" />
     <Compile Include="src\SamplingPlan.cs" />
     <Compile Include="src\SamplingPlanSubsector.cs" />
     <Compile Include="src\SamplingPlanSubsectorSite.cs" />

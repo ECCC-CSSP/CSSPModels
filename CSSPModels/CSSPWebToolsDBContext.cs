@@ -77,6 +77,7 @@ namespace CSSPModels
         public virtual DbSet<ReportType> ReportTypes { get; set; }
         public virtual DbSet<SamplingPlanSubsectorSite> SamplingPlanSubsectorSites { get; set; }
         public virtual DbSet<SamplingPlanSubsector> SamplingPlanSubsectors { get; set; }
+        public virtual DbSet<SamplingPlanEmail> SamplingPlanEmails { get; set; }
         public virtual DbSet<SamplingPlan> SamplingPlans { get; set; }
         public virtual DbSet<SpillLanguage> SpillLanguages { get; set; }
         public virtual DbSet<Spill> Spills { get; set; }

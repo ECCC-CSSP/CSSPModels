@@ -103,6 +103,7 @@ namespace CSSPModels
         public string ApprovalDay { get; set; }
         public string ApprovedBySupervisorInitials { get; set; }
         public bool IncludeLaboratoryQAQC { get; set; }
+        public string BackupDirectory { get; set; }
         public string Log { get; set; }
         [StringLength(100)]
         [CSSPEnumTypeText(EnumTypeName = "SamplingPlanTypeEnum", EnumType = "SamplingPlanType")]
