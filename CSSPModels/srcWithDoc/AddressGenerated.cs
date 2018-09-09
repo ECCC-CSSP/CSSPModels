@@ -28,6 +28,10 @@ namespace CSSPModels
     public partial class Address : LastUpdate
     {
         #region Properties in DB
+        /// <summary>
+        /// This is the addressID
+        /// </summary>
+        /// <param name="AddressID">Is the AddressID property</param>
         [Key]
         [CSSPDisplayEN(DisplayEN = "Address ID")]
         [CSSPDisplayFR(DisplayFR = "Address ID")]

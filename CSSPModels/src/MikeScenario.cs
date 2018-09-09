@@ -51,6 +51,12 @@ namespace CSSPModels
         public double AmbientTemperature_C { get; set; }
         [Range(0.0D, 40.0D)]
         public double AmbientSalinity_PSU { get; set; }
+        public bool? GenerateDecouplingFiles { get; set; }
+        public bool? UseDecouplingFiles { get; set; }
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "8")]
+        public int? UseSalinityAndTemperatureInitialConditionFromTVFileTVItemID { get; set; }
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "31")]
+        public int? ForSimulatingMWQMRunTVItemID { get; set; }
         [Range(0.0D, 100.0D)]
         public double ManningNumber { get; set; }
         [Range(1, 1000000)]
