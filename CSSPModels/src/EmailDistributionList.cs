@@ -21,8 +21,16 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table EmailDistributionLists")]
         public int EmailDistributionListID { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "6")]
+        [CSSPDisplayEN(DisplayEN = "Country")]
+        [CSSPDisplayFR(DisplayFR = "Pays")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the country")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant la pays")]
         public int CountryTVItemID { get; set; }
         [Range(0, 1000)]
+        [CSSPDisplayEN(DisplayEN = "Ordinal")]
+        [CSSPDisplayFR(DisplayFR = "Ordre")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ordinal")]
+        [CSSPDescriptionFR(DescriptionFR = @"Ordre")]
         public int Ordinal { get; set; }
         #endregion Properties in DB
 

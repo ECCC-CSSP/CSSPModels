@@ -106,6 +106,28 @@ namespace CSSPModels
         public double? RainDay9_mm { get; set; }
         [Range(0.0D, 300.0D)]
         public double? RainDay10_mm { get; set; }
+        [Range(0.0D, 300.0D)]
+        public double? DischargeDay0_m3_s { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double? DischargeDay1_m3_s { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double? DischargeDay2_m3_s { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double? DischargeDay3_m3_s { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double? DischargeDay4_m3_s { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double? DischargeDay5_m3_s { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double? DischargeDay6_m3_s { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double? DischargeDay7_m3_s { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double? DischargeDay8_m3_s { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double? DischargeDay9_m3_s { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double? DischargeDay10_m3_s { get; set; }
         public bool? RemoveFromStat { get; set; }
         #endregion Properties in DB
 

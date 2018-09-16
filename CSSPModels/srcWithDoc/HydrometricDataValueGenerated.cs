@@ -18,7 +18,7 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table HydrometricDataValues** : [HydrometricDataValueID](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HydrometricDataValueID), [HydrometricSiteID](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HydrometricSiteID), [DateTime_Local](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_DateTime_Local), [Keep](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_Keep), [StorageDataType](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_StorageDataType), [Flow_m3_s](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_Flow_m3_s), [HourlyValues](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HourlyValues), [LastUpdateDate_UTC](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_LastUpdateContactTVItemID), </para>
+    /// > <para>**DB properties for table HydrometricDataValues** : [HydrometricDataValueID](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HydrometricDataValueID), [HydrometricSiteID](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HydrometricSiteID), [DateTime_Local](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_DateTime_Local), [Keep](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_Keep), [StorageDataType](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_StorageDataType), [HasBeenRead](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HasBeenRead), [Flow_m3_s](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_Flow_m3_s), [Level_m](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_Level_m), [HourlyValues](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HourlyValues), [LastUpdateDate_UTC](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_LastUpdateContactTVItemID), </para>
     /// > <para>**Other properties** : [HasErrors](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_HasErrors), [ValidationResults](CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [HydrometricDataValueService](CSSPServices.HydrometricDataValueService.html)</para>
@@ -55,9 +55,20 @@ namespace CSSPModels
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
         /// </summary>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Storage data type")]
+        [CSSPDisplayFR(DisplayFR = "Type de données sauvegardez")]
+        [CSSPDescriptionEN(DescriptionEN = @"Storage data type can be archived, forcasted or observed")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de données sauvegardez peut être archivés, prévisions ou observés")]
         public StorageDataTypeEnum StorageDataType { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Has been read")]
+        [CSSPDisplayFR(DisplayFR = "Ont été lus")]
+        [CSSPDescriptionEN(DescriptionEN = @"The stored data has been read from the weather office web site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Les données stockées ont été lues sur le site Web du bureau météorologique")]
+        public bool HasBeenRead { get; set; }
+        [Range(0.0D, 100000.0D)]
+        public double? Flow_m3_s { get; set; }
         [Range(0.0D, 10000.0D)]
-        public double Flow_m3_s { get; set; }
+        public double? Level_m { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>

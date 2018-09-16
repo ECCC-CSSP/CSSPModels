@@ -51,6 +51,8 @@ namespace CSSPModels
         public bool? Sediment { get; set; }
         public bool? RHBN { get; set; }
         public bool? RealTime { get; set; }
+        public bool? HasDischarge { get; set; }
+        public bool? HasLevel { get; set; }
         public bool? HasRatingCurve { get; set; }
         #endregion Properties in DB
 

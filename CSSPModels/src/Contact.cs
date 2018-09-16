@@ -22,8 +22,8 @@ namespace CSSPModels
         public int ContactID { get; set; }
         [CSSPExist(ExistTypeName = "AspNetUser", ExistPlurial = "s", ExistFieldID = "Id")]
         [StringLength(128)]
-        [CSSPDisplayEN(DisplayEN = "ID")]
-        [CSSPDisplayFR(DisplayFR = "ID")]
+        [CSSPDisplayEN(DisplayEN = "Id")]
+        [CSSPDisplayFR(DisplayFR = "Id")]
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the AspNetUsers table")]
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table AspNetUsers")]
         public string Id { get; set; }
