@@ -27,6 +27,24 @@ namespace CSSPModels
     public partial class EmailDistributionListContact : LastUpdate
     {
         #region Properties in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "EmailDistributionListContact ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "EmailDistributionListContact ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Contains the unique "identifier on each row of the EmailDistributionListContacts table")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Contient l'identifiant unique sur chaque ligne de la table EmailDistributionListContacts")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- EmailDistributionListContact ID
+        /// 
+        /// **Display (fr)** --- EmailDistributionListContact ID
+        /// 
+        /// **Description (en)** --- Contains the unique "identifier on each row of the EmailDistributionListContacts table
+        /// 
+        /// **Description (fr)** --- Contient l'identifiant unique sur chaque ligne de la table EmailDistributionListContacts
+        /// </returns>
         [Key]
         [CSSPDisplayEN(DisplayEN = "EmailDistributionListContact ID")]
         [CSSPDisplayFR(DisplayFR = "EmailDistributionListContact ID")]
@@ -37,19 +55,213 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "EmailDistributionList", ExistPlurial = "s", ExistFieldID = "EmailDistributionListID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Email distribution list")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste de distribution des courriels")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the EmailDistributionList table representing the email distribution list")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table EmailDistributionList représentant la liste de distribution des courriels")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Email distribution list
+        /// 
+        /// **Display (fr)** --- Liste de distribution des courriels
+        /// 
+        /// **Description (en)** --- Link to the EmailDistributionList table representing the email distribution list
+        /// 
+        /// **Description (fr)** --- Lien à la table EmailDistributionList représentant la liste de distribution des courriels
+        /// </returns>
         [CSSPExist(ExistTypeName = "EmailDistributionList", ExistPlurial = "s", ExistFieldID = "EmailDistributionListID")]
+        [CSSPDisplayEN(DisplayEN = "Email distribution list")]
+        [CSSPDisplayFR(DisplayFR = "Liste de distribution des courriels")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the EmailDistributionList table representing the email distribution list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table EmailDistributionList représentant la liste de distribution des courriels")]
         public int EmailDistributionListID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "CC")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "CC")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Send email as CC")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Envoy courriel comme CC")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- CC
+        /// 
+        /// **Display (fr)** --- CC
+        /// 
+        /// **Description (en)** --- Send email as CC
+        /// 
+        /// **Description (fr)** --- Envoy courriel comme CC
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "CC")]
+        [CSSPDisplayFR(DisplayFR = "CC")]
+        [CSSPDescriptionEN(DescriptionEN = @"Send email as CC")]
+        [CSSPDescriptionFR(DescriptionFR = @"Envoy courriel comme CC")]
         public bool IsCC { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Name of the contact")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom du contact")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Name
+        /// 
+        /// **Display (fr)** --- Nom
+        /// 
+        /// **Description (en)** --- Name of the contact
+        /// 
+        /// **Description (fr)** --- Nom du contact
+        /// </returns>
         [StringLength(100)]
+        [CSSPDisplayEN(DisplayEN = "Name")]
+        [CSSPDisplayFR(DisplayFR = "Nom")]
+        [CSSPDescriptionEN(DescriptionEN = @"Name of the contact")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact")]
         public string Name { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Email")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Courriel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Email of the contact")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Courriel du contact")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Email
+        /// 
+        /// **Display (fr)** --- Courriel
+        /// 
+        /// **Description (en)** --- Email of the contact
+        /// 
+        /// **Description (fr)** --- Courriel du contact
+        /// </returns>
         [StringLength(200)]
         [DataType(DataType.EmailAddress)]
+        [CSSPDisplayEN(DisplayEN = "Email")]
+        [CSSPDisplayFR(DisplayFR = "Courriel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Email of the contact")]
+        [CSSPDescriptionFR(DescriptionFR = @"Courriel du contact")]
         public string Email { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "CMP Rainfall Seasonal")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Pluie Saisonnière PGC")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "CMP Rainfall Seasonal")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Pluie Saisonnière PGC")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- CMP Rainfall Seasonal
+        /// 
+        /// **Display (fr)** --- Pluie Saisonnière PGC
+        /// 
+        /// **Description (en)** --- CMP Rainfall Seasonal
+        /// 
+        /// **Description (fr)** --- Pluie Saisonnière PGC
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "CMP Rainfall Seasonal")]
+        [CSSPDisplayFR(DisplayFR = "Pluie Saisonnière PGC")]
+        [CSSPDescriptionEN(DescriptionEN = @"CMP Rainfall Seasonal")]
+        [CSSPDescriptionFR(DescriptionFR = @"Pluie Saisonnière PGC")]
         public bool CMPRainfallSeasonal { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "CMP Wastewater")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Eaux Usées PGC")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "CMP Wastewater")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Eaux usées PGC")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- CMP Wastewater
+        /// 
+        /// **Display (fr)** --- Eaux Usées PGC
+        /// 
+        /// **Description (en)** --- CMP Wastewater
+        /// 
+        /// **Description (fr)** --- Eaux usées PGC
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "CMP Wastewater")]
+        [CSSPDisplayFR(DisplayFR = "Eaux Usées PGC")]
+        [CSSPDescriptionEN(DescriptionEN = @"CMP Wastewater")]
+        [CSSPDescriptionFR(DescriptionFR = @"Eaux usées PGC")]
         public bool CMPWastewater { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Emergency Weather")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Pluie Urgence")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Emergency Weather")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Pluie Urgence")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Emergency Weather
+        /// 
+        /// **Display (fr)** --- Pluie Urgence
+        /// 
+        /// **Description (en)** --- Emergency Weather
+        /// 
+        /// **Description (fr)** --- Pluie Urgence
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Emergency Weather")]
+        [CSSPDisplayFR(DisplayFR = "Pluie Urgence")]
+        [CSSPDescriptionEN(DescriptionEN = @"Emergency Weather")]
+        [CSSPDescriptionFR(DescriptionFR = @"Pluie Urgence")]
         public bool EmergencyWeather { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Emergency Wastewater")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Eaux Usées Urgence")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Emergency Wastewater")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Eaux Usées Urgence")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Emergency Wastewater
+        /// 
+        /// **Display (fr)** --- Eaux Usées Urgence
+        /// 
+        /// **Description (en)** --- Emergency Wastewater
+        /// 
+        /// **Description (fr)** --- Eaux Usées Urgence
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Emergency Wastewater")]
+        [CSSPDisplayFR(DisplayFR = "Eaux Usées Urgence")]
+        [CSSPDescriptionEN(DescriptionEN = @"Emergency Wastewater")]
+        [CSSPDescriptionFR(DescriptionFR = @"Eaux Usées Urgence")]
         public bool EmergencyWastewater { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Reopening All Types")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Réouverture Tous Types")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Reopening All Types")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Réouverture Tous Types")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Reopening All Types
+        /// 
+        /// **Display (fr)** --- Réouverture Tous Types
+        /// 
+        /// **Description (en)** --- Reopening All Types
+        /// 
+        /// **Description (fr)** --- Réouverture Tous Types
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Reopening All Types")]
+        [CSSPDisplayFR(DisplayFR = "Réouverture Tous Types")]
+        [CSSPDescriptionEN(DescriptionEN = @"Reopening All Types")]
+        [CSSPDescriptionFR(DescriptionFR = @"Réouverture Tous Types")]
         public bool ReopeningAllTypes { get; set; }
         #endregion Properties in DB
 
@@ -67,7 +279,21 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update contact TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update contact TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du contact ayant fait le dernière changement")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Last update contact TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du contact ayant fait le dernière changement
+        /// 
+        /// **Description (en)** --- Last update contact TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du contact ayant fait le dernière changement
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
@@ -90,8 +316,22 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Report test")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Test report")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Report test description")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Description de test report")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Report test
+        /// 
+        /// **Display (fr)** --- Test report
+        /// 
+        /// **Description (en)** --- Report test description
+        /// 
+        /// **Description (fr)** --- Description de test report
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Report test")]

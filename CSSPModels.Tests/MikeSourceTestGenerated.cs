@@ -46,7 +46,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MikeSource_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MikeSourceID", "MikeSourceTVItemID", "IsContinuous", "Include", "IsRiver", "SourceNumberString", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MikeSourceID", "MikeSourceTVItemID", "IsContinuous", "Include", "IsRiver", "UseHydrometric", "HydrometricTVItemID", "DrainageArea_km2", "Factor", "SourceNumberString", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -82,7 +82,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MikeSource_A_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MikeSourceTVItemLanguage", "LastUpdateContactTVItemLanguage", "MikeSourceID", "MikeSourceTVItemID", "IsContinuous", "Include", "IsRiver", "SourceNumberString", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MikeSourceTVItemLanguage", "LastUpdateContactTVItemLanguage", "MikeSourceID", "MikeSourceTVItemID", "IsContinuous", "Include", "IsRiver", "UseHydrometric", "HydrometricTVItemID", "DrainageArea_km2", "Factor", "SourceNumberString", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -118,7 +118,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MikeSource_B_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MikeSourceReportTest", "MikeSourceTVItemLanguage", "LastUpdateContactTVItemLanguage", "MikeSourceID", "MikeSourceTVItemID", "IsContinuous", "Include", "IsRiver", "SourceNumberString", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MikeSourceReportTest", "MikeSourceTVItemLanguage", "LastUpdateContactTVItemLanguage", "MikeSourceID", "MikeSourceTVItemID", "IsContinuous", "Include", "IsRiver", "UseHydrometric", "HydrometricTVItemID", "DrainageArea_km2", "Factor", "SourceNumberString", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -277,21 +277,33 @@ namespace CSSPModels.Tests
                bool val5 = true;
                mikeSource.IsRiver = val5;
                Assert.AreEqual(val5, mikeSource.IsRiver);
-               string val6 = "Some text";
-               mikeSource.SourceNumberString = val6;
-               Assert.AreEqual(val6, mikeSource.SourceNumberString);
-               DateTime val7 = new DateTime(2010, 3, 4);
-               mikeSource.LastUpdateDate_UTC = val7;
-               Assert.AreEqual(val7, mikeSource.LastUpdateDate_UTC);
-               int val8 = 45;
-               mikeSource.LastUpdateContactTVItemID = val8;
-               Assert.AreEqual(val8, mikeSource.LastUpdateContactTVItemID);
-               bool val9 = true;
-               mikeSource.HasErrors = val9;
-               Assert.AreEqual(val9, mikeSource.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mikeSource.ValidationResults = val30;
-               Assert.AreEqual(val30, mikeSource.ValidationResults);
+               bool val6 = true;
+               mikeSource.UseHydrometric = val6;
+               Assert.AreEqual(val6, mikeSource.UseHydrometric);
+               int val7 = 45;
+               mikeSource.HydrometricTVItemID = val7;
+               Assert.AreEqual(val7, mikeSource.HydrometricTVItemID);
+               double val8 = 87.9D;
+               mikeSource.DrainageArea_km2 = val8;
+               Assert.AreEqual(val8, mikeSource.DrainageArea_km2);
+               double val9 = 87.9D;
+               mikeSource.Factor = val9;
+               Assert.AreEqual(val9, mikeSource.Factor);
+               string val10 = "Some text";
+               mikeSource.SourceNumberString = val10;
+               Assert.AreEqual(val10, mikeSource.SourceNumberString);
+               DateTime val11 = new DateTime(2010, 3, 4);
+               mikeSource.LastUpdateDate_UTC = val11;
+               Assert.AreEqual(val11, mikeSource.LastUpdateDate_UTC);
+               int val12 = 45;
+               mikeSource.LastUpdateContactTVItemID = val12;
+               Assert.AreEqual(val12, mikeSource.LastUpdateContactTVItemID);
+               bool val13 = true;
+               mikeSource.HasErrors = val13;
+               Assert.AreEqual(val13, mikeSource.HasErrors);
+               IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mikeSource.ValidationResults = val42;
+               Assert.AreEqual(val42, mikeSource.ValidationResults);
         }
         [TestMethod]
         public void MikeSource_A_Every_Property_Has_Get_Set_Test()
@@ -317,21 +329,33 @@ namespace CSSPModels.Tests
                bool val7 = true;
                mikeSource_A.IsRiver = val7;
                Assert.AreEqual(val7, mikeSource_A.IsRiver);
-               string val8 = "Some text";
-               mikeSource_A.SourceNumberString = val8;
-               Assert.AreEqual(val8, mikeSource_A.SourceNumberString);
-               DateTime val9 = new DateTime(2010, 3, 4);
-               mikeSource_A.LastUpdateDate_UTC = val9;
-               Assert.AreEqual(val9, mikeSource_A.LastUpdateDate_UTC);
-               int val10 = 45;
-               mikeSource_A.LastUpdateContactTVItemID = val10;
-               Assert.AreEqual(val10, mikeSource_A.LastUpdateContactTVItemID);
-               bool val11 = true;
-               mikeSource_A.HasErrors = val11;
-               Assert.AreEqual(val11, mikeSource_A.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mikeSource_A.ValidationResults = val36;
-               Assert.AreEqual(val36, mikeSource_A.ValidationResults);
+               bool val8 = true;
+               mikeSource_A.UseHydrometric = val8;
+               Assert.AreEqual(val8, mikeSource_A.UseHydrometric);
+               int val9 = 45;
+               mikeSource_A.HydrometricTVItemID = val9;
+               Assert.AreEqual(val9, mikeSource_A.HydrometricTVItemID);
+               double val10 = 87.9D;
+               mikeSource_A.DrainageArea_km2 = val10;
+               Assert.AreEqual(val10, mikeSource_A.DrainageArea_km2);
+               double val11 = 87.9D;
+               mikeSource_A.Factor = val11;
+               Assert.AreEqual(val11, mikeSource_A.Factor);
+               string val12 = "Some text";
+               mikeSource_A.SourceNumberString = val12;
+               Assert.AreEqual(val12, mikeSource_A.SourceNumberString);
+               DateTime val13 = new DateTime(2010, 3, 4);
+               mikeSource_A.LastUpdateDate_UTC = val13;
+               Assert.AreEqual(val13, mikeSource_A.LastUpdateDate_UTC);
+               int val14 = 45;
+               mikeSource_A.LastUpdateContactTVItemID = val14;
+               Assert.AreEqual(val14, mikeSource_A.LastUpdateContactTVItemID);
+               bool val15 = true;
+               mikeSource_A.HasErrors = val15;
+               Assert.AreEqual(val15, mikeSource_A.HasErrors);
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mikeSource_A.ValidationResults = val48;
+               Assert.AreEqual(val48, mikeSource_A.ValidationResults);
         }
         [TestMethod]
         public void MikeSource_B_Every_Property_Has_Get_Set_Test()
@@ -360,21 +384,33 @@ namespace CSSPModels.Tests
                bool val8 = true;
                mikeSource_B.IsRiver = val8;
                Assert.AreEqual(val8, mikeSource_B.IsRiver);
-               string val9 = "Some text";
-               mikeSource_B.SourceNumberString = val9;
-               Assert.AreEqual(val9, mikeSource_B.SourceNumberString);
-               DateTime val10 = new DateTime(2010, 3, 4);
-               mikeSource_B.LastUpdateDate_UTC = val10;
-               Assert.AreEqual(val10, mikeSource_B.LastUpdateDate_UTC);
-               int val11 = 45;
-               mikeSource_B.LastUpdateContactTVItemID = val11;
-               Assert.AreEqual(val11, mikeSource_B.LastUpdateContactTVItemID);
-               bool val12 = true;
-               mikeSource_B.HasErrors = val12;
-               Assert.AreEqual(val12, mikeSource_B.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mikeSource_B.ValidationResults = val39;
-               Assert.AreEqual(val39, mikeSource_B.ValidationResults);
+               bool val9 = true;
+               mikeSource_B.UseHydrometric = val9;
+               Assert.AreEqual(val9, mikeSource_B.UseHydrometric);
+               int val10 = 45;
+               mikeSource_B.HydrometricTVItemID = val10;
+               Assert.AreEqual(val10, mikeSource_B.HydrometricTVItemID);
+               double val11 = 87.9D;
+               mikeSource_B.DrainageArea_km2 = val11;
+               Assert.AreEqual(val11, mikeSource_B.DrainageArea_km2);
+               double val12 = 87.9D;
+               mikeSource_B.Factor = val12;
+               Assert.AreEqual(val12, mikeSource_B.Factor);
+               string val13 = "Some text";
+               mikeSource_B.SourceNumberString = val13;
+               Assert.AreEqual(val13, mikeSource_B.SourceNumberString);
+               DateTime val14 = new DateTime(2010, 3, 4);
+               mikeSource_B.LastUpdateDate_UTC = val14;
+               Assert.AreEqual(val14, mikeSource_B.LastUpdateDate_UTC);
+               int val15 = 45;
+               mikeSource_B.LastUpdateContactTVItemID = val15;
+               Assert.AreEqual(val15, mikeSource_B.LastUpdateContactTVItemID);
+               bool val16 = true;
+               mikeSource_B.HasErrors = val16;
+               Assert.AreEqual(val16, mikeSource_B.HasErrors);
+               IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mikeSource_B.ValidationResults = val51;
+               Assert.AreEqual(val51, mikeSource_B.ValidationResults);
         }
         #endregion Tests Functions public
     }

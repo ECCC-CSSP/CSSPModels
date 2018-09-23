@@ -46,7 +46,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMRun_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MWQMRunID", "SubsectorTVItemID", "MWQMRunTVItemID", "RunSampleType", "DateTime_Local", "RunNumber", "StartDateTime_Local", "EndDateTime_Local", "LabReceivedDateTime_Local", "TemperatureControl1_C", "TemperatureControl2_C", "SeaStateAtStart_BeaufortScale", "SeaStateAtEnd_BeaufortScale", "WaterLevelAtBrook_m", "WaveHightAtStart_m", "WaveHightAtEnd_m", "SampleCrewInitials", "AnalyzeMethod", "SampleMatrix", "Laboratory", "SampleStatus", "LabSampleApprovalContactTVItemID", "LabAnalyzeBath1IncubationStartDateTime_Local", "LabAnalyzeBath2IncubationStartDateTime_Local", "LabAnalyzeBath3IncubationStartDateTime_Local", "LabRunSampleApprovalDateTime_Local", "Tide_Start", "Tide_End", "RainDay0_mm", "RainDay1_mm", "RainDay2_mm", "RainDay3_mm", "RainDay4_mm", "RainDay5_mm", "RainDay6_mm", "RainDay7_mm", "RainDay8_mm", "RainDay9_mm", "RainDay10_mm", "DischargeDay0_m3_s", "DischargeDay1_m3_s", "DischargeDay2_m3_s", "DischargeDay3_m3_s", "DischargeDay4_m3_s", "DischargeDay5_m3_s", "DischargeDay6_m3_s", "DischargeDay7_m3_s", "DischargeDay8_m3_s", "DischargeDay9_m3_s", "DischargeDay10_m3_s", "RemoveFromStat", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MWQMRunID", "SubsectorTVItemID", "MWQMRunTVItemID", "RunSampleType", "DateTime_Local", "RunNumber", "StartDateTime_Local", "EndDateTime_Local", "LabReceivedDateTime_Local", "TemperatureControl1_C", "TemperatureControl2_C", "SeaStateAtStart_BeaufortScale", "SeaStateAtEnd_BeaufortScale", "WaterLevelAtBrook_m", "WaveHightAtStart_m", "WaveHightAtEnd_m", "SampleCrewInitials", "AnalyzeMethod", "SampleMatrix", "Laboratory", "SampleStatus", "LabSampleApprovalContactTVItemID", "LabAnalyzeBath1IncubationStartDateTime_Local", "LabAnalyzeBath2IncubationStartDateTime_Local", "LabAnalyzeBath3IncubationStartDateTime_Local", "LabRunSampleApprovalDateTime_Local", "Tide_Start", "Tide_End", "RainDay0_mm", "RainDay1_mm", "RainDay2_mm", "RainDay3_mm", "RainDay4_mm", "RainDay5_mm", "RainDay6_mm", "RainDay7_mm", "RainDay8_mm", "RainDay9_mm", "RainDay10_mm", "RemoveFromStat", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -82,7 +82,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMRun_A_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SubsectorTVItemLanguage", "MWQMRunTVItemLanguage", "LabSampleApprovalContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "RunSampleTypeText", "SeaStateAtStart_BeaufortScaleText", "SeaStateAtEnd_BeaufortScaleText", "AnalyzeMethodText", "SampleMatrixText", "LaboratoryText", "SampleStatusText", "Tide_StartText", "Tide_EndText", "MWQMRunID", "SubsectorTVItemID", "MWQMRunTVItemID", "RunSampleType", "DateTime_Local", "RunNumber", "StartDateTime_Local", "EndDateTime_Local", "LabReceivedDateTime_Local", "TemperatureControl1_C", "TemperatureControl2_C", "SeaStateAtStart_BeaufortScale", "SeaStateAtEnd_BeaufortScale", "WaterLevelAtBrook_m", "WaveHightAtStart_m", "WaveHightAtEnd_m", "SampleCrewInitials", "AnalyzeMethod", "SampleMatrix", "Laboratory", "SampleStatus", "LabSampleApprovalContactTVItemID", "LabAnalyzeBath1IncubationStartDateTime_Local", "LabAnalyzeBath2IncubationStartDateTime_Local", "LabAnalyzeBath3IncubationStartDateTime_Local", "LabRunSampleApprovalDateTime_Local", "Tide_Start", "Tide_End", "RainDay0_mm", "RainDay1_mm", "RainDay2_mm", "RainDay3_mm", "RainDay4_mm", "RainDay5_mm", "RainDay6_mm", "RainDay7_mm", "RainDay8_mm", "RainDay9_mm", "RainDay10_mm", "DischargeDay0_m3_s", "DischargeDay1_m3_s", "DischargeDay2_m3_s", "DischargeDay3_m3_s", "DischargeDay4_m3_s", "DischargeDay5_m3_s", "DischargeDay6_m3_s", "DischargeDay7_m3_s", "DischargeDay8_m3_s", "DischargeDay9_m3_s", "DischargeDay10_m3_s", "RemoveFromStat", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SubsectorTVItemLanguage", "MWQMRunTVItemLanguage", "LabSampleApprovalContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "RunSampleTypeText", "SeaStateAtStart_BeaufortScaleText", "SeaStateAtEnd_BeaufortScaleText", "AnalyzeMethodText", "SampleMatrixText", "LaboratoryText", "SampleStatusText", "Tide_StartText", "Tide_EndText", "MWQMRunID", "SubsectorTVItemID", "MWQMRunTVItemID", "RunSampleType", "DateTime_Local", "RunNumber", "StartDateTime_Local", "EndDateTime_Local", "LabReceivedDateTime_Local", "TemperatureControl1_C", "TemperatureControl2_C", "SeaStateAtStart_BeaufortScale", "SeaStateAtEnd_BeaufortScale", "WaterLevelAtBrook_m", "WaveHightAtStart_m", "WaveHightAtEnd_m", "SampleCrewInitials", "AnalyzeMethod", "SampleMatrix", "Laboratory", "SampleStatus", "LabSampleApprovalContactTVItemID", "LabAnalyzeBath1IncubationStartDateTime_Local", "LabAnalyzeBath2IncubationStartDateTime_Local", "LabAnalyzeBath3IncubationStartDateTime_Local", "LabRunSampleApprovalDateTime_Local", "Tide_Start", "Tide_End", "RainDay0_mm", "RainDay1_mm", "RainDay2_mm", "RainDay3_mm", "RainDay4_mm", "RainDay5_mm", "RainDay6_mm", "RainDay7_mm", "RainDay8_mm", "RainDay9_mm", "RainDay10_mm", "RemoveFromStat", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -118,7 +118,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMRun_B_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MWQMRunReportTest", "SubsectorTVItemLanguage", "MWQMRunTVItemLanguage", "LabSampleApprovalContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "RunSampleTypeText", "SeaStateAtStart_BeaufortScaleText", "SeaStateAtEnd_BeaufortScaleText", "AnalyzeMethodText", "SampleMatrixText", "LaboratoryText", "SampleStatusText", "Tide_StartText", "Tide_EndText", "MWQMRunID", "SubsectorTVItemID", "MWQMRunTVItemID", "RunSampleType", "DateTime_Local", "RunNumber", "StartDateTime_Local", "EndDateTime_Local", "LabReceivedDateTime_Local", "TemperatureControl1_C", "TemperatureControl2_C", "SeaStateAtStart_BeaufortScale", "SeaStateAtEnd_BeaufortScale", "WaterLevelAtBrook_m", "WaveHightAtStart_m", "WaveHightAtEnd_m", "SampleCrewInitials", "AnalyzeMethod", "SampleMatrix", "Laboratory", "SampleStatus", "LabSampleApprovalContactTVItemID", "LabAnalyzeBath1IncubationStartDateTime_Local", "LabAnalyzeBath2IncubationStartDateTime_Local", "LabAnalyzeBath3IncubationStartDateTime_Local", "LabRunSampleApprovalDateTime_Local", "Tide_Start", "Tide_End", "RainDay0_mm", "RainDay1_mm", "RainDay2_mm", "RainDay3_mm", "RainDay4_mm", "RainDay5_mm", "RainDay6_mm", "RainDay7_mm", "RainDay8_mm", "RainDay9_mm", "RainDay10_mm", "DischargeDay0_m3_s", "DischargeDay1_m3_s", "DischargeDay2_m3_s", "DischargeDay3_m3_s", "DischargeDay4_m3_s", "DischargeDay5_m3_s", "DischargeDay6_m3_s", "DischargeDay7_m3_s", "DischargeDay8_m3_s", "DischargeDay9_m3_s", "DischargeDay10_m3_s", "RemoveFromStat", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MWQMRunReportTest", "SubsectorTVItemLanguage", "MWQMRunTVItemLanguage", "LabSampleApprovalContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "RunSampleTypeText", "SeaStateAtStart_BeaufortScaleText", "SeaStateAtEnd_BeaufortScaleText", "AnalyzeMethodText", "SampleMatrixText", "LaboratoryText", "SampleStatusText", "Tide_StartText", "Tide_EndText", "MWQMRunID", "SubsectorTVItemID", "MWQMRunTVItemID", "RunSampleType", "DateTime_Local", "RunNumber", "StartDateTime_Local", "EndDateTime_Local", "LabReceivedDateTime_Local", "TemperatureControl1_C", "TemperatureControl2_C", "SeaStateAtStart_BeaufortScale", "SeaStateAtEnd_BeaufortScale", "WaterLevelAtBrook_m", "WaveHightAtStart_m", "WaveHightAtEnd_m", "SampleCrewInitials", "AnalyzeMethod", "SampleMatrix", "Laboratory", "SampleStatus", "LabSampleApprovalContactTVItemID", "LabAnalyzeBath1IncubationStartDateTime_Local", "LabAnalyzeBath2IncubationStartDateTime_Local", "LabAnalyzeBath3IncubationStartDateTime_Local", "LabRunSampleApprovalDateTime_Local", "Tide_Start", "Tide_End", "RainDay0_mm", "RainDay1_mm", "RainDay2_mm", "RainDay3_mm", "RainDay4_mm", "RainDay5_mm", "RainDay6_mm", "RainDay7_mm", "RainDay8_mm", "RainDay9_mm", "RainDay10_mm", "RemoveFromStat", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -379,54 +379,21 @@ namespace CSSPModels.Tests
                double val39 = 87.9D;
                mWQMRun.RainDay10_mm = val39;
                Assert.AreEqual(val39, mWQMRun.RainDay10_mm);
-               double val40 = 87.9D;
-               mWQMRun.DischargeDay0_m3_s = val40;
-               Assert.AreEqual(val40, mWQMRun.DischargeDay0_m3_s);
-               double val41 = 87.9D;
-               mWQMRun.DischargeDay1_m3_s = val41;
-               Assert.AreEqual(val41, mWQMRun.DischargeDay1_m3_s);
-               double val42 = 87.9D;
-               mWQMRun.DischargeDay2_m3_s = val42;
-               Assert.AreEqual(val42, mWQMRun.DischargeDay2_m3_s);
-               double val43 = 87.9D;
-               mWQMRun.DischargeDay3_m3_s = val43;
-               Assert.AreEqual(val43, mWQMRun.DischargeDay3_m3_s);
-               double val44 = 87.9D;
-               mWQMRun.DischargeDay4_m3_s = val44;
-               Assert.AreEqual(val44, mWQMRun.DischargeDay4_m3_s);
-               double val45 = 87.9D;
-               mWQMRun.DischargeDay5_m3_s = val45;
-               Assert.AreEqual(val45, mWQMRun.DischargeDay5_m3_s);
-               double val46 = 87.9D;
-               mWQMRun.DischargeDay6_m3_s = val46;
-               Assert.AreEqual(val46, mWQMRun.DischargeDay6_m3_s);
-               double val47 = 87.9D;
-               mWQMRun.DischargeDay7_m3_s = val47;
-               Assert.AreEqual(val47, mWQMRun.DischargeDay7_m3_s);
-               double val48 = 87.9D;
-               mWQMRun.DischargeDay8_m3_s = val48;
-               Assert.AreEqual(val48, mWQMRun.DischargeDay8_m3_s);
-               double val49 = 87.9D;
-               mWQMRun.DischargeDay9_m3_s = val49;
-               Assert.AreEqual(val49, mWQMRun.DischargeDay9_m3_s);
-               double val50 = 87.9D;
-               mWQMRun.DischargeDay10_m3_s = val50;
-               Assert.AreEqual(val50, mWQMRun.DischargeDay10_m3_s);
-               bool val51 = true;
-               mWQMRun.RemoveFromStat = val51;
-               Assert.AreEqual(val51, mWQMRun.RemoveFromStat);
-               DateTime val52 = new DateTime(2010, 3, 4);
-               mWQMRun.LastUpdateDate_UTC = val52;
-               Assert.AreEqual(val52, mWQMRun.LastUpdateDate_UTC);
-               int val53 = 45;
-               mWQMRun.LastUpdateContactTVItemID = val53;
-               Assert.AreEqual(val53, mWQMRun.LastUpdateContactTVItemID);
-               bool val54 = true;
-               mWQMRun.HasErrors = val54;
-               Assert.AreEqual(val54, mWQMRun.HasErrors);
-               IEnumerable<ValidationResult> val165 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMRun.ValidationResults = val165;
-               Assert.AreEqual(val165, mWQMRun.ValidationResults);
+               bool val40 = true;
+               mWQMRun.RemoveFromStat = val40;
+               Assert.AreEqual(val40, mWQMRun.RemoveFromStat);
+               DateTime val41 = new DateTime(2010, 3, 4);
+               mWQMRun.LastUpdateDate_UTC = val41;
+               Assert.AreEqual(val41, mWQMRun.LastUpdateDate_UTC);
+               int val42 = 45;
+               mWQMRun.LastUpdateContactTVItemID = val42;
+               Assert.AreEqual(val42, mWQMRun.LastUpdateContactTVItemID);
+               bool val43 = true;
+               mWQMRun.HasErrors = val43;
+               Assert.AreEqual(val43, mWQMRun.HasErrors);
+               IEnumerable<ValidationResult> val132 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mWQMRun.ValidationResults = val132;
+               Assert.AreEqual(val132, mWQMRun.ValidationResults);
         }
         [TestMethod]
         public void MWQMRun_A_Every_Property_Has_Get_Set_Test()
@@ -587,54 +554,21 @@ namespace CSSPModels.Tests
                double val52 = 87.9D;
                mWQMRun_A.RainDay10_mm = val52;
                Assert.AreEqual(val52, mWQMRun_A.RainDay10_mm);
-               double val53 = 87.9D;
-               mWQMRun_A.DischargeDay0_m3_s = val53;
-               Assert.AreEqual(val53, mWQMRun_A.DischargeDay0_m3_s);
-               double val54 = 87.9D;
-               mWQMRun_A.DischargeDay1_m3_s = val54;
-               Assert.AreEqual(val54, mWQMRun_A.DischargeDay1_m3_s);
-               double val55 = 87.9D;
-               mWQMRun_A.DischargeDay2_m3_s = val55;
-               Assert.AreEqual(val55, mWQMRun_A.DischargeDay2_m3_s);
-               double val56 = 87.9D;
-               mWQMRun_A.DischargeDay3_m3_s = val56;
-               Assert.AreEqual(val56, mWQMRun_A.DischargeDay3_m3_s);
-               double val57 = 87.9D;
-               mWQMRun_A.DischargeDay4_m3_s = val57;
-               Assert.AreEqual(val57, mWQMRun_A.DischargeDay4_m3_s);
-               double val58 = 87.9D;
-               mWQMRun_A.DischargeDay5_m3_s = val58;
-               Assert.AreEqual(val58, mWQMRun_A.DischargeDay5_m3_s);
-               double val59 = 87.9D;
-               mWQMRun_A.DischargeDay6_m3_s = val59;
-               Assert.AreEqual(val59, mWQMRun_A.DischargeDay6_m3_s);
-               double val60 = 87.9D;
-               mWQMRun_A.DischargeDay7_m3_s = val60;
-               Assert.AreEqual(val60, mWQMRun_A.DischargeDay7_m3_s);
-               double val61 = 87.9D;
-               mWQMRun_A.DischargeDay8_m3_s = val61;
-               Assert.AreEqual(val61, mWQMRun_A.DischargeDay8_m3_s);
-               double val62 = 87.9D;
-               mWQMRun_A.DischargeDay9_m3_s = val62;
-               Assert.AreEqual(val62, mWQMRun_A.DischargeDay9_m3_s);
-               double val63 = 87.9D;
-               mWQMRun_A.DischargeDay10_m3_s = val63;
-               Assert.AreEqual(val63, mWQMRun_A.DischargeDay10_m3_s);
-               bool val64 = true;
-               mWQMRun_A.RemoveFromStat = val64;
-               Assert.AreEqual(val64, mWQMRun_A.RemoveFromStat);
-               DateTime val65 = new DateTime(2010, 3, 4);
-               mWQMRun_A.LastUpdateDate_UTC = val65;
-               Assert.AreEqual(val65, mWQMRun_A.LastUpdateDate_UTC);
-               int val66 = 45;
-               mWQMRun_A.LastUpdateContactTVItemID = val66;
-               Assert.AreEqual(val66, mWQMRun_A.LastUpdateContactTVItemID);
-               bool val67 = true;
-               mWQMRun_A.HasErrors = val67;
-               Assert.AreEqual(val67, mWQMRun_A.HasErrors);
-               IEnumerable<ValidationResult> val204 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMRun_A.ValidationResults = val204;
-               Assert.AreEqual(val204, mWQMRun_A.ValidationResults);
+               bool val53 = true;
+               mWQMRun_A.RemoveFromStat = val53;
+               Assert.AreEqual(val53, mWQMRun_A.RemoveFromStat);
+               DateTime val54 = new DateTime(2010, 3, 4);
+               mWQMRun_A.LastUpdateDate_UTC = val54;
+               Assert.AreEqual(val54, mWQMRun_A.LastUpdateDate_UTC);
+               int val55 = 45;
+               mWQMRun_A.LastUpdateContactTVItemID = val55;
+               Assert.AreEqual(val55, mWQMRun_A.LastUpdateContactTVItemID);
+               bool val56 = true;
+               mWQMRun_A.HasErrors = val56;
+               Assert.AreEqual(val56, mWQMRun_A.HasErrors);
+               IEnumerable<ValidationResult> val171 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mWQMRun_A.ValidationResults = val171;
+               Assert.AreEqual(val171, mWQMRun_A.ValidationResults);
         }
         [TestMethod]
         public void MWQMRun_B_Every_Property_Has_Get_Set_Test()
@@ -798,54 +732,21 @@ namespace CSSPModels.Tests
                double val53 = 87.9D;
                mWQMRun_B.RainDay10_mm = val53;
                Assert.AreEqual(val53, mWQMRun_B.RainDay10_mm);
-               double val54 = 87.9D;
-               mWQMRun_B.DischargeDay0_m3_s = val54;
-               Assert.AreEqual(val54, mWQMRun_B.DischargeDay0_m3_s);
-               double val55 = 87.9D;
-               mWQMRun_B.DischargeDay1_m3_s = val55;
-               Assert.AreEqual(val55, mWQMRun_B.DischargeDay1_m3_s);
-               double val56 = 87.9D;
-               mWQMRun_B.DischargeDay2_m3_s = val56;
-               Assert.AreEqual(val56, mWQMRun_B.DischargeDay2_m3_s);
-               double val57 = 87.9D;
-               mWQMRun_B.DischargeDay3_m3_s = val57;
-               Assert.AreEqual(val57, mWQMRun_B.DischargeDay3_m3_s);
-               double val58 = 87.9D;
-               mWQMRun_B.DischargeDay4_m3_s = val58;
-               Assert.AreEqual(val58, mWQMRun_B.DischargeDay4_m3_s);
-               double val59 = 87.9D;
-               mWQMRun_B.DischargeDay5_m3_s = val59;
-               Assert.AreEqual(val59, mWQMRun_B.DischargeDay5_m3_s);
-               double val60 = 87.9D;
-               mWQMRun_B.DischargeDay6_m3_s = val60;
-               Assert.AreEqual(val60, mWQMRun_B.DischargeDay6_m3_s);
-               double val61 = 87.9D;
-               mWQMRun_B.DischargeDay7_m3_s = val61;
-               Assert.AreEqual(val61, mWQMRun_B.DischargeDay7_m3_s);
-               double val62 = 87.9D;
-               mWQMRun_B.DischargeDay8_m3_s = val62;
-               Assert.AreEqual(val62, mWQMRun_B.DischargeDay8_m3_s);
-               double val63 = 87.9D;
-               mWQMRun_B.DischargeDay9_m3_s = val63;
-               Assert.AreEqual(val63, mWQMRun_B.DischargeDay9_m3_s);
-               double val64 = 87.9D;
-               mWQMRun_B.DischargeDay10_m3_s = val64;
-               Assert.AreEqual(val64, mWQMRun_B.DischargeDay10_m3_s);
-               bool val65 = true;
-               mWQMRun_B.RemoveFromStat = val65;
-               Assert.AreEqual(val65, mWQMRun_B.RemoveFromStat);
-               DateTime val66 = new DateTime(2010, 3, 4);
-               mWQMRun_B.LastUpdateDate_UTC = val66;
-               Assert.AreEqual(val66, mWQMRun_B.LastUpdateDate_UTC);
-               int val67 = 45;
-               mWQMRun_B.LastUpdateContactTVItemID = val67;
-               Assert.AreEqual(val67, mWQMRun_B.LastUpdateContactTVItemID);
-               bool val68 = true;
-               mWQMRun_B.HasErrors = val68;
-               Assert.AreEqual(val68, mWQMRun_B.HasErrors);
-               IEnumerable<ValidationResult> val207 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMRun_B.ValidationResults = val207;
-               Assert.AreEqual(val207, mWQMRun_B.ValidationResults);
+               bool val54 = true;
+               mWQMRun_B.RemoveFromStat = val54;
+               Assert.AreEqual(val54, mWQMRun_B.RemoveFromStat);
+               DateTime val55 = new DateTime(2010, 3, 4);
+               mWQMRun_B.LastUpdateDate_UTC = val55;
+               Assert.AreEqual(val55, mWQMRun_B.LastUpdateDate_UTC);
+               int val56 = 45;
+               mWQMRun_B.LastUpdateContactTVItemID = val56;
+               Assert.AreEqual(val56, mWQMRun_B.LastUpdateContactTVItemID);
+               bool val57 = true;
+               mWQMRun_B.HasErrors = val57;
+               Assert.AreEqual(val57, mWQMRun_B.HasErrors);
+               IEnumerable<ValidationResult> val174 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               mWQMRun_B.ValidationResults = val174;
+               Assert.AreEqual(val174, mWQMRun_B.ValidationResults);
         }
         #endregion Tests Functions public
     }

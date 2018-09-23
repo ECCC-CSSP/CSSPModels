@@ -27,6 +27,24 @@ namespace CSSPModels
     public partial class ClimateSite : LastUpdate
     {
         #region Properties in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "ClimateSite ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "ClimateSite ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Contains the unique "identifier on each row of the ClimateSites table")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Contient l'identifiant unique sur chaque ligne de la table ClimateSites")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- ClimateSite ID
+        /// 
+        /// **Display (fr)** --- ClimateSite ID
+        /// 
+        /// **Description (en)** --- Contains the unique "identifier on each row of the ClimateSites table
+        /// 
+        /// **Description (fr)** --- Contient l'identifiant unique sur chaque ligne de la table ClimateSites
+        /// </returns>
         [Key]
         [CSSPDisplayEN(DisplayEN = "ClimateSite ID")]
         [CSSPDisplayFR(DisplayFR = "ClimateSite ID")]
@@ -39,31 +57,117 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>4 == ClimateSite</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "4")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "ClimateSite TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "ClimateSite TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table with the unique identifier")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems avec l'identifiant unique")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- ClimateSite TVItemID
+        /// 
+        /// **Display (fr)** --- ClimateSite TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table with the unique identifier
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems avec l'identifiant unique
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "4")]
         [CSSPDisplayEN(DisplayEN = "ClimateSite TVItemID")]
         [CSSPDisplayFR(DisplayFR = "ClimateSite TVItemID")]
         [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table with the unique identifier")]
         [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems avec l'identifiant unique")]
         public int ClimateSiteTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "ECDBID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "ECDBID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "ECDBID --- Environment Canada weather office web site unique id for the weather climate site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "ECDBID --- Site Web du bureau météorologique d'Environnement Canada identifiant le site de site climatatique")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- ECDBID
+        /// 
+        /// **Display (fr)** --- ECDBID
+        /// 
+        /// **Description (en)** --- ECDBID --- Environment Canada weather office web site unique id for the weather climate site
+        /// 
+        /// **Description (fr)** --- ECDBID --- Site Web du bureau météorologique d'Environnement Canada identifiant le site de site climatatique
+        /// </returns>
         [Range(1, 100000)]
         [CSSPDisplayEN(DisplayEN = "ECDBID")]
         [CSSPDisplayFR(DisplayFR = "ECDBID")]
         [CSSPDescriptionEN(DescriptionEN = @"ECDBID --- Environment Canada weather office web site unique id for the weather climate site")]
         [CSSPDescriptionFR(DescriptionFR = @"ECDBID --- Site Web du bureau météorologique d'Environnement Canada identifiant le site de site climatatique")]
         public int ECDBID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Climate site name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom du site climatique")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Climate site name is a unique name for the site given by Environment Canada")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom du site climatique est un nom unique pour le site donné par Environnement Canada")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Climate site name
+        /// 
+        /// **Display (fr)** --- Nom du site climatique
+        /// 
+        /// **Description (en)** --- Climate site name is a unique name for the site given by Environment Canada
+        /// 
+        /// **Description (fr)** --- Nom du site climatique est un nom unique pour le site donné par Environnement Canada
+        /// </returns>
         [StringLength(100)]
         [CSSPDisplayEN(DisplayEN = "Climate site name")]
         [CSSPDisplayFR(DisplayFR = "Nom du site climatique")]
         [CSSPDescriptionEN(DescriptionEN = @"Climate site name is a unique name for the site given by Environment Canada")]
         [CSSPDescriptionFR(DescriptionFR = @"Nom du site climatique est un nom unique pour le site donné par Environnement Canada")]
         public string ClimateSiteName { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Province")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Province")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Province identified by two letters initiales")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Province identifiée par les initiales de deux lettres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Province
+        /// 
+        /// **Display (fr)** --- Province
+        /// 
+        /// **Description (en)** --- Province identified by two letters initiales
+        /// 
+        /// **Description (fr)** --- Province identifiée par les initiales de deux lettres
+        /// </returns>
         [StringLength(4)]
         [CSSPDisplayEN(DisplayEN = "Province")]
         [CSSPDisplayFR(DisplayFR = "Province")]
         [CSSPDescriptionEN(DescriptionEN = @"Province identified by two letters initiales")]
         [CSSPDescriptionFR(DescriptionFR = @"Province identifiée par les initiales de deux lettres")]
         public string Province { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Elevation (m)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Élévation (m)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Elevation (m) is the elevation above mean sea level")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Élévation (m) est l'élévation au dessus du niveau moyen de la mer")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Elevation (m)
+        /// 
+        /// **Display (fr)** --- Élévation (m)
+        /// 
+        /// **Description (en)** --- Elevation (m) is the elevation above mean sea level
+        /// 
+        /// **Description (fr)** --- Élévation (m) est l'élévation au dessus du niveau moyen de la mer
+        /// </returns>
         [Range(0.0D, 10000.0D)]
         [CSSPDisplayEN(DisplayEN = "Elevation (m)")]
         [CSSPDisplayFR(DisplayFR = "Élévation (m)")]
@@ -73,8 +177,22 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Climate site ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Identifiant du site climatique")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Climate site ID is a unique ID for the climate site for Environment Canada")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Identifiant du site climatique est unique pour le site climatique pour Environnemement Canada")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Climate site ID
+        /// 
+        /// **Display (fr)** --- Identifiant du site climatique
+        /// 
+        /// **Description (en)** --- Climate site ID is a unique ID for the climate site for Environment Canada
+        /// 
+        /// **Description (fr)** --- Identifiant du site climatique est unique pour le site climatique pour Environnemement Canada
+        /// </returns>
         [StringLength(10)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Climate site ID")]
@@ -82,6 +200,24 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Climate site ID is a unique ID for the climate site for Environment Canada")]
         [CSSPDescriptionFR(DescriptionFR = @"Identifiant du site climatique est unique pour le site climatique pour Environnemement Canada")]
         public string ClimateID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "WMOID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "WMOID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "WMOID is a unique ID for the climate site for World Meteorological Office")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "WMOID est un identifiant unique pour le site climatique pour World Meteorological Office")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- WMOID
+        /// 
+        /// **Display (fr)** --- WMOID
+        /// 
+        /// **Description (en)** --- WMOID is a unique ID for the climate site for World Meteorological Office
+        /// 
+        /// **Description (fr)** --- WMOID est un identifiant unique pour le site climatique pour World Meteorological Office
+        /// </returns>
         [Range(1, 100000)]
         [CSSPDisplayEN(DisplayEN = "WMOID")]
         [CSSPDisplayFR(DisplayFR = "WMOID")]
@@ -91,8 +227,22 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TCID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TCID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "TCID is the identifier assigned by Transport Canada to identify meteorological reports from airport observing sites transmitted in real time in aviation formats.")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "TCID est l'identificateur attribué par Transports Canada pour identifier les rapports météorologiques provenant des stations localisées aux aéroports et sont transmis en temps réel dans des formats d'aviation.")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TCID
+        /// 
+        /// **Display (fr)** --- TCID
+        /// 
+        /// **Description (en)** --- TCID is the identifier assigned by Transport Canada to identify meteorological reports from airport observing sites transmitted in real time in aviation formats.
+        /// 
+        /// **Description (fr)** --- TCID est l'identificateur attribué par Transports Canada pour identifier les rapports météorologiques provenant des stations localisées aux aéroports et sont transmis en temps réel dans des formats d'aviation.
+        /// </returns>
         [StringLength(3)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "TCID")]
@@ -100,6 +250,24 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"TCID is the identifier assigned by Transport Canada to identify meteorological reports from airport observing sites transmitted in real time in aviation formats.")]
         [CSSPDescriptionFR(DescriptionFR = @"TCID est l'identificateur attribué par Transports Canada pour identifier les rapports météorologiques provenant des stations localisées aux aéroports et sont transmis en temps réel dans des formats d'aviation.")]
         public string TCID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Site provincial")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Provincial site")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Site provincial indicates if the climate site is a provincial site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Provincial site indique si le site climatique est un site provincial")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Site provincial
+        /// 
+        /// **Display (fr)** --- Provincial site
+        /// 
+        /// **Description (en)** --- Site provincial indicates if the climate site is a provincial site
+        /// 
+        /// **Description (fr)** --- Provincial site indique si le site climatique est un site provincial
+        /// </returns>
         [CSSPDisplayEN(DisplayEN = "Site provincial")]
         [CSSPDisplayFR(DisplayFR = "Provincial site")]
         [CSSPDescriptionEN(DescriptionEN = @"Site provincial indicates if the climate site is a provincial site")]
@@ -108,8 +276,22 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Site provincial")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Provincial site")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Site provincial indicates if the climate site is a provincial site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Provincial site indique si le site climatique est un site provincial")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Site provincial
+        /// 
+        /// **Display (fr)** --- Provincial site
+        /// 
+        /// **Description (en)** --- Site provincial indicates if the climate site is a provincial site
+        /// 
+        /// **Description (fr)** --- Provincial site indique si le site climatique est un site provincial
+        /// </returns>
         [StringLength(50)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Site provincial")]
@@ -117,6 +299,24 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Site provincial indicates if the climate site is a provincial site")]
         [CSSPDescriptionFR(DescriptionFR = @"Provincial site indique si le site climatique est un site provincial")]
         public string ProvSiteID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Time zone offset (hour)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Décalage du fuseau horaire (heure)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Time zone offset (hour)")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Décalage du fuseau horaire (heure)")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Time zone offset (hour)
+        /// 
+        /// **Display (fr)** --- Décalage du fuseau horaire (heure)
+        /// 
+        /// **Description (en)** --- Time zone offset (hour)
+        /// 
+        /// **Description (fr)** --- Décalage du fuseau horaire (heure)
+        /// </returns>
         [Range(-10.0D, 0.0D)]
         [CSSPDisplayEN(DisplayEN = "Time zone offset (hour)")]
         [CSSPDisplayFR(DisplayFR = "Décalage du fuseau horaire (heure)")]
@@ -126,8 +326,22 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "File description")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Description de filière")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "File description --- temporary field used while uploading data from Environment Canda weather office web site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Description de filière --- champ temporaire utilisé lors du téléchargement des données du site Web du bureau météorologique d'Environnement Canada")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- File description
+        /// 
+        /// **Display (fr)** --- Description de filière
+        /// 
+        /// **Description (en)** --- File description --- temporary field used while uploading data from Environment Canda weather office web site
+        /// 
+        /// **Description (fr)** --- Description de filière --- champ temporaire utilisé lors du téléchargement des données du site Web du bureau météorologique d'Environnement Canada
+        /// </returns>
         [StringLength(50)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "File description")]
@@ -139,7 +353,21 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Hourly start date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de départ des données horaires")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Hourly start date will contain null is the climate site does not have hourly data or the starting date of hourly data")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de départ des données horaires contiendra null si le site climatique n'a pas de données horaires ou la date de départ des données horaires")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Hourly start date
+        /// 
+        /// **Display (fr)** --- Date de départ des données horaires
+        /// 
+        /// **Description (en)** --- Hourly start date will contain null is the climate site does not have hourly data or the starting date of hourly data
+        /// 
+        /// **Description (fr)** --- Date de départ des données horaires contiendra null si le site climatique n'a pas de données horaires ou la date de départ des données horaires
+        /// </returns>
         [CSSPAfter(Year = 1980)]
         [CSSPDisplayEN(DisplayEN = "Hourly start date")]
         [CSSPDisplayFR(DisplayFR = "Date de départ des données horaires")]
@@ -150,13 +378,45 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Hourly end date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de fin des données horaires")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Hourly end date will contain null is the climate site does not have hourly data or the end date of hourly data")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de fin des données horaires contiendra null si le site climatique n'a pas de données horaires ou la date de fin des données horaires")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Hourly end date
+        /// 
+        /// **Display (fr)** --- Date de fin des données horaires
+        /// 
+        /// **Description (en)** --- Hourly end date will contain null is the climate site does not have hourly data or the end date of hourly data
+        /// 
+        /// **Description (fr)** --- Date de fin des données horaires contiendra null si le site climatique n'a pas de données horaires ou la date de fin des données horaires
+        /// </returns>
         [CSSPAfter(Year = 1980)]
         [CSSPDisplayEN(DisplayEN = "Hourly end date")]
         [CSSPDisplayFR(DisplayFR = "Date de fin des données horaires")]
         [CSSPDescriptionEN(DescriptionEN = @"Hourly end date will contain null is the climate site does not have hourly data or the end date of hourly data")]
         [CSSPDescriptionFR(DescriptionFR = @"Date de fin des données horaires contiendra null si le site climatique n'a pas de données horaires ou la date de fin des données horaires")]
         public DateTime? HourlyEndDate_Local { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Hourly now")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Horaire maintenant")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Hourly now indicates if there are hourly data at this date")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Horaire maintenant indique s'il y a des données horaires maintenant")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Hourly now
+        /// 
+        /// **Display (fr)** --- Horaire maintenant
+        /// 
+        /// **Description (en)** --- Hourly now indicates if there are hourly data at this date
+        /// 
+        /// **Description (fr)** --- Horaire maintenant indique s'il y a des données horaires maintenant
+        /// </returns>
         [CSSPDisplayEN(DisplayEN = "Hourly now")]
         [CSSPDisplayFR(DisplayFR = "Horaire maintenant")]
         [CSSPDescriptionEN(DescriptionEN = @"Hourly now indicates if there are hourly data at this date")]
@@ -166,7 +426,21 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Daily start date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de départ des données journalières")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Daily start date will contain null is the climate site does not have daily data or the start date of hourly data")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de départ des données journalières contiendra null si le site climatique n'a pas de données journalières ou la date de départ des données journalières")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Daily start date
+        /// 
+        /// **Display (fr)** --- Date de départ des données journalières
+        /// 
+        /// **Description (en)** --- Daily start date will contain null is the climate site does not have daily data or the start date of hourly data
+        /// 
+        /// **Description (fr)** --- Date de départ des données journalières contiendra null si le site climatique n'a pas de données journalières ou la date de départ des données journalières
+        /// </returns>
         [CSSPAfter(Year = 1980)]
         [CSSPDisplayEN(DisplayEN = "Daily start date")]
         [CSSPDisplayFR(DisplayFR = "Date de départ des données journalières")]
@@ -177,13 +451,45 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Daily end date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de fin des données journalières")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Daily end date will contain null is the climate site does not have daily data or the end date of hourly data")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de fin des données journalières contiendra null si le site climatique n'a pas de données journalières ou la date de fin des données journalières")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Daily end date
+        /// 
+        /// **Display (fr)** --- Date de fin des données journalières
+        /// 
+        /// **Description (en)** --- Daily end date will contain null is the climate site does not have daily data or the end date of hourly data
+        /// 
+        /// **Description (fr)** --- Date de fin des données journalières contiendra null si le site climatique n'a pas de données journalières ou la date de fin des données journalières
+        /// </returns>
         [CSSPAfter(Year = 1980)]
         [CSSPDisplayEN(DisplayEN = "Daily end date")]
         [CSSPDisplayFR(DisplayFR = "Date de fin des données journalières")]
         [CSSPDescriptionEN(DescriptionEN = @"Daily end date will contain null is the climate site does not have daily data or the end date of hourly data")]
         [CSSPDescriptionFR(DescriptionFR = @"Date de fin des données journalières contiendra null si le site climatique n'a pas de données journalières ou la date de fin des données journalières")]
         public DateTime? DailyEndDate_Local { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Daily now")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Jounalier maintenant")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Daily now indicates if there are daily data at this date")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Journalier maintenant indique s'il y a des données journalières maintenant")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Daily now
+        /// 
+        /// **Display (fr)** --- Jounalier maintenant
+        /// 
+        /// **Description (en)** --- Daily now indicates if there are daily data at this date
+        /// 
+        /// **Description (fr)** --- Journalier maintenant indique s'il y a des données journalières maintenant
+        /// </returns>
         [CSSPDisplayEN(DisplayEN = "Daily now")]
         [CSSPDisplayFR(DisplayFR = "Jounalier maintenant")]
         [CSSPDescriptionEN(DescriptionEN = @"Daily now indicates if there are daily data at this date")]
@@ -193,7 +499,21 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Monthly start date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de départ des données mensuelles")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Monthly start date will contain null is the climate site does not have monthly data or the start date of monthly data")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de départ des données mensuelles contiendra null si le site climatique n'a pas de données mensuelles ou la date de départ des données mensuelles")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Monthly start date
+        /// 
+        /// **Display (fr)** --- Date de départ des données mensuelles
+        /// 
+        /// **Description (en)** --- Monthly start date will contain null is the climate site does not have monthly data or the start date of monthly data
+        /// 
+        /// **Description (fr)** --- Date de départ des données mensuelles contiendra null si le site climatique n'a pas de données mensuelles ou la date de départ des données mensuelles
+        /// </returns>
         [CSSPAfter(Year = 1980)]
         [CSSPDisplayEN(DisplayEN = "Monthly start date")]
         [CSSPDisplayFR(DisplayFR = "Date de départ des données mensuelles")]
@@ -204,13 +524,45 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Monthly end date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de fin des données mensuelles")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Monthly end date will contain null is the climate site does not have monthly data or the end date of monthly data")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de fin des données mensuelles contiendra null si le site climatique n'a pas de données mensuelles ou la date de fin des données mensuelles")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Monthly end date
+        /// 
+        /// **Display (fr)** --- Date de fin des données mensuelles
+        /// 
+        /// **Description (en)** --- Monthly end date will contain null is the climate site does not have monthly data or the end date of monthly data
+        /// 
+        /// **Description (fr)** --- Date de fin des données mensuelles contiendra null si le site climatique n'a pas de données mensuelles ou la date de fin des données mensuelles
+        /// </returns>
         [CSSPAfter(Year = 1980)]
         [CSSPDisplayEN(DisplayEN = "Monthly end date")]
         [CSSPDisplayFR(DisplayFR = "Date de fin des données mensuelles")]
         [CSSPDescriptionEN(DescriptionEN = @"Monthly end date will contain null is the climate site does not have monthly data or the end date of monthly data")]
         [CSSPDescriptionFR(DescriptionFR = @"Date de fin des données mensuelles contiendra null si le site climatique n'a pas de données mensuelles ou la date de fin des données mensuelles")]
         public DateTime? MonthlyEndDate_Local { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Monthly now")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Mensuel maintenant")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Monthly now indicates if there are monthly data at this date")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Mensuel maintenant indique s'il y a des données mensuelles maintenant")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Monthly now
+        /// 
+        /// **Display (fr)** --- Mensuel maintenant
+        /// 
+        /// **Description (en)** --- Monthly now indicates if there are monthly data at this date
+        /// 
+        /// **Description (fr)** --- Mensuel maintenant indique s'il y a des données mensuelles maintenant
+        /// </returns>
         [CSSPDisplayEN(DisplayEN = "Monthly now")]
         [CSSPDisplayFR(DisplayFR = "Mensuel maintenant")]
         [CSSPDescriptionEN(DescriptionEN = @"Monthly now indicates if there are monthly data at this date")]
@@ -232,7 +584,21 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ClimateSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "ClimateSite TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage de ClimateSite")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "ClimateSite TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage de ClimateSite")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- ClimateSite TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage de ClimateSite
+        /// 
+        /// **Description (en)** --- ClimateSite TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage de ClimateSite
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ClimateSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "ClimateSite TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage de ClimateSite")]
@@ -243,7 +609,21 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update contact TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update contact TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du contact ayant fait le dernière changement")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Last update contact TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du contact ayant fait le dernière changement
+        /// 
+        /// **Description (en)** --- Last update contact TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du contact ayant fait le dernière changement
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
@@ -266,8 +646,22 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Report test")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Test report")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Report test description")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Description de test report")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Report test
+        /// 
+        /// **Display (fr)** --- Test report
+        /// 
+        /// **Description (en)** --- Report test description
+        /// 
+        /// **Description (fr)** --- Description de test report
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Report test")]

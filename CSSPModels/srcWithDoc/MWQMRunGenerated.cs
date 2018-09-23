@@ -18,7 +18,7 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MWQMRuns** : [MWQMRunID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_MWQMRunID), [SubsectorTVItemID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SubsectorTVItemID), [MWQMRunTVItemID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_MWQMRunTVItemID), [RunSampleType](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RunSampleType), [DateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_DateTime_Local), [RunNumber](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RunNumber), [StartDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_StartDateTime_Local), [EndDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_EndDateTime_Local), [LabReceivedDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabReceivedDateTime_Local), [TemperatureControl1_C](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_TemperatureControl1_C), [TemperatureControl2_C](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_TemperatureControl2_C), [SeaStateAtStart_BeaufortScale](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtStart_BeaufortScale), [SeaStateAtEnd_BeaufortScale](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtEnd_BeaufortScale), [WaterLevelAtBrook_m](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_WaterLevelAtBrook_m), [WaveHightAtStart_m](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_WaveHightAtStart_m), [WaveHightAtEnd_m](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_WaveHightAtEnd_m), [SampleCrewInitials](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleCrewInitials), [AnalyzeMethod](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_AnalyzeMethod), [SampleMatrix](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleMatrix), [Laboratory](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Laboratory), [SampleStatus](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleStatus), [LabSampleApprovalContactTVItemID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabSampleApprovalContactTVItemID), [LabAnalyzeBath1IncubationStartDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabAnalyzeBath1IncubationStartDateTime_Local), [LabAnalyzeBath2IncubationStartDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabAnalyzeBath2IncubationStartDateTime_Local), [LabAnalyzeBath3IncubationStartDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabAnalyzeBath3IncubationStartDateTime_Local), [LabRunSampleApprovalDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabRunSampleApprovalDateTime_Local), [Tide_Start](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_Start), [Tide_End](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_End), [RainDay0_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay0_mm), [RainDay1_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay1_mm), [RainDay2_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay2_mm), [RainDay3_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay3_mm), [RainDay4_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay4_mm), [RainDay5_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay5_mm), [RainDay6_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay6_mm), [RainDay7_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay7_mm), [RainDay8_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay8_mm), [RainDay9_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay9_mm), [RainDay10_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay10_mm), [DischargeDay0_m3_s](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_DischargeDay0_m3_s), [DischargeDay1_m3_s](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_DischargeDay1_m3_s), [DischargeDay2_m3_s](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_DischargeDay2_m3_s), [DischargeDay3_m3_s](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_DischargeDay3_m3_s), [DischargeDay4_m3_s](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_DischargeDay4_m3_s), [DischargeDay5_m3_s](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_DischargeDay5_m3_s), [DischargeDay6_m3_s](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_DischargeDay6_m3_s), [DischargeDay7_m3_s](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_DischargeDay7_m3_s), [DischargeDay8_m3_s](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_DischargeDay8_m3_s), [DischargeDay9_m3_s](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_DischargeDay9_m3_s), [DischargeDay10_m3_s](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_DischargeDay10_m3_s), [RemoveFromStat](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RemoveFromStat), [LastUpdateDate_UTC](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LastUpdateContactTVItemID), </para>
+    /// > <para>**DB properties for table MWQMRuns** : [MWQMRunID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_MWQMRunID), [SubsectorTVItemID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SubsectorTVItemID), [MWQMRunTVItemID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_MWQMRunTVItemID), [RunSampleType](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RunSampleType), [DateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_DateTime_Local), [RunNumber](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RunNumber), [StartDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_StartDateTime_Local), [EndDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_EndDateTime_Local), [LabReceivedDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabReceivedDateTime_Local), [TemperatureControl1_C](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_TemperatureControl1_C), [TemperatureControl2_C](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_TemperatureControl2_C), [SeaStateAtStart_BeaufortScale](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtStart_BeaufortScale), [SeaStateAtEnd_BeaufortScale](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtEnd_BeaufortScale), [WaterLevelAtBrook_m](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_WaterLevelAtBrook_m), [WaveHightAtStart_m](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_WaveHightAtStart_m), [WaveHightAtEnd_m](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_WaveHightAtEnd_m), [SampleCrewInitials](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleCrewInitials), [AnalyzeMethod](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_AnalyzeMethod), [SampleMatrix](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleMatrix), [Laboratory](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Laboratory), [SampleStatus](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleStatus), [LabSampleApprovalContactTVItemID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabSampleApprovalContactTVItemID), [LabAnalyzeBath1IncubationStartDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabAnalyzeBath1IncubationStartDateTime_Local), [LabAnalyzeBath2IncubationStartDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabAnalyzeBath2IncubationStartDateTime_Local), [LabAnalyzeBath3IncubationStartDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabAnalyzeBath3IncubationStartDateTime_Local), [LabRunSampleApprovalDateTime_Local](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LabRunSampleApprovalDateTime_Local), [Tide_Start](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_Start), [Tide_End](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_End), [RainDay0_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay0_mm), [RainDay1_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay1_mm), [RainDay2_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay2_mm), [RainDay3_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay3_mm), [RainDay4_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay4_mm), [RainDay5_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay5_mm), [RainDay6_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay6_mm), [RainDay7_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay7_mm), [RainDay8_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay8_mm), [RainDay9_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay9_mm), [RainDay10_mm](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RainDay10_mm), [RemoveFromStat](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RemoveFromStat), [LastUpdateDate_UTC](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_LastUpdateContactTVItemID), </para>
     /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_HasErrors), [ValidationResults](CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMRunService](CSSPServices.MWQMRunService.html)</para>
@@ -28,6 +28,24 @@ namespace CSSPModels
     public partial class MWQMRun : LastUpdate
     {
         #region Properties in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MWQMRun ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "MWQMRun ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Contains the unique "identifier on each row of the MWQMRuns table")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Contient l'identifiant unique sur chaque ligne de la table MWQMRuns")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MWQMRun ID
+        /// 
+        /// **Display (fr)** --- MWQMRun ID
+        /// 
+        /// **Description (en)** --- Contains the unique "identifier on each row of the MWQMRuns table
+        /// 
+        /// **Description (fr)** --- Contient l'identifiant unique sur chaque ligne de la table MWQMRuns
+        /// </returns>
         [Key]
         [CSSPDisplayEN(DisplayEN = "MWQMRun ID")]
         [CSSPDisplayFR(DisplayFR = "MWQMRun ID")]
@@ -240,28 +258,6 @@ namespace CSSPModels
         public double? RainDay9_mm { get; set; }
         [Range(0.0D, 300.0D)]
         public double? RainDay10_mm { get; set; }
-        [Range(0.0D, 300.0D)]
-        public double? DischargeDay0_m3_s { get; set; }
-        [Range(0.0D, 100000.0D)]
-        public double? DischargeDay1_m3_s { get; set; }
-        [Range(0.0D, 100000.0D)]
-        public double? DischargeDay2_m3_s { get; set; }
-        [Range(0.0D, 100000.0D)]
-        public double? DischargeDay3_m3_s { get; set; }
-        [Range(0.0D, 100000.0D)]
-        public double? DischargeDay4_m3_s { get; set; }
-        [Range(0.0D, 100000.0D)]
-        public double? DischargeDay5_m3_s { get; set; }
-        [Range(0.0D, 100000.0D)]
-        public double? DischargeDay6_m3_s { get; set; }
-        [Range(0.0D, 100000.0D)]
-        public double? DischargeDay7_m3_s { get; set; }
-        [Range(0.0D, 100000.0D)]
-        public double? DischargeDay8_m3_s { get; set; }
-        [Range(0.0D, 100000.0D)]
-        public double? DischargeDay9_m3_s { get; set; }
-        [Range(0.0D, 100000.0D)]
-        public double? DischargeDay10_m3_s { get; set; }
         public bool? RemoveFromStat { get; set; }
         #endregion Properties in DB
 
@@ -300,7 +296,21 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update contact TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update contact TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du contact ayant fait le dernière changement")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Last update contact TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du contact ayant fait le dernière changement
+        /// 
+        /// **Description (en)** --- Last update contact TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du contact ayant fait le dernière changement
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
@@ -404,8 +414,22 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Report test")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Test report")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Report test description")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Description de test report")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Report test
+        /// 
+        /// **Display (fr)** --- Test report
+        /// 
+        /// **Description (en)** --- Report test description
+        /// 
+        /// **Description (fr)** --- Description de test report
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Report test")]

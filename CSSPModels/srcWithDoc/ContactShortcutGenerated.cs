@@ -27,6 +27,24 @@ namespace CSSPModels
     public partial class ContactShortcut : LastUpdate
     {
         #region Properties in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "ContactShortcut ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "ContactShortcut ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Contains the unique "identifier on each row of the ContactShortcuts table")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Contient l'identifiant unique sur chaque ligne de la table ContactShortcuts")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- ContactShortcut ID
+        /// 
+        /// **Display (fr)** --- ContactShortcut ID
+        /// 
+        /// **Description (en)** --- Contains the unique "identifier on each row of the ContactShortcuts table
+        /// 
+        /// **Description (fr)** --- Contient l'identifiant unique sur chaque ligne de la table ContactShortcuts
+        /// </returns>
         [Key]
         [CSSPDisplayEN(DisplayEN = "ContactShortcut ID")]
         [CSSPDisplayFR(DisplayFR = "ContactShortcut ID")]
@@ -37,12 +55,74 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "Contact", ExistPlurial = "s", ExistFieldID = "ContactID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Contact ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Contact ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the Contacts table with the unique identifier")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table Contacts avec l'identifiant unique")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Contact ID
+        /// 
+        /// **Display (fr)** --- Contact ID
+        /// 
+        /// **Description (en)** --- Link to the Contacts table with the unique identifier
+        /// 
+        /// **Description (fr)** --- Lien à la table Contacts avec l'identifiant unique
+        /// </returns>
         [CSSPExist(ExistTypeName = "Contact", ExistPlurial = "s", ExistFieldID = "ContactID")]
+        [CSSPDisplayEN(DisplayEN = "Contact ID")]
+        [CSSPDisplayFR(DisplayFR = "Contact ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the Contacts table with the unique identifier")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table Contacts avec l'identifiant unique")]
         public int ContactID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Shortcut text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de raccourci")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Shortcut text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de raccourci")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Shortcut text
+        /// 
+        /// **Display (fr)** --- Texte de raccourci
+        /// 
+        /// **Description (en)** --- Shortcut text
+        /// 
+        /// **Description (fr)** --- Texte de raccourci
+        /// </returns>
         [StringLength(100)]
+        [CSSPDisplayEN(DisplayEN = "Shortcut text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de raccourci")]
+        [CSSPDescriptionEN(DescriptionEN = @"Shortcut text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de raccourci")]
         public string ShortCutText { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Shortcut address")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de l'address")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Shortcut address")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de l'address")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Shortcut address
+        /// 
+        /// **Display (fr)** --- Texte de l'address
+        /// 
+        /// **Description (en)** --- Shortcut address
+        /// 
+        /// **Description (fr)** --- Texte de l'address
+        /// </returns>
         [StringLength(200)]
+        [CSSPDisplayEN(DisplayEN = "Shortcut address")]
+        [CSSPDisplayFR(DisplayFR = "Texte de l'address")]
+        [CSSPDescriptionEN(DescriptionEN = @"Shortcut address")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de l'address")]
         public string ShortCutAddress { get; set; }
         #endregion Properties in DB
 
@@ -60,7 +140,21 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update contact TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update contact TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du contact ayant fait le dernière changement")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Last update contact TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du contact ayant fait le dernière changement
+        /// 
+        /// **Description (en)** --- Last update contact TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du contact ayant fait le dernière changement
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
@@ -83,8 +177,22 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Report test")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Test report")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Report test description")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Description de test report")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Report test
+        /// 
+        /// **Display (fr)** --- Test report
+        /// 
+        /// **Description (en)** --- Report test description
+        /// 
+        /// **Description (fr)** --- Description de test report
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Report test")]

@@ -46,7 +46,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void HydrometricDataValue_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "HydrometricDataValueID", "HydrometricSiteID", "DateTime_Local", "Keep", "StorageDataType", "HasBeenRead", "Flow_m3_s", "Level_m", "HourlyValues", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "HydrometricDataValueID", "HydrometricSiteID", "DateTime_Local", "Keep", "StorageDataType", "HasBeenRead", "Discharge_m3_s", "DischargeEntered_m3_s", "Level_m", "HourlyValues", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -82,7 +82,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void HydrometricDataValue_A_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "StorageDataTypeText", "HydrometricDataValueID", "HydrometricSiteID", "DateTime_Local", "Keep", "StorageDataType", "HasBeenRead", "Flow_m3_s", "Level_m", "HourlyValues", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "StorageDataTypeText", "HydrometricDataValueID", "HydrometricSiteID", "DateTime_Local", "Keep", "StorageDataType", "HasBeenRead", "Discharge_m3_s", "DischargeEntered_m3_s", "Level_m", "HourlyValues", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -118,7 +118,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void HydrometricDataValue_B_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "HydrometricDataValueReportTest", "LastUpdateContactTVItemLanguage", "StorageDataTypeText", "HydrometricDataValueID", "HydrometricSiteID", "DateTime_Local", "Keep", "StorageDataType", "HasBeenRead", "Flow_m3_s", "Level_m", "HourlyValues", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "HydrometricDataValueReportTest", "LastUpdateContactTVItemLanguage", "StorageDataTypeText", "HydrometricDataValueID", "HydrometricSiteID", "DateTime_Local", "Keep", "StorageDataType", "HasBeenRead", "Discharge_m3_s", "DischargeEntered_m3_s", "Level_m", "HourlyValues", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -281,26 +281,29 @@ namespace CSSPModels.Tests
                hydrometricDataValue.HasBeenRead = val6;
                Assert.AreEqual(val6, hydrometricDataValue.HasBeenRead);
                double val7 = 87.9D;
-               hydrometricDataValue.Flow_m3_s = val7;
-               Assert.AreEqual(val7, hydrometricDataValue.Flow_m3_s);
+               hydrometricDataValue.Discharge_m3_s = val7;
+               Assert.AreEqual(val7, hydrometricDataValue.Discharge_m3_s);
                double val8 = 87.9D;
-               hydrometricDataValue.Level_m = val8;
-               Assert.AreEqual(val8, hydrometricDataValue.Level_m);
-               string val9 = "Some text";
-               hydrometricDataValue.HourlyValues = val9;
-               Assert.AreEqual(val9, hydrometricDataValue.HourlyValues);
-               DateTime val10 = new DateTime(2010, 3, 4);
-               hydrometricDataValue.LastUpdateDate_UTC = val10;
-               Assert.AreEqual(val10, hydrometricDataValue.LastUpdateDate_UTC);
-               int val11 = 45;
-               hydrometricDataValue.LastUpdateContactTVItemID = val11;
-               Assert.AreEqual(val11, hydrometricDataValue.LastUpdateContactTVItemID);
-               bool val12 = true;
-               hydrometricDataValue.HasErrors = val12;
-               Assert.AreEqual(val12, hydrometricDataValue.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               hydrometricDataValue.ValidationResults = val39;
-               Assert.AreEqual(val39, hydrometricDataValue.ValidationResults);
+               hydrometricDataValue.DischargeEntered_m3_s = val8;
+               Assert.AreEqual(val8, hydrometricDataValue.DischargeEntered_m3_s);
+               double val9 = 87.9D;
+               hydrometricDataValue.Level_m = val9;
+               Assert.AreEqual(val9, hydrometricDataValue.Level_m);
+               string val10 = "Some text";
+               hydrometricDataValue.HourlyValues = val10;
+               Assert.AreEqual(val10, hydrometricDataValue.HourlyValues);
+               DateTime val11 = new DateTime(2010, 3, 4);
+               hydrometricDataValue.LastUpdateDate_UTC = val11;
+               Assert.AreEqual(val11, hydrometricDataValue.LastUpdateDate_UTC);
+               int val12 = 45;
+               hydrometricDataValue.LastUpdateContactTVItemID = val12;
+               Assert.AreEqual(val12, hydrometricDataValue.LastUpdateContactTVItemID);
+               bool val13 = true;
+               hydrometricDataValue.HasErrors = val13;
+               Assert.AreEqual(val13, hydrometricDataValue.HasErrors);
+               IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               hydrometricDataValue.ValidationResults = val42;
+               Assert.AreEqual(val42, hydrometricDataValue.ValidationResults);
         }
         [TestMethod]
         public void HydrometricDataValue_A_Every_Property_Has_Get_Set_Test()
@@ -330,26 +333,29 @@ namespace CSSPModels.Tests
                hydrometricDataValue_A.HasBeenRead = val8;
                Assert.AreEqual(val8, hydrometricDataValue_A.HasBeenRead);
                double val9 = 87.9D;
-               hydrometricDataValue_A.Flow_m3_s = val9;
-               Assert.AreEqual(val9, hydrometricDataValue_A.Flow_m3_s);
+               hydrometricDataValue_A.Discharge_m3_s = val9;
+               Assert.AreEqual(val9, hydrometricDataValue_A.Discharge_m3_s);
                double val10 = 87.9D;
-               hydrometricDataValue_A.Level_m = val10;
-               Assert.AreEqual(val10, hydrometricDataValue_A.Level_m);
-               string val11 = "Some text";
-               hydrometricDataValue_A.HourlyValues = val11;
-               Assert.AreEqual(val11, hydrometricDataValue_A.HourlyValues);
-               DateTime val12 = new DateTime(2010, 3, 4);
-               hydrometricDataValue_A.LastUpdateDate_UTC = val12;
-               Assert.AreEqual(val12, hydrometricDataValue_A.LastUpdateDate_UTC);
-               int val13 = 45;
-               hydrometricDataValue_A.LastUpdateContactTVItemID = val13;
-               Assert.AreEqual(val13, hydrometricDataValue_A.LastUpdateContactTVItemID);
-               bool val14 = true;
-               hydrometricDataValue_A.HasErrors = val14;
-               Assert.AreEqual(val14, hydrometricDataValue_A.HasErrors);
-               IEnumerable<ValidationResult> val45 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               hydrometricDataValue_A.ValidationResults = val45;
-               Assert.AreEqual(val45, hydrometricDataValue_A.ValidationResults);
+               hydrometricDataValue_A.DischargeEntered_m3_s = val10;
+               Assert.AreEqual(val10, hydrometricDataValue_A.DischargeEntered_m3_s);
+               double val11 = 87.9D;
+               hydrometricDataValue_A.Level_m = val11;
+               Assert.AreEqual(val11, hydrometricDataValue_A.Level_m);
+               string val12 = "Some text";
+               hydrometricDataValue_A.HourlyValues = val12;
+               Assert.AreEqual(val12, hydrometricDataValue_A.HourlyValues);
+               DateTime val13 = new DateTime(2010, 3, 4);
+               hydrometricDataValue_A.LastUpdateDate_UTC = val13;
+               Assert.AreEqual(val13, hydrometricDataValue_A.LastUpdateDate_UTC);
+               int val14 = 45;
+               hydrometricDataValue_A.LastUpdateContactTVItemID = val14;
+               Assert.AreEqual(val14, hydrometricDataValue_A.LastUpdateContactTVItemID);
+               bool val15 = true;
+               hydrometricDataValue_A.HasErrors = val15;
+               Assert.AreEqual(val15, hydrometricDataValue_A.HasErrors);
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               hydrometricDataValue_A.ValidationResults = val48;
+               Assert.AreEqual(val48, hydrometricDataValue_A.ValidationResults);
         }
         [TestMethod]
         public void HydrometricDataValue_B_Every_Property_Has_Get_Set_Test()
@@ -382,26 +388,29 @@ namespace CSSPModels.Tests
                hydrometricDataValue_B.HasBeenRead = val9;
                Assert.AreEqual(val9, hydrometricDataValue_B.HasBeenRead);
                double val10 = 87.9D;
-               hydrometricDataValue_B.Flow_m3_s = val10;
-               Assert.AreEqual(val10, hydrometricDataValue_B.Flow_m3_s);
+               hydrometricDataValue_B.Discharge_m3_s = val10;
+               Assert.AreEqual(val10, hydrometricDataValue_B.Discharge_m3_s);
                double val11 = 87.9D;
-               hydrometricDataValue_B.Level_m = val11;
-               Assert.AreEqual(val11, hydrometricDataValue_B.Level_m);
-               string val12 = "Some text";
-               hydrometricDataValue_B.HourlyValues = val12;
-               Assert.AreEqual(val12, hydrometricDataValue_B.HourlyValues);
-               DateTime val13 = new DateTime(2010, 3, 4);
-               hydrometricDataValue_B.LastUpdateDate_UTC = val13;
-               Assert.AreEqual(val13, hydrometricDataValue_B.LastUpdateDate_UTC);
-               int val14 = 45;
-               hydrometricDataValue_B.LastUpdateContactTVItemID = val14;
-               Assert.AreEqual(val14, hydrometricDataValue_B.LastUpdateContactTVItemID);
-               bool val15 = true;
-               hydrometricDataValue_B.HasErrors = val15;
-               Assert.AreEqual(val15, hydrometricDataValue_B.HasErrors);
-               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               hydrometricDataValue_B.ValidationResults = val48;
-               Assert.AreEqual(val48, hydrometricDataValue_B.ValidationResults);
+               hydrometricDataValue_B.DischargeEntered_m3_s = val11;
+               Assert.AreEqual(val11, hydrometricDataValue_B.DischargeEntered_m3_s);
+               double val12 = 87.9D;
+               hydrometricDataValue_B.Level_m = val12;
+               Assert.AreEqual(val12, hydrometricDataValue_B.Level_m);
+               string val13 = "Some text";
+               hydrometricDataValue_B.HourlyValues = val13;
+               Assert.AreEqual(val13, hydrometricDataValue_B.HourlyValues);
+               DateTime val14 = new DateTime(2010, 3, 4);
+               hydrometricDataValue_B.LastUpdateDate_UTC = val14;
+               Assert.AreEqual(val14, hydrometricDataValue_B.LastUpdateDate_UTC);
+               int val15 = 45;
+               hydrometricDataValue_B.LastUpdateContactTVItemID = val15;
+               Assert.AreEqual(val15, hydrometricDataValue_B.LastUpdateContactTVItemID);
+               bool val16 = true;
+               hydrometricDataValue_B.HasErrors = val16;
+               Assert.AreEqual(val16, hydrometricDataValue_B.HasErrors);
+               IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               hydrometricDataValue_B.ValidationResults = val51;
+               Assert.AreEqual(val51, hydrometricDataValue_B.ValidationResults);
         }
         #endregion Tests Functions public
     }

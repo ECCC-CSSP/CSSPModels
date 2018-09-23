@@ -28,6 +28,24 @@ namespace CSSPModels
     public partial class Contact : LastUpdate
     {
         #region Properties in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Contact ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Contact ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Contains the unique "identifier on each row of the Contacts table")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Contient l'identifiant unique sur chaque ligne de la table Contacts")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Contact ID
+        /// 
+        /// **Display (fr)** --- Contact ID
+        /// 
+        /// **Description (en)** --- Contains the unique "identifier on each row of the Contacts table
+        /// 
+        /// **Description (fr)** --- Contient l'identifiant unique sur chaque ligne de la table Contacts
+        /// </returns>
         [Key]
         [CSSPDisplayEN(DisplayEN = "Contact ID")]
         [CSSPDisplayFR(DisplayFR = "Contact ID")]
@@ -38,11 +56,25 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "AspNetUser", ExistPlurial = "s", ExistFieldID = "Id")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Id")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Id")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Contains the unique "identifier on each row of the AspNetUsers table")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Contient l'identifiant unique sur chaque ligne de la table AspNetUsers")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Id
+        /// 
+        /// **Display (fr)** --- Id
+        /// 
+        /// **Description (en)** --- Contains the unique "identifier on each row of the AspNetUsers table
+        /// 
+        /// **Description (fr)** --- Contient l'identifiant unique sur chaque ligne de la table AspNetUsers
+        /// </returns>
         [CSSPExist(ExistTypeName = "AspNetUser", ExistPlurial = "s", ExistFieldID = "Id")]
         [StringLength(128)]
-        [CSSPDisplayEN(DisplayEN = "ID")]
-        [CSSPDisplayFR(DisplayFR = "ID")]
+        [CSSPDisplayEN(DisplayEN = "Id")]
+        [CSSPDisplayFR(DisplayFR = "Id")]
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the AspNetUsers table")]
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table AspNetUsers")]
         public string Id { get; set; }
@@ -52,13 +84,45 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>5 == Contact</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Contact TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Contact TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table with the unique identifier")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems avec l'identifiant unique")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Contact TVItemID
+        /// 
+        /// **Display (fr)** --- Contact TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table with the unique identifier
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems avec l'identifiant unique
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
         [CSSPDisplayEN(DisplayEN = "Contact TVItemID")]
         [CSSPDisplayFR(DisplayFR = "Contact TVItemID")]
         [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table with the unique identifier")]
         [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems avec l'identifiant unique")]
         public int ContactTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Login email")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Courriel de connexion")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Login email for connecting to web site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Courriel de connexion pour le site web")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Login email
+        /// 
+        /// **Display (fr)** --- Courriel de connexion
+        /// 
+        /// **Description (en)** --- Login email for connecting to web site
+        /// 
+        /// **Description (fr)** --- Courriel de connexion pour le site web
+        /// </returns>
         [StringLength(255, MinimumLength = 6)]
         [DataType(DataType.EmailAddress)]
         [CSSPDisplayEN(DisplayEN = "Login email")]
@@ -66,12 +130,48 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Login email for connecting to web site")]
         [CSSPDescriptionFR(DescriptionFR = @"Courriel de connexion pour le site web")]
         public string LoginEmail { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "First name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Prénom")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "First name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Prénom")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- First name
+        /// 
+        /// **Display (fr)** --- Prénom
+        /// 
+        /// **Description (en)** --- First name
+        /// 
+        /// **Description (fr)** --- Prénom
+        /// </returns>
         [StringLength(100)]
         [CSSPDisplayEN(DisplayEN = "First name")]
         [CSSPDisplayFR(DisplayFR = "Prénom")]
         [CSSPDescriptionEN(DescriptionEN = @"First name")]
         [CSSPDescriptionFR(DescriptionFR = @"Prénom")]
         public string FirstName { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Last name
+        /// 
+        /// **Display (fr)** --- Nom
+        /// 
+        /// **Description (en)** --- Last name
+        /// 
+        /// **Description (fr)** --- Nom
+        /// </returns>
         [StringLength(100)]
         [CSSPDisplayEN(DisplayEN = "Last name")]
         [CSSPDisplayFR(DisplayFR = "Nom")]
@@ -81,8 +181,22 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Initial")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Initiale")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Initial")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Initiale")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Initial
+        /// 
+        /// **Display (fr)** --- Initiale
+        /// 
+        /// **Description (en)** --- Initial
+        /// 
+        /// **Description (fr)** --- Initiale
+        /// </returns>
         [StringLength(50)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Initial")]
@@ -90,6 +204,24 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Initial")]
         [CSSPDescriptionFR(DescriptionFR = @"Initiale")]
         public string Initial { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Web name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom Web")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Web name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom Web")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Web name
+        /// 
+        /// **Display (fr)** --- Nom Web
+        /// 
+        /// **Description (en)** --- Web name
+        /// 
+        /// **Description (fr)** --- Nom Web
+        /// </returns>
         [StringLength(100)]
         [CSSPDisplayEN(DisplayEN = "Web name")]
         [CSSPDisplayFR(DisplayFR = "Nom Web")]
@@ -100,8 +232,22 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Title")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Titre")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Title")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Titre")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Title
+        /// 
+        /// **Display (fr)** --- Titre
+        /// 
+        /// **Description (en)** --- Title
+        /// 
+        /// **Description (fr)** --- Titre
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Title")]
@@ -109,21 +255,93 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Title")]
         [CSSPDescriptionFR(DescriptionFR = @"Titre")]
         public ContactTitleEnum? ContactTitle { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Administrator")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Administrateur")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Administrator")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Administrateur")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Administrator
+        /// 
+        /// **Display (fr)** --- Administrateur
+        /// 
+        /// **Description (en)** --- Administrator
+        /// 
+        /// **Description (fr)** --- Administrateur
+        /// </returns>
         [CSSPDisplayEN(DisplayEN = "Administrator")]
         [CSSPDisplayFR(DisplayFR = "Administrateur")]
         [CSSPDescriptionEN(DescriptionEN = @"Administrator")]
         [CSSPDescriptionFR(DescriptionFR = @"Administrateur")]
         public bool IsAdmin { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Email validated")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Courriel validé")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Email validated")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Courriel validé")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Email validated
+        /// 
+        /// **Display (fr)** --- Courriel validé
+        /// 
+        /// **Description (en)** --- Email validated
+        /// 
+        /// **Description (fr)** --- Courriel validé
+        /// </returns>
         [CSSPDisplayEN(DisplayEN = "Email validated")]
         [CSSPDisplayFR(DisplayFR = "Courriel validé")]
         [CSSPDescriptionEN(DescriptionEN = @"Email validated")]
         [CSSPDescriptionFR(DescriptionFR = @"Courriel validé")]
         public bool EmailValidated { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Disabled")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Déactivé")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Disabled")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Déactivé")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Disabled
+        /// 
+        /// **Display (fr)** --- Déactivé
+        /// 
+        /// **Description (en)** --- Disabled
+        /// 
+        /// **Description (fr)** --- Déactivé
+        /// </returns>
         [CSSPDisplayEN(DisplayEN = "Disabled")]
         [CSSPDisplayFR(DisplayFR = "Déactivé")]
         [CSSPDescriptionEN(DescriptionEN = @"Disabled")]
         [CSSPDescriptionFR(DescriptionFR = @"Déactivé")]
         public bool Disabled { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Is new")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Est nouveau")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Is new")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Est nouveau")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Is new
+        /// 
+        /// **Display (fr)** --- Est nouveau
+        /// 
+        /// **Description (en)** --- Is new
+        /// 
+        /// **Description (fr)** --- Est nouveau
+        /// </returns>
         [CSSPDisplayEN(DisplayEN = "Is new")]
         [CSSPDisplayFR(DisplayFR = "Est nouveau")]
         [CSSPDescriptionEN(DescriptionEN = @"Is new")]
@@ -132,8 +350,22 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling planner for provinces")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Planificateur d'échantillonnage pour les provinces")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sampling planner for provinces")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Planificateur d'échantillonnage pour les provinces")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sampling planner for provinces
+        /// 
+        /// **Display (fr)** --- Planificateur d'échantillonnage pour les provinces
+        /// 
+        /// **Description (en)** --- Sampling planner for provinces
+        /// 
+        /// **Description (fr)** --- Planificateur d'échantillonnage pour les provinces
+        /// </returns>
         [StringLength(200)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Sampling planner for provinces")]
@@ -164,7 +396,21 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update contact TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update contact TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du contact ayant fait le dernière changement")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Last update contact TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du contact ayant fait le dernière changement
+        /// 
+        /// **Description (en)** --- Last update contact TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du contact ayant fait le dernière changement
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
@@ -203,8 +449,22 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Report test")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Test report")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Report test description")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Description de test report")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Report test
+        /// 
+        /// **Display (fr)** --- Test report
+        /// 
+        /// **Description (en)** --- Report test description
+        /// 
+        /// **Description (fr)** --- Description de test report
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Report test")]

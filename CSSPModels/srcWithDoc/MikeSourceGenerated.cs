@@ -18,7 +18,7 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MikeSources** : [MikeSourceID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_MikeSourceID), [MikeSourceTVItemID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_MikeSourceTVItemID), [IsContinuous](CSSPModels.MikeSource.html#CSSPModels_MikeSource_IsContinuous), [Include](CSSPModels.MikeSource.html#CSSPModels_MikeSource_Include), [IsRiver](CSSPModels.MikeSource.html#CSSPModels_MikeSource_IsRiver), [SourceNumberString](CSSPModels.MikeSource.html#CSSPModels_MikeSource_SourceNumberString), [LastUpdateDate_UTC](CSSPModels.MikeSource.html#CSSPModels_MikeSource_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_LastUpdateContactTVItemID), </para>
+    /// > <para>**DB properties for table MikeSources** : [MikeSourceID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_MikeSourceID), [MikeSourceTVItemID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_MikeSourceTVItemID), [IsContinuous](CSSPModels.MikeSource.html#CSSPModels_MikeSource_IsContinuous), [Include](CSSPModels.MikeSource.html#CSSPModels_MikeSource_Include), [IsRiver](CSSPModels.MikeSource.html#CSSPModels_MikeSource_IsRiver), [UseHydrometric](CSSPModels.MikeSource.html#CSSPModels_MikeSource_UseHydrometric), [HydrometricTVItemID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_HydrometricTVItemID), [DrainageArea_km2](CSSPModels.MikeSource.html#CSSPModels_MikeSource_DrainageArea_km2), [Factor](CSSPModels.MikeSource.html#CSSPModels_MikeSource_Factor), [SourceNumberString](CSSPModels.MikeSource.html#CSSPModels_MikeSource_SourceNumberString), [LastUpdateDate_UTC](CSSPModels.MikeSource.html#CSSPModels_MikeSource_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_LastUpdateContactTVItemID), </para>
     /// > <para>**Other properties** : [HasErrors](CSSPModels.MikeSource.html#CSSPModels_MikeSource_HasErrors), [ValidationResults](CSSPModels.MikeSource.html#CSSPModels_MikeSource_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeSourceService](CSSPServices.MikeSourceService.html)</para>
@@ -27,6 +27,24 @@ namespace CSSPModels
     public partial class MikeSource : LastUpdate
     {
         #region Properties in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MikeSource ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "MikeSource ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Contains the unique "identifier on each row of the MikeSources table")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Contient l'identifiant unique sur chaque ligne de la table MikeSources")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MikeSource ID
+        /// 
+        /// **Display (fr)** --- MikeSource ID
+        /// 
+        /// **Description (en)** --- Contains the unique "identifier on each row of the MikeSources table
+        /// 
+        /// **Description (fr)** --- Contient l'identifiant unique sur chaque ligne de la table MikeSources
+        /// </returns>
         [Key]
         [CSSPDisplayEN(DisplayEN = "MikeSource ID")]
         [CSSPDisplayFR(DisplayFR = "MikeSource ID")]
@@ -45,6 +63,20 @@ namespace CSSPModels
         public bool IsContinuous { get; set; }
         public bool Include { get; set; }
         public bool IsRiver { get; set; }
+        public bool UseHydrometric { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
+        /// > <para>9 == HydrometricSite</para>
+        /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "9")]</para>
+        /// </summary>
+        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "9")]
+        public int? HydrometricTVItemID { get; set; }
+        [Range(0.0D, 1000000.0D)]
+        public double? DrainageArea_km2 { get; set; }
+        [Range(0.0D, 1000000.0D)]
+        public double? Factor { get; set; }
         [StringLength(50)]
         public string SourceNumberString { get; set; }
         #endregion Properties in DB
@@ -70,7 +102,21 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update contact TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update contact TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du contact ayant fait le dernière changement")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Last update contact TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du contact ayant fait le dernière changement
+        /// 
+        /// **Description (en)** --- Last update contact TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du contact ayant fait le dernière changement
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
@@ -93,8 +139,22 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Report test")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Test report")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Report test description")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Description de test report")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Report test
+        /// 
+        /// **Display (fr)** --- Test report
+        /// 
+        /// **Description (en)** --- Report test description
+        /// 
+        /// **Description (fr)** --- Description de test report
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Report test")]

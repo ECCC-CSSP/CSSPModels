@@ -49,16 +49,22 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Les données stockées ont été lues sur le site Web du bureau météorologique")]
         public bool HasBeenRead { get; set; }
         [Range(0.0D, 100000.0D)]
-        [CSSPDisplayEN(DisplayEN = "Flows (Discharges) in m3/s")]
-        [CSSPDisplayFR(DisplayFR = "Débits en m3/s")]
-        [CSSPDescriptionEN(DescriptionEN = @"Flows (Discharges) in m3/s")]
-        [CSSPDescriptionFR(DescriptionFR = @"Débits en m3/s")]
-        public double? Flow_m3_s { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Discharges (m3/s)")]
+        [CSSPDisplayFR(DisplayFR = "Débits (m3/s)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Discharges  in cubic meters per second")]
+        [CSSPDescriptionFR(DescriptionFR = @"Débits en mètres cube par second")]
+        public double? Discharge_m3_s { get; set; }
+        [Range(0.0D, 100000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Discharges entered (m3/s)")]
+        [CSSPDisplayFR(DisplayFR = "Débits entrés (m3/s)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Discharges entered in cubic meters per second")]
+        [CSSPDescriptionFR(DescriptionFR = @"Débits entrés en mètres cube par second")]
+        public double? DischargeEntered_m3_s { get; set; }
         [Range(0.0D, 10000.0D)]
-        [CSSPDisplayEN(DisplayEN = "Levels in m")]
-        [CSSPDisplayFR(DisplayFR = "Niveaux en m")]
-        [CSSPDescriptionEN(DescriptionEN = @"Levels in m")]
-        [CSSPDescriptionFR(DescriptionFR = @"Niveaux en m")]
+        [CSSPDisplayEN(DisplayEN = "Levels (m)")]
+        [CSSPDisplayFR(DisplayFR = "Niveaux (m)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Levels in meters")]
+        [CSSPDescriptionFR(DescriptionFR = @"Niveaux en meters")]
         public double? Level_m { get; set; }
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "String containing hourly values")]
