@@ -21,11 +21,27 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table MWQMSampleLanguages")]
         public int MWQMSampleLanguageID { get; set; }
         [CSSPExist(ExistTypeName = "MWQMSample", ExistPlurial = "s", ExistFieldID = "MWQMSampleID")]
+        [CSSPDisplayEN(DisplayEN = "MWQM sample ID")]
+        [CSSPDisplayFR(DisplayFR = "Échantillon MWQM ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the MWQMSamples table representing the MWQM sample")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table MWQMSamples représentant l'échantillon MWQM")]
         public int MWQMSampleID { get; set; }
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Language")]
+        [CSSPDisplayFR(DisplayFR = "Langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language of item")]
+        [CSSPDescriptionFR(DescriptionFR = @"Langage de l'item")]
         public LanguageEnum Language { get; set; }
+        [CSSPDisplayEN(DisplayEN = "MWQM sample note")]
+        [CSSPDisplayFR(DisplayFR = "Échantillon MWQM note")]
+        [CSSPDescriptionEN(DescriptionEN = @"MWQM sample note")]
+        [CSSPDescriptionFR(DescriptionFR = @"Échantillon MWQM note")]
         public string MWQMSampleNote { get; set; }
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Translation status")]
+        [CSSPDisplayFR(DisplayFR = "Le statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status of the comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction du commentaire")]
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
@@ -47,6 +63,10 @@ namespace CSSPModels
         public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Language text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language text [en, fr]")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du langage [en, fr]")]
         public string LanguageText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatus")]
         [CSSPAllowNull]

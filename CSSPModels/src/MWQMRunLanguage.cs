@@ -21,14 +21,38 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table MWQMRunLanguages")]
         public int MWQMRunLanguageID { get; set; }
         [CSSPExist(ExistTypeName = "MWQMRun", ExistPlurial = "s", ExistFieldID = "MWQMRunID")]
+        [CSSPDisplayEN(DisplayEN = "MWQM run")]
+        [CSSPDisplayFR(DisplayFR = "Tournée de MWQM (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the MWQMRuns table representing the MWQM run")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table MWQMRuns représentant la tournée MWQM (fr)")]
         public int MWQMRunID { get; set; }
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Language")]
+        [CSSPDisplayFR(DisplayFR = "Langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language of item")]
+        [CSSPDescriptionFR(DescriptionFR = @"Langage de l'item")]
         public LanguageEnum Language { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Run comment")]
+        [CSSPDisplayFR(DisplayFR = "Commentaire de la tournée")]
+        [CSSPDescriptionEN(DescriptionEN = @"Run comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Commentaire de la tournée")]
         public string RunComment { get; set; }
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Translation status")]
+        [CSSPDisplayFR(DisplayFR = "Le statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status of the run comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction du commentaire de la tournée")]
         public TranslationStatusEnum TranslationStatusRunComment { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Run weather comment")]
+        [CSSPDisplayFR(DisplayFR = "Commentaire de la météo de la tournée")]
+        [CSSPDescriptionEN(DescriptionEN = @"Run weather comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Commentaire de la météo de la tournée")]
         public string RunWeatherComment { get; set; }
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Translation status")]
+        [CSSPDisplayFR(DisplayFR = "Le statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status of the run weather comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction du commentaire de la météo de la tournée")]
         public TranslationStatusEnum TranslationStatusRunWeatherComment { get; set; }
         #endregion Properties in DB
 
@@ -50,12 +74,24 @@ namespace CSSPModels
         public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Language text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language text [en, fr]")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du langage [en, fr]")]
         public string LanguageText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusRunComment")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Translation status text")]
+        [CSSPDisplayFR(DisplayFR = "Le texte du statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status text of the run comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le texte du statut de la traduction du commentaire de la tournée")]
         public string TranslationStatusRunCommentText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusRunWeatherComment")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Translation status text")]
+        [CSSPDisplayFR(DisplayFR = "Le texte du statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status text of the run weather comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le texte du statut de la traduction du commentaire de la météo de la tournée")]
         public string TranslationStatusRunWeatherCommentText { get; set; }
         #endregion Properties
 
