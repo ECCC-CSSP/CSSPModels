@@ -21,11 +21,23 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table MWQMSubsectors")]
         public int MWQMSubsectorID { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "20")]
+        [CSSPDisplayEN(DisplayEN = "MWQM subsector TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Sous-secteur MWQM TVItemID (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing MWQM subsector")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le sous-secteur MWQM (fr)")]
         public int MWQMSubsectorTVItemID { get; set; }
         [StringLength(20)]
+        [CSSPDisplayEN(DisplayEN = "Subsector historic key")]
+        [CSSPDisplayFR(DisplayFR = "Clef du sous-secteur historique")]
+        [CSSPDescriptionEN(DescriptionEN = @"Subsector historic key")]
+        [CSSPDescriptionFR(DescriptionFR = @"Clef du sous-secteur historique")]
         public string SubsectorHistoricKey { get; set; }
         [StringLength(20)]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Tide location SID text")]
+        [CSSPDisplayFR(DisplayFR = "Identifiants SID des site de marées")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tide location SID text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Identifiants SID des site de marées")]
         public string TideLocationSIDText { get; set; }
         #endregion Properties in DB
 
@@ -40,6 +52,10 @@ namespace CSSPModels
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSubsectorTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Subsector TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du sous-secteur")]
+        [CSSPDescriptionEN(DescriptionEN = @"Subsector TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du sous-secteur")]
         public TVItemLanguage SubsectorTVItemLanguage { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]

@@ -21,8 +21,16 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table SamplingPlanSubsectors")]
         public int SamplingPlanSubsectorID { get; set; }
         [CSSPExist(ExistTypeName = "SamplingPlan", ExistPlurial = "s", ExistFieldID = "SamplingPlanID")]
+        [CSSPDisplayEN(DisplayEN = "Sampling plan ID")]
+        [CSSPDisplayFR(DisplayFR = "Plan d'échantillonnage ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the SamplingPlan table representing the sampling plan")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table SamplingPlan représentant le plan d'échantillonnage")]
         public int SamplingPlanID { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "20")]
+        [CSSPDisplayEN(DisplayEN = "Subsector TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Sous-secteur TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the subsector")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le sous-secteur")]
         public int SubsectorTVItemID { get; set; }
         #endregion Properties in DB
 
@@ -37,6 +45,10 @@ namespace CSSPModels
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SubsectorTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Subsector TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du sous-secteur")]
+        [CSSPDescriptionEN(DescriptionEN = @"Subsector TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du sous-secteur")]
         public TVItemLanguage SubsectorTVItemLanguage { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]

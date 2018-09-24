@@ -21,12 +21,28 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table MWQMSitePolSourceSites")]
         public int MWQMSitePolSourceSiteID { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "16")]
+        [CSSPDisplayEN(DisplayEN = "MWQM site TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Site MWQM TVItemID (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing MWQM site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le site MWQM (fr)")]
         public int MWQMSiteTVItemID { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "17")]
+        [CSSPDisplayEN(DisplayEN = "Pollution source site TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Site de source de pollution TVItemID (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing pollution source site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le site de source de pollution (fr)")]
         public int PolSourceSiteTVItemID { get; set; }
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Tree view type")]
+        [CSSPDisplayFR(DisplayFR = "Type arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view type (can be infrastructure or pollution source site)")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type d'arbre visuel (peut être infrastructure ou site de source de pollution")]
         public TVTypeEnum TVType { get; set; }
         [StringLength(4000)]
+        [CSSPDisplayEN(DisplayEN = "Link reasons")]
+        [CSSPDisplayFR(DisplayFR = "Raisons du lien")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link reasons")]
+        [CSSPDescriptionFR(DescriptionFR = @"Raisons du lien")]
         public string LinkReasons { get; set; }
         #endregion Properties in DB
 
@@ -41,8 +57,16 @@ namespace CSSPModels
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "MWQM site TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du site MWQM (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"MWQM site TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du site MWQM (fr)")]
         public TVItemLanguage MWQMSiteTVItemLanguage { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "PolSourceSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Pollution source site TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du site de source de pollution")]
+        [CSSPDescriptionEN(DescriptionEN = @"Pollution source site TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du site de source de pollution")]
         public TVItemLanguage PolSourceSiteTVItemLanguage { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
@@ -51,6 +75,10 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
         public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
+        [CSSPDisplayEN(DisplayEN = "Tree view type text")]
+        [CSSPDisplayFR(DisplayFR = "Text de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Text de l'arbre visuel")]
         public string TVTypeText { get; set; }
         #endregion Properties
 

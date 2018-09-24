@@ -21,16 +21,40 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table ReportSectionLanguages")]
         public int ReportSectionLanguageID { get; set; }
         [CSSPExist(ExistTypeName = "ReportSection", ExistPlurial = "s", ExistFieldID = "ReportSectionID")]
+        [CSSPDisplayEN(DisplayEN = "Report section ID")]
+        [CSSPDisplayFR(DisplayFR = "Section du raport ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the ReportSections table representing the report section")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table ReportSections représentant la section du raport")]
         public int ReportSectionID { get; set; }
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Language")]
+        [CSSPDisplayFR(DisplayFR = "Langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language of item")]
+        [CSSPDescriptionFR(DescriptionFR = @"Langage de l'item")]
         public LanguageEnum Language { get; set; }
         [StringLength(100)]
+        [CSSPDisplayEN(DisplayEN = "Report section name")]
+        [CSSPDisplayFR(DisplayFR = "Nom de la section du raport")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report section name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom de la section du raport")]
         public string ReportSectionName { get; set; }
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Translation status")]
+        [CSSPDisplayFR(DisplayFR = "Le statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status of the report section name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction du nom de la section du raport")]
         public TranslationStatusEnum TranslationStatusReportSectionName { get; set; }
         [StringLength(10000)]
+        [CSSPDisplayEN(DisplayEN = "Report section text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de la section du raport")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report section text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de la section du raport")]
         public string ReportSectionText { get; set; }
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Translation status")]
+        [CSSPDisplayFR(DisplayFR = "Le statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status of the report section text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction du texte de la section du raport")]
         public TranslationStatusEnum TranslationStatusReportSectionText { get; set; }
         #endregion Properties in DB
 
@@ -52,12 +76,24 @@ namespace CSSPModels
         public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Language text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language text [en, fr]")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du langage [en, fr]")]
         public string LanguageText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusReportSectionName")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Translation status text")]
+        [CSSPDisplayFR(DisplayFR = "Le texte du statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status text of the report section name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le texte du statut de la traduction du nom de la section du raport")]
         public string TranslationStatusReportSectionNameText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusReportSectionText")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Translation status text")]
+        [CSSPDisplayFR(DisplayFR = "Le texte du statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status text of the report section text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le texte du statut de la traduction du texte de la section du raport")]
         public string TranslationStatusReportSectionNameTextText { get; set; }
         #endregion Properties
 
