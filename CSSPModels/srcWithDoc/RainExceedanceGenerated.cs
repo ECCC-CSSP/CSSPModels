@@ -51,37 +51,271 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the RainExceedances table")]
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table RainExceedances")]
         public int RainExceedanceID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Year round")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Toute l'année")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Year round")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Toute l'année")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Year round
+        /// 
+        /// **Display (fr)** --- Toute l'année
+        /// 
+        /// **Description (en)** --- Year round
+        /// 
+        /// **Description (fr)** --- Toute l'année
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Year round")]
+        [CSSPDisplayFR(DisplayFR = "Toute l'année")]
+        [CSSPDescriptionEN(DescriptionEN = @"Year round")]
+        [CSSPDescriptionFR(DescriptionFR = @"Toute l'année")]
         public bool YearRound { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Start date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de début")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Start date")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de début")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Start date
+        /// 
+        /// **Display (fr)** --- Date de début
+        /// 
+        /// **Description (en)** --- Start date
+        /// 
+        /// **Description (fr)** --- Date de début
+        /// </returns>
         [CSSPAfter(Year = 1980)]
+        [CSSPDisplayEN(DisplayEN = "Start date")]
+        [CSSPDisplayFR(DisplayFR = "Date de début")]
+        [CSSPDescriptionEN(DescriptionEN = @"Start date")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date de début")]
         public DateTime? StartDate_Local { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
         /// > <para>[[CSSPBigger](CSSPModels.CSSPBiggerAttribute.html)(OtherField = "StartDate_Local")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "End date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de fin")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "End date")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de fin")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- End date
+        /// 
+        /// **Display (fr)** --- Date de fin
+        /// 
+        /// **Description (en)** --- End date
+        /// 
+        /// **Description (fr)** --- Date de fin
+        /// </returns>
         [CSSPAfter(Year = 1980)]
         [CSSPBigger(OtherField = "StartDate_Local")]
+        [CSSPDisplayEN(DisplayEN = "End date")]
+        [CSSPDisplayFR(DisplayFR = "Date de fin")]
+        [CSSPDescriptionEN(DescriptionEN = @"End date")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date de fin")]
         public DateTime? EndDate_Local { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Rain maximum (mm)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Pluie maximale (mm)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Rain maximum in millimètres")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Pluie maximale en millimètres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Rain maximum (mm)
+        /// 
+        /// **Display (fr)** --- Pluie maximale (mm)
+        /// 
+        /// **Description (en)** --- Rain maximum in millimètres
+        /// 
+        /// **Description (fr)** --- Pluie maximale en millimètres
+        /// </returns>
         [Range(0.0D, 300.0D)]
+        [CSSPDisplayEN(DisplayEN = "Rain maximum (mm)")]
+        [CSSPDisplayFR(DisplayFR = "Pluie maximale (mm)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Rain maximum in millimètres")]
+        [CSSPDescriptionFR(DescriptionFR = @"Pluie maximale en millimètres")]
         public double? RainMaximum_mm { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Rain extreme (mm)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Pluie extrême (mm)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Rain extreme in millimètres")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Pluie extrême en millimètres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Rain extreme (mm)
+        /// 
+        /// **Display (fr)** --- Pluie extrême (mm)
+        /// 
+        /// **Description (en)** --- Rain extreme in millimètres
+        /// 
+        /// **Description (fr)** --- Pluie extrême en millimètres
+        /// </returns>
         [Range(0.0D, 300.0D)]
+        [CSSPDisplayEN(DisplayEN = "Rain extreme (mm)")]
+        [CSSPDisplayFR(DisplayFR = "Pluie extrême (mm)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Rain extreme in millimètres")]
+        [CSSPDescriptionFR(DescriptionFR = @"Pluie extrême en millimètres")]
         public double? RainExtreme_mm { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Number of days prior to start")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nombre de jour avant le début")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of days prior to start")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre de jour avant le début")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Number of days prior to start
+        /// 
+        /// **Display (fr)** --- Nombre de jour avant le début
+        /// 
+        /// **Description (en)** --- Number of days prior to start
+        /// 
+        /// **Description (fr)** --- Nombre de jour avant le début
+        /// </returns>
         [Range(0, 30)]
+        [CSSPDisplayEN(DisplayEN = "Number of days prior to start")]
+        [CSSPDisplayFR(DisplayFR = "Nombre de jour avant le début")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of days prior to start")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre de jour avant le début")]
         public int DaysPriorToStart { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Repeat every year")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Répété tous les années")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Repeat every year")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Répété tous les années")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Repeat every year
+        /// 
+        /// **Display (fr)** --- Répété tous les années
+        /// 
+        /// **Description (en)** --- Repeat every year
+        /// 
+        /// **Description (fr)** --- Répété tous les années
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Repeat every year")]
+        [CSSPDisplayFR(DisplayFR = "Répété tous les années")]
+        [CSSPDescriptionEN(DescriptionEN = @"Repeat every year")]
+        [CSSPDescriptionFR(DescriptionFR = @"Répété tous les années")]
         public bool RepeatEveryYear { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Province TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Province TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the province")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant la province")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Province TVItemID
+        /// 
+        /// **Display (fr)** --- Province TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the province
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant la province
+        /// </returns>
         [StringLength(250)]
+        [CSSPDisplayEN(DisplayEN = "Province TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Province TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the province")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant la province")]
         public string ProvinceTVItemIDs { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Subsector TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Sous-secteur TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the subsector")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant le sous-secteur")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Subsector TVItemID
+        /// 
+        /// **Display (fr)** --- Sous-secteur TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the subsector
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant le sous-secteur
+        /// </returns>
         [StringLength(250)]
+        [CSSPDisplayEN(DisplayEN = "Subsector TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Sous-secteur TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the subsector")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le sous-secteur")]
         public string SubsectorTVItemIDs { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Climate site TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Site climatique TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the climate site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant le site climatique")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Climate site TVItemID
+        /// 
+        /// **Display (fr)** --- Site climatique TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the climate site
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant le site climatique
+        /// </returns>
         [StringLength(250)]
+        [CSSPDisplayEN(DisplayEN = "Climate site TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Site climatique TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the climate site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le site climatique")]
         public string ClimateSiteTVItemIDs { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Email distribution list ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste de distribution de courriels ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the email distribution list")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant la liste de distribution de courriels")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Email distribution list ID
+        /// 
+        /// **Display (fr)** --- Liste de distribution de courriels ID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the email distribution list
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant la liste de distribution de courriels
+        /// </returns>
         [StringLength(250)]
+        [CSSPDisplayEN(DisplayEN = "Email distribution list ID")]
+        [CSSPDisplayFR(DisplayFR = "Liste de distribution de courriels ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the email distribution list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant la liste de distribution de courriels")]
         public string EmailDistributionListIDs { get; set; }
         #endregion Properties in DB
 
@@ -95,6 +329,81 @@ namespace CSSPModels
     public partial class RainExceedance_A : RainExceedance
     {
         #region Properties
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Province TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage de la province")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Province TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage de la province")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Province TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage de la province
+        /// 
+        /// **Description (en)** --- Province TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage de la province
+        /// </returns>
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Province TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de la province")]
+        [CSSPDescriptionEN(DescriptionEN = @"Province TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de la province")]
+        public TVItemLanguage ProvinceTVItemLanguage { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Subsector TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du sous-secteur")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Subsector TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du sous-secteur")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Subsector TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du sous-secteur
+        /// 
+        /// **Description (en)** --- Subsector TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du sous-secteur
+        /// </returns>
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Subsector TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du sous-secteur")]
+        [CSSPDescriptionEN(DescriptionEN = @"Subsector TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du sous-secteur")]
+        public TVItemLanguage SubsectorTVItemLanguage { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Climate site TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du site climatique")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Climate site TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du site climatique")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Climate site TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du site climatique
+        /// 
+        /// **Description (en)** --- Climate site TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du site climatique
+        /// </returns>
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Climate site TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du site climatique")]
+        [CSSPDescriptionEN(DescriptionEN = @"Climate site TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du site climatique")]
+        public TVItemLanguage ClimateSiteTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>

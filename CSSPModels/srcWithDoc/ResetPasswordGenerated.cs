@@ -51,16 +51,79 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the ResetPasswords table")]
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table ResetPasswords")]
         public int ResetPasswordID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Email")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Courriel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Email")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Courriel")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Email
+        /// 
+        /// **Display (fr)** --- Courriel
+        /// 
+        /// **Description (en)** --- Email
+        /// 
+        /// **Description (fr)** --- Courriel
+        /// </returns>
         [StringLength(256)]
+        [DataType(DataType.EmailAddress)]
+        [CSSPDisplayEN(DisplayEN = "Email")]
+        [CSSPDisplayFR(DisplayFR = "Courriel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Email")]
+        [CSSPDescriptionFR(DescriptionFR = @"Courriel")]
         public string Email { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Expire date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date d'expiration")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Expire date")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date d'expiration")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Expire date
+        /// 
+        /// **Display (fr)** --- Date d'expiration
+        /// 
+        /// **Description (en)** --- Expire date
+        /// 
+        /// **Description (fr)** --- Date d'expiration
+        /// </returns>
         [CSSPAfter(Year = 1980)]
+        [CSSPDisplayEN(DisplayEN = "Expire date")]
+        [CSSPDisplayFR(DisplayFR = "Date d'expiration")]
+        [CSSPDescriptionEN(DescriptionEN = @"Expire date")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date d'expiration")]
         public DateTime ExpireDate_Local { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Code")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Code")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Code --- is a unique code generated on the server and sent to the user email")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date d'expiration --- est un code généré par le serveur et envoyé au courriel de l'utilisateur")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Code
+        /// 
+        /// **Display (fr)** --- Code
+        /// 
+        /// **Description (en)** --- Code --- is a unique code generated on the server and sent to the user email
+        /// 
+        /// **Description (fr)** --- Date d'expiration --- est un code généré par le serveur et envoyé au courriel de l'utilisateur
+        /// </returns>
         [StringLength(8)]
+        [CSSPDisplayEN(DisplayEN = "Code")]
+        [CSSPDisplayFR(DisplayFR = "Code")]
+        [CSSPDescriptionEN(DescriptionEN = @"Code --- is a unique code generated on the server and sent to the user email")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date d'expiration --- est un code généré par le serveur et envoyé au courriel de l'utilisateur")]
         public string Code { get; set; }
         #endregion Properties in DB
 

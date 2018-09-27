@@ -55,20 +55,170 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "VPScenario", ExistPlurial = "s", ExistFieldID = "VPScenarioID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "VP scenario ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Scénario VP ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the VPScenarios table representing the visual plumes scenario")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table VPScenarios représentant le scénario visual plumes")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- VP scenario ID
+        /// 
+        /// **Display (fr)** --- Scénario VP ID
+        /// 
+        /// **Description (en)** --- Link to the VPScenarios table representing the visual plumes scenario
+        /// 
+        /// **Description (fr)** --- Lien à la table VPScenarios représentant le scénario visual plumes
+        /// </returns>
         [CSSPExist(ExistTypeName = "VPScenario", ExistPlurial = "s", ExistFieldID = "VPScenarioID")]
+        [CSSPDisplayEN(DisplayEN = "VP scenario ID")]
+        [CSSPDisplayFR(DisplayFR = "Scénario VP ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the VPScenarios table representing the visual plumes scenario")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table VPScenarios représentant le scénario visual plumes")]
         public int VPScenarioID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Ordinal")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Ordre")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Ordinal")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Ordre")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Ordinal
+        /// 
+        /// **Display (fr)** --- Ordre
+        /// 
+        /// **Description (en)** --- Ordinal
+        /// 
+        /// **Description (fr)** --- Ordre
+        /// </returns>
         [Range(0, 1000)]
+        [CSSPDisplayEN(DisplayEN = "Ordinal")]
+        [CSSPDisplayFR(DisplayFR = "Ordre")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ordinal")]
+        [CSSPDescriptionFR(DescriptionFR = @"Ordre")]
         public int Ordinal { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Concentration (MPN / 100 mL)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Concentration (NPP / 100 mL)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Concentration in most probable number per 100 milli-Litres")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Concentration en nombre le plus probable par 100 milli-Litres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Concentration (MPN / 100 mL)
+        /// 
+        /// **Display (fr)** --- Concentration (NPP / 100 mL)
+        /// 
+        /// **Description (en)** --- Concentration in most probable number per 100 milli-Litres
+        /// 
+        /// **Description (fr)** --- Concentration en nombre le plus probable par 100 milli-Litres
+        /// </returns>
         [Range(0, 10000000)]
+        [CSSPDisplayEN(DisplayEN = "Concentration (MPN / 100 mL)")]
+        [CSSPDisplayFR(DisplayFR = "Concentration (NPP / 100 mL)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Concentration in most probable number per 100 milli-Litres")]
+        [CSSPDescriptionFR(DescriptionFR = @"Concentration en nombre le plus probable par 100 milli-Litres")]
         public int Concentration_MPN_100ml { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Dilution")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Dilution")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Dilution")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Dilution")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Dilution
+        /// 
+        /// **Display (fr)** --- Dilution
+        /// 
+        /// **Description (en)** --- Dilution
+        /// 
+        /// **Description (fr)** --- Dilution
+        /// </returns>
         [Range(0.0D, 1000000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Dilution")]
+        [CSSPDisplayFR(DisplayFR = "Dilution")]
+        [CSSPDescriptionEN(DescriptionEN = @"Dilution")]
+        [CSSPDescriptionFR(DescriptionFR = @"Dilution")]
         public double Dilution { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Far field width (m)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Largeur au loin (m)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Far field width in meters")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Largeur au loin en métres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Far field width (m)
+        /// 
+        /// **Display (fr)** --- Largeur au loin (m)
+        /// 
+        /// **Description (en)** --- Far field width in meters
+        /// 
+        /// **Description (fr)** --- Largeur au loin en métres
+        /// </returns>
         [Range(0.0D, 10000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Far field width (m)")]
+        [CSSPDisplayFR(DisplayFR = "Largeur au loin (m)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Far field width in meters")]
+        [CSSPDescriptionFR(DescriptionFR = @"Largeur au loin en métres")]
         public double FarFieldWidth_m { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Dispersion distance (m)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Distance de dispersion (m)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Dispersion distance in meters")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Distance de dispersion en métres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Dispersion distance (m)
+        /// 
+        /// **Display (fr)** --- Distance de dispersion (m)
+        /// 
+        /// **Description (en)** --- Dispersion distance in meters
+        /// 
+        /// **Description (fr)** --- Distance de dispersion en métres
+        /// </returns>
         [Range(0.0D, 100000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Dispersion distance (m)")]
+        [CSSPDisplayFR(DisplayFR = "Distance de dispersion (m)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Dispersion distance in meters")]
+        [CSSPDescriptionFR(DescriptionFR = @"Distance de dispersion en métres")]
         public double DispersionDistance_m { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Travel time (h)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Temps de dispersion (h)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Travel time in hours")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Temps de dispersion en heures")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Travel time (h)
+        /// 
+        /// **Display (fr)** --- Temps de dispersion (h)
+        /// 
+        /// **Description (en)** --- Travel time in hours
+        /// 
+        /// **Description (fr)** --- Temps de dispersion en heures
+        /// </returns>
         [Range(0.0D, 100.0D)]
+        [CSSPDisplayEN(DisplayEN = "Travel time (h)")]
+        [CSSPDisplayFR(DisplayFR = "Temps de dispersion (h)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Travel time in hours")]
+        [CSSPDescriptionFR(DescriptionFR = @"Temps de dispersion en heures")]
         public double TravelTime_hour { get; set; }
         #endregion Properties in DB
 

@@ -55,35 +55,195 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "ReportType", ExistPlurial = "s", ExistFieldID = "ReportTypeID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Report type ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de raport ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the ReportTypes table representing the report type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table ReportTypes représentant le type de raport")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Report type ID
+        /// 
+        /// **Display (fr)** --- Type de raport ID
+        /// 
+        /// **Description (en)** --- Link to the ReportTypes table representing the report type
+        /// 
+        /// **Description (fr)** --- Lien à la table ReportTypes représentant le type de raport
+        /// </returns>
         [CSSPExist(ExistTypeName = "ReportType", ExistPlurial = "s", ExistFieldID = "ReportTypeID")]
+        [CSSPDisplayEN(DisplayEN = "Report type ID")]
+        [CSSPDisplayFR(DisplayFR = "Type de raport ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the ReportTypes table representing the report type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table ReportTypes représentant le type de raport")]
         public int ReportTypeID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Item TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "L'item TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the item")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant l'item")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Item TVItemID
+        /// 
+        /// **Display (fr)** --- L'item TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the item
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant l'item
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID")]
+        [CSSPDisplayEN(DisplayEN = "Item TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "L'item TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the item")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant l'item")]
         public int? TVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Ordinal")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Ordre")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Ordinal")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Ordre")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Ordinal
+        /// 
+        /// **Display (fr)** --- Ordre
+        /// 
+        /// **Description (en)** --- Ordinal
+        /// 
+        /// **Description (fr)** --- Ordre
+        /// </returns>
         [Range(0, 1000)]
+        [CSSPDisplayEN(DisplayEN = "Ordinal")]
+        [CSSPDisplayFR(DisplayFR = "Ordre")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ordinal")]
+        [CSSPDescriptionFR(DescriptionFR = @"Ordre")]
         public int Ordinal { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Is static")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Est statique")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Is static --- the text will not change in time")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Est statique --- le texte ne changera pas dans le temps")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Is static
+        /// 
+        /// **Display (fr)** --- Est statique
+        /// 
+        /// **Description (en)** --- Is static --- the text will not change in time
+        /// 
+        /// **Description (fr)** --- Est statique --- le texte ne changera pas dans le temps
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Is static")]
+        [CSSPDisplayFR(DisplayFR = "Est statique")]
+        [CSSPDescriptionEN(DescriptionEN = @"Is static --- the text will not change in time")]
+        [CSSPDescriptionFR(DescriptionFR = @"Est statique --- le texte ne changera pas dans le temps")]
         public bool IsStatic { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "ReportSection", ExistPlurial = "s", ExistFieldID = "ReportSectionID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Parent report section ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Section du raport du parent ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Parent report section ID")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Section du raport du parent ID")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Parent report section ID
+        /// 
+        /// **Display (fr)** --- Section du raport du parent ID
+        /// 
+        /// **Description (en)** --- Parent report section ID
+        /// 
+        /// **Description (fr)** --- Section du raport du parent ID
+        /// </returns>
         [CSSPExist(ExistTypeName = "ReportSection", ExistPlurial = "s", ExistFieldID = "ReportSectionID")]
+        [CSSPDisplayEN(DisplayEN = "Parent report section ID")]
+        [CSSPDisplayFR(DisplayFR = "Section du raport du parent ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Parent report section ID")]
+        [CSSPDescriptionFR(DescriptionFR = @"Section du raport du parent ID")]
         public int? ParentReportSectionID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Year")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Année")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Year for which the text is applicable")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Année dont le texte est applicable")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Year
+        /// 
+        /// **Display (fr)** --- Année
+        /// 
+        /// **Description (en)** --- Year for which the text is applicable
+        /// 
+        /// **Description (fr)** --- Année dont le texte est applicable
+        /// </returns>
         [Range(1979, 2050)]
+        [CSSPDisplayEN(DisplayEN = "Year")]
+        [CSSPDisplayFR(DisplayFR = "Année")]
+        [CSSPDescriptionEN(DescriptionEN = @"Year for which the text is applicable")]
+        [CSSPDescriptionFR(DescriptionFR = @"Année dont le texte est applicable")]
         public int? Year { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Locked")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Barré")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Locked --- not currently used")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Barré --- pas utilisé encore")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Locked
+        /// 
+        /// **Display (fr)** --- Barré
+        /// 
+        /// **Description (en)** --- Locked --- not currently used
+        /// 
+        /// **Description (fr)** --- Barré --- pas utilisé encore
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Locked")]
+        [CSSPDisplayFR(DisplayFR = "Barré")]
+        [CSSPDescriptionEN(DescriptionEN = @"Locked --- not currently used")]
+        [CSSPDescriptionFR(DescriptionFR = @"Barré --- pas utilisé encore")]
         public bool Locked { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "ReportSection", ExistPlurial = "s", ExistFieldID = "ReportSectionID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Template report section ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Gabari de la section du raport ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Template report section ID --- not currently used")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Gabari de la section du raport ID --- pas utilisé encore")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Template report section ID
+        /// 
+        /// **Display (fr)** --- Gabari de la section du raport ID
+        /// 
+        /// **Description (en)** --- Template report section ID --- not currently used
+        /// 
+        /// **Description (fr)** --- Gabari de la section du raport ID --- pas utilisé encore
+        /// </returns>
         [CSSPExist(ExistTypeName = "ReportSection", ExistPlurial = "s", ExistFieldID = "ReportSectionID")]
+        [CSSPDisplayEN(DisplayEN = "Template report section ID")]
+        [CSSPDisplayFR(DisplayFR = "Gabari de la section du raport ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Template report section ID --- not currently used")]
+        [CSSPDescriptionFR(DescriptionFR = @"Gabari de la section du raport ID --- pas utilisé encore")]
         public int? TemplateReportSectionID { get; set; }
         #endregion Properties in DB
 
@@ -126,15 +286,51 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "ReportSectionLanguage", FillPlurial = "s", FillFieldID = "ReportSectionID", FillEqualField = "ReportSectionID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Report section name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom de la section du raport")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Report section name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom de la section du raport")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Report section name
+        /// 
+        /// **Display (fr)** --- Nom de la section du raport
+        /// 
+        /// **Description (en)** --- Report section name
+        /// 
+        /// **Description (fr)** --- Nom de la section du raport
+        /// </returns>
         [CSSPFill(FillTypeName = "ReportSectionLanguage", FillPlurial = "s", FillFieldID = "ReportSectionID", FillEqualField = "ReportSectionID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Report section name")]
+        [CSSPDisplayFR(DisplayFR = "Nom de la section du raport")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report section name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom de la section du raport")]
         public ReportSectionLanguage ReportSectionName { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "ReportSectionLanguage", FillPlurial = "s", FillFieldID = "ReportSectionID", FillEqualField = "ReportSectionID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Report section text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de la section du raport")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Report section text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de la section du raport")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Report section text
+        /// 
+        /// **Display (fr)** --- Texte de la section du raport
+        /// 
+        /// **Description (en)** --- Report section text
+        /// 
+        /// **Description (fr)** --- Texte de la section du raport
+        /// </returns>
         [CSSPFill(FillTypeName = "ReportSectionLanguage", FillPlurial = "s", FillFieldID = "ReportSectionID", FillEqualField = "ReportSectionID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Report section text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de la section du raport")]
+        [CSSPDescriptionEN(DescriptionEN = @"Report section text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de la section du raport")]
         public ReportSectionLanguage ReportSectionText { get; set; }
         #endregion Properties
 

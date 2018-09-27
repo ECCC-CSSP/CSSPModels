@@ -58,40 +58,244 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>12 == MikeBoundaryConditionMesh, 11 == MikeBoundaryConditionWebTide</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "12,11")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MIKE boundary contidition TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemID de conditions limits MIKE")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the MIKE boundary condition")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant les conditions limits MIKE")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MIKE boundary contidition TVItemID
+        /// 
+        /// **Display (fr)** --- TVItemID de conditions limits MIKE
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the MIKE boundary condition
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant les conditions limits MIKE
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "12,11")]
+        [CSSPDisplayEN(DisplayEN = "MIKE boundary contidition TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "TVItemID de conditions limits MIKE")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the MIKE boundary condition")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant les conditions limits MIKE")]
         public int MikeBoundaryConditionTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MIKE boundary contidition code")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Code de conditions limits MIKE")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MIKE boundary contidition code")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Code de conditions limits MIKE")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MIKE boundary contidition code
+        /// 
+        /// **Display (fr)** --- Code de conditions limits MIKE
+        /// 
+        /// **Description (en)** --- MIKE boundary contidition code
+        /// 
+        /// **Description (fr)** --- Code de conditions limits MIKE
+        /// </returns>
         [StringLength(100)]
+        [CSSPDisplayEN(DisplayEN = "MIKE boundary contidition code")]
+        [CSSPDisplayFR(DisplayFR = "Code de conditions limits MIKE")]
+        [CSSPDescriptionEN(DescriptionEN = @"MIKE boundary contidition code")]
+        [CSSPDescriptionFR(DescriptionFR = @"Code de conditions limits MIKE")]
         public string MikeBoundaryConditionCode { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MIKE boundary contidition name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom de conditions limits MIKE")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MIKE boundary contidition name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom de conditions limits MIKE")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MIKE boundary contidition name
+        /// 
+        /// **Display (fr)** --- Nom de conditions limits MIKE
+        /// 
+        /// **Description (en)** --- MIKE boundary contidition name
+        /// 
+        /// **Description (fr)** --- Nom de conditions limits MIKE
+        /// </returns>
         [StringLength(100)]
+        [CSSPDisplayEN(DisplayEN = "MIKE boundary contidition name")]
+        [CSSPDisplayFR(DisplayFR = "Nom de conditions limits MIKE")]
+        [CSSPDescriptionEN(DescriptionEN = @"MIKE boundary contidition name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom de conditions limits MIKE")]
         public string MikeBoundaryConditionName { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MIKE boundary contidition length (m)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Longueur de conditions limits MIKE (m)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MIKE boundary contidition length in meters")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Longueur de conditions limits MIKE en mètres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MIKE boundary contidition length (m)
+        /// 
+        /// **Display (fr)** --- Longueur de conditions limits MIKE (m)
+        /// 
+        /// **Description (en)** --- MIKE boundary contidition length in meters
+        /// 
+        /// **Description (fr)** --- Longueur de conditions limits MIKE en mètres
+        /// </returns>
         [Range(1.0D, 100000.0D)]
+        [CSSPDisplayEN(DisplayEN = "MIKE boundary contidition length (m)")]
+        [CSSPDisplayFR(DisplayFR = "Longueur de conditions limits MIKE (m)")]
+        [CSSPDescriptionEN(DescriptionEN = @"MIKE boundary contidition length in meters")]
+        [CSSPDescriptionFR(DescriptionFR = @"Longueur de conditions limits MIKE en mètres")]
         public double MikeBoundaryConditionLength_m { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MIKE boundary contidition format")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Format de conditions limits MIKE")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MIKE boundary contidition format")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Format de conditions limits MIKE")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MIKE boundary contidition format
+        /// 
+        /// **Display (fr)** --- Format de conditions limits MIKE
+        /// 
+        /// **Description (en)** --- MIKE boundary contidition format
+        /// 
+        /// **Description (fr)** --- Format de conditions limits MIKE
+        /// </returns>
         [StringLength(100)]
+        [CSSPDisplayEN(DisplayEN = "MIKE boundary contidition format")]
+        [CSSPDisplayFR(DisplayFR = "Format de conditions limits MIKE")]
+        [CSSPDescriptionEN(DescriptionEN = @"MIKE boundary contidition format")]
+        [CSSPDescriptionFR(DescriptionFR = @"Format de conditions limits MIKE")]
         public string MikeBoundaryConditionFormat { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MIKE boundary contidition level of velocity")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Niveau ou vélocité de conditions limits MIKE")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MIKE boundary contidition level or velocity")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Niveau ou vélocité de conditions limits MIKE")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MIKE boundary contidition level of velocity
+        /// 
+        /// **Display (fr)** --- Niveau ou vélocité de conditions limits MIKE
+        /// 
+        /// **Description (en)** --- MIKE boundary contidition level or velocity
+        /// 
+        /// **Description (fr)** --- Niveau ou vélocité de conditions limits MIKE
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "MIKE boundary contidition level of velocity")]
+        [CSSPDisplayFR(DisplayFR = "Niveau ou vélocité de conditions limits MIKE")]
+        [CSSPDescriptionEN(DescriptionEN = @"MIKE boundary contidition level or velocity")]
+        [CSSPDescriptionFR(DescriptionFR = @"Niveau ou vélocité de conditions limits MIKE")]
         public MikeBoundaryConditionLevelOrVelocityEnum MikeBoundaryConditionLevelOrVelocity { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Web tide data set")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Donnée web tide")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Web tide data set")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Donnée web tide")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Web tide data set
+        /// 
+        /// **Display (fr)** --- Donnée web tide
+        /// 
+        /// **Description (en)** --- Web tide data set
+        /// 
+        /// **Description (fr)** --- Donnée web tide
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Web tide data set")]
+        [CSSPDisplayFR(DisplayFR = "Donnée web tide")]
+        [CSSPDescriptionEN(DescriptionEN = @"Web tide data set")]
+        [CSSPDescriptionFR(DescriptionFR = @"Donnée web tide")]
         public WebTideDataSetEnum WebTideDataSet { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Number of web tide node")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nombre de noeux de web tide")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of web tide node")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre de noeux de web tide")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Number of web tide node
+        /// 
+        /// **Display (fr)** --- Nombre de noeux de web tide
+        /// 
+        /// **Description (en)** --- Number of web tide node
+        /// 
+        /// **Description (fr)** --- Nombre de noeux de web tide
+        /// </returns>
         [Range(0, 1000)]
+        [CSSPDisplayEN(DisplayEN = "Number of web tide node")]
+        [CSSPDisplayFR(DisplayFR = "Nombre de noeux de web tide")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of web tide node")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre de noeux de web tide")]
         public int NumberOfWebTideNodes { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Web tide data between dates")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Données web tide entre les dates")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Web tide data between dates")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Données web tide entre les dates")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Web tide data between dates
+        /// 
+        /// **Display (fr)** --- Données web tide entre les dates
+        /// 
+        /// **Description (en)** --- Web tide data between dates
+        /// 
+        /// **Description (fr)** --- Données web tide entre les dates
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Web tide data between dates")]
+        [CSSPDisplayFR(DisplayFR = "Données web tide entre les dates")]
+        [CSSPDescriptionEN(DescriptionEN = @"Web tide data between dates")]
+        [CSSPDescriptionFR(DescriptionFR = @"Données web tide entre les dates")]
         public string WebTideDataFromStartToEndDate { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type d'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type d'arbre visuel")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV type
+        /// 
+        /// **Display (fr)** --- Type d'arbre visuel
+        /// 
+        /// **Description (en)** --- Tree view type
+        /// 
+        /// **Description (fr)** --- Type d'arbre visuel
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "TV type")]
+        [CSSPDisplayFR(DisplayFR = "Type d'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type d'arbre visuel")]
         public TVTypeEnum TVType { get; set; }
         #endregion Properties in DB
 
@@ -141,28 +345,82 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "MikeBoundaryConditionLevelOrVelocityEnum", EnumType = "MikeBoundaryConditionLevelOrVelocity")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MIKE boundary condition level or velocity text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de niveau ou vélocité de conditions limits MIKE")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MIKE boundary condition level or velocity text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de niveau ou vélocité de conditions limits MIKE")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MIKE boundary condition level or velocity text
+        /// 
+        /// **Display (fr)** --- Texte de niveau ou vélocité de conditions limits MIKE
+        /// 
+        /// **Description (en)** --- MIKE boundary condition level or velocity text
+        /// 
+        /// **Description (fr)** --- Texte de niveau ou vélocité de conditions limits MIKE
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "MikeBoundaryConditionLevelOrVelocityEnum", EnumType = "MikeBoundaryConditionLevelOrVelocity")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "MIKE boundary condition level or velocity text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de niveau ou vélocité de conditions limits MIKE")]
+        [CSSPDescriptionEN(DescriptionEN = @"MIKE boundary condition level or velocity text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de niveau ou vélocité de conditions limits MIKE")]
         public string MikeBoundaryConditionLevelOrVelocityText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "WebTideDataSetEnum", EnumType = "WebTideDataSet")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Web tide dataset text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de données web tide")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Web tide dataset text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de données web tide")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Web tide dataset text
+        /// 
+        /// **Display (fr)** --- Texte de données web tide
+        /// 
+        /// **Description (en)** --- Web tide dataset text
+        /// 
+        /// **Description (fr)** --- Texte de données web tide
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "WebTideDataSetEnum", EnumType = "WebTideDataSet")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Web tide dataset text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de données web tide")]
+        [CSSPDescriptionEN(DescriptionEN = @"Web tide dataset text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de données web tide")]
         public string WebTideDataSetText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tree view type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de l'arbre visuel")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tree view type text
+        /// 
+        /// **Display (fr)** --- Texte de l'arbre visuel
+        /// 
+        /// **Description (en)** --- Tree view type text
+        /// 
+        /// **Description (fr)** --- Texte de l'arbre visuel
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Tree view type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de l'arbre visuel")]
         public string TVTypeText { get; set; }
         #endregion Properties
 

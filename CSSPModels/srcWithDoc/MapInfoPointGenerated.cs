@@ -55,14 +55,98 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "MapInfo", ExistPlurial = "s", ExistFieldID = "MapInfoID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Map info")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Info de carte")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the MapInfos table representing the map information")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table MapInfos représentant l'information de carte")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Map info
+        /// 
+        /// **Display (fr)** --- Info de carte
+        /// 
+        /// **Description (en)** --- Link to the MapInfos table representing the map information
+        /// 
+        /// **Description (fr)** --- Lien à la table MapInfos représentant l'information de carte
+        /// </returns>
         [CSSPExist(ExistTypeName = "MapInfo", ExistPlurial = "s", ExistFieldID = "MapInfoID")]
+        [CSSPDisplayEN(DisplayEN = "Map info")]
+        [CSSPDisplayFR(DisplayFR = "Info de carte")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the MapInfos table representing the map information")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table MapInfos représentant l'information de carte")]
         public int MapInfoID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Ordinal")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Ordre")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Ordinal")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Ordre")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Ordinal
+        /// 
+        /// **Display (fr)** --- Ordre
+        /// 
+        /// **Description (en)** --- Ordinal
+        /// 
+        /// **Description (fr)** --- Ordre
+        /// </returns>
         [Range(0, -1)]
+        [CSSPDisplayEN(DisplayEN = "Ordinal")]
+        [CSSPDisplayFR(DisplayFR = "Ordre")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ordinal")]
+        [CSSPDescriptionFR(DescriptionFR = @"Ordre")]
         public int Ordinal { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Latitude")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Latitude")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Latitude")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Latitude")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Latitude
+        /// 
+        /// **Display (fr)** --- Latitude
+        /// 
+        /// **Description (en)** --- Latitude
+        /// 
+        /// **Description (fr)** --- Latitude
+        /// </returns>
         [Range(-90.0D, 90.0D)]
+        [CSSPDisplayEN(DisplayEN = "Latitude")]
+        [CSSPDisplayFR(DisplayFR = "Latitude")]
+        [CSSPDescriptionEN(DescriptionEN = @"Latitude")]
+        [CSSPDescriptionFR(DescriptionFR = @"Latitude")]
         public double Lat { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Longitude")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Longitude")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Longitude")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Longitude")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Longitude
+        /// 
+        /// **Display (fr)** --- Longitude
+        /// 
+        /// **Description (en)** --- Longitude
+        /// 
+        /// **Description (fr)** --- Longitude
+        /// </returns>
         [Range(-180.0D, 180.0D)]
+        [CSSPDisplayEN(DisplayEN = "Longitude")]
+        [CSSPDisplayFR(DisplayFR = "Longitude")]
+        [CSSPDescriptionEN(DescriptionEN = @"Longitude")]
+        [CSSPDescriptionFR(DescriptionFR = @"Longitude")]
         public double Lng { get; set; }
         #endregion Properties in DB
 

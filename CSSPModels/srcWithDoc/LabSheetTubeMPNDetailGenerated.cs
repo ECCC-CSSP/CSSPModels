@@ -56,10 +56,50 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "LabSheetDetail", ExistPlurial = "s", ExistFieldID = "LabSheetDetailID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lab sheet details")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Détails de feuille de laboratoire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the LabSheetDetails table representing the lab sheet detail")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table LabSheetDetails représentant les détail de laboratoire")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lab sheet details
+        /// 
+        /// **Display (fr)** --- Détails de feuille de laboratoire
+        /// 
+        /// **Description (en)** --- Link to the LabSheetDetails table representing the lab sheet detail
+        /// 
+        /// **Description (fr)** --- Lien à la table LabSheetDetails représentant les détail de laboratoire
+        /// </returns>
         [CSSPExist(ExistTypeName = "LabSheetDetail", ExistPlurial = "s", ExistFieldID = "LabSheetDetailID")]
+        [CSSPDisplayEN(DisplayEN = "Lab sheet details")]
+        [CSSPDisplayFR(DisplayFR = "Détails de feuille de laboratoire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the LabSheetDetails table representing the lab sheet detail")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table LabSheetDetails représentant les détail de laboratoire")]
         public int LabSheetDetailID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Ordinal")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Ordre")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Ordinal")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Ordre")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Ordinal
+        /// 
+        /// **Display (fr)** --- Ordre
+        /// 
+        /// **Description (en)** --- Ordinal
+        /// 
+        /// **Description (fr)** --- Ordre
+        /// </returns>
         [Range(0, 1000)]
+        [CSSPDisplayEN(DisplayEN = "Ordinal")]
+        [CSSPDisplayFR(DisplayFR = "Ordre")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ordinal")]
+        [CSSPDescriptionFR(DescriptionFR = @"Ordre")]
         public int Ordinal { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -67,50 +107,272 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>16 == MWQMSite</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "16")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MWQMSite TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "MWQMSite TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the MWQM site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant le site de MWQM (fr)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MWQMSite TVItemID
+        /// 
+        /// **Display (fr)** --- MWQMSite TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the MWQM site
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant le site de MWQM (fr)
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "16")]
+        [CSSPDisplayEN(DisplayEN = "MWQMSite TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "MWQMSite TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the MWQM site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le site de MWQM (fr)")]
         public int MWQMSiteTVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sample date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de la tournée")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sample date")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de la tournée")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sample date
+        /// 
+        /// **Display (fr)** --- Date de la tournée
+        /// 
+        /// **Description (en)** --- Sample date
+        /// 
+        /// **Description (fr)** --- Date de la tournée
+        /// </returns>
         [CSSPAfter(Year = 1980)]
+        [CSSPDisplayEN(DisplayEN = "Sample date")]
+        [CSSPDisplayFR(DisplayFR = "Date de la tournée")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sample date")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date de la tournée")]
         public DateTime? SampleDateTime { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MPN (/100 mL)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "NPP (/100 mL)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Most probable number of fecal coliform colonies per 100 mL")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre le plus probable de colonies de coliform fécaux par 100 mL")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MPN (/100 mL)
+        /// 
+        /// **Display (fr)** --- NPP (/100 mL)
+        /// 
+        /// **Description (en)** --- Most probable number of fecal coliform colonies per 100 mL
+        /// 
+        /// **Description (fr)** --- Nombre le plus probable de colonies de coliform fécaux par 100 mL
+        /// </returns>
         [Range(1, 10000000)]
+        [CSSPDisplayEN(DisplayEN = "MPN (/100 mL)")]
+        [CSSPDisplayFR(DisplayFR = "NPP (/100 mL)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Most probable number of fecal coliform colonies per 100 mL")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre le plus probable de colonies de coliform fécaux par 100 mL")]
         public int? MPN { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tube 10")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Tube 10")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of positive tube for Tube 10")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre de tube positif pour Tube 10")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tube 10
+        /// 
+        /// **Display (fr)** --- Tube 10
+        /// 
+        /// **Description (en)** --- Number of positive tube for Tube 10
+        /// 
+        /// **Description (fr)** --- Nombre de tube positif pour Tube 10
+        /// </returns>
         [Range(0, 5)]
+        [CSSPDisplayEN(DisplayEN = "Tube 10")]
+        [CSSPDisplayFR(DisplayFR = "Tube 10")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of positive tube for Tube 10")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre de tube positif pour Tube 10")]
         public int? Tube10 { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tube 1")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Tube 1")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of positive tube for Tube 1")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre de tube positif pour Tube 1")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tube 1
+        /// 
+        /// **Display (fr)** --- Tube 1
+        /// 
+        /// **Description (en)** --- Number of positive tube for Tube 1
+        /// 
+        /// **Description (fr)** --- Nombre de tube positif pour Tube 1
+        /// </returns>
         [Range(0, 5)]
+        [CSSPDisplayEN(DisplayEN = "Tube 1")]
+        [CSSPDisplayFR(DisplayFR = "Tube 1")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of positive tube for Tube 1")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre de tube positif pour Tube 1")]
         public int? Tube1_0 { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tube .1")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Tube .1")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of positive tube for Tube .1")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre de tube positif pour Tube .1")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tube .1
+        /// 
+        /// **Display (fr)** --- Tube .1
+        /// 
+        /// **Description (en)** --- Number of positive tube for Tube .1
+        /// 
+        /// **Description (fr)** --- Nombre de tube positif pour Tube .1
+        /// </returns>
         [Range(0, 5)]
+        [CSSPDisplayEN(DisplayEN = "Tube .1")]
+        [CSSPDisplayFR(DisplayFR = "Tube .1")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of positive tube for Tube .1")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre de tube positif pour Tube .1")]
         public int? Tube0_1 { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Salinity (PPT)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Salinité (PPT)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Salinity in parts per thousand")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Salinité en parties par millier")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Salinity (PPT)
+        /// 
+        /// **Display (fr)** --- Salinité (PPT)
+        /// 
+        /// **Description (en)** --- Salinity in parts per thousand
+        /// 
+        /// **Description (fr)** --- Salinité en parties par millier
+        /// </returns>
         [Range(0.0D, 40.0D)]
+        [CSSPDisplayEN(DisplayEN = "Salinity (PPT)")]
+        [CSSPDisplayFR(DisplayFR = "Salinité (PPT)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Salinity in parts per thousand")]
+        [CSSPDescriptionFR(DescriptionFR = @"Salinité en parties par millier")]
         public double? Salinity { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Temperature (°C)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Température (°C)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Temperature in degree Celcius")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Température en dégré Celcius")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Temperature (°C)
+        /// 
+        /// **Display (fr)** --- Température (°C)
+        /// 
+        /// **Description (en)** --- Temperature in degree Celcius
+        /// 
+        /// **Description (fr)** --- Température en dégré Celcius
+        /// </returns>
         [Range(-10.0D, 40.0D)]
+        [CSSPDisplayEN(DisplayEN = "Temperature (°C)")]
+        [CSSPDisplayFR(DisplayFR = "Température (°C)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Temperature in degree Celcius")]
+        [CSSPDescriptionFR(DescriptionFR = @"Température en dégré Celcius")]
         public double? Temperature { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Processed by")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Traité par")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Processed by")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Traité par")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Processed by
+        /// 
+        /// **Display (fr)** --- Traité par
+        /// 
+        /// **Description (en)** --- Processed by
+        /// 
+        /// **Description (fr)** --- Traité par
+        /// </returns>
         [StringLength(10)]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Processed by")]
+        [CSSPDisplayFR(DisplayFR = "Traité par")]
+        [CSSPDescriptionEN(DescriptionEN = @"Processed by")]
+        [CSSPDescriptionFR(DescriptionFR = @"Traité par")]
         public string ProcessedBy { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sample type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type d'échantillon")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sample type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type d'échantillon")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sample type
+        /// 
+        /// **Display (fr)** --- Type d'échantillon
+        /// 
+        /// **Description (en)** --- Sample type
+        /// 
+        /// **Description (fr)** --- Type d'échantillon
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Sample type")]
+        [CSSPDisplayFR(DisplayFR = "Type d'échantillon")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sample type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type d'échantillon")]
         public SampleTypeEnum SampleType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Site comment")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Commentaire relié au site")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Site comment")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Commentaire relié au site")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Site comment
+        /// 
+        /// **Display (fr)** --- Commentaire relié au site
+        /// 
+        /// **Description (en)** --- Site comment
+        /// 
+        /// **Description (fr)** --- Commentaire relié au site
+        /// </returns>
         [StringLength(250)]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Site comment")]
+        [CSSPDisplayFR(DisplayFR = "Commentaire relié au site")]
+        [CSSPDescriptionEN(DescriptionEN = @"Site comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Commentaire relié au site")]
         public string SiteComment { get; set; }
         #endregion Properties in DB
 
@@ -128,8 +390,26 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MWQM Site TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du site MWQM (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MWQM Site TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du site MWQM (fr)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MWQM Site TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du site MWQM (fr)
+        /// 
+        /// **Description (en)** --- MWQM Site TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du site MWQM (fr)
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "MWQM Site TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du site MWQM (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"MWQM Site TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du site MWQM (fr)")]
         public TVItemLanguage MWQMSiteTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -160,10 +440,28 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sample type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type d'échantillon")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sample type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type d'échantillon")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sample type text
+        /// 
+        /// **Display (fr)** --- Texte du type d'échantillon
+        /// 
+        /// **Description (en)** --- Sample type text
+        /// 
+        /// **Description (fr)** --- Texte du type d'échantillon
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Sample type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type d'échantillon")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sample type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type d'échantillon")]
         public string SampleTypeText { get; set; }
         #endregion Properties
 

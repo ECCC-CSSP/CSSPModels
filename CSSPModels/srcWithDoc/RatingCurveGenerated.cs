@@ -55,10 +55,50 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "HydrometricSite", ExistPlurial = "s", ExistFieldID = "HydrometricSiteID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Hydrometric site ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Site hydrométrique ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the Hydrometrics table representing the hydrometric site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table Hydrometrics représentant le site hydrométrique")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Hydrometric site ID
+        /// 
+        /// **Display (fr)** --- Site hydrométrique ID
+        /// 
+        /// **Description (en)** --- Link to the Hydrometrics table representing the hydrometric site
+        /// 
+        /// **Description (fr)** --- Lien à la table Hydrometrics représentant le site hydrométrique
+        /// </returns>
         [CSSPExist(ExistTypeName = "HydrometricSite", ExistPlurial = "s", ExistFieldID = "HydrometricSiteID")]
+        [CSSPDisplayEN(DisplayEN = "Hydrometric site ID")]
+        [CSSPDisplayFR(DisplayFR = "Site hydrométrique ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the Hydrometrics table representing the hydrometric site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table Hydrometrics représentant le site hydrométrique")]
         public int HydrometricSiteID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Rating curve number")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Numéro de la courbe de tarage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Rating curve number")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Numéro de la courbe de tarage")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Rating curve number
+        /// 
+        /// **Display (fr)** --- Numéro de la courbe de tarage
+        /// 
+        /// **Description (en)** --- Rating curve number
+        /// 
+        /// **Description (fr)** --- Numéro de la courbe de tarage
+        /// </returns>
         [StringLength(50)]
+        [CSSPDisplayEN(DisplayEN = "Rating curve number")]
+        [CSSPDisplayFR(DisplayFR = "Numéro de la courbe de tarage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Rating curve number")]
+        [CSSPDescriptionFR(DescriptionFR = @"Numéro de la courbe de tarage")]
         public string RatingCurveNumber { get; set; }
         #endregion Properties in DB
 

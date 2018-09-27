@@ -51,17 +51,149 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the TideLocations table")]
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table TideLocations")]
         public int TideLocationID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Zone")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Zone")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Zone")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Zone")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Zone
+        /// 
+        /// **Display (fr)** --- Zone
+        /// 
+        /// **Description (en)** --- Zone
+        /// 
+        /// **Description (fr)** --- Zone
+        /// </returns>
         [Range(0, 10000)]
+        [CSSPDisplayEN(DisplayEN = "Zone")]
+        [CSSPDisplayFR(DisplayFR = "Zone")]
+        [CSSPDescriptionEN(DescriptionEN = @"Zone")]
+        [CSSPDescriptionFR(DescriptionFR = @"Zone")]
         public int Zone { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Name
+        /// 
+        /// **Display (fr)** --- Nom
+        /// 
+        /// **Description (en)** --- Name
+        /// 
+        /// **Description (fr)** --- Nom
+        /// </returns>
         [StringLength(100)]
+        [CSSPDisplayEN(DisplayEN = "Name")]
+        [CSSPDisplayFR(DisplayFR = "Nom")]
+        [CSSPDescriptionEN(DescriptionEN = @"Name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom")]
         public string Name { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Province")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Province")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Province")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Province")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Province
+        /// 
+        /// **Display (fr)** --- Province
+        /// 
+        /// **Description (en)** --- Province
+        /// 
+        /// **Description (fr)** --- Province
+        /// </returns>
         [StringLength(100)]
+        [CSSPDisplayEN(DisplayEN = "Province")]
+        [CSSPDisplayFR(DisplayFR = "Province")]
+        [CSSPDescriptionEN(DescriptionEN = @"Province")]
+        [CSSPDescriptionFR(DescriptionFR = @"Province")]
         public string Prov { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "SID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "SID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "SID")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "SID")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- SID
+        /// 
+        /// **Display (fr)** --- SID
+        /// 
+        /// **Description (en)** --- SID
+        /// 
+        /// **Description (fr)** --- SID
+        /// </returns>
         [Range(0, 100000)]
+        [CSSPDisplayEN(DisplayEN = "SID")]
+        [CSSPDisplayFR(DisplayFR = "SID")]
+        [CSSPDescriptionEN(DescriptionEN = @"SID")]
+        [CSSPDescriptionFR(DescriptionFR = @"SID")]
         public int sid { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lat")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Lat")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Latitude")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Latitude")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lat
+        /// 
+        /// **Display (fr)** --- Lat
+        /// 
+        /// **Description (en)** --- Latitude
+        /// 
+        /// **Description (fr)** --- Latitude
+        /// </returns>
         [Range(-90.0D, 90.0D)]
+        [CSSPDisplayEN(DisplayEN = "Lat")]
+        [CSSPDisplayFR(DisplayFR = "Lat")]
+        [CSSPDescriptionEN(DescriptionEN = @"Latitude")]
+        [CSSPDescriptionFR(DescriptionFR = @"Latitude")]
         public double Lat { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lng")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Lng")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Longitude")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Longitude")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lng
+        /// 
+        /// **Display (fr)** --- Lng
+        /// 
+        /// **Description (en)** --- Longitude
+        /// 
+        /// **Description (fr)** --- Longitude
+        /// </returns>
         [Range(-180.0D, 180.0D)]
+        [CSSPDisplayEN(DisplayEN = "Lng")]
+        [CSSPDisplayFR(DisplayFR = "Lng")]
+        [CSSPDescriptionEN(DescriptionEN = @"Longitude")]
+        [CSSPDescriptionFR(DescriptionFR = @"Longitude")]
         public double Lng { get; set; }
         #endregion Properties in DB
 

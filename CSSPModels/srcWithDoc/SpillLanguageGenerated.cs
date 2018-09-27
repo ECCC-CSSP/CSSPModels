@@ -56,23 +56,99 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "Spill", ExistPlurial = "s", ExistFieldID = "SpillID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Spill ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Déversement ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the Spills table representing the spill")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table Spills représentant le déversement")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Spill ID
+        /// 
+        /// **Display (fr)** --- Déversement ID
+        /// 
+        /// **Description (en)** --- Link to the Spills table representing the spill
+        /// 
+        /// **Description (fr)** --- Lien à la table Spills représentant le déversement
+        /// </returns>
         [CSSPExist(ExistTypeName = "Spill", ExistPlurial = "s", ExistFieldID = "SpillID")]
+        [CSSPDisplayEN(DisplayEN = "Spill ID")]
+        [CSSPDisplayFR(DisplayFR = "Déversement ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the Spills table representing the spill")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table Spills représentant le déversement")]
         public int SpillID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Language")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Langage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Language of item")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Langage de l'item")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Language
+        /// 
+        /// **Display (fr)** --- Langage
+        /// 
+        /// **Description (en)** --- Language of item
+        /// 
+        /// **Description (fr)** --- Langage de l'item
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Language")]
+        [CSSPDisplayFR(DisplayFR = "Langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language of item")]
+        [CSSPDescriptionFR(DescriptionFR = @"Langage de l'item")]
         public LanguageEnum Language { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Comment")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Commentaire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Comment")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Commentaire")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Comment
+        /// 
+        /// **Display (fr)** --- Commentaire
+        /// 
+        /// **Description (en)** --- Comment
+        /// 
+        /// **Description (fr)** --- Commentaire
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Comment")]
+        [CSSPDisplayFR(DisplayFR = "Commentaire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Commentaire")]
         public string SpillComment { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Translation status")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Le statut de la traduction")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Translation status of the spill comment")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Le statut de la traduction du commentaire du déversement")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Translation status
+        /// 
+        /// **Display (fr)** --- Le statut de la traduction
+        /// 
+        /// **Description (en)** --- Translation status of the spill comment
+        /// 
+        /// **Description (fr)** --- Le statut de la traduction du commentaire du déversement
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Translation status")]
+        [CSSPDisplayFR(DisplayFR = "Le statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status of the spill comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction du commentaire du déversement")]
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
@@ -115,10 +191,28 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "LanguageEnum", EnumType = "Language")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Language text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du langage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Language text [en, fr]")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du langage [en, fr]")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Language text
+        /// 
+        /// **Display (fr)** --- Texte du langage
+        /// 
+        /// **Description (en)** --- Language text [en, fr]
+        /// 
+        /// **Description (fr)** --- Texte du langage [en, fr]
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Language text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language text [en, fr]")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du langage [en, fr]")]
         public string LanguageText { get; set; }
         /// <summary>
         /// > [!NOTE]

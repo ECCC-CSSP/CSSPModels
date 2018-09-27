@@ -176,74 +176,74 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Discharges in m3/s")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Débits en m3/s")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Discharges in m3/s")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Débits en m3/s")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Discharges (m3/s)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Débits (m3/s)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Discharges  in cubic meters per second")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Débits en mètres cube par second")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Discharges in m3/s
+        /// **Display (en)** --- Discharges (m3/s)
         /// 
-        /// **Display (fr)** --- Débits en m3/s
+        /// **Display (fr)** --- Débits (m3/s)
         /// 
-        /// **Description (en)** --- Discharges in m3/s
+        /// **Description (en)** --- Discharges  in cubic meters per second
         /// 
-        /// **Description (fr)** --- Débits en m3/s
+        /// **Description (fr)** --- Débits en mètres cube par second
         /// </returns>
         [Range(0.0D, 100000.0D)]
-        [CSSPDisplayEN(DisplayEN = "Discharges in m3/s")]
-        [CSSPDisplayFR(DisplayFR = "Débits en m3/s")]
-        [CSSPDescriptionEN(DescriptionEN = @"Discharges in m3/s")]
-        [CSSPDescriptionFR(DescriptionFR = @"Débits en m3/s")]
+        [CSSPDisplayEN(DisplayEN = "Discharges (m3/s)")]
+        [CSSPDisplayFR(DisplayFR = "Débits (m3/s)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Discharges  in cubic meters per second")]
+        [CSSPDescriptionFR(DescriptionFR = @"Débits en mètres cube par second")]
         public double? Discharge_m3_s { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Discharges entered in m3/s")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Débits entrés en m3/s")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Discharges entered in m3/s")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Débits entrés en m3/s")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Discharges entered (m3/s)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Débits entrés (m3/s)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Discharges entered in cubic meters per second")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Débits entrés en mètres cube par second")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Discharges entered in m3/s
+        /// **Display (en)** --- Discharges entered (m3/s)
         /// 
-        /// **Display (fr)** --- Débits entrés en m3/s
+        /// **Display (fr)** --- Débits entrés (m3/s)
         /// 
-        /// **Description (en)** --- Discharges entered in m3/s
+        /// **Description (en)** --- Discharges entered in cubic meters per second
         /// 
-        /// **Description (fr)** --- Débits entrés en m3/s
+        /// **Description (fr)** --- Débits entrés en mètres cube par second
         /// </returns>
         [Range(0.0D, 100000.0D)]
-        [CSSPDisplayEN(DisplayEN = "Discharges entered in m3/s")]
-        [CSSPDisplayFR(DisplayFR = "Débits entrés en m3/s")]
-        [CSSPDescriptionEN(DescriptionEN = @"Discharges entered in m3/s")]
-        [CSSPDescriptionFR(DescriptionFR = @"Débits entrés en m3/s")]
+        [CSSPDisplayEN(DisplayEN = "Discharges entered (m3/s)")]
+        [CSSPDisplayFR(DisplayFR = "Débits entrés (m3/s)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Discharges entered in cubic meters per second")]
+        [CSSPDescriptionFR(DescriptionFR = @"Débits entrés en mètres cube par second")]
         public double? DischargeEntered_m3_s { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Levels in m")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Niveaux en m")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Levels in m")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Niveaux en m")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Levels (m)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Niveaux (m)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Levels in meters")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Niveaux en meters")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Levels in m
+        /// **Display (en)** --- Levels (m)
         /// 
-        /// **Display (fr)** --- Niveaux en m
+        /// **Display (fr)** --- Niveaux (m)
         /// 
-        /// **Description (en)** --- Levels in m
+        /// **Description (en)** --- Levels in meters
         /// 
-        /// **Description (fr)** --- Niveaux en m
+        /// **Description (fr)** --- Niveaux en meters
         /// </returns>
         [Range(0.0D, 10000.0D)]
-        [CSSPDisplayEN(DisplayEN = "Levels in m")]
-        [CSSPDisplayFR(DisplayFR = "Niveaux en m")]
-        [CSSPDescriptionEN(DescriptionEN = @"Levels in m")]
-        [CSSPDescriptionFR(DescriptionFR = @"Niveaux en m")]
+        [CSSPDisplayEN(DisplayEN = "Levels (m)")]
+        [CSSPDisplayFR(DisplayFR = "Niveaux (m)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Levels in meters")]
+        [CSSPDescriptionFR(DescriptionFR = @"Niveaux en meters")]
         public double? Level_m { get; set; }
         /// <summary>
         /// > [!NOTE]

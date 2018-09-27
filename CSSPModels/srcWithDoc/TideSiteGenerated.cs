@@ -57,12 +57,74 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>22 == TideSite</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "22")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tide site TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Site de marée TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the tide site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant le site de marée")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tide site TVItemID
+        /// 
+        /// **Display (fr)** --- Site de marée TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the tide site
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant le site de marée
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "22")]
+        [CSSPDisplayEN(DisplayEN = "Tide site TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Site de marée TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the tide site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le site de marée")]
         public int TideSiteTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Web tide model")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Modèle de web tide")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Web tide model")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Modèle de web tide")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Web tide model
+        /// 
+        /// **Display (fr)** --- Modèle de web tide
+        /// 
+        /// **Description (en)** --- Web tide model
+        /// 
+        /// **Description (fr)** --- Modèle de web tide
+        /// </returns>
         [StringLength(100)]
+        [CSSPDisplayEN(DisplayEN = "Web tide model")]
+        [CSSPDisplayFR(DisplayFR = "Modèle de web tide")]
+        [CSSPDescriptionEN(DescriptionEN = @"Web tide model")]
+        [CSSPDescriptionFR(DescriptionFR = @"Modèle de web tide")]
         public string WebTideModel { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Web tide datum (m)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Datum de web tide (m)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Web tide model in meters")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Datum de web tide en mètres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Web tide datum (m)
+        /// 
+        /// **Display (fr)** --- Datum de web tide (m)
+        /// 
+        /// **Description (en)** --- Web tide model in meters
+        /// 
+        /// **Description (fr)** --- Datum de web tide en mètres
+        /// </returns>
         [Range(-100.0D, 100.0D)]
+        [CSSPDisplayEN(DisplayEN = "Web tide datum (m)")]
+        [CSSPDisplayFR(DisplayFR = "Datum de web tide (m)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Web tide model in meters")]
+        [CSSPDescriptionFR(DescriptionFR = @"Datum de web tide en mètres")]
         public double WebTideDatum_m { get; set; }
         #endregion Properties in DB
 
@@ -80,8 +142,26 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TideSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tide site TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du site de marée")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tide site TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du site de marée")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tide site TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du site de marée
+        /// 
+        /// **Description (en)** --- Tide site TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du site de marée
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TideSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Tide site TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du site de marée")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tide site TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du site de marée")]
         public TVItemLanguage TideSiteTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]

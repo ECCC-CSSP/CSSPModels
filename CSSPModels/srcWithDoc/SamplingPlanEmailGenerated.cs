@@ -55,15 +55,166 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "SamplingPlan", ExistPlurial = "s", ExistFieldID = "SamplingPlanID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling plan ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Plan d'échantillonnage ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the SamplingPlans table representing the sampling plan")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table SamplingPlans représentant le plan d'échantillonnage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sampling plan ID
+        /// 
+        /// **Display (fr)** --- Plan d'échantillonnage ID
+        /// 
+        /// **Description (en)** --- Link to the SamplingPlans table representing the sampling plan
+        /// 
+        /// **Description (fr)** --- Lien à la table SamplingPlans représentant le plan d'échantillonnage
+        /// </returns>
         [CSSPExist(ExistTypeName = "SamplingPlan", ExistPlurial = "s", ExistFieldID = "SamplingPlanID")]
+        [CSSPDisplayEN(DisplayEN = "Sampling plan ID")]
+        [CSSPDisplayFR(DisplayFR = "Plan d'échantillonnage ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the SamplingPlans table representing the sampling plan")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table SamplingPlans représentant le plan d'échantillonnage")]
         public int SamplingPlanID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Email")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Courriel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Email")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Courriel")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Email
+        /// 
+        /// **Display (fr)** --- Courriel
+        /// 
+        /// **Description (en)** --- Email
+        /// 
+        /// **Description (fr)** --- Courriel
+        /// </returns>
         [StringLength(150)]
+        [DataType(DataType.EmailAddress)]
+        [CSSPDisplayEN(DisplayEN = "Email")]
+        [CSSPDisplayFR(DisplayFR = "Courriel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Email")]
+        [CSSPDescriptionFR(DescriptionFR = @"Courriel")]
         public string Email { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Is contractor")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Est un contracteur")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Is contractor")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Est un contracteur")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Is contractor
+        /// 
+        /// **Display (fr)** --- Est un contracteur
+        /// 
+        /// **Description (en)** --- Is contractor
+        /// 
+        /// **Description (fr)** --- Est un contracteur
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Is contractor")]
+        [CSSPDisplayFR(DisplayFR = "Est un contracteur")]
+        [CSSPDescriptionEN(DescriptionEN = @"Is contractor")]
+        [CSSPDescriptionFR(DescriptionFR = @"Est un contracteur")]
         public bool IsContractor { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lab sheet has value over 500")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "La feuille de laboratoire a une valeur supérieur à 500")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Lab sheet has value over 500")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "La feuille de laboratoire a une valeur supérieur à 500")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lab sheet has value over 500
+        /// 
+        /// **Display (fr)** --- La feuille de laboratoire a une valeur supérieur à 500
+        /// 
+        /// **Description (en)** --- Lab sheet has value over 500
+        /// 
+        /// **Description (fr)** --- La feuille de laboratoire a une valeur supérieur à 500
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Lab sheet has value over 500")]
+        [CSSPDisplayFR(DisplayFR = "La feuille de laboratoire a une valeur supérieur à 500")]
+        [CSSPDescriptionEN(DescriptionEN = @"Lab sheet has value over 500")]
+        [CSSPDescriptionFR(DescriptionFR = @"La feuille de laboratoire a une valeur supérieur à 500")]
         public bool LabSheetHasValueOver500 { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lab sheet received")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Feuille de laboratoire reçu")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Lab sheet received")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Feuille de laboratoire reçu")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lab sheet received
+        /// 
+        /// **Display (fr)** --- Feuille de laboratoire reçu
+        /// 
+        /// **Description (en)** --- Lab sheet received
+        /// 
+        /// **Description (fr)** --- Feuille de laboratoire reçu
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Lab sheet received")]
+        [CSSPDisplayFR(DisplayFR = "Feuille de laboratoire reçu")]
+        [CSSPDescriptionEN(DescriptionEN = @"Lab sheet received")]
+        [CSSPDescriptionFR(DescriptionFR = @"Feuille de laboratoire reçu")]
         public bool LabSheetReceived { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lab sheet accepted")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Feuille de laboratoire approuvé")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Lab sheet accepted")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Feuille de laboratoire approuvé")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lab sheet accepted
+        /// 
+        /// **Display (fr)** --- Feuille de laboratoire approuvé
+        /// 
+        /// **Description (en)** --- Lab sheet accepted
+        /// 
+        /// **Description (fr)** --- Feuille de laboratoire approuvé
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Lab sheet accepted")]
+        [CSSPDisplayFR(DisplayFR = "Feuille de laboratoire approuvé")]
+        [CSSPDescriptionEN(DescriptionEN = @"Lab sheet accepted")]
+        [CSSPDescriptionFR(DescriptionFR = @"Feuille de laboratoire approuvé")]
         public bool LabSheetAccepted { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lab sheet rejected")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Feuille de laboratoire rejeté")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Lab sheet rejected")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Feuille de laboratoire rejeté")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lab sheet rejected
+        /// 
+        /// **Display (fr)** --- Feuille de laboratoire rejeté
+        /// 
+        /// **Description (en)** --- Lab sheet rejected
+        /// 
+        /// **Description (fr)** --- Feuille de laboratoire rejeté
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Lab sheet rejected")]
+        [CSSPDisplayFR(DisplayFR = "Feuille de laboratoire rejeté")]
+        [CSSPDescriptionEN(DescriptionEN = @"Lab sheet rejected")]
+        [CSSPDescriptionFR(DescriptionFR = @"Feuille de laboratoire rejeté")]
         public bool LabSheetRejected { get; set; }
         #endregion Properties in DB
 

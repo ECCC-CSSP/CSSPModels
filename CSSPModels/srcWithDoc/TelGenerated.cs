@@ -58,17 +58,75 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>21 == Tel</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "21")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tel")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Tél")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the telephone")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant la téléphone")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tel
+        /// 
+        /// **Display (fr)** --- Tél
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the telephone
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant la téléphone
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "21")]
+        [CSSPDisplayEN(DisplayEN = "Tel")]
+        [CSSPDisplayFR(DisplayFR = "Tél")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the telephone")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant la téléphone")]
         public int TelTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tel number")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Numéro de tél")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Telephone number")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Numéro de téléphone")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tel number
+        /// 
+        /// **Display (fr)** --- Numéro de tél
+        /// 
+        /// **Description (en)** --- Telephone number
+        /// 
+        /// **Description (fr)** --- Numéro de téléphone
+        /// </returns>
         [StringLength(50)]
+        [CSSPDisplayEN(DisplayEN = "Tel number")]
+        [CSSPDisplayFR(DisplayFR = "Numéro de tél")]
+        [CSSPDescriptionEN(DescriptionEN = @"Telephone number")]
+        [CSSPDescriptionFR(DescriptionFR = @"Numéro de téléphone")]
         public string TelNumber { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tel type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de tél")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Telephone type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de téléphone")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tel type
+        /// 
+        /// **Display (fr)** --- Type de tél
+        /// 
+        /// **Description (en)** --- Telephone type
+        /// 
+        /// **Description (fr)** --- Type de téléphone
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Tel type")]
+        [CSSPDisplayFR(DisplayFR = "Type de tél")]
+        [CSSPDescriptionEN(DescriptionEN = @"Telephone type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de téléphone")]
         public TelTypeEnum TelType { get; set; }
         #endregion Properties in DB
 
@@ -118,10 +176,28 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TelTypeEnum", EnumType = "TelType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tel type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de tél")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Telephone type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de téléphone")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tel type text
+        /// 
+        /// **Display (fr)** --- Texte du type de tél
+        /// 
+        /// **Description (en)** --- Telephone type text
+        /// 
+        /// **Description (fr)** --- Texte du type de téléphone
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "TelTypeEnum", EnumType = "TelType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Tel type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de tél")]
+        [CSSPDescriptionEN(DescriptionEN = @"Telephone type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de téléphone")]
         public string TelTypeText { get; set; }
         #endregion Properties
 

@@ -58,22 +58,76 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>5 == Contact</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Contact TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Contact TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the contact")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant le contact")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Contact TVItemID
+        /// 
+        /// **Display (fr)** --- Contact TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the contact
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant le contact
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
+        [CSSPDisplayEN(DisplayEN = "Contact TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Contact TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the contact")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le contact")]
         public int ContactTVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de l'arbre visuel")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV type
+        /// 
+        /// **Display (fr)** --- Type de l'arbre visuel
+        /// 
+        /// **Description (en)** --- Tree view type
+        /// 
+        /// **Description (fr)** --- Type de l'arbre visuel
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "TV type")]
+        [CSSPDisplayFR(DisplayFR = "Type de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de l'arbre visuel")]
         public TVTypeEnum TVType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV authorization")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Authorization de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view authorization")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type d'authorization de l'arbre visuel")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV authorization
+        /// 
+        /// **Display (fr)** --- Authorization de l'arbre visuel
+        /// 
+        /// **Description (en)** --- Tree view authorization
+        /// 
+        /// **Description (fr)** --- Type d'authorization de l'arbre visuel
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "TV authorization")]
+        [CSSPDisplayFR(DisplayFR = "Authorization de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view authorization")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type d'authorization de l'arbre visuel")]
         public TVAuthEnum TVAuth { get; set; }
         #endregion Properties in DB
 
@@ -123,19 +177,55 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de l'arbre visuel")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV type text
+        /// 
+        /// **Display (fr)** --- Texte du type de l'arbre visuel
+        /// 
+        /// **Description (en)** --- Tree view type text
+        /// 
+        /// **Description (fr)** --- Texte du type de l'arbre visuel
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "TV type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de l'arbre visuel")]
         public string TVTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TVAuthEnum", EnumType = "TVAuth")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV authorization text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de l'authorization de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view authorization text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de l'authorization de l'arbre visuel")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV authorization text
+        /// 
+        /// **Display (fr)** --- Texte de l'authorization de l'arbre visuel
+        /// 
+        /// **Description (en)** --- Tree view authorization text
+        /// 
+        /// **Description (fr)** --- Texte de l'authorization de l'arbre visuel
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "TVAuthEnum", EnumType = "TVAuth")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "TV authorization text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de l'authorization de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view authorization text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de l'authorization de l'arbre visuel")]
         public string TVAuthText { get; set; }
         #endregion Properties
 

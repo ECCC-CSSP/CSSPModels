@@ -55,12 +55,74 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "RatingCurve", ExistPlurial = "s", ExistFieldID = "RatingCurveID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Rating curve ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Identifiant de la courbe de tarage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the RatingCurves table representing the rating curve")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table RatingCurves représentant la courve de tarage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Rating curve ID
+        /// 
+        /// **Display (fr)** --- Identifiant de la courbe de tarage
+        /// 
+        /// **Description (en)** --- Link to the RatingCurves table representing the rating curve
+        /// 
+        /// **Description (fr)** --- Lien à la table RatingCurves représentant la courve de tarage
+        /// </returns>
         [CSSPExist(ExistTypeName = "RatingCurve", ExistPlurial = "s", ExistFieldID = "RatingCurveID")]
+        [CSSPDisplayEN(DisplayEN = "Rating curve ID")]
+        [CSSPDisplayFR(DisplayFR = "Identifiant de la courbe de tarage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the RatingCurves table representing the rating curve")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table RatingCurves représentant la courve de tarage")]
         public int RatingCurveID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Stage value (m)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Valeur de niveau (m)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Stage value in meters")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Valeur de niveau en mètres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Stage value (m)
+        /// 
+        /// **Display (fr)** --- Valeur de niveau (m)
+        /// 
+        /// **Description (en)** --- Stage value in meters
+        /// 
+        /// **Description (fr)** --- Valeur de niveau en mètres
+        /// </returns>
         [Range(0.0D, 1000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Stage value (m)")]
+        [CSSPDisplayFR(DisplayFR = "Valeur de niveau (m)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Stage value in meters")]
+        [CSSPDescriptionFR(DescriptionFR = @"Valeur de niveau en mètres")]
         public double StageValue_m { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Discharge value (m3/s)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Valeur du débits (m3/s)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Discharge value in cubic meters per second")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Valeur du débits en mètres cube par second")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Discharge value (m3/s)
+        /// 
+        /// **Display (fr)** --- Valeur du débits (m3/s)
+        /// 
+        /// **Description (en)** --- Discharge value in cubic meters per second
+        /// 
+        /// **Description (fr)** --- Valeur du débits en mètres cube par second
+        /// </returns>
         [Range(0.0D, 1000000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Discharge value (m3/s)")]
+        [CSSPDisplayFR(DisplayFR = "Valeur du débits (m3/s)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Discharge value in cubic meters per second")]
+        [CSSPDescriptionFR(DescriptionFR = @"Valeur du débits en mètres cube par second")]
         public double DischargeValue_m3_s { get; set; }
         #endregion Properties in DB
 

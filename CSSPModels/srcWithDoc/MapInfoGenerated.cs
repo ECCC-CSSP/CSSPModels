@@ -58,30 +58,172 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>1 == Root, 2 == Address, 3 == Area, 4 == ClimateSite, 6 == Country, 8 == File, 9 == HydrometricSite, 11 == MikeBoundaryConditionWebTide, 12 == MikeBoundaryConditionMesh, 14 == MikeSource, 15 == Municipality, 16 == MWQMSite, 17 == PolSourceSite, 18 == Province, 19 == Sector, 20 == Subsector, 22 == TideSite, 24 == WasteWaterTreatmentPlant, 25 == LiftStation, 26 == Spill, 29 == Outfall, 30 == OtherInfrastructure, 41 == SeeOther, 42 == LineOverflow, 79 == Classification, 80 == Approved, 81 == Restricted, 82 == Prohibited, 83 == ConditionallyApproved, 84 == ConditionallyRestricted</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,2,3,4,6,8,9,11,12,14,15,16,17,18,19,20,22,24,25,26,29,30,41,42,79,80,81,82,83,84")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TVItem")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Item TV")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the item")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant l'item")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TVItem
+        /// 
+        /// **Display (fr)** --- Item TV
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the item
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant l'item
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,2,3,4,6,8,9,11,12,14,15,16,17,18,19,20,22,24,25,26,29,30,41,42,79,80,81,82,83,84")]
+        [CSSPDisplayEN(DisplayEN = "TVItem")]
+        [CSSPDisplayFR(DisplayFR = "Item TV")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the item")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant l'item")]
         public int TVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TVType")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de l'arbre visuel")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TVType
+        /// 
+        /// **Display (fr)** --- Type de l'arbre visuel
+        /// 
+        /// **Description (en)** --- Tree view type
+        /// 
+        /// **Description (fr)** --- Type de l'arbre visuel
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "TVType")]
+        [CSSPDisplayFR(DisplayFR = "Type de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de l'arbre visuel")]
         public TVTypeEnum TVType { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lat min")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Lat min")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Latitude minimum")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Latitude minimum")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lat min
+        /// 
+        /// **Display (fr)** --- Lat min
+        /// 
+        /// **Description (en)** --- Latitude minimum
+        /// 
+        /// **Description (fr)** --- Latitude minimum
+        /// </returns>
         [Range(-90.0D, 90.0D)]
+        [CSSPDisplayEN(DisplayEN = "Lat min")]
+        [CSSPDisplayFR(DisplayFR = "Lat min")]
+        [CSSPDescriptionEN(DescriptionEN = @"Latitude minimum")]
+        [CSSPDescriptionFR(DescriptionFR = @"Latitude minimum")]
         public double LatMin { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lat max")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Lat max")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Latitude maximum")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Latitude maximum")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lat max
+        /// 
+        /// **Display (fr)** --- Lat max
+        /// 
+        /// **Description (en)** --- Latitude maximum
+        /// 
+        /// **Description (fr)** --- Latitude maximum
+        /// </returns>
         [Range(-90.0D, 90.0D)]
+        [CSSPDisplayEN(DisplayEN = "Lat max")]
+        [CSSPDisplayFR(DisplayFR = "Lat max")]
+        [CSSPDescriptionEN(DescriptionEN = @"Latitude maximum")]
+        [CSSPDescriptionFR(DescriptionFR = @"Latitude maximum")]
         public double LatMax { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lng min")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Lng min")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Longitude minimum")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Longitude minimum")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lng min
+        /// 
+        /// **Display (fr)** --- Lng min
+        /// 
+        /// **Description (en)** --- Longitude minimum
+        /// 
+        /// **Description (fr)** --- Longitude minimum
+        /// </returns>
         [Range(-180.0D, 180.0D)]
+        [CSSPDisplayEN(DisplayEN = "Lng min")]
+        [CSSPDisplayFR(DisplayFR = "Lng min")]
+        [CSSPDescriptionEN(DescriptionEN = @"Longitude minimum")]
+        [CSSPDescriptionFR(DescriptionFR = @"Longitude minimum")]
         public double LngMin { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lng max")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Lng max")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Longitude maximum")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Longitude maximum")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lng max
+        /// 
+        /// **Display (fr)** --- Lng max
+        /// 
+        /// **Description (en)** --- Longitude maximum
+        /// 
+        /// **Description (fr)** --- Longitude maximum
+        /// </returns>
         [Range(-180.0D, 180.0D)]
+        [CSSPDisplayEN(DisplayEN = "Lng max")]
+        [CSSPDisplayFR(DisplayFR = "Lng max")]
+        [CSSPDescriptionEN(DescriptionEN = @"Longitude maximum")]
+        [CSSPDescriptionFR(DescriptionFR = @"Longitude maximum")]
         public double LngMax { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Map object draw type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type d'object pour carte")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Map object draw type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type d'object pour carte")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Map object draw type
+        /// 
+        /// **Display (fr)** --- Type d'object pour carte
+        /// 
+        /// **Description (en)** --- Map object draw type
+        /// 
+        /// **Description (fr)** --- Type d'object pour carte
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Map object draw type")]
+        [CSSPDisplayFR(DisplayFR = "Type d'object pour carte")]
+        [CSSPDescriptionEN(DescriptionEN = @"Map object draw type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type d'object pour carte")]
         public MapInfoDrawTypeEnum MapInfoDrawType { get; set; }
         #endregion Properties in DB
 
@@ -131,19 +273,55 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Map object draw type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type d'object pour carte")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Map object draw type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type d'object pour carte")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Map object draw type text
+        /// 
+        /// **Display (fr)** --- Texte du type d'object pour carte
+        /// 
+        /// **Description (en)** --- Map object draw type text
+        /// 
+        /// **Description (fr)** --- Texte du type d'object pour carte
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Map object draw type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type d'object pour carte")]
+        [CSSPDescriptionEN(DescriptionEN = @"Map object draw type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type d'object pour carte")]
         public string TVTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "MapInfoDrawTypeEnum", EnumType = "MapInfoDrawType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tree view type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de l'arbre visuel")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tree view type text
+        /// 
+        /// **Display (fr)** --- Texte de l'arbre visuel
+        /// 
+        /// **Description (en)** --- Tree view type text
+        /// 
+        /// **Description (fr)** --- Texte de l'arbre visuel
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "MapInfoDrawTypeEnum", EnumType = "MapInfoDrawType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Tree view type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de l'arbre visuel")]
         public string MapInfoDrawTypeText { get; set; }
         #endregion Properties
 

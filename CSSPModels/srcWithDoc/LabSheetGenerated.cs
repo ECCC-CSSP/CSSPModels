@@ -52,24 +52,174 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the LabSheets table")]
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table LabSheets")]
         public int LabSheetID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Other server lab sheet ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "ID de la feuille de laboratoire de l'autre server")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Other server lab sheet ID")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "ID de la feuille de laboratoire de l'autre server")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Other server lab sheet ID
+        /// 
+        /// **Display (fr)** --- ID de la feuille de laboratoire de l'autre server
+        /// 
+        /// **Description (en)** --- Other server lab sheet ID
+        /// 
+        /// **Description (fr)** --- ID de la feuille de laboratoire de l'autre server
+        /// </returns>
         [Range(1, -1)]
+        [CSSPDisplayEN(DisplayEN = "Other server lab sheet ID")]
+        [CSSPDisplayFR(DisplayFR = "ID de la feuille de laboratoire de l'autre server")]
+        [CSSPDescriptionEN(DescriptionEN = @"Other server lab sheet ID")]
+        [CSSPDescriptionFR(DescriptionFR = @"ID de la feuille de laboratoire de l'autre server")]
         public int OtherServerLabSheetID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "SamplingPlan", ExistPlurial = "s", ExistFieldID = "SamplingPlanID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling plan")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Plan d'échantillonnage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the SamplingPlan table representing the sampling plan")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table SamplingPlan représentant le plan d'échantillonnage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sampling plan
+        /// 
+        /// **Display (fr)** --- Plan d'échantillonnage
+        /// 
+        /// **Description (en)** --- Link to the SamplingPlan table representing the sampling plan
+        /// 
+        /// **Description (fr)** --- Lien à la table SamplingPlan représentant le plan d'échantillonnage
+        /// </returns>
         [CSSPExist(ExistTypeName = "SamplingPlan", ExistPlurial = "s", ExistFieldID = "SamplingPlanID")]
+        [CSSPDisplayEN(DisplayEN = "Sampling plan")]
+        [CSSPDisplayFR(DisplayFR = "Plan d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the SamplingPlan table representing the sampling plan")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table SamplingPlan représentant le plan d'échantillonnage")]
         public int SamplingPlanID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling plan name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom du plan d'échantillonnage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sampling plan name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom du plan d'échantillonnage")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sampling plan name
+        /// 
+        /// **Display (fr)** --- Nom du plan d'échantillonnage
+        /// 
+        /// **Description (en)** --- Sampling plan name
+        /// 
+        /// **Description (fr)** --- Nom du plan d'échantillonnage
+        /// </returns>
         [StringLength(250, MinimumLength = 1)]
+        [CSSPDisplayEN(DisplayEN = "Sampling plan name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du plan d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sampling plan name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du plan d'échantillonnage")]
         public string SamplingPlanName { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Year of run")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Année de la tournée")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Year of run")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Année de la tournée")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Year of run
+        /// 
+        /// **Display (fr)** --- Année de la tournée
+        /// 
+        /// **Description (en)** --- Year of run
+        /// 
+        /// **Description (fr)** --- Année de la tournée
+        /// </returns>
         [Range(1980, -1)]
+        [CSSPDisplayEN(DisplayEN = "Year of run")]
+        [CSSPDisplayFR(DisplayFR = "Année de la tournée")]
+        [CSSPDescriptionEN(DescriptionEN = @"Year of run")]
+        [CSSPDescriptionFR(DescriptionFR = @"Année de la tournée")]
         public int Year { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Month of run")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Mois de la tournée")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Month of run")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Mois de la tournée")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Month of run
+        /// 
+        /// **Display (fr)** --- Mois de la tournée
+        /// 
+        /// **Description (en)** --- Month of run
+        /// 
+        /// **Description (fr)** --- Mois de la tournée
+        /// </returns>
         [Range(1, 12)]
+        [CSSPDisplayEN(DisplayEN = "Month of run")]
+        [CSSPDisplayFR(DisplayFR = "Mois de la tournée")]
+        [CSSPDescriptionEN(DescriptionEN = @"Month of run")]
+        [CSSPDescriptionFR(DescriptionFR = @"Mois de la tournée")]
         public int Month { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Day of run")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Jour de la tournée")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Day of run")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Jour de la tournée")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Day of run
+        /// 
+        /// **Display (fr)** --- Jour de la tournée
+        /// 
+        /// **Description (en)** --- Day of run
+        /// 
+        /// **Description (fr)** --- Jour de la tournée
+        /// </returns>
         [Range(1, 31)]
+        [CSSPDisplayEN(DisplayEN = "Day of run")]
+        [CSSPDisplayFR(DisplayFR = "Jour de la tournée")]
+        [CSSPDescriptionEN(DescriptionEN = @"Day of run")]
+        [CSSPDescriptionFR(DescriptionFR = @"Jour de la tournée")]
         public int Day { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Run number")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Numéro de la tournée")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Run number")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Numéro de la tournée")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Run number
+        /// 
+        /// **Display (fr)** --- Numéro de la tournée
+        /// 
+        /// **Description (en)** --- Run number
+        /// 
+        /// **Description (fr)** --- Numéro de la tournée
+        /// </returns>
         [Range(1, 100)]
+        [CSSPDisplayEN(DisplayEN = "Run number")]
+        [CSSPDisplayFR(DisplayFR = "Numéro de la tournée")]
+        [CSSPDescriptionEN(DescriptionEN = @"Run number")]
+        [CSSPDescriptionFR(DescriptionFR = @"Numéro de la tournée")]
         public int RunNumber { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -77,8 +227,26 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>20 == Subsector</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "20")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Subsector TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Subsector TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table with the unique identifier")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems avec l'identifiant unique")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Subsector TVItemID
+        /// 
+        /// **Display (fr)** --- Subsector TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table with the unique identifier
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems avec l'identifiant unique
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "20")]
+        [CSSPDisplayEN(DisplayEN = "Subsector TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Subsector TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table with the unique identifier")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems avec l'identifiant unique")]
         public int SubsectorTVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -86,46 +254,198 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>31 == MWQMRun</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "31")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Run TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Trounée TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table with the unique identifier")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems avec l'identifiant unique")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Run TVItemID
+        /// 
+        /// **Display (fr)** --- Trounée TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table with the unique identifier
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems avec l'identifiant unique
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "31")]
+        [CSSPDisplayEN(DisplayEN = "Run TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Trounée TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table with the unique identifier")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems avec l'identifiant unique")]
         public int? MWQMRunTVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling plan type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de plan d'échantillonnage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sampling plan type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de plan d'échantillonnage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sampling plan type
+        /// 
+        /// **Display (fr)** --- Type de plan d'échantillonnage
+        /// 
+        /// **Description (en)** --- Sampling plan type
+        /// 
+        /// **Description (fr)** --- Type de plan d'échantillonnage
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Sampling plan type")]
+        [CSSPDisplayFR(DisplayFR = "Type de plan d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sampling plan type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de plan d'échantillonnage")]
         public SamplingPlanTypeEnum SamplingPlanType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sample type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type d'échantillonnage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sample type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type d'échantillonnage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sample type
+        /// 
+        /// **Display (fr)** --- Type d'échantillonnage
+        /// 
+        /// **Description (en)** --- Sample type
+        /// 
+        /// **Description (fr)** --- Type d'échantillonnage
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Sample type")]
+        [CSSPDisplayFR(DisplayFR = "Type d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sample type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type d'échantillonnage")]
         public SampleTypeEnum SampleType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lab sheet type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de feuille de laboratoire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Lab sheet type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de feuille de laboratoire")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lab sheet type
+        /// 
+        /// **Display (fr)** --- Type de feuille de laboratoire
+        /// 
+        /// **Description (en)** --- Lab sheet type
+        /// 
+        /// **Description (fr)** --- Type de feuille de laboratoire
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Lab sheet type")]
+        [CSSPDisplayFR(DisplayFR = "Type de feuille de laboratoire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Lab sheet type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de feuille de laboratoire")]
         public LabSheetTypeEnum LabSheetType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lab sheet status")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "État de la feuille de laboratoire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Lab sheet statue")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "État de la feuille de laboratoire")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lab sheet status
+        /// 
+        /// **Display (fr)** --- État de la feuille de laboratoire
+        /// 
+        /// **Description (en)** --- Lab sheet statue
+        /// 
+        /// **Description (fr)** --- État de la feuille de laboratoire
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Lab sheet status")]
+        [CSSPDisplayFR(DisplayFR = "État de la feuille de laboratoire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Lab sheet statue")]
+        [CSSPDescriptionFR(DescriptionFR = @"État de la feuille de laboratoire")]
         public LabSheetStatusEnum LabSheetStatus { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "File name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom de la filière")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "File name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom de la filière")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- File name
+        /// 
+        /// **Display (fr)** --- Nom de la filière
+        /// 
+        /// **Description (en)** --- File name
+        /// 
+        /// **Description (fr)** --- Nom de la filière
+        /// </returns>
         [StringLength(250, MinimumLength = 1)]
+        [CSSPDisplayEN(DisplayEN = "File name")]
+        [CSSPDisplayFR(DisplayFR = "Nom de la filière")]
+        [CSSPDescriptionEN(DescriptionEN = @"File name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom de la filière")]
         public string FileName { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "File last modified date (local)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date du dernier changement de la filière (local)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "File last modified date (local)")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date du dernier changement de la filière (local)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- File last modified date (local)
+        /// 
+        /// **Display (fr)** --- Date du dernier changement de la filière (local)
+        /// 
+        /// **Description (en)** --- File last modified date (local)
+        /// 
+        /// **Description (fr)** --- Date du dernier changement de la filière (local)
+        /// </returns>
         [CSSPAfter(Year = 1980)]
+        [CSSPDisplayEN(DisplayEN = "File last modified date (local)")]
+        [CSSPDisplayFR(DisplayFR = "Date du dernier changement de la filière (local)")]
+        [CSSPDescriptionEN(DescriptionEN = @"File last modified date (local)")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date du dernier changement de la filière (local)")]
         public DateTime FileLastModifiedDate_Local { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "File content")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Contenu de la filière")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "File content")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Contenu de la filière")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- File content
+        /// 
+        /// **Display (fr)** --- Contenu de la filière
+        /// 
+        /// **Description (en)** --- File content
+        /// 
+        /// **Description (fr)** --- Contenu de la filière
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "File content")]
+        [CSSPDisplayFR(DisplayFR = "Contenu de la filière")]
+        [CSSPDescriptionEN(DescriptionEN = @"File content")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contenu de la filière")]
         public string FileContent { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -133,23 +453,77 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>5 == Contact</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Accepted or rejected by Contact TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Accepté ou rejeté par contact TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Accepted or rejected by Contact TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Accepté ou rejeté par contact TVItemID")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Accepted or rejected by Contact TVItemID
+        /// 
+        /// **Display (fr)** --- Accepté ou rejeté par contact TVItemID
+        /// 
+        /// **Description (en)** --- Accepted or rejected by Contact TVItemID
+        /// 
+        /// **Description (fr)** --- Accepté ou rejeté par contact TVItemID
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
+        [CSSPDisplayEN(DisplayEN = "Accepted or rejected by Contact TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Accepté ou rejeté par contact TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Accepted or rejected by Contact TVItemID")]
+        [CSSPDescriptionFR(DescriptionFR = @"Accepté ou rejeté par contact TVItemID")]
         public int? AcceptedOrRejectedByContactTVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Accepted or rejected date (local)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de l'acceptation ou rejet (local)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Accepted or rejected date (local)")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de l'acceptation ou rejet (local)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Accepted or rejected date (local)
+        /// 
+        /// **Display (fr)** --- Date de l'acceptation ou rejet (local)
+        /// 
+        /// **Description (en)** --- Accepted or rejected date (local)
+        /// 
+        /// **Description (fr)** --- Date de l'acceptation ou rejet (local)
+        /// </returns>
         [CSSPAfter(Year = 1980)]
+        [CSSPDisplayEN(DisplayEN = "Accepted or rejected date (local)")]
+        [CSSPDisplayFR(DisplayFR = "Date de l'acceptation ou rejet (local)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Accepted or rejected date (local)")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date de l'acceptation ou rejet (local)")]
         public DateTime? AcceptedOrRejectedDateTime { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Reject reason")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Raison du rejet")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Reject reason")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Raison du rejet")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Reject reason
+        /// 
+        /// **Display (fr)** --- Raison du rejet
+        /// 
+        /// **Description (en)** --- Reject reason
+        /// 
+        /// **Description (fr)** --- Raison du rejet
+        /// </returns>
         [StringLength(250)]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Reject reason")]
+        [CSSPDisplayFR(DisplayFR = "Raison du rejet")]
+        [CSSPDescriptionEN(DescriptionEN = @"Reject reason")]
+        [CSSPDescriptionFR(DescriptionFR = @"Raison du rejet")]
         public string RejectReason { get; set; }
         #endregion Properties in DB
 
@@ -167,22 +541,76 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SubsectorTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Subsector TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Sous-secteur TVItemLanguage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Subsector TVItemLanguage")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Sous-secteur TVItemLanguage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Subsector TVItemLanguage
+        /// 
+        /// **Display (fr)** --- Sous-secteur TVItemLanguage
+        /// 
+        /// **Description (en)** --- Subsector TVItemLanguage
+        /// 
+        /// **Description (fr)** --- Sous-secteur TVItemLanguage
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SubsectorTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Subsector TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "Sous-secteur TVItemLanguage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Subsector TVItemLanguage")]
+        [CSSPDescriptionFR(DescriptionFR = @"Sous-secteur TVItemLanguage")]
         public TVItemLanguage SubsectorTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMRunTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Run TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Tournée TVItemLanguage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Run TVItemLanguage")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Tournée TVItemLanguage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Run TVItemLanguage
+        /// 
+        /// **Display (fr)** --- Tournée TVItemLanguage
+        /// 
+        /// **Description (en)** --- Run TVItemLanguage
+        /// 
+        /// **Description (fr)** --- Tournée TVItemLanguage
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMRunTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Run TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "Tournée TVItemLanguage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Run TVItemLanguage")]
+        [CSSPDescriptionFR(DescriptionFR = @"Tournée TVItemLanguage")]
         public TVItemLanguage MWQMRunTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "AcceptedOrRejectedByContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Accepted or rejected contact TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Accepté ou rejeté contact TVItemLanguage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Accepted or rejected contact TVItemLanguage")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Accepté ou rejeté contact TVItemLanguage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Accepted or rejected contact TVItemLanguage
+        /// 
+        /// **Display (fr)** --- Accepté ou rejeté contact TVItemLanguage
+        /// 
+        /// **Description (en)** --- Accepted or rejected contact TVItemLanguage
+        /// 
+        /// **Description (fr)** --- Accepté ou rejeté contact TVItemLanguage
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "AcceptedOrRejectedByContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Accepted or rejected contact TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "Accepté ou rejeté contact TVItemLanguage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Accepted or rejected contact TVItemLanguage")]
+        [CSSPDescriptionFR(DescriptionFR = @"Accepté ou rejeté contact TVItemLanguage")]
         public TVItemLanguage AcceptedOrRejectedByContactTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -213,37 +641,109 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "SamplingPlanTypeEnum", EnumType = "SamplingPlanType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling plan type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de plan d'échantillonnage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sampling plan type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de plan d'échantillonnage")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sampling plan type text
+        /// 
+        /// **Display (fr)** --- Texte du type de plan d'échantillonnage
+        /// 
+        /// **Description (en)** --- Sampling plan type text
+        /// 
+        /// **Description (fr)** --- Texte du type de plan d'échantillonnage
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "SamplingPlanTypeEnum", EnumType = "SamplingPlanType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Sampling plan type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de plan d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sampling plan type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de plan d'échantillonnage")]
         public string SamplingPlanTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type d'échantillonnage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sampling type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type d'échantillonnage")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sampling type text
+        /// 
+        /// **Display (fr)** --- Texte du type d'échantillonnage
+        /// 
+        /// **Description (en)** --- Sampling type text
+        /// 
+        /// **Description (fr)** --- Texte du type d'échantillonnage
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Sampling type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sampling type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type d'échantillonnage")]
         public string SampleTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "LabSheetTypeEnum", EnumType = "LabSheetType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lab sheet type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de feuille de laboratoire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Lab sheet type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de feuille de laboratoire")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lab sheet type text
+        /// 
+        /// **Display (fr)** --- Texte du type de feuille de laboratoire
+        /// 
+        /// **Description (en)** --- Lab sheet type text
+        /// 
+        /// **Description (fr)** --- Texte du type de feuille de laboratoire
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "LabSheetTypeEnum", EnumType = "LabSheetType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Lab sheet type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de feuille de laboratoire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Lab sheet type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de feuille de laboratoire")]
         public string LabSheetTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "LabSheetStatusEnum", EnumType = "LabSheetStatus")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lab sheet status text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de l'état de la feuille de laboratoire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Lab sheet status text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de l'état de la feuille de laboratoire")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lab sheet status text
+        /// 
+        /// **Display (fr)** --- Texte de l'état de la feuille de laboratoire
+        /// 
+        /// **Description (en)** --- Lab sheet status text
+        /// 
+        /// **Description (fr)** --- Texte de l'état de la feuille de laboratoire
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "LabSheetStatusEnum", EnumType = "LabSheetStatus")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Lab sheet status text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de l'état de la feuille de laboratoire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Lab sheet status text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de l'état de la feuille de laboratoire")]
         public string LabSheetStatusText { get; set; }
         #endregion Properties
 

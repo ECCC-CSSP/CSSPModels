@@ -56,29 +56,101 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVFile", ExistPlurial = "s", ExistFieldID = "TVFileID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV file ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Filière de l'arbre visuel ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVFiles table representing the tree view file")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVFiles représentant la filière de l'arbre visuel")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV file ID
+        /// 
+        /// **Display (fr)** --- Filière de l'arbre visuel ID
+        /// 
+        /// **Description (en)** --- Link to the TVFiles table representing the tree view file
+        /// 
+        /// **Description (fr)** --- Lien à la table TVFiles représentant la filière de l'arbre visuel
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVFile", ExistPlurial = "s", ExistFieldID = "TVFileID")]
+        [CSSPDisplayEN(DisplayEN = "TV file ID")]
+        [CSSPDisplayFR(DisplayFR = "Filière de l'arbre visuel ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVFiles table representing the tree view file")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVFiles représentant la filière de l'arbre visuel")]
         public int TVFileID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Language")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Langage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Language of item")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Langage de l'item")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Language
+        /// 
+        /// **Display (fr)** --- Langage
+        /// 
+        /// **Description (en)** --- Language of item
+        /// 
+        /// **Description (fr)** --- Langage de l'item
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Language")]
+        [CSSPDisplayFR(DisplayFR = "Langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language of item")]
+        [CSSPDescriptionFR(DescriptionFR = @"Langage de l'item")]
         public LanguageEnum Language { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "File description")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Description du fichier")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "File description")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Description du fichier")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- File description
+        /// 
+        /// **Display (fr)** --- Description du fichier
+        /// 
+        /// **Description (en)** --- File description
+        /// 
+        /// **Description (fr)** --- Description du fichier
+        /// </returns>
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "File description")]
+        [CSSPDisplayFR(DisplayFR = "Description du fichier")]
+        [CSSPDescriptionEN(DescriptionEN = @"File description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description du fichier")]
         public string FileDescription { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Translation status")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Le statut de la traduction")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Translation status of the file description")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Le statut de la traduction de la description du fichier")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Translation status
+        /// 
+        /// **Display (fr)** --- Le statut de la traduction
+        /// 
+        /// **Description (en)** --- Translation status of the file description
+        /// 
+        /// **Description (fr)** --- Le statut de la traduction de la description du fichier
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Translation status")]
+        [CSSPDisplayFR(DisplayFR = "Le statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status of the file description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction de la description du fichier")]
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
@@ -121,10 +193,28 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "LanguageEnum", EnumType = "Language")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Language text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du langage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Language text [en, fr]")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du langage [en, fr]")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Language text
+        /// 
+        /// **Display (fr)** --- Texte du langage
+        /// 
+        /// **Description (en)** --- Language text [en, fr]
+        /// 
+        /// **Description (fr)** --- Texte du langage [en, fr]
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Language text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language text [en, fr]")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du langage [en, fr]")]
         public string LanguageText { get; set; }
         /// <summary>
         /// > [!NOTE]

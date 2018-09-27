@@ -58,178 +58,1116 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>10 == Infrastructure</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Infrastructure TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Infrastructure TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table with the unique identifier")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems avec l'identifiant unique")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Infrastructure TVItemID
+        /// 
+        /// **Display (fr)** --- Infrastructure TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table with the unique identifier
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems avec l'identifiant unique
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]
+        [CSSPDisplayEN(DisplayEN = "Infrastructure TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Infrastructure TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table with the unique identifier")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems avec l'identifiant unique")]
         public int InfrastructureTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Prism ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Prism ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the QC Prism DB with the unique identifier")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la BD Prism QC avec l'identifiant unique")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Prism ID
+        /// 
+        /// **Display (fr)** --- Prism ID
+        /// 
+        /// **Description (en)** --- Link to the QC Prism DB with the unique identifier
+        /// 
+        /// **Description (fr)** --- Lien à la BD Prism QC avec l'identifiant unique
+        /// </returns>
         [Range(0, 100000)]
+        [CSSPDisplayEN(DisplayEN = "Prism ID")]
+        [CSSPDisplayFR(DisplayFR = "Prism ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the QC Prism DB with the unique identifier")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la BD Prism QC avec l'identifiant unique")]
         public int? PrismID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TP ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TP ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Treatment plan unique ID comming from old DB")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Identifiant unique de usine de traitement des eaux usées de la vieille base de données")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TP ID
+        /// 
+        /// **Display (fr)** --- TP ID
+        /// 
+        /// **Description (en)** --- Treatment plan unique ID comming from old DB
+        /// 
+        /// **Description (fr)** --- Identifiant unique de usine de traitement des eaux usées de la vieille base de données
+        /// </returns>
         [Range(0, 100000)]
+        [CSSPDisplayEN(DisplayEN = "TP ID")]
+        [CSSPDisplayFR(DisplayFR = "TP ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Treatment plan unique ID comming from old DB")]
+        [CSSPDescriptionFR(DescriptionFR = @"Identifiant unique de usine de traitement des eaux usées de la vieille base de données")]
         public int? TPID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "LS ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "LS ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Lift station unique ID comming from old DB")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Identifiant unique de poste de pompage de la vieille base de données")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- LS ID
+        /// 
+        /// **Display (fr)** --- LS ID
+        /// 
+        /// **Description (en)** --- Lift station unique ID comming from old DB
+        /// 
+        /// **Description (fr)** --- Identifiant unique de poste de pompage de la vieille base de données
+        /// </returns>
         [Range(0, 100000)]
+        [CSSPDisplayEN(DisplayEN = "LS ID")]
+        [CSSPDisplayFR(DisplayFR = "LS ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Lift station unique ID comming from old DB")]
+        [CSSPDescriptionFR(DescriptionFR = @"Identifiant unique de poste de pompage de la vieille base de données")]
         public int? LSID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Site ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Site ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Site unique ID comming from old DB")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Identifiant unique du site de la vieille base de données")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Site ID
+        /// 
+        /// **Display (fr)** --- Site ID
+        /// 
+        /// **Description (en)** --- Site unique ID comming from old DB
+        /// 
+        /// **Description (fr)** --- Identifiant unique du site de la vieille base de données
+        /// </returns>
         [Range(0, 100000)]
+        [CSSPDisplayEN(DisplayEN = "Site ID")]
+        [CSSPDisplayFR(DisplayFR = "Site ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Site unique ID comming from old DB")]
+        [CSSPDescriptionFR(DescriptionFR = @"Identifiant unique du site de la vieille base de données")]
         public int? SiteID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Site ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Site ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Site unique ID comming from old DB")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Identifiant unique du site de la vieille base de données")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Site ID
+        /// 
+        /// **Display (fr)** --- Site ID
+        /// 
+        /// **Description (en)** --- Site unique ID comming from old DB
+        /// 
+        /// **Description (fr)** --- Identifiant unique du site de la vieille base de données
+        /// </returns>
         [Range(0, 100000)]
+        [CSSPDisplayEN(DisplayEN = "Site ID")]
+        [CSSPDisplayFR(DisplayFR = "Site ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Site unique ID comming from old DB")]
+        [CSSPDescriptionFR(DescriptionFR = @"Identifiant unique du site de la vieille base de données")]
         public int? Site { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Category")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Catégory")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Category --- letter used previously to identify priority in waste water treatment plant assessments")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Catégory --- lettre utilisé précédement pour identifier la priorité des évaluations de systèmes de traitement des eaux")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Category
+        /// 
+        /// **Display (fr)** --- Catégory
+        /// 
+        /// **Description (en)** --- Category --- letter used previously to identify priority in waste water treatment plant assessments
+        /// 
+        /// **Description (fr)** --- Catégory --- lettre utilisé précédement pour identifier la priorité des évaluations de systèmes de traitement des eaux
+        /// </returns>
         [StringLength(1, MinimumLength = 1)]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Category")]
+        [CSSPDisplayFR(DisplayFR = "Catégory")]
+        [CSSPDescriptionEN(DescriptionEN = @"Category --- letter used previously to identify priority in waste water treatment plant assessments")]
+        [CSSPDescriptionFR(DescriptionFR = @"Catégory --- lettre utilisé précédement pour identifier la priorité des évaluations de systèmes de traitement des eaux")]
         public string InfrastructureCategory { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Infrastructure type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type d'infrastructure")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Infrastructure type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type d'infrastructure")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Infrastructure type
+        /// 
+        /// **Display (fr)** --- Type d'infrastructure
+        /// 
+        /// **Description (en)** --- Infrastructure type
+        /// 
+        /// **Description (fr)** --- Type d'infrastructure
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Infrastructure type")]
+        [CSSPDisplayFR(DisplayFR = "Type d'infrastructure")]
+        [CSSPDescriptionEN(DescriptionEN = @"Infrastructure type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type d'infrastructure")]
         public InfrastructureTypeEnum? InfrastructureType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Facility type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de facilité")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Facility type --- Lagoon, Plant")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de facilité --- Lagune, Usine")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Facility type
+        /// 
+        /// **Display (fr)** --- Type de facilité
+        /// 
+        /// **Description (en)** --- Facility type --- Lagoon, Plant
+        /// 
+        /// **Description (fr)** --- Type de facilité --- Lagune, Usine
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Facility type")]
+        [CSSPDisplayFR(DisplayFR = "Type de facilité")]
+        [CSSPDescriptionEN(DescriptionEN = @"Facility type --- Lagoon, Plant")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de facilité --- Lagune, Usine")]
         public FacilityTypeEnum? FacilityType { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Is mechanically aerated")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Est mécaniquement aéré")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Is mechanically aerated")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Est mécaniquement aéré")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Is mechanically aerated
+        /// 
+        /// **Display (fr)** --- Est mécaniquement aéré
+        /// 
+        /// **Description (en)** --- Is mechanically aerated
+        /// 
+        /// **Description (fr)** --- Est mécaniquement aéré
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Is mechanically aerated")]
+        [CSSPDisplayFR(DisplayFR = "Est mécaniquement aéré")]
+        [CSSPDescriptionEN(DescriptionEN = @"Is mechanically aerated")]
+        [CSSPDescriptionFR(DescriptionFR = @"Est mécaniquement aéré")]
         public bool? IsMechanicallyAerated { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Number of cells")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nombre de cellules")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of cells")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre de cellules")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Number of cells
+        /// 
+        /// **Display (fr)** --- Nombre de cellules
+        /// 
+        /// **Description (en)** --- Number of cells
+        /// 
+        /// **Description (fr)** --- Nombre de cellules
+        /// </returns>
         [Range(0, 10)]
+        [CSSPDisplayEN(DisplayEN = "Number of cells")]
+        [CSSPDisplayFR(DisplayFR = "Nombre de cellules")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of cells")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre de cellules")]
         public int? NumberOfCells { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Number of aerated cells")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nombre de cellules aérées")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of aerated cells")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre de cellules aérées")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Number of aerated cells
+        /// 
+        /// **Display (fr)** --- Nombre de cellules aérées
+        /// 
+        /// **Description (en)** --- Number of aerated cells
+        /// 
+        /// **Description (fr)** --- Nombre de cellules aérées
+        /// </returns>
         [Range(0, 10)]
+        [CSSPDisplayEN(DisplayEN = "Number of aerated cells")]
+        [CSSPDisplayFR(DisplayFR = "Nombre de cellules aérées")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of aerated cells")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre de cellules aérées")]
         public int? NumberOfAeratedCells { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Aeration type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type d'aération")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Aeration type --- Diffuser, Surface")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type d'aération --- Diffuseur, Surface")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Aeration type
+        /// 
+        /// **Display (fr)** --- Type d'aération
+        /// 
+        /// **Description (en)** --- Aeration type --- Diffuser, Surface
+        /// 
+        /// **Description (fr)** --- Type d'aération --- Diffuseur, Surface
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Aeration type")]
+        [CSSPDisplayFR(DisplayFR = "Type d'aération")]
+        [CSSPDescriptionEN(DescriptionEN = @"Aeration type --- Diffuser, Surface")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type d'aération --- Diffuseur, Surface")]
         public AerationTypeEnum? AerationType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Preliminary treatment type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de traitement préliminaire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Preliminary treatment type --- Bar screen, Grinder")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de traintement préliminaire --- Bar screen, Grinder (fr)")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Preliminary treatment type
+        /// 
+        /// **Display (fr)** --- Type de traitement préliminaire
+        /// 
+        /// **Description (en)** --- Preliminary treatment type --- Bar screen, Grinder
+        /// 
+        /// **Description (fr)** --- Type de traintement préliminaire --- Bar screen, Grinder (fr)
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Preliminary treatment type")]
+        [CSSPDisplayFR(DisplayFR = "Type de traitement préliminaire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Preliminary treatment type --- Bar screen, Grinder")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de traintement préliminaire --- Bar screen, Grinder (fr)")]
         public PreliminaryTreatmentTypeEnum? PreliminaryTreatmentType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Primary treatment type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de traitement primaire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Primary treatment type --- Sedimentation, Chemical Coagulation, Filtration")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de traitement primaire --- Sedimentation, Chemical Coagulation, Filtration (fr)")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Primary treatment type
+        /// 
+        /// **Display (fr)** --- Type de traitement primaire
+        /// 
+        /// **Description (en)** --- Primary treatment type --- Sedimentation, Chemical Coagulation, Filtration
+        /// 
+        /// **Description (fr)** --- Type de traitement primaire --- Sedimentation, Chemical Coagulation, Filtration (fr)
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Primary treatment type")]
+        [CSSPDisplayFR(DisplayFR = "Type de traitement primaire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Primary treatment type --- Sedimentation, Chemical Coagulation, Filtration")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de traitement primaire --- Sedimentation, Chemical Coagulation, Filtration (fr)")]
         public PrimaryTreatmentTypeEnum? PrimaryTreatmentType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Secondary treatment type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de traitement secondaire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Secondary treatment type --- RotatingBiologicalContactor, TricklingFilters, SequencingBatchReator, OxidationDitch")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de traitement secondaire --- RotatingBiologicalContactor, TricklingFilters, SequencingBatchReator, OxidationDitch (fr)")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Secondary treatment type
+        /// 
+        /// **Display (fr)** --- Type de traitement secondaire
+        /// 
+        /// **Description (en)** --- Secondary treatment type --- RotatingBiologicalContactor, TricklingFilters, SequencingBatchReator, OxidationDitch
+        /// 
+        /// **Description (fr)** --- Type de traitement secondaire --- RotatingBiologicalContactor, TricklingFilters, SequencingBatchReator, OxidationDitch (fr)
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Secondary treatment type")]
+        [CSSPDisplayFR(DisplayFR = "Type de traitement secondaire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Secondary treatment type --- RotatingBiologicalContactor, TricklingFilters, SequencingBatchReator, OxidationDitch")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de traitement secondaire --- RotatingBiologicalContactor, TricklingFilters, SequencingBatchReator, OxidationDitch (fr)")]
         public SecondaryTreatmentTypeEnum? SecondaryTreatmentType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tertiary treatment type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de traitement tertiaire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tertiary treatment type --- Adsorption, Flocculation, Membrane Filtration, Ion Exchange, Reverse Osmosis, Biological Nutrient Removal")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de traitement tertiaire --- Adsorption, Flocculation, Membrane Filtration, Ion Exchange, Reverse Osmosis, Biological Nutrient Removal (fr)")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tertiary treatment type
+        /// 
+        /// **Display (fr)** --- Type de traitement tertiaire
+        /// 
+        /// **Description (en)** --- Tertiary treatment type --- Adsorption, Flocculation, Membrane Filtration, Ion Exchange, Reverse Osmosis, Biological Nutrient Removal
+        /// 
+        /// **Description (fr)** --- Type de traitement tertiaire --- Adsorption, Flocculation, Membrane Filtration, Ion Exchange, Reverse Osmosis, Biological Nutrient Removal (fr)
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Tertiary treatment type")]
+        [CSSPDisplayFR(DisplayFR = "Type de traitement tertiaire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tertiary treatment type --- Adsorption, Flocculation, Membrane Filtration, Ion Exchange, Reverse Osmosis, Biological Nutrient Removal")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de traitement tertiaire --- Adsorption, Flocculation, Membrane Filtration, Ion Exchange, Reverse Osmosis, Biological Nutrient Removal (fr)")]
         public TertiaryTreatmentTypeEnum? TertiaryTreatmentType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Treatment type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de traitement")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Treatment type --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, 
+Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, 
+LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, 
+Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, 
+Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, 
+Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de traitement --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, 
+Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, 
+LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, 
+Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, 
+Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, 
+Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor (fr)")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Treatment type
+        /// 
+        /// **Display (fr)** --- Type de traitement
+        /// 
+        /// **Description (en)** --- Treatment type --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, 
+Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, 
+LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, 
+Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, 
+Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, 
+Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor
+        /// 
+        /// **Description (fr)** --- Type de traitement --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, 
+Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, 
+LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, 
+Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, 
+Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, 
+Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor (fr)
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Treatment type")]
+        [CSSPDisplayFR(DisplayFR = "Type de traitement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Treatment type --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, 
+Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, 
+LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, 
+Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, 
+Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, 
+Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de traitement --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, 
+Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, 
+LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, 
+Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, 
+Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, 
+Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor (fr)")]
         public TreatmentTypeEnum? TreatmentType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Disinfection type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de désinfection")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Disinfection type --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, 
+Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de désinfection --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, 
+Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal (fr)")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Disinfection type
+        /// 
+        /// **Display (fr)** --- Type de désinfection
+        /// 
+        /// **Description (en)** --- Disinfection type --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, 
+Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal
+        /// 
+        /// **Description (fr)** --- Type de désinfection --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, 
+Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal (fr)
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Disinfection type")]
+        [CSSPDisplayFR(DisplayFR = "Type de désinfection")]
+        [CSSPDescriptionEN(DescriptionEN = @"Disinfection type --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, 
+Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de désinfection --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, 
+Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal (fr)")]
         public DisinfectionTypeEnum? DisinfectionType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Collection system type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de système de collection")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Collection system type --- Completely Separated, Completely Combined, Combined 90 Separated 10, 
+        Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, 
+        Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de système de collection --- Completely Separated, Completely Combined, Combined 90 Separated 10, 
+        Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, 
+        Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90 (fr)")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Collection system type
+        /// 
+        /// **Display (fr)** --- Type de système de collection
+        /// 
+        /// **Description (en)** --- Collection system type --- Completely Separated, Completely Combined, Combined 90 Separated 10, 
+        Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, 
+        Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90
+        /// 
+        /// **Description (fr)** --- Type de système de collection --- Completely Separated, Completely Combined, Combined 90 Separated 10, 
+        Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, 
+        Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90 (fr)
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Collection system type")]
+        [CSSPDisplayFR(DisplayFR = "Type de système de collection")]
+        [CSSPDescriptionEN(DescriptionEN = @"Collection system type --- Completely Separated, Completely Combined, Combined 90 Separated 10, 
+        Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, 
+        Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de système de collection --- Completely Separated, Completely Combined, Combined 90 Separated 10, 
+        Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, 
+        Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90 (fr)")]
         public CollectionSystemTypeEnum? CollectionSystemType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Alarm system type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de système d'alarme")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Alarm system type --- SCADA, None, Only Visual Light,SCADA And Light, Pager And Light")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de système d'alarme --- SCADA, None, Only Visual Light,SCADA And Light, Pager And Light (fr)")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Alarm system type
+        /// 
+        /// **Display (fr)** --- Type de système d'alarme
+        /// 
+        /// **Description (en)** --- Alarm system type --- SCADA, None, Only Visual Light,SCADA And Light, Pager And Light
+        /// 
+        /// **Description (fr)** --- Type de système d'alarme --- SCADA, None, Only Visual Light,SCADA And Light, Pager And Light (fr)
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Alarm system type")]
+        [CSSPDisplayFR(DisplayFR = "Type de système d'alarme")]
+        [CSSPDescriptionEN(DescriptionEN = @"Alarm system type --- SCADA, None, Only Visual Light,SCADA And Light, Pager And Light")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de système d'alarme --- SCADA, None, Only Visual Light,SCADA And Light, Pager And Light (fr)")]
         public AlarmSystemTypeEnum? AlarmSystemType { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Design flow (m3/d)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Débit de design (m3/d)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Design flow in cubic meters per day")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Débit de design en mètres cube par jour")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Design flow (m3/d)
+        /// 
+        /// **Display (fr)** --- Débit de design (m3/d)
+        /// 
+        /// **Description (en)** --- Design flow in cubic meters per day
+        /// 
+        /// **Description (fr)** --- Débit de design en mètres cube par jour
+        /// </returns>
         [Range(0.0D, 1000000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Design flow (m3/d)")]
+        [CSSPDisplayFR(DisplayFR = "Débit de design (m3/d)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Design flow in cubic meters per day")]
+        [CSSPDescriptionFR(DescriptionFR = @"Débit de design en mètres cube par jour")]
         public double? DesignFlow_m3_day { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Average flow (m3/d)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Débit moyen (m3/d)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Average flow in cubic meters per day")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Débit moyen en mètres cube par jour")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Average flow (m3/d)
+        /// 
+        /// **Display (fr)** --- Débit moyen (m3/d)
+        /// 
+        /// **Description (en)** --- Average flow in cubic meters per day
+        /// 
+        /// **Description (fr)** --- Débit moyen en mètres cube par jour
+        /// </returns>
         [Range(0.0D, 1000000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Average flow (m3/d)")]
+        [CSSPDisplayFR(DisplayFR = "Débit moyen (m3/d)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Average flow in cubic meters per day")]
+        [CSSPDescriptionFR(DescriptionFR = @"Débit moyen en mètres cube par jour")]
         public double? AverageFlow_m3_day { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Peak flow (m3/d)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Débit maximum (m3/d)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Peak flow in cubic meters per day")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Débit maximum en mètres cube par jour")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Peak flow (m3/d)
+        /// 
+        /// **Display (fr)** --- Débit maximum (m3/d)
+        /// 
+        /// **Description (en)** --- Peak flow in cubic meters per day
+        /// 
+        /// **Description (fr)** --- Débit maximum en mètres cube par jour
+        /// </returns>
         [Range(0.0D, 1000000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Peak flow (m3/d)")]
+        [CSSPDisplayFR(DisplayFR = "Débit maximum (m3/d)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Peak flow in cubic meters per day")]
+        [CSSPDescriptionFR(DescriptionFR = @"Débit maximum en mètres cube par jour")]
         public double? PeakFlow_m3_day { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Population served")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Population déservi")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Population served")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Population déservi")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Population served
+        /// 
+        /// **Display (fr)** --- Population déservi
+        /// 
+        /// **Description (en)** --- Population served
+        /// 
+        /// **Description (fr)** --- Population déservi
+        /// </returns>
         [Range(0, 1000000)]
+        [CSSPDisplayEN(DisplayEN = "Population served")]
+        [CSSPDisplayFR(DisplayFR = "Population déservi")]
+        [CSSPDescriptionEN(DescriptionEN = @"Population served")]
+        [CSSPDescriptionFR(DescriptionFR = @"Population déservi")]
         public int? PopServed { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Can overflow")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Peut déverser")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Can overflow")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Peut déverser")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Can overflow
+        /// 
+        /// **Display (fr)** --- Peut déverser
+        /// 
+        /// **Description (en)** --- Can overflow
+        /// 
+        /// **Description (fr)** --- Peut déverser
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Can overflow")]
+        [CSSPDisplayFR(DisplayFR = "Peut déverser")]
+        [CSSPDescriptionEN(DescriptionEN = @"Can overflow")]
+        [CSSPDescriptionFR(DescriptionFR = @"Peut déverser")]
         public bool? CanOverflow { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "% of total flow")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "% du débit total")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Percentage of total flow")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Pourcentage du débit total")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- % of total flow
+        /// 
+        /// **Display (fr)** --- % du débit total
+        /// 
+        /// **Description (en)** --- Percentage of total flow
+        /// 
+        /// **Description (fr)** --- Pourcentage du débit total
+        /// </returns>
         [Range(0.0D, 100.0D)]
+        [CSSPDisplayEN(DisplayEN = "% of total flow")]
+        [CSSPDisplayFR(DisplayFR = "% du débit total")]
+        [CSSPDescriptionEN(DescriptionEN = @"Percentage of total flow")]
+        [CSSPDescriptionFR(DescriptionFR = @"Pourcentage du débit total")]
         public double? PercFlowOfTotal { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Time offset (h)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Décalage horaire (h)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Time offset in hour (decimal)")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Décalage horaire en heure (décimal)")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Time offset (h)
+        /// 
+        /// **Display (fr)** --- Décalage horaire (h)
+        /// 
+        /// **Description (en)** --- Time offset in hour (decimal)
+        /// 
+        /// **Description (fr)** --- Décalage horaire en heure (décimal)
+        /// </returns>
         [Range(-10.0D, 0.0D)]
+        [CSSPDisplayEN(DisplayEN = "Time offset (h)")]
+        [CSSPDisplayFR(DisplayFR = "Décalage horaire (h)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Time offset in hour (decimal)")]
+        [CSSPDescriptionFR(DescriptionFR = @"Décalage horaire en heure (décimal)")]
         public double? TimeOffset_hour { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Temporary catch all will be removed later")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Temporaire collection d'information a être effacé plus tard")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Temporary catch all will be removed later")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Temporaire collection d'information a être effacé plus tard")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Temporary catch all will be removed later
+        /// 
+        /// **Display (fr)** --- Temporaire collection d'information a être effacé plus tard
+        /// 
+        /// **Description (en)** --- Temporary catch all will be removed later
+        /// 
+        /// **Description (fr)** --- Temporaire collection d'information a être effacé plus tard
+        /// </returns>
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Temporary catch all will be removed later")]
+        [CSSPDisplayFR(DisplayFR = "Temporaire collection d'information a être effacé plus tard")]
+        [CSSPDescriptionEN(DescriptionEN = @"Temporary catch all will be removed later")]
+        [CSSPDescriptionFR(DescriptionFR = @"Temporaire collection d'information a être effacé plus tard")]
         public string TempCatchAllRemoveLater { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Average depth (m)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Profondeur moyenne (m)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Average depth in meters")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Profondeur moyenne en mètres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Average depth (m)
+        /// 
+        /// **Display (fr)** --- Profondeur moyenne (m)
+        /// 
+        /// **Description (en)** --- Average depth in meters
+        /// 
+        /// **Description (fr)** --- Profondeur moyenne en mètres
+        /// </returns>
         [Range(0.0D, 1000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Average depth (m)")]
+        [CSSPDisplayFR(DisplayFR = "Profondeur moyenne (m)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Average depth in meters")]
+        [CSSPDescriptionFR(DescriptionFR = @"Profondeur moyenne en mètres")]
         public double? AverageDepth_m { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Number of ports")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nombre d'embouchure")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of ports")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre d'embouchure")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Number of ports
+        /// 
+        /// **Display (fr)** --- Nombre d'embouchure
+        /// 
+        /// **Description (en)** --- Number of ports
+        /// 
+        /// **Description (fr)** --- Nombre d'embouchure
+        /// </returns>
         [Range(1, 1000)]
+        [CSSPDisplayEN(DisplayEN = "Number of ports")]
+        [CSSPDisplayFR(DisplayFR = "Nombre d'embouchure")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of ports")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre d'embouchure")]
         public int? NumberOfPorts { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Ports diameter (m)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Diamètre des embouchures (m)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Ports diameter in meters")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Diamètre des embouchures en mètres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Ports diameter (m)
+        /// 
+        /// **Display (fr)** --- Diamètre des embouchures (m)
+        /// 
+        /// **Description (en)** --- Ports diameter in meters
+        /// 
+        /// **Description (fr)** --- Diamètre des embouchures en mètres
+        /// </returns>
         [Range(0.0D, 10.0D)]
+        [CSSPDisplayEN(DisplayEN = "Ports diameter (m)")]
+        [CSSPDisplayFR(DisplayFR = "Diamètre des embouchures (m)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ports diameter in meters")]
+        [CSSPDescriptionFR(DescriptionFR = @"Diamètre des embouchures en mètres")]
         public double? PortDiameter_m { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Ports spacing (m)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Distance des embouchures (m)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Ports spacing in meters")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Distance des embouchures en mètres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Ports spacing (m)
+        /// 
+        /// **Display (fr)** --- Distance des embouchures (m)
+        /// 
+        /// **Description (en)** --- Ports spacing in meters
+        /// 
+        /// **Description (fr)** --- Distance des embouchures en mètres
+        /// </returns>
         [Range(0.0D, 10000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Ports spacing (m)")]
+        [CSSPDisplayFR(DisplayFR = "Distance des embouchures (m)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ports spacing in meters")]
+        [CSSPDescriptionFR(DescriptionFR = @"Distance des embouchures en mètres")]
         public double? PortSpacing_m { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Ports elevation (m)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Élévation des embouchures (m)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Ports elevation in meters")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Élévation des embouchures en mètres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Ports elevation (m)
+        /// 
+        /// **Display (fr)** --- Élévation des embouchures (m)
+        /// 
+        /// **Description (en)** --- Ports elevation in meters
+        /// 
+        /// **Description (fr)** --- Élévation des embouchures en mètres
+        /// </returns>
         [Range(0.0D, 1000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Ports elevation (m)")]
+        [CSSPDisplayFR(DisplayFR = "Élévation des embouchures (m)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ports elevation in meters")]
+        [CSSPDescriptionFR(DescriptionFR = @"Élévation des embouchures en mètres")]
         public double? PortElevation_m { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Vertical angle (deg)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Angle vertical (deg)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Vertical angle in degrees")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Angle vertical en dégrés")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Vertical angle (deg)
+        /// 
+        /// **Display (fr)** --- Angle vertical (deg)
+        /// 
+        /// **Description (en)** --- Vertical angle in degrees
+        /// 
+        /// **Description (fr)** --- Angle vertical en dégrés
+        /// </returns>
         [Range(-90.0D, 90.0D)]
+        [CSSPDisplayEN(DisplayEN = "Vertical angle (deg)")]
+        [CSSPDisplayFR(DisplayFR = "Angle vertical (deg)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Vertical angle in degrees")]
+        [CSSPDescriptionFR(DescriptionFR = @"Angle vertical en dégrés")]
         public double? VerticalAngle_deg { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Horizontal angle (deg)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Angle horizontal (deg)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Horizontal angle in degrees")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Angle horizontal en dégrés")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Horizontal angle (deg)
+        /// 
+        /// **Display (fr)** --- Angle horizontal (deg)
+        /// 
+        /// **Description (en)** --- Horizontal angle in degrees
+        /// 
+        /// **Description (fr)** --- Angle horizontal en dégrés
+        /// </returns>
         [Range(-180.0D, 180.0D)]
+        [CSSPDisplayEN(DisplayEN = "Horizontal angle (deg)")]
+        [CSSPDisplayFR(DisplayFR = "Angle horizontal (deg)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Horizontal angle in degrees")]
+        [CSSPDescriptionFR(DescriptionFR = @"Angle horizontal en dégrés")]
         public double? HorizontalAngle_deg { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Decay rate (/day)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Taux de décroissance (/jour)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Decay rate per day")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Taux de décroissance par jour")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Decay rate (/day)
+        /// 
+        /// **Display (fr)** --- Taux de décroissance (/jour)
+        /// 
+        /// **Description (en)** --- Decay rate per day
+        /// 
+        /// **Description (fr)** --- Taux de décroissance par jour
+        /// </returns>
         [Range(0.0D, 100.0D)]
+        [CSSPDisplayEN(DisplayEN = "Decay rate (/day)")]
+        [CSSPDisplayFR(DisplayFR = "Taux de décroissance (/jour)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Decay rate per day")]
+        [CSSPDescriptionFR(DescriptionFR = @"Taux de décroissance par jour")]
         public double? DecayRate_per_day { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Near field velocity (m/s)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Vitesse en champ rapproché (m/s)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Near field velocity in meters per second")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Vitesse en champ rapproché en mètres par second")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Near field velocity (m/s)
+        /// 
+        /// **Display (fr)** --- Vitesse en champ rapproché (m/s)
+        /// 
+        /// **Description (en)** --- Near field velocity in meters per second
+        /// 
+        /// **Description (fr)** --- Vitesse en champ rapproché en mètres par second
+        /// </returns>
         [Range(0.0D, 10.0D)]
+        [CSSPDisplayEN(DisplayEN = "Near field velocity (m/s)")]
+        [CSSPDisplayFR(DisplayFR = "Vitesse en champ rapproché (m/s)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Near field velocity in meters per second")]
+        [CSSPDescriptionFR(DescriptionFR = @"Vitesse en champ rapproché en mètres par second")]
         public double? NearFieldVelocity_m_s { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Far field velocity (m/s)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Vitesse en champ éloigné (m/s)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Far field velocity in meters per second")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Vitesse en champ éloigné en mètres par second")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Far field velocity (m/s)
+        /// 
+        /// **Display (fr)** --- Vitesse en champ éloigné (m/s)
+        /// 
+        /// **Description (en)** --- Far field velocity in meters per second
+        /// 
+        /// **Description (fr)** --- Vitesse en champ éloigné en mètres par second
+        /// </returns>
         [Range(0.0D, 10.0D)]
+        [CSSPDisplayEN(DisplayEN = "Far field velocity (m/s)")]
+        [CSSPDisplayFR(DisplayFR = "Vitesse en champ éloigné (m/s)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Far field velocity in meters per second")]
+        [CSSPDescriptionFR(DescriptionFR = @"Vitesse en champ éloigné en mètres par second")]
         public double? FarFieldVelocity_m_s { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Receiving water salinity (PSU)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Salinité dans le milieu récepteur (PSU)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Receiving water salinity in PSU")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Salinité dans le milieu récepteur en PSU")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Receiving water salinity (PSU)
+        /// 
+        /// **Display (fr)** --- Salinité dans le milieu récepteur (PSU)
+        /// 
+        /// **Description (en)** --- Receiving water salinity in PSU
+        /// 
+        /// **Description (fr)** --- Salinité dans le milieu récepteur en PSU
+        /// </returns>
         [Range(0.0D, 40.0D)]
+        [CSSPDisplayEN(DisplayEN = "Receiving water salinity (PSU)")]
+        [CSSPDisplayFR(DisplayFR = "Salinité dans le milieu récepteur (PSU)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Receiving water salinity in PSU")]
+        [CSSPDescriptionFR(DescriptionFR = @"Salinité dans le milieu récepteur en PSU")]
         public double? ReceivingWaterSalinity_PSU { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Receiving water temperature (°C)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Température dans le milieu récepteur (°C)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Receiving water temperature in degree Celcius")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Température dans le milieu récepteur en dégrés Celcius")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Receiving water temperature (°C)
+        /// 
+        /// **Display (fr)** --- Température dans le milieu récepteur (°C)
+        /// 
+        /// **Description (en)** --- Receiving water temperature in degree Celcius
+        /// 
+        /// **Description (fr)** --- Température dans le milieu récepteur en dégrés Celcius
+        /// </returns>
         [Range(-10.0D, 40.0D)]
+        [CSSPDisplayEN(DisplayEN = "Receiving water temperature (°C)")]
+        [CSSPDisplayFR(DisplayFR = "Température dans le milieu récepteur (°C)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Receiving water temperature in degree Celcius")]
+        [CSSPDescriptionFR(DescriptionFR = @"Température dans le milieu récepteur en dégrés Celcius")]
         public double? ReceivingWaterTemperature_C { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Receiving water concentration (MPN /100 mL)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Concentration dans le milieu récepteur (NPP /100 mL)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Receiving water concentration in most probable number per 100 mL")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Concentration dans le milieu récepteur en nombre plus probable par 100 mL")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Receiving water concentration (MPN /100 mL)
+        /// 
+        /// **Display (fr)** --- Concentration dans le milieu récepteur (NPP /100 mL)
+        /// 
+        /// **Description (en)** --- Receiving water concentration in most probable number per 100 mL
+        /// 
+        /// **Description (fr)** --- Concentration dans le milieu récepteur en nombre plus probable par 100 mL
+        /// </returns>
         [Range(0, 10000000)]
+        [CSSPDisplayEN(DisplayEN = "Receiving water concentration (MPN /100 mL)")]
+        [CSSPDisplayFR(DisplayFR = "Concentration dans le milieu récepteur (NPP /100 mL)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Receiving water concentration in most probable number per 100 mL")]
+        [CSSPDescriptionFR(DescriptionFR = @"Concentration dans le milieu récepteur en nombre plus probable par 100 mL")]
         public int? ReceivingWater_MPN_per_100ml { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Distance from shore (m)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Distance par rapport à la rive (m)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Distance from shore in meters")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Distance par rapport à la rive en mètres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Distance from shore (m)
+        /// 
+        /// **Display (fr)** --- Distance par rapport à la rive (m)
+        /// 
+        /// **Description (en)** --- Distance from shore in meters
+        /// 
+        /// **Description (fr)** --- Distance par rapport à la rive en mètres
+        /// </returns>
         [Range(0.0D, 1000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Distance from shore (m)")]
+        [CSSPDisplayFR(DisplayFR = "Distance par rapport à la rive (m)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Distance from shore in meters")]
+        [CSSPDescriptionFR(DescriptionFR = @"Distance par rapport à la rive en mètres")]
         public double? DistanceFromShore_m { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -237,8 +1175,26 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>10 == Infrastructure</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "See other infrastructure")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Voir autre infrastructure")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "See other infrastructure")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Voir autre infrastructure")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- See other infrastructure
+        /// 
+        /// **Display (fr)** --- Voir autre infrastructure
+        /// 
+        /// **Description (en)** --- See other infrastructure
+        /// 
+        /// **Description (fr)** --- Voir autre infrastructure
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]
+        [CSSPDisplayEN(DisplayEN = "See other infrastructure")]
+        [CSSPDisplayFR(DisplayFR = "Voir autre infrastructure")]
+        [CSSPDescriptionEN(DescriptionEN = @"See other infrastructure")]
+        [CSSPDescriptionFR(DescriptionFR = @"Voir autre infrastructure")]
         public int? SeeOtherTVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -246,8 +1202,26 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>2 == Address</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "2")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Civic address TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Adresse civique TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table with the unique identifier")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems avec l'identifiant unique")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Civic address TVItemID
+        /// 
+        /// **Display (fr)** --- Adresse civique TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table with the unique identifier
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems avec l'identifiant unique
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "2")]
+        [CSSPDisplayEN(DisplayEN = "Civic address TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Adresse civique TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table with the unique identifier")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems avec l'identifiant unique")]
         public int? CivicAddressTVItemID { get; set; }
         #endregion Properties in DB
 
@@ -265,26 +1239,80 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Infrastructure TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage de Infrastructure")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Infrastructure TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage de Infrastructure")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Infrastructure TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage de Infrastructure
+        /// 
+        /// **Description (en)** --- Infrastructure TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage de Infrastructure
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Infrastructure TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de Infrastructure")]
+        [CSSPDescriptionEN(DescriptionEN = @"Infrastructure TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de Infrastructure")]
         public TVItemLanguage InfrastructureTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SeeOtherTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "See other Infrastructure TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Voir autre Infrastructure de HydrometricSite")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "See other Infrastructure TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage de void autre Infrastructure")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- See other Infrastructure TVItemLanguage
+        /// 
+        /// **Display (fr)** --- Voir autre Infrastructure de HydrometricSite
+        /// 
+        /// **Description (en)** --- See other Infrastructure TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage de void autre Infrastructure
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SeeOtherTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "See other Infrastructure TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "Voir autre Infrastructure de HydrometricSite")]
+        [CSSPDescriptionEN(DescriptionEN = @"See other Infrastructure TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de void autre Infrastructure")]
         public TVItemLanguage SeeOtherTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CivicAddressTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Civic address TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Adresse civique de HydrometricSite")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Civic address TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage de l'adresse civique")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Civic address TVItemLanguage
+        /// 
+        /// **Display (fr)** --- Adresse civique de HydrometricSite
+        /// 
+        /// **Description (en)** --- Civic address TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage de l'adresse civique
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CivicAddressTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Civic address TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "Adresse civique de HydrometricSite")]
+        [CSSPDescriptionEN(DescriptionEN = @"Civic address TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de l'adresse civique")]
         public TVItemLanguage CivicAddressTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -315,100 +1343,298 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "InfrastructureTypeEnum", EnumType = "InfrastructureType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Infrastructure type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type d'infrastructure")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Infrastructure type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type d'infrastructure")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Infrastructure type text
+        /// 
+        /// **Display (fr)** --- Texte du type d'infrastructure
+        /// 
+        /// **Description (en)** --- Infrastructure type text
+        /// 
+        /// **Description (fr)** --- Texte du type d'infrastructure
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "InfrastructureTypeEnum", EnumType = "InfrastructureType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Infrastructure type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type d'infrastructure")]
+        [CSSPDescriptionEN(DescriptionEN = @"Infrastructure type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type d'infrastructure")]
         public string InfrastructureTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "FacilityTypeEnum", EnumType = "FacilityType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Facility type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de facilité")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Facility type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de facilité")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Facility type text
+        /// 
+        /// **Display (fr)** --- Texte du type de facilité
+        /// 
+        /// **Description (en)** --- Facility type text
+        /// 
+        /// **Description (fr)** --- Texte du type de facilité
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "FacilityTypeEnum", EnumType = "FacilityType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Facility type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de facilité")]
+        [CSSPDescriptionEN(DescriptionEN = @"Facility type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de facilité")]
         public string FacilityTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "AerationTypeEnum", EnumType = "AerationType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Aeration type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type d'aération")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Aeration type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type d'aération")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Aeration type text
+        /// 
+        /// **Display (fr)** --- Texte du type d'aération
+        /// 
+        /// **Description (en)** --- Aeration type text
+        /// 
+        /// **Description (fr)** --- Texte du type d'aération
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "AerationTypeEnum", EnumType = "AerationType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Aeration type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type d'aération")]
+        [CSSPDescriptionEN(DescriptionEN = @"Aeration type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type d'aération")]
         public string AerationTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "PreliminaryTreatmentTypeEnum", EnumType = "PreliminaryTreatmentType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Preliminary treatment type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de traitement préliminaire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Preliminary treatment type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de traitement préliminaire")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Preliminary treatment type text
+        /// 
+        /// **Display (fr)** --- Texte du type de traitement préliminaire
+        /// 
+        /// **Description (en)** --- Preliminary treatment type text
+        /// 
+        /// **Description (fr)** --- Texte du type de traitement préliminaire
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "PreliminaryTreatmentTypeEnum", EnumType = "PreliminaryTreatmentType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Preliminary treatment type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de traitement préliminaire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Preliminary treatment type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de traitement préliminaire")]
         public string PreliminaryTreatmentTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "PrimaryTreatmentTypeEnum", EnumType = "PrimaryTreatmentType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Primary treatment type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de traitement primaire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Primary treatment type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de traitement primaire")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Primary treatment type text
+        /// 
+        /// **Display (fr)** --- Texte du type de traitement primaire
+        /// 
+        /// **Description (en)** --- Primary treatment type text
+        /// 
+        /// **Description (fr)** --- Texte du type de traitement primaire
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "PrimaryTreatmentTypeEnum", EnumType = "PrimaryTreatmentType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Primary treatment type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de traitement primaire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Primary treatment type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de traitement primaire")]
         public string PrimaryTreatmentTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "SecondaryTreatmentTypeEnum", EnumType = "SecondaryTreatmentType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Secondary treatment type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de traitement secondaire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Secondary treatment type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de traitement secondaire")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Secondary treatment type text
+        /// 
+        /// **Display (fr)** --- Texte du type de traitement secondaire
+        /// 
+        /// **Description (en)** --- Secondary treatment type text
+        /// 
+        /// **Description (fr)** --- Texte du type de traitement secondaire
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "SecondaryTreatmentTypeEnum", EnumType = "SecondaryTreatmentType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Secondary treatment type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de traitement secondaire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Secondary treatment type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de traitement secondaire")]
         public string SecondaryTreatmentTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TertiaryTreatmentTypeEnum", EnumType = "TertiaryTreatmentType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tertiary treatment type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de traitement tertiaire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tertiary treatment type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de traitement tertiaire")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tertiary treatment type text
+        /// 
+        /// **Display (fr)** --- Texte du type de traitement tertiaire
+        /// 
+        /// **Description (en)** --- Tertiary treatment type text
+        /// 
+        /// **Description (fr)** --- Texte du type de traitement tertiaire
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "TertiaryTreatmentTypeEnum", EnumType = "TertiaryTreatmentType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Tertiary treatment type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de traitement tertiaire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tertiary treatment type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de traitement tertiaire")]
         public string TertiaryTreatmentTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TreatmentTypeEnum", EnumType = "TreatmentType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Treatment type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de traitement")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Treatment type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de traitement")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Treatment type text
+        /// 
+        /// **Display (fr)** --- Texte du type de traitement
+        /// 
+        /// **Description (en)** --- Treatment type text
+        /// 
+        /// **Description (fr)** --- Texte du type de traitement
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "TreatmentTypeEnum", EnumType = "TreatmentType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Treatment type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de traitement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Treatment type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de traitement")]
         public string TreatmentTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "DisinfectionTypeEnum", EnumType = "DisinfectionType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Disinfection type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de désinfection")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Disinfection type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de désinfection")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Disinfection type text
+        /// 
+        /// **Display (fr)** --- Texte du type de désinfection
+        /// 
+        /// **Description (en)** --- Disinfection type text
+        /// 
+        /// **Description (fr)** --- Texte du type de désinfection
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "DisinfectionTypeEnum", EnumType = "DisinfectionType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Disinfection type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de désinfection")]
+        [CSSPDescriptionEN(DescriptionEN = @"Disinfection type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de désinfection")]
         public string DisinfectionTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "CollectionSystemTypeEnum", EnumType = "CollectionSystemType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Collection system type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de système de collection")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Collection system type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de système de collection")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Collection system type text
+        /// 
+        /// **Display (fr)** --- Texte du type de système de collection
+        /// 
+        /// **Description (en)** --- Collection system type text
+        /// 
+        /// **Description (fr)** --- Texte du type de système de collection
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "CollectionSystemTypeEnum", EnumType = "CollectionSystemType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Collection system type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de système de collection")]
+        [CSSPDescriptionEN(DescriptionEN = @"Collection system type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de système de collection")]
         public string CollectionSystemTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "AlarmSystemTypeEnum", EnumType = "AlarmSystemType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Alarm system type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de système d'alarme")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Alarm system type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de système d'alarme")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Alarm system type text
+        /// 
+        /// **Display (fr)** --- Texte du type de système d'alarme
+        /// 
+        /// **Description (en)** --- Alarm system type text
+        /// 
+        /// **Description (fr)** --- Texte du type de système d'alarme
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "AlarmSystemTypeEnum", EnumType = "AlarmSystemType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Alarm system type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de système d'alarme")]
+        [CSSPDescriptionEN(DescriptionEN = @"Alarm system type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de système d'alarme")]
         public string AlarmSystemTypeText { get; set; }
         #endregion Properties
 

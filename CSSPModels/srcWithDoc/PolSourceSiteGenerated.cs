@@ -58,32 +58,174 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>17 == PolSourceSite</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "17")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Pollution source site TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Site de source de pollution TVItemID (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing pollution source site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant le site de source de pollution")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Pollution source site TVItemID
+        /// 
+        /// **Display (fr)** --- Site de source de pollution TVItemID (fr)
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing pollution source site
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant le site de source de pollution
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "17")]
+        [CSSPDisplayEN(DisplayEN = "Pollution source site TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Site de source de pollution TVItemID (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing pollution source site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le site de source de pollution")]
         public int PolSourceSiteTVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Temporary locator which can be deleted in the future")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Localisateur temporaire qui peut être supprimé à l'avenir")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Temporary locator which can be deleted in the future")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Localisateur temporaire qui peut être supprimé à l'avenir")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Temporary locator which can be deleted in the future
+        /// 
+        /// **Display (fr)** --- Localisateur temporaire qui peut être supprimé à l'avenir
+        /// 
+        /// **Description (en)** --- Temporary locator which can be deleted in the future
+        /// 
+        /// **Description (fr)** --- Localisateur temporaire qui peut être supprimé à l'avenir
+        /// </returns>
         [StringLength(50)]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Temporary locator which can be deleted in the future")]
+        [CSSPDisplayFR(DisplayFR = "Localisateur temporaire qui peut être supprimé à l'avenir")]
+        [CSSPDescriptionEN(DescriptionEN = @"Temporary locator which can be deleted in the future")]
+        [CSSPDescriptionFR(DescriptionFR = @"Localisateur temporaire qui peut être supprimé à l'avenir")]
         public string Temp_Locator_CanDelete { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Old site ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Ancien identifiant du site")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Old site ID")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Ancien identifiant du site")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Old site ID
+        /// 
+        /// **Display (fr)** --- Ancien identifiant du site
+        /// 
+        /// **Description (en)** --- Old site ID
+        /// 
+        /// **Description (fr)** --- Ancien identifiant du site
+        /// </returns>
         [Range(0, 1000)]
+        [CSSPDisplayEN(DisplayEN = "Old site ID")]
+        [CSSPDisplayFR(DisplayFR = "Ancien identifiant du site")]
+        [CSSPDescriptionEN(DescriptionEN = @"Old site ID")]
+        [CSSPDescriptionFR(DescriptionFR = @"Ancien identifiant du site")]
         public int? Oldsiteid { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Site number/text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Numéro/texte du site")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Site number/text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Numéro/texte du site")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Site number/text
+        /// 
+        /// **Display (fr)** --- Numéro/texte du site
+        /// 
+        /// **Description (en)** --- Site number/text
+        /// 
+        /// **Description (fr)** --- Numéro/texte du site
+        /// </returns>
         [Range(0, 1000)]
+        [CSSPDisplayEN(DisplayEN = "Site number/text")]
+        [CSSPDisplayFR(DisplayFR = "Numéro/texte du site")]
+        [CSSPDescriptionEN(DescriptionEN = @"Site number/text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Numéro/texte du site")]
         public int? Site { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Site ID (not used)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Identifiant Site (not used)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Site ID (not used)")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Identifiant Site (not used)")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Site ID (not used)
+        /// 
+        /// **Display (fr)** --- Identifiant Site (not used)
+        /// 
+        /// **Description (en)** --- Site ID (not used)
+        /// 
+        /// **Description (fr)** --- Identifiant Site (not used)
+        /// </returns>
         [Range(0, 1000)]
+        [CSSPDisplayEN(DisplayEN = "Site ID (not used)")]
+        [CSSPDisplayFR(DisplayFR = "Identifiant Site (not used)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Site ID (not used)")]
+        [CSSPDescriptionFR(DescriptionFR = @"Identifiant Site (not used)")]
         public int? SiteID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Is point source")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Est une source ponctuelle")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Is point source")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Est une source ponctuelle")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Is point source
+        /// 
+        /// **Display (fr)** --- Est une source ponctuelle
+        /// 
+        /// **Description (en)** --- Is point source
+        /// 
+        /// **Description (fr)** --- Est une source ponctuelle
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Is point source")]
+        [CSSPDisplayFR(DisplayFR = "Est une source ponctuelle")]
+        [CSSPDescriptionEN(DescriptionEN = @"Is point source")]
+        [CSSPDescriptionFR(DescriptionFR = @"Est une source ponctuelle")]
         public bool IsPointSource { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Pollution source inactive reason")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Raison que la source de pollution est inactive")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Pollution source inactive reason")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Raison que la source de pollution est inactive")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Pollution source inactive reason
+        /// 
+        /// **Display (fr)** --- Raison que la source de pollution est inactive
+        /// 
+        /// **Description (en)** --- Pollution source inactive reason
+        /// 
+        /// **Description (fr)** --- Raison que la source de pollution est inactive
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Pollution source inactive reason")]
+        [CSSPDisplayFR(DisplayFR = "Raison que la source de pollution est inactive")]
+        [CSSPDescriptionEN(DescriptionEN = @"Pollution source inactive reason")]
+        [CSSPDescriptionFR(DescriptionFR = @"Raison que la source de pollution est inactive")]
         public PolSourceInactiveReasonEnum? InactiveReason { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -91,8 +233,26 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>2 == Address</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "2")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Civic address TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "L'adresse civique TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the civic address")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant l'adresse civique")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Civic address TVItemID
+        /// 
+        /// **Display (fr)** --- L'adresse civique TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the civic address
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant l'adresse civique
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "2")]
+        [CSSPDisplayEN(DisplayEN = "Civic address TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "L'adresse civique TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the civic address")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant l'adresse civique")]
         public int? CivicAddressTVItemID { get; set; }
         #endregion Properties in DB
 
@@ -110,8 +270,26 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "PolSourceSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Pollution source site TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du site de source de pollution")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Pollution source site TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du site de source de pollution")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Pollution source site TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du site de source de pollution
+        /// 
+        /// **Description (en)** --- Pollution source site TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du site de source de pollution
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "PolSourceSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Pollution source site TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du site de source de pollution")]
+        [CSSPDescriptionEN(DescriptionEN = @"Pollution source site TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du site de source de pollution")]
         public TVItemLanguage PolSourceSiteTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -142,10 +320,28 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "PolSourceInactiveReasonEnum", EnumType = "InactiveReason")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Inactive reason text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de la raison de l'inactivité")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Inactive reason text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de la raison de l'inactivité")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Inactive reason text
+        /// 
+        /// **Display (fr)** --- Texte de la raison de l'inactivité
+        /// 
+        /// **Description (en)** --- Inactive reason text
+        /// 
+        /// **Description (fr)** --- Texte de la raison de l'inactivité
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "PolSourceInactiveReasonEnum", EnumType = "InactiveReason")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Inactive reason text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de la raison de l'inactivité")]
+        [CSSPDescriptionEN(DescriptionEN = @"Inactive reason text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de la raison de l'inactivité")]
         public string InactiveReasonText { get; set; }
         #endregion Properties
 

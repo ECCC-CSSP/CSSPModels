@@ -27,7 +27,6 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le site MWQM (fr)")]
         public int MWQMSiteTVItemID { get; set; }
         [CSSPAfter(Year = 1980)]
-        [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "16")]
         [CSSPDisplayEN(DisplayEN = "Start date")]
         [CSSPDisplayFR(DisplayFR = "Date de début")]
         [CSSPDescriptionEN(DescriptionEN = @"Start date")]

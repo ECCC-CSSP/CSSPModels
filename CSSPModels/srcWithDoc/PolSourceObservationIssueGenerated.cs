@@ -55,19 +55,99 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "PolSourceObservation", ExistPlurial = "s", ExistFieldID = "PolSourceObservationID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Pollution source observation ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Observation de la source de pollution ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the PolSourceObservations table representing the pollution source observation")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table PolSourceObservations représentant l'observation de source de pollution")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Pollution source observation ID
+        /// 
+        /// **Display (fr)** --- Observation de la source de pollution ID
+        /// 
+        /// **Description (en)** --- Link to the PolSourceObservations table representing the pollution source observation
+        /// 
+        /// **Description (fr)** --- Lien à la table PolSourceObservations représentant l'observation de source de pollution
+        /// </returns>
         [CSSPExist(ExistTypeName = "PolSourceObservation", ExistPlurial = "s", ExistFieldID = "PolSourceObservationID")]
+        [CSSPDisplayEN(DisplayEN = "Pollution source observation ID")]
+        [CSSPDisplayFR(DisplayFR = "Observation de la source de pollution ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the PolSourceObservations table representing the pollution source observation")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table PolSourceObservations représentant l'observation de source de pollution")]
         public int PolSourceObservationID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Observation information")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "L'information de l'observation")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Observation information is a series of numbers representing the path of a collection of descriptive text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "L'information de l'observation est une liste de chiffres représentant la ligne d'une collection de texte descriptif")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Observation information
+        /// 
+        /// **Display (fr)** --- L'information de l'observation
+        /// 
+        /// **Description (en)** --- Observation information is a series of numbers representing the path of a collection of descriptive text
+        /// 
+        /// **Description (fr)** --- L'information de l'observation est une liste de chiffres représentant la ligne d'une collection de texte descriptif
+        /// </returns>
         [StringLength(250)]
+        [CSSPDisplayEN(DisplayEN = "Observation information")]
+        [CSSPDisplayFR(DisplayFR = "L'information de l'observation")]
+        [CSSPDescriptionEN(DescriptionEN = @"Observation information is a series of numbers representing the path of a collection of descriptive text")]
+        [CSSPDescriptionFR(DescriptionFR = @"L'information de l'observation est une liste de chiffres représentant la ligne d'une collection de texte descriptif")]
         public string ObservationInfo { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Ordinal")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Ordre")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Ordinal")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Ordre")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Ordinal
+        /// 
+        /// **Display (fr)** --- Ordre
+        /// 
+        /// **Description (en)** --- Ordinal
+        /// 
+        /// **Description (fr)** --- Ordre
+        /// </returns>
         [Range(0, 1000)]
+        [CSSPDisplayEN(DisplayEN = "Ordinal")]
+        [CSSPDisplayFR(DisplayFR = "Ordre")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ordinal")]
+        [CSSPDescriptionFR(DescriptionFR = @"Ordre")]
         public int Ordinal { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Extra comment")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Commentaire d'extra")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Extra comment")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Commentaire d'extra")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Extra comment
+        /// 
+        /// **Display (fr)** --- Commentaire d'extra
+        /// 
+        /// **Description (en)** --- Extra comment
+        /// 
+        /// **Description (fr)** --- Commentaire d'extra
+        /// </returns>
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Extra comment")]
+        [CSSPDisplayFR(DisplayFR = "Commentaire d'extra")]
+        [CSSPDescriptionEN(DescriptionEN = @"Extra comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Commentaire d'extra")]
         public string ExtraComment { get; set; }
         #endregion Properties in DB
 

@@ -31,9 +31,53 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Name of the app task parameter")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom du paramètre de app task")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Name
+        /// 
+        /// **Display (fr)** --- Nom
+        /// 
+        /// **Description (en)** --- Name of the app task parameter
+        /// 
+        /// **Description (fr)** --- Nom du paramètre de app task
+        /// </returns>
         [StringLength(255)]
+        [CSSPDisplayEN(DisplayEN = "Name")]
+        [CSSPDisplayFR(DisplayFR = "Nom")]
+        [CSSPDescriptionEN(DescriptionEN = @"Name of the app task parameter")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du paramètre de app task")]
         public string Name { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Value")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Valeur")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Value of the app task parameter")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Valeur du paramètre de app task")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Value
+        /// 
+        /// **Display (fr)** --- Valeur
+        /// 
+        /// **Description (en)** --- Value of the app task parameter
+        /// 
+        /// **Description (fr)** --- Valeur du paramètre de app task
+        /// </returns>
         [StringLength(255)]
+        [CSSPDisplayEN(DisplayEN = "Value")]
+        [CSSPDisplayFR(DisplayFR = "Valeur")]
+        [CSSPDescriptionEN(DescriptionEN = @"Value of the app task parameter")]
+        [CSSPDescriptionFR(DescriptionFR = @"Valeur du paramètre de app task")]
         public string Value { get; set; }
         #endregion Properties not in DB
 

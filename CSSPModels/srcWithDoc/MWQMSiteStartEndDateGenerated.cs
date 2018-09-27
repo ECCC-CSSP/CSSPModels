@@ -57,24 +57,78 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>16 == MWQMSite</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "16")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MWQM site TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Site MWQM TVItemID (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing MWQM site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant le site MWQM (fr)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MWQM site TVItemID
+        /// 
+        /// **Display (fr)** --- Site MWQM TVItemID (fr)
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing MWQM site
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant le site MWQM (fr)
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "16")]
+        [CSSPDisplayEN(DisplayEN = "MWQM site TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Site MWQM TVItemID (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing MWQM site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le site MWQM (fr)")]
         public int MWQMSiteTVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Start date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de début")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Start date")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de début")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Start date
+        /// 
+        /// **Display (fr)** --- Date de début
+        /// 
+        /// **Description (en)** --- Start date
+        /// 
+        /// **Description (fr)** --- Date de début
+        /// </returns>
         [CSSPAfter(Year = 1980)]
+        [CSSPDisplayEN(DisplayEN = "Start date")]
+        [CSSPDisplayFR(DisplayFR = "Date de début")]
+        [CSSPDescriptionEN(DescriptionEN = @"Start date")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date de début")]
         public DateTime StartDate { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
         /// > <para>[[CSSPBigger](CSSPModels.CSSPBiggerAttribute.html)(OtherField = "StartDate")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "End date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de fin")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "End date")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de fin")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- End date
+        /// 
+        /// **Display (fr)** --- Date de fin
+        /// 
+        /// **Description (en)** --- End date
+        /// 
+        /// **Description (fr)** --- Date de fin
+        /// </returns>
         [CSSPAfter(Year = 1980)]
         [CSSPBigger(OtherField = "StartDate")]
+        [CSSPDisplayEN(DisplayEN = "End date")]
+        [CSSPDisplayFR(DisplayFR = "Date de fin")]
+        [CSSPDescriptionEN(DescriptionEN = @"End date")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date de fin")]
         public DateTime? EndDate { get; set; }
         #endregion Properties in DB
 
@@ -92,8 +146,26 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MWQM site TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du site MWQM (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MWQM site TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du site MWQM (fr)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MWQM site TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du site MWQM (fr)
+        /// 
+        /// **Description (en)** --- MWQM site TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du site MWQM (fr)
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "MWQM site TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du site MWQM (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"MWQM site TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du site MWQM (fr)")]
         public TVItemLanguage MWQMSiteTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]

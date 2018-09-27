@@ -58,21 +58,123 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>16 == MWQMSite</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "16")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MWQM site TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Site MWQM TVItemID (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing MWQM site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant le site MWQM (fr)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MWQM site TVItemID
+        /// 
+        /// **Display (fr)** --- Site MWQM TVItemID (fr)
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing MWQM site
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant le site MWQM (fr)
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "16")]
+        [CSSPDisplayEN(DisplayEN = "MWQM site TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Site MWQM TVItemID (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing MWQM site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le site MWQM (fr)")]
         public int MWQMSiteTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MWQM site number")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Numéro du site MWQM (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MWQM site number")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Numéro du site MWQM (fr)")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MWQM site number
+        /// 
+        /// **Display (fr)** --- Numéro du site MWQM (fr)
+        /// 
+        /// **Description (en)** --- MWQM site number
+        /// 
+        /// **Description (fr)** --- Numéro du site MWQM (fr)
+        /// </returns>
         [StringLength(8)]
+        [CSSPDisplayEN(DisplayEN = "MWQM site number")]
+        [CSSPDisplayFR(DisplayFR = "Numéro du site MWQM (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"MWQM site number")]
+        [CSSPDescriptionFR(DescriptionFR = @"Numéro du site MWQM (fr)")]
         public string MWQMSiteNumber { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MWQM site description")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Description du site MWQM (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MWQM site description")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Description du site MWQM (fr)")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MWQM site description
+        /// 
+        /// **Display (fr)** --- Description du site MWQM (fr)
+        /// 
+        /// **Description (en)** --- MWQM site description
+        /// 
+        /// **Description (fr)** --- Description du site MWQM (fr)
+        /// </returns>
         [StringLength(200)]
+        [CSSPDisplayEN(DisplayEN = "MWQM site description")]
+        [CSSPDisplayFR(DisplayFR = "Description du site MWQM (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"MWQM site description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description du site MWQM (fr)")]
         public string MWQMSiteDescription { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MWQM site latest classification")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Dernière classification du site MWQM (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MWQM site latest classification")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Dernière classification du site MWQM (fr)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MWQM site latest classification
+        /// 
+        /// **Display (fr)** --- Dernière classification du site MWQM (fr)
+        /// 
+        /// **Description (en)** --- MWQM site latest classification
+        /// 
+        /// **Description (fr)** --- Dernière classification du site MWQM (fr)
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "MWQM site latest classification")]
+        [CSSPDisplayFR(DisplayFR = "Dernière classification du site MWQM (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"MWQM site latest classification")]
+        [CSSPDescriptionFR(DescriptionFR = @"Dernière classification du site MWQM (fr)")]
         public MWQMSiteLatestClassificationEnum MWQMSiteLatestClassification { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Ordinal")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Ordre")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Ordinal")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Ordre")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Ordinal
+        /// 
+        /// **Display (fr)** --- Ordre
+        /// 
+        /// **Description (en)** --- Ordinal
+        /// 
+        /// **Description (fr)** --- Ordre
+        /// </returns>
         [Range(0, 1000)]
+        [CSSPDisplayEN(DisplayEN = "Ordinal")]
+        [CSSPDisplayFR(DisplayFR = "Ordre")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ordinal")]
+        [CSSPDescriptionFR(DescriptionFR = @"Ordre")]
         public int Ordinal { get; set; }
         #endregion Properties in DB
 
@@ -90,8 +192,26 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MWQM site TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du site MWQM (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MWQM site TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du site MWQM (fr)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MWQM site TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du site MWQM (fr)
+        /// 
+        /// **Description (en)** --- MWQM site TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du site MWQM (fr)
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "MWQM site TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du site MWQM (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"MWQM site TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du site MWQM (fr)")]
         public TVItemLanguage MWQMSiteTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -122,10 +242,28 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "MWQMSiteLatestClassificationEnum", EnumType = "MWQMSiteLatestClassification")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MWQM site latest classification text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de la dernière classification du site MWQM (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MWQM site latest classification text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de la dernière classification du site MWQM (fr)")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MWQM site latest classification text
+        /// 
+        /// **Display (fr)** --- Texte de la dernière classification du site MWQM (fr)
+        /// 
+        /// **Description (en)** --- MWQM site latest classification text
+        /// 
+        /// **Description (fr)** --- Texte de la dernière classification du site MWQM (fr)
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "MWQMSiteLatestClassificationEnum", EnumType = "MWQMSiteLatestClassification")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "MWQM site latest classification text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de la dernière classification du site MWQM (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"MWQM site latest classification text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de la dernière classification du site MWQM (fr)")]
         public string MWQMSiteLatestClassificationText { get; set; }
         #endregion Properties
 

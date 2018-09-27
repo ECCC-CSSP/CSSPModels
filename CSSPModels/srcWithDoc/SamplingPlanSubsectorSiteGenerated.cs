@@ -55,8 +55,26 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "SamplingPlanSubsector", ExistPlurial = "s", ExistFieldID = "SamplingPlanSubsectorID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling plan subsector ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Sous-secteur du plan d'échantillonnage ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the SamplingPlanSubsectors table representing the sampling plan subsector")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table SamplingPlanSubsectors représentant le sous-secteur du plan d'échantillonnage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sampling plan subsector ID
+        /// 
+        /// **Display (fr)** --- Sous-secteur du plan d'échantillonnage ID
+        /// 
+        /// **Description (en)** --- Link to the SamplingPlanSubsectors table representing the sampling plan subsector
+        /// 
+        /// **Description (fr)** --- Lien à la table SamplingPlanSubsectors représentant le sous-secteur du plan d'échantillonnage
+        /// </returns>
         [CSSPExist(ExistTypeName = "SamplingPlanSubsector", ExistPlurial = "s", ExistFieldID = "SamplingPlanSubsectorID")]
+        [CSSPDisplayEN(DisplayEN = "Sampling plan subsector ID")]
+        [CSSPDisplayFR(DisplayFR = "Sous-secteur du plan d'échantillonnage ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the SamplingPlanSubsectors table representing the sampling plan subsector")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table SamplingPlanSubsectors représentant le sous-secteur du plan d'échantillonnage")]
         public int SamplingPlanSubsectorID { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -64,9 +82,49 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>16 == MWQMSite</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "16")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MWQM site TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Site MWQM TVItemID (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the MWQM site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant le site MWQM (fr)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MWQM site TVItemID
+        /// 
+        /// **Display (fr)** --- Site MWQM TVItemID (fr)
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the MWQM site
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant le site MWQM (fr)
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "16")]
+        [CSSPDisplayEN(DisplayEN = "MWQM site TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Site MWQM TVItemID (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the MWQM site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le site MWQM (fr)")]
         public int MWQMSiteTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Is duplicate")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Est en double")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Is duplicate")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Est en double")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Is duplicate
+        /// 
+        /// **Display (fr)** --- Est en double
+        /// 
+        /// **Description (en)** --- Is duplicate
+        /// 
+        /// **Description (fr)** --- Est en double
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Is duplicate")]
+        [CSSPDisplayFR(DisplayFR = "Est en double")]
+        [CSSPDescriptionEN(DescriptionEN = @"Is duplicate")]
+        [CSSPDescriptionFR(DescriptionFR = @"Est en double")]
         public bool IsDuplicate { get; set; }
         #endregion Properties in DB
 
@@ -84,8 +142,26 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MWQM site TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du site MWQM (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MWQM site TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du site MWQM (fr)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MWQM site TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du site MWQM (fr)
+        /// 
+        /// **Description (en)** --- MWQM site TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du site MWQM (fr)
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "MWQM site TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du site MWQM (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"MWQM site TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du site MWQM (fr)")]
         public TVItemLanguage MWQMSiteTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]

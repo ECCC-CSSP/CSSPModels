@@ -51,13 +51,101 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the MWQMLookupMPNs table")]
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table MWQMLookupMPNs")]
         public int MWQMLookupMPNID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tube 10")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Tube 10")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of positive tube for Tube 10")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre de tube positif pour Tube 10")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tube 10
+        /// 
+        /// **Display (fr)** --- Tube 10
+        /// 
+        /// **Description (en)** --- Number of positive tube for Tube 10
+        /// 
+        /// **Description (fr)** --- Nombre de tube positif pour Tube 10
+        /// </returns>
         [Range(0, 5)]
+        [CSSPDisplayEN(DisplayEN = "Tube 10")]
+        [CSSPDisplayFR(DisplayFR = "Tube 10")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of positive tube for Tube 10")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre de tube positif pour Tube 10")]
         public int Tubes10 { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tube 1")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Tube 1")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of positive tube for Tube 1")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre de tube positif pour Tube 1")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tube 1
+        /// 
+        /// **Display (fr)** --- Tube 1
+        /// 
+        /// **Description (en)** --- Number of positive tube for Tube 1
+        /// 
+        /// **Description (fr)** --- Nombre de tube positif pour Tube 1
+        /// </returns>
         [Range(0, 5)]
+        [CSSPDisplayEN(DisplayEN = "Tube 1")]
+        [CSSPDisplayFR(DisplayFR = "Tube 1")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of positive tube for Tube 1")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre de tube positif pour Tube 1")]
         public int Tubes1 { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tube .1")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Tube .1")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of positive tube for Tube .1")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre de tube positif pour Tube .1")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Tube .1
+        /// 
+        /// **Display (fr)** --- Tube .1
+        /// 
+        /// **Description (en)** --- Number of positive tube for Tube .1
+        /// 
+        /// **Description (fr)** --- Nombre de tube positif pour Tube .1
+        /// </returns>
         [Range(0, 5)]
+        [CSSPDisplayEN(DisplayEN = "Tube .1")]
+        [CSSPDisplayFR(DisplayFR = "Tube .1")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of positive tube for Tube .1")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre de tube positif pour Tube .1")]
         public int Tubes01 { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MPN (/100 mL)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "NPP (/100 mL)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Most probable number of fecal coliform colonies per 100 mL")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre le plus probable de colonies de coliform fécaux par 100 mL")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MPN (/100 mL)
+        /// 
+        /// **Display (fr)** --- NPP (/100 mL)
+        /// 
+        /// **Description (en)** --- Most probable number of fecal coliform colonies per 100 mL
+        /// 
+        /// **Description (fr)** --- Nombre le plus probable de colonies de coliform fécaux par 100 mL
+        /// </returns>
         [Range(1, 10000)]
+        [CSSPDisplayEN(DisplayEN = "MPN (/100 mL)")]
+        [CSSPDisplayFR(DisplayFR = "NPP (/100 mL)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Most probable number of fecal coliform colonies per 100 mL")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre le plus probable de colonies de coliform fécaux par 100 mL")]
         public int MPN_100ml { get; set; }
         #endregion Properties in DB
 

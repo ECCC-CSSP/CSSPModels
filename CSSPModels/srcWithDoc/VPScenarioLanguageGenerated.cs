@@ -56,24 +56,100 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "VPScenario", ExistPlurial = "s", ExistFieldID = "VPScenarioID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "VP scenario ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Scénario VP ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the VPScenarios table representing the visual plumes scenario")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table VPScenarios représentant le scénario visual plumes")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- VP scenario ID
+        /// 
+        /// **Display (fr)** --- Scénario VP ID
+        /// 
+        /// **Description (en)** --- Link to the VPScenarios table representing the visual plumes scenario
+        /// 
+        /// **Description (fr)** --- Lien à la table VPScenarios représentant le scénario visual plumes
+        /// </returns>
         [CSSPExist(ExistTypeName = "VPScenario", ExistPlurial = "s", ExistFieldID = "VPScenarioID")]
+        [CSSPDisplayEN(DisplayEN = "VP scenario ID")]
+        [CSSPDisplayFR(DisplayFR = "Scénario VP ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the VPScenarios table representing the visual plumes scenario")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table VPScenarios représentant le scénario visual plumes")]
         public int VPScenarioID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Language")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Langage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Language of item")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Langage de l'item")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Language
+        /// 
+        /// **Display (fr)** --- Langage
+        /// 
+        /// **Description (en)** --- Language of item
+        /// 
+        /// **Description (fr)** --- Langage de l'item
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Language")]
+        [CSSPDisplayFR(DisplayFR = "Langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language of item")]
+        [CSSPDescriptionFR(DescriptionFR = @"Langage de l'item")]
         public LanguageEnum Language { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "VP scenario name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom du scénario VP")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Visual plumes scenario name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom du scénario visual plumes")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- VP scenario name
+        /// 
+        /// **Display (fr)** --- Nom du scénario VP
+        /// 
+        /// **Description (en)** --- Visual plumes scenario name
+        /// 
+        /// **Description (fr)** --- Nom du scénario visual plumes
+        /// </returns>
         [StringLength(100)]
+        [CSSPDisplayEN(DisplayEN = "VP scenario name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du scénario VP")]
+        [CSSPDescriptionEN(DescriptionEN = @"Visual plumes scenario name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du scénario visual plumes")]
         public string VPScenarioName { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Translation status")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Le statut de la traduction")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Translation status of the visual plumes scenario name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Le statut de la traduction du nom du scénario visual plumes")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Translation status
+        /// 
+        /// **Display (fr)** --- Le statut de la traduction
+        /// 
+        /// **Description (en)** --- Translation status of the visual plumes scenario name
+        /// 
+        /// **Description (fr)** --- Le statut de la traduction du nom du scénario visual plumes
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Translation status")]
+        [CSSPDisplayFR(DisplayFR = "Le statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status of the visual plumes scenario name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction du nom du scénario visual plumes")]
         public TranslationStatusEnum TranslationStatus { get; set; }
         #endregion Properties in DB
 
@@ -116,10 +192,28 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "LanguageEnum", EnumType = "Language")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Language text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du langage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Language text [en, fr]")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du langage [en, fr]")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Language text
+        /// 
+        /// **Display (fr)** --- Texte du langage
+        /// 
+        /// **Description (en)** --- Language text [en, fr]
+        /// 
+        /// **Description (fr)** --- Texte du langage [en, fr]
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Language text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language text [en, fr]")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du langage [en, fr]")]
         public string LanguageText { get; set; }
         /// <summary>
         /// > [!NOTE]

@@ -56,31 +56,147 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "MWQMRun", ExistPlurial = "s", ExistFieldID = "MWQMRunID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MWQM run")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Tournée de MWQM (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the MWQMRuns table representing the MWQM run")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table MWQMRuns représentant la tournée MWQM (fr)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MWQM run
+        /// 
+        /// **Display (fr)** --- Tournée de MWQM (fr)
+        /// 
+        /// **Description (en)** --- Link to the MWQMRuns table representing the MWQM run
+        /// 
+        /// **Description (fr)** --- Lien à la table MWQMRuns représentant la tournée MWQM (fr)
+        /// </returns>
         [CSSPExist(ExistTypeName = "MWQMRun", ExistPlurial = "s", ExistFieldID = "MWQMRunID")]
+        [CSSPDisplayEN(DisplayEN = "MWQM run")]
+        [CSSPDisplayFR(DisplayFR = "Tournée de MWQM (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the MWQMRuns table representing the MWQM run")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table MWQMRuns représentant la tournée MWQM (fr)")]
         public int MWQMRunID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Language")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Langage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Language of item")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Langage de l'item")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Language
+        /// 
+        /// **Display (fr)** --- Langage
+        /// 
+        /// **Description (en)** --- Language of item
+        /// 
+        /// **Description (fr)** --- Langage de l'item
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Language")]
+        [CSSPDisplayFR(DisplayFR = "Langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language of item")]
+        [CSSPDescriptionFR(DescriptionFR = @"Langage de l'item")]
         public LanguageEnum Language { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Run comment")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Commentaire de la tournée")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Run comment")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Commentaire de la tournée")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Run comment
+        /// 
+        /// **Display (fr)** --- Commentaire de la tournée
+        /// 
+        /// **Description (en)** --- Run comment
+        /// 
+        /// **Description (fr)** --- Commentaire de la tournée
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Run comment")]
+        [CSSPDisplayFR(DisplayFR = "Commentaire de la tournée")]
+        [CSSPDescriptionEN(DescriptionEN = @"Run comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Commentaire de la tournée")]
         public string RunComment { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Translation status")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Le statut de la traduction")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Translation status of the run comment")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Le statut de la traduction du commentaire de la tournée")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Translation status
+        /// 
+        /// **Display (fr)** --- Le statut de la traduction
+        /// 
+        /// **Description (en)** --- Translation status of the run comment
+        /// 
+        /// **Description (fr)** --- Le statut de la traduction du commentaire de la tournée
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Translation status")]
+        [CSSPDisplayFR(DisplayFR = "Le statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status of the run comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction du commentaire de la tournée")]
         public TranslationStatusEnum TranslationStatusRunComment { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Run weather comment")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Commentaire de la météo de la tournée")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Run weather comment")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Commentaire de la météo de la tournée")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Run weather comment
+        /// 
+        /// **Display (fr)** --- Commentaire de la météo de la tournée
+        /// 
+        /// **Description (en)** --- Run weather comment
+        /// 
+        /// **Description (fr)** --- Commentaire de la météo de la tournée
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Run weather comment")]
+        [CSSPDisplayFR(DisplayFR = "Commentaire de la météo de la tournée")]
+        [CSSPDescriptionEN(DescriptionEN = @"Run weather comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Commentaire de la météo de la tournée")]
         public string RunWeatherComment { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Translation status")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Le statut de la traduction")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Translation status of the run weather comment")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Le statut de la traduction du commentaire de la météo de la tournée")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Translation status
+        /// 
+        /// **Display (fr)** --- Le statut de la traduction
+        /// 
+        /// **Description (en)** --- Translation status of the run weather comment
+        /// 
+        /// **Description (fr)** --- Le statut de la traduction du commentaire de la météo de la tournée
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Translation status")]
+        [CSSPDisplayFR(DisplayFR = "Le statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status of the run weather comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction du commentaire de la météo de la tournée")]
         public TranslationStatusEnum TranslationStatusRunWeatherComment { get; set; }
         #endregion Properties in DB
 
@@ -123,28 +239,82 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "LanguageEnum", EnumType = "Language")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Language text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du langage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Language text [en, fr]")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du langage [en, fr]")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Language text
+        /// 
+        /// **Display (fr)** --- Texte du langage
+        /// 
+        /// **Description (en)** --- Language text [en, fr]
+        /// 
+        /// **Description (fr)** --- Texte du langage [en, fr]
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Language text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language text [en, fr]")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du langage [en, fr]")]
         public string LanguageText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusRunComment")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Translation status text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Le texte du statut de la traduction")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Translation status text of the run comment")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Le texte du statut de la traduction du commentaire de la tournée")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Translation status text
+        /// 
+        /// **Display (fr)** --- Le texte du statut de la traduction
+        /// 
+        /// **Description (en)** --- Translation status text of the run comment
+        /// 
+        /// **Description (fr)** --- Le texte du statut de la traduction du commentaire de la tournée
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusRunComment")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Translation status text")]
+        [CSSPDisplayFR(DisplayFR = "Le texte du statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status text of the run comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le texte du statut de la traduction du commentaire de la tournée")]
         public string TranslationStatusRunCommentText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusRunWeatherComment")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Translation status text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Le texte du statut de la traduction")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Translation status text of the run weather comment")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Le texte du statut de la traduction du commentaire de la météo de la tournée")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Translation status text
+        /// 
+        /// **Display (fr)** --- Le texte du statut de la traduction
+        /// 
+        /// **Description (en)** --- Translation status text of the run weather comment
+        /// 
+        /// **Description (fr)** --- Le texte du statut de la traduction du commentaire de la météo de la tournée
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusRunWeatherComment")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Translation status text")]
+        [CSSPDisplayFR(DisplayFR = "Le texte du statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status text of the run weather comment")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le texte du statut de la traduction du commentaire de la météo de la tournée")]
         public string TranslationStatusRunWeatherCommentText { get; set; }
         #endregion Properties
 

@@ -56,42 +56,198 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "ReportType", ExistPlurial = "s", ExistFieldID = "ReportTypeID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Report type ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de raport ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the ReportTypes table representing the report type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table ReportTypes représentant le type de raport")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Report type ID
+        /// 
+        /// **Display (fr)** --- Type de raport ID
+        /// 
+        /// **Description (en)** --- Link to the ReportTypes table representing the report type
+        /// 
+        /// **Description (fr)** --- Lien à la table ReportTypes représentant le type de raport
+        /// </returns>
         [CSSPExist(ExistTypeName = "ReportType", ExistPlurial = "s", ExistFieldID = "ReportTypeID")]
+        [CSSPDisplayEN(DisplayEN = "Report type ID")]
+        [CSSPDisplayFR(DisplayFR = "Type de raport ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the ReportTypes table representing the report type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table ReportTypes représentant le type de raport")]
         public int ReportTypeID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Language")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Langage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Language of item")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Langage de l'item")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Language
+        /// 
+        /// **Display (fr)** --- Langage
+        /// 
+        /// **Description (en)** --- Language of item
+        /// 
+        /// **Description (fr)** --- Langage de l'item
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Language")]
+        [CSSPDisplayFR(DisplayFR = "Langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language of item")]
+        [CSSPDescriptionFR(DescriptionFR = @"Langage de l'item")]
         public LanguageEnum Language { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Name of the report type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom du type de raport")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Name
+        /// 
+        /// **Display (fr)** --- Nom
+        /// 
+        /// **Description (en)** --- Name of the report type
+        /// 
+        /// **Description (fr)** --- Nom du type de raport
+        /// </returns>
         [StringLength(100)]
+        [CSSPDisplayEN(DisplayEN = "Name")]
+        [CSSPDisplayFR(DisplayFR = "Nom")]
+        [CSSPDescriptionEN(DescriptionEN = @"Name of the report type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du type de raport")]
         public string Name { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Translation status")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Le statut de la traduction")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Translation status of the report type name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Le statut de la traduction du nom du type de raport")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Translation status
+        /// 
+        /// **Display (fr)** --- Le statut de la traduction
+        /// 
+        /// **Description (en)** --- Translation status of the report type name
+        /// 
+        /// **Description (fr)** --- Le statut de la traduction du nom du type de raport
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Translation status")]
+        [CSSPDisplayFR(DisplayFR = "Le statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status of the report type name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction du nom du type de raport")]
         public TranslationStatusEnum TranslationStatusName { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Description")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Description")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Description of the report type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Description du type de raport")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Description
+        /// 
+        /// **Display (fr)** --- Description
+        /// 
+        /// **Description (en)** --- Description of the report type
+        /// 
+        /// **Description (fr)** --- Description du type de raport
+        /// </returns>
         [StringLength(1000)]
+        [CSSPDisplayEN(DisplayEN = "Description")]
+        [CSSPDisplayFR(DisplayFR = "Description")]
+        [CSSPDescriptionEN(DescriptionEN = @"Description of the report type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Description du type de raport")]
         public string Description { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Translation status")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Le statut de la traduction")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Translation status of the report type description")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Le statut de la traduction de la description du type de raport")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Translation status
+        /// 
+        /// **Display (fr)** --- Le statut de la traduction
+        /// 
+        /// **Description (en)** --- Translation status of the report type description
+        /// 
+        /// **Description (fr)** --- Le statut de la traduction de la description du type de raport
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Translation status")]
+        [CSSPDisplayFR(DisplayFR = "Le statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status of the report type description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction de la description du type de raport")]
         public TranslationStatusEnum TranslationStatusDescription { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Start of file name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Début du nom de la filière")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Start of file name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Début du nom de la filière")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Start of file name
+        /// 
+        /// **Display (fr)** --- Début du nom de la filière
+        /// 
+        /// **Description (en)** --- Start of file name
+        /// 
+        /// **Description (fr)** --- Début du nom de la filière
+        /// </returns>
         [StringLength(100)]
+        [CSSPDisplayEN(DisplayEN = "Start of file name")]
+        [CSSPDisplayFR(DisplayFR = "Début du nom de la filière")]
+        [CSSPDescriptionEN(DescriptionEN = @"Start of file name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Début du nom de la filière")]
         public string StartOfFileName { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Translation status")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Le statut de la traduction")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Translation status of the start of file name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Le statut de la traduction du début du nom de la filière")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Translation status
+        /// 
+        /// **Display (fr)** --- Le statut de la traduction
+        /// 
+        /// **Description (en)** --- Translation status of the start of file name
+        /// 
+        /// **Description (fr)** --- Le statut de la traduction du début du nom de la filière
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Translation status")]
+        [CSSPDisplayFR(DisplayFR = "Le statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status of the start of file name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le statut de la traduction du début du nom de la filière")]
         public TranslationStatusEnum TranslationStatusStartOfFileName { get; set; }
         #endregion Properties in DB
 
@@ -134,37 +290,109 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "LanguageEnum", EnumType = "Language")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Language text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du langage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Language text [en, fr]")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du langage [en, fr]")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Language text
+        /// 
+        /// **Display (fr)** --- Texte du langage
+        /// 
+        /// **Description (en)** --- Language text [en, fr]
+        /// 
+        /// **Description (fr)** --- Texte du langage [en, fr]
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Language text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language text [en, fr]")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du langage [en, fr]")]
         public string LanguageText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusName")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Translation status text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Le texte du statut de la traduction")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Translation status text of the report type name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Le texte du statut de la traduction du nom du type de raport")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Translation status text
+        /// 
+        /// **Display (fr)** --- Le texte du statut de la traduction
+        /// 
+        /// **Description (en)** --- Translation status text of the report type name
+        /// 
+        /// **Description (fr)** --- Le texte du statut de la traduction du nom du type de raport
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusName")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Translation status text")]
+        [CSSPDisplayFR(DisplayFR = "Le texte du statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status text of the report type name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le texte du statut de la traduction du nom du type de raport")]
         public string TranslationStatusNameText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusDescription")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Translation status text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Le texte du statut de la traduction")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Translation status text of the report type description")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Le texte du statut de la traduction de la description du type de raport")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Translation status text
+        /// 
+        /// **Display (fr)** --- Le texte du statut de la traduction
+        /// 
+        /// **Description (en)** --- Translation status text of the report type description
+        /// 
+        /// **Description (fr)** --- Le texte du statut de la traduction de la description du type de raport
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusDescription")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Translation status text")]
+        [CSSPDisplayFR(DisplayFR = "Le texte du statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status text of the report type description")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le texte du statut de la traduction de la description du type de raport")]
         public string TranslationStatusDescriptionText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusStartOfFileName")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Translation status text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Le texte du statut de la traduction")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Translation status text of the start of file name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Le texte du statut de la traduction du début du nom de la filière")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Translation status text
+        /// 
+        /// **Display (fr)** --- Le texte du statut de la traduction
+        /// 
+        /// **Description (en)** --- Translation status text of the start of file name
+        /// 
+        /// **Description (fr)** --- Le texte du statut de la traduction du début du nom de la filière
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "TranslationStatusEnum", EnumType = "TranslationStatusStartOfFileName")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Translation status text")]
+        [CSSPDisplayFR(DisplayFR = "Le texte du statut de la traduction")]
+        [CSSPDescriptionEN(DescriptionEN = @"Translation status text of the start of file name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le texte du statut de la traduction du début du nom de la filière")]
         public string TranslationStatusStartOfFileNameText { get; set; }
         #endregion Properties
 

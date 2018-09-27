@@ -58,17 +58,75 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>1 == Root, 2 == Address, 3 == Area, 4 == ClimateSite, 5 == Contact, 6 == Country, 7 == Email, 8 == File, 9 == HydrometricSite, 10 == Infrastructure, 13 == MikeScenario, 14 == MikeSource, 15 == Municipality, 16 == MWQMSite, 17 == PolSourceSite, 18 == Province, 19 == Sector, 20 == Subsector, 21 == Tel, 22 == TideSite, 24 == WasteWaterTreatmentPlant, 25 == LiftStation, 26 == Spill, 27 == BoxModel, 28 == VisualPlumesScenario, 30 == OtherInfrastructure, 31 == MWQMRun, 38 == MeshNode, 39 == WebTideNode, 40 == SamplingPlan, 41 == SeeOther, 42 == LineOverflow, 52 == MapInfo, 53 == MapInfoPoint</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,2,3,4,5,6,7,8,9,10,13,14,15,16,17,18,19,20,21,22,24,25,26,27,28,30,31,38,39,40,41,42,52,53")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing item of the tree view")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant l'item de l'arbre visuel")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TVItemID
+        /// 
+        /// **Display (fr)** --- TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing item of the tree view
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant l'item de l'arbre visuel
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,2,3,4,5,6,7,8,9,10,13,14,15,16,17,18,19,20,21,22,24,25,26,27,28,30,31,38,39,40,41,42,52,53")]
+        [CSSPDisplayEN(DisplayEN = "TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing item of the tree view")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant l'item de l'arbre visuel")]
         public int TVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type d'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type d'arbre visuel")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV type
+        /// 
+        /// **Display (fr)** --- Type d'arbre visuel
+        /// 
+        /// **Description (en)** --- Tree view type
+        /// 
+        /// **Description (fr)** --- Type d'arbre visuel
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "TV type")]
+        [CSSPDisplayFR(DisplayFR = "Type d'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type d'arbre visuel")]
         public TVTypeEnum TVType { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Child items number")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nombre sous items")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Child items number")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre sous items")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Child items number
+        /// 
+        /// **Display (fr)** --- Nombre sous items
+        /// 
+        /// **Description (en)** --- Child items number
+        /// 
+        /// **Description (fr)** --- Nombre sous items
+        /// </returns>
         [Range(0, 10000000)]
+        [CSSPDisplayEN(DisplayEN = "Child items number")]
+        [CSSPDisplayFR(DisplayFR = "Nombre sous items")]
+        [CSSPDescriptionEN(DescriptionEN = @"Child items number")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre sous items")]
         public int ChildCount { get; set; }
         #endregion Properties in DB
 
@@ -86,8 +144,26 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV item TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage de l'item de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view item TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage de l'item de l'arbre visuel")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV item TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage de l'item de l'arbre visuel
+        /// 
+        /// **Description (en)** --- Tree view item TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage de l'item de l'arbre visuel
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "TV item TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de l'item de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view item TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de l'item de l'arbre visuel")]
         public TVItemLanguage TVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -118,10 +194,28 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV item text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de l'item de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view item text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de l'item de l'arbre visuel")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV item text
+        /// 
+        /// **Display (fr)** --- Texte de l'item de l'arbre visuel
+        /// 
+        /// **Description (en)** --- Tree view item text
+        /// 
+        /// **Description (fr)** --- Texte de l'item de l'arbre visuel
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "TV item text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de l'item de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view item text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de l'item de l'arbre visuel")]
         public string TVTypeText { get; set; }
         #endregion Properties
 

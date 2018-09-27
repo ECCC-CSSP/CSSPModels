@@ -52,31 +52,151 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the SamplingPlans table")]
         [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table SamplingPlans")]
         public int SamplingPlanID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Is active")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Est actif")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Is active")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Est actif")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Is active
+        /// 
+        /// **Display (fr)** --- Est actif
+        /// 
+        /// **Description (en)** --- Is active
+        /// 
+        /// **Description (fr)** --- Est actif
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Is active")]
+        [CSSPDisplayFR(DisplayFR = "Est actif")]
+        [CSSPDescriptionEN(DescriptionEN = @"Is active")]
+        [CSSPDescriptionFR(DescriptionFR = @"Est actif")]
         public bool IsActive { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling plan name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom du plan d'échantillonnage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sampling plan name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom du plan d'échantillonnage")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sampling plan name
+        /// 
+        /// **Display (fr)** --- Nom du plan d'échantillonnage
+        /// 
+        /// **Description (en)** --- Sampling plan name
+        /// 
+        /// **Description (fr)** --- Nom du plan d'échantillonnage
+        /// </returns>
         [StringLength(200)]
+        [CSSPDisplayEN(DisplayEN = "Sampling plan name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du plan d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sampling plan name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du plan d'échantillonnage")]
         public string SamplingPlanName { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "For group name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom pour le group")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "For group name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom pour le group")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- For group name
+        /// 
+        /// **Display (fr)** --- Nom pour le group
+        /// 
+        /// **Description (en)** --- For group name
+        /// 
+        /// **Description (fr)** --- Nom pour le group
+        /// </returns>
         [StringLength(100)]
+        [CSSPDisplayEN(DisplayEN = "For group name")]
+        [CSSPDisplayFR(DisplayFR = "Nom pour le group")]
+        [CSSPDescriptionEN(DescriptionEN = @"For group name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom pour le group")]
         public string ForGroupName { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sample type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type d'échantillon")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sample type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type d'échantillon")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sample type
+        /// 
+        /// **Display (fr)** --- Type d'échantillon
+        /// 
+        /// **Description (en)** --- Sample type
+        /// 
+        /// **Description (fr)** --- Type d'échantillon
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Sample type")]
+        [CSSPDisplayFR(DisplayFR = "Type d'échantillon")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sample type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type d'échantillon")]
         public SampleTypeEnum SampleType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling plan type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de plan d'échantillonnage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sampling plan type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de plan d'échantillonnage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sampling plan type
+        /// 
+        /// **Display (fr)** --- Type de plan d'échantillonnage
+        /// 
+        /// **Description (en)** --- Sampling plan type
+        /// 
+        /// **Description (fr)** --- Type de plan d'échantillonnage
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Sampling plan type")]
+        [CSSPDisplayFR(DisplayFR = "Type de plan d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sampling plan type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de plan d'échantillonnage")]
         public SamplingPlanTypeEnum SamplingPlanType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lab sheet type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de feuille de laboratoire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Lab sheet type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de feuille de laboratoire")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lab sheet type
+        /// 
+        /// **Display (fr)** --- Type de feuille de laboratoire
+        /// 
+        /// **Description (en)** --- Lab sheet type
+        /// 
+        /// **Description (fr)** --- Type de feuille de laboratoire
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Lab sheet type")]
+        [CSSPDisplayFR(DisplayFR = "Type de feuille de laboratoire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Lab sheet type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de feuille de laboratoire")]
         public LabSheetTypeEnum LabSheetType { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -84,8 +204,26 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>18 == Province</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "18")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Province TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Province TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the province")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant la province")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Province TVItemID
+        /// 
+        /// **Display (fr)** --- Province TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the province
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant la province
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "18")]
+        [CSSPDisplayEN(DisplayEN = "Province TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Province TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the province")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant la province")]
         public int ProvinceTVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -93,19 +231,169 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>5 == Contact</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Creator of sampling plan TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Créateur du plan d'échantillonnage TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the creator of the sampling plan")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant le créateur du plan d'échantillonnage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Creator of sampling plan TVItemID
+        /// 
+        /// **Display (fr)** --- Créateur du plan d'échantillonnage TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the creator of the sampling plan
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant le créateur du plan d'échantillonnage
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
+        [CSSPDisplayEN(DisplayEN = "Creator of sampling plan TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Créateur du plan d'échantillonnage TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the creator of the sampling plan")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le créateur du plan d'échantillonnage")]
         public int CreatorTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Year")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Année")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Year")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Année")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Year
+        /// 
+        /// **Display (fr)** --- Année
+        /// 
+        /// **Description (en)** --- Year
+        /// 
+        /// **Description (fr)** --- Année
+        /// </returns>
         [Range(2000, 2050)]
+        [CSSPDisplayEN(DisplayEN = "Year")]
+        [CSSPDisplayFR(DisplayFR = "Année")]
+        [CSSPDescriptionEN(DescriptionEN = @"Year")]
+        [CSSPDescriptionFR(DescriptionFR = @"Année")]
         public int Year { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Access code")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Code d'accès")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Access code")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Code d'accès")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Access code
+        /// 
+        /// **Display (fr)** --- Code d'accès
+        /// 
+        /// **Description (en)** --- Access code
+        /// 
+        /// **Description (fr)** --- Code d'accès
+        /// </returns>
         [StringLength(15)]
+        [CSSPDisplayEN(DisplayEN = "Access code")]
+        [CSSPDisplayFR(DisplayFR = "Code d'accès")]
+        [CSSPDescriptionEN(DescriptionEN = @"Access code")]
+        [CSSPDescriptionFR(DescriptionFR = @"Code d'accès")]
         public string AccessCode { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Daily duplicate precision criteria")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Critère de précision pour le duplicata journalier")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Daily duplicate precision criteria")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Critère de précision pour le duplicata journalier")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Daily duplicate precision criteria
+        /// 
+        /// **Display (fr)** --- Critère de précision pour le duplicata journalier
+        /// 
+        /// **Description (en)** --- Daily duplicate precision criteria
+        /// 
+        /// **Description (fr)** --- Critère de précision pour le duplicata journalier
+        /// </returns>
         [Range(0.0D, 100.0D)]
+        [CSSPDisplayEN(DisplayEN = "Daily duplicate precision criteria")]
+        [CSSPDisplayFR(DisplayFR = "Critère de précision pour le duplicata journalier")]
+        [CSSPDescriptionEN(DescriptionEN = @"Daily duplicate precision criteria")]
+        [CSSPDescriptionFR(DescriptionFR = @"Critère de précision pour le duplicata journalier")]
         public double DailyDuplicatePrecisionCriteria { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Intertech duplicate precision criteria")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Critère de précision pour le duplicata intertech")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Intertech duplicate precision criteria")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Critère de précision pour le duplicata intertech")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Intertech duplicate precision criteria
+        /// 
+        /// **Display (fr)** --- Critère de précision pour le duplicata intertech
+        /// 
+        /// **Description (en)** --- Intertech duplicate precision criteria
+        /// 
+        /// **Description (fr)** --- Critère de précision pour le duplicata intertech
+        /// </returns>
         [Range(0.0D, 100.0D)]
+        [CSSPDisplayEN(DisplayEN = "Intertech duplicate precision criteria")]
+        [CSSPDisplayFR(DisplayFR = "Critère de précision pour le duplicata intertech")]
+        [CSSPDescriptionEN(DescriptionEN = @"Intertech duplicate precision criteria")]
+        [CSSPDescriptionFR(DescriptionFR = @"Critère de précision pour le duplicata intertech")]
         public double IntertechDuplicatePrecisionCriteria { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Include laboratory QA/QC")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Inclure le QA/QC de laboratoire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Include laboratory QA/QC")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Inclure le QA/QC de laboratoire")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Include laboratory QA/QC
+        /// 
+        /// **Display (fr)** --- Inclure le QA/QC de laboratoire
+        /// 
+        /// **Description (en)** --- Include laboratory QA/QC
+        /// 
+        /// **Description (fr)** --- Inclure le QA/QC de laboratoire
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Include laboratory QA/QC")]
+        [CSSPDisplayFR(DisplayFR = "Inclure le QA/QC de laboratoire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Include laboratory QA/QC")]
+        [CSSPDescriptionFR(DescriptionFR = @"Inclure le QA/QC de laboratoire")]
         public bool IncludeLaboratoryQAQC { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Approval code")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Code d'approbation")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Approval code")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Code d'approbation")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Approval code
+        /// 
+        /// **Display (fr)** --- Code d'approbation
+        /// 
+        /// **Description (en)** --- Approval code
+        /// 
+        /// **Description (fr)** --- Code d'approbation
+        /// </returns>
         [StringLength(15)]
+        [CSSPDisplayEN(DisplayEN = "Approval code")]
+        [CSSPDisplayFR(DisplayFR = "Code d'approbation")]
+        [CSSPDescriptionEN(DescriptionEN = @"Approval code")]
+        [CSSPDescriptionFR(DescriptionFR = @"Code d'approbation")]
         public string ApprovalCode { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -113,37 +401,131 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>8 == File</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "8")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling plan file TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Filière du plan d'échantillonnage TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the sampling plan file")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant la filière du plan d'échantillonnage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sampling plan file TVItemID
+        /// 
+        /// **Display (fr)** --- Filière du plan d'échantillonnage TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the sampling plan file
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant la filière du plan d'échantillonnage
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "8")]
+        [CSSPDisplayEN(DisplayEN = "Sampling plan file TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Filière du plan d'échantillonnage TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the sampling plan file")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant la filière du plan d'échantillonnage")]
         public int? SamplingPlanFileTVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Analyze method")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Méthode d'analyse")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Analyze method")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Méthode d'analyse")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Analyze method
+        /// 
+        /// **Display (fr)** --- Méthode d'analyse
+        /// 
+        /// **Description (en)** --- Analyze method
+        /// 
+        /// **Description (fr)** --- Méthode d'analyse
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Analyze method")]
+        [CSSPDisplayFR(DisplayFR = "Méthode d'analyse")]
+        [CSSPDescriptionEN(DescriptionEN = @"Analyze method")]
+        [CSSPDescriptionFR(DescriptionFR = @"Méthode d'analyse")]
         public AnalyzeMethodEnum? AnalyzeMethodDefault { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sample matrix")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Milieu d'échantillon")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sample matrix")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Milieu d'échantillon")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sample matrix
+        /// 
+        /// **Display (fr)** --- Milieu d'échantillon
+        /// 
+        /// **Description (en)** --- Sample matrix
+        /// 
+        /// **Description (fr)** --- Milieu d'échantillon
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Sample matrix")]
+        [CSSPDisplayFR(DisplayFR = "Milieu d'échantillon")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sample matrix")]
+        [CSSPDescriptionFR(DescriptionFR = @"Milieu d'échantillon")]
         public SampleMatrixEnum? SampleMatrixDefault { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Laboratory")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Laboratoire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Laboratory")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Laboratoire")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Laboratory
+        /// 
+        /// **Display (fr)** --- Laboratoire
+        /// 
+        /// **Description (en)** --- Laboratory
+        /// 
+        /// **Description (fr)** --- Laboratoire
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Laboratory")]
+        [CSSPDisplayFR(DisplayFR = "Laboratoire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Laboratory")]
+        [CSSPDescriptionFR(DescriptionFR = @"Laboratoire")]
         public LaboratoryEnum? LaboratoryDefault { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Backup directory")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Répertoire de sauvegarde")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Backup directory")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Répertoire de sauvegarde")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Backup directory
+        /// 
+        /// **Display (fr)** --- Répertoire de sauvegarde
+        /// 
+        /// **Description (en)** --- Backup directory
+        /// 
+        /// **Description (fr)** --- Répertoire de sauvegarde
+        /// </returns>
         [StringLength(250)]
+        [CSSPDisplayEN(DisplayEN = "Backup directory")]
+        [CSSPDisplayFR(DisplayFR = "Répertoire de sauvegarde")]
+        [CSSPDescriptionEN(DescriptionEN = @"Backup directory")]
+        [CSSPDescriptionFR(DescriptionFR = @"Répertoire de sauvegarde")]
         public string BackupDirectory { get; set; }
         #endregion Properties in DB
 
@@ -161,22 +543,76 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ProvinceTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Province TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage de la province")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Province TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage de la province")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Province TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage de la province
+        /// 
+        /// **Description (en)** --- Province TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage de la province
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ProvinceTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Province TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de la province")]
+        [CSSPDescriptionEN(DescriptionEN = @"Province TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de la province")]
         public TVItemLanguage ProvinceTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CreatorTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Creator of the sampling plan TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du créateur du plan d'échantillonnage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Creator of the sampling plan TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du créateur du plan d'échantillonnage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Creator of the sampling plan TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du créateur du plan d'échantillonnage
+        /// 
+        /// **Description (en)** --- Creator of the sampling plan TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du créateur du plan d'échantillonnage
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CreatorTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Creator of the sampling plan TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du créateur du plan d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Creator of the sampling plan TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du créateur du plan d'échantillonnage")]
         public TVItemLanguage CreatorTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SamplingPlanFileTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling plan file TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage de la filière du plan d'échantillonnage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "ampling plan file TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage de la filière du plan d'échantillonnage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sampling plan file TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage de la filière du plan d'échantillonnage
+        /// 
+        /// **Description (en)** --- ampling plan file TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage de la filière du plan d'échantillonnage
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SamplingPlanFileTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Sampling plan file TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de la filière du plan d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"ampling plan file TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de la filière du plan d'échantillonnage")]
         public TVItemLanguage SamplingPlanFileTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -207,28 +643,82 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sample type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type d'échantillon")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sample type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type d'échantillon")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sample type text
+        /// 
+        /// **Display (fr)** --- Texte du type d'échantillon
+        /// 
+        /// **Description (en)** --- Sample type text
+        /// 
+        /// **Description (fr)** --- Texte du type d'échantillon
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Sample type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type d'échantillon")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sample type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type d'échantillon")]
         public string SampleTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "SamplingPlanTypeEnum", EnumType = "SamplingPlanType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling plan type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type du plan d'échantillonnage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sampling plan type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type du plan d'échantillonnage")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sampling plan type text
+        /// 
+        /// **Display (fr)** --- Texte du type du plan d'échantillonnage
+        /// 
+        /// **Description (en)** --- Sampling plan type text
+        /// 
+        /// **Description (fr)** --- Texte du type du plan d'échantillonnage
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "SamplingPlanTypeEnum", EnumType = "SamplingPlanType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Sampling plan type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type du plan d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sampling plan type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type du plan d'échantillonnage")]
         public string SamplingPlanTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "LabSheetTypeEnum", EnumType = "LabSheetType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lab sheet type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de feuille de laboratoire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Labratory sheet type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de feuille de laboratoire")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lab sheet type text
+        /// 
+        /// **Display (fr)** --- Texte du type de feuille de laboratoire
+        /// 
+        /// **Description (en)** --- Labratory sheet type text
+        /// 
+        /// **Description (fr)** --- Texte du type de feuille de laboratoire
+        /// </returns>
         [CSSPEnumTypeText(EnumTypeName = "LabSheetTypeEnum", EnumType = "LabSheetType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Lab sheet type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de feuille de laboratoire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Labratory sheet type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de feuille de laboratoire")]
         public string LabSheetTypeText { get; set; }
         #endregion Properties
 

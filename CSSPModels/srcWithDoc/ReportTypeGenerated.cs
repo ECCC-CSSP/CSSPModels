@@ -56,17 +56,75 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "TV type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de l'arbre visuel")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV type
+        /// 
+        /// **Display (fr)** --- Type de l'arbre visuel
+        /// 
+        /// **Description (en)** --- TV type
+        /// 
+        /// **Description (fr)** --- Type de l'arbre visuel
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "TV type")]
+        [CSSPDisplayFR(DisplayFR = "Type de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"TV type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de l'arbre visuel")]
         public TVTypeEnum TVType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "File type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de filière")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "File type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de filière")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- File type
+        /// 
+        /// **Display (fr)** --- Type de filière
+        /// 
+        /// **Description (en)** --- File type
+        /// 
+        /// **Description (fr)** --- Type de filière
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "File type")]
+        [CSSPDisplayFR(DisplayFR = "Type de filière")]
+        [CSSPDescriptionEN(DescriptionEN = @"File type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de filière")]
         public FileTypeEnum FileType { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Unique code")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Code unique")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Unique code --- used in code for knowing which document and type of document to create")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de filière --- utilisé dans le code afin de savoir quel document et type de document à créer")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Unique code
+        /// 
+        /// **Display (fr)** --- Code unique
+        /// 
+        /// **Description (en)** --- Unique code --- used in code for knowing which document and type of document to create
+        /// 
+        /// **Description (fr)** --- Type de filière --- utilisé dans le code afin de savoir quel document et type de document à créer
+        /// </returns>
         [StringLength(100)]
+        [CSSPDisplayEN(DisplayEN = "Unique code")]
+        [CSSPDisplayFR(DisplayFR = "Code unique")]
+        [CSSPDescriptionEN(DescriptionEN = @"Unique code --- used in code for knowing which document and type of document to create")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de filière --- utilisé dans le code afin de savoir quel document et type de document à créer")]
         public string UniqueCode { get; set; }
         #endregion Properties in DB
 

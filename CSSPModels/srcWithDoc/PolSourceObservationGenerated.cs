@@ -55,15 +55,51 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "PolSourceSite", ExistPlurial = "s", ExistFieldID = "PolSourceSiteID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Pollution source site ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Site de la source de pollution ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the PolSourceSites table representing the pollution source site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table PolSourceSites représentant le site de source de pollution")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Pollution source site ID
+        /// 
+        /// **Display (fr)** --- Site de la source de pollution ID
+        /// 
+        /// **Description (en)** --- Link to the PolSourceSites table representing the pollution source site
+        /// 
+        /// **Description (fr)** --- Lien à la table PolSourceSites représentant le site de source de pollution
+        /// </returns>
         [CSSPExist(ExistTypeName = "PolSourceSite", ExistPlurial = "s", ExistFieldID = "PolSourceSiteID")]
+        [CSSPDisplayEN(DisplayEN = "Pollution source site ID")]
+        [CSSPDisplayFR(DisplayFR = "Site de la source de pollution ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the PolSourceSites table representing the pollution source site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table PolSourceSites représentant le site de source de pollution")]
         public int PolSourceSiteID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Observation date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date d'observation")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Observation date")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date d'observation")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Observation date
+        /// 
+        /// **Display (fr)** --- Date d'observation
+        /// 
+        /// **Description (en)** --- Observation date
+        /// 
+        /// **Description (fr)** --- Date d'observation
+        /// </returns>
         [CSSPAfter(Year = 1980)]
+        [CSSPDisplayEN(DisplayEN = "Observation date")]
+        [CSSPDisplayFR(DisplayFR = "Date d'observation")]
+        [CSSPDescriptionEN(DescriptionEN = @"Observation date")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date d'observation")]
         public DateTime ObservationDate_Local { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -71,9 +107,49 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>5 == Contact</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Contact who made the observation TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Contact ayant l'observation TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the contact who made the observation")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant le contact ayant l'observation")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Contact who made the observation TVItemID
+        /// 
+        /// **Display (fr)** --- Contact ayant l'observation TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the contact who made the observation
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant le contact ayant l'observation
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "5")]
+        [CSSPDisplayEN(DisplayEN = "Contact who made the observation TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Contact ayant l'observation TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the contact who made the observation")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le contact ayant l'observation")]
         public int ContactTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Observation to be deleted")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Observation qui va être effacé")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Observation to be deleted")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Observation qui va être effacé")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Observation to be deleted
+        /// 
+        /// **Display (fr)** --- Observation qui va être effacé
+        /// 
+        /// **Description (en)** --- Observation to be deleted
+        /// 
+        /// **Description (fr)** --- Observation qui va être effacé
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Observation to be deleted")]
+        [CSSPDisplayFR(DisplayFR = "Observation qui va être effacé")]
+        [CSSPDescriptionEN(DescriptionEN = @"Observation to be deleted")]
+        [CSSPDescriptionFR(DescriptionFR = @"Observation qui va être effacé")]
         public string Observation_ToBeDeleted { get; set; }
         #endregion Properties in DB
 
@@ -91,15 +167,51 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "PolSourceSiteID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Pollution source site TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du site de source de pollution")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Pollution source site TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du site de source de pollution")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Pollution source site TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du site de source de pollution
+        /// 
+        /// **Description (en)** --- Pollution source site TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du site de source de pollution
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "PolSourceSiteID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Pollution source site TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du site de source de pollution")]
+        [CSSPDescriptionEN(DescriptionEN = @"Pollution source site TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du site de source de pollution")]
         public TVItemLanguage PolSourceSiteTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Contact who made the observation TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du contact ayant fait l'observation")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Contact who made the observation TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du contact ayant fait l'observation")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Contact who made the observation TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage du contact ayant fait l'observation
+        /// 
+        /// **Description (en)** --- Contact who made the observation TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage du contact ayant fait l'observation
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Contact who made the observation TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait l'observation")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contact who made the observation TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait l'observation")]
         public TVItemLanguage ContactTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]

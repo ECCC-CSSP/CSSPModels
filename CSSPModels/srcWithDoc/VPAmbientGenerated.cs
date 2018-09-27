@@ -55,30 +55,290 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "VPScenario", ExistPlurial = "s", ExistFieldID = "VPScenarioID")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "VP scenario ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Scénario VP ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the VPScenarios table representing the visual plumes scenario")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table VPScenarios représentant le scénario visual plumes")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- VP scenario ID
+        /// 
+        /// **Display (fr)** --- Scénario VP ID
+        /// 
+        /// **Description (en)** --- Link to the VPScenarios table representing the visual plumes scenario
+        /// 
+        /// **Description (fr)** --- Lien à la table VPScenarios représentant le scénario visual plumes
+        /// </returns>
         [CSSPExist(ExistTypeName = "VPScenario", ExistPlurial = "s", ExistFieldID = "VPScenarioID")]
+        [CSSPDisplayEN(DisplayEN = "VP scenario ID")]
+        [CSSPDisplayFR(DisplayFR = "Scénario VP ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the VPScenarios table representing the visual plumes scenario")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table VPScenarios représentant le scénario visual plumes")]
         public int VPScenarioID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Row")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Rangé")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Row")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Rangé")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Row
+        /// 
+        /// **Display (fr)** --- Rangé
+        /// 
+        /// **Description (en)** --- Row
+        /// 
+        /// **Description (fr)** --- Rangé
+        /// </returns>
         [Range(0, 10)]
+        [CSSPDisplayEN(DisplayEN = "Row")]
+        [CSSPDisplayFR(DisplayFR = "Rangé")]
+        [CSSPDescriptionEN(DescriptionEN = @"Row")]
+        [CSSPDescriptionFR(DescriptionFR = @"Rangé")]
         public int Row { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Measurement depth (m)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Profondeur de mesure (m)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Measurement depth in meters")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Profondeur de mesure en mètres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Measurement depth (m)
+        /// 
+        /// **Display (fr)** --- Profondeur de mesure (m)
+        /// 
+        /// **Description (en)** --- Measurement depth in meters
+        /// 
+        /// **Description (fr)** --- Profondeur de mesure en mètres
+        /// </returns>
         [Range(0.0D, 1000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Measurement depth (m)")]
+        [CSSPDisplayFR(DisplayFR = "Profondeur de mesure (m)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Measurement depth in meters")]
+        [CSSPDescriptionFR(DescriptionFR = @"Profondeur de mesure en mètres")]
         public double? MeasurementDepth_m { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Current speed (m/s)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Vitesse de courant (m/s)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Current speed in meters per second")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Vitesse de courant en mètres par second")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Current speed (m/s)
+        /// 
+        /// **Display (fr)** --- Vitesse de courant (m/s)
+        /// 
+        /// **Description (en)** --- Current speed in meters per second
+        /// 
+        /// **Description (fr)** --- Vitesse de courant en mètres par second
+        /// </returns>
         [Range(0.0D, 10.0D)]
+        [CSSPDisplayEN(DisplayEN = "Current speed (m/s)")]
+        [CSSPDisplayFR(DisplayFR = "Vitesse de courant (m/s)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Current speed in meters per second")]
+        [CSSPDescriptionFR(DescriptionFR = @"Vitesse de courant en mètres par second")]
         public double? CurrentSpeed_m_s { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Current direction (deg)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Direction du courant (deg)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Current direction in degrees")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Direction du courant en dégré")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Current direction (deg)
+        /// 
+        /// **Display (fr)** --- Direction du courant (deg)
+        /// 
+        /// **Description (en)** --- Current direction in degrees
+        /// 
+        /// **Description (fr)** --- Direction du courant en dégré
+        /// </returns>
         [Range(-180.0D, 180.0D)]
+        [CSSPDisplayEN(DisplayEN = "Current direction (deg)")]
+        [CSSPDisplayFR(DisplayFR = "Direction du courant (deg)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Current direction in degrees")]
+        [CSSPDescriptionFR(DescriptionFR = @"Direction du courant en dégré")]
         public double? CurrentDirection_deg { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Ambient salinity (PSU)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Salinité ambiante (PSU)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Ambient salinity (PSU)")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Salinité ambiante (PSU)")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Ambient salinity (PSU)
+        /// 
+        /// **Display (fr)** --- Salinité ambiante (PSU)
+        /// 
+        /// **Description (en)** --- Ambient salinity (PSU)
+        /// 
+        /// **Description (fr)** --- Salinité ambiante (PSU)
+        /// </returns>
         [Range(0.0D, 40.0D)]
+        [CSSPDisplayEN(DisplayEN = "Ambient salinity (PSU)")]
+        [CSSPDisplayFR(DisplayFR = "Salinité ambiante (PSU)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ambient salinity (PSU)")]
+        [CSSPDescriptionFR(DescriptionFR = @"Salinité ambiante (PSU)")]
         public double? AmbientSalinity_PSU { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Ambient temperature (°C)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Température ambiante (°C)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Ambient temperature (°C)")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Température ambiante (°C)")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Ambient temperature (°C)
+        /// 
+        /// **Display (fr)** --- Température ambiante (°C)
+        /// 
+        /// **Description (en)** --- Ambient temperature (°C)
+        /// 
+        /// **Description (fr)** --- Température ambiante (°C)
+        /// </returns>
         [Range(-10.0D, 40.0D)]
+        [CSSPDisplayEN(DisplayEN = "Ambient temperature (°C)")]
+        [CSSPDisplayFR(DisplayFR = "Température ambiante (°C)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ambient temperature (°C)")]
+        [CSSPDescriptionFR(DescriptionFR = @"Température ambiante (°C)")]
         public double? AmbientTemperature_C { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Background concentration (MPN / 100 mL)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Concentration de fond (MPN / 100 mL)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Background concentration in most probable number per 100 milli-Litres")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Concentration de fond en nombre le plus probable par 100 milli-Litres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Background concentration (MPN / 100 mL)
+        /// 
+        /// **Display (fr)** --- Concentration de fond (MPN / 100 mL)
+        /// 
+        /// **Description (en)** --- Background concentration in most probable number per 100 milli-Litres
+        /// 
+        /// **Description (fr)** --- Concentration de fond en nombre le plus probable par 100 milli-Litres
+        /// </returns>
         [Range(0, 10000000)]
+        [CSSPDisplayEN(DisplayEN = "Background concentration (MPN / 100 mL)")]
+        [CSSPDisplayFR(DisplayFR = "Concentration de fond (MPN / 100 mL)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Background concentration in most probable number per 100 milli-Litres")]
+        [CSSPDescriptionFR(DescriptionFR = @"Concentration de fond en nombre le plus probable par 100 milli-Litres")]
         public int? BackgroundConcentration_MPN_100ml { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Pollution decay rate (/d)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Taux de décoissance (/j)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Pollution decay rate per day")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Taux de décoissance par jour)")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Pollution decay rate (/d)
+        /// 
+        /// **Display (fr)** --- Taux de décoissance (/j)
+        /// 
+        /// **Description (en)** --- Pollution decay rate per day
+        /// 
+        /// **Description (fr)** --- Taux de décoissance par jour)
+        /// </returns>
         [Range(0.0D, 100.0D)]
+        [CSSPDisplayEN(DisplayEN = "Pollution decay rate (/d)")]
+        [CSSPDisplayFR(DisplayFR = "Taux de décoissance (/j)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Pollution decay rate per day")]
+        [CSSPDescriptionFR(DescriptionFR = @"Taux de décoissance par jour)")]
         public double? PollutantDecayRate_per_day { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Far field current speed (m/s)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Vitesse du courant de loin (m/s)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Far field current speed in meters per second")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Vitesse du courant de loin en mètre par second)")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Far field current speed (m/s)
+        /// 
+        /// **Display (fr)** --- Vitesse du courant de loin (m/s)
+        /// 
+        /// **Description (en)** --- Far field current speed in meters per second
+        /// 
+        /// **Description (fr)** --- Vitesse du courant de loin en mètre par second)
+        /// </returns>
         [Range(0.0D, 10.0D)]
+        [CSSPDisplayEN(DisplayEN = "Far field current speed (m/s)")]
+        [CSSPDisplayFR(DisplayFR = "Vitesse du courant de loin (m/s)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Far field current speed in meters per second")]
+        [CSSPDescriptionFR(DescriptionFR = @"Vitesse du courant de loin en mètre par second)")]
         public double? FarFieldCurrentSpeed_m_s { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Far field current direction (deg)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Direction du courant de loin (deg)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Far field current direction in degrees")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Direction du courant de loin en dégré)")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Far field current direction (deg)
+        /// 
+        /// **Display (fr)** --- Direction du courant de loin (deg)
+        /// 
+        /// **Description (en)** --- Far field current direction in degrees
+        /// 
+        /// **Description (fr)** --- Direction du courant de loin en dégré)
+        /// </returns>
         [Range(-180.0D, 180.0D)]
+        [CSSPDisplayEN(DisplayEN = "Far field current direction (deg)")]
+        [CSSPDisplayFR(DisplayFR = "Direction du courant de loin (deg)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Far field current direction in degrees")]
+        [CSSPDescriptionFR(DescriptionFR = @"Direction du courant de loin en dégré)")]
         public double? FarFieldCurrentDirection_deg { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Far field diffusion coefficient")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Coefficient de diffusion de loin")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Far field diffusion coefficient")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Coefficient de diffusion de loin")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Far field diffusion coefficient
+        /// 
+        /// **Display (fr)** --- Coefficient de diffusion de loin
+        /// 
+        /// **Description (en)** --- Far field diffusion coefficient
+        /// 
+        /// **Description (fr)** --- Coefficient de diffusion de loin
+        /// </returns>
         [Range(0.0D, 1.0D)]
+        [CSSPDisplayEN(DisplayEN = "Far field diffusion coefficient")]
+        [CSSPDisplayFR(DisplayFR = "Coefficient de diffusion de loin")]
+        [CSSPDescriptionEN(DescriptionEN = @"Far field diffusion coefficient")]
+        [CSSPDescriptionFR(DescriptionFR = @"Coefficient de diffusion de loin")]
         public double? FarFieldDiffusionCoefficient { get; set; }
         #endregion Properties in DB
 

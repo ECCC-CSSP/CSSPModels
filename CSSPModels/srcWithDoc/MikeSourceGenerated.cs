@@ -57,12 +57,118 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>14 == MikeSource</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "14")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MIKE source TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Item de source MIKE")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing MIKE source")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant une source MIKE")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MIKE source TVItemID
+        /// 
+        /// **Display (fr)** --- Item de source MIKE
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing MIKE source
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant une source MIKE
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "14")]
+        [CSSPDisplayEN(DisplayEN = "MIKE source TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Item de source MIKE")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing MIKE source")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant une source MIKE")]
         public int MikeSourceTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Continuous")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Continue")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Source is continuous")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "La source est continue")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Continuous
+        /// 
+        /// **Display (fr)** --- Continue
+        /// 
+        /// **Description (en)** --- Source is continuous
+        /// 
+        /// **Description (fr)** --- La source est continue
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Continuous")]
+        [CSSPDisplayFR(DisplayFR = "Continue")]
+        [CSSPDescriptionEN(DescriptionEN = @"Source is continuous")]
+        [CSSPDescriptionFR(DescriptionFR = @"La source est continue")]
         public bool IsContinuous { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Include")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Inclue")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Source is included")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "La source est incluse")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Include
+        /// 
+        /// **Display (fr)** --- Inclue
+        /// 
+        /// **Description (en)** --- Source is included
+        /// 
+        /// **Description (fr)** --- La source est incluse
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Include")]
+        [CSSPDisplayFR(DisplayFR = "Inclue")]
+        [CSSPDescriptionEN(DescriptionEN = @"Source is included")]
+        [CSSPDescriptionFR(DescriptionFR = @"La source est incluse")]
         public bool Include { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "River")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Rivière")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Source is a river")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "La source est une rivière")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- River
+        /// 
+        /// **Display (fr)** --- Rivière
+        /// 
+        /// **Description (en)** --- Source is a river
+        /// 
+        /// **Description (fr)** --- La source est une rivière
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "River")]
+        [CSSPDisplayFR(DisplayFR = "Rivière")]
+        [CSSPDescriptionEN(DescriptionEN = @"Source is a river")]
+        [CSSPDescriptionFR(DescriptionFR = @"La source est une rivière")]
         public bool IsRiver { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Use hydrometric site")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Utilise site hydrometric")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Source should use hydrometric site with factor for discharge")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "La source devrait usiliser un site hydrométrique avec facteur comme débits")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Use hydrometric site
+        /// 
+        /// **Display (fr)** --- Utilise site hydrometric
+        /// 
+        /// **Description (en)** --- Source should use hydrometric site with factor for discharge
+        /// 
+        /// **Description (fr)** --- La source devrait usiliser un site hydrométrique avec facteur comme débits
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Use hydrometric site")]
+        [CSSPDisplayFR(DisplayFR = "Utilise site hydrometric")]
+        [CSSPDescriptionEN(DescriptionEN = @"Source should use hydrometric site with factor for discharge")]
+        [CSSPDescriptionFR(DescriptionFR = @"La source devrait usiliser un site hydrométrique avec facteur comme débits")]
         public bool UseHydrometric { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -70,14 +176,98 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>9 == HydrometricSite</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "9")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Hydrometric site")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Site hydrométrique")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing hydrometric site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant un site hydrométrique")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Hydrometric site
+        /// 
+        /// **Display (fr)** --- Site hydrométrique
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing hydrometric site
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant un site hydrométrique
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "9")]
+        [CSSPDisplayEN(DisplayEN = "Hydrometric site")]
+        [CSSPDisplayFR(DisplayFR = "Site hydrométrique")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing hydrometric site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant un site hydrométrique")]
         public int? HydrometricTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Drainage area (km2)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Bassin versant (km2)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Drainage area in square kilometers")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Bassin versant en kilomètres carrés")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Drainage area (km2)
+        /// 
+        /// **Display (fr)** --- Bassin versant (km2)
+        /// 
+        /// **Description (en)** --- Drainage area in square kilometers
+        /// 
+        /// **Description (fr)** --- Bassin versant en kilomètres carrés
+        /// </returns>
         [Range(0.0D, 1000000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Drainage area (km2)")]
+        [CSSPDisplayFR(DisplayFR = "Bassin versant (km2)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Drainage area in square kilometers")]
+        [CSSPDescriptionFR(DescriptionFR = @"Bassin versant en kilomètres carrés")]
         public double? DrainageArea_km2 { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Factor")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Facteur")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Factor")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Facteur")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Factor
+        /// 
+        /// **Display (fr)** --- Facteur
+        /// 
+        /// **Description (en)** --- Factor
+        /// 
+        /// **Description (fr)** --- Facteur
+        /// </returns>
         [Range(0.0D, 1000000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Factor")]
+        [CSSPDisplayFR(DisplayFR = "Facteur")]
+        [CSSPDescriptionEN(DescriptionEN = @"Factor")]
+        [CSSPDescriptionFR(DescriptionFR = @"Facteur")]
         public double? Factor { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Source number")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nombre de source")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Source number")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre de source")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Source number
+        /// 
+        /// **Display (fr)** --- Nombre de source
+        /// 
+        /// **Description (en)** --- Source number
+        /// 
+        /// **Description (fr)** --- Nombre de source
+        /// </returns>
         [StringLength(50)]
+        [CSSPDisplayEN(DisplayEN = "Source number")]
+        [CSSPDisplayFR(DisplayFR = "Nombre de source")]
+        [CSSPDescriptionEN(DescriptionEN = @"Source number")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre de source")]
         public string SourceNumberString { get; set; }
         #endregion Properties in DB
 

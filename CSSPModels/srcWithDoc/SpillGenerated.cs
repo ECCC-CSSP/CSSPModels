@@ -57,8 +57,26 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>15 == Municipality</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "15")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Municipality TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Municipalité TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the municipality")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant la municipalité")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Municipality TVItemID
+        /// 
+        /// **Display (fr)** --- Municipalité TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the municipality
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant la municipalité
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "15")]
+        [CSSPDisplayEN(DisplayEN = "Municipality TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Municipalité TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the municipality")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant la municipalité")]
         public int MunicipalityTVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -66,26 +84,102 @@ namespace CSSPModels
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
         /// > <para>10 == Infrastructure</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Infrastructure TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Infrastructure TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the infrastructure")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant l'infrastructure")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Infrastructure TVItemID
+        /// 
+        /// **Display (fr)** --- Infrastructure TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing the infrastructure
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant l'infrastructure
+        /// </returns>
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "10")]
+        [CSSPDisplayEN(DisplayEN = "Infrastructure TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Infrastructure TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the infrastructure")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant l'infrastructure")]
         public int? InfrastructureTVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Start date (local)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de début (local)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Start date (local)")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de début (local)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Start date (local)
+        /// 
+        /// **Display (fr)** --- Date de début (local)
+        /// 
+        /// **Description (en)** --- Start date (local)
+        /// 
+        /// **Description (fr)** --- Date de début (local)
+        /// </returns>
         [CSSPAfter(Year = 1980)]
+        [CSSPDisplayEN(DisplayEN = "Start date (local)")]
+        [CSSPDisplayFR(DisplayFR = "Date de début (local)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Start date (local)")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date de début (local)")]
         public DateTime StartDateTime_Local { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
         /// > <para>[[CSSPBigger](CSSPModels.CSSPBiggerAttribute.html)(OtherField = "StartDateTime_Local")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "End date (local)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de fin (local)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "End date (local)")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de fin (local)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- End date (local)
+        /// 
+        /// **Display (fr)** --- Date de fin (local)
+        /// 
+        /// **Description (en)** --- End date (local)
+        /// 
+        /// **Description (fr)** --- Date de fin (local)
+        /// </returns>
         [CSSPAfter(Year = 1980)]
         [CSSPBigger(OtherField = "StartDateTime_Local")]
+        [CSSPDisplayEN(DisplayEN = "End date (local)")]
+        [CSSPDisplayFR(DisplayFR = "Date de fin (local)")]
+        [CSSPDescriptionEN(DescriptionEN = @"End date (local)")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date de fin (local)")]
         public DateTime? EndDateTime_Local { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Average flow (m3/d)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Débit moyen (m3/j)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Average flow in cubic meters per day")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Débit moyer en mètres cube par jour")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Average flow (m3/d)
+        /// 
+        /// **Display (fr)** --- Débit moyen (m3/j)
+        /// 
+        /// **Description (en)** --- Average flow in cubic meters per day
+        /// 
+        /// **Description (fr)** --- Débit moyer en mètres cube par jour
+        /// </returns>
         [Range(0.0D, 1000000.0D)]
+        [CSSPDisplayEN(DisplayEN = "Average flow (m3/d)")]
+        [CSSPDisplayFR(DisplayFR = "Débit moyen (m3/j)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Average flow in cubic meters per day")]
+        [CSSPDescriptionFR(DescriptionFR = @"Débit moyer en mètres cube par jour")]
         public double AverageFlow_m3_day { get; set; }
         #endregion Properties in DB
 
@@ -103,15 +197,51 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MunicipalityTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Municipality TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage de la municipalité")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Municipality TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage de la municipalité")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Municipality TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage de la municipalité
+        /// 
+        /// **Description (en)** --- Municipality TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage de la municipalité
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MunicipalityTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Municipality TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de la municipalité")]
+        [CSSPDescriptionEN(DescriptionEN = @"Municipality TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de la municipalité")]
         public TVItemLanguage MunicipalityTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Infrastructure TVItemLanguage")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage de l'infrastructure")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Infrastructure TVItemLanguage DB object")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage de l'infrastructure")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Infrastructure TVItemLanguage
+        /// 
+        /// **Display (fr)** --- TVItemLanguage de l'infrastructure
+        /// 
+        /// **Description (en)** --- Infrastructure TVItemLanguage DB object
+        /// 
+        /// **Description (fr)** --- Object BD TVItemLanguage de l'infrastructure
+        /// </returns>
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Infrastructure TVItemLanguage")]
+        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de l'infrastructure")]
+        [CSSPDescriptionEN(DescriptionEN = @"Infrastructure TVItemLanguage DB object")]
+        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de l'infrastructure")]
         public TVItemLanguage InfrastructureTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
