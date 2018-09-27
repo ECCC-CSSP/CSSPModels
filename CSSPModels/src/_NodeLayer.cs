@@ -19,8 +19,20 @@ namespace CSSPModels
 
         #region Properties not in DB
         [Range(1, 100)]
+        [CSSPDisplayEN(DisplayEN = "Layer")]
+        [CSSPDisplayFR(DisplayFR = "Couche")]
+        [CSSPDescriptionEN(DescriptionEN = @"Layer")]
+        [CSSPDescriptionFR(DescriptionFR = @"Couche")]
         public int Layer { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Z")]
+        [CSSPDisplayFR(DisplayFR = "Z")]
+        [CSSPDescriptionEN(DescriptionEN = @"Z coordinate")]
+        [CSSPDescriptionFR(DescriptionFR = @"Coordonné Z")]
         public double Z { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Node")]
+        [CSSPDisplayFR(DisplayFR = "Noeud")]
+        [CSSPDescriptionEN(DescriptionEN = @"Node")]
+        [CSSPDescriptionFR(DescriptionFR = @"Noeud")]
         public Node Node { get; set; }
         #endregion Properties not in DB
 

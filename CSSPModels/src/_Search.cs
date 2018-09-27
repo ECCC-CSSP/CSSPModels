@@ -19,8 +19,16 @@ namespace CSSPModels
 
         #region Properties not in DB
         [StringLength(255, MinimumLength = 1)]
+        [CSSPDisplayEN(DisplayEN = "Value")]
+        [CSSPDisplayFR(DisplayFR = "Valeur")]
+        [CSSPDescriptionEN(DescriptionEN = @"Value")]
+        [CSSPDescriptionFR(DescriptionFR = @"Valeur")]
         public string value { get; set; }
         [Range(1, -1)]
+        [CSSPDisplayEN(DisplayEN = "ID")]
+        [CSSPDisplayFR(DisplayFR = "ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"ID")]
+        [CSSPDescriptionFR(DescriptionFR = @"ID")]
         public int id { get; set; }
         #endregion Properties not in DB
 

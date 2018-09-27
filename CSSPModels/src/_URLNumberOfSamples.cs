@@ -19,7 +19,15 @@ namespace CSSPModels
 
         #region Properties not in DB
         [StringLength(255, MinimumLength = 1)]
+        [CSSPDisplayEN(DisplayEN = "Url")]
+        [CSSPDisplayFR(DisplayFR = "Url")]
+        [CSSPDescriptionEN(DescriptionEN = @"Url")]
+        [CSSPDescriptionFR(DescriptionFR = @"Url")]
         public string url { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Number of samples")]
+        [CSSPDisplayFR(DisplayFR = "Nombre d'échantillons")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of samples")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre d'échantillons")]
         public int NumberOfSamples { get; set; }
         #endregion Properties not in DB
 

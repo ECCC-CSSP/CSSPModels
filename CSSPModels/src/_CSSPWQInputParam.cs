@@ -60,24 +60,24 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Liste de TVItemID des sites MWQM (fr)")]
         public List<int> MWQMSiteTVItemIDList { get; set; }
         [CSSPDisplayEN(DisplayEN = "Daily duplicate MWQM site list")]
-        [CSSPDisplayFR(DisplayFR = "Liste de ")]
-        [CSSPDescriptionEN(DescriptionEN = @"aaaaaaaaaaaa")]
-        [CSSPDescriptionFR(DescriptionFR = @"aaaaaaaaaaaaa")]
+        [CSSPDisplayFR(DisplayFR = "Liste de duplicata journalier des sites MWQM (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Daily duplicate MWQM site list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de duplicata journalier des sites MWQM (fr)")]
         public List<string> DailyDuplicateMWQMSiteList { get; set; }
-        [CSSPDisplayEN(DisplayEN = "aaaaaaaaa")]
-        [CSSPDisplayFR(DisplayFR = "aaaaaaaaaaaa")]
-        [CSSPDescriptionEN(DescriptionEN = @"aaaaaaaaaaaa")]
-        [CSSPDescriptionFR(DescriptionFR = @"aaaaaaaaaaaaa")]
+        [CSSPDisplayEN(DisplayEN = "Daily duplicate MWQM site TVItemID list")]
+        [CSSPDisplayFR(DisplayFR = "Liste de TVItemID des duplicata journalier des sites MWQM (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Daily duplicate MWQM site TVItemID list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de TVItemID des duplicata journalier des sites MWQM (fr)")]
         public List<int> DailyDuplicateMWQMSiteTVItemIDList { get; set; }
-        [CSSPDisplayEN(DisplayEN = "aaaaaaaaa")]
-        [CSSPDisplayFR(DisplayFR = "aaaaaaaaaaaa")]
-        [CSSPDescriptionEN(DescriptionEN = @"aaaaaaaaaaaa")]
-        [CSSPDescriptionFR(DescriptionFR = @"aaaaaaaaaaaaa")]
+        [CSSPDisplayEN(DisplayEN = "Infrastructure list")]
+        [CSSPDisplayFR(DisplayFR = "Liste des infrastructures")]
+        [CSSPDescriptionEN(DescriptionEN = @"Infrastructure list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste des infrastructures")]
         public List<string> InfrastructureList { get; set; }
-        [CSSPDisplayEN(DisplayEN = "aaaaaaaaa")]
-        [CSSPDisplayFR(DisplayFR = "aaaaaaaaaaaa")]
-        [CSSPDescriptionEN(DescriptionEN = @"aaaaaaaaaaaa")]
-        [CSSPDescriptionFR(DescriptionFR = @"aaaaaaaaaaaaa")]
+        [CSSPDisplayEN(DisplayEN = "Infrastructure TVItemID list")]
+        [CSSPDisplayFR(DisplayFR = "Liste de TVItemID des infrastructures")]
+        [CSSPDescriptionEN(DescriptionEN = @"Infrastructure TVItemID list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de TVItemID des infrastructures")]
         public List<int> InfrastructureTVItemIDList { get; set; }
         #endregion Properties not in DB
 

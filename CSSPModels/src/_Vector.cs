@@ -18,7 +18,15 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        [CSSPDisplayEN(DisplayEN = "Start node")]
+        [CSSPDisplayFR(DisplayFR = "Node de départ")]
+        [CSSPDescriptionEN(DescriptionEN = @"Start node")]
+        [CSSPDescriptionFR(DescriptionFR = @"Node de départ")]
         public Node StartNode { get; set; }
+        [CSSPDisplayEN(DisplayEN = "End node")]
+        [CSSPDisplayFR(DisplayFR = "Node de fin")]
+        [CSSPDescriptionEN(DescriptionEN = @"End node")]
+        [CSSPDescriptionFR(DescriptionFR = @"Node de fin")]
         public Node EndNode { get; set; }
         #endregion Properties not in DB
 

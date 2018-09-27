@@ -18,9 +18,16 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        public string Error { get; set; }
         [Range(1, -1)]
+        [CSSPDisplayEN(DisplayEN = "MikeScenario ID")]
+        [CSSPDisplayFR(DisplayFR = "MikeScenario ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the MikeScenarios table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table MikeScenarios")]
         public int MikeScenarioID { get; set; }
+        [CSSPDisplayEN(DisplayEN = "TVFile list")]
+        [CSSPDisplayFR(DisplayFR = "List de TVFile")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view file list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de filière de l'arbre visuel")]
         public List<TVFile> TVFileList { get; set; }
         #endregion Properties not in DB
 
