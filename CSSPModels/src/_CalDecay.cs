@@ -18,10 +18,11 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        [StringLength(255)]
-        [CSSPAllowNull]
-        public string Error { get; set; }
         [Range(0.0D, -1.0D)]
+        [CSSPDisplayEN(DisplayEN = "Decay rate")]
+        [CSSPDisplayFR(DisplayFR = "Taux de décroissance")]
+        [CSSPDescriptionEN(DescriptionEN = @"Decay rate")]
+        [CSSPDescriptionFR(DescriptionFR = @"Taux de décroissance")]
         public double Decay { get; set; }
         #endregion Properties not in DB
 
