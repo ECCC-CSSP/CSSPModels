@@ -31,9 +31,53 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Table name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom de la table")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Database table name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom de la table de la base de donnée")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Table name
+        /// 
+        /// **Display (fr)** --- Nom de la table
+        /// 
+        /// **Description (en)** --- Database table name
+        /// 
+        /// **Description (fr)** --- Nom de la table de la base de donnée
+        /// </returns>
         [StringLength(200, MinimumLength = 1)]
+        [CSSPDisplayEN(DisplayEN = "Table name")]
+        [CSSPDisplayFR(DisplayFR = "Nom de la table")]
+        [CSSPDescriptionEN(DescriptionEN = @"Database table name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom de la table de la base de donnée")]
         public string TableName { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Plurial")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Pluriel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "One or two letters to create the plurial (Ex: 's', 'es')")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Une ou deux lettres de fin créant le pruriel (Ex: 's', 'es')")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Plurial
+        /// 
+        /// **Display (fr)** --- Pluriel
+        /// 
+        /// **Description (en)** --- One or two letters to create the plurial (Ex: 's', 'es')
+        /// 
+        /// **Description (fr)** --- Une ou deux lettres de fin créant le pruriel (Ex: 's', 'es')
+        /// </returns>
         [StringLength(3, MinimumLength = 1)]
+        [CSSPDisplayEN(DisplayEN = "Plurial")]
+        [CSSPDisplayFR(DisplayFR = "Pluriel")]
+        [CSSPDescriptionEN(DescriptionEN = @"One or two letters to create the plurial (Ex: 's', 'es')")]
+        [CSSPDescriptionFR(DescriptionFR = @"Une ou deux lettres de fin créant le pruriel (Ex: 's', 'es')")]
         public string Plurial { get; set; }
         #endregion Properties not in DB
 

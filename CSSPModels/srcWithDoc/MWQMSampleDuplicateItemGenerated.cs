@@ -31,9 +31,53 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Parent site")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Site du parent")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Parent site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Site du parent")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Parent site
+        /// 
+        /// **Display (fr)** --- Site du parent
+        /// 
+        /// **Description (en)** --- Parent site
+        /// 
+        /// **Description (fr)** --- Site du parent
+        /// </returns>
         [StringLength(200, MinimumLength = 1)]
+        [CSSPDisplayEN(DisplayEN = "Parent site")]
+        [CSSPDisplayFR(DisplayFR = "Site du parent")]
+        [CSSPDescriptionEN(DescriptionEN = @"Parent site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Site du parent")]
         public string ParentSite { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Duplicate site")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Site duplicata")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Duplicate site")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Site duplicata")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Duplicate site
+        /// 
+        /// **Display (fr)** --- Site duplicata
+        /// 
+        /// **Description (en)** --- Duplicate site
+        /// 
+        /// **Description (fr)** --- Site duplicata
+        /// </returns>
         [StringLength(200, MinimumLength = 1)]
+        [CSSPDisplayEN(DisplayEN = "Duplicate site")]
+        [CSSPDisplayFR(DisplayFR = "Site duplicata")]
+        [CSSPDescriptionEN(DescriptionEN = @"Duplicate site")]
+        [CSSPDescriptionFR(DescriptionFR = @"Site duplicata")]
         public string DuplicateSite { get; set; }
         #endregion Properties not in DB
 

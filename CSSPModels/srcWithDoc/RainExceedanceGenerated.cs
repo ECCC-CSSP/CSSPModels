@@ -224,98 +224,98 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Province TVItemID")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Province TVItemID")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the province")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant la province")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Comma separated list of province TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste de TVItemID des provinces séparés par une virgule")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Comma separated list of province TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Liste de TVItemID des provinces séparés par une virgule")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Province TVItemID
+        /// **Display (en)** --- Comma separated list of province TVItemID
         /// 
-        /// **Display (fr)** --- Province TVItemID
+        /// **Display (fr)** --- Liste de TVItemID des provinces séparés par une virgule
         /// 
-        /// **Description (en)** --- Link to the TVItems table representing the province
+        /// **Description (en)** --- Comma separated list of province TVItemID
         /// 
-        /// **Description (fr)** --- Lien à la table TVItems représentant la province
+        /// **Description (fr)** --- Liste de TVItemID des provinces séparés par une virgule
         /// </returns>
         [StringLength(250)]
-        [CSSPDisplayEN(DisplayEN = "Province TVItemID")]
-        [CSSPDisplayFR(DisplayFR = "Province TVItemID")]
-        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the province")]
-        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant la province")]
+        [CSSPDisplayEN(DisplayEN = "Comma separated list of province TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Liste de TVItemID des provinces séparés par une virgule")]
+        [CSSPDescriptionEN(DescriptionEN = @"Comma separated list of province TVItemID")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de TVItemID des provinces séparés par une virgule")]
         public string ProvinceTVItemIDs { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Subsector TVItemID")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Sous-secteur TVItemID")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the subsector")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant le sous-secteur")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Comma separated list of subsector TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste de TVItemID des sous-secteurs séparés par une virgule")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Comma separated list of subsector TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Liste de TVItemID des sous-secteur séparés par une virgule")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Subsector TVItemID
+        /// **Display (en)** --- Comma separated list of subsector TVItemID
         /// 
-        /// **Display (fr)** --- Sous-secteur TVItemID
+        /// **Display (fr)** --- Liste de TVItemID des sous-secteurs séparés par une virgule
         /// 
-        /// **Description (en)** --- Link to the TVItems table representing the subsector
+        /// **Description (en)** --- Comma separated list of subsector TVItemID
         /// 
-        /// **Description (fr)** --- Lien à la table TVItems représentant le sous-secteur
+        /// **Description (fr)** --- Liste de TVItemID des sous-secteur séparés par une virgule
         /// </returns>
         [StringLength(250)]
-        [CSSPDisplayEN(DisplayEN = "Subsector TVItemID")]
-        [CSSPDisplayFR(DisplayFR = "Sous-secteur TVItemID")]
-        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the subsector")]
-        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le sous-secteur")]
+        [CSSPDisplayEN(DisplayEN = "Comma separated list of subsector TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Liste de TVItemID des sous-secteurs séparés par une virgule")]
+        [CSSPDescriptionEN(DescriptionEN = @"Comma separated list of subsector TVItemID")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de TVItemID des sous-secteur séparés par une virgule")]
         public string SubsectorTVItemIDs { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Climate site TVItemID")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Site climatique TVItemID")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the climate site")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant le site climatique")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Comma separated list of climate site TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste de TVItemID des sites climatiques séparés par une virgule")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Comma separated list of climate site TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Liste de TVItemID des sites climatiques séparés par une virgule")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Climate site TVItemID
+        /// **Display (en)** --- Comma separated list of climate site TVItemID
         /// 
-        /// **Display (fr)** --- Site climatique TVItemID
+        /// **Display (fr)** --- Liste de TVItemID des sites climatiques séparés par une virgule
         /// 
-        /// **Description (en)** --- Link to the TVItems table representing the climate site
+        /// **Description (en)** --- Comma separated list of climate site TVItemID
         /// 
-        /// **Description (fr)** --- Lien à la table TVItems représentant le site climatique
+        /// **Description (fr)** --- Liste de TVItemID des sites climatiques séparés par une virgule
         /// </returns>
         [StringLength(250)]
-        [CSSPDisplayEN(DisplayEN = "Climate site TVItemID")]
-        [CSSPDisplayFR(DisplayFR = "Site climatique TVItemID")]
-        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the climate site")]
-        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le site climatique")]
+        [CSSPDisplayEN(DisplayEN = "Comma separated list of climate site TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Liste de TVItemID des sites climatiques séparés par une virgule")]
+        [CSSPDescriptionEN(DescriptionEN = @"Comma separated list of climate site TVItemID")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de TVItemID des sites climatiques séparés par une virgule")]
         public string ClimateSiteTVItemIDs { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Email distribution list ID")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste de distribution de courriels ID")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing the email distribution list")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant la liste de distribution de courriels")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Comma separated list of IDs for table EmailDistributionLists")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste d'identifiants de la table EmailDistributionLists séparés par une virgule")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Comma separated list of IDs for table EmailDistributionLists")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Liste d'identifiants de la table EmailDistributionLists séparés par une virgule")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Email distribution list ID
+        /// **Display (en)** --- Comma separated list of IDs for table EmailDistributionLists
         /// 
-        /// **Display (fr)** --- Liste de distribution de courriels ID
+        /// **Display (fr)** --- Liste d'identifiants de la table EmailDistributionLists séparés par une virgule
         /// 
-        /// **Description (en)** --- Link to the TVItems table representing the email distribution list
+        /// **Description (en)** --- Comma separated list of IDs for table EmailDistributionLists
         /// 
-        /// **Description (fr)** --- Lien à la table TVItems représentant la liste de distribution de courriels
+        /// **Description (fr)** --- Liste d'identifiants de la table EmailDistributionLists séparés par une virgule
         /// </returns>
         [StringLength(250)]
-        [CSSPDisplayEN(DisplayEN = "Email distribution list ID")]
-        [CSSPDisplayFR(DisplayFR = "Liste de distribution de courriels ID")]
-        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the email distribution list")]
-        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant la liste de distribution de courriels")]
+        [CSSPDisplayEN(DisplayEN = "Comma separated list of IDs for table EmailDistributionLists")]
+        [CSSPDisplayFR(DisplayFR = "Liste d'identifiants de la table EmailDistributionLists séparés par une virgule")]
+        [CSSPDescriptionEN(DescriptionEN = @"Comma separated list of IDs for table EmailDistributionLists")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste d'identifiants de la table EmailDistributionLists séparés par une virgule")]
         public string EmailDistributionListIDs { get; set; }
         #endregion Properties in DB
 
@@ -329,81 +329,6 @@ namespace CSSPModels
     public partial class RainExceedance_A : RainExceedance
     {
         #region Properties
-        /// <summary>
-        /// > [!NOTE]
-        /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Province TVItemLanguage")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage de la province")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Province TVItemLanguage DB object")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage de la province")]</para>
-        /// </summary>
-        /// <returns>
-        /// 
-        /// **Display (en)** --- Province TVItemLanguage
-        /// 
-        /// **Display (fr)** --- TVItemLanguage de la province
-        /// 
-        /// **Description (en)** --- Province TVItemLanguage DB object
-        /// 
-        /// **Description (fr)** --- Object BD TVItemLanguage de la province
-        /// </returns>
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Province TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de la province")]
-        [CSSPDescriptionEN(DescriptionEN = @"Province TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de la province")]
-        public TVItemLanguage ProvinceTVItemLanguage { get; set; }
-        /// <summary>
-        /// > [!NOTE]
-        /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Subsector TVItemLanguage")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du sous-secteur")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Subsector TVItemLanguage DB object")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du sous-secteur")]</para>
-        /// </summary>
-        /// <returns>
-        /// 
-        /// **Display (en)** --- Subsector TVItemLanguage
-        /// 
-        /// **Display (fr)** --- TVItemLanguage du sous-secteur
-        /// 
-        /// **Description (en)** --- Subsector TVItemLanguage DB object
-        /// 
-        /// **Description (fr)** --- Object BD TVItemLanguage du sous-secteur
-        /// </returns>
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Subsector TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du sous-secteur")]
-        [CSSPDescriptionEN(DescriptionEN = @"Subsector TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du sous-secteur")]
-        public TVItemLanguage SubsectorTVItemLanguage { get; set; }
-        /// <summary>
-        /// > [!NOTE]
-        /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Climate site TVItemLanguage")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du site climatique")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Climate site TVItemLanguage DB object")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du site climatique")]</para>
-        /// </summary>
-        /// <returns>
-        /// 
-        /// **Display (en)** --- Climate site TVItemLanguage
-        /// 
-        /// **Display (fr)** --- TVItemLanguage du site climatique
-        /// 
-        /// **Description (en)** --- Climate site TVItemLanguage DB object
-        /// 
-        /// **Description (fr)** --- Object BD TVItemLanguage du site climatique
-        /// </returns>
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Climate site TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du site climatique")]
-        [CSSPDescriptionEN(DescriptionEN = @"Climate site TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du site climatique")]
-        public TVItemLanguage ClimateSiteTVItemLanguage { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>

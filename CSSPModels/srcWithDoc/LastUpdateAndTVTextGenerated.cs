@@ -19,7 +19,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Error](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_Error), [LastUpdateAndTVTextDate_UTC](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_LastUpdateAndTVTextDate_UTC), [LastUpdateDate_Local](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_LastUpdateDate_Local), [TVText](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_TVText), [HasErrors](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_HasErrors), [ValidationResults](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_ValidationResults), </para>
+    /// > <para>**Other properties** : [LastUpdateAndTVTextDate_UTC](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_LastUpdateAndTVTextDate_UTC), [LastUpdateDate_Local](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_LastUpdateDate_Local), [TVText](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_TVText), [HasErrors](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_HasErrors), [ValidationResults](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LastUpdateAndTVTextService](CSSPServices.LastUpdateAndTVTextService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -31,22 +31,79 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        public string Error { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de dernième mise à jour")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update date")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de dernième mise à jour")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Last update date
+        /// 
+        /// **Display (fr)** --- Date de dernième mise à jour
+        /// 
+        /// **Description (en)** --- Last update date
+        /// 
+        /// **Description (fr)** --- Date de dernième mise à jour
+        /// </returns>
         [CSSPAfter(Year = 1980)]
+        [CSSPDisplayEN(DisplayEN = "Last update date")]
+        [CSSPDisplayFR(DisplayFR = "Date de dernième mise à jour")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update date")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date de dernième mise à jour")]
         public DateTime LastUpdateAndTVTextDate_UTC { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update date")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de dernième mise à jour")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update date")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de dernième mise à jour")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Last update date
+        /// 
+        /// **Display (fr)** --- Date de dernième mise à jour
+        /// 
+        /// **Description (en)** --- Last update date
+        /// 
+        /// **Description (fr)** --- Date de dernième mise à jour
+        /// </returns>
         [CSSPAfter(Year = 1980)]
+        [CSSPDisplayEN(DisplayEN = "Last update date")]
+        [CSSPDisplayFR(DisplayFR = "Date de dernième mise à jour")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update date")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date de dernième mise à jour")]
         public DateTime LastUpdateDate_Local { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte TV")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de l'arbre visuel")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV text
+        /// 
+        /// **Display (fr)** --- Texte TV
+        /// 
+        /// **Description (en)** --- Tree view text
+        /// 
+        /// **Description (fr)** --- Texte de l'arbre visuel
+        /// </returns>
         [StringLength(200, MinimumLength = 1)]
+        [CSSPDisplayEN(DisplayEN = "TV text")]
+        [CSSPDisplayFR(DisplayFR = "Texte TV")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de l'arbre visuel")]
         public string TVText { get; set; }
         #endregion Properties not in DB
 

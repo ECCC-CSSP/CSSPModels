@@ -31,9 +31,75 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Layer")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Couche")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Layer")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Couche")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Layer
+        /// 
+        /// **Display (fr)** --- Couche
+        /// 
+        /// **Description (en)** --- Layer
+        /// 
+        /// **Description (fr)** --- Couche
+        /// </returns>
         [Range(1, 100)]
+        [CSSPDisplayEN(DisplayEN = "Layer")]
+        [CSSPDisplayFR(DisplayFR = "Couche")]
+        [CSSPDescriptionEN(DescriptionEN = @"Layer")]
+        [CSSPDescriptionFR(DescriptionFR = @"Couche")]
         public int Layer { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Z")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Z")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Z coordinate")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Coordonné Z")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Z
+        /// 
+        /// **Display (fr)** --- Z
+        /// 
+        /// **Description (en)** --- Z coordinate
+        /// 
+        /// **Description (fr)** --- Coordonné Z
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Z")]
+        [CSSPDisplayFR(DisplayFR = "Z")]
+        [CSSPDescriptionEN(DescriptionEN = @"Z coordinate")]
+        [CSSPDescriptionFR(DescriptionFR = @"Coordonné Z")]
         public double Z { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Node")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Noeud")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Node")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Noeud")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Node
+        /// 
+        /// **Display (fr)** --- Noeud
+        /// 
+        /// **Description (en)** --- Node
+        /// 
+        /// **Description (fr)** --- Noeud
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Node")]
+        [CSSPDisplayFR(DisplayFR = "Noeud")]
+        [CSSPDescriptionEN(DescriptionEN = @"Node")]
+        [CSSPDescriptionFR(DescriptionFR = @"Noeud")]
         public Node Node { get; set; }
         #endregion Properties not in DB
 

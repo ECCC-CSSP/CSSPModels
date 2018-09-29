@@ -31,12 +31,144 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Conc")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Conc")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Concontration")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Concontration")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Conc
+        /// 
+        /// **Display (fr)** --- Conc
+        /// 
+        /// **Description (en)** --- Concontration
+        /// 
+        /// **Description (fr)** --- Concontration
+        /// </returns>
         [Range(0, -1)]
+        [CSSPDisplayEN(DisplayEN = "Conc")]
+        [CSSPDisplayFR(DisplayFR = "Conc")]
+        [CSSPDescriptionEN(DescriptionEN = @"Concontration")]
+        [CSSPDescriptionFR(DescriptionFR = @"Concontration")]
         public int Conc { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Dilu")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Dilu")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Dilution")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Dilution")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Dilu
+        /// 
+        /// **Display (fr)** --- Dilu
+        /// 
+        /// **Description (en)** --- Dilution
+        /// 
+        /// **Description (fr)** --- Dilution
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Dilu")]
+        [CSSPDisplayFR(DisplayFR = "Dilu")]
+        [CSSPDescriptionEN(DescriptionEN = @"Dilution")]
+        [CSSPDescriptionFR(DescriptionFR = @"Dilution")]
         public double Dilu { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Far field width")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Largeur du champ éloigné")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Far field width")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Largeur du champ éloigné")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Far field width
+        /// 
+        /// **Display (fr)** --- Largeur du champ éloigné
+        /// 
+        /// **Description (en)** --- Far field width
+        /// 
+        /// **Description (fr)** --- Largeur du champ éloigné
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Far field width")]
+        [CSSPDisplayFR(DisplayFR = "Largeur du champ éloigné")]
+        [CSSPDescriptionEN(DescriptionEN = @"Far field width")]
+        [CSSPDescriptionFR(DescriptionFR = @"Largeur du champ éloigné")]
         public double FarfieldWidth { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Distance")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Distance")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Distance the pollution travelled")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Distance parcourue de la pollution")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Distance
+        /// 
+        /// **Display (fr)** --- Distance
+        /// 
+        /// **Description (en)** --- Distance the pollution travelled
+        /// 
+        /// **Description (fr)** --- Distance parcourue de la pollution
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Distance")]
+        [CSSPDisplayFR(DisplayFR = "Distance")]
+        [CSSPDescriptionEN(DescriptionEN = @"Distance the pollution travelled")]
+        [CSSPDescriptionFR(DescriptionFR = @"Distance parcourue de la pollution")]
         public double Distance { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Time")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Time")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Time the pollution travelled")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Le temps du parcour de lla pollution")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Time
+        /// 
+        /// **Display (fr)** --- Time
+        /// 
+        /// **Description (en)** --- Time the pollution travelled
+        /// 
+        /// **Description (fr)** --- Le temps du parcour de lla pollution
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Time")]
+        [CSSPDisplayFR(DisplayFR = "Time")]
+        [CSSPDescriptionEN(DescriptionEN = @"Time the pollution travelled")]
+        [CSSPDescriptionFR(DescriptionFR = @"Le temps du parcour de lla pollution")]
         public double TheTime { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Decay")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Décroissance")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Decay")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Décroissance")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Decay
+        /// 
+        /// **Display (fr)** --- Décroissance
+        /// 
+        /// **Description (en)** --- Decay
+        /// 
+        /// **Description (fr)** --- Décroissance
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Decay")]
+        [CSSPDisplayFR(DisplayFR = "Décroissance")]
+        [CSSPDescriptionEN(DescriptionEN = @"Decay")]
+        [CSSPDescriptionFR(DescriptionFR = @"Décroissance")]
         public double Decay { get; set; }
         #endregion Properties not in DB
 

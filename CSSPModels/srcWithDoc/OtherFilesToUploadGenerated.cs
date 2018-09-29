@@ -19,7 +19,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Error](CSSPModels.OtherFilesToUpload.html#CSSPModels_OtherFilesToUpload_Error), [MikeScenarioID](CSSPModels.OtherFilesToUpload.html#CSSPModels_OtherFilesToUpload_MikeScenarioID), [TVFileList](CSSPModels.OtherFilesToUpload.html#CSSPModels_OtherFilesToUpload_TVFileList), [HasErrors](CSSPModels.OtherFilesToUpload.html#CSSPModels_OtherFilesToUpload_HasErrors), [ValidationResults](CSSPModels.OtherFilesToUpload.html#CSSPModels_OtherFilesToUpload_ValidationResults), </para>
+    /// > <para>**Other properties** : [MikeScenarioID](CSSPModels.OtherFilesToUpload.html#CSSPModels_OtherFilesToUpload_MikeScenarioID), [TVFileList](CSSPModels.OtherFilesToUpload.html#CSSPModels_OtherFilesToUpload_TVFileList), [HasErrors](CSSPModels.OtherFilesToUpload.html#CSSPModels_OtherFilesToUpload_HasErrors), [ValidationResults](CSSPModels.OtherFilesToUpload.html#CSSPModels_OtherFilesToUpload_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [OtherFilesToUploadService](CSSPServices.OtherFilesToUploadService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -31,9 +31,52 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        public string Error { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MikeScenario ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "MikeScenario ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Contains the unique "identifier on each row of the MikeScenarios table")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Contient l'identifiant unique sur chaque ligne de la table MikeScenarios")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MikeScenario ID
+        /// 
+        /// **Display (fr)** --- MikeScenario ID
+        /// 
+        /// **Description (en)** --- Contains the unique "identifier on each row of the MikeScenarios table
+        /// 
+        /// **Description (fr)** --- Contient l'identifiant unique sur chaque ligne de la table MikeScenarios
+        /// </returns>
         [Range(1, -1)]
+        [CSSPDisplayEN(DisplayEN = "MikeScenario ID")]
+        [CSSPDisplayFR(DisplayFR = "MikeScenario ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contains the unique ""identifier on each row of the MikeScenarios table")]
+        [CSSPDescriptionFR(DescriptionFR = @"Contient l'identifiant unique sur chaque ligne de la table MikeScenarios")]
         public int MikeScenarioID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TVFile list")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "List de TVFile")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view file list")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Liste de filière de l'arbre visuel")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TVFile list
+        /// 
+        /// **Display (fr)** --- List de TVFile
+        /// 
+        /// **Description (en)** --- Tree view file list
+        /// 
+        /// **Description (fr)** --- Liste de filière de l'arbre visuel
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "TVFile list")]
+        [CSSPDisplayFR(DisplayFR = "List de TVFile")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view file list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de filière de l'arbre visuel")]
         public List<TVFile> TVFileList { get; set; }
         #endregion Properties not in DB
 

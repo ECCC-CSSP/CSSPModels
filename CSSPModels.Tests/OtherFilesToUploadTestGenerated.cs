@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void OtherFilesToUpload_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "MikeScenarioID", "TVFileList", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MikeScenarioID", "TVFileList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -62,21 +62,18 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void OtherFilesToUpload_Every_Property_Has_Get_Set_Test()
         {
-               string val1 = "Some text";
-               otherFilesToUpload.Error = val1;
-               Assert.AreEqual(val1, otherFilesToUpload.Error);
-               int val2 = 45;
-               otherFilesToUpload.MikeScenarioID = val2;
-               Assert.AreEqual(val2, otherFilesToUpload.MikeScenarioID);
-               List<TVFile> val3 = new List<TVFile>() { new TVFile(), new TVFile() };
-               otherFilesToUpload.TVFileList = val3;
-               Assert.AreEqual(val3, otherFilesToUpload.TVFileList);
-               bool val4 = true;
-               otherFilesToUpload.HasErrors = val4;
-               Assert.AreEqual(val4, otherFilesToUpload.HasErrors);
-               IEnumerable<ValidationResult> val15 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               otherFilesToUpload.ValidationResults = val15;
-               Assert.AreEqual(val15, otherFilesToUpload.ValidationResults);
+               int val1 = 45;
+               otherFilesToUpload.MikeScenarioID = val1;
+               Assert.AreEqual(val1, otherFilesToUpload.MikeScenarioID);
+               List<TVFile> val2 = new List<TVFile>() { new TVFile(), new TVFile() };
+               otherFilesToUpload.TVFileList = val2;
+               Assert.AreEqual(val2, otherFilesToUpload.TVFileList);
+               bool val3 = true;
+               otherFilesToUpload.HasErrors = val3;
+               Assert.AreEqual(val3, otherFilesToUpload.HasErrors);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               otherFilesToUpload.ValidationResults = val12;
+               Assert.AreEqual(val12, otherFilesToUpload.ValidationResults);
         }
         #endregion Tests Functions public
     }

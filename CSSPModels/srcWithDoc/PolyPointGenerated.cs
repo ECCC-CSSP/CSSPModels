@@ -31,10 +31,76 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "X coord")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Coordonnée X")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "X coordinate")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Coordonnée X")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- X coord
+        /// 
+        /// **Display (fr)** --- Coordonnée X
+        /// 
+        /// **Description (en)** --- X coordinate
+        /// 
+        /// **Description (fr)** --- Coordonnée X
+        /// </returns>
         [Range(-180.0D, 180.0D)]
+        [CSSPDisplayEN(DisplayEN = "X coord")]
+        [CSSPDisplayFR(DisplayFR = "Coordonnée X")]
+        [CSSPDescriptionEN(DescriptionEN = @"X coordinate")]
+        [CSSPDescriptionFR(DescriptionFR = @"Coordonnée X")]
         public double XCoord { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Y coord")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Coordonnée Y")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Y coordinate")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Coordonnée Y")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Y coord
+        /// 
+        /// **Display (fr)** --- Coordonnée Y
+        /// 
+        /// **Description (en)** --- Y coordinate
+        /// 
+        /// **Description (fr)** --- Coordonnée Y
+        /// </returns>
         [Range(-90.0D, 90.0D)]
+        [CSSPDisplayEN(DisplayEN = "Y coord")]
+        [CSSPDisplayFR(DisplayFR = "Coordonnée Y")]
+        [CSSPDescriptionEN(DescriptionEN = @"Y coordinate")]
+        [CSSPDescriptionFR(DescriptionFR = @"Coordonnée Y")]
         public double YCoord { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Z coord")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Coordonnée Z")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Z coordinate")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Coordonnée Z")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Z coord
+        /// 
+        /// **Display (fr)** --- Coordonnée Z
+        /// 
+        /// **Description (en)** --- Z coordinate
+        /// 
+        /// **Description (fr)** --- Coordonnée Z
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Z coord")]
+        [CSSPDisplayFR(DisplayFR = "Coordonnée Z")]
+        [CSSPDescriptionEN(DescriptionEN = @"Z coordinate")]
+        [CSSPDescriptionFR(DescriptionFR = @"Coordonnée Z")]
         public double Z { get; set; }
         #endregion Properties not in DB
 

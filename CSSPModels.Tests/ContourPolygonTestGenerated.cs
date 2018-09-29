@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ContourPolygon_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ContourValue", "Layer", "Depth", "ContourNodeList", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ContourValue", "Layer", "Depth_m", "ContourNodeList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -69,8 +69,8 @@ namespace CSSPModels.Tests
                contourPolygon.Layer = val2;
                Assert.AreEqual(val2, contourPolygon.Layer);
                double val3 = 87.9D;
-               contourPolygon.Depth = val3;
-               Assert.AreEqual(val3, contourPolygon.Depth);
+               contourPolygon.Depth_m = val3;
+               Assert.AreEqual(val3, contourPolygon.Depth_m);
                List<Node> val4 = new List<Node>() { new Node(), new Node() };
                contourPolygon.ContourNodeList = val4;
                Assert.AreEqual(val4, contourPolygon.ContourNodeList);

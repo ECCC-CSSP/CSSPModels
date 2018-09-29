@@ -9,7 +9,7 @@ using CSSPModels.Resources;
 
 namespace CSSPModels
 {
-    public partial class CSSPWebToolsDBContext : DbContext
+    public partial class CSSPDBContext : DbContext
     {
 
         #region Variables
@@ -102,19 +102,19 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public CSSPWebToolsDBContext()
+        public CSSPDBContext()
         {
             this.Error = string.Format(CSSPModelsRes._IsRequired, "DataType");
             DatabaseType = null;
         }
-        public CSSPWebToolsDBContext(DatabaseTypeEnum? DatabaseType)
+        public CSSPDBContext(DatabaseTypeEnum? DatabaseType)
         {
             this.Error = "";
             switch (DatabaseType)
             {
-                case DatabaseTypeEnum.MemoryCSSPWebToolsDB:
+                case DatabaseTypeEnum.MemoryCSSPDB:
                 case DatabaseTypeEnum.MemoryTestDB:
-                case DatabaseTypeEnum.SqlServerCSSPWebToolsDB:
+                case DatabaseTypeEnum.SqlServerCSSPDB:
                 case DatabaseTypeEnum.SqlServerTestDB:
                     {
                         this.DatabaseType = DatabaseType;
@@ -133,11 +133,11 @@ namespace CSSPModels
         #region Overrides
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string CSSPWebToolsDBConnectionString = ConfigurationManager.ConnectionStrings["CSSPWebToolsDB"].ConnectionString;
+            string CSSPDBConnectionString = ConfigurationManager.ConnectionStrings["CSSPDB"].ConnectionString;
             string TestDBConnectionString = ConfigurationManager.ConnectionStrings["TestDB"].ConnectionString;
             if (System.Environment.UserName == "Charles")
             {
-                CSSPWebToolsDBConnectionString = CSSPWebToolsDBConnectionString.Replace("wmon01dtchlebl2", "charles-pc");
+                CSSPDBConnectionString = CSSPDBConnectionString.Replace("wmon01dtchlebl2", "charles-pc");
                 TestDBConnectionString = TestDBConnectionString.Replace("wmon01dtchlebl2", "charles-pc");
             }
 
@@ -151,13 +151,13 @@ namespace CSSPModels
             {
                 optionsBuilder.UseInMemoryDatabase(TestDBConnectionString);
             }
-            else if (DatabaseType == DatabaseTypeEnum.MemoryCSSPWebToolsDB)
+            else if (DatabaseType == DatabaseTypeEnum.MemoryCSSPDB)
             {
-                optionsBuilder.UseInMemoryDatabase(CSSPWebToolsDBConnectionString);
+                optionsBuilder.UseInMemoryDatabase(CSSPDBConnectionString);
             }
-            else if (DatabaseType == DatabaseTypeEnum.SqlServerCSSPWebToolsDB)
+            else if (DatabaseType == DatabaseTypeEnum.SqlServerCSSPDB)
             {
-                optionsBuilder.UseSqlServer(CSSPWebToolsDBConnectionString, b => b.UseRowNumberForPaging());
+                optionsBuilder.UseSqlServer(CSSPDBConnectionString, b => b.UseRowNumberForPaging());
             }
             else //if (DatabaseType == DatabaseTypeEnum.SqlServerTestDB)
             {

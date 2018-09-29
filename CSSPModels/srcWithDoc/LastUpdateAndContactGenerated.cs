@@ -19,7 +19,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Err](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_Err), [LastUpdateAndContactDate_UTC](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_LastUpdateAndContactDate_UTC), [LastUpdateAndContactTVItemID](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_LastUpdateAndContactTVItemID), [HasErrors](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_HasErrors), [ValidationResults](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_ValidationResults), </para>
+    /// > <para>**Other properties** : [LastUpdateAndContactDate_UTC](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_LastUpdateAndContactDate_UTC), [LastUpdateAndContactTVItemID](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_LastUpdateAndContactTVItemID), [HasErrors](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_HasErrors), [ValidationResults](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LastUpdateAndContactService](CSSPServices.LastUpdateAndContactService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -31,15 +31,54 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        public string Err { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPAfter](CSSPModels.CSSPAfterAttribute.html)(Year = 1980)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update date (UTC)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Date de la dernière mise à jour (UTC)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update date (UTC)")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Date de la dernière mise à jour (UTC)")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Last update date (UTC)
+        /// 
+        /// **Display (fr)** --- Date de la dernière mise à jour (UTC)
+        /// 
+        /// **Description (en)** --- Last update date (UTC)
+        /// 
+        /// **Description (fr)** --- Date de la dernière mise à jour (UTC)
+        /// </returns>
         [CSSPAfter(Year = 1980)]
+        [CSSPDisplayEN(DisplayEN = "Last update date (UTC)")]
+        [CSSPDisplayFR(DisplayFR = "Date de la dernière mise à jour (UTC)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update date (UTC)")]
+        [CSSPDescriptionFR(DescriptionFR = @"Date de la dernière mise à jour (UTC)")]
         public DateTime LastUpdateAndContactDate_UTC { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Contact TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Contact TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems representing the contact")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant le contact")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Contact TVItemID
+        /// 
+        /// **Display (fr)** --- Contact TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems representing the contact
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant le contact
+        /// </returns>
         [Range(1, -1)]
+        [CSSPDisplayEN(DisplayEN = "Contact TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Contact TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems representing the contact")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le contact")]
         public int LastUpdateAndContactTVItemID { get; set; }
         #endregion Properties not in DB
 

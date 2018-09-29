@@ -31,7 +31,51 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lab sheet")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Feuille de lab")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Laboratory sheet")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Feuille de laboratoire")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lab sheet
+        /// 
+        /// **Display (fr)** --- Feuille de lab
+        /// 
+        /// **Description (en)** --- Laboratory sheet
+        /// 
+        /// **Description (fr)** --- Feuille de laboratoire
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Lab sheet")]
+        [CSSPDisplayFR(DisplayFR = "Feuille de lab")]
+        [CSSPDescriptionEN(DescriptionEN = @"Laboratory sheet")]
+        [CSSPDescriptionFR(DescriptionFR = @"Feuille de laboratoire")]
         public LabSheet LabSheet { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lab sheet A1")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Feuille de laboratoir A1")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Lab sheet A1")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Feuille de laboratoir A1")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lab sheet A1
+        /// 
+        /// **Display (fr)** --- Feuille de laboratoir A1
+        /// 
+        /// **Description (en)** --- Lab sheet A1
+        /// 
+        /// **Description (fr)** --- Feuille de laboratoir A1
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Lab sheet A1")]
+        [CSSPDisplayFR(DisplayFR = "Feuille de laboratoir A1")]
+        [CSSPDescriptionEN(DescriptionEN = @"Lab sheet A1")]
+        [CSSPDescriptionFR(DescriptionFR = @"Feuille de laboratoir A1")]
         public LabSheetA1Sheet LabSheetA1Sheet { get; set; }
         #endregion Properties not in DB
 

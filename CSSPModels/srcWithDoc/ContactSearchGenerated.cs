@@ -31,11 +31,77 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Contact ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Identifiant de contact")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Contact ID")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Identifiant de contact")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Contact ID
+        /// 
+        /// **Display (fr)** --- Identifiant de contact
+        /// 
+        /// **Description (en)** --- Contact ID
+        /// 
+        /// **Description (fr)** --- Identifiant de contact
+        /// </returns>
         [Range(1, -1)]
+        [CSSPDisplayEN(DisplayEN = "Contact ID")]
+        [CSSPDisplayFR(DisplayFR = "Identifiant de contact")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contact ID")]
+        [CSSPDescriptionFR(DescriptionFR = @"Identifiant de contact")]
         public int ContactID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Contact TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Contact TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table with the unique identifier")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems avec l'identifiant unique")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Contact TVItemID
+        /// 
+        /// **Display (fr)** --- Contact TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table with the unique identifier
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems avec l'identifiant unique
+        /// </returns>
         [Range(1, -1)]
+        [CSSPDisplayEN(DisplayEN = "Contact TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Contact TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table with the unique identifier")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems avec l'identifiant unique")]
         public int ContactTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Full name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom complet")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Full name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom complet")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Full name
+        /// 
+        /// **Display (fr)** --- Nom complet
+        /// 
+        /// **Description (en)** --- Full name
+        /// 
+        /// **Description (fr)** --- Nom complet
+        /// </returns>
         [StringLength(255)]
+        [CSSPDisplayEN(DisplayEN = "Full name")]
+        [CSSPDisplayFR(DisplayFR = "Nom complet")]
+        [CSSPDescriptionEN(DescriptionEN = @"Full name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom complet")]
         public string FullName { get; set; }
         #endregion Properties not in DB
 

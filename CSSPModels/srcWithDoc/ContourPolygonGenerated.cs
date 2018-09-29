@@ -19,7 +19,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [ContourValue](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_ContourValue), [Layer](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_Layer), [Depth](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_Depth), [ContourNodeList](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_ContourNodeList), [HasErrors](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_HasErrors), [ValidationResults](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_ValidationResults), </para>
+    /// > <para>**Other properties** : [ContourValue](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_ContourValue), [Layer](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_Layer), [Depth_m](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_Depth_m), [ContourNodeList](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_ContourNodeList), [HasErrors](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_HasErrors), [ValidationResults](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContourPolygonService](CSSPServices.ContourPolygonService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -31,12 +31,100 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Contour value")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Valeur de contour")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Contour value")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Valeur de contour")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Contour value
+        /// 
+        /// **Display (fr)** --- Valeur de contour
+        /// 
+        /// **Description (en)** --- Contour value
+        /// 
+        /// **Description (fr)** --- Valeur de contour
+        /// </returns>
         [Range(0.0D, -1.0D)]
+        [CSSPDisplayEN(DisplayEN = "Contour value")]
+        [CSSPDisplayFR(DisplayFR = "Valeur de contour")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contour value")]
+        [CSSPDescriptionFR(DescriptionFR = @"Valeur de contour")]
         public double ContourValue { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Layer")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Couche")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Layer")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Couche")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Layer
+        /// 
+        /// **Display (fr)** --- Couche
+        /// 
+        /// **Description (en)** --- Layer
+        /// 
+        /// **Description (fr)** --- Couche
+        /// </returns>
         [Range(1, 100)]
+        [CSSPDisplayEN(DisplayEN = "Layer")]
+        [CSSPDisplayFR(DisplayFR = "Couche")]
+        [CSSPDescriptionEN(DescriptionEN = @"Layer")]
+        [CSSPDescriptionFR(DescriptionFR = @"Couche")]
         public int Layer { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Depth (m)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Profondeur (m)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Depth in meters")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Profondeur en mètres")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Depth (m)
+        /// 
+        /// **Display (fr)** --- Profondeur (m)
+        /// 
+        /// **Description (en)** --- Depth in meters
+        /// 
+        /// **Description (fr)** --- Profondeur en mètres
+        /// </returns>
         [Range(1.0D, 10000.0D)]
-        public double Depth { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Depth (m)")]
+        [CSSPDisplayFR(DisplayFR = "Profondeur (m)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Depth in meters")]
+        [CSSPDescriptionFR(DescriptionFR = @"Profondeur en mètres")]
+        public double Depth_m { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Contour node list")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste de noeux de contour")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Contour node list")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Liste de noeux de contour")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Contour node list
+        /// 
+        /// **Display (fr)** --- Liste de noeux de contour
+        /// 
+        /// **Description (en)** --- Contour node list
+        /// 
+        /// **Description (fr)** --- Liste de noeux de contour
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Contour node list")]
+        [CSSPDisplayFR(DisplayFR = "Liste de noeux de contour")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contour node list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de noeux de contour")]
         public List<Node> ContourNodeList { get; set; }
         #endregion Properties not in DB
 

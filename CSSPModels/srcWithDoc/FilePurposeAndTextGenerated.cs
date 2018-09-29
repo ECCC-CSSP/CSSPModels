@@ -36,18 +36,54 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "File purpose")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "But du fichier")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "File purpose")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "But du fichier")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- File purpose
+        /// 
+        /// **Display (fr)** --- But du fichier
+        /// 
+        /// **Description (en)** --- File purpose
+        /// 
+        /// **Description (fr)** --- But du fichier
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "File purpose")]
+        [CSSPDisplayFR(DisplayFR = "But du fichier")]
+        [CSSPDescriptionEN(DescriptionEN = @"File purpose")]
+        [CSSPDescriptionFR(DescriptionFR = @"But du fichier")]
         public FilePurposeEnum FilePurpose { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "FilePurposeEnum", EnumType = "FilePurpose")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "File purpose text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du but du fichier")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "File purpose text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du but du fichier")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- File purpose text
+        /// 
+        /// **Display (fr)** --- Texte du but du fichier
+        /// 
+        /// **Description (en)** --- File purpose text
+        /// 
+        /// **Description (fr)** --- Texte du but du fichier
+        /// </returns>
         [StringLength(100)]
         [CSSPEnumTypeText(EnumTypeName = "FilePurposeEnum", EnumType = "FilePurpose")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "File purpose text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du but du fichier")]
+        [CSSPDescriptionEN(DescriptionEN = @"File purpose text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du but du fichier")]
         public string FilePurposeText { get; set; }
         #endregion Properties not in DB
 

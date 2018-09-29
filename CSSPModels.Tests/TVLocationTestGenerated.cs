@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVLocation_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "TVItemID", "TVText", "TVType", "SubTVType", "TVTypeText", "SubTVTypeText", "MapObjList", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TVItemID", "TVText", "TVType", "SubTVType", "TVTypeText", "SubTVTypeText", "MapObjList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -62,36 +62,33 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVLocation_Every_Property_Has_Get_Set_Test()
         {
-               string val1 = "Some text";
-               tVLocation.Error = val1;
-               Assert.AreEqual(val1, tVLocation.Error);
-               int val2 = 45;
-               tVLocation.TVItemID = val2;
-               Assert.AreEqual(val2, tVLocation.TVItemID);
-               string val3 = "Some text";
-               tVLocation.TVText = val3;
-               Assert.AreEqual(val3, tVLocation.TVText);
+               int val1 = 45;
+               tVLocation.TVItemID = val1;
+               Assert.AreEqual(val1, tVLocation.TVItemID);
+               string val2 = "Some text";
+               tVLocation.TVText = val2;
+               Assert.AreEqual(val2, tVLocation.TVText);
+               TVTypeEnum val3 = (TVTypeEnum)3;
+               tVLocation.TVType = val3;
+               Assert.AreEqual(val3, tVLocation.TVType);
                TVTypeEnum val4 = (TVTypeEnum)3;
-               tVLocation.TVType = val4;
-               Assert.AreEqual(val4, tVLocation.TVType);
-               TVTypeEnum val5 = (TVTypeEnum)3;
-               tVLocation.SubTVType = val5;
-               Assert.AreEqual(val5, tVLocation.SubTVType);
+               tVLocation.SubTVType = val4;
+               Assert.AreEqual(val4, tVLocation.SubTVType);
+               string val5 = "Some text";
+               tVLocation.TVTypeText = val5;
+               Assert.AreEqual(val5, tVLocation.TVTypeText);
                string val6 = "Some text";
-               tVLocation.TVTypeText = val6;
-               Assert.AreEqual(val6, tVLocation.TVTypeText);
-               string val7 = "Some text";
-               tVLocation.SubTVTypeText = val7;
-               Assert.AreEqual(val7, tVLocation.SubTVTypeText);
-               List<MapObj> val8 = new List<MapObj>() { new MapObj(), new MapObj() };
-               tVLocation.MapObjList = val8;
-               Assert.AreEqual(val8, tVLocation.MapObjList);
-               bool val9 = true;
-               tVLocation.HasErrors = val9;
-               Assert.AreEqual(val9, tVLocation.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               tVLocation.ValidationResults = val30;
-               Assert.AreEqual(val30, tVLocation.ValidationResults);
+               tVLocation.SubTVTypeText = val6;
+               Assert.AreEqual(val6, tVLocation.SubTVTypeText);
+               List<MapObj> val7 = new List<MapObj>() { new MapObj(), new MapObj() };
+               tVLocation.MapObjList = val7;
+               Assert.AreEqual(val7, tVLocation.MapObjList);
+               bool val8 = true;
+               tVLocation.HasErrors = val8;
+               Assert.AreEqual(val8, tVLocation.HasErrors);
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               tVLocation.ValidationResults = val27;
+               Assert.AreEqual(val27, tVLocation.ValidationResults);
         }
         #endregion Tests Functions public
     }

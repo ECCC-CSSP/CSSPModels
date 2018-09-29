@@ -491,18 +491,8 @@ namespace CSSPModels
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
         /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Treatment type")]</para>
         /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de traitement")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Treatment type --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, 
-Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, 
-LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, 
-Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, 
-Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, 
-Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de traitement --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, 
-Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, 
-LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, 
-Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, 
-Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, 
-Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Treatment type --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de traitement --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor (fr)")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
         /// <returns>
@@ -511,36 +501,16 @@ Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biolog
         /// 
         /// **Display (fr)** --- Type de traitement
         /// 
-        /// **Description (en)** --- Treatment type --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, 
-Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, 
-LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, 
-Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, 
-Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, 
-Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor
+        /// **Description (en)** --- Treatment type --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor
         /// 
-        /// **Description (fr)** --- Type de traitement --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, 
-Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, 
-LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, 
-Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, 
-Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, 
-Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor (fr)
+        /// **Description (fr)** --- Type de traitement --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor (fr)
         /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Treatment type")]
         [CSSPDisplayFR(DisplayFR = "Type de traitement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Treatment type --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, 
-Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, 
-LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, 
-Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, 
-Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, 
-Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor")]
-        [CSSPDescriptionFR(DescriptionFR = @"Type de traitement --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, 
-Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, 
-LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, 
-Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, 
-Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, 
-Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Treatment type --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de traitement --- ActivatedSludge, Activated Sludge With Biofilter, Lagoon No Aeration1 Cell, Lagoon No Aeration 2 Cell, Lagoon No Aeration 3 Cell, Lagoon No Aeration 4 Cell, Lagoon No Aeration 5 Cell, Lagoon With Aeration 1 Cell, LagoonWith Aeration 2 Cell, LagoonWith Aeration 3 Cell, LagoonWith Aeration 4 Cell, LagoonWith Aeration 5 Cell, LagoonWith Aeration 6 Cell, Stabalizing Pond Only, Oxidation Ditch Only, Circulating Fluidized Bed, Trickling Filter, Recirculating Sand Filter, Trash Rack Rake Only, Septic Tank, Secondary, Tertiary, Volume Fermenter, Bio Film Reactor, Bio Green, Bio Disks, Chemical Primary, Chromoglass, Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biological Contactor (fr)")]
         public TreatmentTypeEnum? TreatmentType { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -548,10 +518,8 @@ Primary, Sequencing Batch Reactor, Peat System, Physicochimique, Rotating Biolog
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
         /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Disinfection type")]</para>
         /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de désinfection")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Disinfection type --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, 
-Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de désinfection --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, 
-Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Disinfection type --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de désinfection --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal (fr)")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
         /// <returns>
@@ -560,20 +528,16 @@ Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Season
         /// 
         /// **Display (fr)** --- Type de désinfection
         /// 
-        /// **Description (en)** --- Disinfection type --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, 
-Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal
+        /// **Description (en)** --- Disinfection type --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal
         /// 
-        /// **Description (fr)** --- Type de désinfection --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, 
-Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal (fr)
+        /// **Description (fr)** --- Type de désinfection --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal (fr)
         /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Disinfection type")]
         [CSSPDisplayFR(DisplayFR = "Type de désinfection")]
-        [CSSPDescriptionEN(DescriptionEN = @"Disinfection type --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, 
-Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal")]
-        [CSSPDescriptionFR(DescriptionFR = @"Type de désinfection --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, 
-Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Disinfection type --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de désinfection --- UV, Chlorination No Dechlorination, Chlorination With Dechlorination, UV Seasonal, Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Seasonal (fr)")]
         public DisinfectionTypeEnum? DisinfectionType { get; set; }
         /// <summary>
         /// > [!NOTE]
@@ -581,12 +545,8 @@ Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Season
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
         /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Collection system type")]</para>
         /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de système de collection")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Collection system type --- Completely Separated, Completely Combined, Combined 90 Separated 10, 
-        Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, 
-        Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de système de collection --- Completely Separated, Completely Combined, Combined 90 Separated 10, 
-        Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, 
-        Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90 (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Collection system type --- Completely Separated, Completely Combined, Combined 90 Separated 10, Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de système de collection --- Completely Separated, Completely Combined, Combined 90 Separated 10, Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90 (fr)")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
         /// <returns>
@@ -595,24 +555,16 @@ Chlorination No Dechlorination Seasonal, Chlorination With Dechlorination Season
         /// 
         /// **Display (fr)** --- Type de système de collection
         /// 
-        /// **Description (en)** --- Collection system type --- Completely Separated, Completely Combined, Combined 90 Separated 10, 
-        Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, 
-        Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90
+        /// **Description (en)** --- Collection system type --- Completely Separated, Completely Combined, Combined 90 Separated 10, Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90
         /// 
-        /// **Description (fr)** --- Type de système de collection --- Completely Separated, Completely Combined, Combined 90 Separated 10, 
-        Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, 
-        Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90 (fr)
+        /// **Description (fr)** --- Type de système de collection --- Completely Separated, Completely Combined, Combined 90 Separated 10, Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90 (fr)
         /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Collection system type")]
         [CSSPDisplayFR(DisplayFR = "Type de système de collection")]
-        [CSSPDescriptionEN(DescriptionEN = @"Collection system type --- Completely Separated, Completely Combined, Combined 90 Separated 10, 
-        Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, 
-        Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90")]
-        [CSSPDescriptionFR(DescriptionFR = @"Type de système de collection --- Completely Separated, Completely Combined, Combined 90 Separated 10, 
-        Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, 
-        Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90 (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Collection system type --- Completely Separated, Completely Combined, Combined 90 Separated 10, Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de système de collection --- Completely Separated, Completely Combined, Combined 90 Separated 10, Combined 80 Separated 20, Combined 70 Separated 30, Combined 60 Separated 40, Combined 50 Separated 50, Combined 40 Separated 60, Combined 30 Separated 70, Combined 20 Separated 80, Combined 10 Separated 90 (fr)")]
         public CollectionSystemTypeEnum? CollectionSystemType { get; set; }
         /// <summary>
         /// > [!NOTE]

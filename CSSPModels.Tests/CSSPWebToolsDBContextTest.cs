@@ -11,7 +11,7 @@ using CSSPModels.Resources;
 namespace CSSPModels.Tests
 {
     [TestClass]
-    public partial class CSSPWebToolsDBContextTest
+    public partial class CSSPDBContextTest
     {
         #region Variables
         #endregion Variables
@@ -20,16 +20,16 @@ namespace CSSPModels.Tests
         #endregion Properties
 
         #region Constructors
-        public CSSPWebToolsDBContextTest()
+        public CSSPDBContextTest()
         {
         }
         #endregion Constructors
 
         #region Tests
         [TestMethod]
-        public void CSSPWebToolsDBContext_DataType_Test()
+        public void CSSPDBContext_DataType_Test()
         {
-            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext())
+            using (CSSPDBContext db = new CSSPDBContext())
             {
                 Assert.AreEqual(null, db.DatabaseType);
                 Assert.AreEqual(string.Format(CSSPModelsRes._IsRequired, "DataType"), db.Error);
@@ -48,54 +48,54 @@ namespace CSSPModels.Tests
             }
         }
         [TestMethod]
-        public void CSSPWebToolsDBContext_DataType_Error_Test()
+        public void CSSPDBContext_DataType_Error_Test()
         {
-            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(null))
+            using (CSSPDBContext db = new CSSPDBContext(null))
             {
                 Assert.AreEqual(null, db.DatabaseType);
                 Assert.AreEqual(string.Format(CSSPModelsRes._IsRequired, "DataType"), db.Error);
             }
         }
         [TestMethod]
-        public void CSSPWebToolsDBContext_DataType_MemoryTestDB_Test()
+        public void CSSPDBContext_DataType_MemoryTestDB_Test()
         {
-            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryTestDB))
+            using (CSSPDBContext db = new CSSPDBContext(DatabaseTypeEnum.MemoryTestDB))
             {
                 Assert.AreEqual(DatabaseTypeEnum.MemoryTestDB, db.DatabaseType);
                 Assert.AreEqual("", db.Error);
             }
         }
         [TestMethod]
-        public void CSSPWebToolsDBContext_DataType_MemoryCSSPWebToolsDB_Test()
+        public void CSSPDBContext_DataType_MemoryCSSPDB_Test()
         {
-            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.MemoryCSSPWebToolsDB))
+            using (CSSPDBContext db = new CSSPDBContext(DatabaseTypeEnum.MemoryCSSPDB))
             {
-                Assert.AreEqual(DatabaseTypeEnum.MemoryCSSPWebToolsDB, db.DatabaseType);
+                Assert.AreEqual(DatabaseTypeEnum.MemoryCSSPDB, db.DatabaseType);
                 Assert.AreEqual("", db.Error);
             }
         }
         [TestMethod]
-        public void CSSPWebToolsDBContext_DataType_SqlServerTestDB_Test()
+        public void CSSPDBContext_DataType_SqlServerTestDB_Test()
         {
-            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.SqlServerTestDB))
+            using (CSSPDBContext db = new CSSPDBContext(DatabaseTypeEnum.SqlServerTestDB))
             {
                 Assert.AreEqual(DatabaseTypeEnum.SqlServerTestDB, db.DatabaseType);
                 Assert.AreEqual("", db.Error);
             }
         }
         [TestMethod]
-        public void CSSPWebToolsDBContext_DataType_SqlServerCSSPWebToolsDB_Test()
+        public void CSSPDBContext_DataType_SqlServerCSSPDB_Test()
         {
-            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext(DatabaseTypeEnum.SqlServerCSSPWebToolsDB))
+            using (CSSPDBContext db = new CSSPDBContext(DatabaseTypeEnum.SqlServerCSSPDB))
             {
-                Assert.AreEqual(DatabaseTypeEnum.SqlServerCSSPWebToolsDB, db.DatabaseType);
+                Assert.AreEqual(DatabaseTypeEnum.SqlServerCSSPDB, db.DatabaseType);
                 Assert.AreEqual("", db.Error);
             }
         }
         [TestMethod]
-        public void CSSPWebToolsDBContext_DataType_1000000_Test()
+        public void CSSPDBContext_DataType_1000000_Test()
         {
-            using (CSSPWebToolsDBContext db = new CSSPWebToolsDBContext((DatabaseTypeEnum)1000000))
+            using (CSSPDBContext db = new CSSPDBContext((DatabaseTypeEnum)1000000))
             {
                 Assert.AreEqual(null, db.DatabaseType);
                 Assert.AreEqual(string.Format(CSSPModelsRes._IsRequired, "DataType"), db.Error);

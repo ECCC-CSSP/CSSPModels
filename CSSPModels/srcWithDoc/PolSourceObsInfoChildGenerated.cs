@@ -36,35 +36,107 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Pol source obs info")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Info de obs de la source de pollution")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Pollution source observation information")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Information de l'observation de la source de pollution")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Pol source obs info
+        /// 
+        /// **Display (fr)** --- Info de obs de la source de pollution
+        /// 
+        /// **Description (en)** --- Pollution source observation information
+        /// 
+        /// **Description (fr)** --- Information de l'observation de la source de pollution
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Pol source obs info")]
+        [CSSPDisplayFR(DisplayFR = "Info de obs de la source de pollution")]
+        [CSSPDescriptionEN(DescriptionEN = @"Pollution source observation information")]
+        [CSSPDescriptionFR(DescriptionFR = @"Information de l'observation de la source de pollution")]
         public PolSourceObsInfoEnum PolSourceObsInfo { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Pol source obs info of child start")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Info de obs de la source de pollution de départ de l'enfant")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Pollution source observation information of child start")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Information de l'observation de la source de pollution du départ de l'enfant")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Pol source obs info of child start
+        /// 
+        /// **Display (fr)** --- Info de obs de la source de pollution de départ de l'enfant
+        /// 
+        /// **Description (en)** --- Pollution source observation information of child start
+        /// 
+        /// **Description (fr)** --- Information de l'observation de la source de pollution du départ de l'enfant
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Pol source obs info of child start")]
+        [CSSPDisplayFR(DisplayFR = "Info de obs de la source de pollution de départ de l'enfant")]
+        [CSSPDescriptionEN(DescriptionEN = @"Pollution source observation information of child start")]
+        [CSSPDescriptionFR(DescriptionFR = @"Information de l'observation de la source de pollution du départ de l'enfant")]
         public PolSourceObsInfoEnum PolSourceObsInfoChildStart { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "PolSourceObsInfoEnum", EnumType = "PolSourceObsInfo")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Pol source obs info text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de info de obs de la source de pollution")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Pollution source observation information text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de l'nformation de l'observation de la source de pollution")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Pol source obs info text
+        /// 
+        /// **Display (fr)** --- Texte de info de obs de la source de pollution
+        /// 
+        /// **Description (en)** --- Pollution source observation information text
+        /// 
+        /// **Description (fr)** --- Texte de l'nformation de l'observation de la source de pollution
+        /// </returns>
         [StringLength(100)]
         [CSSPEnumTypeText(EnumTypeName = "PolSourceObsInfoEnum", EnumType = "PolSourceObsInfo")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Pol source obs info text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de info de obs de la source de pollution")]
+        [CSSPDescriptionEN(DescriptionEN = @"Pollution source observation information text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de l'nformation de l'observation de la source de pollution")]
         public string PolSourceObsInfoText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "PolSourceObsInfoEnum", EnumType = "PolSourceObsInfoChildStart")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Pol source obs info of child start text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de l'info de obs de la source de pollution de départ de l'enfant")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Pollution source observation information of child start text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de l'information de l'observation de la source de pollution du départ de l'enfant")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Pol source obs info of child start text
+        /// 
+        /// **Display (fr)** --- Texte de l'info de obs de la source de pollution de départ de l'enfant
+        /// 
+        /// **Description (en)** --- Pollution source observation information of child start text
+        /// 
+        /// **Description (fr)** --- Texte de l'information de l'observation de la source de pollution du départ de l'enfant
+        /// </returns>
         [StringLength(100)]
         [CSSPEnumTypeText(EnumTypeName = "PolSourceObsInfoEnum", EnumType = "PolSourceObsInfoChildStart")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Pol source obs info of child start text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de l'info de obs de la source de pollution de départ de l'enfant")]
+        [CSSPDescriptionEN(DescriptionEN = @"Pollution source observation information of child start text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de l'information de l'observation de la source de pollution du départ de l'enfant")]
         public string PolSourceObsInfoChildStartText { get; set; }
         #endregion Properties not in DB
 

@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LastUpdateAndContact_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Err", "LastUpdateAndContactDate_UTC", "LastUpdateAndContactTVItemID", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateAndContactDate_UTC", "LastUpdateAndContactTVItemID", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -62,21 +62,18 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LastUpdateAndContact_Every_Property_Has_Get_Set_Test()
         {
-               string val1 = "Some text";
-               lastUpdateAndContact.Err = val1;
-               Assert.AreEqual(val1, lastUpdateAndContact.Err);
-               DateTime val2 = new DateTime(2010, 3, 4);
-               lastUpdateAndContact.LastUpdateAndContactDate_UTC = val2;
-               Assert.AreEqual(val2, lastUpdateAndContact.LastUpdateAndContactDate_UTC);
-               int val3 = 45;
-               lastUpdateAndContact.LastUpdateAndContactTVItemID = val3;
-               Assert.AreEqual(val3, lastUpdateAndContact.LastUpdateAndContactTVItemID);
-               bool val4 = true;
-               lastUpdateAndContact.HasErrors = val4;
-               Assert.AreEqual(val4, lastUpdateAndContact.HasErrors);
-               IEnumerable<ValidationResult> val15 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               lastUpdateAndContact.ValidationResults = val15;
-               Assert.AreEqual(val15, lastUpdateAndContact.ValidationResults);
+               DateTime val1 = new DateTime(2010, 3, 4);
+               lastUpdateAndContact.LastUpdateAndContactDate_UTC = val1;
+               Assert.AreEqual(val1, lastUpdateAndContact.LastUpdateAndContactDate_UTC);
+               int val2 = 45;
+               lastUpdateAndContact.LastUpdateAndContactTVItemID = val2;
+               Assert.AreEqual(val2, lastUpdateAndContact.LastUpdateAndContactTVItemID);
+               bool val3 = true;
+               lastUpdateAndContact.HasErrors = val3;
+               Assert.AreEqual(val3, lastUpdateAndContact.HasErrors);
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               lastUpdateAndContact.ValidationResults = val12;
+               Assert.AreEqual(val12, lastUpdateAndContact.ValidationResults);
         }
         #endregion Tests Functions public
     }

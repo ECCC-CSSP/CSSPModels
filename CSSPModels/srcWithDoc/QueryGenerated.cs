@@ -32,29 +32,245 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Model type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de modèle")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Model type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de modèle")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Model type
+        /// 
+        /// **Display (fr)** --- Type de modèle
+        /// 
+        /// **Description (en)** --- Model type
+        /// 
+        /// **Description (fr)** --- Type de modèle
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Model type")]
+        [CSSPDisplayFR(DisplayFR = "Type de modèle")]
+        [CSSPDescriptionEN(DescriptionEN = @"Model type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de modèle")]
         public Type ModelType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Language")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Langage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Language")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Langage")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Language
+        /// 
+        /// **Display (fr)** --- Langage
+        /// 
+        /// **Description (en)** --- Language
+        /// 
+        /// **Description (fr)** --- Langage
+        /// </returns>
         [CSSPEnumType]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Language")]
+        [CSSPDisplayFR(DisplayFR = "Langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language")]
+        [CSSPDescriptionFR(DescriptionFR = @"Langage")]
         public LanguageEnum? Language { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lang")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Lang")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Language text (Ex: 'fr', 'en')")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du langage (Ex: 'fr', 'en')")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lang
+        /// 
+        /// **Display (fr)** --- Lang
+        /// 
+        /// **Description (en)** --- Language text (Ex: 'fr', 'en')
+        /// 
+        /// **Description (fr)** --- Texte du langage (Ex: 'fr', 'en')
+        /// </returns>
         [StringLength(2)]
+        [CSSPDisplayEN(DisplayEN = "Lang")]
+        [CSSPDisplayFR(DisplayFR = "Lang")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language text (Ex: 'fr', 'en')")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du langage (Ex: 'fr', 'en')")]
         public string Lang { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Skip")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Sauté")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of items to skip while querying the database")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre d'éléments à ignorer lors de l'interrogation de la base de données")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Skip
+        /// 
+        /// **Display (fr)** --- Sauté
+        /// 
+        /// **Description (en)** --- Number of items to skip while querying the database
+        /// 
+        /// **Description (fr)** --- Nombre d'éléments à ignorer lors de l'interrogation de la base de données
+        /// </returns>
         [Range(0, 1000000)]
+        [CSSPDisplayEN(DisplayEN = "Skip")]
+        [CSSPDisplayFR(DisplayFR = "Sauté")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of items to skip while querying the database")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre d'éléments à ignorer lors de l'interrogation de la base de données")]
         public int Skip { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Take")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Prendre")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of items to take while querying the database")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre d'éléments à prendre lors de l'interrogation de la base de données")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Take
+        /// 
+        /// **Display (fr)** --- Prendre
+        /// 
+        /// **Description (en)** --- Number of items to take while querying the database
+        /// 
+        /// **Description (fr)** --- Nombre d'éléments à prendre lors de l'interrogation de la base de données
+        /// </returns>
         [Range(1, 1000000)]
+        [CSSPDisplayEN(DisplayEN = "Take")]
+        [CSSPDisplayFR(DisplayFR = "Prendre")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of items to take while querying the database")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre d'éléments à prendre lors de l'interrogation de la base de données")]
         public int Take { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Order")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Ordre")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Establishing the order of the items while querying the database")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Établissement de l'ordre des éléments lors de l'interrogation de la base de données")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Order
+        /// 
+        /// **Display (fr)** --- Ordre
+        /// 
+        /// **Description (en)** --- Establishing the order of the items while querying the database
+        /// 
+        /// **Description (fr)** --- Établissement de l'ordre des éléments lors de l'interrogation de la base de données
+        /// </returns>
         [StringLength(200)]
+        [CSSPDisplayEN(DisplayEN = "Order")]
+        [CSSPDisplayFR(DisplayFR = "Ordre")]
+        [CSSPDescriptionEN(DescriptionEN = @"Establishing the order of the items while querying the database")]
+        [CSSPDescriptionFR(DescriptionFR = @"Établissement de l'ordre des éléments lors de l'interrogation de la base de données")]
         public string Order { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Where")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Filtre")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Establishing a filter of the items while querying the database")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Établissement d'un filtre des éléments lors de l'interrogation de la base de données")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Where
+        /// 
+        /// **Display (fr)** --- Filtre
+        /// 
+        /// **Description (en)** --- Establishing a filter of the items while querying the database
+        /// 
+        /// **Description (fr)** --- Établissement d'un filtre des éléments lors de l'interrogation de la base de données
+        /// </returns>
         [StringLength(200)]
+        [CSSPDisplayEN(DisplayEN = "Where")]
+        [CSSPDisplayFR(DisplayFR = "Filtre")]
+        [CSSPDescriptionEN(DescriptionEN = @"Establishing a filter of the items while querying the database")]
+        [CSSPDescriptionFR(DescriptionFR = @"Établissement d'un filtre des éléments lors de l'interrogation de la base de données")]
         public string Where { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Detail")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Détail")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Getting more detail or calculated fields while querying the database")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Obtenir plus de détails ou de champs calculés lors de l'interrogation de la base de données")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Detail
+        /// 
+        /// **Display (fr)** --- Détail
+        /// 
+        /// **Description (en)** --- Getting more detail or calculated fields while querying the database
+        /// 
+        /// **Description (fr)** --- Obtenir plus de détails ou de champs calculés lors de l'interrogation de la base de données
+        /// </returns>
         [StringLength(1)]
+        [CSSPDisplayEN(DisplayEN = "Detail")]
+        [CSSPDisplayFR(DisplayFR = "Détail")]
+        [CSSPDescriptionEN(DescriptionEN = @"Getting more detail or calculated fields while querying the database")]
+        [CSSPDescriptionFR(DescriptionFR = @"Obtenir plus de détails ou de champs calculés lors de l'interrogation de la base de données")]
         public string Detail { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Order list")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste d'ordre")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Order list showing all the fields to sort from")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Liste de commandes indiquant tous les champs à trier")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Order list
+        /// 
+        /// **Display (fr)** --- Liste d'ordre
+        /// 
+        /// **Description (en)** --- Order list showing all the fields to sort from
+        /// 
+        /// **Description (fr)** --- Liste de commandes indiquant tous les champs à trier
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Order list")]
+        [CSSPDisplayFR(DisplayFR = "Liste d'ordre")]
+        [CSSPDescriptionEN(DescriptionEN = @"Order list showing all the fields to sort from")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de commandes indiquant tous les champs à trier")]
         public List<string> OrderList { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Where info list")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste d'info de filtrage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Filtering fields with related variables list")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Filtrage des champs avec la liste des variables associées")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Where info list
+        /// 
+        /// **Display (fr)** --- Liste d'info de filtrage
+        /// 
+        /// **Description (en)** --- Filtering fields with related variables list
+        /// 
+        /// **Description (fr)** --- Filtrage des champs avec la liste des variables associées
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Where info list")]
+        [CSSPDisplayFR(DisplayFR = "Liste d'info de filtrage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Filtering fields with related variables list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Filtrage des champs avec la liste des variables associées")]
         public List<WhereInfo> WhereInfoList { get; set; }
         #endregion Properties not in DB
 

@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LastUpdateAndTVText_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "LastUpdateAndTVTextDate_UTC", "LastUpdateDate_Local", "TVText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateAndTVTextDate_UTC", "LastUpdateDate_Local", "TVText", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -62,24 +62,21 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LastUpdateAndTVText_Every_Property_Has_Get_Set_Test()
         {
-               string val1 = "Some text";
-               lastUpdateAndTVText.Error = val1;
-               Assert.AreEqual(val1, lastUpdateAndTVText.Error);
+               DateTime val1 = new DateTime(2010, 3, 4);
+               lastUpdateAndTVText.LastUpdateAndTVTextDate_UTC = val1;
+               Assert.AreEqual(val1, lastUpdateAndTVText.LastUpdateAndTVTextDate_UTC);
                DateTime val2 = new DateTime(2010, 3, 4);
-               lastUpdateAndTVText.LastUpdateAndTVTextDate_UTC = val2;
-               Assert.AreEqual(val2, lastUpdateAndTVText.LastUpdateAndTVTextDate_UTC);
-               DateTime val3 = new DateTime(2010, 3, 4);
-               lastUpdateAndTVText.LastUpdateDate_Local = val3;
-               Assert.AreEqual(val3, lastUpdateAndTVText.LastUpdateDate_Local);
-               string val4 = "Some text";
-               lastUpdateAndTVText.TVText = val4;
-               Assert.AreEqual(val4, lastUpdateAndTVText.TVText);
-               bool val5 = true;
-               lastUpdateAndTVText.HasErrors = val5;
-               Assert.AreEqual(val5, lastUpdateAndTVText.HasErrors);
-               IEnumerable<ValidationResult> val18 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               lastUpdateAndTVText.ValidationResults = val18;
-               Assert.AreEqual(val18, lastUpdateAndTVText.ValidationResults);
+               lastUpdateAndTVText.LastUpdateDate_Local = val2;
+               Assert.AreEqual(val2, lastUpdateAndTVText.LastUpdateDate_Local);
+               string val3 = "Some text";
+               lastUpdateAndTVText.TVText = val3;
+               Assert.AreEqual(val3, lastUpdateAndTVText.TVText);
+               bool val4 = true;
+               lastUpdateAndTVText.HasErrors = val4;
+               Assert.AreEqual(val4, lastUpdateAndTVText.HasErrors);
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               lastUpdateAndTVText.ValidationResults = val15;
+               Assert.AreEqual(val15, lastUpdateAndTVText.ValidationResults);
         }
         #endregion Tests Functions public
     }

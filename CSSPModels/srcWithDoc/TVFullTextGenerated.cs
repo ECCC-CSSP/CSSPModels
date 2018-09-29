@@ -31,9 +31,53 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TVPath")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVPath")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view path")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Chemin de l'arbre visuel")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TVPath
+        /// 
+        /// **Display (fr)** --- TVPath
+        /// 
+        /// **Description (en)** --- Tree view path
+        /// 
+        /// **Description (fr)** --- Chemin de l'arbre visuel
+        /// </returns>
         [StringLength(255, MinimumLength = 1)]
+        [CSSPDisplayEN(DisplayEN = "TVPath")]
+        [CSSPDisplayFR(DisplayFR = "TVPath")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view path")]
+        [CSSPDescriptionFR(DescriptionFR = @"Chemin de l'arbre visuel")]
         public string TVPath { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Full text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte intégral")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Full text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte intégral")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Full text
+        /// 
+        /// **Display (fr)** --- Texte intégral
+        /// 
+        /// **Description (en)** --- Full text
+        /// 
+        /// **Description (fr)** --- Texte intégral
+        /// </returns>
         [StringLength(255, MinimumLength = 1)]
+        [CSSPDisplayEN(DisplayEN = "Full text")]
+        [CSSPDisplayFR(DisplayFR = "Texte intégral")]
+        [CSSPDescriptionEN(DescriptionEN = @"Full text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte intégral")]
         public string FullText { get; set; }
         #endregion Properties not in DB
 

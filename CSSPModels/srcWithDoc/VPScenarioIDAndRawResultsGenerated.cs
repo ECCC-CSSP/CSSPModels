@@ -31,8 +31,52 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "VP scenario ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Scénario VP ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the VPScenarios table representing the visual plumes scenario")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table VPScenarios représentant le scénario visual plumes")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- VP scenario ID
+        /// 
+        /// **Display (fr)** --- Scénario VP ID
+        /// 
+        /// **Description (en)** --- Link to the VPScenarios table representing the visual plumes scenario
+        /// 
+        /// **Description (fr)** --- Lien à la table VPScenarios représentant le scénario visual plumes
+        /// </returns>
         [Range(1, -1)]
+        [CSSPDisplayEN(DisplayEN = "VP scenario ID")]
+        [CSSPDisplayFR(DisplayFR = "Scénario VP ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the VPScenarios table representing the visual plumes scenario")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table VPScenarios représentant le scénario visual plumes")]
         public int VPScenarioID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Raw results")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Résultats bruts")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Raw results")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Résultats bruts")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Raw results
+        /// 
+        /// **Display (fr)** --- Résultats bruts
+        /// 
+        /// **Description (en)** --- Raw results
+        /// 
+        /// **Description (fr)** --- Résultats bruts
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Raw results")]
+        [CSSPDisplayFR(DisplayFR = "Résultats bruts")]
+        [CSSPDescriptionEN(DescriptionEN = @"Raw results")]
+        [CSSPDescriptionFR(DescriptionFR = @"Résultats bruts")]
         public string RawResults { get; set; }
         #endregion Properties not in DB
 

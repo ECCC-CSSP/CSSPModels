@@ -31,9 +31,53 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Name
+        /// 
+        /// **Display (fr)** --- Nom
+        /// 
+        /// **Description (en)** --- Name
+        /// 
+        /// **Description (fr)** --- Nom
+        /// </returns>
         [StringLength(255, MinimumLength = 0)]
+        [CSSPDisplayEN(DisplayEN = "Name")]
+        [CSSPDisplayFR(DisplayFR = "Nom")]
+        [CSSPDescriptionEN(DescriptionEN = @"Name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom")]
         public string Name { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table with the unique identifier")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems avec l'identifiant unique")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TVItemID
+        /// 
+        /// **Display (fr)** --- TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table with the unique identifier
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems avec l'identifiant unique
+        /// </returns>
         [Range(1, -1)]
+        [CSSPDisplayEN(DisplayEN = "TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table with the unique identifier")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems avec l'identifiant unique")]
         public int TVItemID { get; set; }
         #endregion Properties not in DB
 

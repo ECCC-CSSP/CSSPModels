@@ -32,23 +32,81 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de 'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "TV text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de 'arbre visuel")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV text
+        /// 
+        /// **Display (fr)** --- Texte de 'arbre visuel
+        /// 
+        /// **Description (en)** --- TV text
+        /// 
+        /// **Description (fr)** --- Texte de 'arbre visuel
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "TV text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de 'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"TV text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de 'arbre visuel")]
         public string TVText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Language")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Langage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Language")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Langage")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Language
+        /// 
+        /// **Display (fr)** --- Langage
+        /// 
+        /// **Description (en)** --- Language
+        /// 
+        /// **Description (fr)** --- Langage
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Language")]
+        [CSSPDisplayFR(DisplayFR = "Langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language")]
+        [CSSPDescriptionFR(DescriptionFR = @"Langage")]
         public LanguageEnum Language { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "LanguageEnum", EnumType = "Language")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Language text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du langage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Language text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du langage")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Language text
+        /// 
+        /// **Display (fr)** --- Texte du langage
+        /// 
+        /// **Description (en)** --- Language text
+        /// 
+        /// **Description (fr)** --- Texte du langage
+        /// </returns>
         [StringLength(100)]
         [CSSPEnumTypeText(EnumTypeName = "LanguageEnum", EnumType = "Language")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Language text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du langage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Language text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du langage")]
         public string LanguageText { get; set; }
         #endregion Properties not in DB
 

@@ -31,8 +31,52 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Url")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Url")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Url")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Url")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Url
+        /// 
+        /// **Display (fr)** --- Url
+        /// 
+        /// **Description (en)** --- Url
+        /// 
+        /// **Description (fr)** --- Url
+        /// </returns>
         [StringLength(255, MinimumLength = 1)]
+        [CSSPDisplayEN(DisplayEN = "Url")]
+        [CSSPDisplayFR(DisplayFR = "Url")]
+        [CSSPDescriptionEN(DescriptionEN = @"Url")]
+        [CSSPDescriptionFR(DescriptionFR = @"Url")]
         public string url { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Number of samples")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nombre d'échantillons")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of samples")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre d'échantillons")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Number of samples
+        /// 
+        /// **Display (fr)** --- Nombre d'échantillons
+        /// 
+        /// **Description (en)** --- Number of samples
+        /// 
+        /// **Description (fr)** --- Nombre d'échantillons
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Number of samples")]
+        [CSSPDisplayFR(DisplayFR = "Nombre d'échantillons")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of samples")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre d'échantillons")]
         public int NumberOfSamples { get; set; }
         #endregion Properties not in DB
 

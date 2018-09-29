@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void InputSummary_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "Summary", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Summary", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -63,17 +63,14 @@ namespace CSSPModels.Tests
         public void InputSummary_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               inputSummary.Error = val1;
-               Assert.AreEqual(val1, inputSummary.Error);
-               string val2 = "Some text";
-               inputSummary.Summary = val2;
-               Assert.AreEqual(val2, inputSummary.Summary);
-               bool val3 = true;
-               inputSummary.HasErrors = val3;
-               Assert.AreEqual(val3, inputSummary.HasErrors);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               inputSummary.ValidationResults = val12;
-               Assert.AreEqual(val12, inputSummary.ValidationResults);
+               inputSummary.Summary = val1;
+               Assert.AreEqual(val1, inputSummary.Summary);
+               bool val2 = true;
+               inputSummary.HasErrors = val2;
+               Assert.AreEqual(val2, inputSummary.HasErrors);
+               IEnumerable<ValidationResult> val9 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               inputSummary.ValidationResults = val9;
+               Assert.AreEqual(val9, inputSummary.ValidationResults);
         }
         #endregion Tests Functions public
     }

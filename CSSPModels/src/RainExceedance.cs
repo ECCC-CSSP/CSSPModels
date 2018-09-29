@@ -62,28 +62,28 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Répété tous les années")]
         public bool RepeatEveryYear { get; set; }
         [StringLength(250)]
-        [CSSPDisplayEN(DisplayEN = "Province TVItemID")]
-        [CSSPDisplayFR(DisplayFR = "Province TVItemID")]
-        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the province")]
-        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant la province")]
+        [CSSPDisplayEN(DisplayEN = "Comma separated list of province TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Liste de TVItemID des provinces séparés par une virgule")]
+        [CSSPDescriptionEN(DescriptionEN = @"Comma separated list of province TVItemID")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de TVItemID des provinces séparés par une virgule")]
         public string ProvinceTVItemIDs { get; set; }
         [StringLength(250)]
-        [CSSPDisplayEN(DisplayEN = "Subsector TVItemID")]
-        [CSSPDisplayFR(DisplayFR = "Sous-secteur TVItemID")]
-        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the subsector")]
-        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le sous-secteur")]
+        [CSSPDisplayEN(DisplayEN = "Comma separated list of subsector TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Liste de TVItemID des sous-secteurs séparés par une virgule")]
+        [CSSPDescriptionEN(DescriptionEN = @"Comma separated list of subsector TVItemID")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de TVItemID des sous-secteur séparés par une virgule")]
         public string SubsectorTVItemIDs { get; set; }
         [StringLength(250)]
-        [CSSPDisplayEN(DisplayEN = "Climate site TVItemID")]
-        [CSSPDisplayFR(DisplayFR = "Site climatique TVItemID")]
-        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the climate site")]
-        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le site climatique")]
+        [CSSPDisplayEN(DisplayEN = "Comma separated list of climate site TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "Liste de TVItemID des sites climatiques séparés par une virgule")]
+        [CSSPDescriptionEN(DescriptionEN = @"Comma separated list of climate site TVItemID")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de TVItemID des sites climatiques séparés par une virgule")]
         public string ClimateSiteTVItemIDs { get; set; }
         [StringLength(250)]
-        [CSSPDisplayEN(DisplayEN = "Email distribution list ID")]
-        [CSSPDisplayFR(DisplayFR = "Liste de distribution de courriels ID")]
-        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the email distribution list")]
-        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant la liste de distribution de courriels")]
+        [CSSPDisplayEN(DisplayEN = "Comma separated list of IDs for table EmailDistributionLists")]
+        [CSSPDisplayFR(DisplayFR = "Liste d'identifiants de la table EmailDistributionLists séparés par une virgule")]
+        [CSSPDescriptionEN(DescriptionEN = @"Comma separated list of IDs for table EmailDistributionLists")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste d'identifiants de la table EmailDistributionLists séparés par une virgule")]
         public string EmailDistributionListIDs { get; set; }
         #endregion Properties in DB
 
@@ -97,24 +97,6 @@ namespace CSSPModels
     public partial class RainExceedance_A : RainExceedance
     {
         #region Properties
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Province TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de la province")]
-        [CSSPDescriptionEN(DescriptionEN = @"Province TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de la province")]
-        public TVItemLanguage ProvinceTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Subsector TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du sous-secteur")]
-        [CSSPDescriptionEN(DescriptionEN = @"Subsector TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du sous-secteur")]
-        public TVItemLanguage SubsectorTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Climate site TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du site climatique")]
-        [CSSPDescriptionEN(DescriptionEN = @"Climate site TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du site climatique")]
-        public TVItemLanguage ClimateSiteTVItemLanguage { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]

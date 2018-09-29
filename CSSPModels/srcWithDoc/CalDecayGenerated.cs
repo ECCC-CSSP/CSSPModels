@@ -19,7 +19,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Error](CSSPModels.CalDecay.html#CSSPModels_CalDecay_Error), [Decay](CSSPModels.CalDecay.html#CSSPModels_CalDecay_Decay), [HasErrors](CSSPModels.CalDecay.html#CSSPModels_CalDecay_HasErrors), [ValidationResults](CSSPModels.CalDecay.html#CSSPModels_CalDecay_ValidationResults), </para>
+    /// > <para>**Other properties** : [Decay](CSSPModels.CalDecay.html#CSSPModels_CalDecay_Decay), [HasErrors](CSSPModels.CalDecay.html#CSSPModels_CalDecay_HasErrors), [ValidationResults](CSSPModels.CalDecay.html#CSSPModels_CalDecay_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [CalDecayService](CSSPServices.CalDecayService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -34,19 +34,32 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Decay rate")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Taux de décroissance")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Decay rate")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Taux de décroissance")]</para>
         /// </summary>
-        [StringLength(255)]
-        [CSSPAllowNull]
-        public string Error { get; set; }
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Decay rate
+        /// 
+        /// **Display (fr)** --- Taux de décroissance
+        /// 
+        /// **Description (en)** --- Decay rate
+        /// 
+        /// **Description (fr)** --- Taux de décroissance
+        /// </returns>
         [Range(0.0D, -1.0D)]
+        [CSSPDisplayEN(DisplayEN = "Decay rate")]
+        [CSSPDisplayFR(DisplayFR = "Taux de décroissance")]
+        [CSSPDescriptionEN(DescriptionEN = @"Decay rate")]
+        [CSSPDescriptionFR(DescriptionFR = @"Taux de décroissance")]
         public double Decay { get; set; }
         #endregion Properties not in DB
 
         #region Constructors
         public CalDecay() : base()
         {
-            Error = "";
         }
         #endregion Constructors
     }

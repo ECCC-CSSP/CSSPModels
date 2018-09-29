@@ -19,7 +19,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Error](CSSPModels.TVLocation.html#CSSPModels_TVLocation_Error), [TVItemID](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVItemID), [TVText](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVText), [TVType](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVType), [SubTVType](CSSPModels.TVLocation.html#CSSPModels_TVLocation_SubTVType), [TVTypeText](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVTypeText), [SubTVTypeText](CSSPModels.TVLocation.html#CSSPModels_TVLocation_SubTVTypeText), [MapObjList](CSSPModels.TVLocation.html#CSSPModels_TVLocation_MapObjList), [HasErrors](CSSPModels.TVLocation.html#CSSPModels_TVLocation_HasErrors), [ValidationResults](CSSPModels.TVLocation.html#CSSPModels_TVLocation_ValidationResults), </para>
+    /// > <para>**Other properties** : [TVItemID](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVItemID), [TVText](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVText), [TVType](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVType), [SubTVType](CSSPModels.TVLocation.html#CSSPModels_TVLocation_SubTVType), [TVTypeText](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVTypeText), [SubTVTypeText](CSSPModels.TVLocation.html#CSSPModels_TVLocation_SubTVTypeText), [MapObjList](CSSPModels.TVLocation.html#CSSPModels_TVLocation_MapObjList), [HasErrors](CSSPModels.TVLocation.html#CSSPModels_TVLocation_HasErrors), [ValidationResults](CSSPModels.TVLocation.html#CSSPModels_TVLocation_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVLocationService](CSSPServices.TVLocationService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
@@ -32,45 +32,182 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        public string Error { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TVItemID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Link to the TVItems table representing tree view item")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lien à la table TVItems représentant l'item de l'arbre visuel")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TVItemID
+        /// 
+        /// **Display (fr)** --- TVItemID
+        /// 
+        /// **Description (en)** --- Link to the TVItems table representing tree view item
+        /// 
+        /// **Description (fr)** --- Lien à la table TVItems représentant l'item de l'arbre visuel
+        /// </returns>
         [Range(1, -1)]
+        [CSSPDisplayEN(DisplayEN = "TVItemID")]
+        [CSSPDisplayFR(DisplayFR = "TVItemID")]
+        [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing tree view item")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant l'item de l'arbre visuel")]
         public int TVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de l'arbre visuel")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV text
+        /// 
+        /// **Display (fr)** --- Texte de l'arbre visuel
+        /// 
+        /// **Description (en)** --- Tree view text
+        /// 
+        /// **Description (fr)** --- Texte de l'arbre visuel
+        /// </returns>
         [StringLength(255, MinimumLength = 1)]
+        [CSSPDisplayEN(DisplayEN = "TV text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de l'arbre visuel")]
         public string TVText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de l'arbre visuel")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV type
+        /// 
+        /// **Display (fr)** --- Type de l'arbre visuel
+        /// 
+        /// **Description (en)** --- Tree view type
+        /// 
+        /// **Description (fr)** --- Type de l'arbre visuel
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "TV type")]
+        [CSSPDisplayFR(DisplayFR = "Type de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type de l'arbre visuel")]
         public TVTypeEnum TVType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sub TV type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Sous type de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sub tree view type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Sous type de l'arbre visuel")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sub TV type
+        /// 
+        /// **Display (fr)** --- Sous type de l'arbre visuel
+        /// 
+        /// **Description (en)** --- Sub tree view type
+        /// 
+        /// **Description (fr)** --- Sous type de l'arbre visuel
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Sub TV type")]
+        [CSSPDisplayFR(DisplayFR = "Sous type de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sub tree view type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Sous type de l'arbre visuel")]
         public TVTypeEnum SubTVType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TV type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tree view type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de l'arbre visuel")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- TV type text
+        /// 
+        /// **Display (fr)** --- Texte du type de l'arbre visuel
+        /// 
+        /// **Description (en)** --- Tree view type text
+        /// 
+        /// **Description (fr)** --- Texte du type de l'arbre visuel
+        /// </returns>
         [StringLength(100)]
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "TV type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du type de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de l'arbre visuel")]
         public string TVTypeText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TVTypeEnum", EnumType = "SubTVType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sub TV type text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du sous-type de l'arbre visuel")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sub tree view type text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du sous-type de l'arbre visuel")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Sub TV type text
+        /// 
+        /// **Display (fr)** --- Texte du sous-type de l'arbre visuel
+        /// 
+        /// **Description (en)** --- Sub tree view type text
+        /// 
+        /// **Description (fr)** --- Texte du sous-type de l'arbre visuel
+        /// </returns>
         [StringLength(100)]
         [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "SubTVType")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Sub TV type text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du sous-type de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sub tree view type text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du sous-type de l'arbre visuel")]
         public string SubTVTypeText { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MapObj list")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste MapObj")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MapObj list")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Liste MapObj")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- MapObj list
+        /// 
+        /// **Display (fr)** --- Liste MapObj
+        /// 
+        /// **Description (en)** --- MapObj list
+        /// 
+        /// **Description (fr)** --- Liste MapObj
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "MapObj list")]
+        [CSSPDisplayFR(DisplayFR = "Liste MapObj")]
+        [CSSPDescriptionEN(DescriptionEN = @"MapObj list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste MapObj")]
         public List<MapObj> MapObjList { get; set; }
         #endregion Properties not in DB
 

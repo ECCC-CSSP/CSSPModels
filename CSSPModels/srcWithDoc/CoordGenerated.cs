@@ -31,11 +31,77 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lat")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Lat")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Latitude")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Latitude")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lat
+        /// 
+        /// **Display (fr)** --- Lat
+        /// 
+        /// **Description (en)** --- Latitude
+        /// 
+        /// **Description (fr)** --- Latitude
+        /// </returns>
         [Range(-180.0D, 180.0D)]
+        [CSSPDisplayEN(DisplayEN = "Lat")]
+        [CSSPDisplayFR(DisplayFR = "Lat")]
+        [CSSPDescriptionEN(DescriptionEN = @"Latitude")]
+        [CSSPDescriptionFR(DescriptionFR = @"Latitude")]
         public double Lat { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Long")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Long")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Longitude")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Longitude")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Long
+        /// 
+        /// **Display (fr)** --- Long
+        /// 
+        /// **Description (en)** --- Longitude
+        /// 
+        /// **Description (fr)** --- Longitude
+        /// </returns>
         [Range(-90.0D, 90.0D)]
+        [CSSPDisplayEN(DisplayEN = "Long")]
+        [CSSPDisplayFR(DisplayFR = "Long")]
+        [CSSPDescriptionEN(DescriptionEN = @"Longitude")]
+        [CSSPDescriptionFR(DescriptionFR = @"Longitude")]
         public double Lng { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Ordinal")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Ordre")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Ordinal")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Ordre")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Ordinal
+        /// 
+        /// **Display (fr)** --- Ordre
+        /// 
+        /// **Description (en)** --- Ordinal
+        /// 
+        /// **Description (fr)** --- Ordre
+        /// </returns>
         [Range(0, 10000)]
+        [CSSPDisplayEN(DisplayEN = "Ordinal")]
+        [CSSPDisplayFR(DisplayFR = "Ordre")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ordinal")]
+        [CSSPDescriptionFR(DescriptionFR = @"Ordre")]
         public int Ordinal { get; set; }
         #endregion Properties not in DB
 

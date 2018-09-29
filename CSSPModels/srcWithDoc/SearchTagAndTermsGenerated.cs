@@ -36,19 +36,77 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Search tag")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Tag de recherche")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Search tag")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Tag de recherche")]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Search tag
+        /// 
+        /// **Display (fr)** --- Tag de recherche
+        /// 
+        /// **Description (en)** --- Search tag
+        /// 
+        /// **Description (fr)** --- Tag de recherche
+        /// </returns>
         [CSSPEnumType]
+        [CSSPDisplayEN(DisplayEN = "Search tag")]
+        [CSSPDisplayFR(DisplayFR = "Tag de recherche")]
+        [CSSPDescriptionEN(DescriptionEN = @"Search tag")]
+        [CSSPDescriptionFR(DescriptionFR = @"Tag de recherche")]
         public SearchTagEnum SearchTag { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "SearchTagEnum", EnumType = "SearchTag")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Search tag text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du tag de recherche")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Search tag text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du tag de recherche")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Search tag text
+        /// 
+        /// **Display (fr)** --- Texte du tag de recherche
+        /// 
+        /// **Description (en)** --- Search tag text
+        /// 
+        /// **Description (fr)** --- Texte du tag de recherche
+        /// </returns>
         [StringLength(100)]
         [CSSPEnumTypeText(EnumTypeName = "SearchTagEnum", EnumType = "SearchTag")]
         [CSSPAllowNull]
+        [CSSPDisplayEN(DisplayEN = "Search tag text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du tag de recherche")]
+        [CSSPDescriptionEN(DescriptionEN = @"Search tag text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du tag de recherche")]
         public string SearchTagText { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Search term list")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste des terms de recherche")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Search term list")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Liste des terms de recherche")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Search term list
+        /// 
+        /// **Display (fr)** --- Liste des terms de recherche
+        /// 
+        /// **Description (en)** --- Search term list
+        /// 
+        /// **Description (fr)** --- Liste des terms de recherche
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Search term list")]
+        [CSSPDisplayFR(DisplayFR = "Liste des terms de recherche")]
+        [CSSPDescriptionEN(DescriptionEN = @"Search term list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste des terms de recherche")]
         public List<string> SearchTermList { get; set; }
         #endregion Properties not in DB
 

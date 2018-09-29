@@ -31,16 +31,192 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "ID")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "ID")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "ID")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Identifiant")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- ID
+        /// 
+        /// **Display (fr)** --- ID
+        /// 
+        /// **Description (en)** --- ID
+        /// 
+        /// **Description (fr)** --- Identifiant
+        /// </returns>
         [Range(1, -1)]
+        [CSSPDisplayEN(DisplayEN = "ID")]
+        [CSSPDisplayFR(DisplayFR = "ID")]
+        [CSSPDescriptionEN(DescriptionEN = @"ID")]
+        [CSSPDescriptionFR(DescriptionFR = @"Identifiant")]
         public int ID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Type")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Type")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Type
+        /// 
+        /// **Display (fr)** --- Type
+        /// 
+        /// **Description (en)** --- Type
+        /// 
+        /// **Description (fr)** --- Type
+        /// </returns>
         [Range(1, -1)]
+        [CSSPDisplayEN(DisplayEN = "Type")]
+        [CSSPDisplayFR(DisplayFR = "Type")]
+        [CSSPDescriptionEN(DescriptionEN = @"Type")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type")]
         public int Type { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Number of nodes")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nombre de noeux")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Number of nodes")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nombre de noeux")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Number of nodes
+        /// 
+        /// **Display (fr)** --- Nombre de noeux
+        /// 
+        /// **Description (en)** --- Number of nodes
+        /// 
+        /// **Description (fr)** --- Nombre de noeux
+        /// </returns>
         [Range(1, -1)]
+        [CSSPDisplayEN(DisplayEN = "Number of nodes")]
+        [CSSPDisplayFR(DisplayFR = "Nombre de noeux")]
+        [CSSPDescriptionEN(DescriptionEN = @"Number of nodes")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nombre de noeux")]
         public int NumbOfNodes { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Value")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Valeur")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Value")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Valeur")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Value
+        /// 
+        /// **Display (fr)** --- Valeur
+        /// 
+        /// **Description (en)** --- Value
+        /// 
+        /// **Description (fr)** --- Valeur
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Value")]
+        [CSSPDisplayFR(DisplayFR = "Valeur")]
+        [CSSPDescriptionEN(DescriptionEN = @"Value")]
+        [CSSPDescriptionFR(DescriptionFR = @"Valeur")]
         public double Value { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "X node0")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "X noeu0")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "X node0")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "X noeu0")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- X node0
+        /// 
+        /// **Display (fr)** --- X noeu0
+        /// 
+        /// **Description (en)** --- X node0
+        /// 
+        /// **Description (fr)** --- X noeu0
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "X node0")]
+        [CSSPDisplayFR(DisplayFR = "X noeu0")]
+        [CSSPDescriptionEN(DescriptionEN = @"X node0")]
+        [CSSPDescriptionFR(DescriptionFR = @"X noeu0")]
         public double XNode0 { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Z node0")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Z noeu0")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Z node0")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Z noeu0")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Z node0
+        /// 
+        /// **Display (fr)** --- Z noeu0
+        /// 
+        /// **Description (en)** --- Z node0
+        /// 
+        /// **Description (fr)** --- Z noeu0
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Z node0")]
+        [CSSPDisplayFR(DisplayFR = "Z noeu0")]
+        [CSSPDescriptionEN(DescriptionEN = @"Z node0")]
+        [CSSPDescriptionFR(DescriptionFR = @"Z noeu0")]
         public double YNode0 { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Z node0")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Z noeu0")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Z node0")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Z noeu0")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Z node0
+        /// 
+        /// **Display (fr)** --- Z noeu0
+        /// 
+        /// **Description (en)** --- Z node0
+        /// 
+        /// **Description (fr)** --- Z noeu0
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Z node0")]
+        [CSSPDisplayFR(DisplayFR = "Z noeu0")]
+        [CSSPDescriptionEN(DescriptionEN = @"Z node0")]
+        [CSSPDescriptionFR(DescriptionFR = @"Z noeu0")]
         public double ZNode0 { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Node list")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste de noeux")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Node list")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Liste de noeux")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Node list
+        /// 
+        /// **Display (fr)** --- Liste de noeux
+        /// 
+        /// **Description (en)** --- Node list
+        /// 
+        /// **Description (fr)** --- Liste de noeux
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Node list")]
+        [CSSPDisplayFR(DisplayFR = "Liste de noeux")]
+        [CSSPDescriptionEN(DescriptionEN = @"Node list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de noeux")]
         public List<Node> NodeList { get; set; }
         #endregion Properties not in DB
 

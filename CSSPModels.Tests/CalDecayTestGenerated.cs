@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void CalDecay_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "Decay", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "Decay", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -62,18 +62,15 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void CalDecay_Every_Property_Has_Get_Set_Test()
         {
-               string val1 = "Some text";
-               calDecay.Error = val1;
-               Assert.AreEqual(val1, calDecay.Error);
-               double val2 = 87.9D;
-               calDecay.Decay = val2;
-               Assert.AreEqual(val2, calDecay.Decay);
-               bool val3 = true;
-               calDecay.HasErrors = val3;
-               Assert.AreEqual(val3, calDecay.HasErrors);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               calDecay.ValidationResults = val12;
-               Assert.AreEqual(val12, calDecay.ValidationResults);
+               double val1 = 87.9D;
+               calDecay.Decay = val1;
+               Assert.AreEqual(val1, calDecay.Decay);
+               bool val2 = true;
+               calDecay.HasErrors = val2;
+               Assert.AreEqual(val2, calDecay.HasErrors);
+               IEnumerable<ValidationResult> val9 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               calDecay.ValidationResults = val9;
+               Assert.AreEqual(val9, calDecay.ValidationResults);
         }
         #endregion Tests Functions public
     }

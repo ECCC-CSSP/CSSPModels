@@ -19,7 +19,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Error](CSSPModels.InputSummary.html#CSSPModels_InputSummary_Error), [Summary](CSSPModels.InputSummary.html#CSSPModels_InputSummary_Summary), [HasErrors](CSSPModels.InputSummary.html#CSSPModels_InputSummary_HasErrors), [ValidationResults](CSSPModels.InputSummary.html#CSSPModels_InputSummary_ValidationResults), </para>
+    /// > <para>**Other properties** : [Summary](CSSPModels.InputSummary.html#CSSPModels_InputSummary_Summary), [HasErrors](CSSPModels.InputSummary.html#CSSPModels_InputSummary_HasErrors), [ValidationResults](CSSPModels.InputSummary.html#CSSPModels_InputSummary_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [InputSummaryService](CSSPServices.InputSummaryService.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
@@ -31,7 +31,28 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
-        public string Error { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Summary")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Sommaire")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Summary of the pollution sources for MIKE")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Sommaire des sources de pollution pour MIKE")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Summary
+        /// 
+        /// **Display (fr)** --- Sommaire
+        /// 
+        /// **Description (en)** --- Summary of the pollution sources for MIKE
+        /// 
+        /// **Description (fr)** --- Sommaire des sources de pollution pour MIKE
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Summary")]
+        [CSSPDisplayFR(DisplayFR = "Sommaire")]
+        [CSSPDescriptionEN(DescriptionEN = @"Summary of the pollution sources for MIKE")]
+        [CSSPDescriptionFR(DescriptionFR = @"Sommaire des sources de pollution pour MIKE")]
         public string Summary { get; set; }
         #endregion Properties not in DB
 

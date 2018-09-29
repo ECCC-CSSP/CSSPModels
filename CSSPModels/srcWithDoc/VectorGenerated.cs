@@ -31,7 +31,51 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Start node")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Node de départ")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Start node")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Node de départ")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Start node
+        /// 
+        /// **Display (fr)** --- Node de départ
+        /// 
+        /// **Description (en)** --- Start node
+        /// 
+        /// **Description (fr)** --- Node de départ
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Start node")]
+        [CSSPDisplayFR(DisplayFR = "Node de départ")]
+        [CSSPDescriptionEN(DescriptionEN = @"Start node")]
+        [CSSPDescriptionFR(DescriptionFR = @"Node de départ")]
         public Node StartNode { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "End node")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Node de fin")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "End node")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Node de fin")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- End node
+        /// 
+        /// **Display (fr)** --- Node de fin
+        /// 
+        /// **Description (en)** --- End node
+        /// 
+        /// **Description (fr)** --- Node de fin
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "End node")]
+        [CSSPDisplayFR(DisplayFR = "Node de fin")]
+        [CSSPDescriptionEN(DescriptionEN = @"End node")]
+        [CSSPDescriptionFR(DescriptionFR = @"Node de fin")]
         public Node EndNode { get; set; }
         #endregion Properties not in DB
 

@@ -42,7 +42,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVItemTVAuth_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "Error", "TVItemUserAuthID", "TVText", "TVItemID1", "TVTypeStr", "TVAuth", "TVAuthText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TVItemUserAuthID", "TVText", "TVItemID1", "TVTypeStr", "TVAuth", "TVAuthText", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -62,33 +62,30 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVItemTVAuth_Every_Property_Has_Get_Set_Test()
         {
-               string val1 = "Some text";
-               tVItemTVAuth.Error = val1;
-               Assert.AreEqual(val1, tVItemTVAuth.Error);
-               int val2 = 45;
-               tVItemTVAuth.TVItemUserAuthID = val2;
-               Assert.AreEqual(val2, tVItemTVAuth.TVItemUserAuthID);
-               string val3 = "Some text";
-               tVItemTVAuth.TVText = val3;
-               Assert.AreEqual(val3, tVItemTVAuth.TVText);
-               int val4 = 45;
-               tVItemTVAuth.TVItemID1 = val4;
-               Assert.AreEqual(val4, tVItemTVAuth.TVItemID1);
-               string val5 = "Some text";
-               tVItemTVAuth.TVTypeStr = val5;
-               Assert.AreEqual(val5, tVItemTVAuth.TVTypeStr);
-               TVAuthEnum val6 = (TVAuthEnum)3;
-               tVItemTVAuth.TVAuth = val6;
-               Assert.AreEqual(val6, tVItemTVAuth.TVAuth);
-               string val7 = "Some text";
-               tVItemTVAuth.TVAuthText = val7;
-               Assert.AreEqual(val7, tVItemTVAuth.TVAuthText);
-               bool val8 = true;
-               tVItemTVAuth.HasErrors = val8;
-               Assert.AreEqual(val8, tVItemTVAuth.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               tVItemTVAuth.ValidationResults = val27;
-               Assert.AreEqual(val27, tVItemTVAuth.ValidationResults);
+               int val1 = 45;
+               tVItemTVAuth.TVItemUserAuthID = val1;
+               Assert.AreEqual(val1, tVItemTVAuth.TVItemUserAuthID);
+               string val2 = "Some text";
+               tVItemTVAuth.TVText = val2;
+               Assert.AreEqual(val2, tVItemTVAuth.TVText);
+               int val3 = 45;
+               tVItemTVAuth.TVItemID1 = val3;
+               Assert.AreEqual(val3, tVItemTVAuth.TVItemID1);
+               string val4 = "Some text";
+               tVItemTVAuth.TVTypeStr = val4;
+               Assert.AreEqual(val4, tVItemTVAuth.TVTypeStr);
+               TVAuthEnum val5 = (TVAuthEnum)3;
+               tVItemTVAuth.TVAuth = val5;
+               Assert.AreEqual(val5, tVItemTVAuth.TVAuth);
+               string val6 = "Some text";
+               tVItemTVAuth.TVAuthText = val6;
+               Assert.AreEqual(val6, tVItemTVAuth.TVAuthText);
+               bool val7 = true;
+               tVItemTVAuth.HasErrors = val7;
+               Assert.AreEqual(val7, tVItemTVAuth.HasErrors);
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               tVItemTVAuth.ValidationResults = val24;
+               Assert.AreEqual(val24, tVItemTVAuth.ValidationResults);
         }
         #endregion Tests Functions public
     }

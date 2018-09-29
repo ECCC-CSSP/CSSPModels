@@ -31,9 +31,53 @@ namespace CSSPModels
         #endregion Properties in DB
 
         #region Properties not in DB
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lat")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Lat")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Lat")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lat")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lat
+        /// 
+        /// **Display (fr)** --- Lat
+        /// 
+        /// **Description (en)** --- Lat
+        /// 
+        /// **Description (fr)** --- Lat
+        /// </returns>
         [Range(-180.0D, 180.0D)]
+        [CSSPDisplayEN(DisplayEN = "Lat")]
+        [CSSPDisplayFR(DisplayFR = "Lat")]
+        [CSSPDescriptionEN(DescriptionEN = @"Lat")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lat")]
         public double Lat { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Lng")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Lng")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Lng")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Lng")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Lng
+        /// 
+        /// **Display (fr)** --- Lng
+        /// 
+        /// **Description (en)** --- Lng
+        /// 
+        /// **Description (fr)** --- Lng
+        /// </returns>
         [Range(-90.0D, 90.0D)]
+        [CSSPDisplayEN(DisplayEN = "Lng")]
+        [CSSPDisplayFR(DisplayFR = "Lng")]
+        [CSSPDescriptionEN(DescriptionEN = @"Lng")]
+        [CSSPDescriptionFR(DescriptionFR = @"Lng")]
         public double Lng { get; set; }
         #endregion Properties not in DB
 

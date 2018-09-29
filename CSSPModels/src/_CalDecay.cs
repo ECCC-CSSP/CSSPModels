@@ -29,7 +29,6 @@ namespace CSSPModels
         #region Constructors
         public CalDecay() : base()
         {
-            Error = "";
         }
         #endregion Constructors
     }
