@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private Tel tel { get; set; }
-        private Tel_A tel_A { get; set; }
-        private Tel_B tel_B { get; set; }
+        private TelExtraA telExtraA { get; set; }
+        private TelExtraB telExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public TelTest()
         {
             tel = new Tel();
-            tel_A = new Tel_A();
-            tel_B = new Tel_B();
+            telExtraA = new TelExtraA();
+            telExtraB = new TelExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Tel_A_Properties_Test()
+        public void TelExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TelTVItemLanguage", "LastUpdateContactTVItemLanguage", "TelTypeText", "TelID", "TelTVItemID", "TelNumber", "TelType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Tel_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(TelExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Tel_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TelExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Tel_B_Properties_Test()
+        public void TelExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TelReportTest", "TelTVItemLanguage", "LastUpdateContactTVItemLanguage", "TelTypeText", "TelID", "TelTVItemID", "TelNumber", "TelType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Tel_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(TelExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Tel_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TelExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Tel_A_Navigation_Test()
+        public void TelExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Tel_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(TelExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Tel_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TelExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Tel_B_Navigation_Test()
+        public void TelExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Tel_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(TelExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Tel_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TelExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(Tel).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Tel_A_Has_ValidationResults_Test()
+        public void TelExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(Tel_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(TelExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Tel_B_Has_ValidationResults_Test()
+        public void TelExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(Tel_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(TelExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void Tel_Every_Property_Has_Get_Set_Test()
@@ -286,81 +286,81 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val24, tel.ValidationResults);
         }
         [TestMethod]
-        public void Tel_A_Every_Property_Has_Get_Set_Test()
+        public void TelExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               tel_A.TelTVItemLanguage = val1;
-               Assert.AreEqual(val1, tel_A.TelTVItemLanguage);
+               telExtraA.TelTVItemLanguage = val1;
+               Assert.AreEqual(val1, telExtraA.TelTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               tel_A.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, tel_A.LastUpdateContactTVItemLanguage);
+               telExtraA.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, telExtraA.LastUpdateContactTVItemLanguage);
                string val3 = "Some text";
-               tel_A.TelTypeText = val3;
-               Assert.AreEqual(val3, tel_A.TelTypeText);
+               telExtraA.TelTypeText = val3;
+               Assert.AreEqual(val3, telExtraA.TelTypeText);
                int val4 = 45;
-               tel_A.TelID = val4;
-               Assert.AreEqual(val4, tel_A.TelID);
+               telExtraA.TelID = val4;
+               Assert.AreEqual(val4, telExtraA.TelID);
                int val5 = 45;
-               tel_A.TelTVItemID = val5;
-               Assert.AreEqual(val5, tel_A.TelTVItemID);
+               telExtraA.TelTVItemID = val5;
+               Assert.AreEqual(val5, telExtraA.TelTVItemID);
                string val6 = "Some text";
-               tel_A.TelNumber = val6;
-               Assert.AreEqual(val6, tel_A.TelNumber);
+               telExtraA.TelNumber = val6;
+               Assert.AreEqual(val6, telExtraA.TelNumber);
                TelTypeEnum val7 = (TelTypeEnum)3;
-               tel_A.TelType = val7;
-               Assert.AreEqual(val7, tel_A.TelType);
+               telExtraA.TelType = val7;
+               Assert.AreEqual(val7, telExtraA.TelType);
                DateTime val8 = new DateTime(2010, 3, 4);
-               tel_A.LastUpdateDate_UTC = val8;
-               Assert.AreEqual(val8, tel_A.LastUpdateDate_UTC);
+               telExtraA.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, telExtraA.LastUpdateDate_UTC);
                int val9 = 45;
-               tel_A.LastUpdateContactTVItemID = val9;
-               Assert.AreEqual(val9, tel_A.LastUpdateContactTVItemID);
+               telExtraA.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, telExtraA.LastUpdateContactTVItemID);
                bool val10 = true;
-               tel_A.HasErrors = val10;
-               Assert.AreEqual(val10, tel_A.HasErrors);
+               telExtraA.HasErrors = val10;
+               Assert.AreEqual(val10, telExtraA.HasErrors);
                IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               tel_A.ValidationResults = val33;
-               Assert.AreEqual(val33, tel_A.ValidationResults);
+               telExtraA.ValidationResults = val33;
+               Assert.AreEqual(val33, telExtraA.ValidationResults);
         }
         [TestMethod]
-        public void Tel_B_Every_Property_Has_Get_Set_Test()
+        public void TelExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               tel_B.TelReportTest = val1;
-               Assert.AreEqual(val1, tel_B.TelReportTest);
+               telExtraB.TelReportTest = val1;
+               Assert.AreEqual(val1, telExtraB.TelReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               tel_B.TelTVItemLanguage = val2;
-               Assert.AreEqual(val2, tel_B.TelTVItemLanguage);
+               telExtraB.TelTVItemLanguage = val2;
+               Assert.AreEqual(val2, telExtraB.TelTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               tel_B.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, tel_B.LastUpdateContactTVItemLanguage);
+               telExtraB.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, telExtraB.LastUpdateContactTVItemLanguage);
                string val4 = "Some text";
-               tel_B.TelTypeText = val4;
-               Assert.AreEqual(val4, tel_B.TelTypeText);
+               telExtraB.TelTypeText = val4;
+               Assert.AreEqual(val4, telExtraB.TelTypeText);
                int val5 = 45;
-               tel_B.TelID = val5;
-               Assert.AreEqual(val5, tel_B.TelID);
+               telExtraB.TelID = val5;
+               Assert.AreEqual(val5, telExtraB.TelID);
                int val6 = 45;
-               tel_B.TelTVItemID = val6;
-               Assert.AreEqual(val6, tel_B.TelTVItemID);
+               telExtraB.TelTVItemID = val6;
+               Assert.AreEqual(val6, telExtraB.TelTVItemID);
                string val7 = "Some text";
-               tel_B.TelNumber = val7;
-               Assert.AreEqual(val7, tel_B.TelNumber);
+               telExtraB.TelNumber = val7;
+               Assert.AreEqual(val7, telExtraB.TelNumber);
                TelTypeEnum val8 = (TelTypeEnum)3;
-               tel_B.TelType = val8;
-               Assert.AreEqual(val8, tel_B.TelType);
+               telExtraB.TelType = val8;
+               Assert.AreEqual(val8, telExtraB.TelType);
                DateTime val9 = new DateTime(2010, 3, 4);
-               tel_B.LastUpdateDate_UTC = val9;
-               Assert.AreEqual(val9, tel_B.LastUpdateDate_UTC);
+               telExtraB.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, telExtraB.LastUpdateDate_UTC);
                int val10 = 45;
-               tel_B.LastUpdateContactTVItemID = val10;
-               Assert.AreEqual(val10, tel_B.LastUpdateContactTVItemID);
+               telExtraB.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, telExtraB.LastUpdateContactTVItemID);
                bool val11 = true;
-               tel_B.HasErrors = val11;
-               Assert.AreEqual(val11, tel_B.HasErrors);
+               telExtraB.HasErrors = val11;
+               Assert.AreEqual(val11, telExtraB.HasErrors);
                IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               tel_B.ValidationResults = val36;
-               Assert.AreEqual(val36, tel_B.ValidationResults);
+               telExtraB.ValidationResults = val36;
+               Assert.AreEqual(val36, telExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

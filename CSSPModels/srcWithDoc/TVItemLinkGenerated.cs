@@ -312,7 +312,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemLink_A : TVItemLink
+    public partial class TVItemLinkExtraA : TVItemLink
     {
         #region Properties
         /// <summary>
@@ -447,13 +447,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TVItemLink_A() : base()
+        public TVItemLinkExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemLink_B : TVItemLink_A
+    public partial class TVItemLinkExtraB : TVItemLinkExtraA
     {
         #region Properties
         /// <summary>
@@ -486,7 +486,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TVItemLink_B() : base()
+        public TVItemLinkExtraB() : base()
         {
         }
         #endregion Constructors

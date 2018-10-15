@@ -158,7 +158,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPScenarioLanguage_A : VPScenarioLanguage
+    public partial class VPScenarioLanguageExtraA : VPScenarioLanguage
     {
         #region Properties
         /// <summary>
@@ -243,13 +243,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public VPScenarioLanguage_A() : base()
+        public VPScenarioLanguageExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPScenarioLanguage_B : VPScenarioLanguage_A
+    public partial class VPScenarioLanguageExtraB : VPScenarioLanguageExtraA
     {
         #region Properties
         /// <summary>
@@ -282,7 +282,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public VPScenarioLanguage_B() : base()
+        public VPScenarioLanguageExtraB() : base()
         {
         }
         #endregion Constructors

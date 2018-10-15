@@ -90,7 +90,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemLink_A : TVItemLink
+    public partial class TVItemLinkExtraA : TVItemLink
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "FromTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -128,13 +128,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TVItemLink_A() : base()
+        public TVItemLinkExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemLink_B : TVItemLink_A
+    public partial class TVItemLinkExtraB : TVItemLinkExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -147,7 +147,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TVItemLink_B() : base()
+        public TVItemLinkExtraB() : base()
         {
         }
         #endregion Constructors

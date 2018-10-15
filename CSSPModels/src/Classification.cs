@@ -47,7 +47,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Classification_A : Classification
+    public partial class ClassificationExtraA : Classification
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -66,13 +66,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Classification_A() : base()
+        public ClassificationExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Classification_B : Classification_A
+    public partial class ClassificationExtraB : ClassificationExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -85,7 +85,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Classification_B() : base()
+        public ClassificationExtraB() : base()
         {
         }
         #endregion Constructors

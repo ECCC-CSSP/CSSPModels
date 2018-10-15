@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private MWQMRun mWQMRun { get; set; }
-        private MWQMRun_A mWQMRun_A { get; set; }
-        private MWQMRun_B mWQMRun_B { get; set; }
+        private MWQMRunExtraA mWQMRunExtraA { get; set; }
+        private MWQMRunExtraB mWQMRunExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public MWQMRunTest()
         {
             mWQMRun = new MWQMRun();
-            mWQMRun_A = new MWQMRun_A();
-            mWQMRun_B = new MWQMRun_B();
+            mWQMRunExtraA = new MWQMRunExtraA();
+            mWQMRunExtraB = new MWQMRunExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMRun_A_Properties_Test()
+        public void MWQMRunExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SubsectorTVItemLanguage", "MWQMRunTVItemLanguage", "LabSampleApprovalContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "RunSampleTypeText", "SeaStateAtStart_BeaufortScaleText", "SeaStateAtEnd_BeaufortScaleText", "AnalyzeMethodText", "SampleMatrixText", "LaboratoryText", "SampleStatusText", "Tide_StartText", "Tide_EndText", "MWQMRunID", "SubsectorTVItemID", "MWQMRunTVItemID", "RunSampleType", "DateTime_Local", "RunNumber", "StartDateTime_Local", "EndDateTime_Local", "LabReceivedDateTime_Local", "TemperatureControl1_C", "TemperatureControl2_C", "SeaStateAtStart_BeaufortScale", "SeaStateAtEnd_BeaufortScale", "WaterLevelAtBrook_m", "WaveHightAtStart_m", "WaveHightAtEnd_m", "SampleCrewInitials", "AnalyzeMethod", "SampleMatrix", "Laboratory", "SampleStatus", "LabSampleApprovalContactTVItemID", "LabAnalyzeBath1IncubationStartDateTime_Local", "LabAnalyzeBath2IncubationStartDateTime_Local", "LabAnalyzeBath3IncubationStartDateTime_Local", "LabRunSampleApprovalDateTime_Local", "Tide_Start", "Tide_End", "RainDay0_mm", "RainDay1_mm", "RainDay2_mm", "RainDay3_mm", "RainDay4_mm", "RainDay5_mm", "RainDay6_mm", "RainDay7_mm", "RainDay8_mm", "RainDay9_mm", "RainDay10_mm", "RemoveFromStat", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMRun_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMRun_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMRun_B_Properties_Test()
+        public void MWQMRunExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMRunReportTest", "SubsectorTVItemLanguage", "MWQMRunTVItemLanguage", "LabSampleApprovalContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "RunSampleTypeText", "SeaStateAtStart_BeaufortScaleText", "SeaStateAtEnd_BeaufortScaleText", "AnalyzeMethodText", "SampleMatrixText", "LaboratoryText", "SampleStatusText", "Tide_StartText", "Tide_EndText", "MWQMRunID", "SubsectorTVItemID", "MWQMRunTVItemID", "RunSampleType", "DateTime_Local", "RunNumber", "StartDateTime_Local", "EndDateTime_Local", "LabReceivedDateTime_Local", "TemperatureControl1_C", "TemperatureControl2_C", "SeaStateAtStart_BeaufortScale", "SeaStateAtEnd_BeaufortScale", "WaterLevelAtBrook_m", "WaveHightAtStart_m", "WaveHightAtEnd_m", "SampleCrewInitials", "AnalyzeMethod", "SampleMatrix", "Laboratory", "SampleStatus", "LabSampleApprovalContactTVItemID", "LabAnalyzeBath1IncubationStartDateTime_Local", "LabAnalyzeBath2IncubationStartDateTime_Local", "LabAnalyzeBath3IncubationStartDateTime_Local", "LabRunSampleApprovalDateTime_Local", "Tide_Start", "Tide_End", "RainDay0_mm", "RainDay1_mm", "RainDay2_mm", "RainDay3_mm", "RainDay4_mm", "RainDay5_mm", "RainDay6_mm", "RainDay7_mm", "RainDay8_mm", "RainDay9_mm", "RainDay10_mm", "RemoveFromStat", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMRun_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMRun_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMRun_A_Navigation_Test()
+        public void MWQMRunExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMRun_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMRun_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMRun_B_Navigation_Test()
+        public void MWQMRunExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMRun_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMRun_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMRunExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(MWQMRun).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MWQMRun_A_Has_ValidationResults_Test()
+        public void MWQMRunExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(MWQMRun_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(MWQMRunExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MWQMRun_B_Has_ValidationResults_Test()
+        public void MWQMRunExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(MWQMRun_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(MWQMRunExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void MWQMRun_Every_Property_Has_Get_Set_Test()
@@ -394,357 +394,357 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val132, mWQMRun.ValidationResults);
         }
         [TestMethod]
-        public void MWQMRun_A_Every_Property_Has_Get_Set_Test()
+        public void MWQMRunExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               mWQMRun_A.SubsectorTVItemLanguage = val1;
-               Assert.AreEqual(val1, mWQMRun_A.SubsectorTVItemLanguage);
+               mWQMRunExtraA.SubsectorTVItemLanguage = val1;
+               Assert.AreEqual(val1, mWQMRunExtraA.SubsectorTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               mWQMRun_A.MWQMRunTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMRun_A.MWQMRunTVItemLanguage);
+               mWQMRunExtraA.MWQMRunTVItemLanguage = val2;
+               Assert.AreEqual(val2, mWQMRunExtraA.MWQMRunTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               mWQMRun_A.LabSampleApprovalContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, mWQMRun_A.LabSampleApprovalContactTVItemLanguage);
+               mWQMRunExtraA.LabSampleApprovalContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, mWQMRunExtraA.LabSampleApprovalContactTVItemLanguage);
                TVItemLanguage val4 = new TVItemLanguage();
-               mWQMRun_A.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, mWQMRun_A.LastUpdateContactTVItemLanguage);
+               mWQMRunExtraA.LastUpdateContactTVItemLanguage = val4;
+               Assert.AreEqual(val4, mWQMRunExtraA.LastUpdateContactTVItemLanguage);
                string val5 = "Some text";
-               mWQMRun_A.RunSampleTypeText = val5;
-               Assert.AreEqual(val5, mWQMRun_A.RunSampleTypeText);
+               mWQMRunExtraA.RunSampleTypeText = val5;
+               Assert.AreEqual(val5, mWQMRunExtraA.RunSampleTypeText);
                string val6 = "Some text";
-               mWQMRun_A.SeaStateAtStart_BeaufortScaleText = val6;
-               Assert.AreEqual(val6, mWQMRun_A.SeaStateAtStart_BeaufortScaleText);
+               mWQMRunExtraA.SeaStateAtStart_BeaufortScaleText = val6;
+               Assert.AreEqual(val6, mWQMRunExtraA.SeaStateAtStart_BeaufortScaleText);
                string val7 = "Some text";
-               mWQMRun_A.SeaStateAtEnd_BeaufortScaleText = val7;
-               Assert.AreEqual(val7, mWQMRun_A.SeaStateAtEnd_BeaufortScaleText);
+               mWQMRunExtraA.SeaStateAtEnd_BeaufortScaleText = val7;
+               Assert.AreEqual(val7, mWQMRunExtraA.SeaStateAtEnd_BeaufortScaleText);
                string val8 = "Some text";
-               mWQMRun_A.AnalyzeMethodText = val8;
-               Assert.AreEqual(val8, mWQMRun_A.AnalyzeMethodText);
+               mWQMRunExtraA.AnalyzeMethodText = val8;
+               Assert.AreEqual(val8, mWQMRunExtraA.AnalyzeMethodText);
                string val9 = "Some text";
-               mWQMRun_A.SampleMatrixText = val9;
-               Assert.AreEqual(val9, mWQMRun_A.SampleMatrixText);
+               mWQMRunExtraA.SampleMatrixText = val9;
+               Assert.AreEqual(val9, mWQMRunExtraA.SampleMatrixText);
                string val10 = "Some text";
-               mWQMRun_A.LaboratoryText = val10;
-               Assert.AreEqual(val10, mWQMRun_A.LaboratoryText);
+               mWQMRunExtraA.LaboratoryText = val10;
+               Assert.AreEqual(val10, mWQMRunExtraA.LaboratoryText);
                string val11 = "Some text";
-               mWQMRun_A.SampleStatusText = val11;
-               Assert.AreEqual(val11, mWQMRun_A.SampleStatusText);
+               mWQMRunExtraA.SampleStatusText = val11;
+               Assert.AreEqual(val11, mWQMRunExtraA.SampleStatusText);
                string val12 = "Some text";
-               mWQMRun_A.Tide_StartText = val12;
-               Assert.AreEqual(val12, mWQMRun_A.Tide_StartText);
+               mWQMRunExtraA.Tide_StartText = val12;
+               Assert.AreEqual(val12, mWQMRunExtraA.Tide_StartText);
                string val13 = "Some text";
-               mWQMRun_A.Tide_EndText = val13;
-               Assert.AreEqual(val13, mWQMRun_A.Tide_EndText);
+               mWQMRunExtraA.Tide_EndText = val13;
+               Assert.AreEqual(val13, mWQMRunExtraA.Tide_EndText);
                int val14 = 45;
-               mWQMRun_A.MWQMRunID = val14;
-               Assert.AreEqual(val14, mWQMRun_A.MWQMRunID);
+               mWQMRunExtraA.MWQMRunID = val14;
+               Assert.AreEqual(val14, mWQMRunExtraA.MWQMRunID);
                int val15 = 45;
-               mWQMRun_A.SubsectorTVItemID = val15;
-               Assert.AreEqual(val15, mWQMRun_A.SubsectorTVItemID);
+               mWQMRunExtraA.SubsectorTVItemID = val15;
+               Assert.AreEqual(val15, mWQMRunExtraA.SubsectorTVItemID);
                int val16 = 45;
-               mWQMRun_A.MWQMRunTVItemID = val16;
-               Assert.AreEqual(val16, mWQMRun_A.MWQMRunTVItemID);
+               mWQMRunExtraA.MWQMRunTVItemID = val16;
+               Assert.AreEqual(val16, mWQMRunExtraA.MWQMRunTVItemID);
                SampleTypeEnum val17 = (SampleTypeEnum)3;
-               mWQMRun_A.RunSampleType = val17;
-               Assert.AreEqual(val17, mWQMRun_A.RunSampleType);
+               mWQMRunExtraA.RunSampleType = val17;
+               Assert.AreEqual(val17, mWQMRunExtraA.RunSampleType);
                DateTime val18 = new DateTime(2010, 3, 4);
-               mWQMRun_A.DateTime_Local = val18;
-               Assert.AreEqual(val18, mWQMRun_A.DateTime_Local);
+               mWQMRunExtraA.DateTime_Local = val18;
+               Assert.AreEqual(val18, mWQMRunExtraA.DateTime_Local);
                int val19 = 45;
-               mWQMRun_A.RunNumber = val19;
-               Assert.AreEqual(val19, mWQMRun_A.RunNumber);
+               mWQMRunExtraA.RunNumber = val19;
+               Assert.AreEqual(val19, mWQMRunExtraA.RunNumber);
                DateTime val20 = new DateTime(2010, 3, 4);
-               mWQMRun_A.StartDateTime_Local = val20;
-               Assert.AreEqual(val20, mWQMRun_A.StartDateTime_Local);
+               mWQMRunExtraA.StartDateTime_Local = val20;
+               Assert.AreEqual(val20, mWQMRunExtraA.StartDateTime_Local);
                DateTime val21 = new DateTime(2010, 3, 4);
-               mWQMRun_A.EndDateTime_Local = val21;
-               Assert.AreEqual(val21, mWQMRun_A.EndDateTime_Local);
+               mWQMRunExtraA.EndDateTime_Local = val21;
+               Assert.AreEqual(val21, mWQMRunExtraA.EndDateTime_Local);
                DateTime val22 = new DateTime(2010, 3, 4);
-               mWQMRun_A.LabReceivedDateTime_Local = val22;
-               Assert.AreEqual(val22, mWQMRun_A.LabReceivedDateTime_Local);
+               mWQMRunExtraA.LabReceivedDateTime_Local = val22;
+               Assert.AreEqual(val22, mWQMRunExtraA.LabReceivedDateTime_Local);
                double val23 = 87.9D;
-               mWQMRun_A.TemperatureControl1_C = val23;
-               Assert.AreEqual(val23, mWQMRun_A.TemperatureControl1_C);
+               mWQMRunExtraA.TemperatureControl1_C = val23;
+               Assert.AreEqual(val23, mWQMRunExtraA.TemperatureControl1_C);
                double val24 = 87.9D;
-               mWQMRun_A.TemperatureControl2_C = val24;
-               Assert.AreEqual(val24, mWQMRun_A.TemperatureControl2_C);
+               mWQMRunExtraA.TemperatureControl2_C = val24;
+               Assert.AreEqual(val24, mWQMRunExtraA.TemperatureControl2_C);
                BeaufortScaleEnum val25 = (BeaufortScaleEnum)3;
-               mWQMRun_A.SeaStateAtStart_BeaufortScale = val25;
-               Assert.AreEqual(val25, mWQMRun_A.SeaStateAtStart_BeaufortScale);
+               mWQMRunExtraA.SeaStateAtStart_BeaufortScale = val25;
+               Assert.AreEqual(val25, mWQMRunExtraA.SeaStateAtStart_BeaufortScale);
                BeaufortScaleEnum val26 = (BeaufortScaleEnum)3;
-               mWQMRun_A.SeaStateAtEnd_BeaufortScale = val26;
-               Assert.AreEqual(val26, mWQMRun_A.SeaStateAtEnd_BeaufortScale);
+               mWQMRunExtraA.SeaStateAtEnd_BeaufortScale = val26;
+               Assert.AreEqual(val26, mWQMRunExtraA.SeaStateAtEnd_BeaufortScale);
                double val27 = 87.9D;
-               mWQMRun_A.WaterLevelAtBrook_m = val27;
-               Assert.AreEqual(val27, mWQMRun_A.WaterLevelAtBrook_m);
+               mWQMRunExtraA.WaterLevelAtBrook_m = val27;
+               Assert.AreEqual(val27, mWQMRunExtraA.WaterLevelAtBrook_m);
                double val28 = 87.9D;
-               mWQMRun_A.WaveHightAtStart_m = val28;
-               Assert.AreEqual(val28, mWQMRun_A.WaveHightAtStart_m);
+               mWQMRunExtraA.WaveHightAtStart_m = val28;
+               Assert.AreEqual(val28, mWQMRunExtraA.WaveHightAtStart_m);
                double val29 = 87.9D;
-               mWQMRun_A.WaveHightAtEnd_m = val29;
-               Assert.AreEqual(val29, mWQMRun_A.WaveHightAtEnd_m);
+               mWQMRunExtraA.WaveHightAtEnd_m = val29;
+               Assert.AreEqual(val29, mWQMRunExtraA.WaveHightAtEnd_m);
                string val30 = "Some text";
-               mWQMRun_A.SampleCrewInitials = val30;
-               Assert.AreEqual(val30, mWQMRun_A.SampleCrewInitials);
+               mWQMRunExtraA.SampleCrewInitials = val30;
+               Assert.AreEqual(val30, mWQMRunExtraA.SampleCrewInitials);
                AnalyzeMethodEnum val31 = (AnalyzeMethodEnum)3;
-               mWQMRun_A.AnalyzeMethod = val31;
-               Assert.AreEqual(val31, mWQMRun_A.AnalyzeMethod);
+               mWQMRunExtraA.AnalyzeMethod = val31;
+               Assert.AreEqual(val31, mWQMRunExtraA.AnalyzeMethod);
                SampleMatrixEnum val32 = (SampleMatrixEnum)3;
-               mWQMRun_A.SampleMatrix = val32;
-               Assert.AreEqual(val32, mWQMRun_A.SampleMatrix);
+               mWQMRunExtraA.SampleMatrix = val32;
+               Assert.AreEqual(val32, mWQMRunExtraA.SampleMatrix);
                LaboratoryEnum val33 = (LaboratoryEnum)3;
-               mWQMRun_A.Laboratory = val33;
-               Assert.AreEqual(val33, mWQMRun_A.Laboratory);
+               mWQMRunExtraA.Laboratory = val33;
+               Assert.AreEqual(val33, mWQMRunExtraA.Laboratory);
                SampleStatusEnum val34 = (SampleStatusEnum)3;
-               mWQMRun_A.SampleStatus = val34;
-               Assert.AreEqual(val34, mWQMRun_A.SampleStatus);
+               mWQMRunExtraA.SampleStatus = val34;
+               Assert.AreEqual(val34, mWQMRunExtraA.SampleStatus);
                int val35 = 45;
-               mWQMRun_A.LabSampleApprovalContactTVItemID = val35;
-               Assert.AreEqual(val35, mWQMRun_A.LabSampleApprovalContactTVItemID);
+               mWQMRunExtraA.LabSampleApprovalContactTVItemID = val35;
+               Assert.AreEqual(val35, mWQMRunExtraA.LabSampleApprovalContactTVItemID);
                DateTime val36 = new DateTime(2010, 3, 4);
-               mWQMRun_A.LabAnalyzeBath1IncubationStartDateTime_Local = val36;
-               Assert.AreEqual(val36, mWQMRun_A.LabAnalyzeBath1IncubationStartDateTime_Local);
+               mWQMRunExtraA.LabAnalyzeBath1IncubationStartDateTime_Local = val36;
+               Assert.AreEqual(val36, mWQMRunExtraA.LabAnalyzeBath1IncubationStartDateTime_Local);
                DateTime val37 = new DateTime(2010, 3, 4);
-               mWQMRun_A.LabAnalyzeBath2IncubationStartDateTime_Local = val37;
-               Assert.AreEqual(val37, mWQMRun_A.LabAnalyzeBath2IncubationStartDateTime_Local);
+               mWQMRunExtraA.LabAnalyzeBath2IncubationStartDateTime_Local = val37;
+               Assert.AreEqual(val37, mWQMRunExtraA.LabAnalyzeBath2IncubationStartDateTime_Local);
                DateTime val38 = new DateTime(2010, 3, 4);
-               mWQMRun_A.LabAnalyzeBath3IncubationStartDateTime_Local = val38;
-               Assert.AreEqual(val38, mWQMRun_A.LabAnalyzeBath3IncubationStartDateTime_Local);
+               mWQMRunExtraA.LabAnalyzeBath3IncubationStartDateTime_Local = val38;
+               Assert.AreEqual(val38, mWQMRunExtraA.LabAnalyzeBath3IncubationStartDateTime_Local);
                DateTime val39 = new DateTime(2010, 3, 4);
-               mWQMRun_A.LabRunSampleApprovalDateTime_Local = val39;
-               Assert.AreEqual(val39, mWQMRun_A.LabRunSampleApprovalDateTime_Local);
+               mWQMRunExtraA.LabRunSampleApprovalDateTime_Local = val39;
+               Assert.AreEqual(val39, mWQMRunExtraA.LabRunSampleApprovalDateTime_Local);
                TideTextEnum val40 = (TideTextEnum)3;
-               mWQMRun_A.Tide_Start = val40;
-               Assert.AreEqual(val40, mWQMRun_A.Tide_Start);
+               mWQMRunExtraA.Tide_Start = val40;
+               Assert.AreEqual(val40, mWQMRunExtraA.Tide_Start);
                TideTextEnum val41 = (TideTextEnum)3;
-               mWQMRun_A.Tide_End = val41;
-               Assert.AreEqual(val41, mWQMRun_A.Tide_End);
+               mWQMRunExtraA.Tide_End = val41;
+               Assert.AreEqual(val41, mWQMRunExtraA.Tide_End);
                double val42 = 87.9D;
-               mWQMRun_A.RainDay0_mm = val42;
-               Assert.AreEqual(val42, mWQMRun_A.RainDay0_mm);
+               mWQMRunExtraA.RainDay0_mm = val42;
+               Assert.AreEqual(val42, mWQMRunExtraA.RainDay0_mm);
                double val43 = 87.9D;
-               mWQMRun_A.RainDay1_mm = val43;
-               Assert.AreEqual(val43, mWQMRun_A.RainDay1_mm);
+               mWQMRunExtraA.RainDay1_mm = val43;
+               Assert.AreEqual(val43, mWQMRunExtraA.RainDay1_mm);
                double val44 = 87.9D;
-               mWQMRun_A.RainDay2_mm = val44;
-               Assert.AreEqual(val44, mWQMRun_A.RainDay2_mm);
+               mWQMRunExtraA.RainDay2_mm = val44;
+               Assert.AreEqual(val44, mWQMRunExtraA.RainDay2_mm);
                double val45 = 87.9D;
-               mWQMRun_A.RainDay3_mm = val45;
-               Assert.AreEqual(val45, mWQMRun_A.RainDay3_mm);
+               mWQMRunExtraA.RainDay3_mm = val45;
+               Assert.AreEqual(val45, mWQMRunExtraA.RainDay3_mm);
                double val46 = 87.9D;
-               mWQMRun_A.RainDay4_mm = val46;
-               Assert.AreEqual(val46, mWQMRun_A.RainDay4_mm);
+               mWQMRunExtraA.RainDay4_mm = val46;
+               Assert.AreEqual(val46, mWQMRunExtraA.RainDay4_mm);
                double val47 = 87.9D;
-               mWQMRun_A.RainDay5_mm = val47;
-               Assert.AreEqual(val47, mWQMRun_A.RainDay5_mm);
+               mWQMRunExtraA.RainDay5_mm = val47;
+               Assert.AreEqual(val47, mWQMRunExtraA.RainDay5_mm);
                double val48 = 87.9D;
-               mWQMRun_A.RainDay6_mm = val48;
-               Assert.AreEqual(val48, mWQMRun_A.RainDay6_mm);
+               mWQMRunExtraA.RainDay6_mm = val48;
+               Assert.AreEqual(val48, mWQMRunExtraA.RainDay6_mm);
                double val49 = 87.9D;
-               mWQMRun_A.RainDay7_mm = val49;
-               Assert.AreEqual(val49, mWQMRun_A.RainDay7_mm);
+               mWQMRunExtraA.RainDay7_mm = val49;
+               Assert.AreEqual(val49, mWQMRunExtraA.RainDay7_mm);
                double val50 = 87.9D;
-               mWQMRun_A.RainDay8_mm = val50;
-               Assert.AreEqual(val50, mWQMRun_A.RainDay8_mm);
+               mWQMRunExtraA.RainDay8_mm = val50;
+               Assert.AreEqual(val50, mWQMRunExtraA.RainDay8_mm);
                double val51 = 87.9D;
-               mWQMRun_A.RainDay9_mm = val51;
-               Assert.AreEqual(val51, mWQMRun_A.RainDay9_mm);
+               mWQMRunExtraA.RainDay9_mm = val51;
+               Assert.AreEqual(val51, mWQMRunExtraA.RainDay9_mm);
                double val52 = 87.9D;
-               mWQMRun_A.RainDay10_mm = val52;
-               Assert.AreEqual(val52, mWQMRun_A.RainDay10_mm);
+               mWQMRunExtraA.RainDay10_mm = val52;
+               Assert.AreEqual(val52, mWQMRunExtraA.RainDay10_mm);
                bool val53 = true;
-               mWQMRun_A.RemoveFromStat = val53;
-               Assert.AreEqual(val53, mWQMRun_A.RemoveFromStat);
+               mWQMRunExtraA.RemoveFromStat = val53;
+               Assert.AreEqual(val53, mWQMRunExtraA.RemoveFromStat);
                DateTime val54 = new DateTime(2010, 3, 4);
-               mWQMRun_A.LastUpdateDate_UTC = val54;
-               Assert.AreEqual(val54, mWQMRun_A.LastUpdateDate_UTC);
+               mWQMRunExtraA.LastUpdateDate_UTC = val54;
+               Assert.AreEqual(val54, mWQMRunExtraA.LastUpdateDate_UTC);
                int val55 = 45;
-               mWQMRun_A.LastUpdateContactTVItemID = val55;
-               Assert.AreEqual(val55, mWQMRun_A.LastUpdateContactTVItemID);
+               mWQMRunExtraA.LastUpdateContactTVItemID = val55;
+               Assert.AreEqual(val55, mWQMRunExtraA.LastUpdateContactTVItemID);
                bool val56 = true;
-               mWQMRun_A.HasErrors = val56;
-               Assert.AreEqual(val56, mWQMRun_A.HasErrors);
+               mWQMRunExtraA.HasErrors = val56;
+               Assert.AreEqual(val56, mWQMRunExtraA.HasErrors);
                IEnumerable<ValidationResult> val171 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMRun_A.ValidationResults = val171;
-               Assert.AreEqual(val171, mWQMRun_A.ValidationResults);
+               mWQMRunExtraA.ValidationResults = val171;
+               Assert.AreEqual(val171, mWQMRunExtraA.ValidationResults);
         }
         [TestMethod]
-        public void MWQMRun_B_Every_Property_Has_Get_Set_Test()
+        public void MWQMRunExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               mWQMRun_B.MWQMRunReportTest = val1;
-               Assert.AreEqual(val1, mWQMRun_B.MWQMRunReportTest);
+               mWQMRunExtraB.MWQMRunReportTest = val1;
+               Assert.AreEqual(val1, mWQMRunExtraB.MWQMRunReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               mWQMRun_B.SubsectorTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMRun_B.SubsectorTVItemLanguage);
+               mWQMRunExtraB.SubsectorTVItemLanguage = val2;
+               Assert.AreEqual(val2, mWQMRunExtraB.SubsectorTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               mWQMRun_B.MWQMRunTVItemLanguage = val3;
-               Assert.AreEqual(val3, mWQMRun_B.MWQMRunTVItemLanguage);
+               mWQMRunExtraB.MWQMRunTVItemLanguage = val3;
+               Assert.AreEqual(val3, mWQMRunExtraB.MWQMRunTVItemLanguage);
                TVItemLanguage val4 = new TVItemLanguage();
-               mWQMRun_B.LabSampleApprovalContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, mWQMRun_B.LabSampleApprovalContactTVItemLanguage);
+               mWQMRunExtraB.LabSampleApprovalContactTVItemLanguage = val4;
+               Assert.AreEqual(val4, mWQMRunExtraB.LabSampleApprovalContactTVItemLanguage);
                TVItemLanguage val5 = new TVItemLanguage();
-               mWQMRun_B.LastUpdateContactTVItemLanguage = val5;
-               Assert.AreEqual(val5, mWQMRun_B.LastUpdateContactTVItemLanguage);
+               mWQMRunExtraB.LastUpdateContactTVItemLanguage = val5;
+               Assert.AreEqual(val5, mWQMRunExtraB.LastUpdateContactTVItemLanguage);
                string val6 = "Some text";
-               mWQMRun_B.RunSampleTypeText = val6;
-               Assert.AreEqual(val6, mWQMRun_B.RunSampleTypeText);
+               mWQMRunExtraB.RunSampleTypeText = val6;
+               Assert.AreEqual(val6, mWQMRunExtraB.RunSampleTypeText);
                string val7 = "Some text";
-               mWQMRun_B.SeaStateAtStart_BeaufortScaleText = val7;
-               Assert.AreEqual(val7, mWQMRun_B.SeaStateAtStart_BeaufortScaleText);
+               mWQMRunExtraB.SeaStateAtStart_BeaufortScaleText = val7;
+               Assert.AreEqual(val7, mWQMRunExtraB.SeaStateAtStart_BeaufortScaleText);
                string val8 = "Some text";
-               mWQMRun_B.SeaStateAtEnd_BeaufortScaleText = val8;
-               Assert.AreEqual(val8, mWQMRun_B.SeaStateAtEnd_BeaufortScaleText);
+               mWQMRunExtraB.SeaStateAtEnd_BeaufortScaleText = val8;
+               Assert.AreEqual(val8, mWQMRunExtraB.SeaStateAtEnd_BeaufortScaleText);
                string val9 = "Some text";
-               mWQMRun_B.AnalyzeMethodText = val9;
-               Assert.AreEqual(val9, mWQMRun_B.AnalyzeMethodText);
+               mWQMRunExtraB.AnalyzeMethodText = val9;
+               Assert.AreEqual(val9, mWQMRunExtraB.AnalyzeMethodText);
                string val10 = "Some text";
-               mWQMRun_B.SampleMatrixText = val10;
-               Assert.AreEqual(val10, mWQMRun_B.SampleMatrixText);
+               mWQMRunExtraB.SampleMatrixText = val10;
+               Assert.AreEqual(val10, mWQMRunExtraB.SampleMatrixText);
                string val11 = "Some text";
-               mWQMRun_B.LaboratoryText = val11;
-               Assert.AreEqual(val11, mWQMRun_B.LaboratoryText);
+               mWQMRunExtraB.LaboratoryText = val11;
+               Assert.AreEqual(val11, mWQMRunExtraB.LaboratoryText);
                string val12 = "Some text";
-               mWQMRun_B.SampleStatusText = val12;
-               Assert.AreEqual(val12, mWQMRun_B.SampleStatusText);
+               mWQMRunExtraB.SampleStatusText = val12;
+               Assert.AreEqual(val12, mWQMRunExtraB.SampleStatusText);
                string val13 = "Some text";
-               mWQMRun_B.Tide_StartText = val13;
-               Assert.AreEqual(val13, mWQMRun_B.Tide_StartText);
+               mWQMRunExtraB.Tide_StartText = val13;
+               Assert.AreEqual(val13, mWQMRunExtraB.Tide_StartText);
                string val14 = "Some text";
-               mWQMRun_B.Tide_EndText = val14;
-               Assert.AreEqual(val14, mWQMRun_B.Tide_EndText);
+               mWQMRunExtraB.Tide_EndText = val14;
+               Assert.AreEqual(val14, mWQMRunExtraB.Tide_EndText);
                int val15 = 45;
-               mWQMRun_B.MWQMRunID = val15;
-               Assert.AreEqual(val15, mWQMRun_B.MWQMRunID);
+               mWQMRunExtraB.MWQMRunID = val15;
+               Assert.AreEqual(val15, mWQMRunExtraB.MWQMRunID);
                int val16 = 45;
-               mWQMRun_B.SubsectorTVItemID = val16;
-               Assert.AreEqual(val16, mWQMRun_B.SubsectorTVItemID);
+               mWQMRunExtraB.SubsectorTVItemID = val16;
+               Assert.AreEqual(val16, mWQMRunExtraB.SubsectorTVItemID);
                int val17 = 45;
-               mWQMRun_B.MWQMRunTVItemID = val17;
-               Assert.AreEqual(val17, mWQMRun_B.MWQMRunTVItemID);
+               mWQMRunExtraB.MWQMRunTVItemID = val17;
+               Assert.AreEqual(val17, mWQMRunExtraB.MWQMRunTVItemID);
                SampleTypeEnum val18 = (SampleTypeEnum)3;
-               mWQMRun_B.RunSampleType = val18;
-               Assert.AreEqual(val18, mWQMRun_B.RunSampleType);
+               mWQMRunExtraB.RunSampleType = val18;
+               Assert.AreEqual(val18, mWQMRunExtraB.RunSampleType);
                DateTime val19 = new DateTime(2010, 3, 4);
-               mWQMRun_B.DateTime_Local = val19;
-               Assert.AreEqual(val19, mWQMRun_B.DateTime_Local);
+               mWQMRunExtraB.DateTime_Local = val19;
+               Assert.AreEqual(val19, mWQMRunExtraB.DateTime_Local);
                int val20 = 45;
-               mWQMRun_B.RunNumber = val20;
-               Assert.AreEqual(val20, mWQMRun_B.RunNumber);
+               mWQMRunExtraB.RunNumber = val20;
+               Assert.AreEqual(val20, mWQMRunExtraB.RunNumber);
                DateTime val21 = new DateTime(2010, 3, 4);
-               mWQMRun_B.StartDateTime_Local = val21;
-               Assert.AreEqual(val21, mWQMRun_B.StartDateTime_Local);
+               mWQMRunExtraB.StartDateTime_Local = val21;
+               Assert.AreEqual(val21, mWQMRunExtraB.StartDateTime_Local);
                DateTime val22 = new DateTime(2010, 3, 4);
-               mWQMRun_B.EndDateTime_Local = val22;
-               Assert.AreEqual(val22, mWQMRun_B.EndDateTime_Local);
+               mWQMRunExtraB.EndDateTime_Local = val22;
+               Assert.AreEqual(val22, mWQMRunExtraB.EndDateTime_Local);
                DateTime val23 = new DateTime(2010, 3, 4);
-               mWQMRun_B.LabReceivedDateTime_Local = val23;
-               Assert.AreEqual(val23, mWQMRun_B.LabReceivedDateTime_Local);
+               mWQMRunExtraB.LabReceivedDateTime_Local = val23;
+               Assert.AreEqual(val23, mWQMRunExtraB.LabReceivedDateTime_Local);
                double val24 = 87.9D;
-               mWQMRun_B.TemperatureControl1_C = val24;
-               Assert.AreEqual(val24, mWQMRun_B.TemperatureControl1_C);
+               mWQMRunExtraB.TemperatureControl1_C = val24;
+               Assert.AreEqual(val24, mWQMRunExtraB.TemperatureControl1_C);
                double val25 = 87.9D;
-               mWQMRun_B.TemperatureControl2_C = val25;
-               Assert.AreEqual(val25, mWQMRun_B.TemperatureControl2_C);
+               mWQMRunExtraB.TemperatureControl2_C = val25;
+               Assert.AreEqual(val25, mWQMRunExtraB.TemperatureControl2_C);
                BeaufortScaleEnum val26 = (BeaufortScaleEnum)3;
-               mWQMRun_B.SeaStateAtStart_BeaufortScale = val26;
-               Assert.AreEqual(val26, mWQMRun_B.SeaStateAtStart_BeaufortScale);
+               mWQMRunExtraB.SeaStateAtStart_BeaufortScale = val26;
+               Assert.AreEqual(val26, mWQMRunExtraB.SeaStateAtStart_BeaufortScale);
                BeaufortScaleEnum val27 = (BeaufortScaleEnum)3;
-               mWQMRun_B.SeaStateAtEnd_BeaufortScale = val27;
-               Assert.AreEqual(val27, mWQMRun_B.SeaStateAtEnd_BeaufortScale);
+               mWQMRunExtraB.SeaStateAtEnd_BeaufortScale = val27;
+               Assert.AreEqual(val27, mWQMRunExtraB.SeaStateAtEnd_BeaufortScale);
                double val28 = 87.9D;
-               mWQMRun_B.WaterLevelAtBrook_m = val28;
-               Assert.AreEqual(val28, mWQMRun_B.WaterLevelAtBrook_m);
+               mWQMRunExtraB.WaterLevelAtBrook_m = val28;
+               Assert.AreEqual(val28, mWQMRunExtraB.WaterLevelAtBrook_m);
                double val29 = 87.9D;
-               mWQMRun_B.WaveHightAtStart_m = val29;
-               Assert.AreEqual(val29, mWQMRun_B.WaveHightAtStart_m);
+               mWQMRunExtraB.WaveHightAtStart_m = val29;
+               Assert.AreEqual(val29, mWQMRunExtraB.WaveHightAtStart_m);
                double val30 = 87.9D;
-               mWQMRun_B.WaveHightAtEnd_m = val30;
-               Assert.AreEqual(val30, mWQMRun_B.WaveHightAtEnd_m);
+               mWQMRunExtraB.WaveHightAtEnd_m = val30;
+               Assert.AreEqual(val30, mWQMRunExtraB.WaveHightAtEnd_m);
                string val31 = "Some text";
-               mWQMRun_B.SampleCrewInitials = val31;
-               Assert.AreEqual(val31, mWQMRun_B.SampleCrewInitials);
+               mWQMRunExtraB.SampleCrewInitials = val31;
+               Assert.AreEqual(val31, mWQMRunExtraB.SampleCrewInitials);
                AnalyzeMethodEnum val32 = (AnalyzeMethodEnum)3;
-               mWQMRun_B.AnalyzeMethod = val32;
-               Assert.AreEqual(val32, mWQMRun_B.AnalyzeMethod);
+               mWQMRunExtraB.AnalyzeMethod = val32;
+               Assert.AreEqual(val32, mWQMRunExtraB.AnalyzeMethod);
                SampleMatrixEnum val33 = (SampleMatrixEnum)3;
-               mWQMRun_B.SampleMatrix = val33;
-               Assert.AreEqual(val33, mWQMRun_B.SampleMatrix);
+               mWQMRunExtraB.SampleMatrix = val33;
+               Assert.AreEqual(val33, mWQMRunExtraB.SampleMatrix);
                LaboratoryEnum val34 = (LaboratoryEnum)3;
-               mWQMRun_B.Laboratory = val34;
-               Assert.AreEqual(val34, mWQMRun_B.Laboratory);
+               mWQMRunExtraB.Laboratory = val34;
+               Assert.AreEqual(val34, mWQMRunExtraB.Laboratory);
                SampleStatusEnum val35 = (SampleStatusEnum)3;
-               mWQMRun_B.SampleStatus = val35;
-               Assert.AreEqual(val35, mWQMRun_B.SampleStatus);
+               mWQMRunExtraB.SampleStatus = val35;
+               Assert.AreEqual(val35, mWQMRunExtraB.SampleStatus);
                int val36 = 45;
-               mWQMRun_B.LabSampleApprovalContactTVItemID = val36;
-               Assert.AreEqual(val36, mWQMRun_B.LabSampleApprovalContactTVItemID);
+               mWQMRunExtraB.LabSampleApprovalContactTVItemID = val36;
+               Assert.AreEqual(val36, mWQMRunExtraB.LabSampleApprovalContactTVItemID);
                DateTime val37 = new DateTime(2010, 3, 4);
-               mWQMRun_B.LabAnalyzeBath1IncubationStartDateTime_Local = val37;
-               Assert.AreEqual(val37, mWQMRun_B.LabAnalyzeBath1IncubationStartDateTime_Local);
+               mWQMRunExtraB.LabAnalyzeBath1IncubationStartDateTime_Local = val37;
+               Assert.AreEqual(val37, mWQMRunExtraB.LabAnalyzeBath1IncubationStartDateTime_Local);
                DateTime val38 = new DateTime(2010, 3, 4);
-               mWQMRun_B.LabAnalyzeBath2IncubationStartDateTime_Local = val38;
-               Assert.AreEqual(val38, mWQMRun_B.LabAnalyzeBath2IncubationStartDateTime_Local);
+               mWQMRunExtraB.LabAnalyzeBath2IncubationStartDateTime_Local = val38;
+               Assert.AreEqual(val38, mWQMRunExtraB.LabAnalyzeBath2IncubationStartDateTime_Local);
                DateTime val39 = new DateTime(2010, 3, 4);
-               mWQMRun_B.LabAnalyzeBath3IncubationStartDateTime_Local = val39;
-               Assert.AreEqual(val39, mWQMRun_B.LabAnalyzeBath3IncubationStartDateTime_Local);
+               mWQMRunExtraB.LabAnalyzeBath3IncubationStartDateTime_Local = val39;
+               Assert.AreEqual(val39, mWQMRunExtraB.LabAnalyzeBath3IncubationStartDateTime_Local);
                DateTime val40 = new DateTime(2010, 3, 4);
-               mWQMRun_B.LabRunSampleApprovalDateTime_Local = val40;
-               Assert.AreEqual(val40, mWQMRun_B.LabRunSampleApprovalDateTime_Local);
+               mWQMRunExtraB.LabRunSampleApprovalDateTime_Local = val40;
+               Assert.AreEqual(val40, mWQMRunExtraB.LabRunSampleApprovalDateTime_Local);
                TideTextEnum val41 = (TideTextEnum)3;
-               mWQMRun_B.Tide_Start = val41;
-               Assert.AreEqual(val41, mWQMRun_B.Tide_Start);
+               mWQMRunExtraB.Tide_Start = val41;
+               Assert.AreEqual(val41, mWQMRunExtraB.Tide_Start);
                TideTextEnum val42 = (TideTextEnum)3;
-               mWQMRun_B.Tide_End = val42;
-               Assert.AreEqual(val42, mWQMRun_B.Tide_End);
+               mWQMRunExtraB.Tide_End = val42;
+               Assert.AreEqual(val42, mWQMRunExtraB.Tide_End);
                double val43 = 87.9D;
-               mWQMRun_B.RainDay0_mm = val43;
-               Assert.AreEqual(val43, mWQMRun_B.RainDay0_mm);
+               mWQMRunExtraB.RainDay0_mm = val43;
+               Assert.AreEqual(val43, mWQMRunExtraB.RainDay0_mm);
                double val44 = 87.9D;
-               mWQMRun_B.RainDay1_mm = val44;
-               Assert.AreEqual(val44, mWQMRun_B.RainDay1_mm);
+               mWQMRunExtraB.RainDay1_mm = val44;
+               Assert.AreEqual(val44, mWQMRunExtraB.RainDay1_mm);
                double val45 = 87.9D;
-               mWQMRun_B.RainDay2_mm = val45;
-               Assert.AreEqual(val45, mWQMRun_B.RainDay2_mm);
+               mWQMRunExtraB.RainDay2_mm = val45;
+               Assert.AreEqual(val45, mWQMRunExtraB.RainDay2_mm);
                double val46 = 87.9D;
-               mWQMRun_B.RainDay3_mm = val46;
-               Assert.AreEqual(val46, mWQMRun_B.RainDay3_mm);
+               mWQMRunExtraB.RainDay3_mm = val46;
+               Assert.AreEqual(val46, mWQMRunExtraB.RainDay3_mm);
                double val47 = 87.9D;
-               mWQMRun_B.RainDay4_mm = val47;
-               Assert.AreEqual(val47, mWQMRun_B.RainDay4_mm);
+               mWQMRunExtraB.RainDay4_mm = val47;
+               Assert.AreEqual(val47, mWQMRunExtraB.RainDay4_mm);
                double val48 = 87.9D;
-               mWQMRun_B.RainDay5_mm = val48;
-               Assert.AreEqual(val48, mWQMRun_B.RainDay5_mm);
+               mWQMRunExtraB.RainDay5_mm = val48;
+               Assert.AreEqual(val48, mWQMRunExtraB.RainDay5_mm);
                double val49 = 87.9D;
-               mWQMRun_B.RainDay6_mm = val49;
-               Assert.AreEqual(val49, mWQMRun_B.RainDay6_mm);
+               mWQMRunExtraB.RainDay6_mm = val49;
+               Assert.AreEqual(val49, mWQMRunExtraB.RainDay6_mm);
                double val50 = 87.9D;
-               mWQMRun_B.RainDay7_mm = val50;
-               Assert.AreEqual(val50, mWQMRun_B.RainDay7_mm);
+               mWQMRunExtraB.RainDay7_mm = val50;
+               Assert.AreEqual(val50, mWQMRunExtraB.RainDay7_mm);
                double val51 = 87.9D;
-               mWQMRun_B.RainDay8_mm = val51;
-               Assert.AreEqual(val51, mWQMRun_B.RainDay8_mm);
+               mWQMRunExtraB.RainDay8_mm = val51;
+               Assert.AreEqual(val51, mWQMRunExtraB.RainDay8_mm);
                double val52 = 87.9D;
-               mWQMRun_B.RainDay9_mm = val52;
-               Assert.AreEqual(val52, mWQMRun_B.RainDay9_mm);
+               mWQMRunExtraB.RainDay9_mm = val52;
+               Assert.AreEqual(val52, mWQMRunExtraB.RainDay9_mm);
                double val53 = 87.9D;
-               mWQMRun_B.RainDay10_mm = val53;
-               Assert.AreEqual(val53, mWQMRun_B.RainDay10_mm);
+               mWQMRunExtraB.RainDay10_mm = val53;
+               Assert.AreEqual(val53, mWQMRunExtraB.RainDay10_mm);
                bool val54 = true;
-               mWQMRun_B.RemoveFromStat = val54;
-               Assert.AreEqual(val54, mWQMRun_B.RemoveFromStat);
+               mWQMRunExtraB.RemoveFromStat = val54;
+               Assert.AreEqual(val54, mWQMRunExtraB.RemoveFromStat);
                DateTime val55 = new DateTime(2010, 3, 4);
-               mWQMRun_B.LastUpdateDate_UTC = val55;
-               Assert.AreEqual(val55, mWQMRun_B.LastUpdateDate_UTC);
+               mWQMRunExtraB.LastUpdateDate_UTC = val55;
+               Assert.AreEqual(val55, mWQMRunExtraB.LastUpdateDate_UTC);
                int val56 = 45;
-               mWQMRun_B.LastUpdateContactTVItemID = val56;
-               Assert.AreEqual(val56, mWQMRun_B.LastUpdateContactTVItemID);
+               mWQMRunExtraB.LastUpdateContactTVItemID = val56;
+               Assert.AreEqual(val56, mWQMRunExtraB.LastUpdateContactTVItemID);
                bool val57 = true;
-               mWQMRun_B.HasErrors = val57;
-               Assert.AreEqual(val57, mWQMRun_B.HasErrors);
+               mWQMRunExtraB.HasErrors = val57;
+               Assert.AreEqual(val57, mWQMRunExtraB.HasErrors);
                IEnumerable<ValidationResult> val174 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMRun_B.ValidationResults = val174;
-               Assert.AreEqual(val174, mWQMRun_B.ValidationResults);
+               mWQMRunExtraB.ValidationResults = val174;
+               Assert.AreEqual(val174, mWQMRunExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

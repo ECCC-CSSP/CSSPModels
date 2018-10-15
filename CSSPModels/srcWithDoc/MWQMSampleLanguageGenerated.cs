@@ -157,7 +157,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSampleLanguage_A : MWQMSampleLanguage
+    public partial class MWQMSampleLanguageExtraA : MWQMSampleLanguage
     {
         #region Properties
         /// <summary>
@@ -242,13 +242,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MWQMSampleLanguage_A() : base()
+        public MWQMSampleLanguageExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSampleLanguage_B : MWQMSampleLanguage_A
+    public partial class MWQMSampleLanguageExtraB : MWQMSampleLanguageExtraA
     {
         #region Properties
         /// <summary>
@@ -281,7 +281,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MWQMSampleLanguage_B() : base()
+        public MWQMSampleLanguageExtraB() : base()
         {
         }
         #endregion Constructors

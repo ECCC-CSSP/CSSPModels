@@ -276,7 +276,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeSource_A : MikeSource
+    public partial class MikeSourceExtraA : MikeSource
     {
         #region Properties
         /// <summary>
@@ -314,13 +314,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MikeSource_A() : base()
+        public MikeSourceExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeSource_B : MikeSource_A
+    public partial class MikeSourceExtraB : MikeSourceExtraA
     {
         #region Properties
         /// <summary>
@@ -353,7 +353,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MikeSource_B() : base()
+        public MikeSourceExtraB() : base()
         {
         }
         #endregion Constructors

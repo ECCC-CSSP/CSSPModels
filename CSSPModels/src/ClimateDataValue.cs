@@ -129,7 +129,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClimateDataValue_A : ClimateDataValue
+    public partial class ClimateDataValueExtraA : ClimateDataValue
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -148,13 +148,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ClimateDataValue_A() : base()
+        public ClimateDataValueExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClimateDataValue_B : ClimateDataValue_A
+    public partial class ClimateDataValueExtraB : ClimateDataValueExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -167,7 +167,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ClimateDataValue_B() : base()
+        public ClimateDataValueExtraB() : base()
         {
         }
         #endregion Constructors

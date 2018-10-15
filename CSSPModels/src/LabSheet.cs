@@ -143,7 +143,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheet_A : LabSheet
+    public partial class LabSheetExtraA : LabSheet
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SubsectorTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -201,13 +201,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public LabSheet_A() : base()
+        public LabSheetExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheet_B : LabSheet_A
+    public partial class LabSheetExtraB : LabSheetExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -220,7 +220,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public LabSheet_B() : base()
+        public LabSheetExtraB() : base()
         {
         }
         #endregion Constructors

@@ -154,7 +154,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMLookupMPN_A : MWQMLookupMPN
+    public partial class MWQMLookupMPNExtraA : MWQMLookupMPN
     {
         #region Properties
         /// <summary>
@@ -185,13 +185,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MWQMLookupMPN_A() : base()
+        public MWQMLookupMPNExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMLookupMPN_B : MWQMLookupMPN_A
+    public partial class MWQMLookupMPNExtraB : MWQMLookupMPNExtraA
     {
         #region Properties
         /// <summary>
@@ -224,7 +224,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MWQMLookupMPN_B() : base()
+        public MWQMLookupMPNExtraB() : base()
         {
         }
         #endregion Constructors

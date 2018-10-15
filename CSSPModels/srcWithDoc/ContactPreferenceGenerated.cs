@@ -133,7 +133,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactPreference_A : ContactPreference
+    public partial class ContactPreferenceExtraA : ContactPreference
     {
         #region Properties
         /// <summary>
@@ -191,13 +191,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ContactPreference_A() : base()
+        public ContactPreferenceExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactPreference_B : ContactPreference_A
+    public partial class ContactPreferenceExtraB : ContactPreferenceExtraA
     {
         #region Properties
         /// <summary>
@@ -230,7 +230,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ContactPreference_B() : base()
+        public ContactPreferenceExtraB() : base()
         {
         }
         #endregion Constructors

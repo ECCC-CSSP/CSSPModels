@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private Spill spill { get; set; }
-        private Spill_A spill_A { get; set; }
-        private Spill_B spill_B { get; set; }
+        private SpillExtraA spillExtraA { get; set; }
+        private SpillExtraB spillExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public SpillTest()
         {
             spill = new Spill();
-            spill_A = new Spill_A();
-            spill_B = new Spill_B();
+            spillExtraA = new SpillExtraA();
+            spillExtraB = new SpillExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Spill_A_Properties_Test()
+        public void SpillExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MunicipalityTVItemLanguage", "InfrastructureTVItemLanguage", "LastUpdateContactTVItemLanguage", "SpillID", "MunicipalityTVItemID", "InfrastructureTVItemID", "StartDateTime_Local", "EndDateTime_Local", "AverageFlow_m3_day", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Spill_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(SpillExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Spill_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SpillExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Spill_B_Properties_Test()
+        public void SpillExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SpillReportTest", "MunicipalityTVItemLanguage", "InfrastructureTVItemLanguage", "LastUpdateContactTVItemLanguage", "SpillID", "MunicipalityTVItemID", "InfrastructureTVItemID", "StartDateTime_Local", "EndDateTime_Local", "AverageFlow_m3_day", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Spill_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(SpillExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Spill_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SpillExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Spill_A_Navigation_Test()
+        public void SpillExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Spill_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(SpillExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Spill_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SpillExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Spill_B_Navigation_Test()
+        public void SpillExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Spill_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(SpillExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Spill_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SpillExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(Spill).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Spill_A_Has_ValidationResults_Test()
+        public void SpillExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(Spill_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(SpillExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Spill_B_Has_ValidationResults_Test()
+        public void SpillExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(Spill_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(SpillExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void Spill_Every_Property_Has_Get_Set_Test()
@@ -292,93 +292,93 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val30, spill.ValidationResults);
         }
         [TestMethod]
-        public void Spill_A_Every_Property_Has_Get_Set_Test()
+        public void SpillExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               spill_A.MunicipalityTVItemLanguage = val1;
-               Assert.AreEqual(val1, spill_A.MunicipalityTVItemLanguage);
+               spillExtraA.MunicipalityTVItemLanguage = val1;
+               Assert.AreEqual(val1, spillExtraA.MunicipalityTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               spill_A.InfrastructureTVItemLanguage = val2;
-               Assert.AreEqual(val2, spill_A.InfrastructureTVItemLanguage);
+               spillExtraA.InfrastructureTVItemLanguage = val2;
+               Assert.AreEqual(val2, spillExtraA.InfrastructureTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               spill_A.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, spill_A.LastUpdateContactTVItemLanguage);
+               spillExtraA.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, spillExtraA.LastUpdateContactTVItemLanguage);
                int val4 = 45;
-               spill_A.SpillID = val4;
-               Assert.AreEqual(val4, spill_A.SpillID);
+               spillExtraA.SpillID = val4;
+               Assert.AreEqual(val4, spillExtraA.SpillID);
                int val5 = 45;
-               spill_A.MunicipalityTVItemID = val5;
-               Assert.AreEqual(val5, spill_A.MunicipalityTVItemID);
+               spillExtraA.MunicipalityTVItemID = val5;
+               Assert.AreEqual(val5, spillExtraA.MunicipalityTVItemID);
                int val6 = 45;
-               spill_A.InfrastructureTVItemID = val6;
-               Assert.AreEqual(val6, spill_A.InfrastructureTVItemID);
+               spillExtraA.InfrastructureTVItemID = val6;
+               Assert.AreEqual(val6, spillExtraA.InfrastructureTVItemID);
                DateTime val7 = new DateTime(2010, 3, 4);
-               spill_A.StartDateTime_Local = val7;
-               Assert.AreEqual(val7, spill_A.StartDateTime_Local);
+               spillExtraA.StartDateTime_Local = val7;
+               Assert.AreEqual(val7, spillExtraA.StartDateTime_Local);
                DateTime val8 = new DateTime(2010, 3, 4);
-               spill_A.EndDateTime_Local = val8;
-               Assert.AreEqual(val8, spill_A.EndDateTime_Local);
+               spillExtraA.EndDateTime_Local = val8;
+               Assert.AreEqual(val8, spillExtraA.EndDateTime_Local);
                double val9 = 87.9D;
-               spill_A.AverageFlow_m3_day = val9;
-               Assert.AreEqual(val9, spill_A.AverageFlow_m3_day);
+               spillExtraA.AverageFlow_m3_day = val9;
+               Assert.AreEqual(val9, spillExtraA.AverageFlow_m3_day);
                DateTime val10 = new DateTime(2010, 3, 4);
-               spill_A.LastUpdateDate_UTC = val10;
-               Assert.AreEqual(val10, spill_A.LastUpdateDate_UTC);
+               spillExtraA.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, spillExtraA.LastUpdateDate_UTC);
                int val11 = 45;
-               spill_A.LastUpdateContactTVItemID = val11;
-               Assert.AreEqual(val11, spill_A.LastUpdateContactTVItemID);
+               spillExtraA.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, spillExtraA.LastUpdateContactTVItemID);
                bool val12 = true;
-               spill_A.HasErrors = val12;
-               Assert.AreEqual(val12, spill_A.HasErrors);
+               spillExtraA.HasErrors = val12;
+               Assert.AreEqual(val12, spillExtraA.HasErrors);
                IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               spill_A.ValidationResults = val39;
-               Assert.AreEqual(val39, spill_A.ValidationResults);
+               spillExtraA.ValidationResults = val39;
+               Assert.AreEqual(val39, spillExtraA.ValidationResults);
         }
         [TestMethod]
-        public void Spill_B_Every_Property_Has_Get_Set_Test()
+        public void SpillExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               spill_B.SpillReportTest = val1;
-               Assert.AreEqual(val1, spill_B.SpillReportTest);
+               spillExtraB.SpillReportTest = val1;
+               Assert.AreEqual(val1, spillExtraB.SpillReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               spill_B.MunicipalityTVItemLanguage = val2;
-               Assert.AreEqual(val2, spill_B.MunicipalityTVItemLanguage);
+               spillExtraB.MunicipalityTVItemLanguage = val2;
+               Assert.AreEqual(val2, spillExtraB.MunicipalityTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               spill_B.InfrastructureTVItemLanguage = val3;
-               Assert.AreEqual(val3, spill_B.InfrastructureTVItemLanguage);
+               spillExtraB.InfrastructureTVItemLanguage = val3;
+               Assert.AreEqual(val3, spillExtraB.InfrastructureTVItemLanguage);
                TVItemLanguage val4 = new TVItemLanguage();
-               spill_B.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, spill_B.LastUpdateContactTVItemLanguage);
+               spillExtraB.LastUpdateContactTVItemLanguage = val4;
+               Assert.AreEqual(val4, spillExtraB.LastUpdateContactTVItemLanguage);
                int val5 = 45;
-               spill_B.SpillID = val5;
-               Assert.AreEqual(val5, spill_B.SpillID);
+               spillExtraB.SpillID = val5;
+               Assert.AreEqual(val5, spillExtraB.SpillID);
                int val6 = 45;
-               spill_B.MunicipalityTVItemID = val6;
-               Assert.AreEqual(val6, spill_B.MunicipalityTVItemID);
+               spillExtraB.MunicipalityTVItemID = val6;
+               Assert.AreEqual(val6, spillExtraB.MunicipalityTVItemID);
                int val7 = 45;
-               spill_B.InfrastructureTVItemID = val7;
-               Assert.AreEqual(val7, spill_B.InfrastructureTVItemID);
+               spillExtraB.InfrastructureTVItemID = val7;
+               Assert.AreEqual(val7, spillExtraB.InfrastructureTVItemID);
                DateTime val8 = new DateTime(2010, 3, 4);
-               spill_B.StartDateTime_Local = val8;
-               Assert.AreEqual(val8, spill_B.StartDateTime_Local);
+               spillExtraB.StartDateTime_Local = val8;
+               Assert.AreEqual(val8, spillExtraB.StartDateTime_Local);
                DateTime val9 = new DateTime(2010, 3, 4);
-               spill_B.EndDateTime_Local = val9;
-               Assert.AreEqual(val9, spill_B.EndDateTime_Local);
+               spillExtraB.EndDateTime_Local = val9;
+               Assert.AreEqual(val9, spillExtraB.EndDateTime_Local);
                double val10 = 87.9D;
-               spill_B.AverageFlow_m3_day = val10;
-               Assert.AreEqual(val10, spill_B.AverageFlow_m3_day);
+               spillExtraB.AverageFlow_m3_day = val10;
+               Assert.AreEqual(val10, spillExtraB.AverageFlow_m3_day);
                DateTime val11 = new DateTime(2010, 3, 4);
-               spill_B.LastUpdateDate_UTC = val11;
-               Assert.AreEqual(val11, spill_B.LastUpdateDate_UTC);
+               spillExtraB.LastUpdateDate_UTC = val11;
+               Assert.AreEqual(val11, spillExtraB.LastUpdateDate_UTC);
                int val12 = 45;
-               spill_B.LastUpdateContactTVItemID = val12;
-               Assert.AreEqual(val12, spill_B.LastUpdateContactTVItemID);
+               spillExtraB.LastUpdateContactTVItemID = val12;
+               Assert.AreEqual(val12, spillExtraB.LastUpdateContactTVItemID);
                bool val13 = true;
-               spill_B.HasErrors = val13;
-               Assert.AreEqual(val13, spill_B.HasErrors);
+               spillExtraB.HasErrors = val13;
+               Assert.AreEqual(val13, spillExtraB.HasErrors);
                IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               spill_B.ValidationResults = val42;
-               Assert.AreEqual(val42, spill_B.ValidationResults);
+               spillExtraB.ValidationResults = val42;
+               Assert.AreEqual(val42, spillExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

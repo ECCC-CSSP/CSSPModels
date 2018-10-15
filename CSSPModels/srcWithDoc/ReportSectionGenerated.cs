@@ -252,7 +252,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportSection_A : ReportSection
+    public partial class ReportSectionExtraA : ReportSection
     {
         #region Properties
         /// <summary>
@@ -333,13 +333,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ReportSection_A() : base()
+        public ReportSectionExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportSection_B : ReportSection_A
+    public partial class ReportSectionExtraB : ReportSectionExtraA
     {
         #region Properties
         /// <summary>
@@ -372,7 +372,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ReportSection_B() : base()
+        public ReportSectionExtraB() : base()
         {
         }
         #endregion Constructors

@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private VPAmbient vPAmbient { get; set; }
-        private VPAmbient_A vPAmbient_A { get; set; }
-        private VPAmbient_B vPAmbient_B { get; set; }
+        private VPAmbientExtraA vPAmbientExtraA { get; set; }
+        private VPAmbientExtraB vPAmbientExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public VPAmbientTest()
         {
             vPAmbient = new VPAmbient();
-            vPAmbient_A = new VPAmbient_A();
-            vPAmbient_B = new VPAmbient_B();
+            vPAmbientExtraA = new VPAmbientExtraA();
+            vPAmbientExtraB = new VPAmbientExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void VPAmbient_A_Properties_Test()
+        public void VPAmbientExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "VPAmbientID", "VPScenarioID", "Row", "MeasurementDepth_m", "CurrentSpeed_m_s", "CurrentDirection_deg", "AmbientSalinity_PSU", "AmbientTemperature_C", "BackgroundConcentration_MPN_100ml", "PollutantDecayRate_per_day", "FarFieldCurrentSpeed_m_s", "FarFieldCurrentDirection_deg", "FarFieldDiffusionCoefficient", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPAmbient_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(VPAmbientExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPAmbient_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(VPAmbientExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void VPAmbient_B_Properties_Test()
+        public void VPAmbientExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "VPAmbientReportTest", "LastUpdateContactTVItemLanguage", "VPAmbientID", "VPScenarioID", "Row", "MeasurementDepth_m", "CurrentSpeed_m_s", "CurrentDirection_deg", "AmbientSalinity_PSU", "AmbientTemperature_C", "BackgroundConcentration_MPN_100ml", "PollutantDecayRate_per_day", "FarFieldCurrentSpeed_m_s", "FarFieldCurrentDirection_deg", "FarFieldDiffusionCoefficient", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPAmbient_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(VPAmbientExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPAmbient_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(VPAmbientExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void VPAmbient_A_Navigation_Test()
+        public void VPAmbientExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPAmbient_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(VPAmbientExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPAmbient_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(VPAmbientExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void VPAmbient_B_Navigation_Test()
+        public void VPAmbientExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPAmbient_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(VPAmbientExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPAmbient_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(VPAmbientExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(VPAmbient).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void VPAmbient_A_Has_ValidationResults_Test()
+        public void VPAmbientExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(VPAmbient_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(VPAmbientExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void VPAmbient_B_Has_ValidationResults_Test()
+        public void VPAmbientExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(VPAmbient_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(VPAmbientExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void VPAmbient_Every_Property_Has_Get_Set_Test()
@@ -313,123 +313,123 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val51, vPAmbient.ValidationResults);
         }
         [TestMethod]
-        public void VPAmbient_A_Every_Property_Has_Get_Set_Test()
+        public void VPAmbientExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               vPAmbient_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, vPAmbient_A.LastUpdateContactTVItemLanguage);
+               vPAmbientExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, vPAmbientExtraA.LastUpdateContactTVItemLanguage);
                int val2 = 45;
-               vPAmbient_A.VPAmbientID = val2;
-               Assert.AreEqual(val2, vPAmbient_A.VPAmbientID);
+               vPAmbientExtraA.VPAmbientID = val2;
+               Assert.AreEqual(val2, vPAmbientExtraA.VPAmbientID);
                int val3 = 45;
-               vPAmbient_A.VPScenarioID = val3;
-               Assert.AreEqual(val3, vPAmbient_A.VPScenarioID);
+               vPAmbientExtraA.VPScenarioID = val3;
+               Assert.AreEqual(val3, vPAmbientExtraA.VPScenarioID);
                int val4 = 45;
-               vPAmbient_A.Row = val4;
-               Assert.AreEqual(val4, vPAmbient_A.Row);
+               vPAmbientExtraA.Row = val4;
+               Assert.AreEqual(val4, vPAmbientExtraA.Row);
                double val5 = 87.9D;
-               vPAmbient_A.MeasurementDepth_m = val5;
-               Assert.AreEqual(val5, vPAmbient_A.MeasurementDepth_m);
+               vPAmbientExtraA.MeasurementDepth_m = val5;
+               Assert.AreEqual(val5, vPAmbientExtraA.MeasurementDepth_m);
                double val6 = 87.9D;
-               vPAmbient_A.CurrentSpeed_m_s = val6;
-               Assert.AreEqual(val6, vPAmbient_A.CurrentSpeed_m_s);
+               vPAmbientExtraA.CurrentSpeed_m_s = val6;
+               Assert.AreEqual(val6, vPAmbientExtraA.CurrentSpeed_m_s);
                double val7 = 87.9D;
-               vPAmbient_A.CurrentDirection_deg = val7;
-               Assert.AreEqual(val7, vPAmbient_A.CurrentDirection_deg);
+               vPAmbientExtraA.CurrentDirection_deg = val7;
+               Assert.AreEqual(val7, vPAmbientExtraA.CurrentDirection_deg);
                double val8 = 87.9D;
-               vPAmbient_A.AmbientSalinity_PSU = val8;
-               Assert.AreEqual(val8, vPAmbient_A.AmbientSalinity_PSU);
+               vPAmbientExtraA.AmbientSalinity_PSU = val8;
+               Assert.AreEqual(val8, vPAmbientExtraA.AmbientSalinity_PSU);
                double val9 = 87.9D;
-               vPAmbient_A.AmbientTemperature_C = val9;
-               Assert.AreEqual(val9, vPAmbient_A.AmbientTemperature_C);
+               vPAmbientExtraA.AmbientTemperature_C = val9;
+               Assert.AreEqual(val9, vPAmbientExtraA.AmbientTemperature_C);
                int val10 = 45;
-               vPAmbient_A.BackgroundConcentration_MPN_100ml = val10;
-               Assert.AreEqual(val10, vPAmbient_A.BackgroundConcentration_MPN_100ml);
+               vPAmbientExtraA.BackgroundConcentration_MPN_100ml = val10;
+               Assert.AreEqual(val10, vPAmbientExtraA.BackgroundConcentration_MPN_100ml);
                double val11 = 87.9D;
-               vPAmbient_A.PollutantDecayRate_per_day = val11;
-               Assert.AreEqual(val11, vPAmbient_A.PollutantDecayRate_per_day);
+               vPAmbientExtraA.PollutantDecayRate_per_day = val11;
+               Assert.AreEqual(val11, vPAmbientExtraA.PollutantDecayRate_per_day);
                double val12 = 87.9D;
-               vPAmbient_A.FarFieldCurrentSpeed_m_s = val12;
-               Assert.AreEqual(val12, vPAmbient_A.FarFieldCurrentSpeed_m_s);
+               vPAmbientExtraA.FarFieldCurrentSpeed_m_s = val12;
+               Assert.AreEqual(val12, vPAmbientExtraA.FarFieldCurrentSpeed_m_s);
                double val13 = 87.9D;
-               vPAmbient_A.FarFieldCurrentDirection_deg = val13;
-               Assert.AreEqual(val13, vPAmbient_A.FarFieldCurrentDirection_deg);
+               vPAmbientExtraA.FarFieldCurrentDirection_deg = val13;
+               Assert.AreEqual(val13, vPAmbientExtraA.FarFieldCurrentDirection_deg);
                double val14 = 87.9D;
-               vPAmbient_A.FarFieldDiffusionCoefficient = val14;
-               Assert.AreEqual(val14, vPAmbient_A.FarFieldDiffusionCoefficient);
+               vPAmbientExtraA.FarFieldDiffusionCoefficient = val14;
+               Assert.AreEqual(val14, vPAmbientExtraA.FarFieldDiffusionCoefficient);
                DateTime val15 = new DateTime(2010, 3, 4);
-               vPAmbient_A.LastUpdateDate_UTC = val15;
-               Assert.AreEqual(val15, vPAmbient_A.LastUpdateDate_UTC);
+               vPAmbientExtraA.LastUpdateDate_UTC = val15;
+               Assert.AreEqual(val15, vPAmbientExtraA.LastUpdateDate_UTC);
                int val16 = 45;
-               vPAmbient_A.LastUpdateContactTVItemID = val16;
-               Assert.AreEqual(val16, vPAmbient_A.LastUpdateContactTVItemID);
+               vPAmbientExtraA.LastUpdateContactTVItemID = val16;
+               Assert.AreEqual(val16, vPAmbientExtraA.LastUpdateContactTVItemID);
                bool val17 = true;
-               vPAmbient_A.HasErrors = val17;
-               Assert.AreEqual(val17, vPAmbient_A.HasErrors);
+               vPAmbientExtraA.HasErrors = val17;
+               Assert.AreEqual(val17, vPAmbientExtraA.HasErrors);
                IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               vPAmbient_A.ValidationResults = val54;
-               Assert.AreEqual(val54, vPAmbient_A.ValidationResults);
+               vPAmbientExtraA.ValidationResults = val54;
+               Assert.AreEqual(val54, vPAmbientExtraA.ValidationResults);
         }
         [TestMethod]
-        public void VPAmbient_B_Every_Property_Has_Get_Set_Test()
+        public void VPAmbientExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               vPAmbient_B.VPAmbientReportTest = val1;
-               Assert.AreEqual(val1, vPAmbient_B.VPAmbientReportTest);
+               vPAmbientExtraB.VPAmbientReportTest = val1;
+               Assert.AreEqual(val1, vPAmbientExtraB.VPAmbientReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               vPAmbient_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, vPAmbient_B.LastUpdateContactTVItemLanguage);
+               vPAmbientExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, vPAmbientExtraB.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               vPAmbient_B.VPAmbientID = val3;
-               Assert.AreEqual(val3, vPAmbient_B.VPAmbientID);
+               vPAmbientExtraB.VPAmbientID = val3;
+               Assert.AreEqual(val3, vPAmbientExtraB.VPAmbientID);
                int val4 = 45;
-               vPAmbient_B.VPScenarioID = val4;
-               Assert.AreEqual(val4, vPAmbient_B.VPScenarioID);
+               vPAmbientExtraB.VPScenarioID = val4;
+               Assert.AreEqual(val4, vPAmbientExtraB.VPScenarioID);
                int val5 = 45;
-               vPAmbient_B.Row = val5;
-               Assert.AreEqual(val5, vPAmbient_B.Row);
+               vPAmbientExtraB.Row = val5;
+               Assert.AreEqual(val5, vPAmbientExtraB.Row);
                double val6 = 87.9D;
-               vPAmbient_B.MeasurementDepth_m = val6;
-               Assert.AreEqual(val6, vPAmbient_B.MeasurementDepth_m);
+               vPAmbientExtraB.MeasurementDepth_m = val6;
+               Assert.AreEqual(val6, vPAmbientExtraB.MeasurementDepth_m);
                double val7 = 87.9D;
-               vPAmbient_B.CurrentSpeed_m_s = val7;
-               Assert.AreEqual(val7, vPAmbient_B.CurrentSpeed_m_s);
+               vPAmbientExtraB.CurrentSpeed_m_s = val7;
+               Assert.AreEqual(val7, vPAmbientExtraB.CurrentSpeed_m_s);
                double val8 = 87.9D;
-               vPAmbient_B.CurrentDirection_deg = val8;
-               Assert.AreEqual(val8, vPAmbient_B.CurrentDirection_deg);
+               vPAmbientExtraB.CurrentDirection_deg = val8;
+               Assert.AreEqual(val8, vPAmbientExtraB.CurrentDirection_deg);
                double val9 = 87.9D;
-               vPAmbient_B.AmbientSalinity_PSU = val9;
-               Assert.AreEqual(val9, vPAmbient_B.AmbientSalinity_PSU);
+               vPAmbientExtraB.AmbientSalinity_PSU = val9;
+               Assert.AreEqual(val9, vPAmbientExtraB.AmbientSalinity_PSU);
                double val10 = 87.9D;
-               vPAmbient_B.AmbientTemperature_C = val10;
-               Assert.AreEqual(val10, vPAmbient_B.AmbientTemperature_C);
+               vPAmbientExtraB.AmbientTemperature_C = val10;
+               Assert.AreEqual(val10, vPAmbientExtraB.AmbientTemperature_C);
                int val11 = 45;
-               vPAmbient_B.BackgroundConcentration_MPN_100ml = val11;
-               Assert.AreEqual(val11, vPAmbient_B.BackgroundConcentration_MPN_100ml);
+               vPAmbientExtraB.BackgroundConcentration_MPN_100ml = val11;
+               Assert.AreEqual(val11, vPAmbientExtraB.BackgroundConcentration_MPN_100ml);
                double val12 = 87.9D;
-               vPAmbient_B.PollutantDecayRate_per_day = val12;
-               Assert.AreEqual(val12, vPAmbient_B.PollutantDecayRate_per_day);
+               vPAmbientExtraB.PollutantDecayRate_per_day = val12;
+               Assert.AreEqual(val12, vPAmbientExtraB.PollutantDecayRate_per_day);
                double val13 = 87.9D;
-               vPAmbient_B.FarFieldCurrentSpeed_m_s = val13;
-               Assert.AreEqual(val13, vPAmbient_B.FarFieldCurrentSpeed_m_s);
+               vPAmbientExtraB.FarFieldCurrentSpeed_m_s = val13;
+               Assert.AreEqual(val13, vPAmbientExtraB.FarFieldCurrentSpeed_m_s);
                double val14 = 87.9D;
-               vPAmbient_B.FarFieldCurrentDirection_deg = val14;
-               Assert.AreEqual(val14, vPAmbient_B.FarFieldCurrentDirection_deg);
+               vPAmbientExtraB.FarFieldCurrentDirection_deg = val14;
+               Assert.AreEqual(val14, vPAmbientExtraB.FarFieldCurrentDirection_deg);
                double val15 = 87.9D;
-               vPAmbient_B.FarFieldDiffusionCoefficient = val15;
-               Assert.AreEqual(val15, vPAmbient_B.FarFieldDiffusionCoefficient);
+               vPAmbientExtraB.FarFieldDiffusionCoefficient = val15;
+               Assert.AreEqual(val15, vPAmbientExtraB.FarFieldDiffusionCoefficient);
                DateTime val16 = new DateTime(2010, 3, 4);
-               vPAmbient_B.LastUpdateDate_UTC = val16;
-               Assert.AreEqual(val16, vPAmbient_B.LastUpdateDate_UTC);
+               vPAmbientExtraB.LastUpdateDate_UTC = val16;
+               Assert.AreEqual(val16, vPAmbientExtraB.LastUpdateDate_UTC);
                int val17 = 45;
-               vPAmbient_B.LastUpdateContactTVItemID = val17;
-               Assert.AreEqual(val17, vPAmbient_B.LastUpdateContactTVItemID);
+               vPAmbientExtraB.LastUpdateContactTVItemID = val17;
+               Assert.AreEqual(val17, vPAmbientExtraB.LastUpdateContactTVItemID);
                bool val18 = true;
-               vPAmbient_B.HasErrors = val18;
-               Assert.AreEqual(val18, vPAmbient_B.HasErrors);
+               vPAmbientExtraB.HasErrors = val18;
+               Assert.AreEqual(val18, vPAmbientExtraB.HasErrors);
                IEnumerable<ValidationResult> val57 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               vPAmbient_B.ValidationResults = val57;
-               Assert.AreEqual(val57, vPAmbient_B.ValidationResults);
+               vPAmbientExtraB.ValidationResults = val57;
+               Assert.AreEqual(val57, vPAmbientExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

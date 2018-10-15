@@ -110,7 +110,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanSubsector_A : SamplingPlanSubsector
+    public partial class SamplingPlanSubsectorExtraA : SamplingPlanSubsector
     {
         #region Properties
         /// <summary>
@@ -166,13 +166,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public SamplingPlanSubsector_A() : base()
+        public SamplingPlanSubsectorExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanSubsector_B : SamplingPlanSubsector_A
+    public partial class SamplingPlanSubsectorExtraB : SamplingPlanSubsectorExtraA
     {
         #region Properties
         /// <summary>
@@ -205,7 +205,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public SamplingPlanSubsector_B() : base()
+        public SamplingPlanSubsectorExtraB() : base()
         {
         }
         #endregion Constructors

@@ -94,7 +94,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RainExceedance_A : RainExceedance
+    public partial class RainExceedanceExtraA : RainExceedance
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -106,13 +106,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public RainExceedance_A() : base()
+        public RainExceedanceExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RainExceedance_B : RainExceedance_A
+    public partial class RainExceedanceExtraB : RainExceedanceExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -125,7 +125,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public RainExceedance_B() : base()
+        public RainExceedanceExtraB() : base()
         {
         }
         #endregion Constructors

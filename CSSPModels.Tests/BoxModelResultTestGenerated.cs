@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private BoxModelResult boxModelResult { get; set; }
-        private BoxModelResult_A boxModelResult_A { get; set; }
-        private BoxModelResult_B boxModelResult_B { get; set; }
+        private BoxModelResultExtraA boxModelResultExtraA { get; set; }
+        private BoxModelResultExtraB boxModelResultExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public BoxModelResultTest()
         {
             boxModelResult = new BoxModelResult();
-            boxModelResult_A = new BoxModelResult_A();
-            boxModelResult_B = new BoxModelResult_B();
+            boxModelResultExtraA = new BoxModelResultExtraA();
+            boxModelResultExtraB = new BoxModelResultExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void BoxModelResult_A_Properties_Test()
+        public void BoxModelResultExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "BoxModelResultTypeText", "BoxModelResultID", "BoxModelID", "BoxModelResultType", "Volume_m3", "Surface_m2", "Radius_m", "LeftSideDiameterLineAngle_deg", "CircleCenterLatitude", "CircleCenterLongitude", "FixLength", "FixWidth", "RectLength_m", "RectWidth_m", "LeftSideLineAngle_deg", "LeftSideLineStartLatitude", "LeftSideLineStartLongitude", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModelResult_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModelResult_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void BoxModelResult_B_Properties_Test()
+        public void BoxModelResultExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "BoxModelResultReportTest", "LastUpdateContactTVItemLanguage", "BoxModelResultTypeText", "BoxModelResultID", "BoxModelID", "BoxModelResultType", "Volume_m3", "Surface_m2", "Radius_m", "LeftSideDiameterLineAngle_deg", "CircleCenterLatitude", "CircleCenterLongitude", "FixLength", "FixWidth", "RectLength_m", "RectWidth_m", "LeftSideLineAngle_deg", "LeftSideLineStartLatitude", "LeftSideLineStartLongitude", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModelResult_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModelResult_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void BoxModelResult_A_Navigation_Test()
+        public void BoxModelResultExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModelResult_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModelResult_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void BoxModelResult_B_Navigation_Test()
+        public void BoxModelResultExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModelResult_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModelResult_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelResultExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(BoxModelResult).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void BoxModelResult_A_Has_ValidationResults_Test()
+        public void BoxModelResultExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(BoxModelResult_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(BoxModelResultExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void BoxModelResult_B_Has_ValidationResults_Test()
+        public void BoxModelResultExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(BoxModelResult_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(BoxModelResultExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void BoxModelResult_Every_Property_Has_Get_Set_Test()
@@ -322,147 +322,147 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val60, boxModelResult.ValidationResults);
         }
         [TestMethod]
-        public void BoxModelResult_A_Every_Property_Has_Get_Set_Test()
+        public void BoxModelResultExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               boxModelResult_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, boxModelResult_A.LastUpdateContactTVItemLanguage);
+               boxModelResultExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, boxModelResultExtraA.LastUpdateContactTVItemLanguage);
                string val2 = "Some text";
-               boxModelResult_A.BoxModelResultTypeText = val2;
-               Assert.AreEqual(val2, boxModelResult_A.BoxModelResultTypeText);
+               boxModelResultExtraA.BoxModelResultTypeText = val2;
+               Assert.AreEqual(val2, boxModelResultExtraA.BoxModelResultTypeText);
                int val3 = 45;
-               boxModelResult_A.BoxModelResultID = val3;
-               Assert.AreEqual(val3, boxModelResult_A.BoxModelResultID);
+               boxModelResultExtraA.BoxModelResultID = val3;
+               Assert.AreEqual(val3, boxModelResultExtraA.BoxModelResultID);
                int val4 = 45;
-               boxModelResult_A.BoxModelID = val4;
-               Assert.AreEqual(val4, boxModelResult_A.BoxModelID);
+               boxModelResultExtraA.BoxModelID = val4;
+               Assert.AreEqual(val4, boxModelResultExtraA.BoxModelID);
                BoxModelResultTypeEnum val5 = (BoxModelResultTypeEnum)3;
-               boxModelResult_A.BoxModelResultType = val5;
-               Assert.AreEqual(val5, boxModelResult_A.BoxModelResultType);
+               boxModelResultExtraA.BoxModelResultType = val5;
+               Assert.AreEqual(val5, boxModelResultExtraA.BoxModelResultType);
                double val6 = 87.9D;
-               boxModelResult_A.Volume_m3 = val6;
-               Assert.AreEqual(val6, boxModelResult_A.Volume_m3);
+               boxModelResultExtraA.Volume_m3 = val6;
+               Assert.AreEqual(val6, boxModelResultExtraA.Volume_m3);
                double val7 = 87.9D;
-               boxModelResult_A.Surface_m2 = val7;
-               Assert.AreEqual(val7, boxModelResult_A.Surface_m2);
+               boxModelResultExtraA.Surface_m2 = val7;
+               Assert.AreEqual(val7, boxModelResultExtraA.Surface_m2);
                double val8 = 87.9D;
-               boxModelResult_A.Radius_m = val8;
-               Assert.AreEqual(val8, boxModelResult_A.Radius_m);
+               boxModelResultExtraA.Radius_m = val8;
+               Assert.AreEqual(val8, boxModelResultExtraA.Radius_m);
                double val9 = 87.9D;
-               boxModelResult_A.LeftSideDiameterLineAngle_deg = val9;
-               Assert.AreEqual(val9, boxModelResult_A.LeftSideDiameterLineAngle_deg);
+               boxModelResultExtraA.LeftSideDiameterLineAngle_deg = val9;
+               Assert.AreEqual(val9, boxModelResultExtraA.LeftSideDiameterLineAngle_deg);
                double val10 = 87.9D;
-               boxModelResult_A.CircleCenterLatitude = val10;
-               Assert.AreEqual(val10, boxModelResult_A.CircleCenterLatitude);
+               boxModelResultExtraA.CircleCenterLatitude = val10;
+               Assert.AreEqual(val10, boxModelResultExtraA.CircleCenterLatitude);
                double val11 = 87.9D;
-               boxModelResult_A.CircleCenterLongitude = val11;
-               Assert.AreEqual(val11, boxModelResult_A.CircleCenterLongitude);
+               boxModelResultExtraA.CircleCenterLongitude = val11;
+               Assert.AreEqual(val11, boxModelResultExtraA.CircleCenterLongitude);
                bool val12 = true;
-               boxModelResult_A.FixLength = val12;
-               Assert.AreEqual(val12, boxModelResult_A.FixLength);
+               boxModelResultExtraA.FixLength = val12;
+               Assert.AreEqual(val12, boxModelResultExtraA.FixLength);
                bool val13 = true;
-               boxModelResult_A.FixWidth = val13;
-               Assert.AreEqual(val13, boxModelResult_A.FixWidth);
+               boxModelResultExtraA.FixWidth = val13;
+               Assert.AreEqual(val13, boxModelResultExtraA.FixWidth);
                double val14 = 87.9D;
-               boxModelResult_A.RectLength_m = val14;
-               Assert.AreEqual(val14, boxModelResult_A.RectLength_m);
+               boxModelResultExtraA.RectLength_m = val14;
+               Assert.AreEqual(val14, boxModelResultExtraA.RectLength_m);
                double val15 = 87.9D;
-               boxModelResult_A.RectWidth_m = val15;
-               Assert.AreEqual(val15, boxModelResult_A.RectWidth_m);
+               boxModelResultExtraA.RectWidth_m = val15;
+               Assert.AreEqual(val15, boxModelResultExtraA.RectWidth_m);
                double val16 = 87.9D;
-               boxModelResult_A.LeftSideLineAngle_deg = val16;
-               Assert.AreEqual(val16, boxModelResult_A.LeftSideLineAngle_deg);
+               boxModelResultExtraA.LeftSideLineAngle_deg = val16;
+               Assert.AreEqual(val16, boxModelResultExtraA.LeftSideLineAngle_deg);
                double val17 = 87.9D;
-               boxModelResult_A.LeftSideLineStartLatitude = val17;
-               Assert.AreEqual(val17, boxModelResult_A.LeftSideLineStartLatitude);
+               boxModelResultExtraA.LeftSideLineStartLatitude = val17;
+               Assert.AreEqual(val17, boxModelResultExtraA.LeftSideLineStartLatitude);
                double val18 = 87.9D;
-               boxModelResult_A.LeftSideLineStartLongitude = val18;
-               Assert.AreEqual(val18, boxModelResult_A.LeftSideLineStartLongitude);
+               boxModelResultExtraA.LeftSideLineStartLongitude = val18;
+               Assert.AreEqual(val18, boxModelResultExtraA.LeftSideLineStartLongitude);
                DateTime val19 = new DateTime(2010, 3, 4);
-               boxModelResult_A.LastUpdateDate_UTC = val19;
-               Assert.AreEqual(val19, boxModelResult_A.LastUpdateDate_UTC);
+               boxModelResultExtraA.LastUpdateDate_UTC = val19;
+               Assert.AreEqual(val19, boxModelResultExtraA.LastUpdateDate_UTC);
                int val20 = 45;
-               boxModelResult_A.LastUpdateContactTVItemID = val20;
-               Assert.AreEqual(val20, boxModelResult_A.LastUpdateContactTVItemID);
+               boxModelResultExtraA.LastUpdateContactTVItemID = val20;
+               Assert.AreEqual(val20, boxModelResultExtraA.LastUpdateContactTVItemID);
                bool val21 = true;
-               boxModelResult_A.HasErrors = val21;
-               Assert.AreEqual(val21, boxModelResult_A.HasErrors);
+               boxModelResultExtraA.HasErrors = val21;
+               Assert.AreEqual(val21, boxModelResultExtraA.HasErrors);
                IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               boxModelResult_A.ValidationResults = val66;
-               Assert.AreEqual(val66, boxModelResult_A.ValidationResults);
+               boxModelResultExtraA.ValidationResults = val66;
+               Assert.AreEqual(val66, boxModelResultExtraA.ValidationResults);
         }
         [TestMethod]
-        public void BoxModelResult_B_Every_Property_Has_Get_Set_Test()
+        public void BoxModelResultExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               boxModelResult_B.BoxModelResultReportTest = val1;
-               Assert.AreEqual(val1, boxModelResult_B.BoxModelResultReportTest);
+               boxModelResultExtraB.BoxModelResultReportTest = val1;
+               Assert.AreEqual(val1, boxModelResultExtraB.BoxModelResultReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               boxModelResult_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, boxModelResult_B.LastUpdateContactTVItemLanguage);
+               boxModelResultExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, boxModelResultExtraB.LastUpdateContactTVItemLanguage);
                string val3 = "Some text";
-               boxModelResult_B.BoxModelResultTypeText = val3;
-               Assert.AreEqual(val3, boxModelResult_B.BoxModelResultTypeText);
+               boxModelResultExtraB.BoxModelResultTypeText = val3;
+               Assert.AreEqual(val3, boxModelResultExtraB.BoxModelResultTypeText);
                int val4 = 45;
-               boxModelResult_B.BoxModelResultID = val4;
-               Assert.AreEqual(val4, boxModelResult_B.BoxModelResultID);
+               boxModelResultExtraB.BoxModelResultID = val4;
+               Assert.AreEqual(val4, boxModelResultExtraB.BoxModelResultID);
                int val5 = 45;
-               boxModelResult_B.BoxModelID = val5;
-               Assert.AreEqual(val5, boxModelResult_B.BoxModelID);
+               boxModelResultExtraB.BoxModelID = val5;
+               Assert.AreEqual(val5, boxModelResultExtraB.BoxModelID);
                BoxModelResultTypeEnum val6 = (BoxModelResultTypeEnum)3;
-               boxModelResult_B.BoxModelResultType = val6;
-               Assert.AreEqual(val6, boxModelResult_B.BoxModelResultType);
+               boxModelResultExtraB.BoxModelResultType = val6;
+               Assert.AreEqual(val6, boxModelResultExtraB.BoxModelResultType);
                double val7 = 87.9D;
-               boxModelResult_B.Volume_m3 = val7;
-               Assert.AreEqual(val7, boxModelResult_B.Volume_m3);
+               boxModelResultExtraB.Volume_m3 = val7;
+               Assert.AreEqual(val7, boxModelResultExtraB.Volume_m3);
                double val8 = 87.9D;
-               boxModelResult_B.Surface_m2 = val8;
-               Assert.AreEqual(val8, boxModelResult_B.Surface_m2);
+               boxModelResultExtraB.Surface_m2 = val8;
+               Assert.AreEqual(val8, boxModelResultExtraB.Surface_m2);
                double val9 = 87.9D;
-               boxModelResult_B.Radius_m = val9;
-               Assert.AreEqual(val9, boxModelResult_B.Radius_m);
+               boxModelResultExtraB.Radius_m = val9;
+               Assert.AreEqual(val9, boxModelResultExtraB.Radius_m);
                double val10 = 87.9D;
-               boxModelResult_B.LeftSideDiameterLineAngle_deg = val10;
-               Assert.AreEqual(val10, boxModelResult_B.LeftSideDiameterLineAngle_deg);
+               boxModelResultExtraB.LeftSideDiameterLineAngle_deg = val10;
+               Assert.AreEqual(val10, boxModelResultExtraB.LeftSideDiameterLineAngle_deg);
                double val11 = 87.9D;
-               boxModelResult_B.CircleCenterLatitude = val11;
-               Assert.AreEqual(val11, boxModelResult_B.CircleCenterLatitude);
+               boxModelResultExtraB.CircleCenterLatitude = val11;
+               Assert.AreEqual(val11, boxModelResultExtraB.CircleCenterLatitude);
                double val12 = 87.9D;
-               boxModelResult_B.CircleCenterLongitude = val12;
-               Assert.AreEqual(val12, boxModelResult_B.CircleCenterLongitude);
+               boxModelResultExtraB.CircleCenterLongitude = val12;
+               Assert.AreEqual(val12, boxModelResultExtraB.CircleCenterLongitude);
                bool val13 = true;
-               boxModelResult_B.FixLength = val13;
-               Assert.AreEqual(val13, boxModelResult_B.FixLength);
+               boxModelResultExtraB.FixLength = val13;
+               Assert.AreEqual(val13, boxModelResultExtraB.FixLength);
                bool val14 = true;
-               boxModelResult_B.FixWidth = val14;
-               Assert.AreEqual(val14, boxModelResult_B.FixWidth);
+               boxModelResultExtraB.FixWidth = val14;
+               Assert.AreEqual(val14, boxModelResultExtraB.FixWidth);
                double val15 = 87.9D;
-               boxModelResult_B.RectLength_m = val15;
-               Assert.AreEqual(val15, boxModelResult_B.RectLength_m);
+               boxModelResultExtraB.RectLength_m = val15;
+               Assert.AreEqual(val15, boxModelResultExtraB.RectLength_m);
                double val16 = 87.9D;
-               boxModelResult_B.RectWidth_m = val16;
-               Assert.AreEqual(val16, boxModelResult_B.RectWidth_m);
+               boxModelResultExtraB.RectWidth_m = val16;
+               Assert.AreEqual(val16, boxModelResultExtraB.RectWidth_m);
                double val17 = 87.9D;
-               boxModelResult_B.LeftSideLineAngle_deg = val17;
-               Assert.AreEqual(val17, boxModelResult_B.LeftSideLineAngle_deg);
+               boxModelResultExtraB.LeftSideLineAngle_deg = val17;
+               Assert.AreEqual(val17, boxModelResultExtraB.LeftSideLineAngle_deg);
                double val18 = 87.9D;
-               boxModelResult_B.LeftSideLineStartLatitude = val18;
-               Assert.AreEqual(val18, boxModelResult_B.LeftSideLineStartLatitude);
+               boxModelResultExtraB.LeftSideLineStartLatitude = val18;
+               Assert.AreEqual(val18, boxModelResultExtraB.LeftSideLineStartLatitude);
                double val19 = 87.9D;
-               boxModelResult_B.LeftSideLineStartLongitude = val19;
-               Assert.AreEqual(val19, boxModelResult_B.LeftSideLineStartLongitude);
+               boxModelResultExtraB.LeftSideLineStartLongitude = val19;
+               Assert.AreEqual(val19, boxModelResultExtraB.LeftSideLineStartLongitude);
                DateTime val20 = new DateTime(2010, 3, 4);
-               boxModelResult_B.LastUpdateDate_UTC = val20;
-               Assert.AreEqual(val20, boxModelResult_B.LastUpdateDate_UTC);
+               boxModelResultExtraB.LastUpdateDate_UTC = val20;
+               Assert.AreEqual(val20, boxModelResultExtraB.LastUpdateDate_UTC);
                int val21 = 45;
-               boxModelResult_B.LastUpdateContactTVItemID = val21;
-               Assert.AreEqual(val21, boxModelResult_B.LastUpdateContactTVItemID);
+               boxModelResultExtraB.LastUpdateContactTVItemID = val21;
+               Assert.AreEqual(val21, boxModelResultExtraB.LastUpdateContactTVItemID);
                bool val22 = true;
-               boxModelResult_B.HasErrors = val22;
-               Assert.AreEqual(val22, boxModelResult_B.HasErrors);
+               boxModelResultExtraB.HasErrors = val22;
+               Assert.AreEqual(val22, boxModelResultExtraB.HasErrors);
                IEnumerable<ValidationResult> val69 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               boxModelResult_B.ValidationResults = val69;
-               Assert.AreEqual(val69, boxModelResult_B.ValidationResults);
+               boxModelResultExtraB.ValidationResults = val69;
+               Assert.AreEqual(val69, boxModelResultExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

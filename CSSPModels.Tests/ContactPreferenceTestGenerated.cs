@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private ContactPreference contactPreference { get; set; }
-        private ContactPreference_A contactPreference_A { get; set; }
-        private ContactPreference_B contactPreference_B { get; set; }
+        private ContactPreferenceExtraA contactPreferenceExtraA { get; set; }
+        private ContactPreferenceExtraB contactPreferenceExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public ContactPreferenceTest()
         {
             contactPreference = new ContactPreference();
-            contactPreference_A = new ContactPreference_A();
-            contactPreference_B = new ContactPreference_B();
+            contactPreferenceExtraA = new ContactPreferenceExtraA();
+            contactPreferenceExtraB = new ContactPreferenceExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ContactPreference_A_Properties_Test()
+        public void ContactPreferenceExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "TVTypeText", "ContactPreferenceID", "ContactID", "TVType", "MarkerSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ContactPreference_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(ContactPreferenceExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ContactPreference_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ContactPreferenceExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ContactPreference_B_Properties_Test()
+        public void ContactPreferenceExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactPreferenceReportTest", "LastUpdateContactTVItemLanguage", "TVTypeText", "ContactPreferenceID", "ContactID", "TVType", "MarkerSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ContactPreference_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(ContactPreferenceExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ContactPreference_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ContactPreferenceExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ContactPreference_A_Navigation_Test()
+        public void ContactPreferenceExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ContactPreference_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(ContactPreferenceExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ContactPreference_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ContactPreferenceExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ContactPreference_B_Navigation_Test()
+        public void ContactPreferenceExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ContactPreference_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(ContactPreferenceExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ContactPreference_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ContactPreferenceExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(ContactPreference).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ContactPreference_A_Has_ValidationResults_Test()
+        public void ContactPreferenceExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(ContactPreference_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(ContactPreferenceExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ContactPreference_B_Has_ValidationResults_Test()
+        public void ContactPreferenceExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(ContactPreference_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(ContactPreferenceExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void ContactPreference_Every_Property_Has_Get_Set_Test()
@@ -286,75 +286,75 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val24, contactPreference.ValidationResults);
         }
         [TestMethod]
-        public void ContactPreference_A_Every_Property_Has_Get_Set_Test()
+        public void ContactPreferenceExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               contactPreference_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, contactPreference_A.LastUpdateContactTVItemLanguage);
+               contactPreferenceExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, contactPreferenceExtraA.LastUpdateContactTVItemLanguage);
                string val2 = "Some text";
-               contactPreference_A.TVTypeText = val2;
-               Assert.AreEqual(val2, contactPreference_A.TVTypeText);
+               contactPreferenceExtraA.TVTypeText = val2;
+               Assert.AreEqual(val2, contactPreferenceExtraA.TVTypeText);
                int val3 = 45;
-               contactPreference_A.ContactPreferenceID = val3;
-               Assert.AreEqual(val3, contactPreference_A.ContactPreferenceID);
+               contactPreferenceExtraA.ContactPreferenceID = val3;
+               Assert.AreEqual(val3, contactPreferenceExtraA.ContactPreferenceID);
                int val4 = 45;
-               contactPreference_A.ContactID = val4;
-               Assert.AreEqual(val4, contactPreference_A.ContactID);
+               contactPreferenceExtraA.ContactID = val4;
+               Assert.AreEqual(val4, contactPreferenceExtraA.ContactID);
                TVTypeEnum val5 = (TVTypeEnum)3;
-               contactPreference_A.TVType = val5;
-               Assert.AreEqual(val5, contactPreference_A.TVType);
+               contactPreferenceExtraA.TVType = val5;
+               Assert.AreEqual(val5, contactPreferenceExtraA.TVType);
                int val6 = 45;
-               contactPreference_A.MarkerSize = val6;
-               Assert.AreEqual(val6, contactPreference_A.MarkerSize);
+               contactPreferenceExtraA.MarkerSize = val6;
+               Assert.AreEqual(val6, contactPreferenceExtraA.MarkerSize);
                DateTime val7 = new DateTime(2010, 3, 4);
-               contactPreference_A.LastUpdateDate_UTC = val7;
-               Assert.AreEqual(val7, contactPreference_A.LastUpdateDate_UTC);
+               contactPreferenceExtraA.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, contactPreferenceExtraA.LastUpdateDate_UTC);
                int val8 = 45;
-               contactPreference_A.LastUpdateContactTVItemID = val8;
-               Assert.AreEqual(val8, contactPreference_A.LastUpdateContactTVItemID);
+               contactPreferenceExtraA.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, contactPreferenceExtraA.LastUpdateContactTVItemID);
                bool val9 = true;
-               contactPreference_A.HasErrors = val9;
-               Assert.AreEqual(val9, contactPreference_A.HasErrors);
+               contactPreferenceExtraA.HasErrors = val9;
+               Assert.AreEqual(val9, contactPreferenceExtraA.HasErrors);
                IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               contactPreference_A.ValidationResults = val30;
-               Assert.AreEqual(val30, contactPreference_A.ValidationResults);
+               contactPreferenceExtraA.ValidationResults = val30;
+               Assert.AreEqual(val30, contactPreferenceExtraA.ValidationResults);
         }
         [TestMethod]
-        public void ContactPreference_B_Every_Property_Has_Get_Set_Test()
+        public void ContactPreferenceExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               contactPreference_B.ContactPreferenceReportTest = val1;
-               Assert.AreEqual(val1, contactPreference_B.ContactPreferenceReportTest);
+               contactPreferenceExtraB.ContactPreferenceReportTest = val1;
+               Assert.AreEqual(val1, contactPreferenceExtraB.ContactPreferenceReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               contactPreference_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, contactPreference_B.LastUpdateContactTVItemLanguage);
+               contactPreferenceExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, contactPreferenceExtraB.LastUpdateContactTVItemLanguage);
                string val3 = "Some text";
-               contactPreference_B.TVTypeText = val3;
-               Assert.AreEqual(val3, contactPreference_B.TVTypeText);
+               contactPreferenceExtraB.TVTypeText = val3;
+               Assert.AreEqual(val3, contactPreferenceExtraB.TVTypeText);
                int val4 = 45;
-               contactPreference_B.ContactPreferenceID = val4;
-               Assert.AreEqual(val4, contactPreference_B.ContactPreferenceID);
+               contactPreferenceExtraB.ContactPreferenceID = val4;
+               Assert.AreEqual(val4, contactPreferenceExtraB.ContactPreferenceID);
                int val5 = 45;
-               contactPreference_B.ContactID = val5;
-               Assert.AreEqual(val5, contactPreference_B.ContactID);
+               contactPreferenceExtraB.ContactID = val5;
+               Assert.AreEqual(val5, contactPreferenceExtraB.ContactID);
                TVTypeEnum val6 = (TVTypeEnum)3;
-               contactPreference_B.TVType = val6;
-               Assert.AreEqual(val6, contactPreference_B.TVType);
+               contactPreferenceExtraB.TVType = val6;
+               Assert.AreEqual(val6, contactPreferenceExtraB.TVType);
                int val7 = 45;
-               contactPreference_B.MarkerSize = val7;
-               Assert.AreEqual(val7, contactPreference_B.MarkerSize);
+               contactPreferenceExtraB.MarkerSize = val7;
+               Assert.AreEqual(val7, contactPreferenceExtraB.MarkerSize);
                DateTime val8 = new DateTime(2010, 3, 4);
-               contactPreference_B.LastUpdateDate_UTC = val8;
-               Assert.AreEqual(val8, contactPreference_B.LastUpdateDate_UTC);
+               contactPreferenceExtraB.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, contactPreferenceExtraB.LastUpdateDate_UTC);
                int val9 = 45;
-               contactPreference_B.LastUpdateContactTVItemID = val9;
-               Assert.AreEqual(val9, contactPreference_B.LastUpdateContactTVItemID);
+               contactPreferenceExtraB.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, contactPreferenceExtraB.LastUpdateContactTVItemID);
                bool val10 = true;
-               contactPreference_B.HasErrors = val10;
-               Assert.AreEqual(val10, contactPreference_B.HasErrors);
+               contactPreferenceExtraB.HasErrors = val10;
+               Assert.AreEqual(val10, contactPreferenceExtraB.HasErrors);
                IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               contactPreference_B.ValidationResults = val33;
-               Assert.AreEqual(val33, contactPreference_B.ValidationResults);
+               contactPreferenceExtraB.ValidationResults = val33;
+               Assert.AreEqual(val33, contactPreferenceExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

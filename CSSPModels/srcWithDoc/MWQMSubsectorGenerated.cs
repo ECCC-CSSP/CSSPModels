@@ -135,7 +135,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSubsector_A : MWQMSubsector
+    public partial class MWQMSubsectorExtraA : MWQMSubsector
     {
         #region Properties
         /// <summary>
@@ -191,13 +191,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MWQMSubsector_A() : base()
+        public MWQMSubsectorExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSubsector_B : MWQMSubsector_A
+    public partial class MWQMSubsectorExtraB : MWQMSubsectorExtraA
     {
         #region Properties
         /// <summary>
@@ -230,7 +230,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MWQMSubsector_B() : base()
+        public MWQMSubsectorExtraB() : base()
         {
         }
         #endregion Constructors

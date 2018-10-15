@@ -142,7 +142,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPScenario_A : VPScenario
+    public partial class VPScenarioExtraA : VPScenario
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -167,13 +167,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public VPScenario_A() : base()
+        public VPScenarioExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPScenario_B : VPScenario_A
+    public partial class VPScenarioExtraB : VPScenarioExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -186,7 +186,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public VPScenario_B() : base()
+        public VPScenarioExtraB() : base()
         {
         }
         #endregion Constructors

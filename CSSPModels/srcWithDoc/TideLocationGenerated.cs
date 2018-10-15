@@ -202,7 +202,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TideLocation_A : TideLocation
+    public partial class TideLocationExtraA : TideLocation
     {
         #region Properties
         /// <summary>
@@ -233,13 +233,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TideLocation_A() : base()
+        public TideLocationExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TideLocation_B : TideLocation_A
+    public partial class TideLocationExtraB : TideLocationExtraA
     {
         #region Properties
         /// <summary>
@@ -272,7 +272,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TideLocation_B() : base()
+        public TideLocationExtraB() : base()
         {
         }
         #endregion Constructors

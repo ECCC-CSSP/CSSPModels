@@ -41,7 +41,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionList_A : EmailDistributionList
+    public partial class EmailDistributionListExtraA : EmailDistributionList
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CountryTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -55,13 +55,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public EmailDistributionList_A() : base()
+        public EmailDistributionListExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionList_B : EmailDistributionList_A
+    public partial class EmailDistributionListExtraB : EmailDistributionListExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -74,7 +74,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public EmailDistributionList_B() : base()
+        public EmailDistributionListExtraB() : base()
         {
         }
         #endregion Constructors

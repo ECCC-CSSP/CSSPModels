@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private AppErrLog appErrLog { get; set; }
-        private AppErrLog_A appErrLog_A { get; set; }
-        private AppErrLog_B appErrLog_B { get; set; }
+        private AppErrLogExtraA appErrLogExtraA { get; set; }
+        private AppErrLogExtraB appErrLogExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public AppErrLogTest()
         {
             appErrLog = new AppErrLog();
-            appErrLog_A = new AppErrLog_A();
-            appErrLog_B = new AppErrLog_B();
+            appErrLogExtraA = new AppErrLogExtraA();
+            appErrLogExtraB = new AppErrLogExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void AppErrLog_A_Properties_Test()
+        public void AppErrLogExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "AppErrLogID", "Tag", "LineNumber", "Source", "Message", "DateTime_UTC", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppErrLog_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(AppErrLogExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppErrLog_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(AppErrLogExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void AppErrLog_B_Properties_Test()
+        public void AppErrLogExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "AppErrLogReportTest", "LastUpdateContactTVItemLanguage", "AppErrLogID", "Tag", "LineNumber", "Source", "Message", "DateTime_UTC", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppErrLog_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(AppErrLogExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppErrLog_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(AppErrLogExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void AppErrLog_A_Navigation_Test()
+        public void AppErrLogExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppErrLog_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(AppErrLogExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppErrLog_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(AppErrLogExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void AppErrLog_B_Navigation_Test()
+        public void AppErrLogExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppErrLog_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(AppErrLogExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppErrLog_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(AppErrLogExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(AppErrLog).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void AppErrLog_A_Has_ValidationResults_Test()
+        public void AppErrLogExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(AppErrLog_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(AppErrLogExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void AppErrLog_B_Has_ValidationResults_Test()
+        public void AppErrLogExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(AppErrLog_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(AppErrLogExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void AppErrLog_Every_Property_Has_Get_Set_Test()
@@ -292,81 +292,81 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val30, appErrLog.ValidationResults);
         }
         [TestMethod]
-        public void AppErrLog_A_Every_Property_Has_Get_Set_Test()
+        public void AppErrLogExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               appErrLog_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, appErrLog_A.LastUpdateContactTVItemLanguage);
+               appErrLogExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, appErrLogExtraA.LastUpdateContactTVItemLanguage);
                int val2 = 45;
-               appErrLog_A.AppErrLogID = val2;
-               Assert.AreEqual(val2, appErrLog_A.AppErrLogID);
+               appErrLogExtraA.AppErrLogID = val2;
+               Assert.AreEqual(val2, appErrLogExtraA.AppErrLogID);
                string val3 = "Some text";
-               appErrLog_A.Tag = val3;
-               Assert.AreEqual(val3, appErrLog_A.Tag);
+               appErrLogExtraA.Tag = val3;
+               Assert.AreEqual(val3, appErrLogExtraA.Tag);
                int val4 = 45;
-               appErrLog_A.LineNumber = val4;
-               Assert.AreEqual(val4, appErrLog_A.LineNumber);
+               appErrLogExtraA.LineNumber = val4;
+               Assert.AreEqual(val4, appErrLogExtraA.LineNumber);
                string val5 = "Some text";
-               appErrLog_A.Source = val5;
-               Assert.AreEqual(val5, appErrLog_A.Source);
+               appErrLogExtraA.Source = val5;
+               Assert.AreEqual(val5, appErrLogExtraA.Source);
                string val6 = "Some text";
-               appErrLog_A.Message = val6;
-               Assert.AreEqual(val6, appErrLog_A.Message);
+               appErrLogExtraA.Message = val6;
+               Assert.AreEqual(val6, appErrLogExtraA.Message);
                DateTime val7 = new DateTime(2010, 3, 4);
-               appErrLog_A.DateTime_UTC = val7;
-               Assert.AreEqual(val7, appErrLog_A.DateTime_UTC);
+               appErrLogExtraA.DateTime_UTC = val7;
+               Assert.AreEqual(val7, appErrLogExtraA.DateTime_UTC);
                DateTime val8 = new DateTime(2010, 3, 4);
-               appErrLog_A.LastUpdateDate_UTC = val8;
-               Assert.AreEqual(val8, appErrLog_A.LastUpdateDate_UTC);
+               appErrLogExtraA.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, appErrLogExtraA.LastUpdateDate_UTC);
                int val9 = 45;
-               appErrLog_A.LastUpdateContactTVItemID = val9;
-               Assert.AreEqual(val9, appErrLog_A.LastUpdateContactTVItemID);
+               appErrLogExtraA.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, appErrLogExtraA.LastUpdateContactTVItemID);
                bool val10 = true;
-               appErrLog_A.HasErrors = val10;
-               Assert.AreEqual(val10, appErrLog_A.HasErrors);
+               appErrLogExtraA.HasErrors = val10;
+               Assert.AreEqual(val10, appErrLogExtraA.HasErrors);
                IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               appErrLog_A.ValidationResults = val33;
-               Assert.AreEqual(val33, appErrLog_A.ValidationResults);
+               appErrLogExtraA.ValidationResults = val33;
+               Assert.AreEqual(val33, appErrLogExtraA.ValidationResults);
         }
         [TestMethod]
-        public void AppErrLog_B_Every_Property_Has_Get_Set_Test()
+        public void AppErrLogExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               appErrLog_B.AppErrLogReportTest = val1;
-               Assert.AreEqual(val1, appErrLog_B.AppErrLogReportTest);
+               appErrLogExtraB.AppErrLogReportTest = val1;
+               Assert.AreEqual(val1, appErrLogExtraB.AppErrLogReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               appErrLog_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, appErrLog_B.LastUpdateContactTVItemLanguage);
+               appErrLogExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, appErrLogExtraB.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               appErrLog_B.AppErrLogID = val3;
-               Assert.AreEqual(val3, appErrLog_B.AppErrLogID);
+               appErrLogExtraB.AppErrLogID = val3;
+               Assert.AreEqual(val3, appErrLogExtraB.AppErrLogID);
                string val4 = "Some text";
-               appErrLog_B.Tag = val4;
-               Assert.AreEqual(val4, appErrLog_B.Tag);
+               appErrLogExtraB.Tag = val4;
+               Assert.AreEqual(val4, appErrLogExtraB.Tag);
                int val5 = 45;
-               appErrLog_B.LineNumber = val5;
-               Assert.AreEqual(val5, appErrLog_B.LineNumber);
+               appErrLogExtraB.LineNumber = val5;
+               Assert.AreEqual(val5, appErrLogExtraB.LineNumber);
                string val6 = "Some text";
-               appErrLog_B.Source = val6;
-               Assert.AreEqual(val6, appErrLog_B.Source);
+               appErrLogExtraB.Source = val6;
+               Assert.AreEqual(val6, appErrLogExtraB.Source);
                string val7 = "Some text";
-               appErrLog_B.Message = val7;
-               Assert.AreEqual(val7, appErrLog_B.Message);
+               appErrLogExtraB.Message = val7;
+               Assert.AreEqual(val7, appErrLogExtraB.Message);
                DateTime val8 = new DateTime(2010, 3, 4);
-               appErrLog_B.DateTime_UTC = val8;
-               Assert.AreEqual(val8, appErrLog_B.DateTime_UTC);
+               appErrLogExtraB.DateTime_UTC = val8;
+               Assert.AreEqual(val8, appErrLogExtraB.DateTime_UTC);
                DateTime val9 = new DateTime(2010, 3, 4);
-               appErrLog_B.LastUpdateDate_UTC = val9;
-               Assert.AreEqual(val9, appErrLog_B.LastUpdateDate_UTC);
+               appErrLogExtraB.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, appErrLogExtraB.LastUpdateDate_UTC);
                int val10 = 45;
-               appErrLog_B.LastUpdateContactTVItemID = val10;
-               Assert.AreEqual(val10, appErrLog_B.LastUpdateContactTVItemID);
+               appErrLogExtraB.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, appErrLogExtraB.LastUpdateContactTVItemID);
                bool val11 = true;
-               appErrLog_B.HasErrors = val11;
-               Assert.AreEqual(val11, appErrLog_B.HasErrors);
+               appErrLogExtraB.HasErrors = val11;
+               Assert.AreEqual(val11, appErrLogExtraB.HasErrors);
                IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               appErrLog_B.ValidationResults = val36;
-               Assert.AreEqual(val36, appErrLog_B.ValidationResults);
+               appErrLogExtraB.ValidationResults = val36;
+               Assert.AreEqual(val36, appErrLogExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

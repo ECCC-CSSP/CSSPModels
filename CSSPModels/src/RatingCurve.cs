@@ -41,7 +41,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RatingCurve_A : RatingCurve
+    public partial class RatingCurveExtraA : RatingCurve
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -53,13 +53,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public RatingCurve_A() : base()
+        public RatingCurveExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RatingCurve_B : RatingCurve_A
+    public partial class RatingCurveExtraB : RatingCurveExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -72,7 +72,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public RatingCurve_B() : base()
+        public RatingCurveExtraB() : base()
         {
         }
         #endregion Constructors

@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private LabSheetDetail labSheetDetail { get; set; }
-        private LabSheetDetail_A labSheetDetail_A { get; set; }
-        private LabSheetDetail_B labSheetDetail_B { get; set; }
+        private LabSheetDetailExtraA labSheetDetailExtraA { get; set; }
+        private LabSheetDetailExtraB labSheetDetailExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public LabSheetDetailTest()
         {
             labSheetDetail = new LabSheetDetail();
-            labSheetDetail_A = new LabSheetDetail_A();
-            labSheetDetail_B = new LabSheetDetail_B();
+            labSheetDetailExtraA = new LabSheetDetailExtraA();
+            labSheetDetailExtraB = new LabSheetDetailExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void LabSheetDetail_A_Properties_Test()
+        public void LabSheetDetailExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "LabSheetDetailID", "LabSheetID", "SamplingPlanID", "SubsectorTVItemID", "Version", "RunDate", "Tides", "SampleCrewInitials", "WaterBathCount", "IncubationBath1StartTime", "IncubationBath2StartTime", "IncubationBath3StartTime", "IncubationBath1EndTime", "IncubationBath2EndTime", "IncubationBath3EndTime", "IncubationBath1TimeCalculated_minutes", "IncubationBath2TimeCalculated_minutes", "IncubationBath3TimeCalculated_minutes", "WaterBath1", "WaterBath2", "WaterBath3", "TCField1", "TCLab1", "TCField2", "TCLab2", "TCFirst", "TCAverage", "ControlLot", "Positive35", "NonTarget35", "Negative35", "Bath1Positive44_5", "Bath2Positive44_5", "Bath3Positive44_5", "Bath1NonTarget44_5", "Bath2NonTarget44_5", "Bath3NonTarget44_5", "Bath1Negative44_5", "Bath2Negative44_5", "Bath3Negative44_5", "Blank35", "Bath1Blank44_5", "Bath2Blank44_5", "Bath3Blank44_5", "Lot35", "Lot44_5", "Weather", "RunComment", "RunWeatherComment", "SampleBottleLotNumber", "SalinitiesReadBy", "SalinitiesReadDate", "ResultsReadBy", "ResultsReadDate", "ResultsRecordedBy", "ResultsRecordedDate", "DailyDuplicateRLog", "DailyDuplicatePrecisionCriteria", "DailyDuplicateAcceptable", "IntertechDuplicateRLog", "IntertechDuplicatePrecisionCriteria", "IntertechDuplicateAcceptable", "IntertechReadAcceptable", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetail_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetailExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetail_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetailExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void LabSheetDetail_B_Properties_Test()
+        public void LabSheetDetailExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LabSheetDetailReportTest", "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "LabSheetDetailID", "LabSheetID", "SamplingPlanID", "SubsectorTVItemID", "Version", "RunDate", "Tides", "SampleCrewInitials", "WaterBathCount", "IncubationBath1StartTime", "IncubationBath2StartTime", "IncubationBath3StartTime", "IncubationBath1EndTime", "IncubationBath2EndTime", "IncubationBath3EndTime", "IncubationBath1TimeCalculated_minutes", "IncubationBath2TimeCalculated_minutes", "IncubationBath3TimeCalculated_minutes", "WaterBath1", "WaterBath2", "WaterBath3", "TCField1", "TCLab1", "TCField2", "TCLab2", "TCFirst", "TCAverage", "ControlLot", "Positive35", "NonTarget35", "Negative35", "Bath1Positive44_5", "Bath2Positive44_5", "Bath3Positive44_5", "Bath1NonTarget44_5", "Bath2NonTarget44_5", "Bath3NonTarget44_5", "Bath1Negative44_5", "Bath2Negative44_5", "Bath3Negative44_5", "Blank35", "Bath1Blank44_5", "Bath2Blank44_5", "Bath3Blank44_5", "Lot35", "Lot44_5", "Weather", "RunComment", "RunWeatherComment", "SampleBottleLotNumber", "SalinitiesReadBy", "SalinitiesReadDate", "ResultsReadBy", "ResultsReadDate", "ResultsRecordedBy", "ResultsRecordedDate", "DailyDuplicateRLog", "DailyDuplicatePrecisionCriteria", "DailyDuplicateAcceptable", "IntertechDuplicateRLog", "IntertechDuplicatePrecisionCriteria", "IntertechDuplicateAcceptable", "IntertechReadAcceptable", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetail_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetailExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetail_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetailExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void LabSheetDetail_A_Navigation_Test()
+        public void LabSheetDetailExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetail_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetailExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetail_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetailExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void LabSheetDetail_B_Navigation_Test()
+        public void LabSheetDetailExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetail_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetailExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetail_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetDetailExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(LabSheetDetail).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void LabSheetDetail_A_Has_ValidationResults_Test()
+        public void LabSheetDetailExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(LabSheetDetail_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(LabSheetDetailExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void LabSheetDetail_B_Has_ValidationResults_Test()
+        public void LabSheetDetailExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(LabSheetDetail_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(LabSheetDetailExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void LabSheetDetail_Every_Property_Has_Get_Set_Test()
@@ -463,429 +463,429 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val201, labSheetDetail.ValidationResults);
         }
         [TestMethod]
-        public void LabSheetDetail_A_Every_Property_Has_Get_Set_Test()
+        public void LabSheetDetailExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               labSheetDetail_A.SubsectorTVItemLanguage = val1;
-               Assert.AreEqual(val1, labSheetDetail_A.SubsectorTVItemLanguage);
+               labSheetDetailExtraA.SubsectorTVItemLanguage = val1;
+               Assert.AreEqual(val1, labSheetDetailExtraA.SubsectorTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               labSheetDetail_A.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, labSheetDetail_A.LastUpdateContactTVItemLanguage);
+               labSheetDetailExtraA.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, labSheetDetailExtraA.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               labSheetDetail_A.LabSheetDetailID = val3;
-               Assert.AreEqual(val3, labSheetDetail_A.LabSheetDetailID);
+               labSheetDetailExtraA.LabSheetDetailID = val3;
+               Assert.AreEqual(val3, labSheetDetailExtraA.LabSheetDetailID);
                int val4 = 45;
-               labSheetDetail_A.LabSheetID = val4;
-               Assert.AreEqual(val4, labSheetDetail_A.LabSheetID);
+               labSheetDetailExtraA.LabSheetID = val4;
+               Assert.AreEqual(val4, labSheetDetailExtraA.LabSheetID);
                int val5 = 45;
-               labSheetDetail_A.SamplingPlanID = val5;
-               Assert.AreEqual(val5, labSheetDetail_A.SamplingPlanID);
+               labSheetDetailExtraA.SamplingPlanID = val5;
+               Assert.AreEqual(val5, labSheetDetailExtraA.SamplingPlanID);
                int val6 = 45;
-               labSheetDetail_A.SubsectorTVItemID = val6;
-               Assert.AreEqual(val6, labSheetDetail_A.SubsectorTVItemID);
+               labSheetDetailExtraA.SubsectorTVItemID = val6;
+               Assert.AreEqual(val6, labSheetDetailExtraA.SubsectorTVItemID);
                int val7 = 45;
-               labSheetDetail_A.Version = val7;
-               Assert.AreEqual(val7, labSheetDetail_A.Version);
+               labSheetDetailExtraA.Version = val7;
+               Assert.AreEqual(val7, labSheetDetailExtraA.Version);
                DateTime val8 = new DateTime(2010, 3, 4);
-               labSheetDetail_A.RunDate = val8;
-               Assert.AreEqual(val8, labSheetDetail_A.RunDate);
+               labSheetDetailExtraA.RunDate = val8;
+               Assert.AreEqual(val8, labSheetDetailExtraA.RunDate);
                string val9 = "Some text";
-               labSheetDetail_A.Tides = val9;
-               Assert.AreEqual(val9, labSheetDetail_A.Tides);
+               labSheetDetailExtraA.Tides = val9;
+               Assert.AreEqual(val9, labSheetDetailExtraA.Tides);
                string val10 = "Some text";
-               labSheetDetail_A.SampleCrewInitials = val10;
-               Assert.AreEqual(val10, labSheetDetail_A.SampleCrewInitials);
+               labSheetDetailExtraA.SampleCrewInitials = val10;
+               Assert.AreEqual(val10, labSheetDetailExtraA.SampleCrewInitials);
                int val11 = 45;
-               labSheetDetail_A.WaterBathCount = val11;
-               Assert.AreEqual(val11, labSheetDetail_A.WaterBathCount);
+               labSheetDetailExtraA.WaterBathCount = val11;
+               Assert.AreEqual(val11, labSheetDetailExtraA.WaterBathCount);
                DateTime val12 = new DateTime(2010, 3, 4);
-               labSheetDetail_A.IncubationBath1StartTime = val12;
-               Assert.AreEqual(val12, labSheetDetail_A.IncubationBath1StartTime);
+               labSheetDetailExtraA.IncubationBath1StartTime = val12;
+               Assert.AreEqual(val12, labSheetDetailExtraA.IncubationBath1StartTime);
                DateTime val13 = new DateTime(2010, 3, 4);
-               labSheetDetail_A.IncubationBath2StartTime = val13;
-               Assert.AreEqual(val13, labSheetDetail_A.IncubationBath2StartTime);
+               labSheetDetailExtraA.IncubationBath2StartTime = val13;
+               Assert.AreEqual(val13, labSheetDetailExtraA.IncubationBath2StartTime);
                DateTime val14 = new DateTime(2010, 3, 4);
-               labSheetDetail_A.IncubationBath3StartTime = val14;
-               Assert.AreEqual(val14, labSheetDetail_A.IncubationBath3StartTime);
+               labSheetDetailExtraA.IncubationBath3StartTime = val14;
+               Assert.AreEqual(val14, labSheetDetailExtraA.IncubationBath3StartTime);
                DateTime val15 = new DateTime(2010, 3, 4);
-               labSheetDetail_A.IncubationBath1EndTime = val15;
-               Assert.AreEqual(val15, labSheetDetail_A.IncubationBath1EndTime);
+               labSheetDetailExtraA.IncubationBath1EndTime = val15;
+               Assert.AreEqual(val15, labSheetDetailExtraA.IncubationBath1EndTime);
                DateTime val16 = new DateTime(2010, 3, 4);
-               labSheetDetail_A.IncubationBath2EndTime = val16;
-               Assert.AreEqual(val16, labSheetDetail_A.IncubationBath2EndTime);
+               labSheetDetailExtraA.IncubationBath2EndTime = val16;
+               Assert.AreEqual(val16, labSheetDetailExtraA.IncubationBath2EndTime);
                DateTime val17 = new DateTime(2010, 3, 4);
-               labSheetDetail_A.IncubationBath3EndTime = val17;
-               Assert.AreEqual(val17, labSheetDetail_A.IncubationBath3EndTime);
+               labSheetDetailExtraA.IncubationBath3EndTime = val17;
+               Assert.AreEqual(val17, labSheetDetailExtraA.IncubationBath3EndTime);
                int val18 = 45;
-               labSheetDetail_A.IncubationBath1TimeCalculated_minutes = val18;
-               Assert.AreEqual(val18, labSheetDetail_A.IncubationBath1TimeCalculated_minutes);
+               labSheetDetailExtraA.IncubationBath1TimeCalculated_minutes = val18;
+               Assert.AreEqual(val18, labSheetDetailExtraA.IncubationBath1TimeCalculated_minutes);
                int val19 = 45;
-               labSheetDetail_A.IncubationBath2TimeCalculated_minutes = val19;
-               Assert.AreEqual(val19, labSheetDetail_A.IncubationBath2TimeCalculated_minutes);
+               labSheetDetailExtraA.IncubationBath2TimeCalculated_minutes = val19;
+               Assert.AreEqual(val19, labSheetDetailExtraA.IncubationBath2TimeCalculated_minutes);
                int val20 = 45;
-               labSheetDetail_A.IncubationBath3TimeCalculated_minutes = val20;
-               Assert.AreEqual(val20, labSheetDetail_A.IncubationBath3TimeCalculated_minutes);
+               labSheetDetailExtraA.IncubationBath3TimeCalculated_minutes = val20;
+               Assert.AreEqual(val20, labSheetDetailExtraA.IncubationBath3TimeCalculated_minutes);
                string val21 = "Some text";
-               labSheetDetail_A.WaterBath1 = val21;
-               Assert.AreEqual(val21, labSheetDetail_A.WaterBath1);
+               labSheetDetailExtraA.WaterBath1 = val21;
+               Assert.AreEqual(val21, labSheetDetailExtraA.WaterBath1);
                string val22 = "Some text";
-               labSheetDetail_A.WaterBath2 = val22;
-               Assert.AreEqual(val22, labSheetDetail_A.WaterBath2);
+               labSheetDetailExtraA.WaterBath2 = val22;
+               Assert.AreEqual(val22, labSheetDetailExtraA.WaterBath2);
                string val23 = "Some text";
-               labSheetDetail_A.WaterBath3 = val23;
-               Assert.AreEqual(val23, labSheetDetail_A.WaterBath3);
+               labSheetDetailExtraA.WaterBath3 = val23;
+               Assert.AreEqual(val23, labSheetDetailExtraA.WaterBath3);
                double val24 = 87.9D;
-               labSheetDetail_A.TCField1 = val24;
-               Assert.AreEqual(val24, labSheetDetail_A.TCField1);
+               labSheetDetailExtraA.TCField1 = val24;
+               Assert.AreEqual(val24, labSheetDetailExtraA.TCField1);
                double val25 = 87.9D;
-               labSheetDetail_A.TCLab1 = val25;
-               Assert.AreEqual(val25, labSheetDetail_A.TCLab1);
+               labSheetDetailExtraA.TCLab1 = val25;
+               Assert.AreEqual(val25, labSheetDetailExtraA.TCLab1);
                double val26 = 87.9D;
-               labSheetDetail_A.TCField2 = val26;
-               Assert.AreEqual(val26, labSheetDetail_A.TCField2);
+               labSheetDetailExtraA.TCField2 = val26;
+               Assert.AreEqual(val26, labSheetDetailExtraA.TCField2);
                double val27 = 87.9D;
-               labSheetDetail_A.TCLab2 = val27;
-               Assert.AreEqual(val27, labSheetDetail_A.TCLab2);
+               labSheetDetailExtraA.TCLab2 = val27;
+               Assert.AreEqual(val27, labSheetDetailExtraA.TCLab2);
                double val28 = 87.9D;
-               labSheetDetail_A.TCFirst = val28;
-               Assert.AreEqual(val28, labSheetDetail_A.TCFirst);
+               labSheetDetailExtraA.TCFirst = val28;
+               Assert.AreEqual(val28, labSheetDetailExtraA.TCFirst);
                double val29 = 87.9D;
-               labSheetDetail_A.TCAverage = val29;
-               Assert.AreEqual(val29, labSheetDetail_A.TCAverage);
+               labSheetDetailExtraA.TCAverage = val29;
+               Assert.AreEqual(val29, labSheetDetailExtraA.TCAverage);
                string val30 = "Some text";
-               labSheetDetail_A.ControlLot = val30;
-               Assert.AreEqual(val30, labSheetDetail_A.ControlLot);
+               labSheetDetailExtraA.ControlLot = val30;
+               Assert.AreEqual(val30, labSheetDetailExtraA.ControlLot);
                string val31 = "Some text";
-               labSheetDetail_A.Positive35 = val31;
-               Assert.AreEqual(val31, labSheetDetail_A.Positive35);
+               labSheetDetailExtraA.Positive35 = val31;
+               Assert.AreEqual(val31, labSheetDetailExtraA.Positive35);
                string val32 = "Some text";
-               labSheetDetail_A.NonTarget35 = val32;
-               Assert.AreEqual(val32, labSheetDetail_A.NonTarget35);
+               labSheetDetailExtraA.NonTarget35 = val32;
+               Assert.AreEqual(val32, labSheetDetailExtraA.NonTarget35);
                string val33 = "Some text";
-               labSheetDetail_A.Negative35 = val33;
-               Assert.AreEqual(val33, labSheetDetail_A.Negative35);
+               labSheetDetailExtraA.Negative35 = val33;
+               Assert.AreEqual(val33, labSheetDetailExtraA.Negative35);
                string val34 = "Some text";
-               labSheetDetail_A.Bath1Positive44_5 = val34;
-               Assert.AreEqual(val34, labSheetDetail_A.Bath1Positive44_5);
+               labSheetDetailExtraA.Bath1Positive44_5 = val34;
+               Assert.AreEqual(val34, labSheetDetailExtraA.Bath1Positive44_5);
                string val35 = "Some text";
-               labSheetDetail_A.Bath2Positive44_5 = val35;
-               Assert.AreEqual(val35, labSheetDetail_A.Bath2Positive44_5);
+               labSheetDetailExtraA.Bath2Positive44_5 = val35;
+               Assert.AreEqual(val35, labSheetDetailExtraA.Bath2Positive44_5);
                string val36 = "Some text";
-               labSheetDetail_A.Bath3Positive44_5 = val36;
-               Assert.AreEqual(val36, labSheetDetail_A.Bath3Positive44_5);
+               labSheetDetailExtraA.Bath3Positive44_5 = val36;
+               Assert.AreEqual(val36, labSheetDetailExtraA.Bath3Positive44_5);
                string val37 = "Some text";
-               labSheetDetail_A.Bath1NonTarget44_5 = val37;
-               Assert.AreEqual(val37, labSheetDetail_A.Bath1NonTarget44_5);
+               labSheetDetailExtraA.Bath1NonTarget44_5 = val37;
+               Assert.AreEqual(val37, labSheetDetailExtraA.Bath1NonTarget44_5);
                string val38 = "Some text";
-               labSheetDetail_A.Bath2NonTarget44_5 = val38;
-               Assert.AreEqual(val38, labSheetDetail_A.Bath2NonTarget44_5);
+               labSheetDetailExtraA.Bath2NonTarget44_5 = val38;
+               Assert.AreEqual(val38, labSheetDetailExtraA.Bath2NonTarget44_5);
                string val39 = "Some text";
-               labSheetDetail_A.Bath3NonTarget44_5 = val39;
-               Assert.AreEqual(val39, labSheetDetail_A.Bath3NonTarget44_5);
+               labSheetDetailExtraA.Bath3NonTarget44_5 = val39;
+               Assert.AreEqual(val39, labSheetDetailExtraA.Bath3NonTarget44_5);
                string val40 = "Some text";
-               labSheetDetail_A.Bath1Negative44_5 = val40;
-               Assert.AreEqual(val40, labSheetDetail_A.Bath1Negative44_5);
+               labSheetDetailExtraA.Bath1Negative44_5 = val40;
+               Assert.AreEqual(val40, labSheetDetailExtraA.Bath1Negative44_5);
                string val41 = "Some text";
-               labSheetDetail_A.Bath2Negative44_5 = val41;
-               Assert.AreEqual(val41, labSheetDetail_A.Bath2Negative44_5);
+               labSheetDetailExtraA.Bath2Negative44_5 = val41;
+               Assert.AreEqual(val41, labSheetDetailExtraA.Bath2Negative44_5);
                string val42 = "Some text";
-               labSheetDetail_A.Bath3Negative44_5 = val42;
-               Assert.AreEqual(val42, labSheetDetail_A.Bath3Negative44_5);
+               labSheetDetailExtraA.Bath3Negative44_5 = val42;
+               Assert.AreEqual(val42, labSheetDetailExtraA.Bath3Negative44_5);
                string val43 = "Some text";
-               labSheetDetail_A.Blank35 = val43;
-               Assert.AreEqual(val43, labSheetDetail_A.Blank35);
+               labSheetDetailExtraA.Blank35 = val43;
+               Assert.AreEqual(val43, labSheetDetailExtraA.Blank35);
                string val44 = "Some text";
-               labSheetDetail_A.Bath1Blank44_5 = val44;
-               Assert.AreEqual(val44, labSheetDetail_A.Bath1Blank44_5);
+               labSheetDetailExtraA.Bath1Blank44_5 = val44;
+               Assert.AreEqual(val44, labSheetDetailExtraA.Bath1Blank44_5);
                string val45 = "Some text";
-               labSheetDetail_A.Bath2Blank44_5 = val45;
-               Assert.AreEqual(val45, labSheetDetail_A.Bath2Blank44_5);
+               labSheetDetailExtraA.Bath2Blank44_5 = val45;
+               Assert.AreEqual(val45, labSheetDetailExtraA.Bath2Blank44_5);
                string val46 = "Some text";
-               labSheetDetail_A.Bath3Blank44_5 = val46;
-               Assert.AreEqual(val46, labSheetDetail_A.Bath3Blank44_5);
+               labSheetDetailExtraA.Bath3Blank44_5 = val46;
+               Assert.AreEqual(val46, labSheetDetailExtraA.Bath3Blank44_5);
                string val47 = "Some text";
-               labSheetDetail_A.Lot35 = val47;
-               Assert.AreEqual(val47, labSheetDetail_A.Lot35);
+               labSheetDetailExtraA.Lot35 = val47;
+               Assert.AreEqual(val47, labSheetDetailExtraA.Lot35);
                string val48 = "Some text";
-               labSheetDetail_A.Lot44_5 = val48;
-               Assert.AreEqual(val48, labSheetDetail_A.Lot44_5);
+               labSheetDetailExtraA.Lot44_5 = val48;
+               Assert.AreEqual(val48, labSheetDetailExtraA.Lot44_5);
                string val49 = "Some text";
-               labSheetDetail_A.Weather = val49;
-               Assert.AreEqual(val49, labSheetDetail_A.Weather);
+               labSheetDetailExtraA.Weather = val49;
+               Assert.AreEqual(val49, labSheetDetailExtraA.Weather);
                string val50 = "Some text";
-               labSheetDetail_A.RunComment = val50;
-               Assert.AreEqual(val50, labSheetDetail_A.RunComment);
+               labSheetDetailExtraA.RunComment = val50;
+               Assert.AreEqual(val50, labSheetDetailExtraA.RunComment);
                string val51 = "Some text";
-               labSheetDetail_A.RunWeatherComment = val51;
-               Assert.AreEqual(val51, labSheetDetail_A.RunWeatherComment);
+               labSheetDetailExtraA.RunWeatherComment = val51;
+               Assert.AreEqual(val51, labSheetDetailExtraA.RunWeatherComment);
                string val52 = "Some text";
-               labSheetDetail_A.SampleBottleLotNumber = val52;
-               Assert.AreEqual(val52, labSheetDetail_A.SampleBottleLotNumber);
+               labSheetDetailExtraA.SampleBottleLotNumber = val52;
+               Assert.AreEqual(val52, labSheetDetailExtraA.SampleBottleLotNumber);
                string val53 = "Some text";
-               labSheetDetail_A.SalinitiesReadBy = val53;
-               Assert.AreEqual(val53, labSheetDetail_A.SalinitiesReadBy);
+               labSheetDetailExtraA.SalinitiesReadBy = val53;
+               Assert.AreEqual(val53, labSheetDetailExtraA.SalinitiesReadBy);
                DateTime val54 = new DateTime(2010, 3, 4);
-               labSheetDetail_A.SalinitiesReadDate = val54;
-               Assert.AreEqual(val54, labSheetDetail_A.SalinitiesReadDate);
+               labSheetDetailExtraA.SalinitiesReadDate = val54;
+               Assert.AreEqual(val54, labSheetDetailExtraA.SalinitiesReadDate);
                string val55 = "Some text";
-               labSheetDetail_A.ResultsReadBy = val55;
-               Assert.AreEqual(val55, labSheetDetail_A.ResultsReadBy);
+               labSheetDetailExtraA.ResultsReadBy = val55;
+               Assert.AreEqual(val55, labSheetDetailExtraA.ResultsReadBy);
                DateTime val56 = new DateTime(2010, 3, 4);
-               labSheetDetail_A.ResultsReadDate = val56;
-               Assert.AreEqual(val56, labSheetDetail_A.ResultsReadDate);
+               labSheetDetailExtraA.ResultsReadDate = val56;
+               Assert.AreEqual(val56, labSheetDetailExtraA.ResultsReadDate);
                string val57 = "Some text";
-               labSheetDetail_A.ResultsRecordedBy = val57;
-               Assert.AreEqual(val57, labSheetDetail_A.ResultsRecordedBy);
+               labSheetDetailExtraA.ResultsRecordedBy = val57;
+               Assert.AreEqual(val57, labSheetDetailExtraA.ResultsRecordedBy);
                DateTime val58 = new DateTime(2010, 3, 4);
-               labSheetDetail_A.ResultsRecordedDate = val58;
-               Assert.AreEqual(val58, labSheetDetail_A.ResultsRecordedDate);
+               labSheetDetailExtraA.ResultsRecordedDate = val58;
+               Assert.AreEqual(val58, labSheetDetailExtraA.ResultsRecordedDate);
                double val59 = 87.9D;
-               labSheetDetail_A.DailyDuplicateRLog = val59;
-               Assert.AreEqual(val59, labSheetDetail_A.DailyDuplicateRLog);
+               labSheetDetailExtraA.DailyDuplicateRLog = val59;
+               Assert.AreEqual(val59, labSheetDetailExtraA.DailyDuplicateRLog);
                double val60 = 87.9D;
-               labSheetDetail_A.DailyDuplicatePrecisionCriteria = val60;
-               Assert.AreEqual(val60, labSheetDetail_A.DailyDuplicatePrecisionCriteria);
+               labSheetDetailExtraA.DailyDuplicatePrecisionCriteria = val60;
+               Assert.AreEqual(val60, labSheetDetailExtraA.DailyDuplicatePrecisionCriteria);
                bool val61 = true;
-               labSheetDetail_A.DailyDuplicateAcceptable = val61;
-               Assert.AreEqual(val61, labSheetDetail_A.DailyDuplicateAcceptable);
+               labSheetDetailExtraA.DailyDuplicateAcceptable = val61;
+               Assert.AreEqual(val61, labSheetDetailExtraA.DailyDuplicateAcceptable);
                double val62 = 87.9D;
-               labSheetDetail_A.IntertechDuplicateRLog = val62;
-               Assert.AreEqual(val62, labSheetDetail_A.IntertechDuplicateRLog);
+               labSheetDetailExtraA.IntertechDuplicateRLog = val62;
+               Assert.AreEqual(val62, labSheetDetailExtraA.IntertechDuplicateRLog);
                double val63 = 87.9D;
-               labSheetDetail_A.IntertechDuplicatePrecisionCriteria = val63;
-               Assert.AreEqual(val63, labSheetDetail_A.IntertechDuplicatePrecisionCriteria);
+               labSheetDetailExtraA.IntertechDuplicatePrecisionCriteria = val63;
+               Assert.AreEqual(val63, labSheetDetailExtraA.IntertechDuplicatePrecisionCriteria);
                bool val64 = true;
-               labSheetDetail_A.IntertechDuplicateAcceptable = val64;
-               Assert.AreEqual(val64, labSheetDetail_A.IntertechDuplicateAcceptable);
+               labSheetDetailExtraA.IntertechDuplicateAcceptable = val64;
+               Assert.AreEqual(val64, labSheetDetailExtraA.IntertechDuplicateAcceptable);
                bool val65 = true;
-               labSheetDetail_A.IntertechReadAcceptable = val65;
-               Assert.AreEqual(val65, labSheetDetail_A.IntertechReadAcceptable);
+               labSheetDetailExtraA.IntertechReadAcceptable = val65;
+               Assert.AreEqual(val65, labSheetDetailExtraA.IntertechReadAcceptable);
                DateTime val66 = new DateTime(2010, 3, 4);
-               labSheetDetail_A.LastUpdateDate_UTC = val66;
-               Assert.AreEqual(val66, labSheetDetail_A.LastUpdateDate_UTC);
+               labSheetDetailExtraA.LastUpdateDate_UTC = val66;
+               Assert.AreEqual(val66, labSheetDetailExtraA.LastUpdateDate_UTC);
                int val67 = 45;
-               labSheetDetail_A.LastUpdateContactTVItemID = val67;
-               Assert.AreEqual(val67, labSheetDetail_A.LastUpdateContactTVItemID);
+               labSheetDetailExtraA.LastUpdateContactTVItemID = val67;
+               Assert.AreEqual(val67, labSheetDetailExtraA.LastUpdateContactTVItemID);
                bool val68 = true;
-               labSheetDetail_A.HasErrors = val68;
-               Assert.AreEqual(val68, labSheetDetail_A.HasErrors);
+               labSheetDetailExtraA.HasErrors = val68;
+               Assert.AreEqual(val68, labSheetDetailExtraA.HasErrors);
                IEnumerable<ValidationResult> val207 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               labSheetDetail_A.ValidationResults = val207;
-               Assert.AreEqual(val207, labSheetDetail_A.ValidationResults);
+               labSheetDetailExtraA.ValidationResults = val207;
+               Assert.AreEqual(val207, labSheetDetailExtraA.ValidationResults);
         }
         [TestMethod]
-        public void LabSheetDetail_B_Every_Property_Has_Get_Set_Test()
+        public void LabSheetDetailExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               labSheetDetail_B.LabSheetDetailReportTest = val1;
-               Assert.AreEqual(val1, labSheetDetail_B.LabSheetDetailReportTest);
+               labSheetDetailExtraB.LabSheetDetailReportTest = val1;
+               Assert.AreEqual(val1, labSheetDetailExtraB.LabSheetDetailReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               labSheetDetail_B.SubsectorTVItemLanguage = val2;
-               Assert.AreEqual(val2, labSheetDetail_B.SubsectorTVItemLanguage);
+               labSheetDetailExtraB.SubsectorTVItemLanguage = val2;
+               Assert.AreEqual(val2, labSheetDetailExtraB.SubsectorTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               labSheetDetail_B.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, labSheetDetail_B.LastUpdateContactTVItemLanguage);
+               labSheetDetailExtraB.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, labSheetDetailExtraB.LastUpdateContactTVItemLanguage);
                int val4 = 45;
-               labSheetDetail_B.LabSheetDetailID = val4;
-               Assert.AreEqual(val4, labSheetDetail_B.LabSheetDetailID);
+               labSheetDetailExtraB.LabSheetDetailID = val4;
+               Assert.AreEqual(val4, labSheetDetailExtraB.LabSheetDetailID);
                int val5 = 45;
-               labSheetDetail_B.LabSheetID = val5;
-               Assert.AreEqual(val5, labSheetDetail_B.LabSheetID);
+               labSheetDetailExtraB.LabSheetID = val5;
+               Assert.AreEqual(val5, labSheetDetailExtraB.LabSheetID);
                int val6 = 45;
-               labSheetDetail_B.SamplingPlanID = val6;
-               Assert.AreEqual(val6, labSheetDetail_B.SamplingPlanID);
+               labSheetDetailExtraB.SamplingPlanID = val6;
+               Assert.AreEqual(val6, labSheetDetailExtraB.SamplingPlanID);
                int val7 = 45;
-               labSheetDetail_B.SubsectorTVItemID = val7;
-               Assert.AreEqual(val7, labSheetDetail_B.SubsectorTVItemID);
+               labSheetDetailExtraB.SubsectorTVItemID = val7;
+               Assert.AreEqual(val7, labSheetDetailExtraB.SubsectorTVItemID);
                int val8 = 45;
-               labSheetDetail_B.Version = val8;
-               Assert.AreEqual(val8, labSheetDetail_B.Version);
+               labSheetDetailExtraB.Version = val8;
+               Assert.AreEqual(val8, labSheetDetailExtraB.Version);
                DateTime val9 = new DateTime(2010, 3, 4);
-               labSheetDetail_B.RunDate = val9;
-               Assert.AreEqual(val9, labSheetDetail_B.RunDate);
+               labSheetDetailExtraB.RunDate = val9;
+               Assert.AreEqual(val9, labSheetDetailExtraB.RunDate);
                string val10 = "Some text";
-               labSheetDetail_B.Tides = val10;
-               Assert.AreEqual(val10, labSheetDetail_B.Tides);
+               labSheetDetailExtraB.Tides = val10;
+               Assert.AreEqual(val10, labSheetDetailExtraB.Tides);
                string val11 = "Some text";
-               labSheetDetail_B.SampleCrewInitials = val11;
-               Assert.AreEqual(val11, labSheetDetail_B.SampleCrewInitials);
+               labSheetDetailExtraB.SampleCrewInitials = val11;
+               Assert.AreEqual(val11, labSheetDetailExtraB.SampleCrewInitials);
                int val12 = 45;
-               labSheetDetail_B.WaterBathCount = val12;
-               Assert.AreEqual(val12, labSheetDetail_B.WaterBathCount);
+               labSheetDetailExtraB.WaterBathCount = val12;
+               Assert.AreEqual(val12, labSheetDetailExtraB.WaterBathCount);
                DateTime val13 = new DateTime(2010, 3, 4);
-               labSheetDetail_B.IncubationBath1StartTime = val13;
-               Assert.AreEqual(val13, labSheetDetail_B.IncubationBath1StartTime);
+               labSheetDetailExtraB.IncubationBath1StartTime = val13;
+               Assert.AreEqual(val13, labSheetDetailExtraB.IncubationBath1StartTime);
                DateTime val14 = new DateTime(2010, 3, 4);
-               labSheetDetail_B.IncubationBath2StartTime = val14;
-               Assert.AreEqual(val14, labSheetDetail_B.IncubationBath2StartTime);
+               labSheetDetailExtraB.IncubationBath2StartTime = val14;
+               Assert.AreEqual(val14, labSheetDetailExtraB.IncubationBath2StartTime);
                DateTime val15 = new DateTime(2010, 3, 4);
-               labSheetDetail_B.IncubationBath3StartTime = val15;
-               Assert.AreEqual(val15, labSheetDetail_B.IncubationBath3StartTime);
+               labSheetDetailExtraB.IncubationBath3StartTime = val15;
+               Assert.AreEqual(val15, labSheetDetailExtraB.IncubationBath3StartTime);
                DateTime val16 = new DateTime(2010, 3, 4);
-               labSheetDetail_B.IncubationBath1EndTime = val16;
-               Assert.AreEqual(val16, labSheetDetail_B.IncubationBath1EndTime);
+               labSheetDetailExtraB.IncubationBath1EndTime = val16;
+               Assert.AreEqual(val16, labSheetDetailExtraB.IncubationBath1EndTime);
                DateTime val17 = new DateTime(2010, 3, 4);
-               labSheetDetail_B.IncubationBath2EndTime = val17;
-               Assert.AreEqual(val17, labSheetDetail_B.IncubationBath2EndTime);
+               labSheetDetailExtraB.IncubationBath2EndTime = val17;
+               Assert.AreEqual(val17, labSheetDetailExtraB.IncubationBath2EndTime);
                DateTime val18 = new DateTime(2010, 3, 4);
-               labSheetDetail_B.IncubationBath3EndTime = val18;
-               Assert.AreEqual(val18, labSheetDetail_B.IncubationBath3EndTime);
+               labSheetDetailExtraB.IncubationBath3EndTime = val18;
+               Assert.AreEqual(val18, labSheetDetailExtraB.IncubationBath3EndTime);
                int val19 = 45;
-               labSheetDetail_B.IncubationBath1TimeCalculated_minutes = val19;
-               Assert.AreEqual(val19, labSheetDetail_B.IncubationBath1TimeCalculated_minutes);
+               labSheetDetailExtraB.IncubationBath1TimeCalculated_minutes = val19;
+               Assert.AreEqual(val19, labSheetDetailExtraB.IncubationBath1TimeCalculated_minutes);
                int val20 = 45;
-               labSheetDetail_B.IncubationBath2TimeCalculated_minutes = val20;
-               Assert.AreEqual(val20, labSheetDetail_B.IncubationBath2TimeCalculated_minutes);
+               labSheetDetailExtraB.IncubationBath2TimeCalculated_minutes = val20;
+               Assert.AreEqual(val20, labSheetDetailExtraB.IncubationBath2TimeCalculated_minutes);
                int val21 = 45;
-               labSheetDetail_B.IncubationBath3TimeCalculated_minutes = val21;
-               Assert.AreEqual(val21, labSheetDetail_B.IncubationBath3TimeCalculated_minutes);
+               labSheetDetailExtraB.IncubationBath3TimeCalculated_minutes = val21;
+               Assert.AreEqual(val21, labSheetDetailExtraB.IncubationBath3TimeCalculated_minutes);
                string val22 = "Some text";
-               labSheetDetail_B.WaterBath1 = val22;
-               Assert.AreEqual(val22, labSheetDetail_B.WaterBath1);
+               labSheetDetailExtraB.WaterBath1 = val22;
+               Assert.AreEqual(val22, labSheetDetailExtraB.WaterBath1);
                string val23 = "Some text";
-               labSheetDetail_B.WaterBath2 = val23;
-               Assert.AreEqual(val23, labSheetDetail_B.WaterBath2);
+               labSheetDetailExtraB.WaterBath2 = val23;
+               Assert.AreEqual(val23, labSheetDetailExtraB.WaterBath2);
                string val24 = "Some text";
-               labSheetDetail_B.WaterBath3 = val24;
-               Assert.AreEqual(val24, labSheetDetail_B.WaterBath3);
+               labSheetDetailExtraB.WaterBath3 = val24;
+               Assert.AreEqual(val24, labSheetDetailExtraB.WaterBath3);
                double val25 = 87.9D;
-               labSheetDetail_B.TCField1 = val25;
-               Assert.AreEqual(val25, labSheetDetail_B.TCField1);
+               labSheetDetailExtraB.TCField1 = val25;
+               Assert.AreEqual(val25, labSheetDetailExtraB.TCField1);
                double val26 = 87.9D;
-               labSheetDetail_B.TCLab1 = val26;
-               Assert.AreEqual(val26, labSheetDetail_B.TCLab1);
+               labSheetDetailExtraB.TCLab1 = val26;
+               Assert.AreEqual(val26, labSheetDetailExtraB.TCLab1);
                double val27 = 87.9D;
-               labSheetDetail_B.TCField2 = val27;
-               Assert.AreEqual(val27, labSheetDetail_B.TCField2);
+               labSheetDetailExtraB.TCField2 = val27;
+               Assert.AreEqual(val27, labSheetDetailExtraB.TCField2);
                double val28 = 87.9D;
-               labSheetDetail_B.TCLab2 = val28;
-               Assert.AreEqual(val28, labSheetDetail_B.TCLab2);
+               labSheetDetailExtraB.TCLab2 = val28;
+               Assert.AreEqual(val28, labSheetDetailExtraB.TCLab2);
                double val29 = 87.9D;
-               labSheetDetail_B.TCFirst = val29;
-               Assert.AreEqual(val29, labSheetDetail_B.TCFirst);
+               labSheetDetailExtraB.TCFirst = val29;
+               Assert.AreEqual(val29, labSheetDetailExtraB.TCFirst);
                double val30 = 87.9D;
-               labSheetDetail_B.TCAverage = val30;
-               Assert.AreEqual(val30, labSheetDetail_B.TCAverage);
+               labSheetDetailExtraB.TCAverage = val30;
+               Assert.AreEqual(val30, labSheetDetailExtraB.TCAverage);
                string val31 = "Some text";
-               labSheetDetail_B.ControlLot = val31;
-               Assert.AreEqual(val31, labSheetDetail_B.ControlLot);
+               labSheetDetailExtraB.ControlLot = val31;
+               Assert.AreEqual(val31, labSheetDetailExtraB.ControlLot);
                string val32 = "Some text";
-               labSheetDetail_B.Positive35 = val32;
-               Assert.AreEqual(val32, labSheetDetail_B.Positive35);
+               labSheetDetailExtraB.Positive35 = val32;
+               Assert.AreEqual(val32, labSheetDetailExtraB.Positive35);
                string val33 = "Some text";
-               labSheetDetail_B.NonTarget35 = val33;
-               Assert.AreEqual(val33, labSheetDetail_B.NonTarget35);
+               labSheetDetailExtraB.NonTarget35 = val33;
+               Assert.AreEqual(val33, labSheetDetailExtraB.NonTarget35);
                string val34 = "Some text";
-               labSheetDetail_B.Negative35 = val34;
-               Assert.AreEqual(val34, labSheetDetail_B.Negative35);
+               labSheetDetailExtraB.Negative35 = val34;
+               Assert.AreEqual(val34, labSheetDetailExtraB.Negative35);
                string val35 = "Some text";
-               labSheetDetail_B.Bath1Positive44_5 = val35;
-               Assert.AreEqual(val35, labSheetDetail_B.Bath1Positive44_5);
+               labSheetDetailExtraB.Bath1Positive44_5 = val35;
+               Assert.AreEqual(val35, labSheetDetailExtraB.Bath1Positive44_5);
                string val36 = "Some text";
-               labSheetDetail_B.Bath2Positive44_5 = val36;
-               Assert.AreEqual(val36, labSheetDetail_B.Bath2Positive44_5);
+               labSheetDetailExtraB.Bath2Positive44_5 = val36;
+               Assert.AreEqual(val36, labSheetDetailExtraB.Bath2Positive44_5);
                string val37 = "Some text";
-               labSheetDetail_B.Bath3Positive44_5 = val37;
-               Assert.AreEqual(val37, labSheetDetail_B.Bath3Positive44_5);
+               labSheetDetailExtraB.Bath3Positive44_5 = val37;
+               Assert.AreEqual(val37, labSheetDetailExtraB.Bath3Positive44_5);
                string val38 = "Some text";
-               labSheetDetail_B.Bath1NonTarget44_5 = val38;
-               Assert.AreEqual(val38, labSheetDetail_B.Bath1NonTarget44_5);
+               labSheetDetailExtraB.Bath1NonTarget44_5 = val38;
+               Assert.AreEqual(val38, labSheetDetailExtraB.Bath1NonTarget44_5);
                string val39 = "Some text";
-               labSheetDetail_B.Bath2NonTarget44_5 = val39;
-               Assert.AreEqual(val39, labSheetDetail_B.Bath2NonTarget44_5);
+               labSheetDetailExtraB.Bath2NonTarget44_5 = val39;
+               Assert.AreEqual(val39, labSheetDetailExtraB.Bath2NonTarget44_5);
                string val40 = "Some text";
-               labSheetDetail_B.Bath3NonTarget44_5 = val40;
-               Assert.AreEqual(val40, labSheetDetail_B.Bath3NonTarget44_5);
+               labSheetDetailExtraB.Bath3NonTarget44_5 = val40;
+               Assert.AreEqual(val40, labSheetDetailExtraB.Bath3NonTarget44_5);
                string val41 = "Some text";
-               labSheetDetail_B.Bath1Negative44_5 = val41;
-               Assert.AreEqual(val41, labSheetDetail_B.Bath1Negative44_5);
+               labSheetDetailExtraB.Bath1Negative44_5 = val41;
+               Assert.AreEqual(val41, labSheetDetailExtraB.Bath1Negative44_5);
                string val42 = "Some text";
-               labSheetDetail_B.Bath2Negative44_5 = val42;
-               Assert.AreEqual(val42, labSheetDetail_B.Bath2Negative44_5);
+               labSheetDetailExtraB.Bath2Negative44_5 = val42;
+               Assert.AreEqual(val42, labSheetDetailExtraB.Bath2Negative44_5);
                string val43 = "Some text";
-               labSheetDetail_B.Bath3Negative44_5 = val43;
-               Assert.AreEqual(val43, labSheetDetail_B.Bath3Negative44_5);
+               labSheetDetailExtraB.Bath3Negative44_5 = val43;
+               Assert.AreEqual(val43, labSheetDetailExtraB.Bath3Negative44_5);
                string val44 = "Some text";
-               labSheetDetail_B.Blank35 = val44;
-               Assert.AreEqual(val44, labSheetDetail_B.Blank35);
+               labSheetDetailExtraB.Blank35 = val44;
+               Assert.AreEqual(val44, labSheetDetailExtraB.Blank35);
                string val45 = "Some text";
-               labSheetDetail_B.Bath1Blank44_5 = val45;
-               Assert.AreEqual(val45, labSheetDetail_B.Bath1Blank44_5);
+               labSheetDetailExtraB.Bath1Blank44_5 = val45;
+               Assert.AreEqual(val45, labSheetDetailExtraB.Bath1Blank44_5);
                string val46 = "Some text";
-               labSheetDetail_B.Bath2Blank44_5 = val46;
-               Assert.AreEqual(val46, labSheetDetail_B.Bath2Blank44_5);
+               labSheetDetailExtraB.Bath2Blank44_5 = val46;
+               Assert.AreEqual(val46, labSheetDetailExtraB.Bath2Blank44_5);
                string val47 = "Some text";
-               labSheetDetail_B.Bath3Blank44_5 = val47;
-               Assert.AreEqual(val47, labSheetDetail_B.Bath3Blank44_5);
+               labSheetDetailExtraB.Bath3Blank44_5 = val47;
+               Assert.AreEqual(val47, labSheetDetailExtraB.Bath3Blank44_5);
                string val48 = "Some text";
-               labSheetDetail_B.Lot35 = val48;
-               Assert.AreEqual(val48, labSheetDetail_B.Lot35);
+               labSheetDetailExtraB.Lot35 = val48;
+               Assert.AreEqual(val48, labSheetDetailExtraB.Lot35);
                string val49 = "Some text";
-               labSheetDetail_B.Lot44_5 = val49;
-               Assert.AreEqual(val49, labSheetDetail_B.Lot44_5);
+               labSheetDetailExtraB.Lot44_5 = val49;
+               Assert.AreEqual(val49, labSheetDetailExtraB.Lot44_5);
                string val50 = "Some text";
-               labSheetDetail_B.Weather = val50;
-               Assert.AreEqual(val50, labSheetDetail_B.Weather);
+               labSheetDetailExtraB.Weather = val50;
+               Assert.AreEqual(val50, labSheetDetailExtraB.Weather);
                string val51 = "Some text";
-               labSheetDetail_B.RunComment = val51;
-               Assert.AreEqual(val51, labSheetDetail_B.RunComment);
+               labSheetDetailExtraB.RunComment = val51;
+               Assert.AreEqual(val51, labSheetDetailExtraB.RunComment);
                string val52 = "Some text";
-               labSheetDetail_B.RunWeatherComment = val52;
-               Assert.AreEqual(val52, labSheetDetail_B.RunWeatherComment);
+               labSheetDetailExtraB.RunWeatherComment = val52;
+               Assert.AreEqual(val52, labSheetDetailExtraB.RunWeatherComment);
                string val53 = "Some text";
-               labSheetDetail_B.SampleBottleLotNumber = val53;
-               Assert.AreEqual(val53, labSheetDetail_B.SampleBottleLotNumber);
+               labSheetDetailExtraB.SampleBottleLotNumber = val53;
+               Assert.AreEqual(val53, labSheetDetailExtraB.SampleBottleLotNumber);
                string val54 = "Some text";
-               labSheetDetail_B.SalinitiesReadBy = val54;
-               Assert.AreEqual(val54, labSheetDetail_B.SalinitiesReadBy);
+               labSheetDetailExtraB.SalinitiesReadBy = val54;
+               Assert.AreEqual(val54, labSheetDetailExtraB.SalinitiesReadBy);
                DateTime val55 = new DateTime(2010, 3, 4);
-               labSheetDetail_B.SalinitiesReadDate = val55;
-               Assert.AreEqual(val55, labSheetDetail_B.SalinitiesReadDate);
+               labSheetDetailExtraB.SalinitiesReadDate = val55;
+               Assert.AreEqual(val55, labSheetDetailExtraB.SalinitiesReadDate);
                string val56 = "Some text";
-               labSheetDetail_B.ResultsReadBy = val56;
-               Assert.AreEqual(val56, labSheetDetail_B.ResultsReadBy);
+               labSheetDetailExtraB.ResultsReadBy = val56;
+               Assert.AreEqual(val56, labSheetDetailExtraB.ResultsReadBy);
                DateTime val57 = new DateTime(2010, 3, 4);
-               labSheetDetail_B.ResultsReadDate = val57;
-               Assert.AreEqual(val57, labSheetDetail_B.ResultsReadDate);
+               labSheetDetailExtraB.ResultsReadDate = val57;
+               Assert.AreEqual(val57, labSheetDetailExtraB.ResultsReadDate);
                string val58 = "Some text";
-               labSheetDetail_B.ResultsRecordedBy = val58;
-               Assert.AreEqual(val58, labSheetDetail_B.ResultsRecordedBy);
+               labSheetDetailExtraB.ResultsRecordedBy = val58;
+               Assert.AreEqual(val58, labSheetDetailExtraB.ResultsRecordedBy);
                DateTime val59 = new DateTime(2010, 3, 4);
-               labSheetDetail_B.ResultsRecordedDate = val59;
-               Assert.AreEqual(val59, labSheetDetail_B.ResultsRecordedDate);
+               labSheetDetailExtraB.ResultsRecordedDate = val59;
+               Assert.AreEqual(val59, labSheetDetailExtraB.ResultsRecordedDate);
                double val60 = 87.9D;
-               labSheetDetail_B.DailyDuplicateRLog = val60;
-               Assert.AreEqual(val60, labSheetDetail_B.DailyDuplicateRLog);
+               labSheetDetailExtraB.DailyDuplicateRLog = val60;
+               Assert.AreEqual(val60, labSheetDetailExtraB.DailyDuplicateRLog);
                double val61 = 87.9D;
-               labSheetDetail_B.DailyDuplicatePrecisionCriteria = val61;
-               Assert.AreEqual(val61, labSheetDetail_B.DailyDuplicatePrecisionCriteria);
+               labSheetDetailExtraB.DailyDuplicatePrecisionCriteria = val61;
+               Assert.AreEqual(val61, labSheetDetailExtraB.DailyDuplicatePrecisionCriteria);
                bool val62 = true;
-               labSheetDetail_B.DailyDuplicateAcceptable = val62;
-               Assert.AreEqual(val62, labSheetDetail_B.DailyDuplicateAcceptable);
+               labSheetDetailExtraB.DailyDuplicateAcceptable = val62;
+               Assert.AreEqual(val62, labSheetDetailExtraB.DailyDuplicateAcceptable);
                double val63 = 87.9D;
-               labSheetDetail_B.IntertechDuplicateRLog = val63;
-               Assert.AreEqual(val63, labSheetDetail_B.IntertechDuplicateRLog);
+               labSheetDetailExtraB.IntertechDuplicateRLog = val63;
+               Assert.AreEqual(val63, labSheetDetailExtraB.IntertechDuplicateRLog);
                double val64 = 87.9D;
-               labSheetDetail_B.IntertechDuplicatePrecisionCriteria = val64;
-               Assert.AreEqual(val64, labSheetDetail_B.IntertechDuplicatePrecisionCriteria);
+               labSheetDetailExtraB.IntertechDuplicatePrecisionCriteria = val64;
+               Assert.AreEqual(val64, labSheetDetailExtraB.IntertechDuplicatePrecisionCriteria);
                bool val65 = true;
-               labSheetDetail_B.IntertechDuplicateAcceptable = val65;
-               Assert.AreEqual(val65, labSheetDetail_B.IntertechDuplicateAcceptable);
+               labSheetDetailExtraB.IntertechDuplicateAcceptable = val65;
+               Assert.AreEqual(val65, labSheetDetailExtraB.IntertechDuplicateAcceptable);
                bool val66 = true;
-               labSheetDetail_B.IntertechReadAcceptable = val66;
-               Assert.AreEqual(val66, labSheetDetail_B.IntertechReadAcceptable);
+               labSheetDetailExtraB.IntertechReadAcceptable = val66;
+               Assert.AreEqual(val66, labSheetDetailExtraB.IntertechReadAcceptable);
                DateTime val67 = new DateTime(2010, 3, 4);
-               labSheetDetail_B.LastUpdateDate_UTC = val67;
-               Assert.AreEqual(val67, labSheetDetail_B.LastUpdateDate_UTC);
+               labSheetDetailExtraB.LastUpdateDate_UTC = val67;
+               Assert.AreEqual(val67, labSheetDetailExtraB.LastUpdateDate_UTC);
                int val68 = 45;
-               labSheetDetail_B.LastUpdateContactTVItemID = val68;
-               Assert.AreEqual(val68, labSheetDetail_B.LastUpdateContactTVItemID);
+               labSheetDetailExtraB.LastUpdateContactTVItemID = val68;
+               Assert.AreEqual(val68, labSheetDetailExtraB.LastUpdateContactTVItemID);
                bool val69 = true;
-               labSheetDetail_B.HasErrors = val69;
-               Assert.AreEqual(val69, labSheetDetail_B.HasErrors);
+               labSheetDetailExtraB.HasErrors = val69;
+               Assert.AreEqual(val69, labSheetDetailExtraB.HasErrors);
                IEnumerable<ValidationResult> val210 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               labSheetDetail_B.ValidationResults = val210;
-               Assert.AreEqual(val210, labSheetDetail_B.ValidationResults);
+               labSheetDetailExtraB.ValidationResults = val210;
+               Assert.AreEqual(val210, labSheetDetailExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

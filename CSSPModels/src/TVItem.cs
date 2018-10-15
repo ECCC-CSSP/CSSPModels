@@ -58,7 +58,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItem_A : TVItem
+    public partial class TVItemExtraA : TVItem
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -83,13 +83,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TVItem_A() : base()
+        public TVItemExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItem_B : TVItem_A
+    public partial class TVItemExtraB : TVItemExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -102,7 +102,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TVItem_B() : base()
+        public TVItemExtraB() : base()
         {
         }
         #endregion Constructors

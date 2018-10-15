@@ -160,7 +160,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class DocTemplate_A : DocTemplate
+    public partial class DocTemplateExtraA : DocTemplate
     {
         #region Properties
         /// <summary>
@@ -241,13 +241,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public DocTemplate_A() : base()
+        public DocTemplateExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class DocTemplate_B : DocTemplate_A
+    public partial class DocTemplateExtraB : DocTemplateExtraA
     {
         #region Properties
         /// <summary>
@@ -280,7 +280,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public DocTemplate_B() : base()
+        public DocTemplateExtraB() : base()
         {
         }
         #endregion Constructors

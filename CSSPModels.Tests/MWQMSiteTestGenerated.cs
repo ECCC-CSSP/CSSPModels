@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private MWQMSite mWQMSite { get; set; }
-        private MWQMSite_A mWQMSite_A { get; set; }
-        private MWQMSite_B mWQMSite_B { get; set; }
+        private MWQMSiteExtraA mWQMSiteExtraA { get; set; }
+        private MWQMSiteExtraB mWQMSiteExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public MWQMSiteTest()
         {
             mWQMSite = new MWQMSite();
-            mWQMSite_A = new MWQMSite_A();
-            mWQMSite_B = new MWQMSite_B();
+            mWQMSiteExtraA = new MWQMSiteExtraA();
+            mWQMSiteExtraB = new MWQMSiteExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSite_A_Properties_Test()
+        public void MWQMSiteExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "MWQMSiteLatestClassificationText", "MWQMSiteID", "MWQMSiteTVItemID", "MWQMSiteNumber", "MWQMSiteDescription", "MWQMSiteLatestClassification", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSite_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSite_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSite_B_Properties_Test()
+        public void MWQMSiteExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSiteReportTest", "MWQMSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "MWQMSiteLatestClassificationText", "MWQMSiteID", "MWQMSiteTVItemID", "MWQMSiteNumber", "MWQMSiteDescription", "MWQMSiteLatestClassification", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSite_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSite_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSite_A_Navigation_Test()
+        public void MWQMSiteExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSite_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSite_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSite_B_Navigation_Test()
+        public void MWQMSiteExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSite_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSite_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(MWQMSite).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MWQMSite_A_Has_ValidationResults_Test()
+        public void MWQMSiteExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(MWQMSite_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(MWQMSiteExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MWQMSite_B_Has_ValidationResults_Test()
+        public void MWQMSiteExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(MWQMSite_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(MWQMSiteExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void MWQMSite_Every_Property_Has_Get_Set_Test()
@@ -292,93 +292,93 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val30, mWQMSite.ValidationResults);
         }
         [TestMethod]
-        public void MWQMSite_A_Every_Property_Has_Get_Set_Test()
+        public void MWQMSiteExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               mWQMSite_A.MWQMSiteTVItemLanguage = val1;
-               Assert.AreEqual(val1, mWQMSite_A.MWQMSiteTVItemLanguage);
+               mWQMSiteExtraA.MWQMSiteTVItemLanguage = val1;
+               Assert.AreEqual(val1, mWQMSiteExtraA.MWQMSiteTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               mWQMSite_A.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMSite_A.LastUpdateContactTVItemLanguage);
+               mWQMSiteExtraA.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, mWQMSiteExtraA.LastUpdateContactTVItemLanguage);
                string val3 = "Some text";
-               mWQMSite_A.MWQMSiteLatestClassificationText = val3;
-               Assert.AreEqual(val3, mWQMSite_A.MWQMSiteLatestClassificationText);
+               mWQMSiteExtraA.MWQMSiteLatestClassificationText = val3;
+               Assert.AreEqual(val3, mWQMSiteExtraA.MWQMSiteLatestClassificationText);
                int val4 = 45;
-               mWQMSite_A.MWQMSiteID = val4;
-               Assert.AreEqual(val4, mWQMSite_A.MWQMSiteID);
+               mWQMSiteExtraA.MWQMSiteID = val4;
+               Assert.AreEqual(val4, mWQMSiteExtraA.MWQMSiteID);
                int val5 = 45;
-               mWQMSite_A.MWQMSiteTVItemID = val5;
-               Assert.AreEqual(val5, mWQMSite_A.MWQMSiteTVItemID);
+               mWQMSiteExtraA.MWQMSiteTVItemID = val5;
+               Assert.AreEqual(val5, mWQMSiteExtraA.MWQMSiteTVItemID);
                string val6 = "Some text";
-               mWQMSite_A.MWQMSiteNumber = val6;
-               Assert.AreEqual(val6, mWQMSite_A.MWQMSiteNumber);
+               mWQMSiteExtraA.MWQMSiteNumber = val6;
+               Assert.AreEqual(val6, mWQMSiteExtraA.MWQMSiteNumber);
                string val7 = "Some text";
-               mWQMSite_A.MWQMSiteDescription = val7;
-               Assert.AreEqual(val7, mWQMSite_A.MWQMSiteDescription);
+               mWQMSiteExtraA.MWQMSiteDescription = val7;
+               Assert.AreEqual(val7, mWQMSiteExtraA.MWQMSiteDescription);
                MWQMSiteLatestClassificationEnum val8 = (MWQMSiteLatestClassificationEnum)3;
-               mWQMSite_A.MWQMSiteLatestClassification = val8;
-               Assert.AreEqual(val8, mWQMSite_A.MWQMSiteLatestClassification);
+               mWQMSiteExtraA.MWQMSiteLatestClassification = val8;
+               Assert.AreEqual(val8, mWQMSiteExtraA.MWQMSiteLatestClassification);
                int val9 = 45;
-               mWQMSite_A.Ordinal = val9;
-               Assert.AreEqual(val9, mWQMSite_A.Ordinal);
+               mWQMSiteExtraA.Ordinal = val9;
+               Assert.AreEqual(val9, mWQMSiteExtraA.Ordinal);
                DateTime val10 = new DateTime(2010, 3, 4);
-               mWQMSite_A.LastUpdateDate_UTC = val10;
-               Assert.AreEqual(val10, mWQMSite_A.LastUpdateDate_UTC);
+               mWQMSiteExtraA.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, mWQMSiteExtraA.LastUpdateDate_UTC);
                int val11 = 45;
-               mWQMSite_A.LastUpdateContactTVItemID = val11;
-               Assert.AreEqual(val11, mWQMSite_A.LastUpdateContactTVItemID);
+               mWQMSiteExtraA.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, mWQMSiteExtraA.LastUpdateContactTVItemID);
                bool val12 = true;
-               mWQMSite_A.HasErrors = val12;
-               Assert.AreEqual(val12, mWQMSite_A.HasErrors);
+               mWQMSiteExtraA.HasErrors = val12;
+               Assert.AreEqual(val12, mWQMSiteExtraA.HasErrors);
                IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMSite_A.ValidationResults = val39;
-               Assert.AreEqual(val39, mWQMSite_A.ValidationResults);
+               mWQMSiteExtraA.ValidationResults = val39;
+               Assert.AreEqual(val39, mWQMSiteExtraA.ValidationResults);
         }
         [TestMethod]
-        public void MWQMSite_B_Every_Property_Has_Get_Set_Test()
+        public void MWQMSiteExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               mWQMSite_B.MWQMSiteReportTest = val1;
-               Assert.AreEqual(val1, mWQMSite_B.MWQMSiteReportTest);
+               mWQMSiteExtraB.MWQMSiteReportTest = val1;
+               Assert.AreEqual(val1, mWQMSiteExtraB.MWQMSiteReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               mWQMSite_B.MWQMSiteTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMSite_B.MWQMSiteTVItemLanguage);
+               mWQMSiteExtraB.MWQMSiteTVItemLanguage = val2;
+               Assert.AreEqual(val2, mWQMSiteExtraB.MWQMSiteTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               mWQMSite_B.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, mWQMSite_B.LastUpdateContactTVItemLanguage);
+               mWQMSiteExtraB.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, mWQMSiteExtraB.LastUpdateContactTVItemLanguage);
                string val4 = "Some text";
-               mWQMSite_B.MWQMSiteLatestClassificationText = val4;
-               Assert.AreEqual(val4, mWQMSite_B.MWQMSiteLatestClassificationText);
+               mWQMSiteExtraB.MWQMSiteLatestClassificationText = val4;
+               Assert.AreEqual(val4, mWQMSiteExtraB.MWQMSiteLatestClassificationText);
                int val5 = 45;
-               mWQMSite_B.MWQMSiteID = val5;
-               Assert.AreEqual(val5, mWQMSite_B.MWQMSiteID);
+               mWQMSiteExtraB.MWQMSiteID = val5;
+               Assert.AreEqual(val5, mWQMSiteExtraB.MWQMSiteID);
                int val6 = 45;
-               mWQMSite_B.MWQMSiteTVItemID = val6;
-               Assert.AreEqual(val6, mWQMSite_B.MWQMSiteTVItemID);
+               mWQMSiteExtraB.MWQMSiteTVItemID = val6;
+               Assert.AreEqual(val6, mWQMSiteExtraB.MWQMSiteTVItemID);
                string val7 = "Some text";
-               mWQMSite_B.MWQMSiteNumber = val7;
-               Assert.AreEqual(val7, mWQMSite_B.MWQMSiteNumber);
+               mWQMSiteExtraB.MWQMSiteNumber = val7;
+               Assert.AreEqual(val7, mWQMSiteExtraB.MWQMSiteNumber);
                string val8 = "Some text";
-               mWQMSite_B.MWQMSiteDescription = val8;
-               Assert.AreEqual(val8, mWQMSite_B.MWQMSiteDescription);
+               mWQMSiteExtraB.MWQMSiteDescription = val8;
+               Assert.AreEqual(val8, mWQMSiteExtraB.MWQMSiteDescription);
                MWQMSiteLatestClassificationEnum val9 = (MWQMSiteLatestClassificationEnum)3;
-               mWQMSite_B.MWQMSiteLatestClassification = val9;
-               Assert.AreEqual(val9, mWQMSite_B.MWQMSiteLatestClassification);
+               mWQMSiteExtraB.MWQMSiteLatestClassification = val9;
+               Assert.AreEqual(val9, mWQMSiteExtraB.MWQMSiteLatestClassification);
                int val10 = 45;
-               mWQMSite_B.Ordinal = val10;
-               Assert.AreEqual(val10, mWQMSite_B.Ordinal);
+               mWQMSiteExtraB.Ordinal = val10;
+               Assert.AreEqual(val10, mWQMSiteExtraB.Ordinal);
                DateTime val11 = new DateTime(2010, 3, 4);
-               mWQMSite_B.LastUpdateDate_UTC = val11;
-               Assert.AreEqual(val11, mWQMSite_B.LastUpdateDate_UTC);
+               mWQMSiteExtraB.LastUpdateDate_UTC = val11;
+               Assert.AreEqual(val11, mWQMSiteExtraB.LastUpdateDate_UTC);
                int val12 = 45;
-               mWQMSite_B.LastUpdateContactTVItemID = val12;
-               Assert.AreEqual(val12, mWQMSite_B.LastUpdateContactTVItemID);
+               mWQMSiteExtraB.LastUpdateContactTVItemID = val12;
+               Assert.AreEqual(val12, mWQMSiteExtraB.LastUpdateContactTVItemID);
                bool val13 = true;
-               mWQMSite_B.HasErrors = val13;
-               Assert.AreEqual(val13, mWQMSite_B.HasErrors);
+               mWQMSiteExtraB.HasErrors = val13;
+               Assert.AreEqual(val13, mWQMSiteExtraB.HasErrors);
                IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMSite_B.ValidationResults = val42;
-               Assert.AreEqual(val42, mWQMSite_B.ValidationResults);
+               mWQMSiteExtraB.ValidationResults = val42;
+               Assert.AreEqual(val42, mWQMSiteExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

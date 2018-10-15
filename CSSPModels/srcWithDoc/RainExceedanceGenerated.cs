@@ -324,7 +324,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RainExceedance_A : RainExceedance
+    public partial class RainExceedanceExtraA : RainExceedance
     {
         #region Properties
         /// <summary>
@@ -355,13 +355,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public RainExceedance_A() : base()
+        public RainExceedanceExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class RainExceedance_B : RainExceedance_A
+    public partial class RainExceedanceExtraB : RainExceedanceExtraA
     {
         #region Properties
         /// <summary>
@@ -394,7 +394,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public RainExceedance_B() : base()
+        public RainExceedanceExtraB() : base()
         {
         }
         #endregion Constructors

@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private ClimateSite climateSite { get; set; }
-        private ClimateSite_A climateSite_A { get; set; }
-        private ClimateSite_B climateSite_B { get; set; }
+        private ClimateSiteExtraA climateSiteExtraA { get; set; }
+        private ClimateSiteExtraB climateSiteExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public ClimateSiteTest()
         {
             climateSite = new ClimateSite();
-            climateSite_A = new ClimateSite_A();
-            climateSite_B = new ClimateSite_B();
+            climateSiteExtraA = new ClimateSiteExtraA();
+            climateSiteExtraB = new ClimateSiteExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ClimateSite_A_Properties_Test()
+        public void ClimateSiteExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ClimateSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "ClimateSiteID", "ClimateSiteTVItemID", "ECDBID", "ClimateSiteName", "Province", "Elevation_m", "ClimateID", "WMOID", "TCID", "IsProvincial", "ProvSiteID", "TimeOffset_hour", "File_desc", "HourlyStartDate_Local", "HourlyEndDate_Local", "HourlyNow", "DailyStartDate_Local", "DailyEndDate_Local", "DailyNow", "MonthlyStartDate_Local", "MonthlyEndDate_Local", "MonthlyNow", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ClimateSite_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(ClimateSiteExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ClimateSite_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ClimateSiteExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ClimateSite_B_Properties_Test()
+        public void ClimateSiteExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ClimateSiteReportTest", "ClimateSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "ClimateSiteID", "ClimateSiteTVItemID", "ECDBID", "ClimateSiteName", "Province", "Elevation_m", "ClimateID", "WMOID", "TCID", "IsProvincial", "ProvSiteID", "TimeOffset_hour", "File_desc", "HourlyStartDate_Local", "HourlyEndDate_Local", "HourlyNow", "DailyStartDate_Local", "DailyEndDate_Local", "DailyNow", "MonthlyStartDate_Local", "MonthlyEndDate_Local", "MonthlyNow", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ClimateSite_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(ClimateSiteExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ClimateSite_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ClimateSiteExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ClimateSite_A_Navigation_Test()
+        public void ClimateSiteExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ClimateSite_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(ClimateSiteExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ClimateSite_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ClimateSiteExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ClimateSite_B_Navigation_Test()
+        public void ClimateSiteExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ClimateSite_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(ClimateSiteExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ClimateSite_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ClimateSiteExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(ClimateSite).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ClimateSite_A_Has_ValidationResults_Test()
+        public void ClimateSiteExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(ClimateSite_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(ClimateSiteExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ClimateSite_B_Has_ValidationResults_Test()
+        public void ClimateSiteExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(ClimateSite_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(ClimateSiteExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void ClimateSite_Every_Property_Has_Get_Set_Test()
@@ -340,183 +340,183 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val78, climateSite.ValidationResults);
         }
         [TestMethod]
-        public void ClimateSite_A_Every_Property_Has_Get_Set_Test()
+        public void ClimateSiteExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               climateSite_A.ClimateSiteTVItemLanguage = val1;
-               Assert.AreEqual(val1, climateSite_A.ClimateSiteTVItemLanguage);
+               climateSiteExtraA.ClimateSiteTVItemLanguage = val1;
+               Assert.AreEqual(val1, climateSiteExtraA.ClimateSiteTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               climateSite_A.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, climateSite_A.LastUpdateContactTVItemLanguage);
+               climateSiteExtraA.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, climateSiteExtraA.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               climateSite_A.ClimateSiteID = val3;
-               Assert.AreEqual(val3, climateSite_A.ClimateSiteID);
+               climateSiteExtraA.ClimateSiteID = val3;
+               Assert.AreEqual(val3, climateSiteExtraA.ClimateSiteID);
                int val4 = 45;
-               climateSite_A.ClimateSiteTVItemID = val4;
-               Assert.AreEqual(val4, climateSite_A.ClimateSiteTVItemID);
+               climateSiteExtraA.ClimateSiteTVItemID = val4;
+               Assert.AreEqual(val4, climateSiteExtraA.ClimateSiteTVItemID);
                int val5 = 45;
-               climateSite_A.ECDBID = val5;
-               Assert.AreEqual(val5, climateSite_A.ECDBID);
+               climateSiteExtraA.ECDBID = val5;
+               Assert.AreEqual(val5, climateSiteExtraA.ECDBID);
                string val6 = "Some text";
-               climateSite_A.ClimateSiteName = val6;
-               Assert.AreEqual(val6, climateSite_A.ClimateSiteName);
+               climateSiteExtraA.ClimateSiteName = val6;
+               Assert.AreEqual(val6, climateSiteExtraA.ClimateSiteName);
                string val7 = "Some text";
-               climateSite_A.Province = val7;
-               Assert.AreEqual(val7, climateSite_A.Province);
+               climateSiteExtraA.Province = val7;
+               Assert.AreEqual(val7, climateSiteExtraA.Province);
                double val8 = 87.9D;
-               climateSite_A.Elevation_m = val8;
-               Assert.AreEqual(val8, climateSite_A.Elevation_m);
+               climateSiteExtraA.Elevation_m = val8;
+               Assert.AreEqual(val8, climateSiteExtraA.Elevation_m);
                string val9 = "Some text";
-               climateSite_A.ClimateID = val9;
-               Assert.AreEqual(val9, climateSite_A.ClimateID);
+               climateSiteExtraA.ClimateID = val9;
+               Assert.AreEqual(val9, climateSiteExtraA.ClimateID);
                int val10 = 45;
-               climateSite_A.WMOID = val10;
-               Assert.AreEqual(val10, climateSite_A.WMOID);
+               climateSiteExtraA.WMOID = val10;
+               Assert.AreEqual(val10, climateSiteExtraA.WMOID);
                string val11 = "Some text";
-               climateSite_A.TCID = val11;
-               Assert.AreEqual(val11, climateSite_A.TCID);
+               climateSiteExtraA.TCID = val11;
+               Assert.AreEqual(val11, climateSiteExtraA.TCID);
                bool val12 = true;
-               climateSite_A.IsProvincial = val12;
-               Assert.AreEqual(val12, climateSite_A.IsProvincial);
+               climateSiteExtraA.IsProvincial = val12;
+               Assert.AreEqual(val12, climateSiteExtraA.IsProvincial);
                string val13 = "Some text";
-               climateSite_A.ProvSiteID = val13;
-               Assert.AreEqual(val13, climateSite_A.ProvSiteID);
+               climateSiteExtraA.ProvSiteID = val13;
+               Assert.AreEqual(val13, climateSiteExtraA.ProvSiteID);
                double val14 = 87.9D;
-               climateSite_A.TimeOffset_hour = val14;
-               Assert.AreEqual(val14, climateSite_A.TimeOffset_hour);
+               climateSiteExtraA.TimeOffset_hour = val14;
+               Assert.AreEqual(val14, climateSiteExtraA.TimeOffset_hour);
                string val15 = "Some text";
-               climateSite_A.File_desc = val15;
-               Assert.AreEqual(val15, climateSite_A.File_desc);
+               climateSiteExtraA.File_desc = val15;
+               Assert.AreEqual(val15, climateSiteExtraA.File_desc);
                DateTime val16 = new DateTime(2010, 3, 4);
-               climateSite_A.HourlyStartDate_Local = val16;
-               Assert.AreEqual(val16, climateSite_A.HourlyStartDate_Local);
+               climateSiteExtraA.HourlyStartDate_Local = val16;
+               Assert.AreEqual(val16, climateSiteExtraA.HourlyStartDate_Local);
                DateTime val17 = new DateTime(2010, 3, 4);
-               climateSite_A.HourlyEndDate_Local = val17;
-               Assert.AreEqual(val17, climateSite_A.HourlyEndDate_Local);
+               climateSiteExtraA.HourlyEndDate_Local = val17;
+               Assert.AreEqual(val17, climateSiteExtraA.HourlyEndDate_Local);
                bool val18 = true;
-               climateSite_A.HourlyNow = val18;
-               Assert.AreEqual(val18, climateSite_A.HourlyNow);
+               climateSiteExtraA.HourlyNow = val18;
+               Assert.AreEqual(val18, climateSiteExtraA.HourlyNow);
                DateTime val19 = new DateTime(2010, 3, 4);
-               climateSite_A.DailyStartDate_Local = val19;
-               Assert.AreEqual(val19, climateSite_A.DailyStartDate_Local);
+               climateSiteExtraA.DailyStartDate_Local = val19;
+               Assert.AreEqual(val19, climateSiteExtraA.DailyStartDate_Local);
                DateTime val20 = new DateTime(2010, 3, 4);
-               climateSite_A.DailyEndDate_Local = val20;
-               Assert.AreEqual(val20, climateSite_A.DailyEndDate_Local);
+               climateSiteExtraA.DailyEndDate_Local = val20;
+               Assert.AreEqual(val20, climateSiteExtraA.DailyEndDate_Local);
                bool val21 = true;
-               climateSite_A.DailyNow = val21;
-               Assert.AreEqual(val21, climateSite_A.DailyNow);
+               climateSiteExtraA.DailyNow = val21;
+               Assert.AreEqual(val21, climateSiteExtraA.DailyNow);
                DateTime val22 = new DateTime(2010, 3, 4);
-               climateSite_A.MonthlyStartDate_Local = val22;
-               Assert.AreEqual(val22, climateSite_A.MonthlyStartDate_Local);
+               climateSiteExtraA.MonthlyStartDate_Local = val22;
+               Assert.AreEqual(val22, climateSiteExtraA.MonthlyStartDate_Local);
                DateTime val23 = new DateTime(2010, 3, 4);
-               climateSite_A.MonthlyEndDate_Local = val23;
-               Assert.AreEqual(val23, climateSite_A.MonthlyEndDate_Local);
+               climateSiteExtraA.MonthlyEndDate_Local = val23;
+               Assert.AreEqual(val23, climateSiteExtraA.MonthlyEndDate_Local);
                bool val24 = true;
-               climateSite_A.MonthlyNow = val24;
-               Assert.AreEqual(val24, climateSite_A.MonthlyNow);
+               climateSiteExtraA.MonthlyNow = val24;
+               Assert.AreEqual(val24, climateSiteExtraA.MonthlyNow);
                DateTime val25 = new DateTime(2010, 3, 4);
-               climateSite_A.LastUpdateDate_UTC = val25;
-               Assert.AreEqual(val25, climateSite_A.LastUpdateDate_UTC);
+               climateSiteExtraA.LastUpdateDate_UTC = val25;
+               Assert.AreEqual(val25, climateSiteExtraA.LastUpdateDate_UTC);
                int val26 = 45;
-               climateSite_A.LastUpdateContactTVItemID = val26;
-               Assert.AreEqual(val26, climateSite_A.LastUpdateContactTVItemID);
+               climateSiteExtraA.LastUpdateContactTVItemID = val26;
+               Assert.AreEqual(val26, climateSiteExtraA.LastUpdateContactTVItemID);
                bool val27 = true;
-               climateSite_A.HasErrors = val27;
-               Assert.AreEqual(val27, climateSite_A.HasErrors);
+               climateSiteExtraA.HasErrors = val27;
+               Assert.AreEqual(val27, climateSiteExtraA.HasErrors);
                IEnumerable<ValidationResult> val84 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               climateSite_A.ValidationResults = val84;
-               Assert.AreEqual(val84, climateSite_A.ValidationResults);
+               climateSiteExtraA.ValidationResults = val84;
+               Assert.AreEqual(val84, climateSiteExtraA.ValidationResults);
         }
         [TestMethod]
-        public void ClimateSite_B_Every_Property_Has_Get_Set_Test()
+        public void ClimateSiteExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               climateSite_B.ClimateSiteReportTest = val1;
-               Assert.AreEqual(val1, climateSite_B.ClimateSiteReportTest);
+               climateSiteExtraB.ClimateSiteReportTest = val1;
+               Assert.AreEqual(val1, climateSiteExtraB.ClimateSiteReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               climateSite_B.ClimateSiteTVItemLanguage = val2;
-               Assert.AreEqual(val2, climateSite_B.ClimateSiteTVItemLanguage);
+               climateSiteExtraB.ClimateSiteTVItemLanguage = val2;
+               Assert.AreEqual(val2, climateSiteExtraB.ClimateSiteTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               climateSite_B.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, climateSite_B.LastUpdateContactTVItemLanguage);
+               climateSiteExtraB.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, climateSiteExtraB.LastUpdateContactTVItemLanguage);
                int val4 = 45;
-               climateSite_B.ClimateSiteID = val4;
-               Assert.AreEqual(val4, climateSite_B.ClimateSiteID);
+               climateSiteExtraB.ClimateSiteID = val4;
+               Assert.AreEqual(val4, climateSiteExtraB.ClimateSiteID);
                int val5 = 45;
-               climateSite_B.ClimateSiteTVItemID = val5;
-               Assert.AreEqual(val5, climateSite_B.ClimateSiteTVItemID);
+               climateSiteExtraB.ClimateSiteTVItemID = val5;
+               Assert.AreEqual(val5, climateSiteExtraB.ClimateSiteTVItemID);
                int val6 = 45;
-               climateSite_B.ECDBID = val6;
-               Assert.AreEqual(val6, climateSite_B.ECDBID);
+               climateSiteExtraB.ECDBID = val6;
+               Assert.AreEqual(val6, climateSiteExtraB.ECDBID);
                string val7 = "Some text";
-               climateSite_B.ClimateSiteName = val7;
-               Assert.AreEqual(val7, climateSite_B.ClimateSiteName);
+               climateSiteExtraB.ClimateSiteName = val7;
+               Assert.AreEqual(val7, climateSiteExtraB.ClimateSiteName);
                string val8 = "Some text";
-               climateSite_B.Province = val8;
-               Assert.AreEqual(val8, climateSite_B.Province);
+               climateSiteExtraB.Province = val8;
+               Assert.AreEqual(val8, climateSiteExtraB.Province);
                double val9 = 87.9D;
-               climateSite_B.Elevation_m = val9;
-               Assert.AreEqual(val9, climateSite_B.Elevation_m);
+               climateSiteExtraB.Elevation_m = val9;
+               Assert.AreEqual(val9, climateSiteExtraB.Elevation_m);
                string val10 = "Some text";
-               climateSite_B.ClimateID = val10;
-               Assert.AreEqual(val10, climateSite_B.ClimateID);
+               climateSiteExtraB.ClimateID = val10;
+               Assert.AreEqual(val10, climateSiteExtraB.ClimateID);
                int val11 = 45;
-               climateSite_B.WMOID = val11;
-               Assert.AreEqual(val11, climateSite_B.WMOID);
+               climateSiteExtraB.WMOID = val11;
+               Assert.AreEqual(val11, climateSiteExtraB.WMOID);
                string val12 = "Some text";
-               climateSite_B.TCID = val12;
-               Assert.AreEqual(val12, climateSite_B.TCID);
+               climateSiteExtraB.TCID = val12;
+               Assert.AreEqual(val12, climateSiteExtraB.TCID);
                bool val13 = true;
-               climateSite_B.IsProvincial = val13;
-               Assert.AreEqual(val13, climateSite_B.IsProvincial);
+               climateSiteExtraB.IsProvincial = val13;
+               Assert.AreEqual(val13, climateSiteExtraB.IsProvincial);
                string val14 = "Some text";
-               climateSite_B.ProvSiteID = val14;
-               Assert.AreEqual(val14, climateSite_B.ProvSiteID);
+               climateSiteExtraB.ProvSiteID = val14;
+               Assert.AreEqual(val14, climateSiteExtraB.ProvSiteID);
                double val15 = 87.9D;
-               climateSite_B.TimeOffset_hour = val15;
-               Assert.AreEqual(val15, climateSite_B.TimeOffset_hour);
+               climateSiteExtraB.TimeOffset_hour = val15;
+               Assert.AreEqual(val15, climateSiteExtraB.TimeOffset_hour);
                string val16 = "Some text";
-               climateSite_B.File_desc = val16;
-               Assert.AreEqual(val16, climateSite_B.File_desc);
+               climateSiteExtraB.File_desc = val16;
+               Assert.AreEqual(val16, climateSiteExtraB.File_desc);
                DateTime val17 = new DateTime(2010, 3, 4);
-               climateSite_B.HourlyStartDate_Local = val17;
-               Assert.AreEqual(val17, climateSite_B.HourlyStartDate_Local);
+               climateSiteExtraB.HourlyStartDate_Local = val17;
+               Assert.AreEqual(val17, climateSiteExtraB.HourlyStartDate_Local);
                DateTime val18 = new DateTime(2010, 3, 4);
-               climateSite_B.HourlyEndDate_Local = val18;
-               Assert.AreEqual(val18, climateSite_B.HourlyEndDate_Local);
+               climateSiteExtraB.HourlyEndDate_Local = val18;
+               Assert.AreEqual(val18, climateSiteExtraB.HourlyEndDate_Local);
                bool val19 = true;
-               climateSite_B.HourlyNow = val19;
-               Assert.AreEqual(val19, climateSite_B.HourlyNow);
+               climateSiteExtraB.HourlyNow = val19;
+               Assert.AreEqual(val19, climateSiteExtraB.HourlyNow);
                DateTime val20 = new DateTime(2010, 3, 4);
-               climateSite_B.DailyStartDate_Local = val20;
-               Assert.AreEqual(val20, climateSite_B.DailyStartDate_Local);
+               climateSiteExtraB.DailyStartDate_Local = val20;
+               Assert.AreEqual(val20, climateSiteExtraB.DailyStartDate_Local);
                DateTime val21 = new DateTime(2010, 3, 4);
-               climateSite_B.DailyEndDate_Local = val21;
-               Assert.AreEqual(val21, climateSite_B.DailyEndDate_Local);
+               climateSiteExtraB.DailyEndDate_Local = val21;
+               Assert.AreEqual(val21, climateSiteExtraB.DailyEndDate_Local);
                bool val22 = true;
-               climateSite_B.DailyNow = val22;
-               Assert.AreEqual(val22, climateSite_B.DailyNow);
+               climateSiteExtraB.DailyNow = val22;
+               Assert.AreEqual(val22, climateSiteExtraB.DailyNow);
                DateTime val23 = new DateTime(2010, 3, 4);
-               climateSite_B.MonthlyStartDate_Local = val23;
-               Assert.AreEqual(val23, climateSite_B.MonthlyStartDate_Local);
+               climateSiteExtraB.MonthlyStartDate_Local = val23;
+               Assert.AreEqual(val23, climateSiteExtraB.MonthlyStartDate_Local);
                DateTime val24 = new DateTime(2010, 3, 4);
-               climateSite_B.MonthlyEndDate_Local = val24;
-               Assert.AreEqual(val24, climateSite_B.MonthlyEndDate_Local);
+               climateSiteExtraB.MonthlyEndDate_Local = val24;
+               Assert.AreEqual(val24, climateSiteExtraB.MonthlyEndDate_Local);
                bool val25 = true;
-               climateSite_B.MonthlyNow = val25;
-               Assert.AreEqual(val25, climateSite_B.MonthlyNow);
+               climateSiteExtraB.MonthlyNow = val25;
+               Assert.AreEqual(val25, climateSiteExtraB.MonthlyNow);
                DateTime val26 = new DateTime(2010, 3, 4);
-               climateSite_B.LastUpdateDate_UTC = val26;
-               Assert.AreEqual(val26, climateSite_B.LastUpdateDate_UTC);
+               climateSiteExtraB.LastUpdateDate_UTC = val26;
+               Assert.AreEqual(val26, climateSiteExtraB.LastUpdateDate_UTC);
                int val27 = 45;
-               climateSite_B.LastUpdateContactTVItemID = val27;
-               Assert.AreEqual(val27, climateSite_B.LastUpdateContactTVItemID);
+               climateSiteExtraB.LastUpdateContactTVItemID = val27;
+               Assert.AreEqual(val27, climateSiteExtraB.LastUpdateContactTVItemID);
                bool val28 = true;
-               climateSite_B.HasErrors = val28;
-               Assert.AreEqual(val28, climateSite_B.HasErrors);
+               climateSiteExtraB.HasErrors = val28;
+               Assert.AreEqual(val28, climateSiteExtraB.HasErrors);
                IEnumerable<ValidationResult> val87 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               climateSite_B.ValidationResults = val87;
-               Assert.AreEqual(val87, climateSite_B.ValidationResults);
+               climateSiteExtraB.ValidationResults = val87;
+               Assert.AreEqual(val87, climateSiteExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

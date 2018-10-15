@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private MWQMSubsector mWQMSubsector { get; set; }
-        private MWQMSubsector_A mWQMSubsector_A { get; set; }
-        private MWQMSubsector_B mWQMSubsector_B { get; set; }
+        private MWQMSubsectorExtraA mWQMSubsectorExtraA { get; set; }
+        private MWQMSubsectorExtraB mWQMSubsectorExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public MWQMSubsectorTest()
         {
             mWQMSubsector = new MWQMSubsector();
-            mWQMSubsector_A = new MWQMSubsector_A();
-            mWQMSubsector_B = new MWQMSubsector_B();
+            mWQMSubsectorExtraA = new MWQMSubsectorExtraA();
+            mWQMSubsectorExtraB = new MWQMSubsectorExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSubsector_A_Properties_Test()
+        public void MWQMSubsectorExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "MWQMSubsectorID", "MWQMSubsectorTVItemID", "SubsectorHistoricKey", "TideLocationSIDText", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsector_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsectorExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsector_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsectorExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSubsector_B_Properties_Test()
+        public void MWQMSubsectorExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSubsectorReportTest", "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "MWQMSubsectorID", "MWQMSubsectorTVItemID", "SubsectorHistoricKey", "TideLocationSIDText", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsector_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsectorExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsector_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsectorExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSubsector_A_Navigation_Test()
+        public void MWQMSubsectorExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsector_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsectorExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsector_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsectorExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSubsector_B_Navigation_Test()
+        public void MWQMSubsectorExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsector_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsectorExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsector_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSubsectorExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(MWQMSubsector).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MWQMSubsector_A_Has_ValidationResults_Test()
+        public void MWQMSubsectorExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(MWQMSubsector_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(MWQMSubsectorExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MWQMSubsector_B_Has_ValidationResults_Test()
+        public void MWQMSubsectorExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(MWQMSubsector_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(MWQMSubsectorExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void MWQMSubsector_Every_Property_Has_Get_Set_Test()
@@ -286,75 +286,75 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val24, mWQMSubsector.ValidationResults);
         }
         [TestMethod]
-        public void MWQMSubsector_A_Every_Property_Has_Get_Set_Test()
+        public void MWQMSubsectorExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               mWQMSubsector_A.SubsectorTVItemLanguage = val1;
-               Assert.AreEqual(val1, mWQMSubsector_A.SubsectorTVItemLanguage);
+               mWQMSubsectorExtraA.SubsectorTVItemLanguage = val1;
+               Assert.AreEqual(val1, mWQMSubsectorExtraA.SubsectorTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               mWQMSubsector_A.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMSubsector_A.LastUpdateContactTVItemLanguage);
+               mWQMSubsectorExtraA.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, mWQMSubsectorExtraA.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               mWQMSubsector_A.MWQMSubsectorID = val3;
-               Assert.AreEqual(val3, mWQMSubsector_A.MWQMSubsectorID);
+               mWQMSubsectorExtraA.MWQMSubsectorID = val3;
+               Assert.AreEqual(val3, mWQMSubsectorExtraA.MWQMSubsectorID);
                int val4 = 45;
-               mWQMSubsector_A.MWQMSubsectorTVItemID = val4;
-               Assert.AreEqual(val4, mWQMSubsector_A.MWQMSubsectorTVItemID);
+               mWQMSubsectorExtraA.MWQMSubsectorTVItemID = val4;
+               Assert.AreEqual(val4, mWQMSubsectorExtraA.MWQMSubsectorTVItemID);
                string val5 = "Some text";
-               mWQMSubsector_A.SubsectorHistoricKey = val5;
-               Assert.AreEqual(val5, mWQMSubsector_A.SubsectorHistoricKey);
+               mWQMSubsectorExtraA.SubsectorHistoricKey = val5;
+               Assert.AreEqual(val5, mWQMSubsectorExtraA.SubsectorHistoricKey);
                string val6 = "Some text";
-               mWQMSubsector_A.TideLocationSIDText = val6;
-               Assert.AreEqual(val6, mWQMSubsector_A.TideLocationSIDText);
+               mWQMSubsectorExtraA.TideLocationSIDText = val6;
+               Assert.AreEqual(val6, mWQMSubsectorExtraA.TideLocationSIDText);
                DateTime val7 = new DateTime(2010, 3, 4);
-               mWQMSubsector_A.LastUpdateDate_UTC = val7;
-               Assert.AreEqual(val7, mWQMSubsector_A.LastUpdateDate_UTC);
+               mWQMSubsectorExtraA.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, mWQMSubsectorExtraA.LastUpdateDate_UTC);
                int val8 = 45;
-               mWQMSubsector_A.LastUpdateContactTVItemID = val8;
-               Assert.AreEqual(val8, mWQMSubsector_A.LastUpdateContactTVItemID);
+               mWQMSubsectorExtraA.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, mWQMSubsectorExtraA.LastUpdateContactTVItemID);
                bool val9 = true;
-               mWQMSubsector_A.HasErrors = val9;
-               Assert.AreEqual(val9, mWQMSubsector_A.HasErrors);
+               mWQMSubsectorExtraA.HasErrors = val9;
+               Assert.AreEqual(val9, mWQMSubsectorExtraA.HasErrors);
                IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMSubsector_A.ValidationResults = val30;
-               Assert.AreEqual(val30, mWQMSubsector_A.ValidationResults);
+               mWQMSubsectorExtraA.ValidationResults = val30;
+               Assert.AreEqual(val30, mWQMSubsectorExtraA.ValidationResults);
         }
         [TestMethod]
-        public void MWQMSubsector_B_Every_Property_Has_Get_Set_Test()
+        public void MWQMSubsectorExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               mWQMSubsector_B.MWQMSubsectorReportTest = val1;
-               Assert.AreEqual(val1, mWQMSubsector_B.MWQMSubsectorReportTest);
+               mWQMSubsectorExtraB.MWQMSubsectorReportTest = val1;
+               Assert.AreEqual(val1, mWQMSubsectorExtraB.MWQMSubsectorReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               mWQMSubsector_B.SubsectorTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMSubsector_B.SubsectorTVItemLanguage);
+               mWQMSubsectorExtraB.SubsectorTVItemLanguage = val2;
+               Assert.AreEqual(val2, mWQMSubsectorExtraB.SubsectorTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               mWQMSubsector_B.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, mWQMSubsector_B.LastUpdateContactTVItemLanguage);
+               mWQMSubsectorExtraB.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, mWQMSubsectorExtraB.LastUpdateContactTVItemLanguage);
                int val4 = 45;
-               mWQMSubsector_B.MWQMSubsectorID = val4;
-               Assert.AreEqual(val4, mWQMSubsector_B.MWQMSubsectorID);
+               mWQMSubsectorExtraB.MWQMSubsectorID = val4;
+               Assert.AreEqual(val4, mWQMSubsectorExtraB.MWQMSubsectorID);
                int val5 = 45;
-               mWQMSubsector_B.MWQMSubsectorTVItemID = val5;
-               Assert.AreEqual(val5, mWQMSubsector_B.MWQMSubsectorTVItemID);
+               mWQMSubsectorExtraB.MWQMSubsectorTVItemID = val5;
+               Assert.AreEqual(val5, mWQMSubsectorExtraB.MWQMSubsectorTVItemID);
                string val6 = "Some text";
-               mWQMSubsector_B.SubsectorHistoricKey = val6;
-               Assert.AreEqual(val6, mWQMSubsector_B.SubsectorHistoricKey);
+               mWQMSubsectorExtraB.SubsectorHistoricKey = val6;
+               Assert.AreEqual(val6, mWQMSubsectorExtraB.SubsectorHistoricKey);
                string val7 = "Some text";
-               mWQMSubsector_B.TideLocationSIDText = val7;
-               Assert.AreEqual(val7, mWQMSubsector_B.TideLocationSIDText);
+               mWQMSubsectorExtraB.TideLocationSIDText = val7;
+               Assert.AreEqual(val7, mWQMSubsectorExtraB.TideLocationSIDText);
                DateTime val8 = new DateTime(2010, 3, 4);
-               mWQMSubsector_B.LastUpdateDate_UTC = val8;
-               Assert.AreEqual(val8, mWQMSubsector_B.LastUpdateDate_UTC);
+               mWQMSubsectorExtraB.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, mWQMSubsectorExtraB.LastUpdateDate_UTC);
                int val9 = 45;
-               mWQMSubsector_B.LastUpdateContactTVItemID = val9;
-               Assert.AreEqual(val9, mWQMSubsector_B.LastUpdateContactTVItemID);
+               mWQMSubsectorExtraB.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, mWQMSubsectorExtraB.LastUpdateContactTVItemID);
                bool val10 = true;
-               mWQMSubsector_B.HasErrors = val10;
-               Assert.AreEqual(val10, mWQMSubsector_B.HasErrors);
+               mWQMSubsectorExtraB.HasErrors = val10;
+               Assert.AreEqual(val10, mWQMSubsectorExtraB.HasErrors);
                IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMSubsector_B.ValidationResults = val33;
-               Assert.AreEqual(val33, mWQMSubsector_B.ValidationResults);
+               mWQMSubsectorExtraB.ValidationResults = val33;
+               Assert.AreEqual(val33, mWQMSubsectorExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

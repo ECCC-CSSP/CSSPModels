@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private MWQMSiteStartEndDate mWQMSiteStartEndDate { get; set; }
-        private MWQMSiteStartEndDate_A mWQMSiteStartEndDate_A { get; set; }
-        private MWQMSiteStartEndDate_B mWQMSiteStartEndDate_B { get; set; }
+        private MWQMSiteStartEndDateExtraA mWQMSiteStartEndDateExtraA { get; set; }
+        private MWQMSiteStartEndDateExtraB mWQMSiteStartEndDateExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public MWQMSiteStartEndDateTest()
         {
             mWQMSiteStartEndDate = new MWQMSiteStartEndDate();
-            mWQMSiteStartEndDate_A = new MWQMSiteStartEndDate_A();
-            mWQMSiteStartEndDate_B = new MWQMSiteStartEndDate_B();
+            mWQMSiteStartEndDateExtraA = new MWQMSiteStartEndDateExtraA();
+            mWQMSiteStartEndDateExtraB = new MWQMSiteStartEndDateExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSiteStartEndDate_A_Properties_Test()
+        public void MWQMSiteStartEndDateExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "MWQMSiteStartEndDateID", "MWQMSiteTVItemID", "StartDate", "EndDate", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDate_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDateExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDate_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDateExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSiteStartEndDate_B_Properties_Test()
+        public void MWQMSiteStartEndDateExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMSiteStartEndDateReportTest", "MWQMSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "MWQMSiteStartEndDateID", "MWQMSiteTVItemID", "StartDate", "EndDate", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDate_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDateExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDate_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDateExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSiteStartEndDate_A_Navigation_Test()
+        public void MWQMSiteStartEndDateExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDate_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDateExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDate_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDateExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMSiteStartEndDate_B_Navigation_Test()
+        public void MWQMSiteStartEndDateExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDate_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDateExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDate_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMSiteStartEndDateExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(MWQMSiteStartEndDate).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MWQMSiteStartEndDate_A_Has_ValidationResults_Test()
+        public void MWQMSiteStartEndDateExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(MWQMSiteStartEndDate_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(MWQMSiteStartEndDateExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MWQMSiteStartEndDate_B_Has_ValidationResults_Test()
+        public void MWQMSiteStartEndDateExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(MWQMSiteStartEndDate_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(MWQMSiteStartEndDateExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void MWQMSiteStartEndDate_Every_Property_Has_Get_Set_Test()
@@ -286,75 +286,75 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val24, mWQMSiteStartEndDate.ValidationResults);
         }
         [TestMethod]
-        public void MWQMSiteStartEndDate_A_Every_Property_Has_Get_Set_Test()
+        public void MWQMSiteStartEndDateExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               mWQMSiteStartEndDate_A.MWQMSiteTVItemLanguage = val1;
-               Assert.AreEqual(val1, mWQMSiteStartEndDate_A.MWQMSiteTVItemLanguage);
+               mWQMSiteStartEndDateExtraA.MWQMSiteTVItemLanguage = val1;
+               Assert.AreEqual(val1, mWQMSiteStartEndDateExtraA.MWQMSiteTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               mWQMSiteStartEndDate_A.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMSiteStartEndDate_A.LastUpdateContactTVItemLanguage);
+               mWQMSiteStartEndDateExtraA.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, mWQMSiteStartEndDateExtraA.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               mWQMSiteStartEndDate_A.MWQMSiteStartEndDateID = val3;
-               Assert.AreEqual(val3, mWQMSiteStartEndDate_A.MWQMSiteStartEndDateID);
+               mWQMSiteStartEndDateExtraA.MWQMSiteStartEndDateID = val3;
+               Assert.AreEqual(val3, mWQMSiteStartEndDateExtraA.MWQMSiteStartEndDateID);
                int val4 = 45;
-               mWQMSiteStartEndDate_A.MWQMSiteTVItemID = val4;
-               Assert.AreEqual(val4, mWQMSiteStartEndDate_A.MWQMSiteTVItemID);
+               mWQMSiteStartEndDateExtraA.MWQMSiteTVItemID = val4;
+               Assert.AreEqual(val4, mWQMSiteStartEndDateExtraA.MWQMSiteTVItemID);
                DateTime val5 = new DateTime(2010, 3, 4);
-               mWQMSiteStartEndDate_A.StartDate = val5;
-               Assert.AreEqual(val5, mWQMSiteStartEndDate_A.StartDate);
+               mWQMSiteStartEndDateExtraA.StartDate = val5;
+               Assert.AreEqual(val5, mWQMSiteStartEndDateExtraA.StartDate);
                DateTime val6 = new DateTime(2010, 3, 4);
-               mWQMSiteStartEndDate_A.EndDate = val6;
-               Assert.AreEqual(val6, mWQMSiteStartEndDate_A.EndDate);
+               mWQMSiteStartEndDateExtraA.EndDate = val6;
+               Assert.AreEqual(val6, mWQMSiteStartEndDateExtraA.EndDate);
                DateTime val7 = new DateTime(2010, 3, 4);
-               mWQMSiteStartEndDate_A.LastUpdateDate_UTC = val7;
-               Assert.AreEqual(val7, mWQMSiteStartEndDate_A.LastUpdateDate_UTC);
+               mWQMSiteStartEndDateExtraA.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, mWQMSiteStartEndDateExtraA.LastUpdateDate_UTC);
                int val8 = 45;
-               mWQMSiteStartEndDate_A.LastUpdateContactTVItemID = val8;
-               Assert.AreEqual(val8, mWQMSiteStartEndDate_A.LastUpdateContactTVItemID);
+               mWQMSiteStartEndDateExtraA.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, mWQMSiteStartEndDateExtraA.LastUpdateContactTVItemID);
                bool val9 = true;
-               mWQMSiteStartEndDate_A.HasErrors = val9;
-               Assert.AreEqual(val9, mWQMSiteStartEndDate_A.HasErrors);
+               mWQMSiteStartEndDateExtraA.HasErrors = val9;
+               Assert.AreEqual(val9, mWQMSiteStartEndDateExtraA.HasErrors);
                IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMSiteStartEndDate_A.ValidationResults = val30;
-               Assert.AreEqual(val30, mWQMSiteStartEndDate_A.ValidationResults);
+               mWQMSiteStartEndDateExtraA.ValidationResults = val30;
+               Assert.AreEqual(val30, mWQMSiteStartEndDateExtraA.ValidationResults);
         }
         [TestMethod]
-        public void MWQMSiteStartEndDate_B_Every_Property_Has_Get_Set_Test()
+        public void MWQMSiteStartEndDateExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               mWQMSiteStartEndDate_B.MWQMSiteStartEndDateReportTest = val1;
-               Assert.AreEqual(val1, mWQMSiteStartEndDate_B.MWQMSiteStartEndDateReportTest);
+               mWQMSiteStartEndDateExtraB.MWQMSiteStartEndDateReportTest = val1;
+               Assert.AreEqual(val1, mWQMSiteStartEndDateExtraB.MWQMSiteStartEndDateReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               mWQMSiteStartEndDate_B.MWQMSiteTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMSiteStartEndDate_B.MWQMSiteTVItemLanguage);
+               mWQMSiteStartEndDateExtraB.MWQMSiteTVItemLanguage = val2;
+               Assert.AreEqual(val2, mWQMSiteStartEndDateExtraB.MWQMSiteTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               mWQMSiteStartEndDate_B.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, mWQMSiteStartEndDate_B.LastUpdateContactTVItemLanguage);
+               mWQMSiteStartEndDateExtraB.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, mWQMSiteStartEndDateExtraB.LastUpdateContactTVItemLanguage);
                int val4 = 45;
-               mWQMSiteStartEndDate_B.MWQMSiteStartEndDateID = val4;
-               Assert.AreEqual(val4, mWQMSiteStartEndDate_B.MWQMSiteStartEndDateID);
+               mWQMSiteStartEndDateExtraB.MWQMSiteStartEndDateID = val4;
+               Assert.AreEqual(val4, mWQMSiteStartEndDateExtraB.MWQMSiteStartEndDateID);
                int val5 = 45;
-               mWQMSiteStartEndDate_B.MWQMSiteTVItemID = val5;
-               Assert.AreEqual(val5, mWQMSiteStartEndDate_B.MWQMSiteTVItemID);
+               mWQMSiteStartEndDateExtraB.MWQMSiteTVItemID = val5;
+               Assert.AreEqual(val5, mWQMSiteStartEndDateExtraB.MWQMSiteTVItemID);
                DateTime val6 = new DateTime(2010, 3, 4);
-               mWQMSiteStartEndDate_B.StartDate = val6;
-               Assert.AreEqual(val6, mWQMSiteStartEndDate_B.StartDate);
+               mWQMSiteStartEndDateExtraB.StartDate = val6;
+               Assert.AreEqual(val6, mWQMSiteStartEndDateExtraB.StartDate);
                DateTime val7 = new DateTime(2010, 3, 4);
-               mWQMSiteStartEndDate_B.EndDate = val7;
-               Assert.AreEqual(val7, mWQMSiteStartEndDate_B.EndDate);
+               mWQMSiteStartEndDateExtraB.EndDate = val7;
+               Assert.AreEqual(val7, mWQMSiteStartEndDateExtraB.EndDate);
                DateTime val8 = new DateTime(2010, 3, 4);
-               mWQMSiteStartEndDate_B.LastUpdateDate_UTC = val8;
-               Assert.AreEqual(val8, mWQMSiteStartEndDate_B.LastUpdateDate_UTC);
+               mWQMSiteStartEndDateExtraB.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, mWQMSiteStartEndDateExtraB.LastUpdateDate_UTC);
                int val9 = 45;
-               mWQMSiteStartEndDate_B.LastUpdateContactTVItemID = val9;
-               Assert.AreEqual(val9, mWQMSiteStartEndDate_B.LastUpdateContactTVItemID);
+               mWQMSiteStartEndDateExtraB.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, mWQMSiteStartEndDateExtraB.LastUpdateContactTVItemID);
                bool val10 = true;
-               mWQMSiteStartEndDate_B.HasErrors = val10;
-               Assert.AreEqual(val10, mWQMSiteStartEndDate_B.HasErrors);
+               mWQMSiteStartEndDateExtraB.HasErrors = val10;
+               Assert.AreEqual(val10, mWQMSiteStartEndDateExtraB.HasErrors);
                IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMSiteStartEndDate_B.ValidationResults = val33;
-               Assert.AreEqual(val33, mWQMSiteStartEndDate_B.ValidationResults);
+               mWQMSiteStartEndDateExtraB.ValidationResults = val33;
+               Assert.AreEqual(val33, mWQMSiteStartEndDateExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

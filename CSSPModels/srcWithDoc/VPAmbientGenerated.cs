@@ -347,7 +347,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPAmbient_A : VPAmbient
+    public partial class VPAmbientExtraA : VPAmbient
     {
         #region Properties
         /// <summary>
@@ -378,13 +378,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public VPAmbient_A() : base()
+        public VPAmbientExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPAmbient_B : VPAmbient_A
+    public partial class VPAmbientExtraB : VPAmbientExtraA
     {
         #region Properties
         /// <summary>
@@ -417,7 +417,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public VPAmbient_B() : base()
+        public VPAmbientExtraB() : base()
         {
         }
         #endregion Constructors

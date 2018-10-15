@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private TVTypeUserAuthorization tVTypeUserAuthorization { get; set; }
-        private TVTypeUserAuthorization_A tVTypeUserAuthorization_A { get; set; }
-        private TVTypeUserAuthorization_B tVTypeUserAuthorization_B { get; set; }
+        private TVTypeUserAuthorizationExtraA tVTypeUserAuthorizationExtraA { get; set; }
+        private TVTypeUserAuthorizationExtraB tVTypeUserAuthorizationExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public TVTypeUserAuthorizationTest()
         {
             tVTypeUserAuthorization = new TVTypeUserAuthorization();
-            tVTypeUserAuthorization_A = new TVTypeUserAuthorization_A();
-            tVTypeUserAuthorization_B = new TVTypeUserAuthorization_B();
+            tVTypeUserAuthorizationExtraA = new TVTypeUserAuthorizationExtraA();
+            tVTypeUserAuthorizationExtraB = new TVTypeUserAuthorizationExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVTypeUserAuthorization_A_Properties_Test()
+        public void TVTypeUserAuthorizationExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "TVTypeText", "TVAuthText", "TVTypeUserAuthorizationID", "ContactTVItemID", "TVType", "TVAuth", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorization_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorizationExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorization_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorizationExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVTypeUserAuthorization_B_Properties_Test()
+        public void TVTypeUserAuthorizationExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVTypeUserAuthorizationReportTest", "ContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "TVTypeText", "TVAuthText", "TVTypeUserAuthorizationID", "ContactTVItemID", "TVType", "TVAuth", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorization_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorizationExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorization_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorizationExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVTypeUserAuthorization_A_Navigation_Test()
+        public void TVTypeUserAuthorizationExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorization_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorizationExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorization_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorizationExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVTypeUserAuthorization_B_Navigation_Test()
+        public void TVTypeUserAuthorizationExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorization_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorizationExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorization_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TVTypeUserAuthorizationExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(TVTypeUserAuthorization).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TVTypeUserAuthorization_A_Has_ValidationResults_Test()
+        public void TVTypeUserAuthorizationExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(TVTypeUserAuthorization_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(TVTypeUserAuthorizationExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TVTypeUserAuthorization_B_Has_ValidationResults_Test()
+        public void TVTypeUserAuthorizationExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(TVTypeUserAuthorization_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(TVTypeUserAuthorizationExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void TVTypeUserAuthorization_Every_Property_Has_Get_Set_Test()
@@ -286,87 +286,87 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val24, tVTypeUserAuthorization.ValidationResults);
         }
         [TestMethod]
-        public void TVTypeUserAuthorization_A_Every_Property_Has_Get_Set_Test()
+        public void TVTypeUserAuthorizationExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               tVTypeUserAuthorization_A.ContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, tVTypeUserAuthorization_A.ContactTVItemLanguage);
+               tVTypeUserAuthorizationExtraA.ContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, tVTypeUserAuthorizationExtraA.ContactTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               tVTypeUserAuthorization_A.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, tVTypeUserAuthorization_A.LastUpdateContactTVItemLanguage);
+               tVTypeUserAuthorizationExtraA.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, tVTypeUserAuthorizationExtraA.LastUpdateContactTVItemLanguage);
                string val3 = "Some text";
-               tVTypeUserAuthorization_A.TVTypeText = val3;
-               Assert.AreEqual(val3, tVTypeUserAuthorization_A.TVTypeText);
+               tVTypeUserAuthorizationExtraA.TVTypeText = val3;
+               Assert.AreEqual(val3, tVTypeUserAuthorizationExtraA.TVTypeText);
                string val4 = "Some text";
-               tVTypeUserAuthorization_A.TVAuthText = val4;
-               Assert.AreEqual(val4, tVTypeUserAuthorization_A.TVAuthText);
+               tVTypeUserAuthorizationExtraA.TVAuthText = val4;
+               Assert.AreEqual(val4, tVTypeUserAuthorizationExtraA.TVAuthText);
                int val5 = 45;
-               tVTypeUserAuthorization_A.TVTypeUserAuthorizationID = val5;
-               Assert.AreEqual(val5, tVTypeUserAuthorization_A.TVTypeUserAuthorizationID);
+               tVTypeUserAuthorizationExtraA.TVTypeUserAuthorizationID = val5;
+               Assert.AreEqual(val5, tVTypeUserAuthorizationExtraA.TVTypeUserAuthorizationID);
                int val6 = 45;
-               tVTypeUserAuthorization_A.ContactTVItemID = val6;
-               Assert.AreEqual(val6, tVTypeUserAuthorization_A.ContactTVItemID);
+               tVTypeUserAuthorizationExtraA.ContactTVItemID = val6;
+               Assert.AreEqual(val6, tVTypeUserAuthorizationExtraA.ContactTVItemID);
                TVTypeEnum val7 = (TVTypeEnum)3;
-               tVTypeUserAuthorization_A.TVType = val7;
-               Assert.AreEqual(val7, tVTypeUserAuthorization_A.TVType);
+               tVTypeUserAuthorizationExtraA.TVType = val7;
+               Assert.AreEqual(val7, tVTypeUserAuthorizationExtraA.TVType);
                TVAuthEnum val8 = (TVAuthEnum)3;
-               tVTypeUserAuthorization_A.TVAuth = val8;
-               Assert.AreEqual(val8, tVTypeUserAuthorization_A.TVAuth);
+               tVTypeUserAuthorizationExtraA.TVAuth = val8;
+               Assert.AreEqual(val8, tVTypeUserAuthorizationExtraA.TVAuth);
                DateTime val9 = new DateTime(2010, 3, 4);
-               tVTypeUserAuthorization_A.LastUpdateDate_UTC = val9;
-               Assert.AreEqual(val9, tVTypeUserAuthorization_A.LastUpdateDate_UTC);
+               tVTypeUserAuthorizationExtraA.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, tVTypeUserAuthorizationExtraA.LastUpdateDate_UTC);
                int val10 = 45;
-               tVTypeUserAuthorization_A.LastUpdateContactTVItemID = val10;
-               Assert.AreEqual(val10, tVTypeUserAuthorization_A.LastUpdateContactTVItemID);
+               tVTypeUserAuthorizationExtraA.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, tVTypeUserAuthorizationExtraA.LastUpdateContactTVItemID);
                bool val11 = true;
-               tVTypeUserAuthorization_A.HasErrors = val11;
-               Assert.AreEqual(val11, tVTypeUserAuthorization_A.HasErrors);
+               tVTypeUserAuthorizationExtraA.HasErrors = val11;
+               Assert.AreEqual(val11, tVTypeUserAuthorizationExtraA.HasErrors);
                IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               tVTypeUserAuthorization_A.ValidationResults = val36;
-               Assert.AreEqual(val36, tVTypeUserAuthorization_A.ValidationResults);
+               tVTypeUserAuthorizationExtraA.ValidationResults = val36;
+               Assert.AreEqual(val36, tVTypeUserAuthorizationExtraA.ValidationResults);
         }
         [TestMethod]
-        public void TVTypeUserAuthorization_B_Every_Property_Has_Get_Set_Test()
+        public void TVTypeUserAuthorizationExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               tVTypeUserAuthorization_B.TVTypeUserAuthorizationReportTest = val1;
-               Assert.AreEqual(val1, tVTypeUserAuthorization_B.TVTypeUserAuthorizationReportTest);
+               tVTypeUserAuthorizationExtraB.TVTypeUserAuthorizationReportTest = val1;
+               Assert.AreEqual(val1, tVTypeUserAuthorizationExtraB.TVTypeUserAuthorizationReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               tVTypeUserAuthorization_B.ContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, tVTypeUserAuthorization_B.ContactTVItemLanguage);
+               tVTypeUserAuthorizationExtraB.ContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, tVTypeUserAuthorizationExtraB.ContactTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               tVTypeUserAuthorization_B.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, tVTypeUserAuthorization_B.LastUpdateContactTVItemLanguage);
+               tVTypeUserAuthorizationExtraB.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, tVTypeUserAuthorizationExtraB.LastUpdateContactTVItemLanguage);
                string val4 = "Some text";
-               tVTypeUserAuthorization_B.TVTypeText = val4;
-               Assert.AreEqual(val4, tVTypeUserAuthorization_B.TVTypeText);
+               tVTypeUserAuthorizationExtraB.TVTypeText = val4;
+               Assert.AreEqual(val4, tVTypeUserAuthorizationExtraB.TVTypeText);
                string val5 = "Some text";
-               tVTypeUserAuthorization_B.TVAuthText = val5;
-               Assert.AreEqual(val5, tVTypeUserAuthorization_B.TVAuthText);
+               tVTypeUserAuthorizationExtraB.TVAuthText = val5;
+               Assert.AreEqual(val5, tVTypeUserAuthorizationExtraB.TVAuthText);
                int val6 = 45;
-               tVTypeUserAuthorization_B.TVTypeUserAuthorizationID = val6;
-               Assert.AreEqual(val6, tVTypeUserAuthorization_B.TVTypeUserAuthorizationID);
+               tVTypeUserAuthorizationExtraB.TVTypeUserAuthorizationID = val6;
+               Assert.AreEqual(val6, tVTypeUserAuthorizationExtraB.TVTypeUserAuthorizationID);
                int val7 = 45;
-               tVTypeUserAuthorization_B.ContactTVItemID = val7;
-               Assert.AreEqual(val7, tVTypeUserAuthorization_B.ContactTVItemID);
+               tVTypeUserAuthorizationExtraB.ContactTVItemID = val7;
+               Assert.AreEqual(val7, tVTypeUserAuthorizationExtraB.ContactTVItemID);
                TVTypeEnum val8 = (TVTypeEnum)3;
-               tVTypeUserAuthorization_B.TVType = val8;
-               Assert.AreEqual(val8, tVTypeUserAuthorization_B.TVType);
+               tVTypeUserAuthorizationExtraB.TVType = val8;
+               Assert.AreEqual(val8, tVTypeUserAuthorizationExtraB.TVType);
                TVAuthEnum val9 = (TVAuthEnum)3;
-               tVTypeUserAuthorization_B.TVAuth = val9;
-               Assert.AreEqual(val9, tVTypeUserAuthorization_B.TVAuth);
+               tVTypeUserAuthorizationExtraB.TVAuth = val9;
+               Assert.AreEqual(val9, tVTypeUserAuthorizationExtraB.TVAuth);
                DateTime val10 = new DateTime(2010, 3, 4);
-               tVTypeUserAuthorization_B.LastUpdateDate_UTC = val10;
-               Assert.AreEqual(val10, tVTypeUserAuthorization_B.LastUpdateDate_UTC);
+               tVTypeUserAuthorizationExtraB.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, tVTypeUserAuthorizationExtraB.LastUpdateDate_UTC);
                int val11 = 45;
-               tVTypeUserAuthorization_B.LastUpdateContactTVItemID = val11;
-               Assert.AreEqual(val11, tVTypeUserAuthorization_B.LastUpdateContactTVItemID);
+               tVTypeUserAuthorizationExtraB.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, tVTypeUserAuthorizationExtraB.LastUpdateContactTVItemID);
                bool val12 = true;
-               tVTypeUserAuthorization_B.HasErrors = val12;
-               Assert.AreEqual(val12, tVTypeUserAuthorization_B.HasErrors);
+               tVTypeUserAuthorizationExtraB.HasErrors = val12;
+               Assert.AreEqual(val12, tVTypeUserAuthorizationExtraB.HasErrors);
                IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               tVTypeUserAuthorization_B.ValidationResults = val39;
-               Assert.AreEqual(val39, tVTypeUserAuthorization_B.ValidationResults);
+               tVTypeUserAuthorizationExtraB.ValidationResults = val39;
+               Assert.AreEqual(val39, tVTypeUserAuthorizationExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

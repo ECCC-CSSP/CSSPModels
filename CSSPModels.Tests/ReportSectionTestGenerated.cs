@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private ReportSection reportSection { get; set; }
-        private ReportSection_A reportSection_A { get; set; }
-        private ReportSection_B reportSection_B { get; set; }
+        private ReportSectionExtraA reportSectionExtraA { get; set; }
+        private ReportSectionExtraB reportSectionExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public ReportSectionTest()
         {
             reportSection = new ReportSection();
-            reportSection_A = new ReportSection_A();
-            reportSection_B = new ReportSection_B();
+            reportSectionExtraA = new ReportSectionExtraA();
+            reportSectionExtraB = new ReportSectionExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ReportSection_A_Properties_Test()
+        public void ReportSectionExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "ReportSectionName", "ReportSectionText", "ReportSectionID", "ReportTypeID", "TVItemID", "Ordinal", "IsStatic", "ParentReportSectionID", "Year", "Locked", "TemplateReportSectionID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportSection_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(ReportSectionExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportSection_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ReportSectionExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ReportSection_B_Properties_Test()
+        public void ReportSectionExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ReportSectionReportTest", "LastUpdateContactTVItemLanguage", "ReportSectionName", "ReportSectionText", "ReportSectionID", "ReportTypeID", "TVItemID", "Ordinal", "IsStatic", "ParentReportSectionID", "Year", "Locked", "TemplateReportSectionID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportSection_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(ReportSectionExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportSection_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ReportSectionExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ReportSection_A_Navigation_Test()
+        public void ReportSectionExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportSection_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(ReportSectionExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportSection_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ReportSectionExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ReportSection_B_Navigation_Test()
+        public void ReportSectionExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportSection_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(ReportSectionExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportSection_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ReportSectionExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(ReportSection).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ReportSection_A_Has_ValidationResults_Test()
+        public void ReportSectionExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(ReportSection_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(ReportSectionExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ReportSection_B_Has_ValidationResults_Test()
+        public void ReportSectionExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(ReportSection_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(ReportSectionExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void ReportSection_Every_Property_Has_Get_Set_Test()
@@ -301,111 +301,111 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val39, reportSection.ValidationResults);
         }
         [TestMethod]
-        public void ReportSection_A_Every_Property_Has_Get_Set_Test()
+        public void ReportSectionExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               reportSection_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, reportSection_A.LastUpdateContactTVItemLanguage);
+               reportSectionExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, reportSectionExtraA.LastUpdateContactTVItemLanguage);
                ReportSectionLanguage val2 = new ReportSectionLanguage();
-               reportSection_A.ReportSectionName = val2;
-               Assert.AreEqual(val2, reportSection_A.ReportSectionName);
+               reportSectionExtraA.ReportSectionName = val2;
+               Assert.AreEqual(val2, reportSectionExtraA.ReportSectionName);
                ReportSectionLanguage val3 = new ReportSectionLanguage();
-               reportSection_A.ReportSectionText = val3;
-               Assert.AreEqual(val3, reportSection_A.ReportSectionText);
+               reportSectionExtraA.ReportSectionText = val3;
+               Assert.AreEqual(val3, reportSectionExtraA.ReportSectionText);
                int val4 = 45;
-               reportSection_A.ReportSectionID = val4;
-               Assert.AreEqual(val4, reportSection_A.ReportSectionID);
+               reportSectionExtraA.ReportSectionID = val4;
+               Assert.AreEqual(val4, reportSectionExtraA.ReportSectionID);
                int val5 = 45;
-               reportSection_A.ReportTypeID = val5;
-               Assert.AreEqual(val5, reportSection_A.ReportTypeID);
+               reportSectionExtraA.ReportTypeID = val5;
+               Assert.AreEqual(val5, reportSectionExtraA.ReportTypeID);
                int val6 = 45;
-               reportSection_A.TVItemID = val6;
-               Assert.AreEqual(val6, reportSection_A.TVItemID);
+               reportSectionExtraA.TVItemID = val6;
+               Assert.AreEqual(val6, reportSectionExtraA.TVItemID);
                int val7 = 45;
-               reportSection_A.Ordinal = val7;
-               Assert.AreEqual(val7, reportSection_A.Ordinal);
+               reportSectionExtraA.Ordinal = val7;
+               Assert.AreEqual(val7, reportSectionExtraA.Ordinal);
                bool val8 = true;
-               reportSection_A.IsStatic = val8;
-               Assert.AreEqual(val8, reportSection_A.IsStatic);
+               reportSectionExtraA.IsStatic = val8;
+               Assert.AreEqual(val8, reportSectionExtraA.IsStatic);
                int val9 = 45;
-               reportSection_A.ParentReportSectionID = val9;
-               Assert.AreEqual(val9, reportSection_A.ParentReportSectionID);
+               reportSectionExtraA.ParentReportSectionID = val9;
+               Assert.AreEqual(val9, reportSectionExtraA.ParentReportSectionID);
                int val10 = 45;
-               reportSection_A.Year = val10;
-               Assert.AreEqual(val10, reportSection_A.Year);
+               reportSectionExtraA.Year = val10;
+               Assert.AreEqual(val10, reportSectionExtraA.Year);
                bool val11 = true;
-               reportSection_A.Locked = val11;
-               Assert.AreEqual(val11, reportSection_A.Locked);
+               reportSectionExtraA.Locked = val11;
+               Assert.AreEqual(val11, reportSectionExtraA.Locked);
                int val12 = 45;
-               reportSection_A.TemplateReportSectionID = val12;
-               Assert.AreEqual(val12, reportSection_A.TemplateReportSectionID);
+               reportSectionExtraA.TemplateReportSectionID = val12;
+               Assert.AreEqual(val12, reportSectionExtraA.TemplateReportSectionID);
                DateTime val13 = new DateTime(2010, 3, 4);
-               reportSection_A.LastUpdateDate_UTC = val13;
-               Assert.AreEqual(val13, reportSection_A.LastUpdateDate_UTC);
+               reportSectionExtraA.LastUpdateDate_UTC = val13;
+               Assert.AreEqual(val13, reportSectionExtraA.LastUpdateDate_UTC);
                int val14 = 45;
-               reportSection_A.LastUpdateContactTVItemID = val14;
-               Assert.AreEqual(val14, reportSection_A.LastUpdateContactTVItemID);
+               reportSectionExtraA.LastUpdateContactTVItemID = val14;
+               Assert.AreEqual(val14, reportSectionExtraA.LastUpdateContactTVItemID);
                bool val15 = true;
-               reportSection_A.HasErrors = val15;
-               Assert.AreEqual(val15, reportSection_A.HasErrors);
+               reportSectionExtraA.HasErrors = val15;
+               Assert.AreEqual(val15, reportSectionExtraA.HasErrors);
                IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               reportSection_A.ValidationResults = val48;
-               Assert.AreEqual(val48, reportSection_A.ValidationResults);
+               reportSectionExtraA.ValidationResults = val48;
+               Assert.AreEqual(val48, reportSectionExtraA.ValidationResults);
         }
         [TestMethod]
-        public void ReportSection_B_Every_Property_Has_Get_Set_Test()
+        public void ReportSectionExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               reportSection_B.ReportSectionReportTest = val1;
-               Assert.AreEqual(val1, reportSection_B.ReportSectionReportTest);
+               reportSectionExtraB.ReportSectionReportTest = val1;
+               Assert.AreEqual(val1, reportSectionExtraB.ReportSectionReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               reportSection_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, reportSection_B.LastUpdateContactTVItemLanguage);
+               reportSectionExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, reportSectionExtraB.LastUpdateContactTVItemLanguage);
                ReportSectionLanguage val3 = new ReportSectionLanguage();
-               reportSection_B.ReportSectionName = val3;
-               Assert.AreEqual(val3, reportSection_B.ReportSectionName);
+               reportSectionExtraB.ReportSectionName = val3;
+               Assert.AreEqual(val3, reportSectionExtraB.ReportSectionName);
                ReportSectionLanguage val4 = new ReportSectionLanguage();
-               reportSection_B.ReportSectionText = val4;
-               Assert.AreEqual(val4, reportSection_B.ReportSectionText);
+               reportSectionExtraB.ReportSectionText = val4;
+               Assert.AreEqual(val4, reportSectionExtraB.ReportSectionText);
                int val5 = 45;
-               reportSection_B.ReportSectionID = val5;
-               Assert.AreEqual(val5, reportSection_B.ReportSectionID);
+               reportSectionExtraB.ReportSectionID = val5;
+               Assert.AreEqual(val5, reportSectionExtraB.ReportSectionID);
                int val6 = 45;
-               reportSection_B.ReportTypeID = val6;
-               Assert.AreEqual(val6, reportSection_B.ReportTypeID);
+               reportSectionExtraB.ReportTypeID = val6;
+               Assert.AreEqual(val6, reportSectionExtraB.ReportTypeID);
                int val7 = 45;
-               reportSection_B.TVItemID = val7;
-               Assert.AreEqual(val7, reportSection_B.TVItemID);
+               reportSectionExtraB.TVItemID = val7;
+               Assert.AreEqual(val7, reportSectionExtraB.TVItemID);
                int val8 = 45;
-               reportSection_B.Ordinal = val8;
-               Assert.AreEqual(val8, reportSection_B.Ordinal);
+               reportSectionExtraB.Ordinal = val8;
+               Assert.AreEqual(val8, reportSectionExtraB.Ordinal);
                bool val9 = true;
-               reportSection_B.IsStatic = val9;
-               Assert.AreEqual(val9, reportSection_B.IsStatic);
+               reportSectionExtraB.IsStatic = val9;
+               Assert.AreEqual(val9, reportSectionExtraB.IsStatic);
                int val10 = 45;
-               reportSection_B.ParentReportSectionID = val10;
-               Assert.AreEqual(val10, reportSection_B.ParentReportSectionID);
+               reportSectionExtraB.ParentReportSectionID = val10;
+               Assert.AreEqual(val10, reportSectionExtraB.ParentReportSectionID);
                int val11 = 45;
-               reportSection_B.Year = val11;
-               Assert.AreEqual(val11, reportSection_B.Year);
+               reportSectionExtraB.Year = val11;
+               Assert.AreEqual(val11, reportSectionExtraB.Year);
                bool val12 = true;
-               reportSection_B.Locked = val12;
-               Assert.AreEqual(val12, reportSection_B.Locked);
+               reportSectionExtraB.Locked = val12;
+               Assert.AreEqual(val12, reportSectionExtraB.Locked);
                int val13 = 45;
-               reportSection_B.TemplateReportSectionID = val13;
-               Assert.AreEqual(val13, reportSection_B.TemplateReportSectionID);
+               reportSectionExtraB.TemplateReportSectionID = val13;
+               Assert.AreEqual(val13, reportSectionExtraB.TemplateReportSectionID);
                DateTime val14 = new DateTime(2010, 3, 4);
-               reportSection_B.LastUpdateDate_UTC = val14;
-               Assert.AreEqual(val14, reportSection_B.LastUpdateDate_UTC);
+               reportSectionExtraB.LastUpdateDate_UTC = val14;
+               Assert.AreEqual(val14, reportSectionExtraB.LastUpdateDate_UTC);
                int val15 = 45;
-               reportSection_B.LastUpdateContactTVItemID = val15;
-               Assert.AreEqual(val15, reportSection_B.LastUpdateContactTVItemID);
+               reportSectionExtraB.LastUpdateContactTVItemID = val15;
+               Assert.AreEqual(val15, reportSectionExtraB.LastUpdateContactTVItemID);
                bool val16 = true;
-               reportSection_B.HasErrors = val16;
-               Assert.AreEqual(val16, reportSection_B.HasErrors);
+               reportSectionExtraB.HasErrors = val16;
+               Assert.AreEqual(val16, reportSectionExtraB.HasErrors);
                IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               reportSection_B.ValidationResults = val51;
-               Assert.AreEqual(val51, reportSection_B.ValidationResults);
+               reportSectionExtraB.ValidationResults = val51;
+               Assert.AreEqual(val51, reportSectionExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private TVItemLanguage tVItemLanguage { get; set; }
-        private TVItemLanguage_A tVItemLanguage_A { get; set; }
-        private TVItemLanguage_B tVItemLanguage_B { get; set; }
+        private TVItemLanguageExtraA tVItemLanguageExtraA { get; set; }
+        private TVItemLanguageExtraB tVItemLanguageExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public TVItemLanguageTest()
         {
             tVItemLanguage = new TVItemLanguage();
-            tVItemLanguage_A = new TVItemLanguage_A();
-            tVItemLanguage_B = new TVItemLanguage_B();
+            tVItemLanguageExtraA = new TVItemLanguageExtraA();
+            tVItemLanguageExtraB = new TVItemLanguageExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVItemLanguage_A_Properties_Test()
+        public void TVItemLanguageExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "TVItemLanguageID", "TVItemID", "Language", "TVText", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguage_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguageExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguage_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguageExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVItemLanguage_B_Properties_Test()
+        public void TVItemLanguageExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemLanguageReportTest", "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "TVItemLanguageID", "TVItemID", "Language", "TVText", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguage_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguageExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguage_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguageExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVItemLanguage_A_Navigation_Test()
+        public void TVItemLanguageExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguage_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguageExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguage_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguageExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVItemLanguage_B_Navigation_Test()
+        public void TVItemLanguageExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguage_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguageExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguage_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TVItemLanguageExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(TVItemLanguage).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TVItemLanguage_A_Has_ValidationResults_Test()
+        public void TVItemLanguageExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(TVItemLanguage_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(TVItemLanguageExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TVItemLanguage_B_Has_ValidationResults_Test()
+        public void TVItemLanguageExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(TVItemLanguage_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(TVItemLanguageExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void TVItemLanguage_Every_Property_Has_Get_Set_Test()
@@ -289,87 +289,87 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val27, tVItemLanguage.ValidationResults);
         }
         [TestMethod]
-        public void TVItemLanguage_A_Every_Property_Has_Get_Set_Test()
+        public void TVItemLanguageExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               tVItemLanguage_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, tVItemLanguage_A.LastUpdateContactTVItemLanguage);
+               tVItemLanguageExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, tVItemLanguageExtraA.LastUpdateContactTVItemLanguage);
                string val2 = "Some text";
-               tVItemLanguage_A.LanguageText = val2;
-               Assert.AreEqual(val2, tVItemLanguage_A.LanguageText);
+               tVItemLanguageExtraA.LanguageText = val2;
+               Assert.AreEqual(val2, tVItemLanguageExtraA.LanguageText);
                string val3 = "Some text";
-               tVItemLanguage_A.TranslationStatusText = val3;
-               Assert.AreEqual(val3, tVItemLanguage_A.TranslationStatusText);
+               tVItemLanguageExtraA.TranslationStatusText = val3;
+               Assert.AreEqual(val3, tVItemLanguageExtraA.TranslationStatusText);
                int val4 = 45;
-               tVItemLanguage_A.TVItemLanguageID = val4;
-               Assert.AreEqual(val4, tVItemLanguage_A.TVItemLanguageID);
+               tVItemLanguageExtraA.TVItemLanguageID = val4;
+               Assert.AreEqual(val4, tVItemLanguageExtraA.TVItemLanguageID);
                int val5 = 45;
-               tVItemLanguage_A.TVItemID = val5;
-               Assert.AreEqual(val5, tVItemLanguage_A.TVItemID);
+               tVItemLanguageExtraA.TVItemID = val5;
+               Assert.AreEqual(val5, tVItemLanguageExtraA.TVItemID);
                LanguageEnum val6 = (LanguageEnum)3;
-               tVItemLanguage_A.Language = val6;
-               Assert.AreEqual(val6, tVItemLanguage_A.Language);
+               tVItemLanguageExtraA.Language = val6;
+               Assert.AreEqual(val6, tVItemLanguageExtraA.Language);
                string val7 = "Some text";
-               tVItemLanguage_A.TVText = val7;
-               Assert.AreEqual(val7, tVItemLanguage_A.TVText);
+               tVItemLanguageExtraA.TVText = val7;
+               Assert.AreEqual(val7, tVItemLanguageExtraA.TVText);
                TranslationStatusEnum val8 = (TranslationStatusEnum)3;
-               tVItemLanguage_A.TranslationStatus = val8;
-               Assert.AreEqual(val8, tVItemLanguage_A.TranslationStatus);
+               tVItemLanguageExtraA.TranslationStatus = val8;
+               Assert.AreEqual(val8, tVItemLanguageExtraA.TranslationStatus);
                DateTime val9 = new DateTime(2010, 3, 4);
-               tVItemLanguage_A.LastUpdateDate_UTC = val9;
-               Assert.AreEqual(val9, tVItemLanguage_A.LastUpdateDate_UTC);
+               tVItemLanguageExtraA.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, tVItemLanguageExtraA.LastUpdateDate_UTC);
                int val10 = 45;
-               tVItemLanguage_A.LastUpdateContactTVItemID = val10;
-               Assert.AreEqual(val10, tVItemLanguage_A.LastUpdateContactTVItemID);
+               tVItemLanguageExtraA.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, tVItemLanguageExtraA.LastUpdateContactTVItemID);
                bool val11 = true;
-               tVItemLanguage_A.HasErrors = val11;
-               Assert.AreEqual(val11, tVItemLanguage_A.HasErrors);
+               tVItemLanguageExtraA.HasErrors = val11;
+               Assert.AreEqual(val11, tVItemLanguageExtraA.HasErrors);
                IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               tVItemLanguage_A.ValidationResults = val36;
-               Assert.AreEqual(val36, tVItemLanguage_A.ValidationResults);
+               tVItemLanguageExtraA.ValidationResults = val36;
+               Assert.AreEqual(val36, tVItemLanguageExtraA.ValidationResults);
         }
         [TestMethod]
-        public void TVItemLanguage_B_Every_Property_Has_Get_Set_Test()
+        public void TVItemLanguageExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               tVItemLanguage_B.TVItemLanguageReportTest = val1;
-               Assert.AreEqual(val1, tVItemLanguage_B.TVItemLanguageReportTest);
+               tVItemLanguageExtraB.TVItemLanguageReportTest = val1;
+               Assert.AreEqual(val1, tVItemLanguageExtraB.TVItemLanguageReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               tVItemLanguage_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, tVItemLanguage_B.LastUpdateContactTVItemLanguage);
+               tVItemLanguageExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, tVItemLanguageExtraB.LastUpdateContactTVItemLanguage);
                string val3 = "Some text";
-               tVItemLanguage_B.LanguageText = val3;
-               Assert.AreEqual(val3, tVItemLanguage_B.LanguageText);
+               tVItemLanguageExtraB.LanguageText = val3;
+               Assert.AreEqual(val3, tVItemLanguageExtraB.LanguageText);
                string val4 = "Some text";
-               tVItemLanguage_B.TranslationStatusText = val4;
-               Assert.AreEqual(val4, tVItemLanguage_B.TranslationStatusText);
+               tVItemLanguageExtraB.TranslationStatusText = val4;
+               Assert.AreEqual(val4, tVItemLanguageExtraB.TranslationStatusText);
                int val5 = 45;
-               tVItemLanguage_B.TVItemLanguageID = val5;
-               Assert.AreEqual(val5, tVItemLanguage_B.TVItemLanguageID);
+               tVItemLanguageExtraB.TVItemLanguageID = val5;
+               Assert.AreEqual(val5, tVItemLanguageExtraB.TVItemLanguageID);
                int val6 = 45;
-               tVItemLanguage_B.TVItemID = val6;
-               Assert.AreEqual(val6, tVItemLanguage_B.TVItemID);
+               tVItemLanguageExtraB.TVItemID = val6;
+               Assert.AreEqual(val6, tVItemLanguageExtraB.TVItemID);
                LanguageEnum val7 = (LanguageEnum)3;
-               tVItemLanguage_B.Language = val7;
-               Assert.AreEqual(val7, tVItemLanguage_B.Language);
+               tVItemLanguageExtraB.Language = val7;
+               Assert.AreEqual(val7, tVItemLanguageExtraB.Language);
                string val8 = "Some text";
-               tVItemLanguage_B.TVText = val8;
-               Assert.AreEqual(val8, tVItemLanguage_B.TVText);
+               tVItemLanguageExtraB.TVText = val8;
+               Assert.AreEqual(val8, tVItemLanguageExtraB.TVText);
                TranslationStatusEnum val9 = (TranslationStatusEnum)3;
-               tVItemLanguage_B.TranslationStatus = val9;
-               Assert.AreEqual(val9, tVItemLanguage_B.TranslationStatus);
+               tVItemLanguageExtraB.TranslationStatus = val9;
+               Assert.AreEqual(val9, tVItemLanguageExtraB.TranslationStatus);
                DateTime val10 = new DateTime(2010, 3, 4);
-               tVItemLanguage_B.LastUpdateDate_UTC = val10;
-               Assert.AreEqual(val10, tVItemLanguage_B.LastUpdateDate_UTC);
+               tVItemLanguageExtraB.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, tVItemLanguageExtraB.LastUpdateDate_UTC);
                int val11 = 45;
-               tVItemLanguage_B.LastUpdateContactTVItemID = val11;
-               Assert.AreEqual(val11, tVItemLanguage_B.LastUpdateContactTVItemID);
+               tVItemLanguageExtraB.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, tVItemLanguageExtraB.LastUpdateContactTVItemID);
                bool val12 = true;
-               tVItemLanguage_B.HasErrors = val12;
-               Assert.AreEqual(val12, tVItemLanguage_B.HasErrors);
+               tVItemLanguageExtraB.HasErrors = val12;
+               Assert.AreEqual(val12, tVItemLanguageExtraB.HasErrors);
                IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               tVItemLanguage_B.ValidationResults = val39;
-               Assert.AreEqual(val39, tVItemLanguage_B.ValidationResults);
+               tVItemLanguageExtraB.ValidationResults = val39;
+               Assert.AreEqual(val39, tVItemLanguageExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

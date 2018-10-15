@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private TideSite tideSite { get; set; }
-        private TideSite_A tideSite_A { get; set; }
-        private TideSite_B tideSite_B { get; set; }
+        private TideSiteExtraA tideSiteExtraA { get; set; }
+        private TideSiteExtraB tideSiteExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public TideSiteTest()
         {
             tideSite = new TideSite();
-            tideSite_A = new TideSite_A();
-            tideSite_B = new TideSite_B();
+            tideSiteExtraA = new TideSiteExtraA();
+            tideSiteExtraB = new TideSiteExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TideSite_A_Properties_Test()
+        public void TideSiteExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TideSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "TideSiteID", "TideSiteTVItemID", "WebTideModel", "WebTideDatum_m", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TideSite_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(TideSiteExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TideSite_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TideSiteExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TideSite_B_Properties_Test()
+        public void TideSiteExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TideSiteReportTest", "TideSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "TideSiteID", "TideSiteTVItemID", "WebTideModel", "WebTideDatum_m", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TideSite_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(TideSiteExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TideSite_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TideSiteExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TideSite_A_Navigation_Test()
+        public void TideSiteExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TideSite_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(TideSiteExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TideSite_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TideSiteExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TideSite_B_Navigation_Test()
+        public void TideSiteExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TideSite_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(TideSiteExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TideSite_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TideSiteExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(TideSite).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TideSite_A_Has_ValidationResults_Test()
+        public void TideSiteExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(TideSite_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(TideSiteExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TideSite_B_Has_ValidationResults_Test()
+        public void TideSiteExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(TideSite_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(TideSiteExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void TideSite_Every_Property_Has_Get_Set_Test()
@@ -286,75 +286,75 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val24, tideSite.ValidationResults);
         }
         [TestMethod]
-        public void TideSite_A_Every_Property_Has_Get_Set_Test()
+        public void TideSiteExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               tideSite_A.TideSiteTVItemLanguage = val1;
-               Assert.AreEqual(val1, tideSite_A.TideSiteTVItemLanguage);
+               tideSiteExtraA.TideSiteTVItemLanguage = val1;
+               Assert.AreEqual(val1, tideSiteExtraA.TideSiteTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               tideSite_A.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, tideSite_A.LastUpdateContactTVItemLanguage);
+               tideSiteExtraA.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, tideSiteExtraA.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               tideSite_A.TideSiteID = val3;
-               Assert.AreEqual(val3, tideSite_A.TideSiteID);
+               tideSiteExtraA.TideSiteID = val3;
+               Assert.AreEqual(val3, tideSiteExtraA.TideSiteID);
                int val4 = 45;
-               tideSite_A.TideSiteTVItemID = val4;
-               Assert.AreEqual(val4, tideSite_A.TideSiteTVItemID);
+               tideSiteExtraA.TideSiteTVItemID = val4;
+               Assert.AreEqual(val4, tideSiteExtraA.TideSiteTVItemID);
                string val5 = "Some text";
-               tideSite_A.WebTideModel = val5;
-               Assert.AreEqual(val5, tideSite_A.WebTideModel);
+               tideSiteExtraA.WebTideModel = val5;
+               Assert.AreEqual(val5, tideSiteExtraA.WebTideModel);
                double val6 = 87.9D;
-               tideSite_A.WebTideDatum_m = val6;
-               Assert.AreEqual(val6, tideSite_A.WebTideDatum_m);
+               tideSiteExtraA.WebTideDatum_m = val6;
+               Assert.AreEqual(val6, tideSiteExtraA.WebTideDatum_m);
                DateTime val7 = new DateTime(2010, 3, 4);
-               tideSite_A.LastUpdateDate_UTC = val7;
-               Assert.AreEqual(val7, tideSite_A.LastUpdateDate_UTC);
+               tideSiteExtraA.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, tideSiteExtraA.LastUpdateDate_UTC);
                int val8 = 45;
-               tideSite_A.LastUpdateContactTVItemID = val8;
-               Assert.AreEqual(val8, tideSite_A.LastUpdateContactTVItemID);
+               tideSiteExtraA.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, tideSiteExtraA.LastUpdateContactTVItemID);
                bool val9 = true;
-               tideSite_A.HasErrors = val9;
-               Assert.AreEqual(val9, tideSite_A.HasErrors);
+               tideSiteExtraA.HasErrors = val9;
+               Assert.AreEqual(val9, tideSiteExtraA.HasErrors);
                IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               tideSite_A.ValidationResults = val30;
-               Assert.AreEqual(val30, tideSite_A.ValidationResults);
+               tideSiteExtraA.ValidationResults = val30;
+               Assert.AreEqual(val30, tideSiteExtraA.ValidationResults);
         }
         [TestMethod]
-        public void TideSite_B_Every_Property_Has_Get_Set_Test()
+        public void TideSiteExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               tideSite_B.TideSiteReportTest = val1;
-               Assert.AreEqual(val1, tideSite_B.TideSiteReportTest);
+               tideSiteExtraB.TideSiteReportTest = val1;
+               Assert.AreEqual(val1, tideSiteExtraB.TideSiteReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               tideSite_B.TideSiteTVItemLanguage = val2;
-               Assert.AreEqual(val2, tideSite_B.TideSiteTVItemLanguage);
+               tideSiteExtraB.TideSiteTVItemLanguage = val2;
+               Assert.AreEqual(val2, tideSiteExtraB.TideSiteTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               tideSite_B.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, tideSite_B.LastUpdateContactTVItemLanguage);
+               tideSiteExtraB.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, tideSiteExtraB.LastUpdateContactTVItemLanguage);
                int val4 = 45;
-               tideSite_B.TideSiteID = val4;
-               Assert.AreEqual(val4, tideSite_B.TideSiteID);
+               tideSiteExtraB.TideSiteID = val4;
+               Assert.AreEqual(val4, tideSiteExtraB.TideSiteID);
                int val5 = 45;
-               tideSite_B.TideSiteTVItemID = val5;
-               Assert.AreEqual(val5, tideSite_B.TideSiteTVItemID);
+               tideSiteExtraB.TideSiteTVItemID = val5;
+               Assert.AreEqual(val5, tideSiteExtraB.TideSiteTVItemID);
                string val6 = "Some text";
-               tideSite_B.WebTideModel = val6;
-               Assert.AreEqual(val6, tideSite_B.WebTideModel);
+               tideSiteExtraB.WebTideModel = val6;
+               Assert.AreEqual(val6, tideSiteExtraB.WebTideModel);
                double val7 = 87.9D;
-               tideSite_B.WebTideDatum_m = val7;
-               Assert.AreEqual(val7, tideSite_B.WebTideDatum_m);
+               tideSiteExtraB.WebTideDatum_m = val7;
+               Assert.AreEqual(val7, tideSiteExtraB.WebTideDatum_m);
                DateTime val8 = new DateTime(2010, 3, 4);
-               tideSite_B.LastUpdateDate_UTC = val8;
-               Assert.AreEqual(val8, tideSite_B.LastUpdateDate_UTC);
+               tideSiteExtraB.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, tideSiteExtraB.LastUpdateDate_UTC);
                int val9 = 45;
-               tideSite_B.LastUpdateContactTVItemID = val9;
-               Assert.AreEqual(val9, tideSite_B.LastUpdateContactTVItemID);
+               tideSiteExtraB.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, tideSiteExtraB.LastUpdateContactTVItemID);
                bool val10 = true;
-               tideSite_B.HasErrors = val10;
-               Assert.AreEqual(val10, tideSite_B.HasErrors);
+               tideSiteExtraB.HasErrors = val10;
+               Assert.AreEqual(val10, tideSiteExtraB.HasErrors);
                IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               tideSite_B.ValidationResults = val33;
-               Assert.AreEqual(val33, tideSite_B.ValidationResults);
+               tideSiteExtraB.ValidationResults = val33;
+               Assert.AreEqual(val33, tideSiteExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

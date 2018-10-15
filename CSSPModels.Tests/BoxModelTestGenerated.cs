@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private BoxModel boxModel { get; set; }
-        private BoxModel_A boxModel_A { get; set; }
-        private BoxModel_B boxModel_B { get; set; }
+        private BoxModelExtraA boxModelExtraA { get; set; }
+        private BoxModelExtraB boxModelExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public BoxModelTest()
         {
             boxModel = new BoxModel();
-            boxModel_A = new BoxModel_A();
-            boxModel_B = new BoxModel_B();
+            boxModelExtraA = new BoxModelExtraA();
+            boxModelExtraB = new BoxModelExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void BoxModel_A_Properties_Test()
+        public void BoxModelExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "InfrastructureTVItemLanguage", "LastUpdateContactTVItemLanguage", "BoxModelID", "InfrastructureTVItemID", "Flow_m3_day", "Depth_m", "Temperature_C", "Dilution", "DecayRate_per_day", "FCUntreated_MPN_100ml", "FCPreDisinfection_MPN_100ml", "Concentration_MPN_100ml", "T90_hour", "FlowDuration_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModel_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModel_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void BoxModel_B_Properties_Test()
+        public void BoxModelExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "BoxModelReportTest", "InfrastructureTVItemLanguage", "LastUpdateContactTVItemLanguage", "BoxModelID", "InfrastructureTVItemID", "Flow_m3_day", "Depth_m", "Temperature_C", "Dilution", "DecayRate_per_day", "FCUntreated_MPN_100ml", "FCPreDisinfection_MPN_100ml", "Concentration_MPN_100ml", "T90_hour", "FlowDuration_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModel_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModel_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void BoxModel_A_Navigation_Test()
+        public void BoxModelExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModel_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModel_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void BoxModel_B_Navigation_Test()
+        public void BoxModelExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModel_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(BoxModel_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(BoxModelExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(BoxModel).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void BoxModel_A_Has_ValidationResults_Test()
+        public void BoxModelExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(BoxModel_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(BoxModelExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void BoxModel_B_Has_ValidationResults_Test()
+        public void BoxModelExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(BoxModel_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(BoxModelExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void BoxModel_Every_Property_Has_Get_Set_Test()
@@ -310,123 +310,123 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val48, boxModel.ValidationResults);
         }
         [TestMethod]
-        public void BoxModel_A_Every_Property_Has_Get_Set_Test()
+        public void BoxModelExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               boxModel_A.InfrastructureTVItemLanguage = val1;
-               Assert.AreEqual(val1, boxModel_A.InfrastructureTVItemLanguage);
+               boxModelExtraA.InfrastructureTVItemLanguage = val1;
+               Assert.AreEqual(val1, boxModelExtraA.InfrastructureTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               boxModel_A.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, boxModel_A.LastUpdateContactTVItemLanguage);
+               boxModelExtraA.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, boxModelExtraA.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               boxModel_A.BoxModelID = val3;
-               Assert.AreEqual(val3, boxModel_A.BoxModelID);
+               boxModelExtraA.BoxModelID = val3;
+               Assert.AreEqual(val3, boxModelExtraA.BoxModelID);
                int val4 = 45;
-               boxModel_A.InfrastructureTVItemID = val4;
-               Assert.AreEqual(val4, boxModel_A.InfrastructureTVItemID);
+               boxModelExtraA.InfrastructureTVItemID = val4;
+               Assert.AreEqual(val4, boxModelExtraA.InfrastructureTVItemID);
                double val5 = 87.9D;
-               boxModel_A.Flow_m3_day = val5;
-               Assert.AreEqual(val5, boxModel_A.Flow_m3_day);
+               boxModelExtraA.Flow_m3_day = val5;
+               Assert.AreEqual(val5, boxModelExtraA.Flow_m3_day);
                double val6 = 87.9D;
-               boxModel_A.Depth_m = val6;
-               Assert.AreEqual(val6, boxModel_A.Depth_m);
+               boxModelExtraA.Depth_m = val6;
+               Assert.AreEqual(val6, boxModelExtraA.Depth_m);
                double val7 = 87.9D;
-               boxModel_A.Temperature_C = val7;
-               Assert.AreEqual(val7, boxModel_A.Temperature_C);
+               boxModelExtraA.Temperature_C = val7;
+               Assert.AreEqual(val7, boxModelExtraA.Temperature_C);
                int val8 = 45;
-               boxModel_A.Dilution = val8;
-               Assert.AreEqual(val8, boxModel_A.Dilution);
+               boxModelExtraA.Dilution = val8;
+               Assert.AreEqual(val8, boxModelExtraA.Dilution);
                double val9 = 87.9D;
-               boxModel_A.DecayRate_per_day = val9;
-               Assert.AreEqual(val9, boxModel_A.DecayRate_per_day);
+               boxModelExtraA.DecayRate_per_day = val9;
+               Assert.AreEqual(val9, boxModelExtraA.DecayRate_per_day);
                int val10 = 45;
-               boxModel_A.FCUntreated_MPN_100ml = val10;
-               Assert.AreEqual(val10, boxModel_A.FCUntreated_MPN_100ml);
+               boxModelExtraA.FCUntreated_MPN_100ml = val10;
+               Assert.AreEqual(val10, boxModelExtraA.FCUntreated_MPN_100ml);
                int val11 = 45;
-               boxModel_A.FCPreDisinfection_MPN_100ml = val11;
-               Assert.AreEqual(val11, boxModel_A.FCPreDisinfection_MPN_100ml);
+               boxModelExtraA.FCPreDisinfection_MPN_100ml = val11;
+               Assert.AreEqual(val11, boxModelExtraA.FCPreDisinfection_MPN_100ml);
                int val12 = 45;
-               boxModel_A.Concentration_MPN_100ml = val12;
-               Assert.AreEqual(val12, boxModel_A.Concentration_MPN_100ml);
+               boxModelExtraA.Concentration_MPN_100ml = val12;
+               Assert.AreEqual(val12, boxModelExtraA.Concentration_MPN_100ml);
                double val13 = 87.9D;
-               boxModel_A.T90_hour = val13;
-               Assert.AreEqual(val13, boxModel_A.T90_hour);
+               boxModelExtraA.T90_hour = val13;
+               Assert.AreEqual(val13, boxModelExtraA.T90_hour);
                double val14 = 87.9D;
-               boxModel_A.FlowDuration_hour = val14;
-               Assert.AreEqual(val14, boxModel_A.FlowDuration_hour);
+               boxModelExtraA.FlowDuration_hour = val14;
+               Assert.AreEqual(val14, boxModelExtraA.FlowDuration_hour);
                DateTime val15 = new DateTime(2010, 3, 4);
-               boxModel_A.LastUpdateDate_UTC = val15;
-               Assert.AreEqual(val15, boxModel_A.LastUpdateDate_UTC);
+               boxModelExtraA.LastUpdateDate_UTC = val15;
+               Assert.AreEqual(val15, boxModelExtraA.LastUpdateDate_UTC);
                int val16 = 45;
-               boxModel_A.LastUpdateContactTVItemID = val16;
-               Assert.AreEqual(val16, boxModel_A.LastUpdateContactTVItemID);
+               boxModelExtraA.LastUpdateContactTVItemID = val16;
+               Assert.AreEqual(val16, boxModelExtraA.LastUpdateContactTVItemID);
                bool val17 = true;
-               boxModel_A.HasErrors = val17;
-               Assert.AreEqual(val17, boxModel_A.HasErrors);
+               boxModelExtraA.HasErrors = val17;
+               Assert.AreEqual(val17, boxModelExtraA.HasErrors);
                IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               boxModel_A.ValidationResults = val54;
-               Assert.AreEqual(val54, boxModel_A.ValidationResults);
+               boxModelExtraA.ValidationResults = val54;
+               Assert.AreEqual(val54, boxModelExtraA.ValidationResults);
         }
         [TestMethod]
-        public void BoxModel_B_Every_Property_Has_Get_Set_Test()
+        public void BoxModelExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               boxModel_B.BoxModelReportTest = val1;
-               Assert.AreEqual(val1, boxModel_B.BoxModelReportTest);
+               boxModelExtraB.BoxModelReportTest = val1;
+               Assert.AreEqual(val1, boxModelExtraB.BoxModelReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               boxModel_B.InfrastructureTVItemLanguage = val2;
-               Assert.AreEqual(val2, boxModel_B.InfrastructureTVItemLanguage);
+               boxModelExtraB.InfrastructureTVItemLanguage = val2;
+               Assert.AreEqual(val2, boxModelExtraB.InfrastructureTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               boxModel_B.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, boxModel_B.LastUpdateContactTVItemLanguage);
+               boxModelExtraB.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, boxModelExtraB.LastUpdateContactTVItemLanguage);
                int val4 = 45;
-               boxModel_B.BoxModelID = val4;
-               Assert.AreEqual(val4, boxModel_B.BoxModelID);
+               boxModelExtraB.BoxModelID = val4;
+               Assert.AreEqual(val4, boxModelExtraB.BoxModelID);
                int val5 = 45;
-               boxModel_B.InfrastructureTVItemID = val5;
-               Assert.AreEqual(val5, boxModel_B.InfrastructureTVItemID);
+               boxModelExtraB.InfrastructureTVItemID = val5;
+               Assert.AreEqual(val5, boxModelExtraB.InfrastructureTVItemID);
                double val6 = 87.9D;
-               boxModel_B.Flow_m3_day = val6;
-               Assert.AreEqual(val6, boxModel_B.Flow_m3_day);
+               boxModelExtraB.Flow_m3_day = val6;
+               Assert.AreEqual(val6, boxModelExtraB.Flow_m3_day);
                double val7 = 87.9D;
-               boxModel_B.Depth_m = val7;
-               Assert.AreEqual(val7, boxModel_B.Depth_m);
+               boxModelExtraB.Depth_m = val7;
+               Assert.AreEqual(val7, boxModelExtraB.Depth_m);
                double val8 = 87.9D;
-               boxModel_B.Temperature_C = val8;
-               Assert.AreEqual(val8, boxModel_B.Temperature_C);
+               boxModelExtraB.Temperature_C = val8;
+               Assert.AreEqual(val8, boxModelExtraB.Temperature_C);
                int val9 = 45;
-               boxModel_B.Dilution = val9;
-               Assert.AreEqual(val9, boxModel_B.Dilution);
+               boxModelExtraB.Dilution = val9;
+               Assert.AreEqual(val9, boxModelExtraB.Dilution);
                double val10 = 87.9D;
-               boxModel_B.DecayRate_per_day = val10;
-               Assert.AreEqual(val10, boxModel_B.DecayRate_per_day);
+               boxModelExtraB.DecayRate_per_day = val10;
+               Assert.AreEqual(val10, boxModelExtraB.DecayRate_per_day);
                int val11 = 45;
-               boxModel_B.FCUntreated_MPN_100ml = val11;
-               Assert.AreEqual(val11, boxModel_B.FCUntreated_MPN_100ml);
+               boxModelExtraB.FCUntreated_MPN_100ml = val11;
+               Assert.AreEqual(val11, boxModelExtraB.FCUntreated_MPN_100ml);
                int val12 = 45;
-               boxModel_B.FCPreDisinfection_MPN_100ml = val12;
-               Assert.AreEqual(val12, boxModel_B.FCPreDisinfection_MPN_100ml);
+               boxModelExtraB.FCPreDisinfection_MPN_100ml = val12;
+               Assert.AreEqual(val12, boxModelExtraB.FCPreDisinfection_MPN_100ml);
                int val13 = 45;
-               boxModel_B.Concentration_MPN_100ml = val13;
-               Assert.AreEqual(val13, boxModel_B.Concentration_MPN_100ml);
+               boxModelExtraB.Concentration_MPN_100ml = val13;
+               Assert.AreEqual(val13, boxModelExtraB.Concentration_MPN_100ml);
                double val14 = 87.9D;
-               boxModel_B.T90_hour = val14;
-               Assert.AreEqual(val14, boxModel_B.T90_hour);
+               boxModelExtraB.T90_hour = val14;
+               Assert.AreEqual(val14, boxModelExtraB.T90_hour);
                double val15 = 87.9D;
-               boxModel_B.FlowDuration_hour = val15;
-               Assert.AreEqual(val15, boxModel_B.FlowDuration_hour);
+               boxModelExtraB.FlowDuration_hour = val15;
+               Assert.AreEqual(val15, boxModelExtraB.FlowDuration_hour);
                DateTime val16 = new DateTime(2010, 3, 4);
-               boxModel_B.LastUpdateDate_UTC = val16;
-               Assert.AreEqual(val16, boxModel_B.LastUpdateDate_UTC);
+               boxModelExtraB.LastUpdateDate_UTC = val16;
+               Assert.AreEqual(val16, boxModelExtraB.LastUpdateDate_UTC);
                int val17 = 45;
-               boxModel_B.LastUpdateContactTVItemID = val17;
-               Assert.AreEqual(val17, boxModel_B.LastUpdateContactTVItemID);
+               boxModelExtraB.LastUpdateContactTVItemID = val17;
+               Assert.AreEqual(val17, boxModelExtraB.LastUpdateContactTVItemID);
                bool val18 = true;
-               boxModel_B.HasErrors = val18;
-               Assert.AreEqual(val18, boxModel_B.HasErrors);
+               boxModelExtraB.HasErrors = val18;
+               Assert.AreEqual(val18, boxModelExtraB.HasErrors);
                IEnumerable<ValidationResult> val57 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               boxModel_B.ValidationResults = val57;
-               Assert.AreEqual(val57, boxModel_B.ValidationResults);
+               boxModelExtraB.ValidationResults = val57;
+               Assert.AreEqual(val57, boxModelExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

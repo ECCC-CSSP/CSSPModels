@@ -223,7 +223,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanEmail_A : SamplingPlanEmail
+    public partial class SamplingPlanEmailExtraA : SamplingPlanEmail
     {
         #region Properties
         /// <summary>
@@ -254,13 +254,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public SamplingPlanEmail_A() : base()
+        public SamplingPlanEmailExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanEmail_B : SamplingPlanEmail_A
+    public partial class SamplingPlanEmailExtraB : SamplingPlanEmailExtraA
     {
         #region Properties
         /// <summary>
@@ -293,7 +293,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public SamplingPlanEmail_B() : base()
+        public SamplingPlanEmailExtraB() : base()
         {
         }
         #endregion Constructors

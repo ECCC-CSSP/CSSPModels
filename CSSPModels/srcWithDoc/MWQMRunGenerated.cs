@@ -1040,7 +1040,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMRun_A : MWQMRun
+    public partial class MWQMRunExtraA : MWQMRun
     {
         #region Properties
         /// <summary>
@@ -1389,13 +1389,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MWQMRun_A() : base()
+        public MWQMRunExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMRun_B : MWQMRun_A
+    public partial class MWQMRunExtraB : MWQMRunExtraA
     {
         #region Properties
         /// <summary>
@@ -1428,7 +1428,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MWQMRun_B() : base()
+        public MWQMRunExtraB() : base()
         {
         }
         #endregion Constructors

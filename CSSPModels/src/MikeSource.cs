@@ -79,7 +79,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeSource_A : MikeSource
+    public partial class MikeSourceExtraA : MikeSource
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MikeSourceTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -93,13 +93,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MikeSource_A() : base()
+        public MikeSourceExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeSource_B : MikeSource_A
+    public partial class MikeSourceExtraB : MikeSourceExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -112,7 +112,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MikeSource_B() : base()
+        public MikeSourceExtraB() : base()
         {
         }
         #endregion Constructors

@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private LabSheet labSheet { get; set; }
-        private LabSheet_A labSheet_A { get; set; }
-        private LabSheet_B labSheet_B { get; set; }
+        private LabSheetExtraA labSheetExtraA { get; set; }
+        private LabSheetExtraB labSheetExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public LabSheetTest()
         {
             labSheet = new LabSheet();
-            labSheet_A = new LabSheet_A();
-            labSheet_B = new LabSheet_B();
+            labSheetExtraA = new LabSheetExtraA();
+            labSheetExtraB = new LabSheetExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void LabSheet_A_Properties_Test()
+        public void LabSheetExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SubsectorTVItemLanguage", "MWQMRunTVItemLanguage", "AcceptedOrRejectedByContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "SamplingPlanTypeText", "SampleTypeText", "LabSheetTypeText", "LabSheetStatusText", "LabSheetID", "OtherServerLabSheetID", "SamplingPlanID", "SamplingPlanName", "Year", "Month", "Day", "RunNumber", "SubsectorTVItemID", "MWQMRunTVItemID", "SamplingPlanType", "SampleType", "LabSheetType", "LabSheetStatus", "FileName", "FileLastModifiedDate_Local", "FileContent", "AcceptedOrRejectedByContactTVItemID", "AcceptedOrRejectedDateTime", "RejectReason", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheet_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheet_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void LabSheet_B_Properties_Test()
+        public void LabSheetExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LabSheetReportTest", "SubsectorTVItemLanguage", "MWQMRunTVItemLanguage", "AcceptedOrRejectedByContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "SamplingPlanTypeText", "SampleTypeText", "LabSheetTypeText", "LabSheetStatusText", "LabSheetID", "OtherServerLabSheetID", "SamplingPlanID", "SamplingPlanName", "Year", "Month", "Day", "RunNumber", "SubsectorTVItemID", "MWQMRunTVItemID", "SamplingPlanType", "SampleType", "LabSheetType", "LabSheetStatus", "FileName", "FileLastModifiedDate_Local", "FileContent", "AcceptedOrRejectedByContactTVItemID", "AcceptedOrRejectedDateTime", "RejectReason", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheet_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheet_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void LabSheet_A_Navigation_Test()
+        public void LabSheetExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheet_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheet_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void LabSheet_B_Navigation_Test()
+        public void LabSheetExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheet_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(LabSheet_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(LabSheetExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(LabSheet).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void LabSheet_A_Has_ValidationResults_Test()
+        public void LabSheetExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(LabSheet_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(LabSheetExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void LabSheet_B_Has_ValidationResults_Test()
+        public void LabSheetExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(LabSheet_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(LabSheetExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void LabSheet_Every_Property_Has_Get_Set_Test()
@@ -334,207 +334,207 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val72, labSheet.ValidationResults);
         }
         [TestMethod]
-        public void LabSheet_A_Every_Property_Has_Get_Set_Test()
+        public void LabSheetExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               labSheet_A.SubsectorTVItemLanguage = val1;
-               Assert.AreEqual(val1, labSheet_A.SubsectorTVItemLanguage);
+               labSheetExtraA.SubsectorTVItemLanguage = val1;
+               Assert.AreEqual(val1, labSheetExtraA.SubsectorTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               labSheet_A.MWQMRunTVItemLanguage = val2;
-               Assert.AreEqual(val2, labSheet_A.MWQMRunTVItemLanguage);
+               labSheetExtraA.MWQMRunTVItemLanguage = val2;
+               Assert.AreEqual(val2, labSheetExtraA.MWQMRunTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               labSheet_A.AcceptedOrRejectedByContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, labSheet_A.AcceptedOrRejectedByContactTVItemLanguage);
+               labSheetExtraA.AcceptedOrRejectedByContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, labSheetExtraA.AcceptedOrRejectedByContactTVItemLanguage);
                TVItemLanguage val4 = new TVItemLanguage();
-               labSheet_A.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, labSheet_A.LastUpdateContactTVItemLanguage);
+               labSheetExtraA.LastUpdateContactTVItemLanguage = val4;
+               Assert.AreEqual(val4, labSheetExtraA.LastUpdateContactTVItemLanguage);
                string val5 = "Some text";
-               labSheet_A.SamplingPlanTypeText = val5;
-               Assert.AreEqual(val5, labSheet_A.SamplingPlanTypeText);
+               labSheetExtraA.SamplingPlanTypeText = val5;
+               Assert.AreEqual(val5, labSheetExtraA.SamplingPlanTypeText);
                string val6 = "Some text";
-               labSheet_A.SampleTypeText = val6;
-               Assert.AreEqual(val6, labSheet_A.SampleTypeText);
+               labSheetExtraA.SampleTypeText = val6;
+               Assert.AreEqual(val6, labSheetExtraA.SampleTypeText);
                string val7 = "Some text";
-               labSheet_A.LabSheetTypeText = val7;
-               Assert.AreEqual(val7, labSheet_A.LabSheetTypeText);
+               labSheetExtraA.LabSheetTypeText = val7;
+               Assert.AreEqual(val7, labSheetExtraA.LabSheetTypeText);
                string val8 = "Some text";
-               labSheet_A.LabSheetStatusText = val8;
-               Assert.AreEqual(val8, labSheet_A.LabSheetStatusText);
+               labSheetExtraA.LabSheetStatusText = val8;
+               Assert.AreEqual(val8, labSheetExtraA.LabSheetStatusText);
                int val9 = 45;
-               labSheet_A.LabSheetID = val9;
-               Assert.AreEqual(val9, labSheet_A.LabSheetID);
+               labSheetExtraA.LabSheetID = val9;
+               Assert.AreEqual(val9, labSheetExtraA.LabSheetID);
                int val10 = 45;
-               labSheet_A.OtherServerLabSheetID = val10;
-               Assert.AreEqual(val10, labSheet_A.OtherServerLabSheetID);
+               labSheetExtraA.OtherServerLabSheetID = val10;
+               Assert.AreEqual(val10, labSheetExtraA.OtherServerLabSheetID);
                int val11 = 45;
-               labSheet_A.SamplingPlanID = val11;
-               Assert.AreEqual(val11, labSheet_A.SamplingPlanID);
+               labSheetExtraA.SamplingPlanID = val11;
+               Assert.AreEqual(val11, labSheetExtraA.SamplingPlanID);
                string val12 = "Some text";
-               labSheet_A.SamplingPlanName = val12;
-               Assert.AreEqual(val12, labSheet_A.SamplingPlanName);
+               labSheetExtraA.SamplingPlanName = val12;
+               Assert.AreEqual(val12, labSheetExtraA.SamplingPlanName);
                int val13 = 45;
-               labSheet_A.Year = val13;
-               Assert.AreEqual(val13, labSheet_A.Year);
+               labSheetExtraA.Year = val13;
+               Assert.AreEqual(val13, labSheetExtraA.Year);
                int val14 = 45;
-               labSheet_A.Month = val14;
-               Assert.AreEqual(val14, labSheet_A.Month);
+               labSheetExtraA.Month = val14;
+               Assert.AreEqual(val14, labSheetExtraA.Month);
                int val15 = 45;
-               labSheet_A.Day = val15;
-               Assert.AreEqual(val15, labSheet_A.Day);
+               labSheetExtraA.Day = val15;
+               Assert.AreEqual(val15, labSheetExtraA.Day);
                int val16 = 45;
-               labSheet_A.RunNumber = val16;
-               Assert.AreEqual(val16, labSheet_A.RunNumber);
+               labSheetExtraA.RunNumber = val16;
+               Assert.AreEqual(val16, labSheetExtraA.RunNumber);
                int val17 = 45;
-               labSheet_A.SubsectorTVItemID = val17;
-               Assert.AreEqual(val17, labSheet_A.SubsectorTVItemID);
+               labSheetExtraA.SubsectorTVItemID = val17;
+               Assert.AreEqual(val17, labSheetExtraA.SubsectorTVItemID);
                int val18 = 45;
-               labSheet_A.MWQMRunTVItemID = val18;
-               Assert.AreEqual(val18, labSheet_A.MWQMRunTVItemID);
+               labSheetExtraA.MWQMRunTVItemID = val18;
+               Assert.AreEqual(val18, labSheetExtraA.MWQMRunTVItemID);
                SamplingPlanTypeEnum val19 = (SamplingPlanTypeEnum)3;
-               labSheet_A.SamplingPlanType = val19;
-               Assert.AreEqual(val19, labSheet_A.SamplingPlanType);
+               labSheetExtraA.SamplingPlanType = val19;
+               Assert.AreEqual(val19, labSheetExtraA.SamplingPlanType);
                SampleTypeEnum val20 = (SampleTypeEnum)3;
-               labSheet_A.SampleType = val20;
-               Assert.AreEqual(val20, labSheet_A.SampleType);
+               labSheetExtraA.SampleType = val20;
+               Assert.AreEqual(val20, labSheetExtraA.SampleType);
                LabSheetTypeEnum val21 = (LabSheetTypeEnum)3;
-               labSheet_A.LabSheetType = val21;
-               Assert.AreEqual(val21, labSheet_A.LabSheetType);
+               labSheetExtraA.LabSheetType = val21;
+               Assert.AreEqual(val21, labSheetExtraA.LabSheetType);
                LabSheetStatusEnum val22 = (LabSheetStatusEnum)3;
-               labSheet_A.LabSheetStatus = val22;
-               Assert.AreEqual(val22, labSheet_A.LabSheetStatus);
+               labSheetExtraA.LabSheetStatus = val22;
+               Assert.AreEqual(val22, labSheetExtraA.LabSheetStatus);
                string val23 = "Some text";
-               labSheet_A.FileName = val23;
-               Assert.AreEqual(val23, labSheet_A.FileName);
+               labSheetExtraA.FileName = val23;
+               Assert.AreEqual(val23, labSheetExtraA.FileName);
                DateTime val24 = new DateTime(2010, 3, 4);
-               labSheet_A.FileLastModifiedDate_Local = val24;
-               Assert.AreEqual(val24, labSheet_A.FileLastModifiedDate_Local);
+               labSheetExtraA.FileLastModifiedDate_Local = val24;
+               Assert.AreEqual(val24, labSheetExtraA.FileLastModifiedDate_Local);
                string val25 = "Some text";
-               labSheet_A.FileContent = val25;
-               Assert.AreEqual(val25, labSheet_A.FileContent);
+               labSheetExtraA.FileContent = val25;
+               Assert.AreEqual(val25, labSheetExtraA.FileContent);
                int val26 = 45;
-               labSheet_A.AcceptedOrRejectedByContactTVItemID = val26;
-               Assert.AreEqual(val26, labSheet_A.AcceptedOrRejectedByContactTVItemID);
+               labSheetExtraA.AcceptedOrRejectedByContactTVItemID = val26;
+               Assert.AreEqual(val26, labSheetExtraA.AcceptedOrRejectedByContactTVItemID);
                DateTime val27 = new DateTime(2010, 3, 4);
-               labSheet_A.AcceptedOrRejectedDateTime = val27;
-               Assert.AreEqual(val27, labSheet_A.AcceptedOrRejectedDateTime);
+               labSheetExtraA.AcceptedOrRejectedDateTime = val27;
+               Assert.AreEqual(val27, labSheetExtraA.AcceptedOrRejectedDateTime);
                string val28 = "Some text";
-               labSheet_A.RejectReason = val28;
-               Assert.AreEqual(val28, labSheet_A.RejectReason);
+               labSheetExtraA.RejectReason = val28;
+               Assert.AreEqual(val28, labSheetExtraA.RejectReason);
                DateTime val29 = new DateTime(2010, 3, 4);
-               labSheet_A.LastUpdateDate_UTC = val29;
-               Assert.AreEqual(val29, labSheet_A.LastUpdateDate_UTC);
+               labSheetExtraA.LastUpdateDate_UTC = val29;
+               Assert.AreEqual(val29, labSheetExtraA.LastUpdateDate_UTC);
                int val30 = 45;
-               labSheet_A.LastUpdateContactTVItemID = val30;
-               Assert.AreEqual(val30, labSheet_A.LastUpdateContactTVItemID);
+               labSheetExtraA.LastUpdateContactTVItemID = val30;
+               Assert.AreEqual(val30, labSheetExtraA.LastUpdateContactTVItemID);
                bool val31 = true;
-               labSheet_A.HasErrors = val31;
-               Assert.AreEqual(val31, labSheet_A.HasErrors);
+               labSheetExtraA.HasErrors = val31;
+               Assert.AreEqual(val31, labSheetExtraA.HasErrors);
                IEnumerable<ValidationResult> val96 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               labSheet_A.ValidationResults = val96;
-               Assert.AreEqual(val96, labSheet_A.ValidationResults);
+               labSheetExtraA.ValidationResults = val96;
+               Assert.AreEqual(val96, labSheetExtraA.ValidationResults);
         }
         [TestMethod]
-        public void LabSheet_B_Every_Property_Has_Get_Set_Test()
+        public void LabSheetExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               labSheet_B.LabSheetReportTest = val1;
-               Assert.AreEqual(val1, labSheet_B.LabSheetReportTest);
+               labSheetExtraB.LabSheetReportTest = val1;
+               Assert.AreEqual(val1, labSheetExtraB.LabSheetReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               labSheet_B.SubsectorTVItemLanguage = val2;
-               Assert.AreEqual(val2, labSheet_B.SubsectorTVItemLanguage);
+               labSheetExtraB.SubsectorTVItemLanguage = val2;
+               Assert.AreEqual(val2, labSheetExtraB.SubsectorTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               labSheet_B.MWQMRunTVItemLanguage = val3;
-               Assert.AreEqual(val3, labSheet_B.MWQMRunTVItemLanguage);
+               labSheetExtraB.MWQMRunTVItemLanguage = val3;
+               Assert.AreEqual(val3, labSheetExtraB.MWQMRunTVItemLanguage);
                TVItemLanguage val4 = new TVItemLanguage();
-               labSheet_B.AcceptedOrRejectedByContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, labSheet_B.AcceptedOrRejectedByContactTVItemLanguage);
+               labSheetExtraB.AcceptedOrRejectedByContactTVItemLanguage = val4;
+               Assert.AreEqual(val4, labSheetExtraB.AcceptedOrRejectedByContactTVItemLanguage);
                TVItemLanguage val5 = new TVItemLanguage();
-               labSheet_B.LastUpdateContactTVItemLanguage = val5;
-               Assert.AreEqual(val5, labSheet_B.LastUpdateContactTVItemLanguage);
+               labSheetExtraB.LastUpdateContactTVItemLanguage = val5;
+               Assert.AreEqual(val5, labSheetExtraB.LastUpdateContactTVItemLanguage);
                string val6 = "Some text";
-               labSheet_B.SamplingPlanTypeText = val6;
-               Assert.AreEqual(val6, labSheet_B.SamplingPlanTypeText);
+               labSheetExtraB.SamplingPlanTypeText = val6;
+               Assert.AreEqual(val6, labSheetExtraB.SamplingPlanTypeText);
                string val7 = "Some text";
-               labSheet_B.SampleTypeText = val7;
-               Assert.AreEqual(val7, labSheet_B.SampleTypeText);
+               labSheetExtraB.SampleTypeText = val7;
+               Assert.AreEqual(val7, labSheetExtraB.SampleTypeText);
                string val8 = "Some text";
-               labSheet_B.LabSheetTypeText = val8;
-               Assert.AreEqual(val8, labSheet_B.LabSheetTypeText);
+               labSheetExtraB.LabSheetTypeText = val8;
+               Assert.AreEqual(val8, labSheetExtraB.LabSheetTypeText);
                string val9 = "Some text";
-               labSheet_B.LabSheetStatusText = val9;
-               Assert.AreEqual(val9, labSheet_B.LabSheetStatusText);
+               labSheetExtraB.LabSheetStatusText = val9;
+               Assert.AreEqual(val9, labSheetExtraB.LabSheetStatusText);
                int val10 = 45;
-               labSheet_B.LabSheetID = val10;
-               Assert.AreEqual(val10, labSheet_B.LabSheetID);
+               labSheetExtraB.LabSheetID = val10;
+               Assert.AreEqual(val10, labSheetExtraB.LabSheetID);
                int val11 = 45;
-               labSheet_B.OtherServerLabSheetID = val11;
-               Assert.AreEqual(val11, labSheet_B.OtherServerLabSheetID);
+               labSheetExtraB.OtherServerLabSheetID = val11;
+               Assert.AreEqual(val11, labSheetExtraB.OtherServerLabSheetID);
                int val12 = 45;
-               labSheet_B.SamplingPlanID = val12;
-               Assert.AreEqual(val12, labSheet_B.SamplingPlanID);
+               labSheetExtraB.SamplingPlanID = val12;
+               Assert.AreEqual(val12, labSheetExtraB.SamplingPlanID);
                string val13 = "Some text";
-               labSheet_B.SamplingPlanName = val13;
-               Assert.AreEqual(val13, labSheet_B.SamplingPlanName);
+               labSheetExtraB.SamplingPlanName = val13;
+               Assert.AreEqual(val13, labSheetExtraB.SamplingPlanName);
                int val14 = 45;
-               labSheet_B.Year = val14;
-               Assert.AreEqual(val14, labSheet_B.Year);
+               labSheetExtraB.Year = val14;
+               Assert.AreEqual(val14, labSheetExtraB.Year);
                int val15 = 45;
-               labSheet_B.Month = val15;
-               Assert.AreEqual(val15, labSheet_B.Month);
+               labSheetExtraB.Month = val15;
+               Assert.AreEqual(val15, labSheetExtraB.Month);
                int val16 = 45;
-               labSheet_B.Day = val16;
-               Assert.AreEqual(val16, labSheet_B.Day);
+               labSheetExtraB.Day = val16;
+               Assert.AreEqual(val16, labSheetExtraB.Day);
                int val17 = 45;
-               labSheet_B.RunNumber = val17;
-               Assert.AreEqual(val17, labSheet_B.RunNumber);
+               labSheetExtraB.RunNumber = val17;
+               Assert.AreEqual(val17, labSheetExtraB.RunNumber);
                int val18 = 45;
-               labSheet_B.SubsectorTVItemID = val18;
-               Assert.AreEqual(val18, labSheet_B.SubsectorTVItemID);
+               labSheetExtraB.SubsectorTVItemID = val18;
+               Assert.AreEqual(val18, labSheetExtraB.SubsectorTVItemID);
                int val19 = 45;
-               labSheet_B.MWQMRunTVItemID = val19;
-               Assert.AreEqual(val19, labSheet_B.MWQMRunTVItemID);
+               labSheetExtraB.MWQMRunTVItemID = val19;
+               Assert.AreEqual(val19, labSheetExtraB.MWQMRunTVItemID);
                SamplingPlanTypeEnum val20 = (SamplingPlanTypeEnum)3;
-               labSheet_B.SamplingPlanType = val20;
-               Assert.AreEqual(val20, labSheet_B.SamplingPlanType);
+               labSheetExtraB.SamplingPlanType = val20;
+               Assert.AreEqual(val20, labSheetExtraB.SamplingPlanType);
                SampleTypeEnum val21 = (SampleTypeEnum)3;
-               labSheet_B.SampleType = val21;
-               Assert.AreEqual(val21, labSheet_B.SampleType);
+               labSheetExtraB.SampleType = val21;
+               Assert.AreEqual(val21, labSheetExtraB.SampleType);
                LabSheetTypeEnum val22 = (LabSheetTypeEnum)3;
-               labSheet_B.LabSheetType = val22;
-               Assert.AreEqual(val22, labSheet_B.LabSheetType);
+               labSheetExtraB.LabSheetType = val22;
+               Assert.AreEqual(val22, labSheetExtraB.LabSheetType);
                LabSheetStatusEnum val23 = (LabSheetStatusEnum)3;
-               labSheet_B.LabSheetStatus = val23;
-               Assert.AreEqual(val23, labSheet_B.LabSheetStatus);
+               labSheetExtraB.LabSheetStatus = val23;
+               Assert.AreEqual(val23, labSheetExtraB.LabSheetStatus);
                string val24 = "Some text";
-               labSheet_B.FileName = val24;
-               Assert.AreEqual(val24, labSheet_B.FileName);
+               labSheetExtraB.FileName = val24;
+               Assert.AreEqual(val24, labSheetExtraB.FileName);
                DateTime val25 = new DateTime(2010, 3, 4);
-               labSheet_B.FileLastModifiedDate_Local = val25;
-               Assert.AreEqual(val25, labSheet_B.FileLastModifiedDate_Local);
+               labSheetExtraB.FileLastModifiedDate_Local = val25;
+               Assert.AreEqual(val25, labSheetExtraB.FileLastModifiedDate_Local);
                string val26 = "Some text";
-               labSheet_B.FileContent = val26;
-               Assert.AreEqual(val26, labSheet_B.FileContent);
+               labSheetExtraB.FileContent = val26;
+               Assert.AreEqual(val26, labSheetExtraB.FileContent);
                int val27 = 45;
-               labSheet_B.AcceptedOrRejectedByContactTVItemID = val27;
-               Assert.AreEqual(val27, labSheet_B.AcceptedOrRejectedByContactTVItemID);
+               labSheetExtraB.AcceptedOrRejectedByContactTVItemID = val27;
+               Assert.AreEqual(val27, labSheetExtraB.AcceptedOrRejectedByContactTVItemID);
                DateTime val28 = new DateTime(2010, 3, 4);
-               labSheet_B.AcceptedOrRejectedDateTime = val28;
-               Assert.AreEqual(val28, labSheet_B.AcceptedOrRejectedDateTime);
+               labSheetExtraB.AcceptedOrRejectedDateTime = val28;
+               Assert.AreEqual(val28, labSheetExtraB.AcceptedOrRejectedDateTime);
                string val29 = "Some text";
-               labSheet_B.RejectReason = val29;
-               Assert.AreEqual(val29, labSheet_B.RejectReason);
+               labSheetExtraB.RejectReason = val29;
+               Assert.AreEqual(val29, labSheetExtraB.RejectReason);
                DateTime val30 = new DateTime(2010, 3, 4);
-               labSheet_B.LastUpdateDate_UTC = val30;
-               Assert.AreEqual(val30, labSheet_B.LastUpdateDate_UTC);
+               labSheetExtraB.LastUpdateDate_UTC = val30;
+               Assert.AreEqual(val30, labSheetExtraB.LastUpdateDate_UTC);
                int val31 = 45;
-               labSheet_B.LastUpdateContactTVItemID = val31;
-               Assert.AreEqual(val31, labSheet_B.LastUpdateContactTVItemID);
+               labSheetExtraB.LastUpdateContactTVItemID = val31;
+               Assert.AreEqual(val31, labSheetExtraB.LastUpdateContactTVItemID);
                bool val32 = true;
-               labSheet_B.HasErrors = val32;
-               Assert.AreEqual(val32, labSheet_B.HasErrors);
+               labSheetExtraB.HasErrors = val32;
+               Assert.AreEqual(val32, labSheetExtraB.HasErrors);
                IEnumerable<ValidationResult> val99 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               labSheet_B.ValidationResults = val99;
-               Assert.AreEqual(val99, labSheet_B.ValidationResults);
+               labSheetExtraB.ValidationResults = val99;
+               Assert.AreEqual(val99, labSheetExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

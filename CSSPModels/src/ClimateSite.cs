@@ -155,7 +155,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClimateSite_A : ClimateSite
+    public partial class ClimateSiteExtraA : ClimateSite
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ClimateSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -173,13 +173,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ClimateSite_A() : base()
+        public ClimateSiteExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ClimateSite_B : ClimateSite_A
+    public partial class ClimateSiteExtraB : ClimateSiteExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -192,7 +192,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ClimateSite_B() : base()
+        public ClimateSiteExtraB() : base()
         {
         }
         #endregion Constructors

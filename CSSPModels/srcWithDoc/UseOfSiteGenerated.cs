@@ -376,7 +376,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class UseOfSite_A : UseOfSite
+    public partial class UseOfSiteExtraA : UseOfSite
     {
         #region Properties
         /// <summary>
@@ -484,13 +484,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public UseOfSite_A() : base()
+        public UseOfSiteExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class UseOfSite_B : UseOfSite_A
+    public partial class UseOfSiteExtraB : UseOfSiteExtraA
     {
         #region Properties
         /// <summary>
@@ -523,7 +523,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public UseOfSite_B() : base()
+        public UseOfSiteExtraB() : base()
         {
         }
         #endregion Constructors

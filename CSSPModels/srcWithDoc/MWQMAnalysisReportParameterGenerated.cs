@@ -624,7 +624,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMAnalysisReportParameter_A : MWQMAnalysisReportParameter
+    public partial class MWQMAnalysisReportParameterExtraA : MWQMAnalysisReportParameter
     {
         #region Properties
         /// <summary>
@@ -709,13 +709,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MWQMAnalysisReportParameter_A() : base()
+        public MWQMAnalysisReportParameterExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMAnalysisReportParameter_B : MWQMAnalysisReportParameter_A
+    public partial class MWQMAnalysisReportParameterExtraB : MWQMAnalysisReportParameterExtraA
     {
         #region Properties
         /// <summary>
@@ -748,7 +748,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MWQMAnalysisReportParameter_B() : base()
+        public MWQMAnalysisReportParameterExtraB() : base()
         {
         }
         #endregion Constructors

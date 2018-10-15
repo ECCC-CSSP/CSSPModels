@@ -155,7 +155,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MapInfoPoint_A : MapInfoPoint
+    public partial class MapInfoPointExtraA : MapInfoPoint
     {
         #region Properties
         /// <summary>
@@ -186,13 +186,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MapInfoPoint_A() : base()
+        public MapInfoPointExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MapInfoPoint_B : MapInfoPoint_A
+    public partial class MapInfoPointExtraB : MapInfoPointExtraA
     {
         #region Properties
         /// <summary>
@@ -225,7 +225,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MapInfoPoint_B() : base()
+        public MapInfoPointExtraB() : base()
         {
         }
         #endregion Constructors

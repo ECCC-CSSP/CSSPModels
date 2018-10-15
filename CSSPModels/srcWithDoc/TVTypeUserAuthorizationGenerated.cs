@@ -136,7 +136,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVTypeUserAuthorization_A : TVTypeUserAuthorization
+    public partial class TVTypeUserAuthorizationExtraA : TVTypeUserAuthorization
     {
         #region Properties
         /// <summary>
@@ -228,13 +228,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TVTypeUserAuthorization_A() : base()
+        public TVTypeUserAuthorizationExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVTypeUserAuthorization_B : TVTypeUserAuthorization_A
+    public partial class TVTypeUserAuthorizationExtraB : TVTypeUserAuthorizationExtraA
     {
         #region Properties
         /// <summary>
@@ -267,7 +267,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TVTypeUserAuthorization_B() : base()
+        public TVTypeUserAuthorizationExtraB() : base()
         {
         }
         #endregion Constructors

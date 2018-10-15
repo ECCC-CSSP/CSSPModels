@@ -227,7 +227,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPResult_A : VPResult
+    public partial class VPResultExtraA : VPResult
     {
         #region Properties
         /// <summary>
@@ -258,13 +258,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public VPResult_A() : base()
+        public VPResultExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class VPResult_B : VPResult_A
+    public partial class VPResultExtraB : VPResultExtraA
     {
         #region Properties
         /// <summary>
@@ -297,7 +297,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public VPResult_B() : base()
+        public VPResultExtraB() : base()
         {
         }
         #endregion Constructors

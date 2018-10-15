@@ -433,7 +433,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVFile_A : TVFile
+    public partial class TVFileExtraA : TVFile
     {
         #region Properties
         /// <summary>
@@ -597,13 +597,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TVFile_A() : base()
+        public TVFileExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVFile_B : TVFile_A
+    public partial class TVFileExtraB : TVFileExtraA
     {
         #region Properties
         /// <summary>
@@ -636,7 +636,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TVFile_B() : base()
+        public TVFileExtraB() : base()
         {
         }
         #endregion Constructors

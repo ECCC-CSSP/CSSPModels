@@ -88,7 +88,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeBoundaryCondition_A : MikeBoundaryCondition
+    public partial class MikeBoundaryConditionExtraA : MikeBoundaryCondition
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MikeBoundaryConditionTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -123,13 +123,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MikeBoundaryCondition_A() : base()
+        public MikeBoundaryConditionExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeBoundaryCondition_B : MikeBoundaryCondition_A
+    public partial class MikeBoundaryConditionExtraB : MikeBoundaryConditionExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -142,7 +142,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MikeBoundaryCondition_B() : base()
+        public MikeBoundaryConditionExtraB() : base()
         {
         }
         #endregion Constructors

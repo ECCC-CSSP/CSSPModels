@@ -48,7 +48,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSiteStartEndDate_A : MWQMSiteStartEndDate
+    public partial class MWQMSiteStartEndDateExtraA : MWQMSiteStartEndDate
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -66,13 +66,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MWQMSiteStartEndDate_A() : base()
+        public MWQMSiteStartEndDateExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSiteStartEndDate_B : MWQMSiteStartEndDate_A
+    public partial class MWQMSiteStartEndDateExtraB : MWQMSiteStartEndDateExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -85,7 +85,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MWQMSiteStartEndDate_B() : base()
+        public MWQMSiteStartEndDateExtraB() : base()
         {
         }
         #endregion Constructors

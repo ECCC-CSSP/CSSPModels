@@ -109,7 +109,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetTubeMPNDetail_A : LabSheetTubeMPNDetail
+    public partial class LabSheetTubeMPNDetailExtraA : LabSheetTubeMPNDetail
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -134,13 +134,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public LabSheetTubeMPNDetail_A() : base()
+        public LabSheetTubeMPNDetailExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetTubeMPNDetail_B : LabSheetTubeMPNDetail_A
+    public partial class LabSheetTubeMPNDetailExtraB : LabSheetTubeMPNDetailExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -153,7 +153,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public LabSheetTubeMPNDetail_B() : base()
+        public LabSheetTubeMPNDetailExtraB() : base()
         {
         }
         #endregion Constructors

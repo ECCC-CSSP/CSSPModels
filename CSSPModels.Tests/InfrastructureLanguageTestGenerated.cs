@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private InfrastructureLanguage infrastructureLanguage { get; set; }
-        private InfrastructureLanguage_A infrastructureLanguage_A { get; set; }
-        private InfrastructureLanguage_B infrastructureLanguage_B { get; set; }
+        private InfrastructureLanguageExtraA infrastructureLanguageExtraA { get; set; }
+        private InfrastructureLanguageExtraB infrastructureLanguageExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public InfrastructureLanguageTest()
         {
             infrastructureLanguage = new InfrastructureLanguage();
-            infrastructureLanguage_A = new InfrastructureLanguage_A();
-            infrastructureLanguage_B = new InfrastructureLanguage_B();
+            infrastructureLanguageExtraA = new InfrastructureLanguageExtraA();
+            infrastructureLanguageExtraB = new InfrastructureLanguageExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void InfrastructureLanguage_A_Properties_Test()
+        public void InfrastructureLanguageExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "InfrastructureLanguageID", "InfrastructureID", "Language", "Comment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguage_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguageExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguage_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguageExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void InfrastructureLanguage_B_Properties_Test()
+        public void InfrastructureLanguageExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "InfrastructureLanguageReportTest", "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "InfrastructureLanguageID", "InfrastructureID", "Language", "Comment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguage_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguageExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguage_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguageExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void InfrastructureLanguage_A_Navigation_Test()
+        public void InfrastructureLanguageExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguage_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguageExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguage_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguageExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void InfrastructureLanguage_B_Navigation_Test()
+        public void InfrastructureLanguageExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguage_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguageExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguage_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(InfrastructureLanguageExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(InfrastructureLanguage).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void InfrastructureLanguage_A_Has_ValidationResults_Test()
+        public void InfrastructureLanguageExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(InfrastructureLanguage_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(InfrastructureLanguageExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void InfrastructureLanguage_B_Has_ValidationResults_Test()
+        public void InfrastructureLanguageExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(InfrastructureLanguage_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(InfrastructureLanguageExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void InfrastructureLanguage_Every_Property_Has_Get_Set_Test()
@@ -289,87 +289,87 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val27, infrastructureLanguage.ValidationResults);
         }
         [TestMethod]
-        public void InfrastructureLanguage_A_Every_Property_Has_Get_Set_Test()
+        public void InfrastructureLanguageExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               infrastructureLanguage_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, infrastructureLanguage_A.LastUpdateContactTVItemLanguage);
+               infrastructureLanguageExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, infrastructureLanguageExtraA.LastUpdateContactTVItemLanguage);
                string val2 = "Some text";
-               infrastructureLanguage_A.LanguageText = val2;
-               Assert.AreEqual(val2, infrastructureLanguage_A.LanguageText);
+               infrastructureLanguageExtraA.LanguageText = val2;
+               Assert.AreEqual(val2, infrastructureLanguageExtraA.LanguageText);
                string val3 = "Some text";
-               infrastructureLanguage_A.TranslationStatusText = val3;
-               Assert.AreEqual(val3, infrastructureLanguage_A.TranslationStatusText);
+               infrastructureLanguageExtraA.TranslationStatusText = val3;
+               Assert.AreEqual(val3, infrastructureLanguageExtraA.TranslationStatusText);
                int val4 = 45;
-               infrastructureLanguage_A.InfrastructureLanguageID = val4;
-               Assert.AreEqual(val4, infrastructureLanguage_A.InfrastructureLanguageID);
+               infrastructureLanguageExtraA.InfrastructureLanguageID = val4;
+               Assert.AreEqual(val4, infrastructureLanguageExtraA.InfrastructureLanguageID);
                int val5 = 45;
-               infrastructureLanguage_A.InfrastructureID = val5;
-               Assert.AreEqual(val5, infrastructureLanguage_A.InfrastructureID);
+               infrastructureLanguageExtraA.InfrastructureID = val5;
+               Assert.AreEqual(val5, infrastructureLanguageExtraA.InfrastructureID);
                LanguageEnum val6 = (LanguageEnum)3;
-               infrastructureLanguage_A.Language = val6;
-               Assert.AreEqual(val6, infrastructureLanguage_A.Language);
+               infrastructureLanguageExtraA.Language = val6;
+               Assert.AreEqual(val6, infrastructureLanguageExtraA.Language);
                string val7 = "Some text";
-               infrastructureLanguage_A.Comment = val7;
-               Assert.AreEqual(val7, infrastructureLanguage_A.Comment);
+               infrastructureLanguageExtraA.Comment = val7;
+               Assert.AreEqual(val7, infrastructureLanguageExtraA.Comment);
                TranslationStatusEnum val8 = (TranslationStatusEnum)3;
-               infrastructureLanguage_A.TranslationStatus = val8;
-               Assert.AreEqual(val8, infrastructureLanguage_A.TranslationStatus);
+               infrastructureLanguageExtraA.TranslationStatus = val8;
+               Assert.AreEqual(val8, infrastructureLanguageExtraA.TranslationStatus);
                DateTime val9 = new DateTime(2010, 3, 4);
-               infrastructureLanguage_A.LastUpdateDate_UTC = val9;
-               Assert.AreEqual(val9, infrastructureLanguage_A.LastUpdateDate_UTC);
+               infrastructureLanguageExtraA.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, infrastructureLanguageExtraA.LastUpdateDate_UTC);
                int val10 = 45;
-               infrastructureLanguage_A.LastUpdateContactTVItemID = val10;
-               Assert.AreEqual(val10, infrastructureLanguage_A.LastUpdateContactTVItemID);
+               infrastructureLanguageExtraA.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, infrastructureLanguageExtraA.LastUpdateContactTVItemID);
                bool val11 = true;
-               infrastructureLanguage_A.HasErrors = val11;
-               Assert.AreEqual(val11, infrastructureLanguage_A.HasErrors);
+               infrastructureLanguageExtraA.HasErrors = val11;
+               Assert.AreEqual(val11, infrastructureLanguageExtraA.HasErrors);
                IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               infrastructureLanguage_A.ValidationResults = val36;
-               Assert.AreEqual(val36, infrastructureLanguage_A.ValidationResults);
+               infrastructureLanguageExtraA.ValidationResults = val36;
+               Assert.AreEqual(val36, infrastructureLanguageExtraA.ValidationResults);
         }
         [TestMethod]
-        public void InfrastructureLanguage_B_Every_Property_Has_Get_Set_Test()
+        public void InfrastructureLanguageExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               infrastructureLanguage_B.InfrastructureLanguageReportTest = val1;
-               Assert.AreEqual(val1, infrastructureLanguage_B.InfrastructureLanguageReportTest);
+               infrastructureLanguageExtraB.InfrastructureLanguageReportTest = val1;
+               Assert.AreEqual(val1, infrastructureLanguageExtraB.InfrastructureLanguageReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               infrastructureLanguage_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, infrastructureLanguage_B.LastUpdateContactTVItemLanguage);
+               infrastructureLanguageExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, infrastructureLanguageExtraB.LastUpdateContactTVItemLanguage);
                string val3 = "Some text";
-               infrastructureLanguage_B.LanguageText = val3;
-               Assert.AreEqual(val3, infrastructureLanguage_B.LanguageText);
+               infrastructureLanguageExtraB.LanguageText = val3;
+               Assert.AreEqual(val3, infrastructureLanguageExtraB.LanguageText);
                string val4 = "Some text";
-               infrastructureLanguage_B.TranslationStatusText = val4;
-               Assert.AreEqual(val4, infrastructureLanguage_B.TranslationStatusText);
+               infrastructureLanguageExtraB.TranslationStatusText = val4;
+               Assert.AreEqual(val4, infrastructureLanguageExtraB.TranslationStatusText);
                int val5 = 45;
-               infrastructureLanguage_B.InfrastructureLanguageID = val5;
-               Assert.AreEqual(val5, infrastructureLanguage_B.InfrastructureLanguageID);
+               infrastructureLanguageExtraB.InfrastructureLanguageID = val5;
+               Assert.AreEqual(val5, infrastructureLanguageExtraB.InfrastructureLanguageID);
                int val6 = 45;
-               infrastructureLanguage_B.InfrastructureID = val6;
-               Assert.AreEqual(val6, infrastructureLanguage_B.InfrastructureID);
+               infrastructureLanguageExtraB.InfrastructureID = val6;
+               Assert.AreEqual(val6, infrastructureLanguageExtraB.InfrastructureID);
                LanguageEnum val7 = (LanguageEnum)3;
-               infrastructureLanguage_B.Language = val7;
-               Assert.AreEqual(val7, infrastructureLanguage_B.Language);
+               infrastructureLanguageExtraB.Language = val7;
+               Assert.AreEqual(val7, infrastructureLanguageExtraB.Language);
                string val8 = "Some text";
-               infrastructureLanguage_B.Comment = val8;
-               Assert.AreEqual(val8, infrastructureLanguage_B.Comment);
+               infrastructureLanguageExtraB.Comment = val8;
+               Assert.AreEqual(val8, infrastructureLanguageExtraB.Comment);
                TranslationStatusEnum val9 = (TranslationStatusEnum)3;
-               infrastructureLanguage_B.TranslationStatus = val9;
-               Assert.AreEqual(val9, infrastructureLanguage_B.TranslationStatus);
+               infrastructureLanguageExtraB.TranslationStatus = val9;
+               Assert.AreEqual(val9, infrastructureLanguageExtraB.TranslationStatus);
                DateTime val10 = new DateTime(2010, 3, 4);
-               infrastructureLanguage_B.LastUpdateDate_UTC = val10;
-               Assert.AreEqual(val10, infrastructureLanguage_B.LastUpdateDate_UTC);
+               infrastructureLanguageExtraB.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, infrastructureLanguageExtraB.LastUpdateDate_UTC);
                int val11 = 45;
-               infrastructureLanguage_B.LastUpdateContactTVItemID = val11;
-               Assert.AreEqual(val11, infrastructureLanguage_B.LastUpdateContactTVItemID);
+               infrastructureLanguageExtraB.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, infrastructureLanguageExtraB.LastUpdateContactTVItemID);
                bool val12 = true;
-               infrastructureLanguage_B.HasErrors = val12;
-               Assert.AreEqual(val12, infrastructureLanguage_B.HasErrors);
+               infrastructureLanguageExtraB.HasErrors = val12;
+               Assert.AreEqual(val12, infrastructureLanguageExtraB.HasErrors);
                IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               infrastructureLanguage_B.ValidationResults = val39;
-               Assert.AreEqual(val39, infrastructureLanguage_B.ValidationResults);
+               infrastructureLanguageExtraB.ValidationResults = val39;
+               Assert.AreEqual(val39, infrastructureLanguageExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

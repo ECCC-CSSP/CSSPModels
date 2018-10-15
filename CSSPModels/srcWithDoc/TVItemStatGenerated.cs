@@ -135,7 +135,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemStat_A : TVItemStat
+    public partial class TVItemStatExtraA : TVItemStat
     {
         #region Properties
         /// <summary>
@@ -218,13 +218,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TVItemStat_A() : base()
+        public TVItemStatExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVItemStat_B : TVItemStat_A
+    public partial class TVItemStatExtraB : TVItemStatExtraA
     {
         #region Properties
         /// <summary>
@@ -257,7 +257,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TVItemStat_B() : base()
+        public TVItemStatExtraB() : base()
         {
         }
         #endregion Constructors

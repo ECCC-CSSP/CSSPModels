@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private SamplingPlanSubsector samplingPlanSubsector { get; set; }
-        private SamplingPlanSubsector_A samplingPlanSubsector_A { get; set; }
-        private SamplingPlanSubsector_B samplingPlanSubsector_B { get; set; }
+        private SamplingPlanSubsectorExtraA samplingPlanSubsectorExtraA { get; set; }
+        private SamplingPlanSubsectorExtraB samplingPlanSubsectorExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public SamplingPlanSubsectorTest()
         {
             samplingPlanSubsector = new SamplingPlanSubsector();
-            samplingPlanSubsector_A = new SamplingPlanSubsector_A();
-            samplingPlanSubsector_B = new SamplingPlanSubsector_B();
+            samplingPlanSubsectorExtraA = new SamplingPlanSubsectorExtraA();
+            samplingPlanSubsectorExtraB = new SamplingPlanSubsectorExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlanSubsector_A_Properties_Test()
+        public void SamplingPlanSubsectorExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "SamplingPlanSubsectorID", "SamplingPlanID", "SubsectorTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsector_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsectorExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsector_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsectorExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlanSubsector_B_Properties_Test()
+        public void SamplingPlanSubsectorExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SamplingPlanSubsectorReportTest", "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "SamplingPlanSubsectorID", "SamplingPlanID", "SubsectorTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsector_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsectorExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsector_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsectorExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlanSubsector_A_Navigation_Test()
+        public void SamplingPlanSubsectorExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsector_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsectorExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsector_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsectorExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlanSubsector_B_Navigation_Test()
+        public void SamplingPlanSubsectorExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsector_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsectorExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsector_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanSubsectorExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(SamplingPlanSubsector).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void SamplingPlanSubsector_A_Has_ValidationResults_Test()
+        public void SamplingPlanSubsectorExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(SamplingPlanSubsector_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(SamplingPlanSubsectorExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void SamplingPlanSubsector_B_Has_ValidationResults_Test()
+        public void SamplingPlanSubsectorExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(SamplingPlanSubsector_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(SamplingPlanSubsectorExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void SamplingPlanSubsector_Every_Property_Has_Get_Set_Test()
@@ -283,69 +283,69 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val21, samplingPlanSubsector.ValidationResults);
         }
         [TestMethod]
-        public void SamplingPlanSubsector_A_Every_Property_Has_Get_Set_Test()
+        public void SamplingPlanSubsectorExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               samplingPlanSubsector_A.SubsectorTVItemLanguage = val1;
-               Assert.AreEqual(val1, samplingPlanSubsector_A.SubsectorTVItemLanguage);
+               samplingPlanSubsectorExtraA.SubsectorTVItemLanguage = val1;
+               Assert.AreEqual(val1, samplingPlanSubsectorExtraA.SubsectorTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               samplingPlanSubsector_A.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, samplingPlanSubsector_A.LastUpdateContactTVItemLanguage);
+               samplingPlanSubsectorExtraA.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, samplingPlanSubsectorExtraA.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               samplingPlanSubsector_A.SamplingPlanSubsectorID = val3;
-               Assert.AreEqual(val3, samplingPlanSubsector_A.SamplingPlanSubsectorID);
+               samplingPlanSubsectorExtraA.SamplingPlanSubsectorID = val3;
+               Assert.AreEqual(val3, samplingPlanSubsectorExtraA.SamplingPlanSubsectorID);
                int val4 = 45;
-               samplingPlanSubsector_A.SamplingPlanID = val4;
-               Assert.AreEqual(val4, samplingPlanSubsector_A.SamplingPlanID);
+               samplingPlanSubsectorExtraA.SamplingPlanID = val4;
+               Assert.AreEqual(val4, samplingPlanSubsectorExtraA.SamplingPlanID);
                int val5 = 45;
-               samplingPlanSubsector_A.SubsectorTVItemID = val5;
-               Assert.AreEqual(val5, samplingPlanSubsector_A.SubsectorTVItemID);
+               samplingPlanSubsectorExtraA.SubsectorTVItemID = val5;
+               Assert.AreEqual(val5, samplingPlanSubsectorExtraA.SubsectorTVItemID);
                DateTime val6 = new DateTime(2010, 3, 4);
-               samplingPlanSubsector_A.LastUpdateDate_UTC = val6;
-               Assert.AreEqual(val6, samplingPlanSubsector_A.LastUpdateDate_UTC);
+               samplingPlanSubsectorExtraA.LastUpdateDate_UTC = val6;
+               Assert.AreEqual(val6, samplingPlanSubsectorExtraA.LastUpdateDate_UTC);
                int val7 = 45;
-               samplingPlanSubsector_A.LastUpdateContactTVItemID = val7;
-               Assert.AreEqual(val7, samplingPlanSubsector_A.LastUpdateContactTVItemID);
+               samplingPlanSubsectorExtraA.LastUpdateContactTVItemID = val7;
+               Assert.AreEqual(val7, samplingPlanSubsectorExtraA.LastUpdateContactTVItemID);
                bool val8 = true;
-               samplingPlanSubsector_A.HasErrors = val8;
-               Assert.AreEqual(val8, samplingPlanSubsector_A.HasErrors);
+               samplingPlanSubsectorExtraA.HasErrors = val8;
+               Assert.AreEqual(val8, samplingPlanSubsectorExtraA.HasErrors);
                IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               samplingPlanSubsector_A.ValidationResults = val27;
-               Assert.AreEqual(val27, samplingPlanSubsector_A.ValidationResults);
+               samplingPlanSubsectorExtraA.ValidationResults = val27;
+               Assert.AreEqual(val27, samplingPlanSubsectorExtraA.ValidationResults);
         }
         [TestMethod]
-        public void SamplingPlanSubsector_B_Every_Property_Has_Get_Set_Test()
+        public void SamplingPlanSubsectorExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               samplingPlanSubsector_B.SamplingPlanSubsectorReportTest = val1;
-               Assert.AreEqual(val1, samplingPlanSubsector_B.SamplingPlanSubsectorReportTest);
+               samplingPlanSubsectorExtraB.SamplingPlanSubsectorReportTest = val1;
+               Assert.AreEqual(val1, samplingPlanSubsectorExtraB.SamplingPlanSubsectorReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               samplingPlanSubsector_B.SubsectorTVItemLanguage = val2;
-               Assert.AreEqual(val2, samplingPlanSubsector_B.SubsectorTVItemLanguage);
+               samplingPlanSubsectorExtraB.SubsectorTVItemLanguage = val2;
+               Assert.AreEqual(val2, samplingPlanSubsectorExtraB.SubsectorTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               samplingPlanSubsector_B.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, samplingPlanSubsector_B.LastUpdateContactTVItemLanguage);
+               samplingPlanSubsectorExtraB.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, samplingPlanSubsectorExtraB.LastUpdateContactTVItemLanguage);
                int val4 = 45;
-               samplingPlanSubsector_B.SamplingPlanSubsectorID = val4;
-               Assert.AreEqual(val4, samplingPlanSubsector_B.SamplingPlanSubsectorID);
+               samplingPlanSubsectorExtraB.SamplingPlanSubsectorID = val4;
+               Assert.AreEqual(val4, samplingPlanSubsectorExtraB.SamplingPlanSubsectorID);
                int val5 = 45;
-               samplingPlanSubsector_B.SamplingPlanID = val5;
-               Assert.AreEqual(val5, samplingPlanSubsector_B.SamplingPlanID);
+               samplingPlanSubsectorExtraB.SamplingPlanID = val5;
+               Assert.AreEqual(val5, samplingPlanSubsectorExtraB.SamplingPlanID);
                int val6 = 45;
-               samplingPlanSubsector_B.SubsectorTVItemID = val6;
-               Assert.AreEqual(val6, samplingPlanSubsector_B.SubsectorTVItemID);
+               samplingPlanSubsectorExtraB.SubsectorTVItemID = val6;
+               Assert.AreEqual(val6, samplingPlanSubsectorExtraB.SubsectorTVItemID);
                DateTime val7 = new DateTime(2010, 3, 4);
-               samplingPlanSubsector_B.LastUpdateDate_UTC = val7;
-               Assert.AreEqual(val7, samplingPlanSubsector_B.LastUpdateDate_UTC);
+               samplingPlanSubsectorExtraB.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, samplingPlanSubsectorExtraB.LastUpdateDate_UTC);
                int val8 = 45;
-               samplingPlanSubsector_B.LastUpdateContactTVItemID = val8;
-               Assert.AreEqual(val8, samplingPlanSubsector_B.LastUpdateContactTVItemID);
+               samplingPlanSubsectorExtraB.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, samplingPlanSubsectorExtraB.LastUpdateContactTVItemID);
                bool val9 = true;
-               samplingPlanSubsector_B.HasErrors = val9;
-               Assert.AreEqual(val9, samplingPlanSubsector_B.HasErrors);
+               samplingPlanSubsectorExtraB.HasErrors = val9;
+               Assert.AreEqual(val9, samplingPlanSubsectorExtraB.HasErrors);
                IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               samplingPlanSubsector_B.ValidationResults = val30;
-               Assert.AreEqual(val30, samplingPlanSubsector_B.ValidationResults);
+               samplingPlanSubsectorExtraB.ValidationResults = val30;
+               Assert.AreEqual(val30, samplingPlanSubsectorExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

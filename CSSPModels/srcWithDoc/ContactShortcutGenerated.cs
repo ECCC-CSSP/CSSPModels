@@ -131,7 +131,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactShortcut_A : ContactShortcut
+    public partial class ContactShortcutExtraA : ContactShortcut
     {
         #region Properties
         /// <summary>
@@ -162,13 +162,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ContactShortcut_A() : base()
+        public ContactShortcutExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ContactShortcut_B : ContactShortcut_A
+    public partial class ContactShortcutExtraB : ContactShortcutExtraA
     {
         #region Properties
         /// <summary>
@@ -201,7 +201,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ContactShortcut_B() : base()
+        public ContactShortcutExtraB() : base()
         {
         }
         #endregion Constructors

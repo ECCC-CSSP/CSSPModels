@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private HydrometricSite hydrometricSite { get; set; }
-        private HydrometricSite_A hydrometricSite_A { get; set; }
-        private HydrometricSite_B hydrometricSite_B { get; set; }
+        private HydrometricSiteExtraA hydrometricSiteExtraA { get; set; }
+        private HydrometricSiteExtraB hydrometricSiteExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public HydrometricSiteTest()
         {
             hydrometricSite = new HydrometricSite();
-            hydrometricSite_A = new HydrometricSite_A();
-            hydrometricSite_B = new HydrometricSite_B();
+            hydrometricSiteExtraA = new HydrometricSiteExtraA();
+            hydrometricSiteExtraB = new HydrometricSiteExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void HydrometricSite_A_Properties_Test()
+        public void HydrometricSiteExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "HydrometricTVItemLanguage", "LastUpdateContactTVItemLanguage", "HydrometricSiteID", "HydrometricSiteTVItemID", "FedSiteNumber", "QuebecSiteNumber", "HydrometricSiteName", "Description", "Province", "Elevation_m", "StartDate_Local", "EndDate_Local", "TimeOffset_hour", "DrainageArea_km2", "IsNatural", "IsActive", "Sediment", "RHBN", "RealTime", "HasDischarge", "HasLevel", "HasRatingCurve", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(HydrometricSite_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(HydrometricSiteExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(HydrometricSite_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(HydrometricSiteExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void HydrometricSite_B_Properties_Test()
+        public void HydrometricSiteExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "HydrometricSiteReportTest", "HydrometricTVItemLanguage", "LastUpdateContactTVItemLanguage", "HydrometricSiteID", "HydrometricSiteTVItemID", "FedSiteNumber", "QuebecSiteNumber", "HydrometricSiteName", "Description", "Province", "Elevation_m", "StartDate_Local", "EndDate_Local", "TimeOffset_hour", "DrainageArea_km2", "IsNatural", "IsActive", "Sediment", "RHBN", "RealTime", "HasDischarge", "HasLevel", "HasRatingCurve", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(HydrometricSite_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(HydrometricSiteExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(HydrometricSite_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(HydrometricSiteExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void HydrometricSite_A_Navigation_Test()
+        public void HydrometricSiteExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(HydrometricSite_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(HydrometricSiteExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(HydrometricSite_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(HydrometricSiteExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void HydrometricSite_B_Navigation_Test()
+        public void HydrometricSiteExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(HydrometricSite_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(HydrometricSiteExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(HydrometricSite_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(HydrometricSiteExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(HydrometricSite).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void HydrometricSite_A_Has_ValidationResults_Test()
+        public void HydrometricSiteExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(HydrometricSite_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(HydrometricSiteExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void HydrometricSite_B_Has_ValidationResults_Test()
+        public void HydrometricSiteExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(HydrometricSite_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(HydrometricSiteExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void HydrometricSite_Every_Property_Has_Get_Set_Test()
@@ -334,171 +334,171 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val72, hydrometricSite.ValidationResults);
         }
         [TestMethod]
-        public void HydrometricSite_A_Every_Property_Has_Get_Set_Test()
+        public void HydrometricSiteExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               hydrometricSite_A.HydrometricTVItemLanguage = val1;
-               Assert.AreEqual(val1, hydrometricSite_A.HydrometricTVItemLanguage);
+               hydrometricSiteExtraA.HydrometricTVItemLanguage = val1;
+               Assert.AreEqual(val1, hydrometricSiteExtraA.HydrometricTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               hydrometricSite_A.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, hydrometricSite_A.LastUpdateContactTVItemLanguage);
+               hydrometricSiteExtraA.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, hydrometricSiteExtraA.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               hydrometricSite_A.HydrometricSiteID = val3;
-               Assert.AreEqual(val3, hydrometricSite_A.HydrometricSiteID);
+               hydrometricSiteExtraA.HydrometricSiteID = val3;
+               Assert.AreEqual(val3, hydrometricSiteExtraA.HydrometricSiteID);
                int val4 = 45;
-               hydrometricSite_A.HydrometricSiteTVItemID = val4;
-               Assert.AreEqual(val4, hydrometricSite_A.HydrometricSiteTVItemID);
+               hydrometricSiteExtraA.HydrometricSiteTVItemID = val4;
+               Assert.AreEqual(val4, hydrometricSiteExtraA.HydrometricSiteTVItemID);
                string val5 = "Some text";
-               hydrometricSite_A.FedSiteNumber = val5;
-               Assert.AreEqual(val5, hydrometricSite_A.FedSiteNumber);
+               hydrometricSiteExtraA.FedSiteNumber = val5;
+               Assert.AreEqual(val5, hydrometricSiteExtraA.FedSiteNumber);
                string val6 = "Some text";
-               hydrometricSite_A.QuebecSiteNumber = val6;
-               Assert.AreEqual(val6, hydrometricSite_A.QuebecSiteNumber);
+               hydrometricSiteExtraA.QuebecSiteNumber = val6;
+               Assert.AreEqual(val6, hydrometricSiteExtraA.QuebecSiteNumber);
                string val7 = "Some text";
-               hydrometricSite_A.HydrometricSiteName = val7;
-               Assert.AreEqual(val7, hydrometricSite_A.HydrometricSiteName);
+               hydrometricSiteExtraA.HydrometricSiteName = val7;
+               Assert.AreEqual(val7, hydrometricSiteExtraA.HydrometricSiteName);
                string val8 = "Some text";
-               hydrometricSite_A.Description = val8;
-               Assert.AreEqual(val8, hydrometricSite_A.Description);
+               hydrometricSiteExtraA.Description = val8;
+               Assert.AreEqual(val8, hydrometricSiteExtraA.Description);
                string val9 = "Some text";
-               hydrometricSite_A.Province = val9;
-               Assert.AreEqual(val9, hydrometricSite_A.Province);
+               hydrometricSiteExtraA.Province = val9;
+               Assert.AreEqual(val9, hydrometricSiteExtraA.Province);
                double val10 = 87.9D;
-               hydrometricSite_A.Elevation_m = val10;
-               Assert.AreEqual(val10, hydrometricSite_A.Elevation_m);
+               hydrometricSiteExtraA.Elevation_m = val10;
+               Assert.AreEqual(val10, hydrometricSiteExtraA.Elevation_m);
                DateTime val11 = new DateTime(2010, 3, 4);
-               hydrometricSite_A.StartDate_Local = val11;
-               Assert.AreEqual(val11, hydrometricSite_A.StartDate_Local);
+               hydrometricSiteExtraA.StartDate_Local = val11;
+               Assert.AreEqual(val11, hydrometricSiteExtraA.StartDate_Local);
                DateTime val12 = new DateTime(2010, 3, 4);
-               hydrometricSite_A.EndDate_Local = val12;
-               Assert.AreEqual(val12, hydrometricSite_A.EndDate_Local);
+               hydrometricSiteExtraA.EndDate_Local = val12;
+               Assert.AreEqual(val12, hydrometricSiteExtraA.EndDate_Local);
                double val13 = 87.9D;
-               hydrometricSite_A.TimeOffset_hour = val13;
-               Assert.AreEqual(val13, hydrometricSite_A.TimeOffset_hour);
+               hydrometricSiteExtraA.TimeOffset_hour = val13;
+               Assert.AreEqual(val13, hydrometricSiteExtraA.TimeOffset_hour);
                double val14 = 87.9D;
-               hydrometricSite_A.DrainageArea_km2 = val14;
-               Assert.AreEqual(val14, hydrometricSite_A.DrainageArea_km2);
+               hydrometricSiteExtraA.DrainageArea_km2 = val14;
+               Assert.AreEqual(val14, hydrometricSiteExtraA.DrainageArea_km2);
                bool val15 = true;
-               hydrometricSite_A.IsNatural = val15;
-               Assert.AreEqual(val15, hydrometricSite_A.IsNatural);
+               hydrometricSiteExtraA.IsNatural = val15;
+               Assert.AreEqual(val15, hydrometricSiteExtraA.IsNatural);
                bool val16 = true;
-               hydrometricSite_A.IsActive = val16;
-               Assert.AreEqual(val16, hydrometricSite_A.IsActive);
+               hydrometricSiteExtraA.IsActive = val16;
+               Assert.AreEqual(val16, hydrometricSiteExtraA.IsActive);
                bool val17 = true;
-               hydrometricSite_A.Sediment = val17;
-               Assert.AreEqual(val17, hydrometricSite_A.Sediment);
+               hydrometricSiteExtraA.Sediment = val17;
+               Assert.AreEqual(val17, hydrometricSiteExtraA.Sediment);
                bool val18 = true;
-               hydrometricSite_A.RHBN = val18;
-               Assert.AreEqual(val18, hydrometricSite_A.RHBN);
+               hydrometricSiteExtraA.RHBN = val18;
+               Assert.AreEqual(val18, hydrometricSiteExtraA.RHBN);
                bool val19 = true;
-               hydrometricSite_A.RealTime = val19;
-               Assert.AreEqual(val19, hydrometricSite_A.RealTime);
+               hydrometricSiteExtraA.RealTime = val19;
+               Assert.AreEqual(val19, hydrometricSiteExtraA.RealTime);
                bool val20 = true;
-               hydrometricSite_A.HasDischarge = val20;
-               Assert.AreEqual(val20, hydrometricSite_A.HasDischarge);
+               hydrometricSiteExtraA.HasDischarge = val20;
+               Assert.AreEqual(val20, hydrometricSiteExtraA.HasDischarge);
                bool val21 = true;
-               hydrometricSite_A.HasLevel = val21;
-               Assert.AreEqual(val21, hydrometricSite_A.HasLevel);
+               hydrometricSiteExtraA.HasLevel = val21;
+               Assert.AreEqual(val21, hydrometricSiteExtraA.HasLevel);
                bool val22 = true;
-               hydrometricSite_A.HasRatingCurve = val22;
-               Assert.AreEqual(val22, hydrometricSite_A.HasRatingCurve);
+               hydrometricSiteExtraA.HasRatingCurve = val22;
+               Assert.AreEqual(val22, hydrometricSiteExtraA.HasRatingCurve);
                DateTime val23 = new DateTime(2010, 3, 4);
-               hydrometricSite_A.LastUpdateDate_UTC = val23;
-               Assert.AreEqual(val23, hydrometricSite_A.LastUpdateDate_UTC);
+               hydrometricSiteExtraA.LastUpdateDate_UTC = val23;
+               Assert.AreEqual(val23, hydrometricSiteExtraA.LastUpdateDate_UTC);
                int val24 = 45;
-               hydrometricSite_A.LastUpdateContactTVItemID = val24;
-               Assert.AreEqual(val24, hydrometricSite_A.LastUpdateContactTVItemID);
+               hydrometricSiteExtraA.LastUpdateContactTVItemID = val24;
+               Assert.AreEqual(val24, hydrometricSiteExtraA.LastUpdateContactTVItemID);
                bool val25 = true;
-               hydrometricSite_A.HasErrors = val25;
-               Assert.AreEqual(val25, hydrometricSite_A.HasErrors);
+               hydrometricSiteExtraA.HasErrors = val25;
+               Assert.AreEqual(val25, hydrometricSiteExtraA.HasErrors);
                IEnumerable<ValidationResult> val78 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               hydrometricSite_A.ValidationResults = val78;
-               Assert.AreEqual(val78, hydrometricSite_A.ValidationResults);
+               hydrometricSiteExtraA.ValidationResults = val78;
+               Assert.AreEqual(val78, hydrometricSiteExtraA.ValidationResults);
         }
         [TestMethod]
-        public void HydrometricSite_B_Every_Property_Has_Get_Set_Test()
+        public void HydrometricSiteExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               hydrometricSite_B.HydrometricSiteReportTest = val1;
-               Assert.AreEqual(val1, hydrometricSite_B.HydrometricSiteReportTest);
+               hydrometricSiteExtraB.HydrometricSiteReportTest = val1;
+               Assert.AreEqual(val1, hydrometricSiteExtraB.HydrometricSiteReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               hydrometricSite_B.HydrometricTVItemLanguage = val2;
-               Assert.AreEqual(val2, hydrometricSite_B.HydrometricTVItemLanguage);
+               hydrometricSiteExtraB.HydrometricTVItemLanguage = val2;
+               Assert.AreEqual(val2, hydrometricSiteExtraB.HydrometricTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               hydrometricSite_B.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, hydrometricSite_B.LastUpdateContactTVItemLanguage);
+               hydrometricSiteExtraB.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, hydrometricSiteExtraB.LastUpdateContactTVItemLanguage);
                int val4 = 45;
-               hydrometricSite_B.HydrometricSiteID = val4;
-               Assert.AreEqual(val4, hydrometricSite_B.HydrometricSiteID);
+               hydrometricSiteExtraB.HydrometricSiteID = val4;
+               Assert.AreEqual(val4, hydrometricSiteExtraB.HydrometricSiteID);
                int val5 = 45;
-               hydrometricSite_B.HydrometricSiteTVItemID = val5;
-               Assert.AreEqual(val5, hydrometricSite_B.HydrometricSiteTVItemID);
+               hydrometricSiteExtraB.HydrometricSiteTVItemID = val5;
+               Assert.AreEqual(val5, hydrometricSiteExtraB.HydrometricSiteTVItemID);
                string val6 = "Some text";
-               hydrometricSite_B.FedSiteNumber = val6;
-               Assert.AreEqual(val6, hydrometricSite_B.FedSiteNumber);
+               hydrometricSiteExtraB.FedSiteNumber = val6;
+               Assert.AreEqual(val6, hydrometricSiteExtraB.FedSiteNumber);
                string val7 = "Some text";
-               hydrometricSite_B.QuebecSiteNumber = val7;
-               Assert.AreEqual(val7, hydrometricSite_B.QuebecSiteNumber);
+               hydrometricSiteExtraB.QuebecSiteNumber = val7;
+               Assert.AreEqual(val7, hydrometricSiteExtraB.QuebecSiteNumber);
                string val8 = "Some text";
-               hydrometricSite_B.HydrometricSiteName = val8;
-               Assert.AreEqual(val8, hydrometricSite_B.HydrometricSiteName);
+               hydrometricSiteExtraB.HydrometricSiteName = val8;
+               Assert.AreEqual(val8, hydrometricSiteExtraB.HydrometricSiteName);
                string val9 = "Some text";
-               hydrometricSite_B.Description = val9;
-               Assert.AreEqual(val9, hydrometricSite_B.Description);
+               hydrometricSiteExtraB.Description = val9;
+               Assert.AreEqual(val9, hydrometricSiteExtraB.Description);
                string val10 = "Some text";
-               hydrometricSite_B.Province = val10;
-               Assert.AreEqual(val10, hydrometricSite_B.Province);
+               hydrometricSiteExtraB.Province = val10;
+               Assert.AreEqual(val10, hydrometricSiteExtraB.Province);
                double val11 = 87.9D;
-               hydrometricSite_B.Elevation_m = val11;
-               Assert.AreEqual(val11, hydrometricSite_B.Elevation_m);
+               hydrometricSiteExtraB.Elevation_m = val11;
+               Assert.AreEqual(val11, hydrometricSiteExtraB.Elevation_m);
                DateTime val12 = new DateTime(2010, 3, 4);
-               hydrometricSite_B.StartDate_Local = val12;
-               Assert.AreEqual(val12, hydrometricSite_B.StartDate_Local);
+               hydrometricSiteExtraB.StartDate_Local = val12;
+               Assert.AreEqual(val12, hydrometricSiteExtraB.StartDate_Local);
                DateTime val13 = new DateTime(2010, 3, 4);
-               hydrometricSite_B.EndDate_Local = val13;
-               Assert.AreEqual(val13, hydrometricSite_B.EndDate_Local);
+               hydrometricSiteExtraB.EndDate_Local = val13;
+               Assert.AreEqual(val13, hydrometricSiteExtraB.EndDate_Local);
                double val14 = 87.9D;
-               hydrometricSite_B.TimeOffset_hour = val14;
-               Assert.AreEqual(val14, hydrometricSite_B.TimeOffset_hour);
+               hydrometricSiteExtraB.TimeOffset_hour = val14;
+               Assert.AreEqual(val14, hydrometricSiteExtraB.TimeOffset_hour);
                double val15 = 87.9D;
-               hydrometricSite_B.DrainageArea_km2 = val15;
-               Assert.AreEqual(val15, hydrometricSite_B.DrainageArea_km2);
+               hydrometricSiteExtraB.DrainageArea_km2 = val15;
+               Assert.AreEqual(val15, hydrometricSiteExtraB.DrainageArea_km2);
                bool val16 = true;
-               hydrometricSite_B.IsNatural = val16;
-               Assert.AreEqual(val16, hydrometricSite_B.IsNatural);
+               hydrometricSiteExtraB.IsNatural = val16;
+               Assert.AreEqual(val16, hydrometricSiteExtraB.IsNatural);
                bool val17 = true;
-               hydrometricSite_B.IsActive = val17;
-               Assert.AreEqual(val17, hydrometricSite_B.IsActive);
+               hydrometricSiteExtraB.IsActive = val17;
+               Assert.AreEqual(val17, hydrometricSiteExtraB.IsActive);
                bool val18 = true;
-               hydrometricSite_B.Sediment = val18;
-               Assert.AreEqual(val18, hydrometricSite_B.Sediment);
+               hydrometricSiteExtraB.Sediment = val18;
+               Assert.AreEqual(val18, hydrometricSiteExtraB.Sediment);
                bool val19 = true;
-               hydrometricSite_B.RHBN = val19;
-               Assert.AreEqual(val19, hydrometricSite_B.RHBN);
+               hydrometricSiteExtraB.RHBN = val19;
+               Assert.AreEqual(val19, hydrometricSiteExtraB.RHBN);
                bool val20 = true;
-               hydrometricSite_B.RealTime = val20;
-               Assert.AreEqual(val20, hydrometricSite_B.RealTime);
+               hydrometricSiteExtraB.RealTime = val20;
+               Assert.AreEqual(val20, hydrometricSiteExtraB.RealTime);
                bool val21 = true;
-               hydrometricSite_B.HasDischarge = val21;
-               Assert.AreEqual(val21, hydrometricSite_B.HasDischarge);
+               hydrometricSiteExtraB.HasDischarge = val21;
+               Assert.AreEqual(val21, hydrometricSiteExtraB.HasDischarge);
                bool val22 = true;
-               hydrometricSite_B.HasLevel = val22;
-               Assert.AreEqual(val22, hydrometricSite_B.HasLevel);
+               hydrometricSiteExtraB.HasLevel = val22;
+               Assert.AreEqual(val22, hydrometricSiteExtraB.HasLevel);
                bool val23 = true;
-               hydrometricSite_B.HasRatingCurve = val23;
-               Assert.AreEqual(val23, hydrometricSite_B.HasRatingCurve);
+               hydrometricSiteExtraB.HasRatingCurve = val23;
+               Assert.AreEqual(val23, hydrometricSiteExtraB.HasRatingCurve);
                DateTime val24 = new DateTime(2010, 3, 4);
-               hydrometricSite_B.LastUpdateDate_UTC = val24;
-               Assert.AreEqual(val24, hydrometricSite_B.LastUpdateDate_UTC);
+               hydrometricSiteExtraB.LastUpdateDate_UTC = val24;
+               Assert.AreEqual(val24, hydrometricSiteExtraB.LastUpdateDate_UTC);
                int val25 = 45;
-               hydrometricSite_B.LastUpdateContactTVItemID = val25;
-               Assert.AreEqual(val25, hydrometricSite_B.LastUpdateContactTVItemID);
+               hydrometricSiteExtraB.LastUpdateContactTVItemID = val25;
+               Assert.AreEqual(val25, hydrometricSiteExtraB.LastUpdateContactTVItemID);
                bool val26 = true;
-               hydrometricSite_B.HasErrors = val26;
-               Assert.AreEqual(val26, hydrometricSite_B.HasErrors);
+               hydrometricSiteExtraB.HasErrors = val26;
+               Assert.AreEqual(val26, hydrometricSiteExtraB.HasErrors);
                IEnumerable<ValidationResult> val81 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               hydrometricSite_B.ValidationResults = val81;
-               Assert.AreEqual(val81, hydrometricSite_B.ValidationResults);
+               hydrometricSiteExtraB.ValidationResults = val81;
+               Assert.AreEqual(val81, hydrometricSiteExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

@@ -105,7 +105,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class UseOfSite_A : UseOfSite
+    public partial class UseOfSiteExtraA : UseOfSite
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -136,13 +136,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public UseOfSite_A() : base()
+        public UseOfSiteExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class UseOfSite_B : UseOfSite_A
+    public partial class UseOfSiteExtraB : UseOfSiteExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -155,7 +155,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public UseOfSite_B() : base()
+        public UseOfSiteExtraB() : base()
         {
         }
         #endregion Constructors

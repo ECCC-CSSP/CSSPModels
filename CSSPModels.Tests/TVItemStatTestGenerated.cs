@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private TVItemStat tVItemStat { get; set; }
-        private TVItemStat_A tVItemStat_A { get; set; }
-        private TVItemStat_B tVItemStat_B { get; set; }
+        private TVItemStatExtraA tVItemStatExtraA { get; set; }
+        private TVItemStatExtraB tVItemStatExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public TVItemStatTest()
         {
             tVItemStat = new TVItemStat();
-            tVItemStat_A = new TVItemStat_A();
-            tVItemStat_B = new TVItemStat_B();
+            tVItemStatExtraA = new TVItemStatExtraA();
+            tVItemStatExtraB = new TVItemStatExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVItemStat_A_Properties_Test()
+        public void TVItemStatExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemLanguage", "LastUpdateContactTVItemLanguage", "TVTypeText", "TVItemStatID", "TVItemID", "TVType", "ChildCount", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemStat_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(TVItemStatExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemStat_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TVItemStatExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVItemStat_B_Properties_Test()
+        public void TVItemStatExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemStatReportTest", "TVItemLanguage", "LastUpdateContactTVItemLanguage", "TVTypeText", "TVItemStatID", "TVItemID", "TVType", "ChildCount", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemStat_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(TVItemStatExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemStat_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TVItemStatExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVItemStat_A_Navigation_Test()
+        public void TVItemStatExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemStat_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(TVItemStatExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemStat_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TVItemStatExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void TVItemStat_B_Navigation_Test()
+        public void TVItemStatExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemStat_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(TVItemStatExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(TVItemStat_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(TVItemStatExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(TVItemStat).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TVItemStat_A_Has_ValidationResults_Test()
+        public void TVItemStatExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(TVItemStat_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(TVItemStatExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void TVItemStat_B_Has_ValidationResults_Test()
+        public void TVItemStatExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(TVItemStat_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(TVItemStatExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void TVItemStat_Every_Property_Has_Get_Set_Test()
@@ -286,81 +286,81 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val24, tVItemStat.ValidationResults);
         }
         [TestMethod]
-        public void TVItemStat_A_Every_Property_Has_Get_Set_Test()
+        public void TVItemStatExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               tVItemStat_A.TVItemLanguage = val1;
-               Assert.AreEqual(val1, tVItemStat_A.TVItemLanguage);
+               tVItemStatExtraA.TVItemLanguage = val1;
+               Assert.AreEqual(val1, tVItemStatExtraA.TVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               tVItemStat_A.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, tVItemStat_A.LastUpdateContactTVItemLanguage);
+               tVItemStatExtraA.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, tVItemStatExtraA.LastUpdateContactTVItemLanguage);
                string val3 = "Some text";
-               tVItemStat_A.TVTypeText = val3;
-               Assert.AreEqual(val3, tVItemStat_A.TVTypeText);
+               tVItemStatExtraA.TVTypeText = val3;
+               Assert.AreEqual(val3, tVItemStatExtraA.TVTypeText);
                int val4 = 45;
-               tVItemStat_A.TVItemStatID = val4;
-               Assert.AreEqual(val4, tVItemStat_A.TVItemStatID);
+               tVItemStatExtraA.TVItemStatID = val4;
+               Assert.AreEqual(val4, tVItemStatExtraA.TVItemStatID);
                int val5 = 45;
-               tVItemStat_A.TVItemID = val5;
-               Assert.AreEqual(val5, tVItemStat_A.TVItemID);
+               tVItemStatExtraA.TVItemID = val5;
+               Assert.AreEqual(val5, tVItemStatExtraA.TVItemID);
                TVTypeEnum val6 = (TVTypeEnum)3;
-               tVItemStat_A.TVType = val6;
-               Assert.AreEqual(val6, tVItemStat_A.TVType);
+               tVItemStatExtraA.TVType = val6;
+               Assert.AreEqual(val6, tVItemStatExtraA.TVType);
                int val7 = 45;
-               tVItemStat_A.ChildCount = val7;
-               Assert.AreEqual(val7, tVItemStat_A.ChildCount);
+               tVItemStatExtraA.ChildCount = val7;
+               Assert.AreEqual(val7, tVItemStatExtraA.ChildCount);
                DateTime val8 = new DateTime(2010, 3, 4);
-               tVItemStat_A.LastUpdateDate_UTC = val8;
-               Assert.AreEqual(val8, tVItemStat_A.LastUpdateDate_UTC);
+               tVItemStatExtraA.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, tVItemStatExtraA.LastUpdateDate_UTC);
                int val9 = 45;
-               tVItemStat_A.LastUpdateContactTVItemID = val9;
-               Assert.AreEqual(val9, tVItemStat_A.LastUpdateContactTVItemID);
+               tVItemStatExtraA.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, tVItemStatExtraA.LastUpdateContactTVItemID);
                bool val10 = true;
-               tVItemStat_A.HasErrors = val10;
-               Assert.AreEqual(val10, tVItemStat_A.HasErrors);
+               tVItemStatExtraA.HasErrors = val10;
+               Assert.AreEqual(val10, tVItemStatExtraA.HasErrors);
                IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               tVItemStat_A.ValidationResults = val33;
-               Assert.AreEqual(val33, tVItemStat_A.ValidationResults);
+               tVItemStatExtraA.ValidationResults = val33;
+               Assert.AreEqual(val33, tVItemStatExtraA.ValidationResults);
         }
         [TestMethod]
-        public void TVItemStat_B_Every_Property_Has_Get_Set_Test()
+        public void TVItemStatExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               tVItemStat_B.TVItemStatReportTest = val1;
-               Assert.AreEqual(val1, tVItemStat_B.TVItemStatReportTest);
+               tVItemStatExtraB.TVItemStatReportTest = val1;
+               Assert.AreEqual(val1, tVItemStatExtraB.TVItemStatReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               tVItemStat_B.TVItemLanguage = val2;
-               Assert.AreEqual(val2, tVItemStat_B.TVItemLanguage);
+               tVItemStatExtraB.TVItemLanguage = val2;
+               Assert.AreEqual(val2, tVItemStatExtraB.TVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               tVItemStat_B.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, tVItemStat_B.LastUpdateContactTVItemLanguage);
+               tVItemStatExtraB.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, tVItemStatExtraB.LastUpdateContactTVItemLanguage);
                string val4 = "Some text";
-               tVItemStat_B.TVTypeText = val4;
-               Assert.AreEqual(val4, tVItemStat_B.TVTypeText);
+               tVItemStatExtraB.TVTypeText = val4;
+               Assert.AreEqual(val4, tVItemStatExtraB.TVTypeText);
                int val5 = 45;
-               tVItemStat_B.TVItemStatID = val5;
-               Assert.AreEqual(val5, tVItemStat_B.TVItemStatID);
+               tVItemStatExtraB.TVItemStatID = val5;
+               Assert.AreEqual(val5, tVItemStatExtraB.TVItemStatID);
                int val6 = 45;
-               tVItemStat_B.TVItemID = val6;
-               Assert.AreEqual(val6, tVItemStat_B.TVItemID);
+               tVItemStatExtraB.TVItemID = val6;
+               Assert.AreEqual(val6, tVItemStatExtraB.TVItemID);
                TVTypeEnum val7 = (TVTypeEnum)3;
-               tVItemStat_B.TVType = val7;
-               Assert.AreEqual(val7, tVItemStat_B.TVType);
+               tVItemStatExtraB.TVType = val7;
+               Assert.AreEqual(val7, tVItemStatExtraB.TVType);
                int val8 = 45;
-               tVItemStat_B.ChildCount = val8;
-               Assert.AreEqual(val8, tVItemStat_B.ChildCount);
+               tVItemStatExtraB.ChildCount = val8;
+               Assert.AreEqual(val8, tVItemStatExtraB.ChildCount);
                DateTime val9 = new DateTime(2010, 3, 4);
-               tVItemStat_B.LastUpdateDate_UTC = val9;
-               Assert.AreEqual(val9, tVItemStat_B.LastUpdateDate_UTC);
+               tVItemStatExtraB.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, tVItemStatExtraB.LastUpdateDate_UTC);
                int val10 = 45;
-               tVItemStat_B.LastUpdateContactTVItemID = val10;
-               Assert.AreEqual(val10, tVItemStat_B.LastUpdateContactTVItemID);
+               tVItemStatExtraB.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, tVItemStatExtraB.LastUpdateContactTVItemID);
                bool val11 = true;
-               tVItemStat_B.HasErrors = val11;
-               Assert.AreEqual(val11, tVItemStat_B.HasErrors);
+               tVItemStatExtraB.HasErrors = val11;
+               Assert.AreEqual(val11, tVItemStatExtraB.HasErrors);
                IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               tVItemStat_B.ValidationResults = val36;
-               Assert.AreEqual(val36, tVItemStat_B.ValidationResults);
+               tVItemStatExtraB.ValidationResults = val36;
+               Assert.AreEqual(val36, tVItemStatExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

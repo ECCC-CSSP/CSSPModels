@@ -61,7 +61,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppTaskLanguage_A : AppTaskLanguage
+    public partial class AppTaskLanguageExtraA : AppTaskLanguage
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -87,13 +87,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public AppTaskLanguage_A() : base()
+        public AppTaskLanguageExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppTaskLanguage_B : AppTaskLanguage_A
+    public partial class AppTaskLanguageExtraB : AppTaskLanguageExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -106,7 +106,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public AppTaskLanguage_B() : base()
+        public AppTaskLanguageExtraB() : base()
         {
         }
         #endregion Constructors

@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private MWQMAnalysisReportParameter mWQMAnalysisReportParameter { get; set; }
-        private MWQMAnalysisReportParameter_A mWQMAnalysisReportParameter_A { get; set; }
-        private MWQMAnalysisReportParameter_B mWQMAnalysisReportParameter_B { get; set; }
+        private MWQMAnalysisReportParameterExtraA mWQMAnalysisReportParameterExtraA { get; set; }
+        private MWQMAnalysisReportParameterExtraB mWQMAnalysisReportParameterExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public MWQMAnalysisReportParameterTest()
         {
             mWQMAnalysisReportParameter = new MWQMAnalysisReportParameter();
-            mWQMAnalysisReportParameter_A = new MWQMAnalysisReportParameter_A();
-            mWQMAnalysisReportParameter_B = new MWQMAnalysisReportParameter_B();
+            mWQMAnalysisReportParameterExtraA = new MWQMAnalysisReportParameterExtraA();
+            mWQMAnalysisReportParameterExtraB = new MWQMAnalysisReportParameterExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMAnalysisReportParameter_A_Properties_Test()
+        public void MWQMAnalysisReportParameterExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ExcelTVFileTVItemLanguage", "CommandText", "LastUpdateContactTVItemLanguage", "MWQMAnalysisReportParameterID", "SubsectorTVItemID", "AnalysisName", "AnalysisReportYear", "StartDate", "EndDate", "AnalysisCalculationType", "NumberOfRuns", "FullYear", "SalinityHighlightDeviationFromAverage", "ShortRangeNumberOfDays", "MidRangeNumberOfDays", "DryLimit24h", "DryLimit48h", "DryLimit72h", "DryLimit96h", "WetLimit24h", "WetLimit48h", "WetLimit72h", "WetLimit96h", "RunsToOmit", "ShowDataTypes", "ExcelTVFileTVItemID", "Command", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameter_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameterExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameter_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameterExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMAnalysisReportParameter_B_Properties_Test()
+        public void MWQMAnalysisReportParameterExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MWQMAnalysisReportParameterReportTest", "ExcelTVFileTVItemLanguage", "CommandText", "LastUpdateContactTVItemLanguage", "MWQMAnalysisReportParameterID", "SubsectorTVItemID", "AnalysisName", "AnalysisReportYear", "StartDate", "EndDate", "AnalysisCalculationType", "NumberOfRuns", "FullYear", "SalinityHighlightDeviationFromAverage", "ShortRangeNumberOfDays", "MidRangeNumberOfDays", "DryLimit24h", "DryLimit48h", "DryLimit72h", "DryLimit96h", "WetLimit24h", "WetLimit48h", "WetLimit72h", "WetLimit96h", "RunsToOmit", "ShowDataTypes", "ExcelTVFileTVItemID", "Command", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameter_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameterExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameter_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameterExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMAnalysisReportParameter_A_Navigation_Test()
+        public void MWQMAnalysisReportParameterExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameter_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameterExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameter_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameterExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MWQMAnalysisReportParameter_B_Navigation_Test()
+        public void MWQMAnalysisReportParameterExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameter_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameterExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameter_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MWQMAnalysisReportParameterExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(MWQMAnalysisReportParameter).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MWQMAnalysisReportParameter_A_Has_ValidationResults_Test()
+        public void MWQMAnalysisReportParameterExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(MWQMAnalysisReportParameter_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(MWQMAnalysisReportParameterExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MWQMAnalysisReportParameter_B_Has_ValidationResults_Test()
+        public void MWQMAnalysisReportParameterExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(MWQMAnalysisReportParameter_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(MWQMAnalysisReportParameterExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void MWQMAnalysisReportParameter_Every_Property_Has_Get_Set_Test()
@@ -346,201 +346,201 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val84, mWQMAnalysisReportParameter.ValidationResults);
         }
         [TestMethod]
-        public void MWQMAnalysisReportParameter_A_Every_Property_Has_Get_Set_Test()
+        public void MWQMAnalysisReportParameterExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               mWQMAnalysisReportParameter_A.ExcelTVFileTVItemLanguage = val1;
-               Assert.AreEqual(val1, mWQMAnalysisReportParameter_A.ExcelTVFileTVItemLanguage);
+               mWQMAnalysisReportParameterExtraA.ExcelTVFileTVItemLanguage = val1;
+               Assert.AreEqual(val1, mWQMAnalysisReportParameterExtraA.ExcelTVFileTVItemLanguage);
                string val2 = "Some text";
-               mWQMAnalysisReportParameter_A.CommandText = val2;
-               Assert.AreEqual(val2, mWQMAnalysisReportParameter_A.CommandText);
+               mWQMAnalysisReportParameterExtraA.CommandText = val2;
+               Assert.AreEqual(val2, mWQMAnalysisReportParameterExtraA.CommandText);
                TVItemLanguage val3 = new TVItemLanguage();
-               mWQMAnalysisReportParameter_A.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, mWQMAnalysisReportParameter_A.LastUpdateContactTVItemLanguage);
+               mWQMAnalysisReportParameterExtraA.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, mWQMAnalysisReportParameterExtraA.LastUpdateContactTVItemLanguage);
                int val4 = 45;
-               mWQMAnalysisReportParameter_A.MWQMAnalysisReportParameterID = val4;
-               Assert.AreEqual(val4, mWQMAnalysisReportParameter_A.MWQMAnalysisReportParameterID);
+               mWQMAnalysisReportParameterExtraA.MWQMAnalysisReportParameterID = val4;
+               Assert.AreEqual(val4, mWQMAnalysisReportParameterExtraA.MWQMAnalysisReportParameterID);
                int val5 = 45;
-               mWQMAnalysisReportParameter_A.SubsectorTVItemID = val5;
-               Assert.AreEqual(val5, mWQMAnalysisReportParameter_A.SubsectorTVItemID);
+               mWQMAnalysisReportParameterExtraA.SubsectorTVItemID = val5;
+               Assert.AreEqual(val5, mWQMAnalysisReportParameterExtraA.SubsectorTVItemID);
                string val6 = "Some text";
-               mWQMAnalysisReportParameter_A.AnalysisName = val6;
-               Assert.AreEqual(val6, mWQMAnalysisReportParameter_A.AnalysisName);
+               mWQMAnalysisReportParameterExtraA.AnalysisName = val6;
+               Assert.AreEqual(val6, mWQMAnalysisReportParameterExtraA.AnalysisName);
                int val7 = 45;
-               mWQMAnalysisReportParameter_A.AnalysisReportYear = val7;
-               Assert.AreEqual(val7, mWQMAnalysisReportParameter_A.AnalysisReportYear);
+               mWQMAnalysisReportParameterExtraA.AnalysisReportYear = val7;
+               Assert.AreEqual(val7, mWQMAnalysisReportParameterExtraA.AnalysisReportYear);
                DateTime val8 = new DateTime(2010, 3, 4);
-               mWQMAnalysisReportParameter_A.StartDate = val8;
-               Assert.AreEqual(val8, mWQMAnalysisReportParameter_A.StartDate);
+               mWQMAnalysisReportParameterExtraA.StartDate = val8;
+               Assert.AreEqual(val8, mWQMAnalysisReportParameterExtraA.StartDate);
                DateTime val9 = new DateTime(2010, 3, 4);
-               mWQMAnalysisReportParameter_A.EndDate = val9;
-               Assert.AreEqual(val9, mWQMAnalysisReportParameter_A.EndDate);
+               mWQMAnalysisReportParameterExtraA.EndDate = val9;
+               Assert.AreEqual(val9, mWQMAnalysisReportParameterExtraA.EndDate);
                AnalysisCalculationTypeEnum val10 = (AnalysisCalculationTypeEnum)3;
-               mWQMAnalysisReportParameter_A.AnalysisCalculationType = val10;
-               Assert.AreEqual(val10, mWQMAnalysisReportParameter_A.AnalysisCalculationType);
+               mWQMAnalysisReportParameterExtraA.AnalysisCalculationType = val10;
+               Assert.AreEqual(val10, mWQMAnalysisReportParameterExtraA.AnalysisCalculationType);
                int val11 = 45;
-               mWQMAnalysisReportParameter_A.NumberOfRuns = val11;
-               Assert.AreEqual(val11, mWQMAnalysisReportParameter_A.NumberOfRuns);
+               mWQMAnalysisReportParameterExtraA.NumberOfRuns = val11;
+               Assert.AreEqual(val11, mWQMAnalysisReportParameterExtraA.NumberOfRuns);
                bool val12 = true;
-               mWQMAnalysisReportParameter_A.FullYear = val12;
-               Assert.AreEqual(val12, mWQMAnalysisReportParameter_A.FullYear);
+               mWQMAnalysisReportParameterExtraA.FullYear = val12;
+               Assert.AreEqual(val12, mWQMAnalysisReportParameterExtraA.FullYear);
                double val13 = 87.9D;
-               mWQMAnalysisReportParameter_A.SalinityHighlightDeviationFromAverage = val13;
-               Assert.AreEqual(val13, mWQMAnalysisReportParameter_A.SalinityHighlightDeviationFromAverage);
+               mWQMAnalysisReportParameterExtraA.SalinityHighlightDeviationFromAverage = val13;
+               Assert.AreEqual(val13, mWQMAnalysisReportParameterExtraA.SalinityHighlightDeviationFromAverage);
                int val14 = 45;
-               mWQMAnalysisReportParameter_A.ShortRangeNumberOfDays = val14;
-               Assert.AreEqual(val14, mWQMAnalysisReportParameter_A.ShortRangeNumberOfDays);
+               mWQMAnalysisReportParameterExtraA.ShortRangeNumberOfDays = val14;
+               Assert.AreEqual(val14, mWQMAnalysisReportParameterExtraA.ShortRangeNumberOfDays);
                int val15 = 45;
-               mWQMAnalysisReportParameter_A.MidRangeNumberOfDays = val15;
-               Assert.AreEqual(val15, mWQMAnalysisReportParameter_A.MidRangeNumberOfDays);
+               mWQMAnalysisReportParameterExtraA.MidRangeNumberOfDays = val15;
+               Assert.AreEqual(val15, mWQMAnalysisReportParameterExtraA.MidRangeNumberOfDays);
                int val16 = 45;
-               mWQMAnalysisReportParameter_A.DryLimit24h = val16;
-               Assert.AreEqual(val16, mWQMAnalysisReportParameter_A.DryLimit24h);
+               mWQMAnalysisReportParameterExtraA.DryLimit24h = val16;
+               Assert.AreEqual(val16, mWQMAnalysisReportParameterExtraA.DryLimit24h);
                int val17 = 45;
-               mWQMAnalysisReportParameter_A.DryLimit48h = val17;
-               Assert.AreEqual(val17, mWQMAnalysisReportParameter_A.DryLimit48h);
+               mWQMAnalysisReportParameterExtraA.DryLimit48h = val17;
+               Assert.AreEqual(val17, mWQMAnalysisReportParameterExtraA.DryLimit48h);
                int val18 = 45;
-               mWQMAnalysisReportParameter_A.DryLimit72h = val18;
-               Assert.AreEqual(val18, mWQMAnalysisReportParameter_A.DryLimit72h);
+               mWQMAnalysisReportParameterExtraA.DryLimit72h = val18;
+               Assert.AreEqual(val18, mWQMAnalysisReportParameterExtraA.DryLimit72h);
                int val19 = 45;
-               mWQMAnalysisReportParameter_A.DryLimit96h = val19;
-               Assert.AreEqual(val19, mWQMAnalysisReportParameter_A.DryLimit96h);
+               mWQMAnalysisReportParameterExtraA.DryLimit96h = val19;
+               Assert.AreEqual(val19, mWQMAnalysisReportParameterExtraA.DryLimit96h);
                int val20 = 45;
-               mWQMAnalysisReportParameter_A.WetLimit24h = val20;
-               Assert.AreEqual(val20, mWQMAnalysisReportParameter_A.WetLimit24h);
+               mWQMAnalysisReportParameterExtraA.WetLimit24h = val20;
+               Assert.AreEqual(val20, mWQMAnalysisReportParameterExtraA.WetLimit24h);
                int val21 = 45;
-               mWQMAnalysisReportParameter_A.WetLimit48h = val21;
-               Assert.AreEqual(val21, mWQMAnalysisReportParameter_A.WetLimit48h);
+               mWQMAnalysisReportParameterExtraA.WetLimit48h = val21;
+               Assert.AreEqual(val21, mWQMAnalysisReportParameterExtraA.WetLimit48h);
                int val22 = 45;
-               mWQMAnalysisReportParameter_A.WetLimit72h = val22;
-               Assert.AreEqual(val22, mWQMAnalysisReportParameter_A.WetLimit72h);
+               mWQMAnalysisReportParameterExtraA.WetLimit72h = val22;
+               Assert.AreEqual(val22, mWQMAnalysisReportParameterExtraA.WetLimit72h);
                int val23 = 45;
-               mWQMAnalysisReportParameter_A.WetLimit96h = val23;
-               Assert.AreEqual(val23, mWQMAnalysisReportParameter_A.WetLimit96h);
+               mWQMAnalysisReportParameterExtraA.WetLimit96h = val23;
+               Assert.AreEqual(val23, mWQMAnalysisReportParameterExtraA.WetLimit96h);
                string val24 = "Some text";
-               mWQMAnalysisReportParameter_A.RunsToOmit = val24;
-               Assert.AreEqual(val24, mWQMAnalysisReportParameter_A.RunsToOmit);
+               mWQMAnalysisReportParameterExtraA.RunsToOmit = val24;
+               Assert.AreEqual(val24, mWQMAnalysisReportParameterExtraA.RunsToOmit);
                string val25 = "Some text";
-               mWQMAnalysisReportParameter_A.ShowDataTypes = val25;
-               Assert.AreEqual(val25, mWQMAnalysisReportParameter_A.ShowDataTypes);
+               mWQMAnalysisReportParameterExtraA.ShowDataTypes = val25;
+               Assert.AreEqual(val25, mWQMAnalysisReportParameterExtraA.ShowDataTypes);
                int val26 = 45;
-               mWQMAnalysisReportParameter_A.ExcelTVFileTVItemID = val26;
-               Assert.AreEqual(val26, mWQMAnalysisReportParameter_A.ExcelTVFileTVItemID);
+               mWQMAnalysisReportParameterExtraA.ExcelTVFileTVItemID = val26;
+               Assert.AreEqual(val26, mWQMAnalysisReportParameterExtraA.ExcelTVFileTVItemID);
                AnalysisReportExportCommandEnum val27 = (AnalysisReportExportCommandEnum)3;
-               mWQMAnalysisReportParameter_A.Command = val27;
-               Assert.AreEqual(val27, mWQMAnalysisReportParameter_A.Command);
+               mWQMAnalysisReportParameterExtraA.Command = val27;
+               Assert.AreEqual(val27, mWQMAnalysisReportParameterExtraA.Command);
                DateTime val28 = new DateTime(2010, 3, 4);
-               mWQMAnalysisReportParameter_A.LastUpdateDate_UTC = val28;
-               Assert.AreEqual(val28, mWQMAnalysisReportParameter_A.LastUpdateDate_UTC);
+               mWQMAnalysisReportParameterExtraA.LastUpdateDate_UTC = val28;
+               Assert.AreEqual(val28, mWQMAnalysisReportParameterExtraA.LastUpdateDate_UTC);
                int val29 = 45;
-               mWQMAnalysisReportParameter_A.LastUpdateContactTVItemID = val29;
-               Assert.AreEqual(val29, mWQMAnalysisReportParameter_A.LastUpdateContactTVItemID);
+               mWQMAnalysisReportParameterExtraA.LastUpdateContactTVItemID = val29;
+               Assert.AreEqual(val29, mWQMAnalysisReportParameterExtraA.LastUpdateContactTVItemID);
                bool val30 = true;
-               mWQMAnalysisReportParameter_A.HasErrors = val30;
-               Assert.AreEqual(val30, mWQMAnalysisReportParameter_A.HasErrors);
+               mWQMAnalysisReportParameterExtraA.HasErrors = val30;
+               Assert.AreEqual(val30, mWQMAnalysisReportParameterExtraA.HasErrors);
                IEnumerable<ValidationResult> val93 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMAnalysisReportParameter_A.ValidationResults = val93;
-               Assert.AreEqual(val93, mWQMAnalysisReportParameter_A.ValidationResults);
+               mWQMAnalysisReportParameterExtraA.ValidationResults = val93;
+               Assert.AreEqual(val93, mWQMAnalysisReportParameterExtraA.ValidationResults);
         }
         [TestMethod]
-        public void MWQMAnalysisReportParameter_B_Every_Property_Has_Get_Set_Test()
+        public void MWQMAnalysisReportParameterExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               mWQMAnalysisReportParameter_B.MWQMAnalysisReportParameterReportTest = val1;
-               Assert.AreEqual(val1, mWQMAnalysisReportParameter_B.MWQMAnalysisReportParameterReportTest);
+               mWQMAnalysisReportParameterExtraB.MWQMAnalysisReportParameterReportTest = val1;
+               Assert.AreEqual(val1, mWQMAnalysisReportParameterExtraB.MWQMAnalysisReportParameterReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               mWQMAnalysisReportParameter_B.ExcelTVFileTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMAnalysisReportParameter_B.ExcelTVFileTVItemLanguage);
+               mWQMAnalysisReportParameterExtraB.ExcelTVFileTVItemLanguage = val2;
+               Assert.AreEqual(val2, mWQMAnalysisReportParameterExtraB.ExcelTVFileTVItemLanguage);
                string val3 = "Some text";
-               mWQMAnalysisReportParameter_B.CommandText = val3;
-               Assert.AreEqual(val3, mWQMAnalysisReportParameter_B.CommandText);
+               mWQMAnalysisReportParameterExtraB.CommandText = val3;
+               Assert.AreEqual(val3, mWQMAnalysisReportParameterExtraB.CommandText);
                TVItemLanguage val4 = new TVItemLanguage();
-               mWQMAnalysisReportParameter_B.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, mWQMAnalysisReportParameter_B.LastUpdateContactTVItemLanguage);
+               mWQMAnalysisReportParameterExtraB.LastUpdateContactTVItemLanguage = val4;
+               Assert.AreEqual(val4, mWQMAnalysisReportParameterExtraB.LastUpdateContactTVItemLanguage);
                int val5 = 45;
-               mWQMAnalysisReportParameter_B.MWQMAnalysisReportParameterID = val5;
-               Assert.AreEqual(val5, mWQMAnalysisReportParameter_B.MWQMAnalysisReportParameterID);
+               mWQMAnalysisReportParameterExtraB.MWQMAnalysisReportParameterID = val5;
+               Assert.AreEqual(val5, mWQMAnalysisReportParameterExtraB.MWQMAnalysisReportParameterID);
                int val6 = 45;
-               mWQMAnalysisReportParameter_B.SubsectorTVItemID = val6;
-               Assert.AreEqual(val6, mWQMAnalysisReportParameter_B.SubsectorTVItemID);
+               mWQMAnalysisReportParameterExtraB.SubsectorTVItemID = val6;
+               Assert.AreEqual(val6, mWQMAnalysisReportParameterExtraB.SubsectorTVItemID);
                string val7 = "Some text";
-               mWQMAnalysisReportParameter_B.AnalysisName = val7;
-               Assert.AreEqual(val7, mWQMAnalysisReportParameter_B.AnalysisName);
+               mWQMAnalysisReportParameterExtraB.AnalysisName = val7;
+               Assert.AreEqual(val7, mWQMAnalysisReportParameterExtraB.AnalysisName);
                int val8 = 45;
-               mWQMAnalysisReportParameter_B.AnalysisReportYear = val8;
-               Assert.AreEqual(val8, mWQMAnalysisReportParameter_B.AnalysisReportYear);
+               mWQMAnalysisReportParameterExtraB.AnalysisReportYear = val8;
+               Assert.AreEqual(val8, mWQMAnalysisReportParameterExtraB.AnalysisReportYear);
                DateTime val9 = new DateTime(2010, 3, 4);
-               mWQMAnalysisReportParameter_B.StartDate = val9;
-               Assert.AreEqual(val9, mWQMAnalysisReportParameter_B.StartDate);
+               mWQMAnalysisReportParameterExtraB.StartDate = val9;
+               Assert.AreEqual(val9, mWQMAnalysisReportParameterExtraB.StartDate);
                DateTime val10 = new DateTime(2010, 3, 4);
-               mWQMAnalysisReportParameter_B.EndDate = val10;
-               Assert.AreEqual(val10, mWQMAnalysisReportParameter_B.EndDate);
+               mWQMAnalysisReportParameterExtraB.EndDate = val10;
+               Assert.AreEqual(val10, mWQMAnalysisReportParameterExtraB.EndDate);
                AnalysisCalculationTypeEnum val11 = (AnalysisCalculationTypeEnum)3;
-               mWQMAnalysisReportParameter_B.AnalysisCalculationType = val11;
-               Assert.AreEqual(val11, mWQMAnalysisReportParameter_B.AnalysisCalculationType);
+               mWQMAnalysisReportParameterExtraB.AnalysisCalculationType = val11;
+               Assert.AreEqual(val11, mWQMAnalysisReportParameterExtraB.AnalysisCalculationType);
                int val12 = 45;
-               mWQMAnalysisReportParameter_B.NumberOfRuns = val12;
-               Assert.AreEqual(val12, mWQMAnalysisReportParameter_B.NumberOfRuns);
+               mWQMAnalysisReportParameterExtraB.NumberOfRuns = val12;
+               Assert.AreEqual(val12, mWQMAnalysisReportParameterExtraB.NumberOfRuns);
                bool val13 = true;
-               mWQMAnalysisReportParameter_B.FullYear = val13;
-               Assert.AreEqual(val13, mWQMAnalysisReportParameter_B.FullYear);
+               mWQMAnalysisReportParameterExtraB.FullYear = val13;
+               Assert.AreEqual(val13, mWQMAnalysisReportParameterExtraB.FullYear);
                double val14 = 87.9D;
-               mWQMAnalysisReportParameter_B.SalinityHighlightDeviationFromAverage = val14;
-               Assert.AreEqual(val14, mWQMAnalysisReportParameter_B.SalinityHighlightDeviationFromAverage);
+               mWQMAnalysisReportParameterExtraB.SalinityHighlightDeviationFromAverage = val14;
+               Assert.AreEqual(val14, mWQMAnalysisReportParameterExtraB.SalinityHighlightDeviationFromAverage);
                int val15 = 45;
-               mWQMAnalysisReportParameter_B.ShortRangeNumberOfDays = val15;
-               Assert.AreEqual(val15, mWQMAnalysisReportParameter_B.ShortRangeNumberOfDays);
+               mWQMAnalysisReportParameterExtraB.ShortRangeNumberOfDays = val15;
+               Assert.AreEqual(val15, mWQMAnalysisReportParameterExtraB.ShortRangeNumberOfDays);
                int val16 = 45;
-               mWQMAnalysisReportParameter_B.MidRangeNumberOfDays = val16;
-               Assert.AreEqual(val16, mWQMAnalysisReportParameter_B.MidRangeNumberOfDays);
+               mWQMAnalysisReportParameterExtraB.MidRangeNumberOfDays = val16;
+               Assert.AreEqual(val16, mWQMAnalysisReportParameterExtraB.MidRangeNumberOfDays);
                int val17 = 45;
-               mWQMAnalysisReportParameter_B.DryLimit24h = val17;
-               Assert.AreEqual(val17, mWQMAnalysisReportParameter_B.DryLimit24h);
+               mWQMAnalysisReportParameterExtraB.DryLimit24h = val17;
+               Assert.AreEqual(val17, mWQMAnalysisReportParameterExtraB.DryLimit24h);
                int val18 = 45;
-               mWQMAnalysisReportParameter_B.DryLimit48h = val18;
-               Assert.AreEqual(val18, mWQMAnalysisReportParameter_B.DryLimit48h);
+               mWQMAnalysisReportParameterExtraB.DryLimit48h = val18;
+               Assert.AreEqual(val18, mWQMAnalysisReportParameterExtraB.DryLimit48h);
                int val19 = 45;
-               mWQMAnalysisReportParameter_B.DryLimit72h = val19;
-               Assert.AreEqual(val19, mWQMAnalysisReportParameter_B.DryLimit72h);
+               mWQMAnalysisReportParameterExtraB.DryLimit72h = val19;
+               Assert.AreEqual(val19, mWQMAnalysisReportParameterExtraB.DryLimit72h);
                int val20 = 45;
-               mWQMAnalysisReportParameter_B.DryLimit96h = val20;
-               Assert.AreEqual(val20, mWQMAnalysisReportParameter_B.DryLimit96h);
+               mWQMAnalysisReportParameterExtraB.DryLimit96h = val20;
+               Assert.AreEqual(val20, mWQMAnalysisReportParameterExtraB.DryLimit96h);
                int val21 = 45;
-               mWQMAnalysisReportParameter_B.WetLimit24h = val21;
-               Assert.AreEqual(val21, mWQMAnalysisReportParameter_B.WetLimit24h);
+               mWQMAnalysisReportParameterExtraB.WetLimit24h = val21;
+               Assert.AreEqual(val21, mWQMAnalysisReportParameterExtraB.WetLimit24h);
                int val22 = 45;
-               mWQMAnalysisReportParameter_B.WetLimit48h = val22;
-               Assert.AreEqual(val22, mWQMAnalysisReportParameter_B.WetLimit48h);
+               mWQMAnalysisReportParameterExtraB.WetLimit48h = val22;
+               Assert.AreEqual(val22, mWQMAnalysisReportParameterExtraB.WetLimit48h);
                int val23 = 45;
-               mWQMAnalysisReportParameter_B.WetLimit72h = val23;
-               Assert.AreEqual(val23, mWQMAnalysisReportParameter_B.WetLimit72h);
+               mWQMAnalysisReportParameterExtraB.WetLimit72h = val23;
+               Assert.AreEqual(val23, mWQMAnalysisReportParameterExtraB.WetLimit72h);
                int val24 = 45;
-               mWQMAnalysisReportParameter_B.WetLimit96h = val24;
-               Assert.AreEqual(val24, mWQMAnalysisReportParameter_B.WetLimit96h);
+               mWQMAnalysisReportParameterExtraB.WetLimit96h = val24;
+               Assert.AreEqual(val24, mWQMAnalysisReportParameterExtraB.WetLimit96h);
                string val25 = "Some text";
-               mWQMAnalysisReportParameter_B.RunsToOmit = val25;
-               Assert.AreEqual(val25, mWQMAnalysisReportParameter_B.RunsToOmit);
+               mWQMAnalysisReportParameterExtraB.RunsToOmit = val25;
+               Assert.AreEqual(val25, mWQMAnalysisReportParameterExtraB.RunsToOmit);
                string val26 = "Some text";
-               mWQMAnalysisReportParameter_B.ShowDataTypes = val26;
-               Assert.AreEqual(val26, mWQMAnalysisReportParameter_B.ShowDataTypes);
+               mWQMAnalysisReportParameterExtraB.ShowDataTypes = val26;
+               Assert.AreEqual(val26, mWQMAnalysisReportParameterExtraB.ShowDataTypes);
                int val27 = 45;
-               mWQMAnalysisReportParameter_B.ExcelTVFileTVItemID = val27;
-               Assert.AreEqual(val27, mWQMAnalysisReportParameter_B.ExcelTVFileTVItemID);
+               mWQMAnalysisReportParameterExtraB.ExcelTVFileTVItemID = val27;
+               Assert.AreEqual(val27, mWQMAnalysisReportParameterExtraB.ExcelTVFileTVItemID);
                AnalysisReportExportCommandEnum val28 = (AnalysisReportExportCommandEnum)3;
-               mWQMAnalysisReportParameter_B.Command = val28;
-               Assert.AreEqual(val28, mWQMAnalysisReportParameter_B.Command);
+               mWQMAnalysisReportParameterExtraB.Command = val28;
+               Assert.AreEqual(val28, mWQMAnalysisReportParameterExtraB.Command);
                DateTime val29 = new DateTime(2010, 3, 4);
-               mWQMAnalysisReportParameter_B.LastUpdateDate_UTC = val29;
-               Assert.AreEqual(val29, mWQMAnalysisReportParameter_B.LastUpdateDate_UTC);
+               mWQMAnalysisReportParameterExtraB.LastUpdateDate_UTC = val29;
+               Assert.AreEqual(val29, mWQMAnalysisReportParameterExtraB.LastUpdateDate_UTC);
                int val30 = 45;
-               mWQMAnalysisReportParameter_B.LastUpdateContactTVItemID = val30;
-               Assert.AreEqual(val30, mWQMAnalysisReportParameter_B.LastUpdateContactTVItemID);
+               mWQMAnalysisReportParameterExtraB.LastUpdateContactTVItemID = val30;
+               Assert.AreEqual(val30, mWQMAnalysisReportParameterExtraB.LastUpdateContactTVItemID);
                bool val31 = true;
-               mWQMAnalysisReportParameter_B.HasErrors = val31;
-               Assert.AreEqual(val31, mWQMAnalysisReportParameter_B.HasErrors);
+               mWQMAnalysisReportParameterExtraB.HasErrors = val31;
+               Assert.AreEqual(val31, mWQMAnalysisReportParameterExtraB.HasErrors);
                IEnumerable<ValidationResult> val96 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mWQMAnalysisReportParameter_B.ValidationResults = val96;
-               Assert.AreEqual(val96, mWQMAnalysisReportParameter_B.ValidationResults);
+               mWQMAnalysisReportParameterExtraB.ValidationResults = val96;
+               Assert.AreEqual(val96, mWQMAnalysisReportParameterExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

@@ -57,7 +57,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppErrLog_A : AppErrLog
+    public partial class AppErrLogExtraA : AppErrLog
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -69,13 +69,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public AppErrLog_A() : base()
+        public AppErrLogExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppErrLog_B : AppErrLog_A
+    public partial class AppErrLogExtraB : AppErrLogExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -88,13 +88,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public AppErrLog_B() : base()
+        public AppErrLogExtraB() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppErrLog_C : AppErrLog_B
+    public partial class AppErrLogExtraC : AppErrLogExtraB
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -107,13 +107,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public AppErrLog_C() : base()
+        public AppErrLogExtraC() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class AppErrLog_D : AppErrLog_C
+    public partial class AppErrLogExtraD : AppErrLogExtraC
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -182,7 +182,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public AppErrLog_D() : base()
+        public AppErrLogExtraD() : base()
         {
         }
         #endregion Constructors

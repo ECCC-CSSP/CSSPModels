@@ -157,7 +157,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SpillLanguage_A : SpillLanguage
+    public partial class SpillLanguageExtraA : SpillLanguage
     {
         #region Properties
         /// <summary>
@@ -242,13 +242,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public SpillLanguage_A() : base()
+        public SpillLanguageExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SpillLanguage_B : SpillLanguage_A
+    public partial class SpillLanguageExtraB : SpillLanguageExtraA
     {
         #region Properties
         /// <summary>
@@ -281,7 +281,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public SpillLanguage_B() : base()
+        public SpillLanguageExtraB() : base()
         {
         }
         #endregion Constructors

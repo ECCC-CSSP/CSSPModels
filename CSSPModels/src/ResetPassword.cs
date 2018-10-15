@@ -48,7 +48,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ResetPassword_A : ResetPassword
+    public partial class ResetPasswordExtraA : ResetPassword
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -60,13 +60,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ResetPassword_A() : base()
+        public ResetPasswordExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ResetPassword_B : ResetPassword_A
+    public partial class ResetPasswordExtraB : ResetPasswordExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -79,7 +79,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ResetPassword_B() : base()
+        public ResetPasswordExtraB() : base()
         {
         }
         #endregion Constructors

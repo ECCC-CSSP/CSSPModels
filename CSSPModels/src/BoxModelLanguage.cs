@@ -53,7 +53,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelLanguage_A : BoxModelLanguage
+    public partial class BoxModelLanguageExtraA : BoxModelLanguage
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -79,13 +79,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public BoxModelLanguage_A() : base()
+        public BoxModelLanguageExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelLanguage_B : BoxModelLanguage_A
+    public partial class BoxModelLanguageExtraB : BoxModelLanguageExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -98,7 +98,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public BoxModelLanguage_B() : base()
+        public BoxModelLanguageExtraB() : base()
         {
         }
         #endregion Constructors

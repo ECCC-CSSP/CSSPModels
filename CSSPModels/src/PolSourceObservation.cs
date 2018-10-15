@@ -52,7 +52,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class PolSourceObservation_A : PolSourceObservation
+    public partial class PolSourceObservationExtraA : PolSourceObservation
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "PolSourceSiteID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -76,13 +76,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public PolSourceObservation_A() : base()
+        public PolSourceObservationExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class PolSourceObservation_B : PolSourceObservation_A
+    public partial class PolSourceObservationExtraB : PolSourceObservationExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -95,7 +95,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public PolSourceObservation_B() : base()
+        public PolSourceObservationExtraB() : base()
         {
         }
         #endregion Constructors

@@ -47,7 +47,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Tel_A : Tel
+    public partial class TelExtraA : Tel
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TelTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -68,13 +68,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Tel_A() : base()
+        public TelExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Tel_B : Tel_A
+    public partial class TelExtraB : TelExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -87,7 +87,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Tel_B() : base()
+        public TelExtraB() : base()
         {
         }
         #endregion Constructors

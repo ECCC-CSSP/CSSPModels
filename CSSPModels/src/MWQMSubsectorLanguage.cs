@@ -66,7 +66,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSubsectorLanguage_A : MWQMSubsectorLanguage
+    public partial class MWQMSubsectorLanguageExtraA : MWQMSubsectorLanguage
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -99,13 +99,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MWQMSubsectorLanguage_A() : base()
+        public MWQMSubsectorLanguageExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MWQMSubsectorLanguage_B : MWQMSubsectorLanguage_A
+    public partial class MWQMSubsectorLanguageExtraB : MWQMSubsectorLanguageExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -118,7 +118,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MWQMSubsectorLanguage_B() : base()
+        public MWQMSubsectorLanguageExtraB() : base()
         {
         }
         #endregion Constructors

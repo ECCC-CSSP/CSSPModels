@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private SamplingPlanEmail samplingPlanEmail { get; set; }
-        private SamplingPlanEmail_A samplingPlanEmail_A { get; set; }
-        private SamplingPlanEmail_B samplingPlanEmail_B { get; set; }
+        private SamplingPlanEmailExtraA samplingPlanEmailExtraA { get; set; }
+        private SamplingPlanEmailExtraB samplingPlanEmailExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public SamplingPlanEmailTest()
         {
             samplingPlanEmail = new SamplingPlanEmail();
-            samplingPlanEmail_A = new SamplingPlanEmail_A();
-            samplingPlanEmail_B = new SamplingPlanEmail_B();
+            samplingPlanEmailExtraA = new SamplingPlanEmailExtraA();
+            samplingPlanEmailExtraB = new SamplingPlanEmailExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlanEmail_A_Properties_Test()
+        public void SamplingPlanEmailExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "SamplingPlanEmailID", "SamplingPlanID", "Email", "IsContractor", "LabSheetHasValueOver500", "LabSheetReceived", "LabSheetAccepted", "LabSheetRejected", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmail_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmailExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmail_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmailExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlanEmail_B_Properties_Test()
+        public void SamplingPlanEmailExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SamplingPlanEmailReportTest", "LastUpdateContactTVItemLanguage", "SamplingPlanEmailID", "SamplingPlanID", "Email", "IsContractor", "LabSheetHasValueOver500", "LabSheetReceived", "LabSheetAccepted", "LabSheetRejected", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmail_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmailExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmail_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmailExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlanEmail_A_Navigation_Test()
+        public void SamplingPlanEmailExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmail_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmailExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmail_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmailExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlanEmail_B_Navigation_Test()
+        public void SamplingPlanEmailExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmail_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmailExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmail_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanEmailExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(SamplingPlanEmail).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void SamplingPlanEmail_A_Has_ValidationResults_Test()
+        public void SamplingPlanEmailExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(SamplingPlanEmail_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(SamplingPlanEmailExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void SamplingPlanEmail_B_Has_ValidationResults_Test()
+        public void SamplingPlanEmailExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(SamplingPlanEmail_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(SamplingPlanEmailExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void SamplingPlanEmail_Every_Property_Has_Get_Set_Test()
@@ -298,93 +298,93 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val36, samplingPlanEmail.ValidationResults);
         }
         [TestMethod]
-        public void SamplingPlanEmail_A_Every_Property_Has_Get_Set_Test()
+        public void SamplingPlanEmailExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               samplingPlanEmail_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, samplingPlanEmail_A.LastUpdateContactTVItemLanguage);
+               samplingPlanEmailExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, samplingPlanEmailExtraA.LastUpdateContactTVItemLanguage);
                int val2 = 45;
-               samplingPlanEmail_A.SamplingPlanEmailID = val2;
-               Assert.AreEqual(val2, samplingPlanEmail_A.SamplingPlanEmailID);
+               samplingPlanEmailExtraA.SamplingPlanEmailID = val2;
+               Assert.AreEqual(val2, samplingPlanEmailExtraA.SamplingPlanEmailID);
                int val3 = 45;
-               samplingPlanEmail_A.SamplingPlanID = val3;
-               Assert.AreEqual(val3, samplingPlanEmail_A.SamplingPlanID);
+               samplingPlanEmailExtraA.SamplingPlanID = val3;
+               Assert.AreEqual(val3, samplingPlanEmailExtraA.SamplingPlanID);
                string val4 = "Some text";
-               samplingPlanEmail_A.Email = val4;
-               Assert.AreEqual(val4, samplingPlanEmail_A.Email);
+               samplingPlanEmailExtraA.Email = val4;
+               Assert.AreEqual(val4, samplingPlanEmailExtraA.Email);
                bool val5 = true;
-               samplingPlanEmail_A.IsContractor = val5;
-               Assert.AreEqual(val5, samplingPlanEmail_A.IsContractor);
+               samplingPlanEmailExtraA.IsContractor = val5;
+               Assert.AreEqual(val5, samplingPlanEmailExtraA.IsContractor);
                bool val6 = true;
-               samplingPlanEmail_A.LabSheetHasValueOver500 = val6;
-               Assert.AreEqual(val6, samplingPlanEmail_A.LabSheetHasValueOver500);
+               samplingPlanEmailExtraA.LabSheetHasValueOver500 = val6;
+               Assert.AreEqual(val6, samplingPlanEmailExtraA.LabSheetHasValueOver500);
                bool val7 = true;
-               samplingPlanEmail_A.LabSheetReceived = val7;
-               Assert.AreEqual(val7, samplingPlanEmail_A.LabSheetReceived);
+               samplingPlanEmailExtraA.LabSheetReceived = val7;
+               Assert.AreEqual(val7, samplingPlanEmailExtraA.LabSheetReceived);
                bool val8 = true;
-               samplingPlanEmail_A.LabSheetAccepted = val8;
-               Assert.AreEqual(val8, samplingPlanEmail_A.LabSheetAccepted);
+               samplingPlanEmailExtraA.LabSheetAccepted = val8;
+               Assert.AreEqual(val8, samplingPlanEmailExtraA.LabSheetAccepted);
                bool val9 = true;
-               samplingPlanEmail_A.LabSheetRejected = val9;
-               Assert.AreEqual(val9, samplingPlanEmail_A.LabSheetRejected);
+               samplingPlanEmailExtraA.LabSheetRejected = val9;
+               Assert.AreEqual(val9, samplingPlanEmailExtraA.LabSheetRejected);
                DateTime val10 = new DateTime(2010, 3, 4);
-               samplingPlanEmail_A.LastUpdateDate_UTC = val10;
-               Assert.AreEqual(val10, samplingPlanEmail_A.LastUpdateDate_UTC);
+               samplingPlanEmailExtraA.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, samplingPlanEmailExtraA.LastUpdateDate_UTC);
                int val11 = 45;
-               samplingPlanEmail_A.LastUpdateContactTVItemID = val11;
-               Assert.AreEqual(val11, samplingPlanEmail_A.LastUpdateContactTVItemID);
+               samplingPlanEmailExtraA.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, samplingPlanEmailExtraA.LastUpdateContactTVItemID);
                bool val12 = true;
-               samplingPlanEmail_A.HasErrors = val12;
-               Assert.AreEqual(val12, samplingPlanEmail_A.HasErrors);
+               samplingPlanEmailExtraA.HasErrors = val12;
+               Assert.AreEqual(val12, samplingPlanEmailExtraA.HasErrors);
                IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               samplingPlanEmail_A.ValidationResults = val39;
-               Assert.AreEqual(val39, samplingPlanEmail_A.ValidationResults);
+               samplingPlanEmailExtraA.ValidationResults = val39;
+               Assert.AreEqual(val39, samplingPlanEmailExtraA.ValidationResults);
         }
         [TestMethod]
-        public void SamplingPlanEmail_B_Every_Property_Has_Get_Set_Test()
+        public void SamplingPlanEmailExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               samplingPlanEmail_B.SamplingPlanEmailReportTest = val1;
-               Assert.AreEqual(val1, samplingPlanEmail_B.SamplingPlanEmailReportTest);
+               samplingPlanEmailExtraB.SamplingPlanEmailReportTest = val1;
+               Assert.AreEqual(val1, samplingPlanEmailExtraB.SamplingPlanEmailReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               samplingPlanEmail_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, samplingPlanEmail_B.LastUpdateContactTVItemLanguage);
+               samplingPlanEmailExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, samplingPlanEmailExtraB.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               samplingPlanEmail_B.SamplingPlanEmailID = val3;
-               Assert.AreEqual(val3, samplingPlanEmail_B.SamplingPlanEmailID);
+               samplingPlanEmailExtraB.SamplingPlanEmailID = val3;
+               Assert.AreEqual(val3, samplingPlanEmailExtraB.SamplingPlanEmailID);
                int val4 = 45;
-               samplingPlanEmail_B.SamplingPlanID = val4;
-               Assert.AreEqual(val4, samplingPlanEmail_B.SamplingPlanID);
+               samplingPlanEmailExtraB.SamplingPlanID = val4;
+               Assert.AreEqual(val4, samplingPlanEmailExtraB.SamplingPlanID);
                string val5 = "Some text";
-               samplingPlanEmail_B.Email = val5;
-               Assert.AreEqual(val5, samplingPlanEmail_B.Email);
+               samplingPlanEmailExtraB.Email = val5;
+               Assert.AreEqual(val5, samplingPlanEmailExtraB.Email);
                bool val6 = true;
-               samplingPlanEmail_B.IsContractor = val6;
-               Assert.AreEqual(val6, samplingPlanEmail_B.IsContractor);
+               samplingPlanEmailExtraB.IsContractor = val6;
+               Assert.AreEqual(val6, samplingPlanEmailExtraB.IsContractor);
                bool val7 = true;
-               samplingPlanEmail_B.LabSheetHasValueOver500 = val7;
-               Assert.AreEqual(val7, samplingPlanEmail_B.LabSheetHasValueOver500);
+               samplingPlanEmailExtraB.LabSheetHasValueOver500 = val7;
+               Assert.AreEqual(val7, samplingPlanEmailExtraB.LabSheetHasValueOver500);
                bool val8 = true;
-               samplingPlanEmail_B.LabSheetReceived = val8;
-               Assert.AreEqual(val8, samplingPlanEmail_B.LabSheetReceived);
+               samplingPlanEmailExtraB.LabSheetReceived = val8;
+               Assert.AreEqual(val8, samplingPlanEmailExtraB.LabSheetReceived);
                bool val9 = true;
-               samplingPlanEmail_B.LabSheetAccepted = val9;
-               Assert.AreEqual(val9, samplingPlanEmail_B.LabSheetAccepted);
+               samplingPlanEmailExtraB.LabSheetAccepted = val9;
+               Assert.AreEqual(val9, samplingPlanEmailExtraB.LabSheetAccepted);
                bool val10 = true;
-               samplingPlanEmail_B.LabSheetRejected = val10;
-               Assert.AreEqual(val10, samplingPlanEmail_B.LabSheetRejected);
+               samplingPlanEmailExtraB.LabSheetRejected = val10;
+               Assert.AreEqual(val10, samplingPlanEmailExtraB.LabSheetRejected);
                DateTime val11 = new DateTime(2010, 3, 4);
-               samplingPlanEmail_B.LastUpdateDate_UTC = val11;
-               Assert.AreEqual(val11, samplingPlanEmail_B.LastUpdateDate_UTC);
+               samplingPlanEmailExtraB.LastUpdateDate_UTC = val11;
+               Assert.AreEqual(val11, samplingPlanEmailExtraB.LastUpdateDate_UTC);
                int val12 = 45;
-               samplingPlanEmail_B.LastUpdateContactTVItemID = val12;
-               Assert.AreEqual(val12, samplingPlanEmail_B.LastUpdateContactTVItemID);
+               samplingPlanEmailExtraB.LastUpdateContactTVItemID = val12;
+               Assert.AreEqual(val12, samplingPlanEmailExtraB.LastUpdateContactTVItemID);
                bool val13 = true;
-               samplingPlanEmail_B.HasErrors = val13;
-               Assert.AreEqual(val13, samplingPlanEmail_B.HasErrors);
+               samplingPlanEmailExtraB.HasErrors = val13;
+               Assert.AreEqual(val13, samplingPlanEmailExtraB.HasErrors);
                IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               samplingPlanEmail_B.ValidationResults = val42;
-               Assert.AreEqual(val42, samplingPlanEmail_B.ValidationResults);
+               samplingPlanEmailExtraB.ValidationResults = val42;
+               Assert.AreEqual(val42, samplingPlanEmailExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

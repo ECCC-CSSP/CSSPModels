@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private ReportType reportType { get; set; }
-        private ReportType_A reportType_A { get; set; }
-        private ReportType_B reportType_B { get; set; }
+        private ReportTypeExtraA reportTypeExtraA { get; set; }
+        private ReportTypeExtraB reportTypeExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public ReportTypeTest()
         {
             reportType = new ReportType();
-            reportType_A = new ReportType_A();
-            reportType_B = new ReportType_B();
+            reportTypeExtraA = new ReportTypeExtraA();
+            reportTypeExtraB = new ReportTypeExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ReportType_A_Properties_Test()
+        public void ReportTypeExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "ReportTypeID", "TVType", "FileType", "UniqueCode", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportType_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportType_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ReportType_B_Properties_Test()
+        public void ReportTypeExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ReportTypeReportTest", "LastUpdateContactTVItemLanguage", "ReportTypeID", "TVType", "FileType", "UniqueCode", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportType_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportType_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ReportType_A_Navigation_Test()
+        public void ReportTypeExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportType_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportType_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ReportType_B_Navigation_Test()
+        public void ReportTypeExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportType_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportType_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(ReportType).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ReportType_A_Has_ValidationResults_Test()
+        public void ReportTypeExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(ReportType_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(ReportTypeExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ReportType_B_Has_ValidationResults_Test()
+        public void ReportTypeExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(ReportType_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(ReportTypeExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void ReportType_Every_Property_Has_Get_Set_Test()
@@ -286,69 +286,69 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val24, reportType.ValidationResults);
         }
         [TestMethod]
-        public void ReportType_A_Every_Property_Has_Get_Set_Test()
+        public void ReportTypeExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               reportType_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, reportType_A.LastUpdateContactTVItemLanguage);
+               reportTypeExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, reportTypeExtraA.LastUpdateContactTVItemLanguage);
                int val2 = 45;
-               reportType_A.ReportTypeID = val2;
-               Assert.AreEqual(val2, reportType_A.ReportTypeID);
+               reportTypeExtraA.ReportTypeID = val2;
+               Assert.AreEqual(val2, reportTypeExtraA.ReportTypeID);
                TVTypeEnum val3 = (TVTypeEnum)3;
-               reportType_A.TVType = val3;
-               Assert.AreEqual(val3, reportType_A.TVType);
+               reportTypeExtraA.TVType = val3;
+               Assert.AreEqual(val3, reportTypeExtraA.TVType);
                FileTypeEnum val4 = (FileTypeEnum)3;
-               reportType_A.FileType = val4;
-               Assert.AreEqual(val4, reportType_A.FileType);
+               reportTypeExtraA.FileType = val4;
+               Assert.AreEqual(val4, reportTypeExtraA.FileType);
                string val5 = "Some text";
-               reportType_A.UniqueCode = val5;
-               Assert.AreEqual(val5, reportType_A.UniqueCode);
+               reportTypeExtraA.UniqueCode = val5;
+               Assert.AreEqual(val5, reportTypeExtraA.UniqueCode);
                DateTime val6 = new DateTime(2010, 3, 4);
-               reportType_A.LastUpdateDate_UTC = val6;
-               Assert.AreEqual(val6, reportType_A.LastUpdateDate_UTC);
+               reportTypeExtraA.LastUpdateDate_UTC = val6;
+               Assert.AreEqual(val6, reportTypeExtraA.LastUpdateDate_UTC);
                int val7 = 45;
-               reportType_A.LastUpdateContactTVItemID = val7;
-               Assert.AreEqual(val7, reportType_A.LastUpdateContactTVItemID);
+               reportTypeExtraA.LastUpdateContactTVItemID = val7;
+               Assert.AreEqual(val7, reportTypeExtraA.LastUpdateContactTVItemID);
                bool val8 = true;
-               reportType_A.HasErrors = val8;
-               Assert.AreEqual(val8, reportType_A.HasErrors);
+               reportTypeExtraA.HasErrors = val8;
+               Assert.AreEqual(val8, reportTypeExtraA.HasErrors);
                IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               reportType_A.ValidationResults = val27;
-               Assert.AreEqual(val27, reportType_A.ValidationResults);
+               reportTypeExtraA.ValidationResults = val27;
+               Assert.AreEqual(val27, reportTypeExtraA.ValidationResults);
         }
         [TestMethod]
-        public void ReportType_B_Every_Property_Has_Get_Set_Test()
+        public void ReportTypeExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               reportType_B.ReportTypeReportTest = val1;
-               Assert.AreEqual(val1, reportType_B.ReportTypeReportTest);
+               reportTypeExtraB.ReportTypeReportTest = val1;
+               Assert.AreEqual(val1, reportTypeExtraB.ReportTypeReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               reportType_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, reportType_B.LastUpdateContactTVItemLanguage);
+               reportTypeExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, reportTypeExtraB.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               reportType_B.ReportTypeID = val3;
-               Assert.AreEqual(val3, reportType_B.ReportTypeID);
+               reportTypeExtraB.ReportTypeID = val3;
+               Assert.AreEqual(val3, reportTypeExtraB.ReportTypeID);
                TVTypeEnum val4 = (TVTypeEnum)3;
-               reportType_B.TVType = val4;
-               Assert.AreEqual(val4, reportType_B.TVType);
+               reportTypeExtraB.TVType = val4;
+               Assert.AreEqual(val4, reportTypeExtraB.TVType);
                FileTypeEnum val5 = (FileTypeEnum)3;
-               reportType_B.FileType = val5;
-               Assert.AreEqual(val5, reportType_B.FileType);
+               reportTypeExtraB.FileType = val5;
+               Assert.AreEqual(val5, reportTypeExtraB.FileType);
                string val6 = "Some text";
-               reportType_B.UniqueCode = val6;
-               Assert.AreEqual(val6, reportType_B.UniqueCode);
+               reportTypeExtraB.UniqueCode = val6;
+               Assert.AreEqual(val6, reportTypeExtraB.UniqueCode);
                DateTime val7 = new DateTime(2010, 3, 4);
-               reportType_B.LastUpdateDate_UTC = val7;
-               Assert.AreEqual(val7, reportType_B.LastUpdateDate_UTC);
+               reportTypeExtraB.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, reportTypeExtraB.LastUpdateDate_UTC);
                int val8 = 45;
-               reportType_B.LastUpdateContactTVItemID = val8;
-               Assert.AreEqual(val8, reportType_B.LastUpdateContactTVItemID);
+               reportTypeExtraB.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, reportTypeExtraB.LastUpdateContactTVItemID);
                bool val9 = true;
-               reportType_B.HasErrors = val9;
-               Assert.AreEqual(val9, reportType_B.HasErrors);
+               reportTypeExtraB.HasErrors = val9;
+               Assert.AreEqual(val9, reportTypeExtraB.HasErrors);
                IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               reportType_B.ValidationResults = val30;
-               Assert.AreEqual(val30, reportType_B.ValidationResults);
+               reportTypeExtraB.ValidationResults = val30;
+               Assert.AreEqual(val30, reportTypeExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

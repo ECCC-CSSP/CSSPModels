@@ -1618,7 +1618,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetDetail_A : LabSheetDetail
+    public partial class LabSheetDetailExtraA : LabSheetDetail
     {
         #region Properties
         /// <summary>
@@ -1674,13 +1674,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public LabSheetDetail_A() : base()
+        public LabSheetDetailExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetDetail_B : LabSheetDetail_A
+    public partial class LabSheetDetailExtraB : LabSheetDetailExtraA
     {
         #region Properties
         /// <summary>
@@ -1713,7 +1713,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public LabSheetDetail_B() : base()
+        public LabSheetDetailExtraB() : base()
         {
         }
         #endregion Constructors

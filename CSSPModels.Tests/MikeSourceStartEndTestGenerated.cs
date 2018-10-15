@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private MikeSourceStartEnd mikeSourceStartEnd { get; set; }
-        private MikeSourceStartEnd_A mikeSourceStartEnd_A { get; set; }
-        private MikeSourceStartEnd_B mikeSourceStartEnd_B { get; set; }
+        private MikeSourceStartEndExtraA mikeSourceStartEndExtraA { get; set; }
+        private MikeSourceStartEndExtraB mikeSourceStartEndExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public MikeSourceStartEndTest()
         {
             mikeSourceStartEnd = new MikeSourceStartEnd();
-            mikeSourceStartEnd_A = new MikeSourceStartEnd_A();
-            mikeSourceStartEnd_B = new MikeSourceStartEnd_B();
+            mikeSourceStartEndExtraA = new MikeSourceStartEndExtraA();
+            mikeSourceStartEndExtraB = new MikeSourceStartEndExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MikeSourceStartEnd_A_Properties_Test()
+        public void MikeSourceStartEndExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "MikeSourceStartEndID", "MikeSourceID", "StartDateAndTime_Local", "EndDateAndTime_Local", "SourceFlowStart_m3_day", "SourceFlowEnd_m3_day", "SourcePollutionStart_MPN_100ml", "SourcePollutionEnd_MPN_100ml", "SourceTemperatureStart_C", "SourceTemperatureEnd_C", "SourceSalinityStart_PSU", "SourceSalinityEnd_PSU", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEnd_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEnd_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MikeSourceStartEnd_B_Properties_Test()
+        public void MikeSourceStartEndExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MikeSourceStartEndReportTest", "LastUpdateContactTVItemLanguage", "MikeSourceStartEndID", "MikeSourceID", "StartDateAndTime_Local", "EndDateAndTime_Local", "SourceFlowStart_m3_day", "SourceFlowEnd_m3_day", "SourcePollutionStart_MPN_100ml", "SourcePollutionEnd_MPN_100ml", "SourceTemperatureStart_C", "SourceTemperatureEnd_C", "SourceSalinityStart_PSU", "SourceSalinityEnd_PSU", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEnd_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEnd_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MikeSourceStartEnd_A_Navigation_Test()
+        public void MikeSourceStartEndExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEnd_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEnd_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MikeSourceStartEnd_B_Navigation_Test()
+        public void MikeSourceStartEndExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEnd_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEnd_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MikeSourceStartEndExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(MikeSourceStartEnd).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MikeSourceStartEnd_A_Has_ValidationResults_Test()
+        public void MikeSourceStartEndExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(MikeSourceStartEnd_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(MikeSourceStartEndExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MikeSourceStartEnd_B_Has_ValidationResults_Test()
+        public void MikeSourceStartEndExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(MikeSourceStartEnd_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(MikeSourceStartEndExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void MikeSourceStartEnd_Every_Property_Has_Get_Set_Test()
@@ -310,117 +310,117 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val48, mikeSourceStartEnd.ValidationResults);
         }
         [TestMethod]
-        public void MikeSourceStartEnd_A_Every_Property_Has_Get_Set_Test()
+        public void MikeSourceStartEndExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               mikeSourceStartEnd_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, mikeSourceStartEnd_A.LastUpdateContactTVItemLanguage);
+               mikeSourceStartEndExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, mikeSourceStartEndExtraA.LastUpdateContactTVItemLanguage);
                int val2 = 45;
-               mikeSourceStartEnd_A.MikeSourceStartEndID = val2;
-               Assert.AreEqual(val2, mikeSourceStartEnd_A.MikeSourceStartEndID);
+               mikeSourceStartEndExtraA.MikeSourceStartEndID = val2;
+               Assert.AreEqual(val2, mikeSourceStartEndExtraA.MikeSourceStartEndID);
                int val3 = 45;
-               mikeSourceStartEnd_A.MikeSourceID = val3;
-               Assert.AreEqual(val3, mikeSourceStartEnd_A.MikeSourceID);
+               mikeSourceStartEndExtraA.MikeSourceID = val3;
+               Assert.AreEqual(val3, mikeSourceStartEndExtraA.MikeSourceID);
                DateTime val4 = new DateTime(2010, 3, 4);
-               mikeSourceStartEnd_A.StartDateAndTime_Local = val4;
-               Assert.AreEqual(val4, mikeSourceStartEnd_A.StartDateAndTime_Local);
+               mikeSourceStartEndExtraA.StartDateAndTime_Local = val4;
+               Assert.AreEqual(val4, mikeSourceStartEndExtraA.StartDateAndTime_Local);
                DateTime val5 = new DateTime(2010, 3, 4);
-               mikeSourceStartEnd_A.EndDateAndTime_Local = val5;
-               Assert.AreEqual(val5, mikeSourceStartEnd_A.EndDateAndTime_Local);
+               mikeSourceStartEndExtraA.EndDateAndTime_Local = val5;
+               Assert.AreEqual(val5, mikeSourceStartEndExtraA.EndDateAndTime_Local);
                double val6 = 87.9D;
-               mikeSourceStartEnd_A.SourceFlowStart_m3_day = val6;
-               Assert.AreEqual(val6, mikeSourceStartEnd_A.SourceFlowStart_m3_day);
+               mikeSourceStartEndExtraA.SourceFlowStart_m3_day = val6;
+               Assert.AreEqual(val6, mikeSourceStartEndExtraA.SourceFlowStart_m3_day);
                double val7 = 87.9D;
-               mikeSourceStartEnd_A.SourceFlowEnd_m3_day = val7;
-               Assert.AreEqual(val7, mikeSourceStartEnd_A.SourceFlowEnd_m3_day);
+               mikeSourceStartEndExtraA.SourceFlowEnd_m3_day = val7;
+               Assert.AreEqual(val7, mikeSourceStartEndExtraA.SourceFlowEnd_m3_day);
                int val8 = 45;
-               mikeSourceStartEnd_A.SourcePollutionStart_MPN_100ml = val8;
-               Assert.AreEqual(val8, mikeSourceStartEnd_A.SourcePollutionStart_MPN_100ml);
+               mikeSourceStartEndExtraA.SourcePollutionStart_MPN_100ml = val8;
+               Assert.AreEqual(val8, mikeSourceStartEndExtraA.SourcePollutionStart_MPN_100ml);
                int val9 = 45;
-               mikeSourceStartEnd_A.SourcePollutionEnd_MPN_100ml = val9;
-               Assert.AreEqual(val9, mikeSourceStartEnd_A.SourcePollutionEnd_MPN_100ml);
+               mikeSourceStartEndExtraA.SourcePollutionEnd_MPN_100ml = val9;
+               Assert.AreEqual(val9, mikeSourceStartEndExtraA.SourcePollutionEnd_MPN_100ml);
                double val10 = 87.9D;
-               mikeSourceStartEnd_A.SourceTemperatureStart_C = val10;
-               Assert.AreEqual(val10, mikeSourceStartEnd_A.SourceTemperatureStart_C);
+               mikeSourceStartEndExtraA.SourceTemperatureStart_C = val10;
+               Assert.AreEqual(val10, mikeSourceStartEndExtraA.SourceTemperatureStart_C);
                double val11 = 87.9D;
-               mikeSourceStartEnd_A.SourceTemperatureEnd_C = val11;
-               Assert.AreEqual(val11, mikeSourceStartEnd_A.SourceTemperatureEnd_C);
+               mikeSourceStartEndExtraA.SourceTemperatureEnd_C = val11;
+               Assert.AreEqual(val11, mikeSourceStartEndExtraA.SourceTemperatureEnd_C);
                double val12 = 87.9D;
-               mikeSourceStartEnd_A.SourceSalinityStart_PSU = val12;
-               Assert.AreEqual(val12, mikeSourceStartEnd_A.SourceSalinityStart_PSU);
+               mikeSourceStartEndExtraA.SourceSalinityStart_PSU = val12;
+               Assert.AreEqual(val12, mikeSourceStartEndExtraA.SourceSalinityStart_PSU);
                double val13 = 87.9D;
-               mikeSourceStartEnd_A.SourceSalinityEnd_PSU = val13;
-               Assert.AreEqual(val13, mikeSourceStartEnd_A.SourceSalinityEnd_PSU);
+               mikeSourceStartEndExtraA.SourceSalinityEnd_PSU = val13;
+               Assert.AreEqual(val13, mikeSourceStartEndExtraA.SourceSalinityEnd_PSU);
                DateTime val14 = new DateTime(2010, 3, 4);
-               mikeSourceStartEnd_A.LastUpdateDate_UTC = val14;
-               Assert.AreEqual(val14, mikeSourceStartEnd_A.LastUpdateDate_UTC);
+               mikeSourceStartEndExtraA.LastUpdateDate_UTC = val14;
+               Assert.AreEqual(val14, mikeSourceStartEndExtraA.LastUpdateDate_UTC);
                int val15 = 45;
-               mikeSourceStartEnd_A.LastUpdateContactTVItemID = val15;
-               Assert.AreEqual(val15, mikeSourceStartEnd_A.LastUpdateContactTVItemID);
+               mikeSourceStartEndExtraA.LastUpdateContactTVItemID = val15;
+               Assert.AreEqual(val15, mikeSourceStartEndExtraA.LastUpdateContactTVItemID);
                bool val16 = true;
-               mikeSourceStartEnd_A.HasErrors = val16;
-               Assert.AreEqual(val16, mikeSourceStartEnd_A.HasErrors);
+               mikeSourceStartEndExtraA.HasErrors = val16;
+               Assert.AreEqual(val16, mikeSourceStartEndExtraA.HasErrors);
                IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mikeSourceStartEnd_A.ValidationResults = val51;
-               Assert.AreEqual(val51, mikeSourceStartEnd_A.ValidationResults);
+               mikeSourceStartEndExtraA.ValidationResults = val51;
+               Assert.AreEqual(val51, mikeSourceStartEndExtraA.ValidationResults);
         }
         [TestMethod]
-        public void MikeSourceStartEnd_B_Every_Property_Has_Get_Set_Test()
+        public void MikeSourceStartEndExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               mikeSourceStartEnd_B.MikeSourceStartEndReportTest = val1;
-               Assert.AreEqual(val1, mikeSourceStartEnd_B.MikeSourceStartEndReportTest);
+               mikeSourceStartEndExtraB.MikeSourceStartEndReportTest = val1;
+               Assert.AreEqual(val1, mikeSourceStartEndExtraB.MikeSourceStartEndReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               mikeSourceStartEnd_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, mikeSourceStartEnd_B.LastUpdateContactTVItemLanguage);
+               mikeSourceStartEndExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, mikeSourceStartEndExtraB.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               mikeSourceStartEnd_B.MikeSourceStartEndID = val3;
-               Assert.AreEqual(val3, mikeSourceStartEnd_B.MikeSourceStartEndID);
+               mikeSourceStartEndExtraB.MikeSourceStartEndID = val3;
+               Assert.AreEqual(val3, mikeSourceStartEndExtraB.MikeSourceStartEndID);
                int val4 = 45;
-               mikeSourceStartEnd_B.MikeSourceID = val4;
-               Assert.AreEqual(val4, mikeSourceStartEnd_B.MikeSourceID);
+               mikeSourceStartEndExtraB.MikeSourceID = val4;
+               Assert.AreEqual(val4, mikeSourceStartEndExtraB.MikeSourceID);
                DateTime val5 = new DateTime(2010, 3, 4);
-               mikeSourceStartEnd_B.StartDateAndTime_Local = val5;
-               Assert.AreEqual(val5, mikeSourceStartEnd_B.StartDateAndTime_Local);
+               mikeSourceStartEndExtraB.StartDateAndTime_Local = val5;
+               Assert.AreEqual(val5, mikeSourceStartEndExtraB.StartDateAndTime_Local);
                DateTime val6 = new DateTime(2010, 3, 4);
-               mikeSourceStartEnd_B.EndDateAndTime_Local = val6;
-               Assert.AreEqual(val6, mikeSourceStartEnd_B.EndDateAndTime_Local);
+               mikeSourceStartEndExtraB.EndDateAndTime_Local = val6;
+               Assert.AreEqual(val6, mikeSourceStartEndExtraB.EndDateAndTime_Local);
                double val7 = 87.9D;
-               mikeSourceStartEnd_B.SourceFlowStart_m3_day = val7;
-               Assert.AreEqual(val7, mikeSourceStartEnd_B.SourceFlowStart_m3_day);
+               mikeSourceStartEndExtraB.SourceFlowStart_m3_day = val7;
+               Assert.AreEqual(val7, mikeSourceStartEndExtraB.SourceFlowStart_m3_day);
                double val8 = 87.9D;
-               mikeSourceStartEnd_B.SourceFlowEnd_m3_day = val8;
-               Assert.AreEqual(val8, mikeSourceStartEnd_B.SourceFlowEnd_m3_day);
+               mikeSourceStartEndExtraB.SourceFlowEnd_m3_day = val8;
+               Assert.AreEqual(val8, mikeSourceStartEndExtraB.SourceFlowEnd_m3_day);
                int val9 = 45;
-               mikeSourceStartEnd_B.SourcePollutionStart_MPN_100ml = val9;
-               Assert.AreEqual(val9, mikeSourceStartEnd_B.SourcePollutionStart_MPN_100ml);
+               mikeSourceStartEndExtraB.SourcePollutionStart_MPN_100ml = val9;
+               Assert.AreEqual(val9, mikeSourceStartEndExtraB.SourcePollutionStart_MPN_100ml);
                int val10 = 45;
-               mikeSourceStartEnd_B.SourcePollutionEnd_MPN_100ml = val10;
-               Assert.AreEqual(val10, mikeSourceStartEnd_B.SourcePollutionEnd_MPN_100ml);
+               mikeSourceStartEndExtraB.SourcePollutionEnd_MPN_100ml = val10;
+               Assert.AreEqual(val10, mikeSourceStartEndExtraB.SourcePollutionEnd_MPN_100ml);
                double val11 = 87.9D;
-               mikeSourceStartEnd_B.SourceTemperatureStart_C = val11;
-               Assert.AreEqual(val11, mikeSourceStartEnd_B.SourceTemperatureStart_C);
+               mikeSourceStartEndExtraB.SourceTemperatureStart_C = val11;
+               Assert.AreEqual(val11, mikeSourceStartEndExtraB.SourceTemperatureStart_C);
                double val12 = 87.9D;
-               mikeSourceStartEnd_B.SourceTemperatureEnd_C = val12;
-               Assert.AreEqual(val12, mikeSourceStartEnd_B.SourceTemperatureEnd_C);
+               mikeSourceStartEndExtraB.SourceTemperatureEnd_C = val12;
+               Assert.AreEqual(val12, mikeSourceStartEndExtraB.SourceTemperatureEnd_C);
                double val13 = 87.9D;
-               mikeSourceStartEnd_B.SourceSalinityStart_PSU = val13;
-               Assert.AreEqual(val13, mikeSourceStartEnd_B.SourceSalinityStart_PSU);
+               mikeSourceStartEndExtraB.SourceSalinityStart_PSU = val13;
+               Assert.AreEqual(val13, mikeSourceStartEndExtraB.SourceSalinityStart_PSU);
                double val14 = 87.9D;
-               mikeSourceStartEnd_B.SourceSalinityEnd_PSU = val14;
-               Assert.AreEqual(val14, mikeSourceStartEnd_B.SourceSalinityEnd_PSU);
+               mikeSourceStartEndExtraB.SourceSalinityEnd_PSU = val14;
+               Assert.AreEqual(val14, mikeSourceStartEndExtraB.SourceSalinityEnd_PSU);
                DateTime val15 = new DateTime(2010, 3, 4);
-               mikeSourceStartEnd_B.LastUpdateDate_UTC = val15;
-               Assert.AreEqual(val15, mikeSourceStartEnd_B.LastUpdateDate_UTC);
+               mikeSourceStartEndExtraB.LastUpdateDate_UTC = val15;
+               Assert.AreEqual(val15, mikeSourceStartEndExtraB.LastUpdateDate_UTC);
                int val16 = 45;
-               mikeSourceStartEnd_B.LastUpdateContactTVItemID = val16;
-               Assert.AreEqual(val16, mikeSourceStartEnd_B.LastUpdateContactTVItemID);
+               mikeSourceStartEndExtraB.LastUpdateContactTVItemID = val16;
+               Assert.AreEqual(val16, mikeSourceStartEndExtraB.LastUpdateContactTVItemID);
                bool val17 = true;
-               mikeSourceStartEnd_B.HasErrors = val17;
-               Assert.AreEqual(val17, mikeSourceStartEnd_B.HasErrors);
+               mikeSourceStartEndExtraB.HasErrors = val17;
+               Assert.AreEqual(val17, mikeSourceStartEndExtraB.HasErrors);
                IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mikeSourceStartEnd_B.ValidationResults = val54;
-               Assert.AreEqual(val54, mikeSourceStartEnd_B.ValidationResults);
+               mikeSourceStartEndExtraB.ValidationResults = val54;
+               Assert.AreEqual(val54, mikeSourceStartEndExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private MapInfoPoint mapInfoPoint { get; set; }
-        private MapInfoPoint_A mapInfoPoint_A { get; set; }
-        private MapInfoPoint_B mapInfoPoint_B { get; set; }
+        private MapInfoPointExtraA mapInfoPointExtraA { get; set; }
+        private MapInfoPointExtraB mapInfoPointExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public MapInfoPointTest()
         {
             mapInfoPoint = new MapInfoPoint();
-            mapInfoPoint_A = new MapInfoPoint_A();
-            mapInfoPoint_B = new MapInfoPoint_B();
+            mapInfoPointExtraA = new MapInfoPointExtraA();
+            mapInfoPointExtraB = new MapInfoPointExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MapInfoPoint_A_Properties_Test()
+        public void MapInfoPointExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "MapInfoPointID", "MapInfoID", "Ordinal", "Lat", "Lng", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MapInfoPoint_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MapInfoPointExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MapInfoPoint_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MapInfoPointExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MapInfoPoint_B_Properties_Test()
+        public void MapInfoPointExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "MapInfoPointReportTest", "LastUpdateContactTVItemLanguage", "MapInfoPointID", "MapInfoID", "Ordinal", "Lat", "Lng", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MapInfoPoint_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(MapInfoPointExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MapInfoPoint_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MapInfoPointExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MapInfoPoint_A_Navigation_Test()
+        public void MapInfoPointExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MapInfoPoint_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(MapInfoPointExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MapInfoPoint_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MapInfoPointExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void MapInfoPoint_B_Navigation_Test()
+        public void MapInfoPointExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MapInfoPoint_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(MapInfoPointExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(MapInfoPoint_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(MapInfoPointExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(MapInfoPoint).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MapInfoPoint_A_Has_ValidationResults_Test()
+        public void MapInfoPointExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(MapInfoPoint_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(MapInfoPointExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void MapInfoPoint_B_Has_ValidationResults_Test()
+        public void MapInfoPointExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(MapInfoPoint_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(MapInfoPointExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void MapInfoPoint_Every_Property_Has_Get_Set_Test()
@@ -289,75 +289,75 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val27, mapInfoPoint.ValidationResults);
         }
         [TestMethod]
-        public void MapInfoPoint_A_Every_Property_Has_Get_Set_Test()
+        public void MapInfoPointExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               mapInfoPoint_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, mapInfoPoint_A.LastUpdateContactTVItemLanguage);
+               mapInfoPointExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, mapInfoPointExtraA.LastUpdateContactTVItemLanguage);
                int val2 = 45;
-               mapInfoPoint_A.MapInfoPointID = val2;
-               Assert.AreEqual(val2, mapInfoPoint_A.MapInfoPointID);
+               mapInfoPointExtraA.MapInfoPointID = val2;
+               Assert.AreEqual(val2, mapInfoPointExtraA.MapInfoPointID);
                int val3 = 45;
-               mapInfoPoint_A.MapInfoID = val3;
-               Assert.AreEqual(val3, mapInfoPoint_A.MapInfoID);
+               mapInfoPointExtraA.MapInfoID = val3;
+               Assert.AreEqual(val3, mapInfoPointExtraA.MapInfoID);
                int val4 = 45;
-               mapInfoPoint_A.Ordinal = val4;
-               Assert.AreEqual(val4, mapInfoPoint_A.Ordinal);
+               mapInfoPointExtraA.Ordinal = val4;
+               Assert.AreEqual(val4, mapInfoPointExtraA.Ordinal);
                double val5 = 87.9D;
-               mapInfoPoint_A.Lat = val5;
-               Assert.AreEqual(val5, mapInfoPoint_A.Lat);
+               mapInfoPointExtraA.Lat = val5;
+               Assert.AreEqual(val5, mapInfoPointExtraA.Lat);
                double val6 = 87.9D;
-               mapInfoPoint_A.Lng = val6;
-               Assert.AreEqual(val6, mapInfoPoint_A.Lng);
+               mapInfoPointExtraA.Lng = val6;
+               Assert.AreEqual(val6, mapInfoPointExtraA.Lng);
                DateTime val7 = new DateTime(2010, 3, 4);
-               mapInfoPoint_A.LastUpdateDate_UTC = val7;
-               Assert.AreEqual(val7, mapInfoPoint_A.LastUpdateDate_UTC);
+               mapInfoPointExtraA.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, mapInfoPointExtraA.LastUpdateDate_UTC);
                int val8 = 45;
-               mapInfoPoint_A.LastUpdateContactTVItemID = val8;
-               Assert.AreEqual(val8, mapInfoPoint_A.LastUpdateContactTVItemID);
+               mapInfoPointExtraA.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, mapInfoPointExtraA.LastUpdateContactTVItemID);
                bool val9 = true;
-               mapInfoPoint_A.HasErrors = val9;
-               Assert.AreEqual(val9, mapInfoPoint_A.HasErrors);
+               mapInfoPointExtraA.HasErrors = val9;
+               Assert.AreEqual(val9, mapInfoPointExtraA.HasErrors);
                IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mapInfoPoint_A.ValidationResults = val30;
-               Assert.AreEqual(val30, mapInfoPoint_A.ValidationResults);
+               mapInfoPointExtraA.ValidationResults = val30;
+               Assert.AreEqual(val30, mapInfoPointExtraA.ValidationResults);
         }
         [TestMethod]
-        public void MapInfoPoint_B_Every_Property_Has_Get_Set_Test()
+        public void MapInfoPointExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               mapInfoPoint_B.MapInfoPointReportTest = val1;
-               Assert.AreEqual(val1, mapInfoPoint_B.MapInfoPointReportTest);
+               mapInfoPointExtraB.MapInfoPointReportTest = val1;
+               Assert.AreEqual(val1, mapInfoPointExtraB.MapInfoPointReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               mapInfoPoint_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, mapInfoPoint_B.LastUpdateContactTVItemLanguage);
+               mapInfoPointExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, mapInfoPointExtraB.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               mapInfoPoint_B.MapInfoPointID = val3;
-               Assert.AreEqual(val3, mapInfoPoint_B.MapInfoPointID);
+               mapInfoPointExtraB.MapInfoPointID = val3;
+               Assert.AreEqual(val3, mapInfoPointExtraB.MapInfoPointID);
                int val4 = 45;
-               mapInfoPoint_B.MapInfoID = val4;
-               Assert.AreEqual(val4, mapInfoPoint_B.MapInfoID);
+               mapInfoPointExtraB.MapInfoID = val4;
+               Assert.AreEqual(val4, mapInfoPointExtraB.MapInfoID);
                int val5 = 45;
-               mapInfoPoint_B.Ordinal = val5;
-               Assert.AreEqual(val5, mapInfoPoint_B.Ordinal);
+               mapInfoPointExtraB.Ordinal = val5;
+               Assert.AreEqual(val5, mapInfoPointExtraB.Ordinal);
                double val6 = 87.9D;
-               mapInfoPoint_B.Lat = val6;
-               Assert.AreEqual(val6, mapInfoPoint_B.Lat);
+               mapInfoPointExtraB.Lat = val6;
+               Assert.AreEqual(val6, mapInfoPointExtraB.Lat);
                double val7 = 87.9D;
-               mapInfoPoint_B.Lng = val7;
-               Assert.AreEqual(val7, mapInfoPoint_B.Lng);
+               mapInfoPointExtraB.Lng = val7;
+               Assert.AreEqual(val7, mapInfoPointExtraB.Lng);
                DateTime val8 = new DateTime(2010, 3, 4);
-               mapInfoPoint_B.LastUpdateDate_UTC = val8;
-               Assert.AreEqual(val8, mapInfoPoint_B.LastUpdateDate_UTC);
+               mapInfoPointExtraB.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, mapInfoPointExtraB.LastUpdateDate_UTC);
                int val9 = 45;
-               mapInfoPoint_B.LastUpdateContactTVItemID = val9;
-               Assert.AreEqual(val9, mapInfoPoint_B.LastUpdateContactTVItemID);
+               mapInfoPointExtraB.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, mapInfoPointExtraB.LastUpdateContactTVItemID);
                bool val10 = true;
-               mapInfoPoint_B.HasErrors = val10;
-               Assert.AreEqual(val10, mapInfoPoint_B.HasErrors);
+               mapInfoPointExtraB.HasErrors = val10;
+               Assert.AreEqual(val10, mapInfoPointExtraB.HasErrors);
                IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               mapInfoPoint_B.ValidationResults = val33;
-               Assert.AreEqual(val33, mapInfoPoint_B.ValidationResults);
+               mapInfoPointExtraB.ValidationResults = val33;
+               Assert.AreEqual(val33, mapInfoPointExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

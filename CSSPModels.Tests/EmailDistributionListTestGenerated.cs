@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private EmailDistributionList emailDistributionList { get; set; }
-        private EmailDistributionList_A emailDistributionList_A { get; set; }
-        private EmailDistributionList_B emailDistributionList_B { get; set; }
+        private EmailDistributionListExtraA emailDistributionListExtraA { get; set; }
+        private EmailDistributionListExtraB emailDistributionListExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public EmailDistributionListTest()
         {
             emailDistributionList = new EmailDistributionList();
-            emailDistributionList_A = new EmailDistributionList_A();
-            emailDistributionList_B = new EmailDistributionList_B();
+            emailDistributionListExtraA = new EmailDistributionListExtraA();
+            emailDistributionListExtraB = new EmailDistributionListExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void EmailDistributionList_A_Properties_Test()
+        public void EmailDistributionListExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "CountryTVItemLanguage", "LastUpdateContactTVItemLanguage", "EmailDistributionListID", "CountryTVItemID", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionList_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionListExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionList_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionListExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void EmailDistributionList_B_Properties_Test()
+        public void EmailDistributionListExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "EmailDistributionListReportTest", "CountryTVItemLanguage", "LastUpdateContactTVItemLanguage", "EmailDistributionListID", "CountryTVItemID", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionList_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionListExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionList_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionListExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void EmailDistributionList_A_Navigation_Test()
+        public void EmailDistributionListExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionList_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionListExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionList_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionListExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void EmailDistributionList_B_Navigation_Test()
+        public void EmailDistributionListExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionList_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionListExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionList_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(EmailDistributionListExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(EmailDistributionList).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void EmailDistributionList_A_Has_ValidationResults_Test()
+        public void EmailDistributionListExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(EmailDistributionList_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(EmailDistributionListExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void EmailDistributionList_B_Has_ValidationResults_Test()
+        public void EmailDistributionListExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(EmailDistributionList_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(EmailDistributionListExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void EmailDistributionList_Every_Property_Has_Get_Set_Test()
@@ -283,69 +283,69 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val21, emailDistributionList.ValidationResults);
         }
         [TestMethod]
-        public void EmailDistributionList_A_Every_Property_Has_Get_Set_Test()
+        public void EmailDistributionListExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               emailDistributionList_A.CountryTVItemLanguage = val1;
-               Assert.AreEqual(val1, emailDistributionList_A.CountryTVItemLanguage);
+               emailDistributionListExtraA.CountryTVItemLanguage = val1;
+               Assert.AreEqual(val1, emailDistributionListExtraA.CountryTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               emailDistributionList_A.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, emailDistributionList_A.LastUpdateContactTVItemLanguage);
+               emailDistributionListExtraA.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, emailDistributionListExtraA.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               emailDistributionList_A.EmailDistributionListID = val3;
-               Assert.AreEqual(val3, emailDistributionList_A.EmailDistributionListID);
+               emailDistributionListExtraA.EmailDistributionListID = val3;
+               Assert.AreEqual(val3, emailDistributionListExtraA.EmailDistributionListID);
                int val4 = 45;
-               emailDistributionList_A.CountryTVItemID = val4;
-               Assert.AreEqual(val4, emailDistributionList_A.CountryTVItemID);
+               emailDistributionListExtraA.CountryTVItemID = val4;
+               Assert.AreEqual(val4, emailDistributionListExtraA.CountryTVItemID);
                int val5 = 45;
-               emailDistributionList_A.Ordinal = val5;
-               Assert.AreEqual(val5, emailDistributionList_A.Ordinal);
+               emailDistributionListExtraA.Ordinal = val5;
+               Assert.AreEqual(val5, emailDistributionListExtraA.Ordinal);
                DateTime val6 = new DateTime(2010, 3, 4);
-               emailDistributionList_A.LastUpdateDate_UTC = val6;
-               Assert.AreEqual(val6, emailDistributionList_A.LastUpdateDate_UTC);
+               emailDistributionListExtraA.LastUpdateDate_UTC = val6;
+               Assert.AreEqual(val6, emailDistributionListExtraA.LastUpdateDate_UTC);
                int val7 = 45;
-               emailDistributionList_A.LastUpdateContactTVItemID = val7;
-               Assert.AreEqual(val7, emailDistributionList_A.LastUpdateContactTVItemID);
+               emailDistributionListExtraA.LastUpdateContactTVItemID = val7;
+               Assert.AreEqual(val7, emailDistributionListExtraA.LastUpdateContactTVItemID);
                bool val8 = true;
-               emailDistributionList_A.HasErrors = val8;
-               Assert.AreEqual(val8, emailDistributionList_A.HasErrors);
+               emailDistributionListExtraA.HasErrors = val8;
+               Assert.AreEqual(val8, emailDistributionListExtraA.HasErrors);
                IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               emailDistributionList_A.ValidationResults = val27;
-               Assert.AreEqual(val27, emailDistributionList_A.ValidationResults);
+               emailDistributionListExtraA.ValidationResults = val27;
+               Assert.AreEqual(val27, emailDistributionListExtraA.ValidationResults);
         }
         [TestMethod]
-        public void EmailDistributionList_B_Every_Property_Has_Get_Set_Test()
+        public void EmailDistributionListExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               emailDistributionList_B.EmailDistributionListReportTest = val1;
-               Assert.AreEqual(val1, emailDistributionList_B.EmailDistributionListReportTest);
+               emailDistributionListExtraB.EmailDistributionListReportTest = val1;
+               Assert.AreEqual(val1, emailDistributionListExtraB.EmailDistributionListReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               emailDistributionList_B.CountryTVItemLanguage = val2;
-               Assert.AreEqual(val2, emailDistributionList_B.CountryTVItemLanguage);
+               emailDistributionListExtraB.CountryTVItemLanguage = val2;
+               Assert.AreEqual(val2, emailDistributionListExtraB.CountryTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               emailDistributionList_B.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, emailDistributionList_B.LastUpdateContactTVItemLanguage);
+               emailDistributionListExtraB.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, emailDistributionListExtraB.LastUpdateContactTVItemLanguage);
                int val4 = 45;
-               emailDistributionList_B.EmailDistributionListID = val4;
-               Assert.AreEqual(val4, emailDistributionList_B.EmailDistributionListID);
+               emailDistributionListExtraB.EmailDistributionListID = val4;
+               Assert.AreEqual(val4, emailDistributionListExtraB.EmailDistributionListID);
                int val5 = 45;
-               emailDistributionList_B.CountryTVItemID = val5;
-               Assert.AreEqual(val5, emailDistributionList_B.CountryTVItemID);
+               emailDistributionListExtraB.CountryTVItemID = val5;
+               Assert.AreEqual(val5, emailDistributionListExtraB.CountryTVItemID);
                int val6 = 45;
-               emailDistributionList_B.Ordinal = val6;
-               Assert.AreEqual(val6, emailDistributionList_B.Ordinal);
+               emailDistributionListExtraB.Ordinal = val6;
+               Assert.AreEqual(val6, emailDistributionListExtraB.Ordinal);
                DateTime val7 = new DateTime(2010, 3, 4);
-               emailDistributionList_B.LastUpdateDate_UTC = val7;
-               Assert.AreEqual(val7, emailDistributionList_B.LastUpdateDate_UTC);
+               emailDistributionListExtraB.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, emailDistributionListExtraB.LastUpdateDate_UTC);
                int val8 = 45;
-               emailDistributionList_B.LastUpdateContactTVItemID = val8;
-               Assert.AreEqual(val8, emailDistributionList_B.LastUpdateContactTVItemID);
+               emailDistributionListExtraB.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, emailDistributionListExtraB.LastUpdateContactTVItemID);
                bool val9 = true;
-               emailDistributionList_B.HasErrors = val9;
-               Assert.AreEqual(val9, emailDistributionList_B.HasErrors);
+               emailDistributionListExtraB.HasErrors = val9;
+               Assert.AreEqual(val9, emailDistributionListExtraB.HasErrors);
                IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               emailDistributionList_B.ValidationResults = val30;
-               Assert.AreEqual(val30, emailDistributionList_B.ValidationResults);
+               emailDistributionListExtraB.ValidationResults = val30;
+               Assert.AreEqual(val30, emailDistributionListExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

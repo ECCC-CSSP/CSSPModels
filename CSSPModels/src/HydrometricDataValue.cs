@@ -81,7 +81,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class HydrometricDataValue_A : HydrometricDataValue
+    public partial class HydrometricDataValueExtraA : HydrometricDataValue
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -100,13 +100,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public HydrometricDataValue_A() : base()
+        public HydrometricDataValueExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class HydrometricDataValue_B : HydrometricDataValue_A
+    public partial class HydrometricDataValueExtraB : HydrometricDataValueExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -119,7 +119,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public HydrometricDataValue_B() : base()
+        public HydrometricDataValueExtraB() : base()
         {
         }
         #endregion Constructors

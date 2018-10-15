@@ -304,7 +304,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeBoundaryCondition_A : MikeBoundaryCondition
+    public partial class MikeBoundaryConditionExtraA : MikeBoundaryCondition
     {
         #region Properties
         /// <summary>
@@ -423,13 +423,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MikeBoundaryCondition_A() : base()
+        public MikeBoundaryConditionExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeBoundaryCondition_B : MikeBoundaryCondition_A
+    public partial class MikeBoundaryConditionExtraB : MikeBoundaryConditionExtraA
     {
         #region Properties
         /// <summary>
@@ -462,7 +462,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MikeBoundaryCondition_B() : base()
+        public MikeBoundaryConditionExtraB() : base()
         {
         }
         #endregion Constructors

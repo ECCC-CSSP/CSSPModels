@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private ReportTypeLanguage reportTypeLanguage { get; set; }
-        private ReportTypeLanguage_A reportTypeLanguage_A { get; set; }
-        private ReportTypeLanguage_B reportTypeLanguage_B { get; set; }
+        private ReportTypeLanguageExtraA reportTypeLanguageExtraA { get; set; }
+        private ReportTypeLanguageExtraB reportTypeLanguageExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public ReportTypeLanguageTest()
         {
             reportTypeLanguage = new ReportTypeLanguage();
-            reportTypeLanguage_A = new ReportTypeLanguage_A();
-            reportTypeLanguage_B = new ReportTypeLanguage_B();
+            reportTypeLanguageExtraA = new ReportTypeLanguageExtraA();
+            reportTypeLanguageExtraB = new ReportTypeLanguageExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ReportTypeLanguage_A_Properties_Test()
+        public void ReportTypeLanguageExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusNameText", "TranslationStatusDescriptionText", "TranslationStatusStartOfFileNameText", "ReportTypeLanguageID", "ReportTypeID", "Language", "Name", "TranslationStatusName", "Description", "TranslationStatusDescription", "StartOfFileName", "TranslationStatusStartOfFileName", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguage_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguageExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguage_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguageExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ReportTypeLanguage_B_Properties_Test()
+        public void ReportTypeLanguageExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ReportTypeLanguageReportTest", "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusNameText", "TranslationStatusDescriptionText", "TranslationStatusStartOfFileNameText", "ReportTypeLanguageID", "ReportTypeID", "Language", "Name", "TranslationStatusName", "Description", "TranslationStatusDescription", "StartOfFileName", "TranslationStatusStartOfFileName", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguage_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguageExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguage_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguageExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ReportTypeLanguage_A_Navigation_Test()
+        public void ReportTypeLanguageExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguage_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguageExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguage_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguageExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ReportTypeLanguage_B_Navigation_Test()
+        public void ReportTypeLanguageExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguage_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguageExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguage_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ReportTypeLanguageExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(ReportTypeLanguage).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ReportTypeLanguage_A_Has_ValidationResults_Test()
+        public void ReportTypeLanguageExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(ReportTypeLanguage_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(ReportTypeLanguageExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ReportTypeLanguage_B_Has_ValidationResults_Test()
+        public void ReportTypeLanguageExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(ReportTypeLanguage_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(ReportTypeLanguageExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void ReportTypeLanguage_Every_Property_Has_Get_Set_Test()
@@ -301,123 +301,123 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val39, reportTypeLanguage.ValidationResults);
         }
         [TestMethod]
-        public void ReportTypeLanguage_A_Every_Property_Has_Get_Set_Test()
+        public void ReportTypeLanguageExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               reportTypeLanguage_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, reportTypeLanguage_A.LastUpdateContactTVItemLanguage);
+               reportTypeLanguageExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, reportTypeLanguageExtraA.LastUpdateContactTVItemLanguage);
                string val2 = "Some text";
-               reportTypeLanguage_A.LanguageText = val2;
-               Assert.AreEqual(val2, reportTypeLanguage_A.LanguageText);
+               reportTypeLanguageExtraA.LanguageText = val2;
+               Assert.AreEqual(val2, reportTypeLanguageExtraA.LanguageText);
                string val3 = "Some text";
-               reportTypeLanguage_A.TranslationStatusNameText = val3;
-               Assert.AreEqual(val3, reportTypeLanguage_A.TranslationStatusNameText);
+               reportTypeLanguageExtraA.TranslationStatusNameText = val3;
+               Assert.AreEqual(val3, reportTypeLanguageExtraA.TranslationStatusNameText);
                string val4 = "Some text";
-               reportTypeLanguage_A.TranslationStatusDescriptionText = val4;
-               Assert.AreEqual(val4, reportTypeLanguage_A.TranslationStatusDescriptionText);
+               reportTypeLanguageExtraA.TranslationStatusDescriptionText = val4;
+               Assert.AreEqual(val4, reportTypeLanguageExtraA.TranslationStatusDescriptionText);
                string val5 = "Some text";
-               reportTypeLanguage_A.TranslationStatusStartOfFileNameText = val5;
-               Assert.AreEqual(val5, reportTypeLanguage_A.TranslationStatusStartOfFileNameText);
+               reportTypeLanguageExtraA.TranslationStatusStartOfFileNameText = val5;
+               Assert.AreEqual(val5, reportTypeLanguageExtraA.TranslationStatusStartOfFileNameText);
                int val6 = 45;
-               reportTypeLanguage_A.ReportTypeLanguageID = val6;
-               Assert.AreEqual(val6, reportTypeLanguage_A.ReportTypeLanguageID);
+               reportTypeLanguageExtraA.ReportTypeLanguageID = val6;
+               Assert.AreEqual(val6, reportTypeLanguageExtraA.ReportTypeLanguageID);
                int val7 = 45;
-               reportTypeLanguage_A.ReportTypeID = val7;
-               Assert.AreEqual(val7, reportTypeLanguage_A.ReportTypeID);
+               reportTypeLanguageExtraA.ReportTypeID = val7;
+               Assert.AreEqual(val7, reportTypeLanguageExtraA.ReportTypeID);
                LanguageEnum val8 = (LanguageEnum)3;
-               reportTypeLanguage_A.Language = val8;
-               Assert.AreEqual(val8, reportTypeLanguage_A.Language);
+               reportTypeLanguageExtraA.Language = val8;
+               Assert.AreEqual(val8, reportTypeLanguageExtraA.Language);
                string val9 = "Some text";
-               reportTypeLanguage_A.Name = val9;
-               Assert.AreEqual(val9, reportTypeLanguage_A.Name);
+               reportTypeLanguageExtraA.Name = val9;
+               Assert.AreEqual(val9, reportTypeLanguageExtraA.Name);
                TranslationStatusEnum val10 = (TranslationStatusEnum)3;
-               reportTypeLanguage_A.TranslationStatusName = val10;
-               Assert.AreEqual(val10, reportTypeLanguage_A.TranslationStatusName);
+               reportTypeLanguageExtraA.TranslationStatusName = val10;
+               Assert.AreEqual(val10, reportTypeLanguageExtraA.TranslationStatusName);
                string val11 = "Some text";
-               reportTypeLanguage_A.Description = val11;
-               Assert.AreEqual(val11, reportTypeLanguage_A.Description);
+               reportTypeLanguageExtraA.Description = val11;
+               Assert.AreEqual(val11, reportTypeLanguageExtraA.Description);
                TranslationStatusEnum val12 = (TranslationStatusEnum)3;
-               reportTypeLanguage_A.TranslationStatusDescription = val12;
-               Assert.AreEqual(val12, reportTypeLanguage_A.TranslationStatusDescription);
+               reportTypeLanguageExtraA.TranslationStatusDescription = val12;
+               Assert.AreEqual(val12, reportTypeLanguageExtraA.TranslationStatusDescription);
                string val13 = "Some text";
-               reportTypeLanguage_A.StartOfFileName = val13;
-               Assert.AreEqual(val13, reportTypeLanguage_A.StartOfFileName);
+               reportTypeLanguageExtraA.StartOfFileName = val13;
+               Assert.AreEqual(val13, reportTypeLanguageExtraA.StartOfFileName);
                TranslationStatusEnum val14 = (TranslationStatusEnum)3;
-               reportTypeLanguage_A.TranslationStatusStartOfFileName = val14;
-               Assert.AreEqual(val14, reportTypeLanguage_A.TranslationStatusStartOfFileName);
+               reportTypeLanguageExtraA.TranslationStatusStartOfFileName = val14;
+               Assert.AreEqual(val14, reportTypeLanguageExtraA.TranslationStatusStartOfFileName);
                DateTime val15 = new DateTime(2010, 3, 4);
-               reportTypeLanguage_A.LastUpdateDate_UTC = val15;
-               Assert.AreEqual(val15, reportTypeLanguage_A.LastUpdateDate_UTC);
+               reportTypeLanguageExtraA.LastUpdateDate_UTC = val15;
+               Assert.AreEqual(val15, reportTypeLanguageExtraA.LastUpdateDate_UTC);
                int val16 = 45;
-               reportTypeLanguage_A.LastUpdateContactTVItemID = val16;
-               Assert.AreEqual(val16, reportTypeLanguage_A.LastUpdateContactTVItemID);
+               reportTypeLanguageExtraA.LastUpdateContactTVItemID = val16;
+               Assert.AreEqual(val16, reportTypeLanguageExtraA.LastUpdateContactTVItemID);
                bool val17 = true;
-               reportTypeLanguage_A.HasErrors = val17;
-               Assert.AreEqual(val17, reportTypeLanguage_A.HasErrors);
+               reportTypeLanguageExtraA.HasErrors = val17;
+               Assert.AreEqual(val17, reportTypeLanguageExtraA.HasErrors);
                IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               reportTypeLanguage_A.ValidationResults = val54;
-               Assert.AreEqual(val54, reportTypeLanguage_A.ValidationResults);
+               reportTypeLanguageExtraA.ValidationResults = val54;
+               Assert.AreEqual(val54, reportTypeLanguageExtraA.ValidationResults);
         }
         [TestMethod]
-        public void ReportTypeLanguage_B_Every_Property_Has_Get_Set_Test()
+        public void ReportTypeLanguageExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               reportTypeLanguage_B.ReportTypeLanguageReportTest = val1;
-               Assert.AreEqual(val1, reportTypeLanguage_B.ReportTypeLanguageReportTest);
+               reportTypeLanguageExtraB.ReportTypeLanguageReportTest = val1;
+               Assert.AreEqual(val1, reportTypeLanguageExtraB.ReportTypeLanguageReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               reportTypeLanguage_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, reportTypeLanguage_B.LastUpdateContactTVItemLanguage);
+               reportTypeLanguageExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, reportTypeLanguageExtraB.LastUpdateContactTVItemLanguage);
                string val3 = "Some text";
-               reportTypeLanguage_B.LanguageText = val3;
-               Assert.AreEqual(val3, reportTypeLanguage_B.LanguageText);
+               reportTypeLanguageExtraB.LanguageText = val3;
+               Assert.AreEqual(val3, reportTypeLanguageExtraB.LanguageText);
                string val4 = "Some text";
-               reportTypeLanguage_B.TranslationStatusNameText = val4;
-               Assert.AreEqual(val4, reportTypeLanguage_B.TranslationStatusNameText);
+               reportTypeLanguageExtraB.TranslationStatusNameText = val4;
+               Assert.AreEqual(val4, reportTypeLanguageExtraB.TranslationStatusNameText);
                string val5 = "Some text";
-               reportTypeLanguage_B.TranslationStatusDescriptionText = val5;
-               Assert.AreEqual(val5, reportTypeLanguage_B.TranslationStatusDescriptionText);
+               reportTypeLanguageExtraB.TranslationStatusDescriptionText = val5;
+               Assert.AreEqual(val5, reportTypeLanguageExtraB.TranslationStatusDescriptionText);
                string val6 = "Some text";
-               reportTypeLanguage_B.TranslationStatusStartOfFileNameText = val6;
-               Assert.AreEqual(val6, reportTypeLanguage_B.TranslationStatusStartOfFileNameText);
+               reportTypeLanguageExtraB.TranslationStatusStartOfFileNameText = val6;
+               Assert.AreEqual(val6, reportTypeLanguageExtraB.TranslationStatusStartOfFileNameText);
                int val7 = 45;
-               reportTypeLanguage_B.ReportTypeLanguageID = val7;
-               Assert.AreEqual(val7, reportTypeLanguage_B.ReportTypeLanguageID);
+               reportTypeLanguageExtraB.ReportTypeLanguageID = val7;
+               Assert.AreEqual(val7, reportTypeLanguageExtraB.ReportTypeLanguageID);
                int val8 = 45;
-               reportTypeLanguage_B.ReportTypeID = val8;
-               Assert.AreEqual(val8, reportTypeLanguage_B.ReportTypeID);
+               reportTypeLanguageExtraB.ReportTypeID = val8;
+               Assert.AreEqual(val8, reportTypeLanguageExtraB.ReportTypeID);
                LanguageEnum val9 = (LanguageEnum)3;
-               reportTypeLanguage_B.Language = val9;
-               Assert.AreEqual(val9, reportTypeLanguage_B.Language);
+               reportTypeLanguageExtraB.Language = val9;
+               Assert.AreEqual(val9, reportTypeLanguageExtraB.Language);
                string val10 = "Some text";
-               reportTypeLanguage_B.Name = val10;
-               Assert.AreEqual(val10, reportTypeLanguage_B.Name);
+               reportTypeLanguageExtraB.Name = val10;
+               Assert.AreEqual(val10, reportTypeLanguageExtraB.Name);
                TranslationStatusEnum val11 = (TranslationStatusEnum)3;
-               reportTypeLanguage_B.TranslationStatusName = val11;
-               Assert.AreEqual(val11, reportTypeLanguage_B.TranslationStatusName);
+               reportTypeLanguageExtraB.TranslationStatusName = val11;
+               Assert.AreEqual(val11, reportTypeLanguageExtraB.TranslationStatusName);
                string val12 = "Some text";
-               reportTypeLanguage_B.Description = val12;
-               Assert.AreEqual(val12, reportTypeLanguage_B.Description);
+               reportTypeLanguageExtraB.Description = val12;
+               Assert.AreEqual(val12, reportTypeLanguageExtraB.Description);
                TranslationStatusEnum val13 = (TranslationStatusEnum)3;
-               reportTypeLanguage_B.TranslationStatusDescription = val13;
-               Assert.AreEqual(val13, reportTypeLanguage_B.TranslationStatusDescription);
+               reportTypeLanguageExtraB.TranslationStatusDescription = val13;
+               Assert.AreEqual(val13, reportTypeLanguageExtraB.TranslationStatusDescription);
                string val14 = "Some text";
-               reportTypeLanguage_B.StartOfFileName = val14;
-               Assert.AreEqual(val14, reportTypeLanguage_B.StartOfFileName);
+               reportTypeLanguageExtraB.StartOfFileName = val14;
+               Assert.AreEqual(val14, reportTypeLanguageExtraB.StartOfFileName);
                TranslationStatusEnum val15 = (TranslationStatusEnum)3;
-               reportTypeLanguage_B.TranslationStatusStartOfFileName = val15;
-               Assert.AreEqual(val15, reportTypeLanguage_B.TranslationStatusStartOfFileName);
+               reportTypeLanguageExtraB.TranslationStatusStartOfFileName = val15;
+               Assert.AreEqual(val15, reportTypeLanguageExtraB.TranslationStatusStartOfFileName);
                DateTime val16 = new DateTime(2010, 3, 4);
-               reportTypeLanguage_B.LastUpdateDate_UTC = val16;
-               Assert.AreEqual(val16, reportTypeLanguage_B.LastUpdateDate_UTC);
+               reportTypeLanguageExtraB.LastUpdateDate_UTC = val16;
+               Assert.AreEqual(val16, reportTypeLanguageExtraB.LastUpdateDate_UTC);
                int val17 = 45;
-               reportTypeLanguage_B.LastUpdateContactTVItemID = val17;
-               Assert.AreEqual(val17, reportTypeLanguage_B.LastUpdateContactTVItemID);
+               reportTypeLanguageExtraB.LastUpdateContactTVItemID = val17;
+               Assert.AreEqual(val17, reportTypeLanguageExtraB.LastUpdateContactTVItemID);
                bool val18 = true;
-               reportTypeLanguage_B.HasErrors = val18;
-               Assert.AreEqual(val18, reportTypeLanguage_B.HasErrors);
+               reportTypeLanguageExtraB.HasErrors = val18;
+               Assert.AreEqual(val18, reportTypeLanguageExtraB.HasErrors);
                IEnumerable<ValidationResult> val57 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               reportTypeLanguage_B.ValidationResults = val57;
-               Assert.AreEqual(val57, reportTypeLanguage_B.ValidationResults);
+               reportTypeLanguageExtraB.ValidationResults = val57;
+               Assert.AreEqual(val57, reportTypeLanguageExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

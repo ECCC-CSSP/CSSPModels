@@ -136,7 +136,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Email_A : Email
+    public partial class EmailExtraA : Email
     {
         #region Properties
         /// <summary>
@@ -201,13 +201,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Email_A() : base()
+        public EmailExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Email_B : Email_A
+    public partial class EmailExtraB : EmailExtraA
     {
         #region Properties
         /// <summary>
@@ -240,7 +240,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Email_B() : base()
+        public EmailExtraB() : base()
         {
         }
         #endregion Constructors

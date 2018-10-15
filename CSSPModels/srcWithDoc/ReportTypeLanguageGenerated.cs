@@ -256,7 +256,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportTypeLanguage_A : ReportTypeLanguage
+    public partial class ReportTypeLanguageExtraA : ReportTypeLanguage
     {
         #region Properties
         /// <summary>
@@ -395,13 +395,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ReportTypeLanguage_A() : base()
+        public ReportTypeLanguageExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportTypeLanguage_B : ReportTypeLanguage_A
+    public partial class ReportTypeLanguageExtraB : ReportTypeLanguageExtraA
     {
         #region Properties
         /// <summary>
@@ -434,7 +434,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ReportTypeLanguage_B() : base()
+        public ReportTypeLanguageExtraB() : base()
         {
         }
         #endregion Constructors

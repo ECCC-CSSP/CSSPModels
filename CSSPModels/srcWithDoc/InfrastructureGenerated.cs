@@ -1182,7 +1182,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Infrastructure_A : Infrastructure
+    public partial class InfrastructureExtraA : Infrastructure
     {
         #region Properties
         /// <summary>
@@ -1589,13 +1589,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Infrastructure_A() : base()
+        public InfrastructureExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Infrastructure_B : Infrastructure_A
+    public partial class InfrastructureExtraB : InfrastructureExtraA
     {
         #region Properties
         /// <summary>
@@ -1628,7 +1628,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Infrastructure_B() : base()
+        public InfrastructureExtraB() : base()
         {
         }
         #endregion Constructors

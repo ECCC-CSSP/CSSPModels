@@ -159,7 +159,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVFileLanguage_A : TVFileLanguage
+    public partial class TVFileLanguageExtraA : TVFileLanguage
     {
         #region Properties
         /// <summary>
@@ -244,13 +244,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TVFileLanguage_A() : base()
+        public TVFileLanguageExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class TVFileLanguage_B : TVFileLanguage_A
+    public partial class TVFileLanguageExtraB : TVFileLanguageExtraA
     {
         #region Properties
         /// <summary>
@@ -283,7 +283,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public TVFileLanguage_B() : base()
+        public TVFileLanguageExtraB() : base()
         {
         }
         #endregion Constructors

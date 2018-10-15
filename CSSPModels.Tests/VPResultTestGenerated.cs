@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private VPResult vPResult { get; set; }
-        private VPResult_A vPResult_A { get; set; }
-        private VPResult_B vPResult_B { get; set; }
+        private VPResultExtraA vPResultExtraA { get; set; }
+        private VPResultExtraB vPResultExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public VPResultTest()
         {
             vPResult = new VPResult();
-            vPResult_A = new VPResult_A();
-            vPResult_B = new VPResult_B();
+            vPResultExtraA = new VPResultExtraA();
+            vPResultExtraB = new VPResultExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void VPResult_A_Properties_Test()
+        public void VPResultExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "VPResultID", "VPScenarioID", "Ordinal", "Concentration_MPN_100ml", "Dilution", "FarFieldWidth_m", "DispersionDistance_m", "TravelTime_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPResult_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(VPResultExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPResult_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(VPResultExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void VPResult_B_Properties_Test()
+        public void VPResultExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "VPResultReportTest", "LastUpdateContactTVItemLanguage", "VPResultID", "VPScenarioID", "Ordinal", "Concentration_MPN_100ml", "Dilution", "FarFieldWidth_m", "DispersionDistance_m", "TravelTime_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPResult_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(VPResultExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPResult_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(VPResultExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void VPResult_A_Navigation_Test()
+        public void VPResultExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPResult_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(VPResultExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPResult_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(VPResultExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void VPResult_B_Navigation_Test()
+        public void VPResultExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPResult_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(VPResultExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(VPResult_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(VPResultExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(VPResult).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void VPResult_A_Has_ValidationResults_Test()
+        public void VPResultExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(VPResult_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(VPResultExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void VPResult_B_Has_ValidationResults_Test()
+        public void VPResultExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(VPResult_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(VPResultExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void VPResult_Every_Property_Has_Get_Set_Test()
@@ -298,93 +298,93 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val36, vPResult.ValidationResults);
         }
         [TestMethod]
-        public void VPResult_A_Every_Property_Has_Get_Set_Test()
+        public void VPResultExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               vPResult_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, vPResult_A.LastUpdateContactTVItemLanguage);
+               vPResultExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, vPResultExtraA.LastUpdateContactTVItemLanguage);
                int val2 = 45;
-               vPResult_A.VPResultID = val2;
-               Assert.AreEqual(val2, vPResult_A.VPResultID);
+               vPResultExtraA.VPResultID = val2;
+               Assert.AreEqual(val2, vPResultExtraA.VPResultID);
                int val3 = 45;
-               vPResult_A.VPScenarioID = val3;
-               Assert.AreEqual(val3, vPResult_A.VPScenarioID);
+               vPResultExtraA.VPScenarioID = val3;
+               Assert.AreEqual(val3, vPResultExtraA.VPScenarioID);
                int val4 = 45;
-               vPResult_A.Ordinal = val4;
-               Assert.AreEqual(val4, vPResult_A.Ordinal);
+               vPResultExtraA.Ordinal = val4;
+               Assert.AreEqual(val4, vPResultExtraA.Ordinal);
                int val5 = 45;
-               vPResult_A.Concentration_MPN_100ml = val5;
-               Assert.AreEqual(val5, vPResult_A.Concentration_MPN_100ml);
+               vPResultExtraA.Concentration_MPN_100ml = val5;
+               Assert.AreEqual(val5, vPResultExtraA.Concentration_MPN_100ml);
                double val6 = 87.9D;
-               vPResult_A.Dilution = val6;
-               Assert.AreEqual(val6, vPResult_A.Dilution);
+               vPResultExtraA.Dilution = val6;
+               Assert.AreEqual(val6, vPResultExtraA.Dilution);
                double val7 = 87.9D;
-               vPResult_A.FarFieldWidth_m = val7;
-               Assert.AreEqual(val7, vPResult_A.FarFieldWidth_m);
+               vPResultExtraA.FarFieldWidth_m = val7;
+               Assert.AreEqual(val7, vPResultExtraA.FarFieldWidth_m);
                double val8 = 87.9D;
-               vPResult_A.DispersionDistance_m = val8;
-               Assert.AreEqual(val8, vPResult_A.DispersionDistance_m);
+               vPResultExtraA.DispersionDistance_m = val8;
+               Assert.AreEqual(val8, vPResultExtraA.DispersionDistance_m);
                double val9 = 87.9D;
-               vPResult_A.TravelTime_hour = val9;
-               Assert.AreEqual(val9, vPResult_A.TravelTime_hour);
+               vPResultExtraA.TravelTime_hour = val9;
+               Assert.AreEqual(val9, vPResultExtraA.TravelTime_hour);
                DateTime val10 = new DateTime(2010, 3, 4);
-               vPResult_A.LastUpdateDate_UTC = val10;
-               Assert.AreEqual(val10, vPResult_A.LastUpdateDate_UTC);
+               vPResultExtraA.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, vPResultExtraA.LastUpdateDate_UTC);
                int val11 = 45;
-               vPResult_A.LastUpdateContactTVItemID = val11;
-               Assert.AreEqual(val11, vPResult_A.LastUpdateContactTVItemID);
+               vPResultExtraA.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, vPResultExtraA.LastUpdateContactTVItemID);
                bool val12 = true;
-               vPResult_A.HasErrors = val12;
-               Assert.AreEqual(val12, vPResult_A.HasErrors);
+               vPResultExtraA.HasErrors = val12;
+               Assert.AreEqual(val12, vPResultExtraA.HasErrors);
                IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               vPResult_A.ValidationResults = val39;
-               Assert.AreEqual(val39, vPResult_A.ValidationResults);
+               vPResultExtraA.ValidationResults = val39;
+               Assert.AreEqual(val39, vPResultExtraA.ValidationResults);
         }
         [TestMethod]
-        public void VPResult_B_Every_Property_Has_Get_Set_Test()
+        public void VPResultExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               vPResult_B.VPResultReportTest = val1;
-               Assert.AreEqual(val1, vPResult_B.VPResultReportTest);
+               vPResultExtraB.VPResultReportTest = val1;
+               Assert.AreEqual(val1, vPResultExtraB.VPResultReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               vPResult_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, vPResult_B.LastUpdateContactTVItemLanguage);
+               vPResultExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, vPResultExtraB.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               vPResult_B.VPResultID = val3;
-               Assert.AreEqual(val3, vPResult_B.VPResultID);
+               vPResultExtraB.VPResultID = val3;
+               Assert.AreEqual(val3, vPResultExtraB.VPResultID);
                int val4 = 45;
-               vPResult_B.VPScenarioID = val4;
-               Assert.AreEqual(val4, vPResult_B.VPScenarioID);
+               vPResultExtraB.VPScenarioID = val4;
+               Assert.AreEqual(val4, vPResultExtraB.VPScenarioID);
                int val5 = 45;
-               vPResult_B.Ordinal = val5;
-               Assert.AreEqual(val5, vPResult_B.Ordinal);
+               vPResultExtraB.Ordinal = val5;
+               Assert.AreEqual(val5, vPResultExtraB.Ordinal);
                int val6 = 45;
-               vPResult_B.Concentration_MPN_100ml = val6;
-               Assert.AreEqual(val6, vPResult_B.Concentration_MPN_100ml);
+               vPResultExtraB.Concentration_MPN_100ml = val6;
+               Assert.AreEqual(val6, vPResultExtraB.Concentration_MPN_100ml);
                double val7 = 87.9D;
-               vPResult_B.Dilution = val7;
-               Assert.AreEqual(val7, vPResult_B.Dilution);
+               vPResultExtraB.Dilution = val7;
+               Assert.AreEqual(val7, vPResultExtraB.Dilution);
                double val8 = 87.9D;
-               vPResult_B.FarFieldWidth_m = val8;
-               Assert.AreEqual(val8, vPResult_B.FarFieldWidth_m);
+               vPResultExtraB.FarFieldWidth_m = val8;
+               Assert.AreEqual(val8, vPResultExtraB.FarFieldWidth_m);
                double val9 = 87.9D;
-               vPResult_B.DispersionDistance_m = val9;
-               Assert.AreEqual(val9, vPResult_B.DispersionDistance_m);
+               vPResultExtraB.DispersionDistance_m = val9;
+               Assert.AreEqual(val9, vPResultExtraB.DispersionDistance_m);
                double val10 = 87.9D;
-               vPResult_B.TravelTime_hour = val10;
-               Assert.AreEqual(val10, vPResult_B.TravelTime_hour);
+               vPResultExtraB.TravelTime_hour = val10;
+               Assert.AreEqual(val10, vPResultExtraB.TravelTime_hour);
                DateTime val11 = new DateTime(2010, 3, 4);
-               vPResult_B.LastUpdateDate_UTC = val11;
-               Assert.AreEqual(val11, vPResult_B.LastUpdateDate_UTC);
+               vPResultExtraB.LastUpdateDate_UTC = val11;
+               Assert.AreEqual(val11, vPResultExtraB.LastUpdateDate_UTC);
                int val12 = 45;
-               vPResult_B.LastUpdateContactTVItemID = val12;
-               Assert.AreEqual(val12, vPResult_B.LastUpdateContactTVItemID);
+               vPResultExtraB.LastUpdateContactTVItemID = val12;
+               Assert.AreEqual(val12, vPResultExtraB.LastUpdateContactTVItemID);
                bool val13 = true;
-               vPResult_B.HasErrors = val13;
-               Assert.AreEqual(val13, vPResult_B.HasErrors);
+               vPResultExtraB.HasErrors = val13;
+               Assert.AreEqual(val13, vPResultExtraB.HasErrors);
                IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               vPResult_B.ValidationResults = val42;
-               Assert.AreEqual(val42, vPResult_B.ValidationResults);
+               vPResultExtraB.ValidationResults = val42;
+               Assert.AreEqual(val42, vPResultExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

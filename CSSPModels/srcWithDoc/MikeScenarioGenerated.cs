@@ -769,7 +769,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeScenario_A : MikeScenario
+    public partial class MikeScenarioExtraA : MikeScenario
     {
         #region Properties
         /// <summary>
@@ -834,13 +834,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MikeScenario_A() : base()
+        public MikeScenarioExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class MikeScenario_B : MikeScenario_A
+    public partial class MikeScenarioExtraB : MikeScenarioExtraA
     {
         #region Properties
         /// <summary>
@@ -873,7 +873,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public MikeScenario_B() : base()
+        public MikeScenarioExtraB() : base()
         {
         }
         #endregion Constructors

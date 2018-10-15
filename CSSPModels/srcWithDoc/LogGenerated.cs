@@ -155,7 +155,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Log_A : Log
+    public partial class LogExtraA : Log
     {
         #region Properties
         /// <summary>
@@ -213,13 +213,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Log_A() : base()
+        public LogExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Log_B : Log_A
+    public partial class LogExtraB : LogExtraA
     {
         #region Properties
         /// <summary>
@@ -252,7 +252,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Log_B() : base()
+        public LogExtraB() : base()
         {
         }
         #endregion Constructors

@@ -325,7 +325,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModel_A : BoxModel
+    public partial class BoxModelExtraA : BoxModel
     {
         #region Properties
         /// <summary>
@@ -381,13 +381,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public BoxModel_A() : base()
+        public BoxModelExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModel_B : BoxModel_A
+    public partial class BoxModelExtraB : BoxModelExtraA
     {
         #region Properties
         /// <summary>
@@ -420,7 +420,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public BoxModel_B() : base()
+        public BoxModelExtraB() : base()
         {
         }
         #endregion Constructors

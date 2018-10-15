@@ -158,7 +158,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListContactLanguage_A : EmailDistributionListContactLanguage
+    public partial class EmailDistributionListContactLanguageExtraA : EmailDistributionListContactLanguage
     {
         #region Properties
         /// <summary>
@@ -243,13 +243,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public EmailDistributionListContactLanguage_A() : base()
+        public EmailDistributionListContactLanguageExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class EmailDistributionListContactLanguage_B : EmailDistributionListContactLanguage_A
+    public partial class EmailDistributionListContactLanguageExtraB : EmailDistributionListContactLanguageExtraA
     {
         #region Properties
         /// <summary>
@@ -282,7 +282,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public EmailDistributionListContactLanguage_B() : base()
+        public EmailDistributionListContactLanguageExtraB() : base()
         {
         }
         #endregion Constructors

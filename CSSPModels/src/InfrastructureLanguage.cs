@@ -52,7 +52,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class InfrastructureLanguage_A : InfrastructureLanguage
+    public partial class InfrastructureLanguageExtraA : InfrastructureLanguage
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -78,13 +78,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public InfrastructureLanguage_A() : base()
+        public InfrastructureLanguageExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class InfrastructureLanguage_B : InfrastructureLanguage_A
+    public partial class InfrastructureLanguageExtraB : InfrastructureLanguageExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -97,7 +97,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public InfrastructureLanguage_B() : base()
+        public InfrastructureLanguageExtraB() : base()
         {
         }
         #endregion Constructors

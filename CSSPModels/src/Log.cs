@@ -52,7 +52,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Log_A : Log
+    public partial class LogExtraA : Log
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -71,13 +71,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Log_A() : base()
+        public LogExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Log_B : Log_A
+    public partial class LogExtraB : LogExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -90,7 +90,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Log_B() : base()
+        public LogExtraB() : base()
         {
         }
         #endregion Constructors

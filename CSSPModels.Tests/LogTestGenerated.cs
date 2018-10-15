@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private Log log { get; set; }
-        private Log_A log_A { get; set; }
-        private Log_B log_B { get; set; }
+        private LogExtraA logExtraA { get; set; }
+        private LogExtraB logExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public LogTest()
         {
             log = new Log();
-            log_A = new Log_A();
-            log_B = new Log_B();
+            logExtraA = new LogExtraA();
+            logExtraB = new LogExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Log_A_Properties_Test()
+        public void LogExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LogCommandText", "LogID", "TableName", "ID", "LogCommand", "Information", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Log_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(LogExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Log_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(LogExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Log_B_Properties_Test()
+        public void LogExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LogReportTest", "LastUpdateContactTVItemLanguage", "LogCommandText", "LogID", "TableName", "ID", "LogCommand", "Information", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Log_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(LogExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Log_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(LogExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Log_A_Navigation_Test()
+        public void LogExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Log_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(LogExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Log_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(LogExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void Log_B_Navigation_Test()
+        public void LogExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Log_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(LogExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(Log_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(LogExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(Log).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Log_A_Has_ValidationResults_Test()
+        public void LogExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(Log_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(LogExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void Log_B_Has_ValidationResults_Test()
+        public void LogExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(Log_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(LogExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void Log_Every_Property_Has_Get_Set_Test()
@@ -289,81 +289,81 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val27, log.ValidationResults);
         }
         [TestMethod]
-        public void Log_A_Every_Property_Has_Get_Set_Test()
+        public void LogExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               log_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, log_A.LastUpdateContactTVItemLanguage);
+               logExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, logExtraA.LastUpdateContactTVItemLanguage);
                string val2 = "Some text";
-               log_A.LogCommandText = val2;
-               Assert.AreEqual(val2, log_A.LogCommandText);
+               logExtraA.LogCommandText = val2;
+               Assert.AreEqual(val2, logExtraA.LogCommandText);
                int val3 = 45;
-               log_A.LogID = val3;
-               Assert.AreEqual(val3, log_A.LogID);
+               logExtraA.LogID = val3;
+               Assert.AreEqual(val3, logExtraA.LogID);
                string val4 = "Some text";
-               log_A.TableName = val4;
-               Assert.AreEqual(val4, log_A.TableName);
+               logExtraA.TableName = val4;
+               Assert.AreEqual(val4, logExtraA.TableName);
                int val5 = 45;
-               log_A.ID = val5;
-               Assert.AreEqual(val5, log_A.ID);
+               logExtraA.ID = val5;
+               Assert.AreEqual(val5, logExtraA.ID);
                LogCommandEnum val6 = (LogCommandEnum)3;
-               log_A.LogCommand = val6;
-               Assert.AreEqual(val6, log_A.LogCommand);
+               logExtraA.LogCommand = val6;
+               Assert.AreEqual(val6, logExtraA.LogCommand);
                string val7 = "Some text";
-               log_A.Information = val7;
-               Assert.AreEqual(val7, log_A.Information);
+               logExtraA.Information = val7;
+               Assert.AreEqual(val7, logExtraA.Information);
                DateTime val8 = new DateTime(2010, 3, 4);
-               log_A.LastUpdateDate_UTC = val8;
-               Assert.AreEqual(val8, log_A.LastUpdateDate_UTC);
+               logExtraA.LastUpdateDate_UTC = val8;
+               Assert.AreEqual(val8, logExtraA.LastUpdateDate_UTC);
                int val9 = 45;
-               log_A.LastUpdateContactTVItemID = val9;
-               Assert.AreEqual(val9, log_A.LastUpdateContactTVItemID);
+               logExtraA.LastUpdateContactTVItemID = val9;
+               Assert.AreEqual(val9, logExtraA.LastUpdateContactTVItemID);
                bool val10 = true;
-               log_A.HasErrors = val10;
-               Assert.AreEqual(val10, log_A.HasErrors);
+               logExtraA.HasErrors = val10;
+               Assert.AreEqual(val10, logExtraA.HasErrors);
                IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               log_A.ValidationResults = val33;
-               Assert.AreEqual(val33, log_A.ValidationResults);
+               logExtraA.ValidationResults = val33;
+               Assert.AreEqual(val33, logExtraA.ValidationResults);
         }
         [TestMethod]
-        public void Log_B_Every_Property_Has_Get_Set_Test()
+        public void LogExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               log_B.LogReportTest = val1;
-               Assert.AreEqual(val1, log_B.LogReportTest);
+               logExtraB.LogReportTest = val1;
+               Assert.AreEqual(val1, logExtraB.LogReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               log_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, log_B.LastUpdateContactTVItemLanguage);
+               logExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, logExtraB.LastUpdateContactTVItemLanguage);
                string val3 = "Some text";
-               log_B.LogCommandText = val3;
-               Assert.AreEqual(val3, log_B.LogCommandText);
+               logExtraB.LogCommandText = val3;
+               Assert.AreEqual(val3, logExtraB.LogCommandText);
                int val4 = 45;
-               log_B.LogID = val4;
-               Assert.AreEqual(val4, log_B.LogID);
+               logExtraB.LogID = val4;
+               Assert.AreEqual(val4, logExtraB.LogID);
                string val5 = "Some text";
-               log_B.TableName = val5;
-               Assert.AreEqual(val5, log_B.TableName);
+               logExtraB.TableName = val5;
+               Assert.AreEqual(val5, logExtraB.TableName);
                int val6 = 45;
-               log_B.ID = val6;
-               Assert.AreEqual(val6, log_B.ID);
+               logExtraB.ID = val6;
+               Assert.AreEqual(val6, logExtraB.ID);
                LogCommandEnum val7 = (LogCommandEnum)3;
-               log_B.LogCommand = val7;
-               Assert.AreEqual(val7, log_B.LogCommand);
+               logExtraB.LogCommand = val7;
+               Assert.AreEqual(val7, logExtraB.LogCommand);
                string val8 = "Some text";
-               log_B.Information = val8;
-               Assert.AreEqual(val8, log_B.Information);
+               logExtraB.Information = val8;
+               Assert.AreEqual(val8, logExtraB.Information);
                DateTime val9 = new DateTime(2010, 3, 4);
-               log_B.LastUpdateDate_UTC = val9;
-               Assert.AreEqual(val9, log_B.LastUpdateDate_UTC);
+               logExtraB.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, logExtraB.LastUpdateDate_UTC);
                int val10 = 45;
-               log_B.LastUpdateContactTVItemID = val10;
-               Assert.AreEqual(val10, log_B.LastUpdateContactTVItemID);
+               logExtraB.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, logExtraB.LastUpdateContactTVItemID);
                bool val11 = true;
-               log_B.HasErrors = val11;
-               Assert.AreEqual(val11, log_B.HasErrors);
+               logExtraB.HasErrors = val11;
+               Assert.AreEqual(val11, logExtraB.HasErrors);
                IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               log_B.ValidationResults = val36;
-               Assert.AreEqual(val36, log_B.ValidationResults);
+               logExtraB.ValidationResults = val36;
+               Assert.AreEqual(val36, logExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

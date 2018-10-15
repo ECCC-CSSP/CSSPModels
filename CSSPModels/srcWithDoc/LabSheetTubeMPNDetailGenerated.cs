@@ -381,7 +381,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetTubeMPNDetail_A : LabSheetTubeMPNDetail
+    public partial class LabSheetTubeMPNDetailExtraA : LabSheetTubeMPNDetail
     {
         #region Properties
         /// <summary>
@@ -464,13 +464,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public LabSheetTubeMPNDetail_A() : base()
+        public LabSheetTubeMPNDetailExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class LabSheetTubeMPNDetail_B : LabSheetTubeMPNDetail_A
+    public partial class LabSheetTubeMPNDetailExtraB : LabSheetTubeMPNDetailExtraA
     {
         #region Properties
         /// <summary>
@@ -503,7 +503,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public LabSheetTubeMPNDetail_B() : base()
+        public LabSheetTubeMPNDetailExtraB() : base()
         {
         }
         #endregion Constructors

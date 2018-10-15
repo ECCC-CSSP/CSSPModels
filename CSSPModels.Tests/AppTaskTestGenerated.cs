@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private AppTask appTask { get; set; }
-        private AppTask_A appTask_A { get; set; }
-        private AppTask_B appTask_B { get; set; }
+        private AppTaskExtraA appTaskExtraA { get; set; }
+        private AppTaskExtraB appTaskExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public AppTaskTest()
         {
             appTask = new AppTask();
-            appTask_A = new AppTask_A();
-            appTask_B = new AppTask_B();
+            appTaskExtraA = new AppTaskExtraA();
+            appTaskExtraB = new AppTaskExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void AppTask_A_Properties_Test()
+        public void AppTaskExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "TVItemTVItemLanguage", "TVItem2TVItemLanguage", "LastUpdateContactTVItemLanguage", "AppTaskCommandText", "AppTaskStatusText", "LanguageText", "AppTaskID", "TVItemID", "TVItemID2", "AppTaskCommand", "AppTaskStatus", "PercentCompleted", "Parameters", "Language", "StartDateTime_UTC", "EndDateTime_UTC", "EstimatedLength_second", "RemainingTime_second", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppTask_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppTask_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void AppTask_B_Properties_Test()
+        public void AppTaskExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "AppTaskReportTest", "TVItemTVItemLanguage", "TVItem2TVItemLanguage", "LastUpdateContactTVItemLanguage", "AppTaskCommandText", "AppTaskStatusText", "LanguageText", "AppTaskID", "TVItemID", "TVItemID2", "AppTaskCommand", "AppTaskStatus", "PercentCompleted", "Parameters", "Language", "StartDateTime_UTC", "EndDateTime_UTC", "EstimatedLength_second", "RemainingTime_second", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppTask_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppTask_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void AppTask_A_Navigation_Test()
+        public void AppTaskExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppTask_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppTask_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void AppTask_B_Navigation_Test()
+        public void AppTaskExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppTask_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(AppTask_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(AppTaskExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(AppTask).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void AppTask_A_Has_ValidationResults_Test()
+        public void AppTaskExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(AppTask_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(AppTaskExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void AppTask_B_Has_ValidationResults_Test()
+        public void AppTaskExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(AppTask_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(AppTaskExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void AppTask_Every_Property_Has_Get_Set_Test()
@@ -310,147 +310,147 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val48, appTask.ValidationResults);
         }
         [TestMethod]
-        public void AppTask_A_Every_Property_Has_Get_Set_Test()
+        public void AppTaskExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               appTask_A.TVItemTVItemLanguage = val1;
-               Assert.AreEqual(val1, appTask_A.TVItemTVItemLanguage);
+               appTaskExtraA.TVItemTVItemLanguage = val1;
+               Assert.AreEqual(val1, appTaskExtraA.TVItemTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               appTask_A.TVItem2TVItemLanguage = val2;
-               Assert.AreEqual(val2, appTask_A.TVItem2TVItemLanguage);
+               appTaskExtraA.TVItem2TVItemLanguage = val2;
+               Assert.AreEqual(val2, appTaskExtraA.TVItem2TVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               appTask_A.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, appTask_A.LastUpdateContactTVItemLanguage);
+               appTaskExtraA.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, appTaskExtraA.LastUpdateContactTVItemLanguage);
                string val4 = "Some text";
-               appTask_A.AppTaskCommandText = val4;
-               Assert.AreEqual(val4, appTask_A.AppTaskCommandText);
+               appTaskExtraA.AppTaskCommandText = val4;
+               Assert.AreEqual(val4, appTaskExtraA.AppTaskCommandText);
                string val5 = "Some text";
-               appTask_A.AppTaskStatusText = val5;
-               Assert.AreEqual(val5, appTask_A.AppTaskStatusText);
+               appTaskExtraA.AppTaskStatusText = val5;
+               Assert.AreEqual(val5, appTaskExtraA.AppTaskStatusText);
                string val6 = "Some text";
-               appTask_A.LanguageText = val6;
-               Assert.AreEqual(val6, appTask_A.LanguageText);
+               appTaskExtraA.LanguageText = val6;
+               Assert.AreEqual(val6, appTaskExtraA.LanguageText);
                int val7 = 45;
-               appTask_A.AppTaskID = val7;
-               Assert.AreEqual(val7, appTask_A.AppTaskID);
+               appTaskExtraA.AppTaskID = val7;
+               Assert.AreEqual(val7, appTaskExtraA.AppTaskID);
                int val8 = 45;
-               appTask_A.TVItemID = val8;
-               Assert.AreEqual(val8, appTask_A.TVItemID);
+               appTaskExtraA.TVItemID = val8;
+               Assert.AreEqual(val8, appTaskExtraA.TVItemID);
                int val9 = 45;
-               appTask_A.TVItemID2 = val9;
-               Assert.AreEqual(val9, appTask_A.TVItemID2);
+               appTaskExtraA.TVItemID2 = val9;
+               Assert.AreEqual(val9, appTaskExtraA.TVItemID2);
                AppTaskCommandEnum val10 = (AppTaskCommandEnum)3;
-               appTask_A.AppTaskCommand = val10;
-               Assert.AreEqual(val10, appTask_A.AppTaskCommand);
+               appTaskExtraA.AppTaskCommand = val10;
+               Assert.AreEqual(val10, appTaskExtraA.AppTaskCommand);
                AppTaskStatusEnum val11 = (AppTaskStatusEnum)3;
-               appTask_A.AppTaskStatus = val11;
-               Assert.AreEqual(val11, appTask_A.AppTaskStatus);
+               appTaskExtraA.AppTaskStatus = val11;
+               Assert.AreEqual(val11, appTaskExtraA.AppTaskStatus);
                int val12 = 45;
-               appTask_A.PercentCompleted = val12;
-               Assert.AreEqual(val12, appTask_A.PercentCompleted);
+               appTaskExtraA.PercentCompleted = val12;
+               Assert.AreEqual(val12, appTaskExtraA.PercentCompleted);
                string val13 = "Some text";
-               appTask_A.Parameters = val13;
-               Assert.AreEqual(val13, appTask_A.Parameters);
+               appTaskExtraA.Parameters = val13;
+               Assert.AreEqual(val13, appTaskExtraA.Parameters);
                LanguageEnum val14 = (LanguageEnum)3;
-               appTask_A.Language = val14;
-               Assert.AreEqual(val14, appTask_A.Language);
+               appTaskExtraA.Language = val14;
+               Assert.AreEqual(val14, appTaskExtraA.Language);
                DateTime val15 = new DateTime(2010, 3, 4);
-               appTask_A.StartDateTime_UTC = val15;
-               Assert.AreEqual(val15, appTask_A.StartDateTime_UTC);
+               appTaskExtraA.StartDateTime_UTC = val15;
+               Assert.AreEqual(val15, appTaskExtraA.StartDateTime_UTC);
                DateTime val16 = new DateTime(2010, 3, 4);
-               appTask_A.EndDateTime_UTC = val16;
-               Assert.AreEqual(val16, appTask_A.EndDateTime_UTC);
+               appTaskExtraA.EndDateTime_UTC = val16;
+               Assert.AreEqual(val16, appTaskExtraA.EndDateTime_UTC);
                int val17 = 45;
-               appTask_A.EstimatedLength_second = val17;
-               Assert.AreEqual(val17, appTask_A.EstimatedLength_second);
+               appTaskExtraA.EstimatedLength_second = val17;
+               Assert.AreEqual(val17, appTaskExtraA.EstimatedLength_second);
                int val18 = 45;
-               appTask_A.RemainingTime_second = val18;
-               Assert.AreEqual(val18, appTask_A.RemainingTime_second);
+               appTaskExtraA.RemainingTime_second = val18;
+               Assert.AreEqual(val18, appTaskExtraA.RemainingTime_second);
                DateTime val19 = new DateTime(2010, 3, 4);
-               appTask_A.LastUpdateDate_UTC = val19;
-               Assert.AreEqual(val19, appTask_A.LastUpdateDate_UTC);
+               appTaskExtraA.LastUpdateDate_UTC = val19;
+               Assert.AreEqual(val19, appTaskExtraA.LastUpdateDate_UTC);
                int val20 = 45;
-               appTask_A.LastUpdateContactTVItemID = val20;
-               Assert.AreEqual(val20, appTask_A.LastUpdateContactTVItemID);
+               appTaskExtraA.LastUpdateContactTVItemID = val20;
+               Assert.AreEqual(val20, appTaskExtraA.LastUpdateContactTVItemID);
                bool val21 = true;
-               appTask_A.HasErrors = val21;
-               Assert.AreEqual(val21, appTask_A.HasErrors);
+               appTaskExtraA.HasErrors = val21;
+               Assert.AreEqual(val21, appTaskExtraA.HasErrors);
                IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               appTask_A.ValidationResults = val66;
-               Assert.AreEqual(val66, appTask_A.ValidationResults);
+               appTaskExtraA.ValidationResults = val66;
+               Assert.AreEqual(val66, appTaskExtraA.ValidationResults);
         }
         [TestMethod]
-        public void AppTask_B_Every_Property_Has_Get_Set_Test()
+        public void AppTaskExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               appTask_B.AppTaskReportTest = val1;
-               Assert.AreEqual(val1, appTask_B.AppTaskReportTest);
+               appTaskExtraB.AppTaskReportTest = val1;
+               Assert.AreEqual(val1, appTaskExtraB.AppTaskReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               appTask_B.TVItemTVItemLanguage = val2;
-               Assert.AreEqual(val2, appTask_B.TVItemTVItemLanguage);
+               appTaskExtraB.TVItemTVItemLanguage = val2;
+               Assert.AreEqual(val2, appTaskExtraB.TVItemTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               appTask_B.TVItem2TVItemLanguage = val3;
-               Assert.AreEqual(val3, appTask_B.TVItem2TVItemLanguage);
+               appTaskExtraB.TVItem2TVItemLanguage = val3;
+               Assert.AreEqual(val3, appTaskExtraB.TVItem2TVItemLanguage);
                TVItemLanguage val4 = new TVItemLanguage();
-               appTask_B.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, appTask_B.LastUpdateContactTVItemLanguage);
+               appTaskExtraB.LastUpdateContactTVItemLanguage = val4;
+               Assert.AreEqual(val4, appTaskExtraB.LastUpdateContactTVItemLanguage);
                string val5 = "Some text";
-               appTask_B.AppTaskCommandText = val5;
-               Assert.AreEqual(val5, appTask_B.AppTaskCommandText);
+               appTaskExtraB.AppTaskCommandText = val5;
+               Assert.AreEqual(val5, appTaskExtraB.AppTaskCommandText);
                string val6 = "Some text";
-               appTask_B.AppTaskStatusText = val6;
-               Assert.AreEqual(val6, appTask_B.AppTaskStatusText);
+               appTaskExtraB.AppTaskStatusText = val6;
+               Assert.AreEqual(val6, appTaskExtraB.AppTaskStatusText);
                string val7 = "Some text";
-               appTask_B.LanguageText = val7;
-               Assert.AreEqual(val7, appTask_B.LanguageText);
+               appTaskExtraB.LanguageText = val7;
+               Assert.AreEqual(val7, appTaskExtraB.LanguageText);
                int val8 = 45;
-               appTask_B.AppTaskID = val8;
-               Assert.AreEqual(val8, appTask_B.AppTaskID);
+               appTaskExtraB.AppTaskID = val8;
+               Assert.AreEqual(val8, appTaskExtraB.AppTaskID);
                int val9 = 45;
-               appTask_B.TVItemID = val9;
-               Assert.AreEqual(val9, appTask_B.TVItemID);
+               appTaskExtraB.TVItemID = val9;
+               Assert.AreEqual(val9, appTaskExtraB.TVItemID);
                int val10 = 45;
-               appTask_B.TVItemID2 = val10;
-               Assert.AreEqual(val10, appTask_B.TVItemID2);
+               appTaskExtraB.TVItemID2 = val10;
+               Assert.AreEqual(val10, appTaskExtraB.TVItemID2);
                AppTaskCommandEnum val11 = (AppTaskCommandEnum)3;
-               appTask_B.AppTaskCommand = val11;
-               Assert.AreEqual(val11, appTask_B.AppTaskCommand);
+               appTaskExtraB.AppTaskCommand = val11;
+               Assert.AreEqual(val11, appTaskExtraB.AppTaskCommand);
                AppTaskStatusEnum val12 = (AppTaskStatusEnum)3;
-               appTask_B.AppTaskStatus = val12;
-               Assert.AreEqual(val12, appTask_B.AppTaskStatus);
+               appTaskExtraB.AppTaskStatus = val12;
+               Assert.AreEqual(val12, appTaskExtraB.AppTaskStatus);
                int val13 = 45;
-               appTask_B.PercentCompleted = val13;
-               Assert.AreEqual(val13, appTask_B.PercentCompleted);
+               appTaskExtraB.PercentCompleted = val13;
+               Assert.AreEqual(val13, appTaskExtraB.PercentCompleted);
                string val14 = "Some text";
-               appTask_B.Parameters = val14;
-               Assert.AreEqual(val14, appTask_B.Parameters);
+               appTaskExtraB.Parameters = val14;
+               Assert.AreEqual(val14, appTaskExtraB.Parameters);
                LanguageEnum val15 = (LanguageEnum)3;
-               appTask_B.Language = val15;
-               Assert.AreEqual(val15, appTask_B.Language);
+               appTaskExtraB.Language = val15;
+               Assert.AreEqual(val15, appTaskExtraB.Language);
                DateTime val16 = new DateTime(2010, 3, 4);
-               appTask_B.StartDateTime_UTC = val16;
-               Assert.AreEqual(val16, appTask_B.StartDateTime_UTC);
+               appTaskExtraB.StartDateTime_UTC = val16;
+               Assert.AreEqual(val16, appTaskExtraB.StartDateTime_UTC);
                DateTime val17 = new DateTime(2010, 3, 4);
-               appTask_B.EndDateTime_UTC = val17;
-               Assert.AreEqual(val17, appTask_B.EndDateTime_UTC);
+               appTaskExtraB.EndDateTime_UTC = val17;
+               Assert.AreEqual(val17, appTaskExtraB.EndDateTime_UTC);
                int val18 = 45;
-               appTask_B.EstimatedLength_second = val18;
-               Assert.AreEqual(val18, appTask_B.EstimatedLength_second);
+               appTaskExtraB.EstimatedLength_second = val18;
+               Assert.AreEqual(val18, appTaskExtraB.EstimatedLength_second);
                int val19 = 45;
-               appTask_B.RemainingTime_second = val19;
-               Assert.AreEqual(val19, appTask_B.RemainingTime_second);
+               appTaskExtraB.RemainingTime_second = val19;
+               Assert.AreEqual(val19, appTaskExtraB.RemainingTime_second);
                DateTime val20 = new DateTime(2010, 3, 4);
-               appTask_B.LastUpdateDate_UTC = val20;
-               Assert.AreEqual(val20, appTask_B.LastUpdateDate_UTC);
+               appTaskExtraB.LastUpdateDate_UTC = val20;
+               Assert.AreEqual(val20, appTaskExtraB.LastUpdateDate_UTC);
                int val21 = 45;
-               appTask_B.LastUpdateContactTVItemID = val21;
-               Assert.AreEqual(val21, appTask_B.LastUpdateContactTVItemID);
+               appTaskExtraB.LastUpdateContactTVItemID = val21;
+               Assert.AreEqual(val21, appTaskExtraB.LastUpdateContactTVItemID);
                bool val22 = true;
-               appTask_B.HasErrors = val22;
-               Assert.AreEqual(val22, appTask_B.HasErrors);
+               appTaskExtraB.HasErrors = val22;
+               Assert.AreEqual(val22, appTaskExtraB.HasErrors);
                IEnumerable<ValidationResult> val69 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               appTask_B.ValidationResults = val69;
-               Assert.AreEqual(val69, appTask_B.ValidationResults);
+               appTaskExtraB.ValidationResults = val69;
+               Assert.AreEqual(val69, appTaskExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

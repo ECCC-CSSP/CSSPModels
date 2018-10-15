@@ -47,7 +47,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportType_A : ReportType
+    public partial class ReportTypeExtraA : ReportType
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -59,13 +59,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ReportType_A() : base()
+        public ReportTypeExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class ReportType_B : ReportType_A
+    public partial class ReportTypeExtraB : ReportTypeExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -78,7 +78,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public ReportType_B() : base()
+        public ReportTypeExtraB() : base()
         {
         }
         #endregion Constructors

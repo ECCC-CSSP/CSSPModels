@@ -380,7 +380,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Contact_A : Contact
+    public partial class ContactExtraA : Contact
     {
         #region Properties
         /// <summary>
@@ -434,13 +434,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Contact_A() : base()
+        public ContactExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Contact_B : Contact_A
+    public partial class ContactExtraB : ContactExtraA
     {
         #region Properties
         /// <summary>
@@ -473,7 +473,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Contact_B() : base()
+        public ContactExtraB() : base()
         {
         }
         #endregion Constructors

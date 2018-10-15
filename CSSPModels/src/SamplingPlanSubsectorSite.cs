@@ -46,7 +46,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanSubsectorSite_A : SamplingPlanSubsectorSite
+    public partial class SamplingPlanSubsectorSiteExtraA : SamplingPlanSubsectorSite
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMSiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
@@ -64,13 +64,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public SamplingPlanSubsectorSite_A() : base()
+        public SamplingPlanSubsectorSiteExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class SamplingPlanSubsectorSite_B : SamplingPlanSubsectorSite_A
+    public partial class SamplingPlanSubsectorSiteExtraB : SamplingPlanSubsectorSiteExtraA
     {
         #region Properties
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
@@ -83,7 +83,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public SamplingPlanSubsectorSite_B() : base()
+        public SamplingPlanSubsectorSiteExtraB() : base()
         {
         }
         #endregion Constructors

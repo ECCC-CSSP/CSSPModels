@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private DocTemplate docTemplate { get; set; }
-        private DocTemplate_A docTemplate_A { get; set; }
-        private DocTemplate_B docTemplate_B { get; set; }
+        private DocTemplateExtraA docTemplateExtraA { get; set; }
+        private DocTemplateExtraB docTemplateExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public DocTemplateTest()
         {
             docTemplate = new DocTemplate();
-            docTemplate_A = new DocTemplate_A();
-            docTemplate_B = new DocTemplate_B();
+            docTemplateExtraA = new DocTemplateExtraA();
+            docTemplateExtraB = new DocTemplateExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void DocTemplate_A_Properties_Test()
+        public void DocTemplateExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LanguageText", "TVTypeText", "DocTemplateID", "Language", "TVType", "TVFileTVItemID", "FileName", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(DocTemplate_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(DocTemplateExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(DocTemplate_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(DocTemplateExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void DocTemplate_B_Properties_Test()
+        public void DocTemplateExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "DocTemplateReportTest", "LastUpdateContactTVItemLanguage", "LanguageText", "TVTypeText", "DocTemplateID", "Language", "TVType", "TVFileTVItemID", "FileName", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(DocTemplate_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(DocTemplateExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(DocTemplate_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(DocTemplateExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void DocTemplate_A_Navigation_Test()
+        public void DocTemplateExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(DocTemplate_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(DocTemplateExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(DocTemplate_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(DocTemplateExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void DocTemplate_B_Navigation_Test()
+        public void DocTemplateExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(DocTemplate_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(DocTemplateExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(DocTemplate_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(DocTemplateExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(DocTemplate).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void DocTemplate_A_Has_ValidationResults_Test()
+        public void DocTemplateExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(DocTemplate_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(DocTemplateExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void DocTemplate_B_Has_ValidationResults_Test()
+        public void DocTemplateExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(DocTemplate_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(DocTemplateExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void DocTemplate_Every_Property_Has_Get_Set_Test()
@@ -289,87 +289,87 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val27, docTemplate.ValidationResults);
         }
         [TestMethod]
-        public void DocTemplate_A_Every_Property_Has_Get_Set_Test()
+        public void DocTemplateExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               docTemplate_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, docTemplate_A.LastUpdateContactTVItemLanguage);
+               docTemplateExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, docTemplateExtraA.LastUpdateContactTVItemLanguage);
                string val2 = "Some text";
-               docTemplate_A.LanguageText = val2;
-               Assert.AreEqual(val2, docTemplate_A.LanguageText);
+               docTemplateExtraA.LanguageText = val2;
+               Assert.AreEqual(val2, docTemplateExtraA.LanguageText);
                string val3 = "Some text";
-               docTemplate_A.TVTypeText = val3;
-               Assert.AreEqual(val3, docTemplate_A.TVTypeText);
+               docTemplateExtraA.TVTypeText = val3;
+               Assert.AreEqual(val3, docTemplateExtraA.TVTypeText);
                int val4 = 45;
-               docTemplate_A.DocTemplateID = val4;
-               Assert.AreEqual(val4, docTemplate_A.DocTemplateID);
+               docTemplateExtraA.DocTemplateID = val4;
+               Assert.AreEqual(val4, docTemplateExtraA.DocTemplateID);
                LanguageEnum val5 = (LanguageEnum)3;
-               docTemplate_A.Language = val5;
-               Assert.AreEqual(val5, docTemplate_A.Language);
+               docTemplateExtraA.Language = val5;
+               Assert.AreEqual(val5, docTemplateExtraA.Language);
                TVTypeEnum val6 = (TVTypeEnum)3;
-               docTemplate_A.TVType = val6;
-               Assert.AreEqual(val6, docTemplate_A.TVType);
+               docTemplateExtraA.TVType = val6;
+               Assert.AreEqual(val6, docTemplateExtraA.TVType);
                int val7 = 45;
-               docTemplate_A.TVFileTVItemID = val7;
-               Assert.AreEqual(val7, docTemplate_A.TVFileTVItemID);
+               docTemplateExtraA.TVFileTVItemID = val7;
+               Assert.AreEqual(val7, docTemplateExtraA.TVFileTVItemID);
                string val8 = "Some text";
-               docTemplate_A.FileName = val8;
-               Assert.AreEqual(val8, docTemplate_A.FileName);
+               docTemplateExtraA.FileName = val8;
+               Assert.AreEqual(val8, docTemplateExtraA.FileName);
                DateTime val9 = new DateTime(2010, 3, 4);
-               docTemplate_A.LastUpdateDate_UTC = val9;
-               Assert.AreEqual(val9, docTemplate_A.LastUpdateDate_UTC);
+               docTemplateExtraA.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, docTemplateExtraA.LastUpdateDate_UTC);
                int val10 = 45;
-               docTemplate_A.LastUpdateContactTVItemID = val10;
-               Assert.AreEqual(val10, docTemplate_A.LastUpdateContactTVItemID);
+               docTemplateExtraA.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, docTemplateExtraA.LastUpdateContactTVItemID);
                bool val11 = true;
-               docTemplate_A.HasErrors = val11;
-               Assert.AreEqual(val11, docTemplate_A.HasErrors);
+               docTemplateExtraA.HasErrors = val11;
+               Assert.AreEqual(val11, docTemplateExtraA.HasErrors);
                IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               docTemplate_A.ValidationResults = val36;
-               Assert.AreEqual(val36, docTemplate_A.ValidationResults);
+               docTemplateExtraA.ValidationResults = val36;
+               Assert.AreEqual(val36, docTemplateExtraA.ValidationResults);
         }
         [TestMethod]
-        public void DocTemplate_B_Every_Property_Has_Get_Set_Test()
+        public void DocTemplateExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               docTemplate_B.DocTemplateReportTest = val1;
-               Assert.AreEqual(val1, docTemplate_B.DocTemplateReportTest);
+               docTemplateExtraB.DocTemplateReportTest = val1;
+               Assert.AreEqual(val1, docTemplateExtraB.DocTemplateReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               docTemplate_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, docTemplate_B.LastUpdateContactTVItemLanguage);
+               docTemplateExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, docTemplateExtraB.LastUpdateContactTVItemLanguage);
                string val3 = "Some text";
-               docTemplate_B.LanguageText = val3;
-               Assert.AreEqual(val3, docTemplate_B.LanguageText);
+               docTemplateExtraB.LanguageText = val3;
+               Assert.AreEqual(val3, docTemplateExtraB.LanguageText);
                string val4 = "Some text";
-               docTemplate_B.TVTypeText = val4;
-               Assert.AreEqual(val4, docTemplate_B.TVTypeText);
+               docTemplateExtraB.TVTypeText = val4;
+               Assert.AreEqual(val4, docTemplateExtraB.TVTypeText);
                int val5 = 45;
-               docTemplate_B.DocTemplateID = val5;
-               Assert.AreEqual(val5, docTemplate_B.DocTemplateID);
+               docTemplateExtraB.DocTemplateID = val5;
+               Assert.AreEqual(val5, docTemplateExtraB.DocTemplateID);
                LanguageEnum val6 = (LanguageEnum)3;
-               docTemplate_B.Language = val6;
-               Assert.AreEqual(val6, docTemplate_B.Language);
+               docTemplateExtraB.Language = val6;
+               Assert.AreEqual(val6, docTemplateExtraB.Language);
                TVTypeEnum val7 = (TVTypeEnum)3;
-               docTemplate_B.TVType = val7;
-               Assert.AreEqual(val7, docTemplate_B.TVType);
+               docTemplateExtraB.TVType = val7;
+               Assert.AreEqual(val7, docTemplateExtraB.TVType);
                int val8 = 45;
-               docTemplate_B.TVFileTVItemID = val8;
-               Assert.AreEqual(val8, docTemplate_B.TVFileTVItemID);
+               docTemplateExtraB.TVFileTVItemID = val8;
+               Assert.AreEqual(val8, docTemplateExtraB.TVFileTVItemID);
                string val9 = "Some text";
-               docTemplate_B.FileName = val9;
-               Assert.AreEqual(val9, docTemplate_B.FileName);
+               docTemplateExtraB.FileName = val9;
+               Assert.AreEqual(val9, docTemplateExtraB.FileName);
                DateTime val10 = new DateTime(2010, 3, 4);
-               docTemplate_B.LastUpdateDate_UTC = val10;
-               Assert.AreEqual(val10, docTemplate_B.LastUpdateDate_UTC);
+               docTemplateExtraB.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, docTemplateExtraB.LastUpdateDate_UTC);
                int val11 = 45;
-               docTemplate_B.LastUpdateContactTVItemID = val11;
-               Assert.AreEqual(val11, docTemplate_B.LastUpdateContactTVItemID);
+               docTemplateExtraB.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, docTemplateExtraB.LastUpdateContactTVItemID);
                bool val12 = true;
-               docTemplate_B.HasErrors = val12;
-               Assert.AreEqual(val12, docTemplate_B.HasErrors);
+               docTemplateExtraB.HasErrors = val12;
+               Assert.AreEqual(val12, docTemplateExtraB.HasErrors);
                IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               docTemplate_B.ValidationResults = val39;
-               Assert.AreEqual(val39, docTemplate_B.ValidationResults);
+               docTemplateExtraB.ValidationResults = val39;
+               Assert.AreEqual(val39, docTemplateExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

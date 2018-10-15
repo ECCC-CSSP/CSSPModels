@@ -158,7 +158,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelLanguage_A : BoxModelLanguage
+    public partial class BoxModelLanguageExtraA : BoxModelLanguage
     {
         #region Properties
         /// <summary>
@@ -243,13 +243,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public BoxModelLanguage_A() : base()
+        public BoxModelLanguageExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class BoxModelLanguage_B : BoxModelLanguage_A
+    public partial class BoxModelLanguageExtraB : BoxModelLanguageExtraA
     {
         #region Properties
         /// <summary>
@@ -282,7 +282,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public BoxModelLanguage_B() : base()
+        public BoxModelLanguageExtraB() : base()
         {
         }
         #endregion Constructors

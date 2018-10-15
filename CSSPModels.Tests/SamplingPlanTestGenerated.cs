@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private SamplingPlan samplingPlan { get; set; }
-        private SamplingPlan_A samplingPlan_A { get; set; }
-        private SamplingPlan_B samplingPlan_B { get; set; }
+        private SamplingPlanExtraA samplingPlanExtraA { get; set; }
+        private SamplingPlanExtraB samplingPlanExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public SamplingPlanTest()
         {
             samplingPlan = new SamplingPlan();
-            samplingPlan_A = new SamplingPlan_A();
-            samplingPlan_B = new SamplingPlan_B();
+            samplingPlanExtraA = new SamplingPlanExtraA();
+            samplingPlanExtraB = new SamplingPlanExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlan_A_Properties_Test()
+        public void SamplingPlanExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ProvinceTVItemLanguage", "CreatorTVItemLanguage", "SamplingPlanFileTVItemLanguage", "LastUpdateContactTVItemLanguage", "SampleTypeText", "SamplingPlanTypeText", "LabSheetTypeText", "SamplingPlanID", "IsActive", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "AnalyzeMethodDefault", "SampleMatrixDefault", "LaboratoryDefault", "BackupDirectory", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlan_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlan_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlan_B_Properties_Test()
+        public void SamplingPlanExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SamplingPlanReportTest", "ProvinceTVItemLanguage", "CreatorTVItemLanguage", "SamplingPlanFileTVItemLanguage", "LastUpdateContactTVItemLanguage", "SampleTypeText", "SamplingPlanTypeText", "LabSheetTypeText", "SamplingPlanID", "IsActive", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "AnalyzeMethodDefault", "SampleMatrixDefault", "LaboratoryDefault", "BackupDirectory", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlan_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlan_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlan_A_Navigation_Test()
+        public void SamplingPlanExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlan_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlan_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void SamplingPlan_B_Navigation_Test()
+        public void SamplingPlanExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlan_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(SamplingPlan_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(SamplingPlanExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(SamplingPlan).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void SamplingPlan_A_Has_ValidationResults_Test()
+        public void SamplingPlanExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(SamplingPlan_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(SamplingPlanExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void SamplingPlan_B_Has_ValidationResults_Test()
+        public void SamplingPlanExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(SamplingPlan_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(SamplingPlanExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void SamplingPlan_Every_Property_Has_Get_Set_Test()
@@ -334,201 +334,201 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val72, samplingPlan.ValidationResults);
         }
         [TestMethod]
-        public void SamplingPlan_A_Every_Property_Has_Get_Set_Test()
+        public void SamplingPlanExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               samplingPlan_A.ProvinceTVItemLanguage = val1;
-               Assert.AreEqual(val1, samplingPlan_A.ProvinceTVItemLanguage);
+               samplingPlanExtraA.ProvinceTVItemLanguage = val1;
+               Assert.AreEqual(val1, samplingPlanExtraA.ProvinceTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               samplingPlan_A.CreatorTVItemLanguage = val2;
-               Assert.AreEqual(val2, samplingPlan_A.CreatorTVItemLanguage);
+               samplingPlanExtraA.CreatorTVItemLanguage = val2;
+               Assert.AreEqual(val2, samplingPlanExtraA.CreatorTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               samplingPlan_A.SamplingPlanFileTVItemLanguage = val3;
-               Assert.AreEqual(val3, samplingPlan_A.SamplingPlanFileTVItemLanguage);
+               samplingPlanExtraA.SamplingPlanFileTVItemLanguage = val3;
+               Assert.AreEqual(val3, samplingPlanExtraA.SamplingPlanFileTVItemLanguage);
                TVItemLanguage val4 = new TVItemLanguage();
-               samplingPlan_A.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, samplingPlan_A.LastUpdateContactTVItemLanguage);
+               samplingPlanExtraA.LastUpdateContactTVItemLanguage = val4;
+               Assert.AreEqual(val4, samplingPlanExtraA.LastUpdateContactTVItemLanguage);
                string val5 = "Some text";
-               samplingPlan_A.SampleTypeText = val5;
-               Assert.AreEqual(val5, samplingPlan_A.SampleTypeText);
+               samplingPlanExtraA.SampleTypeText = val5;
+               Assert.AreEqual(val5, samplingPlanExtraA.SampleTypeText);
                string val6 = "Some text";
-               samplingPlan_A.SamplingPlanTypeText = val6;
-               Assert.AreEqual(val6, samplingPlan_A.SamplingPlanTypeText);
+               samplingPlanExtraA.SamplingPlanTypeText = val6;
+               Assert.AreEqual(val6, samplingPlanExtraA.SamplingPlanTypeText);
                string val7 = "Some text";
-               samplingPlan_A.LabSheetTypeText = val7;
-               Assert.AreEqual(val7, samplingPlan_A.LabSheetTypeText);
+               samplingPlanExtraA.LabSheetTypeText = val7;
+               Assert.AreEqual(val7, samplingPlanExtraA.LabSheetTypeText);
                int val8 = 45;
-               samplingPlan_A.SamplingPlanID = val8;
-               Assert.AreEqual(val8, samplingPlan_A.SamplingPlanID);
+               samplingPlanExtraA.SamplingPlanID = val8;
+               Assert.AreEqual(val8, samplingPlanExtraA.SamplingPlanID);
                bool val9 = true;
-               samplingPlan_A.IsActive = val9;
-               Assert.AreEqual(val9, samplingPlan_A.IsActive);
+               samplingPlanExtraA.IsActive = val9;
+               Assert.AreEqual(val9, samplingPlanExtraA.IsActive);
                string val10 = "Some text";
-               samplingPlan_A.SamplingPlanName = val10;
-               Assert.AreEqual(val10, samplingPlan_A.SamplingPlanName);
+               samplingPlanExtraA.SamplingPlanName = val10;
+               Assert.AreEqual(val10, samplingPlanExtraA.SamplingPlanName);
                string val11 = "Some text";
-               samplingPlan_A.ForGroupName = val11;
-               Assert.AreEqual(val11, samplingPlan_A.ForGroupName);
+               samplingPlanExtraA.ForGroupName = val11;
+               Assert.AreEqual(val11, samplingPlanExtraA.ForGroupName);
                SampleTypeEnum val12 = (SampleTypeEnum)3;
-               samplingPlan_A.SampleType = val12;
-               Assert.AreEqual(val12, samplingPlan_A.SampleType);
+               samplingPlanExtraA.SampleType = val12;
+               Assert.AreEqual(val12, samplingPlanExtraA.SampleType);
                SamplingPlanTypeEnum val13 = (SamplingPlanTypeEnum)3;
-               samplingPlan_A.SamplingPlanType = val13;
-               Assert.AreEqual(val13, samplingPlan_A.SamplingPlanType);
+               samplingPlanExtraA.SamplingPlanType = val13;
+               Assert.AreEqual(val13, samplingPlanExtraA.SamplingPlanType);
                LabSheetTypeEnum val14 = (LabSheetTypeEnum)3;
-               samplingPlan_A.LabSheetType = val14;
-               Assert.AreEqual(val14, samplingPlan_A.LabSheetType);
+               samplingPlanExtraA.LabSheetType = val14;
+               Assert.AreEqual(val14, samplingPlanExtraA.LabSheetType);
                int val15 = 45;
-               samplingPlan_A.ProvinceTVItemID = val15;
-               Assert.AreEqual(val15, samplingPlan_A.ProvinceTVItemID);
+               samplingPlanExtraA.ProvinceTVItemID = val15;
+               Assert.AreEqual(val15, samplingPlanExtraA.ProvinceTVItemID);
                int val16 = 45;
-               samplingPlan_A.CreatorTVItemID = val16;
-               Assert.AreEqual(val16, samplingPlan_A.CreatorTVItemID);
+               samplingPlanExtraA.CreatorTVItemID = val16;
+               Assert.AreEqual(val16, samplingPlanExtraA.CreatorTVItemID);
                int val17 = 45;
-               samplingPlan_A.Year = val17;
-               Assert.AreEqual(val17, samplingPlan_A.Year);
+               samplingPlanExtraA.Year = val17;
+               Assert.AreEqual(val17, samplingPlanExtraA.Year);
                string val18 = "Some text";
-               samplingPlan_A.AccessCode = val18;
-               Assert.AreEqual(val18, samplingPlan_A.AccessCode);
+               samplingPlanExtraA.AccessCode = val18;
+               Assert.AreEqual(val18, samplingPlanExtraA.AccessCode);
                double val19 = 87.9D;
-               samplingPlan_A.DailyDuplicatePrecisionCriteria = val19;
-               Assert.AreEqual(val19, samplingPlan_A.DailyDuplicatePrecisionCriteria);
+               samplingPlanExtraA.DailyDuplicatePrecisionCriteria = val19;
+               Assert.AreEqual(val19, samplingPlanExtraA.DailyDuplicatePrecisionCriteria);
                double val20 = 87.9D;
-               samplingPlan_A.IntertechDuplicatePrecisionCriteria = val20;
-               Assert.AreEqual(val20, samplingPlan_A.IntertechDuplicatePrecisionCriteria);
+               samplingPlanExtraA.IntertechDuplicatePrecisionCriteria = val20;
+               Assert.AreEqual(val20, samplingPlanExtraA.IntertechDuplicatePrecisionCriteria);
                bool val21 = true;
-               samplingPlan_A.IncludeLaboratoryQAQC = val21;
-               Assert.AreEqual(val21, samplingPlan_A.IncludeLaboratoryQAQC);
+               samplingPlanExtraA.IncludeLaboratoryQAQC = val21;
+               Assert.AreEqual(val21, samplingPlanExtraA.IncludeLaboratoryQAQC);
                string val22 = "Some text";
-               samplingPlan_A.ApprovalCode = val22;
-               Assert.AreEqual(val22, samplingPlan_A.ApprovalCode);
+               samplingPlanExtraA.ApprovalCode = val22;
+               Assert.AreEqual(val22, samplingPlanExtraA.ApprovalCode);
                int val23 = 45;
-               samplingPlan_A.SamplingPlanFileTVItemID = val23;
-               Assert.AreEqual(val23, samplingPlan_A.SamplingPlanFileTVItemID);
+               samplingPlanExtraA.SamplingPlanFileTVItemID = val23;
+               Assert.AreEqual(val23, samplingPlanExtraA.SamplingPlanFileTVItemID);
                AnalyzeMethodEnum val24 = (AnalyzeMethodEnum)3;
-               samplingPlan_A.AnalyzeMethodDefault = val24;
-               Assert.AreEqual(val24, samplingPlan_A.AnalyzeMethodDefault);
+               samplingPlanExtraA.AnalyzeMethodDefault = val24;
+               Assert.AreEqual(val24, samplingPlanExtraA.AnalyzeMethodDefault);
                SampleMatrixEnum val25 = (SampleMatrixEnum)3;
-               samplingPlan_A.SampleMatrixDefault = val25;
-               Assert.AreEqual(val25, samplingPlan_A.SampleMatrixDefault);
+               samplingPlanExtraA.SampleMatrixDefault = val25;
+               Assert.AreEqual(val25, samplingPlanExtraA.SampleMatrixDefault);
                LaboratoryEnum val26 = (LaboratoryEnum)3;
-               samplingPlan_A.LaboratoryDefault = val26;
-               Assert.AreEqual(val26, samplingPlan_A.LaboratoryDefault);
+               samplingPlanExtraA.LaboratoryDefault = val26;
+               Assert.AreEqual(val26, samplingPlanExtraA.LaboratoryDefault);
                string val27 = "Some text";
-               samplingPlan_A.BackupDirectory = val27;
-               Assert.AreEqual(val27, samplingPlan_A.BackupDirectory);
+               samplingPlanExtraA.BackupDirectory = val27;
+               Assert.AreEqual(val27, samplingPlanExtraA.BackupDirectory);
                DateTime val28 = new DateTime(2010, 3, 4);
-               samplingPlan_A.LastUpdateDate_UTC = val28;
-               Assert.AreEqual(val28, samplingPlan_A.LastUpdateDate_UTC);
+               samplingPlanExtraA.LastUpdateDate_UTC = val28;
+               Assert.AreEqual(val28, samplingPlanExtraA.LastUpdateDate_UTC);
                int val29 = 45;
-               samplingPlan_A.LastUpdateContactTVItemID = val29;
-               Assert.AreEqual(val29, samplingPlan_A.LastUpdateContactTVItemID);
+               samplingPlanExtraA.LastUpdateContactTVItemID = val29;
+               Assert.AreEqual(val29, samplingPlanExtraA.LastUpdateContactTVItemID);
                bool val30 = true;
-               samplingPlan_A.HasErrors = val30;
-               Assert.AreEqual(val30, samplingPlan_A.HasErrors);
+               samplingPlanExtraA.HasErrors = val30;
+               Assert.AreEqual(val30, samplingPlanExtraA.HasErrors);
                IEnumerable<ValidationResult> val93 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               samplingPlan_A.ValidationResults = val93;
-               Assert.AreEqual(val93, samplingPlan_A.ValidationResults);
+               samplingPlanExtraA.ValidationResults = val93;
+               Assert.AreEqual(val93, samplingPlanExtraA.ValidationResults);
         }
         [TestMethod]
-        public void SamplingPlan_B_Every_Property_Has_Get_Set_Test()
+        public void SamplingPlanExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               samplingPlan_B.SamplingPlanReportTest = val1;
-               Assert.AreEqual(val1, samplingPlan_B.SamplingPlanReportTest);
+               samplingPlanExtraB.SamplingPlanReportTest = val1;
+               Assert.AreEqual(val1, samplingPlanExtraB.SamplingPlanReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               samplingPlan_B.ProvinceTVItemLanguage = val2;
-               Assert.AreEqual(val2, samplingPlan_B.ProvinceTVItemLanguage);
+               samplingPlanExtraB.ProvinceTVItemLanguage = val2;
+               Assert.AreEqual(val2, samplingPlanExtraB.ProvinceTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               samplingPlan_B.CreatorTVItemLanguage = val3;
-               Assert.AreEqual(val3, samplingPlan_B.CreatorTVItemLanguage);
+               samplingPlanExtraB.CreatorTVItemLanguage = val3;
+               Assert.AreEqual(val3, samplingPlanExtraB.CreatorTVItemLanguage);
                TVItemLanguage val4 = new TVItemLanguage();
-               samplingPlan_B.SamplingPlanFileTVItemLanguage = val4;
-               Assert.AreEqual(val4, samplingPlan_B.SamplingPlanFileTVItemLanguage);
+               samplingPlanExtraB.SamplingPlanFileTVItemLanguage = val4;
+               Assert.AreEqual(val4, samplingPlanExtraB.SamplingPlanFileTVItemLanguage);
                TVItemLanguage val5 = new TVItemLanguage();
-               samplingPlan_B.LastUpdateContactTVItemLanguage = val5;
-               Assert.AreEqual(val5, samplingPlan_B.LastUpdateContactTVItemLanguage);
+               samplingPlanExtraB.LastUpdateContactTVItemLanguage = val5;
+               Assert.AreEqual(val5, samplingPlanExtraB.LastUpdateContactTVItemLanguage);
                string val6 = "Some text";
-               samplingPlan_B.SampleTypeText = val6;
-               Assert.AreEqual(val6, samplingPlan_B.SampleTypeText);
+               samplingPlanExtraB.SampleTypeText = val6;
+               Assert.AreEqual(val6, samplingPlanExtraB.SampleTypeText);
                string val7 = "Some text";
-               samplingPlan_B.SamplingPlanTypeText = val7;
-               Assert.AreEqual(val7, samplingPlan_B.SamplingPlanTypeText);
+               samplingPlanExtraB.SamplingPlanTypeText = val7;
+               Assert.AreEqual(val7, samplingPlanExtraB.SamplingPlanTypeText);
                string val8 = "Some text";
-               samplingPlan_B.LabSheetTypeText = val8;
-               Assert.AreEqual(val8, samplingPlan_B.LabSheetTypeText);
+               samplingPlanExtraB.LabSheetTypeText = val8;
+               Assert.AreEqual(val8, samplingPlanExtraB.LabSheetTypeText);
                int val9 = 45;
-               samplingPlan_B.SamplingPlanID = val9;
-               Assert.AreEqual(val9, samplingPlan_B.SamplingPlanID);
+               samplingPlanExtraB.SamplingPlanID = val9;
+               Assert.AreEqual(val9, samplingPlanExtraB.SamplingPlanID);
                bool val10 = true;
-               samplingPlan_B.IsActive = val10;
-               Assert.AreEqual(val10, samplingPlan_B.IsActive);
+               samplingPlanExtraB.IsActive = val10;
+               Assert.AreEqual(val10, samplingPlanExtraB.IsActive);
                string val11 = "Some text";
-               samplingPlan_B.SamplingPlanName = val11;
-               Assert.AreEqual(val11, samplingPlan_B.SamplingPlanName);
+               samplingPlanExtraB.SamplingPlanName = val11;
+               Assert.AreEqual(val11, samplingPlanExtraB.SamplingPlanName);
                string val12 = "Some text";
-               samplingPlan_B.ForGroupName = val12;
-               Assert.AreEqual(val12, samplingPlan_B.ForGroupName);
+               samplingPlanExtraB.ForGroupName = val12;
+               Assert.AreEqual(val12, samplingPlanExtraB.ForGroupName);
                SampleTypeEnum val13 = (SampleTypeEnum)3;
-               samplingPlan_B.SampleType = val13;
-               Assert.AreEqual(val13, samplingPlan_B.SampleType);
+               samplingPlanExtraB.SampleType = val13;
+               Assert.AreEqual(val13, samplingPlanExtraB.SampleType);
                SamplingPlanTypeEnum val14 = (SamplingPlanTypeEnum)3;
-               samplingPlan_B.SamplingPlanType = val14;
-               Assert.AreEqual(val14, samplingPlan_B.SamplingPlanType);
+               samplingPlanExtraB.SamplingPlanType = val14;
+               Assert.AreEqual(val14, samplingPlanExtraB.SamplingPlanType);
                LabSheetTypeEnum val15 = (LabSheetTypeEnum)3;
-               samplingPlan_B.LabSheetType = val15;
-               Assert.AreEqual(val15, samplingPlan_B.LabSheetType);
+               samplingPlanExtraB.LabSheetType = val15;
+               Assert.AreEqual(val15, samplingPlanExtraB.LabSheetType);
                int val16 = 45;
-               samplingPlan_B.ProvinceTVItemID = val16;
-               Assert.AreEqual(val16, samplingPlan_B.ProvinceTVItemID);
+               samplingPlanExtraB.ProvinceTVItemID = val16;
+               Assert.AreEqual(val16, samplingPlanExtraB.ProvinceTVItemID);
                int val17 = 45;
-               samplingPlan_B.CreatorTVItemID = val17;
-               Assert.AreEqual(val17, samplingPlan_B.CreatorTVItemID);
+               samplingPlanExtraB.CreatorTVItemID = val17;
+               Assert.AreEqual(val17, samplingPlanExtraB.CreatorTVItemID);
                int val18 = 45;
-               samplingPlan_B.Year = val18;
-               Assert.AreEqual(val18, samplingPlan_B.Year);
+               samplingPlanExtraB.Year = val18;
+               Assert.AreEqual(val18, samplingPlanExtraB.Year);
                string val19 = "Some text";
-               samplingPlan_B.AccessCode = val19;
-               Assert.AreEqual(val19, samplingPlan_B.AccessCode);
+               samplingPlanExtraB.AccessCode = val19;
+               Assert.AreEqual(val19, samplingPlanExtraB.AccessCode);
                double val20 = 87.9D;
-               samplingPlan_B.DailyDuplicatePrecisionCriteria = val20;
-               Assert.AreEqual(val20, samplingPlan_B.DailyDuplicatePrecisionCriteria);
+               samplingPlanExtraB.DailyDuplicatePrecisionCriteria = val20;
+               Assert.AreEqual(val20, samplingPlanExtraB.DailyDuplicatePrecisionCriteria);
                double val21 = 87.9D;
-               samplingPlan_B.IntertechDuplicatePrecisionCriteria = val21;
-               Assert.AreEqual(val21, samplingPlan_B.IntertechDuplicatePrecisionCriteria);
+               samplingPlanExtraB.IntertechDuplicatePrecisionCriteria = val21;
+               Assert.AreEqual(val21, samplingPlanExtraB.IntertechDuplicatePrecisionCriteria);
                bool val22 = true;
-               samplingPlan_B.IncludeLaboratoryQAQC = val22;
-               Assert.AreEqual(val22, samplingPlan_B.IncludeLaboratoryQAQC);
+               samplingPlanExtraB.IncludeLaboratoryQAQC = val22;
+               Assert.AreEqual(val22, samplingPlanExtraB.IncludeLaboratoryQAQC);
                string val23 = "Some text";
-               samplingPlan_B.ApprovalCode = val23;
-               Assert.AreEqual(val23, samplingPlan_B.ApprovalCode);
+               samplingPlanExtraB.ApprovalCode = val23;
+               Assert.AreEqual(val23, samplingPlanExtraB.ApprovalCode);
                int val24 = 45;
-               samplingPlan_B.SamplingPlanFileTVItemID = val24;
-               Assert.AreEqual(val24, samplingPlan_B.SamplingPlanFileTVItemID);
+               samplingPlanExtraB.SamplingPlanFileTVItemID = val24;
+               Assert.AreEqual(val24, samplingPlanExtraB.SamplingPlanFileTVItemID);
                AnalyzeMethodEnum val25 = (AnalyzeMethodEnum)3;
-               samplingPlan_B.AnalyzeMethodDefault = val25;
-               Assert.AreEqual(val25, samplingPlan_B.AnalyzeMethodDefault);
+               samplingPlanExtraB.AnalyzeMethodDefault = val25;
+               Assert.AreEqual(val25, samplingPlanExtraB.AnalyzeMethodDefault);
                SampleMatrixEnum val26 = (SampleMatrixEnum)3;
-               samplingPlan_B.SampleMatrixDefault = val26;
-               Assert.AreEqual(val26, samplingPlan_B.SampleMatrixDefault);
+               samplingPlanExtraB.SampleMatrixDefault = val26;
+               Assert.AreEqual(val26, samplingPlanExtraB.SampleMatrixDefault);
                LaboratoryEnum val27 = (LaboratoryEnum)3;
-               samplingPlan_B.LaboratoryDefault = val27;
-               Assert.AreEqual(val27, samplingPlan_B.LaboratoryDefault);
+               samplingPlanExtraB.LaboratoryDefault = val27;
+               Assert.AreEqual(val27, samplingPlanExtraB.LaboratoryDefault);
                string val28 = "Some text";
-               samplingPlan_B.BackupDirectory = val28;
-               Assert.AreEqual(val28, samplingPlan_B.BackupDirectory);
+               samplingPlanExtraB.BackupDirectory = val28;
+               Assert.AreEqual(val28, samplingPlanExtraB.BackupDirectory);
                DateTime val29 = new DateTime(2010, 3, 4);
-               samplingPlan_B.LastUpdateDate_UTC = val29;
-               Assert.AreEqual(val29, samplingPlan_B.LastUpdateDate_UTC);
+               samplingPlanExtraB.LastUpdateDate_UTC = val29;
+               Assert.AreEqual(val29, samplingPlanExtraB.LastUpdateDate_UTC);
                int val30 = 45;
-               samplingPlan_B.LastUpdateContactTVItemID = val30;
-               Assert.AreEqual(val30, samplingPlan_B.LastUpdateContactTVItemID);
+               samplingPlanExtraB.LastUpdateContactTVItemID = val30;
+               Assert.AreEqual(val30, samplingPlanExtraB.LastUpdateContactTVItemID);
                bool val31 = true;
-               samplingPlan_B.HasErrors = val31;
-               Assert.AreEqual(val31, samplingPlan_B.HasErrors);
+               samplingPlanExtraB.HasErrors = val31;
+               Assert.AreEqual(val31, samplingPlanExtraB.HasErrors);
                IEnumerable<ValidationResult> val96 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               samplingPlan_B.ValidationResults = val96;
-               Assert.AreEqual(val96, samplingPlan_B.ValidationResults);
+               samplingPlanExtraB.ValidationResults = val96;
+               Assert.AreEqual(val96, samplingPlanExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

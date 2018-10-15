@@ -323,7 +323,7 @@ namespace CSSPModels
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Address_A : Address
+    public partial class AddressExtraA : Address
     {
         #region Properties
         /// <summary>
@@ -508,13 +508,13 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Address_A() : base()
+        public AddressExtraA() : base()
         {
         }
         #endregion Constructors
     }
     [NotMapped]
-    public partial class Address_B : Address_A
+    public partial class AddressExtraB : AddressExtraA
     {
         #region Properties
         /// <summary>
@@ -547,7 +547,7 @@ namespace CSSPModels
         #endregion Properties
 
         #region Constructors
-        public Address_B() : base()
+        public AddressExtraB() : base()
         {
         }
         #endregion Constructors

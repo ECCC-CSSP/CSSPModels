@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private ResetPassword resetPassword { get; set; }
-        private ResetPassword_A resetPassword_A { get; set; }
-        private ResetPassword_B resetPassword_B { get; set; }
+        private ResetPasswordExtraA resetPasswordExtraA { get; set; }
+        private ResetPasswordExtraB resetPasswordExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public ResetPasswordTest()
         {
             resetPassword = new ResetPassword();
-            resetPassword_A = new ResetPassword_A();
-            resetPassword_B = new ResetPassword_B();
+            resetPasswordExtraA = new ResetPasswordExtraA();
+            resetPasswordExtraB = new ResetPasswordExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ResetPassword_A_Properties_Test()
+        public void ResetPasswordExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "ResetPasswordID", "Email", "ExpireDate_Local", "Code", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ResetPassword_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(ResetPasswordExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ResetPassword_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ResetPasswordExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ResetPassword_B_Properties_Test()
+        public void ResetPasswordExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "ResetPasswordReportTest", "LastUpdateContactTVItemLanguage", "ResetPasswordID", "Email", "ExpireDate_Local", "Code", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ResetPassword_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(ResetPasswordExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ResetPassword_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ResetPasswordExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ResetPassword_A_Navigation_Test()
+        public void ResetPasswordExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ResetPassword_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(ResetPasswordExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ResetPassword_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ResetPasswordExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void ResetPassword_B_Navigation_Test()
+        public void ResetPasswordExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ResetPassword_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(ResetPasswordExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(ResetPassword_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(ResetPasswordExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(ResetPassword).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ResetPassword_A_Has_ValidationResults_Test()
+        public void ResetPasswordExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(ResetPassword_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(ResetPasswordExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void ResetPassword_B_Has_ValidationResults_Test()
+        public void ResetPasswordExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(ResetPassword_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(ResetPasswordExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void ResetPassword_Every_Property_Has_Get_Set_Test()
@@ -286,69 +286,69 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val24, resetPassword.ValidationResults);
         }
         [TestMethod]
-        public void ResetPassword_A_Every_Property_Has_Get_Set_Test()
+        public void ResetPasswordExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               resetPassword_A.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, resetPassword_A.LastUpdateContactTVItemLanguage);
+               resetPasswordExtraA.LastUpdateContactTVItemLanguage = val1;
+               Assert.AreEqual(val1, resetPasswordExtraA.LastUpdateContactTVItemLanguage);
                int val2 = 45;
-               resetPassword_A.ResetPasswordID = val2;
-               Assert.AreEqual(val2, resetPassword_A.ResetPasswordID);
+               resetPasswordExtraA.ResetPasswordID = val2;
+               Assert.AreEqual(val2, resetPasswordExtraA.ResetPasswordID);
                string val3 = "Some text";
-               resetPassword_A.Email = val3;
-               Assert.AreEqual(val3, resetPassword_A.Email);
+               resetPasswordExtraA.Email = val3;
+               Assert.AreEqual(val3, resetPasswordExtraA.Email);
                DateTime val4 = new DateTime(2010, 3, 4);
-               resetPassword_A.ExpireDate_Local = val4;
-               Assert.AreEqual(val4, resetPassword_A.ExpireDate_Local);
+               resetPasswordExtraA.ExpireDate_Local = val4;
+               Assert.AreEqual(val4, resetPasswordExtraA.ExpireDate_Local);
                string val5 = "Some text";
-               resetPassword_A.Code = val5;
-               Assert.AreEqual(val5, resetPassword_A.Code);
+               resetPasswordExtraA.Code = val5;
+               Assert.AreEqual(val5, resetPasswordExtraA.Code);
                DateTime val6 = new DateTime(2010, 3, 4);
-               resetPassword_A.LastUpdateDate_UTC = val6;
-               Assert.AreEqual(val6, resetPassword_A.LastUpdateDate_UTC);
+               resetPasswordExtraA.LastUpdateDate_UTC = val6;
+               Assert.AreEqual(val6, resetPasswordExtraA.LastUpdateDate_UTC);
                int val7 = 45;
-               resetPassword_A.LastUpdateContactTVItemID = val7;
-               Assert.AreEqual(val7, resetPassword_A.LastUpdateContactTVItemID);
+               resetPasswordExtraA.LastUpdateContactTVItemID = val7;
+               Assert.AreEqual(val7, resetPasswordExtraA.LastUpdateContactTVItemID);
                bool val8 = true;
-               resetPassword_A.HasErrors = val8;
-               Assert.AreEqual(val8, resetPassword_A.HasErrors);
+               resetPasswordExtraA.HasErrors = val8;
+               Assert.AreEqual(val8, resetPasswordExtraA.HasErrors);
                IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               resetPassword_A.ValidationResults = val27;
-               Assert.AreEqual(val27, resetPassword_A.ValidationResults);
+               resetPasswordExtraA.ValidationResults = val27;
+               Assert.AreEqual(val27, resetPasswordExtraA.ValidationResults);
         }
         [TestMethod]
-        public void ResetPassword_B_Every_Property_Has_Get_Set_Test()
+        public void ResetPasswordExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               resetPassword_B.ResetPasswordReportTest = val1;
-               Assert.AreEqual(val1, resetPassword_B.ResetPasswordReportTest);
+               resetPasswordExtraB.ResetPasswordReportTest = val1;
+               Assert.AreEqual(val1, resetPasswordExtraB.ResetPasswordReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               resetPassword_B.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, resetPassword_B.LastUpdateContactTVItemLanguage);
+               resetPasswordExtraB.LastUpdateContactTVItemLanguage = val2;
+               Assert.AreEqual(val2, resetPasswordExtraB.LastUpdateContactTVItemLanguage);
                int val3 = 45;
-               resetPassword_B.ResetPasswordID = val3;
-               Assert.AreEqual(val3, resetPassword_B.ResetPasswordID);
+               resetPasswordExtraB.ResetPasswordID = val3;
+               Assert.AreEqual(val3, resetPasswordExtraB.ResetPasswordID);
                string val4 = "Some text";
-               resetPassword_B.Email = val4;
-               Assert.AreEqual(val4, resetPassword_B.Email);
+               resetPasswordExtraB.Email = val4;
+               Assert.AreEqual(val4, resetPasswordExtraB.Email);
                DateTime val5 = new DateTime(2010, 3, 4);
-               resetPassword_B.ExpireDate_Local = val5;
-               Assert.AreEqual(val5, resetPassword_B.ExpireDate_Local);
+               resetPasswordExtraB.ExpireDate_Local = val5;
+               Assert.AreEqual(val5, resetPasswordExtraB.ExpireDate_Local);
                string val6 = "Some text";
-               resetPassword_B.Code = val6;
-               Assert.AreEqual(val6, resetPassword_B.Code);
+               resetPasswordExtraB.Code = val6;
+               Assert.AreEqual(val6, resetPasswordExtraB.Code);
                DateTime val7 = new DateTime(2010, 3, 4);
-               resetPassword_B.LastUpdateDate_UTC = val7;
-               Assert.AreEqual(val7, resetPassword_B.LastUpdateDate_UTC);
+               resetPasswordExtraB.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, resetPasswordExtraB.LastUpdateDate_UTC);
                int val8 = 45;
-               resetPassword_B.LastUpdateContactTVItemID = val8;
-               Assert.AreEqual(val8, resetPassword_B.LastUpdateContactTVItemID);
+               resetPasswordExtraB.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, resetPasswordExtraB.LastUpdateContactTVItemID);
                bool val9 = true;
-               resetPassword_B.HasErrors = val9;
-               Assert.AreEqual(val9, resetPassword_B.HasErrors);
+               resetPasswordExtraB.HasErrors = val9;
+               Assert.AreEqual(val9, resetPasswordExtraB.HasErrors);
                IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               resetPassword_B.ValidationResults = val30;
-               Assert.AreEqual(val30, resetPassword_B.ValidationResults);
+               resetPasswordExtraB.ValidationResults = val30;
+               Assert.AreEqual(val30, resetPasswordExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

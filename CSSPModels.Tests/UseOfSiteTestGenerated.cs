@@ -27,16 +27,16 @@ namespace CSSPModels.Tests
 
         #region Properties
         private UseOfSite useOfSite { get; set; }
-        private UseOfSite_A useOfSite_A { get; set; }
-        private UseOfSite_B useOfSite_B { get; set; }
+        private UseOfSiteExtraA useOfSiteExtraA { get; set; }
+        private UseOfSiteExtraB useOfSiteExtraB { get; set; }
         #endregion Properties
 
         #region Constructors
         public UseOfSiteTest()
         {
             useOfSite = new UseOfSite();
-            useOfSite_A = new UseOfSite_A();
-            useOfSite_B = new UseOfSite_B();
+            useOfSiteExtraA = new UseOfSiteExtraA();
+            useOfSiteExtraB = new UseOfSiteExtraB();
         }
         #endregion Constructors
 
@@ -78,13 +78,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void UseOfSite_A_Properties_Test()
+        public void UseOfSiteExtraA_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "SiteTVItemLanguage", "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "SiteTypeText", "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "SiteType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(UseOfSite_A).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(UseOfSiteExtraA).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -98,7 +98,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(UseOfSite_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(UseOfSiteExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -114,13 +114,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void UseOfSite_B_Properties_Test()
+        public void UseOfSiteExtraB_Properties_Test()
         {
             List<string> propNameList = new List<string>() { "UseOfSiteReportTest", "SiteTVItemLanguage", "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "SiteTypeText", "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "SiteType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(UseOfSite_B).GetProperties().OrderBy(c => c.Name))
+            foreach (PropertyInfo propertyInfo in typeof(UseOfSiteExtraB).GetProperties().OrderBy(c => c.Name))
             {
                 if (!propertyInfo.GetGetMethod().IsVirtual
                     && propertyInfo.Name != "ValidationResults"
@@ -134,7 +134,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(propNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(UseOfSite_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(UseOfSiteExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 foreach (CustomAttributeData customAttributeData in propertyInfo.CustomAttributes)
                 {
@@ -181,13 +181,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void UseOfSite_A_Navigation_Test()
+        public void UseOfSiteExtraA_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(UseOfSite_A).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(UseOfSiteExtraA).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -199,7 +199,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(UseOfSite_A).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(UseOfSiteExtraA).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -212,13 +212,13 @@ namespace CSSPModels.Tests
 
         }
         [TestMethod]
-        public void UseOfSite_B_Navigation_Test()
+        public void UseOfSiteExtraB_Navigation_Test()
         {
             List<string> foreignNameList = new List<string>() {  }.OrderBy(c => c).ToList();
             List<string> foreignNameCollectionList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(UseOfSite_B).GetProperties())
+            foreach (PropertyInfo propertyInfo in typeof(UseOfSiteExtraB).GetProperties())
             {
                 if (propertyInfo.GetGetMethod().IsVirtual && !propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -230,7 +230,7 @@ namespace CSSPModels.Tests
             Assert.AreEqual(foreignNameList.Count, index);
 
             index = 0;
-            foreach (PropertyInfo propertyInfo in typeof(UseOfSite_B).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
+            foreach (PropertyInfo propertyInfo in typeof(UseOfSiteExtraB).GetProperties().Where(c => c.Name != "ValidationResults").OrderBy(c => c.Name).ToList())
             {
                 if (propertyInfo.GetGetMethod().ReturnType.Name.StartsWith("ICollection"))
                 {
@@ -248,14 +248,14 @@ namespace CSSPModels.Tests
              Assert.IsTrue(typeof(UseOfSite).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void UseOfSite_A_Has_ValidationResults_Test()
+        public void UseOfSiteExtraA_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(UseOfSite_A).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(UseOfSiteExtraA).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
-        public void UseOfSite_B_Has_ValidationResults_Test()
+        public void UseOfSiteExtraB_Has_ValidationResults_Test()
         {
-             Assert.IsTrue(typeof(UseOfSite_B).GetProperties().Where(c => c.Name == "ValidationResults").Any());
+             Assert.IsTrue(typeof(UseOfSiteExtraB).GetProperties().Where(c => c.Name == "ValidationResults").Any());
         }
         [TestMethod]
         public void UseOfSite_Every_Property_Has_Get_Set_Test()
@@ -316,147 +316,147 @@ namespace CSSPModels.Tests
                Assert.AreEqual(val54, useOfSite.ValidationResults);
         }
         [TestMethod]
-        public void UseOfSite_A_Every_Property_Has_Get_Set_Test()
+        public void UseOfSiteExtraA_Every_Property_Has_Get_Set_Test()
         {
                TVItemLanguage val1 = new TVItemLanguage();
-               useOfSite_A.SiteTVItemLanguage = val1;
-               Assert.AreEqual(val1, useOfSite_A.SiteTVItemLanguage);
+               useOfSiteExtraA.SiteTVItemLanguage = val1;
+               Assert.AreEqual(val1, useOfSiteExtraA.SiteTVItemLanguage);
                TVItemLanguage val2 = new TVItemLanguage();
-               useOfSite_A.SubsectorTVItemLanguage = val2;
-               Assert.AreEqual(val2, useOfSite_A.SubsectorTVItemLanguage);
+               useOfSiteExtraA.SubsectorTVItemLanguage = val2;
+               Assert.AreEqual(val2, useOfSiteExtraA.SubsectorTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               useOfSite_A.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, useOfSite_A.LastUpdateContactTVItemLanguage);
+               useOfSiteExtraA.LastUpdateContactTVItemLanguage = val3;
+               Assert.AreEqual(val3, useOfSiteExtraA.LastUpdateContactTVItemLanguage);
                string val4 = "Some text";
-               useOfSite_A.SiteTypeText = val4;
-               Assert.AreEqual(val4, useOfSite_A.SiteTypeText);
+               useOfSiteExtraA.SiteTypeText = val4;
+               Assert.AreEqual(val4, useOfSiteExtraA.SiteTypeText);
                int val5 = 45;
-               useOfSite_A.UseOfSiteID = val5;
-               Assert.AreEqual(val5, useOfSite_A.UseOfSiteID);
+               useOfSiteExtraA.UseOfSiteID = val5;
+               Assert.AreEqual(val5, useOfSiteExtraA.UseOfSiteID);
                int val6 = 45;
-               useOfSite_A.SiteTVItemID = val6;
-               Assert.AreEqual(val6, useOfSite_A.SiteTVItemID);
+               useOfSiteExtraA.SiteTVItemID = val6;
+               Assert.AreEqual(val6, useOfSiteExtraA.SiteTVItemID);
                int val7 = 45;
-               useOfSite_A.SubsectorTVItemID = val7;
-               Assert.AreEqual(val7, useOfSite_A.SubsectorTVItemID);
+               useOfSiteExtraA.SubsectorTVItemID = val7;
+               Assert.AreEqual(val7, useOfSiteExtraA.SubsectorTVItemID);
                SiteTypeEnum val8 = (SiteTypeEnum)3;
-               useOfSite_A.SiteType = val8;
-               Assert.AreEqual(val8, useOfSite_A.SiteType);
+               useOfSiteExtraA.SiteType = val8;
+               Assert.AreEqual(val8, useOfSiteExtraA.SiteType);
                int val9 = 45;
-               useOfSite_A.Ordinal = val9;
-               Assert.AreEqual(val9, useOfSite_A.Ordinal);
+               useOfSiteExtraA.Ordinal = val9;
+               Assert.AreEqual(val9, useOfSiteExtraA.Ordinal);
                int val10 = 45;
-               useOfSite_A.StartYear = val10;
-               Assert.AreEqual(val10, useOfSite_A.StartYear);
+               useOfSiteExtraA.StartYear = val10;
+               Assert.AreEqual(val10, useOfSiteExtraA.StartYear);
                int val11 = 45;
-               useOfSite_A.EndYear = val11;
-               Assert.AreEqual(val11, useOfSite_A.EndYear);
+               useOfSiteExtraA.EndYear = val11;
+               Assert.AreEqual(val11, useOfSiteExtraA.EndYear);
                bool val12 = true;
-               useOfSite_A.UseWeight = val12;
-               Assert.AreEqual(val12, useOfSite_A.UseWeight);
+               useOfSiteExtraA.UseWeight = val12;
+               Assert.AreEqual(val12, useOfSiteExtraA.UseWeight);
                double val13 = 87.9D;
-               useOfSite_A.Weight_perc = val13;
-               Assert.AreEqual(val13, useOfSite_A.Weight_perc);
+               useOfSiteExtraA.Weight_perc = val13;
+               Assert.AreEqual(val13, useOfSiteExtraA.Weight_perc);
                bool val14 = true;
-               useOfSite_A.UseEquation = val14;
-               Assert.AreEqual(val14, useOfSite_A.UseEquation);
+               useOfSiteExtraA.UseEquation = val14;
+               Assert.AreEqual(val14, useOfSiteExtraA.UseEquation);
                double val15 = 87.9D;
-               useOfSite_A.Param1 = val15;
-               Assert.AreEqual(val15, useOfSite_A.Param1);
+               useOfSiteExtraA.Param1 = val15;
+               Assert.AreEqual(val15, useOfSiteExtraA.Param1);
                double val16 = 87.9D;
-               useOfSite_A.Param2 = val16;
-               Assert.AreEqual(val16, useOfSite_A.Param2);
+               useOfSiteExtraA.Param2 = val16;
+               Assert.AreEqual(val16, useOfSiteExtraA.Param2);
                double val17 = 87.9D;
-               useOfSite_A.Param3 = val17;
-               Assert.AreEqual(val17, useOfSite_A.Param3);
+               useOfSiteExtraA.Param3 = val17;
+               Assert.AreEqual(val17, useOfSiteExtraA.Param3);
                double val18 = 87.9D;
-               useOfSite_A.Param4 = val18;
-               Assert.AreEqual(val18, useOfSite_A.Param4);
+               useOfSiteExtraA.Param4 = val18;
+               Assert.AreEqual(val18, useOfSiteExtraA.Param4);
                DateTime val19 = new DateTime(2010, 3, 4);
-               useOfSite_A.LastUpdateDate_UTC = val19;
-               Assert.AreEqual(val19, useOfSite_A.LastUpdateDate_UTC);
+               useOfSiteExtraA.LastUpdateDate_UTC = val19;
+               Assert.AreEqual(val19, useOfSiteExtraA.LastUpdateDate_UTC);
                int val20 = 45;
-               useOfSite_A.LastUpdateContactTVItemID = val20;
-               Assert.AreEqual(val20, useOfSite_A.LastUpdateContactTVItemID);
+               useOfSiteExtraA.LastUpdateContactTVItemID = val20;
+               Assert.AreEqual(val20, useOfSiteExtraA.LastUpdateContactTVItemID);
                bool val21 = true;
-               useOfSite_A.HasErrors = val21;
-               Assert.AreEqual(val21, useOfSite_A.HasErrors);
+               useOfSiteExtraA.HasErrors = val21;
+               Assert.AreEqual(val21, useOfSiteExtraA.HasErrors);
                IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               useOfSite_A.ValidationResults = val66;
-               Assert.AreEqual(val66, useOfSite_A.ValidationResults);
+               useOfSiteExtraA.ValidationResults = val66;
+               Assert.AreEqual(val66, useOfSiteExtraA.ValidationResults);
         }
         [TestMethod]
-        public void UseOfSite_B_Every_Property_Has_Get_Set_Test()
+        public void UseOfSiteExtraB_Every_Property_Has_Get_Set_Test()
         {
                string val1 = "Some text";
-               useOfSite_B.UseOfSiteReportTest = val1;
-               Assert.AreEqual(val1, useOfSite_B.UseOfSiteReportTest);
+               useOfSiteExtraB.UseOfSiteReportTest = val1;
+               Assert.AreEqual(val1, useOfSiteExtraB.UseOfSiteReportTest);
                TVItemLanguage val2 = new TVItemLanguage();
-               useOfSite_B.SiteTVItemLanguage = val2;
-               Assert.AreEqual(val2, useOfSite_B.SiteTVItemLanguage);
+               useOfSiteExtraB.SiteTVItemLanguage = val2;
+               Assert.AreEqual(val2, useOfSiteExtraB.SiteTVItemLanguage);
                TVItemLanguage val3 = new TVItemLanguage();
-               useOfSite_B.SubsectorTVItemLanguage = val3;
-               Assert.AreEqual(val3, useOfSite_B.SubsectorTVItemLanguage);
+               useOfSiteExtraB.SubsectorTVItemLanguage = val3;
+               Assert.AreEqual(val3, useOfSiteExtraB.SubsectorTVItemLanguage);
                TVItemLanguage val4 = new TVItemLanguage();
-               useOfSite_B.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, useOfSite_B.LastUpdateContactTVItemLanguage);
+               useOfSiteExtraB.LastUpdateContactTVItemLanguage = val4;
+               Assert.AreEqual(val4, useOfSiteExtraB.LastUpdateContactTVItemLanguage);
                string val5 = "Some text";
-               useOfSite_B.SiteTypeText = val5;
-               Assert.AreEqual(val5, useOfSite_B.SiteTypeText);
+               useOfSiteExtraB.SiteTypeText = val5;
+               Assert.AreEqual(val5, useOfSiteExtraB.SiteTypeText);
                int val6 = 45;
-               useOfSite_B.UseOfSiteID = val6;
-               Assert.AreEqual(val6, useOfSite_B.UseOfSiteID);
+               useOfSiteExtraB.UseOfSiteID = val6;
+               Assert.AreEqual(val6, useOfSiteExtraB.UseOfSiteID);
                int val7 = 45;
-               useOfSite_B.SiteTVItemID = val7;
-               Assert.AreEqual(val7, useOfSite_B.SiteTVItemID);
+               useOfSiteExtraB.SiteTVItemID = val7;
+               Assert.AreEqual(val7, useOfSiteExtraB.SiteTVItemID);
                int val8 = 45;
-               useOfSite_B.SubsectorTVItemID = val8;
-               Assert.AreEqual(val8, useOfSite_B.SubsectorTVItemID);
+               useOfSiteExtraB.SubsectorTVItemID = val8;
+               Assert.AreEqual(val8, useOfSiteExtraB.SubsectorTVItemID);
                SiteTypeEnum val9 = (SiteTypeEnum)3;
-               useOfSite_B.SiteType = val9;
-               Assert.AreEqual(val9, useOfSite_B.SiteType);
+               useOfSiteExtraB.SiteType = val9;
+               Assert.AreEqual(val9, useOfSiteExtraB.SiteType);
                int val10 = 45;
-               useOfSite_B.Ordinal = val10;
-               Assert.AreEqual(val10, useOfSite_B.Ordinal);
+               useOfSiteExtraB.Ordinal = val10;
+               Assert.AreEqual(val10, useOfSiteExtraB.Ordinal);
                int val11 = 45;
-               useOfSite_B.StartYear = val11;
-               Assert.AreEqual(val11, useOfSite_B.StartYear);
+               useOfSiteExtraB.StartYear = val11;
+               Assert.AreEqual(val11, useOfSiteExtraB.StartYear);
                int val12 = 45;
-               useOfSite_B.EndYear = val12;
-               Assert.AreEqual(val12, useOfSite_B.EndYear);
+               useOfSiteExtraB.EndYear = val12;
+               Assert.AreEqual(val12, useOfSiteExtraB.EndYear);
                bool val13 = true;
-               useOfSite_B.UseWeight = val13;
-               Assert.AreEqual(val13, useOfSite_B.UseWeight);
+               useOfSiteExtraB.UseWeight = val13;
+               Assert.AreEqual(val13, useOfSiteExtraB.UseWeight);
                double val14 = 87.9D;
-               useOfSite_B.Weight_perc = val14;
-               Assert.AreEqual(val14, useOfSite_B.Weight_perc);
+               useOfSiteExtraB.Weight_perc = val14;
+               Assert.AreEqual(val14, useOfSiteExtraB.Weight_perc);
                bool val15 = true;
-               useOfSite_B.UseEquation = val15;
-               Assert.AreEqual(val15, useOfSite_B.UseEquation);
+               useOfSiteExtraB.UseEquation = val15;
+               Assert.AreEqual(val15, useOfSiteExtraB.UseEquation);
                double val16 = 87.9D;
-               useOfSite_B.Param1 = val16;
-               Assert.AreEqual(val16, useOfSite_B.Param1);
+               useOfSiteExtraB.Param1 = val16;
+               Assert.AreEqual(val16, useOfSiteExtraB.Param1);
                double val17 = 87.9D;
-               useOfSite_B.Param2 = val17;
-               Assert.AreEqual(val17, useOfSite_B.Param2);
+               useOfSiteExtraB.Param2 = val17;
+               Assert.AreEqual(val17, useOfSiteExtraB.Param2);
                double val18 = 87.9D;
-               useOfSite_B.Param3 = val18;
-               Assert.AreEqual(val18, useOfSite_B.Param3);
+               useOfSiteExtraB.Param3 = val18;
+               Assert.AreEqual(val18, useOfSiteExtraB.Param3);
                double val19 = 87.9D;
-               useOfSite_B.Param4 = val19;
-               Assert.AreEqual(val19, useOfSite_B.Param4);
+               useOfSiteExtraB.Param4 = val19;
+               Assert.AreEqual(val19, useOfSiteExtraB.Param4);
                DateTime val20 = new DateTime(2010, 3, 4);
-               useOfSite_B.LastUpdateDate_UTC = val20;
-               Assert.AreEqual(val20, useOfSite_B.LastUpdateDate_UTC);
+               useOfSiteExtraB.LastUpdateDate_UTC = val20;
+               Assert.AreEqual(val20, useOfSiteExtraB.LastUpdateDate_UTC);
                int val21 = 45;
-               useOfSite_B.LastUpdateContactTVItemID = val21;
-               Assert.AreEqual(val21, useOfSite_B.LastUpdateContactTVItemID);
+               useOfSiteExtraB.LastUpdateContactTVItemID = val21;
+               Assert.AreEqual(val21, useOfSiteExtraB.LastUpdateContactTVItemID);
                bool val22 = true;
-               useOfSite_B.HasErrors = val22;
-               Assert.AreEqual(val22, useOfSite_B.HasErrors);
+               useOfSiteExtraB.HasErrors = val22;
+               Assert.AreEqual(val22, useOfSiteExtraB.HasErrors);
                IEnumerable<ValidationResult> val69 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
-               useOfSite_B.ValidationResults = val69;
-               Assert.AreEqual(val69, useOfSite_B.ValidationResults);
+               useOfSiteExtraB.ValidationResults = val69;
+               Assert.AreEqual(val69, useOfSiteExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }
