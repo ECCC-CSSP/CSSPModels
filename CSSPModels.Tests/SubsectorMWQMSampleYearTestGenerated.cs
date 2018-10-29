@@ -75,7 +75,7 @@ namespace CSSPModels.Tests
                bool val5 = true;
                subsectorMWQMSampleYear.HasErrors = val5;
                Assert.AreEqual(val5, subsectorMWQMSampleYear.HasErrors);
-               IEnumerable<ValidationResult> val18 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val18 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                subsectorMWQMSampleYear.ValidationResults = val18;
                Assert.AreEqual(val18, subsectorMWQMSampleYear.ValidationResults);
         }

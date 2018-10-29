@@ -23,7 +23,7 @@ namespace CSSPModels
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]
-    public partial class LastUpdateAndTVText : Error
+    public partial class LastUpdateAndTVText : CSSPError
     {
         #region Properties in DB
         #endregion Properties in DB

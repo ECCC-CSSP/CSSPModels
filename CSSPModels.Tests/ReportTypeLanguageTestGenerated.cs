@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ReportTypeLanguageExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusNameText", "TranslationStatusDescriptionText", "TranslationStatusStartOfFileNameText", "ReportTypeLanguageID", "ReportTypeID", "Language", "Name", "TranslationStatusName", "Description", "TranslationStatusDescription", "StartOfFileName", "TranslationStatusStartOfFileName", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "LanguageText", "TranslationStatusNameText", "TranslationStatusDescriptionText", "TranslationStatusStartOfFileNameText", "ReportTypeLanguageID", "ReportTypeID", "Language", "Name", "TranslationStatusName", "Description", "TranslationStatusDescription", "StartOfFileName", "TranslationStatusStartOfFileName", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ReportTypeLanguageExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ReportTypeLanguageReportTest", "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusNameText", "TranslationStatusDescriptionText", "TranslationStatusStartOfFileNameText", "ReportTypeLanguageID", "ReportTypeID", "Language", "Name", "TranslationStatusName", "Description", "TranslationStatusDescription", "StartOfFileName", "TranslationStatusStartOfFileName", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ReportTypeLanguageReportTest", "LastUpdateContactText", "LanguageText", "TranslationStatusNameText", "TranslationStatusDescriptionText", "TranslationStatusStartOfFileNameText", "ReportTypeLanguageID", "ReportTypeID", "Language", "Name", "TranslationStatusName", "Description", "TranslationStatusDescription", "StartOfFileName", "TranslationStatusStartOfFileName", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -296,16 +296,16 @@ namespace CSSPModels.Tests
                bool val12 = true;
                reportTypeLanguage.HasErrors = val12;
                Assert.AreEqual(val12, reportTypeLanguage.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                reportTypeLanguage.ValidationResults = val39;
                Assert.AreEqual(val39, reportTypeLanguage.ValidationResults);
         }
         [TestMethod]
         public void ReportTypeLanguageExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               reportTypeLanguageExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, reportTypeLanguageExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               reportTypeLanguageExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, reportTypeLanguageExtraA.LastUpdateContactText);
                string val2 = "Some text";
                reportTypeLanguageExtraA.LanguageText = val2;
                Assert.AreEqual(val2, reportTypeLanguageExtraA.LanguageText);
@@ -354,7 +354,7 @@ namespace CSSPModels.Tests
                bool val17 = true;
                reportTypeLanguageExtraA.HasErrors = val17;
                Assert.AreEqual(val17, reportTypeLanguageExtraA.HasErrors);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                reportTypeLanguageExtraA.ValidationResults = val54;
                Assert.AreEqual(val54, reportTypeLanguageExtraA.ValidationResults);
         }
@@ -364,9 +364,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                reportTypeLanguageExtraB.ReportTypeLanguageReportTest = val1;
                Assert.AreEqual(val1, reportTypeLanguageExtraB.ReportTypeLanguageReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               reportTypeLanguageExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, reportTypeLanguageExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               reportTypeLanguageExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, reportTypeLanguageExtraB.LastUpdateContactText);
                string val3 = "Some text";
                reportTypeLanguageExtraB.LanguageText = val3;
                Assert.AreEqual(val3, reportTypeLanguageExtraB.LanguageText);
@@ -415,7 +415,7 @@ namespace CSSPModels.Tests
                bool val18 = true;
                reportTypeLanguageExtraB.HasErrors = val18;
                Assert.AreEqual(val18, reportTypeLanguageExtraB.HasErrors);
-               IEnumerable<ValidationResult> val57 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val57 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                reportTypeLanguageExtraB.ValidationResults = val57;
                Assert.AreEqual(val57, reportTypeLanguageExtraB.ValidationResults);
         }

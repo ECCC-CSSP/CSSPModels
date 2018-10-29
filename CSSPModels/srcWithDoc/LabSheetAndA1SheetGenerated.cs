@@ -23,7 +23,7 @@ namespace CSSPModels
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]
-    public partial class LabSheetAndA1Sheet : Error
+    public partial class LabSheetAndA1Sheet : CSSPError
     {
         #region Properties in DB
         #endregion Properties in DB

@@ -10,7 +10,7 @@ namespace CSSPModels
     #region Classes
     /// <param name="HasErrors">true if an error has occured, false if everything is ok</param>
     /// <param name="ValidationResults">Will contain the list of ValidationResults if an error has occured, otherwise the list will be empty</param>
-    public partial class Error
+    public partial class CSSPError
     {
         #region Properties for error handling
         /// <summary>
@@ -32,14 +32,14 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>Constructor will set the HasErrors field to false and ValidationResults with an empty list of ValidationResult)</para>
         /// </summary>
-        public Error()
+        public CSSPError()
         {
             HasErrors = false;
             ValidationResults = new List<ValidationResult>();
         }
         #endregion Constructors
     }
-    public partial class LastUpdate : Error
+    public partial class LastUpdate : CSSPError
     {
         #region Properties in DB all tables
         /// <summary>

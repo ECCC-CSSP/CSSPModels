@@ -171,13 +171,13 @@ namespace CSSPModels
     public partial class MWQMAnalysisReportParameterExtraA : MWQMAnalysisReportParameter
     {
         #region Properties
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ExcelTVFileTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ExcelTVFileTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
-        [CSSPDisplayEN(DisplayEN = "Excel TV file item TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du document Excel TV file")]
-        [CSSPDescriptionEN(DescriptionEN = @"Excel TV file TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage document Excel TV file")]
-        public TVItemLanguage ExcelTVFileTVItemLanguage { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Excel file name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du document Excel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Excel file name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du document Excel")]
+        public string ExcelTVFileText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "AnalysisReportExportCommandEnum", EnumType = "Command")]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Analysis report export command text")]
@@ -185,12 +185,12 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Analysis report export command text")]
         [CSSPDescriptionFR(DescriptionFR = @"Texte de commande d'exportation du raport d'analyse")]
         public string CommandText { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
-        public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact ayant fait le dernière changement")]
+        public string LastUpdateContactText { get; set; }
         #endregion Properties
 
         #region Constructors

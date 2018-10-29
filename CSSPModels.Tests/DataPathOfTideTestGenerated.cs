@@ -72,7 +72,7 @@ namespace CSSPModels.Tests
                bool val4 = true;
                dataPathOfTide.HasErrors = val4;
                Assert.AreEqual(val4, dataPathOfTide.HasErrors);
-               IEnumerable<ValidationResult> val15 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                dataPathOfTide.ValidationResults = val15;
                Assert.AreEqual(val15, dataPathOfTide.ValidationResults);
         }

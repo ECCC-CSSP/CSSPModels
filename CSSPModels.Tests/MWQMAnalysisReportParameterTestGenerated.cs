@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMAnalysisReportParameterExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ExcelTVFileTVItemLanguage", "CommandText", "LastUpdateContactTVItemLanguage", "MWQMAnalysisReportParameterID", "SubsectorTVItemID", "AnalysisName", "AnalysisReportYear", "StartDate", "EndDate", "AnalysisCalculationType", "NumberOfRuns", "FullYear", "SalinityHighlightDeviationFromAverage", "ShortRangeNumberOfDays", "MidRangeNumberOfDays", "DryLimit24h", "DryLimit48h", "DryLimit72h", "DryLimit96h", "WetLimit24h", "WetLimit48h", "WetLimit72h", "WetLimit96h", "RunsToOmit", "ShowDataTypes", "ExcelTVFileTVItemID", "Command", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ExcelTVFileText", "CommandText", "LastUpdateContactText", "MWQMAnalysisReportParameterID", "SubsectorTVItemID", "AnalysisName", "AnalysisReportYear", "StartDate", "EndDate", "AnalysisCalculationType", "NumberOfRuns", "FullYear", "SalinityHighlightDeviationFromAverage", "ShortRangeNumberOfDays", "MidRangeNumberOfDays", "DryLimit24h", "DryLimit48h", "DryLimit72h", "DryLimit96h", "WetLimit24h", "WetLimit48h", "WetLimit72h", "WetLimit96h", "RunsToOmit", "ShowDataTypes", "ExcelTVFileTVItemID", "Command", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMAnalysisReportParameterExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MWQMAnalysisReportParameterReportTest", "ExcelTVFileTVItemLanguage", "CommandText", "LastUpdateContactTVItemLanguage", "MWQMAnalysisReportParameterID", "SubsectorTVItemID", "AnalysisName", "AnalysisReportYear", "StartDate", "EndDate", "AnalysisCalculationType", "NumberOfRuns", "FullYear", "SalinityHighlightDeviationFromAverage", "ShortRangeNumberOfDays", "MidRangeNumberOfDays", "DryLimit24h", "DryLimit48h", "DryLimit72h", "DryLimit96h", "WetLimit24h", "WetLimit48h", "WetLimit72h", "WetLimit96h", "RunsToOmit", "ShowDataTypes", "ExcelTVFileTVItemID", "Command", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MWQMAnalysisReportParameterReportTest", "ExcelTVFileText", "CommandText", "LastUpdateContactText", "MWQMAnalysisReportParameterID", "SubsectorTVItemID", "AnalysisName", "AnalysisReportYear", "StartDate", "EndDate", "AnalysisCalculationType", "NumberOfRuns", "FullYear", "SalinityHighlightDeviationFromAverage", "ShortRangeNumberOfDays", "MidRangeNumberOfDays", "DryLimit24h", "DryLimit48h", "DryLimit72h", "DryLimit96h", "WetLimit24h", "WetLimit48h", "WetLimit72h", "WetLimit96h", "RunsToOmit", "ShowDataTypes", "ExcelTVFileTVItemID", "Command", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -341,22 +341,22 @@ namespace CSSPModels.Tests
                bool val27 = true;
                mWQMAnalysisReportParameter.HasErrors = val27;
                Assert.AreEqual(val27, mWQMAnalysisReportParameter.HasErrors);
-               IEnumerable<ValidationResult> val84 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val84 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMAnalysisReportParameter.ValidationResults = val84;
                Assert.AreEqual(val84, mWQMAnalysisReportParameter.ValidationResults);
         }
         [TestMethod]
         public void MWQMAnalysisReportParameterExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               mWQMAnalysisReportParameterExtraA.ExcelTVFileTVItemLanguage = val1;
-               Assert.AreEqual(val1, mWQMAnalysisReportParameterExtraA.ExcelTVFileTVItemLanguage);
+               string val1 = "Some text";
+               mWQMAnalysisReportParameterExtraA.ExcelTVFileText = val1;
+               Assert.AreEqual(val1, mWQMAnalysisReportParameterExtraA.ExcelTVFileText);
                string val2 = "Some text";
                mWQMAnalysisReportParameterExtraA.CommandText = val2;
                Assert.AreEqual(val2, mWQMAnalysisReportParameterExtraA.CommandText);
-               TVItemLanguage val3 = new TVItemLanguage();
-               mWQMAnalysisReportParameterExtraA.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, mWQMAnalysisReportParameterExtraA.LastUpdateContactTVItemLanguage);
+               string val3 = "Some text";
+               mWQMAnalysisReportParameterExtraA.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, mWQMAnalysisReportParameterExtraA.LastUpdateContactText);
                int val4 = 45;
                mWQMAnalysisReportParameterExtraA.MWQMAnalysisReportParameterID = val4;
                Assert.AreEqual(val4, mWQMAnalysisReportParameterExtraA.MWQMAnalysisReportParameterID);
@@ -438,7 +438,7 @@ namespace CSSPModels.Tests
                bool val30 = true;
                mWQMAnalysisReportParameterExtraA.HasErrors = val30;
                Assert.AreEqual(val30, mWQMAnalysisReportParameterExtraA.HasErrors);
-               IEnumerable<ValidationResult> val93 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val93 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMAnalysisReportParameterExtraA.ValidationResults = val93;
                Assert.AreEqual(val93, mWQMAnalysisReportParameterExtraA.ValidationResults);
         }
@@ -448,15 +448,15 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                mWQMAnalysisReportParameterExtraB.MWQMAnalysisReportParameterReportTest = val1;
                Assert.AreEqual(val1, mWQMAnalysisReportParameterExtraB.MWQMAnalysisReportParameterReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mWQMAnalysisReportParameterExtraB.ExcelTVFileTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMAnalysisReportParameterExtraB.ExcelTVFileTVItemLanguage);
+               string val2 = "Some text";
+               mWQMAnalysisReportParameterExtraB.ExcelTVFileText = val2;
+               Assert.AreEqual(val2, mWQMAnalysisReportParameterExtraB.ExcelTVFileText);
                string val3 = "Some text";
                mWQMAnalysisReportParameterExtraB.CommandText = val3;
                Assert.AreEqual(val3, mWQMAnalysisReportParameterExtraB.CommandText);
-               TVItemLanguage val4 = new TVItemLanguage();
-               mWQMAnalysisReportParameterExtraB.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, mWQMAnalysisReportParameterExtraB.LastUpdateContactTVItemLanguage);
+               string val4 = "Some text";
+               mWQMAnalysisReportParameterExtraB.LastUpdateContactText = val4;
+               Assert.AreEqual(val4, mWQMAnalysisReportParameterExtraB.LastUpdateContactText);
                int val5 = 45;
                mWQMAnalysisReportParameterExtraB.MWQMAnalysisReportParameterID = val5;
                Assert.AreEqual(val5, mWQMAnalysisReportParameterExtraB.MWQMAnalysisReportParameterID);
@@ -538,7 +538,7 @@ namespace CSSPModels.Tests
                bool val31 = true;
                mWQMAnalysisReportParameterExtraB.HasErrors = val31;
                Assert.AreEqual(val31, mWQMAnalysisReportParameterExtraB.HasErrors);
-               IEnumerable<ValidationResult> val96 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val96 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMAnalysisReportParameterExtraB.ValidationResults = val96;
                Assert.AreEqual(val96, mWQMAnalysisReportParameterExtraB.ValidationResults);
         }

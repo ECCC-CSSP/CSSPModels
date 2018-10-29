@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVItemUserAuthorizationExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ContactTVItemLanguage", "TVItemLanguage1", "TVItemLanguage2", "TVItemLanguage3", "TVItemLanguage4", "LastUpdateContactTVItemLanguage", "TVAuthText", "TVItemUserAuthorizationID", "ContactTVItemID", "TVItemID1", "TVItemID2", "TVItemID3", "TVItemID4", "TVAuth", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ContactName", "TVItemText1", "TVItemText2", "TVItemText3", "TVItemText4", "LastUpdateContactText", "TVAuthText", "TVItemUserAuthorizationID", "ContactTVItemID", "TVItemID1", "TVItemID2", "TVItemID3", "TVItemID4", "TVAuth", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVItemUserAuthorizationExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "TVItemUserAuthorizationReportTest", "ContactTVItemLanguage", "TVItemLanguage1", "TVItemLanguage2", "TVItemLanguage3", "TVItemLanguage4", "LastUpdateContactTVItemLanguage", "TVAuthText", "TVItemUserAuthorizationID", "ContactTVItemID", "TVItemID1", "TVItemID2", "TVItemID3", "TVItemID4", "TVAuth", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TVItemUserAuthorizationReportTest", "ContactName", "TVItemText1", "TVItemText2", "TVItemText3", "TVItemText4", "LastUpdateContactText", "TVAuthText", "TVItemUserAuthorizationID", "ContactTVItemID", "TVItemID1", "TVItemID2", "TVItemID3", "TVItemID4", "TVAuth", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -290,31 +290,31 @@ namespace CSSPModels.Tests
                bool val10 = true;
                tVItemUserAuthorization.HasErrors = val10;
                Assert.AreEqual(val10, tVItemUserAuthorization.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tVItemUserAuthorization.ValidationResults = val33;
                Assert.AreEqual(val33, tVItemUserAuthorization.ValidationResults);
         }
         [TestMethod]
         public void TVItemUserAuthorizationExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               tVItemUserAuthorizationExtraA.ContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, tVItemUserAuthorizationExtraA.ContactTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               tVItemUserAuthorizationExtraA.TVItemLanguage1 = val2;
-               Assert.AreEqual(val2, tVItemUserAuthorizationExtraA.TVItemLanguage1);
-               TVItemLanguage val3 = new TVItemLanguage();
-               tVItemUserAuthorizationExtraA.TVItemLanguage2 = val3;
-               Assert.AreEqual(val3, tVItemUserAuthorizationExtraA.TVItemLanguage2);
-               TVItemLanguage val4 = new TVItemLanguage();
-               tVItemUserAuthorizationExtraA.TVItemLanguage3 = val4;
-               Assert.AreEqual(val4, tVItemUserAuthorizationExtraA.TVItemLanguage3);
-               TVItemLanguage val5 = new TVItemLanguage();
-               tVItemUserAuthorizationExtraA.TVItemLanguage4 = val5;
-               Assert.AreEqual(val5, tVItemUserAuthorizationExtraA.TVItemLanguage4);
-               TVItemLanguage val6 = new TVItemLanguage();
-               tVItemUserAuthorizationExtraA.LastUpdateContactTVItemLanguage = val6;
-               Assert.AreEqual(val6, tVItemUserAuthorizationExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               tVItemUserAuthorizationExtraA.ContactName = val1;
+               Assert.AreEqual(val1, tVItemUserAuthorizationExtraA.ContactName);
+               string val2 = "Some text";
+               tVItemUserAuthorizationExtraA.TVItemText1 = val2;
+               Assert.AreEqual(val2, tVItemUserAuthorizationExtraA.TVItemText1);
+               string val3 = "Some text";
+               tVItemUserAuthorizationExtraA.TVItemText2 = val3;
+               Assert.AreEqual(val3, tVItemUserAuthorizationExtraA.TVItemText2);
+               string val4 = "Some text";
+               tVItemUserAuthorizationExtraA.TVItemText3 = val4;
+               Assert.AreEqual(val4, tVItemUserAuthorizationExtraA.TVItemText3);
+               string val5 = "Some text";
+               tVItemUserAuthorizationExtraA.TVItemText4 = val5;
+               Assert.AreEqual(val5, tVItemUserAuthorizationExtraA.TVItemText4);
+               string val6 = "Some text";
+               tVItemUserAuthorizationExtraA.LastUpdateContactText = val6;
+               Assert.AreEqual(val6, tVItemUserAuthorizationExtraA.LastUpdateContactText);
                string val7 = "Some text";
                tVItemUserAuthorizationExtraA.TVAuthText = val7;
                Assert.AreEqual(val7, tVItemUserAuthorizationExtraA.TVAuthText);
@@ -348,7 +348,7 @@ namespace CSSPModels.Tests
                bool val17 = true;
                tVItemUserAuthorizationExtraA.HasErrors = val17;
                Assert.AreEqual(val17, tVItemUserAuthorizationExtraA.HasErrors);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tVItemUserAuthorizationExtraA.ValidationResults = val54;
                Assert.AreEqual(val54, tVItemUserAuthorizationExtraA.ValidationResults);
         }
@@ -358,24 +358,24 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                tVItemUserAuthorizationExtraB.TVItemUserAuthorizationReportTest = val1;
                Assert.AreEqual(val1, tVItemUserAuthorizationExtraB.TVItemUserAuthorizationReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               tVItemUserAuthorizationExtraB.ContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, tVItemUserAuthorizationExtraB.ContactTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               tVItemUserAuthorizationExtraB.TVItemLanguage1 = val3;
-               Assert.AreEqual(val3, tVItemUserAuthorizationExtraB.TVItemLanguage1);
-               TVItemLanguage val4 = new TVItemLanguage();
-               tVItemUserAuthorizationExtraB.TVItemLanguage2 = val4;
-               Assert.AreEqual(val4, tVItemUserAuthorizationExtraB.TVItemLanguage2);
-               TVItemLanguage val5 = new TVItemLanguage();
-               tVItemUserAuthorizationExtraB.TVItemLanguage3 = val5;
-               Assert.AreEqual(val5, tVItemUserAuthorizationExtraB.TVItemLanguage3);
-               TVItemLanguage val6 = new TVItemLanguage();
-               tVItemUserAuthorizationExtraB.TVItemLanguage4 = val6;
-               Assert.AreEqual(val6, tVItemUserAuthorizationExtraB.TVItemLanguage4);
-               TVItemLanguage val7 = new TVItemLanguage();
-               tVItemUserAuthorizationExtraB.LastUpdateContactTVItemLanguage = val7;
-               Assert.AreEqual(val7, tVItemUserAuthorizationExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               tVItemUserAuthorizationExtraB.ContactName = val2;
+               Assert.AreEqual(val2, tVItemUserAuthorizationExtraB.ContactName);
+               string val3 = "Some text";
+               tVItemUserAuthorizationExtraB.TVItemText1 = val3;
+               Assert.AreEqual(val3, tVItemUserAuthorizationExtraB.TVItemText1);
+               string val4 = "Some text";
+               tVItemUserAuthorizationExtraB.TVItemText2 = val4;
+               Assert.AreEqual(val4, tVItemUserAuthorizationExtraB.TVItemText2);
+               string val5 = "Some text";
+               tVItemUserAuthorizationExtraB.TVItemText3 = val5;
+               Assert.AreEqual(val5, tVItemUserAuthorizationExtraB.TVItemText3);
+               string val6 = "Some text";
+               tVItemUserAuthorizationExtraB.TVItemText4 = val6;
+               Assert.AreEqual(val6, tVItemUserAuthorizationExtraB.TVItemText4);
+               string val7 = "Some text";
+               tVItemUserAuthorizationExtraB.LastUpdateContactText = val7;
+               Assert.AreEqual(val7, tVItemUserAuthorizationExtraB.LastUpdateContactText);
                string val8 = "Some text";
                tVItemUserAuthorizationExtraB.TVAuthText = val8;
                Assert.AreEqual(val8, tVItemUserAuthorizationExtraB.TVAuthText);
@@ -409,7 +409,7 @@ namespace CSSPModels.Tests
                bool val18 = true;
                tVItemUserAuthorizationExtraB.HasErrors = val18;
                Assert.AreEqual(val18, tVItemUserAuthorizationExtraB.HasErrors);
-               IEnumerable<ValidationResult> val57 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val57 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tVItemUserAuthorizationExtraB.ValidationResults = val57;
                Assert.AreEqual(val57, tVItemUserAuthorizationExtraB.ValidationResults);
         }

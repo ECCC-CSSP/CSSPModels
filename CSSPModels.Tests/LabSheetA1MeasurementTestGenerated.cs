@@ -102,7 +102,7 @@ namespace CSSPModels.Tests
                bool val14 = true;
                labSheetA1Measurement.HasErrors = val14;
                Assert.AreEqual(val14, labSheetA1Measurement.HasErrors);
-               IEnumerable<ValidationResult> val45 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val45 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                labSheetA1Measurement.ValidationResults = val45;
                Assert.AreEqual(val45, labSheetA1Measurement.ValidationResults);
         }

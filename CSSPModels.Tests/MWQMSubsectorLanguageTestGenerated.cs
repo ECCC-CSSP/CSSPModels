@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMSubsectorLanguageExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusSubsectorDescText", "TranslationStatusLogBookText", "MWQMSubsectorLanguageID", "MWQMSubsectorID", "Language", "SubsectorDesc", "TranslationStatusSubsectorDesc", "LogBook", "TranslationStatusLogBook", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "LanguageText", "TranslationStatusSubsectorDescText", "TranslationStatusLogBookText", "MWQMSubsectorLanguageID", "MWQMSubsectorID", "Language", "SubsectorDesc", "TranslationStatusSubsectorDesc", "LogBook", "TranslationStatusLogBook", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMSubsectorLanguageExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MWQMSubsectorLanguageReportTest", "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusSubsectorDescText", "TranslationStatusLogBookText", "MWQMSubsectorLanguageID", "MWQMSubsectorID", "Language", "SubsectorDesc", "TranslationStatusSubsectorDesc", "LogBook", "TranslationStatusLogBook", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MWQMSubsectorLanguageReportTest", "LastUpdateContactText", "LanguageText", "TranslationStatusSubsectorDescText", "TranslationStatusLogBookText", "MWQMSubsectorLanguageID", "MWQMSubsectorID", "Language", "SubsectorDesc", "TranslationStatusSubsectorDesc", "LogBook", "TranslationStatusLogBook", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -290,16 +290,16 @@ namespace CSSPModels.Tests
                bool val10 = true;
                mWQMSubsectorLanguage.HasErrors = val10;
                Assert.AreEqual(val10, mWQMSubsectorLanguage.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMSubsectorLanguage.ValidationResults = val33;
                Assert.AreEqual(val33, mWQMSubsectorLanguage.ValidationResults);
         }
         [TestMethod]
         public void MWQMSubsectorLanguageExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               mWQMSubsectorLanguageExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, mWQMSubsectorLanguageExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               mWQMSubsectorLanguageExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, mWQMSubsectorLanguageExtraA.LastUpdateContactText);
                string val2 = "Some text";
                mWQMSubsectorLanguageExtraA.LanguageText = val2;
                Assert.AreEqual(val2, mWQMSubsectorLanguageExtraA.LanguageText);
@@ -339,7 +339,7 @@ namespace CSSPModels.Tests
                bool val14 = true;
                mWQMSubsectorLanguageExtraA.HasErrors = val14;
                Assert.AreEqual(val14, mWQMSubsectorLanguageExtraA.HasErrors);
-               IEnumerable<ValidationResult> val45 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val45 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMSubsectorLanguageExtraA.ValidationResults = val45;
                Assert.AreEqual(val45, mWQMSubsectorLanguageExtraA.ValidationResults);
         }
@@ -349,9 +349,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                mWQMSubsectorLanguageExtraB.MWQMSubsectorLanguageReportTest = val1;
                Assert.AreEqual(val1, mWQMSubsectorLanguageExtraB.MWQMSubsectorLanguageReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mWQMSubsectorLanguageExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMSubsectorLanguageExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               mWQMSubsectorLanguageExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, mWQMSubsectorLanguageExtraB.LastUpdateContactText);
                string val3 = "Some text";
                mWQMSubsectorLanguageExtraB.LanguageText = val3;
                Assert.AreEqual(val3, mWQMSubsectorLanguageExtraB.LanguageText);
@@ -391,7 +391,7 @@ namespace CSSPModels.Tests
                bool val15 = true;
                mWQMSubsectorLanguageExtraB.HasErrors = val15;
                Assert.AreEqual(val15, mWQMSubsectorLanguageExtraB.HasErrors);
-               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMSubsectorLanguageExtraB.ValidationResults = val48;
                Assert.AreEqual(val48, mWQMSubsectorLanguageExtraB.ValidationResults);
         }

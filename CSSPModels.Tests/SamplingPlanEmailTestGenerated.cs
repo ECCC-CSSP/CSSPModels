@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SamplingPlanEmailExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "SamplingPlanEmailID", "SamplingPlanID", "Email", "IsContractor", "LabSheetHasValueOver500", "LabSheetReceived", "LabSheetAccepted", "LabSheetRejected", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "SamplingPlanEmailID", "SamplingPlanID", "Email", "IsContractor", "LabSheetHasValueOver500", "LabSheetReceived", "LabSheetAccepted", "LabSheetRejected", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SamplingPlanEmailExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SamplingPlanEmailReportTest", "LastUpdateContactTVItemLanguage", "SamplingPlanEmailID", "SamplingPlanID", "Email", "IsContractor", "LabSheetHasValueOver500", "LabSheetReceived", "LabSheetAccepted", "LabSheetRejected", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SamplingPlanEmailReportTest", "LastUpdateContactText", "SamplingPlanEmailID", "SamplingPlanID", "Email", "IsContractor", "LabSheetHasValueOver500", "LabSheetReceived", "LabSheetAccepted", "LabSheetRejected", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -293,16 +293,16 @@ namespace CSSPModels.Tests
                bool val11 = true;
                samplingPlanEmail.HasErrors = val11;
                Assert.AreEqual(val11, samplingPlanEmail.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                samplingPlanEmail.ValidationResults = val36;
                Assert.AreEqual(val36, samplingPlanEmail.ValidationResults);
         }
         [TestMethod]
         public void SamplingPlanEmailExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               samplingPlanEmailExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, samplingPlanEmailExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               samplingPlanEmailExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, samplingPlanEmailExtraA.LastUpdateContactText);
                int val2 = 45;
                samplingPlanEmailExtraA.SamplingPlanEmailID = val2;
                Assert.AreEqual(val2, samplingPlanEmailExtraA.SamplingPlanEmailID);
@@ -336,7 +336,7 @@ namespace CSSPModels.Tests
                bool val12 = true;
                samplingPlanEmailExtraA.HasErrors = val12;
                Assert.AreEqual(val12, samplingPlanEmailExtraA.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                samplingPlanEmailExtraA.ValidationResults = val39;
                Assert.AreEqual(val39, samplingPlanEmailExtraA.ValidationResults);
         }
@@ -346,9 +346,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                samplingPlanEmailExtraB.SamplingPlanEmailReportTest = val1;
                Assert.AreEqual(val1, samplingPlanEmailExtraB.SamplingPlanEmailReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               samplingPlanEmailExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, samplingPlanEmailExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               samplingPlanEmailExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, samplingPlanEmailExtraB.LastUpdateContactText);
                int val3 = 45;
                samplingPlanEmailExtraB.SamplingPlanEmailID = val3;
                Assert.AreEqual(val3, samplingPlanEmailExtraB.SamplingPlanEmailID);
@@ -382,7 +382,7 @@ namespace CSSPModels.Tests
                bool val13 = true;
                samplingPlanEmailExtraB.HasErrors = val13;
                Assert.AreEqual(val13, samplingPlanEmailExtraB.HasErrors);
-               IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                samplingPlanEmailExtraB.ValidationResults = val42;
                Assert.AreEqual(val42, samplingPlanEmailExtraB.ValidationResults);
         }

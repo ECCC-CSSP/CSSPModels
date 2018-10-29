@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMRunExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SubsectorTVItemLanguage", "MWQMRunTVItemLanguage", "LabSampleApprovalContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "RunSampleTypeText", "SeaStateAtStart_BeaufortScaleText", "SeaStateAtEnd_BeaufortScaleText", "AnalyzeMethodText", "SampleMatrixText", "LaboratoryText", "SampleStatusText", "Tide_StartText", "Tide_EndText", "MWQMRunID", "SubsectorTVItemID", "MWQMRunTVItemID", "RunSampleType", "DateTime_Local", "RunNumber", "StartDateTime_Local", "EndDateTime_Local", "LabReceivedDateTime_Local", "TemperatureControl1_C", "TemperatureControl2_C", "SeaStateAtStart_BeaufortScale", "SeaStateAtEnd_BeaufortScale", "WaterLevelAtBrook_m", "WaveHightAtStart_m", "WaveHightAtEnd_m", "SampleCrewInitials", "AnalyzeMethod", "SampleMatrix", "Laboratory", "SampleStatus", "LabSampleApprovalContactTVItemID", "LabAnalyzeBath1IncubationStartDateTime_Local", "LabAnalyzeBath2IncubationStartDateTime_Local", "LabAnalyzeBath3IncubationStartDateTime_Local", "LabRunSampleApprovalDateTime_Local", "Tide_Start", "Tide_End", "RainDay0_mm", "RainDay1_mm", "RainDay2_mm", "RainDay3_mm", "RainDay4_mm", "RainDay5_mm", "RainDay6_mm", "RainDay7_mm", "RainDay8_mm", "RainDay9_mm", "RainDay10_mm", "RemoveFromStat", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SubsectorText", "MWQMRunText", "LabSampleApprovalContactName", "LastUpdateContactText", "RunSampleTypeText", "SeaStateAtStart_BeaufortScaleText", "SeaStateAtEnd_BeaufortScaleText", "AnalyzeMethodText", "SampleMatrixText", "LaboratoryText", "SampleStatusText", "Tide_StartText", "Tide_EndText", "MWQMRunID", "SubsectorTVItemID", "MWQMRunTVItemID", "RunSampleType", "DateTime_Local", "RunNumber", "StartDateTime_Local", "EndDateTime_Local", "LabReceivedDateTime_Local", "TemperatureControl1_C", "TemperatureControl2_C", "SeaStateAtStart_BeaufortScale", "SeaStateAtEnd_BeaufortScale", "WaterLevelAtBrook_m", "WaveHightAtStart_m", "WaveHightAtEnd_m", "SampleCrewInitials", "AnalyzeMethod", "SampleMatrix", "Laboratory", "SampleStatus", "LabSampleApprovalContactTVItemID", "LabAnalyzeBath1IncubationStartDateTime_Local", "LabAnalyzeBath2IncubationStartDateTime_Local", "LabAnalyzeBath3IncubationStartDateTime_Local", "LabRunSampleApprovalDateTime_Local", "Tide_Start", "Tide_End", "RainDay0_mm", "RainDay1_mm", "RainDay2_mm", "RainDay3_mm", "RainDay4_mm", "RainDay5_mm", "RainDay6_mm", "RainDay7_mm", "RainDay8_mm", "RainDay9_mm", "RainDay10_mm", "RemoveFromStat", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMRunExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MWQMRunReportTest", "SubsectorTVItemLanguage", "MWQMRunTVItemLanguage", "LabSampleApprovalContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "RunSampleTypeText", "SeaStateAtStart_BeaufortScaleText", "SeaStateAtEnd_BeaufortScaleText", "AnalyzeMethodText", "SampleMatrixText", "LaboratoryText", "SampleStatusText", "Tide_StartText", "Tide_EndText", "MWQMRunID", "SubsectorTVItemID", "MWQMRunTVItemID", "RunSampleType", "DateTime_Local", "RunNumber", "StartDateTime_Local", "EndDateTime_Local", "LabReceivedDateTime_Local", "TemperatureControl1_C", "TemperatureControl2_C", "SeaStateAtStart_BeaufortScale", "SeaStateAtEnd_BeaufortScale", "WaterLevelAtBrook_m", "WaveHightAtStart_m", "WaveHightAtEnd_m", "SampleCrewInitials", "AnalyzeMethod", "SampleMatrix", "Laboratory", "SampleStatus", "LabSampleApprovalContactTVItemID", "LabAnalyzeBath1IncubationStartDateTime_Local", "LabAnalyzeBath2IncubationStartDateTime_Local", "LabAnalyzeBath3IncubationStartDateTime_Local", "LabRunSampleApprovalDateTime_Local", "Tide_Start", "Tide_End", "RainDay0_mm", "RainDay1_mm", "RainDay2_mm", "RainDay3_mm", "RainDay4_mm", "RainDay5_mm", "RainDay6_mm", "RainDay7_mm", "RainDay8_mm", "RainDay9_mm", "RainDay10_mm", "RemoveFromStat", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MWQMRunReportTest", "SubsectorText", "MWQMRunText", "LabSampleApprovalContactName", "LastUpdateContactText", "RunSampleTypeText", "SeaStateAtStart_BeaufortScaleText", "SeaStateAtEnd_BeaufortScaleText", "AnalyzeMethodText", "SampleMatrixText", "LaboratoryText", "SampleStatusText", "Tide_StartText", "Tide_EndText", "MWQMRunID", "SubsectorTVItemID", "MWQMRunTVItemID", "RunSampleType", "DateTime_Local", "RunNumber", "StartDateTime_Local", "EndDateTime_Local", "LabReceivedDateTime_Local", "TemperatureControl1_C", "TemperatureControl2_C", "SeaStateAtStart_BeaufortScale", "SeaStateAtEnd_BeaufortScale", "WaterLevelAtBrook_m", "WaveHightAtStart_m", "WaveHightAtEnd_m", "SampleCrewInitials", "AnalyzeMethod", "SampleMatrix", "Laboratory", "SampleStatus", "LabSampleApprovalContactTVItemID", "LabAnalyzeBath1IncubationStartDateTime_Local", "LabAnalyzeBath2IncubationStartDateTime_Local", "LabAnalyzeBath3IncubationStartDateTime_Local", "LabRunSampleApprovalDateTime_Local", "Tide_Start", "Tide_End", "RainDay0_mm", "RainDay1_mm", "RainDay2_mm", "RainDay3_mm", "RainDay4_mm", "RainDay5_mm", "RainDay6_mm", "RainDay7_mm", "RainDay8_mm", "RainDay9_mm", "RainDay10_mm", "RemoveFromStat", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -389,25 +389,25 @@ namespace CSSPModels.Tests
                bool val43 = true;
                mWQMRun.HasErrors = val43;
                Assert.AreEqual(val43, mWQMRun.HasErrors);
-               IEnumerable<ValidationResult> val132 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val132 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMRun.ValidationResults = val132;
                Assert.AreEqual(val132, mWQMRun.ValidationResults);
         }
         [TestMethod]
         public void MWQMRunExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               mWQMRunExtraA.SubsectorTVItemLanguage = val1;
-               Assert.AreEqual(val1, mWQMRunExtraA.SubsectorTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mWQMRunExtraA.MWQMRunTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMRunExtraA.MWQMRunTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               mWQMRunExtraA.LabSampleApprovalContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, mWQMRunExtraA.LabSampleApprovalContactTVItemLanguage);
-               TVItemLanguage val4 = new TVItemLanguage();
-               mWQMRunExtraA.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, mWQMRunExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               mWQMRunExtraA.SubsectorText = val1;
+               Assert.AreEqual(val1, mWQMRunExtraA.SubsectorText);
+               string val2 = "Some text";
+               mWQMRunExtraA.MWQMRunText = val2;
+               Assert.AreEqual(val2, mWQMRunExtraA.MWQMRunText);
+               string val3 = "Some text";
+               mWQMRunExtraA.LabSampleApprovalContactName = val3;
+               Assert.AreEqual(val3, mWQMRunExtraA.LabSampleApprovalContactName);
+               string val4 = "Some text";
+               mWQMRunExtraA.LastUpdateContactText = val4;
+               Assert.AreEqual(val4, mWQMRunExtraA.LastUpdateContactText);
                string val5 = "Some text";
                mWQMRunExtraA.RunSampleTypeText = val5;
                Assert.AreEqual(val5, mWQMRunExtraA.RunSampleTypeText);
@@ -564,7 +564,7 @@ namespace CSSPModels.Tests
                bool val56 = true;
                mWQMRunExtraA.HasErrors = val56;
                Assert.AreEqual(val56, mWQMRunExtraA.HasErrors);
-               IEnumerable<ValidationResult> val171 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val171 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMRunExtraA.ValidationResults = val171;
                Assert.AreEqual(val171, mWQMRunExtraA.ValidationResults);
         }
@@ -574,18 +574,18 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                mWQMRunExtraB.MWQMRunReportTest = val1;
                Assert.AreEqual(val1, mWQMRunExtraB.MWQMRunReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mWQMRunExtraB.SubsectorTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMRunExtraB.SubsectorTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               mWQMRunExtraB.MWQMRunTVItemLanguage = val3;
-               Assert.AreEqual(val3, mWQMRunExtraB.MWQMRunTVItemLanguage);
-               TVItemLanguage val4 = new TVItemLanguage();
-               mWQMRunExtraB.LabSampleApprovalContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, mWQMRunExtraB.LabSampleApprovalContactTVItemLanguage);
-               TVItemLanguage val5 = new TVItemLanguage();
-               mWQMRunExtraB.LastUpdateContactTVItemLanguage = val5;
-               Assert.AreEqual(val5, mWQMRunExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               mWQMRunExtraB.SubsectorText = val2;
+               Assert.AreEqual(val2, mWQMRunExtraB.SubsectorText);
+               string val3 = "Some text";
+               mWQMRunExtraB.MWQMRunText = val3;
+               Assert.AreEqual(val3, mWQMRunExtraB.MWQMRunText);
+               string val4 = "Some text";
+               mWQMRunExtraB.LabSampleApprovalContactName = val4;
+               Assert.AreEqual(val4, mWQMRunExtraB.LabSampleApprovalContactName);
+               string val5 = "Some text";
+               mWQMRunExtraB.LastUpdateContactText = val5;
+               Assert.AreEqual(val5, mWQMRunExtraB.LastUpdateContactText);
                string val6 = "Some text";
                mWQMRunExtraB.RunSampleTypeText = val6;
                Assert.AreEqual(val6, mWQMRunExtraB.RunSampleTypeText);
@@ -742,7 +742,7 @@ namespace CSSPModels.Tests
                bool val57 = true;
                mWQMRunExtraB.HasErrors = val57;
                Assert.AreEqual(val57, mWQMRunExtraB.HasErrors);
-               IEnumerable<ValidationResult> val174 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val174 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMRunExtraB.ValidationResults = val174;
                Assert.AreEqual(val174, mWQMRunExtraB.ValidationResults);
         }

@@ -775,35 +775,53 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MikeScenarioTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
-        /// </summary>
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MikeScenarioTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        public TVItemLanguage MikeScenarioTVItemLanguage { get; set; }
-        /// <summary>
-        /// > [!NOTE]
-        /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update contact TVItemLanguage")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update contact TVItemLanguage DB object")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du contact ayant fait le dernière changement")]</para>
+        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MikeScenarioTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "MIKE scenario text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du scénario MIKE")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "MIKE scenario text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du scénario MIKE")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Last update contact TVItemLanguage
+        /// **Display (en)** --- MIKE scenario text
         /// 
-        /// **Display (fr)** --- TVItemLanguage du contact ayant fait le dernière changement
+        /// **Display (fr)** --- Texte du scénario MIKE
         /// 
-        /// **Description (en)** --- Last update contact TVItemLanguage DB object
+        /// **Description (en)** --- MIKE scenario text
         /// 
-        /// **Description (fr)** --- Object BD TVItemLanguage du contact ayant fait le dernière changement
+        /// **Description (fr)** --- Texte du scénario MIKE
         /// </returns>
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
-        public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MikeScenarioTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "MIKE scenario text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du scénario MIKE")]
+        [CSSPDescriptionEN(DescriptionEN = @"MIKE scenario text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du scénario MIKE")]
+        public string MikeScenarioText { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update contact name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom du contact ayant fait le dernière changement")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update contact name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom du contact ayant fait le dernière changement")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Last update contact name
+        /// 
+        /// **Display (fr)** --- Nom du contact ayant fait le dernière changement
+        /// 
+        /// **Description (en)** --- Last update contact name
+        /// 
+        /// **Description (fr)** --- Nom du contact ayant fait le dernière changement
+        /// </returns>
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact ayant fait le dernière changement")]
+        public string LastUpdateContactText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>

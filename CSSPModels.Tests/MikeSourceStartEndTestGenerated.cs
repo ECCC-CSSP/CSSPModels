@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MikeSourceStartEndExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "MikeSourceStartEndID", "MikeSourceID", "StartDateAndTime_Local", "EndDateAndTime_Local", "SourceFlowStart_m3_day", "SourceFlowEnd_m3_day", "SourcePollutionStart_MPN_100ml", "SourcePollutionEnd_MPN_100ml", "SourceTemperatureStart_C", "SourceTemperatureEnd_C", "SourceSalinityStart_PSU", "SourceSalinityEnd_PSU", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "MikeSourceStartEndID", "MikeSourceID", "StartDateAndTime_Local", "EndDateAndTime_Local", "SourceFlowStart_m3_day", "SourceFlowEnd_m3_day", "SourcePollutionStart_MPN_100ml", "SourcePollutionEnd_MPN_100ml", "SourceTemperatureStart_C", "SourceTemperatureEnd_C", "SourceSalinityStart_PSU", "SourceSalinityEnd_PSU", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MikeSourceStartEndExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MikeSourceStartEndReportTest", "LastUpdateContactTVItemLanguage", "MikeSourceStartEndID", "MikeSourceID", "StartDateAndTime_Local", "EndDateAndTime_Local", "SourceFlowStart_m3_day", "SourceFlowEnd_m3_day", "SourcePollutionStart_MPN_100ml", "SourcePollutionEnd_MPN_100ml", "SourceTemperatureStart_C", "SourceTemperatureEnd_C", "SourceSalinityStart_PSU", "SourceSalinityEnd_PSU", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MikeSourceStartEndReportTest", "LastUpdateContactText", "MikeSourceStartEndID", "MikeSourceID", "StartDateAndTime_Local", "EndDateAndTime_Local", "SourceFlowStart_m3_day", "SourceFlowEnd_m3_day", "SourcePollutionStart_MPN_100ml", "SourcePollutionEnd_MPN_100ml", "SourceTemperatureStart_C", "SourceTemperatureEnd_C", "SourceSalinityStart_PSU", "SourceSalinityEnd_PSU", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -305,16 +305,16 @@ namespace CSSPModels.Tests
                bool val15 = true;
                mikeSourceStartEnd.HasErrors = val15;
                Assert.AreEqual(val15, mikeSourceStartEnd.HasErrors);
-               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mikeSourceStartEnd.ValidationResults = val48;
                Assert.AreEqual(val48, mikeSourceStartEnd.ValidationResults);
         }
         [TestMethod]
         public void MikeSourceStartEndExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               mikeSourceStartEndExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, mikeSourceStartEndExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               mikeSourceStartEndExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, mikeSourceStartEndExtraA.LastUpdateContactText);
                int val2 = 45;
                mikeSourceStartEndExtraA.MikeSourceStartEndID = val2;
                Assert.AreEqual(val2, mikeSourceStartEndExtraA.MikeSourceStartEndID);
@@ -360,7 +360,7 @@ namespace CSSPModels.Tests
                bool val16 = true;
                mikeSourceStartEndExtraA.HasErrors = val16;
                Assert.AreEqual(val16, mikeSourceStartEndExtraA.HasErrors);
-               IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mikeSourceStartEndExtraA.ValidationResults = val51;
                Assert.AreEqual(val51, mikeSourceStartEndExtraA.ValidationResults);
         }
@@ -370,9 +370,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                mikeSourceStartEndExtraB.MikeSourceStartEndReportTest = val1;
                Assert.AreEqual(val1, mikeSourceStartEndExtraB.MikeSourceStartEndReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mikeSourceStartEndExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, mikeSourceStartEndExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               mikeSourceStartEndExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, mikeSourceStartEndExtraB.LastUpdateContactText);
                int val3 = 45;
                mikeSourceStartEndExtraB.MikeSourceStartEndID = val3;
                Assert.AreEqual(val3, mikeSourceStartEndExtraB.MikeSourceStartEndID);
@@ -418,7 +418,7 @@ namespace CSSPModels.Tests
                bool val17 = true;
                mikeSourceStartEndExtraB.HasErrors = val17;
                Assert.AreEqual(val17, mikeSourceStartEndExtraB.HasErrors);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mikeSourceStartEndExtraB.ValidationResults = val54;
                Assert.AreEqual(val54, mikeSourceStartEndExtraB.ValidationResults);
         }

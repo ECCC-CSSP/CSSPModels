@@ -24,7 +24,7 @@ namespace CSSPModels
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]
-    public partial class TVItemTVAuth : Error
+    public partial class TVItemTVAuth : CSSPError
     {
         #region Properties in DB
         #endregion Properties in DB

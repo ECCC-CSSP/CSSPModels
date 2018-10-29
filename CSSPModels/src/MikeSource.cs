@@ -82,14 +82,18 @@ namespace CSSPModels
     public partial class MikeSourceExtraA : MikeSource
     {
         #region Properties
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MikeSourceTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        public TVItemLanguage MikeSourceTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
-        public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MikeSourceTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "MIKE source text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de la source MIKE")]
+        [CSSPDescriptionEN(DescriptionEN = @"MIKE source text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de la source MIKE")]
+        public string MikeSourceText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact ayant fait le dernière changement")]
+        public string LastUpdateContactText { get; set; }
         #endregion Properties
 
         #region Constructors

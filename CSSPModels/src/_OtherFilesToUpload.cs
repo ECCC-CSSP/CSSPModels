@@ -12,7 +12,7 @@ using System.Linq;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class OtherFilesToUpload : Error
+    public partial class OtherFilesToUpload : CSSPError
     {
         #region Properties in DB
         #endregion Properties in DB

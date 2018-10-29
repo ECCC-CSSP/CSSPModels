@@ -96,7 +96,7 @@ namespace CSSPModels.Tests
                bool val12 = true;
                cSSPWQInputParam.HasErrors = val12;
                Assert.AreEqual(val12, cSSPWQInputParam.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                cSSPWQInputParam.ValidationResults = val39;
                Assert.AreEqual(val39, cSSPWQInputParam.ValidationResults);
         }

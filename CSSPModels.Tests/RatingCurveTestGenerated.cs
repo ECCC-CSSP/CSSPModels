@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void RatingCurveExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "RatingCurveID", "HydrometricSiteID", "RatingCurveNumber", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "RatingCurveID", "HydrometricSiteID", "RatingCurveNumber", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void RatingCurveExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "RatingCurveReportTest", "LastUpdateContactTVItemLanguage", "RatingCurveID", "HydrometricSiteID", "RatingCurveNumber", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "RatingCurveReportTest", "LastUpdateContactText", "RatingCurveID", "HydrometricSiteID", "RatingCurveNumber", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -278,16 +278,16 @@ namespace CSSPModels.Tests
                bool val6 = true;
                ratingCurve.HasErrors = val6;
                Assert.AreEqual(val6, ratingCurve.HasErrors);
-               IEnumerable<ValidationResult> val21 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val21 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                ratingCurve.ValidationResults = val21;
                Assert.AreEqual(val21, ratingCurve.ValidationResults);
         }
         [TestMethod]
         public void RatingCurveExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               ratingCurveExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, ratingCurveExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               ratingCurveExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, ratingCurveExtraA.LastUpdateContactText);
                int val2 = 45;
                ratingCurveExtraA.RatingCurveID = val2;
                Assert.AreEqual(val2, ratingCurveExtraA.RatingCurveID);
@@ -306,7 +306,7 @@ namespace CSSPModels.Tests
                bool val7 = true;
                ratingCurveExtraA.HasErrors = val7;
                Assert.AreEqual(val7, ratingCurveExtraA.HasErrors);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                ratingCurveExtraA.ValidationResults = val24;
                Assert.AreEqual(val24, ratingCurveExtraA.ValidationResults);
         }
@@ -316,9 +316,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                ratingCurveExtraB.RatingCurveReportTest = val1;
                Assert.AreEqual(val1, ratingCurveExtraB.RatingCurveReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               ratingCurveExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, ratingCurveExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               ratingCurveExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, ratingCurveExtraB.LastUpdateContactText);
                int val3 = 45;
                ratingCurveExtraB.RatingCurveID = val3;
                Assert.AreEqual(val3, ratingCurveExtraB.RatingCurveID);
@@ -337,7 +337,7 @@ namespace CSSPModels.Tests
                bool val8 = true;
                ratingCurveExtraB.HasErrors = val8;
                Assert.AreEqual(val8, ratingCurveExtraB.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                ratingCurveExtraB.ValidationResults = val27;
                Assert.AreEqual(val27, ratingCurveExtraB.ValidationResults);
         }

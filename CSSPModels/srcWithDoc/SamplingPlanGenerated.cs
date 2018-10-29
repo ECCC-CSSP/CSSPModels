@@ -540,103 +540,103 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ProvinceTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Province TVItemLanguage")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage de la province")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Province TVItemLanguage DB object")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage de la province")]</para>
+        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ProvinceTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Province text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de la province")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Province text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de la province")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Province TVItemLanguage
+        /// **Display (en)** --- Province text
         /// 
-        /// **Display (fr)** --- TVItemLanguage de la province
+        /// **Display (fr)** --- Texte de la province
         /// 
-        /// **Description (en)** --- Province TVItemLanguage DB object
+        /// **Description (en)** --- Province text
         /// 
-        /// **Description (fr)** --- Object BD TVItemLanguage de la province
+        /// **Description (fr)** --- Texte de la province
         /// </returns>
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ProvinceTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Province TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de la province")]
-        [CSSPDescriptionEN(DescriptionEN = @"Province TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de la province")]
-        public TVItemLanguage ProvinceTVItemLanguage { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ProvinceTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Province text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de la province")]
+        [CSSPDescriptionEN(DescriptionEN = @"Province text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de la province")]
+        public string ProvinceText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CreatorTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Creator of the sampling plan TVItemLanguage")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du créateur du plan d'échantillonnage")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Creator of the sampling plan TVItemLanguage DB object")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du créateur du plan d'échantillonnage")]</para>
+        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CreatorTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Name of the creator of the sampling plan")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom du créateur du plan d'échantillonnage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Name of the creator of the sampling plan ")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom du créateur du plan d'échantillonnage")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Creator of the sampling plan TVItemLanguage
+        /// **Display (en)** --- Name of the creator of the sampling plan
         /// 
-        /// **Display (fr)** --- TVItemLanguage du créateur du plan d'échantillonnage
+        /// **Display (fr)** --- Nom du créateur du plan d'échantillonnage
         /// 
-        /// **Description (en)** --- Creator of the sampling plan TVItemLanguage DB object
+        /// **Description (en)** --- Name of the creator of the sampling plan 
         /// 
-        /// **Description (fr)** --- Object BD TVItemLanguage du créateur du plan d'échantillonnage
+        /// **Description (fr)** --- Nom du créateur du plan d'échantillonnage
         /// </returns>
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CreatorTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Creator of the sampling plan TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du créateur du plan d'échantillonnage")]
-        [CSSPDescriptionEN(DescriptionEN = @"Creator of the sampling plan TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du créateur du plan d'échantillonnage")]
-        public TVItemLanguage CreatorTVItemLanguage { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CreatorTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Name of the creator of the sampling plan")]
+        [CSSPDisplayFR(DisplayFR = "Nom du créateur du plan d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Name of the creator of the sampling plan ")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du créateur du plan d'échantillonnage")]
+        public string CreatorName { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SamplingPlanFileTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling plan file TVItemLanguage")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage de la filière du plan d'échantillonnage")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "ampling plan file TVItemLanguage DB object")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage de la filière du plan d'échantillonnage")]</para>
+        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SamplingPlanFileTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Sampling plan file name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom de la filière du plan d'échantillonnage")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Sampling plan file name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom de la filière du plan d'échantillonnage")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Sampling plan file TVItemLanguage
+        /// **Display (en)** --- Sampling plan file name
         /// 
-        /// **Display (fr)** --- TVItemLanguage de la filière du plan d'échantillonnage
+        /// **Display (fr)** --- Nom de la filière du plan d'échantillonnage
         /// 
-        /// **Description (en)** --- ampling plan file TVItemLanguage DB object
+        /// **Description (en)** --- Sampling plan file name
         /// 
-        /// **Description (fr)** --- Object BD TVItemLanguage de la filière du plan d'échantillonnage
+        /// **Description (fr)** --- Nom de la filière du plan d'échantillonnage
         /// </returns>
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SamplingPlanFileTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Sampling plan file TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de la filière du plan d'échantillonnage")]
-        [CSSPDescriptionEN(DescriptionEN = @"ampling plan file TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de la filière du plan d'échantillonnage")]
-        public TVItemLanguage SamplingPlanFileTVItemLanguage { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SamplingPlanFileTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Sampling plan file name")]
+        [CSSPDisplayFR(DisplayFR = "Nom de la filière du plan d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sampling plan file name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom de la filière du plan d'échantillonnage")]
+        public string SamplingPlanFileName { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update contact TVItemLanguage")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update contact TVItemLanguage DB object")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du contact ayant fait le dernière changement")]</para>
+        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update contact name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom du contact ayant fait le dernière changement")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update contact name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom du contact ayant fait le dernière changement")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Last update contact TVItemLanguage
+        /// **Display (en)** --- Last update contact name
         /// 
-        /// **Display (fr)** --- TVItemLanguage du contact ayant fait le dernière changement
+        /// **Display (fr)** --- Nom du contact ayant fait le dernière changement
         /// 
-        /// **Description (en)** --- Last update contact TVItemLanguage DB object
+        /// **Description (en)** --- Last update contact name
         /// 
-        /// **Description (fr)** --- Object BD TVItemLanguage du contact ayant fait le dernière changement
+        /// **Description (fr)** --- Nom du contact ayant fait le dernière changement
         /// </returns>
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
-        public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact ayant fait le dernière changement")]
+        public string LastUpdateContactText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>

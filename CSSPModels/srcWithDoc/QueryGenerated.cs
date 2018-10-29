@@ -17,14 +17,14 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [ModelType](CSSPModels.Query.html#CSSPModels_Query_ModelType), [Language](CSSPModels.Query.html#CSSPModels_Query_Language), [Lang](CSSPModels.Query.html#CSSPModels_Query_Lang), [Skip](CSSPModels.Query.html#CSSPModels_Query_Skip), [Take](CSSPModels.Query.html#CSSPModels_Query_Take), [Order](CSSPModels.Query.html#CSSPModels_Query_Order), [Where](CSSPModels.Query.html#CSSPModels_Query_Where), [Detail](CSSPModels.Query.html#CSSPModels_Query_Detail), [OrderList](CSSPModels.Query.html#CSSPModels_Query_OrderList), [WhereInfoList](CSSPModels.Query.html#CSSPModels_Query_WhereInfoList), [HasErrors](CSSPModels.Query.html#CSSPModels_Query_HasErrors), [ValidationResults](CSSPModels.Query.html#CSSPModels_Query_ValidationResults), </para>
+    /// > <para>**Other properties** : [ModelType](CSSPModels.Query.html#CSSPModels_Query_ModelType), [Language](CSSPModels.Query.html#CSSPModels_Query_Language), [Lang](CSSPModels.Query.html#CSSPModels_Query_Lang), [Skip](CSSPModels.Query.html#CSSPModels_Query_Skip), [Take](CSSPModels.Query.html#CSSPModels_Query_Take), [Order](CSSPModels.Query.html#CSSPModels_Query_Order), [Where](CSSPModels.Query.html#CSSPModels_Query_Where), [Extra](CSSPModels.Query.html#CSSPModels_Query_Extra), [OrderList](CSSPModels.Query.html#CSSPModels_Query_OrderList), [WhereInfoList](CSSPModels.Query.html#CSSPModels_Query_WhereInfoList), [HasErrors](CSSPModels.Query.html#CSSPModels_Query_HasErrors), [ValidationResults](CSSPModels.Query.html#CSSPModels_Query_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [QueryService](CSSPServices.QueryService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html)</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]
-    public partial class Query : Error
+    public partial class Query : CSSPError
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -203,27 +203,27 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Detail")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Détail")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Getting more detail or calculated fields while querying the database")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Obtenir plus de détails ou de champs calculés lors de l'interrogation de la base de données")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Extra")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Extra")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Getting extra or calculated fields while querying the database")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Obtenir des champs d'extra ou de champs calculés lors de l'interrogation de la base de données")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Detail
+        /// **Display (en)** --- Extra
         /// 
-        /// **Display (fr)** --- Détail
+        /// **Display (fr)** --- Extra
         /// 
-        /// **Description (en)** --- Getting more detail or calculated fields while querying the database
+        /// **Description (en)** --- Getting extra or calculated fields while querying the database
         /// 
-        /// **Description (fr)** --- Obtenir plus de détails ou de champs calculés lors de l'interrogation de la base de données
+        /// **Description (fr)** --- Obtenir des champs d'extra ou de champs calculés lors de l'interrogation de la base de données
         /// </returns>
         [StringLength(1)]
-        [CSSPDisplayEN(DisplayEN = "Detail")]
-        [CSSPDisplayFR(DisplayFR = "Détail")]
-        [CSSPDescriptionEN(DescriptionEN = @"Getting more detail or calculated fields while querying the database")]
-        [CSSPDescriptionFR(DescriptionFR = @"Obtenir plus de détails ou de champs calculés lors de l'interrogation de la base de données")]
-        public string Detail { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Extra")]
+        [CSSPDisplayFR(DisplayFR = "Extra")]
+        [CSSPDescriptionEN(DescriptionEN = @"Getting extra or calculated fields while querying the database")]
+        [CSSPDescriptionFR(DescriptionFR = @"Obtenir des champs d'extra ou de champs calculés lors de l'interrogation de la base de données")]
+        public string Extra { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
@@ -281,7 +281,7 @@ namespace CSSPModels
             Take = 200;
             Order = "";
             Where = "";
-            Detail = "";
+            Extra = "";
             OrderList = new List<string>();
             WhereInfoList = new List<WhereInfo>();
         }

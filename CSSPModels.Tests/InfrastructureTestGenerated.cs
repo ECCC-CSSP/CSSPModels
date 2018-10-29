@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void InfrastructureExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "InfrastructureTVItemLanguage", "SeeOtherTVItemLanguage", "CivicAddressTVItemLanguage", "LastUpdateContactTVItemLanguage", "InfrastructureTypeText", "FacilityTypeText", "AerationTypeText", "PreliminaryTreatmentTypeText", "PrimaryTreatmentTypeText", "SecondaryTreatmentTypeText", "TertiaryTreatmentTypeText", "TreatmentTypeText", "DisinfectionTypeText", "CollectionSystemTypeText", "AlarmSystemTypeText", "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "InfrastructureText", "SeeOtherText", "CivicAddressText", "LastUpdateContactText", "InfrastructureTypeText", "FacilityTypeText", "AerationTypeText", "PreliminaryTreatmentTypeText", "PrimaryTreatmentTypeText", "SecondaryTreatmentTypeText", "TertiaryTreatmentTypeText", "TreatmentTypeText", "DisinfectionTypeText", "CollectionSystemTypeText", "AlarmSystemTypeText", "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void InfrastructureExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "InfrastructureReportTest", "InfrastructureTVItemLanguage", "SeeOtherTVItemLanguage", "CivicAddressTVItemLanguage", "LastUpdateContactTVItemLanguage", "InfrastructureTypeText", "FacilityTypeText", "AerationTypeText", "PreliminaryTreatmentTypeText", "PrimaryTreatmentTypeText", "SecondaryTreatmentTypeText", "TertiaryTreatmentTypeText", "TreatmentTypeText", "DisinfectionTypeText", "CollectionSystemTypeText", "AlarmSystemTypeText", "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "InfrastructureReportTest", "InfrastructureText", "SeeOtherText", "CivicAddressText", "LastUpdateContactText", "InfrastructureTypeText", "FacilityTypeText", "AerationTypeText", "PreliminaryTreatmentTypeText", "PrimaryTreatmentTypeText", "SecondaryTreatmentTypeText", "TertiaryTreatmentTypeText", "TreatmentTypeText", "DisinfectionTypeText", "CollectionSystemTypeText", "AlarmSystemTypeText", "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -407,25 +407,25 @@ namespace CSSPModels.Tests
                bool val49 = true;
                infrastructure.HasErrors = val49;
                Assert.AreEqual(val49, infrastructure.HasErrors);
-               IEnumerable<ValidationResult> val150 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val150 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                infrastructure.ValidationResults = val150;
                Assert.AreEqual(val150, infrastructure.ValidationResults);
         }
         [TestMethod]
         public void InfrastructureExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               infrastructureExtraA.InfrastructureTVItemLanguage = val1;
-               Assert.AreEqual(val1, infrastructureExtraA.InfrastructureTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               infrastructureExtraA.SeeOtherTVItemLanguage = val2;
-               Assert.AreEqual(val2, infrastructureExtraA.SeeOtherTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               infrastructureExtraA.CivicAddressTVItemLanguage = val3;
-               Assert.AreEqual(val3, infrastructureExtraA.CivicAddressTVItemLanguage);
-               TVItemLanguage val4 = new TVItemLanguage();
-               infrastructureExtraA.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, infrastructureExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               infrastructureExtraA.InfrastructureText = val1;
+               Assert.AreEqual(val1, infrastructureExtraA.InfrastructureText);
+               string val2 = "Some text";
+               infrastructureExtraA.SeeOtherText = val2;
+               Assert.AreEqual(val2, infrastructureExtraA.SeeOtherText);
+               string val3 = "Some text";
+               infrastructureExtraA.CivicAddressText = val3;
+               Assert.AreEqual(val3, infrastructureExtraA.CivicAddressText);
+               string val4 = "Some text";
+               infrastructureExtraA.LastUpdateContactText = val4;
+               Assert.AreEqual(val4, infrastructureExtraA.LastUpdateContactText);
                string val5 = "Some text";
                infrastructureExtraA.InfrastructureTypeText = val5;
                Assert.AreEqual(val5, infrastructureExtraA.InfrastructureTypeText);
@@ -606,7 +606,7 @@ namespace CSSPModels.Tests
                bool val64 = true;
                infrastructureExtraA.HasErrors = val64;
                Assert.AreEqual(val64, infrastructureExtraA.HasErrors);
-               IEnumerable<ValidationResult> val195 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val195 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                infrastructureExtraA.ValidationResults = val195;
                Assert.AreEqual(val195, infrastructureExtraA.ValidationResults);
         }
@@ -616,18 +616,18 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                infrastructureExtraB.InfrastructureReportTest = val1;
                Assert.AreEqual(val1, infrastructureExtraB.InfrastructureReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               infrastructureExtraB.InfrastructureTVItemLanguage = val2;
-               Assert.AreEqual(val2, infrastructureExtraB.InfrastructureTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               infrastructureExtraB.SeeOtherTVItemLanguage = val3;
-               Assert.AreEqual(val3, infrastructureExtraB.SeeOtherTVItemLanguage);
-               TVItemLanguage val4 = new TVItemLanguage();
-               infrastructureExtraB.CivicAddressTVItemLanguage = val4;
-               Assert.AreEqual(val4, infrastructureExtraB.CivicAddressTVItemLanguage);
-               TVItemLanguage val5 = new TVItemLanguage();
-               infrastructureExtraB.LastUpdateContactTVItemLanguage = val5;
-               Assert.AreEqual(val5, infrastructureExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               infrastructureExtraB.InfrastructureText = val2;
+               Assert.AreEqual(val2, infrastructureExtraB.InfrastructureText);
+               string val3 = "Some text";
+               infrastructureExtraB.SeeOtherText = val3;
+               Assert.AreEqual(val3, infrastructureExtraB.SeeOtherText);
+               string val4 = "Some text";
+               infrastructureExtraB.CivicAddressText = val4;
+               Assert.AreEqual(val4, infrastructureExtraB.CivicAddressText);
+               string val5 = "Some text";
+               infrastructureExtraB.LastUpdateContactText = val5;
+               Assert.AreEqual(val5, infrastructureExtraB.LastUpdateContactText);
                string val6 = "Some text";
                infrastructureExtraB.InfrastructureTypeText = val6;
                Assert.AreEqual(val6, infrastructureExtraB.InfrastructureTypeText);
@@ -808,7 +808,7 @@ namespace CSSPModels.Tests
                bool val65 = true;
                infrastructureExtraB.HasErrors = val65;
                Assert.AreEqual(val65, infrastructureExtraB.HasErrors);
-               IEnumerable<ValidationResult> val198 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val198 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                infrastructureExtraB.ValidationResults = val198;
                Assert.AreEqual(val198, infrastructureExtraB.ValidationResults);
         }

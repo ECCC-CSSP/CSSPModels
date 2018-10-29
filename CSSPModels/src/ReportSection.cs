@@ -78,24 +78,24 @@ namespace CSSPModels
     public partial class ReportSectionExtraA : ReportSection
     {
         #region Properties
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
-        public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "ReportSectionLanguage", FillPlurial = "s", FillFieldID = "ReportSectionID", FillEqualField = "ReportSectionID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact ayant fait le dernière changement")]
+        public string LastUpdateContactText { get; set; }
+        [CSSPFill(FillTypeName = "ReportSectionLanguage", FillPlurial = "s", FillFieldID = "ReportSectionID", FillEqualField = "ReportSectionID", FillReturnField = "ReportSectionName", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Report section name")]
         [CSSPDisplayFR(DisplayFR = "Nom de la section du raport")]
         [CSSPDescriptionEN(DescriptionEN = @"Report section name")]
         [CSSPDescriptionFR(DescriptionFR = @"Nom de la section du raport")]
-        public ReportSectionLanguage ReportSectionName { get; set; }
-        [CSSPFill(FillTypeName = "ReportSectionLanguage", FillPlurial = "s", FillFieldID = "ReportSectionID", FillEqualField = "ReportSectionID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        public string ReportSectionName { get; set; }
+        [CSSPFill(FillTypeName = "ReportSectionLanguage", FillPlurial = "s", FillFieldID = "ReportSectionID", FillEqualField = "ReportSectionID", FillReturnField = "ReportSectionText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Report section text")]
         [CSSPDisplayFR(DisplayFR = "Texte de la section du raport")]
         [CSSPDescriptionEN(DescriptionEN = @"Report section text")]
         [CSSPDescriptionFR(DescriptionFR = @"Texte de la section du raport")]
-        public ReportSectionLanguage ReportSectionText { get; set; }
+        public string ReportSectionText { get; set; }
         #endregion Properties
 
         #region Constructors

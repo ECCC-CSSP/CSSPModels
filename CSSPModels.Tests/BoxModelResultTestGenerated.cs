@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void BoxModelResultExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "BoxModelResultTypeText", "BoxModelResultID", "BoxModelID", "BoxModelResultType", "Volume_m3", "Surface_m2", "Radius_m", "LeftSideDiameterLineAngle_deg", "CircleCenterLatitude", "CircleCenterLongitude", "FixLength", "FixWidth", "RectLength_m", "RectWidth_m", "LeftSideLineAngle_deg", "LeftSideLineStartLatitude", "LeftSideLineStartLongitude", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "BoxModelResultTypeText", "BoxModelResultID", "BoxModelID", "BoxModelResultType", "Volume_m3", "Surface_m2", "Radius_m", "LeftSideDiameterLineAngle_deg", "CircleCenterLatitude", "CircleCenterLongitude", "FixLength", "FixWidth", "RectLength_m", "RectWidth_m", "LeftSideLineAngle_deg", "LeftSideLineStartLatitude", "LeftSideLineStartLongitude", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void BoxModelResultExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "BoxModelResultReportTest", "LastUpdateContactTVItemLanguage", "BoxModelResultTypeText", "BoxModelResultID", "BoxModelID", "BoxModelResultType", "Volume_m3", "Surface_m2", "Radius_m", "LeftSideDiameterLineAngle_deg", "CircleCenterLatitude", "CircleCenterLongitude", "FixLength", "FixWidth", "RectLength_m", "RectWidth_m", "LeftSideLineAngle_deg", "LeftSideLineStartLatitude", "LeftSideLineStartLongitude", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "BoxModelResultReportTest", "LastUpdateContactText", "BoxModelResultTypeText", "BoxModelResultID", "BoxModelID", "BoxModelResultType", "Volume_m3", "Surface_m2", "Radius_m", "LeftSideDiameterLineAngle_deg", "CircleCenterLatitude", "CircleCenterLongitude", "FixLength", "FixWidth", "RectLength_m", "RectWidth_m", "LeftSideLineAngle_deg", "LeftSideLineStartLatitude", "LeftSideLineStartLongitude", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -317,16 +317,16 @@ namespace CSSPModels.Tests
                bool val19 = true;
                boxModelResult.HasErrors = val19;
                Assert.AreEqual(val19, boxModelResult.HasErrors);
-               IEnumerable<ValidationResult> val60 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val60 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                boxModelResult.ValidationResults = val60;
                Assert.AreEqual(val60, boxModelResult.ValidationResults);
         }
         [TestMethod]
         public void BoxModelResultExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               boxModelResultExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, boxModelResultExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               boxModelResultExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, boxModelResultExtraA.LastUpdateContactText);
                string val2 = "Some text";
                boxModelResultExtraA.BoxModelResultTypeText = val2;
                Assert.AreEqual(val2, boxModelResultExtraA.BoxModelResultTypeText);
@@ -387,7 +387,7 @@ namespace CSSPModels.Tests
                bool val21 = true;
                boxModelResultExtraA.HasErrors = val21;
                Assert.AreEqual(val21, boxModelResultExtraA.HasErrors);
-               IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                boxModelResultExtraA.ValidationResults = val66;
                Assert.AreEqual(val66, boxModelResultExtraA.ValidationResults);
         }
@@ -397,9 +397,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                boxModelResultExtraB.BoxModelResultReportTest = val1;
                Assert.AreEqual(val1, boxModelResultExtraB.BoxModelResultReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               boxModelResultExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, boxModelResultExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               boxModelResultExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, boxModelResultExtraB.LastUpdateContactText);
                string val3 = "Some text";
                boxModelResultExtraB.BoxModelResultTypeText = val3;
                Assert.AreEqual(val3, boxModelResultExtraB.BoxModelResultTypeText);
@@ -460,7 +460,7 @@ namespace CSSPModels.Tests
                bool val22 = true;
                boxModelResultExtraB.HasErrors = val22;
                Assert.AreEqual(val22, boxModelResultExtraB.HasErrors);
-               IEnumerable<ValidationResult> val69 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val69 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                boxModelResultExtraB.ValidationResults = val69;
                Assert.AreEqual(val69, boxModelResultExtraB.ValidationResults);
         }

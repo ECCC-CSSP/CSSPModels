@@ -12,7 +12,7 @@ using System.Linq;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class Query : Error
+    public partial class Query : CSSPError
     {
         #region Properties in DB
         #endregion Properties in DB
@@ -61,11 +61,11 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Établissement d'un filtre des éléments lors de l'interrogation de la base de données")]
         public string Where { get; set; }
         [StringLength(1)]
-        [CSSPDisplayEN(DisplayEN = "Detail")]
-        [CSSPDisplayFR(DisplayFR = "Détail")]
-        [CSSPDescriptionEN(DescriptionEN = @"Getting more detail or calculated fields while querying the database")]
-        [CSSPDescriptionFR(DescriptionFR = @"Obtenir plus de détails ou de champs calculés lors de l'interrogation de la base de données")]
-        public string Detail { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Extra")]
+        [CSSPDisplayFR(DisplayFR = "Extra")]
+        [CSSPDescriptionEN(DescriptionEN = @"Getting extra or calculated fields while querying the database")]
+        [CSSPDescriptionFR(DescriptionFR = @"Obtenir des champs d'extra ou de champs calculés lors de l'interrogation de la base de données")]
+        public string Extra { get; set; }
         [CSSPDisplayEN(DisplayEN = "Order list")]
         [CSSPDisplayFR(DisplayFR = "Liste d'ordre")]
         [CSSPDescriptionEN(DescriptionEN = @"Order list showing all the fields to sort from")]
@@ -87,7 +87,7 @@ namespace CSSPModels
             Take = 200;
             Order = "";
             Where = "";
-            Detail = "";
+            Extra = "";
             OrderList = new List<string>();
             WhereInfoList = new List<WhereInfo>();
         }

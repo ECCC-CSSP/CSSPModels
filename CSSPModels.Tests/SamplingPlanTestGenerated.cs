@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SamplingPlanExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ProvinceTVItemLanguage", "CreatorTVItemLanguage", "SamplingPlanFileTVItemLanguage", "LastUpdateContactTVItemLanguage", "SampleTypeText", "SamplingPlanTypeText", "LabSheetTypeText", "SamplingPlanID", "IsActive", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "AnalyzeMethodDefault", "SampleMatrixDefault", "LaboratoryDefault", "BackupDirectory", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ProvinceText", "CreatorName", "SamplingPlanFileName", "LastUpdateContactText", "SampleTypeText", "SamplingPlanTypeText", "LabSheetTypeText", "SamplingPlanID", "IsActive", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "AnalyzeMethodDefault", "SampleMatrixDefault", "LaboratoryDefault", "BackupDirectory", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SamplingPlanExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SamplingPlanReportTest", "ProvinceTVItemLanguage", "CreatorTVItemLanguage", "SamplingPlanFileTVItemLanguage", "LastUpdateContactTVItemLanguage", "SampleTypeText", "SamplingPlanTypeText", "LabSheetTypeText", "SamplingPlanID", "IsActive", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "AnalyzeMethodDefault", "SampleMatrixDefault", "LaboratoryDefault", "BackupDirectory", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SamplingPlanReportTest", "ProvinceText", "CreatorName", "SamplingPlanFileName", "LastUpdateContactText", "SampleTypeText", "SamplingPlanTypeText", "LabSheetTypeText", "SamplingPlanID", "IsActive", "SamplingPlanName", "ForGroupName", "SampleType", "SamplingPlanType", "LabSheetType", "ProvinceTVItemID", "CreatorTVItemID", "Year", "AccessCode", "DailyDuplicatePrecisionCriteria", "IntertechDuplicatePrecisionCriteria", "IncludeLaboratoryQAQC", "ApprovalCode", "SamplingPlanFileTVItemID", "AnalyzeMethodDefault", "SampleMatrixDefault", "LaboratoryDefault", "BackupDirectory", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -329,25 +329,25 @@ namespace CSSPModels.Tests
                bool val23 = true;
                samplingPlan.HasErrors = val23;
                Assert.AreEqual(val23, samplingPlan.HasErrors);
-               IEnumerable<ValidationResult> val72 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val72 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                samplingPlan.ValidationResults = val72;
                Assert.AreEqual(val72, samplingPlan.ValidationResults);
         }
         [TestMethod]
         public void SamplingPlanExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               samplingPlanExtraA.ProvinceTVItemLanguage = val1;
-               Assert.AreEqual(val1, samplingPlanExtraA.ProvinceTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               samplingPlanExtraA.CreatorTVItemLanguage = val2;
-               Assert.AreEqual(val2, samplingPlanExtraA.CreatorTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               samplingPlanExtraA.SamplingPlanFileTVItemLanguage = val3;
-               Assert.AreEqual(val3, samplingPlanExtraA.SamplingPlanFileTVItemLanguage);
-               TVItemLanguage val4 = new TVItemLanguage();
-               samplingPlanExtraA.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, samplingPlanExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               samplingPlanExtraA.ProvinceText = val1;
+               Assert.AreEqual(val1, samplingPlanExtraA.ProvinceText);
+               string val2 = "Some text";
+               samplingPlanExtraA.CreatorName = val2;
+               Assert.AreEqual(val2, samplingPlanExtraA.CreatorName);
+               string val3 = "Some text";
+               samplingPlanExtraA.SamplingPlanFileName = val3;
+               Assert.AreEqual(val3, samplingPlanExtraA.SamplingPlanFileName);
+               string val4 = "Some text";
+               samplingPlanExtraA.LastUpdateContactText = val4;
+               Assert.AreEqual(val4, samplingPlanExtraA.LastUpdateContactText);
                string val5 = "Some text";
                samplingPlanExtraA.SampleTypeText = val5;
                Assert.AreEqual(val5, samplingPlanExtraA.SampleTypeText);
@@ -426,7 +426,7 @@ namespace CSSPModels.Tests
                bool val30 = true;
                samplingPlanExtraA.HasErrors = val30;
                Assert.AreEqual(val30, samplingPlanExtraA.HasErrors);
-               IEnumerable<ValidationResult> val93 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val93 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                samplingPlanExtraA.ValidationResults = val93;
                Assert.AreEqual(val93, samplingPlanExtraA.ValidationResults);
         }
@@ -436,18 +436,18 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                samplingPlanExtraB.SamplingPlanReportTest = val1;
                Assert.AreEqual(val1, samplingPlanExtraB.SamplingPlanReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               samplingPlanExtraB.ProvinceTVItemLanguage = val2;
-               Assert.AreEqual(val2, samplingPlanExtraB.ProvinceTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               samplingPlanExtraB.CreatorTVItemLanguage = val3;
-               Assert.AreEqual(val3, samplingPlanExtraB.CreatorTVItemLanguage);
-               TVItemLanguage val4 = new TVItemLanguage();
-               samplingPlanExtraB.SamplingPlanFileTVItemLanguage = val4;
-               Assert.AreEqual(val4, samplingPlanExtraB.SamplingPlanFileTVItemLanguage);
-               TVItemLanguage val5 = new TVItemLanguage();
-               samplingPlanExtraB.LastUpdateContactTVItemLanguage = val5;
-               Assert.AreEqual(val5, samplingPlanExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               samplingPlanExtraB.ProvinceText = val2;
+               Assert.AreEqual(val2, samplingPlanExtraB.ProvinceText);
+               string val3 = "Some text";
+               samplingPlanExtraB.CreatorName = val3;
+               Assert.AreEqual(val3, samplingPlanExtraB.CreatorName);
+               string val4 = "Some text";
+               samplingPlanExtraB.SamplingPlanFileName = val4;
+               Assert.AreEqual(val4, samplingPlanExtraB.SamplingPlanFileName);
+               string val5 = "Some text";
+               samplingPlanExtraB.LastUpdateContactText = val5;
+               Assert.AreEqual(val5, samplingPlanExtraB.LastUpdateContactText);
                string val6 = "Some text";
                samplingPlanExtraB.SampleTypeText = val6;
                Assert.AreEqual(val6, samplingPlanExtraB.SampleTypeText);
@@ -526,7 +526,7 @@ namespace CSSPModels.Tests
                bool val31 = true;
                samplingPlanExtraB.HasErrors = val31;
                Assert.AreEqual(val31, samplingPlanExtraB.HasErrors);
-               IEnumerable<ValidationResult> val96 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val96 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                samplingPlanExtraB.ValidationResults = val96;
                Assert.AreEqual(val96, samplingPlanExtraB.ValidationResults);
         }

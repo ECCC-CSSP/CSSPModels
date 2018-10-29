@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LogExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LogCommandText", "LogID", "TableName", "ID", "LogCommand", "Information", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "LogCommandText", "LogID", "TableName", "ID", "LogCommand", "Information", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LogExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LogReportTest", "LastUpdateContactTVItemLanguage", "LogCommandText", "LogID", "TableName", "ID", "LogCommand", "Information", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LogReportTest", "LastUpdateContactText", "LogCommandText", "LogID", "TableName", "ID", "LogCommand", "Information", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -284,16 +284,16 @@ namespace CSSPModels.Tests
                bool val8 = true;
                log.HasErrors = val8;
                Assert.AreEqual(val8, log.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                log.ValidationResults = val27;
                Assert.AreEqual(val27, log.ValidationResults);
         }
         [TestMethod]
         public void LogExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               logExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, logExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               logExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, logExtraA.LastUpdateContactText);
                string val2 = "Some text";
                logExtraA.LogCommandText = val2;
                Assert.AreEqual(val2, logExtraA.LogCommandText);
@@ -321,7 +321,7 @@ namespace CSSPModels.Tests
                bool val10 = true;
                logExtraA.HasErrors = val10;
                Assert.AreEqual(val10, logExtraA.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                logExtraA.ValidationResults = val33;
                Assert.AreEqual(val33, logExtraA.ValidationResults);
         }
@@ -331,9 +331,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                logExtraB.LogReportTest = val1;
                Assert.AreEqual(val1, logExtraB.LogReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               logExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, logExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               logExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, logExtraB.LastUpdateContactText);
                string val3 = "Some text";
                logExtraB.LogCommandText = val3;
                Assert.AreEqual(val3, logExtraB.LogCommandText);
@@ -361,7 +361,7 @@ namespace CSSPModels.Tests
                bool val11 = true;
                logExtraB.HasErrors = val11;
                Assert.AreEqual(val11, logExtraB.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                logExtraB.ValidationResults = val36;
                Assert.AreEqual(val36, logExtraB.ValidationResults);
         }

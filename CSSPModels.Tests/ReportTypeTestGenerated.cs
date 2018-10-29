@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ReportTypeExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "ReportTypeID", "TVType", "FileType", "UniqueCode", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "ReportTypeID", "TVType", "FileType", "UniqueCode", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ReportTypeExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ReportTypeReportTest", "LastUpdateContactTVItemLanguage", "ReportTypeID", "TVType", "FileType", "UniqueCode", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ReportTypeReportTest", "LastUpdateContactText", "ReportTypeID", "TVType", "FileType", "UniqueCode", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -281,16 +281,16 @@ namespace CSSPModels.Tests
                bool val7 = true;
                reportType.HasErrors = val7;
                Assert.AreEqual(val7, reportType.HasErrors);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                reportType.ValidationResults = val24;
                Assert.AreEqual(val24, reportType.ValidationResults);
         }
         [TestMethod]
         public void ReportTypeExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               reportTypeExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, reportTypeExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               reportTypeExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, reportTypeExtraA.LastUpdateContactText);
                int val2 = 45;
                reportTypeExtraA.ReportTypeID = val2;
                Assert.AreEqual(val2, reportTypeExtraA.ReportTypeID);
@@ -312,7 +312,7 @@ namespace CSSPModels.Tests
                bool val8 = true;
                reportTypeExtraA.HasErrors = val8;
                Assert.AreEqual(val8, reportTypeExtraA.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                reportTypeExtraA.ValidationResults = val27;
                Assert.AreEqual(val27, reportTypeExtraA.ValidationResults);
         }
@@ -322,9 +322,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                reportTypeExtraB.ReportTypeReportTest = val1;
                Assert.AreEqual(val1, reportTypeExtraB.ReportTypeReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               reportTypeExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, reportTypeExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               reportTypeExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, reportTypeExtraB.LastUpdateContactText);
                int val3 = 45;
                reportTypeExtraB.ReportTypeID = val3;
                Assert.AreEqual(val3, reportTypeExtraB.ReportTypeID);
@@ -346,7 +346,7 @@ namespace CSSPModels.Tests
                bool val9 = true;
                reportTypeExtraB.HasErrors = val9;
                Assert.AreEqual(val9, reportTypeExtraB.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                reportTypeExtraB.ValidationResults = val30;
                Assert.AreEqual(val30, reportTypeExtraB.ValidationResults);
         }

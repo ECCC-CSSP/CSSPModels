@@ -44,7 +44,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void BoxModel_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "BoxModelID", "InfrastructureTVItemID", "Flow_m3_day", "Depth_m", "Temperature_C", "Dilution", "DecayRate_per_day", "FCUntreated_MPN_100ml", "FCPreDisinfection_MPN_100ml", "Concentration_MPN_100ml", "T90_hour", "FlowDuration_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "BoxModelID", "InfrastructureTVItemID", "Discharge_m3_day", "Depth_m", "Temperature_C", "Dilution", "DecayRate_per_day", "FCUntreated_MPN_100ml", "FCPreDisinfection_MPN_100ml", "Concentration_MPN_100ml", "T90_hour", "FlowDuration_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void BoxModelExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "InfrastructureTVItemLanguage", "LastUpdateContactTVItemLanguage", "BoxModelID", "InfrastructureTVItemID", "Flow_m3_day", "Depth_m", "Temperature_C", "Dilution", "DecayRate_per_day", "FCUntreated_MPN_100ml", "FCPreDisinfection_MPN_100ml", "Concentration_MPN_100ml", "T90_hour", "FlowDuration_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "InfrastructureText", "LastUpdateContactText", "BoxModelID", "InfrastructureTVItemID", "Discharge_m3_day", "Depth_m", "Temperature_C", "Dilution", "DecayRate_per_day", "FCUntreated_MPN_100ml", "FCPreDisinfection_MPN_100ml", "Concentration_MPN_100ml", "T90_hour", "FlowDuration_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void BoxModelExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "BoxModelReportTest", "InfrastructureTVItemLanguage", "LastUpdateContactTVItemLanguage", "BoxModelID", "InfrastructureTVItemID", "Flow_m3_day", "Depth_m", "Temperature_C", "Dilution", "DecayRate_per_day", "FCUntreated_MPN_100ml", "FCPreDisinfection_MPN_100ml", "Concentration_MPN_100ml", "T90_hour", "FlowDuration_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "BoxModelReportTest", "InfrastructureText", "LastUpdateContactText", "BoxModelID", "InfrastructureTVItemID", "Discharge_m3_day", "Depth_m", "Temperature_C", "Dilution", "DecayRate_per_day", "FCUntreated_MPN_100ml", "FCPreDisinfection_MPN_100ml", "Concentration_MPN_100ml", "T90_hour", "FlowDuration_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -267,8 +267,8 @@ namespace CSSPModels.Tests
                boxModel.InfrastructureTVItemID = val2;
                Assert.AreEqual(val2, boxModel.InfrastructureTVItemID);
                double val3 = 87.9D;
-               boxModel.Flow_m3_day = val3;
-               Assert.AreEqual(val3, boxModel.Flow_m3_day);
+               boxModel.Discharge_m3_day = val3;
+               Assert.AreEqual(val3, boxModel.Discharge_m3_day);
                double val4 = 87.9D;
                boxModel.Depth_m = val4;
                Assert.AreEqual(val4, boxModel.Depth_m);
@@ -305,19 +305,19 @@ namespace CSSPModels.Tests
                bool val15 = true;
                boxModel.HasErrors = val15;
                Assert.AreEqual(val15, boxModel.HasErrors);
-               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                boxModel.ValidationResults = val48;
                Assert.AreEqual(val48, boxModel.ValidationResults);
         }
         [TestMethod]
         public void BoxModelExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               boxModelExtraA.InfrastructureTVItemLanguage = val1;
-               Assert.AreEqual(val1, boxModelExtraA.InfrastructureTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               boxModelExtraA.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, boxModelExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               boxModelExtraA.InfrastructureText = val1;
+               Assert.AreEqual(val1, boxModelExtraA.InfrastructureText);
+               string val2 = "Some text";
+               boxModelExtraA.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, boxModelExtraA.LastUpdateContactText);
                int val3 = 45;
                boxModelExtraA.BoxModelID = val3;
                Assert.AreEqual(val3, boxModelExtraA.BoxModelID);
@@ -325,8 +325,8 @@ namespace CSSPModels.Tests
                boxModelExtraA.InfrastructureTVItemID = val4;
                Assert.AreEqual(val4, boxModelExtraA.InfrastructureTVItemID);
                double val5 = 87.9D;
-               boxModelExtraA.Flow_m3_day = val5;
-               Assert.AreEqual(val5, boxModelExtraA.Flow_m3_day);
+               boxModelExtraA.Discharge_m3_day = val5;
+               Assert.AreEqual(val5, boxModelExtraA.Discharge_m3_day);
                double val6 = 87.9D;
                boxModelExtraA.Depth_m = val6;
                Assert.AreEqual(val6, boxModelExtraA.Depth_m);
@@ -363,7 +363,7 @@ namespace CSSPModels.Tests
                bool val17 = true;
                boxModelExtraA.HasErrors = val17;
                Assert.AreEqual(val17, boxModelExtraA.HasErrors);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                boxModelExtraA.ValidationResults = val54;
                Assert.AreEqual(val54, boxModelExtraA.ValidationResults);
         }
@@ -373,12 +373,12 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                boxModelExtraB.BoxModelReportTest = val1;
                Assert.AreEqual(val1, boxModelExtraB.BoxModelReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               boxModelExtraB.InfrastructureTVItemLanguage = val2;
-               Assert.AreEqual(val2, boxModelExtraB.InfrastructureTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               boxModelExtraB.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, boxModelExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               boxModelExtraB.InfrastructureText = val2;
+               Assert.AreEqual(val2, boxModelExtraB.InfrastructureText);
+               string val3 = "Some text";
+               boxModelExtraB.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, boxModelExtraB.LastUpdateContactText);
                int val4 = 45;
                boxModelExtraB.BoxModelID = val4;
                Assert.AreEqual(val4, boxModelExtraB.BoxModelID);
@@ -386,8 +386,8 @@ namespace CSSPModels.Tests
                boxModelExtraB.InfrastructureTVItemID = val5;
                Assert.AreEqual(val5, boxModelExtraB.InfrastructureTVItemID);
                double val6 = 87.9D;
-               boxModelExtraB.Flow_m3_day = val6;
-               Assert.AreEqual(val6, boxModelExtraB.Flow_m3_day);
+               boxModelExtraB.Discharge_m3_day = val6;
+               Assert.AreEqual(val6, boxModelExtraB.Discharge_m3_day);
                double val7 = 87.9D;
                boxModelExtraB.Depth_m = val7;
                Assert.AreEqual(val7, boxModelExtraB.Depth_m);
@@ -424,7 +424,7 @@ namespace CSSPModels.Tests
                bool val18 = true;
                boxModelExtraB.HasErrors = val18;
                Assert.AreEqual(val18, boxModelExtraB.HasErrors);
-               IEnumerable<ValidationResult> val57 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val57 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                boxModelExtraB.ValidationResults = val57;
                Assert.AreEqual(val57, boxModelExtraB.ValidationResults);
         }

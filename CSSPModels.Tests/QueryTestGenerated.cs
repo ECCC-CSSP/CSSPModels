@@ -40,7 +40,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Query_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ModelType", "Language", "Lang", "Skip", "Take", "Order", "Where", "Detail", "OrderList", "WhereInfoList", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ModelType", "Language", "Lang", "Skip", "Take", "Order", "Where", "Extra", "OrderList", "WhereInfoList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -82,8 +82,8 @@ namespace CSSPModels.Tests
                query.Where = val7;
                Assert.AreEqual(val7, query.Where);
                string val8 = "Some text";
-               query.Detail = val8;
-               Assert.AreEqual(val8, query.Detail);
+               query.Extra = val8;
+               Assert.AreEqual(val8, query.Extra);
                List<string> val9 = new List<string>() { "testing", "Bonjour Allo" };
                query.OrderList = val9;
                Assert.AreEqual(val9, query.OrderList);
@@ -93,7 +93,7 @@ namespace CSSPModels.Tests
                bool val11 = true;
                query.HasErrors = val11;
                Assert.AreEqual(val11, query.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                query.ValidationResults = val36;
                Assert.AreEqual(val36, query.ValidationResults);
         }

@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TideLocationExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "TideLocationID", "Zone", "Name", "Prov", "sid", "Lat", "Lng", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "TideLocationID", "Zone", "Name", "Prov", "sid", "Lat", "Lng", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TideLocationExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "TideLocationReportTest", "LastUpdateContactTVItemLanguage", "TideLocationID", "Zone", "Name", "Prov", "sid", "Lat", "Lng", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TideLocationReportTest", "LastUpdateContactText", "TideLocationID", "Zone", "Name", "Prov", "sid", "Lat", "Lng", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -290,16 +290,16 @@ namespace CSSPModels.Tests
                bool val10 = true;
                tideLocation.HasErrors = val10;
                Assert.AreEqual(val10, tideLocation.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tideLocation.ValidationResults = val33;
                Assert.AreEqual(val33, tideLocation.ValidationResults);
         }
         [TestMethod]
         public void TideLocationExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               tideLocationExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, tideLocationExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               tideLocationExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, tideLocationExtraA.LastUpdateContactText);
                int val2 = 45;
                tideLocationExtraA.TideLocationID = val2;
                Assert.AreEqual(val2, tideLocationExtraA.TideLocationID);
@@ -330,7 +330,7 @@ namespace CSSPModels.Tests
                bool val11 = true;
                tideLocationExtraA.HasErrors = val11;
                Assert.AreEqual(val11, tideLocationExtraA.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tideLocationExtraA.ValidationResults = val36;
                Assert.AreEqual(val36, tideLocationExtraA.ValidationResults);
         }
@@ -340,9 +340,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                tideLocationExtraB.TideLocationReportTest = val1;
                Assert.AreEqual(val1, tideLocationExtraB.TideLocationReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               tideLocationExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, tideLocationExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               tideLocationExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, tideLocationExtraB.LastUpdateContactText);
                int val3 = 45;
                tideLocationExtraB.TideLocationID = val3;
                Assert.AreEqual(val3, tideLocationExtraB.TideLocationID);
@@ -373,7 +373,7 @@ namespace CSSPModels.Tests
                bool val12 = true;
                tideLocationExtraB.HasErrors = val12;
                Assert.AreEqual(val12, tideLocationExtraB.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tideLocationExtraB.ValidationResults = val39;
                Assert.AreEqual(val39, tideLocationExtraB.ValidationResults);
         }

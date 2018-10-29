@@ -108,24 +108,24 @@ namespace CSSPModels
     public partial class UseOfSiteExtraA : UseOfSite
     {
         #region Properties
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SiteTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Site TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du site")]
-        [CSSPDescriptionEN(DescriptionEN = @"Site TVItemLanguage DB object (climate, hydrometric or tide)")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du site (climatique, hydrométrique ou de marée)")]
-        public TVItemLanguage SiteTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SubsectorTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Subsector TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du sous-secteur")]
-        [CSSPDescriptionEN(DescriptionEN = @"Subsector TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du sous-secteur")]
-        public TVItemLanguage SubsectorTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
-        public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SiteTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Site text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du site")]
+        [CSSPDescriptionEN(DescriptionEN = @"Site text (climate, hydrometric or tide)")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du site (climatique, hydrométrique ou de marée)")]
+        public string SiteText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SubsectorTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Subsector text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du sous-secteur")]
+        [CSSPDescriptionEN(DescriptionEN = @"Subsector text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du sous-secteur")]
+        public string SubsectorText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact ayant fait le dernière changement")]
+        public string LastUpdateContactText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "SiteTypeEnum", EnumType = "SiteType")]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Site type text")]

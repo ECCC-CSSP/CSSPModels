@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMSitePolSourceSiteExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MWQMSiteTVItemLanguage", "PolSourceSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "TVTypeText", "MWQMSitePolSourceSiteID", "MWQMSiteTVItemID", "PolSourceSiteTVItemID", "TVType", "LinkReasons", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MWQMSiteText", "PolSourceSiteText", "LastUpdateContactText", "TVTypeText", "MWQMSitePolSourceSiteID", "MWQMSiteTVItemID", "PolSourceSiteTVItemID", "TVType", "LinkReasons", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMSitePolSourceSiteExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MWQMSitePolSourceSiteReportTest", "MWQMSiteTVItemLanguage", "PolSourceSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "TVTypeText", "MWQMSitePolSourceSiteID", "MWQMSiteTVItemID", "PolSourceSiteTVItemID", "TVType", "LinkReasons", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MWQMSitePolSourceSiteReportTest", "MWQMSiteText", "PolSourceSiteText", "LastUpdateContactText", "TVTypeText", "MWQMSitePolSourceSiteID", "MWQMSiteTVItemID", "PolSourceSiteTVItemID", "TVType", "LinkReasons", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -284,22 +284,22 @@ namespace CSSPModels.Tests
                bool val8 = true;
                mWQMSitePolSourceSite.HasErrors = val8;
                Assert.AreEqual(val8, mWQMSitePolSourceSite.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMSitePolSourceSite.ValidationResults = val27;
                Assert.AreEqual(val27, mWQMSitePolSourceSite.ValidationResults);
         }
         [TestMethod]
         public void MWQMSitePolSourceSiteExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               mWQMSitePolSourceSiteExtraA.MWQMSiteTVItemLanguage = val1;
-               Assert.AreEqual(val1, mWQMSitePolSourceSiteExtraA.MWQMSiteTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mWQMSitePolSourceSiteExtraA.PolSourceSiteTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMSitePolSourceSiteExtraA.PolSourceSiteTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               mWQMSitePolSourceSiteExtraA.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, mWQMSitePolSourceSiteExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               mWQMSitePolSourceSiteExtraA.MWQMSiteText = val1;
+               Assert.AreEqual(val1, mWQMSitePolSourceSiteExtraA.MWQMSiteText);
+               string val2 = "Some text";
+               mWQMSitePolSourceSiteExtraA.PolSourceSiteText = val2;
+               Assert.AreEqual(val2, mWQMSitePolSourceSiteExtraA.PolSourceSiteText);
+               string val3 = "Some text";
+               mWQMSitePolSourceSiteExtraA.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, mWQMSitePolSourceSiteExtraA.LastUpdateContactText);
                string val4 = "Some text";
                mWQMSitePolSourceSiteExtraA.TVTypeText = val4;
                Assert.AreEqual(val4, mWQMSitePolSourceSiteExtraA.TVTypeText);
@@ -327,7 +327,7 @@ namespace CSSPModels.Tests
                bool val12 = true;
                mWQMSitePolSourceSiteExtraA.HasErrors = val12;
                Assert.AreEqual(val12, mWQMSitePolSourceSiteExtraA.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMSitePolSourceSiteExtraA.ValidationResults = val39;
                Assert.AreEqual(val39, mWQMSitePolSourceSiteExtraA.ValidationResults);
         }
@@ -337,15 +337,15 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                mWQMSitePolSourceSiteExtraB.MWQMSitePolSourceSiteReportTest = val1;
                Assert.AreEqual(val1, mWQMSitePolSourceSiteExtraB.MWQMSitePolSourceSiteReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mWQMSitePolSourceSiteExtraB.MWQMSiteTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMSitePolSourceSiteExtraB.MWQMSiteTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               mWQMSitePolSourceSiteExtraB.PolSourceSiteTVItemLanguage = val3;
-               Assert.AreEqual(val3, mWQMSitePolSourceSiteExtraB.PolSourceSiteTVItemLanguage);
-               TVItemLanguage val4 = new TVItemLanguage();
-               mWQMSitePolSourceSiteExtraB.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, mWQMSitePolSourceSiteExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               mWQMSitePolSourceSiteExtraB.MWQMSiteText = val2;
+               Assert.AreEqual(val2, mWQMSitePolSourceSiteExtraB.MWQMSiteText);
+               string val3 = "Some text";
+               mWQMSitePolSourceSiteExtraB.PolSourceSiteText = val3;
+               Assert.AreEqual(val3, mWQMSitePolSourceSiteExtraB.PolSourceSiteText);
+               string val4 = "Some text";
+               mWQMSitePolSourceSiteExtraB.LastUpdateContactText = val4;
+               Assert.AreEqual(val4, mWQMSitePolSourceSiteExtraB.LastUpdateContactText);
                string val5 = "Some text";
                mWQMSitePolSourceSiteExtraB.TVTypeText = val5;
                Assert.AreEqual(val5, mWQMSitePolSourceSiteExtraB.TVTypeText);
@@ -373,7 +373,7 @@ namespace CSSPModels.Tests
                bool val13 = true;
                mWQMSitePolSourceSiteExtraB.HasErrors = val13;
                Assert.AreEqual(val13, mWQMSitePolSourceSiteExtraB.HasErrors);
-               IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMSitePolSourceSiteExtraB.ValidationResults = val42;
                Assert.AreEqual(val42, mWQMSitePolSourceSiteExtraB.ValidationResults);
         }

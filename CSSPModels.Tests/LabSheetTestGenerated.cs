@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LabSheetExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SubsectorTVItemLanguage", "MWQMRunTVItemLanguage", "AcceptedOrRejectedByContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "SamplingPlanTypeText", "SampleTypeText", "LabSheetTypeText", "LabSheetStatusText", "LabSheetID", "OtherServerLabSheetID", "SamplingPlanID", "SamplingPlanName", "Year", "Month", "Day", "RunNumber", "SubsectorTVItemID", "MWQMRunTVItemID", "SamplingPlanType", "SampleType", "LabSheetType", "LabSheetStatus", "FileName", "FileLastModifiedDate_Local", "FileContent", "AcceptedOrRejectedByContactTVItemID", "AcceptedOrRejectedDateTime", "RejectReason", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SubsectorText", "MWQMRunText", "AcceptedOrRejectedByContactName", "LastUpdateContactText", "SamplingPlanTypeText", "SampleTypeText", "LabSheetTypeText", "LabSheetStatusText", "LabSheetID", "OtherServerLabSheetID", "SamplingPlanID", "SamplingPlanName", "Year", "Month", "Day", "RunNumber", "SubsectorTVItemID", "MWQMRunTVItemID", "SamplingPlanType", "SampleType", "LabSheetType", "LabSheetStatus", "FileName", "FileLastModifiedDate_Local", "FileContent", "AcceptedOrRejectedByContactTVItemID", "AcceptedOrRejectedDateTime", "RejectReason", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LabSheetExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LabSheetReportTest", "SubsectorTVItemLanguage", "MWQMRunTVItemLanguage", "AcceptedOrRejectedByContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "SamplingPlanTypeText", "SampleTypeText", "LabSheetTypeText", "LabSheetStatusText", "LabSheetID", "OtherServerLabSheetID", "SamplingPlanID", "SamplingPlanName", "Year", "Month", "Day", "RunNumber", "SubsectorTVItemID", "MWQMRunTVItemID", "SamplingPlanType", "SampleType", "LabSheetType", "LabSheetStatus", "FileName", "FileLastModifiedDate_Local", "FileContent", "AcceptedOrRejectedByContactTVItemID", "AcceptedOrRejectedDateTime", "RejectReason", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LabSheetReportTest", "SubsectorText", "MWQMRunText", "AcceptedOrRejectedByContactName", "LastUpdateContactText", "SamplingPlanTypeText", "SampleTypeText", "LabSheetTypeText", "LabSheetStatusText", "LabSheetID", "OtherServerLabSheetID", "SamplingPlanID", "SamplingPlanName", "Year", "Month", "Day", "RunNumber", "SubsectorTVItemID", "MWQMRunTVItemID", "SamplingPlanType", "SampleType", "LabSheetType", "LabSheetStatus", "FileName", "FileLastModifiedDate_Local", "FileContent", "AcceptedOrRejectedByContactTVItemID", "AcceptedOrRejectedDateTime", "RejectReason", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -329,25 +329,25 @@ namespace CSSPModels.Tests
                bool val23 = true;
                labSheet.HasErrors = val23;
                Assert.AreEqual(val23, labSheet.HasErrors);
-               IEnumerable<ValidationResult> val72 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val72 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                labSheet.ValidationResults = val72;
                Assert.AreEqual(val72, labSheet.ValidationResults);
         }
         [TestMethod]
         public void LabSheetExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               labSheetExtraA.SubsectorTVItemLanguage = val1;
-               Assert.AreEqual(val1, labSheetExtraA.SubsectorTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               labSheetExtraA.MWQMRunTVItemLanguage = val2;
-               Assert.AreEqual(val2, labSheetExtraA.MWQMRunTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               labSheetExtraA.AcceptedOrRejectedByContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, labSheetExtraA.AcceptedOrRejectedByContactTVItemLanguage);
-               TVItemLanguage val4 = new TVItemLanguage();
-               labSheetExtraA.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, labSheetExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               labSheetExtraA.SubsectorText = val1;
+               Assert.AreEqual(val1, labSheetExtraA.SubsectorText);
+               string val2 = "Some text";
+               labSheetExtraA.MWQMRunText = val2;
+               Assert.AreEqual(val2, labSheetExtraA.MWQMRunText);
+               string val3 = "Some text";
+               labSheetExtraA.AcceptedOrRejectedByContactName = val3;
+               Assert.AreEqual(val3, labSheetExtraA.AcceptedOrRejectedByContactName);
+               string val4 = "Some text";
+               labSheetExtraA.LastUpdateContactText = val4;
+               Assert.AreEqual(val4, labSheetExtraA.LastUpdateContactText);
                string val5 = "Some text";
                labSheetExtraA.SamplingPlanTypeText = val5;
                Assert.AreEqual(val5, labSheetExtraA.SamplingPlanTypeText);
@@ -429,7 +429,7 @@ namespace CSSPModels.Tests
                bool val31 = true;
                labSheetExtraA.HasErrors = val31;
                Assert.AreEqual(val31, labSheetExtraA.HasErrors);
-               IEnumerable<ValidationResult> val96 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val96 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                labSheetExtraA.ValidationResults = val96;
                Assert.AreEqual(val96, labSheetExtraA.ValidationResults);
         }
@@ -439,18 +439,18 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                labSheetExtraB.LabSheetReportTest = val1;
                Assert.AreEqual(val1, labSheetExtraB.LabSheetReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               labSheetExtraB.SubsectorTVItemLanguage = val2;
-               Assert.AreEqual(val2, labSheetExtraB.SubsectorTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               labSheetExtraB.MWQMRunTVItemLanguage = val3;
-               Assert.AreEqual(val3, labSheetExtraB.MWQMRunTVItemLanguage);
-               TVItemLanguage val4 = new TVItemLanguage();
-               labSheetExtraB.AcceptedOrRejectedByContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, labSheetExtraB.AcceptedOrRejectedByContactTVItemLanguage);
-               TVItemLanguage val5 = new TVItemLanguage();
-               labSheetExtraB.LastUpdateContactTVItemLanguage = val5;
-               Assert.AreEqual(val5, labSheetExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               labSheetExtraB.SubsectorText = val2;
+               Assert.AreEqual(val2, labSheetExtraB.SubsectorText);
+               string val3 = "Some text";
+               labSheetExtraB.MWQMRunText = val3;
+               Assert.AreEqual(val3, labSheetExtraB.MWQMRunText);
+               string val4 = "Some text";
+               labSheetExtraB.AcceptedOrRejectedByContactName = val4;
+               Assert.AreEqual(val4, labSheetExtraB.AcceptedOrRejectedByContactName);
+               string val5 = "Some text";
+               labSheetExtraB.LastUpdateContactText = val5;
+               Assert.AreEqual(val5, labSheetExtraB.LastUpdateContactText);
                string val6 = "Some text";
                labSheetExtraB.SamplingPlanTypeText = val6;
                Assert.AreEqual(val6, labSheetExtraB.SamplingPlanTypeText);
@@ -532,7 +532,7 @@ namespace CSSPModels.Tests
                bool val32 = true;
                labSheetExtraB.HasErrors = val32;
                Assert.AreEqual(val32, labSheetExtraB.HasErrors);
-               IEnumerable<ValidationResult> val99 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val99 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                labSheetExtraB.ValidationResults = val99;
                Assert.AreEqual(val99, labSheetExtraB.ValidationResults);
         }

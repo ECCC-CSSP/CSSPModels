@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVFileExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "TVFileTVItemLanguage", "LastUpdateContactTVItemLanguage", "TemplateTVTypeText", "LanguageText", "FilePurposeText", "FileTypeText", "TVFileID", "TVFileTVItemID", "TemplateTVType", "ReportTypeID", "Parameters", "Year", "Language", "FilePurpose", "FileType", "FileSize_kb", "FileInfo", "FileCreatedDate_UTC", "FromWater", "ClientFilePath", "ServerFileName", "ServerFilePath", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TVFileName", "LastUpdateContactText", "TemplateTVTypeText", "LanguageText", "FilePurposeText", "FileTypeText", "TVFileID", "TVFileTVItemID", "TemplateTVType", "ReportTypeID", "Parameters", "Year", "Language", "FilePurpose", "FileType", "FileSize_kb", "FileInfo", "FileCreatedDate_UTC", "FromWater", "ClientFilePath", "ServerFileName", "ServerFilePath", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVFileExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "TVFileReportTest", "TVFileTVItemLanguage", "LastUpdateContactTVItemLanguage", "TemplateTVTypeText", "LanguageText", "FilePurposeText", "FileTypeText", "TVFileID", "TVFileTVItemID", "TemplateTVType", "ReportTypeID", "Parameters", "Year", "Language", "FilePurpose", "FileType", "FileSize_kb", "FileInfo", "FileCreatedDate_UTC", "FromWater", "ClientFilePath", "ServerFileName", "ServerFilePath", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TVFileReportTest", "TVFileName", "LastUpdateContactText", "TemplateTVTypeText", "LanguageText", "FilePurposeText", "FileTypeText", "TVFileID", "TVFileTVItemID", "TemplateTVType", "ReportTypeID", "Parameters", "Year", "Language", "FilePurpose", "FileType", "FileSize_kb", "FileInfo", "FileCreatedDate_UTC", "FromWater", "ClientFilePath", "ServerFileName", "ServerFilePath", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -317,19 +317,19 @@ namespace CSSPModels.Tests
                bool val19 = true;
                tVFile.HasErrors = val19;
                Assert.AreEqual(val19, tVFile.HasErrors);
-               IEnumerable<ValidationResult> val60 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val60 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tVFile.ValidationResults = val60;
                Assert.AreEqual(val60, tVFile.ValidationResults);
         }
         [TestMethod]
         public void TVFileExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               tVFileExtraA.TVFileTVItemLanguage = val1;
-               Assert.AreEqual(val1, tVFileExtraA.TVFileTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               tVFileExtraA.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, tVFileExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               tVFileExtraA.TVFileName = val1;
+               Assert.AreEqual(val1, tVFileExtraA.TVFileName);
+               string val2 = "Some text";
+               tVFileExtraA.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, tVFileExtraA.LastUpdateContactText);
                string val3 = "Some text";
                tVFileExtraA.TemplateTVTypeText = val3;
                Assert.AreEqual(val3, tVFileExtraA.TemplateTVTypeText);
@@ -399,7 +399,7 @@ namespace CSSPModels.Tests
                bool val25 = true;
                tVFileExtraA.HasErrors = val25;
                Assert.AreEqual(val25, tVFileExtraA.HasErrors);
-               IEnumerable<ValidationResult> val78 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val78 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tVFileExtraA.ValidationResults = val78;
                Assert.AreEqual(val78, tVFileExtraA.ValidationResults);
         }
@@ -409,12 +409,12 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                tVFileExtraB.TVFileReportTest = val1;
                Assert.AreEqual(val1, tVFileExtraB.TVFileReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               tVFileExtraB.TVFileTVItemLanguage = val2;
-               Assert.AreEqual(val2, tVFileExtraB.TVFileTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               tVFileExtraB.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, tVFileExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               tVFileExtraB.TVFileName = val2;
+               Assert.AreEqual(val2, tVFileExtraB.TVFileName);
+               string val3 = "Some text";
+               tVFileExtraB.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, tVFileExtraB.LastUpdateContactText);
                string val4 = "Some text";
                tVFileExtraB.TemplateTVTypeText = val4;
                Assert.AreEqual(val4, tVFileExtraB.TemplateTVTypeText);
@@ -484,7 +484,7 @@ namespace CSSPModels.Tests
                bool val26 = true;
                tVFileExtraB.HasErrors = val26;
                Assert.AreEqual(val26, tVFileExtraB.HasErrors);
-               IEnumerable<ValidationResult> val81 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val81 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tVFileExtraB.ValidationResults = val81;
                Assert.AreEqual(val81, tVFileExtraB.ValidationResults);
         }

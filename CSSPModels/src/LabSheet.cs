@@ -146,30 +146,30 @@ namespace CSSPModels
     public partial class LabSheetExtraA : LabSheet
     {
         #region Properties
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SubsectorTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Subsector TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "Sous-secteur TVItemLanguage")]
-        [CSSPDescriptionEN(DescriptionEN = @"Subsector TVItemLanguage")]
-        [CSSPDescriptionFR(DescriptionFR = @"Sous-secteur TVItemLanguage")]
-        public TVItemLanguage SubsectorTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMRunTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Run TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "Tournée TVItemLanguage")]
-        [CSSPDescriptionEN(DescriptionEN = @"Run TVItemLanguage")]
-        [CSSPDescriptionFR(DescriptionFR = @"Tournée TVItemLanguage")]
-        public TVItemLanguage MWQMRunTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "AcceptedOrRejectedByContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Accepted or rejected contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "Accepté ou rejeté contact TVItemLanguage")]
-        [CSSPDescriptionEN(DescriptionEN = @"Accepted or rejected contact TVItemLanguage")]
-        [CSSPDescriptionFR(DescriptionFR = @"Accepté ou rejeté contact TVItemLanguage")]
-        public TVItemLanguage AcceptedOrRejectedByContactTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
-        public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SubsectorTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Subsector text")]
+        [CSSPDisplayFR(DisplayFR = "Texte du sous-secteur")]
+        [CSSPDescriptionEN(DescriptionEN = @"Subsector text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte du sous-secteur")]
+        public string SubsectorText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "MWQMRunTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Run text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de la tournée")]
+        [CSSPDescriptionEN(DescriptionEN = @"Run text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de la tournée")]
+        public string MWQMRunText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "AcceptedOrRejectedByContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Accepted or rejected contact name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du contact qui a accepté ou rejeté")]
+        [CSSPDescriptionEN(DescriptionEN = @"Accepted or rejected contact name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact qui a accepté ou rejeté")]
+        public string AcceptedOrRejectedByContactName { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact ayant fait le dernière changement")]
+        public string LastUpdateContactText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "SamplingPlanTypeEnum", EnumType = "SamplingPlanType")]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Sampling plan type text")]

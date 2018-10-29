@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SamplingPlanSubsectorSiteExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MWQMSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "SamplingPlanSubsectorSiteID", "SamplingPlanSubsectorID", "MWQMSiteTVItemID", "IsDuplicate", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MWQMSiteText", "LastUpdateContactText", "SamplingPlanSubsectorSiteID", "SamplingPlanSubsectorID", "MWQMSiteTVItemID", "IsDuplicate", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SamplingPlanSubsectorSiteExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SamplingPlanSubsectorSiteReportTest", "MWQMSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "SamplingPlanSubsectorSiteID", "SamplingPlanSubsectorID", "MWQMSiteTVItemID", "IsDuplicate", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SamplingPlanSubsectorSiteReportTest", "MWQMSiteText", "LastUpdateContactText", "SamplingPlanSubsectorSiteID", "SamplingPlanSubsectorID", "MWQMSiteTVItemID", "IsDuplicate", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -281,19 +281,19 @@ namespace CSSPModels.Tests
                bool val7 = true;
                samplingPlanSubsectorSite.HasErrors = val7;
                Assert.AreEqual(val7, samplingPlanSubsectorSite.HasErrors);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                samplingPlanSubsectorSite.ValidationResults = val24;
                Assert.AreEqual(val24, samplingPlanSubsectorSite.ValidationResults);
         }
         [TestMethod]
         public void SamplingPlanSubsectorSiteExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               samplingPlanSubsectorSiteExtraA.MWQMSiteTVItemLanguage = val1;
-               Assert.AreEqual(val1, samplingPlanSubsectorSiteExtraA.MWQMSiteTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               samplingPlanSubsectorSiteExtraA.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, samplingPlanSubsectorSiteExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               samplingPlanSubsectorSiteExtraA.MWQMSiteText = val1;
+               Assert.AreEqual(val1, samplingPlanSubsectorSiteExtraA.MWQMSiteText);
+               string val2 = "Some text";
+               samplingPlanSubsectorSiteExtraA.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, samplingPlanSubsectorSiteExtraA.LastUpdateContactText);
                int val3 = 45;
                samplingPlanSubsectorSiteExtraA.SamplingPlanSubsectorSiteID = val3;
                Assert.AreEqual(val3, samplingPlanSubsectorSiteExtraA.SamplingPlanSubsectorSiteID);
@@ -315,7 +315,7 @@ namespace CSSPModels.Tests
                bool val9 = true;
                samplingPlanSubsectorSiteExtraA.HasErrors = val9;
                Assert.AreEqual(val9, samplingPlanSubsectorSiteExtraA.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                samplingPlanSubsectorSiteExtraA.ValidationResults = val30;
                Assert.AreEqual(val30, samplingPlanSubsectorSiteExtraA.ValidationResults);
         }
@@ -325,12 +325,12 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                samplingPlanSubsectorSiteExtraB.SamplingPlanSubsectorSiteReportTest = val1;
                Assert.AreEqual(val1, samplingPlanSubsectorSiteExtraB.SamplingPlanSubsectorSiteReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               samplingPlanSubsectorSiteExtraB.MWQMSiteTVItemLanguage = val2;
-               Assert.AreEqual(val2, samplingPlanSubsectorSiteExtraB.MWQMSiteTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               samplingPlanSubsectorSiteExtraB.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, samplingPlanSubsectorSiteExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               samplingPlanSubsectorSiteExtraB.MWQMSiteText = val2;
+               Assert.AreEqual(val2, samplingPlanSubsectorSiteExtraB.MWQMSiteText);
+               string val3 = "Some text";
+               samplingPlanSubsectorSiteExtraB.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, samplingPlanSubsectorSiteExtraB.LastUpdateContactText);
                int val4 = 45;
                samplingPlanSubsectorSiteExtraB.SamplingPlanSubsectorSiteID = val4;
                Assert.AreEqual(val4, samplingPlanSubsectorSiteExtraB.SamplingPlanSubsectorSiteID);
@@ -352,7 +352,7 @@ namespace CSSPModels.Tests
                bool val10 = true;
                samplingPlanSubsectorSiteExtraB.HasErrors = val10;
                Assert.AreEqual(val10, samplingPlanSubsectorSiteExtraB.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                samplingPlanSubsectorSiteExtraB.ValidationResults = val33;
                Assert.AreEqual(val33, samplingPlanSubsectorSiteExtraB.ValidationResults);
         }

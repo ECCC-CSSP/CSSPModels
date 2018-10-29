@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void EmailDistributionListLanguageExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "EmailDistributionListLanguageID", "EmailDistributionListID", "Language", "RegionName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "LanguageText", "TranslationStatusText", "EmailDistributionListLanguageID", "EmailDistributionListID", "Language", "RegionName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void EmailDistributionListLanguageExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "EmailDistributionListLanguageReportTest", "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "EmailDistributionListLanguageID", "EmailDistributionListID", "Language", "RegionName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "EmailDistributionListLanguageReportTest", "LastUpdateContactText", "LanguageText", "TranslationStatusText", "EmailDistributionListLanguageID", "EmailDistributionListID", "Language", "RegionName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -284,16 +284,16 @@ namespace CSSPModels.Tests
                bool val8 = true;
                emailDistributionListLanguage.HasErrors = val8;
                Assert.AreEqual(val8, emailDistributionListLanguage.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                emailDistributionListLanguage.ValidationResults = val27;
                Assert.AreEqual(val27, emailDistributionListLanguage.ValidationResults);
         }
         [TestMethod]
         public void EmailDistributionListLanguageExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               emailDistributionListLanguageExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, emailDistributionListLanguageExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               emailDistributionListLanguageExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, emailDistributionListLanguageExtraA.LastUpdateContactText);
                string val2 = "Some text";
                emailDistributionListLanguageExtraA.LanguageText = val2;
                Assert.AreEqual(val2, emailDistributionListLanguageExtraA.LanguageText);
@@ -324,7 +324,7 @@ namespace CSSPModels.Tests
                bool val11 = true;
                emailDistributionListLanguageExtraA.HasErrors = val11;
                Assert.AreEqual(val11, emailDistributionListLanguageExtraA.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                emailDistributionListLanguageExtraA.ValidationResults = val36;
                Assert.AreEqual(val36, emailDistributionListLanguageExtraA.ValidationResults);
         }
@@ -334,9 +334,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                emailDistributionListLanguageExtraB.EmailDistributionListLanguageReportTest = val1;
                Assert.AreEqual(val1, emailDistributionListLanguageExtraB.EmailDistributionListLanguageReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               emailDistributionListLanguageExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, emailDistributionListLanguageExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               emailDistributionListLanguageExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, emailDistributionListLanguageExtraB.LastUpdateContactText);
                string val3 = "Some text";
                emailDistributionListLanguageExtraB.LanguageText = val3;
                Assert.AreEqual(val3, emailDistributionListLanguageExtraB.LanguageText);
@@ -367,7 +367,7 @@ namespace CSSPModels.Tests
                bool val12 = true;
                emailDistributionListLanguageExtraB.HasErrors = val12;
                Assert.AreEqual(val12, emailDistributionListLanguageExtraB.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                emailDistributionListLanguageExtraB.ValidationResults = val39;
                Assert.AreEqual(val39, emailDistributionListLanguageExtraB.ValidationResults);
         }

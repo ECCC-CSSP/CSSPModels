@@ -69,7 +69,7 @@ namespace CSSPModels.Tests
                bool val3 = true;
                filePurposeAndText.HasErrors = val3;
                Assert.AreEqual(val3, filePurposeAndText.HasErrors);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                filePurposeAndText.ValidationResults = val12;
                Assert.AreEqual(val12, filePurposeAndText.ValidationResults);
         }

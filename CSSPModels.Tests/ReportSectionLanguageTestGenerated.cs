@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ReportSectionLanguageExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusReportSectionNameText", "TranslationStatusReportSectionNameTextText", "ReportSectionLanguageID", "ReportSectionID", "Language", "ReportSectionName", "TranslationStatusReportSectionName", "ReportSectionText", "TranslationStatusReportSectionText", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "LanguageText", "TranslationStatusReportSectionNameText", "TranslationStatusReportSectionNameTextText", "ReportSectionLanguageID", "ReportSectionID", "Language", "ReportSectionName", "TranslationStatusReportSectionName", "ReportSectionText", "TranslationStatusReportSectionText", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ReportSectionLanguageExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ReportSectionLanguageReportTest", "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusReportSectionNameText", "TranslationStatusReportSectionNameTextText", "ReportSectionLanguageID", "ReportSectionID", "Language", "ReportSectionName", "TranslationStatusReportSectionName", "ReportSectionText", "TranslationStatusReportSectionText", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ReportSectionLanguageReportTest", "LastUpdateContactText", "LanguageText", "TranslationStatusReportSectionNameText", "TranslationStatusReportSectionNameTextText", "ReportSectionLanguageID", "ReportSectionID", "Language", "ReportSectionName", "TranslationStatusReportSectionName", "ReportSectionText", "TranslationStatusReportSectionText", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -290,16 +290,16 @@ namespace CSSPModels.Tests
                bool val10 = true;
                reportSectionLanguage.HasErrors = val10;
                Assert.AreEqual(val10, reportSectionLanguage.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                reportSectionLanguage.ValidationResults = val33;
                Assert.AreEqual(val33, reportSectionLanguage.ValidationResults);
         }
         [TestMethod]
         public void ReportSectionLanguageExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               reportSectionLanguageExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, reportSectionLanguageExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               reportSectionLanguageExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, reportSectionLanguageExtraA.LastUpdateContactText);
                string val2 = "Some text";
                reportSectionLanguageExtraA.LanguageText = val2;
                Assert.AreEqual(val2, reportSectionLanguageExtraA.LanguageText);
@@ -339,7 +339,7 @@ namespace CSSPModels.Tests
                bool val14 = true;
                reportSectionLanguageExtraA.HasErrors = val14;
                Assert.AreEqual(val14, reportSectionLanguageExtraA.HasErrors);
-               IEnumerable<ValidationResult> val45 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val45 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                reportSectionLanguageExtraA.ValidationResults = val45;
                Assert.AreEqual(val45, reportSectionLanguageExtraA.ValidationResults);
         }
@@ -349,9 +349,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                reportSectionLanguageExtraB.ReportSectionLanguageReportTest = val1;
                Assert.AreEqual(val1, reportSectionLanguageExtraB.ReportSectionLanguageReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               reportSectionLanguageExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, reportSectionLanguageExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               reportSectionLanguageExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, reportSectionLanguageExtraB.LastUpdateContactText);
                string val3 = "Some text";
                reportSectionLanguageExtraB.LanguageText = val3;
                Assert.AreEqual(val3, reportSectionLanguageExtraB.LanguageText);
@@ -391,7 +391,7 @@ namespace CSSPModels.Tests
                bool val15 = true;
                reportSectionLanguageExtraB.HasErrors = val15;
                Assert.AreEqual(val15, reportSectionLanguageExtraB.HasErrors);
-               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                reportSectionLanguageExtraB.ValidationResults = val48;
                Assert.AreEqual(val48, reportSectionLanguageExtraB.ValidationResults);
         }

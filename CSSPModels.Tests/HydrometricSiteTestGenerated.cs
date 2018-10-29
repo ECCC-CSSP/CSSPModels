@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void HydrometricSiteExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "HydrometricTVItemLanguage", "LastUpdateContactTVItemLanguage", "HydrometricSiteID", "HydrometricSiteTVItemID", "FedSiteNumber", "QuebecSiteNumber", "HydrometricSiteName", "Description", "Province", "Elevation_m", "StartDate_Local", "EndDate_Local", "TimeOffset_hour", "DrainageArea_km2", "IsNatural", "IsActive", "Sediment", "RHBN", "RealTime", "HasDischarge", "HasLevel", "HasRatingCurve", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "HydrometricText", "LastUpdateContactText", "HydrometricSiteID", "HydrometricSiteTVItemID", "FedSiteNumber", "QuebecSiteNumber", "HydrometricSiteName", "Description", "Province", "Elevation_m", "StartDate_Local", "EndDate_Local", "TimeOffset_hour", "DrainageArea_km2", "IsNatural", "IsActive", "Sediment", "RHBN", "RealTime", "HasDischarge", "HasLevel", "HasRatingCurve", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void HydrometricSiteExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "HydrometricSiteReportTest", "HydrometricTVItemLanguage", "LastUpdateContactTVItemLanguage", "HydrometricSiteID", "HydrometricSiteTVItemID", "FedSiteNumber", "QuebecSiteNumber", "HydrometricSiteName", "Description", "Province", "Elevation_m", "StartDate_Local", "EndDate_Local", "TimeOffset_hour", "DrainageArea_km2", "IsNatural", "IsActive", "Sediment", "RHBN", "RealTime", "HasDischarge", "HasLevel", "HasRatingCurve", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "HydrometricSiteReportTest", "HydrometricText", "LastUpdateContactText", "HydrometricSiteID", "HydrometricSiteTVItemID", "FedSiteNumber", "QuebecSiteNumber", "HydrometricSiteName", "Description", "Province", "Elevation_m", "StartDate_Local", "EndDate_Local", "TimeOffset_hour", "DrainageArea_km2", "IsNatural", "IsActive", "Sediment", "RHBN", "RealTime", "HasDischarge", "HasLevel", "HasRatingCurve", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -329,19 +329,19 @@ namespace CSSPModels.Tests
                bool val23 = true;
                hydrometricSite.HasErrors = val23;
                Assert.AreEqual(val23, hydrometricSite.HasErrors);
-               IEnumerable<ValidationResult> val72 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val72 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                hydrometricSite.ValidationResults = val72;
                Assert.AreEqual(val72, hydrometricSite.ValidationResults);
         }
         [TestMethod]
         public void HydrometricSiteExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               hydrometricSiteExtraA.HydrometricTVItemLanguage = val1;
-               Assert.AreEqual(val1, hydrometricSiteExtraA.HydrometricTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               hydrometricSiteExtraA.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, hydrometricSiteExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               hydrometricSiteExtraA.HydrometricText = val1;
+               Assert.AreEqual(val1, hydrometricSiteExtraA.HydrometricText);
+               string val2 = "Some text";
+               hydrometricSiteExtraA.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, hydrometricSiteExtraA.LastUpdateContactText);
                int val3 = 45;
                hydrometricSiteExtraA.HydrometricSiteID = val3;
                Assert.AreEqual(val3, hydrometricSiteExtraA.HydrometricSiteID);
@@ -411,7 +411,7 @@ namespace CSSPModels.Tests
                bool val25 = true;
                hydrometricSiteExtraA.HasErrors = val25;
                Assert.AreEqual(val25, hydrometricSiteExtraA.HasErrors);
-               IEnumerable<ValidationResult> val78 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val78 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                hydrometricSiteExtraA.ValidationResults = val78;
                Assert.AreEqual(val78, hydrometricSiteExtraA.ValidationResults);
         }
@@ -421,12 +421,12 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                hydrometricSiteExtraB.HydrometricSiteReportTest = val1;
                Assert.AreEqual(val1, hydrometricSiteExtraB.HydrometricSiteReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               hydrometricSiteExtraB.HydrometricTVItemLanguage = val2;
-               Assert.AreEqual(val2, hydrometricSiteExtraB.HydrometricTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               hydrometricSiteExtraB.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, hydrometricSiteExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               hydrometricSiteExtraB.HydrometricText = val2;
+               Assert.AreEqual(val2, hydrometricSiteExtraB.HydrometricText);
+               string val3 = "Some text";
+               hydrometricSiteExtraB.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, hydrometricSiteExtraB.LastUpdateContactText);
                int val4 = 45;
                hydrometricSiteExtraB.HydrometricSiteID = val4;
                Assert.AreEqual(val4, hydrometricSiteExtraB.HydrometricSiteID);
@@ -496,7 +496,7 @@ namespace CSSPModels.Tests
                bool val26 = true;
                hydrometricSiteExtraB.HasErrors = val26;
                Assert.AreEqual(val26, hydrometricSiteExtraB.HasErrors);
-               IEnumerable<ValidationResult> val81 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val81 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                hydrometricSiteExtraB.ValidationResults = val81;
                Assert.AreEqual(val81, hydrometricSiteExtraB.ValidationResults);
         }

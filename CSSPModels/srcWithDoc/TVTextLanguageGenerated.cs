@@ -24,7 +24,7 @@ namespace CSSPModels
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]
-    public partial class TVTextLanguage : Error
+    public partial class TVTextLanguage : CSSPError
     {
         #region Properties in DB
         #endregion Properties in DB

@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LabSheetDetailExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "LabSheetDetailID", "LabSheetID", "SamplingPlanID", "SubsectorTVItemID", "Version", "RunDate", "Tides", "SampleCrewInitials", "WaterBathCount", "IncubationBath1StartTime", "IncubationBath2StartTime", "IncubationBath3StartTime", "IncubationBath1EndTime", "IncubationBath2EndTime", "IncubationBath3EndTime", "IncubationBath1TimeCalculated_minutes", "IncubationBath2TimeCalculated_minutes", "IncubationBath3TimeCalculated_minutes", "WaterBath1", "WaterBath2", "WaterBath3", "TCField1", "TCLab1", "TCField2", "TCLab2", "TCFirst", "TCAverage", "ControlLot", "Positive35", "NonTarget35", "Negative35", "Bath1Positive44_5", "Bath2Positive44_5", "Bath3Positive44_5", "Bath1NonTarget44_5", "Bath2NonTarget44_5", "Bath3NonTarget44_5", "Bath1Negative44_5", "Bath2Negative44_5", "Bath3Negative44_5", "Blank35", "Bath1Blank44_5", "Bath2Blank44_5", "Bath3Blank44_5", "Lot35", "Lot44_5", "Weather", "RunComment", "RunWeatherComment", "SampleBottleLotNumber", "SalinitiesReadBy", "SalinitiesReadDate", "ResultsReadBy", "ResultsReadDate", "ResultsRecordedBy", "ResultsRecordedDate", "DailyDuplicateRLog", "DailyDuplicatePrecisionCriteria", "DailyDuplicateAcceptable", "IntertechDuplicateRLog", "IntertechDuplicatePrecisionCriteria", "IntertechDuplicateAcceptable", "IntertechReadAcceptable", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SubsectorText", "LastUpdateContactText", "LabSheetDetailID", "LabSheetID", "SamplingPlanID", "SubsectorTVItemID", "Version", "RunDate", "Tides", "SampleCrewInitials", "WaterBathCount", "IncubationBath1StartTime", "IncubationBath2StartTime", "IncubationBath3StartTime", "IncubationBath1EndTime", "IncubationBath2EndTime", "IncubationBath3EndTime", "IncubationBath1TimeCalculated_minutes", "IncubationBath2TimeCalculated_minutes", "IncubationBath3TimeCalculated_minutes", "WaterBath1", "WaterBath2", "WaterBath3", "TCField1", "TCLab1", "TCField2", "TCLab2", "TCFirst", "TCAverage", "ControlLot", "Positive35", "NonTarget35", "Negative35", "Bath1Positive44_5", "Bath2Positive44_5", "Bath3Positive44_5", "Bath1NonTarget44_5", "Bath2NonTarget44_5", "Bath3NonTarget44_5", "Bath1Negative44_5", "Bath2Negative44_5", "Bath3Negative44_5", "Blank35", "Bath1Blank44_5", "Bath2Blank44_5", "Bath3Blank44_5", "Lot35", "Lot44_5", "Weather", "RunComment", "RunWeatherComment", "SampleBottleLotNumber", "SalinitiesReadBy", "SalinitiesReadDate", "ResultsReadBy", "ResultsReadDate", "ResultsRecordedBy", "ResultsRecordedDate", "DailyDuplicateRLog", "DailyDuplicatePrecisionCriteria", "DailyDuplicateAcceptable", "IntertechDuplicateRLog", "IntertechDuplicatePrecisionCriteria", "IntertechDuplicateAcceptable", "IntertechReadAcceptable", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LabSheetDetailExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LabSheetDetailReportTest", "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "LabSheetDetailID", "LabSheetID", "SamplingPlanID", "SubsectorTVItemID", "Version", "RunDate", "Tides", "SampleCrewInitials", "WaterBathCount", "IncubationBath1StartTime", "IncubationBath2StartTime", "IncubationBath3StartTime", "IncubationBath1EndTime", "IncubationBath2EndTime", "IncubationBath3EndTime", "IncubationBath1TimeCalculated_minutes", "IncubationBath2TimeCalculated_minutes", "IncubationBath3TimeCalculated_minutes", "WaterBath1", "WaterBath2", "WaterBath3", "TCField1", "TCLab1", "TCField2", "TCLab2", "TCFirst", "TCAverage", "ControlLot", "Positive35", "NonTarget35", "Negative35", "Bath1Positive44_5", "Bath2Positive44_5", "Bath3Positive44_5", "Bath1NonTarget44_5", "Bath2NonTarget44_5", "Bath3NonTarget44_5", "Bath1Negative44_5", "Bath2Negative44_5", "Bath3Negative44_5", "Blank35", "Bath1Blank44_5", "Bath2Blank44_5", "Bath3Blank44_5", "Lot35", "Lot44_5", "Weather", "RunComment", "RunWeatherComment", "SampleBottleLotNumber", "SalinitiesReadBy", "SalinitiesReadDate", "ResultsReadBy", "ResultsReadDate", "ResultsRecordedBy", "ResultsRecordedDate", "DailyDuplicateRLog", "DailyDuplicatePrecisionCriteria", "DailyDuplicateAcceptable", "IntertechDuplicateRLog", "IntertechDuplicatePrecisionCriteria", "IntertechDuplicateAcceptable", "IntertechReadAcceptable", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LabSheetDetailReportTest", "SubsectorText", "LastUpdateContactText", "LabSheetDetailID", "LabSheetID", "SamplingPlanID", "SubsectorTVItemID", "Version", "RunDate", "Tides", "SampleCrewInitials", "WaterBathCount", "IncubationBath1StartTime", "IncubationBath2StartTime", "IncubationBath3StartTime", "IncubationBath1EndTime", "IncubationBath2EndTime", "IncubationBath3EndTime", "IncubationBath1TimeCalculated_minutes", "IncubationBath2TimeCalculated_minutes", "IncubationBath3TimeCalculated_minutes", "WaterBath1", "WaterBath2", "WaterBath3", "TCField1", "TCLab1", "TCField2", "TCLab2", "TCFirst", "TCAverage", "ControlLot", "Positive35", "NonTarget35", "Negative35", "Bath1Positive44_5", "Bath2Positive44_5", "Bath3Positive44_5", "Bath1NonTarget44_5", "Bath2NonTarget44_5", "Bath3NonTarget44_5", "Bath1Negative44_5", "Bath2Negative44_5", "Bath3Negative44_5", "Blank35", "Bath1Blank44_5", "Bath2Blank44_5", "Bath3Blank44_5", "Lot35", "Lot44_5", "Weather", "RunComment", "RunWeatherComment", "SampleBottleLotNumber", "SalinitiesReadBy", "SalinitiesReadDate", "ResultsReadBy", "ResultsReadDate", "ResultsRecordedBy", "ResultsRecordedDate", "DailyDuplicateRLog", "DailyDuplicatePrecisionCriteria", "DailyDuplicateAcceptable", "IntertechDuplicateRLog", "IntertechDuplicatePrecisionCriteria", "IntertechDuplicateAcceptable", "IntertechReadAcceptable", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -458,19 +458,19 @@ namespace CSSPModels.Tests
                bool val66 = true;
                labSheetDetail.HasErrors = val66;
                Assert.AreEqual(val66, labSheetDetail.HasErrors);
-               IEnumerable<ValidationResult> val201 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val201 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                labSheetDetail.ValidationResults = val201;
                Assert.AreEqual(val201, labSheetDetail.ValidationResults);
         }
         [TestMethod]
         public void LabSheetDetailExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               labSheetDetailExtraA.SubsectorTVItemLanguage = val1;
-               Assert.AreEqual(val1, labSheetDetailExtraA.SubsectorTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               labSheetDetailExtraA.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, labSheetDetailExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               labSheetDetailExtraA.SubsectorText = val1;
+               Assert.AreEqual(val1, labSheetDetailExtraA.SubsectorText);
+               string val2 = "Some text";
+               labSheetDetailExtraA.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, labSheetDetailExtraA.LastUpdateContactText);
                int val3 = 45;
                labSheetDetailExtraA.LabSheetDetailID = val3;
                Assert.AreEqual(val3, labSheetDetailExtraA.LabSheetDetailID);
@@ -669,7 +669,7 @@ namespace CSSPModels.Tests
                bool val68 = true;
                labSheetDetailExtraA.HasErrors = val68;
                Assert.AreEqual(val68, labSheetDetailExtraA.HasErrors);
-               IEnumerable<ValidationResult> val207 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val207 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                labSheetDetailExtraA.ValidationResults = val207;
                Assert.AreEqual(val207, labSheetDetailExtraA.ValidationResults);
         }
@@ -679,12 +679,12 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                labSheetDetailExtraB.LabSheetDetailReportTest = val1;
                Assert.AreEqual(val1, labSheetDetailExtraB.LabSheetDetailReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               labSheetDetailExtraB.SubsectorTVItemLanguage = val2;
-               Assert.AreEqual(val2, labSheetDetailExtraB.SubsectorTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               labSheetDetailExtraB.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, labSheetDetailExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               labSheetDetailExtraB.SubsectorText = val2;
+               Assert.AreEqual(val2, labSheetDetailExtraB.SubsectorText);
+               string val3 = "Some text";
+               labSheetDetailExtraB.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, labSheetDetailExtraB.LastUpdateContactText);
                int val4 = 45;
                labSheetDetailExtraB.LabSheetDetailID = val4;
                Assert.AreEqual(val4, labSheetDetailExtraB.LabSheetDetailID);
@@ -883,7 +883,7 @@ namespace CSSPModels.Tests
                bool val69 = true;
                labSheetDetailExtraB.HasErrors = val69;
                Assert.AreEqual(val69, labSheetDetailExtraB.HasErrors);
-               IEnumerable<ValidationResult> val210 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val210 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                labSheetDetailExtraB.ValidationResults = val210;
                Assert.AreEqual(val210, labSheetDetailExtraB.ValidationResults);
         }

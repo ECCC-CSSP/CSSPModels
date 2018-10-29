@@ -12,7 +12,7 @@ using System.Linq;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class RTBStringPos : Error
+    public partial class RTBStringPos : CSSPError
     {
         #region Properties in DB
         #endregion Properties in DB

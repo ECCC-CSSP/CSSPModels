@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMSampleLanguageExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "MWQMSampleLanguageID", "MWQMSampleID", "Language", "MWQMSampleNote", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "LanguageText", "TranslationStatusText", "MWQMSampleLanguageID", "MWQMSampleID", "Language", "MWQMSampleNote", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMSampleLanguageExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MWQMSampleLanguageReportTest", "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "MWQMSampleLanguageID", "MWQMSampleID", "Language", "MWQMSampleNote", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MWQMSampleLanguageReportTest", "LastUpdateContactText", "LanguageText", "TranslationStatusText", "MWQMSampleLanguageID", "MWQMSampleID", "Language", "MWQMSampleNote", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -284,16 +284,16 @@ namespace CSSPModels.Tests
                bool val8 = true;
                mWQMSampleLanguage.HasErrors = val8;
                Assert.AreEqual(val8, mWQMSampleLanguage.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMSampleLanguage.ValidationResults = val27;
                Assert.AreEqual(val27, mWQMSampleLanguage.ValidationResults);
         }
         [TestMethod]
         public void MWQMSampleLanguageExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               mWQMSampleLanguageExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, mWQMSampleLanguageExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               mWQMSampleLanguageExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, mWQMSampleLanguageExtraA.LastUpdateContactText);
                string val2 = "Some text";
                mWQMSampleLanguageExtraA.LanguageText = val2;
                Assert.AreEqual(val2, mWQMSampleLanguageExtraA.LanguageText);
@@ -324,7 +324,7 @@ namespace CSSPModels.Tests
                bool val11 = true;
                mWQMSampleLanguageExtraA.HasErrors = val11;
                Assert.AreEqual(val11, mWQMSampleLanguageExtraA.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMSampleLanguageExtraA.ValidationResults = val36;
                Assert.AreEqual(val36, mWQMSampleLanguageExtraA.ValidationResults);
         }
@@ -334,9 +334,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                mWQMSampleLanguageExtraB.MWQMSampleLanguageReportTest = val1;
                Assert.AreEqual(val1, mWQMSampleLanguageExtraB.MWQMSampleLanguageReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mWQMSampleLanguageExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMSampleLanguageExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               mWQMSampleLanguageExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, mWQMSampleLanguageExtraB.LastUpdateContactText);
                string val3 = "Some text";
                mWQMSampleLanguageExtraB.LanguageText = val3;
                Assert.AreEqual(val3, mWQMSampleLanguageExtraB.LanguageText);
@@ -367,7 +367,7 @@ namespace CSSPModels.Tests
                bool val12 = true;
                mWQMSampleLanguageExtraB.HasErrors = val12;
                Assert.AreEqual(val12, mWQMSampleLanguageExtraB.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMSampleLanguageExtraB.ValidationResults = val39;
                Assert.AreEqual(val39, mWQMSampleLanguageExtraB.ValidationResults);
         }

@@ -12,7 +12,7 @@ using System.Linq;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class AppTaskParameter : Error
+    public partial class AppTaskParameter : CSSPError
     {
         #region Properties in DB
         #endregion Properties in DB

@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LabSheetTubeMPNDetailExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MWQMSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "SampleTypeText", "LabSheetTubeMPNDetailID", "LabSheetDetailID", "Ordinal", "MWQMSiteTVItemID", "SampleDateTime", "MPN", "Tube10", "Tube1_0", "Tube0_1", "Salinity", "Temperature", "ProcessedBy", "SampleType", "SiteComment", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MWQMSiteText", "LastUpdateContactText", "SampleTypeText", "LabSheetTubeMPNDetailID", "LabSheetDetailID", "Ordinal", "MWQMSiteTVItemID", "SampleDateTime", "MPN", "Tube10", "Tube1_0", "Tube0_1", "Salinity", "Temperature", "ProcessedBy", "SampleType", "SiteComment", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void LabSheetTubeMPNDetailExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LabSheetTubeMPNDetailReportTest", "MWQMSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "SampleTypeText", "LabSheetTubeMPNDetailID", "LabSheetDetailID", "Ordinal", "MWQMSiteTVItemID", "SampleDateTime", "MPN", "Tube10", "Tube1_0", "Tube0_1", "Salinity", "Temperature", "ProcessedBy", "SampleType", "SiteComment", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LabSheetTubeMPNDetailReportTest", "MWQMSiteText", "LastUpdateContactText", "SampleTypeText", "LabSheetTubeMPNDetailID", "LabSheetDetailID", "Ordinal", "MWQMSiteTVItemID", "SampleDateTime", "MPN", "Tube10", "Tube1_0", "Tube0_1", "Salinity", "Temperature", "ProcessedBy", "SampleType", "SiteComment", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -311,19 +311,19 @@ namespace CSSPModels.Tests
                bool val17 = true;
                labSheetTubeMPNDetail.HasErrors = val17;
                Assert.AreEqual(val17, labSheetTubeMPNDetail.HasErrors);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                labSheetTubeMPNDetail.ValidationResults = val54;
                Assert.AreEqual(val54, labSheetTubeMPNDetail.ValidationResults);
         }
         [TestMethod]
         public void LabSheetTubeMPNDetailExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               labSheetTubeMPNDetailExtraA.MWQMSiteTVItemLanguage = val1;
-               Assert.AreEqual(val1, labSheetTubeMPNDetailExtraA.MWQMSiteTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               labSheetTubeMPNDetailExtraA.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, labSheetTubeMPNDetailExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               labSheetTubeMPNDetailExtraA.MWQMSiteText = val1;
+               Assert.AreEqual(val1, labSheetTubeMPNDetailExtraA.MWQMSiteText);
+               string val2 = "Some text";
+               labSheetTubeMPNDetailExtraA.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, labSheetTubeMPNDetailExtraA.LastUpdateContactText);
                string val3 = "Some text";
                labSheetTubeMPNDetailExtraA.SampleTypeText = val3;
                Assert.AreEqual(val3, labSheetTubeMPNDetailExtraA.SampleTypeText);
@@ -378,7 +378,7 @@ namespace CSSPModels.Tests
                bool val20 = true;
                labSheetTubeMPNDetailExtraA.HasErrors = val20;
                Assert.AreEqual(val20, labSheetTubeMPNDetailExtraA.HasErrors);
-               IEnumerable<ValidationResult> val63 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val63 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                labSheetTubeMPNDetailExtraA.ValidationResults = val63;
                Assert.AreEqual(val63, labSheetTubeMPNDetailExtraA.ValidationResults);
         }
@@ -388,12 +388,12 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                labSheetTubeMPNDetailExtraB.LabSheetTubeMPNDetailReportTest = val1;
                Assert.AreEqual(val1, labSheetTubeMPNDetailExtraB.LabSheetTubeMPNDetailReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               labSheetTubeMPNDetailExtraB.MWQMSiteTVItemLanguage = val2;
-               Assert.AreEqual(val2, labSheetTubeMPNDetailExtraB.MWQMSiteTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               labSheetTubeMPNDetailExtraB.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, labSheetTubeMPNDetailExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               labSheetTubeMPNDetailExtraB.MWQMSiteText = val2;
+               Assert.AreEqual(val2, labSheetTubeMPNDetailExtraB.MWQMSiteText);
+               string val3 = "Some text";
+               labSheetTubeMPNDetailExtraB.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, labSheetTubeMPNDetailExtraB.LastUpdateContactText);
                string val4 = "Some text";
                labSheetTubeMPNDetailExtraB.SampleTypeText = val4;
                Assert.AreEqual(val4, labSheetTubeMPNDetailExtraB.SampleTypeText);
@@ -448,7 +448,7 @@ namespace CSSPModels.Tests
                bool val21 = true;
                labSheetTubeMPNDetailExtraB.HasErrors = val21;
                Assert.AreEqual(val21, labSheetTubeMPNDetailExtraB.HasErrors);
-               IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                labSheetTubeMPNDetailExtraB.ValidationResults = val66;
                Assert.AreEqual(val66, labSheetTubeMPNDetailExtraB.ValidationResults);
         }

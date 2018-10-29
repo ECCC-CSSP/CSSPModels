@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void VPScenarioExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "VPScenarioStatusText", "VPScenarioID", "InfrastructureTVItemID", "VPScenarioStatus", "UseAsBestEstimate", "EffluentFlow_m3_s", "EffluentConcentration_MPN_100ml", "FroudeNumber", "PortDiameter_m", "PortDepth_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "NumberOfPorts", "PortSpacing_m", "AcuteMixZone_m", "ChronicMixZone_m", "EffluentSalinity_PSU", "EffluentTemperature_C", "EffluentVelocity_m_s", "RawResults", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SubsectorText", "LastUpdateContactText", "VPScenarioStatusText", "VPScenarioID", "InfrastructureTVItemID", "VPScenarioStatus", "UseAsBestEstimate", "EffluentFlow_m3_s", "EffluentConcentration_MPN_100ml", "FroudeNumber", "PortDiameter_m", "PortDepth_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "NumberOfPorts", "PortSpacing_m", "AcuteMixZone_m", "ChronicMixZone_m", "EffluentSalinity_PSU", "EffluentTemperature_C", "EffluentVelocity_m_s", "RawResults", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void VPScenarioExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "VPScenarioReportTest", "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "VPScenarioStatusText", "VPScenarioID", "InfrastructureTVItemID", "VPScenarioStatus", "UseAsBestEstimate", "EffluentFlow_m3_s", "EffluentConcentration_MPN_100ml", "FroudeNumber", "PortDiameter_m", "PortDepth_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "NumberOfPorts", "PortSpacing_m", "AcuteMixZone_m", "ChronicMixZone_m", "EffluentSalinity_PSU", "EffluentTemperature_C", "EffluentVelocity_m_s", "RawResults", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "VPScenarioReportTest", "SubsectorText", "LastUpdateContactText", "VPScenarioStatusText", "VPScenarioID", "InfrastructureTVItemID", "VPScenarioStatus", "UseAsBestEstimate", "EffluentFlow_m3_s", "EffluentConcentration_MPN_100ml", "FroudeNumber", "PortDiameter_m", "PortDepth_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "NumberOfPorts", "PortSpacing_m", "AcuteMixZone_m", "ChronicMixZone_m", "EffluentSalinity_PSU", "EffluentTemperature_C", "EffluentVelocity_m_s", "RawResults", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -329,19 +329,19 @@ namespace CSSPModels.Tests
                bool val23 = true;
                vPScenario.HasErrors = val23;
                Assert.AreEqual(val23, vPScenario.HasErrors);
-               IEnumerable<ValidationResult> val72 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val72 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                vPScenario.ValidationResults = val72;
                Assert.AreEqual(val72, vPScenario.ValidationResults);
         }
         [TestMethod]
         public void VPScenarioExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               vPScenarioExtraA.SubsectorTVItemLanguage = val1;
-               Assert.AreEqual(val1, vPScenarioExtraA.SubsectorTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               vPScenarioExtraA.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, vPScenarioExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               vPScenarioExtraA.SubsectorText = val1;
+               Assert.AreEqual(val1, vPScenarioExtraA.SubsectorText);
+               string val2 = "Some text";
+               vPScenarioExtraA.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, vPScenarioExtraA.LastUpdateContactText);
                string val3 = "Some text";
                vPScenarioExtraA.VPScenarioStatusText = val3;
                Assert.AreEqual(val3, vPScenarioExtraA.VPScenarioStatusText);
@@ -414,7 +414,7 @@ namespace CSSPModels.Tests
                bool val26 = true;
                vPScenarioExtraA.HasErrors = val26;
                Assert.AreEqual(val26, vPScenarioExtraA.HasErrors);
-               IEnumerable<ValidationResult> val81 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val81 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                vPScenarioExtraA.ValidationResults = val81;
                Assert.AreEqual(val81, vPScenarioExtraA.ValidationResults);
         }
@@ -424,12 +424,12 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                vPScenarioExtraB.VPScenarioReportTest = val1;
                Assert.AreEqual(val1, vPScenarioExtraB.VPScenarioReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               vPScenarioExtraB.SubsectorTVItemLanguage = val2;
-               Assert.AreEqual(val2, vPScenarioExtraB.SubsectorTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               vPScenarioExtraB.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, vPScenarioExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               vPScenarioExtraB.SubsectorText = val2;
+               Assert.AreEqual(val2, vPScenarioExtraB.SubsectorText);
+               string val3 = "Some text";
+               vPScenarioExtraB.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, vPScenarioExtraB.LastUpdateContactText);
                string val4 = "Some text";
                vPScenarioExtraB.VPScenarioStatusText = val4;
                Assert.AreEqual(val4, vPScenarioExtraB.VPScenarioStatusText);
@@ -502,7 +502,7 @@ namespace CSSPModels.Tests
                bool val27 = true;
                vPScenarioExtraB.HasErrors = val27;
                Assert.AreEqual(val27, vPScenarioExtraB.HasErrors);
-               IEnumerable<ValidationResult> val84 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val84 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                vPScenarioExtraB.ValidationResults = val84;
                Assert.AreEqual(val84, vPScenarioExtraB.ValidationResults);
         }

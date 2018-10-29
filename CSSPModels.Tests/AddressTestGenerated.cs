@@ -302,7 +302,7 @@ namespace CSSPModels.Tests
                bool val14 = true;
                address.HasErrors = val14;
                Assert.AreEqual(val14, address.HasErrors);
-               IEnumerable<ValidationResult> val45 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val45 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                address.ValidationResults = val45;
                Assert.AreEqual(val45, address.ValidationResults);
         }
@@ -372,7 +372,7 @@ namespace CSSPModels.Tests
                bool val21 = true;
                addressExtraA.HasErrors = val21;
                Assert.AreEqual(val21, addressExtraA.HasErrors);
-               IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                addressExtraA.ValidationResults = val66;
                Assert.AreEqual(val66, addressExtraA.ValidationResults);
         }
@@ -445,7 +445,7 @@ namespace CSSPModels.Tests
                bool val22 = true;
                addressExtraB.HasErrors = val22;
                Assert.AreEqual(val22, addressExtraB.HasErrors);
-               IEnumerable<ValidationResult> val69 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val69 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                addressExtraB.ValidationResults = val69;
                Assert.AreEqual(val69, addressExtraB.ValidationResults);
         }

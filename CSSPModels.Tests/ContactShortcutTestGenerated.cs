@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ContactShortcutExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "ContactShortcutID", "ContactID", "ShortCutText", "ShortCutAddress", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "ContactShortcutID", "ContactID", "ShortCutText", "ShortCutAddress", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ContactShortcutExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ContactShortcutReportTest", "LastUpdateContactTVItemLanguage", "ContactShortcutID", "ContactID", "ShortCutText", "ShortCutAddress", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ContactShortcutReportTest", "LastUpdateContactText", "ContactShortcutID", "ContactID", "ShortCutText", "ShortCutAddress", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -281,16 +281,16 @@ namespace CSSPModels.Tests
                bool val7 = true;
                contactShortcut.HasErrors = val7;
                Assert.AreEqual(val7, contactShortcut.HasErrors);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                contactShortcut.ValidationResults = val24;
                Assert.AreEqual(val24, contactShortcut.ValidationResults);
         }
         [TestMethod]
         public void ContactShortcutExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               contactShortcutExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, contactShortcutExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               contactShortcutExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, contactShortcutExtraA.LastUpdateContactText);
                int val2 = 45;
                contactShortcutExtraA.ContactShortcutID = val2;
                Assert.AreEqual(val2, contactShortcutExtraA.ContactShortcutID);
@@ -312,7 +312,7 @@ namespace CSSPModels.Tests
                bool val8 = true;
                contactShortcutExtraA.HasErrors = val8;
                Assert.AreEqual(val8, contactShortcutExtraA.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                contactShortcutExtraA.ValidationResults = val27;
                Assert.AreEqual(val27, contactShortcutExtraA.ValidationResults);
         }
@@ -322,9 +322,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                contactShortcutExtraB.ContactShortcutReportTest = val1;
                Assert.AreEqual(val1, contactShortcutExtraB.ContactShortcutReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               contactShortcutExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, contactShortcutExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               contactShortcutExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, contactShortcutExtraB.LastUpdateContactText);
                int val3 = 45;
                contactShortcutExtraB.ContactShortcutID = val3;
                Assert.AreEqual(val3, contactShortcutExtraB.ContactShortcutID);
@@ -346,7 +346,7 @@ namespace CSSPModels.Tests
                bool val9 = true;
                contactShortcutExtraB.HasErrors = val9;
                Assert.AreEqual(val9, contactShortcutExtraB.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                contactShortcutExtraB.ValidationResults = val30;
                Assert.AreEqual(val30, contactShortcutExtraB.ValidationResults);
         }

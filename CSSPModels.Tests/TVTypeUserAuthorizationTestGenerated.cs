@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVTypeUserAuthorizationExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "TVTypeText", "TVAuthText", "TVTypeUserAuthorizationID", "ContactTVItemID", "TVType", "TVAuth", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ContactName", "LastUpdateContactText", "TVTypeText", "TVAuthText", "TVTypeUserAuthorizationID", "ContactTVItemID", "TVType", "TVAuth", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVTypeUserAuthorizationExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "TVTypeUserAuthorizationReportTest", "ContactTVItemLanguage", "LastUpdateContactTVItemLanguage", "TVTypeText", "TVAuthText", "TVTypeUserAuthorizationID", "ContactTVItemID", "TVType", "TVAuth", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TVTypeUserAuthorizationReportTest", "ContactName", "LastUpdateContactText", "TVTypeText", "TVAuthText", "TVTypeUserAuthorizationID", "ContactTVItemID", "TVType", "TVAuth", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -281,19 +281,19 @@ namespace CSSPModels.Tests
                bool val7 = true;
                tVTypeUserAuthorization.HasErrors = val7;
                Assert.AreEqual(val7, tVTypeUserAuthorization.HasErrors);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tVTypeUserAuthorization.ValidationResults = val24;
                Assert.AreEqual(val24, tVTypeUserAuthorization.ValidationResults);
         }
         [TestMethod]
         public void TVTypeUserAuthorizationExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               tVTypeUserAuthorizationExtraA.ContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, tVTypeUserAuthorizationExtraA.ContactTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               tVTypeUserAuthorizationExtraA.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, tVTypeUserAuthorizationExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               tVTypeUserAuthorizationExtraA.ContactName = val1;
+               Assert.AreEqual(val1, tVTypeUserAuthorizationExtraA.ContactName);
+               string val2 = "Some text";
+               tVTypeUserAuthorizationExtraA.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, tVTypeUserAuthorizationExtraA.LastUpdateContactText);
                string val3 = "Some text";
                tVTypeUserAuthorizationExtraA.TVTypeText = val3;
                Assert.AreEqual(val3, tVTypeUserAuthorizationExtraA.TVTypeText);
@@ -321,7 +321,7 @@ namespace CSSPModels.Tests
                bool val11 = true;
                tVTypeUserAuthorizationExtraA.HasErrors = val11;
                Assert.AreEqual(val11, tVTypeUserAuthorizationExtraA.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tVTypeUserAuthorizationExtraA.ValidationResults = val36;
                Assert.AreEqual(val36, tVTypeUserAuthorizationExtraA.ValidationResults);
         }
@@ -331,12 +331,12 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                tVTypeUserAuthorizationExtraB.TVTypeUserAuthorizationReportTest = val1;
                Assert.AreEqual(val1, tVTypeUserAuthorizationExtraB.TVTypeUserAuthorizationReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               tVTypeUserAuthorizationExtraB.ContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, tVTypeUserAuthorizationExtraB.ContactTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               tVTypeUserAuthorizationExtraB.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, tVTypeUserAuthorizationExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               tVTypeUserAuthorizationExtraB.ContactName = val2;
+               Assert.AreEqual(val2, tVTypeUserAuthorizationExtraB.ContactName);
+               string val3 = "Some text";
+               tVTypeUserAuthorizationExtraB.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, tVTypeUserAuthorizationExtraB.LastUpdateContactText);
                string val4 = "Some text";
                tVTypeUserAuthorizationExtraB.TVTypeText = val4;
                Assert.AreEqual(val4, tVTypeUserAuthorizationExtraB.TVTypeText);
@@ -364,7 +364,7 @@ namespace CSSPModels.Tests
                bool val12 = true;
                tVTypeUserAuthorizationExtraB.HasErrors = val12;
                Assert.AreEqual(val12, tVTypeUserAuthorizationExtraB.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tVTypeUserAuthorizationExtraB.ValidationResults = val39;
                Assert.AreEqual(val39, tVTypeUserAuthorizationExtraB.ValidationResults);
         }

@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void EmailDistributionListExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "CountryTVItemLanguage", "LastUpdateContactTVItemLanguage", "EmailDistributionListID", "CountryTVItemID", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "CountryText", "LastUpdateContactText", "EmailDistributionListID", "CountryTVItemID", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void EmailDistributionListExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "EmailDistributionListReportTest", "CountryTVItemLanguage", "LastUpdateContactTVItemLanguage", "EmailDistributionListID", "CountryTVItemID", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "EmailDistributionListReportTest", "CountryText", "LastUpdateContactText", "EmailDistributionListID", "CountryTVItemID", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -278,19 +278,19 @@ namespace CSSPModels.Tests
                bool val6 = true;
                emailDistributionList.HasErrors = val6;
                Assert.AreEqual(val6, emailDistributionList.HasErrors);
-               IEnumerable<ValidationResult> val21 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val21 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                emailDistributionList.ValidationResults = val21;
                Assert.AreEqual(val21, emailDistributionList.ValidationResults);
         }
         [TestMethod]
         public void EmailDistributionListExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               emailDistributionListExtraA.CountryTVItemLanguage = val1;
-               Assert.AreEqual(val1, emailDistributionListExtraA.CountryTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               emailDistributionListExtraA.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, emailDistributionListExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               emailDistributionListExtraA.CountryText = val1;
+               Assert.AreEqual(val1, emailDistributionListExtraA.CountryText);
+               string val2 = "Some text";
+               emailDistributionListExtraA.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, emailDistributionListExtraA.LastUpdateContactText);
                int val3 = 45;
                emailDistributionListExtraA.EmailDistributionListID = val3;
                Assert.AreEqual(val3, emailDistributionListExtraA.EmailDistributionListID);
@@ -309,7 +309,7 @@ namespace CSSPModels.Tests
                bool val8 = true;
                emailDistributionListExtraA.HasErrors = val8;
                Assert.AreEqual(val8, emailDistributionListExtraA.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                emailDistributionListExtraA.ValidationResults = val27;
                Assert.AreEqual(val27, emailDistributionListExtraA.ValidationResults);
         }
@@ -319,12 +319,12 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                emailDistributionListExtraB.EmailDistributionListReportTest = val1;
                Assert.AreEqual(val1, emailDistributionListExtraB.EmailDistributionListReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               emailDistributionListExtraB.CountryTVItemLanguage = val2;
-               Assert.AreEqual(val2, emailDistributionListExtraB.CountryTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               emailDistributionListExtraB.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, emailDistributionListExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               emailDistributionListExtraB.CountryText = val2;
+               Assert.AreEqual(val2, emailDistributionListExtraB.CountryText);
+               string val3 = "Some text";
+               emailDistributionListExtraB.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, emailDistributionListExtraB.LastUpdateContactText);
                int val4 = 45;
                emailDistributionListExtraB.EmailDistributionListID = val4;
                Assert.AreEqual(val4, emailDistributionListExtraB.EmailDistributionListID);
@@ -343,7 +343,7 @@ namespace CSSPModels.Tests
                bool val9 = true;
                emailDistributionListExtraB.HasErrors = val9;
                Assert.AreEqual(val9, emailDistributionListExtraB.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                emailDistributionListExtraB.ValidationResults = val30;
                Assert.AreEqual(val30, emailDistributionListExtraB.ValidationResults);
         }

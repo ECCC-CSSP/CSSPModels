@@ -90,7 +90,7 @@ namespace CSSPModels.Tests
                bool val10 = true;
                boxModelCalNumb.HasErrors = val10;
                Assert.AreEqual(val10, boxModelCalNumb.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                boxModelCalNumb.ValidationResults = val33;
                Assert.AreEqual(val33, boxModelCalNumb.ValidationResults);
         }

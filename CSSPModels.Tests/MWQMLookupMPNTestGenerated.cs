@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMLookupMPNExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "MWQMLookupMPNID", "Tubes10", "Tubes1", "Tubes01", "MPN_100ml", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "MWQMLookupMPNID", "Tubes10", "Tubes1", "Tubes01", "MPN_100ml", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MWQMLookupMPNExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MWQMLookupMPNReportTest", "LastUpdateContactTVItemLanguage", "MWQMLookupMPNID", "Tubes10", "Tubes1", "Tubes01", "MPN_100ml", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MWQMLookupMPNReportTest", "LastUpdateContactText", "MWQMLookupMPNID", "Tubes10", "Tubes1", "Tubes01", "MPN_100ml", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -284,16 +284,16 @@ namespace CSSPModels.Tests
                bool val8 = true;
                mWQMLookupMPN.HasErrors = val8;
                Assert.AreEqual(val8, mWQMLookupMPN.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMLookupMPN.ValidationResults = val27;
                Assert.AreEqual(val27, mWQMLookupMPN.ValidationResults);
         }
         [TestMethod]
         public void MWQMLookupMPNExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               mWQMLookupMPNExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, mWQMLookupMPNExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               mWQMLookupMPNExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, mWQMLookupMPNExtraA.LastUpdateContactText);
                int val2 = 45;
                mWQMLookupMPNExtraA.MWQMLookupMPNID = val2;
                Assert.AreEqual(val2, mWQMLookupMPNExtraA.MWQMLookupMPNID);
@@ -318,7 +318,7 @@ namespace CSSPModels.Tests
                bool val9 = true;
                mWQMLookupMPNExtraA.HasErrors = val9;
                Assert.AreEqual(val9, mWQMLookupMPNExtraA.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMLookupMPNExtraA.ValidationResults = val30;
                Assert.AreEqual(val30, mWQMLookupMPNExtraA.ValidationResults);
         }
@@ -328,9 +328,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                mWQMLookupMPNExtraB.MWQMLookupMPNReportTest = val1;
                Assert.AreEqual(val1, mWQMLookupMPNExtraB.MWQMLookupMPNReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mWQMLookupMPNExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, mWQMLookupMPNExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               mWQMLookupMPNExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, mWQMLookupMPNExtraB.LastUpdateContactText);
                int val3 = 45;
                mWQMLookupMPNExtraB.MWQMLookupMPNID = val3;
                Assert.AreEqual(val3, mWQMLookupMPNExtraB.MWQMLookupMPNID);
@@ -355,7 +355,7 @@ namespace CSSPModels.Tests
                bool val10 = true;
                mWQMLookupMPNExtraB.HasErrors = val10;
                Assert.AreEqual(val10, mWQMLookupMPNExtraB.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mWQMLookupMPNExtraB.ValidationResults = val33;
                Assert.AreEqual(val33, mWQMLookupMPNExtraB.ValidationResults);
         }

@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MikeBoundaryConditionExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MikeBoundaryConditionTVItemLanguage", "LastUpdateContactTVItemLanguage", "MikeBoundaryConditionLevelOrVelocityText", "WebTideDataSetText", "TVTypeText", "MikeBoundaryConditionID", "MikeBoundaryConditionTVItemID", "MikeBoundaryConditionCode", "MikeBoundaryConditionName", "MikeBoundaryConditionLength_m", "MikeBoundaryConditionFormat", "MikeBoundaryConditionLevelOrVelocity", "WebTideDataSet", "NumberOfWebTideNodes", "WebTideDataFromStartToEndDate", "TVType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MikeBoundaryConditionText", "LastUpdateContactText", "MikeBoundaryConditionLevelOrVelocityText", "WebTideDataSetText", "TVTypeText", "MikeBoundaryConditionID", "MikeBoundaryConditionTVItemID", "MikeBoundaryConditionCode", "MikeBoundaryConditionName", "MikeBoundaryConditionLength_m", "MikeBoundaryConditionFormat", "MikeBoundaryConditionLevelOrVelocity", "WebTideDataSet", "NumberOfWebTideNodes", "WebTideDataFromStartToEndDate", "TVType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MikeBoundaryConditionExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MikeBoundaryConditionReportTest", "MikeBoundaryConditionTVItemLanguage", "LastUpdateContactTVItemLanguage", "MikeBoundaryConditionLevelOrVelocityText", "WebTideDataSetText", "TVTypeText", "MikeBoundaryConditionID", "MikeBoundaryConditionTVItemID", "MikeBoundaryConditionCode", "MikeBoundaryConditionName", "MikeBoundaryConditionLength_m", "MikeBoundaryConditionFormat", "MikeBoundaryConditionLevelOrVelocity", "WebTideDataSet", "NumberOfWebTideNodes", "WebTideDataFromStartToEndDate", "TVType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MikeBoundaryConditionReportTest", "MikeBoundaryConditionText", "LastUpdateContactText", "MikeBoundaryConditionLevelOrVelocityText", "WebTideDataSetText", "TVTypeText", "MikeBoundaryConditionID", "MikeBoundaryConditionTVItemID", "MikeBoundaryConditionCode", "MikeBoundaryConditionName", "MikeBoundaryConditionLength_m", "MikeBoundaryConditionFormat", "MikeBoundaryConditionLevelOrVelocity", "WebTideDataSet", "NumberOfWebTideNodes", "WebTideDataFromStartToEndDate", "TVType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -302,19 +302,19 @@ namespace CSSPModels.Tests
                bool val14 = true;
                mikeBoundaryCondition.HasErrors = val14;
                Assert.AreEqual(val14, mikeBoundaryCondition.HasErrors);
-               IEnumerable<ValidationResult> val45 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val45 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mikeBoundaryCondition.ValidationResults = val45;
                Assert.AreEqual(val45, mikeBoundaryCondition.ValidationResults);
         }
         [TestMethod]
         public void MikeBoundaryConditionExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               mikeBoundaryConditionExtraA.MikeBoundaryConditionTVItemLanguage = val1;
-               Assert.AreEqual(val1, mikeBoundaryConditionExtraA.MikeBoundaryConditionTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mikeBoundaryConditionExtraA.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, mikeBoundaryConditionExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               mikeBoundaryConditionExtraA.MikeBoundaryConditionText = val1;
+               Assert.AreEqual(val1, mikeBoundaryConditionExtraA.MikeBoundaryConditionText);
+               string val2 = "Some text";
+               mikeBoundaryConditionExtraA.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, mikeBoundaryConditionExtraA.LastUpdateContactText);
                string val3 = "Some text";
                mikeBoundaryConditionExtraA.MikeBoundaryConditionLevelOrVelocityText = val3;
                Assert.AreEqual(val3, mikeBoundaryConditionExtraA.MikeBoundaryConditionLevelOrVelocityText);
@@ -366,7 +366,7 @@ namespace CSSPModels.Tests
                bool val19 = true;
                mikeBoundaryConditionExtraA.HasErrors = val19;
                Assert.AreEqual(val19, mikeBoundaryConditionExtraA.HasErrors);
-               IEnumerable<ValidationResult> val60 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val60 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mikeBoundaryConditionExtraA.ValidationResults = val60;
                Assert.AreEqual(val60, mikeBoundaryConditionExtraA.ValidationResults);
         }
@@ -376,12 +376,12 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                mikeBoundaryConditionExtraB.MikeBoundaryConditionReportTest = val1;
                Assert.AreEqual(val1, mikeBoundaryConditionExtraB.MikeBoundaryConditionReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mikeBoundaryConditionExtraB.MikeBoundaryConditionTVItemLanguage = val2;
-               Assert.AreEqual(val2, mikeBoundaryConditionExtraB.MikeBoundaryConditionTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               mikeBoundaryConditionExtraB.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, mikeBoundaryConditionExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               mikeBoundaryConditionExtraB.MikeBoundaryConditionText = val2;
+               Assert.AreEqual(val2, mikeBoundaryConditionExtraB.MikeBoundaryConditionText);
+               string val3 = "Some text";
+               mikeBoundaryConditionExtraB.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, mikeBoundaryConditionExtraB.LastUpdateContactText);
                string val4 = "Some text";
                mikeBoundaryConditionExtraB.MikeBoundaryConditionLevelOrVelocityText = val4;
                Assert.AreEqual(val4, mikeBoundaryConditionExtraB.MikeBoundaryConditionLevelOrVelocityText);
@@ -433,7 +433,7 @@ namespace CSSPModels.Tests
                bool val20 = true;
                mikeBoundaryConditionExtraB.HasErrors = val20;
                Assert.AreEqual(val20, mikeBoundaryConditionExtraB.HasErrors);
-               IEnumerable<ValidationResult> val63 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val63 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mikeBoundaryConditionExtraB.ValidationResults = val63;
                Assert.AreEqual(val63, mikeBoundaryConditionExtraB.ValidationResults);
         }

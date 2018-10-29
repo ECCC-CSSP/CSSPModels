@@ -27,11 +27,11 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant la infrastructure")]
         public int InfrastructureTVItemID { get; set; }
         [Range(0.0D, 10000.0D)]
-        [CSSPDisplayEN(DisplayEN = "Flow (m3/d)")]
+        [CSSPDisplayEN(DisplayEN = "Discharge (m3/d)")]
         [CSSPDisplayFR(DisplayFR = "Débit (m3/j)")]
-        [CSSPDescriptionEN(DescriptionEN = @"Flow (m3/d) spilled by the infrastructure")]
+        [CSSPDescriptionEN(DescriptionEN = @"Discharge (m3/d) spilled by the infrastructure")]
         [CSSPDescriptionFR(DescriptionFR = @"Débit (m3/d) déversé par l' infrastructure")]
-        public double Flow_m3_day { get; set; }
+        public double Discharge_m3_day { get; set; }
         [Range(0.0D, 1000.0D)]
         [CSSPDisplayEN(DisplayEN = "Depth (m)")]
         [CSSPDisplayFR(DisplayFR = "Profondeur (m)")]
@@ -98,18 +98,18 @@ namespace CSSPModels
     public partial class BoxModelExtraA : BoxModel
     {
         #region Properties
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Infrastructure TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage de l'infrastructure")]
         [CSSPDescriptionEN(DescriptionEN = @"Infrastructure TVItemLanguage DB object")]
         [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de l'infrastructure")]
-        public TVItemLanguage InfrastructureTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
-        public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
+        public string InfrastructureText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact ayant fait le dernière changement")]
+        public string LastUpdateContactText { get; set; }
         #endregion Properties
 
         #region Constructors

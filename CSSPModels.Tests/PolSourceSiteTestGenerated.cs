@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolSourceSiteExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "PolSourceSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "InactiveReasonText", "PolSourceSiteID", "PolSourceSiteTVItemID", "Temp_Locator_CanDelete", "Oldsiteid", "Site", "SiteID", "IsPointSource", "InactiveReason", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "PolSourceSiteText", "LastUpdateContactText", "InactiveReasonText", "PolSourceSiteID", "PolSourceSiteTVItemID", "Temp_Locator_CanDelete", "Oldsiteid", "Site", "SiteID", "IsPointSource", "InactiveReason", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolSourceSiteExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "PolSourceSiteReportTest", "PolSourceSiteTVItemLanguage", "LastUpdateContactTVItemLanguage", "InactiveReasonText", "PolSourceSiteID", "PolSourceSiteTVItemID", "Temp_Locator_CanDelete", "Oldsiteid", "Site", "SiteID", "IsPointSource", "InactiveReason", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "PolSourceSiteReportTest", "PolSourceSiteText", "LastUpdateContactText", "InactiveReasonText", "PolSourceSiteID", "PolSourceSiteTVItemID", "Temp_Locator_CanDelete", "Oldsiteid", "Site", "SiteID", "IsPointSource", "InactiveReason", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -296,19 +296,19 @@ namespace CSSPModels.Tests
                bool val12 = true;
                polSourceSite.HasErrors = val12;
                Assert.AreEqual(val12, polSourceSite.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                polSourceSite.ValidationResults = val39;
                Assert.AreEqual(val39, polSourceSite.ValidationResults);
         }
         [TestMethod]
         public void PolSourceSiteExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               polSourceSiteExtraA.PolSourceSiteTVItemLanguage = val1;
-               Assert.AreEqual(val1, polSourceSiteExtraA.PolSourceSiteTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               polSourceSiteExtraA.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, polSourceSiteExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               polSourceSiteExtraA.PolSourceSiteText = val1;
+               Assert.AreEqual(val1, polSourceSiteExtraA.PolSourceSiteText);
+               string val2 = "Some text";
+               polSourceSiteExtraA.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, polSourceSiteExtraA.LastUpdateContactText);
                string val3 = "Some text";
                polSourceSiteExtraA.InactiveReasonText = val3;
                Assert.AreEqual(val3, polSourceSiteExtraA.InactiveReasonText);
@@ -348,7 +348,7 @@ namespace CSSPModels.Tests
                bool val15 = true;
                polSourceSiteExtraA.HasErrors = val15;
                Assert.AreEqual(val15, polSourceSiteExtraA.HasErrors);
-               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                polSourceSiteExtraA.ValidationResults = val48;
                Assert.AreEqual(val48, polSourceSiteExtraA.ValidationResults);
         }
@@ -358,12 +358,12 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                polSourceSiteExtraB.PolSourceSiteReportTest = val1;
                Assert.AreEqual(val1, polSourceSiteExtraB.PolSourceSiteReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               polSourceSiteExtraB.PolSourceSiteTVItemLanguage = val2;
-               Assert.AreEqual(val2, polSourceSiteExtraB.PolSourceSiteTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               polSourceSiteExtraB.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, polSourceSiteExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               polSourceSiteExtraB.PolSourceSiteText = val2;
+               Assert.AreEqual(val2, polSourceSiteExtraB.PolSourceSiteText);
+               string val3 = "Some text";
+               polSourceSiteExtraB.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, polSourceSiteExtraB.LastUpdateContactText);
                string val4 = "Some text";
                polSourceSiteExtraB.InactiveReasonText = val4;
                Assert.AreEqual(val4, polSourceSiteExtraB.InactiveReasonText);
@@ -403,7 +403,7 @@ namespace CSSPModels.Tests
                bool val16 = true;
                polSourceSiteExtraB.HasErrors = val16;
                Assert.AreEqual(val16, polSourceSiteExtraB.HasErrors);
-               IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                polSourceSiteExtraB.ValidationResults = val51;
                Assert.AreEqual(val51, polSourceSiteExtraB.ValidationResults);
         }

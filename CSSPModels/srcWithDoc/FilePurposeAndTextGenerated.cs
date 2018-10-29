@@ -24,7 +24,7 @@ namespace CSSPModels
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]
-    public partial class FilePurposeAndText : Error
+    public partial class FilePurposeAndText : CSSPError
     {
         #region Properties in DB
         #endregion Properties in DB

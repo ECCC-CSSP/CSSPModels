@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void InfrastructureLanguageExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "InfrastructureLanguageID", "InfrastructureID", "Language", "Comment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "LanguageText", "TranslationStatusText", "InfrastructureLanguageID", "InfrastructureID", "Language", "Comment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void InfrastructureLanguageExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "InfrastructureLanguageReportTest", "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "InfrastructureLanguageID", "InfrastructureID", "Language", "Comment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "InfrastructureLanguageReportTest", "LastUpdateContactText", "LanguageText", "TranslationStatusText", "InfrastructureLanguageID", "InfrastructureID", "Language", "Comment", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -284,16 +284,16 @@ namespace CSSPModels.Tests
                bool val8 = true;
                infrastructureLanguage.HasErrors = val8;
                Assert.AreEqual(val8, infrastructureLanguage.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                infrastructureLanguage.ValidationResults = val27;
                Assert.AreEqual(val27, infrastructureLanguage.ValidationResults);
         }
         [TestMethod]
         public void InfrastructureLanguageExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               infrastructureLanguageExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, infrastructureLanguageExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               infrastructureLanguageExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, infrastructureLanguageExtraA.LastUpdateContactText);
                string val2 = "Some text";
                infrastructureLanguageExtraA.LanguageText = val2;
                Assert.AreEqual(val2, infrastructureLanguageExtraA.LanguageText);
@@ -324,7 +324,7 @@ namespace CSSPModels.Tests
                bool val11 = true;
                infrastructureLanguageExtraA.HasErrors = val11;
                Assert.AreEqual(val11, infrastructureLanguageExtraA.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                infrastructureLanguageExtraA.ValidationResults = val36;
                Assert.AreEqual(val36, infrastructureLanguageExtraA.ValidationResults);
         }
@@ -334,9 +334,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                infrastructureLanguageExtraB.InfrastructureLanguageReportTest = val1;
                Assert.AreEqual(val1, infrastructureLanguageExtraB.InfrastructureLanguageReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               infrastructureLanguageExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, infrastructureLanguageExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               infrastructureLanguageExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, infrastructureLanguageExtraB.LastUpdateContactText);
                string val3 = "Some text";
                infrastructureLanguageExtraB.LanguageText = val3;
                Assert.AreEqual(val3, infrastructureLanguageExtraB.LanguageText);
@@ -367,7 +367,7 @@ namespace CSSPModels.Tests
                bool val12 = true;
                infrastructureLanguageExtraB.HasErrors = val12;
                Assert.AreEqual(val12, infrastructureLanguageExtraB.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                infrastructureLanguageExtraB.ValidationResults = val39;
                Assert.AreEqual(val39, infrastructureLanguageExtraB.ValidationResults);
         }

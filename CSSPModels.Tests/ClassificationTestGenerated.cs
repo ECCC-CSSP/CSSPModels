@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ClassificationExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "ClassificationTVText", "ClassificationID", "ClassificationTVItemID", "ClassificationType", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "ClassificationTVText", "ClassificationID", "ClassificationTVItemID", "ClassificationType", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ClassificationExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ClassificationReportTest", "LastUpdateContactTVItemLanguage", "ClassificationTVText", "ClassificationID", "ClassificationTVItemID", "ClassificationType", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ClassificationReportTest", "LastUpdateContactText", "ClassificationTVText", "ClassificationID", "ClassificationTVItemID", "ClassificationType", "Ordinal", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -281,16 +281,16 @@ namespace CSSPModels.Tests
                bool val7 = true;
                classification.HasErrors = val7;
                Assert.AreEqual(val7, classification.HasErrors);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                classification.ValidationResults = val24;
                Assert.AreEqual(val24, classification.ValidationResults);
         }
         [TestMethod]
         public void ClassificationExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               classificationExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, classificationExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               classificationExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, classificationExtraA.LastUpdateContactText);
                string val2 = "Some text";
                classificationExtraA.ClassificationTVText = val2;
                Assert.AreEqual(val2, classificationExtraA.ClassificationTVText);
@@ -315,7 +315,7 @@ namespace CSSPModels.Tests
                bool val9 = true;
                classificationExtraA.HasErrors = val9;
                Assert.AreEqual(val9, classificationExtraA.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                classificationExtraA.ValidationResults = val30;
                Assert.AreEqual(val30, classificationExtraA.ValidationResults);
         }
@@ -325,9 +325,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                classificationExtraB.ClassificationReportTest = val1;
                Assert.AreEqual(val1, classificationExtraB.ClassificationReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               classificationExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, classificationExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               classificationExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, classificationExtraB.LastUpdateContactText);
                string val3 = "Some text";
                classificationExtraB.ClassificationTVText = val3;
                Assert.AreEqual(val3, classificationExtraB.ClassificationTVText);
@@ -352,7 +352,7 @@ namespace CSSPModels.Tests
                bool val10 = true;
                classificationExtraB.HasErrors = val10;
                Assert.AreEqual(val10, classificationExtraB.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                classificationExtraB.ValidationResults = val33;
                Assert.AreEqual(val33, classificationExtraB.ValidationResults);
         }

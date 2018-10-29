@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void UseOfSiteExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SiteTVItemLanguage", "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "SiteTypeText", "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "SiteType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SiteText", "SubsectorText", "LastUpdateContactText", "SiteTypeText", "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "SiteType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void UseOfSiteExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "UseOfSiteReportTest", "SiteTVItemLanguage", "SubsectorTVItemLanguage", "LastUpdateContactTVItemLanguage", "SiteTypeText", "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "SiteType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "UseOfSiteReportTest", "SiteText", "SubsectorText", "LastUpdateContactText", "SiteTypeText", "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "SiteType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -311,22 +311,22 @@ namespace CSSPModels.Tests
                bool val17 = true;
                useOfSite.HasErrors = val17;
                Assert.AreEqual(val17, useOfSite.HasErrors);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                useOfSite.ValidationResults = val54;
                Assert.AreEqual(val54, useOfSite.ValidationResults);
         }
         [TestMethod]
         public void UseOfSiteExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               useOfSiteExtraA.SiteTVItemLanguage = val1;
-               Assert.AreEqual(val1, useOfSiteExtraA.SiteTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               useOfSiteExtraA.SubsectorTVItemLanguage = val2;
-               Assert.AreEqual(val2, useOfSiteExtraA.SubsectorTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               useOfSiteExtraA.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, useOfSiteExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               useOfSiteExtraA.SiteText = val1;
+               Assert.AreEqual(val1, useOfSiteExtraA.SiteText);
+               string val2 = "Some text";
+               useOfSiteExtraA.SubsectorText = val2;
+               Assert.AreEqual(val2, useOfSiteExtraA.SubsectorText);
+               string val3 = "Some text";
+               useOfSiteExtraA.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, useOfSiteExtraA.LastUpdateContactText);
                string val4 = "Some text";
                useOfSiteExtraA.SiteTypeText = val4;
                Assert.AreEqual(val4, useOfSiteExtraA.SiteTypeText);
@@ -381,7 +381,7 @@ namespace CSSPModels.Tests
                bool val21 = true;
                useOfSiteExtraA.HasErrors = val21;
                Assert.AreEqual(val21, useOfSiteExtraA.HasErrors);
-               IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                useOfSiteExtraA.ValidationResults = val66;
                Assert.AreEqual(val66, useOfSiteExtraA.ValidationResults);
         }
@@ -391,15 +391,15 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                useOfSiteExtraB.UseOfSiteReportTest = val1;
                Assert.AreEqual(val1, useOfSiteExtraB.UseOfSiteReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               useOfSiteExtraB.SiteTVItemLanguage = val2;
-               Assert.AreEqual(val2, useOfSiteExtraB.SiteTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               useOfSiteExtraB.SubsectorTVItemLanguage = val3;
-               Assert.AreEqual(val3, useOfSiteExtraB.SubsectorTVItemLanguage);
-               TVItemLanguage val4 = new TVItemLanguage();
-               useOfSiteExtraB.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, useOfSiteExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               useOfSiteExtraB.SiteText = val2;
+               Assert.AreEqual(val2, useOfSiteExtraB.SiteText);
+               string val3 = "Some text";
+               useOfSiteExtraB.SubsectorText = val3;
+               Assert.AreEqual(val3, useOfSiteExtraB.SubsectorText);
+               string val4 = "Some text";
+               useOfSiteExtraB.LastUpdateContactText = val4;
+               Assert.AreEqual(val4, useOfSiteExtraB.LastUpdateContactText);
                string val5 = "Some text";
                useOfSiteExtraB.SiteTypeText = val5;
                Assert.AreEqual(val5, useOfSiteExtraB.SiteTypeText);
@@ -454,7 +454,7 @@ namespace CSSPModels.Tests
                bool val22 = true;
                useOfSiteExtraB.HasErrors = val22;
                Assert.AreEqual(val22, useOfSiteExtraB.HasErrors);
-               IEnumerable<ValidationResult> val69 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val69 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                useOfSiteExtraB.ValidationResults = val69;
                Assert.AreEqual(val69, useOfSiteExtraB.ValidationResults);
         }

@@ -312,32 +312,32 @@ namespace CSSPModels
     public partial class InfrastructureExtraA : Infrastructure
     {
         #region Properties
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Infrastructure TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de Infrastructure")]
-        [CSSPDescriptionEN(DescriptionEN = @"Infrastructure TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de Infrastructure")]
-        public TVItemLanguage InfrastructureTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SeeOtherTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Infrastructure text")]
+        [CSSPDisplayFR(DisplayFR = "Text de infrastructure")]
+        [CSSPDescriptionEN(DescriptionEN = @"Infrastructure text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Text de infrastructure")]
+        public string InfrastructureText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SeeOtherTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
-        [CSSPDisplayEN(DisplayEN = "See other Infrastructure TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "Voir autre Infrastructure de HydrometricSite")]
-        [CSSPDescriptionEN(DescriptionEN = @"See other Infrastructure TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de void autre Infrastructure")]
-        public TVItemLanguage SeeOtherTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CivicAddressTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "See other infrastructur text")]
+        [CSSPDisplayFR(DisplayFR = "Text de voir autre infrastructure")]
+        [CSSPDescriptionEN(DescriptionEN = @"See other infrastructur text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Text de voir autre infrastructure")]
+        public string SeeOtherText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CivicAddressTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
-        [CSSPDisplayEN(DisplayEN = "Civic address TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "Adresse civique de HydrometricSite")]
-        [CSSPDescriptionEN(DescriptionEN = @"Civic address TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de l'adresse civique")]
-        public TVItemLanguage CivicAddressTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
-        public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Civic address text")]
+        [CSSPDisplayFR(DisplayFR = "Text de adresse civique")]
+        [CSSPDescriptionEN(DescriptionEN = @"Civic address text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Text de adresse civique")]
+        public string CivicAddressText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact ayant fait le dernière changement")]
+        public string LastUpdateContactText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "InfrastructureTypeEnum", EnumType = "InfrastructureType")]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Infrastructure type text")]

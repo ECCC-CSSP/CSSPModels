@@ -24,7 +24,7 @@ namespace CSSPModels
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]
-    public partial class MapObj : Error
+    public partial class MapObj : CSSPError
     {
         #region Properties in DB
         #endregion Properties in DB

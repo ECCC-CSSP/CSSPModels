@@ -147,30 +147,30 @@ namespace CSSPModels
     public partial class SamplingPlanExtraA : SamplingPlan
     {
         #region Properties
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ProvinceTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Province TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de la province")]
-        [CSSPDescriptionEN(DescriptionEN = @"Province TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de la province")]
-        public TVItemLanguage ProvinceTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CreatorTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Creator of the sampling plan TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du créateur du plan d'échantillonnage")]
-        [CSSPDescriptionEN(DescriptionEN = @"Creator of the sampling plan TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du créateur du plan d'échantillonnage")]
-        public TVItemLanguage CreatorTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SamplingPlanFileTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Sampling plan file TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de la filière du plan d'échantillonnage")]
-        [CSSPDescriptionEN(DescriptionEN = @"ampling plan file TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de la filière du plan d'échantillonnage")]
-        public TVItemLanguage SamplingPlanFileTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
-        public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ProvinceTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Province text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de la province")]
+        [CSSPDescriptionEN(DescriptionEN = @"Province text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de la province")]
+        public string ProvinceText { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CreatorTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Name of the creator of the sampling plan")]
+        [CSSPDisplayFR(DisplayFR = "Nom du créateur du plan d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Name of the creator of the sampling plan ")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du créateur du plan d'échantillonnage")]
+        public string CreatorName { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SamplingPlanFileTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Sampling plan file name")]
+        [CSSPDisplayFR(DisplayFR = "Nom de la filière du plan d'échantillonnage")]
+        [CSSPDescriptionEN(DescriptionEN = @"Sampling plan file name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom de la filière du plan d'échantillonnage")]
+        public string SamplingPlanFileName { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact ayant fait le dernière changement")]
+        public string LastUpdateContactText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "SampleTypeEnum", EnumType = "SampleType")]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Sample type text")]

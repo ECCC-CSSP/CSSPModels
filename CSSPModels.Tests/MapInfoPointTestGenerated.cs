@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MapInfoPointExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "MapInfoPointID", "MapInfoID", "Ordinal", "Lat", "Lng", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "MapInfoPointID", "MapInfoID", "Ordinal", "Lat", "Lng", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MapInfoPointExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MapInfoPointReportTest", "LastUpdateContactTVItemLanguage", "MapInfoPointID", "MapInfoID", "Ordinal", "Lat", "Lng", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MapInfoPointReportTest", "LastUpdateContactText", "MapInfoPointID", "MapInfoID", "Ordinal", "Lat", "Lng", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -284,16 +284,16 @@ namespace CSSPModels.Tests
                bool val8 = true;
                mapInfoPoint.HasErrors = val8;
                Assert.AreEqual(val8, mapInfoPoint.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mapInfoPoint.ValidationResults = val27;
                Assert.AreEqual(val27, mapInfoPoint.ValidationResults);
         }
         [TestMethod]
         public void MapInfoPointExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               mapInfoPointExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, mapInfoPointExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               mapInfoPointExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, mapInfoPointExtraA.LastUpdateContactText);
                int val2 = 45;
                mapInfoPointExtraA.MapInfoPointID = val2;
                Assert.AreEqual(val2, mapInfoPointExtraA.MapInfoPointID);
@@ -318,7 +318,7 @@ namespace CSSPModels.Tests
                bool val9 = true;
                mapInfoPointExtraA.HasErrors = val9;
                Assert.AreEqual(val9, mapInfoPointExtraA.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mapInfoPointExtraA.ValidationResults = val30;
                Assert.AreEqual(val30, mapInfoPointExtraA.ValidationResults);
         }
@@ -328,9 +328,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                mapInfoPointExtraB.MapInfoPointReportTest = val1;
                Assert.AreEqual(val1, mapInfoPointExtraB.MapInfoPointReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mapInfoPointExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, mapInfoPointExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               mapInfoPointExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, mapInfoPointExtraB.LastUpdateContactText);
                int val3 = 45;
                mapInfoPointExtraB.MapInfoPointID = val3;
                Assert.AreEqual(val3, mapInfoPointExtraB.MapInfoPointID);
@@ -355,7 +355,7 @@ namespace CSSPModels.Tests
                bool val10 = true;
                mapInfoPointExtraB.HasErrors = val10;
                Assert.AreEqual(val10, mapInfoPointExtraB.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mapInfoPointExtraB.ValidationResults = val33;
                Assert.AreEqual(val33, mapInfoPointExtraB.ValidationResults);
         }

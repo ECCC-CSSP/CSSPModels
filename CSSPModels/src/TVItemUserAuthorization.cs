@@ -68,45 +68,45 @@ namespace CSSPModels
     public partial class TVItemUserAuthorizationExtraA : TVItemUserAuthorization
     {
         #region Properties
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage contact")]
-        [CSSPDescriptionEN(DescriptionEN = @"Contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact")]
-        public TVItemLanguage ContactTVItemLanguage { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID1", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "TV item 1 TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de l'item 1 de l'arbre visuel")]
-        [CSSPDescriptionEN(DescriptionEN = @"Tree view item 1 TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de l'item 1 de l'arbre visuel")]
-        public TVItemLanguage TVItemLanguage1 { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID2", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "ContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Contact name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du contact")]
+        [CSSPDescriptionEN(DescriptionEN = @"Contact name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact")]
+        public string ContactName { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID1", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "TV item 1 text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de l'item 1 de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view item 1 text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de l'item 1 de l'arbre visuel")]
+        public string TVItemText1 { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID2", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
-        [CSSPDisplayEN(DisplayEN = "TV item 2 TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de l'item 2 de l'arbre visuel")]
-        [CSSPDescriptionEN(DescriptionEN = @"Tree view item 2 TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de l'item 2 de l'arbre visuel")]
-        public TVItemLanguage TVItemLanguage2 { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID3", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "TV item 2 text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de l'item 2 de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view item 2 text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de l'item 2 de l'arbre visuel")]
+        public string TVItemText2 { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID3", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
-        [CSSPDisplayEN(DisplayEN = "TV item 3 TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de l'item 3 de l'arbre visuel")]
-        [CSSPDescriptionEN(DescriptionEN = @"Tree view item 3 TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de l'item 3 de l'arbre visuel")]
-        public TVItemLanguage TVItemLanguage3 { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID4", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "TV item 3 text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de l'item 3 de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view item 3 text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de l'item 3 de l'arbre visuel")]
+        public string TVItemText3 { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "TVItemID4", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
-        [CSSPDisplayEN(DisplayEN = "TV item 4 TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage de l'item 4 de l'arbre visuel")]
-        [CSSPDescriptionEN(DescriptionEN = @"Tree view item 4 TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de l'item 4 de l'arbre visuel")]
-        public TVItemLanguage TVItemLanguage4 { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
-        public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
+        [CSSPDisplayEN(DisplayEN = "TV item 4 text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de l'item 4 de l'arbre visuel")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tree view item 4 text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de l'item 4 de l'arbre visuel")]
+        public string TVItemText4 { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact ayant fait le dernière changement")]
+        public string LastUpdateContactText { get; set; }
         [CSSPEnumTypeText(EnumTypeName = "TVAuthEnum", EnumType = "TVAuth")]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "TV authorization text")]

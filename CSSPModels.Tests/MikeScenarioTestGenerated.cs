@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MikeScenarioExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MikeScenarioTVItemLanguage", "LastUpdateContactTVItemLanguage", "ScenarioStatusText", "MikeScenarioID", "MikeScenarioTVItemID", "ParentMikeScenarioID", "ScenarioStatus", "ErrorInfo", "MikeScenarioStartDateTime_Local", "MikeScenarioEndDateTime_Local", "MikeScenarioStartExecutionDateTime_Local", "MikeScenarioExecutionTime_min", "WindSpeed_km_h", "WindDirection_deg", "DecayFactor_per_day", "DecayIsConstant", "DecayFactorAmplitude", "ResultFrequency_min", "AmbientTemperature_C", "AmbientSalinity_PSU", "GenerateDecouplingFiles", "UseDecouplingFiles", "UseSalinityAndTemperatureInitialConditionFromTVFileTVItemID", "ForSimulatingMWQMRunTVItemID", "ManningNumber", "NumberOfElements", "NumberOfTimeSteps", "NumberOfSigmaLayers", "NumberOfZLayers", "NumberOfHydroOutputParameters", "NumberOfTransOutputParameters", "EstimatedHydroFileSize", "EstimatedTransFileSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MikeScenarioText", "LastUpdateContactText", "ScenarioStatusText", "MikeScenarioID", "MikeScenarioTVItemID", "ParentMikeScenarioID", "ScenarioStatus", "ErrorInfo", "MikeScenarioStartDateTime_Local", "MikeScenarioEndDateTime_Local", "MikeScenarioStartExecutionDateTime_Local", "MikeScenarioExecutionTime_min", "WindSpeed_km_h", "WindDirection_deg", "DecayFactor_per_day", "DecayIsConstant", "DecayFactorAmplitude", "ResultFrequency_min", "AmbientTemperature_C", "AmbientSalinity_PSU", "GenerateDecouplingFiles", "UseDecouplingFiles", "UseSalinityAndTemperatureInitialConditionFromTVFileTVItemID", "ForSimulatingMWQMRunTVItemID", "ManningNumber", "NumberOfElements", "NumberOfTimeSteps", "NumberOfSigmaLayers", "NumberOfZLayers", "NumberOfHydroOutputParameters", "NumberOfTransOutputParameters", "EstimatedHydroFileSize", "EstimatedTransFileSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MikeScenarioExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MikeScenarioReportTest", "MikeScenarioTVItemLanguage", "LastUpdateContactTVItemLanguage", "ScenarioStatusText", "MikeScenarioID", "MikeScenarioTVItemID", "ParentMikeScenarioID", "ScenarioStatus", "ErrorInfo", "MikeScenarioStartDateTime_Local", "MikeScenarioEndDateTime_Local", "MikeScenarioStartExecutionDateTime_Local", "MikeScenarioExecutionTime_min", "WindSpeed_km_h", "WindDirection_deg", "DecayFactor_per_day", "DecayIsConstant", "DecayFactorAmplitude", "ResultFrequency_min", "AmbientTemperature_C", "AmbientSalinity_PSU", "GenerateDecouplingFiles", "UseDecouplingFiles", "UseSalinityAndTemperatureInitialConditionFromTVFileTVItemID", "ForSimulatingMWQMRunTVItemID", "ManningNumber", "NumberOfElements", "NumberOfTimeSteps", "NumberOfSigmaLayers", "NumberOfZLayers", "NumberOfHydroOutputParameters", "NumberOfTransOutputParameters", "EstimatedHydroFileSize", "EstimatedTransFileSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MikeScenarioReportTest", "MikeScenarioText", "LastUpdateContactText", "ScenarioStatusText", "MikeScenarioID", "MikeScenarioTVItemID", "ParentMikeScenarioID", "ScenarioStatus", "ErrorInfo", "MikeScenarioStartDateTime_Local", "MikeScenarioEndDateTime_Local", "MikeScenarioStartExecutionDateTime_Local", "MikeScenarioExecutionTime_min", "WindSpeed_km_h", "WindDirection_deg", "DecayFactor_per_day", "DecayIsConstant", "DecayFactorAmplitude", "ResultFrequency_min", "AmbientTemperature_C", "AmbientSalinity_PSU", "GenerateDecouplingFiles", "UseDecouplingFiles", "UseSalinityAndTemperatureInitialConditionFromTVFileTVItemID", "ForSimulatingMWQMRunTVItemID", "ManningNumber", "NumberOfElements", "NumberOfTimeSteps", "NumberOfSigmaLayers", "NumberOfZLayers", "NumberOfHydroOutputParameters", "NumberOfTransOutputParameters", "EstimatedHydroFileSize", "EstimatedTransFileSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -359,19 +359,19 @@ namespace CSSPModels.Tests
                bool val33 = true;
                mikeScenario.HasErrors = val33;
                Assert.AreEqual(val33, mikeScenario.HasErrors);
-               IEnumerable<ValidationResult> val102 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val102 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mikeScenario.ValidationResults = val102;
                Assert.AreEqual(val102, mikeScenario.ValidationResults);
         }
         [TestMethod]
         public void MikeScenarioExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               mikeScenarioExtraA.MikeScenarioTVItemLanguage = val1;
-               Assert.AreEqual(val1, mikeScenarioExtraA.MikeScenarioTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mikeScenarioExtraA.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, mikeScenarioExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               mikeScenarioExtraA.MikeScenarioText = val1;
+               Assert.AreEqual(val1, mikeScenarioExtraA.MikeScenarioText);
+               string val2 = "Some text";
+               mikeScenarioExtraA.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, mikeScenarioExtraA.LastUpdateContactText);
                string val3 = "Some text";
                mikeScenarioExtraA.ScenarioStatusText = val3;
                Assert.AreEqual(val3, mikeScenarioExtraA.ScenarioStatusText);
@@ -474,7 +474,7 @@ namespace CSSPModels.Tests
                bool val36 = true;
                mikeScenarioExtraA.HasErrors = val36;
                Assert.AreEqual(val36, mikeScenarioExtraA.HasErrors);
-               IEnumerable<ValidationResult> val111 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val111 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mikeScenarioExtraA.ValidationResults = val111;
                Assert.AreEqual(val111, mikeScenarioExtraA.ValidationResults);
         }
@@ -484,12 +484,12 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                mikeScenarioExtraB.MikeScenarioReportTest = val1;
                Assert.AreEqual(val1, mikeScenarioExtraB.MikeScenarioReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mikeScenarioExtraB.MikeScenarioTVItemLanguage = val2;
-               Assert.AreEqual(val2, mikeScenarioExtraB.MikeScenarioTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               mikeScenarioExtraB.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, mikeScenarioExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               mikeScenarioExtraB.MikeScenarioText = val2;
+               Assert.AreEqual(val2, mikeScenarioExtraB.MikeScenarioText);
+               string val3 = "Some text";
+               mikeScenarioExtraB.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, mikeScenarioExtraB.LastUpdateContactText);
                string val4 = "Some text";
                mikeScenarioExtraB.ScenarioStatusText = val4;
                Assert.AreEqual(val4, mikeScenarioExtraB.ScenarioStatusText);
@@ -592,7 +592,7 @@ namespace CSSPModels.Tests
                bool val37 = true;
                mikeScenarioExtraB.HasErrors = val37;
                Assert.AreEqual(val37, mikeScenarioExtraB.HasErrors);
-               IEnumerable<ValidationResult> val114 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val114 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mikeScenarioExtraB.ValidationResults = val114;
                Assert.AreEqual(val114, mikeScenarioExtraB.ValidationResults);
         }

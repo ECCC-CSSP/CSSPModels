@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ContactPreferenceExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "TVTypeText", "ContactPreferenceID", "ContactID", "TVType", "MarkerSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "TVTypeText", "ContactPreferenceID", "ContactID", "TVType", "MarkerSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ContactPreferenceExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ContactPreferenceReportTest", "LastUpdateContactTVItemLanguage", "TVTypeText", "ContactPreferenceID", "ContactID", "TVType", "MarkerSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ContactPreferenceReportTest", "LastUpdateContactText", "TVTypeText", "ContactPreferenceID", "ContactID", "TVType", "MarkerSize", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -281,16 +281,16 @@ namespace CSSPModels.Tests
                bool val7 = true;
                contactPreference.HasErrors = val7;
                Assert.AreEqual(val7, contactPreference.HasErrors);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                contactPreference.ValidationResults = val24;
                Assert.AreEqual(val24, contactPreference.ValidationResults);
         }
         [TestMethod]
         public void ContactPreferenceExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               contactPreferenceExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, contactPreferenceExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               contactPreferenceExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, contactPreferenceExtraA.LastUpdateContactText);
                string val2 = "Some text";
                contactPreferenceExtraA.TVTypeText = val2;
                Assert.AreEqual(val2, contactPreferenceExtraA.TVTypeText);
@@ -315,7 +315,7 @@ namespace CSSPModels.Tests
                bool val9 = true;
                contactPreferenceExtraA.HasErrors = val9;
                Assert.AreEqual(val9, contactPreferenceExtraA.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                contactPreferenceExtraA.ValidationResults = val30;
                Assert.AreEqual(val30, contactPreferenceExtraA.ValidationResults);
         }
@@ -325,9 +325,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                contactPreferenceExtraB.ContactPreferenceReportTest = val1;
                Assert.AreEqual(val1, contactPreferenceExtraB.ContactPreferenceReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               contactPreferenceExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, contactPreferenceExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               contactPreferenceExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, contactPreferenceExtraB.LastUpdateContactText);
                string val3 = "Some text";
                contactPreferenceExtraB.TVTypeText = val3;
                Assert.AreEqual(val3, contactPreferenceExtraB.TVTypeText);
@@ -352,7 +352,7 @@ namespace CSSPModels.Tests
                bool val10 = true;
                contactPreferenceExtraB.HasErrors = val10;
                Assert.AreEqual(val10, contactPreferenceExtraB.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                contactPreferenceExtraB.ValidationResults = val33;
                Assert.AreEqual(val33, contactPreferenceExtraB.ValidationResults);
         }

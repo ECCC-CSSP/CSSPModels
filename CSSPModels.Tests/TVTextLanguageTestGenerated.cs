@@ -72,7 +72,7 @@ namespace CSSPModels.Tests
                bool val4 = true;
                tVTextLanguage.HasErrors = val4;
                Assert.AreEqual(val4, tVTextLanguage.HasErrors);
-               IEnumerable<ValidationResult> val15 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val15 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tVTextLanguage.ValidationResults = val15;
                Assert.AreEqual(val15, tVTextLanguage.ValidationResults);
         }

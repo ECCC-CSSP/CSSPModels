@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void VPAmbientExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "VPAmbientID", "VPScenarioID", "Row", "MeasurementDepth_m", "CurrentSpeed_m_s", "CurrentDirection_deg", "AmbientSalinity_PSU", "AmbientTemperature_C", "BackgroundConcentration_MPN_100ml", "PollutantDecayRate_per_day", "FarFieldCurrentSpeed_m_s", "FarFieldCurrentDirection_deg", "FarFieldDiffusionCoefficient", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "VPAmbientID", "VPScenarioID", "Row", "MeasurementDepth_m", "CurrentSpeed_m_s", "CurrentDirection_deg", "AmbientSalinity_PSU", "AmbientTemperature_C", "BackgroundConcentration_MPN_100ml", "PollutantDecayRate_per_day", "FarFieldCurrentSpeed_m_s", "FarFieldCurrentDirection_deg", "FarFieldDiffusionCoefficient", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void VPAmbientExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "VPAmbientReportTest", "LastUpdateContactTVItemLanguage", "VPAmbientID", "VPScenarioID", "Row", "MeasurementDepth_m", "CurrentSpeed_m_s", "CurrentDirection_deg", "AmbientSalinity_PSU", "AmbientTemperature_C", "BackgroundConcentration_MPN_100ml", "PollutantDecayRate_per_day", "FarFieldCurrentSpeed_m_s", "FarFieldCurrentDirection_deg", "FarFieldDiffusionCoefficient", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "VPAmbientReportTest", "LastUpdateContactText", "VPAmbientID", "VPScenarioID", "Row", "MeasurementDepth_m", "CurrentSpeed_m_s", "CurrentDirection_deg", "AmbientSalinity_PSU", "AmbientTemperature_C", "BackgroundConcentration_MPN_100ml", "PollutantDecayRate_per_day", "FarFieldCurrentSpeed_m_s", "FarFieldCurrentDirection_deg", "FarFieldDiffusionCoefficient", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -308,16 +308,16 @@ namespace CSSPModels.Tests
                bool val16 = true;
                vPAmbient.HasErrors = val16;
                Assert.AreEqual(val16, vPAmbient.HasErrors);
-               IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                vPAmbient.ValidationResults = val51;
                Assert.AreEqual(val51, vPAmbient.ValidationResults);
         }
         [TestMethod]
         public void VPAmbientExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               vPAmbientExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, vPAmbientExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               vPAmbientExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, vPAmbientExtraA.LastUpdateContactText);
                int val2 = 45;
                vPAmbientExtraA.VPAmbientID = val2;
                Assert.AreEqual(val2, vPAmbientExtraA.VPAmbientID);
@@ -366,7 +366,7 @@ namespace CSSPModels.Tests
                bool val17 = true;
                vPAmbientExtraA.HasErrors = val17;
                Assert.AreEqual(val17, vPAmbientExtraA.HasErrors);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                vPAmbientExtraA.ValidationResults = val54;
                Assert.AreEqual(val54, vPAmbientExtraA.ValidationResults);
         }
@@ -376,9 +376,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                vPAmbientExtraB.VPAmbientReportTest = val1;
                Assert.AreEqual(val1, vPAmbientExtraB.VPAmbientReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               vPAmbientExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, vPAmbientExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               vPAmbientExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, vPAmbientExtraB.LastUpdateContactText);
                int val3 = 45;
                vPAmbientExtraB.VPAmbientID = val3;
                Assert.AreEqual(val3, vPAmbientExtraB.VPAmbientID);
@@ -427,7 +427,7 @@ namespace CSSPModels.Tests
                bool val18 = true;
                vPAmbientExtraB.HasErrors = val18;
                Assert.AreEqual(val18, vPAmbientExtraB.HasErrors);
-               IEnumerable<ValidationResult> val57 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val57 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                vPAmbientExtraB.ValidationResults = val57;
                Assert.AreEqual(val57, vPAmbientExtraB.ValidationResults);
         }

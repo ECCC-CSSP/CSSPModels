@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SpillExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MunicipalityTVItemLanguage", "InfrastructureTVItemLanguage", "LastUpdateContactTVItemLanguage", "SpillID", "MunicipalityTVItemID", "InfrastructureTVItemID", "StartDateTime_Local", "EndDateTime_Local", "AverageFlow_m3_day", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MunicipalityText", "InfrastructureText", "LastUpdateContactText", "SpillID", "MunicipalityTVItemID", "InfrastructureTVItemID", "StartDateTime_Local", "EndDateTime_Local", "AverageFlow_m3_day", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void SpillExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SpillReportTest", "MunicipalityTVItemLanguage", "InfrastructureTVItemLanguage", "LastUpdateContactTVItemLanguage", "SpillID", "MunicipalityTVItemID", "InfrastructureTVItemID", "StartDateTime_Local", "EndDateTime_Local", "AverageFlow_m3_day", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SpillReportTest", "MunicipalityText", "InfrastructureText", "LastUpdateContactText", "SpillID", "MunicipalityTVItemID", "InfrastructureTVItemID", "StartDateTime_Local", "EndDateTime_Local", "AverageFlow_m3_day", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -287,22 +287,22 @@ namespace CSSPModels.Tests
                bool val9 = true;
                spill.HasErrors = val9;
                Assert.AreEqual(val9, spill.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                spill.ValidationResults = val30;
                Assert.AreEqual(val30, spill.ValidationResults);
         }
         [TestMethod]
         public void SpillExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               spillExtraA.MunicipalityTVItemLanguage = val1;
-               Assert.AreEqual(val1, spillExtraA.MunicipalityTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               spillExtraA.InfrastructureTVItemLanguage = val2;
-               Assert.AreEqual(val2, spillExtraA.InfrastructureTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               spillExtraA.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, spillExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               spillExtraA.MunicipalityText = val1;
+               Assert.AreEqual(val1, spillExtraA.MunicipalityText);
+               string val2 = "Some text";
+               spillExtraA.InfrastructureText = val2;
+               Assert.AreEqual(val2, spillExtraA.InfrastructureText);
+               string val3 = "Some text";
+               spillExtraA.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, spillExtraA.LastUpdateContactText);
                int val4 = 45;
                spillExtraA.SpillID = val4;
                Assert.AreEqual(val4, spillExtraA.SpillID);
@@ -330,7 +330,7 @@ namespace CSSPModels.Tests
                bool val12 = true;
                spillExtraA.HasErrors = val12;
                Assert.AreEqual(val12, spillExtraA.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                spillExtraA.ValidationResults = val39;
                Assert.AreEqual(val39, spillExtraA.ValidationResults);
         }
@@ -340,15 +340,15 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                spillExtraB.SpillReportTest = val1;
                Assert.AreEqual(val1, spillExtraB.SpillReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               spillExtraB.MunicipalityTVItemLanguage = val2;
-               Assert.AreEqual(val2, spillExtraB.MunicipalityTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               spillExtraB.InfrastructureTVItemLanguage = val3;
-               Assert.AreEqual(val3, spillExtraB.InfrastructureTVItemLanguage);
-               TVItemLanguage val4 = new TVItemLanguage();
-               spillExtraB.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, spillExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               spillExtraB.MunicipalityText = val2;
+               Assert.AreEqual(val2, spillExtraB.MunicipalityText);
+               string val3 = "Some text";
+               spillExtraB.InfrastructureText = val3;
+               Assert.AreEqual(val3, spillExtraB.InfrastructureText);
+               string val4 = "Some text";
+               spillExtraB.LastUpdateContactText = val4;
+               Assert.AreEqual(val4, spillExtraB.LastUpdateContactText);
                int val5 = 45;
                spillExtraB.SpillID = val5;
                Assert.AreEqual(val5, spillExtraB.SpillID);
@@ -376,7 +376,7 @@ namespace CSSPModels.Tests
                bool val13 = true;
                spillExtraB.HasErrors = val13;
                Assert.AreEqual(val13, spillExtraB.HasErrors);
-               IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                spillExtraB.ValidationResults = val42;
                Assert.AreEqual(val42, spillExtraB.ValidationResults);
         }

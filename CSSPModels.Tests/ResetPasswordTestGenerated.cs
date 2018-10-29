@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ResetPasswordExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "ResetPasswordID", "Email", "ExpireDate_Local", "Code", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "ResetPasswordID", "Email", "ExpireDate_Local", "Code", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ResetPasswordExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ResetPasswordReportTest", "LastUpdateContactTVItemLanguage", "ResetPasswordID", "Email", "ExpireDate_Local", "Code", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ResetPasswordReportTest", "LastUpdateContactText", "ResetPasswordID", "Email", "ExpireDate_Local", "Code", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -281,16 +281,16 @@ namespace CSSPModels.Tests
                bool val7 = true;
                resetPassword.HasErrors = val7;
                Assert.AreEqual(val7, resetPassword.HasErrors);
-               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val24 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                resetPassword.ValidationResults = val24;
                Assert.AreEqual(val24, resetPassword.ValidationResults);
         }
         [TestMethod]
         public void ResetPasswordExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               resetPasswordExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, resetPasswordExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               resetPasswordExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, resetPasswordExtraA.LastUpdateContactText);
                int val2 = 45;
                resetPasswordExtraA.ResetPasswordID = val2;
                Assert.AreEqual(val2, resetPasswordExtraA.ResetPasswordID);
@@ -312,7 +312,7 @@ namespace CSSPModels.Tests
                bool val8 = true;
                resetPasswordExtraA.HasErrors = val8;
                Assert.AreEqual(val8, resetPasswordExtraA.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                resetPasswordExtraA.ValidationResults = val27;
                Assert.AreEqual(val27, resetPasswordExtraA.ValidationResults);
         }
@@ -322,9 +322,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                resetPasswordExtraB.ResetPasswordReportTest = val1;
                Assert.AreEqual(val1, resetPasswordExtraB.ResetPasswordReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               resetPasswordExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, resetPasswordExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               resetPasswordExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, resetPasswordExtraB.LastUpdateContactText);
                int val3 = 45;
                resetPasswordExtraB.ResetPasswordID = val3;
                Assert.AreEqual(val3, resetPasswordExtraB.ResetPasswordID);
@@ -346,7 +346,7 @@ namespace CSSPModels.Tests
                bool val9 = true;
                resetPasswordExtraB.HasErrors = val9;
                Assert.AreEqual(val9, resetPasswordExtraB.HasErrors);
-               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                resetPasswordExtraB.ValidationResults = val30;
                Assert.AreEqual(val30, resetPasswordExtraB.ValidationResults);
         }

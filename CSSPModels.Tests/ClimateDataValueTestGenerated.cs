@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ClimateDataValueExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "StorageDataTypeEnumText", "ClimateDataValueID", "ClimateSiteID", "DateTime_Local", "Keep", "StorageDataType", "HasBeenRead", "Snow_cm", "Rainfall_mm", "RainfallEntered_mm", "TotalPrecip_mm_cm", "MaxTemp_C", "MinTemp_C", "HeatDegDays_C", "CoolDegDays_C", "SnowOnGround_cm", "DirMaxGust_0North", "SpdMaxGust_kmh", "HourlyValues", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "StorageDataTypeEnumText", "ClimateDataValueID", "ClimateSiteID", "DateTime_Local", "Keep", "StorageDataType", "HasBeenRead", "Snow_cm", "Rainfall_mm", "RainfallEntered_mm", "TotalPrecip_mm_cm", "MaxTemp_C", "MinTemp_C", "HeatDegDays_C", "CoolDegDays_C", "SnowOnGround_cm", "DirMaxGust_0North", "SpdMaxGust_kmh", "HourlyValues", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void ClimateDataValueExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ClimateDataValueReportTest", "LastUpdateContactTVItemLanguage", "StorageDataTypeEnumText", "ClimateDataValueID", "ClimateSiteID", "DateTime_Local", "Keep", "StorageDataType", "HasBeenRead", "Snow_cm", "Rainfall_mm", "RainfallEntered_mm", "TotalPrecip_mm_cm", "MaxTemp_C", "MinTemp_C", "HeatDegDays_C", "CoolDegDays_C", "SnowOnGround_cm", "DirMaxGust_0North", "SpdMaxGust_kmh", "HourlyValues", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ClimateDataValueReportTest", "LastUpdateContactText", "StorageDataTypeEnumText", "ClimateDataValueID", "ClimateSiteID", "DateTime_Local", "Keep", "StorageDataType", "HasBeenRead", "Snow_cm", "Rainfall_mm", "RainfallEntered_mm", "TotalPrecip_mm_cm", "MaxTemp_C", "MinTemp_C", "HeatDegDays_C", "CoolDegDays_C", "SnowOnGround_cm", "DirMaxGust_0North", "SpdMaxGust_kmh", "HourlyValues", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -323,16 +323,16 @@ namespace CSSPModels.Tests
                bool val21 = true;
                climateDataValue.HasErrors = val21;
                Assert.AreEqual(val21, climateDataValue.HasErrors);
-               IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val66 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                climateDataValue.ValidationResults = val66;
                Assert.AreEqual(val66, climateDataValue.ValidationResults);
         }
         [TestMethod]
         public void ClimateDataValueExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               climateDataValueExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, climateDataValueExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               climateDataValueExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, climateDataValueExtraA.LastUpdateContactText);
                string val2 = "Some text";
                climateDataValueExtraA.StorageDataTypeEnumText = val2;
                Assert.AreEqual(val2, climateDataValueExtraA.StorageDataTypeEnumText);
@@ -399,7 +399,7 @@ namespace CSSPModels.Tests
                bool val23 = true;
                climateDataValueExtraA.HasErrors = val23;
                Assert.AreEqual(val23, climateDataValueExtraA.HasErrors);
-               IEnumerable<ValidationResult> val72 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val72 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                climateDataValueExtraA.ValidationResults = val72;
                Assert.AreEqual(val72, climateDataValueExtraA.ValidationResults);
         }
@@ -409,9 +409,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                climateDataValueExtraB.ClimateDataValueReportTest = val1;
                Assert.AreEqual(val1, climateDataValueExtraB.ClimateDataValueReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               climateDataValueExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, climateDataValueExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               climateDataValueExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, climateDataValueExtraB.LastUpdateContactText);
                string val3 = "Some text";
                climateDataValueExtraB.StorageDataTypeEnumText = val3;
                Assert.AreEqual(val3, climateDataValueExtraB.StorageDataTypeEnumText);
@@ -478,7 +478,7 @@ namespace CSSPModels.Tests
                bool val24 = true;
                climateDataValueExtraB.HasErrors = val24;
                Assert.AreEqual(val24, climateDataValueExtraB.HasErrors);
-               IEnumerable<ValidationResult> val75 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val75 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                climateDataValueExtraB.ValidationResults = val75;
                Assert.AreEqual(val75, climateDataValueExtraB.ValidationResults);
         }

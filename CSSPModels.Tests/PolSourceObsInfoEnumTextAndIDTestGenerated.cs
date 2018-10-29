@@ -69,7 +69,7 @@ namespace CSSPModels.Tests
                bool val3 = true;
                polSourceObsInfoEnumTextAndID.HasErrors = val3;
                Assert.AreEqual(val3, polSourceObsInfoEnumTextAndID.HasErrors);
-               IEnumerable<ValidationResult> val12 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val12 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                polSourceObsInfoEnumTextAndID.ValidationResults = val12;
                Assert.AreEqual(val12, polSourceObsInfoEnumTextAndID.ValidationResults);
         }

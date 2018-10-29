@@ -12,7 +12,7 @@ using System.Linq;
 namespace CSSPModels
 {
     [NotMapped]
-    public partial class PolyPoint : Error
+    public partial class PolyPoint : CSSPError
     {
         #region Properties in DB
         #endregion Properties in DB

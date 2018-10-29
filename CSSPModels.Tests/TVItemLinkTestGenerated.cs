@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVItemLinkExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "FromTVItemLanguage", "ToTVItemLanguage", "LastUpdateContactTVItemLanguage", "FromTVTypeText", "ToTVTypeText", "TVItemLinkID", "FromTVItemID", "ToTVItemID", "FromTVType", "ToTVType", "StartDateTime_Local", "EndDateTime_Local", "Ordinal", "TVLevel", "TVPath", "ParentTVItemLinkID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "FromText", "ToText", "LastUpdateContactText", "FromTVTypeText", "ToTVTypeText", "TVItemLinkID", "FromTVItemID", "ToTVItemID", "FromTVType", "ToTVType", "StartDateTime_Local", "EndDateTime_Local", "Ordinal", "TVLevel", "TVPath", "ParentTVItemLinkID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVItemLinkExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "TVItemLinkReportTest", "FromTVItemLanguage", "ToTVItemLanguage", "LastUpdateContactTVItemLanguage", "FromTVTypeText", "ToTVTypeText", "TVItemLinkID", "FromTVItemID", "ToTVItemID", "FromTVType", "ToTVType", "StartDateTime_Local", "EndDateTime_Local", "Ordinal", "TVLevel", "TVPath", "ParentTVItemLinkID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TVItemLinkReportTest", "FromText", "ToText", "LastUpdateContactText", "FromTVTypeText", "ToTVTypeText", "TVItemLinkID", "FromTVItemID", "ToTVItemID", "FromTVType", "ToTVType", "StartDateTime_Local", "EndDateTime_Local", "Ordinal", "TVLevel", "TVPath", "ParentTVItemLinkID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -302,22 +302,22 @@ namespace CSSPModels.Tests
                bool val14 = true;
                tVItemLink.HasErrors = val14;
                Assert.AreEqual(val14, tVItemLink.HasErrors);
-               IEnumerable<ValidationResult> val45 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val45 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tVItemLink.ValidationResults = val45;
                Assert.AreEqual(val45, tVItemLink.ValidationResults);
         }
         [TestMethod]
         public void TVItemLinkExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               tVItemLinkExtraA.FromTVItemLanguage = val1;
-               Assert.AreEqual(val1, tVItemLinkExtraA.FromTVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               tVItemLinkExtraA.ToTVItemLanguage = val2;
-               Assert.AreEqual(val2, tVItemLinkExtraA.ToTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               tVItemLinkExtraA.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, tVItemLinkExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               tVItemLinkExtraA.FromText = val1;
+               Assert.AreEqual(val1, tVItemLinkExtraA.FromText);
+               string val2 = "Some text";
+               tVItemLinkExtraA.ToText = val2;
+               Assert.AreEqual(val2, tVItemLinkExtraA.ToText);
+               string val3 = "Some text";
+               tVItemLinkExtraA.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, tVItemLinkExtraA.LastUpdateContactText);
                string val4 = "Some text";
                tVItemLinkExtraA.FromTVTypeText = val4;
                Assert.AreEqual(val4, tVItemLinkExtraA.FromTVTypeText);
@@ -366,7 +366,7 @@ namespace CSSPModels.Tests
                bool val19 = true;
                tVItemLinkExtraA.HasErrors = val19;
                Assert.AreEqual(val19, tVItemLinkExtraA.HasErrors);
-               IEnumerable<ValidationResult> val60 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val60 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tVItemLinkExtraA.ValidationResults = val60;
                Assert.AreEqual(val60, tVItemLinkExtraA.ValidationResults);
         }
@@ -376,15 +376,15 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                tVItemLinkExtraB.TVItemLinkReportTest = val1;
                Assert.AreEqual(val1, tVItemLinkExtraB.TVItemLinkReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               tVItemLinkExtraB.FromTVItemLanguage = val2;
-               Assert.AreEqual(val2, tVItemLinkExtraB.FromTVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               tVItemLinkExtraB.ToTVItemLanguage = val3;
-               Assert.AreEqual(val3, tVItemLinkExtraB.ToTVItemLanguage);
-               TVItemLanguage val4 = new TVItemLanguage();
-               tVItemLinkExtraB.LastUpdateContactTVItemLanguage = val4;
-               Assert.AreEqual(val4, tVItemLinkExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               tVItemLinkExtraB.FromText = val2;
+               Assert.AreEqual(val2, tVItemLinkExtraB.FromText);
+               string val3 = "Some text";
+               tVItemLinkExtraB.ToText = val3;
+               Assert.AreEqual(val3, tVItemLinkExtraB.ToText);
+               string val4 = "Some text";
+               tVItemLinkExtraB.LastUpdateContactText = val4;
+               Assert.AreEqual(val4, tVItemLinkExtraB.LastUpdateContactText);
                string val5 = "Some text";
                tVItemLinkExtraB.FromTVTypeText = val5;
                Assert.AreEqual(val5, tVItemLinkExtraB.FromTVTypeText);
@@ -433,7 +433,7 @@ namespace CSSPModels.Tests
                bool val20 = true;
                tVItemLinkExtraB.HasErrors = val20;
                Assert.AreEqual(val20, tVItemLinkExtraB.HasErrors);
-               IEnumerable<ValidationResult> val63 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val63 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tVItemLinkExtraB.ValidationResults = val63;
                Assert.AreEqual(val63, tVItemLinkExtraB.ValidationResults);
         }

@@ -84,7 +84,7 @@ namespace CSSPModels.Tests
                bool val8 = true;
                tVLocation.HasErrors = val8;
                Assert.AreEqual(val8, tVLocation.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                tVLocation.ValidationResults = val27;
                Assert.AreEqual(val27, tVLocation.ValidationResults);
         }

@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void RainExceedanceExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "RainExceedanceID", "YearRound", "StartDate_Local", "EndDate_Local", "RainMaximum_mm", "RainExtreme_mm", "DaysPriorToStart", "RepeatEveryYear", "ProvinceTVItemIDs", "SubsectorTVItemIDs", "ClimateSiteTVItemIDs", "EmailDistributionListIDs", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "RainExceedanceID", "YearRound", "StartDate_Local", "EndDate_Local", "RainMaximum_mm", "RainExtreme_mm", "DaysPriorToStart", "RepeatEveryYear", "ProvinceTVItemIDs", "SubsectorTVItemIDs", "ClimateSiteTVItemIDs", "EmailDistributionListIDs", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void RainExceedanceExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "RainExceedanceReportTest", "LastUpdateContactTVItemLanguage", "RainExceedanceID", "YearRound", "StartDate_Local", "EndDate_Local", "RainMaximum_mm", "RainExtreme_mm", "DaysPriorToStart", "RepeatEveryYear", "ProvinceTVItemIDs", "SubsectorTVItemIDs", "ClimateSiteTVItemIDs", "EmailDistributionListIDs", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "RainExceedanceReportTest", "LastUpdateContactText", "RainExceedanceID", "YearRound", "StartDate_Local", "EndDate_Local", "RainMaximum_mm", "RainExtreme_mm", "DaysPriorToStart", "RepeatEveryYear", "ProvinceTVItemIDs", "SubsectorTVItemIDs", "ClimateSiteTVItemIDs", "EmailDistributionListIDs", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -305,16 +305,16 @@ namespace CSSPModels.Tests
                bool val15 = true;
                rainExceedance.HasErrors = val15;
                Assert.AreEqual(val15, rainExceedance.HasErrors);
-               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                rainExceedance.ValidationResults = val48;
                Assert.AreEqual(val48, rainExceedance.ValidationResults);
         }
         [TestMethod]
         public void RainExceedanceExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               rainExceedanceExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, rainExceedanceExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               rainExceedanceExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, rainExceedanceExtraA.LastUpdateContactText);
                int val2 = 45;
                rainExceedanceExtraA.RainExceedanceID = val2;
                Assert.AreEqual(val2, rainExceedanceExtraA.RainExceedanceID);
@@ -360,7 +360,7 @@ namespace CSSPModels.Tests
                bool val16 = true;
                rainExceedanceExtraA.HasErrors = val16;
                Assert.AreEqual(val16, rainExceedanceExtraA.HasErrors);
-               IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                rainExceedanceExtraA.ValidationResults = val51;
                Assert.AreEqual(val51, rainExceedanceExtraA.ValidationResults);
         }
@@ -370,9 +370,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                rainExceedanceExtraB.RainExceedanceReportTest = val1;
                Assert.AreEqual(val1, rainExceedanceExtraB.RainExceedanceReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               rainExceedanceExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, rainExceedanceExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               rainExceedanceExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, rainExceedanceExtraB.LastUpdateContactText);
                int val3 = 45;
                rainExceedanceExtraB.RainExceedanceID = val3;
                Assert.AreEqual(val3, rainExceedanceExtraB.RainExceedanceID);
@@ -418,7 +418,7 @@ namespace CSSPModels.Tests
                bool val17 = true;
                rainExceedanceExtraB.HasErrors = val17;
                Assert.AreEqual(val17, rainExceedanceExtraB.HasErrors);
-               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val54 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                rainExceedanceExtraB.ValidationResults = val54;
                Assert.AreEqual(val54, rainExceedanceExtraB.ValidationResults);
         }

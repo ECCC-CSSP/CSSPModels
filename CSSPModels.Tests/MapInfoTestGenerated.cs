@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MapInfoExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "TVItemLanguage", "LastUpdateContactTVItemLanguage", "TVTypeText", "MapInfoDrawTypeText", "MapInfoID", "TVItemID", "TVType", "LatMin", "LatMax", "LngMin", "LngMax", "MapInfoDrawType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "TVItemText", "LastUpdateContactText", "TVTypeText", "MapInfoDrawTypeText", "MapInfoID", "TVItemID", "TVType", "LatMin", "LatMax", "LngMin", "LngMax", "MapInfoDrawType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void MapInfoExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "MapInfoReportTest", "TVItemLanguage", "LastUpdateContactTVItemLanguage", "TVTypeText", "MapInfoDrawTypeText", "MapInfoID", "TVItemID", "TVType", "LatMin", "LatMax", "LngMin", "LngMax", "MapInfoDrawType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "MapInfoReportTest", "TVItemText", "LastUpdateContactText", "TVTypeText", "MapInfoDrawTypeText", "MapInfoID", "TVItemID", "TVType", "LatMin", "LatMax", "LngMin", "LngMax", "MapInfoDrawType", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -293,19 +293,19 @@ namespace CSSPModels.Tests
                bool val11 = true;
                mapInfo.HasErrors = val11;
                Assert.AreEqual(val11, mapInfo.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mapInfo.ValidationResults = val36;
                Assert.AreEqual(val36, mapInfo.ValidationResults);
         }
         [TestMethod]
         public void MapInfoExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               mapInfoExtraA.TVItemLanguage = val1;
-               Assert.AreEqual(val1, mapInfoExtraA.TVItemLanguage);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mapInfoExtraA.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, mapInfoExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               mapInfoExtraA.TVItemText = val1;
+               Assert.AreEqual(val1, mapInfoExtraA.TVItemText);
+               string val2 = "Some text";
+               mapInfoExtraA.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, mapInfoExtraA.LastUpdateContactText);
                string val3 = "Some text";
                mapInfoExtraA.TVTypeText = val3;
                Assert.AreEqual(val3, mapInfoExtraA.TVTypeText);
@@ -345,7 +345,7 @@ namespace CSSPModels.Tests
                bool val15 = true;
                mapInfoExtraA.HasErrors = val15;
                Assert.AreEqual(val15, mapInfoExtraA.HasErrors);
-               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val48 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mapInfoExtraA.ValidationResults = val48;
                Assert.AreEqual(val48, mapInfoExtraA.ValidationResults);
         }
@@ -355,12 +355,12 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                mapInfoExtraB.MapInfoReportTest = val1;
                Assert.AreEqual(val1, mapInfoExtraB.MapInfoReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               mapInfoExtraB.TVItemLanguage = val2;
-               Assert.AreEqual(val2, mapInfoExtraB.TVItemLanguage);
-               TVItemLanguage val3 = new TVItemLanguage();
-               mapInfoExtraB.LastUpdateContactTVItemLanguage = val3;
-               Assert.AreEqual(val3, mapInfoExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               mapInfoExtraB.TVItemText = val2;
+               Assert.AreEqual(val2, mapInfoExtraB.TVItemText);
+               string val3 = "Some text";
+               mapInfoExtraB.LastUpdateContactText = val3;
+               Assert.AreEqual(val3, mapInfoExtraB.LastUpdateContactText);
                string val4 = "Some text";
                mapInfoExtraB.TVTypeText = val4;
                Assert.AreEqual(val4, mapInfoExtraB.TVTypeText);
@@ -400,7 +400,7 @@ namespace CSSPModels.Tests
                bool val16 = true;
                mapInfoExtraB.HasErrors = val16;
                Assert.AreEqual(val16, mapInfoExtraB.HasErrors);
-               IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val51 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                mapInfoExtraB.ValidationResults = val51;
                Assert.AreEqual(val51, mapInfoExtraB.ValidationResults);
         }

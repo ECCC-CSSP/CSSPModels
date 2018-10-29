@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void BoxModelLanguageExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "BoxModelLanguageID", "BoxModelID", "Language", "ScenarioName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "LanguageText", "TranslationStatusText", "BoxModelLanguageID", "BoxModelID", "Language", "ScenarioName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void BoxModelLanguageExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "BoxModelLanguageReportTest", "LastUpdateContactTVItemLanguage", "LanguageText", "TranslationStatusText", "BoxModelLanguageID", "BoxModelID", "Language", "ScenarioName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "BoxModelLanguageReportTest", "LastUpdateContactText", "LanguageText", "TranslationStatusText", "BoxModelLanguageID", "BoxModelID", "Language", "ScenarioName", "TranslationStatus", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -284,16 +284,16 @@ namespace CSSPModels.Tests
                bool val8 = true;
                boxModelLanguage.HasErrors = val8;
                Assert.AreEqual(val8, boxModelLanguage.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                boxModelLanguage.ValidationResults = val27;
                Assert.AreEqual(val27, boxModelLanguage.ValidationResults);
         }
         [TestMethod]
         public void BoxModelLanguageExtraA_Every_Property_Has_Get_Set_Test()
         {
-               TVItemLanguage val1 = new TVItemLanguage();
-               boxModelLanguageExtraA.LastUpdateContactTVItemLanguage = val1;
-               Assert.AreEqual(val1, boxModelLanguageExtraA.LastUpdateContactTVItemLanguage);
+               string val1 = "Some text";
+               boxModelLanguageExtraA.LastUpdateContactText = val1;
+               Assert.AreEqual(val1, boxModelLanguageExtraA.LastUpdateContactText);
                string val2 = "Some text";
                boxModelLanguageExtraA.LanguageText = val2;
                Assert.AreEqual(val2, boxModelLanguageExtraA.LanguageText);
@@ -324,7 +324,7 @@ namespace CSSPModels.Tests
                bool val11 = true;
                boxModelLanguageExtraA.HasErrors = val11;
                Assert.AreEqual(val11, boxModelLanguageExtraA.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                boxModelLanguageExtraA.ValidationResults = val36;
                Assert.AreEqual(val36, boxModelLanguageExtraA.ValidationResults);
         }
@@ -334,9 +334,9 @@ namespace CSSPModels.Tests
                string val1 = "Some text";
                boxModelLanguageExtraB.BoxModelLanguageReportTest = val1;
                Assert.AreEqual(val1, boxModelLanguageExtraB.BoxModelLanguageReportTest);
-               TVItemLanguage val2 = new TVItemLanguage();
-               boxModelLanguageExtraB.LastUpdateContactTVItemLanguage = val2;
-               Assert.AreEqual(val2, boxModelLanguageExtraB.LastUpdateContactTVItemLanguage);
+               string val2 = "Some text";
+               boxModelLanguageExtraB.LastUpdateContactText = val2;
+               Assert.AreEqual(val2, boxModelLanguageExtraB.LastUpdateContactText);
                string val3 = "Some text";
                boxModelLanguageExtraB.LanguageText = val3;
                Assert.AreEqual(val3, boxModelLanguageExtraB.LanguageText);
@@ -367,7 +367,7 @@ namespace CSSPModels.Tests
                bool val12 = true;
                boxModelLanguageExtraB.HasErrors = val12;
                Assert.AreEqual(val12, boxModelLanguageExtraB.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                boxModelLanguageExtraB.ValidationResults = val39;
                Assert.AreEqual(val39, boxModelLanguageExtraB.ValidationResults);
         }

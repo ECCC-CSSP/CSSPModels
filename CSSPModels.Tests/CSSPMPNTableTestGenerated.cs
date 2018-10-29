@@ -75,7 +75,7 @@ namespace CSSPModels.Tests
                bool val5 = true;
                cSSPMPNTable.HasErrors = val5;
                Assert.AreEqual(val5, cSSPMPNTable.HasErrors);
-               IEnumerable<ValidationResult> val18 = new List<ValidationResult>() { new ValidationResult("First Error Message") }.AsEnumerable();
+               IEnumerable<ValidationResult> val18 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
                cSSPMPNTable.ValidationResults = val18;
                Assert.AreEqual(val18, cSSPMPNTable.ValidationResults);
         }

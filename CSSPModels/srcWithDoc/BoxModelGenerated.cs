@@ -16,7 +16,7 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table BoxModels** : [BoxModelID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_BoxModelID), [InfrastructureTVItemID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_InfrastructureTVItemID), [Flow_m3_day](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Flow_m3_day), [Depth_m](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Depth_m), [Temperature_C](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Temperature_C), [Dilution](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Dilution), [DecayRate_per_day](CSSPModels.BoxModel.html#CSSPModels_BoxModel_DecayRate_per_day), [FCUntreated_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCUntreated_MPN_100ml), [FCPreDisinfection_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCPreDisinfection_MPN_100ml), [Concentration_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Concentration_MPN_100ml), [T90_hour](CSSPModels.BoxModel.html#CSSPModels_BoxModel_T90_hour), [FlowDuration_hour](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FlowDuration_hour), [LastUpdateDate_UTC](CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateContactTVItemID), </para>
+    /// > <para>**DB properties for table BoxModels** : [BoxModelID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_BoxModelID), [InfrastructureTVItemID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_InfrastructureTVItemID), [Discharge_m3_day](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Discharge_m3_day), [Depth_m](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Depth_m), [Temperature_C](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Temperature_C), [Dilution](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Dilution), [DecayRate_per_day](CSSPModels.BoxModel.html#CSSPModels_BoxModel_DecayRate_per_day), [FCUntreated_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCUntreated_MPN_100ml), [FCPreDisinfection_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCPreDisinfection_MPN_100ml), [Concentration_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Concentration_MPN_100ml), [T90_hour](CSSPModels.BoxModel.html#CSSPModels_BoxModel_T90_hour), [FlowDuration_hour](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FlowDuration_hour), [LastUpdateDate_UTC](CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateContactTVItemID), </para>
     /// > <para>**Other properties** : [HasErrors](CSSPModels.BoxModel.html#CSSPModels_BoxModel_HasErrors), [ValidationResults](CSSPModels.BoxModel.html#CSSPModels_BoxModel_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [BoxModelService](CSSPServices.BoxModelService.html)</para>
@@ -79,27 +79,27 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Flow (m3/d)")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Discharge (m3/d)")]</para>
         /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Débit (m3/j)")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Flow (m3/d) spilled by the infrastructure")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Discharge (m3/d) spilled by the infrastructure")]</para>
         /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Débit (m3/d) déversé par l' infrastructure")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Flow (m3/d)
+        /// **Display (en)** --- Discharge (m3/d)
         /// 
         /// **Display (fr)** --- Débit (m3/j)
         /// 
-        /// **Description (en)** --- Flow (m3/d) spilled by the infrastructure
+        /// **Description (en)** --- Discharge (m3/d) spilled by the infrastructure
         /// 
         /// **Description (fr)** --- Débit (m3/d) déversé par l' infrastructure
         /// </returns>
         [Range(0.0D, 10000.0D)]
-        [CSSPDisplayEN(DisplayEN = "Flow (m3/d)")]
+        [CSSPDisplayEN(DisplayEN = "Discharge (m3/d)")]
         [CSSPDisplayFR(DisplayFR = "Débit (m3/j)")]
-        [CSSPDescriptionEN(DescriptionEN = @"Flow (m3/d) spilled by the infrastructure")]
+        [CSSPDescriptionEN(DescriptionEN = @"Discharge (m3/d) spilled by the infrastructure")]
         [CSSPDescriptionFR(DescriptionFR = @"Débit (m3/d) déversé par l' infrastructure")]
-        public double Flow_m3_day { get; set; }
+        public double Discharge_m3_day { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
@@ -331,7 +331,7 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]</para>
         /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Infrastructure TVItemLanguage")]</para>
         /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage de l'infrastructure")]</para>
         /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Infrastructure TVItemLanguage DB object")]</para>
@@ -347,37 +347,37 @@ namespace CSSPModels
         /// 
         /// **Description (fr)** --- Object BD TVItemLanguage de l'infrastructure
         /// </returns>
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "InfrastructureTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPDisplayEN(DisplayEN = "Infrastructure TVItemLanguage")]
         [CSSPDisplayFR(DisplayFR = "TVItemLanguage de l'infrastructure")]
         [CSSPDescriptionEN(DescriptionEN = @"Infrastructure TVItemLanguage DB object")]
         [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage de l'infrastructure")]
-        public TVItemLanguage InfrastructureTVItemLanguage { get; set; }
+        public string InfrastructureText { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update contact TVItemLanguage")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update contact TVItemLanguage DB object")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Object BD TVItemLanguage du contact ayant fait le dernière changement")]</para>
+        /// > <para>[[CSSPFill](CSSPModels.CSSPFillAttribute.html)(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Last update contact name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Nom du contact ayant fait le dernière changement")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Last update contact name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Nom du contact ayant fait le dernière changement")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Last update contact TVItemLanguage
+        /// **Display (en)** --- Last update contact name
         /// 
-        /// **Display (fr)** --- TVItemLanguage du contact ayant fait le dernière changement
+        /// **Display (fr)** --- Nom du contact ayant fait le dernière changement
         /// 
-        /// **Description (en)** --- Last update contact TVItemLanguage DB object
+        /// **Description (en)** --- Last update contact name
         /// 
-        /// **Description (fr)** --- Object BD TVItemLanguage du contact ayant fait le dernière changement
+        /// **Description (fr)** --- Nom du contact ayant fait le dernière changement
         /// </returns>
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "", FillNeedLanguage = true, FillIsList = false)]
-        [CSSPDisplayEN(DisplayEN = "Last update contact TVItemLanguage")]
-        [CSSPDisplayFR(DisplayFR = "TVItemLanguage du contact ayant fait le dernière changement")]
-        [CSSPDescriptionEN(DescriptionEN = @"Last update contact TVItemLanguage DB object")]
-        [CSSPDescriptionFR(DescriptionFR = @"Object BD TVItemLanguage du contact ayant fait le dernière changement")]
-        public TVItemLanguage LastUpdateContactTVItemLanguage { get; set; }
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "LastUpdateContactTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPDisplayEN(DisplayEN = "Last update contact name")]
+        [CSSPDisplayFR(DisplayFR = "Nom du contact ayant fait le dernière changement")]
+        [CSSPDescriptionEN(DescriptionEN = @"Last update contact name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Nom du contact ayant fait le dernière changement")]
+        public string LastUpdateContactText { get; set; }
         #endregion Properties
 
         #region Constructors
