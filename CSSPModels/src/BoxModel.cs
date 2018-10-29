@@ -81,11 +81,11 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Temps (heur) requis pour que 90% des colonies de coliformes fécaux meurent")]
         public double T90_hour { get; set; }
         [Range(0.0D, 24.0D)]
-        [CSSPDisplayEN(DisplayEN = "Flow duration (hour/day)")]
+        [CSSPDisplayEN(DisplayEN = "Discharge duration (hour/day)")]
         [CSSPDisplayFR(DisplayFR = "Durée de l'écoulement (heur/jour)")]
-        [CSSPDescriptionEN(DescriptionEN = @"Flow duration (hour/day)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Discharge duration (hour/day)")]
         [CSSPDescriptionFR(DescriptionFR = @"Durée de l'écoulement (heur/jour)")]
-        public double FlowDuration_hour { get; set; }
+        public double DischargeDuration_hour { get; set; }
         #endregion Properties in DB
 
         #region Constructors

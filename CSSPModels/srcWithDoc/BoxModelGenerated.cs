@@ -16,7 +16,7 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table BoxModels** : [BoxModelID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_BoxModelID), [InfrastructureTVItemID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_InfrastructureTVItemID), [Discharge_m3_day](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Discharge_m3_day), [Depth_m](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Depth_m), [Temperature_C](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Temperature_C), [Dilution](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Dilution), [DecayRate_per_day](CSSPModels.BoxModel.html#CSSPModels_BoxModel_DecayRate_per_day), [FCUntreated_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCUntreated_MPN_100ml), [FCPreDisinfection_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCPreDisinfection_MPN_100ml), [Concentration_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Concentration_MPN_100ml), [T90_hour](CSSPModels.BoxModel.html#CSSPModels_BoxModel_T90_hour), [FlowDuration_hour](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FlowDuration_hour), [LastUpdateDate_UTC](CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateContactTVItemID), </para>
+    /// > <para>**DB properties for table BoxModels** : [BoxModelID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_BoxModelID), [InfrastructureTVItemID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_InfrastructureTVItemID), [Discharge_m3_day](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Discharge_m3_day), [Depth_m](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Depth_m), [Temperature_C](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Temperature_C), [Dilution](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Dilution), [DecayRate_per_day](CSSPModels.BoxModel.html#CSSPModels_BoxModel_DecayRate_per_day), [FCUntreated_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCUntreated_MPN_100ml), [FCPreDisinfection_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCPreDisinfection_MPN_100ml), [Concentration_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Concentration_MPN_100ml), [T90_hour](CSSPModels.BoxModel.html#CSSPModels_BoxModel_T90_hour), [DischargeDuration_hour](CSSPModels.BoxModel.html#CSSPModels_BoxModel_DischargeDuration_hour), [LastUpdateDate_UTC](CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateContactTVItemID), </para>
     /// > <para>**Other properties** : [HasErrors](CSSPModels.BoxModel.html#CSSPModels_BoxModel_HasErrors), [ValidationResults](CSSPModels.BoxModel.html#CSSPModels_BoxModel_ValidationResults), </para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [BoxModelService](CSSPServices.BoxModelService.html)</para>
@@ -295,27 +295,27 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Flow duration (hour/day)")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Discharge duration (hour/day)")]</para>
         /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Durée de l'écoulement (heur/jour)")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Flow duration (hour/day)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Discharge duration (hour/day)")]</para>
         /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Durée de l'écoulement (heur/jour)")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Flow duration (hour/day)
+        /// **Display (en)** --- Discharge duration (hour/day)
         /// 
         /// **Display (fr)** --- Durée de l'écoulement (heur/jour)
         /// 
-        /// **Description (en)** --- Flow duration (hour/day)
+        /// **Description (en)** --- Discharge duration (hour/day)
         /// 
         /// **Description (fr)** --- Durée de l'écoulement (heur/jour)
         /// </returns>
         [Range(0.0D, 24.0D)]
-        [CSSPDisplayEN(DisplayEN = "Flow duration (hour/day)")]
+        [CSSPDisplayEN(DisplayEN = "Discharge duration (hour/day)")]
         [CSSPDisplayFR(DisplayFR = "Durée de l'écoulement (heur/jour)")]
-        [CSSPDescriptionEN(DescriptionEN = @"Flow duration (hour/day)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Discharge duration (hour/day)")]
         [CSSPDescriptionFR(DescriptionFR = @"Durée de l'écoulement (heur/jour)")]
-        public double FlowDuration_hour { get; set; }
+        public double DischargeDuration_hour { get; set; }
         #endregion Properties in DB
 
         #region Constructors

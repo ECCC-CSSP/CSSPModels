@@ -44,7 +44,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void BoxModel_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "BoxModelID", "InfrastructureTVItemID", "Discharge_m3_day", "Depth_m", "Temperature_C", "Dilution", "DecayRate_per_day", "FCUntreated_MPN_100ml", "FCPreDisinfection_MPN_100ml", "Concentration_MPN_100ml", "T90_hour", "FlowDuration_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "BoxModelID", "InfrastructureTVItemID", "Discharge_m3_day", "Depth_m", "Temperature_C", "Dilution", "DecayRate_per_day", "FCUntreated_MPN_100ml", "FCPreDisinfection_MPN_100ml", "Concentration_MPN_100ml", "T90_hour", "DischargeDuration_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void BoxModelExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "InfrastructureText", "LastUpdateContactText", "BoxModelID", "InfrastructureTVItemID", "Discharge_m3_day", "Depth_m", "Temperature_C", "Dilution", "DecayRate_per_day", "FCUntreated_MPN_100ml", "FCPreDisinfection_MPN_100ml", "Concentration_MPN_100ml", "T90_hour", "FlowDuration_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "InfrastructureText", "LastUpdateContactText", "BoxModelID", "InfrastructureTVItemID", "Discharge_m3_day", "Depth_m", "Temperature_C", "Dilution", "DecayRate_per_day", "FCUntreated_MPN_100ml", "FCPreDisinfection_MPN_100ml", "Concentration_MPN_100ml", "T90_hour", "DischargeDuration_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void BoxModelExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "BoxModelReportTest", "InfrastructureText", "LastUpdateContactText", "BoxModelID", "InfrastructureTVItemID", "Discharge_m3_day", "Depth_m", "Temperature_C", "Dilution", "DecayRate_per_day", "FCUntreated_MPN_100ml", "FCPreDisinfection_MPN_100ml", "Concentration_MPN_100ml", "T90_hour", "FlowDuration_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "BoxModelReportTest", "InfrastructureText", "LastUpdateContactText", "BoxModelID", "InfrastructureTVItemID", "Discharge_m3_day", "Depth_m", "Temperature_C", "Dilution", "DecayRate_per_day", "FCUntreated_MPN_100ml", "FCPreDisinfection_MPN_100ml", "Concentration_MPN_100ml", "T90_hour", "DischargeDuration_hour", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -294,8 +294,8 @@ namespace CSSPModels.Tests
                boxModel.T90_hour = val11;
                Assert.AreEqual(val11, boxModel.T90_hour);
                double val12 = 87.9D;
-               boxModel.FlowDuration_hour = val12;
-               Assert.AreEqual(val12, boxModel.FlowDuration_hour);
+               boxModel.DischargeDuration_hour = val12;
+               Assert.AreEqual(val12, boxModel.DischargeDuration_hour);
                DateTime val13 = new DateTime(2010, 3, 4);
                boxModel.LastUpdateDate_UTC = val13;
                Assert.AreEqual(val13, boxModel.LastUpdateDate_UTC);
@@ -352,8 +352,8 @@ namespace CSSPModels.Tests
                boxModelExtraA.T90_hour = val13;
                Assert.AreEqual(val13, boxModelExtraA.T90_hour);
                double val14 = 87.9D;
-               boxModelExtraA.FlowDuration_hour = val14;
-               Assert.AreEqual(val14, boxModelExtraA.FlowDuration_hour);
+               boxModelExtraA.DischargeDuration_hour = val14;
+               Assert.AreEqual(val14, boxModelExtraA.DischargeDuration_hour);
                DateTime val15 = new DateTime(2010, 3, 4);
                boxModelExtraA.LastUpdateDate_UTC = val15;
                Assert.AreEqual(val15, boxModelExtraA.LastUpdateDate_UTC);
@@ -413,8 +413,8 @@ namespace CSSPModels.Tests
                boxModelExtraB.T90_hour = val14;
                Assert.AreEqual(val14, boxModelExtraB.T90_hour);
                double val15 = 87.9D;
-               boxModelExtraB.FlowDuration_hour = val15;
-               Assert.AreEqual(val15, boxModelExtraB.FlowDuration_hour);
+               boxModelExtraB.DischargeDuration_hour = val15;
+               Assert.AreEqual(val15, boxModelExtraB.DischargeDuration_hour);
                DateTime val16 = new DateTime(2010, 3, 4);
                boxModelExtraB.LastUpdateDate_UTC = val16;
                Assert.AreEqual(val16, boxModelExtraB.LastUpdateDate_UTC);
