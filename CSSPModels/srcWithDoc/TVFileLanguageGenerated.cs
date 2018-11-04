@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table TVFileLanguages** : [TVFileLanguageID](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_TVFileLanguageID), [TVFileID](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_TVFileID), [Language](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_Language), [FileDescription](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_FileDescription), [TranslationStatus](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_HasErrors), [ValidationResults](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_ValidationResults), </para>
+    /// > <para>**DB properties for table TVFileLanguages** : [TVFileLanguageID](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_TVFileLanguageID), [TVFileID](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_TVFileID), [Language](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_Language), [FileDescription](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_FileDescription), [TranslationStatus](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_TranslationStatus), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVFileLanguageService](CSSPServices.TVFileLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVFileLanguageController](CSSPWebAPI.Controllers.TVFileLanguageController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class TVFileLanguage : LastUpdate
@@ -158,6 +160,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_LastUpdateContactText), [LanguageText](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_LanguageText), [TranslationStatusText](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_TranslationStatusText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVFileLanguageService](CSSPServices.TVFileLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVFileLanguageController](CSSPWebAPI.Controllers.TVFileLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [TVFileLanguage](CSSPModels.TVFileLanguage.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TVFileLanguageExtraA : TVFileLanguage
     {
@@ -249,6 +263,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TVFileLanguageReportTest](CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_TVFileLanguageReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVFileLanguageService](CSSPServices.TVFileLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVFileLanguageController](CSSPWebAPI.Controllers.TVFileLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [TVFileLanguageExtraA](CSSPModels.TVFileLanguageExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TVFileLanguageExtraB : TVFileLanguageExtraA
     {

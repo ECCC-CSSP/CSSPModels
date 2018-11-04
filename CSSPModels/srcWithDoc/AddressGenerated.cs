@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table Addresses** : [AddressID](CSSPModels.Address.html#CSSPModels_Address_AddressID), [AddressTVItemID](CSSPModels.Address.html#CSSPModels_Address_AddressTVItemID), [AddressType](CSSPModels.Address.html#CSSPModels_Address_AddressType), [CountryTVItemID](CSSPModels.Address.html#CSSPModels_Address_CountryTVItemID), [ProvinceTVItemID](CSSPModels.Address.html#CSSPModels_Address_ProvinceTVItemID), [MunicipalityTVItemID](CSSPModels.Address.html#CSSPModels_Address_MunicipalityTVItemID), [StreetName](CSSPModels.Address.html#CSSPModels_Address_StreetName), [StreetNumber](CSSPModels.Address.html#CSSPModels_Address_StreetNumber), [StreetType](CSSPModels.Address.html#CSSPModels_Address_StreetType), [PostalCode](CSSPModels.Address.html#CSSPModels_Address_PostalCode), [GoogleAddressText](CSSPModels.Address.html#CSSPModels_Address_GoogleAddressText), [LastUpdateDate_UTC](CSSPModels.Address.html#CSSPModels_Address_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Address.html#CSSPModels_Address_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.Address.html#CSSPModels_Address_HasErrors), [ValidationResults](CSSPModels.Address.html#CSSPModels_Address_ValidationResults), </para>
+    /// > <para>**DB properties for table Addresses** : [AddressID](CSSPModels.Address.html#CSSPModels_Address_AddressID), [AddressTVItemID](CSSPModels.Address.html#CSSPModels_Address_AddressTVItemID), [AddressType](CSSPModels.Address.html#CSSPModels_Address_AddressType), [CountryTVItemID](CSSPModels.Address.html#CSSPModels_Address_CountryTVItemID), [ProvinceTVItemID](CSSPModels.Address.html#CSSPModels_Address_ProvinceTVItemID), [MunicipalityTVItemID](CSSPModels.Address.html#CSSPModels_Address_MunicipalityTVItemID), [StreetName](CSSPModels.Address.html#CSSPModels_Address_StreetName), [StreetNumber](CSSPModels.Address.html#CSSPModels_Address_StreetNumber), [StreetType](CSSPModels.Address.html#CSSPModels_Address_StreetType), [PostalCode](CSSPModels.Address.html#CSSPModels_Address_PostalCode), [GoogleAddressText](CSSPModels.Address.html#CSSPModels_Address_GoogleAddressText), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AddressService](CSSPServices.AddressService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AddressController](CSSPWebAPI.Controllers.AddressController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [AddressTypeEnum](CSSPEnums.AddressTypeEnum.html), [StreetTypeEnum](CSSPEnums.StreetTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class Address : LastUpdate
@@ -322,6 +324,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [AddressText](CSSPModels.Address.html#CSSPModels_Address_AddressText), [CountryText](CSSPModels.Address.html#CSSPModels_Address_CountryText), [ProvinceText](CSSPModels.Address.html#CSSPModels_Address_ProvinceText), [MunicipalityText](CSSPModels.Address.html#CSSPModels_Address_MunicipalityText), [LastUpdateContactText](CSSPModels.Address.html#CSSPModels_Address_LastUpdateContactText), [AddressTypeText](CSSPModels.Address.html#CSSPModels_Address_AddressTypeText), [StreetTypeText](CSSPModels.Address.html#CSSPModels_Address_StreetTypeText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AddressService](CSSPServices.AddressService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AddressController](CSSPWebAPI.Controllers.AddressController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [AddressTypeEnum](CSSPEnums.AddressTypeEnum.html), [StreetTypeEnum](CSSPEnums.StreetTypeEnum.html)</para>
+    /// > <para>**Inherits [Address](CSSPModels.Address.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class AddressExtraA : Address
     {
@@ -513,6 +527,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [AddressReportTest](CSSPModels.Address.html#CSSPModels_Address_AddressReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AddressService](CSSPServices.AddressService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AddressController](CSSPWebAPI.Controllers.AddressController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [AddressTypeEnum](CSSPEnums.AddressTypeEnum.html), [StreetTypeEnum](CSSPEnums.StreetTypeEnum.html)</para>
+    /// > <para>**Inherits [AddressExtraA](CSSPModels.AddressExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class AddressExtraB : AddressExtraA
     {

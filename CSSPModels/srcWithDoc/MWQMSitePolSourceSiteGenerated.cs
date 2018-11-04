@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MWQMSitePolSourceSites** : [MWQMSitePolSourceSiteID](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_MWQMSitePolSourceSiteID), [MWQMSiteTVItemID](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_MWQMSiteTVItemID), [PolSourceSiteTVItemID](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_PolSourceSiteTVItemID), [TVType](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_TVType), [LinkReasons](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_LinkReasons), [LastUpdateDate_UTC](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_HasErrors), [ValidationResults](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_ValidationResults), </para>
+    /// > <para>**DB properties for table MWQMSitePolSourceSites** : [MWQMSitePolSourceSiteID](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_MWQMSitePolSourceSiteID), [MWQMSiteTVItemID](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_MWQMSiteTVItemID), [PolSourceSiteTVItemID](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_PolSourceSiteTVItemID), [TVType](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_TVType), [LinkReasons](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_LinkReasons), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSitePolSourceSiteService](CSSPServices.MWQMSitePolSourceSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSitePolSourceSiteController](CSSPWebAPI.Controllers.MWQMSitePolSourceSiteController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MWQMSitePolSourceSite : LastUpdate
@@ -161,6 +163,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MWQMSiteText](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_MWQMSiteText), [PolSourceSiteText](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_PolSourceSiteText), [LastUpdateContactText](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_LastUpdateContactText), [TVTypeText](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_TVTypeText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSitePolSourceSiteService](CSSPServices.MWQMSitePolSourceSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSitePolSourceSiteController](CSSPWebAPI.Controllers.MWQMSitePolSourceSiteController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [MWQMSitePolSourceSite](CSSPModels.MWQMSitePolSourceSite.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMSitePolSourceSiteExtraA : MWQMSitePolSourceSite
     {
@@ -273,6 +287,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MWQMSitePolSourceSiteReportTest](CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_MWQMSitePolSourceSiteReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSitePolSourceSiteService](CSSPServices.MWQMSitePolSourceSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSitePolSourceSiteController](CSSPWebAPI.Controllers.MWQMSitePolSourceSiteController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [MWQMSitePolSourceSiteExtraA](CSSPModels.MWQMSitePolSourceSiteExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMSitePolSourceSiteExtraB : MWQMSitePolSourceSiteExtraA
     {

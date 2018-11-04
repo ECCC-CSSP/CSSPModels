@@ -17,10 +17,10 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [TVItemUserAuthID](CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_TVItemUserAuthID), [TVText](CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_TVText), [TVItemID1](CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_TVItemID1), [TVTypeStr](CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_TVTypeStr), [TVAuth](CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_TVAuth), [TVAuthText](CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_TVAuthText), [HasErrors](CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_HasErrors), [ValidationResults](CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_ValidationResults), </para>
+    /// > <para>**Other properties** : [TVItemUserAuthID](CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_TVItemUserAuthID), [TVText](CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_TVText), [TVItemID1](CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_TVItemID1), [TVTypeStr](CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_TVTypeStr), [TVAuth](CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_TVAuth), [TVAuthText](CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_TVAuthText), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVItemTVAuthService](CSSPServices.TVItemTVAuthService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVAuthEnum](CSSPEnums.TVAuthEnum.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

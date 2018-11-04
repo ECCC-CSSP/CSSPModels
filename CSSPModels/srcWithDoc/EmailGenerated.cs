@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table Emails** : [EmailID](CSSPModels.Email.html#CSSPModels_Email_EmailID), [EmailTVItemID](CSSPModels.Email.html#CSSPModels_Email_EmailTVItemID), [EmailAddress](CSSPModels.Email.html#CSSPModels_Email_EmailAddress), [EmailType](CSSPModels.Email.html#CSSPModels_Email_EmailType), [LastUpdateDate_UTC](CSSPModels.Email.html#CSSPModels_Email_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Email.html#CSSPModels_Email_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.Email.html#CSSPModels_Email_HasErrors), [ValidationResults](CSSPModels.Email.html#CSSPModels_Email_ValidationResults), </para>
+    /// > <para>**DB properties for table Emails** : [EmailID](CSSPModels.Email.html#CSSPModels_Email_EmailID), [EmailTVItemID](CSSPModels.Email.html#CSSPModels_Email_EmailTVItemID), [EmailAddress](CSSPModels.Email.html#CSSPModels_Email_EmailAddress), [EmailType](CSSPModels.Email.html#CSSPModels_Email_EmailType), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailService](CSSPServices.EmailService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [EmailController](CSSPWebAPI.Controllers.EmailController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [EmailTypeEnum](CSSPEnums.EmailTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class Email : LastUpdate
@@ -135,6 +137,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [EmailText](CSSPModels.Email.html#CSSPModels_Email_EmailText), [LastUpdateContactText](CSSPModels.Email.html#CSSPModels_Email_LastUpdateContactText), [EmailTypeText](CSSPModels.Email.html#CSSPModels_Email_EmailTypeText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailService](CSSPServices.EmailService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [EmailController](CSSPWebAPI.Controllers.EmailController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [EmailTypeEnum](CSSPEnums.EmailTypeEnum.html)</para>
+    /// > <para>**Inherits [Email](CSSPModels.Email.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class EmailExtraA : Email
     {
@@ -224,6 +238,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [EmailReportTest](CSSPModels.Email.html#CSSPModels_Email_EmailReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailService](CSSPServices.EmailService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [EmailController](CSSPWebAPI.Controllers.EmailController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [EmailTypeEnum](CSSPEnums.EmailTypeEnum.html)</para>
+    /// > <para>**Inherits [EmailExtraA](CSSPModels.EmailExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class EmailExtraB : EmailExtraA
     {

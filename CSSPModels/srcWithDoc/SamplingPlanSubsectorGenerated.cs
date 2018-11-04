@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table SamplingPlanSubsectors** : [SamplingPlanSubsectorID](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_SamplingPlanSubsectorID), [SamplingPlanID](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_SamplingPlanID), [SubsectorTVItemID](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_SubsectorTVItemID), [LastUpdateDate_UTC](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_HasErrors), [ValidationResults](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_ValidationResults), </para>
+    /// > <para>**DB properties for table SamplingPlanSubsectors** : [SamplingPlanSubsectorID](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_SamplingPlanSubsectorID), [SamplingPlanID](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_SamplingPlanID), [SubsectorTVItemID](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_SubsectorTVItemID), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SamplingPlanSubsectorService](CSSPServices.SamplingPlanSubsectorService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SamplingPlanSubsectorController](CSSPWebAPI.Controllers.SamplingPlanSubsectorController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class SamplingPlanSubsector : LastUpdate
@@ -109,6 +111,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [SubsectorText](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_SubsectorText), [LastUpdateContactText](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SamplingPlanSubsectorService](CSSPServices.SamplingPlanSubsectorService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SamplingPlanSubsectorController](CSSPWebAPI.Controllers.SamplingPlanSubsectorController.html)</para>
+    /// > <para>**Inherits [SamplingPlanSubsector](CSSPModels.SamplingPlanSubsector.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class SamplingPlanSubsectorExtraA : SamplingPlanSubsector
     {
@@ -171,6 +184,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [SamplingPlanSubsectorReportTest](CSSPModels.SamplingPlanSubsector.html#CSSPModels_SamplingPlanSubsector_SamplingPlanSubsectorReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SamplingPlanSubsectorService](CSSPServices.SamplingPlanSubsectorService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SamplingPlanSubsectorController](CSSPWebAPI.Controllers.SamplingPlanSubsectorController.html)</para>
+    /// > <para>**Inherits [SamplingPlanSubsectorExtraA](CSSPModels.SamplingPlanSubsectorExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class SamplingPlanSubsectorExtraB : SamplingPlanSubsectorExtraA
     {

@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table LabSheets** : [LabSheetID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetID), [OtherServerLabSheetID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_OtherServerLabSheetID), [SamplingPlanID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SamplingPlanID), [SamplingPlanName](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SamplingPlanName), [Year](CSSPModels.LabSheet.html#CSSPModels_LabSheet_Year), [Month](CSSPModels.LabSheet.html#CSSPModels_LabSheet_Month), [Day](CSSPModels.LabSheet.html#CSSPModels_LabSheet_Day), [RunNumber](CSSPModels.LabSheet.html#CSSPModels_LabSheet_RunNumber), [SubsectorTVItemID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SubsectorTVItemID), [MWQMRunTVItemID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_MWQMRunTVItemID), [SamplingPlanType](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SamplingPlanType), [SampleType](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SampleType), [LabSheetType](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetType), [LabSheetStatus](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetStatus), [FileName](CSSPModels.LabSheet.html#CSSPModels_LabSheet_FileName), [FileLastModifiedDate_Local](CSSPModels.LabSheet.html#CSSPModels_LabSheet_FileLastModifiedDate_Local), [FileContent](CSSPModels.LabSheet.html#CSSPModels_LabSheet_FileContent), [AcceptedOrRejectedByContactTVItemID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_AcceptedOrRejectedByContactTVItemID), [AcceptedOrRejectedDateTime](CSSPModels.LabSheet.html#CSSPModels_LabSheet_AcceptedOrRejectedDateTime), [RejectReason](CSSPModels.LabSheet.html#CSSPModels_LabSheet_RejectReason), [LastUpdateDate_UTC](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.LabSheet.html#CSSPModels_LabSheet_HasErrors), [ValidationResults](CSSPModels.LabSheet.html#CSSPModels_LabSheet_ValidationResults), </para>
+    /// > <para>**DB properties for table LabSheets** : [LabSheetID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetID), [OtherServerLabSheetID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_OtherServerLabSheetID), [SamplingPlanID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SamplingPlanID), [SamplingPlanName](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SamplingPlanName), [Year](CSSPModels.LabSheet.html#CSSPModels_LabSheet_Year), [Month](CSSPModels.LabSheet.html#CSSPModels_LabSheet_Month), [Day](CSSPModels.LabSheet.html#CSSPModels_LabSheet_Day), [RunNumber](CSSPModels.LabSheet.html#CSSPModels_LabSheet_RunNumber), [SubsectorTVItemID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SubsectorTVItemID), [MWQMRunTVItemID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_MWQMRunTVItemID), [SamplingPlanType](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SamplingPlanType), [SampleType](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SampleType), [LabSheetType](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetType), [LabSheetStatus](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetStatus), [FileName](CSSPModels.LabSheet.html#CSSPModels_LabSheet_FileName), [FileLastModifiedDate_Local](CSSPModels.LabSheet.html#CSSPModels_LabSheet_FileLastModifiedDate_Local), [FileContent](CSSPModels.LabSheet.html#CSSPModels_LabSheet_FileContent), [AcceptedOrRejectedByContactTVItemID](CSSPModels.LabSheet.html#CSSPModels_LabSheet_AcceptedOrRejectedByContactTVItemID), [AcceptedOrRejectedDateTime](CSSPModels.LabSheet.html#CSSPModels_LabSheet_AcceptedOrRejectedDateTime), [RejectReason](CSSPModels.LabSheet.html#CSSPModels_LabSheet_RejectReason), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LabSheetService](CSSPServices.LabSheetService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [LabSheetController](CSSPWebAPI.Controllers.LabSheetController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SamplingPlanTypeEnum](CSSPEnums.SamplingPlanTypeEnum.html), [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html), [LabSheetTypeEnum](CSSPEnums.LabSheetTypeEnum.html), [LabSheetStatusEnum](CSSPEnums.LabSheetStatusEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class LabSheet : LastUpdate
@@ -531,6 +533,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [SubsectorText](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SubsectorText), [MWQMRunText](CSSPModels.LabSheet.html#CSSPModels_LabSheet_MWQMRunText), [AcceptedOrRejectedByContactName](CSSPModels.LabSheet.html#CSSPModels_LabSheet_AcceptedOrRejectedByContactName), [LastUpdateContactText](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LastUpdateContactText), [SamplingPlanTypeText](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SamplingPlanTypeText), [SampleTypeText](CSSPModels.LabSheet.html#CSSPModels_LabSheet_SampleTypeText), [LabSheetTypeText](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetTypeText), [LabSheetStatusText](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetStatusText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LabSheetService](CSSPServices.LabSheetService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [LabSheetController](CSSPWebAPI.Controllers.LabSheetController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SamplingPlanTypeEnum](CSSPEnums.SamplingPlanTypeEnum.html), [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html), [LabSheetTypeEnum](CSSPEnums.LabSheetTypeEnum.html), [LabSheetStatusEnum](CSSPEnums.LabSheetStatusEnum.html)</para>
+    /// > <para>**Inherits [LabSheet](CSSPModels.LabSheet.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class LabSheetExtraA : LabSheet
     {
@@ -751,6 +765,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LabSheetReportTest](CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LabSheetService](CSSPServices.LabSheetService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [LabSheetController](CSSPWebAPI.Controllers.LabSheetController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SamplingPlanTypeEnum](CSSPEnums.SamplingPlanTypeEnum.html), [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html), [LabSheetTypeEnum](CSSPEnums.LabSheetTypeEnum.html), [LabSheetStatusEnum](CSSPEnums.LabSheetStatusEnum.html)</para>
+    /// > <para>**Inherits [LabSheetExtraA](CSSPModels.LabSheetExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class LabSheetExtraB : LabSheetExtraA
     {

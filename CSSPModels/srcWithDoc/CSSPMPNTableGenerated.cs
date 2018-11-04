@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Tube10](CSSPModels.CSSPMPNTable.html#CSSPModels_CSSPMPNTable_Tube10), [Tube1_0](CSSPModels.CSSPMPNTable.html#CSSPModels_CSSPMPNTable_Tube1_0), [Tube0_1](CSSPModels.CSSPMPNTable.html#CSSPModels_CSSPMPNTable_Tube0_1), [MPN](CSSPModels.CSSPMPNTable.html#CSSPModels_CSSPMPNTable_MPN), [HasErrors](CSSPModels.CSSPMPNTable.html#CSSPModels_CSSPMPNTable_HasErrors), [ValidationResults](CSSPModels.CSSPMPNTable.html#CSSPModels_CSSPMPNTable_ValidationResults), </para>
+    /// > <para>**Other properties** : [Tube10](CSSPModels.CSSPMPNTable.html#CSSPModels_CSSPMPNTable_Tube10), [Tube1_0](CSSPModels.CSSPMPNTable.html#CSSPModels_CSSPMPNTable_Tube1_0), [Tube0_1](CSSPModels.CSSPMPNTable.html#CSSPModels_CSSPMPNTable_Tube0_1), [MPN](CSSPModels.CSSPMPNTable.html#CSSPModels_CSSPMPNTable_MPN), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [CSSPMPNTableService](CSSPServices.CSSPMPNTableService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

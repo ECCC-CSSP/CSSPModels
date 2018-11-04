@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Decay](CSSPModels.CalDecay.html#CSSPModels_CalDecay_Decay), [HasErrors](CSSPModels.CalDecay.html#CSSPModels_CalDecay_HasErrors), [ValidationResults](CSSPModels.CalDecay.html#CSSPModels_CalDecay_ValidationResults), </para>
+    /// > <para>**Other properties** : [Decay](CSSPModels.CalDecay.html#CSSPModels_CalDecay_Decay), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [CalDecayService](CSSPServices.CalDecayService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

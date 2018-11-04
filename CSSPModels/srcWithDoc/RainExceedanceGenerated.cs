@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table RainExceedances** : [RainExceedanceID](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_RainExceedanceID), [YearRound](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_YearRound), [StartDate_Local](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_StartDate_Local), [EndDate_Local](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_EndDate_Local), [RainMaximum_mm](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_RainMaximum_mm), [RainExtreme_mm](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_RainExtreme_mm), [DaysPriorToStart](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_DaysPriorToStart), [RepeatEveryYear](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_RepeatEveryYear), [ProvinceTVItemIDs](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_ProvinceTVItemIDs), [SubsectorTVItemIDs](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_SubsectorTVItemIDs), [ClimateSiteTVItemIDs](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_ClimateSiteTVItemIDs), [EmailDistributionListIDs](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_EmailDistributionListIDs), [LastUpdateDate_UTC](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_HasErrors), [ValidationResults](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_ValidationResults), </para>
+    /// > <para>**DB properties for table RainExceedances** : [RainExceedanceID](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_RainExceedanceID), [YearRound](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_YearRound), [StartDate_Local](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_StartDate_Local), [EndDate_Local](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_EndDate_Local), [RainMaximum_mm](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_RainMaximum_mm), [RainExtreme_mm](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_RainExtreme_mm), [DaysPriorToStart](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_DaysPriorToStart), [RepeatEveryYear](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_RepeatEveryYear), [ProvinceTVItemIDs](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_ProvinceTVItemIDs), [SubsectorTVItemIDs](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_SubsectorTVItemIDs), [ClimateSiteTVItemIDs](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_ClimateSiteTVItemIDs), [EmailDistributionListIDs](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_EmailDistributionListIDs), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [RainExceedanceService](CSSPServices.RainExceedanceService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [RainExceedanceController](CSSPWebAPI.Controllers.RainExceedanceController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class RainExceedance : LastUpdate
@@ -323,6 +325,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [RainExceedanceService](CSSPServices.RainExceedanceService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [RainExceedanceController](CSSPWebAPI.Controllers.RainExceedanceController.html)</para>
+    /// > <para>**Inherits [RainExceedance](CSSPModels.RainExceedance.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class RainExceedanceExtraA : RainExceedance
     {
@@ -360,6 +373,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [RainExceedanceReportTest](CSSPModels.RainExceedance.html#CSSPModels_RainExceedance_RainExceedanceReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [RainExceedanceService](CSSPServices.RainExceedanceService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [RainExceedanceController](CSSPWebAPI.Controllers.RainExceedanceController.html)</para>
+    /// > <para>**Inherits [RainExceedanceExtraA](CSSPModels.RainExceedanceExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class RainExceedanceExtraB : RainExceedanceExtraA
     {

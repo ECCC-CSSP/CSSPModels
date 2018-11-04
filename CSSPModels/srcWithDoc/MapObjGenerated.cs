@@ -17,10 +17,10 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [MapInfoID](CSSPModels.MapObj.html#CSSPModels_MapObj_MapInfoID), [MapInfoDrawType](CSSPModels.MapObj.html#CSSPModels_MapObj_MapInfoDrawType), [MapInfoDrawTypeText](CSSPModels.MapObj.html#CSSPModels_MapObj_MapInfoDrawTypeText), [CoordList](CSSPModels.MapObj.html#CSSPModels_MapObj_CoordList), [HasErrors](CSSPModels.MapObj.html#CSSPModels_MapObj_HasErrors), [ValidationResults](CSSPModels.MapObj.html#CSSPModels_MapObj_ValidationResults), </para>
+    /// > <para>**Other properties** : [MapInfoID](CSSPModels.MapObj.html#CSSPModels_MapObj_MapInfoID), [MapInfoDrawType](CSSPModels.MapObj.html#CSSPModels_MapObj_MapInfoDrawType), [MapInfoDrawTypeText](CSSPModels.MapObj.html#CSSPModels_MapObj_MapInfoDrawTypeText), [CoordList](CSSPModels.MapObj.html#CSSPModels_MapObj_CoordList), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MapObjService](CSSPServices.MapObjService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [MapInfoDrawTypeEnum](CSSPEnums.MapInfoDrawTypeEnum.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

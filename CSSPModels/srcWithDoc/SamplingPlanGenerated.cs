@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table SamplingPlans** : [SamplingPlanID](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanID), [IsActive](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_IsActive), [SamplingPlanName](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanName), [ForGroupName](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_ForGroupName), [SampleType](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SampleType), [SamplingPlanType](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanType), [LabSheetType](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_LabSheetType), [ProvinceTVItemID](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_ProvinceTVItemID), [CreatorTVItemID](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_CreatorTVItemID), [Year](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_Year), [AccessCode](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_AccessCode), [DailyDuplicatePrecisionCriteria](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_DailyDuplicatePrecisionCriteria), [IntertechDuplicatePrecisionCriteria](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_IntertechDuplicatePrecisionCriteria), [IncludeLaboratoryQAQC](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_IncludeLaboratoryQAQC), [ApprovalCode](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_ApprovalCode), [SamplingPlanFileTVItemID](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanFileTVItemID), [AnalyzeMethodDefault](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_AnalyzeMethodDefault), [SampleMatrixDefault](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SampleMatrixDefault), [LaboratoryDefault](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_LaboratoryDefault), [BackupDirectory](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_BackupDirectory), [LastUpdateDate_UTC](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_HasErrors), [ValidationResults](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_ValidationResults), </para>
+    /// > <para>**DB properties for table SamplingPlans** : [SamplingPlanID](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanID), [IsActive](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_IsActive), [SamplingPlanName](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanName), [ForGroupName](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_ForGroupName), [SampleType](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SampleType), [SamplingPlanType](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanType), [LabSheetType](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_LabSheetType), [ProvinceTVItemID](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_ProvinceTVItemID), [CreatorTVItemID](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_CreatorTVItemID), [Year](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_Year), [AccessCode](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_AccessCode), [DailyDuplicatePrecisionCriteria](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_DailyDuplicatePrecisionCriteria), [IntertechDuplicatePrecisionCriteria](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_IntertechDuplicatePrecisionCriteria), [IncludeLaboratoryQAQC](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_IncludeLaboratoryQAQC), [ApprovalCode](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_ApprovalCode), [SamplingPlanFileTVItemID](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanFileTVItemID), [AnalyzeMethodDefault](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_AnalyzeMethodDefault), [SampleMatrixDefault](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SampleMatrixDefault), [LaboratoryDefault](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_LaboratoryDefault), [BackupDirectory](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_BackupDirectory), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SamplingPlanService](CSSPServices.SamplingPlanService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SamplingPlanController](CSSPWebAPI.Controllers.SamplingPlanController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html), [SamplingPlanTypeEnum](CSSPEnums.SamplingPlanTypeEnum.html), [LabSheetTypeEnum](CSSPEnums.LabSheetTypeEnum.html), [AnalyzeMethodEnum](CSSPEnums.AnalyzeMethodEnum.html), [SampleMatrixEnum](CSSPEnums.SampleMatrixEnum.html), [LaboratoryEnum](CSSPEnums.LaboratoryEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class SamplingPlan : LastUpdate
@@ -533,6 +535,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [ProvinceText](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_ProvinceText), [CreatorName](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_CreatorName), [SamplingPlanFileName](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanFileName), [LastUpdateContactText](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_LastUpdateContactText), [SampleTypeText](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SampleTypeText), [SamplingPlanTypeText](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanTypeText), [LabSheetTypeText](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_LabSheetTypeText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SamplingPlanService](CSSPServices.SamplingPlanService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SamplingPlanController](CSSPWebAPI.Controllers.SamplingPlanController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html), [SamplingPlanTypeEnum](CSSPEnums.SamplingPlanTypeEnum.html), [LabSheetTypeEnum](CSSPEnums.LabSheetTypeEnum.html), [AnalyzeMethodEnum](CSSPEnums.AnalyzeMethodEnum.html), [SampleMatrixEnum](CSSPEnums.SampleMatrixEnum.html), [LaboratoryEnum](CSSPEnums.LaboratoryEnum.html)</para>
+    /// > <para>**Inherits [SamplingPlan](CSSPModels.SamplingPlan.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class SamplingPlanExtraA : SamplingPlan
     {
@@ -726,6 +740,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [SamplingPlanReportTest](CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SamplingPlanService](CSSPServices.SamplingPlanService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SamplingPlanController](CSSPWebAPI.Controllers.SamplingPlanController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html), [SamplingPlanTypeEnum](CSSPEnums.SamplingPlanTypeEnum.html), [LabSheetTypeEnum](CSSPEnums.LabSheetTypeEnum.html), [AnalyzeMethodEnum](CSSPEnums.AnalyzeMethodEnum.html), [SampleMatrixEnum](CSSPEnums.SampleMatrixEnum.html), [LaboratoryEnum](CSSPEnums.LaboratoryEnum.html)</para>
+    /// > <para>**Inherits [SamplingPlanExtraA](CSSPModels.SamplingPlanExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class SamplingPlanExtraB : SamplingPlanExtraA
     {

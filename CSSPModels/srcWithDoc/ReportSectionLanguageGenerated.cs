@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table ReportSectionLanguages** : [ReportSectionLanguageID](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionLanguageID), [ReportSectionID](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionID), [Language](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_Language), [ReportSectionName](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionName), [TranslationStatusReportSectionName](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_TranslationStatusReportSectionName), [ReportSectionText](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionText), [TranslationStatusReportSectionText](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_TranslationStatusReportSectionText), [LastUpdateDate_UTC](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_HasErrors), [ValidationResults](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ValidationResults), </para>
+    /// > <para>**DB properties for table ReportSectionLanguages** : [ReportSectionLanguageID](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionLanguageID), [ReportSectionID](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionID), [Language](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_Language), [ReportSectionName](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionName), [TranslationStatusReportSectionName](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_TranslationStatusReportSectionName), [ReportSectionText](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionText), [TranslationStatusReportSectionText](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_TranslationStatusReportSectionText), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ReportSectionLanguageService](CSSPServices.ReportSectionLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ReportSectionLanguageController](CSSPWebAPI.Controllers.ReportSectionLanguageController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class ReportSectionLanguage : LastUpdate
@@ -206,6 +208,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_LastUpdateContactText), [LanguageText](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_LanguageText), [TranslationStatusReportSectionNameText](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_TranslationStatusReportSectionNameText), [TranslationStatusReportSectionNameTextText](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_TranslationStatusReportSectionNameTextText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ReportSectionLanguageService](CSSPServices.ReportSectionLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ReportSectionLanguageController](CSSPWebAPI.Controllers.ReportSectionLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [ReportSectionLanguage](CSSPModels.ReportSectionLanguage.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ReportSectionLanguageExtraA : ReportSectionLanguage
     {
@@ -324,6 +338,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [ReportSectionLanguageReportTest](CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_ReportSectionLanguageReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ReportSectionLanguageService](CSSPServices.ReportSectionLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ReportSectionLanguageController](CSSPWebAPI.Controllers.ReportSectionLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [ReportSectionLanguageExtraA](CSSPModels.ReportSectionLanguageExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ReportSectionLanguageExtraB : ReportSectionLanguageExtraA
     {

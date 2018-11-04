@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table BoxModelLanguages** : [BoxModelLanguageID](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_BoxModelLanguageID), [BoxModelID](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_BoxModelID), [Language](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_Language), [ScenarioName](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_ScenarioName), [TranslationStatus](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_HasErrors), [ValidationResults](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_ValidationResults), </para>
+    /// > <para>**DB properties for table BoxModelLanguages** : [BoxModelLanguageID](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_BoxModelLanguageID), [BoxModelID](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_BoxModelID), [Language](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_Language), [ScenarioName](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_ScenarioName), [TranslationStatus](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_TranslationStatus), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [BoxModelLanguageService](CSSPServices.BoxModelLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [BoxModelLanguageController](CSSPWebAPI.Controllers.BoxModelLanguageController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class BoxModelLanguage : LastUpdate
@@ -157,6 +159,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_LastUpdateContactText), [LanguageText](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_LanguageText), [TranslationStatusText](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_TranslationStatusText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [BoxModelLanguageService](CSSPServices.BoxModelLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [BoxModelLanguageController](CSSPWebAPI.Controllers.BoxModelLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [BoxModelLanguage](CSSPModels.BoxModelLanguage.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class BoxModelLanguageExtraA : BoxModelLanguage
     {
@@ -248,6 +262,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [BoxModelLanguageReportTest](CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_BoxModelLanguageReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [BoxModelLanguageService](CSSPServices.BoxModelLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [BoxModelLanguageController](CSSPWebAPI.Controllers.BoxModelLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [BoxModelLanguageExtraA](CSSPModels.BoxModelLanguageExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class BoxModelLanguageExtraB : BoxModelLanguageExtraA
     {

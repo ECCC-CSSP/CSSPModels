@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table Spills** : [SpillID](CSSPModels.Spill.html#CSSPModels_Spill_SpillID), [MunicipalityTVItemID](CSSPModels.Spill.html#CSSPModels_Spill_MunicipalityTVItemID), [InfrastructureTVItemID](CSSPModels.Spill.html#CSSPModels_Spill_InfrastructureTVItemID), [StartDateTime_Local](CSSPModels.Spill.html#CSSPModels_Spill_StartDateTime_Local), [EndDateTime_Local](CSSPModels.Spill.html#CSSPModels_Spill_EndDateTime_Local), [AverageFlow_m3_day](CSSPModels.Spill.html#CSSPModels_Spill_AverageFlow_m3_day), [LastUpdateDate_UTC](CSSPModels.Spill.html#CSSPModels_Spill_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Spill.html#CSSPModels_Spill_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.Spill.html#CSSPModels_Spill_HasErrors), [ValidationResults](CSSPModels.Spill.html#CSSPModels_Spill_ValidationResults), </para>
+    /// > <para>**DB properties for table Spills** : [SpillID](CSSPModels.Spill.html#CSSPModels_Spill_SpillID), [MunicipalityTVItemID](CSSPModels.Spill.html#CSSPModels_Spill_MunicipalityTVItemID), [InfrastructureTVItemID](CSSPModels.Spill.html#CSSPModels_Spill_InfrastructureTVItemID), [StartDateTime_Local](CSSPModels.Spill.html#CSSPModels_Spill_StartDateTime_Local), [EndDateTime_Local](CSSPModels.Spill.html#CSSPModels_Spill_EndDateTime_Local), [AverageFlow_m3_day](CSSPModels.Spill.html#CSSPModels_Spill_AverageFlow_m3_day), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SpillService](CSSPServices.SpillService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SpillController](CSSPWebAPI.Controllers.SpillController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class Spill : LastUpdate
@@ -187,6 +189,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MunicipalityText](CSSPModels.Spill.html#CSSPModels_Spill_MunicipalityText), [InfrastructureText](CSSPModels.Spill.html#CSSPModels_Spill_InfrastructureText), [LastUpdateContactText](CSSPModels.Spill.html#CSSPModels_Spill_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SpillService](CSSPServices.SpillService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SpillController](CSSPWebAPI.Controllers.SpillController.html)</para>
+    /// > <para>**Inherits [Spill](CSSPModels.Spill.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class SpillExtraA : Spill
     {
@@ -274,6 +287,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [SpillReportTest](CSSPModels.Spill.html#CSSPModels_Spill_SpillReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SpillService](CSSPServices.SpillService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SpillController](CSSPWebAPI.Controllers.SpillController.html)</para>
+    /// > <para>**Inherits [SpillExtraA](CSSPModels.SpillExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class SpillExtraB : SpillExtraA
     {

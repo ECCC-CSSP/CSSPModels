@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Conc](CSSPModels.VPResValues.html#CSSPModels_VPResValues_Conc), [Dilu](CSSPModels.VPResValues.html#CSSPModels_VPResValues_Dilu), [FarfieldWidth](CSSPModels.VPResValues.html#CSSPModels_VPResValues_FarfieldWidth), [Distance](CSSPModels.VPResValues.html#CSSPModels_VPResValues_Distance), [TheTime](CSSPModels.VPResValues.html#CSSPModels_VPResValues_TheTime), [Decay](CSSPModels.VPResValues.html#CSSPModels_VPResValues_Decay), [HasErrors](CSSPModels.VPResValues.html#CSSPModels_VPResValues_HasErrors), [ValidationResults](CSSPModels.VPResValues.html#CSSPModels_VPResValues_ValidationResults), </para>
+    /// > <para>**Other properties** : [Conc](CSSPModels.VPResValues.html#CSSPModels_VPResValues_Conc), [Dilu](CSSPModels.VPResValues.html#CSSPModels_VPResValues_Dilu), [FarfieldWidth](CSSPModels.VPResValues.html#CSSPModels_VPResValues_FarfieldWidth), [Distance](CSSPModels.VPResValues.html#CSSPModels_VPResValues_Distance), [TheTime](CSSPModels.VPResValues.html#CSSPModels_VPResValues_TheTime), [Decay](CSSPModels.VPResValues.html#CSSPModels_VPResValues_Decay), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPResValuesService](CSSPServices.VPResValuesService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

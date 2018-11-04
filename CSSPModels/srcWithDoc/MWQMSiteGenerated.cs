@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MWQMSites** : [MWQMSiteID](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteID), [MWQMSiteTVItemID](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteTVItemID), [MWQMSiteNumber](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteNumber), [MWQMSiteDescription](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteDescription), [MWQMSiteLatestClassification](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteLatestClassification), [Ordinal](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_Ordinal), [LastUpdateDate_UTC](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_HasErrors), [ValidationResults](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_ValidationResults), </para>
+    /// > <para>**DB properties for table MWQMSites** : [MWQMSiteID](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteID), [MWQMSiteTVItemID](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteTVItemID), [MWQMSiteNumber](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteNumber), [MWQMSiteDescription](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteDescription), [MWQMSiteLatestClassification](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteLatestClassification), [Ordinal](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_Ordinal), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSiteService](CSSPServices.MWQMSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSiteController](CSSPWebAPI.Controllers.MWQMSiteController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [MWQMSiteLatestClassificationEnum](CSSPEnums.MWQMSiteLatestClassificationEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MWQMSite : LastUpdate
@@ -182,6 +184,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MWQMSiteText](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteText), [LastUpdateContactText](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_LastUpdateContactText), [MWQMSiteLatestClassificationText](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteLatestClassificationText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSiteService](CSSPServices.MWQMSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSiteController](CSSPWebAPI.Controllers.MWQMSiteController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [MWQMSiteLatestClassificationEnum](CSSPEnums.MWQMSiteLatestClassificationEnum.html)</para>
+    /// > <para>**Inherits [MWQMSite](CSSPModels.MWQMSite.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMSiteExtraA : MWQMSite
     {
@@ -271,6 +285,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MWQMSiteReportTest](CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSiteService](CSSPServices.MWQMSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSiteController](CSSPWebAPI.Controllers.MWQMSiteController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [MWQMSiteLatestClassificationEnum](CSSPEnums.MWQMSiteLatestClassificationEnum.html)</para>
+    /// > <para>**Inherits [MWQMSiteExtraA](CSSPModels.MWQMSiteExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMSiteExtraB : MWQMSiteExtraA
     {

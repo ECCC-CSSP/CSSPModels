@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MWQMSamples** : [MWQMSampleID](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_MWQMSampleID), [MWQMSiteTVItemID](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_MWQMSiteTVItemID), [MWQMRunTVItemID](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_MWQMRunTVItemID), [SampleDateTime_Local](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_SampleDateTime_Local), [Depth_m](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Depth_m), [FecCol_MPN_100ml](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_FecCol_MPN_100ml), [Salinity_PPT](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Salinity_PPT), [WaterTemp_C](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_WaterTemp_C), [PH](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_PH), [SampleTypesText](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_SampleTypesText), [SampleType_old](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_SampleType_old), [Tube_10](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Tube_10), [Tube_1_0](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Tube_1_0), [Tube_0_1](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Tube_0_1), [ProcessedBy](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_ProcessedBy), [UseForOpenData](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_UseForOpenData), [LastUpdateDate_UTC](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_HasErrors), [ValidationResults](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_ValidationResults), </para>
+    /// > <para>**DB properties for table MWQMSamples** : [MWQMSampleID](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_MWQMSampleID), [MWQMSiteTVItemID](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_MWQMSiteTVItemID), [MWQMRunTVItemID](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_MWQMRunTVItemID), [SampleDateTime_Local](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_SampleDateTime_Local), [Depth_m](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Depth_m), [FecCol_MPN_100ml](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_FecCol_MPN_100ml), [Salinity_PPT](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Salinity_PPT), [WaterTemp_C](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_WaterTemp_C), [PH](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_PH), [SampleTypesText](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_SampleTypesText), [SampleType_old](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_SampleType_old), [Tube_10](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Tube_10), [Tube_1_0](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Tube_1_0), [Tube_0_1](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_Tube_0_1), [ProcessedBy](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_ProcessedBy), [UseForOpenData](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_UseForOpenData), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSampleService](CSSPServices.MWQMSampleService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSampleController](CSSPWebAPI.Controllers.MWQMSampleController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MWQMSample : LastUpdate
@@ -411,6 +413,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MWQMSiteText](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_MWQMSiteText), [MWQMRunText](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_MWQMRunText), [LastUpdateContactText](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_LastUpdateContactText), [SampleType_oldText](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_SampleType_oldText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSampleService](CSSPServices.MWQMSampleService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSampleController](CSSPWebAPI.Controllers.MWQMSampleController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html)</para>
+    /// > <para>**Inherits [MWQMSample](CSSPModels.MWQMSample.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMSampleExtraA : MWQMSample
     {
@@ -525,6 +539,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MWQMSampleReportTest](CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_MWQMSampleReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSampleService](CSSPServices.MWQMSampleService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSampleController](CSSPWebAPI.Controllers.MWQMSampleController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html)</para>
+    /// > <para>**Inherits [MWQMSampleExtraA](CSSPModels.MWQMSampleExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMSampleExtraB : MWQMSampleExtraA
     {

@@ -17,10 +17,10 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Text](CSSPModels.DataPathOfTide.html#CSSPModels_DataPathOfTide_Text), [WebTideDataSet](CSSPModels.DataPathOfTide.html#CSSPModels_DataPathOfTide_WebTideDataSet), [WebTideDataSetText](CSSPModels.DataPathOfTide.html#CSSPModels_DataPathOfTide_WebTideDataSetText), [HasErrors](CSSPModels.DataPathOfTide.html#CSSPModels_DataPathOfTide_HasErrors), [ValidationResults](CSSPModels.DataPathOfTide.html#CSSPModels_DataPathOfTide_ValidationResults), </para>
+    /// > <para>**Other properties** : [Text](CSSPModels.DataPathOfTide.html#CSSPModels_DataPathOfTide_Text), [WebTideDataSet](CSSPModels.DataPathOfTide.html#CSSPModels_DataPathOfTide_WebTideDataSet), [WebTideDataSetText](CSSPModels.DataPathOfTide.html#CSSPModels_DataPathOfTide_WebTideDataSetText), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [DataPathOfTideService](CSSPServices.DataPathOfTideService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [WebTideDataSetEnum](CSSPEnums.WebTideDataSetEnum.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

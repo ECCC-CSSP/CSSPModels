@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table TVItemStats** : [TVItemStatID](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVItemStatID), [TVItemID](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVItemID), [TVType](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVType), [ChildCount](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_ChildCount), [LastUpdateDate_UTC](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_HasErrors), [ValidationResults](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_ValidationResults), </para>
+    /// > <para>**DB properties for table TVItemStats** : [TVItemStatID](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVItemStatID), [TVItemID](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVItemID), [TVType](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVType), [ChildCount](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_ChildCount), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVItemStatService](CSSPServices.TVItemStatService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVItemStatController](CSSPWebAPI.Controllers.TVItemStatController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class TVItemStat : LastUpdate
@@ -134,6 +136,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TVItemText](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVItemText), [LastUpdateContactText](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_LastUpdateContactText), [TVTypeText](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVTypeText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVItemStatService](CSSPServices.TVItemStatService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVItemStatController](CSSPWebAPI.Controllers.TVItemStatController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [TVItemStat](CSSPModels.TVItemStat.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TVItemStatExtraA : TVItemStat
     {
@@ -223,6 +237,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TVItemStatReportTest](CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVItemStatReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVItemStatService](CSSPServices.TVItemStatService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVItemStatController](CSSPWebAPI.Controllers.TVItemStatController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [TVItemStatExtraA](CSSPModels.TVItemStatExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TVItemStatExtraB : TVItemStatExtraA
     {

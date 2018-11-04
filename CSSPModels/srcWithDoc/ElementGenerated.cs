@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [ID](CSSPModels.Element.html#CSSPModels_Element_ID), [Type](CSSPModels.Element.html#CSSPModels_Element_Type), [NumbOfNodes](CSSPModels.Element.html#CSSPModels_Element_NumbOfNodes), [Value](CSSPModels.Element.html#CSSPModels_Element_Value), [XNode0](CSSPModels.Element.html#CSSPModels_Element_XNode0), [YNode0](CSSPModels.Element.html#CSSPModels_Element_YNode0), [ZNode0](CSSPModels.Element.html#CSSPModels_Element_ZNode0), [NodeList](CSSPModels.Element.html#CSSPModels_Element_NodeList), [HasErrors](CSSPModels.Element.html#CSSPModels_Element_HasErrors), [ValidationResults](CSSPModels.Element.html#CSSPModels_Element_ValidationResults), </para>
+    /// > <para>**Other properties** : [ID](CSSPModels.Element.html#CSSPModels_Element_ID), [Type](CSSPModels.Element.html#CSSPModels_Element_Type), [NumbOfNodes](CSSPModels.Element.html#CSSPModels_Element_NumbOfNodes), [Value](CSSPModels.Element.html#CSSPModels_Element_Value), [XNode0](CSSPModels.Element.html#CSSPModels_Element_XNode0), [YNode0](CSSPModels.Element.html#CSSPModels_Element_YNode0), [ZNode0](CSSPModels.Element.html#CSSPModels_Element_ZNode0), [NodeList](CSSPModels.Element.html#CSSPModels_Element_NodeList), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ElementService](CSSPServices.ElementService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

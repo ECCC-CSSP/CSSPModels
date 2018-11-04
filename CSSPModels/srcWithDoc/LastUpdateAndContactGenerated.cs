@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [LastUpdateAndContactDate_UTC](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_LastUpdateAndContactDate_UTC), [LastUpdateAndContactTVItemID](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_LastUpdateAndContactTVItemID), [HasErrors](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_HasErrors), [ValidationResults](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_ValidationResults), </para>
+    /// > <para>**Other properties** : [LastUpdateAndContactDate_UTC](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_LastUpdateAndContactDate_UTC), [LastUpdateAndContactTVItemID](CSSPModels.LastUpdateAndContact.html#CSSPModels_LastUpdateAndContact_LastUpdateAndContactTVItemID), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LastUpdateAndContactService](CSSPServices.LastUpdateAndContactService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

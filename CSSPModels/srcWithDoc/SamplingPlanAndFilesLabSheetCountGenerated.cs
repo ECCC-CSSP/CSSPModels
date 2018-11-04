@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [LabSheetHistoryCount](CSSPModels.SamplingPlanAndFilesLabSheetCount.html#CSSPModels_SamplingPlanAndFilesLabSheetCount_LabSheetHistoryCount), [LabSheetTransferredCount](CSSPModels.SamplingPlanAndFilesLabSheetCount.html#CSSPModels_SamplingPlanAndFilesLabSheetCount_LabSheetTransferredCount), [SamplingPlan](CSSPModels.SamplingPlanAndFilesLabSheetCount.html#CSSPModels_SamplingPlanAndFilesLabSheetCount_SamplingPlan), [TVFileSamplingPlanFileTXT](CSSPModels.SamplingPlanAndFilesLabSheetCount.html#CSSPModels_SamplingPlanAndFilesLabSheetCount_TVFileSamplingPlanFileTXT), [HasErrors](CSSPModels.SamplingPlanAndFilesLabSheetCount.html#CSSPModels_SamplingPlanAndFilesLabSheetCount_HasErrors), [ValidationResults](CSSPModels.SamplingPlanAndFilesLabSheetCount.html#CSSPModels_SamplingPlanAndFilesLabSheetCount_ValidationResults), </para>
+    /// > <para>**Other properties** : [LabSheetHistoryCount](CSSPModels.SamplingPlanAndFilesLabSheetCount.html#CSSPModels_SamplingPlanAndFilesLabSheetCount_LabSheetHistoryCount), [LabSheetTransferredCount](CSSPModels.SamplingPlanAndFilesLabSheetCount.html#CSSPModels_SamplingPlanAndFilesLabSheetCount_LabSheetTransferredCount), [SamplingPlan](CSSPModels.SamplingPlanAndFilesLabSheetCount.html#CSSPModels_SamplingPlanAndFilesLabSheetCount_SamplingPlan), [TVFileSamplingPlanFileTXT](CSSPModels.SamplingPlanAndFilesLabSheetCount.html#CSSPModels_SamplingPlanAndFilesLabSheetCount_TVFileSamplingPlanFileTXT), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SamplingPlanAndFilesLabSheetCountService](CSSPServices.SamplingPlanAndFilesLabSheetCountService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

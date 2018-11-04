@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table DocTemplates** : [DocTemplateID](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_DocTemplateID), [Language](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_Language), [TVType](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_TVType), [TVFileTVItemID](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_TVFileTVItemID), [FileName](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_FileName), [LastUpdateDate_UTC](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_HasErrors), [ValidationResults](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_ValidationResults), </para>
+    /// > <para>**DB properties for table DocTemplates** : [DocTemplateID](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_DocTemplateID), [Language](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_Language), [TVType](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_TVType), [TVFileTVItemID](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_TVFileTVItemID), [FileName](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_FileName), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [DocTemplateService](CSSPServices.DocTemplateService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [DocTemplateController](CSSPWebAPI.Controllers.DocTemplateController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class DocTemplate : LastUpdate
@@ -159,6 +161,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_LastUpdateContactText), [LanguageText](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_LanguageText), [TVTypeText](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_TVTypeText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [DocTemplateService](CSSPServices.DocTemplateService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [DocTemplateController](CSSPWebAPI.Controllers.DocTemplateController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [DocTemplate](CSSPModels.DocTemplate.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class DocTemplateExtraA : DocTemplate
     {
@@ -246,6 +260,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [DocTemplateReportTest](CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_DocTemplateReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [DocTemplateService](CSSPServices.DocTemplateService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [DocTemplateController](CSSPWebAPI.Controllers.DocTemplateController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [DocTemplateExtraA](CSSPModels.DocTemplateExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class DocTemplateExtraB : DocTemplateExtraA
     {

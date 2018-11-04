@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MikeSources** : [MikeSourceID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_MikeSourceID), [MikeSourceTVItemID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_MikeSourceTVItemID), [IsContinuous](CSSPModels.MikeSource.html#CSSPModels_MikeSource_IsContinuous), [Include](CSSPModels.MikeSource.html#CSSPModels_MikeSource_Include), [IsRiver](CSSPModels.MikeSource.html#CSSPModels_MikeSource_IsRiver), [UseHydrometric](CSSPModels.MikeSource.html#CSSPModels_MikeSource_UseHydrometric), [HydrometricTVItemID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_HydrometricTVItemID), [DrainageArea_km2](CSSPModels.MikeSource.html#CSSPModels_MikeSource_DrainageArea_km2), [Factor](CSSPModels.MikeSource.html#CSSPModels_MikeSource_Factor), [SourceNumberString](CSSPModels.MikeSource.html#CSSPModels_MikeSource_SourceNumberString), [LastUpdateDate_UTC](CSSPModels.MikeSource.html#CSSPModels_MikeSource_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MikeSource.html#CSSPModels_MikeSource_HasErrors), [ValidationResults](CSSPModels.MikeSource.html#CSSPModels_MikeSource_ValidationResults), </para>
+    /// > <para>**DB properties for table MikeSources** : [MikeSourceID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_MikeSourceID), [MikeSourceTVItemID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_MikeSourceTVItemID), [IsContinuous](CSSPModels.MikeSource.html#CSSPModels_MikeSource_IsContinuous), [Include](CSSPModels.MikeSource.html#CSSPModels_MikeSource_Include), [IsRiver](CSSPModels.MikeSource.html#CSSPModels_MikeSource_IsRiver), [UseHydrometric](CSSPModels.MikeSource.html#CSSPModels_MikeSource_UseHydrometric), [HydrometricTVItemID](CSSPModels.MikeSource.html#CSSPModels_MikeSource_HydrometricTVItemID), [DrainageArea_km2](CSSPModels.MikeSource.html#CSSPModels_MikeSource_DrainageArea_km2), [Factor](CSSPModels.MikeSource.html#CSSPModels_MikeSource_Factor), [SourceNumberString](CSSPModels.MikeSource.html#CSSPModels_MikeSource_SourceNumberString), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeSourceService](CSSPServices.MikeSourceService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MikeSourceController](CSSPWebAPI.Controllers.MikeSourceController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MikeSource : LastUpdate
@@ -275,6 +277,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MikeSourceText](CSSPModels.MikeSource.html#CSSPModels_MikeSource_MikeSourceText), [LastUpdateContactText](CSSPModels.MikeSource.html#CSSPModels_MikeSource_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeSourceService](CSSPServices.MikeSourceService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MikeSourceController](CSSPWebAPI.Controllers.MikeSourceController.html)</para>
+    /// > <para>**Inherits [MikeSource](CSSPModels.MikeSource.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MikeSourceExtraA : MikeSource
     {
@@ -337,6 +350,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MikeSourceReportTest](CSSPModels.MikeSource.html#CSSPModels_MikeSource_MikeSourceReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeSourceService](CSSPServices.MikeSourceService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MikeSourceController](CSSPWebAPI.Controllers.MikeSourceController.html)</para>
+    /// > <para>**Inherits [MikeSourceExtraA](CSSPModels.MikeSourceExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MikeSourceExtraB : MikeSourceExtraA
     {

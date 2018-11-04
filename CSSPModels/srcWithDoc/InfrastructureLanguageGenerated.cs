@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table InfrastructureLanguages** : [InfrastructureLanguageID](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_InfrastructureLanguageID), [InfrastructureID](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_InfrastructureID), [Language](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_Language), [Comment](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_Comment), [TranslationStatus](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_HasErrors), [ValidationResults](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_ValidationResults), </para>
+    /// > <para>**DB properties for table InfrastructureLanguages** : [InfrastructureLanguageID](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_InfrastructureLanguageID), [InfrastructureID](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_InfrastructureID), [Language](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_Language), [Comment](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_Comment), [TranslationStatus](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_TranslationStatus), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [InfrastructureLanguageService](CSSPServices.InfrastructureLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [InfrastructureLanguageController](CSSPWebAPI.Controllers.InfrastructureLanguageController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class InfrastructureLanguage : LastUpdate
@@ -156,6 +158,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_LastUpdateContactText), [LanguageText](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_LanguageText), [TranslationStatusText](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_TranslationStatusText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [InfrastructureLanguageService](CSSPServices.InfrastructureLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [InfrastructureLanguageController](CSSPWebAPI.Controllers.InfrastructureLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [InfrastructureLanguage](CSSPModels.InfrastructureLanguage.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class InfrastructureLanguageExtraA : InfrastructureLanguage
     {
@@ -247,6 +261,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [InfrastructureLanguageReportTest](CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_InfrastructureLanguageReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [InfrastructureLanguageService](CSSPServices.InfrastructureLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [InfrastructureLanguageController](CSSPWebAPI.Controllers.InfrastructureLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [InfrastructureLanguageExtraA](CSSPModels.InfrastructureLanguageExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class InfrastructureLanguageExtraB : InfrastructureLanguageExtraA
     {

@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table TVItemLanguages** : [TVItemLanguageID](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TVItemLanguageID), [TVItemID](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TVItemID), [Language](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_Language), [TVText](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TVText), [TranslationStatus](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_HasErrors), [ValidationResults](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_ValidationResults), </para>
+    /// > <para>**DB properties for table TVItemLanguages** : [TVItemLanguageID](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TVItemLanguageID), [TVItemID](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TVItemID), [Language](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_Language), [TVText](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TVText), [TranslationStatus](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TranslationStatus), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVItemLanguageService](CSSPServices.TVItemLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVItemLanguageController](CSSPWebAPI.Controllers.TVItemLanguageController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class TVItemLanguage : LastUpdate
@@ -159,6 +161,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_LastUpdateContactText), [LanguageText](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_LanguageText), [TranslationStatusText](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TranslationStatusText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVItemLanguageService](CSSPServices.TVItemLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVItemLanguageController](CSSPWebAPI.Controllers.TVItemLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [TVItemLanguage](CSSPModels.TVItemLanguage.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TVItemLanguageExtraA : TVItemLanguage
     {
@@ -250,6 +264,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TVItemLanguageReportTest](CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TVItemLanguageReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVItemLanguageService](CSSPServices.TVItemLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVItemLanguageController](CSSPWebAPI.Controllers.TVItemLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [TVItemLanguageExtraA](CSSPModels.TVItemLanguageExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TVItemLanguageExtraB : TVItemLanguageExtraA
     {

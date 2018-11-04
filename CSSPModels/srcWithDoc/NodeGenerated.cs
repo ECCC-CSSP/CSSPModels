@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [ID](CSSPModels.Node.html#CSSPModels_Node_ID), [X](CSSPModels.Node.html#CSSPModels_Node_X), [Y](CSSPModels.Node.html#CSSPModels_Node_Y), [Z](CSSPModels.Node.html#CSSPModels_Node_Z), [Code](CSSPModels.Node.html#CSSPModels_Node_Code), [Value](CSSPModels.Node.html#CSSPModels_Node_Value), [ElementList](CSSPModels.Node.html#CSSPModels_Node_ElementList), [ConnectNodeList](CSSPModels.Node.html#CSSPModels_Node_ConnectNodeList), [HasErrors](CSSPModels.Node.html#CSSPModels_Node_HasErrors), [ValidationResults](CSSPModels.Node.html#CSSPModels_Node_ValidationResults), </para>
+    /// > <para>**Other properties** : [ID](CSSPModels.Node.html#CSSPModels_Node_ID), [X](CSSPModels.Node.html#CSSPModels_Node_X), [Y](CSSPModels.Node.html#CSSPModels_Node_Y), [Z](CSSPModels.Node.html#CSSPModels_Node_Z), [Code](CSSPModels.Node.html#CSSPModels_Node_Code), [Value](CSSPModels.Node.html#CSSPModels_Node_Value), [ElementList](CSSPModels.Node.html#CSSPModels_Node_ElementList), [ConnectNodeList](CSSPModels.Node.html#CSSPModels_Node_ConnectNodeList), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [NodeService](CSSPServices.NodeService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

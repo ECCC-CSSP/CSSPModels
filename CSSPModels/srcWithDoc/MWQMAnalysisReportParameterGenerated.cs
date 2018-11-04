@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MWQMAnalysisReportParameters** : [MWQMAnalysisReportParameterID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_MWQMAnalysisReportParameterID), [SubsectorTVItemID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_SubsectorTVItemID), [AnalysisName](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisName), [AnalysisReportYear](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisReportYear), [StartDate](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_StartDate), [EndDate](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_EndDate), [AnalysisCalculationType](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisCalculationType), [NumberOfRuns](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_NumberOfRuns), [FullYear](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_FullYear), [SalinityHighlightDeviationFromAverage](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_SalinityHighlightDeviationFromAverage), [ShortRangeNumberOfDays](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ShortRangeNumberOfDays), [MidRangeNumberOfDays](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_MidRangeNumberOfDays), [DryLimit24h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit24h), [DryLimit48h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit48h), [DryLimit72h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit72h), [DryLimit96h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit96h), [WetLimit24h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit24h), [WetLimit48h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit48h), [WetLimit72h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit72h), [WetLimit96h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit96h), [RunsToOmit](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_RunsToOmit), [ShowDataTypes](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ShowDataTypes), [ExcelTVFileTVItemID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ExcelTVFileTVItemID), [Command](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_Command), [LastUpdateDate_UTC](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_HasErrors), [ValidationResults](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ValidationResults), </para>
+    /// > <para>**DB properties for table MWQMAnalysisReportParameters** : [MWQMAnalysisReportParameterID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_MWQMAnalysisReportParameterID), [SubsectorTVItemID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_SubsectorTVItemID), [AnalysisName](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisName), [AnalysisReportYear](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisReportYear), [StartDate](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_StartDate), [EndDate](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_EndDate), [AnalysisCalculationType](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisCalculationType), [NumberOfRuns](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_NumberOfRuns), [FullYear](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_FullYear), [SalinityHighlightDeviationFromAverage](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_SalinityHighlightDeviationFromAverage), [ShortRangeNumberOfDays](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ShortRangeNumberOfDays), [MidRangeNumberOfDays](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_MidRangeNumberOfDays), [DryLimit24h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit24h), [DryLimit48h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit48h), [DryLimit72h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit72h), [DryLimit96h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_DryLimit96h), [WetLimit24h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit24h), [WetLimit48h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit48h), [WetLimit72h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit72h), [WetLimit96h](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_WetLimit96h), [RunsToOmit](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_RunsToOmit), [ShowDataTypes](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ShowDataTypes), [ExcelTVFileTVItemID](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ExcelTVFileTVItemID), [Command](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_Command), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMAnalysisReportParameterService](CSSPServices.MWQMAnalysisReportParameterService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMAnalysisReportParameterController](CSSPWebAPI.Controllers.MWQMAnalysisReportParameterController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [AnalysisCalculationTypeEnum](CSSPEnums.AnalysisCalculationTypeEnum.html), [AnalysisReportExportCommandEnum](CSSPEnums.AnalysisReportExportCommandEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MWQMAnalysisReportParameter : LastUpdate
@@ -623,6 +625,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [ExcelTVFileText](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_ExcelTVFileText), [CommandText](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_CommandText), [LastUpdateContactText](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMAnalysisReportParameterService](CSSPServices.MWQMAnalysisReportParameterService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMAnalysisReportParameterController](CSSPWebAPI.Controllers.MWQMAnalysisReportParameterController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [AnalysisCalculationTypeEnum](CSSPEnums.AnalysisCalculationTypeEnum.html), [AnalysisReportExportCommandEnum](CSSPEnums.AnalysisReportExportCommandEnum.html)</para>
+    /// > <para>**Inherits [MWQMAnalysisReportParameter](CSSPModels.MWQMAnalysisReportParameter.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMAnalysisReportParameterExtraA : MWQMAnalysisReportParameter
     {
@@ -714,6 +728,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MWQMAnalysisReportParameterReportTest](CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_MWQMAnalysisReportParameterReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMAnalysisReportParameterService](CSSPServices.MWQMAnalysisReportParameterService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMAnalysisReportParameterController](CSSPWebAPI.Controllers.MWQMAnalysisReportParameterController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [AnalysisCalculationTypeEnum](CSSPEnums.AnalysisCalculationTypeEnum.html), [AnalysisReportExportCommandEnum](CSSPEnums.AnalysisReportExportCommandEnum.html)</para>
+    /// > <para>**Inherits [MWQMAnalysisReportParameterExtraA](CSSPModels.MWQMAnalysisReportParameterExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMAnalysisReportParameterExtraB : MWQMAnalysisReportParameterExtraA
     {

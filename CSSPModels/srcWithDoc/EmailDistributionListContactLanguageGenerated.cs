@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table EmailDistributionListContactLanguages** : [EmailDistributionListContactLanguageID](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_EmailDistributionListContactLanguageID), [EmailDistributionListContactID](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_EmailDistributionListContactID), [Language](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_Language), [Agency](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_Agency), [TranslationStatus](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_HasErrors), [ValidationResults](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_ValidationResults), </para>
+    /// > <para>**DB properties for table EmailDistributionListContactLanguages** : [EmailDistributionListContactLanguageID](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_EmailDistributionListContactLanguageID), [EmailDistributionListContactID](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_EmailDistributionListContactID), [Language](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_Language), [Agency](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_Agency), [TranslationStatus](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_TranslationStatus), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailDistributionListContactLanguageService](CSSPServices.EmailDistributionListContactLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [EmailDistributionListContactLanguageController](CSSPWebAPI.Controllers.EmailDistributionListContactLanguageController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class EmailDistributionListContactLanguage : LastUpdate
@@ -157,6 +159,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_LastUpdateContactText), [LanguageText](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_LanguageText), [TranslationStatusText](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_TranslationStatusText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailDistributionListContactLanguageService](CSSPServices.EmailDistributionListContactLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [EmailDistributionListContactLanguageController](CSSPWebAPI.Controllers.EmailDistributionListContactLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [EmailDistributionListContactLanguage](CSSPModels.EmailDistributionListContactLanguage.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class EmailDistributionListContactLanguageExtraA : EmailDistributionListContactLanguage
     {
@@ -248,6 +262,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [EmailDistributionListContactLanguageReportTest](CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_EmailDistributionListContactLanguageReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailDistributionListContactLanguageService](CSSPServices.EmailDistributionListContactLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [EmailDistributionListContactLanguageController](CSSPWebAPI.Controllers.EmailDistributionListContactLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [EmailDistributionListContactLanguageExtraA](CSSPModels.EmailDistributionListContactLanguageExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class EmailDistributionListContactLanguageExtraB : EmailDistributionListContactLanguageExtraA
     {

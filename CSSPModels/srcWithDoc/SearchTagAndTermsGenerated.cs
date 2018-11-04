@@ -17,10 +17,10 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [SearchTag](CSSPModels.SearchTagAndTerms.html#CSSPModels_SearchTagAndTerms_SearchTag), [SearchTagText](CSSPModels.SearchTagAndTerms.html#CSSPModels_SearchTagAndTerms_SearchTagText), [SearchTermList](CSSPModels.SearchTagAndTerms.html#CSSPModels_SearchTagAndTerms_SearchTermList), [HasErrors](CSSPModels.SearchTagAndTerms.html#CSSPModels_SearchTagAndTerms_HasErrors), [ValidationResults](CSSPModels.SearchTagAndTerms.html#CSSPModels_SearchTagAndTerms_ValidationResults), </para>
+    /// > <para>**Other properties** : [SearchTag](CSSPModels.SearchTagAndTerms.html#CSSPModels_SearchTagAndTerms_SearchTag), [SearchTagText](CSSPModels.SearchTagAndTerms.html#CSSPModels_SearchTagAndTerms_SearchTagText), [SearchTermList](CSSPModels.SearchTagAndTerms.html#CSSPModels_SearchTagAndTerms_SearchTermList), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SearchTagAndTermsService](CSSPServices.SearchTagAndTermsService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SearchTagEnum](CSSPEnums.SearchTagEnum.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

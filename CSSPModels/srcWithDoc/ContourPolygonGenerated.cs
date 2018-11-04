@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [ContourValue](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_ContourValue), [Layer](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_Layer), [Depth_m](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_Depth_m), [ContourNodeList](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_ContourNodeList), [HasErrors](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_HasErrors), [ValidationResults](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_ValidationResults), </para>
+    /// > <para>**Other properties** : [ContourValue](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_ContourValue), [Layer](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_Layer), [Depth_m](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_Depth_m), [ContourNodeList](CSSPModels.ContourPolygon.html#CSSPModels_ContourPolygon_ContourNodeList), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContourPolygonService](CSSPServices.ContourPolygonService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

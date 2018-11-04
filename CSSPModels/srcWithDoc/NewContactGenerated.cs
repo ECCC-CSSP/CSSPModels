@@ -17,10 +17,10 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [LoginEmail](CSSPModels.NewContact.html#CSSPModels_NewContact_LoginEmail), [FirstName](CSSPModels.NewContact.html#CSSPModels_NewContact_FirstName), [LastName](CSSPModels.NewContact.html#CSSPModels_NewContact_LastName), [Initial](CSSPModels.NewContact.html#CSSPModels_NewContact_Initial), [ContactTitle](CSSPModels.NewContact.html#CSSPModels_NewContact_ContactTitle), [ContactTitleText](CSSPModels.NewContact.html#CSSPModels_NewContact_ContactTitleText), [HasErrors](CSSPModels.NewContact.html#CSSPModels_NewContact_HasErrors), [ValidationResults](CSSPModels.NewContact.html#CSSPModels_NewContact_ValidationResults), </para>
+    /// > <para>**Other properties** : [LoginEmail](CSSPModels.NewContact.html#CSSPModels_NewContact_LoginEmail), [FirstName](CSSPModels.NewContact.html#CSSPModels_NewContact_FirstName), [LastName](CSSPModels.NewContact.html#CSSPModels_NewContact_LastName), [Initial](CSSPModels.NewContact.html#CSSPModels_NewContact_Initial), [ContactTitle](CSSPModels.NewContact.html#CSSPModels_NewContact_ContactTitle), [ContactTitleText](CSSPModels.NewContact.html#CSSPModels_NewContact_ContactTitleText), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [NewContactService](CSSPServices.NewContactService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ContactTitleEnum](CSSPEnums.ContactTitleEnum.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MWQMSubsectors** : [MWQMSubsectorID](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_MWQMSubsectorID), [MWQMSubsectorTVItemID](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_MWQMSubsectorTVItemID), [SubsectorHistoricKey](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_SubsectorHistoricKey), [TideLocationSIDText](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_TideLocationSIDText), [LastUpdateDate_UTC](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_HasErrors), [ValidationResults](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_ValidationResults), </para>
+    /// > <para>**DB properties for table MWQMSubsectors** : [MWQMSubsectorID](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_MWQMSubsectorID), [MWQMSubsectorTVItemID](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_MWQMSubsectorTVItemID), [SubsectorHistoricKey](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_SubsectorHistoricKey), [TideLocationSIDText](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_TideLocationSIDText), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSubsectorService](CSSPServices.MWQMSubsectorService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSubsectorController](CSSPWebAPI.Controllers.MWQMSubsectorController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MWQMSubsector : LastUpdate
@@ -134,6 +136,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [SubsectorText](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_SubsectorText), [LastUpdateContactText](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSubsectorService](CSSPServices.MWQMSubsectorService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSubsectorController](CSSPWebAPI.Controllers.MWQMSubsectorController.html)</para>
+    /// > <para>**Inherits [MWQMSubsector](CSSPModels.MWQMSubsector.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMSubsectorExtraA : MWQMSubsector
     {
@@ -196,6 +209,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MWQMSubsectorReportTest](CSSPModels.MWQMSubsector.html#CSSPModels_MWQMSubsector_MWQMSubsectorReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSubsectorService](CSSPServices.MWQMSubsectorService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSubsectorController](CSSPWebAPI.Controllers.MWQMSubsectorController.html)</para>
+    /// > <para>**Inherits [MWQMSubsectorExtraA](CSSPModels.MWQMSubsectorExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMSubsectorExtraB : MWQMSubsectorExtraA
     {

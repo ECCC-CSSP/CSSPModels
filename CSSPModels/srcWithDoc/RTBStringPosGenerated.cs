@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [StartPos](CSSPModels.RTBStringPos.html#CSSPModels_RTBStringPos_StartPos), [EndPos](CSSPModels.RTBStringPos.html#CSSPModels_RTBStringPos_EndPos), [Text](CSSPModels.RTBStringPos.html#CSSPModels_RTBStringPos_Text), [TagText](CSSPModels.RTBStringPos.html#CSSPModels_RTBStringPos_TagText), [HasErrors](CSSPModels.RTBStringPos.html#CSSPModels_RTBStringPos_HasErrors), [ValidationResults](CSSPModels.RTBStringPos.html#CSSPModels_RTBStringPos_ValidationResults), </para>
+    /// > <para>**Other properties** : [StartPos](CSSPModels.RTBStringPos.html#CSSPModels_RTBStringPos_StartPos), [EndPos](CSSPModels.RTBStringPos.html#CSSPModels_RTBStringPos_EndPos), [Text](CSSPModels.RTBStringPos.html#CSSPModels_RTBStringPos_Text), [TagText](CSSPModels.RTBStringPos.html#CSSPModels_RTBStringPos_TagText), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [RTBStringPosService](CSSPServices.RTBStringPosService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

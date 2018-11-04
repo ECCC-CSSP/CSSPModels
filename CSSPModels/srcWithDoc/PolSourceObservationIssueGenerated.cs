@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table PolSourceObservationIssues** : [PolSourceObservationIssueID](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationIssueID), [PolSourceObservationID](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationID), [ObservationInfo](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_ObservationInfo), [Ordinal](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_Ordinal), [ExtraComment](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_ExtraComment), [LastUpdateDate_UTC](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_HasErrors), [ValidationResults](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_ValidationResults), </para>
+    /// > <para>**DB properties for table PolSourceObservationIssues** : [PolSourceObservationIssueID](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationIssueID), [PolSourceObservationID](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationID), [ObservationInfo](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_ObservationInfo), [Ordinal](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_Ordinal), [ExtraComment](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_ExtraComment), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceObservationIssueService](CSSPServices.PolSourceObservationIssueService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [PolSourceObservationIssueController](CSSPWebAPI.Controllers.PolSourceObservationIssueController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class PolSourceObservationIssue : LastUpdate
@@ -155,6 +157,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceObservationIssueService](CSSPServices.PolSourceObservationIssueService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [PolSourceObservationIssueController](CSSPWebAPI.Controllers.PolSourceObservationIssueController.html)</para>
+    /// > <para>**Inherits [PolSourceObservationIssue](CSSPModels.PolSourceObservationIssue.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class PolSourceObservationIssueExtraA : PolSourceObservationIssue
     {
@@ -192,6 +205,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [PolSourceObservationIssueReportTest](CSSPModels.PolSourceObservationIssue.html#CSSPModels_PolSourceObservationIssue_PolSourceObservationIssueReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceObservationIssueService](CSSPServices.PolSourceObservationIssueService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [PolSourceObservationIssueController](CSSPWebAPI.Controllers.PolSourceObservationIssueController.html)</para>
+    /// > <para>**Inherits [PolSourceObservationIssueExtraA](CSSPModels.PolSourceObservationIssueExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class PolSourceObservationIssueExtraB : PolSourceObservationIssueExtraA
     {

@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [TVItemSubsector](CSSPModels.TVItemSubsectorAndMWQMSite.html#CSSPModels_TVItemSubsectorAndMWQMSite_TVItemSubsector), [TVItemMWQMSiteList](CSSPModels.TVItemSubsectorAndMWQMSite.html#CSSPModels_TVItemSubsectorAndMWQMSite_TVItemMWQMSiteList), [TVItemMWQMSiteDuplicate](CSSPModels.TVItemSubsectorAndMWQMSite.html#CSSPModels_TVItemSubsectorAndMWQMSite_TVItemMWQMSiteDuplicate), [HasErrors](CSSPModels.TVItemSubsectorAndMWQMSite.html#CSSPModels_TVItemSubsectorAndMWQMSite_HasErrors), [ValidationResults](CSSPModels.TVItemSubsectorAndMWQMSite.html#CSSPModels_TVItemSubsectorAndMWQMSite_ValidationResults), </para>
+    /// > <para>**Other properties** : [TVItemSubsector](CSSPModels.TVItemSubsectorAndMWQMSite.html#CSSPModels_TVItemSubsectorAndMWQMSite_TVItemSubsector), [TVItemMWQMSiteList](CSSPModels.TVItemSubsectorAndMWQMSite.html#CSSPModels_TVItemSubsectorAndMWQMSite_TVItemMWQMSiteList), [TVItemMWQMSiteDuplicate](CSSPModels.TVItemSubsectorAndMWQMSite.html#CSSPModels_TVItemSubsectorAndMWQMSite_TVItemMWQMSiteDuplicate), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVItemSubsectorAndMWQMSiteService](CSSPServices.TVItemSubsectorAndMWQMSiteService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

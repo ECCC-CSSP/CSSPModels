@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [VPScenario](CSSPModels.VPFull.html#CSSPModels_VPFull_VPScenario), [VPAmbientList](CSSPModels.VPFull.html#CSSPModels_VPFull_VPAmbientList), [VPResultList](CSSPModels.VPFull.html#CSSPModels_VPFull_VPResultList), [HasErrors](CSSPModels.VPFull.html#CSSPModels_VPFull_HasErrors), [ValidationResults](CSSPModels.VPFull.html#CSSPModels_VPFull_ValidationResults), </para>
+    /// > <para>**Other properties** : [VPScenario](CSSPModels.VPFull.html#CSSPModels_VPFull_VPScenario), [VPAmbientList](CSSPModels.VPFull.html#CSSPModels_VPFull_VPAmbientList), [VPResultList](CSSPModels.VPFull.html#CSSPModels_VPFull_VPResultList), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPFullService](CSSPServices.VPFullService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

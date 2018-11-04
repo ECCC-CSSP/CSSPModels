@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [VPScenarioID](CSSPModels.VPScenarioIDAndRawResults.html#CSSPModels_VPScenarioIDAndRawResults_VPScenarioID), [RawResults](CSSPModels.VPScenarioIDAndRawResults.html#CSSPModels_VPScenarioIDAndRawResults_RawResults), [HasErrors](CSSPModels.VPScenarioIDAndRawResults.html#CSSPModels_VPScenarioIDAndRawResults_HasErrors), [ValidationResults](CSSPModels.VPScenarioIDAndRawResults.html#CSSPModels_VPScenarioIDAndRawResults_ValidationResults), </para>
+    /// > <para>**Other properties** : [VPScenarioID](CSSPModels.VPScenarioIDAndRawResults.html#CSSPModels_VPScenarioIDAndRawResults_VPScenarioID), [RawResults](CSSPModels.VPScenarioIDAndRawResults.html#CSSPModels_VPScenarioIDAndRawResults_RawResults), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPScenarioIDAndRawResultsService](CSSPServices.VPScenarioIDAndRawResultsService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

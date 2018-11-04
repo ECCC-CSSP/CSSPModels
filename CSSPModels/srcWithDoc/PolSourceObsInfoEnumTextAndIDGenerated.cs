@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Text](CSSPModels.PolSourceObsInfoEnumTextAndID.html#CSSPModels_PolSourceObsInfoEnumTextAndID_Text), [ID](CSSPModels.PolSourceObsInfoEnumTextAndID.html#CSSPModels_PolSourceObsInfoEnumTextAndID_ID), [HasErrors](CSSPModels.PolSourceObsInfoEnumTextAndID.html#CSSPModels_PolSourceObsInfoEnumTextAndID_HasErrors), [ValidationResults](CSSPModels.PolSourceObsInfoEnumTextAndID.html#CSSPModels_PolSourceObsInfoEnumTextAndID_ValidationResults), </para>
+    /// > <para>**Other properties** : [Text](CSSPModels.PolSourceObsInfoEnumTextAndID.html#CSSPModels_PolSourceObsInfoEnumTextAndID_Text), [ID](CSSPModels.PolSourceObsInfoEnumTextAndID.html#CSSPModels_PolSourceObsInfoEnumTextAndID_ID), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceObsInfoEnumTextAndIDService](CSSPServices.PolSourceObsInfoEnumTextAndIDService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

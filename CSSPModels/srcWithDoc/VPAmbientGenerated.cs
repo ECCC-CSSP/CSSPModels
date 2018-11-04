@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table VPAmbients** : [VPAmbientID](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_VPAmbientID), [VPScenarioID](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_VPScenarioID), [Row](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_Row), [MeasurementDepth_m](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_MeasurementDepth_m), [CurrentSpeed_m_s](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_CurrentSpeed_m_s), [CurrentDirection_deg](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_CurrentDirection_deg), [AmbientSalinity_PSU](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_AmbientSalinity_PSU), [AmbientTemperature_C](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_AmbientTemperature_C), [BackgroundConcentration_MPN_100ml](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_BackgroundConcentration_MPN_100ml), [PollutantDecayRate_per_day](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_PollutantDecayRate_per_day), [FarFieldCurrentSpeed_m_s](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_FarFieldCurrentSpeed_m_s), [FarFieldCurrentDirection_deg](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_FarFieldCurrentDirection_deg), [FarFieldDiffusionCoefficient](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_FarFieldDiffusionCoefficient), [LastUpdateDate_UTC](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_HasErrors), [ValidationResults](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_ValidationResults), </para>
+    /// > <para>**DB properties for table VPAmbients** : [VPAmbientID](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_VPAmbientID), [VPScenarioID](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_VPScenarioID), [Row](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_Row), [MeasurementDepth_m](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_MeasurementDepth_m), [CurrentSpeed_m_s](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_CurrentSpeed_m_s), [CurrentDirection_deg](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_CurrentDirection_deg), [AmbientSalinity_PSU](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_AmbientSalinity_PSU), [AmbientTemperature_C](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_AmbientTemperature_C), [BackgroundConcentration_MPN_100ml](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_BackgroundConcentration_MPN_100ml), [PollutantDecayRate_per_day](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_PollutantDecayRate_per_day), [FarFieldCurrentSpeed_m_s](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_FarFieldCurrentSpeed_m_s), [FarFieldCurrentDirection_deg](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_FarFieldCurrentDirection_deg), [FarFieldDiffusionCoefficient](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_FarFieldDiffusionCoefficient), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPAmbientService](CSSPServices.VPAmbientService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [VPAmbientController](CSSPWebAPI.Controllers.VPAmbientController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class VPAmbient : LastUpdate
@@ -346,6 +348,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPAmbientService](CSSPServices.VPAmbientService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [VPAmbientController](CSSPWebAPI.Controllers.VPAmbientController.html)</para>
+    /// > <para>**Inherits [VPAmbient](CSSPModels.VPAmbient.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class VPAmbientExtraA : VPAmbient
     {
@@ -383,6 +396,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [VPAmbientReportTest](CSSPModels.VPAmbient.html#CSSPModels_VPAmbient_VPAmbientReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPAmbientService](CSSPServices.VPAmbientService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [VPAmbientController](CSSPWebAPI.Controllers.VPAmbientController.html)</para>
+    /// > <para>**Inherits [VPAmbientExtraA](CSSPModels.VPAmbientExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class VPAmbientExtraB : VPAmbientExtraA
     {

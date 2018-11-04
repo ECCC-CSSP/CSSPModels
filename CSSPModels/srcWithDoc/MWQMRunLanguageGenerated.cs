@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MWQMRunLanguages** : [MWQMRunLanguageID](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_MWQMRunLanguageID), [MWQMRunID](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_MWQMRunID), [Language](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_Language), [RunComment](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_RunComment), [TranslationStatusRunComment](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_TranslationStatusRunComment), [RunWeatherComment](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_RunWeatherComment), [TranslationStatusRunWeatherComment](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_TranslationStatusRunWeatherComment), [LastUpdateDate_UTC](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_HasErrors), [ValidationResults](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_ValidationResults), </para>
+    /// > <para>**DB properties for table MWQMRunLanguages** : [MWQMRunLanguageID](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_MWQMRunLanguageID), [MWQMRunID](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_MWQMRunID), [Language](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_Language), [RunComment](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_RunComment), [TranslationStatusRunComment](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_TranslationStatusRunComment), [RunWeatherComment](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_RunWeatherComment), [TranslationStatusRunWeatherComment](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_TranslationStatusRunWeatherComment), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMRunLanguageService](CSSPServices.MWQMRunLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMRunLanguageController](CSSPWebAPI.Controllers.MWQMRunLanguageController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MWQMRunLanguage : LastUpdate
@@ -204,6 +206,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_LastUpdateContactText), [LanguageText](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_LanguageText), [TranslationStatusRunCommentText](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_TranslationStatusRunCommentText), [TranslationStatusRunWeatherCommentText](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_TranslationStatusRunWeatherCommentText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMRunLanguageService](CSSPServices.MWQMRunLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMRunLanguageController](CSSPWebAPI.Controllers.MWQMRunLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [MWQMRunLanguage](CSSPModels.MWQMRunLanguage.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMRunLanguageExtraA : MWQMRunLanguage
     {
@@ -322,6 +336,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MWQMRunLanguageReportTest](CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_MWQMRunLanguageReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMRunLanguageService](CSSPServices.MWQMRunLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMRunLanguageController](CSSPWebAPI.Controllers.MWQMRunLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [MWQMRunLanguageExtraA](CSSPModels.MWQMRunLanguageExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMRunLanguageExtraB : MWQMRunLanguageExtraA
     {

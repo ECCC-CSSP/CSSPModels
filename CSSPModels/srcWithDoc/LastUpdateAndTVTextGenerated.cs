@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [LastUpdateAndTVTextDate_UTC](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_LastUpdateAndTVTextDate_UTC), [LastUpdateDate_Local](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_LastUpdateDate_Local), [TVText](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_TVText), [HasErrors](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_HasErrors), [ValidationResults](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_ValidationResults), </para>
+    /// > <para>**Other properties** : [LastUpdateAndTVTextDate_UTC](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_LastUpdateAndTVTextDate_UTC), [LastUpdateDate_Local](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_LastUpdateDate_Local), [TVText](CSSPModels.LastUpdateAndTVText.html#CSSPModels_LastUpdateAndTVText_TVText), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LastUpdateAndTVTextService](CSSPServices.LastUpdateAndTVTextService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

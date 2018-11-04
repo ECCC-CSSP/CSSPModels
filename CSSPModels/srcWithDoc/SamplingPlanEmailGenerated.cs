@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table SamplingPlanEmails** : [SamplingPlanEmailID](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_SamplingPlanEmailID), [SamplingPlanID](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_SamplingPlanID), [Email](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_Email), [IsContractor](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_IsContractor), [LabSheetHasValueOver500](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_LabSheetHasValueOver500), [LabSheetReceived](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_LabSheetReceived), [LabSheetAccepted](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_LabSheetAccepted), [LabSheetRejected](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_LabSheetRejected), [LastUpdateDate_UTC](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_HasErrors), [ValidationResults](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_ValidationResults), </para>
+    /// > <para>**DB properties for table SamplingPlanEmails** : [SamplingPlanEmailID](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_SamplingPlanEmailID), [SamplingPlanID](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_SamplingPlanID), [Email](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_Email), [IsContractor](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_IsContractor), [LabSheetHasValueOver500](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_LabSheetHasValueOver500), [LabSheetReceived](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_LabSheetReceived), [LabSheetAccepted](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_LabSheetAccepted), [LabSheetRejected](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_LabSheetRejected), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SamplingPlanEmailService](CSSPServices.SamplingPlanEmailService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SamplingPlanEmailController](CSSPWebAPI.Controllers.SamplingPlanEmailController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class SamplingPlanEmail : LastUpdate
@@ -222,6 +224,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SamplingPlanEmailService](CSSPServices.SamplingPlanEmailService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SamplingPlanEmailController](CSSPWebAPI.Controllers.SamplingPlanEmailController.html)</para>
+    /// > <para>**Inherits [SamplingPlanEmail](CSSPModels.SamplingPlanEmail.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class SamplingPlanEmailExtraA : SamplingPlanEmail
     {
@@ -259,6 +272,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [SamplingPlanEmailReportTest](CSSPModels.SamplingPlanEmail.html#CSSPModels_SamplingPlanEmail_SamplingPlanEmailReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SamplingPlanEmailService](CSSPServices.SamplingPlanEmailService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SamplingPlanEmailController](CSSPWebAPI.Controllers.SamplingPlanEmailController.html)</para>
+    /// > <para>**Inherits [SamplingPlanEmailExtraA](CSSPModels.SamplingPlanEmailExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class SamplingPlanEmailExtraB : SamplingPlanEmailExtraA
     {

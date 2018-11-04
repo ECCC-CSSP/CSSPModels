@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table TideDataValues** : [TideDataValueID](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideDataValueID), [TideSiteTVItemID](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideSiteTVItemID), [DateTime_Local](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_DateTime_Local), [Keep](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_Keep), [TideDataType](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideDataType), [StorageDataType](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_StorageDataType), [Depth_m](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_Depth_m), [UVelocity_m_s](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_UVelocity_m_s), [VVelocity_m_s](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_VVelocity_m_s), [TideStart](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideStart), [TideEnd](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideEnd), [LastUpdateDate_UTC](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_HasErrors), [ValidationResults](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_ValidationResults), </para>
+    /// > <para>**DB properties for table TideDataValues** : [TideDataValueID](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideDataValueID), [TideSiteTVItemID](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideSiteTVItemID), [DateTime_Local](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_DateTime_Local), [Keep](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_Keep), [TideDataType](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideDataType), [StorageDataType](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_StorageDataType), [Depth_m](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_Depth_m), [UVelocity_m_s](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_UVelocity_m_s), [VVelocity_m_s](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_VVelocity_m_s), [TideStart](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideStart), [TideEnd](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideEnd), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TideDataValueService](CSSPServices.TideDataValueService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TideDataValueController](CSSPWebAPI.Controllers.TideDataValueController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TideDataTypeEnum](CSSPEnums.TideDataTypeEnum.html), [StorageDataTypeEnum](CSSPEnums.StorageDataTypeEnum.html), [TideTextEnum](CSSPEnums.TideTextEnum.html), [TideTextEnum](CSSPEnums.TideTextEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class TideDataValue : LastUpdate
@@ -309,6 +311,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TideSiteText](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideSiteText), [LastUpdateContactText](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_LastUpdateContactText), [TideDataTypeText](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideDataTypeText), [StorageDataTypeText](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_StorageDataTypeText), [TideStartText](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideStartText), [TideEndText](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideEndText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TideDataValueService](CSSPServices.TideDataValueService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TideDataValueController](CSSPWebAPI.Controllers.TideDataValueController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TideDataTypeEnum](CSSPEnums.TideDataTypeEnum.html), [StorageDataTypeEnum](CSSPEnums.StorageDataTypeEnum.html), [TideTextEnum](CSSPEnums.TideTextEnum.html), [TideTextEnum](CSSPEnums.TideTextEnum.html)</para>
+    /// > <para>**Inherits [TideDataValue](CSSPModels.TideDataValue.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TideDataValueExtraA : TideDataValue
     {
@@ -479,6 +493,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TideDataValueReportTest](CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideDataValueReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TideDataValueService](CSSPServices.TideDataValueService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TideDataValueController](CSSPWebAPI.Controllers.TideDataValueController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TideDataTypeEnum](CSSPEnums.TideDataTypeEnum.html), [StorageDataTypeEnum](CSSPEnums.StorageDataTypeEnum.html), [TideTextEnum](CSSPEnums.TideTextEnum.html), [TideTextEnum](CSSPEnums.TideTextEnum.html)</para>
+    /// > <para>**Inherits [TideDataValueExtraA](CSSPModels.TideDataValueExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TideDataValueExtraB : TideDataValueExtraA
     {

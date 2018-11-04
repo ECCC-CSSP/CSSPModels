@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table VPResults** : [VPResultID](CSSPModels.VPResult.html#CSSPModels_VPResult_VPResultID), [VPScenarioID](CSSPModels.VPResult.html#CSSPModels_VPResult_VPScenarioID), [Ordinal](CSSPModels.VPResult.html#CSSPModels_VPResult_Ordinal), [Concentration_MPN_100ml](CSSPModels.VPResult.html#CSSPModels_VPResult_Concentration_MPN_100ml), [Dilution](CSSPModels.VPResult.html#CSSPModels_VPResult_Dilution), [FarFieldWidth_m](CSSPModels.VPResult.html#CSSPModels_VPResult_FarFieldWidth_m), [DispersionDistance_m](CSSPModels.VPResult.html#CSSPModels_VPResult_DispersionDistance_m), [TravelTime_hour](CSSPModels.VPResult.html#CSSPModels_VPResult_TravelTime_hour), [LastUpdateDate_UTC](CSSPModels.VPResult.html#CSSPModels_VPResult_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.VPResult.html#CSSPModels_VPResult_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.VPResult.html#CSSPModels_VPResult_HasErrors), [ValidationResults](CSSPModels.VPResult.html#CSSPModels_VPResult_ValidationResults), </para>
+    /// > <para>**DB properties for table VPResults** : [VPResultID](CSSPModels.VPResult.html#CSSPModels_VPResult_VPResultID), [VPScenarioID](CSSPModels.VPResult.html#CSSPModels_VPResult_VPScenarioID), [Ordinal](CSSPModels.VPResult.html#CSSPModels_VPResult_Ordinal), [Concentration_MPN_100ml](CSSPModels.VPResult.html#CSSPModels_VPResult_Concentration_MPN_100ml), [Dilution](CSSPModels.VPResult.html#CSSPModels_VPResult_Dilution), [FarFieldWidth_m](CSSPModels.VPResult.html#CSSPModels_VPResult_FarFieldWidth_m), [DispersionDistance_m](CSSPModels.VPResult.html#CSSPModels_VPResult_DispersionDistance_m), [TravelTime_hour](CSSPModels.VPResult.html#CSSPModels_VPResult_TravelTime_hour), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPResultService](CSSPServices.VPResultService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [VPResultController](CSSPWebAPI.Controllers.VPResultController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class VPResult : LastUpdate
@@ -226,6 +228,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.VPResult.html#CSSPModels_VPResult_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPResultService](CSSPServices.VPResultService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [VPResultController](CSSPWebAPI.Controllers.VPResultController.html)</para>
+    /// > <para>**Inherits [VPResult](CSSPModels.VPResult.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class VPResultExtraA : VPResult
     {
@@ -263,6 +276,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [VPResultReportTest](CSSPModels.VPResult.html#CSSPModels_VPResult_VPResultReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPResultService](CSSPServices.VPResultService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [VPResultController](CSSPWebAPI.Controllers.VPResultController.html)</para>
+    /// > <para>**Inherits [VPResultExtraA](CSSPModels.VPResultExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class VPResultExtraB : VPResultExtraA
     {

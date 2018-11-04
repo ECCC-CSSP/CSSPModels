@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table RatingCurves** : [RatingCurveID](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_RatingCurveID), [HydrometricSiteID](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_HydrometricSiteID), [RatingCurveNumber](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_RatingCurveNumber), [LastUpdateDate_UTC](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_HasErrors), [ValidationResults](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_ValidationResults), </para>
+    /// > <para>**DB properties for table RatingCurves** : [RatingCurveID](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_RatingCurveID), [HydrometricSiteID](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_HydrometricSiteID), [RatingCurveNumber](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_RatingCurveNumber), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [RatingCurveService](CSSPServices.RatingCurveService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [RatingCurveController](CSSPWebAPI.Controllers.RatingCurveController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class RatingCurve : LastUpdate
@@ -106,6 +108,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [RatingCurveService](CSSPServices.RatingCurveService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [RatingCurveController](CSSPWebAPI.Controllers.RatingCurveController.html)</para>
+    /// > <para>**Inherits [RatingCurve](CSSPModels.RatingCurve.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class RatingCurveExtraA : RatingCurve
     {
@@ -143,6 +156,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [RatingCurveReportTest](CSSPModels.RatingCurve.html#CSSPModels_RatingCurve_RatingCurveReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [RatingCurveService](CSSPServices.RatingCurveService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [RatingCurveController](CSSPWebAPI.Controllers.RatingCurveController.html)</para>
+    /// > <para>**Inherits [RatingCurveExtraA](CSSPModels.RatingCurveExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class RatingCurveExtraB : RatingCurveExtraA
     {

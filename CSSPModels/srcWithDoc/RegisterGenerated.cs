@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [LoginEmail](CSSPModels.Register.html#CSSPModels_Register_LoginEmail), [FirstName](CSSPModels.Register.html#CSSPModels_Register_FirstName), [Initial](CSSPModels.Register.html#CSSPModels_Register_Initial), [LastName](CSSPModels.Register.html#CSSPModels_Register_LastName), [WebName](CSSPModels.Register.html#CSSPModels_Register_WebName), [Password](CSSPModels.Register.html#CSSPModels_Register_Password), [ConfirmPassword](CSSPModels.Register.html#CSSPModels_Register_ConfirmPassword), [HasErrors](CSSPModels.Register.html#CSSPModels_Register_HasErrors), [ValidationResults](CSSPModels.Register.html#CSSPModels_Register_ValidationResults), </para>
+    /// > <para>**Other properties** : [LoginEmail](CSSPModels.Register.html#CSSPModels_Register_LoginEmail), [FirstName](CSSPModels.Register.html#CSSPModels_Register_FirstName), [Initial](CSSPModels.Register.html#CSSPModels_Register_Initial), [LastName](CSSPModels.Register.html#CSSPModels_Register_LastName), [WebName](CSSPModels.Register.html#CSSPModels_Register_WebName), [Password](CSSPModels.Register.html#CSSPModels_Register_Password), [ConfirmPassword](CSSPModels.Register.html#CSSPModels_Register_ConfirmPassword), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [RegisterService](CSSPServices.RegisterService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

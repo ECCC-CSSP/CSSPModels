@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MWQMLookupMPNs** : [MWQMLookupMPNID](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_MWQMLookupMPNID), [Tubes10](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_Tubes10), [Tubes1](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_Tubes1), [Tubes01](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_Tubes01), [MPN_100ml](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_MPN_100ml), [LastUpdateDate_UTC](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_HasErrors), [ValidationResults](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_ValidationResults), </para>
+    /// > <para>**DB properties for table MWQMLookupMPNs** : [MWQMLookupMPNID](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_MWQMLookupMPNID), [Tubes10](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_Tubes10), [Tubes1](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_Tubes1), [Tubes01](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_Tubes01), [MPN_100ml](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_MPN_100ml), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMLookupMPNService](CSSPServices.MWQMLookupMPNService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMLookupMPNController](CSSPWebAPI.Controllers.MWQMLookupMPNController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MWQMLookupMPN : LastUpdate
@@ -153,6 +155,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMLookupMPNService](CSSPServices.MWQMLookupMPNService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMLookupMPNController](CSSPWebAPI.Controllers.MWQMLookupMPNController.html)</para>
+    /// > <para>**Inherits [MWQMLookupMPN](CSSPModels.MWQMLookupMPN.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMLookupMPNExtraA : MWQMLookupMPN
     {
@@ -190,6 +203,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MWQMLookupMPNReportTest](CSSPModels.MWQMLookupMPN.html#CSSPModels_MWQMLookupMPN_MWQMLookupMPNReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMLookupMPNService](CSSPServices.MWQMLookupMPNService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMLookupMPNController](CSSPWebAPI.Controllers.MWQMLookupMPNController.html)</para>
+    /// > <para>**Inherits [MWQMLookupMPNExtraA](CSSPModels.MWQMLookupMPNExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMLookupMPNExtraB : MWQMLookupMPNExtraA
     {

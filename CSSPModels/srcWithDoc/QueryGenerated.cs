@@ -17,10 +17,10 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [ModelType](CSSPModels.Query.html#CSSPModels_Query_ModelType), [Language](CSSPModels.Query.html#CSSPModels_Query_Language), [Lang](CSSPModels.Query.html#CSSPModels_Query_Lang), [Skip](CSSPModels.Query.html#CSSPModels_Query_Skip), [Take](CSSPModels.Query.html#CSSPModels_Query_Take), [Order](CSSPModels.Query.html#CSSPModels_Query_Order), [Where](CSSPModels.Query.html#CSSPModels_Query_Where), [Extra](CSSPModels.Query.html#CSSPModels_Query_Extra), [OrderList](CSSPModels.Query.html#CSSPModels_Query_OrderList), [WhereInfoList](CSSPModels.Query.html#CSSPModels_Query_WhereInfoList), [HasErrors](CSSPModels.Query.html#CSSPModels_Query_HasErrors), [ValidationResults](CSSPModels.Query.html#CSSPModels_Query_ValidationResults), </para>
+    /// > <para>**Other properties** : [ModelType](CSSPModels.Query.html#CSSPModels_Query_ModelType), [Language](CSSPModels.Query.html#CSSPModels_Query_Language), [Lang](CSSPModels.Query.html#CSSPModels_Query_Lang), [Skip](CSSPModels.Query.html#CSSPModels_Query_Skip), [Take](CSSPModels.Query.html#CSSPModels_Query_Take), [Order](CSSPModels.Query.html#CSSPModels_Query_Order), [Where](CSSPModels.Query.html#CSSPModels_Query_Where), [Extra](CSSPModels.Query.html#CSSPModels_Query_Extra), [OrderList](CSSPModels.Query.html#CSSPModels_Query_OrderList), [WhereInfoList](CSSPModels.Query.html#CSSPModels_Query_WhereInfoList), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [QueryService](CSSPServices.QueryService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

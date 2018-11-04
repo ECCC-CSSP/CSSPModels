@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Lat](CSSPModels.LatLng.html#CSSPModels_LatLng_Lat), [Lng](CSSPModels.LatLng.html#CSSPModels_LatLng_Lng), [HasErrors](CSSPModels.LatLng.html#CSSPModels_LatLng_HasErrors), [ValidationResults](CSSPModels.LatLng.html#CSSPModels_LatLng_ValidationResults), </para>
+    /// > <para>**Other properties** : [Lat](CSSPModels.LatLng.html#CSSPModels_LatLng_Lat), [Lng](CSSPModels.LatLng.html#CSSPModels_LatLng_Lng), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LatLngService](CSSPServices.LatLngService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

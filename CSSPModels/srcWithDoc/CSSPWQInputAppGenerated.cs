@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [AccessCode](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_AccessCode), [ActiveYear](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_ActiveYear), [DailyDuplicatePrecisionCriteria](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_DailyDuplicatePrecisionCriteria), [IntertechDuplicatePrecisionCriteria](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_IntertechDuplicatePrecisionCriteria), [IncludeLaboratoryQAQC](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_IncludeLaboratoryQAQC), [ApprovalCode](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_ApprovalCode), [ApprovalDate](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_ApprovalDate), [HasErrors](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_HasErrors), [ValidationResults](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_ValidationResults), </para>
+    /// > <para>**Other properties** : [AccessCode](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_AccessCode), [ActiveYear](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_ActiveYear), [DailyDuplicatePrecisionCriteria](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_DailyDuplicatePrecisionCriteria), [IntertechDuplicatePrecisionCriteria](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_IntertechDuplicatePrecisionCriteria), [IncludeLaboratoryQAQC](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_IncludeLaboratoryQAQC), [ApprovalCode](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_ApprovalCode), [ApprovalDate](CSSPModels.CSSPWQInputApp.html#CSSPModels_CSSPWQInputApp_ApprovalDate), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [CSSPWQInputAppService](CSSPServices.CSSPWQInputAppService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

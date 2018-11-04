@@ -17,10 +17,10 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [FilePurpose](CSSPModels.FilePurposeAndText.html#CSSPModels_FilePurposeAndText_FilePurpose), [FilePurposeText](CSSPModels.FilePurposeAndText.html#CSSPModels_FilePurposeAndText_FilePurposeText), [HasErrors](CSSPModels.FilePurposeAndText.html#CSSPModels_FilePurposeAndText_HasErrors), [ValidationResults](CSSPModels.FilePurposeAndText.html#CSSPModels_FilePurposeAndText_ValidationResults), </para>
+    /// > <para>**Other properties** : [FilePurpose](CSSPModels.FilePurposeAndText.html#CSSPModels_FilePurposeAndText_FilePurpose), [FilePurposeText](CSSPModels.FilePurposeAndText.html#CSSPModels_FilePurposeAndText_FilePurposeText), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [FilePurposeAndTextService](CSSPServices.FilePurposeAndTextService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [FilePurposeEnum](CSSPEnums.FilePurposeEnum.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

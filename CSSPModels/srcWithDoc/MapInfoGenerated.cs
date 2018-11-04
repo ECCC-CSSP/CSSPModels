@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MapInfos** : [MapInfoID](CSSPModels.MapInfo.html#CSSPModels_MapInfo_MapInfoID), [TVItemID](CSSPModels.MapInfo.html#CSSPModels_MapInfo_TVItemID), [TVType](CSSPModels.MapInfo.html#CSSPModels_MapInfo_TVType), [LatMin](CSSPModels.MapInfo.html#CSSPModels_MapInfo_LatMin), [LatMax](CSSPModels.MapInfo.html#CSSPModels_MapInfo_LatMax), [LngMin](CSSPModels.MapInfo.html#CSSPModels_MapInfo_LngMin), [LngMax](CSSPModels.MapInfo.html#CSSPModels_MapInfo_LngMax), [MapInfoDrawType](CSSPModels.MapInfo.html#CSSPModels_MapInfo_MapInfoDrawType), [LastUpdateDate_UTC](CSSPModels.MapInfo.html#CSSPModels_MapInfo_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MapInfo.html#CSSPModels_MapInfo_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MapInfo.html#CSSPModels_MapInfo_HasErrors), [ValidationResults](CSSPModels.MapInfo.html#CSSPModels_MapInfo_ValidationResults), </para>
+    /// > <para>**DB properties for table MapInfos** : [MapInfoID](CSSPModels.MapInfo.html#CSSPModels_MapInfo_MapInfoID), [TVItemID](CSSPModels.MapInfo.html#CSSPModels_MapInfo_TVItemID), [TVType](CSSPModels.MapInfo.html#CSSPModels_MapInfo_TVType), [LatMin](CSSPModels.MapInfo.html#CSSPModels_MapInfo_LatMin), [LatMax](CSSPModels.MapInfo.html#CSSPModels_MapInfo_LatMax), [LngMin](CSSPModels.MapInfo.html#CSSPModels_MapInfo_LngMin), [LngMax](CSSPModels.MapInfo.html#CSSPModels_MapInfo_LngMax), [MapInfoDrawType](CSSPModels.MapInfo.html#CSSPModels_MapInfo_MapInfoDrawType), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MapInfoService](CSSPServices.MapInfoService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MapInfoController](CSSPWebAPI.Controllers.MapInfoController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [MapInfoDrawTypeEnum](CSSPEnums.MapInfoDrawTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MapInfo : LastUpdate
@@ -231,6 +233,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TVItemText](CSSPModels.MapInfo.html#CSSPModels_MapInfo_TVItemText), [LastUpdateContactText](CSSPModels.MapInfo.html#CSSPModels_MapInfo_LastUpdateContactText), [TVTypeText](CSSPModels.MapInfo.html#CSSPModels_MapInfo_TVTypeText), [MapInfoDrawTypeText](CSSPModels.MapInfo.html#CSSPModels_MapInfo_MapInfoDrawTypeText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MapInfoService](CSSPServices.MapInfoService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MapInfoController](CSSPWebAPI.Controllers.MapInfoController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [MapInfoDrawTypeEnum](CSSPEnums.MapInfoDrawTypeEnum.html)</para>
+    /// > <para>**Inherits [MapInfo](CSSPModels.MapInfo.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MapInfoExtraA : MapInfo
     {
@@ -347,6 +361,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MapInfoReportTest](CSSPModels.MapInfo.html#CSSPModels_MapInfo_MapInfoReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MapInfoService](CSSPServices.MapInfoService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MapInfoController](CSSPWebAPI.Controllers.MapInfoController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [MapInfoDrawTypeEnum](CSSPEnums.MapInfoDrawTypeEnum.html)</para>
+    /// > <para>**Inherits [MapInfoExtraA](CSSPModels.MapInfoExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MapInfoExtraB : MapInfoExtraA
     {

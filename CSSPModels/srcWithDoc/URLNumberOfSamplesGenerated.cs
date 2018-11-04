@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [url](CSSPModels.URLNumberOfSamples.html#CSSPModels_URLNumberOfSamples_url), [NumberOfSamples](CSSPModels.URLNumberOfSamples.html#CSSPModels_URLNumberOfSamples_NumberOfSamples), [HasErrors](CSSPModels.URLNumberOfSamples.html#CSSPModels_URLNumberOfSamples_HasErrors), [ValidationResults](CSSPModels.URLNumberOfSamples.html#CSSPModels_URLNumberOfSamples_ValidationResults), </para>
+    /// > <para>**Other properties** : [url](CSSPModels.URLNumberOfSamples.html#CSSPModels_URLNumberOfSamples_url), [NumberOfSamples](CSSPModels.URLNumberOfSamples.html#CSSPModels_URLNumberOfSamples_NumberOfSamples), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [URLNumberOfSamplesService](CSSPServices.URLNumberOfSamplesService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

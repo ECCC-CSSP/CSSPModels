@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table RatingCurveValues** : [RatingCurveValueID](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_RatingCurveValueID), [RatingCurveID](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_RatingCurveID), [StageValue_m](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_StageValue_m), [DischargeValue_m3_s](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_DischargeValue_m3_s), [LastUpdateDate_UTC](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_HasErrors), [ValidationResults](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_ValidationResults), </para>
+    /// > <para>**DB properties for table RatingCurveValues** : [RatingCurveValueID](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_RatingCurveValueID), [RatingCurveID](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_RatingCurveID), [StageValue_m](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_StageValue_m), [DischargeValue_m3_s](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_DischargeValue_m3_s), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [RatingCurveValueService](CSSPServices.RatingCurveValueService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [RatingCurveValueController](CSSPWebAPI.Controllers.RatingCurveValueController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class RatingCurveValue : LastUpdate
@@ -130,6 +132,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [RatingCurveValueService](CSSPServices.RatingCurveValueService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [RatingCurveValueController](CSSPWebAPI.Controllers.RatingCurveValueController.html)</para>
+    /// > <para>**Inherits [RatingCurveValue](CSSPModels.RatingCurveValue.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class RatingCurveValueExtraA : RatingCurveValue
     {
@@ -167,6 +180,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [RatingCurveValueReportTest](CSSPModels.RatingCurveValue.html#CSSPModels_RatingCurveValue_RatingCurveValueReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [RatingCurveValueService](CSSPServices.RatingCurveValueService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [RatingCurveValueController](CSSPWebAPI.Controllers.RatingCurveValueController.html)</para>
+    /// > <para>**Inherits [RatingCurveValueExtraA](CSSPModels.RatingCurveValueExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class RatingCurveValueExtraB : RatingCurveValueExtraA
     {

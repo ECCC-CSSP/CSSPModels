@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [SubsectorTVItemID](CSSPModels.SubsectorMWQMSampleYear.html#CSSPModels_SubsectorMWQMSampleYear_SubsectorTVItemID), [Year](CSSPModels.SubsectorMWQMSampleYear.html#CSSPModels_SubsectorMWQMSampleYear_Year), [EarliestDate](CSSPModels.SubsectorMWQMSampleYear.html#CSSPModels_SubsectorMWQMSampleYear_EarliestDate), [LatestDate](CSSPModels.SubsectorMWQMSampleYear.html#CSSPModels_SubsectorMWQMSampleYear_LatestDate), [HasErrors](CSSPModels.SubsectorMWQMSampleYear.html#CSSPModels_SubsectorMWQMSampleYear_HasErrors), [ValidationResults](CSSPModels.SubsectorMWQMSampleYear.html#CSSPModels_SubsectorMWQMSampleYear_ValidationResults), </para>
+    /// > <para>**Other properties** : [SubsectorTVItemID](CSSPModels.SubsectorMWQMSampleYear.html#CSSPModels_SubsectorMWQMSampleYear_SubsectorTVItemID), [Year](CSSPModels.SubsectorMWQMSampleYear.html#CSSPModels_SubsectorMWQMSampleYear_Year), [EarliestDate](CSSPModels.SubsectorMWQMSampleYear.html#CSSPModels_SubsectorMWQMSampleYear_EarliestDate), [LatestDate](CSSPModels.SubsectorMWQMSampleYear.html#CSSPModels_SubsectorMWQMSampleYear_LatestDate), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SubsectorMWQMSampleYearService](CSSPServices.SubsectorMWQMSampleYearService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

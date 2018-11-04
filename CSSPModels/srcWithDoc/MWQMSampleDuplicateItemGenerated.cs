@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [ParentSite](CSSPModels.MWQMSampleDuplicateItem.html#CSSPModels_MWQMSampleDuplicateItem_ParentSite), [DuplicateSite](CSSPModels.MWQMSampleDuplicateItem.html#CSSPModels_MWQMSampleDuplicateItem_DuplicateSite), [HasErrors](CSSPModels.MWQMSampleDuplicateItem.html#CSSPModels_MWQMSampleDuplicateItem_HasErrors), [ValidationResults](CSSPModels.MWQMSampleDuplicateItem.html#CSSPModels_MWQMSampleDuplicateItem_ValidationResults), </para>
+    /// > <para>**Other properties** : [ParentSite](CSSPModels.MWQMSampleDuplicateItem.html#CSSPModels_MWQMSampleDuplicateItem_ParentSite), [DuplicateSite](CSSPModels.MWQMSampleDuplicateItem.html#CSSPModels_MWQMSampleDuplicateItem_DuplicateSite), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSampleDuplicateItemService](CSSPServices.MWQMSampleDuplicateItemService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

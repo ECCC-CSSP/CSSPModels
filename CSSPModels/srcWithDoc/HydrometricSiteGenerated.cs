@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table HydrometricSites** : [HydrometricSiteID](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HydrometricSiteID), [HydrometricSiteTVItemID](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HydrometricSiteTVItemID), [FedSiteNumber](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_FedSiteNumber), [QuebecSiteNumber](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_QuebecSiteNumber), [HydrometricSiteName](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HydrometricSiteName), [Description](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_Description), [Province](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_Province), [Elevation_m](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_Elevation_m), [StartDate_Local](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_StartDate_Local), [EndDate_Local](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_EndDate_Local), [TimeOffset_hour](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_TimeOffset_hour), [DrainageArea_km2](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_DrainageArea_km2), [IsNatural](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_IsNatural), [IsActive](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_IsActive), [Sediment](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_Sediment), [RHBN](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_RHBN), [RealTime](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_RealTime), [HasDischarge](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HasDischarge), [HasLevel](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HasLevel), [HasRatingCurve](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HasRatingCurve), [LastUpdateDate_UTC](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HasErrors), [ValidationResults](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_ValidationResults), </para>
+    /// > <para>**DB properties for table HydrometricSites** : [HydrometricSiteID](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HydrometricSiteID), [HydrometricSiteTVItemID](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HydrometricSiteTVItemID), [FedSiteNumber](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_FedSiteNumber), [QuebecSiteNumber](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_QuebecSiteNumber), [HydrometricSiteName](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HydrometricSiteName), [Description](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_Description), [Province](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_Province), [Elevation_m](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_Elevation_m), [StartDate_Local](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_StartDate_Local), [EndDate_Local](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_EndDate_Local), [TimeOffset_hour](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_TimeOffset_hour), [DrainageArea_km2](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_DrainageArea_km2), [IsNatural](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_IsNatural), [IsActive](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_IsActive), [Sediment](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_Sediment), [RHBN](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_RHBN), [RealTime](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_RealTime), [HasDischarge](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HasDischarge), [HasLevel](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HasLevel), [HasRatingCurve](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HasRatingCurve), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [HydrometricSiteService](CSSPServices.HydrometricSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [HydrometricSiteController](CSSPWebAPI.Controllers.HydrometricSiteController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class HydrometricSite : LastUpdate
@@ -518,6 +520,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [HydrometricText](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HydrometricText), [LastUpdateContactText](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [HydrometricSiteService](CSSPServices.HydrometricSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [HydrometricSiteController](CSSPWebAPI.Controllers.HydrometricSiteController.html)</para>
+    /// > <para>**Inherits [HydrometricSite](CSSPModels.HydrometricSite.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class HydrometricSiteExtraA : HydrometricSite
     {
@@ -580,6 +593,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [HydrometricSiteReportTest](CSSPModels.HydrometricSite.html#CSSPModels_HydrometricSite_HydrometricSiteReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [HydrometricSiteService](CSSPServices.HydrometricSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [HydrometricSiteController](CSSPWebAPI.Controllers.HydrometricSiteController.html)</para>
+    /// > <para>**Inherits [HydrometricSiteExtraA](CSSPModels.HydrometricSiteExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class HydrometricSiteExtraB : HydrometricSiteExtraA
     {

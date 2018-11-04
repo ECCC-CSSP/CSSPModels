@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table AppErrLogs** : [AppErrLogID](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogID), [Tag](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_Tag), [LineNumber](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_LineNumber), [Source](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_Source), [Message](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_Message), [DateTime_UTC](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_DateTime_UTC), [LastUpdateDate_UTC](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_HasErrors), [ValidationResults](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_ValidationResults), </para>
+    /// > <para>**DB properties for table AppErrLogs** : [AppErrLogID](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogID), [Tag](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_Tag), [LineNumber](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_LineNumber), [Source](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_Source), [Message](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_Message), [DateTime_UTC](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_DateTime_UTC), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppErrLogService](CSSPServices.AppErrLogService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AppErrLogController](CSSPWebAPI.Controllers.AppErrLogController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class AppErrLog : LastUpdate
@@ -176,6 +178,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppErrLogService](CSSPServices.AppErrLogService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AppErrLogController](CSSPWebAPI.Controllers.AppErrLogController.html)</para>
+    /// > <para>**Inherits [AppErrLog](CSSPModels.AppErrLog.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class AppErrLogExtraA : AppErrLog
     {
@@ -213,6 +226,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [AppErrLogReportTest](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppErrLogService](CSSPServices.AppErrLogService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AppErrLogController](CSSPWebAPI.Controllers.AppErrLogController.html)</para>
+    /// > <para>**Inherits [AppErrLogExtraA](CSSPModels.AppErrLogExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class AppErrLogExtraB : AppErrLogExtraA
     {
@@ -252,6 +276,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [AppErrLogReportTest2](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogReportTest2)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppErrLogService](CSSPServices.AppErrLogService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AppErrLogController](CSSPWebAPI.Controllers.AppErrLogController.html)</para>
+    /// > <para>**Inherits [AppErrLogExtraB](CSSPModels.AppErrLogExtraB.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class AppErrLogExtraC : AppErrLogExtraB
     {
@@ -291,6 +326,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [AppErrLogReportTest2K](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogReportTest2K), [AppErrLogReportTest2H](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogReportTest2H), [AppErrLogReportTest2D](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogReportTest2D), [AppErrLogReportTest2G](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogReportTest2G), [AppErrLogReportTest2S](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogReportTest2S), [AppErrLogReportTest2L](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogReportTest2L), [AppErrLogReportTest2C](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogReportTest2C), [AppErrLogReportTest2B](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogReportTest2B), [AppErrLogReportTest2A](CSSPModels.AppErrLog.html#CSSPModels_AppErrLog_AppErrLogReportTest2A)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppErrLogService](CSSPServices.AppErrLogService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AppErrLogController](CSSPWebAPI.Controllers.AppErrLogController.html)</para>
+    /// > <para>**Inherits [AppErrLogExtraC](CSSPModels.AppErrLogExtraC.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class AppErrLogExtraD : AppErrLogExtraC
     {

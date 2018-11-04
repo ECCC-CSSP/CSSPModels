@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table VPScenarios** : [VPScenarioID](CSSPModels.VPScenario.html#CSSPModels_VPScenario_VPScenarioID), [InfrastructureTVItemID](CSSPModels.VPScenario.html#CSSPModels_VPScenario_InfrastructureTVItemID), [VPScenarioStatus](CSSPModels.VPScenario.html#CSSPModels_VPScenario_VPScenarioStatus), [UseAsBestEstimate](CSSPModels.VPScenario.html#CSSPModels_VPScenario_UseAsBestEstimate), [EffluentFlow_m3_s](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentFlow_m3_s), [EffluentConcentration_MPN_100ml](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentConcentration_MPN_100ml), [FroudeNumber](CSSPModels.VPScenario.html#CSSPModels_VPScenario_FroudeNumber), [PortDiameter_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_PortDiameter_m), [PortDepth_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_PortDepth_m), [PortElevation_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_PortElevation_m), [VerticalAngle_deg](CSSPModels.VPScenario.html#CSSPModels_VPScenario_VerticalAngle_deg), [HorizontalAngle_deg](CSSPModels.VPScenario.html#CSSPModels_VPScenario_HorizontalAngle_deg), [NumberOfPorts](CSSPModels.VPScenario.html#CSSPModels_VPScenario_NumberOfPorts), [PortSpacing_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_PortSpacing_m), [AcuteMixZone_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_AcuteMixZone_m), [ChronicMixZone_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_ChronicMixZone_m), [EffluentSalinity_PSU](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentSalinity_PSU), [EffluentTemperature_C](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentTemperature_C), [EffluentVelocity_m_s](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentVelocity_m_s), [RawResults](CSSPModels.VPScenario.html#CSSPModels_VPScenario_RawResults), [LastUpdateDate_UTC](CSSPModels.VPScenario.html#CSSPModels_VPScenario_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.VPScenario.html#CSSPModels_VPScenario_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.VPScenario.html#CSSPModels_VPScenario_HasErrors), [ValidationResults](CSSPModels.VPScenario.html#CSSPModels_VPScenario_ValidationResults), </para>
+    /// > <para>**DB properties for table VPScenarios** : [VPScenarioID](CSSPModels.VPScenario.html#CSSPModels_VPScenario_VPScenarioID), [InfrastructureTVItemID](CSSPModels.VPScenario.html#CSSPModels_VPScenario_InfrastructureTVItemID), [VPScenarioStatus](CSSPModels.VPScenario.html#CSSPModels_VPScenario_VPScenarioStatus), [UseAsBestEstimate](CSSPModels.VPScenario.html#CSSPModels_VPScenario_UseAsBestEstimate), [EffluentFlow_m3_s](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentFlow_m3_s), [EffluentConcentration_MPN_100ml](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentConcentration_MPN_100ml), [FroudeNumber](CSSPModels.VPScenario.html#CSSPModels_VPScenario_FroudeNumber), [PortDiameter_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_PortDiameter_m), [PortDepth_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_PortDepth_m), [PortElevation_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_PortElevation_m), [VerticalAngle_deg](CSSPModels.VPScenario.html#CSSPModels_VPScenario_VerticalAngle_deg), [HorizontalAngle_deg](CSSPModels.VPScenario.html#CSSPModels_VPScenario_HorizontalAngle_deg), [NumberOfPorts](CSSPModels.VPScenario.html#CSSPModels_VPScenario_NumberOfPorts), [PortSpacing_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_PortSpacing_m), [AcuteMixZone_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_AcuteMixZone_m), [ChronicMixZone_m](CSSPModels.VPScenario.html#CSSPModels_VPScenario_ChronicMixZone_m), [EffluentSalinity_PSU](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentSalinity_PSU), [EffluentTemperature_C](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentTemperature_C), [EffluentVelocity_m_s](CSSPModels.VPScenario.html#CSSPModels_VPScenario_EffluentVelocity_m_s), [RawResults](CSSPModels.VPScenario.html#CSSPModels_VPScenario_RawResults), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPScenarioService](CSSPServices.VPScenarioService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [VPScenarioController](CSSPWebAPI.Controllers.VPScenarioController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ScenarioStatusEnum](CSSPEnums.ScenarioStatusEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class VPScenario : LastUpdate
@@ -518,6 +520,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [SubsectorText](CSSPModels.VPScenario.html#CSSPModels_VPScenario_SubsectorText), [LastUpdateContactText](CSSPModels.VPScenario.html#CSSPModels_VPScenario_LastUpdateContactText), [VPScenarioStatusText](CSSPModels.VPScenario.html#CSSPModels_VPScenario_VPScenarioStatusText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPScenarioService](CSSPServices.VPScenarioService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [VPScenarioController](CSSPWebAPI.Controllers.VPScenarioController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ScenarioStatusEnum](CSSPEnums.ScenarioStatusEnum.html)</para>
+    /// > <para>**Inherits [VPScenario](CSSPModels.VPScenario.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class VPScenarioExtraA : VPScenario
     {
@@ -607,6 +621,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [VPScenarioReportTest](CSSPModels.VPScenario.html#CSSPModels_VPScenario_VPScenarioReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPScenarioService](CSSPServices.VPScenarioService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [VPScenarioController](CSSPWebAPI.Controllers.VPScenarioController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ScenarioStatusEnum](CSSPEnums.ScenarioStatusEnum.html)</para>
+    /// > <para>**Inherits [VPScenarioExtraA](CSSPModels.VPScenarioExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class VPScenarioExtraB : VPScenarioExtraA
     {

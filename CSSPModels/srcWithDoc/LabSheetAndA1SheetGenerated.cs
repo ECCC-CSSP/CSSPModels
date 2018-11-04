@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [LabSheet](CSSPModels.LabSheetAndA1Sheet.html#CSSPModels_LabSheetAndA1Sheet_LabSheet), [LabSheetA1Sheet](CSSPModels.LabSheetAndA1Sheet.html#CSSPModels_LabSheetAndA1Sheet_LabSheetA1Sheet), [HasErrors](CSSPModels.LabSheetAndA1Sheet.html#CSSPModels_LabSheetAndA1Sheet_HasErrors), [ValidationResults](CSSPModels.LabSheetAndA1Sheet.html#CSSPModels_LabSheetAndA1Sheet_ValidationResults), </para>
+    /// > <para>**Other properties** : [LabSheet](CSSPModels.LabSheetAndA1Sheet.html#CSSPModels_LabSheetAndA1Sheet_LabSheet), [LabSheetA1Sheet](CSSPModels.LabSheetAndA1Sheet.html#CSSPModels_LabSheetAndA1Sheet_LabSheetA1Sheet), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LabSheetAndA1SheetService](CSSPServices.LabSheetAndA1SheetService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table BoxModels** : [BoxModelID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_BoxModelID), [InfrastructureTVItemID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_InfrastructureTVItemID), [Discharge_m3_day](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Discharge_m3_day), [Depth_m](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Depth_m), [Temperature_C](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Temperature_C), [Dilution](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Dilution), [DecayRate_per_day](CSSPModels.BoxModel.html#CSSPModels_BoxModel_DecayRate_per_day), [FCUntreated_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCUntreated_MPN_100ml), [FCPreDisinfection_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCPreDisinfection_MPN_100ml), [Concentration_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Concentration_MPN_100ml), [T90_hour](CSSPModels.BoxModel.html#CSSPModels_BoxModel_T90_hour), [DischargeDuration_hour](CSSPModels.BoxModel.html#CSSPModels_BoxModel_DischargeDuration_hour), [LastUpdateDate_UTC](CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.BoxModel.html#CSSPModels_BoxModel_HasErrors), [ValidationResults](CSSPModels.BoxModel.html#CSSPModels_BoxModel_ValidationResults), </para>
+    /// > <para>**DB properties for table BoxModels** : [BoxModelID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_BoxModelID), [InfrastructureTVItemID](CSSPModels.BoxModel.html#CSSPModels_BoxModel_InfrastructureTVItemID), [Discharge_m3_day](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Discharge_m3_day), [Depth_m](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Depth_m), [Temperature_C](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Temperature_C), [Dilution](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Dilution), [DecayRate_per_day](CSSPModels.BoxModel.html#CSSPModels_BoxModel_DecayRate_per_day), [FCUntreated_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCUntreated_MPN_100ml), [FCPreDisinfection_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_FCPreDisinfection_MPN_100ml), [Concentration_MPN_100ml](CSSPModels.BoxModel.html#CSSPModels_BoxModel_Concentration_MPN_100ml), [T90_hour](CSSPModels.BoxModel.html#CSSPModels_BoxModel_T90_hour), [DischargeDuration_hour](CSSPModels.BoxModel.html#CSSPModels_BoxModel_DischargeDuration_hour), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [BoxModelService](CSSPServices.BoxModelService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [BoxModelController](CSSPWebAPI.Controllers.BoxModelController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class BoxModel : LastUpdate
@@ -324,6 +326,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [InfrastructureText](CSSPModels.BoxModel.html#CSSPModels_BoxModel_InfrastructureText), [LastUpdateContactText](CSSPModels.BoxModel.html#CSSPModels_BoxModel_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [BoxModelService](CSSPServices.BoxModelService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [BoxModelController](CSSPWebAPI.Controllers.BoxModelController.html)</para>
+    /// > <para>**Inherits [BoxModel](CSSPModels.BoxModel.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class BoxModelExtraA : BoxModel
     {
@@ -386,6 +399,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [BoxModelReportTest](CSSPModels.BoxModel.html#CSSPModels_BoxModel_BoxModelReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [BoxModelService](CSSPServices.BoxModelService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [BoxModelController](CSSPWebAPI.Controllers.BoxModelController.html)</para>
+    /// > <para>**Inherits [BoxModelExtraA](CSSPModels.BoxModelExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class BoxModelExtraB : BoxModelExtraA
     {

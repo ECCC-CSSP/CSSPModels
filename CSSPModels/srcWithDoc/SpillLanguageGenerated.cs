@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table SpillLanguages** : [SpillLanguageID](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_SpillLanguageID), [SpillID](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_SpillID), [Language](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_Language), [SpillComment](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_SpillComment), [TranslationStatus](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_HasErrors), [ValidationResults](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_ValidationResults), </para>
+    /// > <para>**DB properties for table SpillLanguages** : [SpillLanguageID](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_SpillLanguageID), [SpillID](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_SpillID), [Language](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_Language), [SpillComment](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_SpillComment), [TranslationStatus](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_TranslationStatus), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SpillLanguageService](CSSPServices.SpillLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SpillLanguageController](CSSPWebAPI.Controllers.SpillLanguageController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class SpillLanguage : LastUpdate
@@ -156,6 +158,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_LastUpdateContactText), [LanguageText](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_LanguageText), [TranslationStatusText](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_TranslationStatusText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SpillLanguageService](CSSPServices.SpillLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SpillLanguageController](CSSPWebAPI.Controllers.SpillLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [SpillLanguage](CSSPModels.SpillLanguage.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class SpillLanguageExtraA : SpillLanguage
     {
@@ -247,6 +261,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [SpillLanguageReportTest](CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_SpillLanguageReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SpillLanguageService](CSSPServices.SpillLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [SpillLanguageController](CSSPWebAPI.Controllers.SpillLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [SpillLanguageExtraA](CSSPModels.SpillLanguageExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class SpillLanguageExtraB : SpillLanguageExtraA
     {

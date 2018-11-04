@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table Logs** : [LogID](CSSPModels.Log.html#CSSPModels_Log_LogID), [TableName](CSSPModels.Log.html#CSSPModels_Log_TableName), [ID](CSSPModels.Log.html#CSSPModels_Log_ID), [LogCommand](CSSPModels.Log.html#CSSPModels_Log_LogCommand), [Information](CSSPModels.Log.html#CSSPModels_Log_Information), [LastUpdateDate_UTC](CSSPModels.Log.html#CSSPModels_Log_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Log.html#CSSPModels_Log_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.Log.html#CSSPModels_Log_HasErrors), [ValidationResults](CSSPModels.Log.html#CSSPModels_Log_ValidationResults), </para>
+    /// > <para>**DB properties for table Logs** : [LogID](CSSPModels.Log.html#CSSPModels_Log_LogID), [TableName](CSSPModels.Log.html#CSSPModels_Log_TableName), [ID](CSSPModels.Log.html#CSSPModels_Log_ID), [LogCommand](CSSPModels.Log.html#CSSPModels_Log_LogCommand), [Information](CSSPModels.Log.html#CSSPModels_Log_Information), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LogService](CSSPServices.LogService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [LogController](CSSPWebAPI.Controllers.LogController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LogCommandEnum](CSSPEnums.LogCommandEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class Log : LastUpdate
@@ -154,6 +156,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.Log.html#CSSPModels_Log_LastUpdateContactText), [LogCommandText](CSSPModels.Log.html#CSSPModels_Log_LogCommandText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LogService](CSSPServices.LogService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [LogController](CSSPWebAPI.Controllers.LogController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LogCommandEnum](CSSPEnums.LogCommandEnum.html)</para>
+    /// > <para>**Inherits [Log](CSSPModels.Log.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class LogExtraA : Log
     {
@@ -218,6 +232,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LogReportTest](CSSPModels.Log.html#CSSPModels_Log_LogReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LogService](CSSPServices.LogService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [LogController](CSSPWebAPI.Controllers.LogController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LogCommandEnum](CSSPEnums.LogCommandEnum.html)</para>
+    /// > <para>**Inherits [LogExtraA](CSSPModels.LogExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class LogExtraB : LogExtraA
     {

@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table ClimateDataValues** : [ClimateDataValueID](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_ClimateDataValueID), [ClimateSiteID](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_ClimateSiteID), [DateTime_Local](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_DateTime_Local), [Keep](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_Keep), [StorageDataType](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_StorageDataType), [HasBeenRead](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_HasBeenRead), [Snow_cm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_Snow_cm), [Rainfall_mm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_Rainfall_mm), [RainfallEntered_mm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_RainfallEntered_mm), [TotalPrecip_mm_cm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_TotalPrecip_mm_cm), [MaxTemp_C](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_MaxTemp_C), [MinTemp_C](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_MinTemp_C), [HeatDegDays_C](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_HeatDegDays_C), [CoolDegDays_C](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_CoolDegDays_C), [SnowOnGround_cm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_SnowOnGround_cm), [DirMaxGust_0North](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_DirMaxGust_0North), [SpdMaxGust_kmh](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_SpdMaxGust_kmh), [HourlyValues](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_HourlyValues), [LastUpdateDate_UTC](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_HasErrors), [ValidationResults](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_ValidationResults), </para>
+    /// > <para>**DB properties for table ClimateDataValues** : [ClimateDataValueID](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_ClimateDataValueID), [ClimateSiteID](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_ClimateSiteID), [DateTime_Local](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_DateTime_Local), [Keep](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_Keep), [StorageDataType](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_StorageDataType), [HasBeenRead](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_HasBeenRead), [Snow_cm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_Snow_cm), [Rainfall_mm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_Rainfall_mm), [RainfallEntered_mm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_RainfallEntered_mm), [TotalPrecip_mm_cm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_TotalPrecip_mm_cm), [MaxTemp_C](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_MaxTemp_C), [MinTemp_C](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_MinTemp_C), [HeatDegDays_C](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_HeatDegDays_C), [CoolDegDays_C](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_CoolDegDays_C), [SnowOnGround_cm](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_SnowOnGround_cm), [DirMaxGust_0North](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_DirMaxGust_0North), [SpdMaxGust_kmh](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_SpdMaxGust_kmh), [HourlyValues](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_HourlyValues), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ClimateDataValueService](CSSPServices.ClimateDataValueService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ClimateDataValueController](CSSPWebAPI.Controllers.ClimateDataValueController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [StorageDataTypeEnum](CSSPEnums.StorageDataTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class ClimateDataValue : LastUpdate
@@ -468,6 +470,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_LastUpdateContactText), [StorageDataTypeEnumText](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_StorageDataTypeEnumText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ClimateDataValueService](CSSPServices.ClimateDataValueService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ClimateDataValueController](CSSPWebAPI.Controllers.ClimateDataValueController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [StorageDataTypeEnum](CSSPEnums.StorageDataTypeEnum.html)</para>
+    /// > <para>**Inherits [ClimateDataValue](CSSPModels.ClimateDataValue.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ClimateDataValueExtraA : ClimateDataValue
     {
@@ -532,6 +546,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [ClimateDataValueReportTest](CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_ClimateDataValueReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ClimateDataValueService](CSSPServices.ClimateDataValueService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ClimateDataValueController](CSSPWebAPI.Controllers.ClimateDataValueController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [StorageDataTypeEnum](CSSPEnums.StorageDataTypeEnum.html)</para>
+    /// > <para>**Inherits [ClimateDataValueExtraA](CSSPModels.ClimateDataValueExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ClimateDataValueExtraB : ClimateDataValueExtraA
     {

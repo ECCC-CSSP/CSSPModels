@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table EmailDistributionLists** : [EmailDistributionListID](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_EmailDistributionListID), [CountryTVItemID](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_CountryTVItemID), [Ordinal](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_Ordinal), [LastUpdateDate_UTC](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_HasErrors), [ValidationResults](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_ValidationResults), </para>
+    /// > <para>**DB properties for table EmailDistributionLists** : [EmailDistributionListID](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_EmailDistributionListID), [CountryTVItemID](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_CountryTVItemID), [Ordinal](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_Ordinal), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailDistributionListService](CSSPServices.EmailDistributionListService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [EmailDistributionListController](CSSPWebAPI.Controllers.EmailDistributionListController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class EmailDistributionList : LastUpdate
@@ -108,6 +110,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [CountryText](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_CountryText), [LastUpdateContactText](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailDistributionListService](CSSPServices.EmailDistributionListService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [EmailDistributionListController](CSSPWebAPI.Controllers.EmailDistributionListController.html)</para>
+    /// > <para>**Inherits [EmailDistributionList](CSSPModels.EmailDistributionList.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class EmailDistributionListExtraA : EmailDistributionList
     {
@@ -170,6 +183,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [EmailDistributionListReportTest](CSSPModels.EmailDistributionList.html#CSSPModels_EmailDistributionList_EmailDistributionListReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailDistributionListService](CSSPServices.EmailDistributionListService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [EmailDistributionListController](CSSPWebAPI.Controllers.EmailDistributionListController.html)</para>
+    /// > <para>**Inherits [EmailDistributionListExtraA](CSSPModels.EmailDistributionListExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class EmailDistributionListExtraB : EmailDistributionListExtraA
     {

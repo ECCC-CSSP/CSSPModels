@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table ClimateSites** : [ClimateSiteID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateSiteID), [ClimateSiteTVItemID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateSiteTVItemID), [ECDBID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ECDBID), [ClimateSiteName](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateSiteName), [Province](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_Province), [Elevation_m](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_Elevation_m), [ClimateID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateID), [WMOID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_WMOID), [TCID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_TCID), [IsProvincial](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_IsProvincial), [ProvSiteID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ProvSiteID), [TimeOffset_hour](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_TimeOffset_hour), [File_desc](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_File_desc), [HourlyStartDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_HourlyStartDate_Local), [HourlyEndDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_HourlyEndDate_Local), [HourlyNow](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_HourlyNow), [DailyStartDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_DailyStartDate_Local), [DailyEndDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_DailyEndDate_Local), [DailyNow](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_DailyNow), [MonthlyStartDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_MonthlyStartDate_Local), [MonthlyEndDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_MonthlyEndDate_Local), [MonthlyNow](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_MonthlyNow), [LastUpdateDate_UTC](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_HasErrors), [ValidationResults](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ValidationResults), </para>
+    /// > <para>**DB properties for table ClimateSites** : [ClimateSiteID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateSiteID), [ClimateSiteTVItemID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateSiteTVItemID), [ECDBID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ECDBID), [ClimateSiteName](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateSiteName), [Province](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_Province), [Elevation_m](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_Elevation_m), [ClimateID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateID), [WMOID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_WMOID), [TCID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_TCID), [IsProvincial](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_IsProvincial), [ProvSiteID](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ProvSiteID), [TimeOffset_hour](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_TimeOffset_hour), [File_desc](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_File_desc), [HourlyStartDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_HourlyStartDate_Local), [HourlyEndDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_HourlyEndDate_Local), [HourlyNow](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_HourlyNow), [DailyStartDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_DailyStartDate_Local), [DailyEndDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_DailyEndDate_Local), [DailyNow](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_DailyNow), [MonthlyStartDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_MonthlyStartDate_Local), [MonthlyEndDate_Local](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_MonthlyEndDate_Local), [MonthlyNow](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_MonthlyNow), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ClimateSiteService](CSSPServices.ClimateSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ClimateSiteController](CSSPWebAPI.Controllers.ClimateSiteController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class ClimateSite : LastUpdate
@@ -574,6 +576,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [ClimateSiteText](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateSiteText), [LastUpdateContactText](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ClimateSiteService](CSSPServices.ClimateSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ClimateSiteController](CSSPWebAPI.Controllers.ClimateSiteController.html)</para>
+    /// > <para>**Inherits [ClimateSite](CSSPModels.ClimateSite.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ClimateSiteExtraA : ClimateSite
     {
@@ -636,6 +649,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [ClimateSiteReportTest](CSSPModels.ClimateSite.html#CSSPModels_ClimateSite_ClimateSiteReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ClimateSiteService](CSSPServices.ClimateSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ClimateSiteController](CSSPWebAPI.Controllers.ClimateSiteController.html)</para>
+    /// > <para>**Inherits [ClimateSiteExtraA](CSSPModels.ClimateSiteExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ClimateSiteExtraB : ClimateSiteExtraA
     {

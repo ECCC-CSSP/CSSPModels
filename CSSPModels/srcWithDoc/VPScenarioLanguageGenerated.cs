@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table VPScenarioLanguages** : [VPScenarioLanguageID](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_VPScenarioLanguageID), [VPScenarioID](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_VPScenarioID), [Language](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_Language), [VPScenarioName](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_VPScenarioName), [TranslationStatus](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_HasErrors), [ValidationResults](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_ValidationResults), </para>
+    /// > <para>**DB properties for table VPScenarioLanguages** : [VPScenarioLanguageID](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_VPScenarioLanguageID), [VPScenarioID](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_VPScenarioID), [Language](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_Language), [VPScenarioName](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_VPScenarioName), [TranslationStatus](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_TranslationStatus), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPScenarioLanguageService](CSSPServices.VPScenarioLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [VPScenarioLanguageController](CSSPWebAPI.Controllers.VPScenarioLanguageController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class VPScenarioLanguage : LastUpdate
@@ -157,6 +159,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_LastUpdateContactText), [LanguageText](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_LanguageText), [TranslationStatusText](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_TranslationStatusText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPScenarioLanguageService](CSSPServices.VPScenarioLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [VPScenarioLanguageController](CSSPWebAPI.Controllers.VPScenarioLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [VPScenarioLanguage](CSSPModels.VPScenarioLanguage.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class VPScenarioLanguageExtraA : VPScenarioLanguage
     {
@@ -248,6 +262,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [VPScenarioLanguageReportTest](CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_VPScenarioLanguageReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [VPScenarioLanguageService](CSSPServices.VPScenarioLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [VPScenarioLanguageController](CSSPWebAPI.Controllers.VPScenarioLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [VPScenarioLanguageExtraA](CSSPModels.VPScenarioLanguageExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class VPScenarioLanguageExtraB : VPScenarioLanguageExtraA
     {

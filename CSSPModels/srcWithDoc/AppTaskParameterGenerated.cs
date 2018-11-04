@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Name](CSSPModels.AppTaskParameter.html#CSSPModels_AppTaskParameter_Name), [Value](CSSPModels.AppTaskParameter.html#CSSPModels_AppTaskParameter_Value), [HasErrors](CSSPModels.AppTaskParameter.html#CSSPModels_AppTaskParameter_HasErrors), [ValidationResults](CSSPModels.AppTaskParameter.html#CSSPModels_AppTaskParameter_ValidationResults), </para>
+    /// > <para>**Other properties** : [Name](CSSPModels.AppTaskParameter.html#CSSPModels_AppTaskParameter_Name), [Value](CSSPModels.AppTaskParameter.html#CSSPModels_AppTaskParameter_Value), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskParameterService](CSSPServices.AppTaskParameterService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

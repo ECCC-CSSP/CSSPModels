@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Layer](CSSPModels.ElementLayer.html#CSSPModels_ElementLayer_Layer), [ZMin](CSSPModels.ElementLayer.html#CSSPModels_ElementLayer_ZMin), [ZMax](CSSPModels.ElementLayer.html#CSSPModels_ElementLayer_ZMax), [Element](CSSPModels.ElementLayer.html#CSSPModels_ElementLayer_Element), [HasErrors](CSSPModels.ElementLayer.html#CSSPModels_ElementLayer_HasErrors), [ValidationResults](CSSPModels.ElementLayer.html#CSSPModels_ElementLayer_ValidationResults), </para>
+    /// > <para>**Other properties** : [Layer](CSSPModels.ElementLayer.html#CSSPModels_ElementLayer_Layer), [ZMin](CSSPModels.ElementLayer.html#CSSPModels_ElementLayer_ZMin), [ZMax](CSSPModels.ElementLayer.html#CSSPModels_ElementLayer_ZMax), [Element](CSSPModels.ElementLayer.html#CSSPModels_ElementLayer_Element), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ElementLayerService](CSSPServices.ElementLayerService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table Contacts** : [ContactID](CSSPModels.Contact.html#CSSPModels_Contact_ContactID), [Id](CSSPModels.Contact.html#CSSPModels_Contact_Id), [ContactTVItemID](CSSPModels.Contact.html#CSSPModels_Contact_ContactTVItemID), [LoginEmail](CSSPModels.Contact.html#CSSPModels_Contact_LoginEmail), [FirstName](CSSPModels.Contact.html#CSSPModels_Contact_FirstName), [LastName](CSSPModels.Contact.html#CSSPModels_Contact_LastName), [Initial](CSSPModels.Contact.html#CSSPModels_Contact_Initial), [WebName](CSSPModels.Contact.html#CSSPModels_Contact_WebName), [ContactTitle](CSSPModels.Contact.html#CSSPModels_Contact_ContactTitle), [IsAdmin](CSSPModels.Contact.html#CSSPModels_Contact_IsAdmin), [EmailValidated](CSSPModels.Contact.html#CSSPModels_Contact_EmailValidated), [Disabled](CSSPModels.Contact.html#CSSPModels_Contact_Disabled), [IsNew](CSSPModels.Contact.html#CSSPModels_Contact_IsNew), [SamplingPlanner_ProvincesTVItemID](CSSPModels.Contact.html#CSSPModels_Contact_SamplingPlanner_ProvincesTVItemID), [LastUpdateDate_UTC](CSSPModels.Contact.html#CSSPModels_Contact_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Contact.html#CSSPModels_Contact_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.Contact.html#CSSPModels_Contact_HasErrors), [ValidationResults](CSSPModels.Contact.html#CSSPModels_Contact_ValidationResults), </para>
+    /// > <para>**DB properties for table Contacts** : [ContactID](CSSPModels.Contact.html#CSSPModels_Contact_ContactID), [Id](CSSPModels.Contact.html#CSSPModels_Contact_Id), [ContactTVItemID](CSSPModels.Contact.html#CSSPModels_Contact_ContactTVItemID), [LoginEmail](CSSPModels.Contact.html#CSSPModels_Contact_LoginEmail), [FirstName](CSSPModels.Contact.html#CSSPModels_Contact_FirstName), [LastName](CSSPModels.Contact.html#CSSPModels_Contact_LastName), [Initial](CSSPModels.Contact.html#CSSPModels_Contact_Initial), [WebName](CSSPModels.Contact.html#CSSPModels_Contact_WebName), [ContactTitle](CSSPModels.Contact.html#CSSPModels_Contact_ContactTitle), [IsAdmin](CSSPModels.Contact.html#CSSPModels_Contact_IsAdmin), [EmailValidated](CSSPModels.Contact.html#CSSPModels_Contact_EmailValidated), [Disabled](CSSPModels.Contact.html#CSSPModels_Contact_Disabled), [IsNew](CSSPModels.Contact.html#CSSPModels_Contact_IsNew), [SamplingPlanner_ProvincesTVItemID](CSSPModels.Contact.html#CSSPModels_Contact_SamplingPlanner_ProvincesTVItemID), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactService](CSSPServices.ContactService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ContactController](CSSPWebAPI.Controllers.ContactController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ContactTitleEnum](CSSPEnums.ContactTitleEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class Contact : LastUpdate
@@ -379,6 +381,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [ContactName](CSSPModels.Contact.html#CSSPModels_Contact_ContactName), [LastUpdateContactText](CSSPModels.Contact.html#CSSPModels_Contact_LastUpdateContactText), [ContactTitleText](CSSPModels.Contact.html#CSSPModels_Contact_ContactTitleText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactService](CSSPServices.ContactService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ContactController](CSSPWebAPI.Controllers.ContactController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ContactTitleEnum](CSSPEnums.ContactTitleEnum.html)</para>
+    /// > <para>**Inherits [Contact](CSSPModels.Contact.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ContactExtraA : Contact
     {
@@ -468,6 +482,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [ContactReportTest](CSSPModels.Contact.html#CSSPModels_Contact_ContactReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactService](CSSPServices.ContactService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ContactController](CSSPWebAPI.Controllers.ContactController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ContactTitleEnum](CSSPEnums.ContactTitleEnum.html)</para>
+    /// > <para>**Inherits [ContactExtraA](CSSPModels.ContactExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ContactExtraB : ContactExtraA
     {

@@ -17,10 +17,10 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [TVText](CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_TVText), [Language](CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_Language), [LanguageText](CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_LanguageText), [HasErrors](CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_HasErrors), [ValidationResults](CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_ValidationResults), </para>
+    /// > <para>**Other properties** : [TVText](CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_TVText), [Language](CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_Language), [LanguageText](CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_LanguageText), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVTextLanguageService](CSSPServices.TVTextLanguageService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

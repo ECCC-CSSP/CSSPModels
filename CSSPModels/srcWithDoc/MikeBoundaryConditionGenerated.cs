@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MikeBoundaryConditions** : [MikeBoundaryConditionID](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionID), [MikeBoundaryConditionTVItemID](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionTVItemID), [MikeBoundaryConditionCode](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionCode), [MikeBoundaryConditionName](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionName), [MikeBoundaryConditionLength_m](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionLength_m), [MikeBoundaryConditionFormat](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionFormat), [MikeBoundaryConditionLevelOrVelocity](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionLevelOrVelocity), [WebTideDataSet](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_WebTideDataSet), [NumberOfWebTideNodes](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_NumberOfWebTideNodes), [WebTideDataFromStartToEndDate](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_WebTideDataFromStartToEndDate), [TVType](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_TVType), [LastUpdateDate_UTC](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_HasErrors), [ValidationResults](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_ValidationResults), </para>
+    /// > <para>**DB properties for table MikeBoundaryConditions** : [MikeBoundaryConditionID](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionID), [MikeBoundaryConditionTVItemID](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionTVItemID), [MikeBoundaryConditionCode](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionCode), [MikeBoundaryConditionName](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionName), [MikeBoundaryConditionLength_m](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionLength_m), [MikeBoundaryConditionFormat](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionFormat), [MikeBoundaryConditionLevelOrVelocity](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionLevelOrVelocity), [WebTideDataSet](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_WebTideDataSet), [NumberOfWebTideNodes](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_NumberOfWebTideNodes), [WebTideDataFromStartToEndDate](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_WebTideDataFromStartToEndDate), [TVType](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_TVType), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeBoundaryConditionService](CSSPServices.MikeBoundaryConditionService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MikeBoundaryConditionController](CSSPWebAPI.Controllers.MikeBoundaryConditionController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [MikeBoundaryConditionLevelOrVelocityEnum](CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html), [WebTideDataSetEnum](CSSPEnums.WebTideDataSetEnum.html), [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MikeBoundaryCondition : LastUpdate
@@ -303,6 +305,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MikeBoundaryConditionText](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionText), [LastUpdateContactText](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_LastUpdateContactText), [MikeBoundaryConditionLevelOrVelocityText](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionLevelOrVelocityText), [WebTideDataSetText](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_WebTideDataSetText), [TVTypeText](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_TVTypeText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeBoundaryConditionService](CSSPServices.MikeBoundaryConditionService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MikeBoundaryConditionController](CSSPWebAPI.Controllers.MikeBoundaryConditionController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [MikeBoundaryConditionLevelOrVelocityEnum](CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html), [WebTideDataSetEnum](CSSPEnums.WebTideDataSetEnum.html), [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [MikeBoundaryCondition](CSSPModels.MikeBoundaryCondition.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MikeBoundaryConditionExtraA : MikeBoundaryCondition
     {
@@ -446,6 +460,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MikeBoundaryConditionReportTest](CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeBoundaryConditionService](CSSPServices.MikeBoundaryConditionService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MikeBoundaryConditionController](CSSPWebAPI.Controllers.MikeBoundaryConditionController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [MikeBoundaryConditionLevelOrVelocityEnum](CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html), [WebTideDataSetEnum](CSSPEnums.WebTideDataSetEnum.html), [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [MikeBoundaryConditionExtraA](CSSPModels.MikeBoundaryConditionExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MikeBoundaryConditionExtraB : MikeBoundaryConditionExtraA
     {

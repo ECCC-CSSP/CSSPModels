@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table PolSourceObservations** : [PolSourceObservationID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_PolSourceObservationID), [PolSourceSiteID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_PolSourceSiteID), [ObservationDate_Local](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_ObservationDate_Local), [ContactTVItemID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_ContactTVItemID), [Observation_ToBeDeleted](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_Observation_ToBeDeleted), [LastUpdateDate_UTC](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_HasErrors), [ValidationResults](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_ValidationResults), </para>
+    /// > <para>**DB properties for table PolSourceObservations** : [PolSourceObservationID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_PolSourceObservationID), [PolSourceSiteID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_PolSourceSiteID), [ObservationDate_Local](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_ObservationDate_Local), [ContactTVItemID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_ContactTVItemID), [Observation_ToBeDeleted](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_Observation_ToBeDeleted), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceObservationService](CSSPServices.PolSourceObservationService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [PolSourceObservationController](CSSPWebAPI.Controllers.PolSourceObservationController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class PolSourceObservation : LastUpdate
@@ -157,6 +159,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [PolSourceSiteText](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_PolSourceSiteText), [ContactName](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_ContactName), [LastUpdateContactText](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceObservationService](CSSPServices.PolSourceObservationService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [PolSourceObservationController](CSSPWebAPI.Controllers.PolSourceObservationController.html)</para>
+    /// > <para>**Inherits [PolSourceObservation](CSSPModels.PolSourceObservation.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class PolSourceObservationExtraA : PolSourceObservation
     {
@@ -244,6 +257,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [PolSourceObservationReportTest](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_PolSourceObservationReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceObservationService](CSSPServices.PolSourceObservationService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [PolSourceObservationController](CSSPWebAPI.Controllers.PolSourceObservationController.html)</para>
+    /// > <para>**Inherits [PolSourceObservationExtraA](CSSPModels.PolSourceObservationExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class PolSourceObservationExtraB : PolSourceObservationExtraA
     {

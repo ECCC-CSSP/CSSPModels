@@ -17,10 +17,10 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [PropertyName](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_PropertyName), [PropertyType](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_PropertyType), [WhereOperator](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_WhereOperator), [Value](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_Value), [ValueInt](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueInt), [ValueDouble](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueDouble), [ValueBool](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueBool), [ValueDateTime](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueDateTime), [ValueEnumText](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueEnumText), [HasErrors](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_HasErrors), [ValidationResults](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValidationResults), </para>
+    /// > <para>**Other properties** : [PropertyName](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_PropertyName), [PropertyType](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_PropertyType), [WhereOperator](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_WhereOperator), [Value](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_Value), [ValueInt](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueInt), [ValueDouble](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueDouble), [ValueBool](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueBool), [ValueDateTime](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueDateTime), [ValueEnumText](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueEnumText), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [WhereInfoService](CSSPServices.WhereInfoService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [PropertyTypeEnum](CSSPEnums.PropertyTypeEnum.html), [WhereOperatorEnum](CSSPEnums.WhereOperatorEnum.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

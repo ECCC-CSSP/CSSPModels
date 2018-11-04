@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table TVFiles** : [TVFileID](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileID), [TVFileTVItemID](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileTVItemID), [TemplateTVType](CSSPModels.TVFile.html#CSSPModels_TVFile_TemplateTVType), [ReportTypeID](CSSPModels.TVFile.html#CSSPModels_TVFile_ReportTypeID), [Parameters](CSSPModels.TVFile.html#CSSPModels_TVFile_Parameters), [Year](CSSPModels.TVFile.html#CSSPModels_TVFile_Year), [Language](CSSPModels.TVFile.html#CSSPModels_TVFile_Language), [FilePurpose](CSSPModels.TVFile.html#CSSPModels_TVFile_FilePurpose), [FileType](CSSPModels.TVFile.html#CSSPModels_TVFile_FileType), [FileSize_kb](CSSPModels.TVFile.html#CSSPModels_TVFile_FileSize_kb), [FileInfo](CSSPModels.TVFile.html#CSSPModels_TVFile_FileInfo), [FileCreatedDate_UTC](CSSPModels.TVFile.html#CSSPModels_TVFile_FileCreatedDate_UTC), [FromWater](CSSPModels.TVFile.html#CSSPModels_TVFile_FromWater), [ClientFilePath](CSSPModels.TVFile.html#CSSPModels_TVFile_ClientFilePath), [ServerFileName](CSSPModels.TVFile.html#CSSPModels_TVFile_ServerFileName), [ServerFilePath](CSSPModels.TVFile.html#CSSPModels_TVFile_ServerFilePath), [LastUpdateDate_UTC](CSSPModels.TVFile.html#CSSPModels_TVFile_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TVFile.html#CSSPModels_TVFile_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.TVFile.html#CSSPModels_TVFile_HasErrors), [ValidationResults](CSSPModels.TVFile.html#CSSPModels_TVFile_ValidationResults), </para>
+    /// > <para>**DB properties for table TVFiles** : [TVFileID](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileID), [TVFileTVItemID](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileTVItemID), [TemplateTVType](CSSPModels.TVFile.html#CSSPModels_TVFile_TemplateTVType), [ReportTypeID](CSSPModels.TVFile.html#CSSPModels_TVFile_ReportTypeID), [Parameters](CSSPModels.TVFile.html#CSSPModels_TVFile_Parameters), [Year](CSSPModels.TVFile.html#CSSPModels_TVFile_Year), [Language](CSSPModels.TVFile.html#CSSPModels_TVFile_Language), [FilePurpose](CSSPModels.TVFile.html#CSSPModels_TVFile_FilePurpose), [FileType](CSSPModels.TVFile.html#CSSPModels_TVFile_FileType), [FileSize_kb](CSSPModels.TVFile.html#CSSPModels_TVFile_FileSize_kb), [FileInfo](CSSPModels.TVFile.html#CSSPModels_TVFile_FileInfo), [FileCreatedDate_UTC](CSSPModels.TVFile.html#CSSPModels_TVFile_FileCreatedDate_UTC), [FromWater](CSSPModels.TVFile.html#CSSPModels_TVFile_FromWater), [ClientFilePath](CSSPModels.TVFile.html#CSSPModels_TVFile_ClientFilePath), [ServerFileName](CSSPModels.TVFile.html#CSSPModels_TVFile_ServerFileName), [ServerFilePath](CSSPModels.TVFile.html#CSSPModels_TVFile_ServerFilePath), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVFileService](CSSPServices.TVFileService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVFileController](CSSPWebAPI.Controllers.TVFileController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [LanguageEnum](CSSPEnums.LanguageEnum.html), [FilePurposeEnum](CSSPEnums.FilePurposeEnum.html), [FileTypeEnum](CSSPEnums.FileTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class TVFile : LastUpdate
@@ -432,6 +434,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TVFileName](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileName), [LastUpdateContactText](CSSPModels.TVFile.html#CSSPModels_TVFile_LastUpdateContactText), [TemplateTVTypeText](CSSPModels.TVFile.html#CSSPModels_TVFile_TemplateTVTypeText), [LanguageText](CSSPModels.TVFile.html#CSSPModels_TVFile_LanguageText), [FilePurposeText](CSSPModels.TVFile.html#CSSPModels_TVFile_FilePurposeText), [FileTypeText](CSSPModels.TVFile.html#CSSPModels_TVFile_FileTypeText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVFileService](CSSPServices.TVFileService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVFileController](CSSPWebAPI.Controllers.TVFileController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [LanguageEnum](CSSPEnums.LanguageEnum.html), [FilePurposeEnum](CSSPEnums.FilePurposeEnum.html), [FileTypeEnum](CSSPEnums.FileTypeEnum.html)</para>
+    /// > <para>**Inherits [TVFile](CSSPModels.TVFile.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TVFileExtraA : TVFile
     {
@@ -602,6 +616,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TVFileReportTest](CSSPModels.TVFile.html#CSSPModels_TVFile_TVFileReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVFileService](CSSPServices.TVFileService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVFileController](CSSPWebAPI.Controllers.TVFileController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [LanguageEnum](CSSPEnums.LanguageEnum.html), [FilePurposeEnum](CSSPEnums.FilePurposeEnum.html), [FileTypeEnum](CSSPEnums.FileTypeEnum.html)</para>
+    /// > <para>**Inherits [TVFileExtraA](CSSPModels.TVFileExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TVFileExtraB : TVFileExtraA
     {

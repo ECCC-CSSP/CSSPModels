@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table UseOfSites** : [UseOfSiteID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseOfSiteID), [SiteTVItemID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteTVItemID), [SubsectorTVItemID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SubsectorTVItemID), [SiteType](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteType), [Ordinal](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Ordinal), [StartYear](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_StartYear), [EndYear](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_EndYear), [UseWeight](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseWeight), [Weight_perc](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Weight_perc), [UseEquation](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseEquation), [Param1](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param1), [Param2](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param2), [Param3](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param3), [Param4](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param4), [LastUpdateDate_UTC](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_HasErrors), [ValidationResults](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_ValidationResults), </para>
+    /// > <para>**DB properties for table UseOfSites** : [UseOfSiteID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseOfSiteID), [SiteTVItemID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteTVItemID), [SubsectorTVItemID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SubsectorTVItemID), [SiteType](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteType), [Ordinal](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Ordinal), [StartYear](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_StartYear), [EndYear](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_EndYear), [UseWeight](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseWeight), [Weight_perc](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Weight_perc), [UseEquation](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseEquation), [Param1](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param1), [Param2](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param2), [Param3](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param3), [Param4](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param4), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [UseOfSiteService](CSSPServices.UseOfSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [UseOfSiteController](CSSPWebAPI.Controllers.UseOfSiteController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SiteTypeEnum](CSSPEnums.SiteTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class UseOfSite : LastUpdate
@@ -375,6 +377,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [SiteText](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteText), [SubsectorText](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SubsectorText), [LastUpdateContactText](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_LastUpdateContactText), [SiteTypeText](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteTypeText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [UseOfSiteService](CSSPServices.UseOfSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [UseOfSiteController](CSSPWebAPI.Controllers.UseOfSiteController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SiteTypeEnum](CSSPEnums.SiteTypeEnum.html)</para>
+    /// > <para>**Inherits [UseOfSite](CSSPModels.UseOfSite.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class UseOfSiteExtraA : UseOfSite
     {
@@ -489,6 +503,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [UseOfSiteReportTest](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseOfSiteReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [UseOfSiteService](CSSPServices.UseOfSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [UseOfSiteController](CSSPWebAPI.Controllers.UseOfSiteController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SiteTypeEnum](CSSPEnums.SiteTypeEnum.html)</para>
+    /// > <para>**Inherits [UseOfSiteExtraA](CSSPModels.UseOfSiteExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class UseOfSiteExtraB : UseOfSiteExtraA
     {

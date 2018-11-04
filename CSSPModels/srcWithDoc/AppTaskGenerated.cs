@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table AppTasks** : [AppTaskID](CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskID), [TVItemID](CSSPModels.AppTask.html#CSSPModels_AppTask_TVItemID), [TVItemID2](CSSPModels.AppTask.html#CSSPModels_AppTask_TVItemID2), [AppTaskCommand](CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskCommand), [AppTaskStatus](CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskStatus), [PercentCompleted](CSSPModels.AppTask.html#CSSPModels_AppTask_PercentCompleted), [Parameters](CSSPModels.AppTask.html#CSSPModels_AppTask_Parameters), [Language](CSSPModels.AppTask.html#CSSPModels_AppTask_Language), [StartDateTime_UTC](CSSPModels.AppTask.html#CSSPModels_AppTask_StartDateTime_UTC), [EndDateTime_UTC](CSSPModels.AppTask.html#CSSPModels_AppTask_EndDateTime_UTC), [EstimatedLength_second](CSSPModels.AppTask.html#CSSPModels_AppTask_EstimatedLength_second), [RemainingTime_second](CSSPModels.AppTask.html#CSSPModels_AppTask_RemainingTime_second), [LastUpdateDate_UTC](CSSPModels.AppTask.html#CSSPModels_AppTask_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.AppTask.html#CSSPModels_AppTask_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.AppTask.html#CSSPModels_AppTask_HasErrors), [ValidationResults](CSSPModels.AppTask.html#CSSPModels_AppTask_ValidationResults), </para>
+    /// > <para>**DB properties for table AppTasks** : [AppTaskID](CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskID), [TVItemID](CSSPModels.AppTask.html#CSSPModels_AppTask_TVItemID), [TVItemID2](CSSPModels.AppTask.html#CSSPModels_AppTask_TVItemID2), [AppTaskCommand](CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskCommand), [AppTaskStatus](CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskStatus), [PercentCompleted](CSSPModels.AppTask.html#CSSPModels_AppTask_PercentCompleted), [Parameters](CSSPModels.AppTask.html#CSSPModels_AppTask_Parameters), [Language](CSSPModels.AppTask.html#CSSPModels_AppTask_Language), [StartDateTime_UTC](CSSPModels.AppTask.html#CSSPModels_AppTask_StartDateTime_UTC), [EndDateTime_UTC](CSSPModels.AppTask.html#CSSPModels_AppTask_EndDateTime_UTC), [EstimatedLength_second](CSSPModels.AppTask.html#CSSPModels_AppTask_EstimatedLength_second), [RemainingTime_second](CSSPModels.AppTask.html#CSSPModels_AppTask_RemainingTime_second), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskService](CSSPServices.AppTaskService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AppTaskController](CSSPWebAPI.Controllers.AppTaskController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [AppTaskCommandEnum](CSSPEnums.AppTaskCommandEnum.html), [AppTaskStatusEnum](CSSPEnums.AppTaskStatusEnum.html), [LanguageEnum](CSSPEnums.LanguageEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class AppTask : LastUpdate
@@ -334,6 +336,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TVItemText](CSSPModels.AppTask.html#CSSPModels_AppTask_TVItemText), [TVItem2Text](CSSPModels.AppTask.html#CSSPModels_AppTask_TVItem2Text), [LastUpdateContactText](CSSPModels.AppTask.html#CSSPModels_AppTask_LastUpdateContactText), [AppTaskCommandText](CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskCommandText), [AppTaskStatusText](CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskStatusText), [LanguageText](CSSPModels.AppTask.html#CSSPModels_AppTask_LanguageText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskService](CSSPServices.AppTaskService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AppTaskController](CSSPWebAPI.Controllers.AppTaskController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [AppTaskCommandEnum](CSSPEnums.AppTaskCommandEnum.html), [AppTaskStatusEnum](CSSPEnums.AppTaskStatusEnum.html), [LanguageEnum](CSSPEnums.LanguageEnum.html)</para>
+    /// > <para>**Inherits [AppTask](CSSPModels.AppTask.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class AppTaskExtraA : AppTask
     {
@@ -502,6 +516,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [AppTaskReportTest](CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskService](CSSPServices.AppTaskService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AppTaskController](CSSPWebAPI.Controllers.AppTaskController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [AppTaskCommandEnum](CSSPEnums.AppTaskCommandEnum.html), [AppTaskStatusEnum](CSSPEnums.AppTaskStatusEnum.html), [LanguageEnum](CSSPEnums.LanguageEnum.html)</para>
+    /// > <para>**Inherits [AppTaskExtraA](CSSPModels.AppTaskExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class AppTaskExtraB : AppTaskExtraA
     {

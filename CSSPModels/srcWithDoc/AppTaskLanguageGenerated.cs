@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table AppTaskLanguages** : [AppTaskLanguageID](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_AppTaskLanguageID), [AppTaskID](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_AppTaskID), [Language](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_Language), [StatusText](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_StatusText), [ErrorText](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_ErrorText), [TranslationStatus](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_TranslationStatus), [LastUpdateDate_UTC](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_HasErrors), [ValidationResults](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_ValidationResults), </para>
+    /// > <para>**DB properties for table AppTaskLanguages** : [AppTaskLanguageID](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_AppTaskLanguageID), [AppTaskID](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_AppTaskID), [Language](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_Language), [StatusText](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_StatusText), [ErrorText](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_ErrorText), [TranslationStatus](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_TranslationStatus), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskLanguageService](CSSPServices.AppTaskLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AppTaskLanguageController](CSSPWebAPI.Controllers.AppTaskLanguageController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class AppTaskLanguage : LastUpdate
@@ -185,6 +187,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_LastUpdateContactText), [LanguageText](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_LanguageText), [TranslationStatusText](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_TranslationStatusText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskLanguageService](CSSPServices.AppTaskLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AppTaskLanguageController](CSSPWebAPI.Controllers.AppTaskLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [AppTaskLanguage](CSSPModels.AppTaskLanguage.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class AppTaskLanguageExtraA : AppTaskLanguage
     {
@@ -276,6 +290,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [AppTaskLanguageReportTest](CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_AppTaskLanguageReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskLanguageService](CSSPServices.AppTaskLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AppTaskLanguageController](CSSPWebAPI.Controllers.AppTaskLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [AppTaskLanguageExtraA](CSSPModels.AppTaskLanguageExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class AppTaskLanguageExtraB : AppTaskLanguageExtraA
     {

@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table ReportSections** : [ReportSectionID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ReportSectionID), [ReportTypeID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ReportTypeID), [TVItemID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_TVItemID), [Ordinal](CSSPModels.ReportSection.html#CSSPModels_ReportSection_Ordinal), [IsStatic](CSSPModels.ReportSection.html#CSSPModels_ReportSection_IsStatic), [ParentReportSectionID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ParentReportSectionID), [Year](CSSPModels.ReportSection.html#CSSPModels_ReportSection_Year), [Locked](CSSPModels.ReportSection.html#CSSPModels_ReportSection_Locked), [TemplateReportSectionID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_TemplateReportSectionID), [LastUpdateDate_UTC](CSSPModels.ReportSection.html#CSSPModels_ReportSection_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.ReportSection.html#CSSPModels_ReportSection_HasErrors), [ValidationResults](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ValidationResults), </para>
+    /// > <para>**DB properties for table ReportSections** : [ReportSectionID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ReportSectionID), [ReportTypeID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ReportTypeID), [TVItemID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_TVItemID), [Ordinal](CSSPModels.ReportSection.html#CSSPModels_ReportSection_Ordinal), [IsStatic](CSSPModels.ReportSection.html#CSSPModels_ReportSection_IsStatic), [ParentReportSectionID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ParentReportSectionID), [Year](CSSPModels.ReportSection.html#CSSPModels_ReportSection_Year), [Locked](CSSPModels.ReportSection.html#CSSPModels_ReportSection_Locked), [TemplateReportSectionID](CSSPModels.ReportSection.html#CSSPModels_ReportSection_TemplateReportSectionID), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ReportSectionService](CSSPServices.ReportSectionService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ReportSectionController](CSSPWebAPI.Controllers.ReportSectionController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class ReportSection : LastUpdate
@@ -251,6 +253,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.ReportSection.html#CSSPModels_ReportSection_LastUpdateContactText), [ReportSectionName](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ReportSectionName), [ReportSectionText](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ReportSectionText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ReportSectionService](CSSPServices.ReportSectionService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ReportSectionController](CSSPWebAPI.Controllers.ReportSectionController.html)</para>
+    /// > <para>**Inherits [ReportSection](CSSPModels.ReportSection.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ReportSectionExtraA : ReportSection
     {
@@ -338,6 +351,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [ReportSectionReportTest](CSSPModels.ReportSection.html#CSSPModels_ReportSection_ReportSectionReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ReportSectionService](CSSPServices.ReportSectionService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ReportSectionController](CSSPWebAPI.Controllers.ReportSectionController.html)</para>
+    /// > <para>**Inherits [ReportSectionExtraA](CSSPModels.ReportSectionExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ReportSectionExtraB : ReportSectionExtraA
     {

@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table TVTypeUserAuthorizations** : [TVTypeUserAuthorizationID](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVTypeUserAuthorizationID), [ContactTVItemID](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_ContactTVItemID), [TVType](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVType), [TVAuth](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVAuth), [LastUpdateDate_UTC](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_HasErrors), [ValidationResults](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_ValidationResults), </para>
+    /// > <para>**DB properties for table TVTypeUserAuthorizations** : [TVTypeUserAuthorizationID](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVTypeUserAuthorizationID), [ContactTVItemID](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_ContactTVItemID), [TVType](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVType), [TVAuth](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVAuth), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVTypeUserAuthorizationService](CSSPServices.TVTypeUserAuthorizationService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVTypeUserAuthorizationController](CSSPWebAPI.Controllers.TVTypeUserAuthorizationController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [TVAuthEnum](CSSPEnums.TVAuthEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class TVTypeUserAuthorization : LastUpdate
@@ -135,6 +137,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [ContactName](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_ContactName), [LastUpdateContactText](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_LastUpdateContactText), [TVTypeText](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVTypeText), [TVAuthText](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVAuthText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVTypeUserAuthorizationService](CSSPServices.TVTypeUserAuthorizationService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVTypeUserAuthorizationController](CSSPWebAPI.Controllers.TVTypeUserAuthorizationController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [TVAuthEnum](CSSPEnums.TVAuthEnum.html)</para>
+    /// > <para>**Inherits [TVTypeUserAuthorization](CSSPModels.TVTypeUserAuthorization.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TVTypeUserAuthorizationExtraA : TVTypeUserAuthorization
     {
@@ -251,6 +265,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TVTypeUserAuthorizationReportTest](CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVTypeUserAuthorizationReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVTypeUserAuthorizationService](CSSPServices.TVTypeUserAuthorizationService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TVTypeUserAuthorizationController](CSSPWebAPI.Controllers.TVTypeUserAuthorizationController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [TVAuthEnum](CSSPEnums.TVAuthEnum.html)</para>
+    /// > <para>**Inherits [TVTypeUserAuthorizationExtraA](CSSPModels.TVTypeUserAuthorizationExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TVTypeUserAuthorizationExtraB : TVTypeUserAuthorizationExtraA
     {

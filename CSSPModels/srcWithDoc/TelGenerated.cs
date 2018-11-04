@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table Tels** : [TelID](CSSPModels.Tel.html#CSSPModels_Tel_TelID), [TelTVItemID](CSSPModels.Tel.html#CSSPModels_Tel_TelTVItemID), [TelNumber](CSSPModels.Tel.html#CSSPModels_Tel_TelNumber), [TelType](CSSPModels.Tel.html#CSSPModels_Tel_TelType), [LastUpdateDate_UTC](CSSPModels.Tel.html#CSSPModels_Tel_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Tel.html#CSSPModels_Tel_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.Tel.html#CSSPModels_Tel_HasErrors), [ValidationResults](CSSPModels.Tel.html#CSSPModels_Tel_ValidationResults), </para>
+    /// > <para>**DB properties for table Tels** : [TelID](CSSPModels.Tel.html#CSSPModels_Tel_TelID), [TelTVItemID](CSSPModels.Tel.html#CSSPModels_Tel_TelTVItemID), [TelNumber](CSSPModels.Tel.html#CSSPModels_Tel_TelNumber), [TelType](CSSPModels.Tel.html#CSSPModels_Tel_TelType), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TelService](CSSPServices.TelService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TelController](CSSPWebAPI.Controllers.TelController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TelTypeEnum](CSSPEnums.TelTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class Tel : LastUpdate
@@ -134,6 +136,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TelNumberText](CSSPModels.Tel.html#CSSPModels_Tel_TelNumberText), [LastUpdateContactText](CSSPModels.Tel.html#CSSPModels_Tel_LastUpdateContactText), [TelTypeText](CSSPModels.Tel.html#CSSPModels_Tel_TelTypeText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TelService](CSSPServices.TelService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TelController](CSSPWebAPI.Controllers.TelController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TelTypeEnum](CSSPEnums.TelTypeEnum.html)</para>
+    /// > <para>**Inherits [Tel](CSSPModels.Tel.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TelExtraA : Tel
     {
@@ -223,6 +237,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TelReportTest](CSSPModels.Tel.html#CSSPModels_Tel_TelReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TelService](CSSPServices.TelService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TelController](CSSPWebAPI.Controllers.TelController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TelTypeEnum](CSSPEnums.TelTypeEnum.html)</para>
+    /// > <para>**Inherits [TelExtraA](CSSPModels.TelExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TelExtraB : TelExtraA
     {

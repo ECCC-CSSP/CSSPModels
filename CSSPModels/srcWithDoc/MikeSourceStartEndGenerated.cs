@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MikeSourceStartEnds** : [MikeSourceStartEndID](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_MikeSourceStartEndID), [MikeSourceID](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_MikeSourceID), [StartDateAndTime_Local](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_StartDateAndTime_Local), [EndDateAndTime_Local](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_EndDateAndTime_Local), [SourceFlowStart_m3_day](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceFlowStart_m3_day), [SourceFlowEnd_m3_day](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceFlowEnd_m3_day), [SourcePollutionStart_MPN_100ml](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourcePollutionStart_MPN_100ml), [SourcePollutionEnd_MPN_100ml](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourcePollutionEnd_MPN_100ml), [SourceTemperatureStart_C](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceTemperatureStart_C), [SourceTemperatureEnd_C](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceTemperatureEnd_C), [SourceSalinityStart_PSU](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceSalinityStart_PSU), [SourceSalinityEnd_PSU](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceSalinityEnd_PSU), [LastUpdateDate_UTC](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_HasErrors), [ValidationResults](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_ValidationResults), </para>
+    /// > <para>**DB properties for table MikeSourceStartEnds** : [MikeSourceStartEndID](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_MikeSourceStartEndID), [MikeSourceID](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_MikeSourceID), [StartDateAndTime_Local](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_StartDateAndTime_Local), [EndDateAndTime_Local](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_EndDateAndTime_Local), [SourceFlowStart_m3_day](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceFlowStart_m3_day), [SourceFlowEnd_m3_day](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceFlowEnd_m3_day), [SourcePollutionStart_MPN_100ml](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourcePollutionStart_MPN_100ml), [SourcePollutionEnd_MPN_100ml](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourcePollutionEnd_MPN_100ml), [SourceTemperatureStart_C](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceTemperatureStart_C), [SourceTemperatureEnd_C](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceTemperatureEnd_C), [SourceSalinityStart_PSU](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceSalinityStart_PSU), [SourceSalinityEnd_PSU](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_SourceSalinityEnd_PSU), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeSourceStartEndService](CSSPServices.MikeSourceStartEndService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MikeSourceStartEndController](CSSPWebAPI.Controllers.MikeSourceStartEndController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MikeSourceStartEnd : LastUpdate
@@ -326,6 +328,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeSourceStartEndService](CSSPServices.MikeSourceStartEndService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MikeSourceStartEndController](CSSPWebAPI.Controllers.MikeSourceStartEndController.html)</para>
+    /// > <para>**Inherits [MikeSourceStartEnd](CSSPModels.MikeSourceStartEnd.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MikeSourceStartEndExtraA : MikeSourceStartEnd
     {
@@ -363,6 +376,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MikeSourceStartEndReportTest](CSSPModels.MikeSourceStartEnd.html#CSSPModels_MikeSourceStartEnd_MikeSourceStartEndReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeSourceStartEndService](CSSPServices.MikeSourceStartEndService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MikeSourceStartEndController](CSSPWebAPI.Controllers.MikeSourceStartEndController.html)</para>
+    /// > <para>**Inherits [MikeSourceStartEndExtraA](CSSPModels.MikeSourceStartEndExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MikeSourceStartEndExtraB : MikeSourceStartEndExtraA
     {

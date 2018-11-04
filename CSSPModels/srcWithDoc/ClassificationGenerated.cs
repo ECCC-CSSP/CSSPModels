@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table Classifications** : [ClassificationID](CSSPModels.Classification.html#CSSPModels_Classification_ClassificationID), [ClassificationTVItemID](CSSPModels.Classification.html#CSSPModels_Classification_ClassificationTVItemID), [ClassificationType](CSSPModels.Classification.html#CSSPModels_Classification_ClassificationType), [Ordinal](CSSPModels.Classification.html#CSSPModels_Classification_Ordinal), [LastUpdateDate_UTC](CSSPModels.Classification.html#CSSPModels_Classification_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.Classification.html#CSSPModels_Classification_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.Classification.html#CSSPModels_Classification_HasErrors), [ValidationResults](CSSPModels.Classification.html#CSSPModels_Classification_ValidationResults), </para>
+    /// > <para>**DB properties for table Classifications** : [ClassificationID](CSSPModels.Classification.html#CSSPModels_Classification_ClassificationID), [ClassificationTVItemID](CSSPModels.Classification.html#CSSPModels_Classification_ClassificationTVItemID), [ClassificationType](CSSPModels.Classification.html#CSSPModels_Classification_ClassificationType), [Ordinal](CSSPModels.Classification.html#CSSPModels_Classification_Ordinal), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ClassificationService](CSSPServices.ClassificationService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ClassificationController](CSSPWebAPI.Controllers.ClassificationController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ClassificationTypeEnum](CSSPEnums.ClassificationTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class Classification : LastUpdate
@@ -134,6 +136,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.Classification.html#CSSPModels_Classification_LastUpdateContactText), [ClassificationTVText](CSSPModels.Classification.html#CSSPModels_Classification_ClassificationTVText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ClassificationService](CSSPServices.ClassificationService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ClassificationController](CSSPWebAPI.Controllers.ClassificationController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ClassificationTypeEnum](CSSPEnums.ClassificationTypeEnum.html)</para>
+    /// > <para>**Inherits [Classification](CSSPModels.Classification.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ClassificationExtraA : Classification
     {
@@ -198,6 +212,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [ClassificationReportTest](CSSPModels.Classification.html#CSSPModels_Classification_ClassificationReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ClassificationService](CSSPServices.ClassificationService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ClassificationController](CSSPWebAPI.Controllers.ClassificationController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ClassificationTypeEnum](CSSPEnums.ClassificationTypeEnum.html)</para>
+    /// > <para>**Inherits [ClassificationExtraA](CSSPModels.ClassificationExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ClassificationExtraB : ClassificationExtraA
     {

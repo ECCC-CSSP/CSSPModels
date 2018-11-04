@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table LabSheetTubeMPNDetails** : [LabSheetTubeMPNDetailID](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_LabSheetTubeMPNDetailID), [LabSheetDetailID](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_LabSheetDetailID), [Ordinal](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Ordinal), [MWQMSiteTVItemID](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_MWQMSiteTVItemID), [SampleDateTime](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_SampleDateTime), [MPN](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_MPN), [Tube10](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Tube10), [Tube1_0](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Tube1_0), [Tube0_1](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Tube0_1), [Salinity](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Salinity), [Temperature](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Temperature), [ProcessedBy](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_ProcessedBy), [SampleType](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_SampleType), [SiteComment](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_SiteComment), [LastUpdateDate_UTC](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_HasErrors), [ValidationResults](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_ValidationResults), </para>
+    /// > <para>**DB properties for table LabSheetTubeMPNDetails** : [LabSheetTubeMPNDetailID](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_LabSheetTubeMPNDetailID), [LabSheetDetailID](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_LabSheetDetailID), [Ordinal](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Ordinal), [MWQMSiteTVItemID](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_MWQMSiteTVItemID), [SampleDateTime](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_SampleDateTime), [MPN](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_MPN), [Tube10](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Tube10), [Tube1_0](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Tube1_0), [Tube0_1](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Tube0_1), [Salinity](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Salinity), [Temperature](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_Temperature), [ProcessedBy](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_ProcessedBy), [SampleType](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_SampleType), [SiteComment](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_SiteComment), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LabSheetTubeMPNDetailService](CSSPServices.LabSheetTubeMPNDetailService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [LabSheetTubeMPNDetailController](CSSPWebAPI.Controllers.LabSheetTubeMPNDetailController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class LabSheetTubeMPNDetail : LastUpdate
@@ -380,6 +382,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MWQMSiteText](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_MWQMSiteText), [LastUpdateContactText](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_LastUpdateContactText), [SampleTypeText](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_SampleTypeText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LabSheetTubeMPNDetailService](CSSPServices.LabSheetTubeMPNDetailService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [LabSheetTubeMPNDetailController](CSSPWebAPI.Controllers.LabSheetTubeMPNDetailController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html)</para>
+    /// > <para>**Inherits [LabSheetTubeMPNDetail](CSSPModels.LabSheetTubeMPNDetail.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class LabSheetTubeMPNDetailExtraA : LabSheetTubeMPNDetail
     {
@@ -469,6 +483,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LabSheetTubeMPNDetailReportTest](CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_LabSheetTubeMPNDetailReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [LabSheetTubeMPNDetailService](CSSPServices.LabSheetTubeMPNDetailService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [LabSheetTubeMPNDetailController](CSSPWebAPI.Controllers.LabSheetTubeMPNDetailController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SampleTypeEnum](CSSPEnums.SampleTypeEnum.html)</para>
+    /// > <para>**Inherits [LabSheetTubeMPNDetailExtraA](CSSPModels.LabSheetTubeMPNDetailExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class LabSheetTubeMPNDetailExtraB : LabSheetTubeMPNDetailExtraA
     {

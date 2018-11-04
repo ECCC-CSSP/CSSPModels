@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table TideLocations** : [TideLocationID](CSSPModels.TideLocation.html#CSSPModels_TideLocation_TideLocationID), [Zone](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Zone), [Name](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Name), [Prov](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Prov), [sid](CSSPModels.TideLocation.html#CSSPModels_TideLocation_sid), [Lat](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Lat), [Lng](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Lng), [LastUpdateDate_UTC](CSSPModels.TideLocation.html#CSSPModels_TideLocation_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TideLocation.html#CSSPModels_TideLocation_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.TideLocation.html#CSSPModels_TideLocation_HasErrors), [ValidationResults](CSSPModels.TideLocation.html#CSSPModels_TideLocation_ValidationResults), </para>
+    /// > <para>**DB properties for table TideLocations** : [TideLocationID](CSSPModels.TideLocation.html#CSSPModels_TideLocation_TideLocationID), [Zone](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Zone), [Name](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Name), [Prov](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Prov), [sid](CSSPModels.TideLocation.html#CSSPModels_TideLocation_sid), [Lat](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Lat), [Lng](CSSPModels.TideLocation.html#CSSPModels_TideLocation_Lng), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TideLocationService](CSSPServices.TideLocationService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TideLocationController](CSSPWebAPI.Controllers.TideLocationController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class TideLocation : LastUpdate
@@ -201,6 +203,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.TideLocation.html#CSSPModels_TideLocation_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TideLocationService](CSSPServices.TideLocationService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TideLocationController](CSSPWebAPI.Controllers.TideLocationController.html)</para>
+    /// > <para>**Inherits [TideLocation](CSSPModels.TideLocation.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TideLocationExtraA : TideLocation
     {
@@ -238,6 +251,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TideLocationReportTest](CSSPModels.TideLocation.html#CSSPModels_TideLocation_TideLocationReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TideLocationService](CSSPServices.TideLocationService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TideLocationController](CSSPWebAPI.Controllers.TideLocationController.html)</para>
+    /// > <para>**Inherits [TideLocationExtraA](CSSPModels.TideLocationExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TideLocationExtraB : TideLocationExtraA
     {

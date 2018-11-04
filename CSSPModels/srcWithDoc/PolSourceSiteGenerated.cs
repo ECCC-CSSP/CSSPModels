@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table PolSourceSites** : [PolSourceSiteID](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteID), [PolSourceSiteTVItemID](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteTVItemID), [Temp_Locator_CanDelete](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_Temp_Locator_CanDelete), [Oldsiteid](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_Oldsiteid), [Site](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_Site), [SiteID](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_SiteID), [IsPointSource](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_IsPointSource), [InactiveReason](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_InactiveReason), [CivicAddressTVItemID](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_CivicAddressTVItemID), [LastUpdateDate_UTC](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_HasErrors), [ValidationResults](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_ValidationResults), </para>
+    /// > <para>**DB properties for table PolSourceSites** : [PolSourceSiteID](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteID), [PolSourceSiteTVItemID](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteTVItemID), [Temp_Locator_CanDelete](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_Temp_Locator_CanDelete), [Oldsiteid](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_Oldsiteid), [Site](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_Site), [SiteID](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_SiteID), [IsPointSource](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_IsPointSource), [InactiveReason](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_InactiveReason), [CivicAddressTVItemID](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_CivicAddressTVItemID), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceSiteService](CSSPServices.PolSourceSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [PolSourceSiteController](CSSPWebAPI.Controllers.PolSourceSiteController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [PolSourceInactiveReasonEnum](CSSPEnums.PolSourceInactiveReasonEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class PolSourceSite : LastUpdate
@@ -260,6 +262,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [PolSourceSiteText](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteText), [LastUpdateContactText](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_LastUpdateContactText), [InactiveReasonText](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_InactiveReasonText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceSiteService](CSSPServices.PolSourceSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [PolSourceSiteController](CSSPWebAPI.Controllers.PolSourceSiteController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [PolSourceInactiveReasonEnum](CSSPEnums.PolSourceInactiveReasonEnum.html)</para>
+    /// > <para>**Inherits [PolSourceSite](CSSPModels.PolSourceSite.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class PolSourceSiteExtraA : PolSourceSite
     {
@@ -349,6 +363,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [PolSourceSiteReportTest](CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_PolSourceSiteReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceSiteService](CSSPServices.PolSourceSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [PolSourceSiteController](CSSPWebAPI.Controllers.PolSourceSiteController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [PolSourceInactiveReasonEnum](CSSPEnums.PolSourceInactiveReasonEnum.html)</para>
+    /// > <para>**Inherits [PolSourceSiteExtraA](CSSPModels.PolSourceSiteExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class PolSourceSiteExtraB : PolSourceSiteExtraA
     {

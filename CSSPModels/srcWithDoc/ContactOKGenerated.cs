@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [ContactID](CSSPModels.ContactOK.html#CSSPModels_ContactOK_ContactID), [ContactTVItemID](CSSPModels.ContactOK.html#CSSPModels_ContactOK_ContactTVItemID), [HasErrors](CSSPModels.ContactOK.html#CSSPModels_ContactOK_HasErrors), [ValidationResults](CSSPModels.ContactOK.html#CSSPModels_ContactOK_ValidationResults), </para>
+    /// > <para>**Other properties** : [ContactID](CSSPModels.ContactOK.html#CSSPModels_ContactOK_ContactID), [ContactTVItemID](CSSPModels.ContactOK.html#CSSPModels_ContactOK_ContactTVItemID), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactOKService](CSSPServices.ContactOKService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

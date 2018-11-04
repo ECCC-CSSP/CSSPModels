@@ -17,10 +17,10 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [PolSourceObsInfo](CSSPModels.PolSourceObsInfoChild.html#CSSPModels_PolSourceObsInfoChild_PolSourceObsInfo), [PolSourceObsInfoChildStart](CSSPModels.PolSourceObsInfoChild.html#CSSPModels_PolSourceObsInfoChild_PolSourceObsInfoChildStart), [PolSourceObsInfoText](CSSPModels.PolSourceObsInfoChild.html#CSSPModels_PolSourceObsInfoChild_PolSourceObsInfoText), [PolSourceObsInfoChildStartText](CSSPModels.PolSourceObsInfoChild.html#CSSPModels_PolSourceObsInfoChild_PolSourceObsInfoChildStartText), [HasErrors](CSSPModels.PolSourceObsInfoChild.html#CSSPModels_PolSourceObsInfoChild_HasErrors), [ValidationResults](CSSPModels.PolSourceObsInfoChild.html#CSSPModels_PolSourceObsInfoChild_ValidationResults), </para>
+    /// > <para>**Other properties** : [PolSourceObsInfo](CSSPModels.PolSourceObsInfoChild.html#CSSPModels_PolSourceObsInfoChild_PolSourceObsInfo), [PolSourceObsInfoChildStart](CSSPModels.PolSourceObsInfoChild.html#CSSPModels_PolSourceObsInfoChild_PolSourceObsInfoChildStart), [PolSourceObsInfoText](CSSPModels.PolSourceObsInfoChild.html#CSSPModels_PolSourceObsInfoChild_PolSourceObsInfoText), [PolSourceObsInfoChildStartText](CSSPModels.PolSourceObsInfoChild.html#CSSPModels_PolSourceObsInfoChild_PolSourceObsInfoChildStartText), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceObsInfoChildService](CSSPServices.PolSourceObsInfoChildService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [PolSourceObsInfoEnum](CSSPEnums.PolSourceObsInfoEnum.html), [PolSourceObsInfoEnum](CSSPEnums.PolSourceObsInfoEnum.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

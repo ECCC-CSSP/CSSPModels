@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [Layer](CSSPModels.NodeLayer.html#CSSPModels_NodeLayer_Layer), [Z](CSSPModels.NodeLayer.html#CSSPModels_NodeLayer_Z), [Node](CSSPModels.NodeLayer.html#CSSPModels_NodeLayer_Node), [HasErrors](CSSPModels.NodeLayer.html#CSSPModels_NodeLayer_HasErrors), [ValidationResults](CSSPModels.NodeLayer.html#CSSPModels_NodeLayer_ValidationResults), </para>
+    /// > <para>**Other properties** : [Layer](CSSPModels.NodeLayer.html#CSSPModels_NodeLayer_Layer), [Z](CSSPModels.NodeLayer.html#CSSPModels_NodeLayer_Z), [Node](CSSPModels.NodeLayer.html#CSSPModels_NodeLayer_Node), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [NodeLayerService](CSSPServices.NodeLayerService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

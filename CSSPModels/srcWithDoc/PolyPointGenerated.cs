@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [XCoord](CSSPModels.PolyPoint.html#CSSPModels_PolyPoint_XCoord), [YCoord](CSSPModels.PolyPoint.html#CSSPModels_PolyPoint_YCoord), [Z](CSSPModels.PolyPoint.html#CSSPModels_PolyPoint_Z), [HasErrors](CSSPModels.PolyPoint.html#CSSPModels_PolyPoint_HasErrors), [ValidationResults](CSSPModels.PolyPoint.html#CSSPModels_PolyPoint_ValidationResults), </para>
+    /// > <para>**Other properties** : [XCoord](CSSPModels.PolyPoint.html#CSSPModels_PolyPoint_XCoord), [YCoord](CSSPModels.PolyPoint.html#CSSPModels_PolyPoint_YCoord), [Z](CSSPModels.PolyPoint.html#CSSPModels_PolyPoint_Z), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolyPointService](CSSPServices.PolyPointService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

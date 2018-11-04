@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table TideSites** : [TideSiteID](CSSPModels.TideSite.html#CSSPModels_TideSite_TideSiteID), [TideSiteTVItemID](CSSPModels.TideSite.html#CSSPModels_TideSite_TideSiteTVItemID), [WebTideModel](CSSPModels.TideSite.html#CSSPModels_TideSite_WebTideModel), [WebTideDatum_m](CSSPModels.TideSite.html#CSSPModels_TideSite_WebTideDatum_m), [LastUpdateDate_UTC](CSSPModels.TideSite.html#CSSPModels_TideSite_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.TideSite.html#CSSPModels_TideSite_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.TideSite.html#CSSPModels_TideSite_HasErrors), [ValidationResults](CSSPModels.TideSite.html#CSSPModels_TideSite_ValidationResults), </para>
+    /// > <para>**DB properties for table TideSites** : [TideSiteID](CSSPModels.TideSite.html#CSSPModels_TideSite_TideSiteID), [TideSiteTVItemID](CSSPModels.TideSite.html#CSSPModels_TideSite_TideSiteTVItemID), [WebTideModel](CSSPModels.TideSite.html#CSSPModels_TideSite_WebTideModel), [WebTideDatum_m](CSSPModels.TideSite.html#CSSPModels_TideSite_WebTideDatum_m), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TideSiteService](CSSPServices.TideSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TideSiteController](CSSPWebAPI.Controllers.TideSiteController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class TideSite : LastUpdate
@@ -132,6 +134,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TideSiteText](CSSPModels.TideSite.html#CSSPModels_TideSite_TideSiteText), [LastUpdateContactText](CSSPModels.TideSite.html#CSSPModels_TideSite_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TideSiteService](CSSPServices.TideSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TideSiteController](CSSPWebAPI.Controllers.TideSiteController.html)</para>
+    /// > <para>**Inherits [TideSite](CSSPModels.TideSite.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TideSiteExtraA : TideSite
     {
@@ -194,6 +207,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [TideSiteReportTest](CSSPModels.TideSite.html#CSSPModels_TideSite_TideSiteReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TideSiteService](CSSPServices.TideSiteService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [TideSiteController](CSSPWebAPI.Controllers.TideSiteController.html)</para>
+    /// > <para>**Inherits [TideSiteExtraA](CSSPModels.TideSiteExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class TideSiteExtraB : TideSiteExtraA
     {

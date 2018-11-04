@@ -17,10 +17,10 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [TVItemID](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVItemID), [TVText](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVText), [TVType](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVType), [SubTVType](CSSPModels.TVLocation.html#CSSPModels_TVLocation_SubTVType), [TVTypeText](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVTypeText), [SubTVTypeText](CSSPModels.TVLocation.html#CSSPModels_TVLocation_SubTVTypeText), [MapObjList](CSSPModels.TVLocation.html#CSSPModels_TVLocation_MapObjList), [HasErrors](CSSPModels.TVLocation.html#CSSPModels_TVLocation_HasErrors), [ValidationResults](CSSPModels.TVLocation.html#CSSPModels_TVLocation_ValidationResults), </para>
+    /// > <para>**Other properties** : [TVItemID](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVItemID), [TVText](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVText), [TVType](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVType), [SubTVType](CSSPModels.TVLocation.html#CSSPModels_TVLocation_SubTVType), [TVTypeText](CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVTypeText), [SubTVTypeText](CSSPModels.TVLocation.html#CSSPModels_TVLocation_SubTVTypeText), [MapObjList](CSSPModels.TVLocation.html#CSSPModels_TVLocation_MapObjList), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TVLocationService](CSSPServices.TVLocationService.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

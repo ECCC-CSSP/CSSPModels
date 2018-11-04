@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MapInfoPoints** : [MapInfoPointID](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_MapInfoPointID), [MapInfoID](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_MapInfoID), [Ordinal](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_Ordinal), [Lat](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_Lat), [Lng](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_Lng), [LastUpdateDate_UTC](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_HasErrors), [ValidationResults](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_ValidationResults), </para>
+    /// > <para>**DB properties for table MapInfoPoints** : [MapInfoPointID](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_MapInfoPointID), [MapInfoID](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_MapInfoID), [Ordinal](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_Ordinal), [Lat](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_Lat), [Lng](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_Lng), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MapInfoPointService](CSSPServices.MapInfoPointService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MapInfoPointController](CSSPWebAPI.Controllers.MapInfoPointController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MapInfoPoint : LastUpdate
@@ -154,6 +156,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MapInfoPointService](CSSPServices.MapInfoPointService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MapInfoPointController](CSSPWebAPI.Controllers.MapInfoPointController.html)</para>
+    /// > <para>**Inherits [MapInfoPoint](CSSPModels.MapInfoPoint.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MapInfoPointExtraA : MapInfoPoint
     {
@@ -191,6 +204,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MapInfoPointReportTest](CSSPModels.MapInfoPoint.html#CSSPModels_MapInfoPoint_MapInfoPointReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MapInfoPointService](CSSPServices.MapInfoPointService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MapInfoPointController](CSSPWebAPI.Controllers.MapInfoPointController.html)</para>
+    /// > <para>**Inherits [MapInfoPointExtraA](CSSPModels.MapInfoPointExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MapInfoPointExtraB : MapInfoPointExtraA
     {

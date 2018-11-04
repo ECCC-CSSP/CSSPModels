@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MWQMSubsectorLanguages** : [MWQMSubsectorLanguageID](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_MWQMSubsectorLanguageID), [MWQMSubsectorID](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_MWQMSubsectorID), [Language](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_Language), [SubsectorDesc](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_SubsectorDesc), [TranslationStatusSubsectorDesc](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_TranslationStatusSubsectorDesc), [LogBook](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_LogBook), [TranslationStatusLogBook](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_TranslationStatusLogBook), [LastUpdateDate_UTC](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_HasErrors), [ValidationResults](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_ValidationResults), </para>
+    /// > <para>**DB properties for table MWQMSubsectorLanguages** : [MWQMSubsectorLanguageID](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_MWQMSubsectorLanguageID), [MWQMSubsectorID](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_MWQMSubsectorID), [Language](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_Language), [SubsectorDesc](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_SubsectorDesc), [TranslationStatusSubsectorDesc](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_TranslationStatusSubsectorDesc), [LogBook](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_LogBook), [TranslationStatusLogBook](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_TranslationStatusLogBook), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSubsectorLanguageService](CSSPServices.MWQMSubsectorLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSubsectorLanguageController](CSSPWebAPI.Controllers.MWQMSubsectorLanguageController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MWQMSubsectorLanguage : LastUpdate
@@ -209,6 +211,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_LastUpdateContactText), [LanguageText](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_LanguageText), [TranslationStatusSubsectorDescText](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_TranslationStatusSubsectorDescText), [TranslationStatusLogBookText](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_TranslationStatusLogBookText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSubsectorLanguageService](CSSPServices.MWQMSubsectorLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSubsectorLanguageController](CSSPWebAPI.Controllers.MWQMSubsectorLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [MWQMSubsectorLanguage](CSSPModels.MWQMSubsectorLanguage.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMSubsectorLanguageExtraA : MWQMSubsectorLanguage
     {
@@ -327,6 +341,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MWQMSubsectorLanguageReportTest](CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_MWQMSubsectorLanguageReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSubsectorLanguageService](CSSPServices.MWQMSubsectorLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSubsectorLanguageController](CSSPWebAPI.Controllers.MWQMSubsectorLanguageController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html), [TranslationStatusEnum](CSSPEnums.TranslationStatusEnum.html)</para>
+    /// > <para>**Inherits [MWQMSubsectorLanguageExtraA](CSSPModels.MWQMSubsectorLanguageExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMSubsectorLanguageExtraB : MWQMSubsectorLanguageExtraA
     {

@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table ReportTypes** : [ReportTypeID](CSSPModels.ReportType.html#CSSPModels_ReportType_ReportTypeID), [TVType](CSSPModels.ReportType.html#CSSPModels_ReportType_TVType), [FileType](CSSPModels.ReportType.html#CSSPModels_ReportType_FileType), [UniqueCode](CSSPModels.ReportType.html#CSSPModels_ReportType_UniqueCode), [LastUpdateDate_UTC](CSSPModels.ReportType.html#CSSPModels_ReportType_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ReportType.html#CSSPModels_ReportType_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.ReportType.html#CSSPModels_ReportType_HasErrors), [ValidationResults](CSSPModels.ReportType.html#CSSPModels_ReportType_ValidationResults), </para>
+    /// > <para>**DB properties for table ReportTypes** : [ReportTypeID](CSSPModels.ReportType.html#CSSPModels_ReportType_ReportTypeID), [TVType](CSSPModels.ReportType.html#CSSPModels_ReportType_TVType), [FileType](CSSPModels.ReportType.html#CSSPModels_ReportType_FileType), [UniqueCode](CSSPModels.ReportType.html#CSSPModels_ReportType_UniqueCode), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ReportTypeService](CSSPServices.ReportTypeService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ReportTypeController](CSSPWebAPI.Controllers.ReportTypeController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [FileTypeEnum](CSSPEnums.FileTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class ReportType : LastUpdate
@@ -132,6 +134,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.ReportType.html#CSSPModels_ReportType_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ReportTypeService](CSSPServices.ReportTypeService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ReportTypeController](CSSPWebAPI.Controllers.ReportTypeController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [FileTypeEnum](CSSPEnums.FileTypeEnum.html)</para>
+    /// > <para>**Inherits [ReportType](CSSPModels.ReportType.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ReportTypeExtraA : ReportType
     {
@@ -169,6 +183,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [ReportTypeReportTest](CSSPModels.ReportType.html#CSSPModels_ReportType_ReportTypeReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ReportTypeService](CSSPServices.ReportTypeService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ReportTypeController](CSSPWebAPI.Controllers.ReportTypeController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html), [FileTypeEnum](CSSPEnums.FileTypeEnum.html)</para>
+    /// > <para>**Inherits [ReportTypeExtraA](CSSPModels.ReportTypeExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ReportTypeExtraB : ReportTypeExtraA
     {

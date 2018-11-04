@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MikeScenarios** : [MikeScenarioID](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_MikeScenarioID), [MikeScenarioTVItemID](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_MikeScenarioTVItemID), [ParentMikeScenarioID](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ParentMikeScenarioID), [ScenarioStatus](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ScenarioStatus), [ErrorInfo](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ErrorInfo), [MikeScenarioStartDateTime_Local](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_MikeScenarioStartDateTime_Local), [MikeScenarioEndDateTime_Local](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_MikeScenarioEndDateTime_Local), [MikeScenarioStartExecutionDateTime_Local](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_MikeScenarioStartExecutionDateTime_Local), [MikeScenarioExecutionTime_min](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_MikeScenarioExecutionTime_min), [WindSpeed_km_h](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_WindSpeed_km_h), [WindDirection_deg](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_WindDirection_deg), [DecayFactor_per_day](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_DecayFactor_per_day), [DecayIsConstant](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_DecayIsConstant), [DecayFactorAmplitude](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_DecayFactorAmplitude), [ResultFrequency_min](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ResultFrequency_min), [AmbientTemperature_C](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_AmbientTemperature_C), [AmbientSalinity_PSU](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_AmbientSalinity_PSU), [GenerateDecouplingFiles](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_GenerateDecouplingFiles), [UseDecouplingFiles](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_UseDecouplingFiles), [UseSalinityAndTemperatureInitialConditionFromTVFileTVItemID](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_UseSalinityAndTemperatureInitialConditionFromTVFileTVItemID), [ForSimulatingMWQMRunTVItemID](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ForSimulatingMWQMRunTVItemID), [ManningNumber](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ManningNumber), [NumberOfElements](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_NumberOfElements), [NumberOfTimeSteps](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_NumberOfTimeSteps), [NumberOfSigmaLayers](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_NumberOfSigmaLayers), [NumberOfZLayers](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_NumberOfZLayers), [NumberOfHydroOutputParameters](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_NumberOfHydroOutputParameters), [NumberOfTransOutputParameters](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_NumberOfTransOutputParameters), [EstimatedHydroFileSize](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_EstimatedHydroFileSize), [EstimatedTransFileSize](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_EstimatedTransFileSize), [LastUpdateDate_UTC](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_HasErrors), [ValidationResults](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ValidationResults), </para>
+    /// > <para>**DB properties for table MikeScenarios** : [MikeScenarioID](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_MikeScenarioID), [MikeScenarioTVItemID](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_MikeScenarioTVItemID), [ParentMikeScenarioID](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ParentMikeScenarioID), [ScenarioStatus](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ScenarioStatus), [ErrorInfo](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ErrorInfo), [MikeScenarioStartDateTime_Local](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_MikeScenarioStartDateTime_Local), [MikeScenarioEndDateTime_Local](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_MikeScenarioEndDateTime_Local), [MikeScenarioStartExecutionDateTime_Local](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_MikeScenarioStartExecutionDateTime_Local), [MikeScenarioExecutionTime_min](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_MikeScenarioExecutionTime_min), [WindSpeed_km_h](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_WindSpeed_km_h), [WindDirection_deg](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_WindDirection_deg), [DecayFactor_per_day](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_DecayFactor_per_day), [DecayIsConstant](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_DecayIsConstant), [DecayFactorAmplitude](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_DecayFactorAmplitude), [ResultFrequency_min](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ResultFrequency_min), [AmbientTemperature_C](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_AmbientTemperature_C), [AmbientSalinity_PSU](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_AmbientSalinity_PSU), [GenerateDecouplingFiles](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_GenerateDecouplingFiles), [UseDecouplingFiles](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_UseDecouplingFiles), [UseSalinityAndTemperatureInitialConditionFromTVFileTVItemID](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_UseSalinityAndTemperatureInitialConditionFromTVFileTVItemID), [ForSimulatingMWQMRunTVItemID](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ForSimulatingMWQMRunTVItemID), [ManningNumber](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ManningNumber), [NumberOfElements](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_NumberOfElements), [NumberOfTimeSteps](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_NumberOfTimeSteps), [NumberOfSigmaLayers](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_NumberOfSigmaLayers), [NumberOfZLayers](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_NumberOfZLayers), [NumberOfHydroOutputParameters](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_NumberOfHydroOutputParameters), [NumberOfTransOutputParameters](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_NumberOfTransOutputParameters), [EstimatedHydroFileSize](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_EstimatedHydroFileSize), [EstimatedTransFileSize](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_EstimatedTransFileSize), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeScenarioService](CSSPServices.MikeScenarioService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MikeScenarioController](CSSPWebAPI.Controllers.MikeScenarioController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ScenarioStatusEnum](CSSPEnums.ScenarioStatusEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MikeScenario : LastUpdate
@@ -768,6 +770,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MikeScenarioText](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_MikeScenarioText), [LastUpdateContactText](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_LastUpdateContactText), [ScenarioStatusText](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ScenarioStatusText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeScenarioService](CSSPServices.MikeScenarioService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MikeScenarioController](CSSPWebAPI.Controllers.MikeScenarioController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ScenarioStatusEnum](CSSPEnums.ScenarioStatusEnum.html)</para>
+    /// > <para>**Inherits [MikeScenario](CSSPModels.MikeScenario.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MikeScenarioExtraA : MikeScenario
     {
@@ -857,6 +871,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MikeScenarioReportTest](CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_MikeScenarioReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MikeScenarioService](CSSPServices.MikeScenarioService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MikeScenarioController](CSSPWebAPI.Controllers.MikeScenarioController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [ScenarioStatusEnum](CSSPEnums.ScenarioStatusEnum.html)</para>
+    /// > <para>**Inherits [MikeScenarioExtraA](CSSPModels.MikeScenarioExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MikeScenarioExtraB : MikeScenarioExtraA
     {

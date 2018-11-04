@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table MWQMSiteStartEndDates** : [MWQMSiteStartEndDateID](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_MWQMSiteStartEndDateID), [MWQMSiteTVItemID](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_MWQMSiteTVItemID), [StartDate](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_StartDate), [EndDate](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_EndDate), [LastUpdateDate_UTC](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_HasErrors), [ValidationResults](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_ValidationResults), </para>
+    /// > <para>**DB properties for table MWQMSiteStartEndDates** : [MWQMSiteStartEndDateID](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_MWQMSiteStartEndDateID), [MWQMSiteTVItemID](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_MWQMSiteTVItemID), [StartDate](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_StartDate), [EndDate](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_EndDate), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSiteStartEndDateService](CSSPServices.MWQMSiteStartEndDateService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSiteStartEndDateController](CSSPWebAPI.Controllers.MWQMSiteStartEndDateController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class MWQMSiteStartEndDate : LastUpdate
@@ -136,6 +138,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MWQMSiteText](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_MWQMSiteText), [LastUpdateContactText](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSiteStartEndDateService](CSSPServices.MWQMSiteStartEndDateService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSiteStartEndDateController](CSSPWebAPI.Controllers.MWQMSiteStartEndDateController.html)</para>
+    /// > <para>**Inherits [MWQMSiteStartEndDate](CSSPModels.MWQMSiteStartEndDate.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMSiteStartEndDateExtraA : MWQMSiteStartEndDate
     {
@@ -198,6 +211,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [MWQMSiteStartEndDateReportTest](CSSPModels.MWQMSiteStartEndDate.html#CSSPModels_MWQMSiteStartEndDate_MWQMSiteStartEndDateReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMSiteStartEndDateService](CSSPServices.MWQMSiteStartEndDateService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [MWQMSiteStartEndDateController](CSSPWebAPI.Controllers.MWQMSiteStartEndDateController.html)</para>
+    /// > <para>**Inherits [MWQMSiteStartEndDateExtraA](CSSPModels.MWQMSiteStartEndDateExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class MWQMSiteStartEndDateExtraB : MWQMSiteStartEndDateExtraA
     {

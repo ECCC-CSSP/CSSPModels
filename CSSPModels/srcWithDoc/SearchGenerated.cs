@@ -17,9 +17,9 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [value](CSSPModels.Search.html#CSSPModels_Search_value), [id](CSSPModels.Search.html#CSSPModels_Search_id), [HasErrors](CSSPModels.Search.html#CSSPModels_Search_HasErrors), [ValidationResults](CSSPModels.Search.html#CSSPModels_Search_ValidationResults), </para>
+    /// > <para>**Other properties** : [value](CSSPModels.Search.html#CSSPModels_Search_value), [id](CSSPModels.Search.html#CSSPModels_Search_id), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [SearchService](CSSPServices.SearchService.html)</para>
+    /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     [NotMapped]

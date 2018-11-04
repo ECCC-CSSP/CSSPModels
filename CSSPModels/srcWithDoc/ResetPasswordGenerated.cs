@@ -16,10 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table ResetPasswords** : [ResetPasswordID](CSSPModels.ResetPassword.html#CSSPModels_ResetPassword_ResetPasswordID), [Email](CSSPModels.ResetPassword.html#CSSPModels_ResetPassword_Email), [ExpireDate_Local](CSSPModels.ResetPassword.html#CSSPModels_ResetPassword_ExpireDate_Local), [Code](CSSPModels.ResetPassword.html#CSSPModels_ResetPassword_Code), [LastUpdateDate_UTC](CSSPModels.ResetPassword.html#CSSPModels_ResetPassword_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ResetPassword.html#CSSPModels_ResetPassword_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.ResetPassword.html#CSSPModels_ResetPassword_HasErrors), [ValidationResults](CSSPModels.ResetPassword.html#CSSPModels_ResetPassword_ValidationResults), </para>
+    /// > <para>**DB properties for table ResetPasswords** : [ResetPasswordID](CSSPModels.ResetPassword.html#CSSPModels_ResetPassword_ResetPasswordID), [Email](CSSPModels.ResetPassword.html#CSSPModels_ResetPassword_Email), [ExpireDate_Local](CSSPModels.ResetPassword.html#CSSPModels_ResetPassword_ExpireDate_Local), [Code](CSSPModels.ResetPassword.html#CSSPModels_ResetPassword_Code), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ResetPasswordService](CSSPServices.ResetPasswordService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ResetPasswordController](CSSPWebAPI.Controllers.ResetPasswordController.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class ResetPassword : LastUpdate
@@ -131,6 +133,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.ResetPassword.html#CSSPModels_ResetPassword_LastUpdateContactText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ResetPasswordService](CSSPServices.ResetPasswordService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ResetPasswordController](CSSPWebAPI.Controllers.ResetPasswordController.html)</para>
+    /// > <para>**Inherits [ResetPassword](CSSPModels.ResetPassword.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ResetPasswordExtraA : ResetPassword
     {
@@ -168,6 +181,17 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [ResetPasswordReportTest](CSSPModels.ResetPassword.html#CSSPModels_ResetPassword_ResetPasswordReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ResetPasswordService](CSSPServices.ResetPasswordService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ResetPasswordController](CSSPWebAPI.Controllers.ResetPasswordController.html)</para>
+    /// > <para>**Inherits [ResetPasswordExtraA](CSSPModels.ResetPasswordExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ResetPasswordExtraB : ResetPasswordExtraA
     {

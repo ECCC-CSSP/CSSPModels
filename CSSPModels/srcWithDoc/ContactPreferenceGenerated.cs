@@ -16,11 +16,13 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table ContactPreferences** : [ContactPreferenceID](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ContactPreferenceID), [ContactID](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ContactID), [TVType](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_TVType), [MarkerSize](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_MarkerSize), [LastUpdateDate_UTC](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_LastUpdateDate_UTC), [LastUpdateContactTVItemID](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_LastUpdateContactTVItemID), </para>
-    /// > <para>**Other properties** : [HasErrors](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_HasErrors), [ValidationResults](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ValidationResults), </para>
+    /// > <para>**DB properties for table ContactPreferences** : [ContactPreferenceID](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ContactPreferenceID), [ContactID](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ContactID), [TVType](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_TVType), [MarkerSize](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_MarkerSize), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactPreferenceService](CSSPServices.ContactPreferenceService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ContactPreferenceController](CSSPWebAPI.Controllers.ContactPreferenceController.html)</para>
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
     public partial class ContactPreference : LastUpdate
@@ -132,6 +134,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [LastUpdateContactText](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_LastUpdateContactText), [TVTypeText](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_TVTypeText)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactPreferenceService](CSSPServices.ContactPreferenceService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ContactPreferenceController](CSSPWebAPI.Controllers.ContactPreferenceController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [ContactPreference](CSSPModels.ContactPreference.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ContactPreferenceExtraA : ContactPreference
     {
@@ -196,6 +210,18 @@ namespace CSSPModels
         }
         #endregion Constructors
     }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**No DB properties** :</para>
+    /// > <para>**Other properties** : [ContactPreferenceReportTest](CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_ContactPreferenceReportTest)</para>
+    /// > 
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactPreferenceService](CSSPServices.ContactPreferenceService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ContactPreferenceController](CSSPWebAPI.Controllers.ContactPreferenceController.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
+    /// > <para>**Inherits [ContactPreferenceExtraA](CSSPModels.ContactPreferenceExtraA.html)**</para>
+    /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
+    /// </summary>
     [NotMapped]
     public partial class ContactPreferenceExtraB : ContactPreferenceExtraA
     {
