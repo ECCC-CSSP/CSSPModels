@@ -49,11 +49,17 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Nombre d'éléments à prendre lors de l'interrogation de la base de données")]
         public int Take { get; set; }
         [StringLength(200)]
-        [CSSPDisplayEN(DisplayEN = "Order")]
-        [CSSPDisplayFR(DisplayFR = "Ordre")]
-        [CSSPDescriptionEN(DescriptionEN = @"Establishing the order of the items while querying the database")]
-        [CSSPDescriptionFR(DescriptionFR = @"Établissement de l'ordre des éléments lors de l'interrogation de la base de données")]
-        public string Order { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Asc")]
+        [CSSPDisplayFR(DisplayFR = "Asc")]
+        [CSSPDescriptionEN(DescriptionEN = @"Establishing the ascending order of the items while querying the database")]
+        [CSSPDescriptionFR(DescriptionFR = @"Établissement de l'ordre ascendant des éléments lors de l'interrogation de la base de données")]
+        public string Asc { get; set; }
+        [StringLength(200)]
+        [CSSPDisplayEN(DisplayEN = "Desc")]
+        [CSSPDisplayFR(DisplayFR = "Desc")]
+        [CSSPDescriptionEN(DescriptionEN = @"Establishing the descending order of the items while querying the database")]
+        [CSSPDescriptionFR(DescriptionFR = @"Établissement de l'ordre déscendant des éléments lors de l'interrogation de la base de données")]
+        public string Desc { get; set; }
         [StringLength(200)]
         [CSSPDisplayEN(DisplayEN = "Where")]
         [CSSPDisplayFR(DisplayFR = "Filtre")]
@@ -66,11 +72,16 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Getting extra or calculated fields while querying the database")]
         [CSSPDescriptionFR(DescriptionFR = @"Obtenir des champs d'extra ou de champs calculés lors de l'interrogation de la base de données")]
         public string Extra { get; set; }
-        [CSSPDisplayEN(DisplayEN = "Order list")]
-        [CSSPDisplayFR(DisplayFR = "Liste d'ordre")]
-        [CSSPDescriptionEN(DescriptionEN = @"Order list showing all the fields to sort from")]
-        [CSSPDescriptionFR(DescriptionFR = @"Liste de commandes indiquant tous les champs à trier")]
-        public List<string> OrderList { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Asc field list")]
+        [CSSPDisplayFR(DisplayFR = "Liste de champs asc")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ascending field list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de champs ascendant")]
+        public List<string> AscList { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Desc field list")]
+        [CSSPDisplayFR(DisplayFR = "Liste de champs desc")]
+        [CSSPDescriptionEN(DescriptionEN = @"Descending field list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de champs descendant")]
+        public List<string> DescList { get; set; }
         [CSSPDisplayEN(DisplayEN = "Where info list")]
         [CSSPDisplayFR(DisplayFR = "Liste d'info de filtrage")]
         [CSSPDescriptionEN(DescriptionEN = @"Filtering fields with related variables list")]
@@ -85,10 +96,12 @@ namespace CSSPModels
             Lang = "en";
             Skip = 0;
             Take = 200;
-            Order = "";
+            Asc = "";
+            Desc = "";
             Where = "";
             Extra = "";
-            OrderList = new List<string>();
+            AscList = new List<string>();
+            DescList = new List<string>();
             WhereInfoList = new List<WhereInfo>();
         }
         #endregion Constructors

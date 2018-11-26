@@ -17,7 +17,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [ModelType](CSSPModels.Query.html#CSSPModels_Query_ModelType), [Language](CSSPModels.Query.html#CSSPModels_Query_Language), [Lang](CSSPModels.Query.html#CSSPModels_Query_Lang), [Skip](CSSPModels.Query.html#CSSPModels_Query_Skip), [Take](CSSPModels.Query.html#CSSPModels_Query_Take), [Order](CSSPModels.Query.html#CSSPModels_Query_Order), [Where](CSSPModels.Query.html#CSSPModels_Query_Where), [Extra](CSSPModels.Query.html#CSSPModels_Query_Extra), [OrderList](CSSPModels.Query.html#CSSPModels_Query_OrderList), [WhereInfoList](CSSPModels.Query.html#CSSPModels_Query_WhereInfoList), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
+    /// > <para>**Other properties** : [ModelType](CSSPModels.Query.html#CSSPModels_Query_ModelType), [Language](CSSPModels.Query.html#CSSPModels_Query_Language), [Lang](CSSPModels.Query.html#CSSPModels_Query_Lang), [Skip](CSSPModels.Query.html#CSSPModels_Query_Skip), [Take](CSSPModels.Query.html#CSSPModels_Query_Take), [Asc](CSSPModels.Query.html#CSSPModels_Query_Asc), [Desc](CSSPModels.Query.html#CSSPModels_Query_Desc), [Where](CSSPModels.Query.html#CSSPModels_Query_Where), [Extra](CSSPModels.Query.html#CSSPModels_Query_Extra), [AscList](CSSPModels.Query.html#CSSPModels_Query_AscList), [DescList](CSSPModels.Query.html#CSSPModels_Query_DescList), [WhereInfoList](CSSPModels.Query.html#CSSPModels_Query_WhereInfoList), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [LanguageEnum](CSSPEnums.LanguageEnum.html)</para>
     /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
@@ -155,27 +155,51 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Order")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Ordre")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Establishing the order of the items while querying the database")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Établissement de l'ordre des éléments lors de l'interrogation de la base de données")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Asc")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Asc")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Establishing the ascending order of the items while querying the database")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Établissement de l'ordre ascendant des éléments lors de l'interrogation de la base de données")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Order
+        /// **Display (en)** --- Asc
         /// 
-        /// **Display (fr)** --- Ordre
+        /// **Display (fr)** --- Asc
         /// 
-        /// **Description (en)** --- Establishing the order of the items while querying the database
+        /// **Description (en)** --- Establishing the ascending order of the items while querying the database
         /// 
-        /// **Description (fr)** --- Établissement de l'ordre des éléments lors de l'interrogation de la base de données
+        /// **Description (fr)** --- Établissement de l'ordre ascendant des éléments lors de l'interrogation de la base de données
         /// </returns>
         [StringLength(200)]
-        [CSSPDisplayEN(DisplayEN = "Order")]
-        [CSSPDisplayFR(DisplayFR = "Ordre")]
-        [CSSPDescriptionEN(DescriptionEN = @"Establishing the order of the items while querying the database")]
-        [CSSPDescriptionFR(DescriptionFR = @"Établissement de l'ordre des éléments lors de l'interrogation de la base de données")]
-        public string Order { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Asc")]
+        [CSSPDisplayFR(DisplayFR = "Asc")]
+        [CSSPDescriptionEN(DescriptionEN = @"Establishing the ascending order of the items while querying the database")]
+        [CSSPDescriptionFR(DescriptionFR = @"Établissement de l'ordre ascendant des éléments lors de l'interrogation de la base de données")]
+        public string Asc { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Desc")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Desc")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Establishing the descending order of the items while querying the database")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Établissement de l'ordre déscendant des éléments lors de l'interrogation de la base de données")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Desc
+        /// 
+        /// **Display (fr)** --- Desc
+        /// 
+        /// **Description (en)** --- Establishing the descending order of the items while querying the database
+        /// 
+        /// **Description (fr)** --- Établissement de l'ordre déscendant des éléments lors de l'interrogation de la base de données
+        /// </returns>
+        [StringLength(200)]
+        [CSSPDisplayEN(DisplayEN = "Desc")]
+        [CSSPDisplayFR(DisplayFR = "Desc")]
+        [CSSPDescriptionEN(DescriptionEN = @"Establishing the descending order of the items while querying the database")]
+        [CSSPDescriptionFR(DescriptionFR = @"Établissement de l'ordre déscendant des éléments lors de l'interrogation de la base de données")]
+        public string Desc { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
@@ -227,26 +251,49 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Order list")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste d'ordre")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Order list showing all the fields to sort from")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Liste de commandes indiquant tous les champs à trier")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Asc field list")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste de champs asc")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Ascending field list")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Liste de champs ascendant")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Order list
+        /// **Display (en)** --- Asc field list
         /// 
-        /// **Display (fr)** --- Liste d'ordre
+        /// **Display (fr)** --- Liste de champs asc
         /// 
-        /// **Description (en)** --- Order list showing all the fields to sort from
+        /// **Description (en)** --- Ascending field list
         /// 
-        /// **Description (fr)** --- Liste de commandes indiquant tous les champs à trier
+        /// **Description (fr)** --- Liste de champs ascendant
         /// </returns>
-        [CSSPDisplayEN(DisplayEN = "Order list")]
-        [CSSPDisplayFR(DisplayFR = "Liste d'ordre")]
-        [CSSPDescriptionEN(DescriptionEN = @"Order list showing all the fields to sort from")]
-        [CSSPDescriptionFR(DescriptionFR = @"Liste de commandes indiquant tous les champs à trier")]
-        public List<string> OrderList { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Asc field list")]
+        [CSSPDisplayFR(DisplayFR = "Liste de champs asc")]
+        [CSSPDescriptionEN(DescriptionEN = @"Ascending field list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de champs ascendant")]
+        public List<string> AscList { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Desc field list")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Liste de champs desc")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Descending field list")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Liste de champs descendant")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Desc field list
+        /// 
+        /// **Display (fr)** --- Liste de champs desc
+        /// 
+        /// **Description (en)** --- Descending field list
+        /// 
+        /// **Description (fr)** --- Liste de champs descendant
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Desc field list")]
+        [CSSPDisplayFR(DisplayFR = "Liste de champs desc")]
+        [CSSPDescriptionEN(DescriptionEN = @"Descending field list")]
+        [CSSPDescriptionFR(DescriptionFR = @"Liste de champs descendant")]
+        public List<string> DescList { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
@@ -279,10 +326,12 @@ namespace CSSPModels
             Lang = "en";
             Skip = 0;
             Take = 200;
-            Order = "";
+            Asc = "";
+            Desc = "";
             Where = "";
             Extra = "";
-            OrderList = new List<string>();
+            AscList = new List<string>();
+            DescList = new List<string>();
             WhereInfoList = new List<WhereInfo>();
         }
         #endregion Constructors

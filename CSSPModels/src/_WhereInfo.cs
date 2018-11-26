@@ -71,6 +71,11 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Value (Enum)")]
         [CSSPDescriptionFR(DescriptionFR = @"Valeur (Enum)")]
         public string ValueEnumText { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Type of Enum")]
+        [CSSPDisplayFR(DisplayFR = "Type d'Enum")]
+        [CSSPDescriptionEN(DescriptionEN = @"Type of Enum")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type d'Enum")]
+        public Type EnumType { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

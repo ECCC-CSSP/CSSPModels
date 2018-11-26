@@ -17,7 +17,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [PropertyName](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_PropertyName), [PropertyType](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_PropertyType), [WhereOperator](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_WhereOperator), [Value](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_Value), [ValueInt](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueInt), [ValueDouble](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueDouble), [ValueBool](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueBool), [ValueDateTime](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueDateTime), [ValueEnumText](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueEnumText), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
+    /// > <para>**Other properties** : [PropertyName](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_PropertyName), [PropertyType](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_PropertyType), [WhereOperator](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_WhereOperator), [Value](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_Value), [ValueInt](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueInt), [ValueDouble](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueDouble), [ValueBool](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueBool), [ValueDateTime](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueDateTime), [ValueEnumText](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_ValueEnumText), [EnumType](CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_EnumType), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [PropertyTypeEnum](CSSPEnums.PropertyTypeEnum.html), [WhereOperatorEnum](CSSPEnums.WhereOperatorEnum.html)</para>
     /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
@@ -248,6 +248,29 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Value (Enum)")]
         [CSSPDescriptionFR(DescriptionFR = @"Valeur (Enum)")]
         public string ValueEnumText { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Type of Enum")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type d'Enum")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Type of Enum")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type d'Enum")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Type of Enum
+        /// 
+        /// **Display (fr)** --- Type d'Enum
+        /// 
+        /// **Description (en)** --- Type of Enum
+        /// 
+        /// **Description (fr)** --- Type d'Enum
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Type of Enum")]
+        [CSSPDisplayFR(DisplayFR = "Type d'Enum")]
+        [CSSPDescriptionEN(DescriptionEN = @"Type of Enum")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type d'Enum")]
+        public Type EnumType { get; set; }
         #endregion Properties not in DB
 
         #region Constructors

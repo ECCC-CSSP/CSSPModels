@@ -40,7 +40,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Query_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "ModelType", "Language", "Lang", "Skip", "Take", "Order", "Where", "Extra", "OrderList", "WhereInfoList", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "ModelType", "Language", "Lang", "Skip", "Take", "Asc", "Desc", "Where", "Extra", "AscList", "DescList", "WhereInfoList", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -76,26 +76,32 @@ namespace CSSPModels.Tests
                query.Take = val5;
                Assert.AreEqual(val5, query.Take);
                string val6 = "Some text";
-               query.Order = val6;
-               Assert.AreEqual(val6, query.Order);
+               query.Asc = val6;
+               Assert.AreEqual(val6, query.Asc);
                string val7 = "Some text";
-               query.Where = val7;
-               Assert.AreEqual(val7, query.Where);
+               query.Desc = val7;
+               Assert.AreEqual(val7, query.Desc);
                string val8 = "Some text";
-               query.Extra = val8;
-               Assert.AreEqual(val8, query.Extra);
-               List<string> val9 = new List<string>() { "testing", "Bonjour Allo" };
-               query.OrderList = val9;
-               Assert.AreEqual(val9, query.OrderList);
-               List<WhereInfo> val10 = new List<WhereInfo>() { new WhereInfo(), new WhereInfo() };
-               query.WhereInfoList = val10;
-               Assert.AreEqual(val10, query.WhereInfoList);
-               bool val11 = true;
-               query.HasErrors = val11;
-               Assert.AreEqual(val11, query.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
-               query.ValidationResults = val36;
-               Assert.AreEqual(val36, query.ValidationResults);
+               query.Where = val8;
+               Assert.AreEqual(val8, query.Where);
+               string val9 = "Some text";
+               query.Extra = val9;
+               Assert.AreEqual(val9, query.Extra);
+               List<string> val10 = new List<string>() { "testing", "Bonjour Allo" };
+               query.AscList = val10;
+               Assert.AreEqual(val10, query.AscList);
+               List<string> val11 = new List<string>() { "testing", "Bonjour Allo" };
+               query.DescList = val11;
+               Assert.AreEqual(val11, query.DescList);
+               List<WhereInfo> val12 = new List<WhereInfo>() { new WhereInfo(), new WhereInfo() };
+               query.WhereInfoList = val12;
+               Assert.AreEqual(val12, query.WhereInfoList);
+               bool val13 = true;
+               query.HasErrors = val13;
+               Assert.AreEqual(val13, query.HasErrors);
+               IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
+               query.ValidationResults = val42;
+               Assert.AreEqual(val42, query.ValidationResults);
         }
         #endregion Tests Functions public
     }

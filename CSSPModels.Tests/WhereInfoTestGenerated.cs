@@ -40,7 +40,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void WhereInfo_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "PropertyName", "PropertyType", "WhereOperator", "Value", "ValueInt", "ValueDouble", "ValueBool", "ValueDateTime", "ValueEnumText", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "PropertyName", "PropertyType", "WhereOperator", "Value", "ValueInt", "ValueDouble", "ValueBool", "ValueDateTime", "ValueEnumText", "EnumType", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -87,12 +87,15 @@ namespace CSSPModels.Tests
                string val9 = "Some text";
                whereInfo.ValueEnumText = val9;
                Assert.AreEqual(val9, whereInfo.ValueEnumText);
-               bool val10 = true;
-               whereInfo.HasErrors = val10;
-               Assert.AreEqual(val10, whereInfo.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
-               whereInfo.ValidationResults = val33;
-               Assert.AreEqual(val33, whereInfo.ValidationResults);
+               Type val10 = typeof(WhereInfo);
+               whereInfo.EnumType = val10;
+               Assert.AreEqual(val10, whereInfo.EnumType);
+               bool val11 = true;
+               whereInfo.HasErrors = val11;
+               Assert.AreEqual(val11, whereInfo.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
+               whereInfo.ValidationResults = val36;
+               Assert.AreEqual(val36, whereInfo.ValidationResults);
         }
         #endregion Tests Functions public
     }
