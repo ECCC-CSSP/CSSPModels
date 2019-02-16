@@ -27,17 +27,29 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le site de marée")]
         public int TideSiteTVItemID { get; set; }
         [StringLength(100)]
-        [CSSPDisplayEN(DisplayEN = "Web tide model")]
-        [CSSPDisplayFR(DisplayFR = "Modèle de web tide")]
-        [CSSPDescriptionEN(DescriptionEN = @"Web tide model")]
-        [CSSPDescriptionFR(DescriptionFR = @"Modèle de web tide")]
-        public string WebTideModel { get; set; }
-        [Range(-100.0D, 100.0D)]
-        [CSSPDisplayEN(DisplayEN = "Web tide datum (m)")]
-        [CSSPDisplayFR(DisplayFR = "Datum de web tide (m)")]
-        [CSSPDescriptionEN(DescriptionEN = @"Web tide model in meters")]
-        [CSSPDescriptionFR(DescriptionFR = @"Datum de web tide en mètres")]
-        public double WebTideDatum_m { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Tide site name")]
+        [CSSPDisplayFR(DisplayFR = "Tide site name (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tide site name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Tide site name (fr)")]
+        public string TideSiteName { get; set; }
+        [StringLength(2, MinimumLength = 2)]
+        [CSSPDisplayEN(DisplayEN = "Province")]
+        [CSSPDisplayFR(DisplayFR = "Province")]
+        [CSSPDescriptionEN(DescriptionEN = @"Province")]
+        [CSSPDescriptionFR(DescriptionFR = @"Province")]
+        public string Province { get; set; }
+        [Range(0, 10000)]
+        [CSSPDisplayEN(DisplayEN = "sid")]
+        [CSSPDisplayFR(DisplayFR = "sid")]
+        [CSSPDescriptionEN(DescriptionEN = @"sid")]
+        [CSSPDescriptionFR(DescriptionFR = @"sid")]
+        public int sid { get; set; }
+        [Range(0, 10000)]
+        [CSSPDisplayEN(DisplayEN = "Zone")]
+        [CSSPDisplayFR(DisplayFR = "Zone")]
+        [CSSPDescriptionEN(DescriptionEN = @"Zone")]
+        [CSSPDescriptionFR(DescriptionFR = @"Zone")]
+        public int Zone { get; set; }
         #endregion Properties in DB
 
         #region Constructors

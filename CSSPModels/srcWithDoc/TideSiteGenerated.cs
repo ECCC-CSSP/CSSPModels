@@ -16,7 +16,7 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table TideSites** : [TideSiteID](CSSPModels.TideSite.html#CSSPModels_TideSite_TideSiteID), [TideSiteTVItemID](CSSPModels.TideSite.html#CSSPModels_TideSite_TideSiteTVItemID), [WebTideModel](CSSPModels.TideSite.html#CSSPModels_TideSite_WebTideModel), [WebTideDatum_m](CSSPModels.TideSite.html#CSSPModels_TideSite_WebTideDatum_m), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**DB properties for table TideSites** : [TideSiteID](CSSPModels.TideSite.html#CSSPModels_TideSite_TideSiteID), [TideSiteTVItemID](CSSPModels.TideSite.html#CSSPModels_TideSite_TideSiteTVItemID), [TideSiteName](CSSPModels.TideSite.html#CSSPModels_TideSite_TideSiteName), [Province](CSSPModels.TideSite.html#CSSPModels_TideSite_Province), [sid](CSSPModels.TideSite.html#CSSPModels_TideSite_sid), [Zone](CSSPModels.TideSite.html#CSSPModels_TideSite_Zone), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
     /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [TideSiteService](CSSPServices.TideSiteService.html)</para>
@@ -81,51 +81,99 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Web tide model")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Modèle de web tide")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Web tide model")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Modèle de web tide")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Tide site name")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Tide site name (fr)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Tide site name")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Tide site name (fr)")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Web tide model
+        /// **Display (en)** --- Tide site name
         /// 
-        /// **Display (fr)** --- Modèle de web tide
+        /// **Display (fr)** --- Tide site name (fr)
         /// 
-        /// **Description (en)** --- Web tide model
+        /// **Description (en)** --- Tide site name
         /// 
-        /// **Description (fr)** --- Modèle de web tide
+        /// **Description (fr)** --- Tide site name (fr)
         /// </returns>
         [StringLength(100)]
-        [CSSPDisplayEN(DisplayEN = "Web tide model")]
-        [CSSPDisplayFR(DisplayFR = "Modèle de web tide")]
-        [CSSPDescriptionEN(DescriptionEN = @"Web tide model")]
-        [CSSPDescriptionFR(DescriptionFR = @"Modèle de web tide")]
-        public string WebTideModel { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Tide site name")]
+        [CSSPDisplayFR(DisplayFR = "Tide site name (fr)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Tide site name")]
+        [CSSPDescriptionFR(DescriptionFR = @"Tide site name (fr)")]
+        public string TideSiteName { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Web tide datum (m)")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Datum de web tide (m)")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Web tide model in meters")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Datum de web tide en mètres")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Province")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Province")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Province")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Province")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Web tide datum (m)
+        /// **Display (en)** --- Province
         /// 
-        /// **Display (fr)** --- Datum de web tide (m)
+        /// **Display (fr)** --- Province
         /// 
-        /// **Description (en)** --- Web tide model in meters
+        /// **Description (en)** --- Province
         /// 
-        /// **Description (fr)** --- Datum de web tide en mètres
+        /// **Description (fr)** --- Province
         /// </returns>
-        [Range(-100.0D, 100.0D)]
-        [CSSPDisplayEN(DisplayEN = "Web tide datum (m)")]
-        [CSSPDisplayFR(DisplayFR = "Datum de web tide (m)")]
-        [CSSPDescriptionEN(DescriptionEN = @"Web tide model in meters")]
-        [CSSPDescriptionFR(DescriptionFR = @"Datum de web tide en mètres")]
-        public double WebTideDatum_m { get; set; }
+        [StringLength(2, MinimumLength = 2)]
+        [CSSPDisplayEN(DisplayEN = "Province")]
+        [CSSPDisplayFR(DisplayFR = "Province")]
+        [CSSPDescriptionEN(DescriptionEN = @"Province")]
+        [CSSPDescriptionFR(DescriptionFR = @"Province")]
+        public string Province { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "sid")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "sid")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "sid")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "sid")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- sid
+        /// 
+        /// **Display (fr)** --- sid
+        /// 
+        /// **Description (en)** --- sid
+        /// 
+        /// **Description (fr)** --- sid
+        /// </returns>
+        [Range(0, 10000)]
+        [CSSPDisplayEN(DisplayEN = "sid")]
+        [CSSPDisplayFR(DisplayFR = "sid")]
+        [CSSPDescriptionEN(DescriptionEN = @"sid")]
+        [CSSPDescriptionFR(DescriptionFR = @"sid")]
+        public int sid { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Zone")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Zone")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Zone")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Zone")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Zone
+        /// 
+        /// **Display (fr)** --- Zone
+        /// 
+        /// **Description (en)** --- Zone
+        /// 
+        /// **Description (fr)** --- Zone
+        /// </returns>
+        [Range(0, 10000)]
+        [CSSPDisplayEN(DisplayEN = "Zone")]
+        [CSSPDisplayFR(DisplayFR = "Zone")]
+        [CSSPDescriptionEN(DescriptionEN = @"Zone")]
+        [CSSPDescriptionFR(DescriptionFR = @"Zone")]
+        public int Zone { get; set; }
         #endregion Properties in DB
 
         #region Constructors

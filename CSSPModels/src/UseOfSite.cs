@@ -33,11 +33,11 @@ namespace CSSPModels
         [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le sous-secteur")]
         public int SubsectorTVItemID { get; set; }
         [CSSPEnumType]
-        [CSSPDisplayEN(DisplayEN = "Site type (climate, hydrometric or tide)")]
-        [CSSPDisplayFR(DisplayFR = "Type de site (climatique, hydrométrique or de marée)")]
-        [CSSPDescriptionEN(DescriptionEN = @"Site type (climate, hydrometric or tide)")]
-        [CSSPDescriptionFR(DescriptionFR = @"Type de site (climatique, hydrométrique or de marée)")]
-        public SiteTypeEnum SiteType { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Type (climate, hydrometric or tide)")]
+        [CSSPDisplayFR(DisplayFR = "Type (climatique, hydrométrique or de marée)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Type (climate, hydrometric or tide)")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type (climatique, hydrométrique or de marée)")]
+        public TVTypeEnum TVType { get; set; }
         [Range(0, 1000)]
         [CSSPDisplayEN(DisplayEN = "Ordinal")]
         [CSSPDisplayFR(DisplayFR = "Ordre")]
@@ -126,13 +126,13 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Last update contact name")]
         [CSSPDescriptionFR(DescriptionFR = @"Nom du contact ayant fait le dernière changement")]
         public string LastUpdateContactText { get; set; }
-        [CSSPEnumTypeText(EnumTypeName = "SiteTypeEnum", EnumType = "SiteType")]
+        [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
         [CSSPAllowNull]
-        [CSSPDisplayEN(DisplayEN = "Site type text")]
-        [CSSPDisplayFR(DisplayFR = "Texte du type de site")]
-        [CSSPDescriptionEN(DescriptionEN = @"Site type text")]
-        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de site")]
-        public string SiteTypeText { get; set; }
+        [CSSPDisplayEN(DisplayEN = "TVType text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de TVType")]
+        [CSSPDescriptionEN(DescriptionEN = @"TVType text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de TVType")]
+        public string TVTypeText { get; set; }
         #endregion Properties
 
         #region Constructors

@@ -44,7 +44,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void Infrastructure_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherMunicipalityTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void InfrastructureExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "InfrastructureText", "SeeOtherText", "CivicAddressText", "LastUpdateContactText", "InfrastructureTypeText", "FacilityTypeText", "AerationTypeText", "PreliminaryTreatmentTypeText", "PrimaryTreatmentTypeText", "SecondaryTreatmentTypeText", "TertiaryTreatmentTypeText", "TreatmentTypeText", "DisinfectionTypeText", "CollectionSystemTypeText", "AlarmSystemTypeText", "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "InfrastructureText", "SeeOtherMunicipalityText", "CivicAddressText", "LastUpdateContactText", "InfrastructureTypeText", "FacilityTypeText", "AerationTypeText", "PreliminaryTreatmentTypeText", "PrimaryTreatmentTypeText", "SecondaryTreatmentTypeText", "TertiaryTreatmentTypeText", "TreatmentTypeText", "DisinfectionTypeText", "CollectionSystemTypeText", "AlarmSystemTypeText", "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherMunicipalityTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void InfrastructureExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "InfrastructureReportTest", "InfrastructureText", "SeeOtherText", "CivicAddressText", "LastUpdateContactText", "InfrastructureTypeText", "FacilityTypeText", "AerationTypeText", "PreliminaryTreatmentTypeText", "PrimaryTreatmentTypeText", "SecondaryTreatmentTypeText", "TertiaryTreatmentTypeText", "TreatmentTypeText", "DisinfectionTypeText", "CollectionSystemTypeText", "AlarmSystemTypeText", "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "InfrastructureReportTest", "InfrastructureText", "SeeOtherMunicipalityText", "CivicAddressText", "LastUpdateContactText", "InfrastructureTypeText", "FacilityTypeText", "AerationTypeText", "PreliminaryTreatmentTypeText", "PrimaryTreatmentTypeText", "SecondaryTreatmentTypeText", "TertiaryTreatmentTypeText", "TreatmentTypeText", "DisinfectionTypeText", "CollectionSystemTypeText", "AlarmSystemTypeText", "InfrastructureID", "InfrastructureTVItemID", "PrismID", "TPID", "LSID", "SiteID", "Site", "InfrastructureCategory", "InfrastructureType", "FacilityType", "IsMechanicallyAerated", "NumberOfCells", "NumberOfAeratedCells", "AerationType", "PreliminaryTreatmentType", "PrimaryTreatmentType", "SecondaryTreatmentType", "TertiaryTreatmentType", "TreatmentType", "DisinfectionType", "CollectionSystemType", "AlarmSystemType", "DesignFlow_m3_day", "AverageFlow_m3_day", "PeakFlow_m3_day", "PopServed", "CanOverflow", "PercFlowOfTotal", "TimeOffset_hour", "TempCatchAllRemoveLater", "AverageDepth_m", "NumberOfPorts", "PortDiameter_m", "PortSpacing_m", "PortElevation_m", "VerticalAngle_deg", "HorizontalAngle_deg", "DecayRate_per_day", "NearFieldVelocity_m_s", "FarFieldVelocity_m_s", "ReceivingWaterSalinity_PSU", "ReceivingWaterTemperature_C", "ReceivingWater_MPN_per_100ml", "DistanceFromShore_m", "SeeOtherMunicipalityTVItemID", "CivicAddressTVItemID", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -393,8 +393,8 @@ namespace CSSPModels.Tests
                infrastructure.DistanceFromShore_m = val44;
                Assert.AreEqual(val44, infrastructure.DistanceFromShore_m);
                int val45 = 45;
-               infrastructure.SeeOtherTVItemID = val45;
-               Assert.AreEqual(val45, infrastructure.SeeOtherTVItemID);
+               infrastructure.SeeOtherMunicipalityTVItemID = val45;
+               Assert.AreEqual(val45, infrastructure.SeeOtherMunicipalityTVItemID);
                int val46 = 45;
                infrastructure.CivicAddressTVItemID = val46;
                Assert.AreEqual(val46, infrastructure.CivicAddressTVItemID);
@@ -418,8 +418,8 @@ namespace CSSPModels.Tests
                infrastructureExtraA.InfrastructureText = val1;
                Assert.AreEqual(val1, infrastructureExtraA.InfrastructureText);
                string val2 = "Some text";
-               infrastructureExtraA.SeeOtherText = val2;
-               Assert.AreEqual(val2, infrastructureExtraA.SeeOtherText);
+               infrastructureExtraA.SeeOtherMunicipalityText = val2;
+               Assert.AreEqual(val2, infrastructureExtraA.SeeOtherMunicipalityText);
                string val3 = "Some text";
                infrastructureExtraA.CivicAddressText = val3;
                Assert.AreEqual(val3, infrastructureExtraA.CivicAddressText);
@@ -592,8 +592,8 @@ namespace CSSPModels.Tests
                infrastructureExtraA.DistanceFromShore_m = val59;
                Assert.AreEqual(val59, infrastructureExtraA.DistanceFromShore_m);
                int val60 = 45;
-               infrastructureExtraA.SeeOtherTVItemID = val60;
-               Assert.AreEqual(val60, infrastructureExtraA.SeeOtherTVItemID);
+               infrastructureExtraA.SeeOtherMunicipalityTVItemID = val60;
+               Assert.AreEqual(val60, infrastructureExtraA.SeeOtherMunicipalityTVItemID);
                int val61 = 45;
                infrastructureExtraA.CivicAddressTVItemID = val61;
                Assert.AreEqual(val61, infrastructureExtraA.CivicAddressTVItemID);
@@ -620,8 +620,8 @@ namespace CSSPModels.Tests
                infrastructureExtraB.InfrastructureText = val2;
                Assert.AreEqual(val2, infrastructureExtraB.InfrastructureText);
                string val3 = "Some text";
-               infrastructureExtraB.SeeOtherText = val3;
-               Assert.AreEqual(val3, infrastructureExtraB.SeeOtherText);
+               infrastructureExtraB.SeeOtherMunicipalityText = val3;
+               Assert.AreEqual(val3, infrastructureExtraB.SeeOtherMunicipalityText);
                string val4 = "Some text";
                infrastructureExtraB.CivicAddressText = val4;
                Assert.AreEqual(val4, infrastructureExtraB.CivicAddressText);
@@ -794,8 +794,8 @@ namespace CSSPModels.Tests
                infrastructureExtraB.DistanceFromShore_m = val60;
                Assert.AreEqual(val60, infrastructureExtraB.DistanceFromShore_m);
                int val61 = 45;
-               infrastructureExtraB.SeeOtherTVItemID = val61;
-               Assert.AreEqual(val61, infrastructureExtraB.SeeOtherTVItemID);
+               infrastructureExtraB.SeeOtherMunicipalityTVItemID = val61;
+               Assert.AreEqual(val61, infrastructureExtraB.SeeOtherMunicipalityTVItemID);
                int val62 = 45;
                infrastructureExtraB.CivicAddressTVItemID = val62;
                Assert.AreEqual(val62, infrastructureExtraB.CivicAddressTVItemID);

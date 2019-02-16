@@ -40,7 +40,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void TVItemInfrastructureTypeTVItemLink_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "InfrastructureType", "SeeOtherTVItemID", "InfrastructureTypeText", "TVItem", "TVItemLinkList", "FlowTo", "HasErrors",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "InfrastructureType", "SeeOtherMunicipalityTVItemID", "InfrastructureTypeText", "TVItem", "TVItemLinkList", "FlowTo", "HasErrors",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() {  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -64,8 +64,8 @@ namespace CSSPModels.Tests
                tVItemInfrastructureTypeTVItemLink.InfrastructureType = val1;
                Assert.AreEqual(val1, tVItemInfrastructureTypeTVItemLink.InfrastructureType);
                int val2 = 45;
-               tVItemInfrastructureTypeTVItemLink.SeeOtherTVItemID = val2;
-               Assert.AreEqual(val2, tVItemInfrastructureTypeTVItemLink.SeeOtherTVItemID);
+               tVItemInfrastructureTypeTVItemLink.SeeOtherMunicipalityTVItemID = val2;
+               Assert.AreEqual(val2, tVItemInfrastructureTypeTVItemLink.SeeOtherMunicipalityTVItemID);
                string val3 = "Some text";
                tVItemInfrastructureTypeTVItemLink.InfrastructureTypeText = val3;
                Assert.AreEqual(val3, tVItemInfrastructureTypeTVItemLink.InfrastructureTypeText);

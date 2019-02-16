@@ -44,7 +44,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void UseOfSite_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "SiteType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "TVType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void UseOfSiteExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "SiteText", "SubsectorText", "LastUpdateContactText", "SiteTypeText", "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "SiteType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "SiteText", "SubsectorText", "LastUpdateContactText", "TVTypeText", "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "TVType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void UseOfSiteExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "UseOfSiteReportTest", "SiteText", "SubsectorText", "LastUpdateContactText", "SiteTypeText", "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "SiteType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "UseOfSiteReportTest", "SiteText", "SubsectorText", "LastUpdateContactText", "TVTypeText", "UseOfSiteID", "SiteTVItemID", "SubsectorTVItemID", "TVType", "Ordinal", "StartYear", "EndYear", "UseWeight", "Weight_perc", "UseEquation", "Param1", "Param2", "Param3", "Param4", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -269,9 +269,9 @@ namespace CSSPModels.Tests
                int val3 = 45;
                useOfSite.SubsectorTVItemID = val3;
                Assert.AreEqual(val3, useOfSite.SubsectorTVItemID);
-               SiteTypeEnum val4 = (SiteTypeEnum)3;
-               useOfSite.SiteType = val4;
-               Assert.AreEqual(val4, useOfSite.SiteType);
+               TVTypeEnum val4 = (TVTypeEnum)3;
+               useOfSite.TVType = val4;
+               Assert.AreEqual(val4, useOfSite.TVType);
                int val5 = 45;
                useOfSite.Ordinal = val5;
                Assert.AreEqual(val5, useOfSite.Ordinal);
@@ -328,8 +328,8 @@ namespace CSSPModels.Tests
                useOfSiteExtraA.LastUpdateContactText = val3;
                Assert.AreEqual(val3, useOfSiteExtraA.LastUpdateContactText);
                string val4 = "Some text";
-               useOfSiteExtraA.SiteTypeText = val4;
-               Assert.AreEqual(val4, useOfSiteExtraA.SiteTypeText);
+               useOfSiteExtraA.TVTypeText = val4;
+               Assert.AreEqual(val4, useOfSiteExtraA.TVTypeText);
                int val5 = 45;
                useOfSiteExtraA.UseOfSiteID = val5;
                Assert.AreEqual(val5, useOfSiteExtraA.UseOfSiteID);
@@ -339,9 +339,9 @@ namespace CSSPModels.Tests
                int val7 = 45;
                useOfSiteExtraA.SubsectorTVItemID = val7;
                Assert.AreEqual(val7, useOfSiteExtraA.SubsectorTVItemID);
-               SiteTypeEnum val8 = (SiteTypeEnum)3;
-               useOfSiteExtraA.SiteType = val8;
-               Assert.AreEqual(val8, useOfSiteExtraA.SiteType);
+               TVTypeEnum val8 = (TVTypeEnum)3;
+               useOfSiteExtraA.TVType = val8;
+               Assert.AreEqual(val8, useOfSiteExtraA.TVType);
                int val9 = 45;
                useOfSiteExtraA.Ordinal = val9;
                Assert.AreEqual(val9, useOfSiteExtraA.Ordinal);
@@ -401,8 +401,8 @@ namespace CSSPModels.Tests
                useOfSiteExtraB.LastUpdateContactText = val4;
                Assert.AreEqual(val4, useOfSiteExtraB.LastUpdateContactText);
                string val5 = "Some text";
-               useOfSiteExtraB.SiteTypeText = val5;
-               Assert.AreEqual(val5, useOfSiteExtraB.SiteTypeText);
+               useOfSiteExtraB.TVTypeText = val5;
+               Assert.AreEqual(val5, useOfSiteExtraB.TVTypeText);
                int val6 = 45;
                useOfSiteExtraB.UseOfSiteID = val6;
                Assert.AreEqual(val6, useOfSiteExtraB.UseOfSiteID);
@@ -412,9 +412,9 @@ namespace CSSPModels.Tests
                int val8 = 45;
                useOfSiteExtraB.SubsectorTVItemID = val8;
                Assert.AreEqual(val8, useOfSiteExtraB.SubsectorTVItemID);
-               SiteTypeEnum val9 = (SiteTypeEnum)3;
-               useOfSiteExtraB.SiteType = val9;
-               Assert.AreEqual(val9, useOfSiteExtraB.SiteType);
+               TVTypeEnum val9 = (TVTypeEnum)3;
+               useOfSiteExtraB.TVType = val9;
+               Assert.AreEqual(val9, useOfSiteExtraB.TVType);
                int val10 = 45;
                useOfSiteExtraB.Ordinal = val10;
                Assert.AreEqual(val10, useOfSiteExtraB.Ordinal);

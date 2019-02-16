@@ -16,12 +16,12 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table UseOfSites** : [UseOfSiteID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseOfSiteID), [SiteTVItemID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteTVItemID), [SubsectorTVItemID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SubsectorTVItemID), [SiteType](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteType), [Ordinal](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Ordinal), [StartYear](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_StartYear), [EndYear](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_EndYear), [UseWeight](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseWeight), [Weight_perc](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Weight_perc), [UseEquation](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseEquation), [Param1](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param1), [Param2](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param2), [Param3](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param3), [Param4](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param4), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**DB properties for table UseOfSites** : [UseOfSiteID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseOfSiteID), [SiteTVItemID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteTVItemID), [SubsectorTVItemID](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SubsectorTVItemID), [TVType](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_TVType), [Ordinal](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Ordinal), [StartYear](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_StartYear), [EndYear](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_EndYear), [UseWeight](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseWeight), [Weight_perc](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Weight_perc), [UseEquation](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_UseEquation), [Param1](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param1), [Param2](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param2), [Param3](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param3), [Param4](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_Param4), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
     /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [UseOfSiteService](CSSPServices.UseOfSiteService.html)</para>
     /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [UseOfSiteController](CSSPWebAPI.Controllers.UseOfSiteController.html)</para>
-    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SiteTypeEnum](CSSPEnums.SiteTypeEnum.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
     /// > <para>**Inherits [LastUpdate](CSSPModels.LastUpdate.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
@@ -110,27 +110,27 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPEnumType](CSSPModels.CSSPEnumTypeAttribute.html)]</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Site type (climate, hydrometric or tide)")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type de site (climatique, hydrométrique or de marée)")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Site type (climate, hydrometric or tide)")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type de site (climatique, hydrométrique or de marée)")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Type (climate, hydrometric or tide)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Type (climatique, hydrométrique or de marée)")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Type (climate, hydrometric or tide)")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Type (climatique, hydrométrique or de marée)")]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Site type (climate, hydrometric or tide)
+        /// **Display (en)** --- Type (climate, hydrometric or tide)
         /// 
-        /// **Display (fr)** --- Type de site (climatique, hydrométrique or de marée)
+        /// **Display (fr)** --- Type (climatique, hydrométrique or de marée)
         /// 
-        /// **Description (en)** --- Site type (climate, hydrometric or tide)
+        /// **Description (en)** --- Type (climate, hydrometric or tide)
         /// 
-        /// **Description (fr)** --- Type de site (climatique, hydrométrique or de marée)
+        /// **Description (fr)** --- Type (climatique, hydrométrique or de marée)
         /// </returns>
         [CSSPEnumType]
-        [CSSPDisplayEN(DisplayEN = "Site type (climate, hydrometric or tide)")]
-        [CSSPDisplayFR(DisplayFR = "Type de site (climatique, hydrométrique or de marée)")]
-        [CSSPDescriptionEN(DescriptionEN = @"Site type (climate, hydrometric or tide)")]
-        [CSSPDescriptionFR(DescriptionFR = @"Type de site (climatique, hydrométrique or de marée)")]
-        public SiteTypeEnum SiteType { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Type (climate, hydrometric or tide)")]
+        [CSSPDisplayFR(DisplayFR = "Type (climatique, hydrométrique or de marée)")]
+        [CSSPDescriptionEN(DescriptionEN = @"Type (climate, hydrometric or tide)")]
+        [CSSPDescriptionFR(DescriptionFR = @"Type (climatique, hydrométrique or de marée)")]
+        public TVTypeEnum TVType { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
@@ -381,11 +381,11 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [SiteText](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteText), [SubsectorText](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SubsectorText), [LastUpdateContactText](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_LastUpdateContactText), [SiteTypeText](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteTypeText)</para>
+    /// > <para>**Other properties** : [SiteText](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteText), [SubsectorText](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SubsectorText), [LastUpdateContactText](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_LastUpdateContactText), [TVTypeText](CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_TVTypeText)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [UseOfSiteService](CSSPServices.UseOfSiteService.html)</para>
     /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [UseOfSiteController](CSSPWebAPI.Controllers.UseOfSiteController.html)</para>
-    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SiteTypeEnum](CSSPEnums.SiteTypeEnum.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
     /// > <para>**Inherits [UseOfSite](CSSPModels.UseOfSite.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>
@@ -471,30 +471,30 @@ namespace CSSPModels
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
-        /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "SiteTypeEnum", EnumType = "SiteType")]</para>
-        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Site type text")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte du type de site")]</para>
-        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Site type text")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte du type de site")]</para>
+        /// > <para>[[CSSPEnumTypeText](CSSPModels.CSSPEnumTypeTextAttribute.html)(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TVType text")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Texte de TVType")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "TVType text")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Texte de TVType")]</para>
         /// > <para>[[CSSPAllowNull](CSSPModels.CSSPAllowNullAttribute.html)]</para>
         /// </summary>
         /// <returns>
         /// 
-        /// **Display (en)** --- Site type text
+        /// **Display (en)** --- TVType text
         /// 
-        /// **Display (fr)** --- Texte du type de site
+        /// **Display (fr)** --- Texte de TVType
         /// 
-        /// **Description (en)** --- Site type text
+        /// **Description (en)** --- TVType text
         /// 
-        /// **Description (fr)** --- Texte du type de site
+        /// **Description (fr)** --- Texte de TVType
         /// </returns>
-        [CSSPEnumTypeText(EnumTypeName = "SiteTypeEnum", EnumType = "SiteType")]
+        [CSSPEnumTypeText(EnumTypeName = "TVTypeEnum", EnumType = "TVType")]
         [CSSPAllowNull]
-        [CSSPDisplayEN(DisplayEN = "Site type text")]
-        [CSSPDisplayFR(DisplayFR = "Texte du type de site")]
-        [CSSPDescriptionEN(DescriptionEN = @"Site type text")]
-        [CSSPDescriptionFR(DescriptionFR = @"Texte du type de site")]
-        public string SiteTypeText { get; set; }
+        [CSSPDisplayEN(DisplayEN = "TVType text")]
+        [CSSPDisplayFR(DisplayFR = "Texte de TVType")]
+        [CSSPDescriptionEN(DescriptionEN = @"TVType text")]
+        [CSSPDescriptionFR(DescriptionFR = @"Texte de TVType")]
+        public string TVTypeText { get; set; }
         #endregion Properties
 
         #region Constructors
@@ -511,7 +511,7 @@ namespace CSSPModels
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [UseOfSiteService](CSSPServices.UseOfSiteService.html)</para>
     /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [UseOfSiteController](CSSPWebAPI.Controllers.UseOfSiteController.html)</para>
-    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [SiteTypeEnum](CSSPEnums.SiteTypeEnum.html)</para>
+    /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [TVTypeEnum](CSSPEnums.TVTypeEnum.html)</para>
     /// > <para>**Inherits [UseOfSiteExtraA](CSSPModels.UseOfSiteExtraA.html)**</para>
     /// > <para>**Return to [CSSPModels](CSSPModels.html)**</para>
     /// </summary>

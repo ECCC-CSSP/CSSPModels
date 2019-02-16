@@ -29,7 +29,7 @@ namespace CSSPModels
         [CSSPDisplayFR(DisplayFR = "Voir autre TVItemID")]
         [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the other infrastructure")]
         [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant l'autre infrastructure")]
-        public int? SeeOtherTVItemID { get; set; }
+        public int? SeeOtherMunicipalityTVItemID { get; set; }
         [StringLength(100)]
         [CSSPEnumTypeText(EnumTypeName = "InfrastructureTypeEnum", EnumType = "InfrastructureType")]
         [CSSPAllowNull]

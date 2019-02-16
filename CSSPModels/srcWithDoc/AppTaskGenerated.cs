@@ -56,7 +56,7 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
-        /// > <para>1 == Root, 2 == Address, 3 == Area, 4 == ClimateSite, 6 == Country, 8 == File, 9 == HydrometricSite, 11 == MikeBoundaryConditionWebTide, 12 == MikeBoundaryConditionMesh, 14 == MikeSource, 15 == Municipality, 16 == MWQMSite, 17 == PolSourceSite, 18 == Province, 19 == Sector, 20 == Subsector, 22 == TideSite, 24 == WasteWaterTreatmentPlant, 25 == LiftStation, 26 == Spill, 29 == Outfall, 30 == OtherInfrastructure, 41 == SeeOther, 42 == LineOverflow</para>
+        /// > <para>1 == Root, 2 == Address, 3 == Area, 4 == ClimateSite, 6 == Country, 8 == File, 9 == HydrometricSite, 11 == MikeBoundaryConditionWebTide, 12 == MikeBoundaryConditionMesh, 14 == MikeSource, 15 == Municipality, 16 == MWQMSite, 17 == PolSourceSite, 18 == Province, 19 == Sector, 20 == Subsector, 22 == TideSite, 24 == WasteWaterTreatmentPlant, 25 == LiftStation, 26 == Spill, 29 == Outfall, 30 == OtherInfrastructure, 41 == SeeOtherMunicipality, 42 == LineOverflow</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,2,3,4,6,8,9,11,12,14,15,16,17,18,19,20,22,24,25,26,29,30,41,42")]</para>
         /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TVItemID")]</para>
         /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemID")]</para>
@@ -83,7 +83,7 @@ namespace CSSPModels
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>**AllowableTVTypeList is of type [CSSPEnums.TVTypeEnum](CSSPEnums.TVTypeEnum.html)**</para>
-        /// > <para>1 == Root, 2 == Address, 3 == Area, 4 == ClimateSite, 6 == Country, 8 == File, 9 == HydrometricSite, 11 == MikeBoundaryConditionWebTide, 12 == MikeBoundaryConditionMesh, 14 == MikeSource, 15 == Municipality, 16 == MWQMSite, 17 == PolSourceSite, 18 == Province, 19 == Sector, 20 == Subsector, 22 == TideSite, 24 == WasteWaterTreatmentPlant, 25 == LiftStation, 26 == Spill, 29 == Outfall, 30 == OtherInfrastructure, 41 == SeeOther, 42 == LineOverflow</para>
+        /// > <para>1 == Root, 2 == Address, 3 == Area, 4 == ClimateSite, 6 == Country, 8 == File, 9 == HydrometricSite, 11 == MikeBoundaryConditionWebTide, 12 == MikeBoundaryConditionMesh, 14 == MikeSource, 15 == Municipality, 16 == MWQMSite, 17 == PolSourceSite, 18 == Province, 19 == Sector, 20 == Subsector, 22 == TideSite, 24 == WasteWaterTreatmentPlant, 25 == LiftStation, 26 == Spill, 29 == Outfall, 30 == OtherInfrastructure, 41 == SeeOtherMunicipality, 42 == LineOverflow</para>
         /// > <para>[[CSSPExist](CSSPModels.CSSPExistAttribute.html)(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "1,2,3,4,6,8,9,11,12,14,15,16,17,18,19,20,22,24,25,26,29,30,41,42")]</para>
         /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "TVItemID2")]</para>
         /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "TVItemID2")]</para>

@@ -17,7 +17,7 @@ namespace CSSPModels
     /// > [!NOTE]
     /// > 
     /// > <para>**No DB properties** :</para>
-    /// > <para>**Other properties** : [InfrastructureType](CSSPModels.TVItemInfrastructureTypeTVItemLink.html#CSSPModels_TVItemInfrastructureTypeTVItemLink_InfrastructureType), [SeeOtherTVItemID](CSSPModels.TVItemInfrastructureTypeTVItemLink.html#CSSPModels_TVItemInfrastructureTypeTVItemLink_SeeOtherTVItemID), [InfrastructureTypeText](CSSPModels.TVItemInfrastructureTypeTVItemLink.html#CSSPModels_TVItemInfrastructureTypeTVItemLink_InfrastructureTypeText), [TVItem](CSSPModels.TVItemInfrastructureTypeTVItemLink.html#CSSPModels_TVItemInfrastructureTypeTVItemLink_TVItem), [TVItemLinkList](CSSPModels.TVItemInfrastructureTypeTVItemLink.html#CSSPModels_TVItemInfrastructureTypeTVItemLink_TVItemLinkList), [FlowTo](CSSPModels.TVItemInfrastructureTypeTVItemLink.html#CSSPModels_TVItemInfrastructureTypeTVItemLink_FlowTo), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
+    /// > <para>**Other properties** : [InfrastructureType](CSSPModels.TVItemInfrastructureTypeTVItemLink.html#CSSPModels_TVItemInfrastructureTypeTVItemLink_InfrastructureType), [SeeOtherMunicipalityTVItemID](CSSPModels.TVItemInfrastructureTypeTVItemLink.html#CSSPModels_TVItemInfrastructureTypeTVItemLink_SeeOtherMunicipalityTVItemID), [InfrastructureTypeText](CSSPModels.TVItemInfrastructureTypeTVItemLink.html#CSSPModels_TVItemInfrastructureTypeTVItemLink_InfrastructureTypeText), [TVItem](CSSPModels.TVItemInfrastructureTypeTVItemLink.html#CSSPModels_TVItemInfrastructureTypeTVItemLink_TVItem), [TVItemLinkList](CSSPModels.TVItemInfrastructureTypeTVItemLink.html#CSSPModels_TVItemInfrastructureTypeTVItemLink_TVItemLinkList), [FlowTo](CSSPModels.TVItemInfrastructureTypeTVItemLink.html#CSSPModels_TVItemInfrastructureTypeTVItemLink_FlowTo), [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Requires [CSSPEnums](CSSPEnums.html)** : [InfrastructureTypeEnum](CSSPEnums.InfrastructureTypeEnum.html)</para>
     /// > <para>**Inherits [CSSPError](CSSPModels.CSSPError.html)**</para>
@@ -79,7 +79,7 @@ namespace CSSPModels
         [CSSPDisplayFR(DisplayFR = "Voir autre TVItemID")]
         [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the other infrastructure")]
         [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant l'autre infrastructure")]
-        public int? SeeOtherTVItemID { get; set; }
+        public int? SeeOtherMunicipalityTVItemID { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>

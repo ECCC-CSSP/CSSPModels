@@ -293,7 +293,7 @@ namespace CSSPModels
         [CSSPDisplayFR(DisplayFR = "Voir autre infrastructure")]
         [CSSPDescriptionEN(DescriptionEN = @"See other infrastructure")]
         [CSSPDescriptionFR(DescriptionFR = @"Voir autre infrastructure")]
-        public int? SeeOtherTVItemID { get; set; }
+        public int? SeeOtherMunicipalityTVItemID { get; set; }
         [CSSPExist(ExistTypeName = "TVItem", ExistPlurial = "s", ExistFieldID = "TVItemID", AllowableTVTypeList = "2")]
         [CSSPDisplayEN(DisplayEN = "Civic address TVItemID")]
         [CSSPDisplayFR(DisplayFR = "Adresse civique TVItemID")]
@@ -318,13 +318,13 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Infrastructure text")]
         [CSSPDescriptionFR(DescriptionFR = @"Text de infrastructure")]
         public string InfrastructureText { get; set; }
-        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SeeOtherTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
+        [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "SeeOtherMunicipalityTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "See other infrastructur text")]
         [CSSPDisplayFR(DisplayFR = "Text de voir autre infrastructure")]
         [CSSPDescriptionEN(DescriptionEN = @"See other infrastructur text")]
         [CSSPDescriptionFR(DescriptionFR = @"Text de voir autre infrastructure")]
-        public string SeeOtherText { get; set; }
+        public string SeeOtherMunicipalityText { get; set; }
         [CSSPFill(FillTypeName = "TVItemLanguage", FillPlurial = "s", FillFieldID = "TVItemID", FillEqualField = "CivicAddressTVItemID", FillReturnField = "TVText", FillNeedLanguage = true, FillIsList = false)]
         [CSSPAllowNull]
         [CSSPDisplayEN(DisplayEN = "Civic address text")]

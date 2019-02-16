@@ -31,15 +31,17 @@ namespace CSSPModels
         public virtual DbSet<ClimateDataValue> ClimateDataValues { get; set; }
         public virtual DbSet<ClimateSite> ClimateSites { get; set; }
         public virtual DbSet<Contact> Contacts { get; set; }
-        //public virtual DbSet<ContactLogin> ContactLogins { get; set; }
         public virtual DbSet<ContactPreference> ContactPreferences { get; set; }
         public virtual DbSet<ContactShortcut> ContactShortcuts { get; set; }
         public virtual DbSet<DocTemplate> DocTemplates { get; set; }
+        public virtual DbSet<DrogueRun> DrogueRuns { get; set; }
+        public virtual DbSet<DrogueRunPosition> DrogueRunPositions { get; set; }
         public virtual DbSet<Email> Emails { get; set; }
         public virtual DbSet<EmailDistributionList> EmailDistributionLists { get; set; }
         public virtual DbSet<EmailDistributionListLanguage> EmailDistributionListLanguages { get; set; }
         public virtual DbSet<EmailDistributionListContact> EmailDistributionListContacts { get; set; }
         public virtual DbSet<EmailDistributionListContactLanguage> EmailDistributionListContactLanguages { get; set; }
+        public virtual DbSet<HelpDoc> HelpDocs { get; set; }
         public virtual DbSet<HydrometricDataValue> HydrometricDataValues { get; set; }
         public virtual DbSet<HydrometricSite> HydrometricSites { get; set; }
         public virtual DbSet<Infrastructure> Infrastructures { get; set; }
