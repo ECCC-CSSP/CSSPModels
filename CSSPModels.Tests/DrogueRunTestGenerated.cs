@@ -44,7 +44,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void DrogueRun_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "DrogueRunID", "SubsectorTVItemID", "DrogueNumber", "DrogueType", "RunStartDateTime", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "DrogueRunID", "SubsectorTVItemID", "DrogueNumber", "DrogueType", "RunStartDateTime", "IsRisingTide", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void DrogueRunExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "LastUpdateContactText", "DrogueTypeText", "DrogueRunID", "SubsectorTVItemID", "DrogueNumber", "DrogueType", "RunStartDateTime", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "LastUpdateContactText", "DrogueTypeText", "DrogueRunID", "SubsectorTVItemID", "DrogueNumber", "DrogueType", "RunStartDateTime", "IsRisingTide", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void DrogueRunExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "DrogueRunReportTest", "LastUpdateContactText", "DrogueTypeText", "DrogueRunID", "SubsectorTVItemID", "DrogueNumber", "DrogueType", "RunStartDateTime", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "DrogueRunReportTest", "LastUpdateContactText", "DrogueTypeText", "DrogueRunID", "SubsectorTVItemID", "DrogueNumber", "DrogueType", "RunStartDateTime", "IsRisingTide", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -275,18 +275,21 @@ namespace CSSPModels.Tests
                DateTime val5 = new DateTime(2010, 3, 4);
                drogueRun.RunStartDateTime = val5;
                Assert.AreEqual(val5, drogueRun.RunStartDateTime);
-               DateTime val6 = new DateTime(2010, 3, 4);
-               drogueRun.LastUpdateDate_UTC = val6;
-               Assert.AreEqual(val6, drogueRun.LastUpdateDate_UTC);
-               int val7 = 45;
-               drogueRun.LastUpdateContactTVItemID = val7;
-               Assert.AreEqual(val7, drogueRun.LastUpdateContactTVItemID);
-               bool val8 = true;
-               drogueRun.HasErrors = val8;
-               Assert.AreEqual(val8, drogueRun.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
-               drogueRun.ValidationResults = val27;
-               Assert.AreEqual(val27, drogueRun.ValidationResults);
+               bool val6 = true;
+               drogueRun.IsRisingTide = val6;
+               Assert.AreEqual(val6, drogueRun.IsRisingTide);
+               DateTime val7 = new DateTime(2010, 3, 4);
+               drogueRun.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, drogueRun.LastUpdateDate_UTC);
+               int val8 = 45;
+               drogueRun.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, drogueRun.LastUpdateContactTVItemID);
+               bool val9 = true;
+               drogueRun.HasErrors = val9;
+               Assert.AreEqual(val9, drogueRun.HasErrors);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
+               drogueRun.ValidationResults = val30;
+               Assert.AreEqual(val30, drogueRun.ValidationResults);
         }
         [TestMethod]
         public void DrogueRunExtraA_Every_Property_Has_Get_Set_Test()
@@ -312,18 +315,21 @@ namespace CSSPModels.Tests
                DateTime val7 = new DateTime(2010, 3, 4);
                drogueRunExtraA.RunStartDateTime = val7;
                Assert.AreEqual(val7, drogueRunExtraA.RunStartDateTime);
-               DateTime val8 = new DateTime(2010, 3, 4);
-               drogueRunExtraA.LastUpdateDate_UTC = val8;
-               Assert.AreEqual(val8, drogueRunExtraA.LastUpdateDate_UTC);
-               int val9 = 45;
-               drogueRunExtraA.LastUpdateContactTVItemID = val9;
-               Assert.AreEqual(val9, drogueRunExtraA.LastUpdateContactTVItemID);
-               bool val10 = true;
-               drogueRunExtraA.HasErrors = val10;
-               Assert.AreEqual(val10, drogueRunExtraA.HasErrors);
-               IEnumerable<ValidationResult> val33 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
-               drogueRunExtraA.ValidationResults = val33;
-               Assert.AreEqual(val33, drogueRunExtraA.ValidationResults);
+               bool val8 = true;
+               drogueRunExtraA.IsRisingTide = val8;
+               Assert.AreEqual(val8, drogueRunExtraA.IsRisingTide);
+               DateTime val9 = new DateTime(2010, 3, 4);
+               drogueRunExtraA.LastUpdateDate_UTC = val9;
+               Assert.AreEqual(val9, drogueRunExtraA.LastUpdateDate_UTC);
+               int val10 = 45;
+               drogueRunExtraA.LastUpdateContactTVItemID = val10;
+               Assert.AreEqual(val10, drogueRunExtraA.LastUpdateContactTVItemID);
+               bool val11 = true;
+               drogueRunExtraA.HasErrors = val11;
+               Assert.AreEqual(val11, drogueRunExtraA.HasErrors);
+               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
+               drogueRunExtraA.ValidationResults = val36;
+               Assert.AreEqual(val36, drogueRunExtraA.ValidationResults);
         }
         [TestMethod]
         public void DrogueRunExtraB_Every_Property_Has_Get_Set_Test()
@@ -352,18 +358,21 @@ namespace CSSPModels.Tests
                DateTime val8 = new DateTime(2010, 3, 4);
                drogueRunExtraB.RunStartDateTime = val8;
                Assert.AreEqual(val8, drogueRunExtraB.RunStartDateTime);
-               DateTime val9 = new DateTime(2010, 3, 4);
-               drogueRunExtraB.LastUpdateDate_UTC = val9;
-               Assert.AreEqual(val9, drogueRunExtraB.LastUpdateDate_UTC);
-               int val10 = 45;
-               drogueRunExtraB.LastUpdateContactTVItemID = val10;
-               Assert.AreEqual(val10, drogueRunExtraB.LastUpdateContactTVItemID);
-               bool val11 = true;
-               drogueRunExtraB.HasErrors = val11;
-               Assert.AreEqual(val11, drogueRunExtraB.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
-               drogueRunExtraB.ValidationResults = val36;
-               Assert.AreEqual(val36, drogueRunExtraB.ValidationResults);
+               bool val9 = true;
+               drogueRunExtraB.IsRisingTide = val9;
+               Assert.AreEqual(val9, drogueRunExtraB.IsRisingTide);
+               DateTime val10 = new DateTime(2010, 3, 4);
+               drogueRunExtraB.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, drogueRunExtraB.LastUpdateDate_UTC);
+               int val11 = 45;
+               drogueRunExtraB.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, drogueRunExtraB.LastUpdateContactTVItemID);
+               bool val12 = true;
+               drogueRunExtraB.HasErrors = val12;
+               Assert.AreEqual(val12, drogueRunExtraB.HasErrors);
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
+               drogueRunExtraB.ValidationResults = val39;
+               Assert.AreEqual(val39, drogueRunExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }

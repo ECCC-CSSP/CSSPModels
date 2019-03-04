@@ -16,7 +16,7 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table DrogueRuns** : [DrogueRunID](CSSPModels.DrogueRun.html#CSSPModels_DrogueRun_DrogueRunID), [SubsectorTVItemID](CSSPModels.DrogueRun.html#CSSPModels_DrogueRun_SubsectorTVItemID), [DrogueNumber](CSSPModels.DrogueRun.html#CSSPModels_DrogueRun_DrogueNumber), [DrogueType](CSSPModels.DrogueRun.html#CSSPModels_DrogueRun_DrogueType), [RunStartDateTime](CSSPModels.DrogueRun.html#CSSPModels_DrogueRun_RunStartDateTime), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**DB properties for table DrogueRuns** : [DrogueRunID](CSSPModels.DrogueRun.html#CSSPModels_DrogueRun_DrogueRunID), [SubsectorTVItemID](CSSPModels.DrogueRun.html#CSSPModels_DrogueRun_SubsectorTVItemID), [DrogueNumber](CSSPModels.DrogueRun.html#CSSPModels_DrogueRun_DrogueNumber), [DrogueType](CSSPModels.DrogueRun.html#CSSPModels_DrogueRun_DrogueType), [RunStartDateTime](CSSPModels.DrogueRun.html#CSSPModels_DrogueRun_RunStartDateTime), [IsRisingTide](CSSPModels.DrogueRun.html#CSSPModels_DrogueRun_IsRisingTide), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
     /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [DrogueRunService](CSSPServices.DrogueRunService.html)</para>
@@ -153,6 +153,29 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Drogue run start date and time (local)")]
         [CSSPDescriptionFR(DescriptionFR = @"Date et temps de départ de la run drogue (local)")]
         public DateTime RunStartDateTime { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Rising tide")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Marée montante")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Is rising tide")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Marée montante")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Rising tide
+        /// 
+        /// **Display (fr)** --- Marée montante
+        /// 
+        /// **Description (en)** --- Is rising tide
+        /// 
+        /// **Description (fr)** --- Marée montante
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Rising tide")]
+        [CSSPDisplayFR(DisplayFR = "Marée montante")]
+        [CSSPDescriptionEN(DescriptionEN = @"Is rising tide")]
+        [CSSPDescriptionFR(DescriptionFR = @"Marée montante")]
+        public bool IsRisingTide { get; set; }
         #endregion Properties in DB
 
         #region Constructors

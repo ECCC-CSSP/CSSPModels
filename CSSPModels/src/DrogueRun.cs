@@ -44,6 +44,11 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Drogue run start date and time (local)")]
         [CSSPDescriptionFR(DescriptionFR = @"Date et temps de départ de la run drogue (local)")]
         public DateTime RunStartDateTime { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Rising tide")]
+        [CSSPDisplayFR(DisplayFR = "Marée montante")]
+        [CSSPDescriptionEN(DescriptionEN = @"Is rising tide")]
+        [CSSPDescriptionFR(DescriptionFR = @"Marée montante")]
+        public bool IsRisingTide { get; set; }
         #endregion Properties in DB
 
         #region Constructors
