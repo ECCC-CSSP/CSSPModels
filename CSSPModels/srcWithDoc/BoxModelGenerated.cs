@@ -276,7 +276,7 @@ namespace CSSPModels
         /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "T90 (hour)")]</para>
         /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "T90 (heur)")]</para>
         /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Time (hour) required for 90 % of the fecal coliform colonies to die off")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Temps (heur) requis pour que 90% des colonies de coliformes fécaux meurent")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Temps (heure) requis pour que 90% des colonies de coliformes fécaux meurent")]</para>
         /// </summary>
         /// <returns>
         /// 
@@ -286,37 +286,37 @@ namespace CSSPModels
         /// 
         /// **Description (en)** --- Time (hour) required for 90 % of the fecal coliform colonies to die off
         /// 
-        /// **Description (fr)** --- Temps (heur) requis pour que 90% des colonies de coliformes fécaux meurent
+        /// **Description (fr)** --- Temps (heure) requis pour que 90% des colonies de coliformes fécaux meurent
         /// </returns>
         [Range(0.0D, -1.0D)]
         [CSSPDisplayEN(DisplayEN = "T90 (hour)")]
         [CSSPDisplayFR(DisplayFR = "T90 (heur)")]
         [CSSPDescriptionEN(DescriptionEN = @"Time (hour) required for 90 % of the fecal coliform colonies to die off")]
-        [CSSPDescriptionFR(DescriptionFR = @"Temps (heur) requis pour que 90% des colonies de coliformes fécaux meurent")]
+        [CSSPDescriptionFR(DescriptionFR = @"Temps (heure) requis pour que 90% des colonies de coliformes fécaux meurent")]
         public double T90_hour { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>
         /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Discharge duration (hour/day)")]</para>
-        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Durée de l'écoulement (heur/jour)")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Durée de l'écoulement (heure/jour)")]</para>
         /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Discharge duration (hour/day)")]</para>
-        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Durée de l'écoulement (heur/jour)")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Durée de l'écoulement (heure/jour)")]</para>
         /// </summary>
         /// <returns>
         /// 
         /// **Display (en)** --- Discharge duration (hour/day)
         /// 
-        /// **Display (fr)** --- Durée de l'écoulement (heur/jour)
+        /// **Display (fr)** --- Durée de l'écoulement (heure/jour)
         /// 
         /// **Description (en)** --- Discharge duration (hour/day)
         /// 
-        /// **Description (fr)** --- Durée de l'écoulement (heur/jour)
+        /// **Description (fr)** --- Durée de l'écoulement (heure/jour)
         /// </returns>
         [Range(0.0D, 24.0D)]
         [CSSPDisplayEN(DisplayEN = "Discharge duration (hour/day)")]
-        [CSSPDisplayFR(DisplayFR = "Durée de l'écoulement (heur/jour)")]
+        [CSSPDisplayFR(DisplayFR = "Durée de l'écoulement (heure/jour)")]
         [CSSPDescriptionEN(DescriptionEN = @"Discharge duration (hour/day)")]
-        [CSSPDescriptionFR(DescriptionFR = @"Durée de l'écoulement (heur/jour)")]
+        [CSSPDescriptionFR(DescriptionFR = @"Durée de l'écoulement (heure/jour)")]
         public double DischargeDuration_hour { get; set; }
         #endregion Properties in DB
 
