@@ -16,7 +16,7 @@ namespace CSSPModels
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**DB properties for table PolSourceObservations** : [PolSourceObservationID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_PolSourceObservationID), [PolSourceSiteID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_PolSourceSiteID), [ObservationDate_Local](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_ObservationDate_Local), [ContactTVItemID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_ContactTVItemID), [Observation_ToBeDeleted](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_Observation_ToBeDeleted), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
+    /// > <para>**DB properties for table PolSourceObservations** : [PolSourceObservationID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_PolSourceObservationID), [PolSourceSiteID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_PolSourceSiteID), [ObservationDate_Local](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_ObservationDate_Local), [ContactTVItemID](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_ContactTVItemID), [DesktopReviewed](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_DesktopReviewed), [Observation_ToBeDeleted](CSSPModels.PolSourceObservation.html#CSSPModels_PolSourceObservation_Observation_ToBeDeleted), [LastUpdate.LastUpdateDate_UTC](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateDate_UTC), [LastUpdate.LastUpdateContactTVItemID](CSSPModels.LastUpdate.html#CSSPModels_LastUpdate_LastUpdateContactTVItemID)</para>
     /// > <para>**Other properties** : [CSSPError.HasErrors](CSSPModels.CSSPError.html#CSSPModels_CSSPError_HasErrors), [CSSPError.ValidationResults](CSSPModels.CSSPError.html#CSSPModels_CSSPError_ValidationResults)</para>
     /// > 
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceObservationService](CSSPServices.PolSourceObservationService.html)</para>
@@ -128,6 +128,29 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the contact who made the observation")]
         [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le contact ayant l'observation")]
         public int ContactTVItemID { get; set; }
+        /// <summary>
+        /// > [!NOTE]
+        /// > <para>**Other custom attributes**</para>
+        /// > <para>[[CSSPDisplayEN](CSSPModels.CSSPDisplayEN.html)(DisplayEN = "Desktop Reviewed")]</para>
+        /// > <para>[[CSSPDisplayFR](CSSPModels.CSSPDisplayFR.html)(DisplayFR = "Révisé au bureau")]</para>
+        /// > <para>[[CSSPDescriptionEN](CSSPModels.CSSPDescriptionEN.html)(DescriptionEN = "Desktop Reviewed")]</para>
+        /// > <para>[[CSSPDescriptionFR](CSSPModels.CSSPDescriptionFR.html)(DescriptionFR = "Révisé au bureau")]</para>
+        /// </summary>
+        /// <returns>
+        /// 
+        /// **Display (en)** --- Desktop Reviewed
+        /// 
+        /// **Display (fr)** --- Révisé au bureau
+        /// 
+        /// **Description (en)** --- Desktop Reviewed
+        /// 
+        /// **Description (fr)** --- Révisé au bureau
+        /// </returns>
+        [CSSPDisplayEN(DisplayEN = "Desktop Reviewed")]
+        [CSSPDisplayFR(DisplayFR = "Révisé au bureau")]
+        [CSSPDescriptionEN(DescriptionEN = @"Desktop Reviewed")]
+        [CSSPDescriptionFR(DescriptionFR = @"Révisé au bureau")]
+        public bool DesktopReviewed { get; set; }
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Other custom attributes**</para>

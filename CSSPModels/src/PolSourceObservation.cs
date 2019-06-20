@@ -38,6 +38,11 @@ namespace CSSPModels
         [CSSPDescriptionEN(DescriptionEN = @"Link to the TVItems table representing the contact who made the observation")]
         [CSSPDescriptionFR(DescriptionFR = @"Lien à la table TVItems représentant le contact ayant l'observation")]
         public int ContactTVItemID { get; set; }
+        [CSSPDisplayEN(DisplayEN = "Desktop Reviewed")]
+        [CSSPDisplayFR(DisplayFR = "Révisé au bureau")]
+        [CSSPDescriptionEN(DescriptionEN = @"Desktop Reviewed")]
+        [CSSPDescriptionFR(DescriptionFR = @"Révisé au bureau")]
+        public bool DesktopReviewed { get; set; }
         [CSSPDisplayEN(DisplayEN = "Observation to be deleted")]
         [CSSPDisplayFR(DisplayFR = "Observation qui va être effacé")]
         [CSSPDescriptionEN(DescriptionEN = @"Observation to be deleted")]

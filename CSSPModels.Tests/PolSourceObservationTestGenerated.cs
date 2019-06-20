@@ -44,7 +44,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolSourceObservation_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "PolSourceObservationID", "PolSourceSiteID", "ObservationDate_Local", "ContactTVItemID", "Observation_ToBeDeleted", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "PolSourceObservationID", "PolSourceSiteID", "ObservationDate_Local", "ContactTVItemID", "DesktopReviewed", "Observation_ToBeDeleted", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -80,7 +80,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolSourceObservationExtraA_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "PolSourceSiteText", "ContactName", "LastUpdateContactText", "PolSourceObservationID", "PolSourceSiteID", "ObservationDate_Local", "ContactTVItemID", "Observation_ToBeDeleted", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "PolSourceSiteText", "ContactName", "LastUpdateContactText", "PolSourceObservationID", "PolSourceSiteID", "ObservationDate_Local", "ContactTVItemID", "DesktopReviewed", "Observation_ToBeDeleted", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -116,7 +116,7 @@ namespace CSSPModels.Tests
         [TestMethod]
         public void PolSourceObservationExtraB_Properties_Test()
         {
-            List<string> propNameList = new List<string>() { "PolSourceObservationReportTest", "PolSourceSiteText", "ContactName", "LastUpdateContactText", "PolSourceObservationID", "PolSourceSiteID", "ObservationDate_Local", "ContactTVItemID", "Observation_ToBeDeleted", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
+            List<string> propNameList = new List<string>() { "PolSourceObservationReportTest", "PolSourceSiteText", "ContactName", "LastUpdateContactText", "PolSourceObservationID", "PolSourceSiteID", "ObservationDate_Local", "ContactTVItemID", "DesktopReviewed", "Observation_ToBeDeleted", "LastUpdateDate_UTC", "LastUpdateContactTVItemID",  }.OrderBy(c => c).ToList();
             List<string> propNameNotMappedList = new List<string>() { "HasErrors",  }.OrderBy(c => c).ToList();
 
             int index = 0;
@@ -272,21 +272,24 @@ namespace CSSPModels.Tests
                int val4 = 45;
                polSourceObservation.ContactTVItemID = val4;
                Assert.AreEqual(val4, polSourceObservation.ContactTVItemID);
-               string val5 = "Some text";
-               polSourceObservation.Observation_ToBeDeleted = val5;
-               Assert.AreEqual(val5, polSourceObservation.Observation_ToBeDeleted);
-               DateTime val6 = new DateTime(2010, 3, 4);
-               polSourceObservation.LastUpdateDate_UTC = val6;
-               Assert.AreEqual(val6, polSourceObservation.LastUpdateDate_UTC);
-               int val7 = 45;
-               polSourceObservation.LastUpdateContactTVItemID = val7;
-               Assert.AreEqual(val7, polSourceObservation.LastUpdateContactTVItemID);
-               bool val8 = true;
-               polSourceObservation.HasErrors = val8;
-               Assert.AreEqual(val8, polSourceObservation.HasErrors);
-               IEnumerable<ValidationResult> val27 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
-               polSourceObservation.ValidationResults = val27;
-               Assert.AreEqual(val27, polSourceObservation.ValidationResults);
+               bool val5 = true;
+               polSourceObservation.DesktopReviewed = val5;
+               Assert.AreEqual(val5, polSourceObservation.DesktopReviewed);
+               string val6 = "Some text";
+               polSourceObservation.Observation_ToBeDeleted = val6;
+               Assert.AreEqual(val6, polSourceObservation.Observation_ToBeDeleted);
+               DateTime val7 = new DateTime(2010, 3, 4);
+               polSourceObservation.LastUpdateDate_UTC = val7;
+               Assert.AreEqual(val7, polSourceObservation.LastUpdateDate_UTC);
+               int val8 = 45;
+               polSourceObservation.LastUpdateContactTVItemID = val8;
+               Assert.AreEqual(val8, polSourceObservation.LastUpdateContactTVItemID);
+               bool val9 = true;
+               polSourceObservation.HasErrors = val9;
+               Assert.AreEqual(val9, polSourceObservation.HasErrors);
+               IEnumerable<ValidationResult> val30 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
+               polSourceObservation.ValidationResults = val30;
+               Assert.AreEqual(val30, polSourceObservation.ValidationResults);
         }
         [TestMethod]
         public void PolSourceObservationExtraA_Every_Property_Has_Get_Set_Test()
@@ -312,21 +315,24 @@ namespace CSSPModels.Tests
                int val7 = 45;
                polSourceObservationExtraA.ContactTVItemID = val7;
                Assert.AreEqual(val7, polSourceObservationExtraA.ContactTVItemID);
-               string val8 = "Some text";
-               polSourceObservationExtraA.Observation_ToBeDeleted = val8;
-               Assert.AreEqual(val8, polSourceObservationExtraA.Observation_ToBeDeleted);
-               DateTime val9 = new DateTime(2010, 3, 4);
-               polSourceObservationExtraA.LastUpdateDate_UTC = val9;
-               Assert.AreEqual(val9, polSourceObservationExtraA.LastUpdateDate_UTC);
-               int val10 = 45;
-               polSourceObservationExtraA.LastUpdateContactTVItemID = val10;
-               Assert.AreEqual(val10, polSourceObservationExtraA.LastUpdateContactTVItemID);
-               bool val11 = true;
-               polSourceObservationExtraA.HasErrors = val11;
-               Assert.AreEqual(val11, polSourceObservationExtraA.HasErrors);
-               IEnumerable<ValidationResult> val36 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
-               polSourceObservationExtraA.ValidationResults = val36;
-               Assert.AreEqual(val36, polSourceObservationExtraA.ValidationResults);
+               bool val8 = true;
+               polSourceObservationExtraA.DesktopReviewed = val8;
+               Assert.AreEqual(val8, polSourceObservationExtraA.DesktopReviewed);
+               string val9 = "Some text";
+               polSourceObservationExtraA.Observation_ToBeDeleted = val9;
+               Assert.AreEqual(val9, polSourceObservationExtraA.Observation_ToBeDeleted);
+               DateTime val10 = new DateTime(2010, 3, 4);
+               polSourceObservationExtraA.LastUpdateDate_UTC = val10;
+               Assert.AreEqual(val10, polSourceObservationExtraA.LastUpdateDate_UTC);
+               int val11 = 45;
+               polSourceObservationExtraA.LastUpdateContactTVItemID = val11;
+               Assert.AreEqual(val11, polSourceObservationExtraA.LastUpdateContactTVItemID);
+               bool val12 = true;
+               polSourceObservationExtraA.HasErrors = val12;
+               Assert.AreEqual(val12, polSourceObservationExtraA.HasErrors);
+               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
+               polSourceObservationExtraA.ValidationResults = val39;
+               Assert.AreEqual(val39, polSourceObservationExtraA.ValidationResults);
         }
         [TestMethod]
         public void PolSourceObservationExtraB_Every_Property_Has_Get_Set_Test()
@@ -355,21 +361,24 @@ namespace CSSPModels.Tests
                int val8 = 45;
                polSourceObservationExtraB.ContactTVItemID = val8;
                Assert.AreEqual(val8, polSourceObservationExtraB.ContactTVItemID);
-               string val9 = "Some text";
-               polSourceObservationExtraB.Observation_ToBeDeleted = val9;
-               Assert.AreEqual(val9, polSourceObservationExtraB.Observation_ToBeDeleted);
-               DateTime val10 = new DateTime(2010, 3, 4);
-               polSourceObservationExtraB.LastUpdateDate_UTC = val10;
-               Assert.AreEqual(val10, polSourceObservationExtraB.LastUpdateDate_UTC);
-               int val11 = 45;
-               polSourceObservationExtraB.LastUpdateContactTVItemID = val11;
-               Assert.AreEqual(val11, polSourceObservationExtraB.LastUpdateContactTVItemID);
-               bool val12 = true;
-               polSourceObservationExtraB.HasErrors = val12;
-               Assert.AreEqual(val12, polSourceObservationExtraB.HasErrors);
-               IEnumerable<ValidationResult> val39 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
-               polSourceObservationExtraB.ValidationResults = val39;
-               Assert.AreEqual(val39, polSourceObservationExtraB.ValidationResults);
+               bool val9 = true;
+               polSourceObservationExtraB.DesktopReviewed = val9;
+               Assert.AreEqual(val9, polSourceObservationExtraB.DesktopReviewed);
+               string val10 = "Some text";
+               polSourceObservationExtraB.Observation_ToBeDeleted = val10;
+               Assert.AreEqual(val10, polSourceObservationExtraB.Observation_ToBeDeleted);
+               DateTime val11 = new DateTime(2010, 3, 4);
+               polSourceObservationExtraB.LastUpdateDate_UTC = val11;
+               Assert.AreEqual(val11, polSourceObservationExtraB.LastUpdateDate_UTC);
+               int val12 = 45;
+               polSourceObservationExtraB.LastUpdateContactTVItemID = val12;
+               Assert.AreEqual(val12, polSourceObservationExtraB.LastUpdateContactTVItemID);
+               bool val13 = true;
+               polSourceObservationExtraB.HasErrors = val13;
+               Assert.AreEqual(val13, polSourceObservationExtraB.HasErrors);
+               IEnumerable<ValidationResult> val42 = new List<ValidationResult>() { new ValidationResult("First CSSPError Message") }.AsEnumerable();
+               polSourceObservationExtraB.ValidationResults = val42;
+               Assert.AreEqual(val42, polSourceObservationExtraB.ValidationResults);
         }
         #endregion Tests Functions public
     }
